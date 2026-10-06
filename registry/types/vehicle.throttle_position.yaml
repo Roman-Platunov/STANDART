@@ -1,0 +1,18 @@
+sid: 8e7f6f0a
+path: vehicle.throttle_position
+aliases:
+  short: vehicle.throttle_position
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Дроссель
+  en: Throttle position
+fingerprint: sha256:8e7f6f0ab96bd75058dc3c610de29c94733e011e861316e263e870b031dc4da8
+range:
+  min: 0
+  max: 100

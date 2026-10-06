@@ -1,0 +1,18 @@
+sid: 836cbd3d
+path: smarthome.lock.battery
+aliases:
+  short: lock.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея замка
+  en: Lock battery
+fingerprint: sha256:836cbd3d74334229ea858f4e7fcd74638674c5b0e7682d9d7242556d5af33650
+range:
+  min: 0
+  max: 100

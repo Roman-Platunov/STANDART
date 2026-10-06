@@ -1,0 +1,22 @@
+sid: 0500b340
+path: building.hvac.mode
+aliases:
+  short: hvac.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим HVAC
+  en: HVAC mode
+fingerprint: sha256:0500b3405f06b9c6bc4d8786c13614b88c12d5e6a3520de815e41453933d95ba
+enumValues:
+  - off
+  - heat
+  - cool
+  - auto
+  - fan
+  - dry

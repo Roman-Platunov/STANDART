@@ -1,0 +1,21 @@
+sid: 9c6cd064
+path: smarthome.appliance.state
+aliases:
+  short: appliance.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние прибора
+  en: Appliance state
+fingerprint: sha256:9c6cd064cf0a19ae39de08836a9ef82f390a21269fa43dfec48ec1d1dd6b716e
+enumValues:
+  - off
+  - on
+  - standby
+  - running
+  - error

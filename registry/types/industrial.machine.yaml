@@ -1,0 +1,20 @@
+sid: 1dcfa088
+path: industrial.machine
+aliases:
+  short: industrial.machine
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда станка
+  en: Machine command
+fingerprint: sha256:1dcfa08820fb1cc0aac8ff1cb4312e92f5cf0553de1395642e20a17ead95e083
+enumValues:
+  - start
+  - stop
+  - reset
+  - hold

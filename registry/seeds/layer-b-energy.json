@@ -1,0 +1,285 @@
+{
+  "layer": "B",
+  "name": "layer-b-energy.json",
+  "types": [
+    {
+      "path": "energy.grid.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Grid frequency energy",
+      "titleRu": "Частота сети (энергетика)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.grid.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Grid voltage",
+      "titleRu": "Напряжение сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.grid.power_import",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Power import",
+      "titleRu": "Мощность импорта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.grid.power_export",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Power export",
+      "titleRu": "Мощность экспорта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.grid.energy_import",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Energy import",
+      "titleRu": "Энергия импорта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.grid.energy_export",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Energy export",
+      "titleRu": "Энергия экспорта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.storage.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Storage SoC",
+      "titleRu": "Заряд накопителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "energy.storage.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Storage power",
+      "titleRu": "Мощность накопителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.storage.capacity",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Storage capacity",
+      "titleRu": "Ёмкость накопителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.storage.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Storage temperature",
+      "titleRu": "Температура накопителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.solar.irradiance",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "Solar irradiance",
+      "titleRu": "Инсоляция",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.solar.panel_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Panel temperature",
+      "titleRu": "Температура панели",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.solar.dc_power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Solar DC power",
+      "titleRu": "Мощность ФЭП DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.solar.ac_power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Solar AC power",
+      "titleRu": "Мощность ФЭП AC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.wind.turbine_power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Wind turbine power",
+      "titleRu": "Мощность ветрогенератора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.wind.rotor_rpm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Rotor RPM",
+      "titleRu": "Обороты ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.evse.session_energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "EVSE session energy",
+      "titleRu": "Энергия сессии ЗС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.evse.session_power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "EVSE session power",
+      "titleRu": "Мощность сессии ЗС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "energy.evse.connector_state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "EVSE connector state",
+      "titleRu": "Состояние разъёма ЗС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "occupied",
+        "charging",
+        "fault",
+        "unavailable"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "energy.meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Energy meter id",
+      "titleRu": "ID счётчика энергии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "energy.tariff.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tariff id",
+      "titleRu": "ID тарифа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+sid: 116fa407
+path: actuation.position
+aliases:
+  short: actuation.position
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Положение привода
+  en: Actuator position
+fingerprint: sha256:116fa40782a6411991b4a18a3d40144f982a32469986d5689c9be6ef52f8220a
+range:
+  min: 0
+  max: 100

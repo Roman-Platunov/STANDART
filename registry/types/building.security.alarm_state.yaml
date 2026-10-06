@@ -1,0 +1,20 @@
+sid: 4127225a
+path: building.security.alarm_state
+aliases:
+  short: security.alarm_state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние охраны
+  en: Alarm state
+fingerprint: sha256:4127225a88b9a260ac7df3d75290342b03c3e3c7be19361cbc73c8cbae6f2c86
+enumValues:
+  - disarmed
+  - armed_home
+  - armed_away
+  - triggered

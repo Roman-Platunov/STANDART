@@ -1,0 +1,18 @@
+sid: 3cc91aad
+path: smarthome.vacuum.battery
+aliases:
+  short: vacuum.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея робота-пылесоса
+  en: Vacuum battery
+fingerprint: sha256:3cc91aadaecdcfd64c68b01967041716914470f9dd4a5f341eb524d41a4ddeaa
+range:
+  min: 0
+  max: 100

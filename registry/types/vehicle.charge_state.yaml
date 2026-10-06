@@ -1,0 +1,21 @@
+sid: 7ca8ec64
+path: vehicle.charge_state
+aliases:
+  short: vehicle.charge_state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зарядки EV
+  en: EV charge state
+fingerprint: sha256:7ca8ec64fdc436adb7afe6e558a8ecdceb101585cbe390e19d647349e270e3f1
+enumValues:
+  - idle
+  - charging
+  - complete
+  - error
+  - scheduled

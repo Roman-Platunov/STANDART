@@ -1,48 +1,152 @@
-# UCUM codes used by STANDART registry v0.1
+# UCUM-oriented codes used by STANDART registry
 units:
   - code: "-"
     title: { ru: Безразмерный / неприменимо, en: Dimensionless / N/A }
   - code: Cel
     title: { ru: Градус Цельсия, en: Degree Celsius }
+  - code: K
+    title: { ru: Кельвин, en: Kelvin }
   - code: "%"
     title: { ru: Процент, en: Percent }
   - code: hPa
     title: { ru: Гектопаскаль, en: Hectopascal }
+  - code: kPa
+    title: { ru: Килопаскаль, en: Kilopascal }
+  - code: Pa
+    title: { ru: Паскаль, en: Pascal }
   - code: lx
     title: { ru: Люкс, en: Lux }
-  - code: "ppm"
+  - code: lm
+    title: { ru: Люмен, en: Lumen }
+  - code: "cd/m2"
+    title: { ru: Кандела на м², en: Candela per square meter }
+  - code: ppm
     title: { ru: Частиц на миллион, en: Parts per million }
   - code: "ug/m3"
-    title: { ru: Микрограмм на кубический метр, en: Microgram per cubic meter }
+    title: { ru: Микрограмм на м³, en: Microgram per cubic meter }
+  - code: "g/m3"
+    title: { ru: Грамм на м³, en: Gram per cubic meter }
+  - code: "mg/L"
+    title: { ru: Миллиграмм на литр, en: Milligram per liter }
+  - code: "mg/kg"
+    title: { ru: Миллиграмм на кг, en: Milligram per kilogram }
+  - code: "mg/dL"
+    title: { ru: Миллиграмм на дл, en: Milligram per deciliter }
+  - code: "mmol/L"
+    title: { ru: Миллимоль на литр, en: Millimole per liter }
+  - code: "mm[Hg]"
+    title: { ru: мм рт. ст., en: Millimeter of mercury }
+  - code: "Bq/m3"
+    title: { ru: Беккерель на м³, en: Becquerel per cubic meter }
+  - code: NTU
+    title: { ru: Единица мутности NTU, en: Nephelometric turbidity unit }
+  - code: "uS/cm"
+    title: { ru: мкСм/см, en: Microsiemens per centimeter }
+  - code: ppt
+    title: { ru: Промилле, en: Parts per thousand }
   - code: V
     title: { ru: Вольт, en: Volt }
+  - code: mV
+    title: { ru: Милливольт, en: Millivolt }
   - code: A
     title: { ru: Ампер, en: Ampere }
   - code: W
     title: { ru: Ватт, en: Watt }
   - code: Wh
     title: { ru: Ватт-час, en: Watt-hour }
+  - code: VA
+    title: { ru: Вольт-ампер, en: Volt-ampere }
+  - code: var
+    title: { ru: вар, en: Volt-ampere reactive }
   - code: Hz
     title: { ru: Герц, en: Hertz }
+  - code: Ohm
+    title: { ru: Ом, en: Ohm }
+  - code: F
+    title: { ru: Фарад, en: Farad }
+  - code: H
+    title: { ru: Генри, en: Henry }
   - code: N
     title: { ru: Ньютон, en: Newton }
   - code: "N.m"
     title: { ru: Ньютон-метр, en: Newton-meter }
-  - code: Pa
-    title: { ru: Паскаль, en: Pascal }
   - code: "L/min"
     title: { ru: Литр в минуту, en: Liter per minute }
+  - code: "L/h"
+    title: { ru: Литр в час, en: Liter per hour }
+  - code: "L/100km"
+    title: { ru: Литр на 100 км, en: Liter per 100 km }
+  - code: L
+    title: { ru: Литр, en: Liter }
+  - code: "m3/h"
+    title: { ru: Кубический метр в час, en: Cubic meter per hour }
+  - code: "m3"
+    title: { ru: Кубический метр, en: Cubic meter }
+  - code: "kg/s"
+    title: { ru: Килограмм в секунду, en: Kilogram per second }
+  - code: "kg/m3"
+    title: { ru: Килограмм на м³, en: Kilogram per cubic meter }
+  - code: "Pa.s"
+    title: { ru: Паскаль-секунда, en: Pascal-second }
   - code: m
     title: { ru: Метр, en: Meter }
+  - code: mm
+    title: { ru: Миллиметр, en: Millimeter }
+  - code: km
+    title: { ru: Километр, en: Kilometer }
+  - code: "m2"
+    title: { ru: Квадратный метр, en: Square meter }
   - code: "m/s"
     title: { ru: Метр в секунду, en: Meter per second }
   - code: "m/s2"
-    title: { ru: Метр на секунду в квадрате, en: Meter per second squared }
+    title: { ru: Метр на секунду², en: Meter per second squared }
+  - code: "km/h"
+    title: { ru: Километр в час, en: Kilometer per hour }
+  - code: "mm/h"
+    title: { ru: Миллиметр в час, en: Millimeter per hour }
+  - code: "deg/s"
+    title: { ru: Градус в секунду, en: Degree per second }
+  - code: "deg/s2"
+    title: { ru: Градус на секунду², en: Degree per second squared }
   - code: deg
     title: { ru: Градус угла, en: Degree of angle }
   - code: "/min"
     title: { ru: В минуту, en: Per minute }
   - code: s
     title: { ru: Секунда, en: Second }
+  - code: ms
+    title: { ru: Миллисекунда, en: Millisecond }
+  - code: min
+    title: { ru: Минута, en: Minute }
+  - code: h
+    title: { ru: Час, en: Hour }
   - code: dB
     title: { ru: Децибел, en: Decibel }
+  - code: dBm
+    title: { ru: дБм, en: dBm }
+  - code: T
+    title: { ru: Тесла, en: Tesla }
+  - code: "uSv/h"
+    title: { ru: мкЗв/ч, en: Microsievert per hour }
+  - code: uSv
+    title: { ru: микрозиверт, en: Microsievert }
+  - code: "W/m2"
+    title: { ru: Ватт на м², en: Watt per square meter }
+  - code: "K/W"
+    title: { ru: Кельвин на ватт, en: Kelvin per watt }
+  - code: kcal
+    title: { ru: Килокалория, en: Kilocalorie }
+  - code: "mL/min/kg"
+    title: { ru: мл/мин/кг, en: Milliliter per minute per kilogram }
+  - code: By
+    title: { ru: Байт, en: Byte }
+  - code: "bit/s"
+    title: { ru: Бит в секунду, en: Bit per second }
+  - code: kg
+    title: { ru: Килограмм, en: Kilogram }
+  - code: "kg/m2"
+    title: { ru: Килограмм на м², en: Kilogram per square meter }
+  - code: "g/s"
+    title: { ru: Грамм в секунду, en: Gram per second }
+  - code: "umol/m2/s"
+    title: { ru: мкмоль/м²/с, en: Micromole per square meter per second }

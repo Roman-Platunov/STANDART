@@ -1,0 +1,19 @@
+sid: a7e79575
+path: network.link_state
+aliases:
+  short: network.link_state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние канала
+  en: Link state
+fingerprint: sha256:a7e79575fb145a27a2c1bce1af041179b485072bf39502c92afde4b4e3c7fe96
+enumValues:
+  - down
+  - up
+  - degraded

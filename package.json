@@ -1,11 +1,14 @@
 {
   "name": "standart",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "STANDART — hybrid data classifier for AI ↔ device exchange",
   "private": true,
   "type": "module",
   "scripts": {
     "test:fingerprint": "node tools/lib/fingerprint.test.mjs",
+    "seeds": "node tools/build-seed-layer-a.mjs && node tools/build-seed-layer-b.mjs",
+    "generate": "node tools/generate-from-seed.mjs",
+    "expand": "npm run seeds && npm run generate && npm run build",
     "validate": "node tools/validate.mjs",
     "manifest": "node tools/build-manifest.mjs",
     "codegen": "node tools/codegen.mjs",

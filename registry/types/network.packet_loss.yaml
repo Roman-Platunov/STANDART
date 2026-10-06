@@ -1,0 +1,18 @@
+sid: e646b607
+path: network.packet_loss
+aliases:
+  short: network.packet_loss
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Потери пакетов
+  en: Packet loss
+fingerprint: sha256:e646b607d8390928b44539641f697be2f155f2ccbd2aa66b3c2c7dd5666b1cf8
+range:
+  min: 0
+  max: 100

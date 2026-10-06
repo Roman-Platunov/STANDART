@@ -1,0 +1,331 @@
+{
+  "layer": "B",
+  "name": "layer-b-smarthome.json",
+  "types": [
+    {
+      "path": "smarthome.appliance.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Appliance power",
+      "titleRu": "Мощность прибора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.appliance.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Appliance energy",
+      "titleRu": "Энергия прибора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.appliance.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Appliance state",
+      "titleRu": "Состояние прибора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "on",
+        "standby",
+        "running",
+        "error"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smarthome.refrigerator.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fridge temperature",
+      "titleRu": "Температура холодильника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.freezer.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Freezer temperature",
+      "titleRu": "Температура морозилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.oven.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oven temperature",
+      "titleRu": "Температура духовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.oven.setpoint",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oven setpoint",
+      "titleRu": "Уставка духовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.washer.cycle_progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Washer progress",
+      "titleRu": "Прогресс стирки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.washer.cycle",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Washer cycle",
+      "titleRu": "Цикл стиральной машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "wash",
+        "rinse",
+        "spin",
+        "done",
+        "error"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smarthome.dryer.remaining_time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Dryer remaining time",
+      "titleRu": "Остаток сушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.dishwasher.remaining_time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Dishwasher remaining",
+      "titleRu": "Остаток посудомойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.vacuum.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vacuum battery",
+      "titleRu": "Батарея робота-пылесоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.vacuum.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vacuum state",
+      "titleRu": "Состояние пылесоса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "docked",
+        "cleaning",
+        "returning",
+        "paused",
+        "error"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smarthome.vacuum.area_cleaned",
+      "kind": "quantity",
+      "unit": "m2",
+      "titleEn": "Area cleaned",
+      "titleRu": "Убранная площадь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.curtain.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Curtain open",
+      "titleRu": "Штора открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smarthome.curtain.position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Curtain position",
+      "titleRu": "Положение шторы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.lock.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lock battery",
+      "titleRu": "Батарея замка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.lock.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lock state",
+      "titleRu": "Состояние замка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "locked",
+        "unlocked",
+        "jammed",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smarthome.lock",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Lock command",
+      "titleRu": "Команда замка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lock",
+        "unlock"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smarthome.doorbell.pressed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Doorbell pressed",
+      "titleRu": "Звонок нажат",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smarthome.camera.people_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "People count",
+      "titleRu": "Число людей",
+      "encodings": [
+        "u8",
+        "i16"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "smarthome.camera.snapshot_ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Camera snapshot",
+      "titleRu": "Снимок камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

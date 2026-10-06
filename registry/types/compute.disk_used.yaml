@@ -1,0 +1,18 @@
+sid: 1017808e
+path: compute.disk_used
+aliases:
+  short: compute.disk_used
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Использование диска
+  en: Disk used
+fingerprint: sha256:1017808e402ac6ab283c9de2c5a49883f7780c06af5cbc7a16cab34c016019cb
+range:
+  min: 0
+  max: 100

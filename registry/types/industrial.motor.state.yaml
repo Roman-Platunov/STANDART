@@ -1,0 +1,21 @@
+sid: 51c0b08a
+path: industrial.motor.state
+aliases:
+  short: motor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние двигателя
+  en: Motor state
+fingerprint: sha256:51c0b08a9e320427c3da90cda6b6c50c987299eeae6e57fc16fb846aaf795240
+enumValues:
+  - stopped
+  - starting
+  - running
+  - stopping
+  - fault

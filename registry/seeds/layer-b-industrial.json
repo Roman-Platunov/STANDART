@@ -1,0 +1,624 @@
+{
+  "layer": "B",
+  "name": "layer-b-industrial.json",
+  "types": [
+    {
+      "path": "industrial.process.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Process temperature",
+      "titleRu": "Температура процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.process.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Process pressure",
+      "titleRu": "Давление процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.process.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Process level",
+      "titleRu": "Уровень процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "industrial.process.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Process flow",
+      "titleRu": "Расход процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.process.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Process density",
+      "titleRu": "Плотность процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.process.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Process conductivity",
+      "titleRu": "Проводимость процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.process.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Process pH",
+      "titleRu": "pH процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "industrial.process.orp",
+      "kind": "quantity",
+      "unit": "mV",
+      "titleEn": "ORP",
+      "titleRu": "ОВП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.process.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Process turbidity",
+      "titleRu": "Мутность процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.process.concentration",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Concentration",
+      "titleRu": "Концентрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "industrial.motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.motor.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Motor voltage",
+      "titleRu": "Напряжение двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.motor.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Motor power",
+      "titleRu": "Мощность двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.motor.rpm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Motor RPM",
+      "titleRu": "Обороты двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.motor.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Motor torque",
+      "titleRu": "Момент двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.motor.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Motor temperature",
+      "titleRu": "Температура двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.motor.vibration",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Motor vibration",
+      "titleRu": "Вибрация двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.motor.runtime_hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Motor runtime hours",
+      "titleRu": "Моточасы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.motor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Motor state",
+      "titleRu": "Состояние двигателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stopped",
+        "starting",
+        "running",
+        "stopping",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "industrial.pump.head",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Pump head",
+      "titleRu": "Напор насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.pump.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pump efficiency",
+      "titleRu": "КПД насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "industrial.conveyor.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Conveyor speed",
+      "titleRu": "Скорость конвейера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.conveyor.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Unit count",
+      "titleRu": "Счётчик изделий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.joint_angle_1",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Robot joint 1",
+      "titleRu": "Сустав робота 1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.joint_angle_2",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Robot joint 2",
+      "titleRu": "Сустав робота 2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.joint_angle_3",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Robot joint 3",
+      "titleRu": "Сустав робота 3",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.joint_angle_4",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Robot joint 4",
+      "titleRu": "Сустав робота 4",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.joint_angle_5",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Robot joint 5",
+      "titleRu": "Сустав робота 5",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.joint_angle_6",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Robot joint 6",
+      "titleRu": "Сустав робота 6",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.tcp_x",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "TCP X",
+      "titleRu": "TCP X",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.tcp_y",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "TCP Y",
+      "titleRu": "TCP Y",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.tcp_z",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "TCP Z",
+      "titleRu": "TCP Z",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "industrial.robot.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Robot mode",
+      "titleRu": "Режим робота",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "manual",
+        "auto",
+        "teach",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "industrial.safety.e_stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "E-stop active",
+      "titleRu": "Аварийный стоп",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "industrial.safety.light_curtain",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Light curtain broken",
+      "titleRu": "Световой барьер",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "industrial.safety.door_interlock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door interlock open",
+      "titleRu": "Блокировка двери",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "industrial.batch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Batch state",
+      "titleRu": "Состояние партии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "running",
+        "paused",
+        "complete",
+        "aborted"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "industrial.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "Идентификатор партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "industrial.workorder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Work order id",
+      "titleRu": "Наряд-заказ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "industrial.oee.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "OEE availability",
+      "titleRu": "OEE доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "industrial.oee.performance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "OEE performance",
+      "titleRu": "OEE производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "industrial.oee.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "OEE quality",
+      "titleRu": "OEE качество",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "industrial.oee.overall",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "OEE overall",
+      "titleRu": "OEE общий",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "industrial.machine",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Machine command",
+      "titleRu": "Команда станка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "stop",
+        "reset",
+        "hold"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

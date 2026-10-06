@@ -1,0 +1,18 @@
+sid: 116ca741
+path: building.hvac.fan_speed
+aliases:
+  short: hvac.fan_speed
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Скорость вентилятора
+  en: Fan speed
+fingerprint: sha256:116ca741cdcea0e8fd3921687bf703eead135b9e8fd1ab714eaabeb477c4a72c
+range:
+  min: 0
+  max: 100

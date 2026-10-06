@@ -1,0 +1,18 @@
+sid: 61c8dcc2
+path: building.hvac.setpoint_humidity
+aliases:
+  short: hvac.setpoint_humidity
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Уставка влажности
+  en: Humidity setpoint
+fingerprint: sha256:61c8dcc249f748421b4001130032cce9dda819f27793a10317ec8977f649dbdf
+range:
+  min: 0
+  max: 100

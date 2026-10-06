@@ -1,0 +1,21 @@
+sid: e2c7acd3
+path: vehicle.drive_mode
+aliases:
+  short: vehicle.drive_mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим езды
+  en: Drive mode
+fingerprint: sha256:e2c7acd369e0be94279f0dba4f2ebbbc6c31e43552cd4c1969ce163f171a4665
+enumValues:
+  - eco
+  - normal
+  - sport
+  - offroad
+  - snow

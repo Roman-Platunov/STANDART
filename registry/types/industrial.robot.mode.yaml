@@ -1,0 +1,20 @@
+sid: 584ef670
+path: industrial.robot.mode
+aliases:
+  short: robot.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим робота
+  en: Robot mode
+fingerprint: sha256:584ef6706036f27ca5b05da77f25dd1104b908f15af7f6926abd878ecef75d05
+enumValues:
+  - manual
+  - auto
+  - teach
+  - fault

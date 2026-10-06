@@ -1,0 +1,21 @@
+sid: 9d2e1fb0
+path: industrial.batch.state
+aliases:
+  short: batch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние партии
+  en: Batch state
+fingerprint: sha256:9d2e1fb0bae3ebc6e99e900cb25e3b25d5b0d4aea3ed1a8fbd07038b517314ef
+enumValues:
+  - idle
+  - running
+  - paused
+  - complete
+  - aborted

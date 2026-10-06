@@ -1,0 +1,20 @@
+sid: 345dbf25
+path: logical.severity
+aliases:
+  short: logical.severity
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Достоверность данных
+  en: Data reliability
+fingerprint: sha256:345dbf25fdac1bde224f2d7ce8737e83bd7ef0d9ecd8cb8fc1652e2e0c5330e9
+enumValues:
+  - good
+  - uncertain
+  - bad
+  - stale

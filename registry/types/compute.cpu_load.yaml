@@ -1,0 +1,18 @@
+sid: 914a108e
+path: compute.cpu_load
+aliases:
+  short: compute.cpu_load
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Загрузка CPU
+  en: CPU load
+fingerprint: sha256:914a108efceedc995a21014c255e297d176614e09e14f7105c4df311ce33b536
+range:
+  min: 0
+  max: 100

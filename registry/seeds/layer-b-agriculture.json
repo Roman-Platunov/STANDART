@@ -1,0 +1,286 @@
+{
+  "layer": "B",
+  "name": "layer-b-agriculture.json",
+  "types": [
+    {
+      "path": "agriculture.soil.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soil moisture ag",
+      "titleRu": "Влажность почвы (агро)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.soil.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Soil temperature ag",
+      "titleRu": "Температура почвы (агро)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.soil.ec",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Soil EC",
+      "titleRu": "ЭС почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.soil.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Soil pH",
+      "titleRu": "pH почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.soil.npk_n",
+      "kind": "quantity",
+      "unit": "mg/kg",
+      "titleEn": "Soil nitrogen",
+      "titleRu": "Азот в почве",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.soil.npk_p",
+      "kind": "quantity",
+      "unit": "mg/kg",
+      "titleEn": "Soil phosphorus",
+      "titleRu": "Фосфор в почве",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.soil.npk_k",
+      "kind": "quantity",
+      "unit": "mg/kg",
+      "titleEn": "Soil potassium",
+      "titleRu": "Калий в почве",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.crop.canopy_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Canopy temperature",
+      "titleRu": "Температура кроны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.crop.ndvi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "NDVI",
+      "titleRu": "NDVI",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -1,
+        "max": 1
+      },
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.crop.leaf_area_index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Leaf area index",
+      "titleRu": "LAI",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.irrigation.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Irrigation flow",
+      "titleRu": "Поливной расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.irrigation.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Irrigation volume",
+      "titleRu": "Объём полива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.irrigation.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Irrigation pressure",
+      "titleRu": "Давление полива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.irrigation.valve_open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Irrigation valve open",
+      "titleRu": "Клапан полива открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "agriculture.greenhouse.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Greenhouse CO2",
+      "titleRu": "CO2 теплицы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.greenhouse.par",
+      "kind": "quantity",
+      "unit": "umol/m2/s",
+      "titleEn": "PAR",
+      "titleRu": "ФАР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.greenhouse.vpd",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Vapor pressure deficit",
+      "titleRu": "ДВД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.livestock.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Livestock weight",
+      "titleRu": "Масса животного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.livestock.activity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Livestock activity",
+      "titleRu": "Активность животного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agriculture.livestock.tag",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Livestock tag",
+      "titleRu": "Бирка животного",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "agriculture.field.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Field id",
+      "titleRu": "ID поля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

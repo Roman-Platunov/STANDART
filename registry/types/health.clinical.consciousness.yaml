@@ -1,0 +1,20 @@
+sid: 8f62d73c
+path: health.clinical.consciousness
+aliases:
+  short: clinical.consciousness
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: personal
+status: stable
+title:
+  ru: Сознание AVPU
+  en: Consciousness AVPU
+fingerprint: sha256:8f62d73c8ab6c7b8a14e9172be73699f2253135cab90845d86b4bb7ec50dbaee
+enumValues:
+  - alert
+  - verbal
+  - pain
+  - unresponsive

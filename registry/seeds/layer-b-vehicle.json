@@ -1,0 +1,712 @@
+{
+  "layer": "B",
+  "name": "layer-b-vehicle.json",
+  "types": [
+    {
+      "path": "vehicle.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Vehicle speed",
+      "titleRu": "Скорость ТС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 400
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.odometer",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Odometer",
+      "titleRu": "Одометр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.trip_distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Trip distance",
+      "titleRu": "Пробег поездки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.fuel_level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fuel level",
+      "titleRu": "Уровень топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.fuel_rate",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.fuel_economy",
+      "kind": "quantity",
+      "unit": "L/100km",
+      "titleEn": "Fuel economy",
+      "titleRu": "Расход на 100 км",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.engine_rpm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Engine RPM",
+      "titleRu": "Обороты двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.engine_load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Engine load",
+      "titleRu": "Нагрузка двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.engine_coolant_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура ОЖ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.engine_oil_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.engine_oil_pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Oil pressure",
+      "titleRu": "Давление масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.intake_air_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Intake air temperature",
+      "titleRu": "Температура впуска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.maf",
+      "kind": "quantity",
+      "unit": "g/s",
+      "titleEn": "Mass air flow",
+      "titleRu": "МАФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.throttle_position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Throttle position",
+      "titleRu": "Дроссель",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.accelerator_position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Accelerator position",
+      "titleRu": "Педаль газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.brake_pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Brake pressure",
+      "titleRu": "Давление тормозов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.steering_angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Steering angle",
+      "titleRu": "Угол руля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.wheel_speed_fl",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Wheel speed FL",
+      "titleRu": "Скорость колеса ПЛ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.wheel_speed_fr",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Wheel speed FR",
+      "titleRu": "Скорость колеса ПП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.wheel_speed_rl",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Wheel speed RL",
+      "titleRu": "Скорость колеса ЗЛ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.wheel_speed_rr",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Wheel speed RR",
+      "titleRu": "Скорость колеса ЗП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.tire_pressure_fl",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tire pressure FL",
+      "titleRu": "Давление шины ПЛ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.tire_pressure_fr",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tire pressure FR",
+      "titleRu": "Давление шины ПП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.tire_pressure_rl",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tire pressure RL",
+      "titleRu": "Давление шины ЗЛ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.tire_pressure_rr",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tire pressure RR",
+      "titleRu": "Давление шины ЗП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.battery_voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Vehicle battery voltage",
+      "titleRu": "Напряжение АКБ ТС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.ambient_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ambient temperature",
+      "titleRu": "Наружная температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.cabin_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cabin temperature",
+      "titleRu": "Температура салона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.range_remaining",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Range remaining",
+      "titleRu": "Запас хода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.ev_battery_soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "EV battery SoC",
+      "titleRu": "Заряд тяговой батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.ev_battery_soh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "EV battery SoH",
+      "titleRu": "Здоровье тяговой батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.ev_charge_power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "EV charge power",
+      "titleRu": "Мощность зарядки EV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.ev_charge_energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "EV charge energy",
+      "titleRu": "Энергия зарядки EV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.ignition_on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ignition on",
+      "titleRu": "Зажигание включено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.door_driver_open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Driver door open",
+      "titleRu": "Дверь водителя открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.door_passenger_open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Passenger door open",
+      "titleRu": "Дверь пассажира открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.trunk_open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Trunk open",
+      "titleRu": "Багажник открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.hood_open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hood open",
+      "titleRu": "Капот открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.seatbelt_driver",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Driver seatbelt",
+      "titleRu": "Ремень водителя",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.abs_active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ABS active",
+      "titleRu": "ABS активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.esp_active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ESP active",
+      "titleRu": "ESP активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.airbag_deployed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Airbag deployed",
+      "titleRu": "Подушка сработала",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.gear",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gear",
+      "titleRu": "Передача",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "p",
+        "r",
+        "n",
+        "d",
+        "s",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.drive_mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Drive mode",
+      "titleRu": "Режим езды",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "eco",
+        "normal",
+        "sport",
+        "offroad",
+        "snow"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.charge_state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "EV charge state",
+      "titleRu": "Состояние зарядки EV",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "charging",
+        "complete",
+        "error",
+        "scheduled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.vin",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VIN",
+      "titleRu": "VIN",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "vehicle.license_plate",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "License plate",
+      "titleRu": "Госномер",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "vehicle.lock",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Door lock command",
+      "titleRu": "Команда замков",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lock",
+        "unlock"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.engine",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Engine command",
+      "titleRu": "Команда двигателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "stop"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle.dtc_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "DTC count",
+      "titleRu": "Число DTC",
+      "encodings": [
+        "u8",
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle.dtc_code",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DTC code",
+      "titleRu": "Код DTC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

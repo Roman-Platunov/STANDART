@@ -1,0 +1,20 @@
+sid: 91703f30
+path: actuation.state
+aliases:
+  short: actuation.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние привода
+  en: Actuator state
+fingerprint: sha256:91703f30036bbcc9aaa668b6baf0e1f6eda8c6faf982402939e4e0086b22f8d4
+enumValues:
+  - idle
+  - moving
+  - holding
+  - fault

@@ -1,0 +1,21 @@
+sid: b5786b2d
+path: smarthome.vacuum.state
+aliases:
+  short: vacuum.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пылесоса
+  en: Vacuum state
+fingerprint: sha256:b5786b2d665b6d11135566aff080b68eb8dca03bcdc91404d4e89d77b22c4478
+enumValues:
+  - docked
+  - cleaning
+  - returning
+  - paused
+  - error

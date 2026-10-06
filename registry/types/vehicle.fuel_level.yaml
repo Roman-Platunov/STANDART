@@ -1,0 +1,18 @@
+sid: 58c5c56d
+path: vehicle.fuel_level
+aliases:
+  short: vehicle.fuel_level
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Уровень топлива
+  en: Fuel level
+fingerprint: sha256:58c5c56d373bc982d755dcd21031417add1d280c8535eed1668ef0ab678df33f
+range:
+  min: 0
+  max: 100

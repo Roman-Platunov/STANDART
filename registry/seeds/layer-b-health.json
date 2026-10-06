@@ -1,0 +1,332 @@
+{
+  "layer": "B",
+  "name": "layer-b-health.json",
+  "types": [
+    {
+      "path": "health.clinical.body_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Clinical body temperature",
+      "titleRu": "Клиническая температура тела",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "descriptionEn": "Consumer/clinical device type — not a certification claim",
+      "descriptionRu": "Тип для устройств — не медицинская сертификация",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.heart_rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Clinical heart rate",
+      "titleRu": "Клинический пульс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.spo2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Clinical SpO2",
+      "titleRu": "Клинический SpO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.respiratory_rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Clinical respiratory rate",
+      "titleRu": "Клиническая ЧД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.systolic_bp",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "Clinical systolic BP",
+      "titleRu": "Клиническое САД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.diastolic_bp",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "Clinical diastolic BP",
+      "titleRu": "Клиническое ДАД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.mean_arterial_pressure",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "Mean arterial pressure",
+      "titleRu": "Среднее АД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.pulse_pressure",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "Pulse pressure",
+      "titleRu": "Пульсовое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.glucose",
+      "kind": "quantity",
+      "unit": "mmol/L",
+      "titleEn": "Blood glucose",
+      "titleRu": "Глюкоза крови",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.ketone",
+      "kind": "quantity",
+      "unit": "mmol/L",
+      "titleEn": "Blood ketone",
+      "titleRu": "Кетоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.cholesterol_total",
+      "kind": "quantity",
+      "unit": "mg/dL",
+      "titleEn": "Total cholesterol",
+      "titleRu": "Холестерин общий",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.ecg_heart_rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "ECG-derived heart rate",
+      "titleRu": "ЧСС по ЭКГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.perfusion_index",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Perfusion index",
+      "titleRu": "Индекс перфузии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.pain_score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pain score",
+      "titleRu": "Шкала боли",
+      "encodings": [
+        "u8",
+        "f32"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 10
+      },
+      "status": "stable"
+    },
+    {
+      "path": "health.clinical.consciousness",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Consciousness AVPU",
+      "titleRu": "Сознание AVPU",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "alert",
+        "verbal",
+        "pain",
+        "unresponsive"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "health.clinical.patient_id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Patient id",
+      "titleRu": "ID пациента",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "health.clinical.encounter_id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Encounter id",
+      "titleRu": "ID обращения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "health.wearable.steps_daily",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Daily steps",
+      "titleRu": "Шаги за день",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.wearable.active_minutes",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Active minutes",
+      "titleRu": "Активные минуты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.wearable.floors_climbed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Floors climbed",
+      "titleRu": "Этажи",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.wearable.standing_hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Standing hours",
+      "titleRu": "Часы стояния",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.wearable.sleep_score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sleep score",
+      "titleRu": "Оценка сна",
+      "encodings": [
+        "u8",
+        "f32"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.wearable.recovery_score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Recovery score",
+      "titleRu": "Оценка восстановления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "health.wearable.sleep_stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sleep stage",
+      "titleRu": "Стадия сна",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "awake",
+        "light",
+        "deep",
+        "rem"
+      ],
+      "sensitivity": "personal"
+    }
+  ]
+}

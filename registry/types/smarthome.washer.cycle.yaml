@@ -1,0 +1,22 @@
+sid: e85d911a
+path: smarthome.washer.cycle
+aliases:
+  short: washer.cycle
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Цикл стиральной машины
+  en: Washer cycle
+fingerprint: sha256:e85d911a4fe76677e162c5e74590090ef5a9df46f928bd97be21e9fc4808f34c
+enumValues:
+  - idle
+  - wash
+  - rinse
+  - spin
+  - done
+  - error

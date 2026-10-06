@@ -1,0 +1,18 @@
+sid: 8e41cafa
+path: physical.mechanical.valve_position
+aliases:
+  short: mechanical.valve_position
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Положение клапана
+  en: Valve position
+fingerprint: sha256:8e41cafa0473cebfdd4b237b64535760e280fea5bf7f8a19d95c9da22d3e15fb
+range:
+  min: 0
+  max: 100

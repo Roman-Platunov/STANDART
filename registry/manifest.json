@@ -1,10 +1,85 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "entries": [
+    {
+      "sid": "001c5827",
+      "path": "health.clinical.patient_id",
+      "fingerprint": "sha256:001c5827289cd89ea5eb7719de55b7ff9dfe87978a942178e34e8c4cca8201c6"
+    },
+    {
+      "sid": "004f8306",
+      "path": "identity.model",
+      "fingerprint": "sha256:004f83066dec3e8d02a4b8be2c8ebd26f4a67c96a574114688667e3176482f18"
+    },
+    {
+      "sid": "0062d8c5",
+      "path": "physical.environment.dew_point",
+      "fingerprint": "sha256:0062d8c52258008da5b35c78b1453c820d73193c230d12a7b754fe3151d285ad"
+    },
+    {
+      "sid": "00bb540d",
+      "path": "logical.quality",
+      "fingerprint": "sha256:00bb540d329262f34b8c9b746d86a9fb21186fac6e0d8ac8d50b326c77e6465e"
+    },
+    {
+      "sid": "015041ac",
+      "path": "physical.electrical.line_current_l3",
+      "fingerprint": "sha256:015041ac4ca7e7e0c12044cf8970758ef0789c867001b59444bee869e9d6b166"
+    },
+    {
+      "sid": "01a0a7e6",
+      "path": "vehicle.ev_battery_soh",
+      "fingerprint": "sha256:01a0a7e63248c623ea660fff511a7c5d9834d72894844ba968554aecfddb11f7"
+    },
+    {
+      "sid": "01f7089f",
+      "path": "building.hvac.occupancy",
+      "fingerprint": "sha256:01f7089f8c0a49ed2f23a54161648d0ae7cc9e01105b358650ff6018a5c10998"
+    },
     {
       "sid": "029cf91b",
       "path": "physical.electrical.current",
       "fingerprint": "sha256:029cf91baaabee1d8bc7b9acd33a42f9cc5295807d9b3c690ab6cf781071f0e0"
+    },
+    {
+      "sid": "02c49005",
+      "path": "vehicle.wheel_speed_rl",
+      "fingerprint": "sha256:02c49005ac9ee648564d3f13f0f18de83113dd02faedfaf2c54249e9a971d31f"
+    },
+    {
+      "sid": "02fc45c7",
+      "path": "building.hvac.return_air_temperature",
+      "fingerprint": "sha256:02fc45c7117a74c6a5c9192110ed0321ff810db7d98fe79fbbcf9045043c7a55"
+    },
+    {
+      "sid": "035c5068",
+      "path": "building.security.leak",
+      "fingerprint": "sha256:035c50689898f5c9f37f8a147580cadc051005cb76de4c00a93bb79c6d27bfd0"
+    },
+    {
+      "sid": "03c1e6e6",
+      "path": "industrial.process.orp",
+      "fingerprint": "sha256:03c1e6e602d75c7010a8a2818ce3a8f9b523be06d61aad6032c9ab63fe9a895b"
+    },
+    {
+      "sid": "04c49f68",
+      "path": "agriculture.soil.npk_p",
+      "fingerprint": "sha256:04c49f6845a4188566b004f624443f4768b7e2e9567cec2d6c2cdd9c28f6277b"
+    },
+    {
+      "sid": "0500b340",
+      "path": "building.hvac.mode",
+      "fingerprint": "sha256:0500b3405f06b9c6bc4d8786c13614b88c12d5e6a3520de815e41453933d95ba"
+    },
+    {
+      "sid": "05446973",
+      "path": "industrial.process.temperature",
+      "fingerprint": "sha256:0544697362c217d5898b14f682a3db2b9344a1add61d2a1bc1f778e7bc6bf617"
+    },
+    {
+      "sid": "05756ced",
+      "path": "logical.priority",
+      "fingerprint": "sha256:05756ced69900defad3a81b4e5401a179b866b9b7a9d323bf85ceb540884f14b"
     },
     {
       "sid": "069b2a4c",
@@ -12,9 +87,29 @@
       "fingerprint": "sha256:069b2a4c6275db20831f2ccbd10895b91d46f2eb067e07312f30a27962c69468"
     },
     {
+      "sid": "07a837d1",
+      "path": "vehicle.door_driver_open",
+      "fingerprint": "sha256:07a837d1b555ae8ac3f87c9ce0d93f4ffd0897b0df50482a44d70a2838cd384a"
+    },
+    {
+      "sid": "0a60c826",
+      "path": "health.clinical.diastolic_bp",
+      "fingerprint": "sha256:0a60c8264f28facc4560e97d87c23db78b2e8da6112d8bc892085adf5ea1f96f"
+    },
+    {
       "sid": "0abf6ccc",
       "path": "physical.geo.heading",
       "fingerprint": "sha256:0abf6ccc5e1b02c2713212636397c9c441635817a929d22a63ab397e51dbcc8a"
+    },
+    {
+      "sid": "0adbfb7f",
+      "path": "identity.owner",
+      "fingerprint": "sha256:0adbfb7fc3f03eb5830620f5d762bd0bff05e7246085ccc00b64e497c14907a2"
+    },
+    {
+      "sid": "0b81d274",
+      "path": "vehicle.ev_charge_power",
+      "fingerprint": "sha256:0b81d274dded76956aa255b531eac7ffba22a1562760802db314b96a91cbf813"
     },
     {
       "sid": "0d1c3212",
@@ -22,9 +117,204 @@
       "fingerprint": "sha256:0d1c321207ab6d661db5cf54a835194f57458879a35a0dea4cab5ec6d50e998f"
     },
     {
+      "sid": "0d5d0bf8",
+      "path": "building.lighting.color_hue",
+      "fingerprint": "sha256:0d5d0bf83394b6b5c39f024677dceab105a44120eb3faf75eacf751053e37d51"
+    },
+    {
+      "sid": "0daad0fb",
+      "path": "media.video_ref",
+      "fingerprint": "sha256:0daad0fb7919c6000dd192a94b35e42e93c89674a3f98eb4b407df2971a2620d"
+    },
+    {
+      "sid": "0f5a1338",
+      "path": "vehicle.maf",
+      "fingerprint": "sha256:0f5a1338fcb7066b08c1e6506bfc61e97ae467244e0ca8223bae9c0e1f565610"
+    },
+    {
+      "sid": "1017808e",
+      "path": "compute.disk_used",
+      "fingerprint": "sha256:1017808e402ac6ab283c9de2c5a49883f7780c06af5cbc7a16cab34c016019cb"
+    },
+    {
+      "sid": "10216612",
+      "path": "vehicle.steering_angle",
+      "fingerprint": "sha256:1021661249f2fcdbd40a433a33703f81cb5514feb38f4bdc0d94a3974b316f34"
+    },
+    {
+      "sid": "116ca741",
+      "path": "building.hvac.fan_speed",
+      "fingerprint": "sha256:116ca741cdcea0e8fd3921687bf703eead135b9e8fd1ab714eaabeb477c4a72c"
+    },
+    {
+      "sid": "116fa407",
+      "path": "actuation.position",
+      "fingerprint": "sha256:116fa40782a6411991b4a18a3d40144f982a32469986d5689c9be6ef52f8220a"
+    },
+    {
+      "sid": "11b51c45",
+      "path": "agriculture.soil.ph",
+      "fingerprint": "sha256:11b51c45431175c83adde87a3e37cc2f457da0e872e4b9acbf1607437f7a7e9d"
+    },
+    {
+      "sid": "120041ba",
+      "path": "physical.acoustic.noise_leq",
+      "fingerprint": "sha256:120041bafe320231d4ef662b4950328c478956cde4b0995978085e9fb8f76e15"
+    },
+    {
+      "sid": "121d1e91",
+      "path": "building.security.glass_break",
+      "fingerprint": "sha256:121d1e91ee3100156a6963cc93b03db3b7c3c1f3e063758a65b43525d8007696"
+    },
+    {
+      "sid": "1224ac9e",
+      "path": "physical.mechanical.level_percent",
+      "fingerprint": "sha256:1224ac9ea3f11fb5303049f39004e641dfde1bc946fff2eee6309a6ff2579e12"
+    },
+    {
+      "sid": "12d689c8",
+      "path": "physical.thermal.core_temperature",
+      "fingerprint": "sha256:12d689c87901da14eb49afca617b63d969f5021fc689d0e28bec1ccbcc6eba95"
+    },
+    {
+      "sid": "130d1ec0",
+      "path": "agriculture.irrigation.flow",
+      "fingerprint": "sha256:130d1ec032978a98b9088b90600bcc47b4ec7f03354d4100e1c78a85bccb13f8"
+    },
+    {
+      "sid": "133ddd83",
+      "path": "building.hvac.setpoint_heating",
+      "fingerprint": "sha256:133ddd833b88dec2b8efb80307be677950f974aa310b5a7d3ffc37104ffd4a1e"
+    },
+    {
+      "sid": "13450819",
+      "path": "smarthome.dryer.remaining_time",
+      "fingerprint": "sha256:13450819e66b40b4e6955c82a986b4a65ec6943ec8c5ed709ddf71e2ffe07cdc"
+    },
+    {
+      "sid": "138dc9d7",
+      "path": "vehicle.accelerator_position",
+      "fingerprint": "sha256:138dc9d7b1977d2f065ff81715379bbc2f948323907bccd974e2d15d28bf8615"
+    },
+    {
+      "sid": "145043b5",
+      "path": "media.firmware_uri",
+      "fingerprint": "sha256:145043b547053a1a7a11bac8fc068fc503b8973569fd2f2deaa495887a4d7fef"
+    },
+    {
+      "sid": "14f70f4f",
+      "path": "physical.geo.latitude",
+      "fingerprint": "sha256:14f70f4f9ed5641e2db2c140c841a05cf488490fec69c4dae6f7fdbfc9dd549b"
+    },
+    {
+      "sid": "15025fde",
+      "path": "physical.environment.so2",
+      "fingerprint": "sha256:15025fde72c159c1cc0ececa6ed95dca068441a19dc5ffed43745a39f5eb079e"
+    },
+    {
+      "sid": "1531ea73",
+      "path": "industrial.process.pressure",
+      "fingerprint": "sha256:1531ea7393c428f61bcd8223fb3d227e02eda43f2b3a9c0479befea5ffa59d4b"
+    },
+    {
+      "sid": "153dec57",
+      "path": "physical.electrical.capacitance",
+      "fingerprint": "sha256:153dec5760508218e70612200abed7ff0eda480386e753943c48113220d1c2b7"
+    },
+    {
+      "sid": "15b0d44f",
+      "path": "physical.environment.wind_chill",
+      "fingerprint": "sha256:15b0d44f2e7c7d1a9c8f58bf1b7fbce3534e0f165dd48e5edfe374cdfa354265"
+    },
+    {
+      "sid": "163cd59c",
+      "path": "physical.environment.wind_direction",
+      "fingerprint": "sha256:163cd59c836a84ba258869c7c21872b8cfd82b1b5ff40fb4ab249c7f6d3d7bd6"
+    },
+    {
+      "sid": "17098549",
+      "path": "actuation.dim",
+      "fingerprint": "sha256:17098549a1305f1d086959bcf411fd25c31364eb83ddd907b0ef6436971076cd"
+    },
+    {
+      "sid": "17a137aa",
+      "path": "physical.acoustic.spl",
+      "fingerprint": "sha256:17a137aa519a576e7cc12a5e599ba45d62c84f1cab4e0a4e4fa92b6c82e73ca0"
+    },
+    {
+      "sid": "185a0c35",
+      "path": "smarthome.camera.snapshot_ref",
+      "fingerprint": "sha256:185a0c35382c5314ca6c2816ac8b1c4d504dc29b0a72b91aace5c39e42730c10"
+    },
+    {
+      "sid": "18a907e4",
+      "path": "health.wearable.steps_daily",
+      "fingerprint": "sha256:18a907e48f030b61c0e4b91a4410d46d4b8cec59cc44b6c86000ea5f9c26794d"
+    },
+    {
+      "sid": "18bcf90b",
+      "path": "vehicle.odometer",
+      "fingerprint": "sha256:18bcf90b3dba7c9d937cba5e6a7a351866ad67e34feff6e3f9491826e0803229"
+    },
+    {
+      "sid": "1959b4c0",
+      "path": "vehicle.range_remaining",
+      "fingerprint": "sha256:1959b4c0edec888d223cad8cc7ba941092dc8a29190a688d7940009337e2bda9"
+    },
+    {
+      "sid": "1b46ba7f",
+      "path": "industrial.oee.availability",
+      "fingerprint": "sha256:1b46ba7fc7051ab3babad1db629b1b013beb1260aa9afb41171336b13e4f68fb"
+    },
+    {
+      "sid": "1c173250",
+      "path": "energy.storage.capacity",
+      "fingerprint": "sha256:1c1732507d2dd10da72ae0dd3cf3be5d3c5d8e42ee3bc6306871435ed41ef303"
+    },
+    {
+      "sid": "1c268957",
+      "path": "physical.motion.angular_velocity",
+      "fingerprint": "sha256:1c268957720a2a1cca23057b3a9e3d0dbf94edadc2b101dc70a14d3a48402aa1"
+    },
+    {
+      "sid": "1c2ad328",
+      "path": "logical.online",
+      "fingerprint": "sha256:1c2ad3288facbb931eafcb488c8f8a733bebf7a18b1697ce90a7a82411a7016b"
+    },
+    {
+      "sid": "1cb75d24",
+      "path": "identity.iccid",
+      "fingerprint": "sha256:1cb75d240ad757c66727f7ac9a222de8e2fc44dc24fc8caffcce308171552c8f"
+    },
+    {
+      "sid": "1cf64d1c",
+      "path": "physical.electrical.pv_power",
+      "fingerprint": "sha256:1cf64d1c1ff192f458c3795e286752ad06c9158fdd2c50c37a116f681f8ff2b1"
+    },
+    {
+      "sid": "1d02645d",
+      "path": "industrial.conveyor.count",
+      "fingerprint": "sha256:1d02645debd73df8afe1a53ad361f48db6459d2d32044eee80adb13c3a6dfb7c"
+    },
+    {
+      "sid": "1d7df281",
+      "path": "physical.environment.leaf_wetness",
+      "fingerprint": "sha256:1d7df281f3f0957747a3a446fddca519ba09a023ca09769b7009fd65b5613ca8"
+    },
+    {
       "sid": "1d94ea87",
       "path": "physical.health.spo2",
       "fingerprint": "sha256:1d94ea8784369f1fcc5d4f4a7d3bd173f145e0fd544db5962a7434cc07772b21"
+    },
+    {
+      "sid": "1dcfa088",
+      "path": "industrial.machine",
+      "fingerprint": "sha256:1dcfa08820fb1cc0aac8ff1cb4312e92f5cf0553de1395642e20a17ead95e083"
+    },
+    {
+      "sid": "1e914bf7",
+      "path": "energy.grid.power_export",
+      "fingerprint": "sha256:1e914bf7bb4695966257696460164d170477d9dbcfae9d85365de7a0c0a1ae52"
     },
     {
       "sid": "1f09fed4",
@@ -37,9 +327,244 @@
       "fingerprint": "sha256:1f1db2383382fe3f24c4ba8c1b9cf32bec2d360d2ae0cdf70ba528132d6871c2"
     },
     {
+      "sid": "1f9dbba5",
+      "path": "physical.environment.aqi",
+      "fingerprint": "sha256:1f9dbba5b00794ca5ce416f50fb38c8529f356bd331917719570f652c4227053"
+    },
+    {
+      "sid": "1fca960e",
+      "path": "physical.environment.snowfall",
+      "fingerprint": "sha256:1fca960e4d84298df92beacbd89a8ae23466cd45b27575c0a20997dde877e62c"
+    },
+    {
+      "sid": "2001895d",
+      "path": "actuation.torque_limit",
+      "fingerprint": "sha256:2001895d67babb0f9bc034dc06c9058588a03352af4ad039541f9ba38d25fef0"
+    },
+    {
+      "sid": "205aa22a",
+      "path": "vehicle.fuel_rate",
+      "fingerprint": "sha256:205aa22a8e100158c65a8886cecf735f500dcb51348fa10b6514acc75b9a96dc"
+    },
+    {
+      "sid": "2182b13b",
+      "path": "physical.electrical.pv_energy",
+      "fingerprint": "sha256:2182b13be104cf1657885bc8f35e22ad8b184866f78e98a613bef8a242818823"
+    },
+    {
+      "sid": "218d70a8",
+      "path": "vehicle.tire_pressure_rr",
+      "fingerprint": "sha256:218d70a802590b0237dd124e426efad553c8a2bf5fc9695433a37056d18aa7a7"
+    },
+    {
+      "sid": "21cf245b",
+      "path": "smarthome.camera.people_count",
+      "fingerprint": "sha256:21cf245bfa5b7315c40dd5bcbc4da9d35d24da602d6eef21f75a3e52ae1f7bc5"
+    },
+    {
+      "sid": "221656fe",
+      "path": "agriculture.livestock.activity",
+      "fingerprint": "sha256:221656feba78b14ab8e88bc8dc1c5a50e5e760ab1e6716078dc52314673b3cf8"
+    },
+    {
+      "sid": "2285704d",
+      "path": "physical.environment.rainfall_rate",
+      "fingerprint": "sha256:2285704d090d1975f567b6c95ff1557973da0adfcd5df926fdbe92518072e1a7"
+    },
+    {
+      "sid": "22f23621",
+      "path": "building.lighting.brightness",
+      "fingerprint": "sha256:22f236210dc19a1e87e7aa725ab731016686a65d88062ce8f2902e95058ec0c3"
+    },
+    {
+      "sid": "234d5441",
+      "path": "physical.electrical.resistance",
+      "fingerprint": "sha256:234d544165a37130d8b56e567bda2870281156edd18491239f958b4aa6f97a19"
+    },
+    {
+      "sid": "234e50ec",
+      "path": "network.jitter",
+      "fingerprint": "sha256:234e50ec5a6b599d442e0f2ca94676947a96e858222631566adf7018bcfc0141"
+    },
+    {
+      "sid": "242c9873",
+      "path": "identity.hardware_version",
+      "fingerprint": "sha256:242c987381880801d47eedce875326d775a50cc98895d6ac8c8918323a48ebc3"
+    },
+    {
+      "sid": "2465a552",
+      "path": "physical.optical.luminous_flux",
+      "fingerprint": "sha256:2465a552ba02a765a7e6a4baf9fb8ac0446a2d324e2b49bdd8f1ff43260ca943"
+    },
+    {
+      "sid": "246f8eb5",
+      "path": "physical.optical.color_y",
+      "fingerprint": "sha256:246f8eb5c0996dea54c3c932ca4ecfa15be7ec8a1c162a5de9beb089e5f7f0c3"
+    },
+    {
       "sid": "24d3556f",
       "path": "physical.environment.temperature",
       "fingerprint": "sha256:24d3556f189c9bbda772f6261516de963e623c12b6188e63d33ab3a8602e0b07"
+    },
+    {
+      "sid": "25eb587d",
+      "path": "network.channel",
+      "fingerprint": "sha256:25eb587d3d8fb08c1fd113947d4b6edfbac556d8c2e4cc5469a615f818ad46e3"
+    },
+    {
+      "sid": "25ffaf14",
+      "path": "smarthome.vacuum.area_cleaned",
+      "fingerprint": "sha256:25ffaf14c5d480534dab32d6e9d2549122ac02a1cc95583fc529f478caa555cf"
+    },
+    {
+      "sid": "263383d0",
+      "path": "health.wearable.sleep_stage",
+      "fingerprint": "sha256:263383d0b8632283b9e674589d6f109aac196e602d076b754fa59e918fb9e0bc"
+    },
+    {
+      "sid": "289e5848",
+      "path": "physical.environment.pm1",
+      "fingerprint": "sha256:289e5848829b6e8a230e3934fafaaeaa5fc536ec6c0be2300f83f183b4c8a1e8"
+    },
+    {
+      "sid": "28e2dfb9",
+      "path": "physical.electrical.line_current_l1",
+      "fingerprint": "sha256:28e2dfb9f35a72a517fdceedfce7885bc40f3f2558f8bddfffeafed7b05d6428"
+    },
+    {
+      "sid": "292745db",
+      "path": "vehicle.lock",
+      "fingerprint": "sha256:292745dbf68062350bf1cfb284cf9409073d1ce9bcc6dd555a5f6f1b1d78e0fa"
+    },
+    {
+      "sid": "2994accb",
+      "path": "industrial.safety.e_stop",
+      "fingerprint": "sha256:2994accbc7c5b702d83d3a4698fea2911441b7a009560297f2f7bca73c67bbc2"
+    },
+    {
+      "sid": "29c29158",
+      "path": "industrial.process.concentration",
+      "fingerprint": "sha256:29c29158b3a1a787b742a04fce9fe141aa87c36e3607ddf549cb6dc685816acc"
+    },
+    {
+      "sid": "29f0accf",
+      "path": "physical.mechanical.stress",
+      "fingerprint": "sha256:29f0accf41666eb037d64e965e99795b251e884fef35b3c2f55b9f4d96cd187d"
+    },
+    {
+      "sid": "2a586fdb",
+      "path": "vehicle.speed",
+      "fingerprint": "sha256:2a586fdbb2c6e8daa704e7e1148f15dacf172be5584ee23a51579ffbfd4d74c7"
+    },
+    {
+      "sid": "2aa2ab12",
+      "path": "health.clinical.heart_rate",
+      "fingerprint": "sha256:2aa2ab126c7236954366113411a31781a57e218a256a6ffc4e3f916bb4e2af1d"
+    },
+    {
+      "sid": "2bcbb5c4",
+      "path": "energy.grid.power_import",
+      "fingerprint": "sha256:2bcbb5c4b571dbaa82b4b9351aea0566e5c16699d5d7bfde51b4c91d1fa81b83"
+    },
+    {
+      "sid": "2d17469c",
+      "path": "vehicle.abs_active",
+      "fingerprint": "sha256:2d17469c929603b0423c5316f3d14f094275edc5496ebb4f499105ea491fdc28"
+    },
+    {
+      "sid": "2e9a8eef",
+      "path": "smarthome.curtain.position",
+      "fingerprint": "sha256:2e9a8eefcab0d0a3c125fd85fad7b956b8372adcdcced97ec14542ed41ecfb3e"
+    },
+    {
+      "sid": "2f819885",
+      "path": "physical.mechanical.density",
+      "fingerprint": "sha256:2f819885bc73ff8c496efd82185d36410c64bbce4ce526902f2654aa406fd6ff"
+    },
+    {
+      "sid": "30026b7e",
+      "path": "building.hvac.setpoint_cooling",
+      "fingerprint": "sha256:30026b7e125edc3b67bf898ee54310f8002c2cd042826d8a4485e3d647d8bb05"
+    },
+    {
+      "sid": "3015e00e",
+      "path": "vehicle.battery_voltage",
+      "fingerprint": "sha256:3015e00e08fcfbbcd7089a29a85a8f1fb8295c3bb9a310c6c1e1591dc97d3c31"
+    },
+    {
+      "sid": "30247b76",
+      "path": "physical.acoustic.sound_pressure",
+      "fingerprint": "sha256:30247b76a8a48d5426070122e3cddb0e2016e469302dcd5abc24622dc6cf170d"
+    },
+    {
+      "sid": "31af42c5",
+      "path": "vehicle.wheel_speed_fl",
+      "fingerprint": "sha256:31af42c52d582676379ea33fb63af0b4082c8471ffbe534902b1ba0f75e9e5ee"
+    },
+    {
+      "sid": "31b5c1ea",
+      "path": "vehicle.engine",
+      "fingerprint": "sha256:31b5c1ea6a0c1a56e55e24a94158d8b9fec56401ec19ad79f58702635bacac74"
+    },
+    {
+      "sid": "31dd904d",
+      "path": "vehicle.hood_open",
+      "fingerprint": "sha256:31dd904d4b4b9919f12eba691d05cdb3fc94956338b41b41db33986ffcb7d961"
+    },
+    {
+      "sid": "3345ecb8",
+      "path": "vehicle.dtc_count",
+      "fingerprint": "sha256:3345ecb84892964efe967c3139f922d574e8c896638210e5c9a46805e17ddf2f"
+    },
+    {
+      "sid": "3360c26a",
+      "path": "vehicle.fuel_economy",
+      "fingerprint": "sha256:3360c26a83fa1510694da6b758b736b93ed1b87f9833e8593e8750ff772ea47f"
+    },
+    {
+      "sid": "345dbf25",
+      "path": "logical.severity",
+      "fingerprint": "sha256:345dbf25fdac1bde224f2d7ce8737e83bd7ef0d9ecd8cb8fc1652e2e0c5330e9"
+    },
+    {
+      "sid": "34b311c4",
+      "path": "agriculture.greenhouse.par",
+      "fingerprint": "sha256:34b311c4e1c42a97d66b2ea6a293a5362b51118002ac006005cd4611791eccc5"
+    },
+    {
+      "sid": "34e40a5c",
+      "path": "physical.mechanical.rpm",
+      "fingerprint": "sha256:34e40a5ce206ad3228efc1540c9f322262c9cfd7f9aaa8213d0323ae88ee77b8"
+    },
+    {
+      "sid": "352bf861",
+      "path": "physical.health.sleep_duration",
+      "fingerprint": "sha256:352bf8614e5e067b9555b23ea8d808335da3af946dd80b93e2d5035e73156c17"
+    },
+    {
+      "sid": "3602a95c",
+      "path": "physical.health.bmi",
+      "fingerprint": "sha256:3602a95cf0171d90d1fb6a97f5d8c5301f2c732c4e7f21509f7ced48be2245dd"
+    },
+    {
+      "sid": "36e31b90",
+      "path": "physical.environment.h2s",
+      "fingerprint": "sha256:36e31b90beafd85d13316b0e62bb20efbf936bfd41e3c1b2123eefa2e1452ae7"
+    },
+    {
+      "sid": "36e7cfc8",
+      "path": "physical.geo.course",
+      "fingerprint": "sha256:36e7cfc89b0df84b02500bf6170ee0ada68a437f51edcf6369a8357ce229690f"
+    },
+    {
+      "sid": "37e01fc0",
+      "path": "industrial.safety.light_curtain",
+      "fingerprint": "sha256:37e01fc096bd1fc3781b28e646d25ec596ead418209205cbbe5f2608712a4ad0"
+    },
+    {
+      "sid": "38991e91",
+      "path": "vehicle.door_passenger_open",
+      "fingerprint": "sha256:38991e91b3f526e53889c7967968b3f87506063bf24a104a6d6e9c63252f6071"
     },
     {
       "sid": "392bf836",
@@ -47,9 +572,109 @@
       "fingerprint": "sha256:392bf836d277e0d3de622bff67fb892b6bbc7b883b597ec502cefff20c234fad"
     },
     {
+      "sid": "3bd0a38c",
+      "path": "vehicle.wheel_speed_rr",
+      "fingerprint": "sha256:3bd0a38cefcffda2b5f795b0cb47e1df9ab4606e593f74dbf428fbf63f1a53eb"
+    },
+    {
+      "sid": "3c1e4cc3",
+      "path": "physical.geo.geopoint3d",
+      "fingerprint": "sha256:3c1e4cc336e18b439968b48fbb6dadd0c07929f26a327ee54a2117faefc45d46"
+    },
+    {
+      "sid": "3c26c08a",
+      "path": "physical.radiation.dose",
+      "fingerprint": "sha256:3c26c08ad2dc5adc57232b2237b1b68c5e08185c3a67089842561924a6c3e0b8"
+    },
+    {
+      "sid": "3cc91aad",
+      "path": "smarthome.vacuum.battery",
+      "fingerprint": "sha256:3cc91aadaecdcfd64c68b01967041716914470f9dd4a5f341eb524d41a4ddeaa"
+    },
+    {
+      "sid": "3d33235f",
+      "path": "industrial.pump.efficiency",
+      "fingerprint": "sha256:3d33235f2c2f757369027179aba4e2b39f9e6a83325d3be926a8a7c85de8d820"
+    },
+    {
       "sid": "3d53bc7d",
       "path": "identity.device",
       "fingerprint": "sha256:3d53bc7da637a0cf8389d4ee5fc7c47b8c4e0455ab6068e828d9489f8fef20df"
+    },
+    {
+      "sid": "3d58e091",
+      "path": "physical.electrical.phase_angle",
+      "fingerprint": "sha256:3d58e091bd30db3abe01d168030bc96d625113454255fafa2dc56ca07b7bcd54"
+    },
+    {
+      "sid": "3d9f2f79",
+      "path": "industrial.robot.joint_angle_6",
+      "fingerprint": "sha256:3d9f2f794733a9d20ee6cee016dea10b9645c368aed1dd54cf29cb75d210dd5e"
+    },
+    {
+      "sid": "3e196515",
+      "path": "physical.motion.angular_acceleration",
+      "fingerprint": "sha256:3e196515cff2b145f9ca2c3b5e20eab6fc1de371b14c3ed1f030a720ccc51507"
+    },
+    {
+      "sid": "3e759f5e",
+      "path": "industrial.workorder.id",
+      "fingerprint": "sha256:3e759f5e7a9ea9b5515746a5fad607efefe63db73c7bc8a0cabd3785a7aa48f6"
+    },
+    {
+      "sid": "3ea9ffe6",
+      "path": "smarthome.lock",
+      "fingerprint": "sha256:3ea9ffe632065e9c116d14766c9aa198850e3ca83a8551fa17012fb9da09cfe1"
+    },
+    {
+      "sid": "3ec8656f",
+      "path": "building.hvac.occupancy_count",
+      "fingerprint": "sha256:3ec8656f361b764ac7e503c68aa1eaadcd4b9545b80cbb511e700ac87d7ad232"
+    },
+    {
+      "sid": "3f2a2a6f",
+      "path": "agriculture.crop.leaf_area_index",
+      "fingerprint": "sha256:3f2a2a6f3091f9e84f5a37aa06ac9a90042e679be735fd75a3b2c73986e8a674"
+    },
+    {
+      "sid": "3fcaa43a",
+      "path": "network.bytes_sent",
+      "fingerprint": "sha256:3fcaa43abcf641a6c581cc265de3fe8e8bf08709f13041d724947be6a3736427"
+    },
+    {
+      "sid": "407850d1",
+      "path": "network.latency",
+      "fingerprint": "sha256:407850d191b910969d76a6f8d58c9a389bae427e8d9aa24571e25fe7da44e953"
+    },
+    {
+      "sid": "40de82b2",
+      "path": "physical.optical.infrared",
+      "fingerprint": "sha256:40de82b2934d5c4b980cbd85163fba5198e1bcd61c911e3b0c178f15a781a449"
+    },
+    {
+      "sid": "40ea3e32",
+      "path": "vehicle.ignition_on",
+      "fingerprint": "sha256:40ea3e32ae2f20b43121a3fed8c0f4e1db7646ed7e00b12188db7e0986006688"
+    },
+    {
+      "sid": "4127225a",
+      "path": "building.security.alarm_state",
+      "fingerprint": "sha256:4127225a88b9a260ac7df3d75290342b03c3e3c7be19361cbc73c8cbae6f2c86"
+    },
+    {
+      "sid": "415e0e10",
+      "path": "physical.mechanical.differential_pressure",
+      "fingerprint": "sha256:415e0e10b00727dd4f10b9cf85d9ec8e8338ae3ee74d1c9e4f962fe8aa8126a3"
+    },
+    {
+      "sid": "416e57b3",
+      "path": "temporal.sample_interval",
+      "fingerprint": "sha256:416e57b38ccfb4af97fbbe2cf0ecb946c3df26066fa6d62bf38e39ee1203520e"
+    },
+    {
+      "sid": "41ec74af",
+      "path": "physical.environment.wind_gust",
+      "fingerprint": "sha256:41ec74af0224160b23b978da54cd902a31ad618afbdcee3e35cdcaca00c4a4b0"
     },
     {
       "sid": "4214c166",
@@ -57,9 +682,174 @@
       "fingerprint": "sha256:4214c1662e92cd0aa9a42860d5309baf8e9e0741cc574514c4a083c72278580e"
     },
     {
+      "sid": "446acc4f",
+      "path": "physical.electrical.thd",
+      "fingerprint": "sha256:446acc4ff12c64add57d3ee31ff9b43b4d5d7c9160e2aca9a7dce143a69c4df5"
+    },
+    {
+      "sid": "45340aed",
+      "path": "smarthome.lock.state",
+      "fingerprint": "sha256:45340aed7f434d3e718dd83ada35f504c82c133d0da550cf9c1a912b88f1ce75"
+    },
+    {
+      "sid": "458c7be6",
+      "path": "physical.health.respiratory_rate",
+      "fingerprint": "sha256:458c7be6c66512b08a3b18acccf90a1fbcc18e0584472e04a451ca805efe32e9"
+    },
+    {
+      "sid": "461cd684",
+      "path": "industrial.robot.tcp_z",
+      "fingerprint": "sha256:461cd684f7f213eb4bae5e2f686ae7cbe07c0ea88e38aa42a827d947ce78b4dd"
+    },
+    {
+      "sid": "46983d60",
+      "path": "physical.thermal.surface_temperature",
+      "fingerprint": "sha256:46983d60df1ec419d9a6d4e45fa6afa391ca7b2d8de87ae8a9fdfab2d3868b3d"
+    },
+    {
+      "sid": "4881d9b0",
+      "path": "agriculture.soil.ec",
+      "fingerprint": "sha256:4881d9b0acae7251dbc6ecdecfa41439639ff4dc5abfad2052aeb2eb9b5d1b3d"
+    },
+    {
+      "sid": "4884c1db",
+      "path": "energy.meter.id",
+      "fingerprint": "sha256:4884c1dbe24185098bccf66135a5d1990c17522a7eec4ad47e5cbe4f08c95cb8"
+    },
+    {
+      "sid": "489efce6",
+      "path": "physical.electrical.line_voltage_l1",
+      "fingerprint": "sha256:489efce6bddaab029f80bfca39725d8df99ad5a2e2bbd9bb373ddaeb7cb065bb"
+    },
+    {
+      "sid": "4a2419a1",
+      "path": "physical.geo.pdop",
+      "fingerprint": "sha256:4a2419a17bbfa521f0874037a19f2523ea7f62933a4ad4ad3331de035aaa95f4"
+    },
+    {
+      "sid": "4a3e00ef",
+      "path": "identity.sku",
+      "fingerprint": "sha256:4a3e00ef9d6b84e4b206413ebb06b5f2deb6c9809a9c4643032a9cb1c9e0fb8b"
+    },
+    {
+      "sid": "4b220266",
+      "path": "physical.motion.cadence",
+      "fingerprint": "sha256:4b22026652cec1552bfb73edccde1fe18ebe7617491a233b769d1ebbcbd229e2"
+    },
+    {
+      "sid": "4bf7907d",
+      "path": "physical.motion.quaternion_z",
+      "fingerprint": "sha256:4bf7907d4e0f1831bcc18118aac0e18829c894950ee00f193102ea3c687d3dfe"
+    },
+    {
+      "sid": "4ccca736",
+      "path": "physical.electrical.battery_soh",
+      "fingerprint": "sha256:4ccca736521abcba8ddcaedab12295d1eaf86a77671530bf2b6f2342126b6628"
+    },
+    {
+      "sid": "4d573230",
+      "path": "smarthome.refrigerator.temperature",
+      "fingerprint": "sha256:4d5732307728031a0f780e94d1b08a5c7fe7f6edec9f88366037ef073c85b729"
+    },
+    {
+      "sid": "4dcbd136",
+      "path": "energy.wind.rotor_rpm",
+      "fingerprint": "sha256:4dcbd136d89901b7faa253168a6201a24e3c7e4c970aba0d9348e141994b39e1"
+    },
+    {
+      "sid": "4e92ef4a",
+      "path": "network.bandwidth",
+      "fingerprint": "sha256:4e92ef4abfc09e263ff623f765cf4fc1e292c14f2e62b9e03729e675be998c4b"
+    },
+    {
+      "sid": "4fcef150",
+      "path": "energy.solar.dc_power",
+      "fingerprint": "sha256:4fcef15024f5655c7b5f930dfe5f6200bf9767b0852d399a52989b62912162c9"
+    },
+    {
+      "sid": "4fd9fd46",
+      "path": "smarthome.appliance.power",
+      "fingerprint": "sha256:4fd9fd46293e1d77c0cf1015c1b043aa912e47bce72739f47891f79dc7cfc7bb"
+    },
+    {
+      "sid": "50fe61b6",
+      "path": "industrial.process.conductivity",
+      "fingerprint": "sha256:50fe61b69948a77de42946e3430d9f72ab5f534f11736ed3aceff1f758d1b7da"
+    },
+    {
+      "sid": "51c0b08a",
+      "path": "industrial.motor.state",
+      "fingerprint": "sha256:51c0b08a9e320427c3da90cda6b6c50c987299eeae6e57fc16fb846aaf795240"
+    },
+    {
+      "sid": "51de0172",
+      "path": "energy.solar.panel_temperature",
+      "fingerprint": "sha256:51de0172c6e288bf73a7910dd3c13a66c0f27550e33d29ff52d9556271935cc4"
+    },
+    {
+      "sid": "535ade10",
+      "path": "health.clinical.pulse_pressure",
+      "fingerprint": "sha256:535ade10de3b235f73935d9016ab39d25e14abe89953c60abd6e44f5548a6f91"
+    },
+    {
+      "sid": "53b7873d",
+      "path": "vehicle.ambient_temp",
+      "fingerprint": "sha256:53b7873dc9df3b37395ae021f3802cfdec27125581a0bc310d36a384da0f8dd7"
+    },
+    {
+      "sid": "564c1c76",
+      "path": "physical.radiation.counts",
+      "fingerprint": "sha256:564c1c7618f4f182e9e70f28b0f2a3822a7925ad9ce48018f2426382f0d4e022"
+    },
+    {
+      "sid": "5681033e",
+      "path": "industrial.motor.current",
+      "fingerprint": "sha256:5681033e2110c85e655eb9d782fe32b6a46d7123801317d8416aa7c71f23bf34"
+    },
+    {
+      "sid": "579eef55",
+      "path": "physical.radiation.dose_rate",
+      "fingerprint": "sha256:579eef550b8216d9568b1dd7bb91786dfd8c9494e4461d5fc63c8df56bf43a46"
+    },
+    {
+      "sid": "57c7f71c",
+      "path": "agriculture.soil.npk_n",
+      "fingerprint": "sha256:57c7f71cc82a126e5173c0e39a2914f5c7bcde45104e5f21303a3fb7dfa355a4"
+    },
+    {
+      "sid": "58291432",
+      "path": "energy.grid.energy_import",
+      "fingerprint": "sha256:58291432fdac75992434e5771b076f9292137e82728e4808ab09bbd522833e48"
+    },
+    {
+      "sid": "58386b64",
+      "path": "physical.environment.uv_index",
+      "fingerprint": "sha256:58386b648af4d253aaab542ca6f0e2178d85c4154fe8d733e6a940032adcab12"
+    },
+    {
+      "sid": "584ef670",
+      "path": "industrial.robot.mode",
+      "fingerprint": "sha256:584ef6706036f27ca5b05da77f25dd1104b908f15af7f6926abd878ecef75d05"
+    },
+    {
+      "sid": "58c5c56d",
+      "path": "vehicle.fuel_level",
+      "fingerprint": "sha256:58c5c56d373bc982d755dcd21031417add1d280c8535eed1668ef0ab678df33f"
+    },
+    {
       "sid": "59be49ea",
       "path": "physical.motion.velocity",
       "fingerprint": "sha256:59be49ea71339153700e970b26b62c1b17f55bd027ca9b830da7a6cf6e9cc42f"
+    },
+    {
+      "sid": "5a186000",
+      "path": "network.bytes_recv",
+      "fingerprint": "sha256:5a1860008a1284fb58b0014bb48e99912a1319b12043c47966fdf246c11646f4"
+    },
+    {
+      "sid": "5a5d0c67",
+      "path": "physical.environment.pm10",
+      "fingerprint": "sha256:5a5d0c67362a965451b998755022dbef91ecd6533d6dccdb6a13d1a0770e1239"
     },
     {
       "sid": "5ab774ed",
@@ -67,14 +857,149 @@
       "fingerprint": "sha256:5ab774ed1d798411de2477c4fa23212914fcd8ef8b1266f3c5f69a48ff447902"
     },
     {
+      "sid": "5af98d64",
+      "path": "logical.enabled",
+      "fingerprint": "sha256:5af98d646dfd6bde03d52c39bb81606052eb6d6c0dc1e117024f9e232eec0f58"
+    },
+    {
+      "sid": "5bef555c",
+      "path": "industrial.conveyor.speed",
+      "fingerprint": "sha256:5bef555c74bd0422a9dd8806ea4107de482f3cacef4fbea2afaf1f513e7a5616"
+    },
+    {
+      "sid": "5c10e643",
+      "path": "physical.environment.o3",
+      "fingerprint": "sha256:5c10e643419fe1a75caeae9e02868d630c03a24010a2c0dc9e2be6cacf9be944"
+    },
+    {
+      "sid": "5c40dfc2",
+      "path": "physical.optical.color_temperature",
+      "fingerprint": "sha256:5c40dfc2f736e9f234e02a6a87a620e7f40cc9da80d247377fd8141c6cc93cbd"
+    },
+    {
+      "sid": "5c72556c",
+      "path": "health.wearable.sleep_score",
+      "fingerprint": "sha256:5c72556c1fd7a1f0b5cbbd3440d2db4a2511bfe59d4028098d999e4fa69c7a3c"
+    },
+    {
+      "sid": "5cf1081b",
+      "path": "network.ble_address",
+      "fingerprint": "sha256:5cf1081bdbb80fc16a523e16d23801b99c892d0093f92418f5814744543bfd47"
+    },
+    {
+      "sid": "5cfb72c5",
+      "path": "physical.environment.water_level",
+      "fingerprint": "sha256:5cfb72c5784a0b2bbcef579e481567fe82d40a5521127bdc93af2ade3d97f3ee"
+    },
+    {
+      "sid": "5d5f621a",
+      "path": "physical.motion.quaternion_x",
+      "fingerprint": "sha256:5d5f621a6fcc64ef238e71d52a07dd55644708d8ae9ea41263ab781c228ee413"
+    },
+    {
+      "sid": "5e7cc369",
+      "path": "physical.electrical.discharge_energy",
+      "fingerprint": "sha256:5e7cc3695357768fc9cc333e9988bc4c7d5e9e0eb95f2d80c4e4f90993f7970b"
+    },
+    {
+      "sid": "5ebfc380",
+      "path": "physical.mechanical.vacuum",
+      "fingerprint": "sha256:5ebfc38078566b226ae12408e51a27f30d466ece892bcd8c502388cc71a9a727"
+    },
+    {
+      "sid": "60341787",
+      "path": "physical.mechanical.displacement",
+      "fingerprint": "sha256:603417876a9564919efedeb5b72507115118abf7321704c6edb4bbbc1140b75c"
+    },
+    {
+      "sid": "603f77cc",
+      "path": "health.clinical.spo2",
+      "fingerprint": "sha256:603f77cc517fff2e0f6e208991477ba9386dffd7fc018fcaad21b5e5e721ff88"
+    },
+    {
+      "sid": "60b8c8eb",
+      "path": "energy.solar.ac_power",
+      "fingerprint": "sha256:60b8c8eb52a03a52ca3523caabf614dfbdeb82e2109daf8199438400bceba645"
+    },
+    {
+      "sid": "61c8dcc2",
+      "path": "building.hvac.setpoint_humidity",
+      "fingerprint": "sha256:61c8dcc249f748421b4001130032cce9dda819f27793a10317ec8977f649dbdf"
+    },
+    {
+      "sid": "63364e6c",
+      "path": "building.security.door_open",
+      "fingerprint": "sha256:63364e6c48ad5e670dcaf7f73b4a4154afd38f40a83c9c3d8b52e0b9e392a2dd"
+    },
+    {
+      "sid": "64bddab5",
+      "path": "industrial.robot.tcp_y",
+      "fingerprint": "sha256:64bddab51868b23cfdf006ea1c84d229834f962e327f79b5e7e5c718a3761996"
+    },
+    {
+      "sid": "6502ad70",
+      "path": "physical.environment.soil_moisture",
+      "fingerprint": "sha256:6502ad702fb455f4200ecbffe7d9e98ad5516c2d76c60827fa4dc445a151f9fa"
+    },
+    {
       "sid": "653381be",
       "path": "logical.level",
       "fingerprint": "sha256:653381beaefc1f3f67c41f98a859261be291e0696a50fb79dc2b0332d865f8a8"
     },
     {
+      "sid": "66a6b958",
+      "path": "vehicle.cabin_temp",
+      "fingerprint": "sha256:66a6b958f2c3f3442aaa3d003da5a0af20d9c056b47df4b9632db2c7d8b269df"
+    },
+    {
+      "sid": "66ed0269",
+      "path": "logical.warning",
+      "fingerprint": "sha256:66ed026997b3bbeac47d4a4f83c6e297523e0497b8c62a11bf779c21493dba04"
+    },
+    {
       "sid": "67b72924",
       "path": "physical.mechanical.flow",
       "fingerprint": "sha256:67b72924e7db7a4407062135341550b670d7f9db9927e08acd95c1e367ab53e9"
+    },
+    {
+      "sid": "69c1677e",
+      "path": "media.content_type",
+      "fingerprint": "sha256:69c1677e7267744dd6b5f33a7a6d2f84c8dd8503cd8eee3ebf828990b0c022ac"
+    },
+    {
+      "sid": "6bdd779f",
+      "path": "temporal.deadline",
+      "fingerprint": "sha256:6bdd779fcda20a95aa513f375273a80256196d59cf48e912c41853fd6ddc4ad5"
+    },
+    {
+      "sid": "6c0f2bf8",
+      "path": "physical.environment.conductivity",
+      "fingerprint": "sha256:6c0f2bf8880164d882c6ed72bf4ae9304224fb7a38c70c0532a58a2f5bcc3270"
+    },
+    {
+      "sid": "6c49e146",
+      "path": "industrial.robot.joint_angle_5",
+      "fingerprint": "sha256:6c49e146997cd1f9993f51c674d9e8e86964bc54e495a7ff6fd8de3beb1667d4"
+    },
+    {
+      "sid": "6d111c46",
+      "path": "health.clinical.cholesterol_total",
+      "fingerprint": "sha256:6d111c46309cd9240cf48aa564c7415c14ca38a25526b7ca5c75b6dd3e2d1d39"
+    },
+    {
+      "sid": "6d138f80",
+      "path": "physical.geo.fix_quality",
+      "fingerprint": "sha256:6d138f80447b49a5a835e4f09710a4b14f3a3b364ce06bd8e82bc581d1392cdb"
+    },
+    {
+      "sid": "6e060ec1",
+      "path": "physical.electrical.battery_cycles",
+      "fingerprint": "sha256:6e060ec18b1a9e0ccadbaa94258baea1f8945f2da5f808e642c2bba9e7f43f46"
+    },
+    {
+      "sid": "6e4c8a62",
+      "path": "physical.electrical.battery_voltage",
+      "fingerprint": "sha256:6e4c8a62433fcc9892f7b200f193fe4c0cb149160fe36bddc83ec2a4c40c0971"
     },
     {
       "sid": "6f419740",
@@ -87,9 +1012,124 @@
       "fingerprint": "sha256:705c5b61c9e9324bad2e1b4bc87468d78c27c06e1064bd581442b1b8a88214eb"
     },
     {
+      "sid": "71a8e2eb",
+      "path": "physical.health.hrv_rmssd",
+      "fingerprint": "sha256:71a8e2ebd25d39d60b9604883e9781cef7c37624bcb74398c2e9396d227b2907"
+    },
+    {
+      "sid": "71c7ba57",
+      "path": "physical.motion.orientation_roll",
+      "fingerprint": "sha256:71c7ba578a16d9826abb2d9ab11e33f6770cbbc2da8f2ae017c2d8be63c11bcd"
+    },
+    {
+      "sid": "72064401",
+      "path": "physical.electrical.reactive_power",
+      "fingerprint": "sha256:7206440188e519c38cd91371610d82963cfa144a8955b9460639115d1f0a25af"
+    },
+    {
+      "sid": "72d37d92",
+      "path": "physical.optical.color_x",
+      "fingerprint": "sha256:72d37d9265f2f2f33345659778d14df184ae7f8ea2c3e7f8f6372de3b0f89d44"
+    },
+    {
+      "sid": "72f1dbd8",
+      "path": "identity.manufacturer",
+      "fingerprint": "sha256:72f1dbd8a99318b87310dbbfd8c03110e8c8162656c37c51803c8d3091b83095"
+    },
+    {
+      "sid": "7306fe2d",
+      "path": "agriculture.livestock.weight",
+      "fingerprint": "sha256:7306fe2dcccb5fd813a7b62609741d230dce24ff9888c83d0dc36b264f1ebfbd"
+    },
+    {
+      "sid": "73cb5f97",
+      "path": "physical.environment.wind_speed",
+      "fingerprint": "sha256:73cb5f977d5fd2128e0bf9327e8c7ccd384977b833f51271d32d7041a8d138d3"
+    },
+    {
       "sid": "749128cc",
       "path": "physical.electrical.frequency",
       "fingerprint": "sha256:749128cce644cb8ca4b4158dcc808eff26f8bbe2935ce0ccfb6edc20d56b5cfa"
+    },
+    {
+      "sid": "74aa4fe0",
+      "path": "industrial.process.ph",
+      "fingerprint": "sha256:74aa4fe08cb44031836a6f6cb1a249ef9bcadd327e531d87cf92cdf44a29332b"
+    },
+    {
+      "sid": "74ee4abb",
+      "path": "vehicle.trip_distance",
+      "fingerprint": "sha256:74ee4abbb776c2372492e93ac981953eca71206fc478815dfef26a732683b305"
+    },
+    {
+      "sid": "75426d58",
+      "path": "physical.health.blood_pressure_systolic",
+      "fingerprint": "sha256:75426d584d897bedf8cd885ce63b2b5d5800c382121726f4427dd511b3d30e04"
+    },
+    {
+      "sid": "75eeae9a",
+      "path": "physical.environment.formaldehyde",
+      "fingerprint": "sha256:75eeae9ab0a45062be7c76bdaf560da7bc76b36e372f398382dcd0717c0c83cd"
+    },
+    {
+      "sid": "78053cd8",
+      "path": "energy.storage.power",
+      "fingerprint": "sha256:78053cd85e549d6eef3906e175a63964ba6895e7643372e3079fe3ed77a40452"
+    },
+    {
+      "sid": "78284872",
+      "path": "temporal.uptime_ms",
+      "fingerprint": "sha256:782848723cd39a826125241c612a65901b5ce38d6b62beaacfb15b135342acff"
+    },
+    {
+      "sid": "7897341a",
+      "path": "industrial.motor.voltage",
+      "fingerprint": "sha256:7897341a234c556d3984b6f842e31e8eb913ebfae98d1b62e014349218b5455f"
+    },
+    {
+      "sid": "7943d7b2",
+      "path": "energy.evse.session_power",
+      "fingerprint": "sha256:7943d7b2c8d49a8462e8623850df0bf39524ae9b39db7ec64b0926a984cfd704"
+    },
+    {
+      "sid": "7a5c6128",
+      "path": "smarthome.doorbell.pressed",
+      "fingerprint": "sha256:7a5c612808b97afae7c868a9131010e17ac96c245a1131d8bde889636ea69f76"
+    },
+    {
+      "sid": "7a7efae1",
+      "path": "physical.environment.no2",
+      "fingerprint": "sha256:7a7efae19c8d214ee4fa66624a46ea3703d0f5540f5ea3fd0126c15367cc56ce"
+    },
+    {
+      "sid": "7bfbd2aa",
+      "path": "health.wearable.standing_hours",
+      "fingerprint": "sha256:7bfbd2aadf6908d5d19ac4b8362c7405dca6b955dc05c1d25f85db63b23a3015"
+    },
+    {
+      "sid": "7ca8ec64",
+      "path": "vehicle.charge_state",
+      "fingerprint": "sha256:7ca8ec64fdc436adb7afe6e558a8ecdceb101585cbe390e19d647349e270e3f1"
+    },
+    {
+      "sid": "7d017fa8",
+      "path": "health.clinical.mean_arterial_pressure",
+      "fingerprint": "sha256:7d017fa873d6c4d74c70d6d3834de87e1fe19c5272fc766572e4582d1166276f"
+    },
+    {
+      "sid": "7db885d8",
+      "path": "physical.environment.absolute_humidity",
+      "fingerprint": "sha256:7db885d8b0cb2c9ecc8d81ec1a8d03fb3bb953f819bb8599be5cc779a64c27e6"
+    },
+    {
+      "sid": "7e0b3f64",
+      "path": "building.security.motion",
+      "fingerprint": "sha256:7e0b3f6428995c6fafd705b9b042a9072f21ed9e40d593acf49b6b6de889bcf0"
+    },
+    {
+      "sid": "7e774a6f",
+      "path": "industrial.motor.power",
+      "fingerprint": "sha256:7e774a6f0e6d7f5a2ccf3e8073ba834fdb057ccf4c7f13be5673f4a4e900c245"
     },
     {
       "sid": "7ec38c5b",
@@ -97,9 +1137,69 @@
       "fingerprint": "sha256:7ec38c5bd1e210dc811b969b1fc44d78eeeb4332799589d7584c5821a7245892"
     },
     {
+      "sid": "7fbff81b",
+      "path": "energy.storage.soc",
+      "fingerprint": "sha256:7fbff81b0d60cfc72ba774686345b1a24b6fd7289d5986f857edc764e3ed50fd"
+    },
+    {
+      "sid": "808b4f86",
+      "path": "industrial.robot.joint_angle_3",
+      "fingerprint": "sha256:808b4f86951d2bd627e195473c24a400ba53a3e55e89a5ba315f072b7b7099ca"
+    },
+    {
+      "sid": "80ace93d",
+      "path": "building.hvac.airflow",
+      "fingerprint": "sha256:80ace93d34f1187536ca046fc004be58296738507a86d537f9a33f2e0e9d7dcf"
+    },
+    {
+      "sid": "80cf4a8e",
+      "path": "industrial.oee.overall",
+      "fingerprint": "sha256:80cf4a8e3ce945ef751e474e4c1b54c5b4a6798c7d4128cf23c32139a94019e1"
+    },
+    {
+      "sid": "80d1df9a",
+      "path": "physical.electrical.battery_temperature",
+      "fingerprint": "sha256:80d1df9aa1d0b74c14a67a06ed12ae4fc31f6e7f62bde34fa98f8b64d39b9306"
+    },
+    {
+      "sid": "815ddf28",
+      "path": "health.clinical.encounter_id",
+      "fingerprint": "sha256:815ddf2824132b784b9e455ea4530861be97a9f533a2b9febbb6a18da3e5d377"
+    },
+    {
+      "sid": "81e37dc8",
+      "path": "physical.environment.heat_index",
+      "fingerprint": "sha256:81e37dc835a1686ff7ec446992cc5c88fac792ea3a0905bfbd46add819570099"
+    },
+    {
       "sid": "81f1695e",
       "path": "physical.electrical.energy",
       "fingerprint": "sha256:81f1695e4ef2ee330c7311142086c76b6bcd5235df6847b31e0861c75d15b0c0"
+    },
+    {
+      "sid": "82640319",
+      "path": "energy.grid.energy_export",
+      "fingerprint": "sha256:8264031961d5eb04fb864870d3af5c26fd9ce9f02b85783133e8d4bc97876fba"
+    },
+    {
+      "sid": "829686a3",
+      "path": "physical.electrical.inverter_efficiency",
+      "fingerprint": "sha256:829686a37a05460531a0eb7ff651ac9d1b75a12e8b7606775f98e8fb500a8b61"
+    },
+    {
+      "sid": "836cbd3d",
+      "path": "smarthome.lock.battery",
+      "fingerprint": "sha256:836cbd3d74334229ea858f4e7fcd74638674c5b0e7682d9d7242556d5af33650"
+    },
+    {
+      "sid": "83b37b21",
+      "path": "vehicle.gear",
+      "fingerprint": "sha256:83b37b216e45ed10bca26af39f4047e839253625f50f7f2fe61f2221c736454e"
+    },
+    {
+      "sid": "8477c809",
+      "path": "health.clinical.pain_score",
+      "fingerprint": "sha256:8477c809bd8f7d9eece3c0cb2067bad1add6eadaa3084ec16463554b8874defe"
     },
     {
       "sid": "84ca530f",
@@ -107,9 +1207,59 @@
       "fingerprint": "sha256:84ca530f4603358344946ae8ea50e5da13a00a17cb26578c612435386e050904"
     },
     {
+      "sid": "85e9bb15",
+      "path": "vehicle.seatbelt_driver",
+      "fingerprint": "sha256:85e9bb15cc1f7464ed786d8f17f6d922e17347bef5f3e0c559466ca001930ffc"
+    },
+    {
+      "sid": "86bf0508",
+      "path": "vehicle.dtc_code",
+      "fingerprint": "sha256:86bf05085b419736f84c764e1a08aff1ce166c576ff67be8724aa8e73bf4c289"
+    },
+    {
+      "sid": "8997477d",
+      "path": "physical.environment.ch4",
+      "fingerprint": "sha256:8997477d4ef67cdd9b15c2afa0fde4ffdf004c67e3a4bf3ab8a100c96a45bf8e"
+    },
+    {
+      "sid": "89ab1dea",
+      "path": "building.security.smoke",
+      "fingerprint": "sha256:89ab1deab84aa4a4ff08e39b0ad00536b557ac5150dd4712364ae9eb44cdfdda"
+    },
+    {
+      "sid": "8a9d9f72",
+      "path": "energy.evse.session_energy",
+      "fingerprint": "sha256:8a9d9f7204f24df7437fa78e5058bbf6bfe7945de38e65c0730a26209872892d"
+    },
+    {
+      "sid": "8b0ba23a",
+      "path": "vehicle.engine_oil_temp",
+      "fingerprint": "sha256:8b0ba23a26cd0f0c44bd7ff674cfc733dcff73317d4573263088ee72a97c03f1"
+    },
+    {
+      "sid": "8b31981e",
+      "path": "energy.grid.frequency",
+      "fingerprint": "sha256:8b31981e8f56d6fb22b46fbc17bfe6f6d9b6c60e94b40a128be56b74523df2a8"
+    },
+    {
+      "sid": "8b7dec2b",
+      "path": "agriculture.crop.ndvi",
+      "fingerprint": "sha256:8b7dec2bf3703bd2f9bbfdb7854240d858bab6333f381de2c94ced83f05342f7"
+    },
+    {
+      "sid": "8b9c040c",
+      "path": "physical.environment.dissolved_oxygen",
+      "fingerprint": "sha256:8b9c040ce5ab750044a260fca329f7b731b96d72851891b691bf0b50ba9de328"
+    },
+    {
       "sid": "8c138cb4",
       "path": "physical.mechanical.torque",
       "fingerprint": "sha256:8c138cb42a5edc7e8104f47d37a0ecefba487e51d254bc2c143f4669f46768f0"
+    },
+    {
+      "sid": "8d2709b3",
+      "path": "smarthome.oven.setpoint",
+      "fingerprint": "sha256:8d2709b376941e59085352e5f4f069799e4f3e8338fc419c8c3d68828ab807e9"
     },
     {
       "sid": "8d5c8d19",
@@ -117,9 +1267,74 @@
       "fingerprint": "sha256:8d5c8d19e67f63ef729bb34f994f82fce0ce41e3656858ea2392e2585f3bd8c1"
     },
     {
+      "sid": "8dae26fa",
+      "path": "industrial.motor.torque",
+      "fingerprint": "sha256:8dae26fa0cef76c5af781e361c152c7dd12e7c5c21124a1182da99e1801c53ca"
+    },
+    {
+      "sid": "8dae62e1",
+      "path": "agriculture.greenhouse.vpd",
+      "fingerprint": "sha256:8dae62e117af953412cf1b9354e5ce7e6df2dada85af872e38ad197d0f9c2889"
+    },
+    {
+      "sid": "8de91233",
+      "path": "physical.thermal.heat_flux",
+      "fingerprint": "sha256:8de91233ec94a5aca50962bb44dcc290ca19d82d5f7cc0ad7a01ae458f3d9490"
+    },
+    {
+      "sid": "8e41cafa",
+      "path": "physical.mechanical.valve_position",
+      "fingerprint": "sha256:8e41cafa0473cebfdd4b237b64535760e280fea5bf7f8a19d95c9da22d3e15fb"
+    },
+    {
+      "sid": "8e7f6f0a",
+      "path": "vehicle.throttle_position",
+      "fingerprint": "sha256:8e7f6f0ab96bd75058dc3c610de29c94733e011e861316e263e870b031dc4da8"
+    },
+    {
+      "sid": "8f62d73c",
+      "path": "health.clinical.consciousness",
+      "fingerprint": "sha256:8f62d73c8ab6c7b8a14e9172be73699f2253135cab90845d86b4bb7ec50dbaee"
+    },
+    {
+      "sid": "8fa2d10e",
+      "path": "vehicle.license_plate",
+      "fingerprint": "sha256:8fa2d10e4d7366306347569f349d8d3aaea4f149ff67cf6a2b9c9cecf2ae4e00"
+    },
+    {
       "sid": "8ff90c08",
       "path": "logical.flag",
       "fingerprint": "sha256:8ff90c0827885a1ff25c834173367647539d550e5c736d25ce278aaa7863e12c"
+    },
+    {
+      "sid": "9082675f",
+      "path": "building.lighting.on",
+      "fingerprint": "sha256:9082675f891c7c38daff5972eeb2e1147507d47853f8eb6bf448e0be408bf578"
+    },
+    {
+      "sid": "914a108e",
+      "path": "compute.cpu_load",
+      "fingerprint": "sha256:914a108efceedc995a21014c255e297d176614e09e14f7105c4df311ce33b536"
+    },
+    {
+      "sid": "91703f30",
+      "path": "actuation.state",
+      "fingerprint": "sha256:91703f30036bbcc9aaa668b6baf0e1f6eda8c6faf982402939e4e0086b22f8d4"
+    },
+    {
+      "sid": "92e174d7",
+      "path": "physical.acoustic.frequency",
+      "fingerprint": "sha256:92e174d707c390e0faa679a0177310d6b85bc1f723ca08d1cb1e6843ca1991d3"
+    },
+    {
+      "sid": "9352cbab",
+      "path": "vehicle.tire_pressure_fr",
+      "fingerprint": "sha256:9352cbab567f3763fa405f27c0fbb661f059673dcd97606d682951eae1a583a1"
+    },
+    {
+      "sid": "939f55ca",
+      "path": "smarthome.oven.temperature",
+      "fingerprint": "sha256:939f55cad5e3934f830defba3f2a1f9821a2cbed8b52a632c2b35ae1075ce06f"
     },
     {
       "sid": "94346493",
@@ -127,9 +1342,64 @@
       "fingerprint": "sha256:94346493b0fc7179cd3e271c7929060b44bbd77909a318421630cbdff9b7726a"
     },
     {
+      "sid": "946738da",
+      "path": "building.security.window_open",
+      "fingerprint": "sha256:946738dab90fa27ce5fd69265a071e87a8bab84b8f703224be04e8c8bd10338e"
+    },
+    {
+      "sid": "94e7cebc",
+      "path": "physical.electrical.line_voltage_l3",
+      "fingerprint": "sha256:94e7cebc66bc0bdc42d3cdfd041647b1f150730575cb946b9f3e14b1fc543813"
+    },
+    {
+      "sid": "94ea18dd",
+      "path": "physical.mechanical.mass",
+      "fingerprint": "sha256:94ea18dd49d6d5c9342fefc66a6792e2219426aecff62d8672b3c26042c1ff10"
+    },
+    {
+      "sid": "962e8715",
+      "path": "physical.geo.hdop",
+      "fingerprint": "sha256:962e87158ceaa31a6d0e0e03a03ac2ed417cde3cdbc3e0a6e0f797bf3a9f1cde"
+    },
+    {
       "sid": "9744622b",
       "path": "physical.electrical.battery_soc",
       "fingerprint": "sha256:9744622b0c2efee235af3293ffaa73ac4d5237a8311874de01e296e7a663d159"
+    },
+    {
+      "sid": "976da79d",
+      "path": "physical.mechanical.weight",
+      "fingerprint": "sha256:976da79de7741ed3cf70167b139c9d4ccdfdf97efb3bd151f2ef6357fd487949"
+    },
+    {
+      "sid": "97a5a340",
+      "path": "physical.health.stress_index",
+      "fingerprint": "sha256:97a5a3402ff5d775e7d4fcb55e6862a4462a5d56c7ca3823ce092c7d9b9a772f"
+    },
+    {
+      "sid": "97b21098",
+      "path": "energy.storage.temperature",
+      "fingerprint": "sha256:97b21098aa0cfe3d7ef1ca41da74adf4d3adbc2ee3d3988af81a97de2cec11f8"
+    },
+    {
+      "sid": "9830035f",
+      "path": "building.hvac.return_water_temperature",
+      "fingerprint": "sha256:9830035f9ce16ee1a1c03307311ca3919586677eb91dedd70922c4271b3c02ad"
+    },
+    {
+      "sid": "98bb6a7d",
+      "path": "health.wearable.floors_climbed",
+      "fingerprint": "sha256:98bb6a7d4c0a39a079e70ef1e49a99b50097acc5cd834652dd34d2bd35c4b069"
+    },
+    {
+      "sid": "98c7001b",
+      "path": "building.meter.water_volume",
+      "fingerprint": "sha256:98c7001b625dc9a650bbbedd537373f83eeba8bebab20e346ebe83de6533b255"
+    },
+    {
+      "sid": "9917724f",
+      "path": "physical.motion.quaternion_y",
+      "fingerprint": "sha256:9917724f21fcd07d44e3de6dfd0428bee3256b0e9a4f9b7408f5bca1fa3a90c1"
     },
     {
       "sid": "991ae51b",
@@ -142,9 +1412,99 @@
       "fingerprint": "sha256:993c1f9667a98ed2d444a34c3e64a5237139aff207232b3bf1da176f139cdd85"
     },
     {
+      "sid": "9943a5bf",
+      "path": "network.ssid",
+      "fingerprint": "sha256:9943a5bf9859d137307cdba0be13ddb6bab9629e18832237e75b0bab5a14079a"
+    },
+    {
       "sid": "99e3d569",
       "path": "physical.motion.position",
       "fingerprint": "sha256:99e3d5695e4ba1b52bb4b202836f36fb8826d728a83ece15d531cb93203988e8"
+    },
+    {
+      "sid": "9a206d28",
+      "path": "vehicle.ev_charge_energy",
+      "fingerprint": "sha256:9a206d281195df9dda80a1cc1144b146a1a82314c460b4b5fba014a72ba2bd99"
+    },
+    {
+      "sid": "9b09b78e",
+      "path": "vehicle.airbag_deployed",
+      "fingerprint": "sha256:9b09b78e9f7dc164855375ca71ab48b3fb5d0cb69e115bef37e0e7072fc4657f"
+    },
+    {
+      "sid": "9b33fed7",
+      "path": "health.clinical.ecg_heart_rate",
+      "fingerprint": "sha256:9b33fed7de817e1469f759e31e601507b923842edaee1ef00292c2aeff5fd8f4"
+    },
+    {
+      "sid": "9b98da88",
+      "path": "physical.geo.speed",
+      "fingerprint": "sha256:9b98da88263342dd29877210d15cf5006c61a6af07eb6dbddd7b440bc85de390"
+    },
+    {
+      "sid": "9bc96468",
+      "path": "industrial.motor.vibration",
+      "fingerprint": "sha256:9bc96468687b0b8273573969b7b2bfa0d14a583531aa75937e19fc89a448c64f"
+    },
+    {
+      "sid": "9bf0bb7c",
+      "path": "health.clinical.respiratory_rate",
+      "fingerprint": "sha256:9bf0bb7ce8f57bb9e1467859ebc1ea4e1dc8bed47362b4f9620b93bb982b2393"
+    },
+    {
+      "sid": "9c357a6f",
+      "path": "vehicle.tire_pressure_fl",
+      "fingerprint": "sha256:9c357a6f095c6ea02c4901bf5118c3529307402e00d3702fcb57ea95096f2f77"
+    },
+    {
+      "sid": "9c6cd064",
+      "path": "smarthome.appliance.state",
+      "fingerprint": "sha256:9c6cd064cf0a19ae39de08836a9ef82f390a21269fa43dfec48ec1d1dd6b716e"
+    },
+    {
+      "sid": "9d122117",
+      "path": "building.hvac.filter_pressure_drop",
+      "fingerprint": "sha256:9d1221171cad1da78d1a338509c2420e4e7585bbc3820493cd472638fed297fa"
+    },
+    {
+      "sid": "9d2e1fb0",
+      "path": "industrial.batch.state",
+      "fingerprint": "sha256:9d2e1fb0bae3ebc6e99e900cb25e3b25d5b0d4aea3ed1a8fbd07038b517314ef"
+    },
+    {
+      "sid": "9d7c93dd",
+      "path": "media.document_ref",
+      "fingerprint": "sha256:9d7c93dd1a8454fc3b84dfaff8ec72c683bea161e207b0e8c87d3313f3081c5a"
+    },
+    {
+      "sid": "9ffe4859",
+      "path": "smarthome.washer.cycle_progress",
+      "fingerprint": "sha256:9ffe48591011fb41db35cdd8cec9377a93f65d2e3f5f7e9915985c43656849da"
+    },
+    {
+      "sid": "a002c45b",
+      "path": "energy.wind.turbine_power",
+      "fingerprint": "sha256:a002c45bd29dceac659f3cd4b1e44f208f9f7cf56d95b6be74a8bb2f29168dad"
+    },
+    {
+      "sid": "a0282b84",
+      "path": "compute.process_count",
+      "fingerprint": "sha256:a0282b848d0964ba463df64b6f77abb69b82f68cccc9cc2c938fcfe2d5d08f2e"
+    },
+    {
+      "sid": "a0be4edb",
+      "path": "identity.imei",
+      "fingerprint": "sha256:a0be4edbd7545dfec3312f9cf3bd69829e7904bdf43d9dc612a736ae5530c9a4"
+    },
+    {
+      "sid": "a3257c03",
+      "path": "agriculture.irrigation.volume",
+      "fingerprint": "sha256:a3257c03b78b0bbce7a0f5bb1e41165c6f90f8457b3a4f64d5b79a1d2149a541"
+    },
+    {
+      "sid": "a3cf5ef0",
+      "path": "health.clinical.systolic_bp",
+      "fingerprint": "sha256:a3cf5ef066caa8368509c5299585fd3c40b6dafc5f09f2a14e1e539c63be5aeb"
     },
     {
       "sid": "a4d3f616",
@@ -152,14 +1512,214 @@
       "fingerprint": "sha256:a4d3f6163d84dd452f5bb296f29d0a8dff86b1163df0698f2ca7b832c406f66e"
     },
     {
+      "sid": "a4ef41db",
+      "path": "industrial.process.level",
+      "fingerprint": "sha256:a4ef41dbe9199f9451ee3fdba87521d20577103f2aaf129165b6887aeb7f397c"
+    },
+    {
+      "sid": "a51dcc90",
+      "path": "industrial.process.turbidity",
+      "fingerprint": "sha256:a51dcc90726d668b522f8c186e2ebd020fdd872356203b211870cf21c34cdd28"
+    },
+    {
+      "sid": "a609c5a8",
+      "path": "physical.environment.co",
+      "fingerprint": "sha256:a609c5a8201e4e18e760c14f235582d788af62834de3554d3154932dbd7a14ed"
+    },
+    {
+      "sid": "a6c8a955",
+      "path": "physical.health.blood_pressure_diastolic",
+      "fingerprint": "sha256:a6c8a95578ada4587c0421c7193a4674119ccfb7a2c6507adb6b6c89d6b89df0"
+    },
+    {
+      "sid": "a73b55cd",
+      "path": "physical.environment.soil_temperature",
+      "fingerprint": "sha256:a73b55cd27cdcabfd770df608f87688b7a2baa26481b6fa86ee94bbc2470ff87"
+    },
+    {
+      "sid": "a7e79575",
+      "path": "network.link_state",
+      "fingerprint": "sha256:a7e79575fb145a27a2c1bce1af041179b485072bf39502c92afde4b4e3c7fe96"
+    },
+    {
+      "sid": "ab931099",
+      "path": "physical.motion.quaternion_w",
+      "fingerprint": "sha256:ab931099fba9fef7dc020e4efa36ed67dd5b6320cd35f6c521606ca0c7457bfd"
+    },
+    {
+      "sid": "ac07bcb6",
+      "path": "physical.electrical.line_voltage_l2",
+      "fingerprint": "sha256:ac07bcb63e5b95fa13f708fee1cbda0fee4868e0348d1066cc58408898df99fa"
+    },
+    {
+      "sid": "ac6eb91d",
+      "path": "physical.electrical.charge_energy",
+      "fingerprint": "sha256:ac6eb91df32b068611c848ef7491a922beeb3571634cebb3641ed96abd682cee"
+    },
+    {
+      "sid": "ac7db693",
+      "path": "building.hvac.supply_air_temperature",
+      "fingerprint": "sha256:ac7db693e123fea363881845bec74c3da77d2b900980a168b6fca50840c9c2a0"
+    },
+    {
+      "sid": "acb483d7",
+      "path": "network.lqi",
+      "fingerprint": "sha256:acb483d7da6884f56a606b01767e8ca58a3ce08f4dfef2d1dd8fb4e34bdccb6f"
+    },
+    {
+      "sid": "acc66962",
+      "path": "building.hvac.supply_water_temperature",
+      "fingerprint": "sha256:acc6696290d40e8163f1413524c2d49c2a230919b8e524e5ea1c1629dcdbfa57"
+    },
+    {
+      "sid": "ad4d22b2",
+      "path": "physical.optical.ultraviolet",
+      "fingerprint": "sha256:ad4d22b276fb325db5351afc0c8bc380f91f12cde070b9bb8bfac5a7e23da911"
+    },
+    {
+      "sid": "ad914f2b",
+      "path": "energy.tariff.id",
+      "fingerprint": "sha256:ad914f2b5adcf4eb249a8bba3c5950f5affc0fa7e142e8c6fb35d6d2ff823d55"
+    },
+    {
+      "sid": "af5363f4",
+      "path": "physical.environment.salinity",
+      "fingerprint": "sha256:af5363f4d103da8643e712c631fddaa47b67a170b8a93db40c349ed8592fabd8"
+    },
+    {
+      "sid": "af79b768",
+      "path": "compute.memory_used",
+      "fingerprint": "sha256:af79b768ff1bade615ba3646bc7c54af5e53b9de4c57deae3f7413cabd9f6236"
+    },
+    {
+      "sid": "aff263d4",
+      "path": "physical.optical.proximity",
+      "fingerprint": "sha256:aff263d469f0a6472aa92883be6812a5b4965b24addb1338b4a927fc6f806b76"
+    },
+    {
       "sid": "b0209dc2",
       "path": "physical.mechanical.pressure_gauge",
       "fingerprint": "sha256:b0209dc2c9184836f41626063ea44b433902e40d799ca84c97e4a73f275cead1"
     },
     {
+      "sid": "b0ad114a",
+      "path": "media.file_size",
+      "fingerprint": "sha256:b0ad114acc557f6424c44e09e58e2a43c16cbf117029fd3cea6f45bdfe91584a"
+    },
+    {
+      "sid": "b0af89f6",
+      "path": "agriculture.soil.npk_k",
+      "fingerprint": "sha256:b0af89f60934db0187f2008289abec82a6c419f5e6c05a6197d87b2641c7c9aa"
+    },
+    {
+      "sid": "b28179c8",
+      "path": "physical.mechanical.mass_flow",
+      "fingerprint": "sha256:b28179c8ee84af17e7e26a3f953d17abae0eee61067d2acb77e7466cdd8e3417"
+    },
+    {
+      "sid": "b28871c1",
+      "path": "agriculture.crop.canopy_temperature",
+      "fingerprint": "sha256:b28871c17d149845d63bae566423ce925d41c993f2b1012f2772e681f0e04cdd"
+    },
+    {
+      "sid": "b3283730",
+      "path": "agriculture.soil.temperature",
+      "fingerprint": "sha256:b3283730ee72b781467b2c87b20be03d299a243bfe8f8884c8195d4d15745a5f"
+    },
+    {
+      "sid": "b346cbbc",
+      "path": "smarthome.appliance.energy",
+      "fingerprint": "sha256:b346cbbcb9219e4f408484a051c707dc1f2a21a4af7c18764c0231a4550ed774"
+    },
+    {
+      "sid": "b4011d81",
+      "path": "energy.solar.irradiance",
+      "fingerprint": "sha256:b4011d81c0d56f7704471364f1559f0c7752acb392c483256721d73b87f5859b"
+    },
+    {
+      "sid": "b48bb153",
+      "path": "physical.electrical.power_factor",
+      "fingerprint": "sha256:b48bb1536aaed55a9784b6a3e75eaf316712313b9859e4e83bf028ce8a3e926c"
+    },
+    {
+      "sid": "b5786b2d",
+      "path": "smarthome.vacuum.state",
+      "fingerprint": "sha256:b5786b2d665b6d11135566aff080b68eb8dca03bcdc91404d4e89d77b22c4478"
+    },
+    {
+      "sid": "b61c4563",
+      "path": "physical.electrical.grid_frequency",
+      "fingerprint": "sha256:b61c4563b9faf66692e9e3b71bda46dae64b028fa3e5c15282aecca2de0b9e3c"
+    },
+    {
+      "sid": "b6505ac3",
+      "path": "physical.environment.ph",
+      "fingerprint": "sha256:b6505ac3af9d7cdc09edef84431f4c5753cfda5c184837e520f2c9c38ae739d3"
+    },
+    {
+      "sid": "b685a008",
+      "path": "vehicle.ev_battery_soc",
+      "fingerprint": "sha256:b685a0081d728d18c69369484a25c27adb3d729c8ccb2255c521d35c450fd0e7"
+    },
+    {
+      "sid": "b6a2a4f1",
+      "path": "vehicle.intake_air_temp",
+      "fingerprint": "sha256:b6a2a4f1dc9aaf599060916f4cbe00987d8b7dc5667ca772cd1eab548af3545c"
+    },
+    {
+      "sid": "b6e11369",
+      "path": "physical.mechanical.vibration_peak",
+      "fingerprint": "sha256:b6e113696c9087c6ddb444682aee23e63bc3d6ff40542bdc526a132f032e7514"
+    },
+    {
+      "sid": "b6e5695d",
+      "path": "physical.environment.radon",
+      "fingerprint": "sha256:b6e5695df083e11d3a021313f53b94a9e06ef6ffdaa1aa481ba6e821474e2adf"
+    },
+    {
+      "sid": "b718dce5",
+      "path": "agriculture.irrigation.valve_open",
+      "fingerprint": "sha256:b718dce5763450992f379dc5c8397a3eb701f6f3c3817d1df2ccf35f6b11e422"
+    },
+    {
+      "sid": "b9513db1",
+      "path": "vehicle.esp_active",
+      "fingerprint": "sha256:b9513db14bf3f385b2d5f261d5cc413ba9a33667712e54c39cb5b4bf37bbda32"
+    },
+    {
+      "sid": "b9e8bcbb",
+      "path": "physical.environment.water_temperature",
+      "fingerprint": "sha256:b9e8bcbb014feb417854746f92c84be7707be4ffcdc7920fa8270c5c72c2c36b"
+    },
+    {
+      "sid": "bba7e2c8",
+      "path": "industrial.pump.head",
+      "fingerprint": "sha256:bba7e2c80b30a8e5f0ba2bfedacfefe95cd4fb75c3b72f8a685da0122b1de5ef"
+    },
+    {
+      "sid": "bc581b50",
+      "path": "vehicle.tire_pressure_rl",
+      "fingerprint": "sha256:bc581b501adc45d2a7e1012911f2a06f1bd3556a4106838a1641d6dc658f2618"
+    },
+    {
+      "sid": "bd06960e",
+      "path": "energy.evse.connector_state",
+      "fingerprint": "sha256:bd06960e1869cf78a18a4a2b08b4d099a35a1b618e7fc3888537f87ab4085293"
+    },
+    {
       "sid": "bd0ff19a",
       "path": "physical.environment.pm25",
       "fingerprint": "sha256:bd0ff19ac3c63ffb0714a4e39b45e1d6fbe418511d66940eafc6fc6899615e1a"
+    },
+    {
+      "sid": "be22ca19",
+      "path": "physical.geo.vdop",
+      "fingerprint": "sha256:be22ca197d719e10674832501b051dbb708cb7cbac1ab6272a37d30fda126f7e"
+    },
+    {
+      "sid": "be3cfd45",
+      "path": "network.snr",
+      "fingerprint": "sha256:be3cfd45b9f4d677dd8d70501ecdac135f55c7099d64b350dc446f2b13b13646"
     },
     {
       "sid": "be792b1c",
@@ -172,9 +1732,149 @@
       "fingerprint": "sha256:c0154acf370a04a4fd690a526380759018e61677f83513ec9a61f6bd163f991f"
     },
     {
+      "sid": "c041f1db",
+      "path": "energy.grid.voltage",
+      "fingerprint": "sha256:c041f1db18c71725d6ff5703d7c1dc4036df371c021a5d17208af18aca1b3793"
+    },
+    {
+      "sid": "c33ba9fe",
+      "path": "physical.motion.orientation_yaw",
+      "fingerprint": "sha256:c33ba9fe2c3549fec5c536c531f449bc91207802b7e0ade3e2d098c2f1d1f664"
+    },
+    {
+      "sid": "c37f7f0b",
+      "path": "identity.firmware_version",
+      "fingerprint": "sha256:c37f7f0b5251debcd146eccdcc19aaca0679c441134a4b246383d7785f15fe3d"
+    },
+    {
+      "sid": "c3f9b5a2",
+      "path": "building.lighting.color_saturation",
+      "fingerprint": "sha256:c3f9b5a2f917864768f4c3a49d95745435f3fb4afb82a3800de43e3ba62c5d9a"
+    },
+    {
+      "sid": "c5ba13e0",
+      "path": "physical.motion.vector3",
+      "fingerprint": "sha256:c5ba13e05f049d9108722b60418ae37cf1d264a6f934b0726bd10cee4db7fec0"
+    },
+    {
+      "sid": "c5dd7f02",
+      "path": "vehicle.wheel_speed_fr",
+      "fingerprint": "sha256:c5dd7f02e733172cb5d77a5ecc37be1a1446ef16807884245aaaf226d906d471"
+    },
+    {
+      "sid": "c8b26b2f",
+      "path": "physical.motion.altitude_baro",
+      "fingerprint": "sha256:c8b26b2f111c4acc8bec527a88eb852abff0695445a6cc4d8dd22430304c194b"
+    },
+    {
+      "sid": "c8b29021",
+      "path": "physical.motion.distance",
+      "fingerprint": "sha256:c8b29021f0850d8e00bbc49e28ad06f206fd7e26d224fb64dcdb5a5a96fc4bc6"
+    },
+    {
+      "sid": "c90ed72e",
+      "path": "physical.mechanical.viscosity",
+      "fingerprint": "sha256:c90ed72ef8481543d1f211a87e47a6f21e7a1e5ec6dcd0c3d22617fe2aa7fb78"
+    },
+    {
+      "sid": "c91d7930",
+      "path": "industrial.motor.rpm",
+      "fingerprint": "sha256:c91d79303556d36e5bd60cb594436af0ab3abaf1cb335b9df6185755796c0912"
+    },
+    {
+      "sid": "c957c2c3",
+      "path": "industrial.motor.runtime_hours",
+      "fingerprint": "sha256:c957c2c3af01dec9bff52aca5548fbdca86ecc29097e7622613cb0084b3f97a2"
+    },
+    {
+      "sid": "c9d7298e",
+      "path": "vehicle.engine_rpm",
+      "fingerprint": "sha256:c9d7298e06ab475676d10e4020d7567f3017c972a9e876c92e89aa8e1b4fef80"
+    },
+    {
+      "sid": "ca6de271",
+      "path": "industrial.robot.joint_angle_1",
+      "fingerprint": "sha256:ca6de2712acfbb746e608ba912159094d6210a8bae6ae78773d0f74257bdd161"
+    },
+    {
+      "sid": "ccaf5b61",
+      "path": "building.security.battery",
+      "fingerprint": "sha256:ccaf5b610aec26ea6082ac78b33a0e40d37eeb3de089caf6c6bf462b3721ff14"
+    },
+    {
+      "sid": "cd7ddcdf",
+      "path": "industrial.robot.joint_angle_4",
+      "fingerprint": "sha256:cd7ddcdf412973080a50588642817b04e1d7ff725e4c6e36fca9c2b9cc92f82f"
+    },
+    {
+      "sid": "ce771bad",
+      "path": "vehicle.engine_oil_pressure",
+      "fingerprint": "sha256:ce771bad120950688725d78cbb5a3fed7ea342afbc0dde1e64d20b9d5c8c4a82"
+    },
+    {
+      "sid": "ceae3dfd",
+      "path": "physical.mechanical.volume_flow",
+      "fingerprint": "sha256:ceae3dfd8be770854a675bb798f6d6b0da715ed85871cdd34664c5c0d783ae57"
+    },
+    {
+      "sid": "cee9a482",
+      "path": "vehicle.brake_pressure",
+      "fingerprint": "sha256:cee9a482693ff3d05fba1b0f4347e013e0e2d8739831b9e757e813dc73ffc688"
+    },
+    {
+      "sid": "cf4411f3",
+      "path": "physical.electrical.line_current_l2",
+      "fingerprint": "sha256:cf4411f388f9c6af42b1b0960517e2be6243df866d110c7a07a561a885737e05"
+    },
+    {
+      "sid": "cf80ce3a",
+      "path": "vehicle.trunk_open",
+      "fingerprint": "sha256:cf80ce3abb2d711218f011a404582a5c5938162bd2f2bba2ec1788357de9f235"
+    },
+    {
+      "sid": "cfefd6ba",
+      "path": "physical.thermal.thermal_resistance",
+      "fingerprint": "sha256:cfefd6ba4f3d877d1875a3b89854f5d441503e08ecf3fe4002d8394c63013e57"
+    },
+    {
+      "sid": "d074b230",
+      "path": "physical.health.glucose",
+      "fingerprint": "sha256:d074b23050d044da62cee207292ce019e36c02f8c3868ef5c9fb1aa7f83faab6"
+    },
+    {
+      "sid": "d07c4e68",
+      "path": "physical.environment.rainfall",
+      "fingerprint": "sha256:d07c4e68bfb5ab00f57b097aed5a49382ed277b46442c1529594d35c7c3ad7d7"
+    },
+    {
+      "sid": "d0e5404c",
+      "path": "physical.motion.steps",
+      "fingerprint": "sha256:d0e5404c9810039f93ccc42cfcb15c998bbdbfb62ce86ea6c3e63dfc7f2ff1a0"
+    },
+    {
+      "sid": "d15e7e34",
+      "path": "physical.optical.luminance",
+      "fingerprint": "sha256:d15e7e34e0b4147c134537bf62f393dc42627358da3a2c114e0d913f2602afbd"
+    },
+    {
+      "sid": "d177ee77",
+      "path": "health.clinical.glucose",
+      "fingerprint": "sha256:d177ee772f56e7e3599fd2d34d85e156868ca20741ac4207a13f39ef33c09b23"
+    },
+    {
+      "sid": "d21b43c2",
+      "path": "actuation.speed",
+      "fingerprint": "sha256:d21b43c2414f145dd45dce07b6d1730e48ecb84c9f43806199739d28fdc23b67"
+    },
+    {
       "sid": "d26a38e1",
       "path": "physical.geo.altitude",
       "fingerprint": "sha256:d26a38e16b627173ae6920296c129a2fc84fe96930856901bded4747e692388d"
+    },
+    {
+      "sid": "d2d56611",
+      "path": "physical.environment.turbidity",
+      "fingerprint": "sha256:d2d566118f933c14a0ce45345c2d560e90e76735e751e225186f74d31abc5180"
     },
     {
       "sid": "d38e7705",
@@ -182,9 +1882,99 @@
       "fingerprint": "sha256:d38e7705f19ae4381e4ac485fb5f0cd12dcdec120300b19ab2e9820f9f1e6c5c"
     },
     {
+      "sid": "d3abad11",
+      "path": "logical.error",
+      "fingerprint": "sha256:d3abad1157425592fd962bb740224b0d5c8511b2957cfdabc45848f430570df2"
+    },
+    {
+      "sid": "d49fe5e0",
+      "path": "smarthome.dishwasher.remaining_time",
+      "fingerprint": "sha256:d49fe5e0709bfd3a5579ef685bb7dbf9e5b8f7519ee64633ecf4f23af5b414ac"
+    },
+    {
+      "sid": "d5295861",
+      "path": "industrial.oee.performance",
+      "fingerprint": "sha256:d5295861713c644c7266ac6f11245f9c5f088c26e5ea7e9b0266f22946014470"
+    },
+    {
+      "sid": "d594a91c",
+      "path": "physical.mechanical.strain",
+      "fingerprint": "sha256:d594a91c1d3c30aea9ede2673020d0a31aadcde9f1567980ed45e9fc6873c7d5"
+    },
+    {
+      "sid": "d724411b",
+      "path": "physical.environment.cloud_cover",
+      "fingerprint": "sha256:d724411bb55b83e7e3fe5d642b8be2e56f8c640f1c34479e8484fa935dc4f2fb"
+    },
+    {
+      "sid": "d7cd1579",
+      "path": "health.wearable.recovery_score",
+      "fingerprint": "sha256:d7cd1579438d986dfe74e199e63c2db655f3bd764d8eeac98c9b72df8137676e"
+    },
+    {
+      "sid": "d803be50",
+      "path": "industrial.oee.quality",
+      "fingerprint": "sha256:d803be509128d57077f2f0482f2a0d13a7585705413c24504140a72332055558"
+    },
+    {
+      "sid": "d8b58ad6",
+      "path": "industrial.process.flow",
+      "fingerprint": "sha256:d8b58ad6379f772c371544a1873af2e86c9d7a5a19cc1058255986dafa4eafc3"
+    },
+    {
+      "sid": "d981e862",
+      "path": "industrial.robot.joint_angle_2",
+      "fingerprint": "sha256:d981e862f5c42896e9c15795fe94fda0851558267e9a65584860c56a2b547682"
+    },
+    {
+      "sid": "d9ce4151",
+      "path": "physical.health.weight",
+      "fingerprint": "sha256:d9ce4151a3f37481ecc851ad8c4381e74d15324d95b7c0b9c6be14c627b74ce5"
+    },
+    {
+      "sid": "d9cf4140",
+      "path": "smarthome.curtain.open",
+      "fingerprint": "sha256:d9cf4140db7f5d1a94a7ac1af710d1a4a1d6dcf9d9dbde297b81ff85bb94e0b6"
+    },
+    {
+      "sid": "db7415ec",
+      "path": "industrial.safety.door_interlock",
+      "fingerprint": "sha256:db7415ec3141b2831ce4fc1b855eed527ad0a4a267d5d38eae2aa1952a5a6c50"
+    },
+    {
+      "sid": "dbf021f7",
+      "path": "physical.motion.orientation_pitch",
+      "fingerprint": "sha256:dbf021f70ac7fec7166a53afd9406925e02a378b57f9441b52a6605a29b4694e"
+    },
+    {
+      "sid": "dceb5f24",
+      "path": "industrial.robot.tcp_x",
+      "fingerprint": "sha256:dceb5f24018cc518957e30941b1d6903b9efdab201e1b944a3bd09de9f6999e4"
+    },
+    {
+      "sid": "ddba31c6",
+      "path": "network.ip_address",
+      "fingerprint": "sha256:ddba31c68ef82c8e189eb422a2b87a87cdc9970fb61ca2b1125f8d6b98cef35f"
+    },
+    {
       "sid": "df404cc2",
       "path": "media.image_ref",
       "fingerprint": "sha256:df404cc21caa34244933fd1918d4c14bafb81ef6989588145bf9989795d9e681"
+    },
+    {
+      "sid": "dfaa000a",
+      "path": "health.clinical.ketone",
+      "fingerprint": "sha256:dfaa000ab74ebdcc1dabe5fd0f73ac3533f16b7ae2dda13c3b36431143f11dec"
+    },
+    {
+      "sid": "e2c7acd3",
+      "path": "vehicle.drive_mode",
+      "fingerprint": "sha256:e2c7acd369e0be94279f0dba4f2ebbbc6c31e43552cd4c1969ce163f171a4665"
+    },
+    {
+      "sid": "e329b40e",
+      "path": "temporal.timezone_offset",
+      "fingerprint": "sha256:e329b40ec6a373a1d4f2aa6a8dc592fd645eb66c7c118ce489d352893cfbfec2"
     },
     {
       "sid": "e34550dd",
@@ -192,9 +1982,109 @@
       "fingerprint": "sha256:e34550dd3b50b0aafbe928e30dab7db5598b069817d1bca599d113888f6243ca"
     },
     {
+      "sid": "e38ecc77",
+      "path": "physical.environment.solar_radiation",
+      "fingerprint": "sha256:e38ecc77870dd2af4a82616df8a80e84bbd9e7b8f443d4332971d3cf75197e4a"
+    },
+    {
+      "sid": "e3cd78c6",
+      "path": "vehicle.engine_load",
+      "fingerprint": "sha256:e3cd78c6402f797c45ade28c15c9a67db0f7b3640c6b2bf2e473c6737894afe0"
+    },
+    {
+      "sid": "e53671cc",
+      "path": "agriculture.soil.moisture",
+      "fingerprint": "sha256:e53671cc563de4f7ebf3748eeaafbfb72e14801803962b77f39ba4e51aac8795"
+    },
+    {
+      "sid": "e56a9079",
+      "path": "agriculture.irrigation.pressure",
+      "fingerprint": "sha256:e56a9079bc254d40a3e5f2cbace19401cc05d8691125626937104fe2df4402bd"
+    },
+    {
+      "sid": "e596a671",
+      "path": "physical.health.height",
+      "fingerprint": "sha256:e596a6710f9506b46ade8497899f447ff141ec1f3d9695ff70df29670f8a1790"
+    },
+    {
+      "sid": "e6048bd8",
+      "path": "physical.mechanical.vibration_rms",
+      "fingerprint": "sha256:e6048bd8b0efae7cd27dafd162d228a783fcfdd2fee1b70225b28c75a304a433"
+    },
+    {
+      "sid": "e644fa8f",
+      "path": "agriculture.field.id",
+      "fingerprint": "sha256:e644fa8f1eb626b62b39b2fb25af04b189b06d4f97f797dcfadf43353fb12b88"
+    },
+    {
+      "sid": "e646b607",
+      "path": "network.packet_loss",
+      "fingerprint": "sha256:e646b607d8390928b44539641f697be2f155f2ccbd2aa66b3c2c7dd5666b1cf8"
+    },
+    {
+      "sid": "e85d911a",
+      "path": "smarthome.washer.cycle",
+      "fingerprint": "sha256:e85d911a4fe76677e162c5e74590090ef5a9df46f928bd97be21e9fc4808f34c"
+    },
+    {
       "sid": "e867039a",
       "path": "identity.serial",
       "fingerprint": "sha256:e867039afbd3ff6c019b19adc4cb6f6b4addd36e54bc9b0d5d32a9d75573e869"
+    },
+    {
+      "sid": "e8976b39",
+      "path": "industrial.process.density",
+      "fingerprint": "sha256:e8976b39f0c59d91c7aa98be0d1cd36af38632bdafbed39fc7a858dc2d6f0808"
+    },
+    {
+      "sid": "e8e7885c",
+      "path": "physical.electrical.inductance",
+      "fingerprint": "sha256:e8e7885ce4d60863a35e7a8ec86d983475297982411ab2cc4a202787c613074e"
+    },
+    {
+      "sid": "e96f587d",
+      "path": "physical.geo.satellites",
+      "fingerprint": "sha256:e96f587d3952ea11ea50e55c338e5c22f43b380955db7773e9cab021c12b04b6"
+    },
+    {
+      "sid": "eb61e38a",
+      "path": "network.tx_power",
+      "fingerprint": "sha256:eb61e38af9270d4e840e9e2cca4ef4bbdb88312d6aedde706a36dbb667a80524"
+    },
+    {
+      "sid": "eb9c10b9",
+      "path": "physical.environment.nh3",
+      "fingerprint": "sha256:eb9c10b993f271e0c1ccef645d892e6e0d16c0312fa5d97fb39bad247b4d9b64"
+    },
+    {
+      "sid": "ee1428a1",
+      "path": "physical.health.vo2max",
+      "fingerprint": "sha256:ee1428a1335e56535b1ea35c6b7f694668d6df0489050505894e55c5b8639204"
+    },
+    {
+      "sid": "ee2dbfc8",
+      "path": "physical.geo.fix",
+      "fingerprint": "sha256:ee2dbfc87ac91a905de988fd20e6b65ed53f94720bfcd2c66b857648f14730f3"
+    },
+    {
+      "sid": "ee700b2e",
+      "path": "actuation.open_close",
+      "fingerprint": "sha256:ee700b2e360726ba3e8a4978159ea7036750de6daabca380a3e9ce0cd060bbdd"
+    },
+    {
+      "sid": "ef05ccab",
+      "path": "physical.electrical.battery_current",
+      "fingerprint": "sha256:ef05ccab78ea1c4303d274cf840a2c6c84135694ec741d628452f02d91500f80"
+    },
+    {
+      "sid": "efdf2751",
+      "path": "health.wearable.active_minutes",
+      "fingerprint": "sha256:efdf2751c7509e81be19d74a434176d24b326d3ee1f3cfa96c1323954db3da48"
+    },
+    {
+      "sid": "f0876339",
+      "path": "compute.temperature",
+      "fingerprint": "sha256:f0876339b99995ac6ad6c8100eba0c948e6af9789d9bc990f41c3af150b2a6be"
     },
     {
       "sid": "f0af635e",
@@ -202,9 +2092,94 @@
       "fingerprint": "sha256:f0af635e43278f4549e7d8b7d378b3ef92d21cd8f1547db606844151e9a5a41b"
     },
     {
+      "sid": "f0b3e620",
+      "path": "physical.geo.longitude",
+      "fingerprint": "sha256:f0b3e620a23affa265942cc01a00f09cb6ee6ceca77e52cdf66d87e199b07a9f"
+    },
+    {
+      "sid": "f27c2626",
+      "path": "smarthome.freezer.temperature",
+      "fingerprint": "sha256:f27c26267f58bbce0c0be020cb470a0b3df1e7fde6000a549c3c44ec85a3e3b3"
+    },
+    {
+      "sid": "f2a8995c",
+      "path": "physical.magnetic.heading",
+      "fingerprint": "sha256:f2a8995ccf6ae180e7b4b280ea6473d81f4331654727876c95b9003f3c8bddc7"
+    },
+    {
+      "sid": "f2ab3578",
+      "path": "vehicle.vin",
+      "fingerprint": "sha256:f2ab3578c1164ece9965b9f00d4e73423ec8bfa9d38d3b86064a3de3c7300bc4"
+    },
+    {
+      "sid": "f2d65578",
+      "path": "health.clinical.perfusion_index",
+      "fingerprint": "sha256:f2d65578bff8d8045ff4b79797b62038a51604c07022abe2677aa73eb749f714"
+    },
+    {
       "sid": "f31fa92e",
       "path": "physical.environment.illuminance",
       "fingerprint": "sha256:f31fa92e6cb910a36239a4df604d3f9aa5a30107c1fb15e86a6941da1e0c3a59"
+    },
+    {
+      "sid": "f3364a78",
+      "path": "vehicle.engine_coolant_temp",
+      "fingerprint": "sha256:f3364a786288155fa9efd217d80ab33b3ff64fd0eb585a8ac4a5d8a9353015ee"
+    },
+    {
+      "sid": "f379bfc9",
+      "path": "physical.environment.wet_bulb",
+      "fingerprint": "sha256:f379bfc9494dc9d332461ee66513ca5168c70a63bd918d3e9fe9add608475cc8"
+    },
+    {
+      "sid": "f552ed6e",
+      "path": "agriculture.greenhouse.co2",
+      "fingerprint": "sha256:f552ed6ea620b9a8bf65f861505020f02d93c2c9aa52325b2f274bd4039be59c"
+    },
+    {
+      "sid": "f5bb2026",
+      "path": "physical.environment.visibility",
+      "fingerprint": "sha256:f5bb2026401324909fa07a21126262b3cb5f4ea5001b23eceafd2cc205f40bab"
+    },
+    {
+      "sid": "f686d641",
+      "path": "identity.asset_tag",
+      "fingerprint": "sha256:f686d6410fb1dbf69b3686a7e75a4988e4663bf542226500601467bd018aea3a"
+    },
+    {
+      "sid": "f7c75484",
+      "path": "industrial.batch.id",
+      "fingerprint": "sha256:f7c75484f85c6a64267f97519add45d1274b4970e8459954ee4db371f743e145"
+    },
+    {
+      "sid": "f7db09a6",
+      "path": "physical.optical.gesture",
+      "fingerprint": "sha256:f7db09a6569eaa797ad9930d99f1486b6f0462dfb896e8369cb002309690fda6"
+    },
+    {
+      "sid": "f80dc8e5",
+      "path": "logical.sequence",
+      "fingerprint": "sha256:f80dc8e5ee8d153ba16bb25611f925ac18c7f8e8121fe75e568ccb0041abae88"
+    },
+    {
+      "sid": "f8a223c1",
+      "path": "agriculture.livestock.tag",
+      "fingerprint": "sha256:f8a223c18a3f2268294cd911f4e37604a3ca8d9949b28b602d1156e7977eab01"
+    },
+    {
+      "sid": "f8c7955a",
+      "path": "health.clinical.body_temperature",
+      "fingerprint": "sha256:f8c7955a2ddfd7c80a0f819b143a1141b559b4c6bbd5442e15ea8dc984061855"
+    },
+    {
+      "sid": "f9b8b58d",
+      "path": "physical.mechanical.volume",
+      "fingerprint": "sha256:f9b8b58df95ccf116d9022b1ab1e9ca17b31dbbd5709aac3816fb516087d8a36"
+    },
+    {
+      "sid": "fa53d84c",
+      "path": "physical.electrical.apparent_power",
+      "fingerprint": "sha256:fa53d84c55f62a17e2423aabf475e74355d33915a09e1379b7ab97fa7c569363"
     },
     {
       "sid": "faa74c01",
@@ -215,7 +2190,37 @@
       "sid": "fb2badbe",
       "path": "temporal.duration",
       "fingerprint": "sha256:fb2badbef8d8563b8528261739ef62f81b148013c95fdd8599bb7a94b35152c1"
+    },
+    {
+      "sid": "fb8feb29",
+      "path": "industrial.motor.temperature",
+      "fingerprint": "sha256:fb8feb29ea093369b7bf1e96b51049b5406d06f9ea57418cea31238dfeaa8728"
+    },
+    {
+      "sid": "fc428036",
+      "path": "building.meter.heat_energy",
+      "fingerprint": "sha256:fc42803649ec6e49f720570ed7c48c446ec5a6fe6dab1f203eed79e863528efe"
+    },
+    {
+      "sid": "fd4cf048",
+      "path": "physical.health.calories",
+      "fingerprint": "sha256:fd4cf04846f172770da88a82a1583a97af3f66a80b97c528b0d829b391cba786"
+    },
+    {
+      "sid": "fd791461",
+      "path": "physical.magnetic.field_strength",
+      "fingerprint": "sha256:fd791461cdb8bb696ecb412faf01545748453e34fa64481c6fe74fb882167402"
+    },
+    {
+      "sid": "fd9cc9a0",
+      "path": "identity.site",
+      "fingerprint": "sha256:fd9cc9a0cd021175fb242bf0149783a81046283e6b8211a4f45c538deb927f9e"
+    },
+    {
+      "sid": "fedc611e",
+      "path": "building.meter.gas_volume",
+      "fingerprint": "sha256:fedc611e8dbe04659f1c9d437899d1a8512cd71410eb3b0fc5f968d9e95236e0"
     }
   ],
-  "registry_checksum": "sha256:7f7342974eb2f7d298305eb9d256d386cfd70a905cbf717ee655091b5163a6db"
+  "registry_checksum": "sha256:a421407a2ec9fffbfedc212d5234a1b3fb6a4e5c17a6cdf43b046e599ea6678b"
 }

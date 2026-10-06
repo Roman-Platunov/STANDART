@@ -1,0 +1,18 @@
+sid: b685a008
+path: vehicle.ev_battery_soc
+aliases:
+  short: vehicle.ev_battery_soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заряд тяговой батареи
+  en: EV battery SoC
+fingerprint: sha256:b685a0081d728d18c69369484a25c27adb3d729c8ccb2255c521d35c450fd0e7
+range:
+  min: 0
+  max: 100

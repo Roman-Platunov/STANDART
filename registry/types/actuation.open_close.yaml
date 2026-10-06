@@ -1,0 +1,19 @@
+sid: ee700b2e
+path: actuation.open_close
+aliases:
+  short: actuation.open_close
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда открыть/закрыть
+  en: Open/close command
+fingerprint: sha256:ee700b2e360726ba3e8a4978159ea7036750de6daabca380a3e9ce0cd060bbdd
+enumValues:
+  - open
+  - close
+  - stop

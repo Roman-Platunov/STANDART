@@ -1,0 +1,18 @@
+sid: 4ccca736
+path: physical.electrical.battery_soh
+aliases:
+  short: electrical.battery_soh
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Здоровье батареи
+  en: Battery state of health
+fingerprint: sha256:4ccca736521abcba8ddcaedab12295d1eaf86a77671530bf2b6f2342126b6628
+range:
+  min: 0
+  max: 100

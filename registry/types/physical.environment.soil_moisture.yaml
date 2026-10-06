@@ -1,0 +1,18 @@
+sid: 6502ad70
+path: physical.environment.soil_moisture
+aliases:
+  short: environment.soil_moisture
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Влажность почвы
+  en: Soil moisture
+fingerprint: sha256:6502ad702fb455f4200ecbffe7d9e98ad5516c2d76c60827fa4dc445a151f9fa
+range:
+  min: 0
+  max: 100

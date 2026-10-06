@@ -1,0 +1,20 @@
+sid: 45340aed
+path: smarthome.lock.state
+aliases:
+  short: lock.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние замка
+  en: Lock state
+fingerprint: sha256:45340aed7f434d3e718dd83ada35f504c82c133d0da550cf9c1a912b88f1ce75
+enumValues:
+  - locked
+  - unlocked
+  - jammed
+  - unknown

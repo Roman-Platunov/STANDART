@@ -1,0 +1,18 @@
+sid: 01a0a7e6
+path: vehicle.ev_battery_soh
+aliases:
+  short: vehicle.ev_battery_soh
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Здоровье тяговой батареи
+  en: EV battery SoH
+fingerprint: sha256:01a0a7e63248c623ea660fff511a7c5d9834d72894844ba968554aecfddb11f7
+range:
+  min: 0
+  max: 100

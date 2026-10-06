@@ -1,0 +1,21 @@
+sid: bd06960e
+path: energy.evse.connector_state
+aliases:
+  short: evse.connector_state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние разъёма ЗС
+  en: EVSE connector state
+fingerprint: sha256:bd06960e1869cf78a18a4a2b08b4d099a35a1b618e7fc3888537f87ab4085293
+enumValues:
+  - available
+  - occupied
+  - charging
+  - fault
+  - unavailable

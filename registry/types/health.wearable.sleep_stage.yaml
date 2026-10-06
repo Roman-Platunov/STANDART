@@ -1,0 +1,20 @@
+sid: 263383d0
+path: health.wearable.sleep_stage
+aliases:
+  short: wearable.sleep_stage
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: personal
+status: stable
+title:
+  ru: Стадия сна
+  en: Sleep stage
+fingerprint: sha256:263383d0b8632283b9e674589d6f109aac196e602d076b754fa59e918fb9e0bc
+enumValues:
+  - awake
+  - light
+  - deep
+  - rem

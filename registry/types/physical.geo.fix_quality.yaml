@@ -1,0 +1,21 @@
+sid: 6d138f80
+path: physical.geo.fix_quality
+aliases:
+  short: geo.fix_quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество GNSS-фикса
+  en: GNSS fix quality
+fingerprint: sha256:6d138f80447b49a5a835e4f09710a4b14f3a3b364ce06bd8e82bc581d1392cdb
+enumValues:
+  - none
+  - gps
+  - dgps
+  - rtk_float
+  - rtk_fixed

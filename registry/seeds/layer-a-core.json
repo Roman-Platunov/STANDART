@@ -1,0 +1,3013 @@
+{
+  "layer": "A",
+  "name": "core",
+  "types": [
+    {
+      "path": "physical.environment.dew_point",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dew point",
+      "titleRu": "Точка росы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -80,
+        "max": 60
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.absolute_humidity",
+      "kind": "quantity",
+      "unit": "g/m3",
+      "titleEn": "Absolute humidity",
+      "titleRu": "Абсолютная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.wet_bulb",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wet-bulb temperature",
+      "titleRu": "Температура по мокрому термометру",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.heat_index",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Heat index",
+      "titleRu": "Индекс жары",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.wind_chill",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wind chill",
+      "titleRu": "Ветро-холодовой индекс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.uv_index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "UV index",
+      "titleRu": "УФ-индекс",
+      "encodings": [
+        "f32",
+        "u8"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 20
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.solar_radiation",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "Solar radiation",
+      "titleRu": "Солнечная радиация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 1500
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.rainfall",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Rainfall",
+      "titleRu": "Осадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 1000
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.rainfall_rate",
+      "kind": "quantity",
+      "unit": "mm/h",
+      "titleEn": "Rainfall rate",
+      "titleRu": "Интенсивность осадков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.snowfall",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Snowfall water equivalent",
+      "titleRu": "Снегопад (водный эквивалент)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.cloud_cover",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cloud cover",
+      "titleRu": "Облачность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.visibility",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Visibility",
+      "titleRu": "Видимость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100000
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.pm1",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "PM1",
+      "titleRu": "PM1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 1000
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.pm10",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "PM10",
+      "titleRu": "PM10",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 2000
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.o3",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Ozone concentration",
+      "titleRu": "Концентрация озона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.no2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "NO2 concentration",
+      "titleRu": "Концентрация NO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.so2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "SO2 concentration",
+      "titleRu": "Концентрация SO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO concentration",
+      "titleRu": "Концентрация CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.nh3",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Ammonia concentration",
+      "titleRu": "Концентрация аммиака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.h2s",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2S concentration",
+      "titleRu": "Концентрация H2S",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.ch4",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Methane concentration",
+      "titleRu": "Концентрация метана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.formaldehyde",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Formaldehyde",
+      "titleRu": "Формальдегид",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.radon",
+      "kind": "quantity",
+      "unit": "Bq/m3",
+      "titleEn": "Radon",
+      "titleRu": "Радон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.aqi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Air quality index",
+      "titleRu": "Индекс качества воздуха",
+      "encodings": [
+        "u8",
+        "f32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.soil_moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soil moisture",
+      "titleRu": "Влажность почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.soil_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Soil temperature",
+      "titleRu": "Температура почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.leaf_wetness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Leaf wetness",
+      "titleRu": "Влажность листа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.water_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.water_level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Water level",
+      "titleRu": "Уровень воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Turbidity",
+      "titleRu": "Мутность воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.dissolved_oxygen",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Electrical conductivity",
+      "titleRu": "Электропроводность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.salinity",
+      "kind": "quantity",
+      "unit": "ppt",
+      "titleEn": "Salinity",
+      "titleRu": "Солёность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.wind_speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind speed",
+      "titleRu": "Скорость ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 150
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.wind_direction",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Wind direction",
+      "titleRu": "Направление ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.environment.wind_gust",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind gust",
+      "titleRu": "Порыв ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.resistance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Resistance",
+      "titleRu": "Сопротивление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.capacitance",
+      "kind": "quantity",
+      "unit": "F",
+      "titleEn": "Capacitance",
+      "titleRu": "Ёмкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.inductance",
+      "kind": "quantity",
+      "unit": "H",
+      "titleEn": "Inductance",
+      "titleRu": "Индуктивность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.apparent_power",
+      "kind": "quantity",
+      "unit": "VA",
+      "titleEn": "Apparent power",
+      "titleRu": "Полная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.reactive_power",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Reactive power",
+      "titleRu": "Реактивная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.power_factor",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Power factor",
+      "titleRu": "Коэффициент мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -1,
+        "max": 1
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.thd",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Total harmonic distortion",
+      "titleRu": "КНИ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.phase_angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Phase angle",
+      "titleRu": "Фазовый угол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.battery_voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Battery voltage",
+      "titleRu": "Напряжение батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.battery_current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Battery current",
+      "titleRu": "Ток батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.battery_soh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery state of health",
+      "titleRu": "Здоровье батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.battery_cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Battery cycle count",
+      "titleRu": "Циклы батареи",
+      "encodings": [
+        "i32",
+        "f32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.battery_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Battery temperature",
+      "titleRu": "Температура батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.charge_energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Charged energy",
+      "titleRu": "Заряженная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.discharge_energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Discharged energy",
+      "titleRu": "Разряженная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.grid_frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Grid frequency",
+      "titleRu": "Частота сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 40,
+        "max": 70
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.line_voltage_l1",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Line voltage L1",
+      "titleRu": "Напряжение L1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.line_voltage_l2",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Line voltage L2",
+      "titleRu": "Напряжение L2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.line_voltage_l3",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Line voltage L3",
+      "titleRu": "Напряжение L3",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.line_current_l1",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current L1",
+      "titleRu": "Ток L1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.line_current_l2",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current L2",
+      "titleRu": "Ток L2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.line_current_l3",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current L3",
+      "titleRu": "Ток L3",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.pv_power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Photovoltaic power",
+      "titleRu": "Мощность ФЭП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.pv_energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Photovoltaic energy",
+      "titleRu": "Энергия ФЭП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.electrical.inverter_efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inverter efficiency",
+      "titleRu": "КПД инвертора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.strain",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Strain",
+      "titleRu": "Деформация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.stress",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Stress",
+      "titleRu": "Напряжение (механика)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.displacement",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Displacement",
+      "titleRu": "Перемещение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.vibration_rms",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Vibration RMS",
+      "titleRu": "Вибрация RMS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.vibration_peak",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Vibration peak",
+      "titleRu": "Вибрация пик",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.rpm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Rotational speed",
+      "titleRu": "Обороты",
+      "encodings": [
+        "f32",
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Mass",
+      "titleRu": "Масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.weight",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Weight",
+      "titleRu": "Вес",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Density",
+      "titleRu": "Плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.viscosity",
+      "kind": "quantity",
+      "unit": "Pa.s",
+      "titleEn": "Viscosity",
+      "titleRu": "Вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Volume",
+      "titleRu": "Объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.volume_flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Volume flow",
+      "titleRu": "Объёмный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.mass_flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Mass flow",
+      "titleRu": "Массовый расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.differential_pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Vacuum pressure",
+      "titleRu": "Вакуум",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.level_percent",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level",
+      "titleRu": "Уровень в ёмкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.mechanical.valve_position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Valve position",
+      "titleRu": "Положение клапана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.angular_velocity",
+      "kind": "quantity",
+      "unit": "deg/s",
+      "titleEn": "Angular velocity",
+      "titleRu": "Угловая скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.angular_acceleration",
+      "kind": "quantity",
+      "unit": "deg/s2",
+      "titleEn": "Angular acceleration",
+      "titleRu": "Угловое ускорение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.orientation_roll",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Roll",
+      "titleRu": "Крен",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -180,
+        "max": 180
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.orientation_pitch",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Pitch",
+      "titleRu": "Тангаж",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -90,
+        "max": 90
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.orientation_yaw",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Yaw",
+      "titleRu": "Рыскание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -180,
+        "max": 180
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.quaternion_w",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Quaternion W",
+      "titleRu": "Кватернион W",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.quaternion_x",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Quaternion X",
+      "titleRu": "Кватернион X",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.quaternion_y",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Quaternion Y",
+      "titleRu": "Кватернион Y",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.quaternion_z",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Quaternion Z",
+      "titleRu": "Кватернион Z",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.steps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Step count",
+      "titleRu": "Шаги",
+      "encodings": [
+        "i32",
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.cadence",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Cadence",
+      "titleRu": "Каденс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.distance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Distance traveled",
+      "titleRu": "Пройденная дистанция",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.altitude_baro",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Barometric altitude",
+      "titleRu": "Барометрическая высота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.motion.vector3",
+      "kind": "spatial",
+      "unit": "-",
+      "titleEn": "3D vector",
+      "titleRu": "3D-вектор",
+      "encodings": [
+        "record"
+      ],
+      "sensitivity": "public",
+      "descriptionEn": "Record {x,y,z}",
+      "descriptionRu": "Запись {x,y,z}"
+    },
+    {
+      "path": "physical.geo.latitude",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Latitude",
+      "titleRu": "Широта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": -90,
+        "max": 90
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.geo.longitude",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Longitude",
+      "titleRu": "Долгота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": -180,
+        "max": 180
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.geo.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Ground speed GNSS",
+      "titleRu": "Путевая скорость GNSS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.geo.course",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Course over ground",
+      "titleRu": "Путевой угол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.geo.hdop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "HDOP",
+      "titleRu": "HDOP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.geo.vdop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "VDOP",
+      "titleRu": "VDOP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.geo.pdop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "PDOP",
+      "titleRu": "PDOP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.geo.satellites",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Satellite count",
+      "titleRu": "Число спутников",
+      "encodings": [
+        "u8",
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.geo.fix",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "GNSS fix accuracy",
+      "titleRu": "Точность фиксации GNSS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.geo.fix_quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "GNSS fix quality",
+      "titleRu": "Качество GNSS-фикса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "none",
+        "gps",
+        "dgps",
+        "rtk_float",
+        "rtk_fixed"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "physical.geo.geopoint3d",
+      "kind": "spatial",
+      "unit": "-",
+      "titleEn": "3D geopoint",
+      "titleRu": "Геоточка 3D",
+      "encodings": [
+        "record"
+      ],
+      "sensitivity": "personal",
+      "descriptionEn": "Record {lat,lon,alt} WGS84",
+      "descriptionRu": "Запись {lat,lon,alt} WGS84"
+    },
+    {
+      "path": "physical.optical.luminance",
+      "kind": "quantity",
+      "unit": "cd/m2",
+      "titleEn": "Luminance",
+      "titleRu": "Яркость (фотометрия)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.optical.luminous_flux",
+      "kind": "quantity",
+      "unit": "lm",
+      "titleEn": "Luminous flux",
+      "titleRu": "Световой поток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.optical.color_temperature",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Color temperature",
+      "titleRu": "Цветовая температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 1000,
+        "max": 20000
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.optical.color_x",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "CIE chromaticity x",
+      "titleRu": "CIE x",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.optical.color_y",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "CIE chromaticity y",
+      "titleRu": "CIE y",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.optical.infrared",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "IR intensity",
+      "titleRu": "ИК-интенсивность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.optical.ultraviolet",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "UV intensity",
+      "titleRu": "УФ-интенсивность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.optical.proximity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Proximity",
+      "titleRu": "Приближение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.optical.gesture",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gesture code",
+      "titleRu": "Код жеста",
+      "encodings": [
+        "u8",
+        "utf8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.acoustic.sound_pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Sound pressure",
+      "titleRu": "Звуковое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.acoustic.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Sound pressure level",
+      "titleRu": "Уровень звука SPL",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 200
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.acoustic.noise_leq",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Equivalent noise level",
+      "titleRu": "Эквивалентный уровень шума",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.acoustic.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Acoustic frequency",
+      "titleRu": "Акустическая частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.thermal.heat_flux",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "Heat flux",
+      "titleRu": "Тепловой поток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.thermal.thermal_resistance",
+      "kind": "quantity",
+      "unit": "K/W",
+      "titleEn": "Thermal resistance",
+      "titleRu": "Тепловое сопротивление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.thermal.surface_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Surface temperature",
+      "titleRu": "Температура поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.thermal.core_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Core temperature",
+      "titleRu": "Температура ядра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.magnetic.field_strength",
+      "kind": "quantity",
+      "unit": "T",
+      "titleEn": "Magnetic field",
+      "titleRu": "Магнитное поле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.magnetic.heading",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Magnetic heading",
+      "titleRu": "Магнитный курс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.radiation.dose_rate",
+      "kind": "quantity",
+      "unit": "uSv/h",
+      "titleEn": "Dose rate",
+      "titleRu": "Мощность дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.radiation.dose",
+      "kind": "quantity",
+      "unit": "uSv",
+      "titleEn": "Absorbed dose equivalent",
+      "titleRu": "Эквивалентная доза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.radiation.counts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Radiation counts",
+      "titleRu": "Счётчики излучения",
+      "encodings": [
+        "i32",
+        "f32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.respiratory_rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Respiratory rate",
+      "titleRu": "Частота дыхания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 80
+      },
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.blood_pressure_systolic",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "Systolic blood pressure",
+      "titleRu": "Систолическое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.blood_pressure_diastolic",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "Diastolic blood pressure",
+      "titleRu": "Диастолическое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.glucose",
+      "kind": "quantity",
+      "unit": "mg/dL",
+      "titleEn": "Blood glucose (consumer)",
+      "titleRu": "Глюкоза (потребительский)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Body weight",
+      "titleRu": "Масса тела",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Body height",
+      "titleRu": "Рост",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.bmi",
+      "kind": "quantity",
+      "unit": "kg/m2",
+      "titleEn": "BMI",
+      "titleRu": "ИМТ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.calories",
+      "kind": "quantity",
+      "unit": "kcal",
+      "titleEn": "Calories",
+      "titleRu": "Калории",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.sleep_duration",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Sleep duration",
+      "titleRu": "Длительность сна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.stress_index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stress index",
+      "titleRu": "Индекс стресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.vo2max",
+      "kind": "quantity",
+      "unit": "mL/min/kg",
+      "titleEn": "VO2 max (estimate)",
+      "titleRu": "VO2 max (оценка)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "physical.health.hrv_rmssd",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "HRV RMSSD",
+      "titleRu": "ВСР RMSSD",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.supply_air_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply air temperature",
+      "titleRu": "Температура притока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.return_air_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return air temperature",
+      "titleRu": "Температура обратки воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.supply_water_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply water temperature",
+      "titleRu": "Температура подачи воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.return_water_temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return water temperature",
+      "titleRu": "Температура обратки воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.setpoint_heating",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Heating setpoint",
+      "titleRu": "Уставка отопления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.setpoint_cooling",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cooling setpoint",
+      "titleRu": "Уставка охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.setpoint_humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity setpoint",
+      "titleRu": "Уставка влажности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.fan_speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fan speed",
+      "titleRu": "Скорость вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.airflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Airflow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.filter_pressure_drop",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Filter pressure drop",
+      "titleRu": "Перепад на фильтре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.occupancy_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Occupancy count",
+      "titleRu": "Число людей",
+      "encodings": [
+        "u8",
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.hvac.occupancy",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Occupied",
+      "titleRu": "Присутствие",
+      "encodings": [
+        "bool"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "building.hvac.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "HVAC mode",
+      "titleRu": "Режим HVAC",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "heat",
+        "cool",
+        "auto",
+        "fan",
+        "dry"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "building.lighting.brightness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Light brightness",
+      "titleRu": "Яркость света",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "building.lighting.color_hue",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Light hue",
+      "titleRu": "Оттенок света",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "building.lighting.color_saturation",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Light saturation",
+      "titleRu": "Насыщенность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "building.lighting.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Light on",
+      "titleRu": "Свет включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "building.meter.water_volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Water volume",
+      "titleRu": "Объём воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.meter.gas_volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Gas volume",
+      "titleRu": "Объём газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.meter.heat_energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Heat energy",
+      "titleRu": "Тепловая энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "building.security.door_open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door open",
+      "titleRu": "Дверь открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "building.security.window_open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Window open",
+      "titleRu": "Окно открыто",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "building.security.motion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Motion detected",
+      "titleRu": "Движение обнаружено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "building.security.smoke",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Smoke detected",
+      "titleRu": "Дым обнаружен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "building.security.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Water leak",
+      "titleRu": "Протечка воды",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "building.security.glass_break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Glass break",
+      "titleRu": "Разбитие стекла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "building.security.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sensor battery",
+      "titleRu": "Батарея датчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "building.security.alarm_state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Alarm state",
+      "titleRu": "Состояние охраны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "disarmed",
+        "armed_home",
+        "armed_away",
+        "triggered"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "network.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Signal-to-noise ratio",
+      "titleRu": "Отношение сигнал/шум",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "network.packet_loss",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Packet loss",
+      "titleRu": "Потери пакетов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "network.latency",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Latency",
+      "titleRu": "Задержка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "network.jitter",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Jitter",
+      "titleRu": "Джиттер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "network.bandwidth",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Bandwidth",
+      "titleRu": "Пропускная способность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "network.bytes_sent",
+      "kind": "quantity",
+      "unit": "By",
+      "titleEn": "Bytes sent",
+      "titleRu": "Байт отправлено",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "network.bytes_recv",
+      "kind": "quantity",
+      "unit": "By",
+      "titleEn": "Bytes received",
+      "titleRu": "Байт получено",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "network.tx_power",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "TX power",
+      "titleRu": "Мощность передатчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "network.channel",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "RF channel",
+      "titleRu": "Радиоканал",
+      "encodings": [
+        "u8",
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "network.lqi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Link quality indicator",
+      "titleRu": "LQI",
+      "encodings": [
+        "u8",
+        "f32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "network.link_state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Link state",
+      "titleRu": "Состояние канала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "down",
+        "up",
+        "degraded"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "network.ssid",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wi-Fi SSID",
+      "titleRu": "SSID Wi-Fi",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "network.ip_address",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IP address",
+      "titleRu": "IP-адрес",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "network.ble_address",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BLE address",
+      "titleRu": "Адрес BLE",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "identity.manufacturer",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Manufacturer",
+      "titleRu": "Производитель",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "identity.model",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Model",
+      "titleRu": "Модель",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "identity.firmware_version",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Firmware version",
+      "titleRu": "Версия прошивки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "identity.hardware_version",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hardware version",
+      "titleRu": "Версия железа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "identity.sku",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SKU",
+      "titleRu": "Артикул",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "identity.imei",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IMEI",
+      "titleRu": "IMEI",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "identity.iccid",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ICCID",
+      "titleRu": "ICCID",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "identity.asset_tag",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Asset tag",
+      "titleRu": "Инвентарный номер",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "identity.owner",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Owner id",
+      "titleRu": "Владелец",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "identity.site",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site id",
+      "titleRu": "Площадка / объект",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "temporal.timezone_offset",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Timezone offset",
+      "titleRu": "Смещение часового пояса",
+      "encodings": [
+        "i16",
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "temporal.sample_interval",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Sample interval",
+      "titleRu": "Интервал выборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "temporal.uptime_ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Uptime milliseconds",
+      "titleRu": "Аптайм мс",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "temporal.deadline",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Deadline unix time",
+      "titleRu": "Дедлайн (unix)",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logical.enabled",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Enabled",
+      "titleRu": "Включено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "logical.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Online",
+      "titleRu": "Онлайн",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "logical.error",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Error flag",
+      "titleRu": "Флаг ошибки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "logical.warning",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Warning flag",
+      "titleRu": "Флаг предупреждения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "logical.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Data quality",
+      "titleRu": "Качество данных",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "logical.severity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Data reliability",
+      "titleRu": "Достоверность данных",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "uncertain",
+        "bad",
+        "stale"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "logical.priority",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Priority",
+      "titleRu": "Приоритет",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "low",
+        "normal",
+        "high",
+        "critical"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "logical.sequence",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sequence number",
+      "titleRu": "Номер последовательности",
+      "encodings": [
+        "i32",
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "actuation.open_close",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Open/close command",
+      "titleRu": "Команда открыть/закрыть",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "close",
+        "stop"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "actuation.dim",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Dim command",
+      "titleRu": "Команда диммера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "down",
+        "stop"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "actuation.position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Actuator position",
+      "titleRu": "Положение привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "actuation.speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Actuator speed",
+      "titleRu": "Скорость привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "actuation.torque_limit",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Torque limit",
+      "titleRu": "Ограничение момента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "actuation.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Actuator state",
+      "titleRu": "Состояние привода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "moving",
+        "holding",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "media.video_ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Video reference",
+      "titleRu": "Ссылка на видео",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "media.document_ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Document reference",
+      "titleRu": "Ссылка на документ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "media.firmware_uri",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Firmware URI",
+      "titleRu": "URI прошивки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "media.file_size",
+      "kind": "quantity",
+      "unit": "By",
+      "titleEn": "File size",
+      "titleRu": "Размер файла",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "media.content_type",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MIME type",
+      "titleRu": "MIME-тип",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "compute.cpu_load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CPU load",
+      "titleRu": "Загрузка CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "compute.memory_used",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Memory used",
+      "titleRu": "Использование памяти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "compute.disk_used",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Disk used",
+      "titleRu": "Использование диска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "compute.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "SoC temperature",
+      "titleRu": "Температура SoC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compute.process_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Process count",
+      "titleRu": "Число процессов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    }
+  ]
+}

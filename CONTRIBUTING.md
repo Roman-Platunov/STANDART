@@ -3,8 +3,8 @@
 ## Propose a new parameter
 
 1. Search `registry/types/` and `registry/manifest.json` — ensure the meaning is not already covered (`path` or fingerprint).
-2. Add `registry/types/<path>.yaml` with at least: `path`, `kind`, `unit`, `encodings`, `sensitivity`, `status`, `title` (ru/en).
-3. Generate `fingerprint` and `sid`:
+2. **Single type:** add `registry/types/<path>.yaml`, or **batch:** append to a seed in `registry/seeds/` and run `npm run expand`.
+3. For a hand-written card, generate `fingerprint` and `sid`:
 
 ```bash
 node -e "import { computeFingerprint, deriveSid } from './tools/lib/fingerprint.mjs'; const fp=computeFingerprint({kind:'quantity',unit:'Cel',path:'physical.environment.example'}); console.log(fp, deriveSid(fp));"
@@ -15,9 +15,11 @@ node -e "import { computeFingerprint, deriveSid } from './tools/lib/fingerprint.
 
 ```bash
 npm run build
+# or after editing seeds:
+npm run expand
 ```
 
-6. Open a pull request. CI / validator rejects duplicate `path`, `sid`, `fingerprint`, or aliases. Similar paths produce warnings and may need maintainer review.
+6. Open a pull request. Validator rejects duplicate `path`, `sid`, `fingerprint`, or aliases. Similar paths produce warnings and may need maintainer review.
 
 ## Rules
 

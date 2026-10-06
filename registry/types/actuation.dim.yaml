@@ -1,0 +1,19 @@
+sid: "17098549"
+path: actuation.dim
+aliases:
+  short: actuation.dim
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда диммера
+  en: Dim command
+fingerprint: sha256:17098549a1305f1d086959bcf411fd25c31364eb83ddd907b0ef6436971076cd
+enumValues:
+  - up
+  - down
+  - stop

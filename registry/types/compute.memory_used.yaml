@@ -1,0 +1,18 @@
+sid: af79b768
+path: compute.memory_used
+aliases:
+  short: compute.memory_used
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Использование памяти
+  en: Memory used
+fingerprint: sha256:af79b768ff1bade615ba3646bc7c54af5e53b9de4c57deae3f7413cabd9f6236
+range:
+  min: 0
+  max: 100

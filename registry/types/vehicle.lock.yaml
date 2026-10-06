@@ -1,0 +1,18 @@
+sid: 292745db
+path: vehicle.lock
+aliases:
+  short: vehicle.lock
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда замков
+  en: Door lock command
+fingerprint: sha256:292745dbf68062350bf1cfb284cf9409073d1ce9bcc6dd555a5f6f1b1d78e0fa
+enumValues:
+  - lock
+  - unlock
