@@ -1,0 +1,161 @@
+{
+  "layer": "B3",
+  "name": "layer-b-broadcast.json",
+  "types": [
+    {
+      "path": "broadcast.audio.level",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Program audio level",
+      "titleRu": "Уровень программного звука",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast.audio.lufs",
+      "kind": "quantity",
+      "unit": "LUFS",
+      "titleEn": "Loudness LUFS",
+      "titleRu": "Громкость LUFS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast.video.bitrate",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Video bitrate",
+      "titleRu": "Битрейт видео",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast.video.framerate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Frame rate",
+      "titleRu": "Частота кадров",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast.video.dropped_frames",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dropped frames",
+      "titleRu": "Потерянные кадры",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast.rf.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Transmitter RF power",
+      "titleRu": "Мощность передатчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast.rf.vsWR",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "VSWR",
+      "titleRu": "КСВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast.rf.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Carrier frequency",
+      "titleRu": "Несущая частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast.stream.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stream state",
+      "titleRu": "Состояние эфира",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "offline",
+        "preview",
+        "live",
+        "ad_break",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "broadcast.channel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Channel id",
+      "titleRu": "ID канала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "broadcast.program.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Program id",
+      "titleRu": "ID программы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "broadcast.stream.url",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Stream URL",
+      "titleRu": "URL потока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

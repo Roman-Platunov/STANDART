@@ -1,0 +1,139 @@
+{
+  "layer": "B3",
+  "name": "layer-b-forestry.json",
+  "types": [
+    {
+      "path": "forestry.tree.dbh",
+      "kind": "quantity",
+      "unit": "cm",
+      "titleEn": "Tree DBH",
+      "titleRu": "Диаметр ствола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forestry.tree.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tree height",
+      "titleRu": "Высота дерева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forestry.canopy.cover",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Canopy cover",
+      "titleRu": "Сомкнутость крон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "forestry.soil.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Forest soil moisture",
+      "titleRu": "Влажность лесной почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "forestry.fire.risk_index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fire risk index",
+      "titleRu": "Индекс пожароопасности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forestry.fire.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hotspot temperature",
+      "titleRu": "Температура очага",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forestry.fire.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Forest fire detected",
+      "titleRu": "Обнаружен лесной пожар",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "forestry.harvest.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Harvest volume",
+      "titleRu": "Объём заготовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forestry.plot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Forest plot id",
+      "titleRu": "ID лесного участка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "forestry.tree.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tree id",
+      "titleRu": "ID дерева",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

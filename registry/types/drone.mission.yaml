@@ -1,0 +1,21 @@
+sid: 3bf17efe
+path: drone.mission
+aliases:
+  short: drone.mission
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда миссии дрона
+  en: Drone mission command
+fingerprint: sha256:3bf17efe6e1949cb5802c8372002fcee18e2496c729cbc896cd227d8ded7cb49
+enumValues:
+  - arm
+  - takeoff
+  - land
+  - rtl
+  - hold

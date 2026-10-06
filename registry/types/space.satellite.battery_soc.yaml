@@ -1,0 +1,18 @@
+sid: 37f5e338
+path: space.satellite.battery_soc
+aliases:
+  short: satellite.battery_soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заряд АБ КА
+  en: Satellite battery SoC
+fingerprint: sha256:37f5e3384df0c5c833eee532f7654c872cf9e6c69f788205316e261b37138179
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,250 @@
+{
+  "layer": "B3",
+  "name": "layer-b-space.json",
+  "types": [
+    {
+      "path": "space.satellite.altitude",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Orbital altitude",
+      "titleRu": "Орбитальная высота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.satellite.inclination",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Orbital inclination",
+      "titleRu": "Наклонение орбиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.satellite.period",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Orbital period",
+      "titleRu": "Период обращения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.satellite.eclipse_fraction",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Eclipse fraction",
+      "titleRu": "Доля затенения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "space.satellite.solar_array_power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Solar array power",
+      "titleRu": "Мощность СБ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.satellite.battery_soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Satellite battery SoC",
+      "titleRu": "Заряд АБ КА",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "space.satellite.bus_voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Satellite bus voltage",
+      "titleRu": "Напряжение шины КА",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.attitude.quaternion_error",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Attitude quaternion error",
+      "titleRu": "Ошибка ориентации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.attitude.rate_x",
+      "kind": "quantity",
+      "unit": "deg/s",
+      "titleEn": "Body rate X",
+      "titleRu": "Угловая скорость X",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.attitude.rate_y",
+      "kind": "quantity",
+      "unit": "deg/s",
+      "titleEn": "Body rate Y",
+      "titleRu": "Угловая скорость Y",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.attitude.rate_z",
+      "kind": "quantity",
+      "unit": "deg/s",
+      "titleEn": "Body rate Z",
+      "titleRu": "Угловая скорость Z",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.payload.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Payload temperature",
+      "titleRu": "Температура ПН",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.link.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Space link SNR",
+      "titleRu": "SNR космической линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.link.ber",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bit error rate",
+      "titleRu": "BER",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.link.datarate",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Space data rate",
+      "titleRu": "Скорость космической линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "space.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Spacecraft mode",
+      "titleRu": "Режим КА",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "safe",
+        "nominal",
+        "maneuver",
+        "commissioning",
+        "decommission"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "space.norad.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NORAD catalog id",
+      "titleRu": "NORAD ID",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "space.spacecraft.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spacecraft id",
+      "titleRu": "ID КА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "layer": "B3",
+  "name": "layer-b-access.json",
+  "types": [
+    {
+      "path": "access.user.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Access user id",
+      "titleRu": "ID пользователя СКУД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "access.badge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Badge id",
+      "titleRu": "ID пропуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "access.door.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Access door id",
+      "titleRu": "ID двери СКУД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "access.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Access zone id",
+      "titleRu": "ID зоны СКУД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "access.event.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Access event type",
+      "titleRu": "Тип события СКУД",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "granted",
+        "denied",
+        "tailgate",
+        "forced",
+        "held_open",
+        "exit"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access.door.forced",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door forced open",
+      "titleRu": "Дверь взломана",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access.door.held",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door held open",
+      "titleRu": "Дверь удерживается",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access.biometric.score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Biometric match score",
+      "titleRu": "Скор биометрии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "restricted",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "access.biometric.modality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Biometric modality",
+      "titleRu": "Модальность биометрии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fingerprint",
+        "face",
+        "iris",
+        "palm",
+        "voice",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access.door",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Access door command",
+      "titleRu": "Команда двери СКУД",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lock",
+        "unlock",
+        "momentary"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access.occupancy.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Zone occupancy",
+      "titleRu": "Людей в зоне",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    }
+  ]
+}

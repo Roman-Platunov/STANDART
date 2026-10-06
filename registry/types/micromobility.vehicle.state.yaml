@@ -1,0 +1,21 @@
+sid: 7b3de852
+path: micromobility.vehicle.state
+aliases:
+  short: vehicle.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние СИМ
+  en: Micromobility state
+fingerprint: sha256:7b3de852c9b2f91732724ad5c4dcad5333e6c54437bc9fb853b918f8aa6005a2
+enumValues:
+  - available
+  - reserved
+  - in_use
+  - maintenance
+  - low_battery

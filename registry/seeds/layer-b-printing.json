@@ -1,0 +1,161 @@
+{
+  "layer": "B3",
+  "name": "layer-b-printing.json",
+  "types": [
+    {
+      "path": "printing.job.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Print job progress",
+      "titleRu": "Прогресс печати",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "printing.job.pages",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pages printed",
+      "titleRu": "Напечатано страниц",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "printing.toner.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Toner level",
+      "titleRu": "Уровень тонера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "printing.ink.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ink level",
+      "titleRu": "Уровень чернил",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "printing.paper.remaining",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Paper remaining",
+      "titleRu": "Остаток бумаги",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "printing.3d.nozzle_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "3D nozzle temperature",
+      "titleRu": "Температура сопла 3D",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "printing.3d.bed_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "3D bed temperature",
+      "titleRu": "Температура стола 3D",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "printing.3d.layer",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Current layer",
+      "titleRu": "Текущий слой",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "printing.job.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Print job state",
+      "titleRu": "Состояние задания печати",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "printing",
+        "paused",
+        "done",
+        "error",
+        "jam"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "printing.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Printer id",
+      "titleRu": "ID принтера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "printing.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Print job id",
+      "titleRu": "ID задания печати",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

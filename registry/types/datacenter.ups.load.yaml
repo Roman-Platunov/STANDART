@@ -1,0 +1,18 @@
+sid: 34ca4f9a
+path: datacenter.ups.load
+aliases:
+  short: ups.load
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Нагрузка ИБП
+  en: UPS load
+fingerprint: sha256:34ca4f9ab5abfb56e4dc6bf5938dba91b9221fc761b46da551c51910238b6a76
+range:
+  min: 0
+  max: 100

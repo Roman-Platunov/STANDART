@@ -1,0 +1,19 @@
+sid: 9c60c75c
+path: micromobility.lock
+aliases:
+  short: micromobility.lock
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда замка СИМ
+  en: Micromobility lock command
+fingerprint: sha256:9c60c75c147dcf365ce62e97d1b4692a76552e1810160c9ccd68cb2d3cd607cf
+enumValues:
+  - lock
+  - unlock
+  - alarm

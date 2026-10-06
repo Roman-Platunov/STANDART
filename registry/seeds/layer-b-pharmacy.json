@@ -1,0 +1,125 @@
+{
+  "layer": "B3",
+  "name": "layer-b-pharmacy.json",
+  "types": [
+    {
+      "path": "pharmacy.drug.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Drug id",
+      "titleRu": "ID препарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pharmacy.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lot id",
+      "titleRu": "ID серии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pharmacy.prescription.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Prescription id",
+      "titleRu": "ID рецепта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "pharmacy.storage.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pharmacy storage temperature",
+      "titleRu": "Температура хранения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy.storage.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pharmacy storage humidity",
+      "titleRu": "Влажность хранения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy.coldchain.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pharmacy cold chain OK",
+      "titleRu": "Холодовая цепь в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pharmacy.inventory.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pharmacy stock count",
+      "titleRu": "Остаток аптеки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy.dispense.quantity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dispense quantity",
+      "titleRu": "Отпущено",
+      "encodings": [
+        "f32",
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy.item.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pharmacy item status",
+      "titleRu": "Статус препарата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "reserved",
+        "expired",
+        "recalled",
+        "quarantine"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

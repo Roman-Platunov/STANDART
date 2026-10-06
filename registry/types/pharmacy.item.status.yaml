@@ -1,0 +1,21 @@
+sid: 3a4f633c
+path: pharmacy.item.status
+aliases:
+  short: item.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус препарата
+  en: Pharmacy item status
+fingerprint: sha256:3a4f633c297686126e205c71eea646a247682bbf6bbd66f7f9d331c95783d15b
+enumValues:
+  - available
+  - reserved
+  - expired
+  - recalled
+  - quarantine

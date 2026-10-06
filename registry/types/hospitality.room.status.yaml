@@ -1,0 +1,22 @@
+sid: 4fcb50ba
+path: hospitality.room.status
+aliases:
+  short: room.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус номера
+  en: Room status
+fingerprint: sha256:4fcb50bacd636c3a94069a9288b1227314011836266d89a7b8d146a29f62bbc7
+enumValues:
+  - vacant
+  - occupied
+  - dirty
+  - clean
+  - ooo
+  - reserved

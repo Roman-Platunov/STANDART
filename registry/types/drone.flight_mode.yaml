@@ -1,0 +1,23 @@
+sid: 84edd17c
+path: drone.flight_mode
+aliases:
+  short: drone.flight_mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим полёта дрона
+  en: Drone flight mode
+fingerprint: sha256:84edd17c3226ea8133668049c304b04e1f7a1acca36e557f5fa876e6afd9b75f
+enumValues:
+  - manual
+  - stabilize
+  - loiter
+  - rtl
+  - auto
+  - land
+  - failsafe

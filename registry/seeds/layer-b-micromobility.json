@@ -1,0 +1,162 @@
+{
+  "layer": "B3",
+  "name": "layer-b-micromobility.json",
+  "types": [
+    {
+      "path": "micromobility.scooter.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Scooter speed",
+      "titleRu": "Скорость самоката",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micromobility.scooter.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scooter battery",
+      "titleRu": "Заряд самоката",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "micromobility.bike.cadence",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Bike cadence",
+      "titleRu": "Каденс велосипеда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micromobility.bike.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Bike power",
+      "titleRu": "Мощность велосипеда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micromobility.bike.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "E-bike battery",
+      "titleRu": "Заряд электровелосипеда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "micromobility.lock.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Micromobility locked",
+      "titleRu": "Самокат/велосипед закрыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "micromobility.vehicle.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Micromobility state",
+      "titleRu": "Состояние СИМ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "reserved",
+        "in_use",
+        "maintenance",
+        "low_battery"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "micromobility.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Micromobility vehicle id",
+      "titleRu": "ID СИМ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "micromobility.trip.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Trip id",
+      "titleRu": "ID поездки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "micromobility.trip.distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Trip distance micromobility",
+      "titleRu": "Дистанция поездки СИМ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micromobility.lock",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Micromobility lock command",
+      "titleRu": "Команда замка СИМ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lock",
+        "unlock",
+        "alarm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

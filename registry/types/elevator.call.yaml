@@ -1,0 +1,21 @@
+sid: c3a8bf6d
+path: elevator.call
+aliases:
+  short: elevator.call
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Вызов лифта
+  en: Elevator call command
+fingerprint: sha256:c3a8bf6da275b550f5ce402e204e2809b46b9de4bb784b287f9724caf3f17daa
+enumValues:
+  - up
+  - down
+  - open
+  - close
+  - stop

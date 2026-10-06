@@ -1,0 +1,136 @@
+{
+  "layer": "B3",
+  "name": "layer-b-realestate.json",
+  "types": [
+    {
+      "path": "realestate.property.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Property id",
+      "titleRu": "ID объекта недвижимости",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "realestate.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Unit id",
+      "titleRu": "ID помещения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "realestate.lease.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lease id",
+      "titleRu": "ID договора аренды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "realestate.area",
+      "kind": "quantity",
+      "unit": "m2",
+      "titleEn": "Floor area",
+      "titleRu": "Площадь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "realestate.rent.amount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rent amount",
+      "titleRu": "Арендная плата",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "restricted",
+      "status": "stable"
+    },
+    {
+      "path": "realestate.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Property occupancy",
+      "titleRu": "Заполненность объекта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "realestate.energy.intensity",
+      "kind": "quantity",
+      "unit": "kWh/m2",
+      "titleEn": "Energy use intensity",
+      "titleRu": "Удельное энергопотребление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "realestate.unit.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit status",
+      "titleRu": "Статус помещения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vacant",
+        "leased",
+        "maintenance",
+        "sale"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "realestate.amenity.gym",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gym amenity",
+      "titleRu": "Есть спортзал",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "realestate.amenity.parking",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Parking amenity",
+      "titleRu": "Есть парковка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

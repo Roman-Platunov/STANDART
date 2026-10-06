@@ -1,0 +1,268 @@
+{
+  "layer": "B3",
+  "name": "layer-b-water.json",
+  "types": [
+    {
+      "path": "water.treatment.flow_in",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Inlet flow",
+      "titleRu": "Расход на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.treatment.flow_out",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Outlet flow",
+      "titleRu": "Расход на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.treatment.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Treatment turbidity",
+      "titleRu": "Мутность очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.treatment.chlorine",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Residual chlorine",
+      "titleRu": "Остаточный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.treatment.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Treatment pH",
+      "titleRu": "pH очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "water.treatment.uv_dose",
+      "kind": "quantity",
+      "unit": "mJ/cm2",
+      "titleEn": "UV dose",
+      "titleRu": "Доза УФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.network.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Water network pressure",
+      "titleRu": "Давление в сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.network.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Water network flow",
+      "titleRu": "Расход в сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.network.leak_index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Leak index",
+      "titleRu": "Индекс утечек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.reservoir.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reservoir level",
+      "titleRu": "Уровень водохранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "water.reservoir.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Reservoir volume",
+      "titleRu": "Объём водохранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.wastewater.bod",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "BOD",
+      "titleRu": "БПК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.wastewater.cod",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "COD",
+      "titleRu": "ХПК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.wastewater.tss",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "TSS",
+      "titleRu": "Взвешенные вещества",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.wastewater.ammonium",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Ammonium",
+      "titleRu": "Аммоний",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.meter.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Water meter volume",
+      "titleRu": "Показания водосчётчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water.alarm.overflow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overflow alarm",
+      "titleRu": "Переполнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "water.alarm.low_pressure",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low pressure alarm",
+      "titleRu": "Низкое давление",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "water.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Water plant id",
+      "titleRu": "ID станции водоподготовки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "water.dma.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DMA id",
+      "titleRu": "ID DMA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

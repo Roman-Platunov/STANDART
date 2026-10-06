@@ -1,0 +1,21 @@
+sid: dd3e8a89
+path: insurance.policy.status
+aliases:
+  short: policy.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус полиса
+  en: Policy status
+fingerprint: sha256:dd3e8a8953557a98b53514b5f940114879b581c200f48c3bd3d5ec2d40775748
+enumValues:
+  - quote
+  - active
+  - lapsed
+  - cancelled
+  - expired

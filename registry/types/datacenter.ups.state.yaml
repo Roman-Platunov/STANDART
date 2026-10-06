@@ -1,0 +1,21 @@
+sid: f96d1bb1
+path: datacenter.ups.state
+aliases:
+  short: ups.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ИБП
+  en: UPS state
+fingerprint: sha256:f96d1bb13600e963beb8392342bdf8bbc6d815400918a20e2d4c6c15d8cc31d6
+enumValues:
+  - online
+  - battery
+  - bypass
+  - fault
+  - off

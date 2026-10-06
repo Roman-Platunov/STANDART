@@ -1,0 +1,18 @@
+sid: abc06720
+path: micromobility.scooter.battery
+aliases:
+  short: scooter.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заряд самоката
+  en: Scooter battery
+fingerprint: sha256:abc067205c127f2ce88762602c536d09d6277015cabfb93896ad56bfc0b55685
+range:
+  min: 0
+  max: 100

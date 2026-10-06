@@ -1,0 +1,266 @@
+{
+  "layer": "B3",
+  "name": "layer-b-drone.json",
+  "types": [
+    {
+      "path": "drone.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Drone battery SoC",
+      "titleRu": "Заряд батареи дрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "drone.battery.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Drone battery voltage",
+      "titleRu": "Напряжение батареи дрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.altitude.agl",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Altitude AGL",
+      "titleRu": "Высота AGL",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.altitude.amsl",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Altitude AMSL",
+      "titleRu": "Высота AMSL",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.speed.horizontal",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Horizontal speed drone",
+      "titleRu": "Горизонтальная скорость дрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.speed.vertical",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Vertical speed drone",
+      "titleRu": "Вертикальная скорость дрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.gimbal.pitch",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Gimbal pitch",
+      "titleRu": "Тангаж подвеса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.gimbal.yaw",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Gimbal yaw",
+      "titleRu": "Рыскание подвеса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.gimbal.roll",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Gimbal roll",
+      "titleRu": "Крен подвеса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.motor.rpm_1",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Motor 1 RPM",
+      "titleRu": "Обороты мотора 1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.motor.rpm_2",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Motor 2 RPM",
+      "titleRu": "Обороты мотора 2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.motor.rpm_3",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Motor 3 RPM",
+      "titleRu": "Обороты мотора 3",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.motor.rpm_4",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Motor 4 RPM",
+      "titleRu": "Обороты мотора 4",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.link.rssi",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Drone RC RSSI",
+      "titleRu": "RSSI пульта дрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone.geofence.inside",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Inside geofence",
+      "titleRu": "Внутри геозоны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "drone.flight_mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Drone flight mode",
+      "titleRu": "Режим полёта дрона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "manual",
+        "stabilize",
+        "loiter",
+        "rtl",
+        "auto",
+        "land",
+        "failsafe"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "drone.uav.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UAV id",
+      "titleRu": "ID БВС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drone.mission",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Drone mission command",
+      "titleRu": "Команда миссии дрона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "arm",
+        "takeoff",
+        "land",
+        "rtl",
+        "hold"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "drone.camera.snapshot_ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Drone snapshot",
+      "titleRu": "Снимок с дрона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

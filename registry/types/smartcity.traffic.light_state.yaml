@@ -1,0 +1,21 @@
+sid: 971ae70c
+path: smartcity.traffic.light_state
+aliases:
+  short: traffic.light_state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Сигнал светофора
+  en: Traffic light state
+fingerprint: sha256:971ae70c8e99e594ed27a36e89c069cf1c7ad99e63a3bf84f2a3507e567037fa
+enumValues:
+  - red
+  - yellow
+  - green
+  - flashing
+  - off

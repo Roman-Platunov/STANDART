@@ -1,0 +1,22 @@
+sid: 3d8027b3
+path: mining.shift.state
+aliases:
+  short: shift.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Активность смены
+  en: Mine shift activity
+fingerprint: sha256:3d8027b3007e5afd16b85936132596ca018badf5dd407cbdaf48a255b7d5b46a
+enumValues:
+  - idle
+  - drilling
+  - blasting
+  - loading
+  - hauling
+  - maintenance

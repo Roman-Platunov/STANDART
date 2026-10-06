@@ -1,0 +1,130 @@
+{
+  "layer": "B3",
+  "name": "layer-b-insurance.json",
+  "types": [
+    {
+      "path": "insurance.policy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Policy id",
+      "titleRu": "ID полиса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "insurance.claim.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Claim id",
+      "titleRu": "ID убытка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "insurance.customer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Insurance customer id",
+      "titleRu": "ID клиента страхования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "insurance.risk.score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Insurance risk score",
+      "titleRu": "Страховой риск-скор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "restricted",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "insurance.premium.amount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Premium amount",
+      "titleRu": "Сумма премии",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "restricted",
+      "status": "stable"
+    },
+    {
+      "path": "insurance.claim.amount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Claim amount",
+      "titleRu": "Сумма убытка",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "restricted",
+      "status": "stable"
+    },
+    {
+      "path": "insurance.claim.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Claim status",
+      "titleRu": "Статус убытка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "opened",
+        "investigating",
+        "approved",
+        "rejected",
+        "paid",
+        "closed"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "insurance.policy.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Policy status",
+      "titleRu": "Статус полиса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "quote",
+        "active",
+        "lapsed",
+        "cancelled",
+        "expired"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "insurance.evidence.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Claim evidence ref",
+      "titleRu": "Доказательство по убытку",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

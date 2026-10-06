@@ -1,0 +1,19 @@
+sid: dec59191
+path: access.door
+aliases:
+  short: access.door
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда двери СКУД
+  en: Access door command
+fingerprint: sha256:dec59191f7de8ab5edb6b26be326dcbee3f3f420d5956bfb4e91e7e5ddd90554
+enumValues:
+  - lock
+  - unlock
+  - momentary

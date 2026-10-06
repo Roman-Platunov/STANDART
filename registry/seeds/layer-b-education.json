@@ -1,0 +1,146 @@
+{
+  "layer": "B3",
+  "name": "layer-b-education.json",
+  "types": [
+    {
+      "path": "education.campus.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Campus id",
+      "titleRu": "ID кампуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "education.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Classroom id",
+      "titleRu": "ID аудитории",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "education.course.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Course id",
+      "titleRu": "ID курса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "education.student.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Student id",
+      "titleRu": "ID студента",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "education.room.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Classroom occupancy",
+      "titleRu": "Заполненность аудитории",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "education.room.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Classroom CO2",
+      "titleRu": "CO2 аудитории",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "education.attendance.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Attendance count",
+      "titleRu": "Число присутствующих",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "education.exam.score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exam score",
+      "titleRu": "Балл экзамена",
+      "encodings": [
+        "f32"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "education.projector.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Projector on",
+      "titleRu": "Проектор включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "education.access.granted",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Room access granted",
+      "titleRu": "Доступ в аудиторию",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "education.class.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Class state",
+      "titleRu": "Состояние занятия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scheduled",
+        "live",
+        "break",
+        "ended",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

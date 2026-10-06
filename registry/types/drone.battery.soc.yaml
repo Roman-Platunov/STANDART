@@ -1,0 +1,18 @@
+sid: e3007494
+path: drone.battery.soc
+aliases:
+  short: drone.battery.soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заряд батареи дрона
+  en: Drone battery SoC
+fingerprint: sha256:e3007494878bd2f4f036a3f3817fbdc7d84a05e6acbe845b67c4e3e07582c4d7
+range:
+  min: 0
+  max: 100

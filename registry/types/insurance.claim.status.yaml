@@ -1,0 +1,22 @@
+sid: 381e9d26
+path: insurance.claim.status
+aliases:
+  short: claim.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус убытка
+  en: Claim status
+fingerprint: sha256:381e9d26dc6667d7388fb3c6d29c8efa85e2b9bc36a6d855a858291c2d8840d4
+enumValues:
+  - opened
+  - investigating
+  - approved
+  - rejected
+  - paid
+  - closed

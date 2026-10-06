@@ -1,0 +1,21 @@
+sid: c099634f
+path: space.mode
+aliases:
+  short: space.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим КА
+  en: Spacecraft mode
+fingerprint: sha256:c099634f9e742c5d0966908c6925408ac0ba392d214c12a36a6c38c718f077d7
+enumValues:
+  - safe
+  - nominal
+  - maneuver
+  - commissioning
+  - decommission

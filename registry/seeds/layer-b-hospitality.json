@@ -1,0 +1,197 @@
+{
+  "layer": "B3",
+  "name": "layer-b-hospitality.json",
+  "types": [
+    {
+      "path": "hospitality.hotel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hotel id",
+      "titleRu": "ID отеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hospitality.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Room id",
+      "titleRu": "ID номера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hospitality.guest.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Guest id",
+      "titleRu": "ID гостя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "hospitality.room.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Room status",
+      "titleRu": "Статус номера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vacant",
+        "occupied",
+        "dirty",
+        "clean",
+        "ooo",
+        "reserved"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hospitality.room.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hotel room temperature",
+      "titleRu": "Температура номера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hospitality.room.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hotel room humidity",
+      "titleRu": "Влажность номера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hospitality.room.dnd",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Do not disturb",
+      "titleRu": "Не беспокоить",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hospitality.room.mur",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Make up room",
+      "titleRu": "Убрать номер",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hospitality.kitchen.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Kitchen temperature",
+      "titleRu": "Температура кухни",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hospitality.fridge.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hospitality fridge temp",
+      "titleRu": "Температура холодильника (HoReCa)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hospitality.occupancy.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Occupancy rate",
+      "titleRu": "Загрузка отеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hospitality.restaurant.table_occupied",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tables occupied",
+      "titleRu": "Занятые столы",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hospitality.queue.wait_minutes",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Wait time minutes",
+      "titleRu": "Ожидание (мин)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hospitality.door",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Hotel door command",
+      "titleRu": "Команда двери номера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lock",
+        "unlock"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

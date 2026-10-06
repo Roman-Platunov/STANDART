@@ -1,0 +1,162 @@
+{
+  "layer": "B3",
+  "name": "layer-b-esg.json",
+  "types": [
+    {
+      "path": "esg.emissions.co2e",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "CO2e emissions",
+      "titleRu": "Выбросы CO2e",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esg.emissions.nox",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "NOx emissions",
+      "titleRu": "Выбросы NOx",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esg.emissions.sox",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "SOx emissions",
+      "titleRu": "Выбросы SOx",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esg.energy.renewable_share",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Renewable energy share",
+      "titleRu": "Доля ВИЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "esg.water.consumed",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Water consumed",
+      "titleRu": "Потребление воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esg.water.recycled",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Water recycled",
+      "titleRu": "Оборотная вода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esg.waste.generated",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Waste generated",
+      "titleRu": "Образовано отходов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esg.waste.recycled",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Waste recycled",
+      "titleRu": "Переработано отходов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esg.waste.hazardous",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Hazardous waste",
+      "titleRu": "Опасные отходы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esg.carbon.intensity",
+      "kind": "quantity",
+      "unit": "kg/kWh",
+      "titleEn": "Carbon intensity",
+      "titleRu": "Углеродоёмкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esg.facility.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ESG facility id",
+      "titleRu": "ID объекта ESG",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "esg.report.period",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Report period",
+      "titleRu": "Период отчёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

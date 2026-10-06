@@ -1,0 +1,18 @@
+sid: 74dbf525
+path: pharmacy.storage.humidity
+aliases:
+  short: storage.humidity
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Влажность хранения
+  en: Pharmacy storage humidity
+fingerprint: sha256:74dbf5257564e784e563086c1e6976d4f3941a8231d5b9317ce7a06039e8ad46
+range:
+  min: 0
+  max: 100

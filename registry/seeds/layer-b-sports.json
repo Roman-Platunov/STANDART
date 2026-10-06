@@ -1,0 +1,200 @@
+{
+  "layer": "B3",
+  "name": "layer-b-sports.json",
+  "types": [
+    {
+      "path": "sports.athlete.heart_rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Athlete heart rate",
+      "titleRu": "Пульс спортсмена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "sports.athlete.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Athlete speed",
+      "titleRu": "Скорость спортсмена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "sports.athlete.distance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Athlete distance",
+      "titleRu": "Дистанция спортсмена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "sports.athlete.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Athlete power",
+      "titleRu": "Мощность спортсмена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "sports.athlete.cadence",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Athlete cadence",
+      "titleRu": "Каденс спортсмена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "sports.ball.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Ball speed",
+      "titleRu": "Скорость мяча",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sports.court.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Court temperature",
+      "titleRu": "Температура площадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sports.pool.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pool temperature",
+      "titleRu": "Температура бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sports.pool.chlorine",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Pool chlorine",
+      "titleRu": "Хлор в бассейне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sports.gym.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gym occupancy",
+      "titleRu": "Посещаемость зала",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sports.score.home",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Home score",
+      "titleRu": "Счёт хозяев",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sports.score.away",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Away score",
+      "titleRu": "Счёт гостей",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sports.athlete.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Athlete id",
+      "titleRu": "ID спортсмена",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "sports.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sports event id",
+      "titleRu": "ID соревнования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sports.session.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Training session state",
+      "titleRu": "Состояние тренировки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "warmup",
+        "active",
+        "rest",
+        "cooldown",
+        "finished"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "layer": "B3",
+  "name": "layer-b-mining.json",
+  "types": [
+    {
+      "path": "mining.conveyor.tonnage",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Conveyor tonnage",
+      "titleRu": "Производительность конвейера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mining.haul.truck_load",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Haul truck load",
+      "titleRu": "Нагрузка самосвала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mining.haul.cycle_time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Haul cycle time",
+      "titleRu": "Время цикла перевозки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mining.drill.penetration_rate",
+      "kind": "quantity",
+      "unit": "m/h",
+      "titleEn": "Drill penetration rate",
+      "titleRu": "Скорость бурения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mining.blast.vibration",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Blast vibration",
+      "titleRu": "Вибрация взрыва",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mining.air.dust",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Mine dust",
+      "titleRu": "Пыль в шахте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mining.air.methane",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Mine methane",
+      "titleRu": "Метан в шахте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mining.air.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Mine CO",
+      "titleRu": "CO в шахте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mining.ground.displacement",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ground displacement",
+      "titleRu": "Смещение грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mining.ore.grade",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ore grade",
+      "titleRu": "Содержание руды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mining.safety.gas_alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mine gas alarm",
+      "titleRu": "Газовая тревога шахты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mining.face.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mine face id",
+      "titleRu": "ID забоя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mining.truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Haul truck id",
+      "titleRu": "ID самосвала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mining.shift.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mine shift activity",
+      "titleRu": "Активность смены",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "drilling",
+        "blasting",
+        "loading",
+        "hauling",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

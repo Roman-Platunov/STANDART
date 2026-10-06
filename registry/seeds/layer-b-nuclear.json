@@ -1,0 +1,143 @@
+{
+  "layer": "B3",
+  "name": "layer-b-nuclear.json",
+  "types": [
+    {
+      "path": "nuclear.reactor.power",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reactor power",
+      "titleRu": "Мощность реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 110
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nuclear.reactor.period",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Reactor period",
+      "titleRu": "Период реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear.coolant.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature nuclear",
+      "titleRu": "Температура теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear.coolant.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Coolant pressure nuclear",
+      "titleRu": "Давление теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear.coolant.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Coolant flow nuclear",
+      "titleRu": "Расход теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear.radiation.dose_rate",
+      "kind": "quantity",
+      "unit": "uSv/h",
+      "titleEn": "Nuclear dose rate",
+      "titleRu": "Мощность дозы (АЭС)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear.containment.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Containment pressure",
+      "titleRu": "Давление гермооболочки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear.scram.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SCRAM active",
+      "titleRu": "АЗ активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nuclear.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reactor mode",
+      "titleRu": "Режим реактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "shutdown",
+        "startup",
+        "power",
+        "refueling",
+        "trip"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nuclear.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Nuclear unit id",
+      "titleRu": "ID энергоблока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

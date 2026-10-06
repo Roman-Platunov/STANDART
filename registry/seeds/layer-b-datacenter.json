@@ -1,0 +1,251 @@
+{
+  "layer": "B3",
+  "name": "layer-b-datacenter.json",
+  "types": [
+    {
+      "path": "datacenter.rack.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Rack power",
+      "titleRu": "Мощность стойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.rack.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Rack temperature",
+      "titleRu": "Температура стойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.rack.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rack humidity",
+      "titleRu": "Влажность стойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.pdu.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "PDU voltage",
+      "titleRu": "Напряжение PDU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.pdu.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "PDU current",
+      "titleRu": "Ток PDU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.pdu.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "PDU energy",
+      "titleRu": "Энергия PDU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.ups.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "UPS load",
+      "titleRu": "Нагрузка ИБП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.ups.runtime",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "UPS runtime",
+      "titleRu": "Автономия ИБП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.ups.battery_soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "UPS battery SoC",
+      "titleRu": "Заряд ИБП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.cooling.supply_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cooling supply temp",
+      "titleRu": "Температура подачи охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.cooling.return_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cooling return temp",
+      "titleRu": "Температура обратки охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.cooling.pue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "PUE",
+      "titleRu": "PUE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.floor.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Raised floor pressure",
+      "titleRu": "Давление под фальшполом",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "datacenter.leak.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coolant leak detected",
+      "titleRu": "Утечка хладагента",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "datacenter.ups.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "UPS state",
+      "titleRu": "Состояние ИБП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "battery",
+        "bypass",
+        "fault",
+        "off"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "datacenter.rack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rack id",
+      "titleRu": "ID стойки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "datacenter.hall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hall id",
+      "titleRu": "ID зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "datacenter.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DC site id",
+      "titleRu": "ID ЦОД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

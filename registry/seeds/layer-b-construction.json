@@ -1,0 +1,211 @@
+{
+  "layer": "B3",
+  "name": "layer-b-construction.json",
+  "types": [
+    {
+      "path": "construction.crane.load",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Crane load",
+      "titleRu": "Нагрузка крана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.crane.radius",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Crane radius",
+      "titleRu": "Вылет стрелы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.crane.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Crane boom angle",
+      "titleRu": "Угол стрелы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.crane.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Crane wind speed",
+      "titleRu": "Ветер на кране",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.crane.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crane overload",
+      "titleRu": "Перегруз крана",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "construction.concrete.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Concrete temperature",
+      "titleRu": "Температура бетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.concrete.maturity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Concrete maturity",
+      "titleRu": "Зрелость бетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.vibration.rms",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Site vibration RMS",
+      "titleRu": "Вибрация на площадке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.dust.pm10",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Construction PM10",
+      "titleRu": "Пыль PM10 (стройка)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.noise.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Construction noise",
+      "titleRu": "Шум стройки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.worker.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Workers on site",
+      "titleRu": "Рабочих на площадке",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "construction.helmet.worn",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Helmet worn",
+      "titleRu": "Каска надета",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "construction.harness.worn",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Harness worn",
+      "titleRu": "Страховка надета",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "construction.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Construction site id",
+      "titleRu": "ID стройплощадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "construction.equipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Equipment id",
+      "titleRu": "ID техники",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "construction.equipment.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Equipment state",
+      "titleRu": "Состояние техники",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "working",
+        "maintenance",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

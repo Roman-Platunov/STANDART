@@ -1,0 +1,21 @@
+sid: 427dbd56
+path: broadcast.stream.state
+aliases:
+  short: stream.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние эфира
+  en: Stream state
+fingerprint: sha256:427dbd56ba2ff92a833a99796ccb8eca47e6d0afdb3492710ada0139075478a3
+enumValues:
+  - offline
+  - preview
+  - live
+  - ad_break
+  - fault

@@ -1,0 +1,21 @@
+sid: b153d177
+path: sports.session.state
+aliases:
+  short: session.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние тренировки
+  en: Training session state
+fingerprint: sha256:b153d177cbe9da25f01963987a5e41fee835a0c3728b4f88475486b0cb28e948
+enumValues:
+  - warmup
+  - active
+  - rest
+  - cooldown
+  - finished

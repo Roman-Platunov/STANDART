@@ -1,0 +1,18 @@
+sid: 83ad635e
+path: smartcity.traffic.occupancy
+aliases:
+  short: traffic.occupancy
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Занятость полосы
+  en: Lane occupancy
+fingerprint: sha256:83ad635e733c8b630f8c9f4af319f4336aa0e015c2ebd430061a6cf226660c8d
+range:
+  min: 0
+  max: 100

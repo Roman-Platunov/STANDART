@@ -1,0 +1,154 @@
+{
+  "layer": "B3",
+  "name": "layer-b-hydrogen.json",
+  "types": [
+    {
+      "path": "hydrogen.tank.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "H2 tank pressure",
+      "titleRu": "Давление бака H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen.tank.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "H2 tank temperature",
+      "titleRu": "Температура бака H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen.tank.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "H2 tank fill",
+      "titleRu": "Заполнение бака H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen.fuelcell.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Fuel cell power",
+      "titleRu": "Мощность ТЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen.fuelcell.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Fuel cell voltage",
+      "titleRu": "Напряжение ТЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen.fuelcell.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Fuel cell current",
+      "titleRu": "Ток ТЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen.fuelcell.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fuel cell efficiency",
+      "titleRu": "КПД ТЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen.electrolyzer.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Electrolyzer power",
+      "titleRu": "Мощность электролизёра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen.electrolyzer.h2_rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "H2 production rate",
+      "titleRu": "Производство H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen.leak.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hydrogen leak detected",
+      "titleRu": "Утечка водорода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hydrogen.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "H2 station id",
+      "titleRu": "ID водородной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

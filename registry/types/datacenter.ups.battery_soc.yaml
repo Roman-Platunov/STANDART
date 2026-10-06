@@ -1,0 +1,18 @@
+sid: 05f6eb25
+path: datacenter.ups.battery_soc
+aliases:
+  short: ups.battery_soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заряд ИБП
+  en: UPS battery SoC
+fingerprint: sha256:05f6eb25e2b884bafb8a72b843f1ee3c8aebd31c0e1d8de02003fbeb5bee3442
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,251 @@
+{
+  "layer": "B3",
+  "name": "layer-b-laboratory.json",
+  "types": [
+    {
+      "path": "laboratory.sample.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sample temperature",
+      "titleRu": "Температура образца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.sample.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Sample volume",
+      "titleRu": "Объём образца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.sample.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Sample mass",
+      "titleRu": "Масса образца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Lab pH",
+      "titleRu": "pH (лаборатория)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Lab conductivity",
+      "titleRu": "Проводимость (лаб)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.absorbance",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Absorbance",
+      "titleRu": "Оптическая плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.transmittance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Transmittance",
+      "titleRu": "Пропускание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.wavelength",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Wavelength",
+      "titleRu": "Длина волны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.concentration",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Analyte concentration",
+      "titleRu": "Концентрация аналита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.centrifuge.rpm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Centrifuge RPM",
+      "titleRu": "Обороты центрифуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.incubator.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Incubator temperature",
+      "titleRu": "Температура инкубатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.incubator.co2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Incubator CO2",
+      "titleRu": "CO2 инкубатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 20
+      },
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.freezer.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Lab freezer temperature",
+      "titleRu": "Температура лаб. морозилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laboratory.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lab equipment door open",
+      "titleRu": "Дверь оборудования открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "laboratory.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sample id",
+      "titleRu": "ID образца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laboratory.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lab batch id",
+      "titleRu": "ID лабораторной партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laboratory.instrument.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Instrument id",
+      "titleRu": "ID прибора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laboratory.run.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lab run state",
+      "titleRu": "Состояние прогона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "queued",
+        "running",
+        "complete",
+        "failed",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

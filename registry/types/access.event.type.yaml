@@ -1,0 +1,22 @@
+sid: 5383d85f
+path: access.event.type
+aliases:
+  short: event.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип события СКУД
+  en: Access event type
+fingerprint: sha256:5383d85f03ee8eb0c8e497ee51fe319baf2e4b9cb2de14297cdf35516839a669
+enumValues:
+  - granted
+  - denied
+  - tailgate
+  - forced
+  - held_open
+  - exit

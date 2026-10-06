@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "entries": [
     {
       "sid": "001c5827",
@@ -17,6 +17,16 @@
       "fingerprint": "sha256:0062d8c52258008da5b35c78b1453c820d73193c230d12a7b754fe3151d285ad"
     },
     {
+      "sid": "0089b4b1",
+      "path": "elevator.door.open",
+      "fingerprint": "sha256:0089b4b13bc369afe7a64908c135d51ee5f4bfba4f2eddc4953ffe76718a5d51"
+    },
+    {
+      "sid": "008ebfee",
+      "path": "broadcast.rf.power",
+      "fingerprint": "sha256:008ebfeebd157ea72a040167b79b1c1437ac3fef1cddd07d9f007198a6e0cfa9"
+    },
+    {
       "sid": "00bb540d",
       "path": "logical.quality",
       "fingerprint": "sha256:00bb540d329262f34b8c9b746d86a9fb21186fac6e0d8ac8d50b326c77e6465e"
@@ -25,6 +35,16 @@
       "sid": "015041ac",
       "path": "physical.electrical.line_current_l3",
       "fingerprint": "sha256:015041ac4ca7e7e0c12044cf8970758ef0789c867001b59444bee869e9d6b166"
+    },
+    {
+      "sid": "016170b7",
+      "path": "hydrogen.leak.detected",
+      "fingerprint": "sha256:016170b7c1ab4f22ccc70579ad121ec6b88240234a20a7940c5742399ca9ad68"
+    },
+    {
+      "sid": "019aa4b7",
+      "path": "space.attitude.rate_y",
+      "fingerprint": "sha256:019aa4b77b9f85abe405cb751fbc798a4a28d5b0b16c8696c515138dff14e0e3"
     },
     {
       "sid": "01a0a7e6",
@@ -40,6 +60,11 @@
       "sid": "01fbc6ea",
       "path": "oilgas.tank.level",
       "fingerprint": "sha256:01fbc6ea6ba5c9d77c27cc71ff7cbb4ed5bdeab98c26c61bd19a6df4b0992812"
+    },
+    {
+      "sid": "0217edad",
+      "path": "smartcity.lighting.power",
+      "fingerprint": "sha256:0217edadd3f110c773a1d8a614a3462a8cd891ecdd351de7dc800dde808b5b39"
     },
     {
       "sid": "029cf91b",
@@ -65,6 +90,11 @@
       "sid": "03c1e6e6",
       "path": "industrial.process.orp",
       "fingerprint": "sha256:03c1e6e602d75c7010a8a2818ce3a8f9b523be06d61aad6032c9ab63fe9a895b"
+    },
+    {
+      "sid": "03ced50e",
+      "path": "esg.carbon.intensity",
+      "fingerprint": "sha256:03ced50e5f144828df6d2bb4f4f2a400667fd72bb7c400cf341a96695d9e994e"
     },
     {
       "sid": "04675e08",
@@ -102,9 +132,29 @@
       "fingerprint": "sha256:05756ced69900defad3a81b4e5401a179b866b9b7a9d323bf85ceb540884f14b"
     },
     {
+      "sid": "05f6eb25",
+      "path": "datacenter.ups.battery_soc",
+      "fingerprint": "sha256:05f6eb25e2b884bafb8a72b843f1ee3c8aebd31c0e1d8de02003fbeb5bee3442"
+    },
+    {
+      "sid": "062ebdc0",
+      "path": "printing.job.progress",
+      "fingerprint": "sha256:062ebdc0b532738b8246a6216eddbe412d5cf47be4b3fb9df55fc19941f5d945"
+    },
+    {
       "sid": "069b2a4c",
       "path": "actuation.command",
       "fingerprint": "sha256:069b2a4c6275db20831f2ccbd10895b91d46f2eb067e07312f30a27962c69468"
+    },
+    {
+      "sid": "06d42ef0",
+      "path": "water.treatment.turbidity",
+      "fingerprint": "sha256:06d42ef078b12bf26ada0c583b05967ae52ebfcc12d82c1c4e7f02b3d640f45d"
+    },
+    {
+      "sid": "06fbeae4",
+      "path": "smartcity.traffic.queue_length",
+      "fingerprint": "sha256:06fbeae438971166504bfaf9584297d2be602865c94ebfe14ab1a4113c161871"
     },
     {
       "sid": "07a837d1",
@@ -112,14 +162,39 @@
       "fingerprint": "sha256:07a837d1b555ae8ac3f87c9ce0d93f4ffd0897b0df50482a44d70a2838cd384a"
     },
     {
+      "sid": "07f2fd71",
+      "path": "insurance.evidence.ref",
+      "fingerprint": "sha256:07f2fd7114d1a07875aa7dc61a2c8ed7319f661017912df65dc03076d7907b87"
+    },
+    {
+      "sid": "086bfbcd",
+      "path": "forestry.tree.id",
+      "fingerprint": "sha256:086bfbcd8978b0f49d64aa50cd5d9ba0097760fd5e0a5be527f08008f0547447"
+    },
+    {
+      "sid": "08d5c017",
+      "path": "laboratory.concentration",
+      "fingerprint": "sha256:08d5c01784a8ef41ae0c10e9568485f6a1a9e55a7199a7db8662ced24dce26ae"
+    },
+    {
       "sid": "094f09a3",
       "path": "retail.transaction.status",
       "fingerprint": "sha256:094f09a3d2820c9d46179af588cb4c9dc992f78e5681b147594a35b9a57a5ea6"
     },
     {
+      "sid": "09f3b2ff",
+      "path": "datacenter.cooling.supply_temp",
+      "fingerprint": "sha256:09f3b2ff06717805337d9a15780b873a097a789997aca5743eacdcf5b876adcd"
+    },
+    {
       "sid": "0a009606",
       "path": "rail.train.id",
       "fingerprint": "sha256:0a009606a06a30df0c8bc179b5746c23fded74e713a10a858410884e377cc21c"
+    },
+    {
+      "sid": "0a187f7f",
+      "path": "water.wastewater.ammonium",
+      "fingerprint": "sha256:0a187f7f21175876ad89546a831e3d611f6aeec188c7017d8b502713f8dc148a"
     },
     {
       "sid": "0a6007f5",
@@ -142,6 +217,11 @@
       "fingerprint": "sha256:0abf6ccc5e1b02c2713212636397c9c441635817a929d22a63ab397e51dbcc8a"
     },
     {
+      "sid": "0acebedf",
+      "path": "hospitality.restaurant.table_occupied",
+      "fingerprint": "sha256:0acebedf3398f6e61967d40a0d54f2e4a7c4ab473ab55e309f04ab9e379d9dc3"
+    },
+    {
       "sid": "0adbfb7f",
       "path": "identity.owner",
       "fingerprint": "sha256:0adbfb7fc3f03eb5830620f5d762bd0bff05e7246085ccc00b64e497c14907a2"
@@ -150,6 +230,16 @@
       "sid": "0b81d274",
       "path": "vehicle.ev_charge_power",
       "fingerprint": "sha256:0b81d274dded76956aa255b531eac7ffba22a1562760802db314b96a91cbf813"
+    },
+    {
+      "sid": "0be26653",
+      "path": "pharmacy.prescription.id",
+      "fingerprint": "sha256:0be26653227e985ea99e74236779cadfe721e2f903ca14fe981850864ae5c891"
+    },
+    {
+      "sid": "0c390b12",
+      "path": "construction.worker.count",
+      "fingerprint": "sha256:0c390b12a4aca2645d7b7fcd341f80d559a2e26d00a32c300e4c40f75bfe9d60"
     },
     {
       "sid": "0c695ffb",
@@ -165,6 +255,11 @@
       "sid": "0cd1d481",
       "path": "robotics.robot.id",
       "fingerprint": "sha256:0cd1d48155d18ec8583c0987957f9cfe9383cc0d43d597defc67e2a291f495b5"
+    },
+    {
+      "sid": "0ceddb39",
+      "path": "esg.water.recycled",
+      "fingerprint": "sha256:0ceddb39f4cbae46e9710be8ffbb33a2df73f4216ddf7bf7695f38314e5c3cf4"
     },
     {
       "sid": "0cfe9128",
@@ -222,9 +317,19 @@
       "fingerprint": "sha256:1026788c5efbcb46bf3a8b67a2168ae98ac03c778ca6cc01d013b761ca2e8ba3"
     },
     {
+      "sid": "1051921e",
+      "path": "drone.altitude.agl",
+      "fingerprint": "sha256:1051921e0b9b4897727355140577e153703b5c04fcd55b644e1d8de7f1b0adca"
+    },
+    {
       "sid": "10dac617",
       "path": "safety.fire.heat",
       "fingerprint": "sha256:10dac617c711ea52f96f9efc9c971a569666390c402950d2ef709df48dcf1374"
+    },
+    {
+      "sid": "10e638e5",
+      "path": "drone.camera.snapshot_ref",
+      "fingerprint": "sha256:10e638e5ffab4b2841f6d951b42b905f8ffeeaf1e8913bf4a1c6844c09837dbf"
     },
     {
       "sid": "116ca741",
@@ -235,6 +340,16 @@
       "sid": "116fa407",
       "path": "actuation.position",
       "fingerprint": "sha256:116fa40782a6411991b4a18a3d40144f982a32469986d5689c9be6ef52f8220a"
+    },
+    {
+      "sid": "119fdb85",
+      "path": "water.treatment.chlorine",
+      "fingerprint": "sha256:119fdb85ed3d087625ae69bb18d4e6cb0a79ac8bf5e0e976b4c02e80110aac2d"
+    },
+    {
+      "sid": "11a7c1fa",
+      "path": "forestry.harvest.volume",
+      "fingerprint": "sha256:11a7c1fa6c20b534b00c478ebff267466c0980571de2d96bf9c767060566054c"
     },
     {
       "sid": "11b51c45",
@@ -322,9 +437,19 @@
       "fingerprint": "sha256:153dec5760508218e70612200abed7ff0eda480386e753943c48113220d1c2b7"
     },
     {
+      "sid": "15408f32",
+      "path": "realestate.unit.status",
+      "fingerprint": "sha256:15408f325b8e2a29a552bfc9537027538c66ce7d8eb5474156b6184b028b64fb"
+    },
+    {
       "sid": "15b0d44f",
       "path": "physical.environment.wind_chill",
       "fingerprint": "sha256:15b0d44f2e7c7d1a9c8f58bf1b7fbce3534e0f165dd48e5edfe374cdfa354265"
+    },
+    {
+      "sid": "15f6efb6",
+      "path": "water.alarm.low_pressure",
+      "fingerprint": "sha256:15f6efb63161de6d7d9d45bc78c3ade97b5e5c2adebe2c15b3f9a990252f0744"
     },
     {
       "sid": "163cd59c",
@@ -332,9 +457,19 @@
       "fingerprint": "sha256:163cd59c836a84ba258869c7c21872b8cfd82b1b5ff40fb4ab249c7f6d3d7bd6"
     },
     {
+      "sid": "163dfa6e",
+      "path": "drone.link.rssi",
+      "fingerprint": "sha256:163dfa6e7aa63a5d6c2d44af5e0cc86799adc98e82f5119dab03c67337f268c4"
+    },
+    {
       "sid": "17098549",
       "path": "actuation.dim",
       "fingerprint": "sha256:17098549a1305f1d086959bcf411fd25c31364eb83ddd907b0ef6436971076cd"
+    },
+    {
+      "sid": "173831ea",
+      "path": "education.course.id",
+      "fingerprint": "sha256:173831ea110fb4695e155ea60fbb3d1f8de10d5254cac53966b3cf87db16eeff"
     },
     {
       "sid": "17a137aa",
@@ -367,14 +502,39 @@
       "fingerprint": "sha256:1959b4c0edec888d223cad8cc7ba941092dc8a29190a688d7940009337e2bda9"
     },
     {
+      "sid": "19ddb520",
+      "path": "construction.crane.radius",
+      "fingerprint": "sha256:19ddb520567d093daeaf7346bb9d0e667a78e48f759f4cddbab317151d41d198"
+    },
+    {
       "sid": "19ede0f7",
       "path": "aviation.altitude.baro",
       "fingerprint": "sha256:19ede0f774be44db56569d0897895bd3bc41a649f4df903d5f2783e251a741e6"
     },
     {
+      "sid": "1a7ba238",
+      "path": "printing.3d.nozzle_temp",
+      "fingerprint": "sha256:1a7ba238f778bfc496b436cb53364dc74fa0ffc1e1b4f860fec9809874ad5fb6"
+    },
+    {
       "sid": "1b46ba7f",
       "path": "industrial.oee.availability",
       "fingerprint": "sha256:1b46ba7fc7051ab3babad1db629b1b013beb1260aa9afb41171336b13e4f68fb"
+    },
+    {
+      "sid": "1b5bbba4",
+      "path": "datacenter.pdu.current",
+      "fingerprint": "sha256:1b5bbba45c53a5f65bd6d88836c14e1e9e1d1980a0cc0b4df441860e4fa00102"
+    },
+    {
+      "sid": "1ba1bd51",
+      "path": "education.attendance.count",
+      "fingerprint": "sha256:1ba1bd5142febafdefc766d721499bde20026e1f3b02a90e9518e5035440fb91"
+    },
+    {
+      "sid": "1beed965",
+      "path": "sports.athlete.heart_rate",
+      "fingerprint": "sha256:1beed96506831d64028b7c4ad02759eedb86d670dd00909aacbabef10ffe3ad3"
     },
     {
       "sid": "1c173250",
@@ -427,6 +587,11 @@
       "fingerprint": "sha256:1ddfb4db15a30d4af1251372de8695a7a2273d6ac602112d65c9c9e91a083687"
     },
     {
+      "sid": "1de47fba",
+      "path": "datacenter.rack.humidity",
+      "fingerprint": "sha256:1de47fbaed2dededb9821d68ff861dc3fff821619a54e73f0925677bbcef8262"
+    },
+    {
       "sid": "1e31137a",
       "path": "maritime.roll",
       "fingerprint": "sha256:1e31137acbd7abd3f19b3657169f652f828fa9e43179abd351b6ebdcfff89e12"
@@ -467,14 +632,29 @@
       "fingerprint": "sha256:1f9dbba5b00794ca5ce416f50fb38c8529f356bd331917719570f652c4227053"
     },
     {
+      "sid": "1fa299b0",
+      "path": "elevator.cabin.load",
+      "fingerprint": "sha256:1fa299b0771e0ee2f63fd5d8e3f352013489ba37c05bbe02510708733b898749"
+    },
+    {
       "sid": "1fca960e",
       "path": "physical.environment.snowfall",
       "fingerprint": "sha256:1fca960e4d84298df92beacbd89a8ae23466cd45b27575c0a20997dde877e62c"
     },
     {
+      "sid": "1ff42a40",
+      "path": "water.treatment.uv_dose",
+      "fingerprint": "sha256:1ff42a40eefbc0001927b38a7e85548a2060c8f348102d6d73019d720c2abc24"
+    },
+    {
       "sid": "2001895d",
       "path": "actuation.torque_limit",
       "fingerprint": "sha256:2001895d67babb0f9bc034dc06c9058588a03352af4ad039541f9ba38d25fef0"
+    },
+    {
+      "sid": "203a3d31",
+      "path": "micromobility.bike.battery",
+      "fingerprint": "sha256:203a3d311b831f86f4abc12aae83c91dba6d03f1cdcd9435ce74ef4c7b00febb"
     },
     {
       "sid": "2046704b",
@@ -490,6 +670,11 @@
       "sid": "205aa22a",
       "path": "vehicle.fuel_rate",
       "fingerprint": "sha256:205aa22a8e100158c65a8886cecf735f500dcb51348fa10b6514acc75b9a96dc"
+    },
+    {
+      "sid": "20c65e6a",
+      "path": "hydrogen.tank.pressure",
+      "fingerprint": "sha256:20c65e6aadcb696551858bcce8b63de6496e8e768592e13bb0d40b6157db579d"
     },
     {
       "sid": "216929ab",
@@ -567,6 +752,16 @@
       "fingerprint": "sha256:24d3556f189c9bbda772f6261516de963e623c12b6188e63d33ab3a8602e0b07"
     },
     {
+      "sid": "24fb1f4a",
+      "path": "drone.motor.rpm_4",
+      "fingerprint": "sha256:24fb1f4a840a4657eee847ae0a916120a19f762111127bd74acdb979c85e5d59"
+    },
+    {
+      "sid": "25644ebc",
+      "path": "forestry.tree.dbh",
+      "fingerprint": "sha256:25644ebc2ff1d08e4137a0bbfe618b8e24043a8539c9e182ef3c2b78bfa210a9"
+    },
+    {
       "sid": "25eb587d",
       "path": "network.channel",
       "fingerprint": "sha256:25eb587d3d8fb08c1fd113947d4b6edfbac556d8c2e4cc5469a615f818ad46e3"
@@ -587,9 +782,29 @@
       "fingerprint": "sha256:2636e07f5a6864a05522f2de3cb948323ef8aee72b9822daf4032744c9ae8cae"
     },
     {
+      "sid": "26a7fb79",
+      "path": "nuclear.reactor.power",
+      "fingerprint": "sha256:26a7fb79711bd44f970b9bedc004c9c92b1c33d1134cd7782aade82754cb7e92"
+    },
+    {
+      "sid": "26bc0fd3",
+      "path": "esg.emissions.nox",
+      "fingerprint": "sha256:26bc0fd3bf9736b9efca0cc697e51151e78875f02595ae77468bb23382ca350c"
+    },
+    {
+      "sid": "26e960b6",
+      "path": "mining.haul.truck_load",
+      "fingerprint": "sha256:26e960b6860a71e87ba03f6d0fbf51a710f9cec6ad107b63f84c78a1ce0a14fa"
+    },
+    {
       "sid": "2751e463",
       "path": "telecom.cellular.cell_id",
       "fingerprint": "sha256:2751e4638069db46407fbae62a35617abfd5cb7f78aae98de060f6768c8f4248"
+    },
+    {
+      "sid": "28362611",
+      "path": "water.network.flow",
+      "fingerprint": "sha256:28362611e4633c0fd5b6b62cb90e665bf426685742a72ba21f17d58d617826a9"
     },
     {
       "sid": "289e5848",
@@ -622,6 +837,11 @@
       "fingerprint": "sha256:29f0accf41666eb037d64e965e99795b251e884fef35b3c2f55b9f4d96cd187d"
     },
     {
+      "sid": "2a25d0f8",
+      "path": "printing.job.id",
+      "fingerprint": "sha256:2a25d0f8eb85ff860161b86dc807db801e6fe6e1117315b794267e06833a3460"
+    },
+    {
       "sid": "2a586fdb",
       "path": "vehicle.speed",
       "fingerprint": "sha256:2a586fdbb2c6e8daa704e7e1148f15dacf172be5584ee23a51579ffbfd4d74c7"
@@ -630,6 +850,21 @@
       "sid": "2aa2ab12",
       "path": "health.clinical.heart_rate",
       "fingerprint": "sha256:2aa2ab126c7236954366113411a31781a57e218a256a6ffc4e3f916bb4e2af1d"
+    },
+    {
+      "sid": "2b091938",
+      "path": "water.network.pressure",
+      "fingerprint": "sha256:2b09193800e8e2001541e64bfdac18e83be6805ab94ea56ab3947e13ee425d1a"
+    },
+    {
+      "sid": "2b09a7d5",
+      "path": "mining.air.dust",
+      "fingerprint": "sha256:2b09a7d51723e8778202a7c716a48d4e1cce645030b2f9b81b840adc50f4770a"
+    },
+    {
+      "sid": "2b205985",
+      "path": "sports.athlete.speed",
+      "fingerprint": "sha256:2b205985458002105d86166599b516b596902c8b1cec7825de38a6622decdd25"
     },
     {
       "sid": "2b6c5587",
@@ -647,9 +882,19 @@
       "fingerprint": "sha256:2bcbb5c4b571dbaa82b4b9351aea0566e5c16699d5d7bfde51b4c91d1fa81b83"
     },
     {
+      "sid": "2c13c9e5",
+      "path": "laboratory.instrument.id",
+      "fingerprint": "sha256:2c13c9e5514820c338a4f099e442de9d0e586a575e500551e583d19cda020e4b"
+    },
+    {
       "sid": "2d17469c",
       "path": "vehicle.abs_active",
       "fingerprint": "sha256:2d17469c929603b0423c5316f3d14f094275edc5496ebb4f499105ea491fdc28"
+    },
+    {
+      "sid": "2dc57b31",
+      "path": "laboratory.run.state",
+      "fingerprint": "sha256:2dc57b31e534f947866c0c169ea153d487dc0d47964caf00edd73ae2e25fd2fb"
     },
     {
       "sid": "2e9a8eef",
@@ -677,6 +922,11 @@
       "fingerprint": "sha256:30030da7ff7722d8d9bb4690e2f8cead144812a5a28cc0d4a415941f595f3345"
     },
     {
+      "sid": "30102bfe",
+      "path": "micromobility.vehicle.id",
+      "fingerprint": "sha256:30102bfe3eadd6ffebd3d93db1c344ad757c1769987659319f25d8686b9a1625"
+    },
+    {
       "sid": "3015e00e",
       "path": "vehicle.battery_voltage",
       "fingerprint": "sha256:3015e00e08fcfbbcd7089a29a85a8f1fb8295c3bb9a310c6c1e1591dc97d3c31"
@@ -685,6 +935,21 @@
       "sid": "30247b76",
       "path": "physical.acoustic.sound_pressure",
       "fingerprint": "sha256:30247b76a8a48d5426070122e3cddb0e2016e469302dcd5abc24622dc6cf170d"
+    },
+    {
+      "sid": "3098b157",
+      "path": "esg.report.period",
+      "fingerprint": "sha256:3098b15720b1a6c466d276e733f1cd18922fbfb0eb84a4cd67b8a6df6aae598e"
+    },
+    {
+      "sid": "3105a6d3",
+      "path": "sports.athlete.distance",
+      "fingerprint": "sha256:3105a6d334a976e4c5271f4512e28e88fde064f6431083710f290d143e5c0ad1"
+    },
+    {
+      "sid": "31600f42",
+      "path": "space.satellite.eclipse_fraction",
+      "fingerprint": "sha256:31600f420ef87f4b99cf3745f7bf776babc88d258e2606ceea5d039a877de9ef"
     },
     {
       "sid": "31af42c5",
@@ -707,9 +972,29 @@
       "fingerprint": "sha256:3207986ffac3b78e29934502fb778375f40b070df9d6ac17aa0ad29a2ea62779"
     },
     {
+      "sid": "325a7879",
+      "path": "hospitality.room.dnd",
+      "fingerprint": "sha256:325a7879ff9d13fb07c3398fbecb5be250a4b7a4ac2a6d6afb1ca2fa989c89cf"
+    },
+    {
+      "sid": "32b5ce85",
+      "path": "hydrogen.tank.soc",
+      "fingerprint": "sha256:32b5ce85ebaf52b14f5d2a7e2a56f239ed4e06a29b1da00d2f391b84c17b4f93"
+    },
+    {
+      "sid": "333846f0",
+      "path": "printing.ink.level",
+      "fingerprint": "sha256:333846f0bd60c8cad783fb529950785116c064879020464dc091fe140ccda864"
+    },
+    {
       "sid": "3345ecb8",
       "path": "vehicle.dtc_count",
       "fingerprint": "sha256:3345ecb84892964efe967c3139f922d574e8c896638210e5c9a46805e17ddf2f"
+    },
+    {
+      "sid": "334cb539",
+      "path": "construction.crane.angle",
+      "fingerprint": "sha256:334cb539c07cdb8c9cb2e4922c1f6c4134ca7122e1e10699e83b8321c451b257"
     },
     {
       "sid": "3360c26a",
@@ -727,9 +1012,19 @@
       "fingerprint": "sha256:34b311c4e1c42a97d66b2ea6a293a5362b51118002ac006005cd4611791eccc5"
     },
     {
+      "sid": "34b97947",
+      "path": "drone.battery.voltage",
+      "fingerprint": "sha256:34b97947ad9000993b236445f1e44ed0ef469c70b22aceb250d94cd694348f6c"
+    },
+    {
       "sid": "34c8301c",
       "path": "telecom.wifi.channel",
       "fingerprint": "sha256:34c8301cb250479d0f8520ddaddfe404ac22d98ca4ad9cd84fa663bbc5261e49"
+    },
+    {
+      "sid": "34ca4f9a",
+      "path": "datacenter.ups.load",
+      "fingerprint": "sha256:34ca4f9ab5abfb56e4dc6bf5938dba91b9221fc761b46da551c51910238b6a76"
     },
     {
       "sid": "34e40a5c",
@@ -742,6 +1037,11 @@
       "fingerprint": "sha256:352bf8614e5e067b9555b23ea8d808335da3af946dd80b93e2d5035e73156c17"
     },
     {
+      "sid": "35864786",
+      "path": "sports.score.away",
+      "fingerprint": "sha256:3586478631c68ee5fdaf2c640cd803096d04a7c52719379927d86ab487e7a36c"
+    },
+    {
       "sid": "35ff866e",
       "path": "robotics.obstacle.detected",
       "fingerprint": "sha256:35ff866e0529e28a89f0bf9472430cf83b2061f3aab244fd7c3f1a1a99565dca"
@@ -750,6 +1050,11 @@
       "sid": "3602a95c",
       "path": "physical.health.bmi",
       "fingerprint": "sha256:3602a95cf0171d90d1fb6a97f5d8c5301f2c732c4e7f21509f7ced48be2245dd"
+    },
+    {
+      "sid": "3658684e",
+      "path": "realestate.property.id",
+      "fingerprint": "sha256:3658684e32b923f250efbbbcf1dbf86a7560cbf5a0159428fd81a0855f2899e8"
     },
     {
       "sid": "36b193ad",
@@ -767,9 +1072,24 @@
       "fingerprint": "sha256:36e7cfc89b0df84b02500bf6170ee0ada68a437f51edcf6369a8357ce229690f"
     },
     {
+      "sid": "36e99fa1",
+      "path": "smartcity.traffic.average_speed",
+      "fingerprint": "sha256:36e99fa1cfd1321d21ca72852e41b363e57e28227afb35a6898a505062cd3aa2"
+    },
+    {
       "sid": "37e01fc0",
       "path": "industrial.safety.light_curtain",
       "fingerprint": "sha256:37e01fc096bd1fc3781b28e646d25ec596ead418209205cbbe5f2608712a4ad0"
+    },
+    {
+      "sid": "37f5e338",
+      "path": "space.satellite.battery_soc",
+      "fingerprint": "sha256:37f5e3384df0c5c833eee532f7654c872cf9e6c69f788205316e261b37138179"
+    },
+    {
+      "sid": "381e9d26",
+      "path": "insurance.claim.status",
+      "fingerprint": "sha256:381e9d26dc6667d7388fb3c6d29c8efa85e2b9bc36a6d855a858291c2d8840d4"
     },
     {
       "sid": "38991e91",
@@ -792,6 +1112,16 @@
       "fingerprint": "sha256:3a08e79c0eeac3ea4f035232265c3658fb7cd0f1eec993803c367c3039d8aa44"
     },
     {
+      "sid": "3a2705a1",
+      "path": "access.door.id",
+      "fingerprint": "sha256:3a2705a13095257d0ed023073e23b7767118385d2b797cdeb27cd743dcccb9e1"
+    },
+    {
+      "sid": "3a4f633c",
+      "path": "pharmacy.item.status",
+      "fingerprint": "sha256:3a4f633c297686126e205c71eea646a247682bbf6bbd66f7f9d331c95783d15b"
+    },
+    {
       "sid": "3abb1599",
       "path": "telecom.cellular.pci",
       "fingerprint": "sha256:3abb15995c7514dfe5a228904070a6fb17d55b56cc5d58e0e896443224aeb84f"
@@ -802,14 +1132,29 @@
       "fingerprint": "sha256:3adade8e3c12fe43b4d15deec061fd83bcee2fafa225de83cb9de42ac52fcd0c"
     },
     {
+      "sid": "3b336081",
+      "path": "mining.blast.vibration",
+      "fingerprint": "sha256:3b336081f4d75be06593fa41b4488d8b7f7f6bf72f395d055dbe56190c682cc2"
+    },
+    {
       "sid": "3bd0a38c",
       "path": "vehicle.wheel_speed_rr",
       "fingerprint": "sha256:3bd0a38cefcffda2b5f795b0cb47e1df9ab4606e593f74dbf428fbf63f1a53eb"
     },
     {
+      "sid": "3bf17efe",
+      "path": "drone.mission",
+      "fingerprint": "sha256:3bf17efe6e1949cb5802c8372002fcee18e2496c729cbc896cd227d8ded7cb49"
+    },
+    {
       "sid": "3c1e4cc3",
       "path": "physical.geo.geopoint3d",
       "fingerprint": "sha256:3c1e4cc336e18b439968b48fbb6dadd0c07929f26a327ee54a2117faefc45d46"
+    },
+    {
+      "sid": "3c21e601",
+      "path": "elevator.unit.id",
+      "fingerprint": "sha256:3c21e601642154238292782b3d05972f5187abea8e24ca89fc9628d1bfa0a348"
     },
     {
       "sid": "3c26c08a",
@@ -835,6 +1180,16 @@
       "sid": "3d58e091",
       "path": "physical.electrical.phase_angle",
       "fingerprint": "sha256:3d58e091bd30db3abe01d168030bc96d625113454255fafa2dc56ca07b7bcd54"
+    },
+    {
+      "sid": "3d8027b3",
+      "path": "mining.shift.state",
+      "fingerprint": "sha256:3d8027b3007e5afd16b85936132596ca018badf5dd407cbdaf48a255b7d5b46a"
+    },
+    {
+      "sid": "3d959dd1",
+      "path": "drone.geofence.inside",
+      "fingerprint": "sha256:3d959dd1d220356169826578329644bfd846521bd3efd61518675e6b5d01b167"
     },
     {
       "sid": "3d9f2f79",
@@ -882,6 +1237,11 @@
       "fingerprint": "sha256:3ff7a7b092dedf57ea87780791c6d8b1e58f60eb37c7c2724b27078fd56e755e"
     },
     {
+      "sid": "404b8c60",
+      "path": "datacenter.hall.id",
+      "fingerprint": "sha256:404b8c600762b4dc19ad7582810c34db7c088e6ac7e6fb32fc2851a099d0536e"
+    },
+    {
       "sid": "407850d1",
       "path": "network.latency",
       "fingerprint": "sha256:407850d191b910969d76a6f8d58c9a389bae427e8d9aa24571e25fe7da44e953"
@@ -902,9 +1262,19 @@
       "fingerprint": "sha256:4127225a88b9a260ac7df3d75290342b03c3e3c7be19361cbc73c8cbae6f2c86"
     },
     {
+      "sid": "41344a3b",
+      "path": "nuclear.radiation.dose_rate",
+      "fingerprint": "sha256:41344a3b75130a23afb972520ef44daddd4726e6ffc3021acb1f101daa5bc3ae"
+    },
+    {
       "sid": "415e0e10",
       "path": "physical.mechanical.differential_pressure",
       "fingerprint": "sha256:415e0e10b00727dd4f10b9cf85d9ec8e8338ae3ee74d1c9e4f962fe8aa8126a3"
+    },
+    {
+      "sid": "416364f9",
+      "path": "mining.safety.gas_alarm",
+      "fingerprint": "sha256:416364f9a824e8f946e1876d7fb484c81c3b98d71401979f2b53f1813d0ac632"
     },
     {
       "sid": "416e57b3",
@@ -922,6 +1292,11 @@
       "fingerprint": "sha256:41e252771b2aa7af082c77027e102761b3ffc1b400912daa8079b752f980f9f4"
     },
     {
+      "sid": "41ebb5e5",
+      "path": "hospitality.room.temperature",
+      "fingerprint": "sha256:41ebb5e5919d37e3a038d185104c393a1984eca893ff01fd9432e8c303e2d4af"
+    },
+    {
       "sid": "41ec74af",
       "path": "physical.environment.wind_gust",
       "fingerprint": "sha256:41ec74af0224160b23b978da54cd902a31ad618afbdcee3e35cdcaca00c4a4b0"
@@ -930,6 +1305,16 @@
       "sid": "4214c166",
       "path": "physical.geo.geopoint",
       "fingerprint": "sha256:4214c1662e92cd0aa9a42860d5309baf8e9e0741cc574514c4a083c72278580e"
+    },
+    {
+      "sid": "42480259",
+      "path": "esg.emissions.sox",
+      "fingerprint": "sha256:42480259f6018d25da3f3c5a865f1155f9e40ef989fadb0b4a949a6025038105"
+    },
+    {
+      "sid": "427dbd56",
+      "path": "broadcast.stream.state",
+      "fingerprint": "sha256:427dbd56ba2ff92a833a99796ccb8eca47e6d0afdb3492710ada0139075478a3"
     },
     {
       "sid": "436e5dc9",
@@ -942,9 +1327,24 @@
       "fingerprint": "sha256:4385a4ee42e029ec507a1dfb9d34057da1b06534f3bac0fe81b8a341f7df22d5"
     },
     {
+      "sid": "439906fb",
+      "path": "construction.vibration.rms",
+      "fingerprint": "sha256:439906fb457792d28ae71f20fc944e195b6bbf2c6ac81981640b0a28b867ab30"
+    },
+    {
+      "sid": "43a7bfb1",
+      "path": "elevator.cabin.speed",
+      "fingerprint": "sha256:43a7bfb11c9477b8ac61eb173b6d69b48b8776f070512a2ff81f28c3ab7e8bb3"
+    },
+    {
       "sid": "43d6c36e",
       "path": "telecom.cellular.rsrq",
       "fingerprint": "sha256:43d6c36ecd4cc840b4a0297f4506484c348d3190939d3520e16f3f13beb25557"
+    },
+    {
+      "sid": "442ce337",
+      "path": "drone.motor.rpm_3",
+      "fingerprint": "sha256:442ce337eefe0524791193ccfd379316c5a9220f9abee1c8edbdcabe1cb9bbe5"
     },
     {
       "sid": "446acc4f",
@@ -977,9 +1377,34 @@
       "fingerprint": "sha256:46983d60df1ec419d9a6d4e45fa6afa391ca7b2d8de87ae8a9fdfab2d3868b3d"
     },
     {
+      "sid": "46d51698",
+      "path": "smartcity.asset.id",
+      "fingerprint": "sha256:46d516983c8dd864be2df4166509e37110916a1215458cb257b717640dbf0a59"
+    },
+    {
       "sid": "470036f9",
       "path": "robotics.mission",
       "fingerprint": "sha256:470036f91555719118e1ee452ab4be3e62350489d85da3640a5621640782f918"
+    },
+    {
+      "sid": "4791d500",
+      "path": "construction.crane.wind",
+      "fingerprint": "sha256:4791d5005bb658a586f4c7f722d29bee0c46045e2ac4e36f29fef4e142d2f970"
+    },
+    {
+      "sid": "47a219f8",
+      "path": "drone.motor.rpm_1",
+      "fingerprint": "sha256:47a219f8a186ca0ced3b1138504a0cfabf35c6dc81cf6313373efbfe2edaaef4"
+    },
+    {
+      "sid": "47d0b7dc",
+      "path": "hydrogen.fuelcell.efficiency",
+      "fingerprint": "sha256:47d0b7dc569707715d49ae85d70439d4d5173ec336a30e0cda1898e9cb3c1a15"
+    },
+    {
+      "sid": "47e9bfcf",
+      "path": "nuclear.containment.pressure",
+      "fingerprint": "sha256:47e9bfcf1eb331950a97998e7a0a9d7e365c06e872c51cb1d2e4e5c7232f2224"
     },
     {
       "sid": "47ec5495",
@@ -1012,6 +1437,11 @@
       "fingerprint": "sha256:489efce6bddaab029f80bfca39725d8df99ad5a2e2bbd9bb373ddaeb7cb065bb"
     },
     {
+      "sid": "48b26631",
+      "path": "datacenter.floor.pressure",
+      "fingerprint": "sha256:48b26631baf98034511ffcc56129eb9d82b6911f3529ca7dcbd2da5d4f0d4a94"
+    },
+    {
       "sid": "48c0c668",
       "path": "maritime.wind.true_direction",
       "fingerprint": "sha256:48c0c6683d38dae4427ebc73cff98a175816aa619af9dafb8b3d898b4c11beca"
@@ -1037,6 +1467,11 @@
       "fingerprint": "sha256:4a3e00ef9d6b84e4b206413ebb06b5f2deb6c9809a9c4643032a9cb1c9e0fb8b"
     },
     {
+      "sid": "4ab476ae",
+      "path": "water.alarm.overflow",
+      "fingerprint": "sha256:4ab476aedcb5a13f06564a9ef547a296eddadcca62dc85a0e17c73670c8ec1cd"
+    },
+    {
       "sid": "4ac397c3",
       "path": "maritime.mmsi",
       "fingerprint": "sha256:4ac397c32688c5d73d31ce746df2c3a784b802abc772382b7498415173ff70e7"
@@ -1047,6 +1482,11 @@
       "fingerprint": "sha256:4b22026652cec1552bfb73edccde1fe18ebe7617491a233b769d1ebbcbd229e2"
     },
     {
+      "sid": "4b56e6eb",
+      "path": "drone.uav.id",
+      "fingerprint": "sha256:4b56e6ebf9991200bca98b8efb48d33e9d0dccea43f220c24b5f63d71a1422b4"
+    },
+    {
       "sid": "4b6b30c8",
       "path": "rail.tcs.emergency_brake",
       "fingerprint": "sha256:4b6b30c83b9f4f33627d2f5972855c717b037b34cce8e2c91cb9f3466f4628c9"
@@ -1055,6 +1495,11 @@
       "sid": "4bf7907d",
       "path": "physical.motion.quaternion_z",
       "fingerprint": "sha256:4bf7907d4e0f1831bcc18118aac0e18829c894950ee00f193102ea3c687d3dfe"
+    },
+    {
+      "sid": "4c7a4d50",
+      "path": "nuclear.coolant.temperature",
+      "fingerprint": "sha256:4c7a4d507319bdfd35689f6ec9eecb36460af56661c4e18efc4553906b49dd52"
     },
     {
       "sid": "4ccca736",
@@ -1072,6 +1517,11 @@
       "fingerprint": "sha256:4d5eee68ae1f2fb4b5a9cbea8198d51dfb3611af5f456f0f6fa6242a5055f649"
     },
     {
+      "sid": "4dc693f0",
+      "path": "construction.site.id",
+      "fingerprint": "sha256:4dc693f094cf275c100db8f77b1a97b457c3f4bff8a281797b391511ca55762d"
+    },
+    {
       "sid": "4dcbd136",
       "path": "energy.wind.rotor_rpm",
       "fingerprint": "sha256:4dcbd136d89901b7faa253168a6201a24e3c7e4c970aba0d9348e141994b39e1"
@@ -1087,6 +1537,16 @@
       "fingerprint": "sha256:4eb5b88f7614b8b7f149792224333786eb662e3eabc3a7563babced4c83d3c7a"
     },
     {
+      "sid": "4ef467b6",
+      "path": "hydrogen.tank.temperature",
+      "fingerprint": "sha256:4ef467b6a78100a2f8293274fee0743615d7784e2c4032d59f86b6209df75397"
+    },
+    {
+      "sid": "4fcb50ba",
+      "path": "hospitality.room.status",
+      "fingerprint": "sha256:4fcb50bacd636c3a94069a9288b1227314011836266d89a7b8d146a29f62bbc7"
+    },
+    {
       "sid": "4fcef150",
       "path": "energy.solar.dc_power",
       "fingerprint": "sha256:4fcef15024f5655c7b5f930dfe5f6200bf9767b0852d399a52989b62912162c9"
@@ -1095,6 +1555,11 @@
       "sid": "4fd9fd46",
       "path": "smarthome.appliance.power",
       "fingerprint": "sha256:4fd9fd46293e1d77c0cf1015c1b043aa912e47bce72739f47891f79dc7cfc7bb"
+    },
+    {
+      "sid": "5067a1c1",
+      "path": "forestry.fire.risk_index",
+      "fingerprint": "sha256:5067a1c13371d612b0c5ca25d64707e0e04bf5c3bfcecc0e843e14f684bf54df"
     },
     {
       "sid": "506930b4",
@@ -1122,6 +1587,11 @@
       "fingerprint": "sha256:516de09196a452ebbdc6d1d3b4a7c0d5ab51ddbc15accba65a18c8dfa2cbc0fa"
     },
     {
+      "sid": "5192142b",
+      "path": "drone.speed.vertical",
+      "fingerprint": "sha256:5192142b3365cc5fb23704e98d57bd7483271c631a74ed64834edfe41f8d1cd1"
+    },
+    {
       "sid": "51c0b08a",
       "path": "industrial.motor.state",
       "fingerprint": "sha256:51c0b08a9e320427c3da90cda6b6c50c987299eeae6e57fc16fb846aaf795240"
@@ -1137,9 +1607,29 @@
       "fingerprint": "sha256:535ade10de3b235f73935d9016ab39d25e14abe89953c60abd6e44f5548a6f91"
     },
     {
+      "sid": "5383d85f",
+      "path": "access.event.type",
+      "fingerprint": "sha256:5383d85f03ee8eb0c8e497ee51fe319baf2e4b9cb2de14297cdf35516839a669"
+    },
+    {
       "sid": "53b7873d",
       "path": "vehicle.ambient_temp",
       "fingerprint": "sha256:53b7873dc9df3b37395ae021f3802cfdec27125581a0bc310d36a384da0f8dd7"
+    },
+    {
+      "sid": "53bf7fbc",
+      "path": "realestate.occupancy",
+      "fingerprint": "sha256:53bf7fbc3d3682472dfb4516f14cdf689fb06df3ff63ff53097b228ff461babe"
+    },
+    {
+      "sid": "5402aeee",
+      "path": "nuclear.mode",
+      "fingerprint": "sha256:5402aeee7d429e5fbed9a1c673074558bf566a48525ab1c40798ca76f62e89dc"
+    },
+    {
+      "sid": "540f962c",
+      "path": "pharmacy.lot.id",
+      "fingerprint": "sha256:540f962c50dd77ccbb6e27944c56ca3b8af5288d494a8fd7814850155016121a"
     },
     {
       "sid": "546f150f",
@@ -1147,9 +1637,34 @@
       "fingerprint": "sha256:546f150f92bc91504691edf0641fc540bd4b8ffa73ba21d81debd6dcef3dfeed"
     },
     {
+      "sid": "54891ca0",
+      "path": "space.link.ber",
+      "fingerprint": "sha256:54891ca0f9a9932be82440dbca4ee4aeadc3c46f0900c0b7378f0dbaff139460"
+    },
+    {
+      "sid": "5494cc24",
+      "path": "water.wastewater.cod",
+      "fingerprint": "sha256:5494cc2426fc3cc622e663f3c56695c3c223b6ee0e0970141e4987cb8c65932d"
+    },
+    {
+      "sid": "54eaa5cc",
+      "path": "smartcity.waste.bin_weight",
+      "fingerprint": "sha256:54eaa5cc23f8c409f9ffedfcaf7a16cb8244e56a7b69e9ed49c975d1c3355d2d"
+    },
+    {
       "sid": "554933cc",
       "path": "robotics.velocity.angular",
       "fingerprint": "sha256:554933cc1616c7880dddb1ad53e6a371af7be79a4e631c3e65140b57df35e6e7"
+    },
+    {
+      "sid": "556d3f4a",
+      "path": "hydrogen.electrolyzer.h2_rate",
+      "fingerprint": "sha256:556d3f4a74ae0c916e9355281c7bfd7eaea18b8e58d95eb69db4d0829b990bf3"
+    },
+    {
+      "sid": "55aa2a50",
+      "path": "water.reservoir.level",
+      "fingerprint": "sha256:55aa2a505c6a3accb5aa0e0384f7ed0c1959fd3514a66bd7b8875ffbd108c4bb"
     },
     {
       "sid": "564c1c76",
@@ -1175,6 +1690,11 @@
       "sid": "57c7f71c",
       "path": "agriculture.soil.npk_n",
       "fingerprint": "sha256:57c7f71cc82a126e5173c0e39a2914f5c7bcde45104e5f21303a3fb7dfa355a4"
+    },
+    {
+      "sid": "57da8ddb",
+      "path": "printing.toner.level",
+      "fingerprint": "sha256:57da8ddb66f364efca39585abf44df82d3da00ed23f88d5b70c090af6c97c548"
     },
     {
       "sid": "58291432",
@@ -1205,6 +1725,11 @@
       "sid": "59be49ea",
       "path": "physical.motion.velocity",
       "fingerprint": "sha256:59be49ea71339153700e970b26b62c1b17f55bd027ca9b830da7a6cf6e9cc42f"
+    },
+    {
+      "sid": "59d52450",
+      "path": "education.exam.score",
+      "fingerprint": "sha256:59d52450a1e62809bbd92bd498948d5dc6a581ec9bb70014c7d06ba1a02277a0"
     },
     {
       "sid": "5a186000",
@@ -1267,6 +1792,16 @@
       "fingerprint": "sha256:5d5f621a6fcc64ef238e71d52a07dd55644708d8ae9ea41263ab781c228ee413"
     },
     {
+      "sid": "5d674fd9",
+      "path": "broadcast.stream.url",
+      "fingerprint": "sha256:5d674fd90c3b387db31f510e895ad92d87d7f850b2f11398dd1e556c0dc92688"
+    },
+    {
+      "sid": "5d804db8",
+      "path": "broadcast.audio.level",
+      "fingerprint": "sha256:5d804db866bc34fbd3b8d6dd34c20025959fee48bbdb43b48c8c15083ee9f613"
+    },
+    {
       "sid": "5e7cc369",
       "path": "physical.electrical.discharge_energy",
       "fingerprint": "sha256:5e7cc3695357768fc9cc333e9988bc4c7d5e9e0eb95f2d80c4e4f90993f7970b"
@@ -1292,6 +1827,11 @@
       "fingerprint": "sha256:603f77cc517fff2e0f6e208991477ba9386dffd7fc018fcaad21b5e5e721ff88"
     },
     {
+      "sid": "60afe516",
+      "path": "education.student.id",
+      "fingerprint": "sha256:60afe516cb8e6e91eb227b93a80a30140a6a44caa10ab82e9309746716896b44"
+    },
+    {
       "sid": "60b8c8eb",
       "path": "energy.solar.ac_power",
       "fingerprint": "sha256:60b8c8eb52a03a52ca3523caabf614dfbdeb82e2109daf8199438400bceba645"
@@ -1302,9 +1842,29 @@
       "fingerprint": "sha256:6172ced5e705ff3214c13c444e8b4214ce104adeff35b9a5e8378641a621c19c"
     },
     {
+      "sid": "618d4d52",
+      "path": "access.biometric.score",
+      "fingerprint": "sha256:618d4d525ac8ede0f9b864946daea6d90588cdac39ffc8f1f281409fe7aa5c36"
+    },
+    {
+      "sid": "61b50ac8",
+      "path": "nuclear.unit.id",
+      "fingerprint": "sha256:61b50ac86948a11e300e74e2ecbfcf89aa0fd1780d2705e9ae73d982d4d5992b"
+    },
+    {
       "sid": "61c8dcc2",
       "path": "building.hvac.setpoint_humidity",
       "fingerprint": "sha256:61c8dcc249f748421b4001130032cce9dda819f27793a10317ec8977f649dbdf"
+    },
+    {
+      "sid": "61d45a73",
+      "path": "insurance.policy.id",
+      "fingerprint": "sha256:61d45a733ea3534626212ebee1e6dd0749fab05e335688d792e49f6f4cab1bcd"
+    },
+    {
+      "sid": "61f956b4",
+      "path": "water.plant.id",
+      "fingerprint": "sha256:61f956b4da3c24a6f24cd6e34b1fec197eab56647c4862f4461a890ff47a79de"
     },
     {
       "sid": "623ec769",
@@ -1317,14 +1877,29 @@
       "fingerprint": "sha256:62b9868d786f5a9ea251975d014ceda5e95836d5f38e2e7439753c9f5b841515"
     },
     {
+      "sid": "62f3b6d0",
+      "path": "hydrogen.fuelcell.voltage",
+      "fingerprint": "sha256:62f3b6d09f44d14fdbd39666b07708ace8498f69decfd923b8a2e59205e9346b"
+    },
+    {
       "sid": "63364e6c",
       "path": "building.security.door_open",
       "fingerprint": "sha256:63364e6c48ad5e670dcaf7f73b4a4154afd38f40a83c9c3d8b52e0b9e392a2dd"
     },
     {
+      "sid": "63c8e1a7",
+      "path": "laboratory.sample.temperature",
+      "fingerprint": "sha256:63c8e1a707c613a699d4f400b7dc4bc0c64a4814148d82e337a0a934803013da"
+    },
+    {
       "sid": "63fe812a",
       "path": "logistics.scan.count",
       "fingerprint": "sha256:63fe812a4dcf97370ab98dbfa021ea777d9fee4d1570847ca372280bdf1b459f"
+    },
+    {
+      "sid": "6410e57b",
+      "path": "sports.score.home",
+      "fingerprint": "sha256:6410e57be5287b6caf2cf89e0b2c678d58bc039ec9d2d02e4bc08c8f042d3c93"
     },
     {
       "sid": "64a19c0d",
@@ -1337,6 +1912,11 @@
       "fingerprint": "sha256:64bddab51868b23cfdf006ea1c84d229834f962e327f79b5e7e5c718a3761996"
     },
     {
+      "sid": "64f99950",
+      "path": "access.badge.id",
+      "fingerprint": "sha256:64f999509b2588e78905ed3699bbb3ad3b4ae35e37cdf318ab6588a1ce56d8d1"
+    },
+    {
       "sid": "6502ad70",
       "path": "physical.environment.soil_moisture",
       "fingerprint": "sha256:6502ad702fb455f4200ecbffe7d9e98ad5516c2d76c60827fa4dc445a151f9fa"
@@ -1345,6 +1925,16 @@
       "sid": "653381be",
       "path": "logical.level",
       "fingerprint": "sha256:653381beaefc1f3f67c41f98a859261be291e0696a50fb79dc2b0332d865f8a8"
+    },
+    {
+      "sid": "656927a1",
+      "path": "laboratory.wavelength",
+      "fingerprint": "sha256:656927a154b1c71f27b373e019d0ad031afe27554fe1f4c5d470bdf479f594ab"
+    },
+    {
+      "sid": "65ba7e28",
+      "path": "pharmacy.storage.temperature",
+      "fingerprint": "sha256:65ba7e28bdb15734863f9cef85da6742bf4e3cd2cf95476004b77030216aa46e"
     },
     {
       "sid": "66a6b958",
@@ -1372,6 +1962,11 @@
       "fingerprint": "sha256:67b72924e7db7a4407062135341550b670d7f9db9927e08acd95c1e367ab53e9"
     },
     {
+      "sid": "68e13ec9",
+      "path": "datacenter.leak.detected",
+      "fingerprint": "sha256:68e13ec904e9940485ed546dc97cbce778f8c4b8553d88add77b7f60bdfd8318"
+    },
+    {
       "sid": "69c1677e",
       "path": "media.content_type",
       "fingerprint": "sha256:69c1677e7267744dd6b5f33a7a6d2f84c8dd8503cd8eee3ebf828990b0c022ac"
@@ -1387,9 +1982,24 @@
       "fingerprint": "sha256:6a910bd7836b7b57fb1df944d853acc109d4c5a524575fbb11ad8939528030a8"
     },
     {
+      "sid": "6b39b5f9",
+      "path": "laboratory.sample.id",
+      "fingerprint": "sha256:6b39b5f932b233c1f8f7e349cdd06fbeadcf624b78cd3dcac0b6778cc8f7e6c4"
+    },
+    {
+      "sid": "6b5315a1",
+      "path": "nuclear.scram.active",
+      "fingerprint": "sha256:6b5315a1ef61a7d4f42363e3abdf152a187c83bd0017f31a84cfddb5fabc3d7e"
+    },
+    {
       "sid": "6bdd779f",
       "path": "temporal.deadline",
       "fingerprint": "sha256:6bdd779fcda20a95aa513f375273a80256196d59cf48e912c41853fd6ddc4ad5"
+    },
+    {
+      "sid": "6c006e71",
+      "path": "esg.energy.renewable_share",
+      "fingerprint": "sha256:6c006e712f55e242966202a56b512ef81b4d00e078f67b2b627c0fb0f5763fbe"
     },
     {
       "sid": "6c0f2bf8",
@@ -1422,9 +2032,19 @@
       "fingerprint": "sha256:6d138f80447b49a5a835e4f09710a4b14f3a3b364ce06bd8e82bc581d1392cdb"
     },
     {
+      "sid": "6d5bdacc",
+      "path": "hospitality.fridge.temperature",
+      "fingerprint": "sha256:6d5bdacc81d3470cfe55003d0b213fc71226b9d19d52ee7332f70e16af77d89e"
+    },
+    {
       "sid": "6e060ec1",
       "path": "physical.electrical.battery_cycles",
       "fingerprint": "sha256:6e060ec18b1a9e0ccadbaa94258baea1f8945f2da5f808e642c2bba9e7f43f46"
+    },
+    {
+      "sid": "6e37dae4",
+      "path": "mining.truck.id",
+      "fingerprint": "sha256:6e37dae4ca507c9080dfde8ba15da1ab5aed8dbbb139ae09e75ecc79c6cba86d"
     },
     {
       "sid": "6e4c8a62",
@@ -1432,14 +2052,29 @@
       "fingerprint": "sha256:6e4c8a62433fcc9892f7b200f193fe4c0cb149160fe36bddc83ec2a4c40c0971"
     },
     {
+      "sid": "6e849323",
+      "path": "mining.ore.grade",
+      "fingerprint": "sha256:6e849323daf28176325c70290e8b3d3e04867452cc8c388546d0cee6220cdda6"
+    },
+    {
       "sid": "6f419740",
       "path": "network.rssi",
       "fingerprint": "sha256:6f41974074fcc77e8f964f9f9959b08859adafbfc5ab74c0d78cc14d33cacc5f"
     },
     {
+      "sid": "6fa08d43",
+      "path": "drone.motor.rpm_2",
+      "fingerprint": "sha256:6fa08d432f57a9cbac590a74d8128d0f348a8611310cbccf02fbdc37a6240b4f"
+    },
+    {
       "sid": "6fe142d0",
       "path": "aviation.heading.true",
       "fingerprint": "sha256:6fe142d02e41e8b71d9a9d5cd4b18e121f5c8396239d83f00f671349a3468c4f"
+    },
+    {
+      "sid": "6ff59226",
+      "path": "mining.air.methane",
+      "fingerprint": "sha256:6ff59226226278f004c46dfa562f50a15013f0aba24932d93a22275b23127abf"
     },
     {
       "sid": "705c5b61",
@@ -1465,6 +2100,11 @@
       "sid": "72064401",
       "path": "physical.electrical.reactive_power",
       "fingerprint": "sha256:7206440188e519c38cd91371610d82963cfa144a8955b9460639115d1f0a25af"
+    },
+    {
+      "sid": "7250fd36",
+      "path": "education.campus.id",
+      "fingerprint": "sha256:7250fd3692c7daa22c017e402caaa3ea6f1720ef6dea1f58365f2bdb9ba9527b"
     },
     {
       "sid": "72d37d92",
@@ -1497,6 +2137,11 @@
       "fingerprint": "sha256:73cb5f977d5fd2128e0bf9327e8c7ccd384977b833f51271d32d7041a8d138d3"
     },
     {
+      "sid": "73df9a52",
+      "path": "water.meter.volume",
+      "fingerprint": "sha256:73df9a5218eb91f93b3d6ff6f6f43f6991a0a133ca2b1171972832822ea69a80"
+    },
+    {
       "sid": "73ec8996",
       "path": "telecom.cellular.sinr",
       "fingerprint": "sha256:73ec899625ee7cde1cd42a8c5f6055a92305bc8fef535054e7b02c2f739a53e2"
@@ -1512,9 +2157,19 @@
       "fingerprint": "sha256:74aa4fe08cb44031836a6f6cb1a249ef9bcadd327e531d87cf92cdf44a29332b"
     },
     {
+      "sid": "74dbf525",
+      "path": "pharmacy.storage.humidity",
+      "fingerprint": "sha256:74dbf5257564e784e563086c1e6976d4f3941a8231d5b9317ce7a06039e8ad46"
+    },
+    {
       "sid": "74ee4abb",
       "path": "vehicle.trip_distance",
       "fingerprint": "sha256:74ee4abbb776c2372492e93ac981953eca71206fc478815dfef26a732683b305"
+    },
+    {
+      "sid": "750f71bb",
+      "path": "space.satellite.inclination",
+      "fingerprint": "sha256:750f71bb2e4442626187b6e5bf2d7f4e2d3eede42834c48f4bf3e389baaba4a7"
     },
     {
       "sid": "75426d58",
@@ -1537,6 +2192,11 @@
       "fingerprint": "sha256:782848723cd39a826125241c612a65901b5ce38d6b62beaacfb15b135342acff"
     },
     {
+      "sid": "784ec87a",
+      "path": "insurance.claim.id",
+      "fingerprint": "sha256:784ec87a64205702edf072fba14f71e36c426d3a806f6e68f6cb57ef608890b7"
+    },
+    {
       "sid": "7897341a",
       "path": "industrial.motor.voltage",
       "fingerprint": "sha256:7897341a234c556d3984b6f842e31e8eb913ebfae98d1b62e014349218b5455f"
@@ -1545,6 +2205,11 @@
       "sid": "7943d7b2",
       "path": "energy.evse.session_power",
       "fingerprint": "sha256:7943d7b2c8d49a8462e8623850df0bf39524ae9b39db7ec64b0926a984cfd704"
+    },
+    {
+      "sid": "79d06a30",
+      "path": "hospitality.room.mur",
+      "fingerprint": "sha256:79d06a30f1ef23d541690c40b7662fceb36bd9a6212d8b202c18d64a99988f6d"
     },
     {
       "sid": "7a5c6128",
@@ -1557,9 +2222,19 @@
       "fingerprint": "sha256:7a7efae19c8d214ee4fa66624a46ea3703d0f5540f5ea3fd0126c15367cc56ce"
     },
     {
+      "sid": "7b3de852",
+      "path": "micromobility.vehicle.state",
+      "fingerprint": "sha256:7b3de852c9b2f91732724ad5c4dcad5333e6c54437bc9fb853b918f8aa6005a2"
+    },
+    {
       "sid": "7bfbd2aa",
       "path": "health.wearable.standing_hours",
       "fingerprint": "sha256:7bfbd2aadf6908d5d19ac4b8362c7405dca6b955dc05c1d25f85db63b23a3015"
+    },
+    {
+      "sid": "7c2d4bf4",
+      "path": "access.user.id",
+      "fingerprint": "sha256:7c2d4bf4889c6ff16712d65365febfdfbca267938314bdc8f49f821e5cf034e1"
     },
     {
       "sid": "7c855496",
@@ -1582,9 +2257,29 @@
       "fingerprint": "sha256:7d017fa873d6c4d74c70d6d3834de87e1fe19c5272fc766572e4582d1166276f"
     },
     {
+      "sid": "7d08fefd",
+      "path": "water.reservoir.volume",
+      "fingerprint": "sha256:7d08fefde39d3511e89048df3de263c16536210cce40451df85ad59392c22be7"
+    },
+    {
+      "sid": "7d475db1",
+      "path": "space.link.snr",
+      "fingerprint": "sha256:7d475db1f928b853d4e159894f4c53c08082af1fc53ae63a8f36adcd7621f23d"
+    },
+    {
+      "sid": "7d8384a7",
+      "path": "drone.gimbal.roll",
+      "fingerprint": "sha256:7d8384a7b5eef312e6947ed8d52bcbb83d1dc4ec8e26083f106322902ed758cb"
+    },
+    {
       "sid": "7db885d8",
       "path": "physical.environment.absolute_humidity",
       "fingerprint": "sha256:7db885d8b0cb2c9ecc8d81ec1a8d03fb3bb953f819bb8599be5cc779a64c27e6"
+    },
+    {
+      "sid": "7df2a8fd",
+      "path": "mining.air.co",
+      "fingerprint": "sha256:7df2a8fde9520dc2318b99357f1e47643c2121a0e1e8bf0674b2004342065a39"
     },
     {
       "sid": "7e0b3f64",
@@ -1607,9 +2302,24 @@
       "fingerprint": "sha256:7ec38c5bd1e210dc811b969b1fc44d78eeeb4332799589d7584c5821a7245892"
     },
     {
+      "sid": "7f11beff",
+      "path": "elevator.motor.temperature",
+      "fingerprint": "sha256:7f11beff27cdca20b863fdb71ff8eeb75f2ef0319a61bb9f84f29faf89863121"
+    },
+    {
+      "sid": "7f8c878c",
+      "path": "datacenter.pdu.energy",
+      "fingerprint": "sha256:7f8c878c614a3068eafde031451906a788a9eab5bc18575ed28adb9079f4d793"
+    },
+    {
       "sid": "7fbff81b",
       "path": "energy.storage.soc",
       "fingerprint": "sha256:7fbff81b0d60cfc72ba774686345b1a24b6fd7289d5986f857edc764e3ed50fd"
+    },
+    {
+      "sid": "7fdd9b4c",
+      "path": "laboratory.conductivity",
+      "fingerprint": "sha256:7fdd9b4c3dcbbf8379fd08bc834eee2eb9e8dd5e07bb669fa9d41e1dd0238fc4"
     },
     {
       "sid": "808b4f86",
@@ -1617,9 +2327,19 @@
       "fingerprint": "sha256:808b4f86951d2bd627e195473c24a400ba53a3e55e89a5ba315f072b7b7099ca"
     },
     {
+      "sid": "809f600b",
+      "path": "nuclear.coolant.flow",
+      "fingerprint": "sha256:809f600bdf7552abbb290b678363c34edb8aefb5065ddd3224bf26955cb138e5"
+    },
+    {
       "sid": "80ace93d",
       "path": "building.hvac.airflow",
       "fingerprint": "sha256:80ace93d34f1187536ca046fc004be58296738507a86d537f9a33f2e0e9d7dcf"
+    },
+    {
+      "sid": "80aef0b3",
+      "path": "sports.court.temperature",
+      "fingerprint": "sha256:80aef0b3cac6ff5e1eaa8046481e88e567658815f87115f4010c70d5c5697df8"
     },
     {
       "sid": "80cf4a8e",
@@ -1682,6 +2402,11 @@
       "fingerprint": "sha256:836cbd3d74334229ea858f4e7fcd74638674c5b0e7682d9d7242556d5af33650"
     },
     {
+      "sid": "83ad635e",
+      "path": "smartcity.traffic.occupancy",
+      "fingerprint": "sha256:83ad635e733c8b630f8c9f4af319f4336aa0e015c2ebd430061a6cf226660c8d"
+    },
+    {
       "sid": "83b37b21",
       "path": "vehicle.gear",
       "fingerprint": "sha256:83b37b216e45ed10bca26af39f4047e839253625f50f7f2fe61f2221c736454e"
@@ -1702,14 +2427,44 @@
       "fingerprint": "sha256:8477c809bd8f7d9eece3c0cb2067bad1add6eadaa3084ec16463554b8874defe"
     },
     {
+      "sid": "84b577e4",
+      "path": "space.attitude.quaternion_error",
+      "fingerprint": "sha256:84b577e4bfac087271f4161f9da61f1398e22203a397e55b5eae25425ff33898"
+    },
+    {
       "sid": "84ca530f",
       "path": "actuation.power",
       "fingerprint": "sha256:84ca530f4603358344946ae8ea50e5da13a00a17cb26578c612435386e050904"
     },
     {
+      "sid": "84ec2dd6",
+      "path": "hospitality.queue.wait_minutes",
+      "fingerprint": "sha256:84ec2dd6aeda71c352ca621856a297b651ee58f6f4426af3dfb6275dc804abd5"
+    },
+    {
+      "sid": "84edd17c",
+      "path": "drone.flight_mode",
+      "fingerprint": "sha256:84edd17c3226ea8133668049c304b04e1f7a1acca36e557f5fa876e6afd9b75f"
+    },
+    {
+      "sid": "84f34f10",
+      "path": "smartcity.parking.occupied",
+      "fingerprint": "sha256:84f34f1046623c65392ce626e3ea3c271e026dd66eef278f3aad99ba2300cae2"
+    },
+    {
+      "sid": "8506c4cb",
+      "path": "education.room.occupancy",
+      "fingerprint": "sha256:8506c4cbe790bdd1722ae8fb07be0acf585c1bee8322bd6b4b0f5eaab8f317a0"
+    },
+    {
       "sid": "851c8008",
       "path": "rail.signal.state",
       "fingerprint": "sha256:851c8008e29f1b106b200bd19d4d065587664e773ef568301b94fbf4b6e3c92d"
+    },
+    {
+      "sid": "8522507a",
+      "path": "datacenter.ups.runtime",
+      "fingerprint": "sha256:8522507a3b0e7df220837dcb322a6083ec1a9bd3e7423a11f5c0670c82d98cdb"
     },
     {
       "sid": "85917d32",
@@ -1727,9 +2482,34 @@
       "fingerprint": "sha256:86bf05085b419736f84c764e1a08aff1ce166c576ff67be8724aa8e73bf4c289"
     },
     {
+      "sid": "871f385e",
+      "path": "space.satellite.period",
+      "fingerprint": "sha256:871f385ee827ca0c3ae18efd5e406c2298b9c6208541cb52a62e55dc68c25e13"
+    },
+    {
+      "sid": "8758b461",
+      "path": "sports.ball.speed",
+      "fingerprint": "sha256:8758b461d41252031eb2dcca40f730cd821c925674d3bb81e4ef442272ed15e2"
+    },
+    {
+      "sid": "87f69b6a",
+      "path": "water.wastewater.tss",
+      "fingerprint": "sha256:87f69b6a552e29a518f48b4dfbc4af563b2a2c6ad9993da31f9dccbaed752114"
+    },
+    {
+      "sid": "887d863e",
+      "path": "printing.device.id",
+      "fingerprint": "sha256:887d863e4e295a82e971543288f8110223096a85c6c838bd9ea0c08c10405f21"
+    },
+    {
       "sid": "8997477d",
       "path": "physical.environment.ch4",
       "fingerprint": "sha256:8997477d4ef67cdd9b15c2afa0fde4ffdf004c67e3a4bf3ab8a100c96a45bf8e"
+    },
+    {
+      "sid": "89a2aa02",
+      "path": "micromobility.scooter.speed",
+      "fingerprint": "sha256:89a2aa02776a6dc997ad8f84bd3053d8bed4bc3347f67db0fea3e216d8d0a797"
     },
     {
       "sid": "89ab1dea",
@@ -1737,9 +2517,24 @@
       "fingerprint": "sha256:89ab1deab84aa4a4ff08e39b0ad00536b557ac5150dd4712364ae9eb44cdfdda"
     },
     {
+      "sid": "89c90d7a",
+      "path": "smartcity.lighting.fault",
+      "fingerprint": "sha256:89c90d7a685f356e256eedf1985aceb9b35c3edd3af6347603e13b322fee21dc"
+    },
+    {
+      "sid": "8a132dab",
+      "path": "datacenter.cooling.return_temp",
+      "fingerprint": "sha256:8a132dab082f4b24f0f8d98160ac0c2393b2ea603ef7ea36633dda7181ad0ec7"
+    },
+    {
       "sid": "8a407209",
       "path": "oilgas.pipeline.flow",
       "fingerprint": "sha256:8a407209aa95972e5d58eb7f44e9dfe61a85618b7aea6126ab23a749a8654a11"
+    },
+    {
+      "sid": "8a635566",
+      "path": "insurance.customer.id",
+      "fingerprint": "sha256:8a635566a114a6529817ef7dc6c6a08722a51e0bcbcbc065b0edfe262caceefd"
     },
     {
       "sid": "8a9d9f72",
@@ -1767,9 +2562,24 @@
       "fingerprint": "sha256:8b9c040ce5ab750044a260fca329f7b731b96d72851891b691bf0b50ba9de328"
     },
     {
+      "sid": "8bb20484",
+      "path": "micromobility.trip.id",
+      "fingerprint": "sha256:8bb2048436a9825928d2656d72542683626f545474a50373d4ae3affb0a83eaa"
+    },
+    {
+      "sid": "8be3c5ba",
+      "path": "sports.athlete.power",
+      "fingerprint": "sha256:8be3c5ba7d3ccf287b26d21c27d38ee35da6d20586b3900318fe203d818e1e69"
+    },
+    {
       "sid": "8c138cb4",
       "path": "physical.mechanical.torque",
       "fingerprint": "sha256:8c138cb42a5edc7e8104f47d37a0ecefba487e51d254bc2c143f4669f46768f0"
+    },
+    {
+      "sid": "8c7f2535",
+      "path": "construction.equipment.state",
+      "fingerprint": "sha256:8c7f2535299e66c7c48f7041bc5ea793d0c83a94a86840d6c7e55fecdce6763d"
     },
     {
       "sid": "8d2709b3",
@@ -1832,6 +2642,11 @@
       "fingerprint": "sha256:9082675f891c7c38daff5972eeb2e1147507d47853f8eb6bf448e0be408bf578"
     },
     {
+      "sid": "9121d9dd",
+      "path": "micromobility.bike.power",
+      "fingerprint": "sha256:9121d9dd59ba7546c80d38a3742a6ecddf2e48e49eefb3aa68084c3d6d3c6cdc"
+    },
+    {
       "sid": "9131732d",
       "path": "maritime.callsign",
       "fingerprint": "sha256:9131732de98505f4cfbee1264bcd55c8822a6fcc46a1d2398773e784a8a3f99e"
@@ -1872,14 +2687,34 @@
       "fingerprint": "sha256:925cef1ca0f4973e9d4a6b00defc6a1a1e276d64b8604994d2ae660fc942d910"
     },
     {
+      "sid": "9286a528",
+      "path": "elevator.alarm.active",
+      "fingerprint": "sha256:9286a52818b9001217fe9ea01b55b0556756cfe18fc5cb723c3ebbc85909f7ff"
+    },
+    {
+      "sid": "92a955c5",
+      "path": "realestate.lease.id",
+      "fingerprint": "sha256:92a955c5d98fd59bdff15e961f91d2cb930e097434d1974c2052147cf65297f0"
+    },
+    {
       "sid": "92e174d7",
       "path": "physical.acoustic.frequency",
       "fingerprint": "sha256:92e174d707c390e0faa679a0177310d6b85bc1f723ca08d1cb1e6843ca1991d3"
     },
     {
+      "sid": "92e1d92f",
+      "path": "sports.pool.temperature",
+      "fingerprint": "sha256:92e1d92fd890e584084c58948f26673d9b9794a0d5f670858484ac712ff95e3e"
+    },
+    {
       "sid": "9352cbab",
       "path": "vehicle.tire_pressure_fr",
       "fingerprint": "sha256:9352cbab567f3763fa405f27c0fbb661f059673dcd97606d682951eae1a583a1"
+    },
+    {
+      "sid": "938aa308",
+      "path": "forestry.tree.height",
+      "fingerprint": "sha256:938aa308dccf212e9aeabc2e4ff36400198ce3d157256e17beb42914033298f1"
     },
     {
       "sid": "939f55ca",
@@ -1907,6 +2742,11 @@
       "fingerprint": "sha256:946738dab90fa27ce5fd69265a071e87a8bab84b8f703224be04e8c8bd10338e"
     },
     {
+      "sid": "94954621",
+      "path": "esg.waste.generated",
+      "fingerprint": "sha256:949546215c166263a89d7915af8a86389a90f8ac0b16dfed05ee6fa51135030d"
+    },
+    {
       "sid": "94e7cebc",
       "path": "physical.electrical.line_voltage_l3",
       "fingerprint": "sha256:94e7cebc66bc0bdc42d3cdfd041647b1f150730575cb946b9f3e14b1fc543813"
@@ -1917,6 +2757,11 @@
       "fingerprint": "sha256:94ea18dd49d6d5c9342fefc66a6792e2219426aecff62d8672b3c26042c1ff10"
     },
     {
+      "sid": "9553275b",
+      "path": "elevator.cabin.floor",
+      "fingerprint": "sha256:9553275bfbff805a53c832c5a3aac64f07be408e7b286422aaccce5f946e31b2"
+    },
+    {
       "sid": "960a2d8a",
       "path": "oilgas.flow.oil",
       "fingerprint": "sha256:960a2d8a82d538b842363152532337cc16e71bdea2d3cb22a3929d7f2641dae9"
@@ -1925,6 +2770,21 @@
       "sid": "962e8715",
       "path": "physical.geo.hdop",
       "fingerprint": "sha256:962e87158ceaa31a6d0e0e03a03ac2ed417cde3cdbc3e0a6e0f797bf3a9f1cde"
+    },
+    {
+      "sid": "9690f6dd",
+      "path": "printing.job.state",
+      "fingerprint": "sha256:9690f6ddd4e175016cbdc6e597ce840dc37b6be33a126a067be55de5185c6a2a"
+    },
+    {
+      "sid": "96da27d2",
+      "path": "nuclear.reactor.period",
+      "fingerprint": "sha256:96da27d211a5e092b2fc12cfb57c1d73ffb61d5494217ccde3bf2994abd053c1"
+    },
+    {
+      "sid": "971ae70c",
+      "path": "smartcity.traffic.light_state",
+      "fingerprint": "sha256:971ae70c8e99e594ed27a36e89c069cf1c7ad99e63a3bf84f2a3507e567037fa"
     },
     {
       "sid": "9744622b",
@@ -1987,6 +2847,16 @@
       "fingerprint": "sha256:9943a5bf9859d137307cdba0be13ddb6bab9629e18832237e75b0bab5a14079a"
     },
     {
+      "sid": "9946262a",
+      "path": "construction.crane.overload",
+      "fingerprint": "sha256:9946262a56cedbd373b9fc6e34867905133820e69bf5322ace2a1e301f4bc9cd"
+    },
+    {
+      "sid": "99620440",
+      "path": "realestate.rent.amount",
+      "fingerprint": "sha256:99620440ae86f3ffab01686b0dcdf24296b1ab3bcf0955f430a8cb59050fd2f8"
+    },
+    {
       "sid": "99a21ead",
       "path": "robotics.mission.id",
       "fingerprint": "sha256:99a21eadd5c9e58838473dd77574bdd16968f28c8186b495903e50a2cafe3ffa"
@@ -1997,9 +2867,24 @@
       "fingerprint": "sha256:99e3d5695e4ba1b52bb4b202836f36fb8826d728a83ece15d531cb93203988e8"
     },
     {
+      "sid": "99fc762a",
+      "path": "laboratory.absorbance",
+      "fingerprint": "sha256:99fc762a00c2798471cff13f52c657921425aa5afeb9a09ee1613aad4b01bfff"
+    },
+    {
       "sid": "9a206d28",
       "path": "vehicle.ev_charge_energy",
       "fingerprint": "sha256:9a206d281195df9dda80a1cc1144b146a1a82314c460b4b5fba014a72ba2bd99"
+    },
+    {
+      "sid": "9a6e4f82",
+      "path": "broadcast.video.dropped_frames",
+      "fingerprint": "sha256:9a6e4f826d5a3f9c7f5339d0b548e342cf44a4fc92114eced3961e4cc35ffa2f"
+    },
+    {
+      "sid": "9aec418f",
+      "path": "micromobility.lock.locked",
+      "fingerprint": "sha256:9aec418f1d26a820172688000b284da054f70adf6f7037f11561235b7e1bd906"
     },
     {
       "sid": "9b09b78e",
@@ -2010,6 +2895,11 @@
       "sid": "9b33fed7",
       "path": "health.clinical.ecg_heart_rate",
       "fingerprint": "sha256:9b33fed7de817e1469f759e31e601507b923842edaee1ef00292c2aeff5fd8f4"
+    },
+    {
+      "sid": "9b4c8429",
+      "path": "smartcity.lighting",
+      "fingerprint": "sha256:9b4c8429f92602b77f3cd630520cb0642c7a5b45aff6ef8be27625cc742a2970"
     },
     {
       "sid": "9b56bf50",
@@ -2032,9 +2922,24 @@
       "fingerprint": "sha256:9bf0bb7ce8f57bb9e1467859ebc1ea4e1dc8bed47362b4f9620b93bb982b2393"
     },
     {
+      "sid": "9c282ec1",
+      "path": "datacenter.site.id",
+      "fingerprint": "sha256:9c282ec108fc349fc6b3bc964631e49e28035b7746167577d039cf11d93bb19f"
+    },
+    {
+      "sid": "9c29e37d",
+      "path": "space.payload.temperature",
+      "fingerprint": "sha256:9c29e37d32c3251483f2aeb6a119a03bc382c374baa53477fba664534732aee8"
+    },
+    {
       "sid": "9c357a6f",
       "path": "vehicle.tire_pressure_fl",
       "fingerprint": "sha256:9c357a6f095c6ea02c4901bf5118c3529307402e00d3702fcb57ea95096f2f77"
+    },
+    {
+      "sid": "9c60c75c",
+      "path": "micromobility.lock",
+      "fingerprint": "sha256:9c60c75c147dcf365ce62e97d1b4692a76552e1810160c9ccd68cb2d3cd607cf"
     },
     {
       "sid": "9c6cd064",
@@ -2077,6 +2982,21 @@
       "fingerprint": "sha256:9da96c7fa7d222ef53d89a7d9f39ac3e460047ecee697067e195bd0f2327dac7"
     },
     {
+      "sid": "9dffcea9",
+      "path": "pharmacy.inventory.count",
+      "fingerprint": "sha256:9dffcea9c9aedf2781a49bc983896cd85b87517bb8ae2d95729e49995f4a3d11"
+    },
+    {
+      "sid": "9e77e715",
+      "path": "space.satellite.bus_voltage",
+      "fingerprint": "sha256:9e77e71560a7e8a7b5eaff24b56836054e1c784357a2e1be0eb01e75175efbf3"
+    },
+    {
+      "sid": "9e9c6e76",
+      "path": "hydrogen.electrolyzer.power",
+      "fingerprint": "sha256:9e9c6e76841370034263e47dcc06fbc5024a3c9261de3d88c6cd112b99462413"
+    },
+    {
       "sid": "9ffe4859",
       "path": "smarthome.washer.cycle_progress",
       "fingerprint": "sha256:9ffe48591011fb41db35cdd8cec9377a93f65d2e3f5f7e9915985c43656849da"
@@ -2107,14 +3027,34 @@
       "fingerprint": "sha256:a194ef271ae36fcfbd4268112f8d34da313f17afac60d092bbd92cf8b0bb4522"
     },
     {
+      "sid": "a2549ff3",
+      "path": "hydrogen.fuelcell.power",
+      "fingerprint": "sha256:a2549ff38feccb9feb57a4c06b11f4bdc6b9227dc268c8710d92224339637342"
+    },
+    {
+      "sid": "a2edd80f",
+      "path": "hospitality.room.id",
+      "fingerprint": "sha256:a2edd80f7531b01d31b51b92e0abb2f7b1f58a2c5430307a59b29392d2db1478"
+    },
+    {
       "sid": "a3257c03",
       "path": "agriculture.irrigation.volume",
       "fingerprint": "sha256:a3257c03b78b0bbce7a0f5bb1e41165c6f90f8457b3a4f64d5b79a1d2149a541"
     },
     {
+      "sid": "a371b820",
+      "path": "drone.gimbal.pitch",
+      "fingerprint": "sha256:a371b8201554b29ffe2cf2196a9afb05ea96ebfd78b824238c5d28793dc27aca"
+    },
+    {
       "sid": "a3cf5ef0",
       "path": "health.clinical.systolic_bp",
       "fingerprint": "sha256:a3cf5ef066caa8368509c5299585fd3c40b6dafc5f09f2a14e1e539c63be5aeb"
+    },
+    {
+      "sid": "a43deeb2",
+      "path": "hydrogen.station.id",
+      "fingerprint": "sha256:a43deeb2934924a957712967126034cafa580ce39d7408d2b232e97cf1bb6484"
     },
     {
       "sid": "a45aee69",
@@ -2152,6 +3092,11 @@
       "fingerprint": "sha256:a73b55cd27cdcabfd770df608f87688b7a2baa26481b6fa86ee94bbc2470ff87"
     },
     {
+      "sid": "a7e7575e",
+      "path": "realestate.amenity.gym",
+      "fingerprint": "sha256:a7e7575e462e0d144bb6b835e037a6ee547d443852773d94843a1cae0e6c1909"
+    },
+    {
       "sid": "a7e79575",
       "path": "network.link_state",
       "fingerprint": "sha256:a7e79575fb145a27a2c1bce1af041179b485072bf39502c92afde4b4e3c7fe96"
@@ -2167,9 +3112,24 @@
       "fingerprint": "sha256:a8a2aeb0af378010b960975991ef7c96369458655b23755e503b5ab4063d6a1b"
     },
     {
+      "sid": "aa229a5f",
+      "path": "water.dma.id",
+      "fingerprint": "sha256:aa229a5f41acba41354e15bc67ba5c0ac84d6bf7e7772cde655498bff0dfca43"
+    },
+    {
+      "sid": "ab6a967b",
+      "path": "datacenter.pdu.voltage",
+      "fingerprint": "sha256:ab6a967b01e00481ce661a0923d53772e95cf76bbe38881354d11c9f9ccea810"
+    },
+    {
       "sid": "ab931099",
       "path": "physical.motion.quaternion_w",
       "fingerprint": "sha256:ab931099fba9fef7dc020e4efa36ed67dd5b6320cd35f6c521606ca0c7457bfd"
+    },
+    {
+      "sid": "abc06720",
+      "path": "micromobility.scooter.battery",
+      "fingerprint": "sha256:abc067205c127f2ce88762602c536d09d6277015cabfb93896ad56bfc0b55685"
     },
     {
       "sid": "abd0ba33",
@@ -2192,6 +3152,11 @@
       "fingerprint": "sha256:ac7db693e123fea363881845bec74c3da77d2b900980a168b6fca50840c9c2a0"
     },
     {
+      "sid": "ac9480ba",
+      "path": "construction.noise.spl",
+      "fingerprint": "sha256:ac9480ba52cc8b0f9fcd91e52ae03c230447b786917e4de6467d5945cc13478f"
+    },
+    {
       "sid": "acb483d7",
       "path": "network.lqi",
       "fingerprint": "sha256:acb483d7da6884f56a606b01767e8ca58a3ce08f4dfef2d1dd8fb4e34bdccb6f"
@@ -2210,6 +3175,11 @@
       "sid": "ad914f2b",
       "path": "energy.tariff.id",
       "fingerprint": "sha256:ad914f2b5adcf4eb249a8bba3c5950f5affc0fa7e142e8c6fb35d6d2ff823d55"
+    },
+    {
+      "sid": "ae7d2a1d",
+      "path": "realestate.energy.intensity",
+      "fingerprint": "sha256:ae7d2a1d56407fe934bd95881a444c314310a417869a063c7011fea6ffefe1e0"
     },
     {
       "sid": "aed2f2e9",
@@ -2257,6 +3227,21 @@
       "fingerprint": "sha256:b0af89f60934db0187f2008289abec82a6c419f5e6c05a6197d87b2641c7c9aa"
     },
     {
+      "sid": "b153d177",
+      "path": "sports.session.state",
+      "fingerprint": "sha256:b153d177cbe9da25f01963987a5e41fee835a0c3728b4f88475486b0cb28e948"
+    },
+    {
+      "sid": "b1815d1f",
+      "path": "hydrogen.fuelcell.current",
+      "fingerprint": "sha256:b1815d1fd18309da40a29c322a226690e1d733bd79e926657fb7f1266c1518b2"
+    },
+    {
+      "sid": "b1b594d4",
+      "path": "water.wastewater.bod",
+      "fingerprint": "sha256:b1b594d451001a47dd0c2734e6368ff4762f7b5d3043f0e4fdd4fcf8ff078bab"
+    },
+    {
       "sid": "b28179c8",
       "path": "physical.mechanical.mass_flow",
       "fingerprint": "sha256:b28179c8ee84af17e7e26a3f953d17abae0eee61067d2acb77e7466cdd8e3417"
@@ -2265,6 +3250,11 @@
       "sid": "b28871c1",
       "path": "agriculture.crop.canopy_temperature",
       "fingerprint": "sha256:b28871c17d149845d63bae566423ce925d41c993f2b1012f2772e681f0e04cdd"
+    },
+    {
+      "sid": "b31df027",
+      "path": "sports.athlete.id",
+      "fingerprint": "sha256:b31df0279034309798f0a1a539060e5da100099e4cacdaf2a12cc37652b941aa"
     },
     {
       "sid": "b3283730",
@@ -2282,6 +3272,11 @@
       "fingerprint": "sha256:b34ceccf531e1aa9d6f8ab9983f3610d5d39adbbbf12af059fdd2842b83eb8f6"
     },
     {
+      "sid": "b3bd337b",
+      "path": "smartcity.noise.spl",
+      "fingerprint": "sha256:b3bd337b52a637947b1458e4b5d18d3627be9d3fb7b7963664f8ada95718d51c"
+    },
+    {
       "sid": "b4011d81",
       "path": "energy.solar.irradiance",
       "fingerprint": "sha256:b4011d81c0d56f7704471364f1559f0c7752acb392c483256721d73b87f5859b"
@@ -2297,6 +3292,16 @@
       "fingerprint": "sha256:b4cfc4e0b4849b6c1d6c4cb776d226c5ac88e90ca1ec10a8a32c84198cdd6862"
     },
     {
+      "sid": "b504ef8b",
+      "path": "elevator.state",
+      "fingerprint": "sha256:b504ef8b0007dc05eb5bb82e291175e619919b0afbd8fa72b0165ae7a7c6258b"
+    },
+    {
+      "sid": "b5330bb0",
+      "path": "mining.haul.cycle_time",
+      "fingerprint": "sha256:b5330bb0c95c8b22ce7aae10f49efe0f9779c8d0bb85b779f08efdd584d7a796"
+    },
+    {
       "sid": "b5565c4e",
       "path": "telecom.emergency.call_active",
       "fingerprint": "sha256:b5565c4ec1be9cc0038ec13e198c3db352920f5988f7bd6cb9f6123251ecb6c1"
@@ -2307,9 +3312,19 @@
       "fingerprint": "sha256:b5786b2d665b6d11135566aff080b68eb8dca03bcdc91404d4e89d77b22c4478"
     },
     {
+      "sid": "b5c91b45",
+      "path": "laboratory.ph",
+      "fingerprint": "sha256:b5c91b450269c7ddf60b7a72f7fb161eba6b3de4d183d8eb73a5a11ec64fbafe"
+    },
+    {
       "sid": "b5ec916a",
       "path": "logistics.container.id",
       "fingerprint": "sha256:b5ec916abdeeff57375d3bfec9517bcc9971a5140cc7a6b07992b5f856222117"
+    },
+    {
+      "sid": "b6063251",
+      "path": "sports.event.id",
+      "fingerprint": "sha256:b6063251c54fe2e7f2291f799416001a9afa8bbeba5ba91ba7cd679a7eb2f8d4"
     },
     {
       "sid": "b61c4563",
@@ -2327,6 +3342,11 @@
       "fingerprint": "sha256:b685a0081d728d18c69369484a25c27adb3d729c8ccb2255c521d35c450fd0e7"
     },
     {
+      "sid": "b6a0a828",
+      "path": "esg.waste.recycled",
+      "fingerprint": "sha256:b6a0a828a5c1f166ab704cc8bcbdc8dab3852215b1994fdd459b17f0c5125547"
+    },
+    {
       "sid": "b6a2a4f1",
       "path": "vehicle.intake_air_temp",
       "fingerprint": "sha256:b6a2a4f1dc9aaf599060916f4cbe00987d8b7dc5667ca772cd1eab548af3545c"
@@ -2337,9 +3357,19 @@
       "fingerprint": "sha256:b6e113696c9087c6ddb444682aee23e63bc3d6ff40542bdc526a132f032e7514"
     },
     {
+      "sid": "b6e39a8c",
+      "path": "pharmacy.dispense.quantity",
+      "fingerprint": "sha256:b6e39a8c243a9764bf9e9939091be5723751f07cc58855d3706977e2fb8c05f5"
+    },
+    {
       "sid": "b6e5695d",
       "path": "physical.environment.radon",
       "fingerprint": "sha256:b6e5695df083e11d3a021313f53b94a9e06ef6ffdaa1aa481ba6e821474e2adf"
+    },
+    {
+      "sid": "b6fcaa12",
+      "path": "datacenter.cooling.pue",
+      "fingerprint": "sha256:b6fcaa123dd1b1a1e455e59fb8df31df89710c26cfcdf834214fa6132323170b"
     },
     {
       "sid": "b718dce5",
@@ -2347,9 +3377,19 @@
       "fingerprint": "sha256:b718dce5763450992f379dc5c8397a3eb701f6f3c3817d1df2ccf35f6b11e422"
     },
     {
+      "sid": "b738564e",
+      "path": "esg.facility.id",
+      "fingerprint": "sha256:b738564e448872d3a41ea0c89efea0ac1c2712c28410c296f25e5d5edb911cb9"
+    },
+    {
       "sid": "b7f7ab31",
       "path": "logistics.coldchain.temperature",
       "fingerprint": "sha256:b7f7ab31c035c96355e7445ab907e1bc52786857c9b53b48a4d668e05ee2b7b5"
+    },
+    {
+      "sid": "b93c7c0a",
+      "path": "hospitality.kitchen.temperature",
+      "fingerprint": "sha256:b93c7c0a882f037cbc806164bbc90ab9db6d54417afbf4b9faf0f9038813ca73"
     },
     {
       "sid": "b9513db1",
@@ -2357,9 +3397,24 @@
       "fingerprint": "sha256:b9513db14bf3f385b2d5f261d5cc413ba9a33667712e54c39cb5b4bf37bbda32"
     },
     {
+      "sid": "b9dfba87",
+      "path": "elevator.motor.current",
+      "fingerprint": "sha256:b9dfba87050f6309929f27003a7bd10f1fcff2141a9567d09d38ec58534e5313"
+    },
+    {
       "sid": "b9e8bcbb",
       "path": "physical.environment.water_temperature",
       "fingerprint": "sha256:b9e8bcbb014feb417854746f92c84be7707be4ffcdc7920fa8270c5c72c2c36b"
+    },
+    {
+      "sid": "ba3b39b0",
+      "path": "space.attitude.rate_z",
+      "fingerprint": "sha256:ba3b39b0ae7437ceb7a1a190e9f10f534d8533fe49e94dbc3b976941f7df13b8"
+    },
+    {
+      "sid": "ba6a83a2",
+      "path": "access.occupancy.count",
+      "fingerprint": "sha256:ba6a83a283065f071168fc6637034354a65f8b65aa19f7aa904889f4ed4399f4"
     },
     {
       "sid": "ba7b6464",
@@ -2367,9 +3422,24 @@
       "fingerprint": "sha256:ba7b64643dbf239385d7af232469952014d2fc3a8843fc7f73aae339ae0e2b98"
     },
     {
+      "sid": "ba7e2d26",
+      "path": "water.treatment.ph",
+      "fingerprint": "sha256:ba7e2d26f4a1f2b286e9f0394e5d1fc9cfe344496a109900f195f02416018d6a"
+    },
+    {
+      "sid": "ba7e8a2c",
+      "path": "education.access.granted",
+      "fingerprint": "sha256:ba7e8a2c273c901afc8014b8144c756e76d6f2dc61d3427476b18488163a1677"
+    },
+    {
       "sid": "bb42c502",
       "path": "maritime.wind.true_speed",
       "fingerprint": "sha256:bb42c5024be4e998e91143c320eb4eb15d22871736706310f0cce15f806444c3"
+    },
+    {
+      "sid": "bb5129c5",
+      "path": "printing.3d.layer",
+      "fingerprint": "sha256:bb5129c5790d7b542be176dc7f5fa838a1b5be99e566a16b2e37061ed5574ef7"
     },
     {
       "sid": "bba7e2c8",
@@ -2382,9 +3452,19 @@
       "fingerprint": "sha256:bbb11183537fc1dc9102953769cd605d3a67526ebc54724fa2d6c38a0f39313e"
     },
     {
+      "sid": "bbd086bd",
+      "path": "smartcity.parking.available",
+      "fingerprint": "sha256:bbd086bd54104e6571b1852f59b2a3464f1e87cb2426f95298f53f4c6d3f9bad"
+    },
+    {
       "sid": "bc581b50",
       "path": "vehicle.tire_pressure_rl",
       "fingerprint": "sha256:bc581b501adc45d2a7e1012911f2a06f1bd3556a4106838a1641d6dc658f2618"
+    },
+    {
+      "sid": "bc6276c5",
+      "path": "space.attitude.rate_x",
+      "fingerprint": "sha256:bc6276c54292885050cd2882e2b78b2577fa405c04874c554789f143c4a658df"
     },
     {
       "sid": "bd06960e",
@@ -2432,14 +3512,29 @@
       "fingerprint": "sha256:bf02e9cb7d9c9df8532f456c7c0ac510348211a77c5ac30081571f074cfda94a"
     },
     {
+      "sid": "bf55b8de",
+      "path": "mining.ground.displacement",
+      "fingerprint": "sha256:bf55b8deacaeddd3776e76f45c7b9ddde024f9d3bb2f653bacdc341c8f6afc48"
+    },
+    {
       "sid": "bfc413a8",
       "path": "finance.fraud.score",
       "fingerprint": "sha256:bfc413a89c06d5ea9a1498d33208e9b0ebca4c63f69d812daa4e7ac6f8606609"
     },
     {
+      "sid": "bfe5bd37",
+      "path": "broadcast.audio.lufs",
+      "fingerprint": "sha256:bfe5bd374d2b39694a5e3b569a60e7dcd2a63b9a5f39dc7e13a938e419b8a96c"
+    },
+    {
       "sid": "bfe907f7",
       "path": "logistics.pallet.id",
       "fingerprint": "sha256:bfe907f7212a39185b70519430d783f23eab87c9148932c55204e05eb607b235"
+    },
+    {
+      "sid": "bfef8f2a",
+      "path": "insurance.claim.amount",
+      "fingerprint": "sha256:bfef8f2a4cc1e7c3cf4c694edf229e9960336981c86c3e5d68915164e29d43c2"
     },
     {
       "sid": "c0154acf",
@@ -2452,9 +3547,19 @@
       "fingerprint": "sha256:c041f1db18c71725d6ff5703d7c1dc4036df371c021a5d17208af18aca1b3793"
     },
     {
+      "sid": "c067e7ba",
+      "path": "laboratory.incubator.co2",
+      "fingerprint": "sha256:c067e7babeb1ff76436429607ccd6516f2495b6c3f897de0f94e79ef4e412cfd"
+    },
+    {
       "sid": "c0935590",
       "path": "aviation.flight_number",
       "fingerprint": "sha256:c093559056a94fad672c71bcd056844836ec962098667b9f169d8366fc48a33d"
+    },
+    {
+      "sid": "c099634f",
+      "path": "space.mode",
+      "fingerprint": "sha256:c099634f9e742c5d0966908c6925408ac0ba392d214c12a36a6c38c718f077d7"
     },
     {
       "sid": "c10089e3",
@@ -2467,6 +3572,11 @@
       "fingerprint": "sha256:c14f4944e38b5bb320a10ba4dad0760394fbfb33313f9aafd9cafb1b2f9d89a4"
     },
     {
+      "sid": "c1798fe9",
+      "path": "datacenter.rack.power",
+      "fingerprint": "sha256:c1798fe9fc584dfd766ac5eeffa79f71ea0e7e0e56d31be72d2792834da779ad"
+    },
+    {
       "sid": "c2287a97",
       "path": "maritime.imo",
       "fingerprint": "sha256:c2287a9757649cffe4f4c41f9ba58b222c825155b71cae8a318e1fa9c3faa266"
@@ -2475,6 +3585,11 @@
       "sid": "c251912c",
       "path": "robotics.task.state",
       "fingerprint": "sha256:c251912c41e66bddadac43956d952842e1cfc8ae804295fa40f125b9dfc68e7f"
+    },
+    {
+      "sid": "c2d2e518",
+      "path": "micromobility.trip.distance",
+      "fingerprint": "sha256:c2d2e5189d74bb69748dbf207763a45422688859fe97bb0fc476d28ea4ee9325"
     },
     {
       "sid": "c33ba9fe",
@@ -2487,14 +3602,34 @@
       "fingerprint": "sha256:c37f7f0b5251debcd146eccdcc19aaca0679c441134a4b246383d7785f15fe3d"
     },
     {
+      "sid": "c3a8bf6d",
+      "path": "elevator.call",
+      "fingerprint": "sha256:c3a8bf6da275b550f5ce402e204e2809b46b9de4bb784b287f9724caf3f17daa"
+    },
+    {
+      "sid": "c3d9f855",
+      "path": "access.door.forced",
+      "fingerprint": "sha256:c3d9f85557786bfdb4fb788a9a8098d37a972dd1a099dd18d8dedb8558a08ee9"
+    },
+    {
       "sid": "c3f9b5a2",
       "path": "building.lighting.color_saturation",
       "fingerprint": "sha256:c3f9b5a2f917864768f4c3a49d95745435f3fb4afb82a3800de43e3ba62c5d9a"
     },
     {
+      "sid": "c4155a77",
+      "path": "printing.3d.bed_temp",
+      "fingerprint": "sha256:c4155a7714ccb443d8d508d3577778dbf7654f053b3776399231b0cd23ee3195"
+    },
+    {
       "sid": "c472c2f0",
       "path": "retail.payment.method",
       "fingerprint": "sha256:c472c2f0a14e57dff9cbdd3e59cedb2917f4fea846049733f6667d7803b5ba52"
+    },
+    {
+      "sid": "c4d9e6c1",
+      "path": "space.link.datarate",
+      "fingerprint": "sha256:c4d9e6c1d51d4ffca275c09ffa891eec7c723c3550d57dcb7aeb5ef8e2be004b"
     },
     {
       "sid": "c5ae11d3",
@@ -2512,6 +3647,31 @@
       "fingerprint": "sha256:c5dd7f02e733172cb5d77a5ecc37be1a1446ef16807884245aaaf226d906d471"
     },
     {
+      "sid": "c62eede5",
+      "path": "access.door.held",
+      "fingerprint": "sha256:c62eede5b133f53389ccbff5f8c0ef6cc5bccb2bd6a9fff165de18bcd972d591"
+    },
+    {
+      "sid": "c64edbd9",
+      "path": "micromobility.bike.cadence",
+      "fingerprint": "sha256:c64edbd9ea857f64c53161609f9082d6322240ac688946136fc594710650f1f9"
+    },
+    {
+      "sid": "c6ade7ca",
+      "path": "water.treatment.flow_in",
+      "fingerprint": "sha256:c6ade7caa596f07a9249f1397c1a9aefaececc30f82b4733015c8376d502fb27"
+    },
+    {
+      "sid": "c74b82bc",
+      "path": "mining.face.id",
+      "fingerprint": "sha256:c74b82bcf990503b033a1ed5d768ce71d995d83fd05952df75447fa2a7115998"
+    },
+    {
+      "sid": "c87b2884",
+      "path": "construction.concrete.temperature",
+      "fingerprint": "sha256:c87b28847d4f8fb9e3d2ec149d9a0905ca8285164e5e9704eed3263d9cd60fdf"
+    },
+    {
       "sid": "c884d762",
       "path": "logistics.parcel.id",
       "fingerprint": "sha256:c884d762f7ae3b77002de8872dcfc54cc37b0ee64c7ed75f7b8b7733dd813a6a"
@@ -2525,6 +3685,16 @@
       "sid": "c8b29021",
       "path": "physical.motion.distance",
       "fingerprint": "sha256:c8b29021f0850d8e00bbc49e28ad06f206fd7e26d224fb64dcdb5a5a96fc4bc6"
+    },
+    {
+      "sid": "c8c814ff",
+      "path": "smartcity.waste.bin_fill",
+      "fingerprint": "sha256:c8c814ffab5b36808af64fccbab430e32ff9a1823d50988e169a2e6b6c1b543b"
+    },
+    {
+      "sid": "c8f7ec1d",
+      "path": "hospitality.guest.id",
+      "fingerprint": "sha256:c8f7ec1d90647a4804a07a17fca70087a2cebb2a3021fe1b0eedcd49fe208eae"
     },
     {
       "sid": "c90ed72e",
@@ -2547,6 +3717,11 @@
       "fingerprint": "sha256:c9d7298e06ab475676d10e4020d7567f3017c972a9e876c92e89aa8e1b4fef80"
     },
     {
+      "sid": "ca06baf9",
+      "path": "smartcity.zone.id",
+      "fingerprint": "sha256:ca06baf96e8e6f00aa9b3d57a8299260b62f1f0df5bb3a8395ee2a544f175c2f"
+    },
+    {
       "sid": "ca43cd3d",
       "path": "aviation.tail_number",
       "fingerprint": "sha256:ca43cd3d9e9fdd561f7c2306fd68872b2771995a21b1f3d20845e5d7ce721e61"
@@ -2555,6 +3730,31 @@
       "sid": "ca6de271",
       "path": "industrial.robot.joint_angle_1",
       "fingerprint": "sha256:ca6de2712acfbb746e608ba912159094d6210a8bae6ae78773d0f74257bdd161"
+    },
+    {
+      "sid": "ca7f4c46",
+      "path": "forestry.fire.temperature",
+      "fingerprint": "sha256:ca7f4c4658ea14ce162ae6dafe4ac43f15fd69e1195f54d4e8f9aabbe8571420"
+    },
+    {
+      "sid": "caa7883d",
+      "path": "forestry.canopy.cover",
+      "fingerprint": "sha256:caa7883d205026ea41a3ad740b5df7045df96285b3522788fe51e6cdd7924fc4"
+    },
+    {
+      "sid": "cb3bd6cd",
+      "path": "realestate.amenity.parking",
+      "fingerprint": "sha256:cb3bd6cdb445c58e3d8a8325e71511bfadc88deb1e612eb06f95a0eb82585666"
+    },
+    {
+      "sid": "cb5ff304",
+      "path": "nuclear.coolant.pressure",
+      "fingerprint": "sha256:cb5ff30404c4c2e1ba0c95e7125761a07a694dab7cda7d396b6a4c38bf724a55"
+    },
+    {
+      "sid": "cbf4a827",
+      "path": "broadcast.program.id",
+      "fingerprint": "sha256:cbf4a82770ae59441e389c95b57a5f5d9cc22613cbafa121bd0bf11d7e7a5e57"
     },
     {
       "sid": "cc67e84e",
@@ -2572,6 +3772,16 @@
       "fingerprint": "sha256:ccaf5b610aec26ea6082ac78b33a0e40d37eeb3de089caf6c6bf462b3721ff14"
     },
     {
+      "sid": "ccb64a65",
+      "path": "education.room.co2",
+      "fingerprint": "sha256:ccb64a65f0eba19e8a889a664f7591f04021fee4d4cb18f21fca40af2041124d"
+    },
+    {
+      "sid": "cd7209a1",
+      "path": "space.satellite.solar_array_power",
+      "fingerprint": "sha256:cd7209a116305e00dace4c77500c36cc86ea066bfca632e23293671b6c428344"
+    },
+    {
       "sid": "cd7ddcdf",
       "path": "industrial.robot.joint_angle_4",
       "fingerprint": "sha256:cd7ddcdf412973080a50588642817b04e1d7ff725e4c6e36fca9c2b9cc92f82f"
@@ -2580,6 +3790,16 @@
       "sid": "cda832af",
       "path": "rail.pantograph.force",
       "fingerprint": "sha256:cda832af34a270f52731fc913e53493d57a289f21e898488e7d5db113a9342ef"
+    },
+    {
+      "sid": "cdb9b59a",
+      "path": "smartcity.waste.bin_fire",
+      "fingerprint": "sha256:cdb9b59a455ba88f322b558ae20e87993455fc78103c087476efc7f490593871"
+    },
+    {
+      "sid": "cdc5d25f",
+      "path": "laboratory.sample.volume",
+      "fingerprint": "sha256:cdc5d25fd47f1bea3c142df30c086e5d553e942accbbcd8949a8755d093800d8"
     },
     {
       "sid": "ce771bad",
@@ -2622,6 +3842,11 @@
       "fingerprint": "sha256:cf80ce3abb2d711218f011a404582a5c5938162bd2f2bba2ec1788357de9f235"
     },
     {
+      "sid": "cfdf0bbc",
+      "path": "sports.athlete.cadence",
+      "fingerprint": "sha256:cfdf0bbc5800f6bf48d64fb1663627cf9d88f1485a64ebbe3d7af39317e2d7a9"
+    },
+    {
       "sid": "cfefd6ba",
       "path": "physical.thermal.thermal_resistance",
       "fingerprint": "sha256:cfefd6ba4f3d877d1875a3b89854f5d441503e08ecf3fe4002d8394c63013e57"
@@ -2652,9 +3877,19 @@
       "fingerprint": "sha256:d0e5404c9810039f93ccc42cfcb15c998bbdbfb62ce86ea6c3e63dfc7f2ff1a0"
     },
     {
+      "sid": "d0ef9a7e",
+      "path": "space.satellite.altitude",
+      "fingerprint": "sha256:d0ef9a7e95edd4dba6f0be1ea34d97d9b2ab2165f032b7dffb58731845cb67cf"
+    },
+    {
       "sid": "d0fdff28",
       "path": "retail.sales.quantity",
       "fingerprint": "sha256:d0fdff289156be92639e6be6201ca9e3c54ec0a8dbc3125500295fbaf3553e5e"
+    },
+    {
+      "sid": "d1152c4f",
+      "path": "laboratory.door.open",
+      "fingerprint": "sha256:d1152c4f937ac4a33c7fc68a71f454da85b1816807bdf0cd46684b41ac43e16e"
     },
     {
       "sid": "d15e7e34",
@@ -2677,9 +3912,19 @@
       "fingerprint": "sha256:d1b876c7c93c31248b8dd6e01c95df0e6e9e7e42f67daa6eab302fa92f8eb00f"
     },
     {
+      "sid": "d1d37637",
+      "path": "realestate.unit.id",
+      "fingerprint": "sha256:d1d3763784d11bc13a8e42fccd90d2660dc826b01cf76697f762ea07abfe5737"
+    },
+    {
       "sid": "d21b43c2",
       "path": "actuation.speed",
       "fingerprint": "sha256:d21b43c2414f145dd45dce07b6d1730e48ecb84c9f43806199739d28fdc23b67"
+    },
+    {
+      "sid": "d2541043",
+      "path": "hospitality.hotel.id",
+      "fingerprint": "sha256:d2541043c07c8e8ae060358c3027e26fc6d9c513fea9c21df5eb15b9d336db66"
     },
     {
       "sid": "d26a38e1",
@@ -2692,6 +3937,16 @@
       "fingerprint": "sha256:d2d566118f933c14a0ce45345c2d560e90e76735e751e225186f74d31abc5180"
     },
     {
+      "sid": "d31d4104",
+      "path": "broadcast.rf.vsWR",
+      "fingerprint": "sha256:d31d410489b96769a3550578ce7f2440a5d888f9c7c5011cc10ae509c605e7cc"
+    },
+    {
+      "sid": "d378f613",
+      "path": "insurance.premium.amount",
+      "fingerprint": "sha256:d378f61388314f96a62e1dcd0db5682413ecd64c72cd9c87014ebacd5642a228"
+    },
+    {
       "sid": "d38e7705",
       "path": "physical.mechanical.force",
       "fingerprint": "sha256:d38e7705f19ae4381e4ac485fb5f0cd12dcdec120300b19ab2e9820f9f1e6c5c"
@@ -2702,9 +3957,24 @@
       "fingerprint": "sha256:d3abad1157425592fd962bb740224b0d5c8511b2957cfdabc45848f430570df2"
     },
     {
+      "sid": "d3bf0e0b",
+      "path": "realestate.area",
+      "fingerprint": "sha256:d3bf0e0bac100b0b6834366628534a774cc36bf00f7b530085c1c06e816ec786"
+    },
+    {
+      "sid": "d404bc12",
+      "path": "access.zone.id",
+      "fingerprint": "sha256:d404bc12e4c4933622f701f88e43305b48d80efd458b7bf7faca470777e1df6f"
+    },
+    {
       "sid": "d49fe5e0",
       "path": "smarthome.dishwasher.remaining_time",
       "fingerprint": "sha256:d49fe5e0709bfd3a5579ef685bb7dbf9e5b8f7519ee64633ecf4f23af5b414ac"
+    },
+    {
+      "sid": "d4bc7093",
+      "path": "construction.helmet.worn",
+      "fingerprint": "sha256:d4bc70937dddd8cec0d0c86d835cfbfe1791a149812eea53da36511cbc5060d1"
     },
     {
       "sid": "d5295861",
@@ -2717,6 +3987,11 @@
       "fingerprint": "sha256:d53d0eca0296cd8ab2f65bd27e3de07252ab19b58da473d8eae68a6f8853d7f1"
     },
     {
+      "sid": "d54a5cda",
+      "path": "smartcity.lighting.dimming",
+      "fingerprint": "sha256:d54a5cdab0a5d485804061ab0777f4b79f3510937088fe9d2b218ce4db3a17a7"
+    },
+    {
       "sid": "d560f9dd",
       "path": "finance.balance.available",
       "fingerprint": "sha256:d560f9dd9699d55daaf34e5eb97bb436dd6e5a7309578ab367a1ddd3a6569486"
@@ -2727,6 +4002,11 @@
       "fingerprint": "sha256:d594a91c1d3c30aea9ede2673020d0a31aadcde9f1567980ed45e9fc6873c7d5"
     },
     {
+      "sid": "d6461708",
+      "path": "printing.paper.remaining",
+      "fingerprint": "sha256:d6461708a0c656b9580527537a1f5ef1beb0f0b384c3a3337152e4f9da2da763"
+    },
+    {
       "sid": "d696f7e7",
       "path": "logistics.package.width",
       "fingerprint": "sha256:d696f7e70534740302fa8843b30994068cb45e606826019b41701855bf569d41"
@@ -2735,6 +4015,11 @@
       "sid": "d724411b",
       "path": "physical.environment.cloud_cover",
       "fingerprint": "sha256:d724411bb55b83e7e3fe5d642b8be2e56f8c640f1c34479e8484fa935dc4f2fb"
+    },
+    {
+      "sid": "d73a2e7b",
+      "path": "elevator.building.id",
+      "fingerprint": "sha256:d73a2e7b82c703531e54e56215b142152b15469f194dec213f3378a15aeab270"
     },
     {
       "sid": "d7cd1579",
@@ -2757,6 +4042,16 @@
       "fingerprint": "sha256:d981e862f5c42896e9c15795fe94fda0851558267e9a65584860c56a2b547682"
     },
     {
+      "sid": "d98cf6e3",
+      "path": "construction.dust.pm10",
+      "fingerprint": "sha256:d98cf6e327bc29b76b3ded7e9b76d7dd413dec1251652a89c5c68aa7c18b336d"
+    },
+    {
+      "sid": "d9ac30c3",
+      "path": "laboratory.sample.mass",
+      "fingerprint": "sha256:d9ac30c3aee079ce52ad8d2c31be5b38f5f3cf1e34be5a6abf776fa8bce0844b"
+    },
+    {
       "sid": "d9ce4151",
       "path": "physical.health.weight",
       "fingerprint": "sha256:d9ce4151a3f37481ecc851ad8c4381e74d15324d95b7c0b9c6be14c627b74ce5"
@@ -2765,6 +4060,11 @@
       "sid": "d9cf4140",
       "path": "smarthome.curtain.open",
       "fingerprint": "sha256:d9cf4140db7f5d1a94a7ac1af710d1a4a1d6dcf9d9dbde297b81ff85bb94e0b6"
+    },
+    {
+      "sid": "da266e7a",
+      "path": "water.treatment.flow_out",
+      "fingerprint": "sha256:da266e7a585811c0c7be4f31d2a2570391676958f99afa112389f1caf895e68e"
     },
     {
       "sid": "da61831c",
@@ -2777,6 +4077,11 @@
       "fingerprint": "sha256:dac27abcacee2839ff99845bafd28017b55e57badc8c3685cfbf50a78da51dfb"
     },
     {
+      "sid": "db53736a",
+      "path": "education.class.state",
+      "fingerprint": "sha256:db53736ab9671f1a668516b41df8877b958404b2637619e1655dae7abe8d24b1"
+    },
+    {
       "sid": "db7415ec",
       "path": "industrial.safety.door_interlock",
       "fingerprint": "sha256:db7415ec3141b2831ce4fc1b855eed527ad0a4a267d5d38eae2aa1952a5a6c50"
@@ -2787,9 +4092,24 @@
       "fingerprint": "sha256:dbf021f70ac7fec7166a53afd9406925e02a378b57f9441b52a6605a29b4694e"
     },
     {
+      "sid": "dc79b19a",
+      "path": "printing.job.pages",
+      "fingerprint": "sha256:dc79b19a017463cd5a6ff325453795cd6c36961b889cb0a0e2cd2c0ebd9079d0"
+    },
+    {
+      "sid": "dca1ddf8",
+      "path": "hospitality.occupancy.rate",
+      "fingerprint": "sha256:dca1ddf885b2a53c85714af4eb8932786a124a77aa7d9be9dea5eb9a00d6551c"
+    },
+    {
       "sid": "dceb5f24",
       "path": "industrial.robot.tcp_x",
       "fingerprint": "sha256:dceb5f24018cc518957e30941b1d6903b9efdab201e1b944a3bd09de9f6999e4"
+    },
+    {
+      "sid": "dd3e8a89",
+      "path": "insurance.policy.status",
+      "fingerprint": "sha256:dd3e8a8953557a98b53514b5f940114879b581c200f48c3bd3d5ec2d40775748"
     },
     {
       "sid": "dd458aa1",
@@ -2817,6 +4137,11 @@
       "fingerprint": "sha256:de141006bf6b969288d83d8fc4ce7454807282512546a90d73fb9b18b6f0351c"
     },
     {
+      "sid": "dec59191",
+      "path": "access.door",
+      "fingerprint": "sha256:dec59191f7de8ab5edb6b26be326dcbee3f3f420d5956bfb4e91e7e5ddd90554"
+    },
+    {
       "sid": "df404cc2",
       "path": "media.image_ref",
       "fingerprint": "sha256:df404cc21caa34244933fd1918d4c14bafb81ef6989588145bf9989795d9e681"
@@ -2832,14 +4157,54 @@
       "fingerprint": "sha256:dfaa000ab74ebdcc1dabe5fd0f73ac3533f16b7ae2dda13c3b36431143f11dec"
     },
     {
+      "sid": "dfb47601",
+      "path": "insurance.risk.score",
+      "fingerprint": "sha256:dfb476014d3dd3a798d4f46a24471381a2b3b5fdedf09c23f682331cb3e2908e"
+    },
+    {
+      "sid": "e01478c9",
+      "path": "water.network.leak_index",
+      "fingerprint": "sha256:e01478c96e8aeefe9b0ee194dfc5da56ea51baa00a1d599d9f63039f10c5b96a"
+    },
+    {
+      "sid": "e137512c",
+      "path": "laboratory.freezer.temperature",
+      "fingerprint": "sha256:e137512cbcf801dd6ef1bf19cecfedc50a1c679ac508d558ae66315ba60e3090"
+    },
+    {
+      "sid": "e14d08df",
+      "path": "smartcity.traffic.vehicle_count",
+      "fingerprint": "sha256:e14d08df4dcb719dc8ed16f82deebc5138e200ca769dfedfc95970efc96b54c9"
+    },
+    {
+      "sid": "e1e7f9c0",
+      "path": "laboratory.centrifuge.rpm",
+      "fingerprint": "sha256:e1e7f9c0b91cf382beb97ae5748aae9cea1f3e2454f515cce556bd2ed4c4c798"
+    },
+    {
       "sid": "e2c7acd3",
       "path": "vehicle.drive_mode",
       "fingerprint": "sha256:e2c7acd369e0be94279f0dba4f2ebbbc6c31e43552cd4c1969ce163f171a4665"
     },
     {
+      "sid": "e2f6bd9a",
+      "path": "sports.pool.chlorine",
+      "fingerprint": "sha256:e2f6bd9af6be70b7f504b654285ca1783a2f8f0a1bd015f6a006c79477a2a876"
+    },
+    {
+      "sid": "e3007494",
+      "path": "drone.battery.soc",
+      "fingerprint": "sha256:e3007494878bd2f4f036a3f3817fbdc7d84a05e6acbe845b67c4e3e07582c4d7"
+    },
+    {
       "sid": "e329b40e",
       "path": "temporal.timezone_offset",
       "fingerprint": "sha256:e329b40ec6a373a1d4f2aa6a8dc592fd645eb66c7c118ce489d352893cfbfec2"
+    },
+    {
+      "sid": "e342872c",
+      "path": "smartcity.parking.occupancy",
+      "fingerprint": "sha256:e342872c3218b9fc41e1312a439de8d1fe77005be2d54507ef2cbdde4b170008"
     },
     {
       "sid": "e34550dd",
@@ -2862,9 +4227,19 @@
       "fingerprint": "sha256:e4a780a8c93840545d5fc5a5802b1da066d8c39dd34ed1e9367a1db30f9f59f1"
     },
     {
+      "sid": "e4e54799",
+      "path": "broadcast.video.framerate",
+      "fingerprint": "sha256:e4e54799fba07091e0c37d4178538d43c481fd9a4f97ec319344343b979e6f45"
+    },
+    {
       "sid": "e53671cc",
       "path": "agriculture.soil.moisture",
       "fingerprint": "sha256:e53671cc563de4f7ebf3748eeaafbfb72e14801803962b77f39ba4e51aac8795"
+    },
+    {
+      "sid": "e566481a",
+      "path": "laboratory.batch.id",
+      "fingerprint": "sha256:e566481a07595f12e89f9ac7d5b983752abe1b51b3165a7f3bea12c3ae37f0a7"
     },
     {
       "sid": "e56a9079",
@@ -2882,6 +4257,11 @@
       "fingerprint": "sha256:e6048bd8b0efae7cd27dafd162d228a783fcfdd2fee1b70225b28c75a304a433"
     },
     {
+      "sid": "e62b3ab5",
+      "path": "pharmacy.drug.id",
+      "fingerprint": "sha256:e62b3ab57c4cc3448f36fcba451b9efe285671711996fe93714e4d7de29b2c1c"
+    },
+    {
       "sid": "e644fa8f",
       "path": "agriculture.field.id",
       "fingerprint": "sha256:e644fa8f1eb626b62b39b2fb25af04b189b06d4f97f797dcfadf43353fb12b88"
@@ -2892,6 +4272,11 @@
       "fingerprint": "sha256:e646b607d8390928b44539641f697be2f155f2ccbd2aa66b3c2c7dd5666b1cf8"
     },
     {
+      "sid": "e6a4ca6a",
+      "path": "construction.equipment.id",
+      "fingerprint": "sha256:e6a4ca6a1ca954588283a74bdde98e8f81fd7dd5754aeeb5aa5ebc6920b99899"
+    },
+    {
       "sid": "e6a5b8b1",
       "path": "finance.tx.type",
       "fingerprint": "sha256:e6a5b8b16b3a6e6d5c8998c846e9ca3a3bac64b82f3f7ea273f7f8fb6d0789bc"
@@ -2900,6 +4285,21 @@
       "sid": "e7341ff2",
       "path": "safety.evacuation.progress",
       "fingerprint": "sha256:e7341ff2228ff39dc8c8a0c0b5c692ba00ba5a4faa540469324ce6da58a8b700"
+    },
+    {
+      "sid": "e7b1079b",
+      "path": "broadcast.channel.id",
+      "fingerprint": "sha256:e7b1079b11069c52d514a0f340ae8576711b7f7ffbf979248754a2b1cc228456"
+    },
+    {
+      "sid": "e7c66e52",
+      "path": "datacenter.rack.temperature",
+      "fingerprint": "sha256:e7c66e52554922ec72ac2372246c75b9d54d4e3bd9432024f2fc3ce3a2e7d10b"
+    },
+    {
+      "sid": "e7d6767c",
+      "path": "space.spacecraft.id",
+      "fingerprint": "sha256:e7d6767c5aba7796215a8154857e813469d8c69831711eac670e0b689306f1af"
     },
     {
       "sid": "e7e23520",
@@ -2920,6 +4320,11 @@
       "sid": "e8976b39",
       "path": "industrial.process.density",
       "fingerprint": "sha256:e8976b39f0c59d91c7aa98be0d1cd36af38632bdafbed39fc7a858dc2d6f0808"
+    },
+    {
+      "sid": "e8bcfea8",
+      "path": "forestry.fire.detected",
+      "fingerprint": "sha256:e8bcfea88bde629a89c4657126e76eed9b4017cbcd0a3100a1961a938bf6ee19"
     },
     {
       "sid": "e8e7885c",
@@ -2947,9 +4352,29 @@
       "fingerprint": "sha256:ea4230a84d0f0c775f9bfb90c98c4a4bc6cc066c57cbc3d7bbc48d74d1221846"
     },
     {
+      "sid": "ea46db77",
+      "path": "broadcast.video.bitrate",
+      "fingerprint": "sha256:ea46db776ff7264001af337b08cf99316eb853fdb13e58ee4cb90a0d82ad4276"
+    },
+    {
+      "sid": "ea61643d",
+      "path": "smartcity.air.aqi",
+      "fingerprint": "sha256:ea61643ddaeae7aa9d05c242ccfd8426f9ab9fe0bd92ff82197cc58582ea1113"
+    },
+    {
+      "sid": "eace8937",
+      "path": "construction.crane.load",
+      "fingerprint": "sha256:eace8937d6d9b97013dc49ef4b06a8ef55862bb9c2af0e731bb60c4d93798f7e"
+    },
+    {
       "sid": "eb61e38a",
       "path": "network.tx_power",
       "fingerprint": "sha256:eb61e38af9270d4e840e9e2cca4ef4bbdb88312d6aedde706a36dbb667a80524"
+    },
+    {
+      "sid": "eb6b031d",
+      "path": "laboratory.incubator.temperature",
+      "fingerprint": "sha256:eb6b031de6f3b13e3d22b3ac7264377461f2f8066e4a81a4fb8d17dfcc6bfbba"
     },
     {
       "sid": "eb9c10b9",
@@ -2957,14 +4382,39 @@
       "fingerprint": "sha256:eb9c10b993f271e0c1ccef645d892e6e0d16c0312fa5d97fb39bad247b4d9b64"
     },
     {
+      "sid": "ebf54c91",
+      "path": "construction.concrete.maturity",
+      "fingerprint": "sha256:ebf54c91a1765af75e05b9b7d402ea1a4c08c9d4f41ebff94b145ea3fc9d9ce4"
+    },
+    {
       "sid": "ec11ba74",
       "path": "logistics.package.weight",
       "fingerprint": "sha256:ec11ba743d0a118e3f08a8e90f117ada1e406a5b592a3f02c8dfdd0768dffc39"
     },
     {
+      "sid": "ec26942a",
+      "path": "hospitality.room.humidity",
+      "fingerprint": "sha256:ec26942a332aa7c98ec6075bc4d203e50680ad228cd3669690e8031aae1ea94d"
+    },
+    {
+      "sid": "ecc62f5b",
+      "path": "esg.emissions.co2e",
+      "fingerprint": "sha256:ecc62f5b8e227448777f1bb58006316d8a47d88361cc7a686b9cf708b6ac0da0"
+    },
+    {
       "sid": "ed120350",
       "path": "logistics.route.id",
       "fingerprint": "sha256:ed120350c1610ef806a16e9cc6ab3e133fab3d36f69b5c71f39839040920cc9f"
+    },
+    {
+      "sid": "ed44e326",
+      "path": "forestry.soil.moisture",
+      "fingerprint": "sha256:ed44e326bec84e5767dfd753832ee5eebe5dbce75f58ece8b8791540665a46c2"
+    },
+    {
+      "sid": "ede38f1d",
+      "path": "esg.water.consumed",
+      "fingerprint": "sha256:ede38f1dc52c0afd20612f327f178d27a32e899c2702d55cb7f372d8a9b48218"
     },
     {
       "sid": "ee1428a1",
@@ -2982,6 +4432,11 @@
       "fingerprint": "sha256:ee700b2e360726ba3e8a4978159ea7036750de6daabca380a3e9ce0cd060bbdd"
     },
     {
+      "sid": "ee77de5c",
+      "path": "mining.drill.penetration_rate",
+      "fingerprint": "sha256:ee77de5c7c2b9dd8a5a3731150180daeb86b221bceb8948cd2b51a5ff4d9ead5"
+    },
+    {
       "sid": "ef05ccab",
       "path": "physical.electrical.battery_current",
       "fingerprint": "sha256:ef05ccab78ea1c4303d274cf840a2c6c84135694ec741d628452f02d91500f80"
@@ -2995,6 +4450,11 @@
       "sid": "efe8ffbb",
       "path": "rail.bearing.temperature",
       "fingerprint": "sha256:efe8ffbbfeb772085aaeb102814fda31531b1b9dd66fe2960b2a38d93167ed99"
+    },
+    {
+      "sid": "f05fa841",
+      "path": "datacenter.rack.id",
+      "fingerprint": "sha256:f05fa841671c906bce09fb7dfc31853b637c1f5cba08e045fe581e5a27bc17b7"
     },
     {
       "sid": "f0876339",
@@ -3020,6 +4480,36 @@
       "sid": "f1811fda",
       "path": "oilgas.flare.temperature",
       "fingerprint": "sha256:f1811fda20c81c1a4e4b3e036c2719c57cee1e7dcd899dcbb51b9ac84852c383"
+    },
+    {
+      "sid": "f1dda3b8",
+      "path": "construction.harness.worn",
+      "fingerprint": "sha256:f1dda3b83101f97e5d41666a8b198021b7deb7f9a39074c9f2964701a01f83e2"
+    },
+    {
+      "sid": "f1f66acc",
+      "path": "laboratory.transmittance",
+      "fingerprint": "sha256:f1f66acc1ada2805ef36b45fc62a637d8cc0967e03ece99438f21dfdf97ec47b"
+    },
+    {
+      "sid": "f2377c0c",
+      "path": "sports.gym.occupancy",
+      "fingerprint": "sha256:f2377c0cda6816aa691a95e596d4721536f7c3ab395a215d6affaaa40bcf63a6"
+    },
+    {
+      "sid": "f242ff5c",
+      "path": "space.norad.id",
+      "fingerprint": "sha256:f242ff5cd683c1aa7ede57916c11826e9932f245a23fdb63aceb01d3eeb7df8f"
+    },
+    {
+      "sid": "f25473b1",
+      "path": "esg.waste.hazardous",
+      "fingerprint": "sha256:f25473b1e136156644d3507f99fa0f6b36808cde547e1800a676e069d0c1da0b"
+    },
+    {
+      "sid": "f265785a",
+      "path": "education.room.id",
+      "fingerprint": "sha256:f265785af26121ec12b9b51bb072e18b3e9ddce484ad06d0f8798e3e8b09bad9"
     },
     {
       "sid": "f27c2626",
@@ -3087,6 +4577,26 @@
       "fingerprint": "sha256:f686d6410fb1dbf69b3686a7e75a4988e4663bf542226500601467bd018aea3a"
     },
     {
+      "sid": "f740d658",
+      "path": "pharmacy.coldchain.ok",
+      "fingerprint": "sha256:f740d658726963b83be6a8d0fc0ce8c023915ce8f5bb03f41cfeb03a26b0d96b"
+    },
+    {
+      "sid": "f7505151",
+      "path": "forestry.plot.id",
+      "fingerprint": "sha256:f750515186c99ee9bebac3154ed84522db96e012d891927b28fecc21d19946dd"
+    },
+    {
+      "sid": "f795cf20",
+      "path": "smartcity.crowd.count",
+      "fingerprint": "sha256:f795cf20f24e76a97886ba94e399fdf7004929175d7fd8d08a4533ab857c7f49"
+    },
+    {
+      "sid": "f7b557da",
+      "path": "access.biometric.modality",
+      "fingerprint": "sha256:f7b557da1d0fbb103e9b35fa569397b03807a4e5dfa7ac2b5a1ea683caf57dc9"
+    },
+    {
       "sid": "f7c75484",
       "path": "industrial.batch.id",
       "fingerprint": "sha256:f7c75484f85c6a64267f97519add45d1274b4970e8459954ee4db371f743e145"
@@ -3102,6 +4612,11 @@
       "fingerprint": "sha256:f80dc8e5ee8d153ba16bb25611f925ac18c7f8e8121fe75e568ccb0041abae88"
     },
     {
+      "sid": "f895ed43",
+      "path": "hospitality.door",
+      "fingerprint": "sha256:f895ed43ecafa5d2fa1a856c79f08bcab9c7aee3d7dccbf3f92ad6dd1052620d"
+    },
+    {
       "sid": "f8a223c1",
       "path": "agriculture.livestock.tag",
       "fingerprint": "sha256:f8a223c18a3f2268294cd911f4e37604a3ca8d9949b28b602d1156e7977eab01"
@@ -3110,6 +4625,26 @@
       "sid": "f8c7955a",
       "path": "health.clinical.body_temperature",
       "fingerprint": "sha256:f8c7955a2ddfd7c80a0f819b143a1141b559b4c6bbd5442e15ea8dc984061855"
+    },
+    {
+      "sid": "f8d9a387",
+      "path": "drone.altitude.amsl",
+      "fingerprint": "sha256:f8d9a387e554db0ceff98cefc55eccb5bfd933e75de0afd2e967d98caa8cd1b8"
+    },
+    {
+      "sid": "f91847dd",
+      "path": "mining.conveyor.tonnage",
+      "fingerprint": "sha256:f91847dd48c3870e636ec747963c54f9eb0122cfbf6774d63aa8a23079c054d8"
+    },
+    {
+      "sid": "f93b88ee",
+      "path": "drone.gimbal.yaw",
+      "fingerprint": "sha256:f93b88ee043bbea296ea497a43b0ee93fb46e121f8c110f95b448cc50a0cfc76"
+    },
+    {
+      "sid": "f96d1bb1",
+      "path": "datacenter.ups.state",
+      "fingerprint": "sha256:f96d1bb13600e963beb8392342bdf8bbc6d815400918a20e2d4c6c15d8cc31d6"
     },
     {
       "sid": "f9b8b58d",
@@ -3137,6 +4672,11 @@
       "fingerprint": "sha256:fb8feb29ea093369b7bf1e96b51049b5406d06f9ea57418cea31238dfeaa8728"
     },
     {
+      "sid": "fc05ef4e",
+      "path": "education.projector.on",
+      "fingerprint": "sha256:fc05ef4e1dc6e55b4ddd5d11513db7191d5e1471496cebfd6b48989c6320d7e5"
+    },
+    {
       "sid": "fc428036",
       "path": "building.meter.heat_energy",
       "fingerprint": "sha256:fc42803649ec6e49f720570ed7c48c446ec5a6fe6dab1f203eed79e863528efe"
@@ -3145,6 +4685,11 @@
       "sid": "fc452554",
       "path": "retail.inventory.reserved",
       "fingerprint": "sha256:fc45255418466582731a95553f58f8ee8c8bc9f561eb8aeb67adc65b38ac6c50"
+    },
+    {
+      "sid": "fc8a17af",
+      "path": "broadcast.rf.frequency",
+      "fingerprint": "sha256:fc8a17af8148f8994782b942905ca37d78c46d271996382c47d505f5b648e5bf"
     },
     {
       "sid": "fd4cf048",
@@ -3165,7 +4710,12 @@
       "sid": "fedc611e",
       "path": "building.meter.gas_volume",
       "fingerprint": "sha256:fedc611e8dbe04659f1c9d437899d1a8512cd71410eb3b0fc5f968d9e95236e0"
+    },
+    {
+      "sid": "ffa55cc0",
+      "path": "drone.speed.horizontal",
+      "fingerprint": "sha256:ffa55cc0146e95fafdd25291948dd78b3c81913ec2dd051644b120f23fe1886b"
     }
   ],
-  "registry_checksum": "sha256:5c5cb14c319b00531c245eed8d817afcb7b128f9f62a1cb9070bea9d40ed85d5"
+  "registry_checksum": "sha256:f75bd65c161b4c8afb9815b2635d8bf3b22fa84144509c9d906ffc72e23b90b0"
 }

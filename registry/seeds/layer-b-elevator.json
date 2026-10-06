@@ -1,0 +1,156 @@
+{
+  "layer": "B3",
+  "name": "layer-b-elevator.json",
+  "types": [
+    {
+      "path": "elevator.cabin.floor",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cabin floor",
+      "titleRu": "Этаж кабины",
+      "encodings": [
+        "i16",
+        "f32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elevator.cabin.load",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Cabin load",
+      "titleRu": "Нагрузка кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elevator.cabin.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Cabin speed",
+      "titleRu": "Скорость кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elevator.motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Elevator motor current",
+      "titleRu": "Ток двигателя лифта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elevator.motor.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Elevator motor temperature",
+      "titleRu": "Температура двигателя лифта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elevator.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Elevator door open",
+      "titleRu": "Двери лифта открыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "elevator.alarm.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Elevator alarm",
+      "titleRu": "Тревога лифта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "elevator.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Elevator state",
+      "titleRu": "Состояние лифта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "moving_up",
+        "moving_down",
+        "door_open",
+        "fault",
+        "inspection"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "elevator.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Elevator id",
+      "titleRu": "ID лифта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "elevator.building.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Elevator building id",
+      "titleRu": "ID здания лифта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "elevator.call",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Elevator call command",
+      "titleRu": "Вызов лифта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "down",
+        "open",
+        "close",
+        "stop"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

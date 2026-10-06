@@ -1,0 +1,18 @@
+sid: 062ebdc0
+path: printing.job.progress
+aliases:
+  short: job.progress
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Прогресс печати
+  en: Print job progress
+fingerprint: sha256:062ebdc0b532738b8246a6216eddbe412d5cf47be4b3fb9df55fc19941f5d945
+range:
+  min: 0
+  max: 100

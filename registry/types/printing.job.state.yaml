@@ -1,0 +1,22 @@
+sid: 9690f6dd
+path: printing.job.state
+aliases:
+  short: job.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние задания печати
+  en: Print job state
+fingerprint: sha256:9690f6ddd4e175016cbdc6e597ce840dc37b6be33a126a067be55de5185c6a2a
+enumValues:
+  - idle
+  - printing
+  - paused
+  - done
+  - error
+  - jam

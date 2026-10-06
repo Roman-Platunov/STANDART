@@ -1,0 +1,21 @@
+sid: db53736a
+path: education.class.state
+aliases:
+  short: class.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние занятия
+  en: Class state
+fingerprint: sha256:db53736ab9671f1a668516b41df8877b958404b2637619e1655dae7abe8d24b1
+enumValues:
+  - scheduled
+  - live
+  - break
+  - ended
+  - cancelled

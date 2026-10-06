@@ -1,0 +1,22 @@
+sid: b504ef8b
+path: elevator.state
+aliases:
+  short: elevator.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние лифта
+  en: Elevator state
+fingerprint: sha256:b504ef8b0007dc05eb5bb82e291175e619919b0afbd8fa72b0165ae7a7c6258b
+enumValues:
+  - idle
+  - moving_up
+  - moving_down
+  - door_open
+  - fault
+  - inspection

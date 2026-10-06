@@ -1,0 +1,20 @@
+sid: 8c7f2535
+path: construction.equipment.state
+aliases:
+  short: equipment.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние техники
+  en: Equipment state
+fingerprint: sha256:8c7f2535299e66c7c48f7041bc5ea793d0c83a94a86840d6c7e55fecdce6763d
+enumValues:
+  - idle
+  - working
+  - maintenance
+  - offline

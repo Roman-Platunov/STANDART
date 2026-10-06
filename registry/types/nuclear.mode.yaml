@@ -1,0 +1,21 @@
+sid: 5402aeee
+path: nuclear.mode
+aliases:
+  short: nuclear.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим реактора
+  en: Reactor mode
+fingerprint: sha256:5402aeee7d429e5fbed9a1c673074558bf566a48525ab1c40798ca76f62e89dc
+enumValues:
+  - shutdown
+  - startup
+  - power
+  - refueling
+  - trip

@@ -1,0 +1,282 @@
+{
+  "layer": "B3",
+  "name": "layer-b-smartcity.json",
+  "types": [
+    {
+      "path": "smartcity.traffic.vehicle_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicle count",
+      "titleRu": "Число ТС",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.traffic.average_speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Average traffic speed",
+      "titleRu": "Средняя скорость потока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.traffic.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lane occupancy",
+      "titleRu": "Занятость полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.traffic.queue_length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Traffic queue length",
+      "titleRu": "Длина затора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.traffic.light_state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Traffic light state",
+      "titleRu": "Сигнал светофора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "red",
+        "yellow",
+        "green",
+        "flashing",
+        "off"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smartcity.parking.occupied",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Occupied parking spots",
+      "titleRu": "Занятые места",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.parking.available",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Available parking spots",
+      "titleRu": "Свободные места",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.parking.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Parking occupancy",
+      "titleRu": "Занятость парковки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.waste.bin_fill",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Waste bin fill level",
+      "titleRu": "Заполненность контейнера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.waste.bin_weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Waste bin weight",
+      "titleRu": "Масса отходов в контейнере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.waste.bin_fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bin fire alarm",
+      "titleRu": "Пожар в контейнере",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smartcity.lighting.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Street light power",
+      "titleRu": "Мощность фонаря",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.lighting.dimming",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Street light dimming",
+      "titleRu": "Диммирование фонаря",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.lighting.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Street light fault",
+      "titleRu": "Неисправность фонаря",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smartcity.air.aqi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "City AQI",
+      "titleRu": "AQI города",
+      "encodings": [
+        "u8",
+        "f32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.noise.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "City noise SPL",
+      "titleRu": "Шум города",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.crowd.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Crowd count",
+      "titleRu": "Число людей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "smartcity.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "City zone id",
+      "titleRu": "ID зоны города",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smartcity.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "City asset id",
+      "titleRu": "ID городского актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smartcity.lighting",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Street lighting command",
+      "titleRu": "Команда освещения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "off",
+        "dim"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

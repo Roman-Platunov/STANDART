@@ -1,0 +1,20 @@
+sid: 15408f32
+path: realestate.unit.status
+aliases:
+  short: unit.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус помещения
+  en: Unit status
+fingerprint: sha256:15408f325b8e2a29a552bfc9537027538c66ce7d8eb5474156b6184b028b64fb
+enumValues:
+  - vacant
+  - leased
+  - maintenance
+  - sale

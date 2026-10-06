@@ -1,0 +1,21 @@
+sid: 2dc57b31
+path: laboratory.run.state
+aliases:
+  short: run.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние прогона
+  en: Lab run state
+fingerprint: sha256:2dc57b31e534f947866c0c169ea153d487dc0d47964caf00edd73ae2e25fd2fb
+enumValues:
+  - queued
+  - running
+  - complete
+  - failed
+  - cancelled
