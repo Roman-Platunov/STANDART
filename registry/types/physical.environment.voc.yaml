@@ -1,0 +1,23 @@
+sid: 5ab774ed
+path: physical.environment.voc
+aliases:
+  legacy: std:env.voc
+  short: environment.voc
+kind: quantity
+unit: ppm
+encodings:
+  - f32
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: ЛОС / VOC
+  en: VOC
+description:
+  ru: Концентрация летучих органических соединений.
+  en: Volatile organic compound concentration.
+range:
+  min: 0
+  max: 1000
+  unit: ppm
+fingerprint: sha256:5ab774ed1d798411de2477c4fa23212914fcd8ef8b1266f3c5f69a48ff447902

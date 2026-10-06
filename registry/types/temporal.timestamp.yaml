@@ -1,0 +1,20 @@
+sid: f0af635e
+path: temporal.timestamp
+aliases:
+  legacy: std:time.timestamp
+  short: temporal.timestamp
+kind: temporal
+unit: s
+encodings:
+  - i32
+  - f64
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Метка времени
+  en: Timestamp
+description:
+  ru: Момент времени (Unix seconds или ISO-8601 в utf8).
+  en: Point in time (Unix seconds or ISO-8601 as utf8).
+fingerprint: sha256:f0af635e43278f4549e7d8b7d378b3ef92d21cd8f1547db606844151e9a5a41b

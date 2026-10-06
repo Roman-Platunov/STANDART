@@ -2,40 +2,39 @@
 
 **Simple Typed And Named Data for Apparatus, Registry and Things**
 
-Open standard + machine-readable registry of **data types for devices**.  
-Any manufacturer can take types from this library and build interoperable devices — without inventing private magic numbers for temperature, voltage, GPS, and similar values.
+Open **hybrid data classifier** for identifying data exchanged between **AI and physical devices**.
+
+A device does not describe itself in prose — it sends a **short code (`sid`)** from the shared library. Humans and AI resolve it to a full hierarchical **`path`**.
+
+| Form | Example |
+|------|---------|
+| Full path | `physical.environment.temperature` |
+| Short sid | `24d3556f` |
+| Fingerprint | `sha256:24d3556f…` (anti-duplicate) |
+
+Registry version: **0.2.0** · Repo is private until you choose otherwise.
 
 | Artifact | Location | License |
 |----------|----------|---------|
-| Specification (RU / EN) | [`spec/`](spec/) | [CC-BY-4.0](LICENSE-SPEC) |
-| Type registry | [`registry/`](registry/) | [Apache-2.0](LICENSE) |
+| Spec (RU / EN) | [`spec/`](spec/) | [CC-BY-4.0](LICENSE-SPEC) |
+| Registry | [`registry/`](registry/) | [Apache-2.0](LICENSE) |
 | C / TypeScript SDK | [`sdk/`](sdk/) | [Apache-2.0](LICENSE) |
-
-Registry version: **0.1.0**
+| Design | [`docs/superpowers/specs/`](docs/superpowers/specs/) | — |
 
 ## 5-minute start
 
 ```bash
 npm install
-npm run validate   # check registry
-npm run codegen    # regenerate sdk/c/standart.h and sdk/ts
+npm run build    # fingerprint tests + validate + manifest + codegen
 ```
 
-Use a type id in your payload (any transport):
+Wire payload (any transport):
 
 ```json
 {
-  "deviceId": "urn:std:id:dev:01HZXEXAMPLE",
-  "profile": "thermometer",
-  "readings": [
-    {
-      "type": "std:env.temperature",
-      "unit": "Cel",
-      "enc": "f32",
-      "v": 23.4,
-      "t": 1738860000
-    }
-  ]
+  "sid": "24d3556f",
+  "v": 23.4,
+  "t": 1738860000
 }
 ```
 
@@ -45,54 +44,42 @@ Full example: [`examples/thermometer/`](examples/thermometer/).
 
 ```c
 #include "sdk/c/standart.h"
-
-/* STD_ENV_TEMPERATURE == "std:env.temperature" */
+/* STD_SID_PHYSICAL_ENVIRONMENT_TEMPERATURE → "24d3556f" */
+/* STD_PATH_PHYSICAL_ENVIRONMENT_TEMPERATURE → "physical.environment.temperature" */
 ```
 
-### Cloud / apps (TypeScript)
+### Cloud / AI (TypeScript)
 
 ```ts
-import { TypeId, getType } from "./sdk/ts/index.ts";
+import { Sid, getBySid, STANDART_REGISTRY_CHECKSUM } from "./sdk/ts/index.ts";
 
-getType(TypeId.ENV_TEMPERATURE);
+getBySid(Sid.PHYSICAL_ENVIRONMENT_TEMPERATURE);
 ```
 
-## How classification works
+## How it works
 
+```mermaid
+flowchart LR
+  Device -->|sid + v| Gateway
+  Gateway --> Registry
+  Registry -->|path + meaning| AI
 ```
-std:<domain>.<type>                 → std:env.temperature
-std:<domain>.<type>#<unit>:<enc>    → std:env.temperature#Cel:f32
-```
 
-Layers: **kind → domain → type → unit (UCUM) → encoding → constraints → sensitivity**.
+- **path** — free tree of any depth (`a.b.c.d`)
+- **sid** — short stable id on the wire
+- **fingerprint** — blocks duplicate meaning
+- **manifest `registry_checksum`** — verifies library integrity
 
-STANDART defines **types**, not the wire protocol. Use MQTT, BLE, Modbus, HTTP, or anything else.
-
-## Device profiles (v0.1)
-
-| Profile | Required types |
-|---------|----------------|
-| `thermometer` | `std:env.temperature`, `std:id.device` |
-| `meter` | voltage, current, power, device id |
-| `gps` | geopoint, device id |
-| `actuator` | power on/off, device id |
-
-Claim conformance as: `STANDART 0.1 — L2 — profile: thermometer`.
+Contributors add missing parameters via PR; validator rejects duplicates; near-matches need review.
 
 ## Docs
 
 - Russian: [`spec/ru/01-overview.md`](spec/ru/01-overview.md)
 - English: [`spec/en/01-overview.md`](spec/en/01-overview.md)
+- Design: [`docs/superpowers/specs/2026-10-06-standart-hybrid-classifier-design.md`](docs/superpowers/specs/2026-10-06-standart-hybrid-classifier-design.md)
 - Contributing: [`CONTRIBUTING.md`](CONTRIBUTING.md)
-- Governance: [`GOVERNANCE.md`](GOVERNANCE.md)
-
-## Out of scope (for now)
-
-- A proprietary transport protocol
-- Formal ISO / GOST status
-- Economic classification systems (ISIC, HS, …)
 
 ## License
 
-- Specification text: Creative Commons Attribution 4.0 — see [LICENSE-SPEC](LICENSE-SPEC)
-- Registry, tools, and SDK: Apache License 2.0 — see [LICENSE](LICENSE)
+- Spec: [LICENSE-SPEC](LICENSE-SPEC) (CC-BY-4.0)
+- Code & registry: [LICENSE](LICENSE) (Apache-2.0)

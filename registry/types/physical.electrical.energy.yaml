@@ -1,0 +1,24 @@
+sid: 81f1695e
+path: physical.electrical.energy
+aliases:
+  legacy: std:elec.energy
+  short: electrical.energy
+kind: quantity
+unit: Wh
+encodings:
+  - f32
+  - f64
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: Энергия
+  en: Energy
+description:
+  ru: Накопленная электрическая энергия.
+  en: Accumulated electrical energy.
+range:
+  min: 0
+  max: 1000000000000000
+  unit: Wh
+fingerprint: sha256:81f1695e4ef2ee330c7311142086c76b6bcd5235df6847b31e0861c75d15b0c0

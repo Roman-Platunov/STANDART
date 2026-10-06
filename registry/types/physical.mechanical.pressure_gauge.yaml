@@ -1,0 +1,24 @@
+sid: b0209dc2
+path: physical.mechanical.pressure_gauge
+aliases:
+  legacy: std:mech.pressure_gauge
+  short: mechanical.pressure_gauge
+kind: quantity
+unit: Pa
+encodings:
+  - f32
+  - f64
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: Манометрическое давление
+  en: Gauge pressure
+description:
+  ru: Давление в механической / технологической системе.
+  en: Pressure in a mechanical or process system.
+range:
+  min: -100000000
+  max: 1000000000
+  unit: Pa
+fingerprint: sha256:b0209dc2c9184836f41626063ea44b433902e40d799ca84c97e4a73f275cead1

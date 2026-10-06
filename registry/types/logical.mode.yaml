@@ -1,12 +1,25 @@
-id: std:logical.mode
+sid: e34550dd
+path: logical.mode
+aliases:
+  legacy: std:logical.mode
+  short: logical.mode
 kind: enum
-domain: logical
-defaultUnit: "-"
-encodings: [enum, utf8]
-enumValues: [off, on, auto, sleep, error]
+unit: "-"
+encodings:
+  - enum
+  - utf8
 sensitivity: public
 status: stable
-title: { ru: Режим, en: Mode }
+title:
+  ru: Режим
+  en: Mode
 description:
   ru: Общий режим работы устройства.
   en: Generic device operating mode.
+enumValues:
+  - off
+  - on
+  - auto
+  - sleep
+  - error
+fingerprint: sha256:e34550dd3b50b0aafbe928e30dab7db5598b069817d1bca599d113888f6243ca

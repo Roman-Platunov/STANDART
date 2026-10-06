@@ -1,0 +1,23 @@
+sid: bd0ff19a
+path: physical.environment.pm25
+aliases:
+  legacy: std:env.pm25
+  short: environment.pm25
+kind: quantity
+unit: ug/m3
+encodings:
+  - f32
+  - i16
+sensitivity: public
+status: stable
+title:
+  ru: PM2.5
+  en: PM2.5
+description:
+  ru: Массовая концентрация частиц PM2.5.
+  en: PM2.5 particulate mass concentration.
+range:
+  min: 0
+  max: 1000
+  unit: ug/m3
+fingerprint: sha256:bd0ff19ac3c63ffb0714a4e39b45e1d6fbe418511d66940eafc6fc6899615e1a

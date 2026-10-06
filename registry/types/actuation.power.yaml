@@ -1,0 +1,22 @@
+sid: 84ca530f
+path: actuation.power
+aliases:
+  legacy: std:act.power
+  short: actuation.power
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - bool
+sensitivity: public
+status: stable
+title:
+  ru: Питание / включение
+  en: Power on/off
+description:
+  ru: Состояние питания или включения актуатора.
+  en: Power or actuator on/off state.
+enumValues:
+  - off
+  - on
+fingerprint: sha256:84ca530f4603358344946ae8ea50e5da13a00a17cb26578c612435386e050904

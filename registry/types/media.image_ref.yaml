@@ -1,11 +1,18 @@
-id: std:media.image_ref
+sid: df404cc2
+path: media.image_ref
+aliases:
+  legacy: std:media.image_ref
+  short: media.image_ref
 kind: media
-domain: media
-defaultUnit: "-"
-encodings: [utf8]
+unit: "-"
+encodings:
+  - utf8
 sensitivity: internal
 status: stable
-title: { ru: Ссылка на изображение, en: Image reference }
+title:
+  ru: Ссылка на изображение
+  en: Image reference
 description:
   ru: URI или путь к изображению.
   en: URI or path to an image.
+fingerprint: sha256:df404cc21caa34244933fd1918d4c14bafb81ef6989588145bf9989795d9e681

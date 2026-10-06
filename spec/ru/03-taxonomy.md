@@ -1,98 +1,30 @@
-# Таксономия v0.1
+# Таксономия v0.2
 
-## Domains
+## Дерево path
 
-| Код | Название (RU) | Название (EN) |
-|-----|---------------|---------------|
-| `env` | Окружающая среда | Environment |
-| `elec` | Электричество | Electrical |
-| `mech` | Механика | Mechanical |
-| `motion` | Движение | Motion |
-| `geo` | Геопространственные | Geospatial |
-| `health` | Здоровье (потребительские типы) | Health (consumer types) |
-| `id` | Идентификаторы | Identifiers |
-| `time` | Время | Time |
-| `logical` | Логические | Logical |
-| `act` | Воздействия / уставки | Actuation |
-| `media` | Медиа-ссылки | Media |
-| `net` | Сеть | Network |
-| `sec` | Безопасность | Security |
+Свободное дерево. Корневые сегменты-ориентиры (не жёсткий enum):
 
-Типы в домене `health` — **не** медицинская сертификация; это лишь именование потребительских измерений.
+| Корень | Смысл |
+|--------|--------|
+| `physical` | Физические величины (среда, электрика, механика, geo, health…) |
+| `identity` | Идентификаторы |
+| `temporal` | Время |
+| `logical` | Флаги, уровни, режимы |
+| `actuation` | Команды и уставки |
+| `media` | Ссылки на медиа |
+| `network` | Сеть |
 
-## Типы v0.1
+Примеры:
 
-### env
-`temperature`, `humidity`, `pressure`, `illuminance`, `co2`, `voc`, `pm25`
+- `physical.environment.temperature`
+- `physical.electrical.voltage`
+- `identity.device`
+- `actuation.power`
 
-### elec
-`voltage`, `current`, `power`, `energy`, `frequency`, `battery_soc`
+## Kinds и encodings
 
-### mech
-`force`, `torque`, `pressure_gauge`, `flow`
+См. схему `schema/type.schema.json` — без изменений по смыслу относительно v0.1 (`quantity`, `enum`, `f32`, …).
 
-### motion
-`position`, `velocity`, `acceleration`, `rotation`
+## Единицы
 
-### geo
-`geopoint`, `altitude`, `heading`
-
-### health
-`heart_rate`, `spo2`, `body_temp`
-
-### id
-`device`, `serial`, `mac`, `uuid`
-
-### time
-`timestamp`, `duration`
-
-### logical
-`flag`, `level`, `mode`
-
-### act
-`setpoint`, `command`, `power`
-
-### media
-`image_ref`, `audio_ref`
-
-### net
-`rssi`, `uptime`
-
-## Kinds
-
-| Kind | Смысл |
-|------|--------|
-| `quantity` | Числовая величина с единицей |
-| `enum` | Одно из фиксированных значений |
-| `identity` | Идентификатор сущности |
-| `temporal` | Момент или длительность |
-| `spatial` | Координаты / положение в пространстве |
-| `logical` | Флаг, уровень, режим |
-| `media` | Ссылка на медиа |
-| `structured` | Составная запись (record) |
-| `event` | Событие |
-| `command` | Команда воздействия |
-
-## Encodings
-
-| Encoding | Описание |
-|----------|----------|
-| `bool` | Логическое |
-| `u8` | Беззнаковое 8 бит |
-| `i16` | Знаковое 16 бит |
-| `i32` | Знаковое 32 бит |
-| `f32` | IEEE-754 float32 |
-| `f64` | IEEE-754 float64 |
-| `utf8` | Строка UTF-8 |
-| `bytes` | Произвольные байты |
-| `record` | Структурированная запись |
-| `enum` | Значение из `enumValues` |
-
-## Sensitivity
-
-| Уровень | Смысл |
-|---------|--------|
-| `public` | Можно публиковать открыто |
-| `internal` | Внутри организации / устройства |
-| `personal` | Персональные данные |
-| `restricted` | Ограниченный доступ |
+Канон — UCUM в поле `unit` (`registry/units.yaml`). Сегмент path может дублировать смысл для человека (`…temperature`), машина опирается на `unit`.

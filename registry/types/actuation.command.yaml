@@ -1,0 +1,26 @@
+sid: 069b2a4c
+path: actuation.command
+aliases:
+  legacy: std:act.command
+  short: actuation.command
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда
+  en: Command
+description:
+  ru: Команда воздействия на исполнительный механизм.
+  en: Actuation command for an actuator.
+enumValues:
+  - start
+  - stop
+  - reset
+  - open
+  - close
+  - toggle
+fingerprint: sha256:069b2a4c6275db20831f2ccbd10895b91d46f2eb067e07312f30a27962c69468

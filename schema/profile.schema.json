@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://standart.dev/schema/profile.schema.json",
-  "title": "STANDART device profile",
+  "title": "STANDART device profile v0.2",
   "type": "object",
   "additionalProperties": false,
   "required": ["id", "version", "title", "required"],
@@ -22,7 +22,7 @@
       "uniqueItems": true,
       "items": {
         "type": "string",
-        "pattern": "^std:[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$"
+        "pattern": "^[0-9a-f]{8}$"
       }
     },
     "optional": {
@@ -30,7 +30,7 @@
       "uniqueItems": true,
       "items": {
         "type": "string",
-        "pattern": "^std:[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$"
+        "pattern": "^[0-9a-f]{8}$"
       }
     }
   },

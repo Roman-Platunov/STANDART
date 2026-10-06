@@ -1,0 +1,23 @@
+sid: f31fa92e
+path: physical.environment.illuminance
+aliases:
+  legacy: std:env.illuminance
+  short: environment.illuminance
+kind: quantity
+unit: lx
+encodings:
+  - f32
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: Освещённость
+  en: Illuminance
+description:
+  ru: Освещённость в люксах.
+  en: Illuminance in lux.
+range:
+  min: 0
+  max: 200000
+  unit: lx
+fingerprint: sha256:f31fa92e6cb910a36239a4df604d3f9aa5a30107c1fb15e86a6941da1e0c3a59

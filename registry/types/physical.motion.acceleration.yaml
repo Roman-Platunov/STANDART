@@ -1,0 +1,23 @@
+sid: c0154acf
+path: physical.motion.acceleration
+aliases:
+  legacy: std:motion.acceleration
+  short: motion.acceleration
+kind: quantity
+unit: m/s2
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Ускорение
+  en: Acceleration
+description:
+  ru: Линейное ускорение.
+  en: Linear acceleration.
+range:
+  min: -1000000
+  max: 1000000
+  unit: m/s2
+fingerprint: sha256:c0154acf370a04a4fd690a526380759018e61677f83513ec9a61f6bd163f991f

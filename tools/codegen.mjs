@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generate C header and TypeScript types from the STANDART registry.
+ * Generate C header and TypeScript types from STANDART v0.2 registry.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -20,7 +20,7 @@ function loadTypes() {
     .readdirSync(dir)
     .filter((f) => f.endsWith(".yaml"))
     .map((f) => readYaml(path.join(dir, f)))
-    .sort((a, b) => a.id.localeCompare(b.id));
+    .sort((a, b) => a.path.localeCompare(b.path));
 }
 
 function loadProfiles() {
@@ -32,12 +32,22 @@ function loadProfiles() {
     .sort((a, b) => a.id.localeCompare(b.id));
 }
 
-function cMacroName(typeId) {
-  // std:env.temperature -> STD_ENV_TEMPERATURE
-  return typeId
-    .replace(/^std:/, "STD_")
-    .replace(/\./g, "_")
-    .toUpperCase();
+function pathMacro(p) {
+  return (
+    "STD_PATH_" +
+    p
+      .replace(/\./g, "_")
+      .toUpperCase()
+  );
+}
+
+function sidMacro(p) {
+  return (
+    "STD_SID_" +
+    p
+      .replace(/\./g, "_")
+      .toUpperCase()
+  );
 }
 
 function generateC(types, profiles, version) {
@@ -51,37 +61,34 @@ function generateC(types, profiles, version) {
   lines.push(`#define STANDART_TYPE_COUNT ${types.length}`);
   lines.push(`#define STANDART_PROFILE_COUNT ${profiles.length}`);
   lines.push("");
-  lines.push("/* Type identifiers */");
+  lines.push("/* Short ids (wire) */");
   for (const t of types) {
-    const mac = cMacroName(t.id);
-    lines.push(`#define ${mac} "${t.id}"`);
+    lines.push(`#define ${sidMacro(t.path)} "${t.sid}"`);
   }
   lines.push("");
-  lines.push("/* Typed refs (default unit + preferred encoding) */");
+  lines.push("/* Full hierarchical paths */");
   for (const t of types) {
-    const mac = cMacroName(t.id) + "_REF";
-    const enc = t.encodings[0];
-    lines.push(`#define ${mac} "${t.id}#${t.defaultUnit}:${enc}"`);
+    lines.push(`#define ${pathMacro(t.path)} "${t.path}"`);
   }
   lines.push("");
   lines.push("/* Profile identifiers */");
   for (const p of profiles) {
-    const mac = `STD_PROFILE_${p.id.toUpperCase()}`;
-    lines.push(`#define ${mac} "${p.id}"`);
+    lines.push(`#define STD_PROFILE_${p.id.toUpperCase()} "${p.id}"`);
   }
   lines.push("");
   lines.push("typedef struct standart_type_info {");
-  lines.push("  const char *id;");
+  lines.push("  const char *sid;");
+  lines.push("  const char *path;");
   lines.push("  const char *kind;");
-  lines.push("  const char *domain;");
-  lines.push("  const char *default_unit;");
+  lines.push("  const char *unit;");
+  lines.push("  const char *fingerprint;");
   lines.push("  const char *status;");
   lines.push("} standart_type_info_t;");
   lines.push("");
   lines.push("static const standart_type_info_t STANDART_TYPES[] = {");
   for (const t of types) {
     lines.push(
-      `  { "${t.id}", "${t.kind}", "${t.domain}", "${t.defaultUnit}", "${t.status}" },`
+      `  { "${t.sid}", "${t.path}", "${t.kind}", "${t.unit}", "${t.fingerprint}", "${t.status}" },`
     );
   }
   lines.push("};");
@@ -91,36 +98,38 @@ function generateC(types, profiles, version) {
   return lines.join("\n");
 }
 
-function generateTs(types, profiles, version) {
-  const typeIds = types.map((t) => JSON.stringify(t.id));
-  const profileIds = profiles.map((p) => JSON.stringify(p.id));
+function tsKey(p) {
+  return p.replace(/\./g, "_").toUpperCase();
+}
+
+function generateTs(types, profiles, version, checksum) {
+  const sidUnion = types.map((t) => `  | ${JSON.stringify(t.sid)}`).join("\n");
+  const pathUnion = types.map((t) => `  | ${JSON.stringify(t.path)}`).join("\n");
+  const profileUnion = profiles.map((p) => `  | ${JSON.stringify(p.id)}`).join("\n");
 
   const typeConsts = types
-    .map((t) => {
-      const key = t.id
-        .replace(/^std:/, "")
-        .replace(/\./g, "_")
-        .toUpperCase();
-      return `  ${key}: ${JSON.stringify(t.id)} as const,`;
-    })
+    .map((t) => `  ${tsKey(t.path)}: ${JSON.stringify(t.sid)} as const,`)
     .join("\n");
 
-  const cards = types.map((t) => {
-    const card = {
-      id: t.id,
-      kind: t.kind,
-      domain: t.domain,
-      defaultUnit: t.defaultUnit,
-      encodings: t.encodings,
-      sensitivity: t.sensitivity,
-      status: t.status,
-      title: t.title,
-    };
-    if (t.range) card.range = t.range;
-    if (t.enumValues) card.enumValues = t.enumValues;
-    if (t.description) card.description = t.description;
-    return card;
-  });
+  const pathConsts = types
+    .map((t) => `  ${tsKey(t.path)}: ${JSON.stringify(t.path)} as const,`)
+    .join("\n");
+
+  const cards = types.map((t) => ({
+    sid: t.sid,
+    path: t.path,
+    kind: t.kind,
+    unit: t.unit,
+    encodings: t.encodings,
+    sensitivity: t.sensitivity,
+    status: t.status,
+    title: t.title,
+    fingerprint: t.fingerprint,
+    ...(t.aliases ? { aliases: t.aliases } : {}),
+    ...(t.range ? { range: t.range } : {}),
+    ...(t.enumValues ? { enumValues: t.enumValues } : {}),
+    ...(t.description ? { description: t.description } : {}),
+  }));
 
   const profileData = profiles.map((p) => ({
     id: p.id,
@@ -135,12 +144,16 @@ function generateTs(types, profiles, version) {
 /* SPDX-License-Identifier: Apache-2.0 */
 
 export const STANDART_REGISTRY_VERSION = ${JSON.stringify(version)} as const;
+export const STANDART_REGISTRY_CHECKSUM = ${JSON.stringify(checksum)} as const;
 
-export type StandartTypeId =
-${typeIds.map((id) => `  | ${id}`).join("\n")};
+export type StandartSid =
+${sidUnion};
+
+export type StandartPath =
+${pathUnion};
 
 export type StandartProfileId =
-${profileIds.map((id) => `  | ${id}`).join("\n")};
+${profileUnion};
 
 export type StandartKind =
   | "quantity"
@@ -175,16 +188,18 @@ export interface LocalizedString {
 }
 
 export interface StandartTypeCard {
-  id: StandartTypeId;
+  sid: StandartSid;
+  path: StandartPath;
   kind: StandartKind;
-  domain: string;
-  defaultUnit: string;
+  unit: string;
   encodings: StandartEncoding[];
   sensitivity: StandartSensitivity;
   status: StandartStatus;
   title: LocalizedString;
+  fingerprint: string;
+  aliases?: { ru?: string; short?: string; legacy?: string };
   description?: LocalizedString;
-  range?: { min: number; max: number; unit: string };
+  range?: { min: number; max: number; unit?: string };
   enumValues?: string[];
 }
 
@@ -193,67 +208,46 @@ export interface StandartProfile {
   version: string;
   title: LocalizedString;
   description?: LocalizedString;
-  required: StandartTypeId[];
-  optional: StandartTypeId[];
+  required: StandartSid[];
+  optional: StandartSid[];
 }
 
+/** Minimum wire reading: device sends sid + value */
 export interface StandartReading {
-  type: StandartTypeId;
-  unit: string;
-  enc: StandartEncoding;
+  sid: StandartSid;
   v: unknown;
   t?: number;
 }
 
-export const TypeId = {
+/** Short ids for wire / firmware */
+export const Sid = {
 ${typeConsts}
+} as const;
+
+/** Full hierarchical paths */
+export const Path = {
+${pathConsts}
 } as const;
 
 export const TYPES: readonly StandartTypeCard[] = ${JSON.stringify(cards, null, 2)} as const;
 
 export const PROFILES: readonly StandartProfile[] = ${JSON.stringify(profileData, null, 2)} as const;
 
-export function getType(id: StandartTypeId): StandartTypeCard | undefined {
-  return TYPES.find((t) => t.id === id);
+export function getBySid(sid: string): StandartTypeCard | undefined {
+  return TYPES.find((t) => t.sid === sid);
+}
+
+export function getByPath(path: string): StandartTypeCard | undefined {
+  return TYPES.find((t) => t.path === path);
 }
 
 export function getProfile(id: StandartProfileId): StandartProfile | undefined {
   return PROFILES.find((p) => p.id === id);
 }
 
-export function isTypeId(value: string): value is StandartTypeId {
-  return TYPES.some((t) => t.id === value);
+export function isSid(value: string): value is StandartSid {
+  return TYPES.some((t) => t.sid === value);
 }
-`;
-}
-
-function generateTsPackageJson() {
-  return `{
-  "name": "@standart/types",
-  "version": "0.1.0",
-  "description": "STANDART generated TypeScript type registry",
-  "type": "module",
-  "main": "index.ts",
-  "types": "index.ts",
-  "license": "Apache-2.0",
-  "files": ["index.ts", "README.md"]
-}
-`;
-}
-
-function generateTsReadme() {
-  return `# @standart/types
-
-Generated TypeScript bindings for the STANDART device type registry.
-
-\`\`\`ts
-import { TypeId, getType, STANDART_REGISTRY_VERSION } from "./index.ts";
-
-console.log(STANDART_REGISTRY_VERSION);
-console.log(getType(TypeId.ENV_TEMPERATURE));
-\`\`\`
-
-Regenerate with \`node tools/codegen.mjs\` from the repository root.
 `;
 }
 
@@ -263,18 +257,53 @@ function main() {
   const types = loadTypes();
   const profiles = loadProfiles();
 
-  const cPath = path.join(root, "sdk", "c", "standart.h");
-  const tsPath = path.join(root, "sdk", "ts", "index.ts");
-  const tsPkg = path.join(root, "sdk", "ts", "package.json");
-  const tsReadme = path.join(root, "sdk", "ts", "README.md");
+  let checksum = "";
+  const manifestPath = path.join(root, "registry", "manifest.json");
+  if (fs.existsSync(manifestPath)) {
+    checksum = JSON.parse(fs.readFileSync(manifestPath, "utf8")).registry_checksum || "";
+  }
 
-  fs.mkdirSync(path.dirname(cPath), { recursive: true });
-  fs.mkdirSync(path.dirname(tsPath), { recursive: true });
+  fs.mkdirSync(path.join(root, "sdk", "c"), { recursive: true });
+  fs.mkdirSync(path.join(root, "sdk", "ts"), { recursive: true });
 
-  fs.writeFileSync(cPath, generateC(types, profiles, version));
-  fs.writeFileSync(tsPath, generateTs(types, profiles, version));
-  fs.writeFileSync(tsPkg, generateTsPackageJson());
-  fs.writeFileSync(tsReadme, generateTsReadme());
+  fs.writeFileSync(path.join(root, "sdk", "c", "standart.h"), generateC(types, profiles, version));
+  fs.writeFileSync(
+    path.join(root, "sdk", "ts", "index.ts"),
+    generateTs(types, profiles, version, checksum)
+  );
+  fs.writeFileSync(
+    path.join(root, "sdk", "ts", "package.json"),
+    JSON.stringify(
+      {
+        name: "@standart/types",
+        version,
+        description: "STANDART generated TypeScript type registry (hybrid path/sid)",
+        type: "module",
+        main: "index.ts",
+        types: "index.ts",
+        license: "Apache-2.0",
+        files: ["index.ts", "README.md"],
+      },
+      null,
+      2
+    ) + "\n"
+  );
+  fs.writeFileSync(
+    path.join(root, "sdk", "ts", "README.md"),
+    `# @standart/types
+
+Generated TypeScript bindings for the STANDART hybrid classifier.
+
+\`\`\`ts
+import { Sid, Path, getBySid, STANDART_REGISTRY_CHECKSUM } from "./index.ts";
+
+getBySid(Sid.PHYSICAL_ENVIRONMENT_TEMPERATURE);
+// wire: { sid: Sid.PHYSICAL_ENVIRONMENT_TEMPERATURE, v: 23.4 }
+\`\`\`
+
+Regenerate: \`npm run codegen\` from repo root.
+`
+  );
 
   console.log(
     `STANDART codegen OK: ${types.length} types → sdk/c/standart.h, sdk/ts/index.ts`

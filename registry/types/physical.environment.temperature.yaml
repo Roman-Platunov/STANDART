@@ -1,0 +1,24 @@
+sid: 24d3556f
+path: physical.environment.temperature
+aliases:
+  legacy: std:env.temperature
+  short: environment.temperature
+kind: quantity
+unit: Cel
+encodings:
+  - f32
+  - f64
+  - i16
+sensitivity: public
+status: stable
+title:
+  ru: Температура
+  en: Temperature
+description:
+  ru: Температура окружающей среды или среды измерения.
+  en: Ambient or measured environment temperature.
+range:
+  min: -273.15
+  max: 1000
+  unit: Cel
+fingerprint: sha256:24d3556f189c9bbda772f6261516de963e623c12b6188e63d33ab3a8602e0b07

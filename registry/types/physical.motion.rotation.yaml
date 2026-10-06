@@ -1,0 +1,23 @@
+sid: 993c1f96
+path: physical.motion.rotation
+aliases:
+  legacy: std:motion.rotation
+  short: motion.rotation
+kind: quantity
+unit: deg
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Угол поворота
+  en: Rotation
+description:
+  ru: Угол поворота в градусах.
+  en: Rotation angle in degrees.
+range:
+  min: -3600
+  max: 3600
+  unit: deg
+fingerprint: sha256:993c1f9667a98ed2d444a34c3e64a5237139aff207232b3bf1da176f139cdd85

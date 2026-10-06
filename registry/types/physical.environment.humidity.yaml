@@ -1,0 +1,23 @@
+sid: "94346493"
+path: physical.environment.humidity
+aliases:
+  legacy: std:env.humidity
+  short: environment.humidity
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - u8
+sensitivity: public
+status: stable
+title:
+  ru: Относительная влажность
+  en: Relative humidity
+description:
+  ru: Относительная влажность воздуха в процентах.
+  en: Relative air humidity in percent.
+range:
+  min: 0
+  max: 100
+  unit: "%"
+fingerprint: sha256:94346493b0fc7179cd3e271c7929060b44bbd77909a318421630cbdff9b7726a

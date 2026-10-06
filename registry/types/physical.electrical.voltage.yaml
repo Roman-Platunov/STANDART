@@ -1,0 +1,24 @@
+sid: a4d3f616
+path: physical.electrical.voltage
+aliases:
+  legacy: std:elec.voltage
+  short: electrical.voltage
+kind: quantity
+unit: V
+encodings:
+  - f32
+  - f64
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: Напряжение
+  en: Voltage
+description:
+  ru: Электрическое напряжение.
+  en: Electrical voltage.
+range:
+  min: -100000
+  max: 100000
+  unit: V
+fingerprint: sha256:a4d3f6163d84dd452f5bb296f29d0a8dff86b1163df0698f2ca7b832c406f66e

@@ -1,0 +1,23 @@
+sid: 749128cc
+path: physical.electrical.frequency
+aliases:
+  legacy: std:elec.frequency
+  short: electrical.frequency
+kind: quantity
+unit: Hz
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Частота
+  en: Frequency
+description:
+  ru: Электрическая частота.
+  en: Electrical frequency.
+range:
+  min: 0
+  max: 1000000000000
+  unit: Hz
+fingerprint: sha256:749128cce644cb8ca4b4158dcc808eff26f8bbe2935ce0ccfb6edc20d56b5cfa

@@ -1,49 +1,41 @@
 # STANDART — Overview
 
-**STANDART** (Simple Typed And Named Data for Apparatus, Registry and Things) is an open standard for classifying data types used by devices.
+**STANDART** (Simple Typed And Named Data for Apparatus, Registry and Things) is an open **common data classifier** for exchange between **artificial intelligence** and **physical devices**.
 
-Specification version: **0.1.0**
+Version: **0.2.0** (hybrid model)
 
 ## Why
 
-Device makers and cloud developers often invent private codes for temperature, voltage, GPS, and similar values. Devices of the same class then cannot interoperate without manual mapping.
+A device does not narrate who it is or what it measures. It sends a **code from the shared library**. The receiver (AI, gateway, cloud) expands the code into a full hierarchical meaning.
 
-STANDART defines a **shared type registry**: stable identifiers, UCUM units, allowed encodings, and device profiles. Transport (MQTT, BLE, Modbus, HTTP) remains the vendor's choice.
+## Full and short form
+
+| Form | Field | Example | Where |
+|------|-------|---------|-------|
+| Full | `path` | `physical.environment.temperature` | library, AI, duplicate search |
+| Short | `sid` | `24d3556f` | firmware, wire exchange |
+| Checksum | `fingerprint` | `sha256:…` | anti-duplicate |
+
+Minimum payload:
+
+```json
+{ "sid": "24d3556f", "v": 23.4 }
+```
 
 ## Three artifacts
 
-1. **Specification** — human-readable rules (this directory).
-2. **Registry** — machine-readable type cards in `registry/`.
-3. **Library** — generated C headers and TypeScript types in `sdk/`.
-
-## Principle
-
-Every value on a device is described by a registry type card, not a magic number:
-
-```
-std:env.temperature
-```
-
-Full representation reference:
-
-```
-std:env.temperature#Cel:f32
-```
-
-## Out of scope for v0.1
-
-- A proprietary wire or wireless protocol.
-- Formal ISO / national standard status.
-- Economic or clinical classification systems (ISIC, HS, ICD).
+1. **Specification** — `spec/`
+2. **Registry** — `registry/` (+ `manifest.json` with `registry_checksum`)
+3. **SDK** — `sdk/c`, `sdk/ts`
 
 ## Licenses
 
-- Specification: Creative Commons Attribution 4.0 (CC-BY-4.0).
-- Registry and code: Apache License 2.0.
+- Spec: CC-BY-4.0
+- Registry and code: Apache-2.0
 
 ## Next
 
-- [Data model](02-model.md)
+- [Model](02-model.md)
 - [Taxonomy](03-taxonomy.md)
 - [Identifiers](04-identifiers.md)
 - [Conformance](05-conformance.md)

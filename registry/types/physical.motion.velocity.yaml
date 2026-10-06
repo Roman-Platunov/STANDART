@@ -1,0 +1,23 @@
+sid: 59be49ea
+path: physical.motion.velocity
+aliases:
+  legacy: std:motion.velocity
+  short: motion.velocity
+kind: quantity
+unit: m/s
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Скорость
+  en: Velocity
+description:
+  ru: Линейная скорость.
+  en: Linear velocity.
+range:
+  min: -1000000
+  max: 1000000
+  unit: m/s
+fingerprint: sha256:59be49ea71339153700e970b26b62c1b17f55bd027ca9b830da7a6cf6e9cc42f

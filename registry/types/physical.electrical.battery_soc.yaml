@@ -1,0 +1,23 @@
+sid: 9744622b
+path: physical.electrical.battery_soc
+aliases:
+  legacy: std:elec.battery_soc
+  short: electrical.battery_soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - u8
+sensitivity: public
+status: stable
+title:
+  ru: Заряд батареи
+  en: Battery state of charge
+description:
+  ru: Состояние заряда батареи в процентах.
+  en: Battery state of charge in percent.
+range:
+  min: 0
+  max: 100
+  unit: "%"
+fingerprint: sha256:9744622b0c2efee235af3293ffaa73ac4d5237a8311874de01e296e7a663d159

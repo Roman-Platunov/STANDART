@@ -1,0 +1,24 @@
+sid: 7ec38c5b
+path: physical.health.heart_rate
+aliases:
+  legacy: std:health.heart_rate
+  short: health.heart_rate
+kind: quantity
+unit: /min
+encodings:
+  - u8
+  - i16
+  - f32
+sensitivity: personal
+status: stable
+title:
+  ru: Частота пульса
+  en: Heart rate
+description:
+  ru: Частота сердечных сокращений (потребительский тип, не медсертификация).
+  en: Heart rate (consumer type, not medical certification).
+range:
+  min: 0
+  max: 300
+  unit: /min
+fingerprint: sha256:7ec38c5bd1e210dc811b969b1fc44d78eeeb4332799589d7584c5821a7245892

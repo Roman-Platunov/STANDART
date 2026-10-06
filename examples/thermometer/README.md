@@ -1,26 +1,19 @@
-# Example: thermometer profile
+# Example: thermometer (STANDART 0.2)
 
-Minimal STANDART L2 payload for a temperature sensor.
+Minimum L2 payload — devices send **sid + value** only.
 
-- Profile: [`thermometer`](../../registry/profiles/thermometer.yaml)
-- Required types: `std:env.temperature`, `std:id.device`
-- Sample payload: [`payload.json`](payload.json)
+| sid | path |
+|-----|------|
+| `24d3556f` | `physical.environment.temperature` |
+| `3d53bc7d` | `identity.device` |
 
-Transport is not specified — publish this JSON over MQTT, HTTP, BLE GATT, etc.
-
-## C sketch
+Sample: [`payload.json`](payload.json)
 
 ```c
 #include "../../sdk/c/standart.h"
-
-const char *type = STD_ENV_TEMPERATURE;          /* "std:env.temperature" */
-const char *ref  = STD_ENV_TEMPERATURE_REF;      /* "std:env.temperature#Cel:f32" */
-const char *profile = STD_PROFILE_THERMOMETER;   /* "thermometer" */
+const char *sid = STD_SID_PHYSICAL_ENVIRONMENT_TEMPERATURE; /* "24d3556f" */
 ```
 
-## Validate registry (from repo root)
-
 ```bash
-npm install
 npm run build
 ```

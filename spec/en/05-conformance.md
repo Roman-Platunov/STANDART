@@ -1,49 +1,25 @@
 # Conformance
 
-## Levels
+## L1 — Type-aware payload
 
-### L1 — Type-aware payload
+Sender uses a registered `sid`; value is compatible with the card.
 
-A device or service:
+## L2 — Profile (optional)
 
-1. Uses only registered `std:` type ids (or explicitly declares an `x:` extension — out of scope for v0.1).
-2. Provides `unit` and `enc` compatible with the type card.
-3. For quantities, respects the card range when present.
+Device declares a profile and emits every `required` sid.
 
-### L2 — Profile conformance
+## L3 — Tooling
 
-A device:
+Validator checks fingerprint, uniqueness of path/sid/fingerprint/alias, and builds the manifest.
 
-1. Declares one or more profiles from `registry/profiles/`.
-2. Always publishes every `required` type of the profile.
-3. May publish `optional` profile types and any other registered types.
+## Adding a parameter
 
-### L3 — Tooling conformance
+1. Confirm path/meaning is not already present
+2. Add YAML → `npm run build`
+3. PR: CI rejects duplicates; similar paths warn / need review
 
-A tool (validator, codegen, SDK):
-
-1. Reads the YAML registry according to the JSON Schemas in `schema/`.
-2. Rejects unknown kind / domain / encoding values.
-3. Does not reuse deprecated ids as new ones.
-
-## Conformance claim
-
-A vendor may document:
-
-```
-STANDART 0.1 — L2 — profile: thermometer
-```
-
-## Verification
+## Check
 
 ```bash
-node tools/validate.mjs
+npm run build
 ```
-
-Exit code 0 means the registry and profiles are consistent with the schemas.
-
-## Out of scope
-
-- Cryptographic device attestation.
-- Third-party laboratory certification.
-- Transport-protocol conformance.

@@ -1,33 +1,24 @@
 {
-  "standart": "0.1.0",
+  "standart": "0.2.0",
   "conformance": "L2",
   "profile": "thermometer",
-  "deviceId": "urn:std:id:dev:01HZXEXAMPLETHERMO01",
   "readings": [
     {
-      "type": "std:id.device",
-      "unit": "-",
-      "enc": "utf8",
+      "sid": "3d53bc7d",
       "v": "urn:std:id:dev:01HZXEXAMPLETHERMO01"
     },
     {
-      "type": "std:env.temperature",
-      "unit": "Cel",
-      "enc": "f32",
+      "sid": "24d3556f",
       "v": 23.4,
       "t": 1738860000
     },
     {
-      "type": "std:env.humidity",
-      "unit": "%",
-      "enc": "f32",
+      "sid": "94346493",
       "v": 48.0,
       "t": 1738860000
     },
     {
-      "type": "std:elec.battery_soc",
-      "unit": "%",
-      "enc": "u8",
+      "sid": "9744622b",
       "v": 87,
       "t": 1738860000
     }

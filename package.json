@@ -1,13 +1,15 @@
 {
   "name": "standart",
-  "version": "0.1.0",
-  "description": "STANDART — open data type registry for devices",
+  "version": "0.2.0",
+  "description": "STANDART — hybrid data classifier for AI ↔ device exchange",
   "private": true,
   "type": "module",
   "scripts": {
+    "test:fingerprint": "node tools/lib/fingerprint.test.mjs",
     "validate": "node tools/validate.mjs",
+    "manifest": "node tools/build-manifest.mjs",
     "codegen": "node tools/codegen.mjs",
-    "build": "npm run validate && npm run codegen"
+    "build": "npm run test:fingerprint && npm run validate && npm run manifest && npm run codegen"
   },
   "engines": {
     "node": ">=18"

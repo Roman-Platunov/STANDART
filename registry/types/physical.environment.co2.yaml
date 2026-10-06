@@ -1,0 +1,23 @@
+sid: 991ae51b
+path: physical.environment.co2
+aliases:
+  legacy: std:env.co2
+  short: environment.co2
+kind: quantity
+unit: ppm
+encodings:
+  - f32
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: Концентрация CO2
+  en: CO2 concentration
+description:
+  ru: Концентрация углекислого газа в ppm.
+  en: Carbon dioxide concentration in ppm.
+range:
+  min: 0
+  max: 10000
+  unit: ppm
+fingerprint: sha256:991ae51b291ca5d56a1c62780fee0236f008b61b22370f55f4708b87eb3f10b6

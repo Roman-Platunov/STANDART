@@ -1,0 +1,23 @@
+sid: 99e3d569
+path: physical.motion.position
+aliases:
+  legacy: std:motion.position
+  short: motion.position
+kind: quantity
+unit: m
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Позиция
+  en: Position
+description:
+  ru: Линейное положение по оси (локальная система).
+  en: Linear position along an axis (local frame).
+range:
+  min: -1000000000
+  max: 1000000000
+  unit: m
+fingerprint: sha256:99e3d5695e4ba1b52bb4b202836f36fb8826d728a83ece15d531cb93203988e8

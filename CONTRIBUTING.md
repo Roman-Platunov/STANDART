@@ -1,38 +1,26 @@
 # Contributing to STANDART
 
-Thank you for helping grow an open type registry for devices.
+## Propose a new parameter
 
-## How to propose a new type
-
-1. Check that a similar type does not already exist in `registry/types/`.
-2. Add a YAML card following existing files and `schema/type.schema.json`.
-3. Use a stable id: `std:<domain>.<name>` (lowercase, `_` allowed).
-4. Prefer UCUM units listed in `registry/units.yaml` (add a unit if needed).
-5. Provide bilingual `title` / `description` (`ru` and `en`).
-6. Set `status: draft` for brand-new types unless maintainers agree on `stable`.
-7. Run validation:
+1. Search `registry/types/` and `registry/manifest.json` — ensure the meaning is not already covered (`path` or fingerprint).
+2. Add `registry/types/<path>.yaml` with at least: `path`, `kind`, `unit`, `encodings`, `sensitivity`, `status`, `title` (ru/en).
+3. Generate `fingerprint` and `sid`:
 
 ```bash
-npm install
-npm run validate
-npm run codegen
+node -e "import { computeFingerprint, deriveSid } from './tools/lib/fingerprint.mjs'; const fp=computeFingerprint({kind:'quantity',unit:'Cel',path:'physical.environment.example'}); console.log(fp, deriveSid(fp));"
 ```
 
-8. Open a pull request describing why the type is needed and which devices use it.
+4. Optionally set `aliases.ru`, `aliases.short`.
+5. Run:
 
-## How to propose a device profile
+```bash
+npm run build
+```
 
-1. Add `registry/profiles/<name>.yaml`.
-2. Reference only registered type ids.
-3. Keep `required` minimal; put nice-to-have types in `optional`.
+6. Open a pull request. CI / validator rejects duplicate `path`, `sid`, `fingerprint`, or aliases. Similar paths produce warnings and may need maintainer review.
 
 ## Rules
 
-- Never change the meaning of an existing `stable` type id.
-- Never reuse a deprecated id.
-- Incompatible changes require a new id and deprecation of the old one.
-- Transport protocols are out of scope; STANDART is about types.
-
-## Code of conduct
-
-Be respectful. Assume good intent. Prefer concrete examples over abstract debate.
+- Do not change the meaning of a `stable` path or reuse a `sid`.
+- Prefer deeper paths over inventing a parallel root for the same concept.
+- Transport protocols are out of scope — STANDART identifies **data**, not wires.

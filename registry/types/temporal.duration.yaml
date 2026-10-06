@@ -1,0 +1,24 @@
+sid: fb2badbe
+path: temporal.duration
+aliases:
+  legacy: std:time.duration
+  short: temporal.duration
+kind: temporal
+unit: s
+encodings:
+  - f32
+  - f64
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: Длительность
+  en: Duration
+description:
+  ru: Длительность интервала в секундах.
+  en: Interval duration in seconds.
+range:
+  min: 0
+  max: 1000000000000000
+  unit: s
+fingerprint: sha256:fb2badbef8d8563b8528261739ef62f81b148013c95fdd8599bb7a94b35152c1

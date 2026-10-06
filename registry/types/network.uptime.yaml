@@ -1,0 +1,23 @@
+sid: 8d5c8d19
+path: network.uptime
+aliases:
+  legacy: std:net.uptime
+  short: network.uptime
+kind: quantity
+unit: s
+encodings:
+  - i32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Аптайм
+  en: Uptime
+description:
+  ru: Время непрерывной работы устройства в секундах.
+  en: Device continuous uptime in seconds.
+range:
+  min: 0
+  max: 1000000000000000
+  unit: s
+fingerprint: sha256:8d5c8d19e67f63ef729bb34f994f82fce0ce41e3656858ea2392e2585f3bd8c1

@@ -1,11 +1,18 @@
-id: std:media.audio_ref
+sid: 1f09fed4
+path: media.audio_ref
+aliases:
+  legacy: std:media.audio_ref
+  short: media.audio_ref
 kind: media
-domain: media
-defaultUnit: "-"
-encodings: [utf8]
+unit: "-"
+encodings:
+  - utf8
 sensitivity: internal
 status: stable
-title: { ru: Ссылка на аудио, en: Audio reference }
+title:
+  ru: Ссылка на аудио
+  en: Audio reference
 description:
   ru: URI или путь к аудиофайлу.
   en: URI or path to an audio resource.
+fingerprint: sha256:1f09fed46dede8efb64c55594a7c1fa085f24a8599fae30b1ddf30acd73960e0

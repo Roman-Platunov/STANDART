@@ -1,0 +1,23 @@
+sid: 1f1db238
+path: physical.health.body_temp
+aliases:
+  legacy: std:health.body_temp
+  short: health.body_temp
+kind: quantity
+unit: Cel
+encodings:
+  - f32
+  - i16
+sensitivity: personal
+status: stable
+title:
+  ru: Температура тела
+  en: Body temperature
+description:
+  ru: Температура тела (потребительский тип).
+  en: Body temperature (consumer type).
+range:
+  min: 25
+  max: 45
+  unit: Cel
+fingerprint: sha256:1f1db2383382fe3f24c4ba8c1b9cf32bec2d360d2ae0cdf70ba528132d6871c2

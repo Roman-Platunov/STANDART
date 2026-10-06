@@ -1,0 +1,23 @@
+sid: 67b72924
+path: physical.mechanical.flow
+aliases:
+  legacy: std:mech.flow
+  short: mechanical.flow
+kind: quantity
+unit: L/min
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Расход
+  en: Flow rate
+description:
+  ru: Объёмный расход жидкости или газа.
+  en: Volumetric flow rate of fluid or gas.
+range:
+  min: 0
+  max: 1000000
+  unit: L/min
+fingerprint: sha256:67b72924e7db7a4407062135341550b670d7f9db9927e08acd95c1e367ab53e9

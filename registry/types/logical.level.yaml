@@ -1,12 +1,23 @@
-id: std:logical.level
+sid: 653381be
+path: logical.level
+aliases:
+  legacy: std:logical.level
+  short: logical.level
 kind: quantity
-domain: logical
-defaultUnit: "%"
-encodings: [u8, f32]
-range: { min: 0, max: 100, unit: "%" }
+unit: "%"
+encodings:
+  - u8
+  - f32
 sensitivity: public
 status: stable
-title: { ru: Уровень, en: Level }
+title:
+  ru: Уровень
+  en: Level
 description:
   ru: Нормированный уровень 0–100%.
   en: Normalized level 0–100%.
+range:
+  min: 0
+  max: 100
+  unit: "%"
+fingerprint: sha256:653381beaefc1f3f67c41f98a859261be291e0696a50fb79dc2b0332d865f8a8

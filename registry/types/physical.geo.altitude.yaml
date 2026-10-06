@@ -1,0 +1,23 @@
+sid: d26a38e1
+path: physical.geo.altitude
+aliases:
+  legacy: std:geo.altitude
+  short: geo.altitude
+kind: quantity
+unit: m
+encodings:
+  - f32
+  - f64
+sensitivity: personal
+status: stable
+title:
+  ru: Высота
+  en: Altitude
+description:
+  ru: Высота над уровнем моря или эллипсоидом.
+  en: Altitude above sea level or ellipsoid.
+range:
+  min: -1000
+  max: 100000
+  unit: m
+fingerprint: sha256:d26a38e16b627173ae6920296c129a2fc84fe96930856901bded4747e692388d

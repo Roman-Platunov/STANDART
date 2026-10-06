@@ -1,0 +1,24 @@
+sid: 705c5b61
+path: physical.electrical.power
+aliases:
+  legacy: std:elec.power
+  short: electrical.power
+kind: quantity
+unit: W
+encodings:
+  - f32
+  - f64
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: Мощность
+  en: Power
+description:
+  ru: Электрическая мощность.
+  en: Electrical power.
+range:
+  min: -1000000
+  max: 1000000
+  unit: W
+fingerprint: sha256:705c5b61c9e9324bad2e1b4bc87468d78c27c06e1064bd581442b1b8a88214eb

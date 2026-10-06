@@ -1,0 +1,23 @@
+sid: 0d1c3212
+path: physical.environment.pressure
+aliases:
+  legacy: std:env.pressure
+  short: environment.pressure
+kind: quantity
+unit: hPa
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Атмосферное давление
+  en: Atmospheric pressure
+description:
+  ru: Барометрическое давление окружающей среды.
+  en: Ambient barometric pressure.
+range:
+  min: 300
+  max: 1100
+  unit: hPa
+fingerprint: sha256:0d1c321207ab6d661db5cf54a835194f57458879a35a0dea4cab5ec6d50e998f

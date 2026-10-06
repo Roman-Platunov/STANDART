@@ -1,0 +1,23 @@
+sid: 0abf6ccc
+path: physical.geo.heading
+aliases:
+  legacy: std:geo.heading
+  short: geo.heading
+kind: quantity
+unit: deg
+encodings:
+  - f32
+  - u8
+sensitivity: public
+status: stable
+title:
+  ru: Курс
+  en: Heading
+description:
+  ru: Курс относительно севера в градусах.
+  en: Heading relative to north in degrees.
+range:
+  min: 0
+  max: 360
+  unit: deg
+fingerprint: sha256:0abf6ccc5e1b02c2713212636397c9c441635817a929d22a63ab397e51dbcc8a

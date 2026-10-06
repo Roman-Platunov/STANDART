@@ -1,0 +1,23 @@
+sid: d38e7705
+path: physical.mechanical.force
+aliases:
+  legacy: std:mech.force
+  short: mechanical.force
+kind: quantity
+unit: N
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Сила
+  en: Force
+description:
+  ru: Механическая сила.
+  en: Mechanical force.
+range:
+  min: -1000000000
+  max: 1000000000
+  unit: N
+fingerprint: sha256:d38e7705f19ae4381e4ac485fb5f0cd12dcdec120300b19ab2e9820f9f1e6c5c

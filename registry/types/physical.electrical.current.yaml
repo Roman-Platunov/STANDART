@@ -1,0 +1,24 @@
+sid: 029cf91b
+path: physical.electrical.current
+aliases:
+  legacy: std:elec.current
+  short: electrical.current
+kind: quantity
+unit: A
+encodings:
+  - f32
+  - f64
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: Ток
+  en: Current
+description:
+  ru: Электрический ток.
+  en: Electrical current.
+range:
+  min: -10000
+  max: 10000
+  unit: A
+fingerprint: sha256:029cf91baaabee1d8bc7b9acd33a42f9cc5295807d9b3c690ab6cf781071f0e0

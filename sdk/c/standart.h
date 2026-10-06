@@ -3,99 +3,99 @@
 #ifndef STANDART_H
 #define STANDART_H
 
-#define STANDART_REGISTRY_VERSION "0.1.0"
+#define STANDART_REGISTRY_VERSION "0.2.0"
 #define STANDART_TYPE_COUNT 43
 #define STANDART_PROFILE_COUNT 4
 
-/* Type identifiers */
-#define STD_ACT_COMMAND "std:act.command"
-#define STD_ACT_POWER "std:act.power"
-#define STD_ACT_SETPOINT "std:act.setpoint"
-#define STD_ELEC_BATTERY_SOC "std:elec.battery_soc"
-#define STD_ELEC_CURRENT "std:elec.current"
-#define STD_ELEC_ENERGY "std:elec.energy"
-#define STD_ELEC_FREQUENCY "std:elec.frequency"
-#define STD_ELEC_POWER "std:elec.power"
-#define STD_ELEC_VOLTAGE "std:elec.voltage"
-#define STD_ENV_CO2 "std:env.co2"
-#define STD_ENV_HUMIDITY "std:env.humidity"
-#define STD_ENV_ILLUMINANCE "std:env.illuminance"
-#define STD_ENV_PM25 "std:env.pm25"
-#define STD_ENV_PRESSURE "std:env.pressure"
-#define STD_ENV_TEMPERATURE "std:env.temperature"
-#define STD_ENV_VOC "std:env.voc"
-#define STD_GEO_ALTITUDE "std:geo.altitude"
-#define STD_GEO_GEOPOINT "std:geo.geopoint"
-#define STD_GEO_HEADING "std:geo.heading"
-#define STD_HEALTH_BODY_TEMP "std:health.body_temp"
-#define STD_HEALTH_HEART_RATE "std:health.heart_rate"
-#define STD_HEALTH_SPO2 "std:health.spo2"
-#define STD_ID_DEVICE "std:id.device"
-#define STD_ID_MAC "std:id.mac"
-#define STD_ID_SERIAL "std:id.serial"
-#define STD_ID_UUID "std:id.uuid"
-#define STD_LOGICAL_FLAG "std:logical.flag"
-#define STD_LOGICAL_LEVEL "std:logical.level"
-#define STD_LOGICAL_MODE "std:logical.mode"
-#define STD_MECH_FLOW "std:mech.flow"
-#define STD_MECH_FORCE "std:mech.force"
-#define STD_MECH_PRESSURE_GAUGE "std:mech.pressure_gauge"
-#define STD_MECH_TORQUE "std:mech.torque"
-#define STD_MEDIA_AUDIO_REF "std:media.audio_ref"
-#define STD_MEDIA_IMAGE_REF "std:media.image_ref"
-#define STD_MOTION_ACCELERATION "std:motion.acceleration"
-#define STD_MOTION_POSITION "std:motion.position"
-#define STD_MOTION_ROTATION "std:motion.rotation"
-#define STD_MOTION_VELOCITY "std:motion.velocity"
-#define STD_NET_RSSI "std:net.rssi"
-#define STD_NET_UPTIME "std:net.uptime"
-#define STD_TIME_DURATION "std:time.duration"
-#define STD_TIME_TIMESTAMP "std:time.timestamp"
+/* Short ids (wire) */
+#define STD_SID_ACTUATION_COMMAND "069b2a4c"
+#define STD_SID_ACTUATION_POWER "84ca530f"
+#define STD_SID_ACTUATION_SETPOINT "faa74c01"
+#define STD_SID_IDENTITY_DEVICE "3d53bc7d"
+#define STD_SID_IDENTITY_MAC "be792b1c"
+#define STD_SID_IDENTITY_SERIAL "e867039a"
+#define STD_SID_IDENTITY_UUID "392bf836"
+#define STD_SID_LOGICAL_FLAG "8ff90c08"
+#define STD_SID_LOGICAL_LEVEL "653381be"
+#define STD_SID_LOGICAL_MODE "e34550dd"
+#define STD_SID_MEDIA_AUDIO_REF "1f09fed4"
+#define STD_SID_MEDIA_IMAGE_REF "df404cc2"
+#define STD_SID_NETWORK_RSSI "6f419740"
+#define STD_SID_NETWORK_UPTIME "8d5c8d19"
+#define STD_SID_PHYSICAL_ELECTRICAL_BATTERY_SOC "9744622b"
+#define STD_SID_PHYSICAL_ELECTRICAL_CURRENT "029cf91b"
+#define STD_SID_PHYSICAL_ELECTRICAL_ENERGY "81f1695e"
+#define STD_SID_PHYSICAL_ELECTRICAL_FREQUENCY "749128cc"
+#define STD_SID_PHYSICAL_ELECTRICAL_POWER "705c5b61"
+#define STD_SID_PHYSICAL_ELECTRICAL_VOLTAGE "a4d3f616"
+#define STD_SID_PHYSICAL_ENVIRONMENT_CO2 "991ae51b"
+#define STD_SID_PHYSICAL_ENVIRONMENT_HUMIDITY "94346493"
+#define STD_SID_PHYSICAL_ENVIRONMENT_ILLUMINANCE "f31fa92e"
+#define STD_SID_PHYSICAL_ENVIRONMENT_PM25 "bd0ff19a"
+#define STD_SID_PHYSICAL_ENVIRONMENT_PRESSURE "0d1c3212"
+#define STD_SID_PHYSICAL_ENVIRONMENT_TEMPERATURE "24d3556f"
+#define STD_SID_PHYSICAL_ENVIRONMENT_VOC "5ab774ed"
+#define STD_SID_PHYSICAL_GEO_ALTITUDE "d26a38e1"
+#define STD_SID_PHYSICAL_GEO_GEOPOINT "4214c166"
+#define STD_SID_PHYSICAL_GEO_HEADING "0abf6ccc"
+#define STD_SID_PHYSICAL_HEALTH_BODY_TEMP "1f1db238"
+#define STD_SID_PHYSICAL_HEALTH_HEART_RATE "7ec38c5b"
+#define STD_SID_PHYSICAL_HEALTH_SPO2 "1d94ea87"
+#define STD_SID_PHYSICAL_MECHANICAL_FLOW "67b72924"
+#define STD_SID_PHYSICAL_MECHANICAL_FORCE "d38e7705"
+#define STD_SID_PHYSICAL_MECHANICAL_PRESSURE_GAUGE "b0209dc2"
+#define STD_SID_PHYSICAL_MECHANICAL_TORQUE "8c138cb4"
+#define STD_SID_PHYSICAL_MOTION_ACCELERATION "c0154acf"
+#define STD_SID_PHYSICAL_MOTION_POSITION "99e3d569"
+#define STD_SID_PHYSICAL_MOTION_ROTATION "993c1f96"
+#define STD_SID_PHYSICAL_MOTION_VELOCITY "59be49ea"
+#define STD_SID_TEMPORAL_DURATION "fb2badbe"
+#define STD_SID_TEMPORAL_TIMESTAMP "f0af635e"
 
-/* Typed refs (default unit + preferred encoding) */
-#define STD_ACT_COMMAND_REF "std:act.command#-:enum"
-#define STD_ACT_POWER_REF "std:act.power#-:enum"
-#define STD_ACT_SETPOINT_REF "std:act.setpoint#-:f32"
-#define STD_ELEC_BATTERY_SOC_REF "std:elec.battery_soc#%:f32"
-#define STD_ELEC_CURRENT_REF "std:elec.current#A:f32"
-#define STD_ELEC_ENERGY_REF "std:elec.energy#Wh:f32"
-#define STD_ELEC_FREQUENCY_REF "std:elec.frequency#Hz:f32"
-#define STD_ELEC_POWER_REF "std:elec.power#W:f32"
-#define STD_ELEC_VOLTAGE_REF "std:elec.voltage#V:f32"
-#define STD_ENV_CO2_REF "std:env.co2#ppm:f32"
-#define STD_ENV_HUMIDITY_REF "std:env.humidity#%:f32"
-#define STD_ENV_ILLUMINANCE_REF "std:env.illuminance#lx:f32"
-#define STD_ENV_PM25_REF "std:env.pm25#ug/m3:f32"
-#define STD_ENV_PRESSURE_REF "std:env.pressure#hPa:f32"
-#define STD_ENV_TEMPERATURE_REF "std:env.temperature#Cel:f32"
-#define STD_ENV_VOC_REF "std:env.voc#ppm:f32"
-#define STD_GEO_ALTITUDE_REF "std:geo.altitude#m:f32"
-#define STD_GEO_GEOPOINT_REF "std:geo.geopoint#-:record"
-#define STD_GEO_HEADING_REF "std:geo.heading#deg:f32"
-#define STD_HEALTH_BODY_TEMP_REF "std:health.body_temp#Cel:f32"
-#define STD_HEALTH_HEART_RATE_REF "std:health.heart_rate#/min:u8"
-#define STD_HEALTH_SPO2_REF "std:health.spo2#%:u8"
-#define STD_ID_DEVICE_REF "std:id.device#-:utf8"
-#define STD_ID_MAC_REF "std:id.mac#-:utf8"
-#define STD_ID_SERIAL_REF "std:id.serial#-:utf8"
-#define STD_ID_UUID_REF "std:id.uuid#-:utf8"
-#define STD_LOGICAL_FLAG_REF "std:logical.flag#-:bool"
-#define STD_LOGICAL_LEVEL_REF "std:logical.level#%:u8"
-#define STD_LOGICAL_MODE_REF "std:logical.mode#-:enum"
-#define STD_MECH_FLOW_REF "std:mech.flow#L/min:f32"
-#define STD_MECH_FORCE_REF "std:mech.force#N:f32"
-#define STD_MECH_PRESSURE_GAUGE_REF "std:mech.pressure_gauge#Pa:f32"
-#define STD_MECH_TORQUE_REF "std:mech.torque#N.m:f32"
-#define STD_MEDIA_AUDIO_REF_REF "std:media.audio_ref#-:utf8"
-#define STD_MEDIA_IMAGE_REF_REF "std:media.image_ref#-:utf8"
-#define STD_MOTION_ACCELERATION_REF "std:motion.acceleration#m/s2:f32"
-#define STD_MOTION_POSITION_REF "std:motion.position#m:f32"
-#define STD_MOTION_ROTATION_REF "std:motion.rotation#deg:f32"
-#define STD_MOTION_VELOCITY_REF "std:motion.velocity#m/s:f32"
-#define STD_NET_RSSI_REF "std:net.rssi#dB:i16"
-#define STD_NET_UPTIME_REF "std:net.uptime#s:i32"
-#define STD_TIME_DURATION_REF "std:time.duration#s:f32"
-#define STD_TIME_TIMESTAMP_REF "std:time.timestamp#s:i32"
+/* Full hierarchical paths */
+#define STD_PATH_ACTUATION_COMMAND "actuation.command"
+#define STD_PATH_ACTUATION_POWER "actuation.power"
+#define STD_PATH_ACTUATION_SETPOINT "actuation.setpoint"
+#define STD_PATH_IDENTITY_DEVICE "identity.device"
+#define STD_PATH_IDENTITY_MAC "identity.mac"
+#define STD_PATH_IDENTITY_SERIAL "identity.serial"
+#define STD_PATH_IDENTITY_UUID "identity.uuid"
+#define STD_PATH_LOGICAL_FLAG "logical.flag"
+#define STD_PATH_LOGICAL_LEVEL "logical.level"
+#define STD_PATH_LOGICAL_MODE "logical.mode"
+#define STD_PATH_MEDIA_AUDIO_REF "media.audio_ref"
+#define STD_PATH_MEDIA_IMAGE_REF "media.image_ref"
+#define STD_PATH_NETWORK_RSSI "network.rssi"
+#define STD_PATH_NETWORK_UPTIME "network.uptime"
+#define STD_PATH_PHYSICAL_ELECTRICAL_BATTERY_SOC "physical.electrical.battery_soc"
+#define STD_PATH_PHYSICAL_ELECTRICAL_CURRENT "physical.electrical.current"
+#define STD_PATH_PHYSICAL_ELECTRICAL_ENERGY "physical.electrical.energy"
+#define STD_PATH_PHYSICAL_ELECTRICAL_FREQUENCY "physical.electrical.frequency"
+#define STD_PATH_PHYSICAL_ELECTRICAL_POWER "physical.electrical.power"
+#define STD_PATH_PHYSICAL_ELECTRICAL_VOLTAGE "physical.electrical.voltage"
+#define STD_PATH_PHYSICAL_ENVIRONMENT_CO2 "physical.environment.co2"
+#define STD_PATH_PHYSICAL_ENVIRONMENT_HUMIDITY "physical.environment.humidity"
+#define STD_PATH_PHYSICAL_ENVIRONMENT_ILLUMINANCE "physical.environment.illuminance"
+#define STD_PATH_PHYSICAL_ENVIRONMENT_PM25 "physical.environment.pm25"
+#define STD_PATH_PHYSICAL_ENVIRONMENT_PRESSURE "physical.environment.pressure"
+#define STD_PATH_PHYSICAL_ENVIRONMENT_TEMPERATURE "physical.environment.temperature"
+#define STD_PATH_PHYSICAL_ENVIRONMENT_VOC "physical.environment.voc"
+#define STD_PATH_PHYSICAL_GEO_ALTITUDE "physical.geo.altitude"
+#define STD_PATH_PHYSICAL_GEO_GEOPOINT "physical.geo.geopoint"
+#define STD_PATH_PHYSICAL_GEO_HEADING "physical.geo.heading"
+#define STD_PATH_PHYSICAL_HEALTH_BODY_TEMP "physical.health.body_temp"
+#define STD_PATH_PHYSICAL_HEALTH_HEART_RATE "physical.health.heart_rate"
+#define STD_PATH_PHYSICAL_HEALTH_SPO2 "physical.health.spo2"
+#define STD_PATH_PHYSICAL_MECHANICAL_FLOW "physical.mechanical.flow"
+#define STD_PATH_PHYSICAL_MECHANICAL_FORCE "physical.mechanical.force"
+#define STD_PATH_PHYSICAL_MECHANICAL_PRESSURE_GAUGE "physical.mechanical.pressure_gauge"
+#define STD_PATH_PHYSICAL_MECHANICAL_TORQUE "physical.mechanical.torque"
+#define STD_PATH_PHYSICAL_MOTION_ACCELERATION "physical.motion.acceleration"
+#define STD_PATH_PHYSICAL_MOTION_POSITION "physical.motion.position"
+#define STD_PATH_PHYSICAL_MOTION_ROTATION "physical.motion.rotation"
+#define STD_PATH_PHYSICAL_MOTION_VELOCITY "physical.motion.velocity"
+#define STD_PATH_TEMPORAL_DURATION "temporal.duration"
+#define STD_PATH_TEMPORAL_TIMESTAMP "temporal.timestamp"
 
 /* Profile identifiers */
 #define STD_PROFILE_ACTUATOR "actuator"
@@ -104,57 +104,58 @@
 #define STD_PROFILE_THERMOMETER "thermometer"
 
 typedef struct standart_type_info {
-  const char *id;
+  const char *sid;
+  const char *path;
   const char *kind;
-  const char *domain;
-  const char *default_unit;
+  const char *unit;
+  const char *fingerprint;
   const char *status;
 } standart_type_info_t;
 
 static const standart_type_info_t STANDART_TYPES[] = {
-  { "std:act.command", "command", "act", "-", "stable" },
-  { "std:act.power", "enum", "act", "-", "stable" },
-  { "std:act.setpoint", "quantity", "act", "-", "stable" },
-  { "std:elec.battery_soc", "quantity", "elec", "%", "stable" },
-  { "std:elec.current", "quantity", "elec", "A", "stable" },
-  { "std:elec.energy", "quantity", "elec", "Wh", "stable" },
-  { "std:elec.frequency", "quantity", "elec", "Hz", "stable" },
-  { "std:elec.power", "quantity", "elec", "W", "stable" },
-  { "std:elec.voltage", "quantity", "elec", "V", "stable" },
-  { "std:env.co2", "quantity", "env", "ppm", "stable" },
-  { "std:env.humidity", "quantity", "env", "%", "stable" },
-  { "std:env.illuminance", "quantity", "env", "lx", "stable" },
-  { "std:env.pm25", "quantity", "env", "ug/m3", "stable" },
-  { "std:env.pressure", "quantity", "env", "hPa", "stable" },
-  { "std:env.temperature", "quantity", "env", "Cel", "stable" },
-  { "std:env.voc", "quantity", "env", "ppm", "stable" },
-  { "std:geo.altitude", "quantity", "geo", "m", "stable" },
-  { "std:geo.geopoint", "spatial", "geo", "-", "stable" },
-  { "std:geo.heading", "quantity", "geo", "deg", "stable" },
-  { "std:health.body_temp", "quantity", "health", "Cel", "stable" },
-  { "std:health.heart_rate", "quantity", "health", "/min", "stable" },
-  { "std:health.spo2", "quantity", "health", "%", "stable" },
-  { "std:id.device", "identity", "id", "-", "stable" },
-  { "std:id.mac", "identity", "id", "-", "stable" },
-  { "std:id.serial", "identity", "id", "-", "stable" },
-  { "std:id.uuid", "identity", "id", "-", "stable" },
-  { "std:logical.flag", "logical", "logical", "-", "stable" },
-  { "std:logical.level", "quantity", "logical", "%", "stable" },
-  { "std:logical.mode", "enum", "logical", "-", "stable" },
-  { "std:mech.flow", "quantity", "mech", "L/min", "stable" },
-  { "std:mech.force", "quantity", "mech", "N", "stable" },
-  { "std:mech.pressure_gauge", "quantity", "mech", "Pa", "stable" },
-  { "std:mech.torque", "quantity", "mech", "N.m", "stable" },
-  { "std:media.audio_ref", "media", "media", "-", "stable" },
-  { "std:media.image_ref", "media", "media", "-", "stable" },
-  { "std:motion.acceleration", "quantity", "motion", "m/s2", "stable" },
-  { "std:motion.position", "quantity", "motion", "m", "stable" },
-  { "std:motion.rotation", "quantity", "motion", "deg", "stable" },
-  { "std:motion.velocity", "quantity", "motion", "m/s", "stable" },
-  { "std:net.rssi", "quantity", "net", "dB", "stable" },
-  { "std:net.uptime", "quantity", "net", "s", "stable" },
-  { "std:time.duration", "temporal", "time", "s", "stable" },
-  { "std:time.timestamp", "temporal", "time", "s", "stable" },
+  { "069b2a4c", "actuation.command", "command", "-", "sha256:069b2a4c6275db20831f2ccbd10895b91d46f2eb067e07312f30a27962c69468", "stable" },
+  { "84ca530f", "actuation.power", "enum", "-", "sha256:84ca530f4603358344946ae8ea50e5da13a00a17cb26578c612435386e050904", "stable" },
+  { "faa74c01", "actuation.setpoint", "quantity", "-", "sha256:faa74c0149bddf016e09217531f24a1365062b383e71a259e562e81cf34d9c49", "stable" },
+  { "3d53bc7d", "identity.device", "identity", "-", "sha256:3d53bc7da637a0cf8389d4ee5fc7c47b8c4e0455ab6068e828d9489f8fef20df", "stable" },
+  { "be792b1c", "identity.mac", "identity", "-", "sha256:be792b1c857d3ae84fccb1464bc3abb7eba1103991cccaf1bd4c05bcb27208e3", "stable" },
+  { "e867039a", "identity.serial", "identity", "-", "sha256:e867039afbd3ff6c019b19adc4cb6f6b4addd36e54bc9b0d5d32a9d75573e869", "stable" },
+  { "392bf836", "identity.uuid", "identity", "-", "sha256:392bf836d277e0d3de622bff67fb892b6bbc7b883b597ec502cefff20c234fad", "stable" },
+  { "8ff90c08", "logical.flag", "logical", "-", "sha256:8ff90c0827885a1ff25c834173367647539d550e5c736d25ce278aaa7863e12c", "stable" },
+  { "653381be", "logical.level", "quantity", "%", "sha256:653381beaefc1f3f67c41f98a859261be291e0696a50fb79dc2b0332d865f8a8", "stable" },
+  { "e34550dd", "logical.mode", "enum", "-", "sha256:e34550dd3b50b0aafbe928e30dab7db5598b069817d1bca599d113888f6243ca", "stable" },
+  { "1f09fed4", "media.audio_ref", "media", "-", "sha256:1f09fed46dede8efb64c55594a7c1fa085f24a8599fae30b1ddf30acd73960e0", "stable" },
+  { "df404cc2", "media.image_ref", "media", "-", "sha256:df404cc21caa34244933fd1918d4c14bafb81ef6989588145bf9989795d9e681", "stable" },
+  { "6f419740", "network.rssi", "quantity", "dB", "sha256:6f41974074fcc77e8f964f9f9959b08859adafbfc5ab74c0d78cc14d33cacc5f", "stable" },
+  { "8d5c8d19", "network.uptime", "quantity", "s", "sha256:8d5c8d19e67f63ef729bb34f994f82fce0ce41e3656858ea2392e2585f3bd8c1", "stable" },
+  { "9744622b", "physical.electrical.battery_soc", "quantity", "%", "sha256:9744622b0c2efee235af3293ffaa73ac4d5237a8311874de01e296e7a663d159", "stable" },
+  { "029cf91b", "physical.electrical.current", "quantity", "A", "sha256:029cf91baaabee1d8bc7b9acd33a42f9cc5295807d9b3c690ab6cf781071f0e0", "stable" },
+  { "81f1695e", "physical.electrical.energy", "quantity", "Wh", "sha256:81f1695e4ef2ee330c7311142086c76b6bcd5235df6847b31e0861c75d15b0c0", "stable" },
+  { "749128cc", "physical.electrical.frequency", "quantity", "Hz", "sha256:749128cce644cb8ca4b4158dcc808eff26f8bbe2935ce0ccfb6edc20d56b5cfa", "stable" },
+  { "705c5b61", "physical.electrical.power", "quantity", "W", "sha256:705c5b61c9e9324bad2e1b4bc87468d78c27c06e1064bd581442b1b8a88214eb", "stable" },
+  { "a4d3f616", "physical.electrical.voltage", "quantity", "V", "sha256:a4d3f6163d84dd452f5bb296f29d0a8dff86b1163df0698f2ca7b832c406f66e", "stable" },
+  { "991ae51b", "physical.environment.co2", "quantity", "ppm", "sha256:991ae51b291ca5d56a1c62780fee0236f008b61b22370f55f4708b87eb3f10b6", "stable" },
+  { "94346493", "physical.environment.humidity", "quantity", "%", "sha256:94346493b0fc7179cd3e271c7929060b44bbd77909a318421630cbdff9b7726a", "stable" },
+  { "f31fa92e", "physical.environment.illuminance", "quantity", "lx", "sha256:f31fa92e6cb910a36239a4df604d3f9aa5a30107c1fb15e86a6941da1e0c3a59", "stable" },
+  { "bd0ff19a", "physical.environment.pm25", "quantity", "ug/m3", "sha256:bd0ff19ac3c63ffb0714a4e39b45e1d6fbe418511d66940eafc6fc6899615e1a", "stable" },
+  { "0d1c3212", "physical.environment.pressure", "quantity", "hPa", "sha256:0d1c321207ab6d661db5cf54a835194f57458879a35a0dea4cab5ec6d50e998f", "stable" },
+  { "24d3556f", "physical.environment.temperature", "quantity", "Cel", "sha256:24d3556f189c9bbda772f6261516de963e623c12b6188e63d33ab3a8602e0b07", "stable" },
+  { "5ab774ed", "physical.environment.voc", "quantity", "ppm", "sha256:5ab774ed1d798411de2477c4fa23212914fcd8ef8b1266f3c5f69a48ff447902", "stable" },
+  { "d26a38e1", "physical.geo.altitude", "quantity", "m", "sha256:d26a38e16b627173ae6920296c129a2fc84fe96930856901bded4747e692388d", "stable" },
+  { "4214c166", "physical.geo.geopoint", "spatial", "-", "sha256:4214c1662e92cd0aa9a42860d5309baf8e9e0741cc574514c4a083c72278580e", "stable" },
+  { "0abf6ccc", "physical.geo.heading", "quantity", "deg", "sha256:0abf6ccc5e1b02c2713212636397c9c441635817a929d22a63ab397e51dbcc8a", "stable" },
+  { "1f1db238", "physical.health.body_temp", "quantity", "Cel", "sha256:1f1db2383382fe3f24c4ba8c1b9cf32bec2d360d2ae0cdf70ba528132d6871c2", "stable" },
+  { "7ec38c5b", "physical.health.heart_rate", "quantity", "/min", "sha256:7ec38c5bd1e210dc811b969b1fc44d78eeeb4332799589d7584c5821a7245892", "stable" },
+  { "1d94ea87", "physical.health.spo2", "quantity", "%", "sha256:1d94ea8784369f1fcc5d4f4a7d3bd173f145e0fd544db5962a7434cc07772b21", "stable" },
+  { "67b72924", "physical.mechanical.flow", "quantity", "L/min", "sha256:67b72924e7db7a4407062135341550b670d7f9db9927e08acd95c1e367ab53e9", "stable" },
+  { "d38e7705", "physical.mechanical.force", "quantity", "N", "sha256:d38e7705f19ae4381e4ac485fb5f0cd12dcdec120300b19ab2e9820f9f1e6c5c", "stable" },
+  { "b0209dc2", "physical.mechanical.pressure_gauge", "quantity", "Pa", "sha256:b0209dc2c9184836f41626063ea44b433902e40d799ca84c97e4a73f275cead1", "stable" },
+  { "8c138cb4", "physical.mechanical.torque", "quantity", "N.m", "sha256:8c138cb42a5edc7e8104f47d37a0ecefba487e51d254bc2c143f4669f46768f0", "stable" },
+  { "c0154acf", "physical.motion.acceleration", "quantity", "m/s2", "sha256:c0154acf370a04a4fd690a526380759018e61677f83513ec9a61f6bd163f991f", "stable" },
+  { "99e3d569", "physical.motion.position", "quantity", "m", "sha256:99e3d5695e4ba1b52bb4b202836f36fb8826d728a83ece15d531cb93203988e8", "stable" },
+  { "993c1f96", "physical.motion.rotation", "quantity", "deg", "sha256:993c1f9667a98ed2d444a34c3e64a5237139aff207232b3bf1da176f139cdd85", "stable" },
+  { "59be49ea", "physical.motion.velocity", "quantity", "m/s", "sha256:59be49ea71339153700e970b26b62c1b17f55bd027ca9b830da7a6cf6e9cc42f", "stable" },
+  { "fb2badbe", "temporal.duration", "temporal", "s", "sha256:fb2badbef8d8563b8528261739ef62f81b148013c95fdd8599bb7a94b35152c1", "stable" },
+  { "f0af635e", "temporal.timestamp", "temporal", "s", "sha256:f0af635e43278f4549e7d8b7d378b3ef92d21cd8f1547db606844151e9a5a41b", "stable" },
 };
 
 #endif /* STANDART_H */

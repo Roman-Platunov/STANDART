@@ -1,0 +1,20 @@
+sid: faa74c01
+path: actuation.setpoint
+aliases:
+  legacy: std:act.setpoint
+  short: actuation.setpoint
+kind: quantity
+unit: "-"
+encodings:
+  - f32
+  - f64
+  - i32
+sensitivity: public
+status: stable
+title:
+  ru: Уставка
+  en: Setpoint
+description:
+  ru: Целевое значение для регулятора; единица уточняется приложением или профилем.
+  en: Target value for a controller; unit is application- or profile-specific.
+fingerprint: sha256:faa74c0149bddf016e09217531f24a1365062b383e71a259e562e81cf34d9c49

@@ -2,41 +2,28 @@
 
 ## Goals
 
-- Keep type identifiers **stable** and globally useful.
-- Stay transport-agnostic so any device maker can adopt the registry.
-- Version the registry with clear semver semantics.
+- Stable **sid** and **path** for AI ↔ device identification
+- Growing library **without duplicates** (fingerprint + review)
+- Transport-agnostic classifier
 
-## Identifier stability
+## Stability
 
-1. A `stable` type id never changes meaning.
-2. Deprecated ids remain in the registry with `status: deprecated` and are never reused.
-3. New incompatible semantics require a new type id.
-4. Draft types may evolve until promoted to `stable`.
+1. `stable` path meaning never changes.
+2. Deprecated `sid` values remain reserved forever.
+3. New incompatible meaning ⇒ new card + new sid.
+4. Soft similarity warnings require maintainer judgment before merge when ambiguous.
 
-## Semver for the registry
-
-Tracked in `registry/version.yaml`:
+## Semver (`registry/version.yaml`)
 
 | Bump | When |
 |------|------|
-| MAJOR | Removal of a stable type without prior deprecation, or incompatible meaning change (should not happen) |
-| MINOR | New types, domains, units, profiles; draft promotions |
-| PATCH | Documentation / title / description fixes that do not change machine semantics |
-
-## Roles
-
-- **Maintainers** — merge PRs, release registry versions, resolve disputes.
-- **Contributors** — propose types, profiles, tooling, and documentation.
-
-## Decision process
-
-1. Technical changes via pull request with validation green (`npm run build`).
-2. Contested type semantics: discussion in the PR; maintainers decide.
-3. Spec and registry should stay consistent; codegen artifacts are regenerated, not hand-edited.
+| MAJOR | Removal of stable sid without deprecation (should not happen) |
+| MINOR | New parameters, thesaurus, profiles |
+| PATCH | Titles/descriptions that do not change fingerprint material |
 
 ## Releases
 
-1. Update `registry/version.yaml`.
-2. Run `npm run build`.
-3. Tag `vX.Y.Z` matching the registry version.
-4. Note breaking deprecations in the release notes.
+1. Bump `registry/version.yaml`
+2. `npm run build`
+3. Commit generated `manifest.json` and SDK
+4. Tag `vX.Y.Z`

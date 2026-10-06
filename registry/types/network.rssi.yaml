@@ -1,0 +1,23 @@
+sid: 6f419740
+path: network.rssi
+aliases:
+  legacy: std:net.rssi
+  short: network.rssi
+kind: quantity
+unit: dB
+encodings:
+  - i16
+  - f32
+sensitivity: public
+status: stable
+title:
+  ru: RSSI
+  en: RSSI
+description:
+  ru: Уровень принимаемого сигнала.
+  en: Received signal strength indicator.
+range:
+  min: -200
+  max: 0
+  unit: dB
+fingerprint: sha256:6f41974074fcc77e8f964f9f9959b08859adafbfc5ab74c0d78cc14d33cacc5f

@@ -1,0 +1,23 @@
+sid: 1d94ea87
+path: physical.health.spo2
+aliases:
+  legacy: std:health.spo2
+  short: health.spo2
+kind: quantity
+unit: "%"
+encodings:
+  - u8
+  - f32
+sensitivity: personal
+status: stable
+title:
+  ru: SpO2
+  en: SpO2
+description:
+  ru: Насыщение крови кислородом (потребительский тип).
+  en: Blood oxygen saturation (consumer type).
+range:
+  min: 0
+  max: 100
+  unit: "%"
+fingerprint: sha256:1d94ea8784369f1fcc5d4f4a7d3bd173f145e0fd544db5962a7434cc07772b21

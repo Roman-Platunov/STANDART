@@ -1,58 +1,34 @@
 # Identifiers
 
-## Canonical type id
+## path
 
 ```
-std:<domain>.<type>
+segment.segment.segment…
 ```
 
-Rules:
+- Lowercase Latin, digits, `_`
+- Depth ≥ 2
+- Immutable once `stable`
 
-- Prefix is always `std:`.
-- `<domain>` and `<type>` use lowercase Latin letters, digits, and `_`.
-- An identifier is **stable**: its meaning does not change; incompatible change requires a new id and deprecation of the old one.
-- An id is **never reused** after removal or deprecation.
+## sid
 
-Examples:
+- 8 hex chars, usually first 8 of the fingerprint digest
+- On collision — another slice of the hash
+- Never reused after `deprecated`
+- Primary field on the wire
 
-- `std:env.temperature`
-- `std:elec.voltage`
-- `std:id.device`
-
-## Typed representation reference
+## fingerprint
 
 ```
-std:<domain>.<type>#<unit>:<encoding>
+sha256_hex( kind + "|" + unit + "|" + normalize(path) )
 ```
 
-- `<unit>` is a UCUM code; `-` if a unit does not apply.
-- `<encoding>` is one of the encodings allowed by the type card.
+Stored as `sha256:<hex>`. Two cards with the same fingerprint are duplicates; the validator rejects them.
 
-Examples:
+## manifest
 
-- `std:env.temperature#Cel:f32`
-- `std:elec.voltage#V:f32`
-- `std:id.device#-:utf8`
-- `std:act.power#-:enum`
+`registry/manifest.json` lists all `sid/path/fingerprint` and `registry_checksum` for cache integrity.
 
-## Device identifier
+## legacy
 
-Recommended form:
-
-```
-urn:std:id:dev:<opaque>
-```
-
-where `<opaque>` is a vendor-unique string (ULID, UUID without hyphens, etc.).
-
-A payload may also carry a `std:id.device` value.
-
-## Registry versioning
-
-The registry uses semver:
-
-- **MAJOR** — incompatible removal or meaning change of existing stable ids (forbidden without a deprecation path).
-- **MINOR** — new types, domains, profiles; draft refinements.
-- **PATCH** — description / typo fixes that do not change machine semantics.
-
-Current registry version: **0.1.0** (`registry/version.yaml`).
+`aliases.legacy` (e.g. `std:env.temperature`) is for migration from v0.1 only.

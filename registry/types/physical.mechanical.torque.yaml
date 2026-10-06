@@ -1,0 +1,23 @@
+sid: 8c138cb4
+path: physical.mechanical.torque
+aliases:
+  legacy: std:mech.torque
+  short: mechanical.torque
+kind: quantity
+unit: N.m
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Крутящий момент
+  en: Torque
+description:
+  ru: Крутящий момент.
+  en: Mechanical torque.
+range:
+  min: -1000000000
+  max: 1000000000
+  unit: N.m
+fingerprint: sha256:8c138cb42a5edc7e8104f47d37a0ecefba487e51d254bc2c143f4669f46768f0

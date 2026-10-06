@@ -1,23 +1,43 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://standart.dev/schema/type.schema.json",
-  "title": "STANDART type card",
+  "title": "STANDART type card v0.2",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "id",
+    "sid",
+    "path",
     "kind",
-    "domain",
-    "defaultUnit",
+    "unit",
     "encodings",
     "sensitivity",
     "status",
-    "title"
+    "title",
+    "fingerprint"
   ],
   "properties": {
-    "id": {
+    "sid": {
       "type": "string",
-      "pattern": "^std:[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$"
+      "pattern": "^[0-9a-f]{8}$"
+    },
+    "path": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)+$"
+    },
+    "aliases": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ru": { "type": "string", "minLength": 1 },
+        "short": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$"
+        },
+        "legacy": {
+          "type": "string",
+          "pattern": "^std:[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$"
+        }
+      }
     },
     "kind": {
       "type": "string",
@@ -34,11 +54,7 @@
         "command"
       ]
     },
-    "domain": {
-      "type": "string",
-      "pattern": "^[a-z][a-z0-9_]*$"
-    },
-    "defaultUnit": {
+    "unit": {
       "type": "string",
       "minLength": 1
     },
@@ -65,7 +81,7 @@
     "range": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["min", "max", "unit"],
+      "required": ["min", "max"],
       "properties": {
         "min": { "type": "number" },
         "max": { "type": "number" },
@@ -87,7 +103,11 @@
       "enum": ["stable", "draft", "deprecated"]
     },
     "title": { "$ref": "#/$defs/localized" },
-    "description": { "$ref": "#/$defs/localized" }
+    "description": { "$ref": "#/$defs/localized" },
+    "fingerprint": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    }
   },
   "$defs": {
     "localized": {

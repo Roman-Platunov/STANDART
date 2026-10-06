@@ -1,58 +1,34 @@
 # Идентификаторы
 
-## Канонический type id
+## path
 
 ```
-std:<domain>.<type>
+segment.segment.segment…
 ```
 
-Правила:
+- Латиница lowercase, цифры, `_`
+- Глубина ≥ 2
+- Стабилен после `stable`: смысл не меняют
 
-- Префикс всегда `std:`.
-- `<domain>` и `<type>` — латиница в нижнем регистре, цифры и `_`.
-- Идентификатор **стабилен**: смысл не меняется; при несовместимом изменении заводится новый id, старый помечается `deprecated`.
-- Id **не переиспользуется** после удаления или deprecation.
+## sid
 
-Примеры:
+- 8 hex-символов, обычно первые 8 от fingerprint
+- При коллизии — другой срез хеша
+- Не переиспользуется после `deprecated`
+- Основное поле в обмене
 
-- `std:env.temperature`
-- `std:elec.voltage`
-- `std:id.device`
-
-## Ссылка на представление (typed ref)
+## fingerprint
 
 ```
-std:<domain>.<type>#<unit>:<encoding>
+sha256_hex( kind + "|" + unit + "|" + normalize(path) )
 ```
 
-- `<unit>` — UCUM-код; `-` если единица не применима.
-- `<encoding>` — один из допустимых encoding карточки.
+Хранится как `sha256:<hex>`. Два параметра с одним fingerprint — дубли; валидатор отклоняет.
 
-Примеры:
+## manifest
 
-- `std:env.temperature#Cel:f32`
-- `std:elec.voltage#V:f32`
-- `std:id.device#-:utf8`
-- `std:act.power#-:enum`
+`registry/manifest.json` содержит все `sid/path/fingerprint` и `registry_checksum` — целостность копии библиотеки.
 
-## Идентификатор устройства
+## legacy
 
-Рекомендуемый формат:
-
-```
-urn:std:id:dev:<opaque>
-```
-
-где `<opaque>` — уникальная строка производителя (ULID, UUID без дефисов и т.п.).
-
-Полезная нагрузка может также нести значение типа `std:id.device`.
-
-## Версионирование реестра
-
-Реестр использует semver:
-
-- **MAJOR** — несовместимое удаление или изменение смысла существующих stable id (запрещено без deprecation path).
-- **MINOR** — новые типы, домены, профили; уточнение draft.
-- **PATCH** — исправления описаний, опечаток, не ломающие машинную семантику.
-
-Текущая версия реестра: **0.1.0** (файл `registry/version.yaml`).
+Алиас `aliases.legacy` (например `std:env.temperature`) — только миграция с v0.1.
