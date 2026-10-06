@@ -1,0 +1,268 @@
+{
+  "layer": "B2",
+  "name": "layer-b-robotics.json",
+  "types": [
+    {
+      "path": "robotics.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Robot battery SoC",
+      "titleRu": "Заряд батареи робота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "robotics.battery.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Robot battery voltage",
+      "titleRu": "Напряжение батареи робота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.pose.x",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Robot pose X",
+      "titleRu": "Поза робота X",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.pose.y",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Robot pose Y",
+      "titleRu": "Поза робота Y",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.pose.z",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Robot pose Z",
+      "titleRu": "Поза робота Z",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.pose.yaw",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Robot pose yaw",
+      "titleRu": "Курс робота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.velocity.linear",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Linear velocity robot",
+      "titleRu": "Линейная скорость робота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.velocity.angular",
+      "kind": "quantity",
+      "unit": "deg/s",
+      "titleEn": "Angular velocity robot",
+      "titleRu": "Угловая скорость робота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.lidar.range_min",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Lidar min range",
+      "titleRu": "Мин. дальность лидара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.lidar.range_max",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Lidar max range",
+      "titleRu": "Макс. дальность лидара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.obstacle.distance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Obstacle distance",
+      "titleRu": "Дистанция до препятствия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robotics.obstacle.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Obstacle detected",
+      "titleRu": "Препятствие обнаружено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "robotics.nav.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Navigation state",
+      "titleRu": "Состояние навигации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "mapping",
+        "localizing",
+        "navigating",
+        "docking",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "robotics.task.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Task state",
+      "titleRu": "Состояние задачи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "assigned",
+        "running",
+        "paused",
+        "done",
+        "failed"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "robotics.robot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Robot id",
+      "titleRu": "ID робота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "robotics.mission.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mission id",
+      "titleRu": "ID миссии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "robotics.map.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Map id",
+      "titleRu": "ID карты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "robotics.mission",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Mission command",
+      "titleRu": "Команда миссии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "pause",
+        "resume",
+        "abort",
+        "dock"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "robotics.camera.stream_ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Robot camera stream",
+      "titleRu": "Поток камеры робота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

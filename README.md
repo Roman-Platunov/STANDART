@@ -12,9 +12,9 @@ A device does not describe itself in prose — it sends a **short code (`sid`)**
 | Short sid | `24d3556f` |
 | Fingerprint | `sha256:24d3556f…` (anti-duplicate) |
 
-Registry version: **0.3.0** · **444** parameters · Repo is private until you choose otherwise.
+Registry version: **0.4.0** · **633** parameters · regenerate via `npm run expand` · Repo is private until you choose otherwise.
 
-**Layers:** A — universal IoT/physics/building/network core · B — vehicle, industrial, health, agriculture, energy, smarthome (`registry/seeds/`, regenerate with `npm run expand`).
+**Layers:** A — universal core · B — vehicle, industrial, health, agriculture, energy, smarthome · B2 — aviation, maritime, logistics, telecom, oilgas, retail, rail, robotics, safety, finance (`registry/seeds/`).
 
 | Artifact | Location | License |
 |----------|----------|---------|

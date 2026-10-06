@@ -1,0 +1,223 @@
+{
+  "layer": "B2",
+  "name": "layer-b-retail.json",
+  "types": [
+    {
+      "path": "retail.store.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Store id",
+      "titleRu": "ID магазина",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retail.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SKU id retail",
+      "titleRu": "SKU (ритейл)",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retail.pos.terminal_id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "POS terminal id",
+      "titleRu": "ID кассы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retail.transaction.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transaction id",
+      "titleRu": "ID транзакции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retail.inventory.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Inventory count",
+      "titleRu": "Остаток на складе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail.inventory.reserved",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reserved count",
+      "titleRu": "Резерв",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail.price.amount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Price amount",
+      "titleRu": "Цена",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail.price.currency",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Currency code",
+      "titleRu": "Код валюты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retail.sales.quantity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sales quantity",
+      "titleRu": "Количество продаж",
+      "encodings": [
+        "i32",
+        "f32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail.sales.amount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sales amount",
+      "titleRu": "Сумма продаж",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail.footfall.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Footfall count",
+      "titleRu": "Посещаемость",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail.queue.length",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Queue length",
+      "titleRu": "Длина очереди",
+      "encodings": [
+        "u8",
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail.shelf.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Shelf temperature",
+      "titleRu": "Температура витрины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail.shelf.stockout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stockout",
+      "titleRu": "Out of stock / нет товара",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "retail.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Retail door open",
+      "titleRu": "Дверь магазина открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "retail.payment.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Payment method",
+      "titleRu": "Способ оплаты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cash",
+        "card",
+        "qr",
+        "nfc",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "retail.transaction.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Transaction status",
+      "titleRu": "Статус транзакции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "started",
+        "authorized",
+        "captured",
+        "void",
+        "refund",
+        "failed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+sid: 094f09a3
+path: retail.transaction.status
+aliases:
+  short: transaction.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус транзакции
+  en: Transaction status
+fingerprint: sha256:094f09a3d2820c9d46179af588cb4c9dc992f78e5681b147594a35b9a57a5ea6
+enumValues:
+  - started
+  - authorized
+  - captured
+  - void
+  - refund
+  - failed

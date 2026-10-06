@@ -1,0 +1,22 @@
+sid: 6172ced5
+path: robotics.nav.state
+aliases:
+  short: nav.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние навигации
+  en: Navigation state
+fingerprint: sha256:6172ced5e705ff3214c13c444e8b4214ce104adeff35b9a5e8378641a621c19c
+enumValues:
+  - idle
+  - mapping
+  - localizing
+  - navigating
+  - docking
+  - fault

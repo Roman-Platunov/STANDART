@@ -1,0 +1,408 @@
+{
+  "layer": "B2",
+  "name": "layer-b-aviation.json",
+  "types": [
+    {
+      "path": "aviation.airspeed.ias",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Indicated airspeed",
+      "titleRu": "Приборная скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.airspeed.tas",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "True airspeed",
+      "titleRu": "Истинная воздушная скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.airspeed.gs",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Ground speed aviation",
+      "titleRu": "Путевая скорость (Авиа)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.altitude.baro",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Barometric altitude aviation",
+      "titleRu": "Барометрическая высота (Авиа)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.altitude.radio",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Radio altitude",
+      "titleRu": "Радиовысота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.altitude.gps",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "GPS altitude aviation",
+      "titleRu": "GPS-высота (Авиа)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.attitude.roll",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Aircraft roll",
+      "titleRu": "Крен ВС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -180,
+        "max": 180
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aviation.attitude.pitch",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Aircraft pitch",
+      "titleRu": "Тангаж ВС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -90,
+        "max": 90
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aviation.attitude.yaw",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Aircraft yaw",
+      "titleRu": "Рыскание ВС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.heading.magnetic",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Magnetic heading aviation",
+      "titleRu": "Магнитный курс (Авиа)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aviation.heading.true",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "True heading",
+      "titleRu": "Истинный курс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aviation.vertical_speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Vertical speed",
+      "titleRu": "Вертикальная скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.mach",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Mach number",
+      "titleRu": "Число Маха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.aoa",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Angle of attack",
+      "titleRu": "Угол атаки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.fuel.quantity",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Fuel quantity",
+      "titleRu": "Количество топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.fuel.flow",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Fuel flow aviation",
+      "titleRu": "Расход топлива (Авиа)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.engine.n1",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Engine N1",
+      "titleRu": "Обороты N1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 120
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aviation.engine.n2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Engine N2",
+      "titleRu": "Обороты N2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 120
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aviation.engine.egt",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Exhaust gas temperature",
+      "titleRu": "Температура выхлопа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.engine.oil_pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Engine oil pressure aviation",
+      "titleRu": "Давление масла (Авиа)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.cabin.pressure",
+      "kind": "quantity",
+      "unit": "hPa",
+      "titleEn": "Cabin pressure",
+      "titleRu": "Давление в кабине",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.cabin.altitude",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Cabin altitude",
+      "titleRu": "Высота кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aviation.gear.down",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Landing gear down",
+      "titleRu": "Шасси выпущено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aviation.flaps.extended",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flaps extended",
+      "titleRu": "Закрылки выпущены",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aviation.flight_phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Flight phase",
+      "titleRu": "Фаза полёта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "parked",
+        "taxi",
+        "takeoff",
+        "climb",
+        "cruise",
+        "descent",
+        "approach",
+        "landing"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aviation.tail_number",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aircraft tail number",
+      "titleRu": "Бортовой номер",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aviation.flight_number",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight number",
+      "titleRu": "Номер рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aviation.icao24",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ICAO 24-bit address",
+      "titleRu": "ICAO 24-bit",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aviation.squawk",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Squawk code",
+      "titleRu": "Код ответчика",
+      "encodings": [
+        "i16",
+        "utf8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    }
+  ]
+}

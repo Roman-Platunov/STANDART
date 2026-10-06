@@ -1,0 +1,18 @@
+sid: 486fe0b7
+path: robotics.battery.soc
+aliases:
+  short: battery.soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заряд батареи робота
+  en: Robot battery SoC
+fingerprint: sha256:486fe0b72e6d0c97def9ddba263a5af3ab090c2d7b08abb3a438e2637c3232da
+range:
+  min: 0
+  max: 100

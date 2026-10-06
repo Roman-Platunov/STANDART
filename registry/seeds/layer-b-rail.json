@@ -1,0 +1,215 @@
+{
+  "layer": "B2",
+  "name": "layer-b-rail.json",
+  "types": [
+    {
+      "path": "rail.train.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Train speed",
+      "titleRu": "Скорость поезда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail.train.acceleration",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Train acceleration",
+      "titleRu": "Ускорение поезда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail.wheel.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wheel temperature",
+      "titleRu": "Температура колеса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail.bearing.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bearing temperature",
+      "titleRu": "Температура буксы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail.pantograph.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Pantograph force",
+      "titleRu": "Усилие токоприёмника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail.catenary.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Catenary voltage",
+      "titleRu": "Напряжение КС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail.brake.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Brake pipe pressure",
+      "titleRu": "Давление ТМ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail.cabin.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Rail cabin temperature",
+      "titleRu": "Температура вагона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail.door.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rail door closed",
+      "titleRu": "Двери вагона закрыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail.tcs.emergency_brake",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency brake",
+      "titleRu": "Экстренное торможение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail.train.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Train mode",
+      "titleRu": "Режим поезда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "parked",
+        "shunting",
+        "service",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Train id",
+      "titleRu": "ID поезда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail.wagon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wagon id",
+      "titleRu": "ID вагона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Line id",
+      "titleRu": "ID линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail.signal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Signal id",
+      "titleRu": "ID светофора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail.signal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Signal state",
+      "titleRu": "Состояние светофора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "red",
+        "yellow",
+        "green",
+        "flashing",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

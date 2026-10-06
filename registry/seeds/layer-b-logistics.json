@@ -1,0 +1,271 @@
+{
+  "layer": "B2",
+  "name": "layer-b-logistics.json",
+  "types": [
+    {
+      "path": "logistics.shipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shipment id",
+      "titleRu": "ID отправления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "logistics.parcel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Parcel id",
+      "titleRu": "ID посылки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "logistics.container.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Container id",
+      "titleRu": "ID контейнера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "logistics.pallet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pallet id",
+      "titleRu": "ID палеты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "logistics.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Order id",
+      "titleRu": "ID заказа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "logistics.shipment.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shipment status",
+      "titleRu": "Статус отправления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "created",
+        "picked",
+        "in_transit",
+        "out_for_delivery",
+        "delivered",
+        "exception",
+        "returned"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "logistics.package.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Package weight",
+      "titleRu": "Масса посылки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logistics.package.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Package length",
+      "titleRu": "Длина посылки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logistics.package.width",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Package width",
+      "titleRu": "Ширина посылки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logistics.package.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Package height",
+      "titleRu": "Высота посылки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logistics.package.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Package volume",
+      "titleRu": "Объём посылки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logistics.coldchain.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cold chain breach",
+      "titleRu": "Нарушение холодовой цепи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "logistics.coldchain.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cold chain temperature",
+      "titleRu": "Температура холодовой цепи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logistics.coldchain.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cold chain humidity",
+      "titleRu": "Влажность холодовой цепи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "logistics.eta",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "ETA unix time",
+      "titleRu": "ETA (unix)",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logistics.distance_remaining",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Distance remaining logistics",
+      "titleRu": "Оставшаяся дистанция",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logistics.carrier.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Carrier id",
+      "titleRu": "ID перевозчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "logistics.hub.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hub id",
+      "titleRu": "ID хаба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "logistics.route.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Route id",
+      "titleRu": "ID маршрута",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "logistics.scan.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Scan count",
+      "titleRu": "Число сканирований",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "logistics.proof_of_delivery_ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Proof of delivery",
+      "titleRu": "Подтверждение доставки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

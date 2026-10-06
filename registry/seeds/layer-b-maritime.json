@@ -1,0 +1,290 @@
+{
+  "layer": "B2",
+  "name": "layer-b-maritime.json",
+  "types": [
+    {
+      "path": "maritime.speed.sog",
+      "kind": "quantity",
+      "unit": "kn",
+      "titleEn": "Speed over ground",
+      "titleRu": "Скорость относительно грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.speed.stw",
+      "kind": "quantity",
+      "unit": "kn",
+      "titleEn": "Speed through water",
+      "titleRu": "Скорость относительно воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.course.cog",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Course over ground maritime",
+      "titleRu": "ПУ (море)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "maritime.heading",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Ship heading",
+      "titleRu": "Курс судна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "maritime.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Water depth",
+      "titleRu": "Глубина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.draft",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Draft",
+      "titleRu": "Осадка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.heave",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Heave",
+      "titleRu": "Вертикальная качка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.pitch",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Ship pitch",
+      "titleRu": "Дифферент/килевая качка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.roll",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Ship roll",
+      "titleRu": "Крен судна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.wind.true_speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "True wind speed",
+      "titleRu": "Истинная скорость ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.wind.true_direction",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "True wind direction",
+      "titleRu": "Истинное направление ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.wind.apparent_speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Apparent wind speed",
+      "titleRu": "Кажущаяся скорость ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.engine.rpm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Marine engine RPM",
+      "titleRu": "Обороты судового двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.engine.fuel_rate",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Marine fuel rate",
+      "titleRu": "Расход топлива судна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.cargo.weight",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Cargo weight",
+      "titleRu": "Масса груза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "maritime.tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level maritime",
+      "titleRu": "Уровень танка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "maritime.nav_status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AIS nav status",
+      "titleRu": "Навигационный статус AIS",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "underway",
+        "anchored",
+        "moored",
+        "aground",
+        "restricted",
+        "undefined"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "maritime.mmsi",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MMSI",
+      "titleRu": "MMSI",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "maritime.imo",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IMO number",
+      "titleRu": "Номер IMO",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "maritime.callsign",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Call sign",
+      "titleRu": "Позывной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "maritime.voyage.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Voyage id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

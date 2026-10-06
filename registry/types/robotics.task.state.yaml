@@ -1,0 +1,22 @@
+sid: c251912c
+path: robotics.task.state
+aliases:
+  short: task.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние задачи
+  en: Task state
+fingerprint: sha256:c251912c41e66bddadac43956d952842e1cfc8ae804295fa40f125b9dfc68e7f
+enumValues:
+  - idle
+  - assigned
+  - running
+  - paused
+  - done
+  - failed

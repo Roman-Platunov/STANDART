@@ -1,0 +1,20 @@
+sid: bbb11183
+path: rail.train.mode
+aliases:
+  short: train.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим поезда
+  en: Train mode
+fingerprint: sha256:bbb11183537fc1dc9102953769cd605d3a67526ebc54724fa2d6c38a0f39313e
+enumValues:
+  - parked
+  - shunting
+  - service
+  - fault

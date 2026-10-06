@@ -1,0 +1,21 @@
+sid: 470036f9
+path: robotics.mission
+aliases:
+  short: robotics.mission
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда миссии
+  en: Mission command
+fingerprint: sha256:470036f91555719118e1ee452ab4be3e62350489d85da3640a5621640782f918
+enumValues:
+  - start
+  - pause
+  - resume
+  - abort
+  - dock

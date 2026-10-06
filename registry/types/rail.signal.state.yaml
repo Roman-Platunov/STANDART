@@ -1,0 +1,21 @@
+sid: 851c8008
+path: rail.signal.state
+aliases:
+  short: signal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние светофора
+  en: Signal state
+fingerprint: sha256:851c8008e29f1b106b200bd19d4d065587664e773ef568301b94fbf4b6e3c92d
+enumValues:
+  - red
+  - yellow
+  - green
+  - flashing
+  - unknown

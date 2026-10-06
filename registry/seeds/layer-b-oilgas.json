@@ -1,0 +1,289 @@
+{
+  "layer": "B2",
+  "name": "layer-b-oilgas.json",
+  "types": [
+    {
+      "path": "oilgas.wellhead.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Wellhead pressure",
+      "titleRu": "Устьевое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.wellhead.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wellhead temperature",
+      "titleRu": "Устьевая температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.tubing.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Tubing pressure",
+      "titleRu": "Давление в НКТ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.casing.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Casing pressure",
+      "titleRu": "Затрубное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.flow.oil",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Oil flow rate",
+      "titleRu": "Дебит нефти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.flow.gas",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Gas flow rate",
+      "titleRu": "Дебит газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.flow.water",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Water flow rate",
+      "titleRu": "Дебит воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.gor",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gas-oil ratio",
+      "titleRu": "Газовый фактор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.water_cut",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Water cut",
+      "titleRu": "Обводнённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.pipeline.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Pipeline pressure",
+      "titleRu": "Давление трубопровода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.pipeline.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pipeline flow",
+      "titleRu": "Расход трубопровода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.pipeline.leak_probability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Leak probability",
+      "titleRu": "Вероятность утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.flare.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Flare temperature",
+      "titleRu": "Температура факела",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oil tank level",
+      "titleRu": "Уровень нефтерезервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.tank.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Oil tank volume",
+      "titleRu": "Объём нефтерезервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.h2s",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2S oilgas",
+      "titleRu": "H2S (нефтегаз)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilgas.safety.esd_active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ESD active",
+      "titleRu": "Аварийное отключение активно",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oilgas.safety.gas_alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas alarm",
+      "titleRu": "Газовая тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oilgas.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Well id",
+      "titleRu": "ID скважины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oilgas.pad.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pad id",
+      "titleRu": "ID куста",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oilgas.well",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Well command",
+      "titleRu": "Команда скважины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "close",
+        "choke"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

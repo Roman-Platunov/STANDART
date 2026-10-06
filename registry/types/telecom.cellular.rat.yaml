@@ -1,0 +1,21 @@
+sid: 41741f15
+path: telecom.cellular.rat
+aliases:
+  short: cellular.rat
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Технология радиодоступа
+  en: Radio access technology
+fingerprint: sha256:41741f156d80137b5b5e1f86b7bc7b7b731c9b78e9390d96b29d682d9c584ac6
+enumValues:
+  - gsm
+  - umts
+  - lte
+  - nr
+  - unknown

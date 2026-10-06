@@ -1,0 +1,21 @@
+sid: dd458aa1
+path: finance.tx.status
+aliases:
+  short: tx.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус фин. операции
+  en: Finance tx status
+fingerprint: sha256:dd458aa12d84d344fc5c05c323ed69a439b99f638a8580f7a70a2b18748c8392
+enumValues:
+  - pending
+  - authorized
+  - settled
+  - declined
+  - reversed

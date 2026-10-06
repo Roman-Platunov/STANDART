@@ -1,0 +1,23 @@
+sid: 81d5b4da
+path: logistics.shipment.status
+aliases:
+  short: shipment.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус отправления
+  en: Shipment status
+fingerprint: sha256:81d5b4da43a530d9978c392f91fb3f32a75b293aab18d5288cb1a456d330b1f2
+enumValues:
+  - created
+  - picked
+  - in_transit
+  - out_for_delivery
+  - delivered
+  - exception
+  - returned

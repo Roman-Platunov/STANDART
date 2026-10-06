@@ -1,0 +1,166 @@
+{
+  "layer": "B2",
+  "name": "layer-b-finance.json",
+  "types": [
+    {
+      "path": "finance.account.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Account id",
+      "titleRu": "ID счёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "finance.merchant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Merchant id",
+      "titleRu": "ID мерчанта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "finance.terminal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Payment terminal id",
+      "titleRu": "ID платёжного терминала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "finance.amount.value",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Money amount",
+      "titleRu": "Сумма",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "restricted",
+      "status": "stable"
+    },
+    {
+      "path": "finance.amount.currency",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ISO currency",
+      "titleRu": "Валюта ISO",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "finance.tx.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Transaction type",
+      "titleRu": "Тип операции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "purchase",
+        "refund",
+        "transfer",
+        "withdrawal",
+        "deposit",
+        "fee"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "finance.tx.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Finance tx status",
+      "titleRu": "Статус фин. операции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pending",
+        "authorized",
+        "settled",
+        "declined",
+        "reversed"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "finance.balance.available",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Available balance",
+      "titleRu": "Доступный баланс",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "restricted",
+      "status": "stable"
+    },
+    {
+      "path": "finance.balance.ledger",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ledger balance",
+      "titleRu": "Бухгалтерский баланс",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "restricted",
+      "status": "stable"
+    },
+    {
+      "path": "finance.fx.rate",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "FX rate",
+      "titleRu": "Курс FX",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "finance.fraud.flag",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fraud flag",
+      "titleRu": "Флаг мошенничества",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "finance.fraud.score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fraud score",
+      "titleRu": "Скорфрод",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "restricted",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    }
+  ]
+}

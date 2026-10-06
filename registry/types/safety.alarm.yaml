@@ -1,0 +1,19 @@
+sid: e9b90f6d
+path: safety.alarm
+aliases:
+  short: safety.alarm
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда тревоги
+  en: Safety alarm command
+fingerprint: sha256:e9b90f6d9069e200dcee406dbfd1c0574b8a521c50d8a1e520349319fdfaf34b
+enumValues:
+  - silence
+  - reset
+  - evacuate

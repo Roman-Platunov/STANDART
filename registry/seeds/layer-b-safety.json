@@ -1,0 +1,192 @@
+{
+  "layer": "B2",
+  "name": "layer-b-safety.json",
+  "types": [
+    {
+      "path": "safety.fire.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire alarm",
+      "titleRu": "Пожарная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "safety.fire.smoke",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Smoke alarm",
+      "titleRu": "Дымовая тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "safety.fire.heat",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Heat alarm",
+      "titleRu": "Тепловая тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "safety.fire.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fire zone temperature",
+      "titleRu": "Температура зоны пожара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "safety.gas.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas safety alarm",
+      "titleRu": "Газовая тревога (безопасность)",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "safety.gas.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO safety",
+      "titleRu": "CO (безопасность)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "safety.gas.ch4",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CH4 safety",
+      "titleRu": "CH4 (безопасность)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "safety.intrusion.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Intrusion alarm",
+      "titleRu": "Охранная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "safety.panic.button",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Panic button",
+      "titleRu": "Кнопка тревоги",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "safety.system.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Safety system state",
+      "titleRu": "Состояние системы безопасности",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "alarm",
+        "fault",
+        "maintenance",
+        "disabled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "safety.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Safety zone id",
+      "titleRu": "ID зоны безопасности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "safety.detector.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Detector id",
+      "titleRu": "ID извещателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "safety.evacuation.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Evacuation progress",
+      "titleRu": "Прогресс эвакуации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "safety.alarm",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Safety alarm command",
+      "titleRu": "Команда тревоги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "silence",
+        "reset",
+        "evacuate"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 93fd4256
+path: telecom.cellular.reg_state
+aliases:
+  short: cellular.reg_state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние регистрации
+  en: Registration state
+fingerprint: sha256:93fd425682ed144e35270c7476921cf1ffb5c5c6d0fc0278b46f87236dfc3171
+enumValues:
+  - unknown
+  - searching
+  - home
+  - roaming
+  - denied

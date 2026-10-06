@@ -49,12 +49,16 @@ function allocateSid(fingerprint, usedSids) {
   throw new Error(`cannot allocate sid for ${fingerprint}`);
 }
 
-function shortAlias(p) {
+function shortAlias(p, usedShorts) {
   const parts = p.split(".");
-  return parts.slice(-2).join(".");
+  for (let n = 2; n <= parts.length; n++) {
+    const candidate = parts.slice(-n).join(".");
+    if (!usedShorts.has(candidate)) return candidate;
+  }
+  return p;
 }
 
-function writeCard(def, usedSids, existingPaths, stats) {
+function writeCard(def, usedSids, existingPaths, usedShorts, stats) {
   const pathStr = def.path;
   if (existingPaths.has(pathStr)) {
     stats.skipped += 1;
@@ -65,13 +69,15 @@ function writeCard(def, usedSids, existingPaths, stats) {
   const kind = def.kind;
   const fingerprint = computeFingerprint({ kind, unit, path: pathStr });
   const sid = allocateSid(fingerprint, usedSids);
+  const short = def.short || shortAlias(pathStr, usedShorts);
+  usedShorts.add(short);
 
   const card = {
     sid,
     path: pathStr,
     aliases: {
       ...(def.aliasesRu ? { ru: def.aliasesRu } : {}),
-      short: def.short || shortAlias(pathStr),
+      short,
       ...(def.legacy ? { legacy: def.legacy } : {}),
     },
     kind,
@@ -143,6 +149,13 @@ function main() {
 
   const usedSids = loadExistingSids();
   const existingPaths = loadExistingPaths();
+  const usedShorts = new Set();
+  if (fs.existsSync(typesDir)) {
+    for (const f of fs.readdirSync(typesDir).filter((x) => x.endsWith(".yaml"))) {
+      const card = YAML.parse(fs.readFileSync(path.join(typesDir, f), "utf8"));
+      if (card?.aliases?.short) usedShorts.add(card.aliases.short);
+    }
+  }
   const stats = { created: 0, skipped: 0 };
 
   for (const file of files) {
@@ -151,7 +164,7 @@ function main() {
     const items = seed.types || seed;
     if (!Array.isArray(items)) throw new Error(`bad seed: ${abs}`);
     for (const def of items) {
-      writeCard(def, usedSids, existingPaths, stats);
+      writeCard(def, usedSids, existingPaths, usedShorts, stats);
     }
     console.log(`seed ${path.basename(abs)}: processed ${items.length}`);
   }

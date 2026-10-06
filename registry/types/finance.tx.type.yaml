@@ -1,0 +1,22 @@
+sid: e6a5b8b1
+path: finance.tx.type
+aliases:
+  short: tx.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип операции
+  en: Transaction type
+fingerprint: sha256:e6a5b8b16b3a6e6d5c8998c846e9ca3a3bac64b82f3f7ea273f7f8fb6d0789bc
+enumValues:
+  - purchase
+  - refund
+  - transfer
+  - withdrawal
+  - deposit
+  - fee

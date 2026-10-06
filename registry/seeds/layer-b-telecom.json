@@ -1,0 +1,262 @@
+{
+  "layer": "B2",
+  "name": "layer-b-telecom.json",
+  "types": [
+    {
+      "path": "telecom.cellular.rsrp",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RSRP",
+      "titleRu": "RSRP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.cellular.rsrq",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "RSRQ",
+      "titleRu": "RSRQ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.cellular.sinr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "SINR",
+      "titleRu": "SINR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.cellular.rssi",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Cellular RSSI",
+      "titleRu": "RSSI сотовой сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.cellular.earfcn",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "EARFCN",
+      "titleRu": "EARFCN",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.cellular.pci",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "PCI",
+      "titleRu": "PCI",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.cellular.cell_id",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cell id",
+      "titleRu": "ID соты",
+      "encodings": [
+        "i32",
+        "utf8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.cellular.imsi",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IMSI",
+      "titleRu": "IMSI",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "telecom.cellular.imei",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Device IMEI telecom",
+      "titleRu": "IMEI (telecom)",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "telecom.cellular.rat",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Radio access technology",
+      "titleRu": "Технология радиодоступа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gsm",
+        "umts",
+        "lte",
+        "nr",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "telecom.cellular.reg_state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Registration state",
+      "titleRu": "Состояние регистрации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "unknown",
+        "searching",
+        "home",
+        "roaming",
+        "denied"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "telecom.wifi.rssi",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Wi-Fi RSSI",
+      "titleRu": "RSSI Wi-Fi",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.wifi.channel",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wi-Fi channel",
+      "titleRu": "Канал Wi-Fi",
+      "encodings": [
+        "u8",
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.wifi.bandwidth_mhz",
+      "kind": "quantity",
+      "unit": "MHz",
+      "titleEn": "Wi-Fi channel width",
+      "titleRu": "Ширина канала Wi-Fi",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.data.bytes_up",
+      "kind": "quantity",
+      "unit": "By",
+      "titleEn": "Uplink bytes",
+      "titleRu": "Байт uplink",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.data.bytes_down",
+      "kind": "quantity",
+      "unit": "By",
+      "titleEn": "Downlink bytes",
+      "titleRu": "Байт downlink",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.voice.mos",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Voice MOS",
+      "titleRu": "MOS голоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 1,
+        "max": 5
+      },
+      "status": "stable"
+    },
+    {
+      "path": "telecom.session.duration",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Session duration",
+      "titleRu": "Длительность сессии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecom.emergency.call_active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency call active",
+      "titleRu": "Экстренный вызов активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

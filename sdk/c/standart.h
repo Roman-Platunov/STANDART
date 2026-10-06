@@ -3,8 +3,8 @@
 #ifndef STANDART_H
 #define STANDART_H
 
-#define STANDART_REGISTRY_VERSION "0.3.0"
-#define STANDART_TYPE_COUNT 444
+#define STANDART_REGISTRY_VERSION "0.4.0"
+#define STANDART_TYPE_COUNT 633
 #define STANDART_PROFILE_COUNT 4
 
 /* Short ids (wire) */
@@ -38,6 +38,35 @@
 #define STD_SID_AGRICULTURE_SOIL_NPK_P "04c49f68"
 #define STD_SID_AGRICULTURE_SOIL_PH "11b51c45"
 #define STD_SID_AGRICULTURE_SOIL_TEMPERATURE "b3283730"
+#define STD_SID_AVIATION_AIRSPEED_GS "205592a3"
+#define STD_SID_AVIATION_AIRSPEED_IAS "590dae2f"
+#define STD_SID_AVIATION_AIRSPEED_TAS "04aeb6d8"
+#define STD_SID_AVIATION_ALTITUDE_BARO "19ede0f7"
+#define STD_SID_AVIATION_ALTITUDE_GPS "cc6b27a7"
+#define STD_SID_AVIATION_ALTITUDE_RADIO "495ebf77"
+#define STD_SID_AVIATION_AOA "e7e23520"
+#define STD_SID_AVIATION_ATTITUDE_PITCH "22f947d0"
+#define STD_SID_AVIATION_ATTITUDE_ROLL "73448f26"
+#define STD_SID_AVIATION_ATTITUDE_YAW "7e44d05d"
+#define STD_SID_AVIATION_CABIN_ALTITUDE "e4a780a8"
+#define STD_SID_AVIATION_CABIN_PRESSURE "72e88b45"
+#define STD_SID_AVIATION_ENGINE_EGT "4d5eee68"
+#define STD_SID_AVIATION_ENGINE_N1 "bdab0ac9"
+#define STD_SID_AVIATION_ENGINE_N2 "845491c8"
+#define STD_SID_AVIATION_ENGINE_OIL_PRESSURE "6714c680"
+#define STD_SID_AVIATION_FLAPS_EXTENDED "de141006"
+#define STD_SID_AVIATION_FLIGHT_NUMBER "c0935590"
+#define STD_SID_AVIATION_FLIGHT_PHASE "2b8a0d89"
+#define STD_SID_AVIATION_FUEL_FLOW "d0510d6b"
+#define STD_SID_AVIATION_FUEL_QUANTITY "71fc22bd"
+#define STD_SID_AVIATION_GEAR_DOWN "ea4230a8"
+#define STD_SID_AVIATION_HEADING_MAGNETIC "56948068"
+#define STD_SID_AVIATION_HEADING_TRUE "6fe142d0"
+#define STD_SID_AVIATION_ICAO24 "c14f4944"
+#define STD_SID_AVIATION_MACH "df55f6b3"
+#define STD_SID_AVIATION_SQUAWK "c5ae11d3"
+#define STD_SID_AVIATION_TAIL_NUMBER "ca43cd3d"
+#define STD_SID_AVIATION_VERTICAL_SPEED "ce783fde"
 #define STD_SID_BUILDING_HVAC_AIRFLOW "80ace93d"
 #define STD_SID_BUILDING_HVAC_FAN_SPEED "116ca741"
 #define STD_SID_BUILDING_HVAC_FILTER_PRESSURE_DROP "9d122117"
@@ -92,6 +121,18 @@
 #define STD_SID_ENERGY_TARIFF_ID "ad914f2b"
 #define STD_SID_ENERGY_WIND_ROTOR_RPM "4dcbd136"
 #define STD_SID_ENERGY_WIND_TURBINE_POWER "a002c45b"
+#define STD_SID_FINANCE_ACCOUNT_ID "91805ecd"
+#define STD_SID_FINANCE_AMOUNT_CURRENCY "674c58b0"
+#define STD_SID_FINANCE_AMOUNT_VALUE "8f762fa2"
+#define STD_SID_FINANCE_BALANCE_AVAILABLE "d560f9dd"
+#define STD_SID_FINANCE_BALANCE_LEDGER "1ddfb4db"
+#define STD_SID_FINANCE_FRAUD_FLAG "a8107351"
+#define STD_SID_FINANCE_FRAUD_SCORE "bfc413a8"
+#define STD_SID_FINANCE_FX_RATE "0cbb25d8"
+#define STD_SID_FINANCE_MERCHANT_ID "1f40287c"
+#define STD_SID_FINANCE_TERMINAL_ID "925cef1c"
+#define STD_SID_FINANCE_TX_STATUS "dd458aa1"
+#define STD_SID_FINANCE_TX_TYPE "e6a5b8b1"
 #define STD_SID_HEALTH_CLINICAL_BODY_TEMPERATURE "f8c7955a"
 #define STD_SID_HEALTH_CLINICAL_CHOLESTEROL_TOTAL "6d111c46"
 #define STD_SID_HEALTH_CLINICAL_CONSCIOUSNESS "8f62d73c"
@@ -185,6 +226,48 @@
 #define STD_SID_LOGICAL_SEQUENCE "f80dc8e5"
 #define STD_SID_LOGICAL_SEVERITY "345dbf25"
 #define STD_SID_LOGICAL_WARNING "66ed0269"
+#define STD_SID_LOGISTICS_CARRIER_ID "5fc8fcd9"
+#define STD_SID_LOGISTICS_COLDCHAIN_BREACH "436e5dc9"
+#define STD_SID_LOGISTICS_COLDCHAIN_HUMIDITY "bf02e9cb"
+#define STD_SID_LOGISTICS_COLDCHAIN_TEMPERATURE "b7f7ab31"
+#define STD_SID_LOGISTICS_CONTAINER_ID "b5ec916a"
+#define STD_SID_LOGISTICS_DISTANCE_REMAINING "64a19c0d"
+#define STD_SID_LOGISTICS_ETA "506930b4"
+#define STD_SID_LOGISTICS_HUB_ID "1026788c"
+#define STD_SID_LOGISTICS_ORDER_ID "da61831c"
+#define STD_SID_LOGISTICS_PACKAGE_HEIGHT "4eb5b88f"
+#define STD_SID_LOGISTICS_PACKAGE_LENGTH "ddea7001"
+#define STD_SID_LOGISTICS_PACKAGE_VOLUME "1ef4eb6c"
+#define STD_SID_LOGISTICS_PACKAGE_WEIGHT "ec11ba74"
+#define STD_SID_LOGISTICS_PACKAGE_WIDTH "d696f7e7"
+#define STD_SID_LOGISTICS_PALLET_ID "bfe907f7"
+#define STD_SID_LOGISTICS_PARCEL_ID "c884d762"
+#define STD_SID_LOGISTICS_PROOF_OF_DELIVERY_REF "dd4883e5"
+#define STD_SID_LOGISTICS_ROUTE_ID "ed120350"
+#define STD_SID_LOGISTICS_SCAN_COUNT "63fe812a"
+#define STD_SID_LOGISTICS_SHIPMENT_ID "7ca4bd56"
+#define STD_SID_LOGISTICS_SHIPMENT_STATUS "81d5b4da"
+#define STD_SID_MARITIME_CALLSIGN "9131732d"
+#define STD_SID_MARITIME_CARGO_WEIGHT "f5528fdc"
+#define STD_SID_MARITIME_COURSE_COG "62b9868d"
+#define STD_SID_MARITIME_DEPTH "9d313dbd"
+#define STD_SID_MARITIME_DRAFT "39ab989c"
+#define STD_SID_MARITIME_ENGINE_FUEL_RATE "3a08e79c"
+#define STD_SID_MARITIME_ENGINE_RPM "2b6c5587"
+#define STD_SID_MARITIME_HEADING "cf378223"
+#define STD_SID_MARITIME_HEAVE "4385a4ee"
+#define STD_SID_MARITIME_IMO "c2287a97"
+#define STD_SID_MARITIME_MMSI "4ac397c3"
+#define STD_SID_MARITIME_NAV_STATUS "6c2d4fe4"
+#define STD_SID_MARITIME_PITCH "91cbfde4"
+#define STD_SID_MARITIME_ROLL "1e31137a"
+#define STD_SID_MARITIME_SPEED_SOG "4834263a"
+#define STD_SID_MARITIME_SPEED_STW "b34ceccf"
+#define STD_SID_MARITIME_TANK_LEVEL "5085a2d5"
+#define STD_SID_MARITIME_VOYAGE_ID "516de091"
+#define STD_SID_MARITIME_WIND_APPARENT_SPEED "47ec5495"
+#define STD_SID_MARITIME_WIND_TRUE_DIRECTION "48c0c668"
+#define STD_SID_MARITIME_WIND_TRUE_SPEED "bb42c502"
 #define STD_SID_MEDIA_AUDIO_REF "1f09fed4"
 #define STD_SID_MEDIA_CONTENT_TYPE "69c1677e"
 #define STD_SID_MEDIA_DOCUMENT_REF "9d7c93dd"
@@ -208,6 +291,27 @@
 #define STD_SID_NETWORK_SSID "9943a5bf"
 #define STD_SID_NETWORK_TX_POWER "eb61e38a"
 #define STD_SID_NETWORK_UPTIME "8d5c8d19"
+#define STD_SID_OILGAS_CASING_PRESSURE "afbedba3"
+#define STD_SID_OILGAS_FLARE_TEMPERATURE "f1811fda"
+#define STD_SID_OILGAS_FLOW_GAS "d53d0eca"
+#define STD_SID_OILGAS_FLOW_OIL "960a2d8a"
+#define STD_SID_OILGAS_FLOW_WATER "dac27abc"
+#define STD_SID_OILGAS_GOR "af8cd799"
+#define STD_SID_OILGAS_H2S "7c855496"
+#define STD_SID_OILGAS_PAD_ID "923a01e9"
+#define STD_SID_OILGAS_PIPELINE_FLOW "8a407209"
+#define STD_SID_OILGAS_PIPELINE_LEAK_PROBABILITY "85917d32"
+#define STD_SID_OILGAS_PIPELINE_PRESSURE "97882102"
+#define STD_SID_OILGAS_SAFETY_ESD_ACTIVE "21af6ec6"
+#define STD_SID_OILGAS_SAFETY_GAS_ALARM "cc67e84e"
+#define STD_SID_OILGAS_TANK_LEVEL "01fbc6ea"
+#define STD_SID_OILGAS_TANK_VOLUME "a8a2aeb0"
+#define STD_SID_OILGAS_TUBING_PRESSURE "d08cb7ca"
+#define STD_SID_OILGAS_WATER_CUT "3ff7a7b0"
+#define STD_SID_OILGAS_WELL "a45aee69"
+#define STD_SID_OILGAS_WELL_ID "2fa4f19d"
+#define STD_SID_OILGAS_WELLHEAD_PRESSURE "3adade8e"
+#define STD_SID_OILGAS_WELLHEAD_TEMPERATURE "137c0139"
 #define STD_SID_PHYSICAL_ACOUSTIC_FREQUENCY "92e174d7"
 #define STD_SID_PHYSICAL_ACOUSTIC_NOISE_LEQ "120041ba"
 #define STD_SID_PHYSICAL_ACOUSTIC_SOUND_PRESSURE "30247b76"
@@ -373,6 +477,72 @@
 #define STD_SID_PHYSICAL_THERMAL_HEAT_FLUX "8de91233"
 #define STD_SID_PHYSICAL_THERMAL_SURFACE_TEMPERATURE "46983d60"
 #define STD_SID_PHYSICAL_THERMAL_THERMAL_RESISTANCE "cfefd6ba"
+#define STD_SID_RAIL_BEARING_TEMPERATURE "efe8ffbb"
+#define STD_SID_RAIL_BRAKE_PRESSURE "3ecf6849"
+#define STD_SID_RAIL_CABIN_TEMPERATURE "93d6b730"
+#define STD_SID_RAIL_CATENARY_VOLTAGE "50a4c813"
+#define STD_SID_RAIL_DOOR_CLOSED "9d560a00"
+#define STD_SID_RAIL_LINE_ID "ba7b6464"
+#define STD_SID_RAIL_PANTOGRAPH_FORCE "cda832af"
+#define STD_SID_RAIL_SIGNAL_ID "82f72b3c"
+#define STD_SID_RAIL_SIGNAL_STATE "851c8008"
+#define STD_SID_RAIL_TCS_EMERGENCY_BRAKE "4b6b30c8"
+#define STD_SID_RAIL_TRAIN_ACCELERATION "9da96c7f"
+#define STD_SID_RAIL_TRAIN_ID "0a009606"
+#define STD_SID_RAIL_TRAIN_MODE "bbb11183"
+#define STD_SID_RAIL_TRAIN_SPEED "abd0ba33"
+#define STD_SID_RAIL_WAGON_ID "13430914"
+#define STD_SID_RAIL_WHEEL_TEMPERATURE "f3a5140d"
+#define STD_SID_RETAIL_DOOR_OPEN "820d0dda"
+#define STD_SID_RETAIL_FOOTFALL_COUNT "a0bde2e1"
+#define STD_SID_RETAIL_INVENTORY_COUNT "055d91b4"
+#define STD_SID_RETAIL_INVENTORY_RESERVED "fc452554"
+#define STD_SID_RETAIL_PAYMENT_METHOD "c472c2f0"
+#define STD_SID_RETAIL_POS_TERMINAL_ID "0cfe9128"
+#define STD_SID_RETAIL_PRICE_AMOUNT "0c695ffb"
+#define STD_SID_RETAIL_PRICE_CURRENCY "0e04ee04"
+#define STD_SID_RETAIL_QUEUE_LENGTH "184722e7"
+#define STD_SID_RETAIL_SALES_AMOUNT "c10089e3"
+#define STD_SID_RETAIL_SALES_QUANTITY "d0fdff28"
+#define STD_SID_RETAIL_SHELF_STOCKOUT "49695e4e"
+#define STD_SID_RETAIL_SHELF_TEMPERATURE "3207986f"
+#define STD_SID_RETAIL_SKU_ID "1eda0b4b"
+#define STD_SID_RETAIL_STORE_ID "623ec769"
+#define STD_SID_RETAIL_TRANSACTION_ID "0aa37d99"
+#define STD_SID_RETAIL_TRANSACTION_STATUS "094f09a3"
+#define STD_SID_ROBOTICS_BATTERY_SOC "486fe0b7"
+#define STD_SID_ROBOTICS_BATTERY_VOLTAGE "a194ef27"
+#define STD_SID_ROBOTICS_CAMERA_STREAM_REF "f1138480"
+#define STD_SID_ROBOTICS_LIDAR_RANGE_MAX "136f5848"
+#define STD_SID_ROBOTICS_LIDAR_RANGE_MIN "2046704b"
+#define STD_SID_ROBOTICS_MAP_ID "9d0a0e51"
+#define STD_SID_ROBOTICS_MISSION "470036f9"
+#define STD_SID_ROBOTICS_MISSION_ID "99a21ead"
+#define STD_SID_ROBOTICS_NAV_STATE "6172ced5"
+#define STD_SID_ROBOTICS_OBSTACLE_DETECTED "35ff866e"
+#define STD_SID_ROBOTICS_OBSTACLE_DISTANCE "30030da7"
+#define STD_SID_ROBOTICS_POSE_X "2636e07f"
+#define STD_SID_ROBOTICS_POSE_Y "36b193ad"
+#define STD_SID_ROBOTICS_POSE_YAW "aed2f2e9"
+#define STD_SID_ROBOTICS_POSE_Z "41e25277"
+#define STD_SID_ROBOTICS_ROBOT_ID "0cd1d481"
+#define STD_SID_ROBOTICS_TASK_STATE "c251912c"
+#define STD_SID_ROBOTICS_VELOCITY_ANGULAR "554933cc"
+#define STD_SID_ROBOTICS_VELOCITY_LINEAR "d1b876c7"
+#define STD_SID_SAFETY_ALARM "e9b90f6d"
+#define STD_SID_SAFETY_DETECTOR_ID "83db6dc2"
+#define STD_SID_SAFETY_EVACUATION_PROGRESS "e7341ff2"
+#define STD_SID_SAFETY_FIRE_ALARM "815e8304"
+#define STD_SID_SAFETY_FIRE_HEAT "10dac617"
+#define STD_SID_SAFETY_FIRE_SMOKE "bd32ffda"
+#define STD_SID_SAFETY_FIRE_TEMPERATURE "b4cfc4e0"
+#define STD_SID_SAFETY_GAS_ALARM "cec1f437"
+#define STD_SID_SAFETY_GAS_CH4 "0ec9377e"
+#define STD_SID_SAFETY_GAS_CO "6c47aea3"
+#define STD_SID_SAFETY_INTRUSION_ALARM "d1987680"
+#define STD_SID_SAFETY_PANIC_BUTTON "e9cbf4d9"
+#define STD_SID_SAFETY_SYSTEM_STATE "9253ae47"
+#define STD_SID_SAFETY_ZONE_ID "04675e08"
 #define STD_SID_SMARTHOME_APPLIANCE_ENERGY "b346cbbc"
 #define STD_SID_SMARTHOME_APPLIANCE_POWER "4fd9fd46"
 #define STD_SID_SMARTHOME_APPLIANCE_STATE "9c6cd064"
@@ -395,6 +565,25 @@
 #define STD_SID_SMARTHOME_VACUUM_STATE "b5786b2d"
 #define STD_SID_SMARTHOME_WASHER_CYCLE "e85d911a"
 #define STD_SID_SMARTHOME_WASHER_CYCLE_PROGRESS "9ffe4859"
+#define STD_SID_TELECOM_CELLULAR_CELL_ID "2751e463"
+#define STD_SID_TELECOM_CELLULAR_EARFCN "216929ab"
+#define STD_SID_TELECOM_CELLULAR_IMEI "546f150f"
+#define STD_SID_TELECOM_CELLULAR_IMSI "5c5588b4"
+#define STD_SID_TELECOM_CELLULAR_PCI "3abb1599"
+#define STD_SID_TELECOM_CELLULAR_RAT "41741f15"
+#define STD_SID_TELECOM_CELLULAR_REG_STATE "93fd4256"
+#define STD_SID_TELECOM_CELLULAR_RSRP "6a910bd7"
+#define STD_SID_TELECOM_CELLULAR_RSRQ "43d6c36e"
+#define STD_SID_TELECOM_CELLULAR_RSSI "f2d35ff8"
+#define STD_SID_TELECOM_CELLULAR_SINR "73ec8996"
+#define STD_SID_TELECOM_DATA_BYTES_DOWN "0a6007f5"
+#define STD_SID_TELECOM_DATA_BYTES_UP "462fa730"
+#define STD_SID_TELECOM_EMERGENCY_CALL_ACTIVE "b5565c4e"
+#define STD_SID_TELECOM_SESSION_DURATION "0e0dd735"
+#define STD_SID_TELECOM_VOICE_MOS "6a295171"
+#define STD_SID_TELECOM_WIFI_BANDWIDTH_MHZ "bdebd5f6"
+#define STD_SID_TELECOM_WIFI_CHANNEL "34c8301c"
+#define STD_SID_TELECOM_WIFI_RSSI "9b56bf50"
 #define STD_SID_TEMPORAL_DEADLINE "6bdd779f"
 #define STD_SID_TEMPORAL_DURATION "fb2badbe"
 #define STD_SID_TEMPORAL_SAMPLE_INTERVAL "416e57b3"
@@ -484,6 +673,35 @@
 #define STD_PATH_AGRICULTURE_SOIL_NPK_P "agriculture.soil.npk_p"
 #define STD_PATH_AGRICULTURE_SOIL_PH "agriculture.soil.ph"
 #define STD_PATH_AGRICULTURE_SOIL_TEMPERATURE "agriculture.soil.temperature"
+#define STD_PATH_AVIATION_AIRSPEED_GS "aviation.airspeed.gs"
+#define STD_PATH_AVIATION_AIRSPEED_IAS "aviation.airspeed.ias"
+#define STD_PATH_AVIATION_AIRSPEED_TAS "aviation.airspeed.tas"
+#define STD_PATH_AVIATION_ALTITUDE_BARO "aviation.altitude.baro"
+#define STD_PATH_AVIATION_ALTITUDE_GPS "aviation.altitude.gps"
+#define STD_PATH_AVIATION_ALTITUDE_RADIO "aviation.altitude.radio"
+#define STD_PATH_AVIATION_AOA "aviation.aoa"
+#define STD_PATH_AVIATION_ATTITUDE_PITCH "aviation.attitude.pitch"
+#define STD_PATH_AVIATION_ATTITUDE_ROLL "aviation.attitude.roll"
+#define STD_PATH_AVIATION_ATTITUDE_YAW "aviation.attitude.yaw"
+#define STD_PATH_AVIATION_CABIN_ALTITUDE "aviation.cabin.altitude"
+#define STD_PATH_AVIATION_CABIN_PRESSURE "aviation.cabin.pressure"
+#define STD_PATH_AVIATION_ENGINE_EGT "aviation.engine.egt"
+#define STD_PATH_AVIATION_ENGINE_N1 "aviation.engine.n1"
+#define STD_PATH_AVIATION_ENGINE_N2 "aviation.engine.n2"
+#define STD_PATH_AVIATION_ENGINE_OIL_PRESSURE "aviation.engine.oil_pressure"
+#define STD_PATH_AVIATION_FLAPS_EXTENDED "aviation.flaps.extended"
+#define STD_PATH_AVIATION_FLIGHT_NUMBER "aviation.flight_number"
+#define STD_PATH_AVIATION_FLIGHT_PHASE "aviation.flight_phase"
+#define STD_PATH_AVIATION_FUEL_FLOW "aviation.fuel.flow"
+#define STD_PATH_AVIATION_FUEL_QUANTITY "aviation.fuel.quantity"
+#define STD_PATH_AVIATION_GEAR_DOWN "aviation.gear.down"
+#define STD_PATH_AVIATION_HEADING_MAGNETIC "aviation.heading.magnetic"
+#define STD_PATH_AVIATION_HEADING_TRUE "aviation.heading.true"
+#define STD_PATH_AVIATION_ICAO24 "aviation.icao24"
+#define STD_PATH_AVIATION_MACH "aviation.mach"
+#define STD_PATH_AVIATION_SQUAWK "aviation.squawk"
+#define STD_PATH_AVIATION_TAIL_NUMBER "aviation.tail_number"
+#define STD_PATH_AVIATION_VERTICAL_SPEED "aviation.vertical_speed"
 #define STD_PATH_BUILDING_HVAC_AIRFLOW "building.hvac.airflow"
 #define STD_PATH_BUILDING_HVAC_FAN_SPEED "building.hvac.fan_speed"
 #define STD_PATH_BUILDING_HVAC_FILTER_PRESSURE_DROP "building.hvac.filter_pressure_drop"
@@ -538,6 +756,18 @@
 #define STD_PATH_ENERGY_TARIFF_ID "energy.tariff.id"
 #define STD_PATH_ENERGY_WIND_ROTOR_RPM "energy.wind.rotor_rpm"
 #define STD_PATH_ENERGY_WIND_TURBINE_POWER "energy.wind.turbine_power"
+#define STD_PATH_FINANCE_ACCOUNT_ID "finance.account.id"
+#define STD_PATH_FINANCE_AMOUNT_CURRENCY "finance.amount.currency"
+#define STD_PATH_FINANCE_AMOUNT_VALUE "finance.amount.value"
+#define STD_PATH_FINANCE_BALANCE_AVAILABLE "finance.balance.available"
+#define STD_PATH_FINANCE_BALANCE_LEDGER "finance.balance.ledger"
+#define STD_PATH_FINANCE_FRAUD_FLAG "finance.fraud.flag"
+#define STD_PATH_FINANCE_FRAUD_SCORE "finance.fraud.score"
+#define STD_PATH_FINANCE_FX_RATE "finance.fx.rate"
+#define STD_PATH_FINANCE_MERCHANT_ID "finance.merchant.id"
+#define STD_PATH_FINANCE_TERMINAL_ID "finance.terminal.id"
+#define STD_PATH_FINANCE_TX_STATUS "finance.tx.status"
+#define STD_PATH_FINANCE_TX_TYPE "finance.tx.type"
 #define STD_PATH_HEALTH_CLINICAL_BODY_TEMPERATURE "health.clinical.body_temperature"
 #define STD_PATH_HEALTH_CLINICAL_CHOLESTEROL_TOTAL "health.clinical.cholesterol_total"
 #define STD_PATH_HEALTH_CLINICAL_CONSCIOUSNESS "health.clinical.consciousness"
@@ -631,6 +861,48 @@
 #define STD_PATH_LOGICAL_SEQUENCE "logical.sequence"
 #define STD_PATH_LOGICAL_SEVERITY "logical.severity"
 #define STD_PATH_LOGICAL_WARNING "logical.warning"
+#define STD_PATH_LOGISTICS_CARRIER_ID "logistics.carrier.id"
+#define STD_PATH_LOGISTICS_COLDCHAIN_BREACH "logistics.coldchain.breach"
+#define STD_PATH_LOGISTICS_COLDCHAIN_HUMIDITY "logistics.coldchain.humidity"
+#define STD_PATH_LOGISTICS_COLDCHAIN_TEMPERATURE "logistics.coldchain.temperature"
+#define STD_PATH_LOGISTICS_CONTAINER_ID "logistics.container.id"
+#define STD_PATH_LOGISTICS_DISTANCE_REMAINING "logistics.distance_remaining"
+#define STD_PATH_LOGISTICS_ETA "logistics.eta"
+#define STD_PATH_LOGISTICS_HUB_ID "logistics.hub.id"
+#define STD_PATH_LOGISTICS_ORDER_ID "logistics.order.id"
+#define STD_PATH_LOGISTICS_PACKAGE_HEIGHT "logistics.package.height"
+#define STD_PATH_LOGISTICS_PACKAGE_LENGTH "logistics.package.length"
+#define STD_PATH_LOGISTICS_PACKAGE_VOLUME "logistics.package.volume"
+#define STD_PATH_LOGISTICS_PACKAGE_WEIGHT "logistics.package.weight"
+#define STD_PATH_LOGISTICS_PACKAGE_WIDTH "logistics.package.width"
+#define STD_PATH_LOGISTICS_PALLET_ID "logistics.pallet.id"
+#define STD_PATH_LOGISTICS_PARCEL_ID "logistics.parcel.id"
+#define STD_PATH_LOGISTICS_PROOF_OF_DELIVERY_REF "logistics.proof_of_delivery_ref"
+#define STD_PATH_LOGISTICS_ROUTE_ID "logistics.route.id"
+#define STD_PATH_LOGISTICS_SCAN_COUNT "logistics.scan.count"
+#define STD_PATH_LOGISTICS_SHIPMENT_ID "logistics.shipment.id"
+#define STD_PATH_LOGISTICS_SHIPMENT_STATUS "logistics.shipment.status"
+#define STD_PATH_MARITIME_CALLSIGN "maritime.callsign"
+#define STD_PATH_MARITIME_CARGO_WEIGHT "maritime.cargo.weight"
+#define STD_PATH_MARITIME_COURSE_COG "maritime.course.cog"
+#define STD_PATH_MARITIME_DEPTH "maritime.depth"
+#define STD_PATH_MARITIME_DRAFT "maritime.draft"
+#define STD_PATH_MARITIME_ENGINE_FUEL_RATE "maritime.engine.fuel_rate"
+#define STD_PATH_MARITIME_ENGINE_RPM "maritime.engine.rpm"
+#define STD_PATH_MARITIME_HEADING "maritime.heading"
+#define STD_PATH_MARITIME_HEAVE "maritime.heave"
+#define STD_PATH_MARITIME_IMO "maritime.imo"
+#define STD_PATH_MARITIME_MMSI "maritime.mmsi"
+#define STD_PATH_MARITIME_NAV_STATUS "maritime.nav_status"
+#define STD_PATH_MARITIME_PITCH "maritime.pitch"
+#define STD_PATH_MARITIME_ROLL "maritime.roll"
+#define STD_PATH_MARITIME_SPEED_SOG "maritime.speed.sog"
+#define STD_PATH_MARITIME_SPEED_STW "maritime.speed.stw"
+#define STD_PATH_MARITIME_TANK_LEVEL "maritime.tank.level"
+#define STD_PATH_MARITIME_VOYAGE_ID "maritime.voyage.id"
+#define STD_PATH_MARITIME_WIND_APPARENT_SPEED "maritime.wind.apparent_speed"
+#define STD_PATH_MARITIME_WIND_TRUE_DIRECTION "maritime.wind.true_direction"
+#define STD_PATH_MARITIME_WIND_TRUE_SPEED "maritime.wind.true_speed"
 #define STD_PATH_MEDIA_AUDIO_REF "media.audio_ref"
 #define STD_PATH_MEDIA_CONTENT_TYPE "media.content_type"
 #define STD_PATH_MEDIA_DOCUMENT_REF "media.document_ref"
@@ -654,6 +926,27 @@
 #define STD_PATH_NETWORK_SSID "network.ssid"
 #define STD_PATH_NETWORK_TX_POWER "network.tx_power"
 #define STD_PATH_NETWORK_UPTIME "network.uptime"
+#define STD_PATH_OILGAS_CASING_PRESSURE "oilgas.casing.pressure"
+#define STD_PATH_OILGAS_FLARE_TEMPERATURE "oilgas.flare.temperature"
+#define STD_PATH_OILGAS_FLOW_GAS "oilgas.flow.gas"
+#define STD_PATH_OILGAS_FLOW_OIL "oilgas.flow.oil"
+#define STD_PATH_OILGAS_FLOW_WATER "oilgas.flow.water"
+#define STD_PATH_OILGAS_GOR "oilgas.gor"
+#define STD_PATH_OILGAS_H2S "oilgas.h2s"
+#define STD_PATH_OILGAS_PAD_ID "oilgas.pad.id"
+#define STD_PATH_OILGAS_PIPELINE_FLOW "oilgas.pipeline.flow"
+#define STD_PATH_OILGAS_PIPELINE_LEAK_PROBABILITY "oilgas.pipeline.leak_probability"
+#define STD_PATH_OILGAS_PIPELINE_PRESSURE "oilgas.pipeline.pressure"
+#define STD_PATH_OILGAS_SAFETY_ESD_ACTIVE "oilgas.safety.esd_active"
+#define STD_PATH_OILGAS_SAFETY_GAS_ALARM "oilgas.safety.gas_alarm"
+#define STD_PATH_OILGAS_TANK_LEVEL "oilgas.tank.level"
+#define STD_PATH_OILGAS_TANK_VOLUME "oilgas.tank.volume"
+#define STD_PATH_OILGAS_TUBING_PRESSURE "oilgas.tubing.pressure"
+#define STD_PATH_OILGAS_WATER_CUT "oilgas.water_cut"
+#define STD_PATH_OILGAS_WELL "oilgas.well"
+#define STD_PATH_OILGAS_WELL_ID "oilgas.well.id"
+#define STD_PATH_OILGAS_WELLHEAD_PRESSURE "oilgas.wellhead.pressure"
+#define STD_PATH_OILGAS_WELLHEAD_TEMPERATURE "oilgas.wellhead.temperature"
 #define STD_PATH_PHYSICAL_ACOUSTIC_FREQUENCY "physical.acoustic.frequency"
 #define STD_PATH_PHYSICAL_ACOUSTIC_NOISE_LEQ "physical.acoustic.noise_leq"
 #define STD_PATH_PHYSICAL_ACOUSTIC_SOUND_PRESSURE "physical.acoustic.sound_pressure"
@@ -819,6 +1112,72 @@
 #define STD_PATH_PHYSICAL_THERMAL_HEAT_FLUX "physical.thermal.heat_flux"
 #define STD_PATH_PHYSICAL_THERMAL_SURFACE_TEMPERATURE "physical.thermal.surface_temperature"
 #define STD_PATH_PHYSICAL_THERMAL_THERMAL_RESISTANCE "physical.thermal.thermal_resistance"
+#define STD_PATH_RAIL_BEARING_TEMPERATURE "rail.bearing.temperature"
+#define STD_PATH_RAIL_BRAKE_PRESSURE "rail.brake.pressure"
+#define STD_PATH_RAIL_CABIN_TEMPERATURE "rail.cabin.temperature"
+#define STD_PATH_RAIL_CATENARY_VOLTAGE "rail.catenary.voltage"
+#define STD_PATH_RAIL_DOOR_CLOSED "rail.door.closed"
+#define STD_PATH_RAIL_LINE_ID "rail.line.id"
+#define STD_PATH_RAIL_PANTOGRAPH_FORCE "rail.pantograph.force"
+#define STD_PATH_RAIL_SIGNAL_ID "rail.signal.id"
+#define STD_PATH_RAIL_SIGNAL_STATE "rail.signal.state"
+#define STD_PATH_RAIL_TCS_EMERGENCY_BRAKE "rail.tcs.emergency_brake"
+#define STD_PATH_RAIL_TRAIN_ACCELERATION "rail.train.acceleration"
+#define STD_PATH_RAIL_TRAIN_ID "rail.train.id"
+#define STD_PATH_RAIL_TRAIN_MODE "rail.train.mode"
+#define STD_PATH_RAIL_TRAIN_SPEED "rail.train.speed"
+#define STD_PATH_RAIL_WAGON_ID "rail.wagon.id"
+#define STD_PATH_RAIL_WHEEL_TEMPERATURE "rail.wheel.temperature"
+#define STD_PATH_RETAIL_DOOR_OPEN "retail.door.open"
+#define STD_PATH_RETAIL_FOOTFALL_COUNT "retail.footfall.count"
+#define STD_PATH_RETAIL_INVENTORY_COUNT "retail.inventory.count"
+#define STD_PATH_RETAIL_INVENTORY_RESERVED "retail.inventory.reserved"
+#define STD_PATH_RETAIL_PAYMENT_METHOD "retail.payment.method"
+#define STD_PATH_RETAIL_POS_TERMINAL_ID "retail.pos.terminal_id"
+#define STD_PATH_RETAIL_PRICE_AMOUNT "retail.price.amount"
+#define STD_PATH_RETAIL_PRICE_CURRENCY "retail.price.currency"
+#define STD_PATH_RETAIL_QUEUE_LENGTH "retail.queue.length"
+#define STD_PATH_RETAIL_SALES_AMOUNT "retail.sales.amount"
+#define STD_PATH_RETAIL_SALES_QUANTITY "retail.sales.quantity"
+#define STD_PATH_RETAIL_SHELF_STOCKOUT "retail.shelf.stockout"
+#define STD_PATH_RETAIL_SHELF_TEMPERATURE "retail.shelf.temperature"
+#define STD_PATH_RETAIL_SKU_ID "retail.sku.id"
+#define STD_PATH_RETAIL_STORE_ID "retail.store.id"
+#define STD_PATH_RETAIL_TRANSACTION_ID "retail.transaction.id"
+#define STD_PATH_RETAIL_TRANSACTION_STATUS "retail.transaction.status"
+#define STD_PATH_ROBOTICS_BATTERY_SOC "robotics.battery.soc"
+#define STD_PATH_ROBOTICS_BATTERY_VOLTAGE "robotics.battery.voltage"
+#define STD_PATH_ROBOTICS_CAMERA_STREAM_REF "robotics.camera.stream_ref"
+#define STD_PATH_ROBOTICS_LIDAR_RANGE_MAX "robotics.lidar.range_max"
+#define STD_PATH_ROBOTICS_LIDAR_RANGE_MIN "robotics.lidar.range_min"
+#define STD_PATH_ROBOTICS_MAP_ID "robotics.map.id"
+#define STD_PATH_ROBOTICS_MISSION "robotics.mission"
+#define STD_PATH_ROBOTICS_MISSION_ID "robotics.mission.id"
+#define STD_PATH_ROBOTICS_NAV_STATE "robotics.nav.state"
+#define STD_PATH_ROBOTICS_OBSTACLE_DETECTED "robotics.obstacle.detected"
+#define STD_PATH_ROBOTICS_OBSTACLE_DISTANCE "robotics.obstacle.distance"
+#define STD_PATH_ROBOTICS_POSE_X "robotics.pose.x"
+#define STD_PATH_ROBOTICS_POSE_Y "robotics.pose.y"
+#define STD_PATH_ROBOTICS_POSE_YAW "robotics.pose.yaw"
+#define STD_PATH_ROBOTICS_POSE_Z "robotics.pose.z"
+#define STD_PATH_ROBOTICS_ROBOT_ID "robotics.robot.id"
+#define STD_PATH_ROBOTICS_TASK_STATE "robotics.task.state"
+#define STD_PATH_ROBOTICS_VELOCITY_ANGULAR "robotics.velocity.angular"
+#define STD_PATH_ROBOTICS_VELOCITY_LINEAR "robotics.velocity.linear"
+#define STD_PATH_SAFETY_ALARM "safety.alarm"
+#define STD_PATH_SAFETY_DETECTOR_ID "safety.detector.id"
+#define STD_PATH_SAFETY_EVACUATION_PROGRESS "safety.evacuation.progress"
+#define STD_PATH_SAFETY_FIRE_ALARM "safety.fire.alarm"
+#define STD_PATH_SAFETY_FIRE_HEAT "safety.fire.heat"
+#define STD_PATH_SAFETY_FIRE_SMOKE "safety.fire.smoke"
+#define STD_PATH_SAFETY_FIRE_TEMPERATURE "safety.fire.temperature"
+#define STD_PATH_SAFETY_GAS_ALARM "safety.gas.alarm"
+#define STD_PATH_SAFETY_GAS_CH4 "safety.gas.ch4"
+#define STD_PATH_SAFETY_GAS_CO "safety.gas.co"
+#define STD_PATH_SAFETY_INTRUSION_ALARM "safety.intrusion.alarm"
+#define STD_PATH_SAFETY_PANIC_BUTTON "safety.panic.button"
+#define STD_PATH_SAFETY_SYSTEM_STATE "safety.system.state"
+#define STD_PATH_SAFETY_ZONE_ID "safety.zone.id"
 #define STD_PATH_SMARTHOME_APPLIANCE_ENERGY "smarthome.appliance.energy"
 #define STD_PATH_SMARTHOME_APPLIANCE_POWER "smarthome.appliance.power"
 #define STD_PATH_SMARTHOME_APPLIANCE_STATE "smarthome.appliance.state"
@@ -841,6 +1200,25 @@
 #define STD_PATH_SMARTHOME_VACUUM_STATE "smarthome.vacuum.state"
 #define STD_PATH_SMARTHOME_WASHER_CYCLE "smarthome.washer.cycle"
 #define STD_PATH_SMARTHOME_WASHER_CYCLE_PROGRESS "smarthome.washer.cycle_progress"
+#define STD_PATH_TELECOM_CELLULAR_CELL_ID "telecom.cellular.cell_id"
+#define STD_PATH_TELECOM_CELLULAR_EARFCN "telecom.cellular.earfcn"
+#define STD_PATH_TELECOM_CELLULAR_IMEI "telecom.cellular.imei"
+#define STD_PATH_TELECOM_CELLULAR_IMSI "telecom.cellular.imsi"
+#define STD_PATH_TELECOM_CELLULAR_PCI "telecom.cellular.pci"
+#define STD_PATH_TELECOM_CELLULAR_RAT "telecom.cellular.rat"
+#define STD_PATH_TELECOM_CELLULAR_REG_STATE "telecom.cellular.reg_state"
+#define STD_PATH_TELECOM_CELLULAR_RSRP "telecom.cellular.rsrp"
+#define STD_PATH_TELECOM_CELLULAR_RSRQ "telecom.cellular.rsrq"
+#define STD_PATH_TELECOM_CELLULAR_RSSI "telecom.cellular.rssi"
+#define STD_PATH_TELECOM_CELLULAR_SINR "telecom.cellular.sinr"
+#define STD_PATH_TELECOM_DATA_BYTES_DOWN "telecom.data.bytes_down"
+#define STD_PATH_TELECOM_DATA_BYTES_UP "telecom.data.bytes_up"
+#define STD_PATH_TELECOM_EMERGENCY_CALL_ACTIVE "telecom.emergency.call_active"
+#define STD_PATH_TELECOM_SESSION_DURATION "telecom.session.duration"
+#define STD_PATH_TELECOM_VOICE_MOS "telecom.voice.mos"
+#define STD_PATH_TELECOM_WIFI_BANDWIDTH_MHZ "telecom.wifi.bandwidth_mhz"
+#define STD_PATH_TELECOM_WIFI_CHANNEL "telecom.wifi.channel"
+#define STD_PATH_TELECOM_WIFI_RSSI "telecom.wifi.rssi"
 #define STD_PATH_TEMPORAL_DEADLINE "temporal.deadline"
 #define STD_PATH_TEMPORAL_DURATION "temporal.duration"
 #define STD_PATH_TEMPORAL_SAMPLE_INTERVAL "temporal.sample_interval"
@@ -945,6 +1323,35 @@ static const standart_type_info_t STANDART_TYPES[] = {
   { "04c49f68", "agriculture.soil.npk_p", "quantity", "mg/kg", "sha256:04c49f6845a4188566b004f624443f4768b7e2e9567cec2d6c2cdd9c28f6277b", "stable" },
   { "11b51c45", "agriculture.soil.ph", "quantity", "-", "sha256:11b51c45431175c83adde87a3e37cc2f457da0e872e4b9acbf1607437f7a7e9d", "stable" },
   { "b3283730", "agriculture.soil.temperature", "quantity", "Cel", "sha256:b3283730ee72b781467b2c87b20be03d299a243bfe8f8884c8195d4d15745a5f", "stable" },
+  { "205592a3", "aviation.airspeed.gs", "quantity", "m/s", "sha256:205592a3350603d7345873bca1b99974de869650ba83dfd7d875001eb3024b5b", "stable" },
+  { "590dae2f", "aviation.airspeed.ias", "quantity", "m/s", "sha256:590dae2f8aa60e60dc7d01f95bee8c78b3589d172b8a243123bb03be8b0cf93c", "stable" },
+  { "04aeb6d8", "aviation.airspeed.tas", "quantity", "m/s", "sha256:04aeb6d8ee02997bd50ba696f044f4117db579b6581c40e9ed8a4d3a4a4b7b90", "stable" },
+  { "19ede0f7", "aviation.altitude.baro", "quantity", "m", "sha256:19ede0f774be44db56569d0897895bd3bc41a649f4df903d5f2783e251a741e6", "stable" },
+  { "cc6b27a7", "aviation.altitude.gps", "quantity", "m", "sha256:cc6b27a75e84ae8adeb27ee2acff495968447a2eb16ac4ab039b488477b5e52d", "stable" },
+  { "495ebf77", "aviation.altitude.radio", "quantity", "m", "sha256:495ebf770d0e4dc99c2489da5e8b4231f2d449b661d6930ff370e4f6cd0882c4", "stable" },
+  { "e7e23520", "aviation.aoa", "quantity", "deg", "sha256:e7e23520f4b5c59fc19efbfd18ae17f22b990900e1190a64debedc8f6e364629", "stable" },
+  { "22f947d0", "aviation.attitude.pitch", "quantity", "deg", "sha256:22f947d0d56c9706f272003a3f6f6ecc4d87aa519a04512503e88e9600a81343", "stable" },
+  { "73448f26", "aviation.attitude.roll", "quantity", "deg", "sha256:73448f26572f0e9002c9ae3b00ffa293768e43feffa98fcdb7abe0c9d649a323", "stable" },
+  { "7e44d05d", "aviation.attitude.yaw", "quantity", "deg", "sha256:7e44d05d0e99916b9905cda7d80668e15e8213ad692bc19288e61dead0f22a83", "stable" },
+  { "e4a780a8", "aviation.cabin.altitude", "quantity", "m", "sha256:e4a780a8c93840545d5fc5a5802b1da066d8c39dd34ed1e9367a1db30f9f59f1", "stable" },
+  { "72e88b45", "aviation.cabin.pressure", "quantity", "hPa", "sha256:72e88b4594a447acd8bff7d24eec31ed6256ca105495f763135d852506c071cf", "stable" },
+  { "4d5eee68", "aviation.engine.egt", "quantity", "Cel", "sha256:4d5eee68ae1f2fb4b5a9cbea8198d51dfb3611af5f456f0f6fa6242a5055f649", "stable" },
+  { "bdab0ac9", "aviation.engine.n1", "quantity", "%", "sha256:bdab0ac94c4ad68d6f84ddb8b15bb14b53d4534c18b961f85f449646ef8c395a", "stable" },
+  { "845491c8", "aviation.engine.n2", "quantity", "%", "sha256:845491c815e38f98e40abad20696edf45566c103988529e25cc4882840e84ada", "stable" },
+  { "6714c680", "aviation.engine.oil_pressure", "quantity", "kPa", "sha256:6714c680cbd2a92c68231f60070b46897f94fbed088f196d4a94073f9198757e", "stable" },
+  { "de141006", "aviation.flaps.extended", "logical", "-", "sha256:de141006bf6b969288d83d8fc4ce7454807282512546a90d73fb9b18b6f0351c", "stable" },
+  { "c0935590", "aviation.flight_number", "identity", "-", "sha256:c093559056a94fad672c71bcd056844836ec962098667b9f169d8366fc48a33d", "stable" },
+  { "2b8a0d89", "aviation.flight_phase", "enum", "-", "sha256:2b8a0d8943770901ce0d1e42bde123206cfaa28e4a78e3f53602a65eae29f26c", "stable" },
+  { "d0510d6b", "aviation.fuel.flow", "quantity", "kg/h", "sha256:d0510d6befee491eba094be61dfbc23f12781fc17f655f2d0635f270f356fc3c", "stable" },
+  { "71fc22bd", "aviation.fuel.quantity", "quantity", "kg", "sha256:71fc22bd806dc0856d159a4de6d0e7784ad2f4a6b7ef1b498a4ffb774aed3b87", "stable" },
+  { "ea4230a8", "aviation.gear.down", "logical", "-", "sha256:ea4230a84d0f0c775f9bfb90c98c4a4bc6cc066c57cbc3d7bbc48d74d1221846", "stable" },
+  { "56948068", "aviation.heading.magnetic", "quantity", "deg", "sha256:56948068338bce091401436b928913b05ba22a0785edb761bc02c90e74271f5d", "stable" },
+  { "6fe142d0", "aviation.heading.true", "quantity", "deg", "sha256:6fe142d02e41e8b71d9a9d5cd4b18e121f5c8396239d83f00f671349a3468c4f", "stable" },
+  { "c14f4944", "aviation.icao24", "identity", "-", "sha256:c14f4944e38b5bb320a10ba4dad0760394fbfb33313f9aafd9cafb1b2f9d89a4", "stable" },
+  { "df55f6b3", "aviation.mach", "quantity", "-", "sha256:df55f6b315d6f4c3ff66391fbccbf5707787d570312eb9358034ce9de760f9e2", "stable" },
+  { "c5ae11d3", "aviation.squawk", "quantity", "-", "sha256:c5ae11d3a1f24ece80e701776aa9d0fc349001d771d00943e3791527c019e331", "stable" },
+  { "ca43cd3d", "aviation.tail_number", "identity", "-", "sha256:ca43cd3d9e9fdd561f7c2306fd68872b2771995a21b1f3d20845e5d7ce721e61", "stable" },
+  { "ce783fde", "aviation.vertical_speed", "quantity", "m/s", "sha256:ce783fdeb5107ca5c504c4d1db9eb566d67e476d46509bb409adf7346d4835f9", "stable" },
   { "80ace93d", "building.hvac.airflow", "quantity", "m3/h", "sha256:80ace93d34f1187536ca046fc004be58296738507a86d537f9a33f2e0e9d7dcf", "stable" },
   { "116ca741", "building.hvac.fan_speed", "quantity", "%", "sha256:116ca741cdcea0e8fd3921687bf703eead135b9e8fd1ab714eaabeb477c4a72c", "stable" },
   { "9d122117", "building.hvac.filter_pressure_drop", "quantity", "Pa", "sha256:9d1221171cad1da78d1a338509c2420e4e7585bbc3820493cd472638fed297fa", "stable" },
@@ -999,6 +1406,18 @@ static const standart_type_info_t STANDART_TYPES[] = {
   { "ad914f2b", "energy.tariff.id", "identity", "-", "sha256:ad914f2b5adcf4eb249a8bba3c5950f5affc0fa7e142e8c6fb35d6d2ff823d55", "stable" },
   { "4dcbd136", "energy.wind.rotor_rpm", "quantity", "/min", "sha256:4dcbd136d89901b7faa253168a6201a24e3c7e4c970aba0d9348e141994b39e1", "stable" },
   { "a002c45b", "energy.wind.turbine_power", "quantity", "W", "sha256:a002c45bd29dceac659f3cd4b1e44f208f9f7cf56d95b6be74a8bb2f29168dad", "stable" },
+  { "91805ecd", "finance.account.id", "identity", "-", "sha256:91805ecdbf797efb3fff76139e6d60c42a4e2ba5cdcafffddaf705f6741787c0", "stable" },
+  { "674c58b0", "finance.amount.currency", "identity", "-", "sha256:674c58b0e5c6cb805c59ee5640b3f81923531d64ef5fee466fb9d4656ccac61f", "stable" },
+  { "8f762fa2", "finance.amount.value", "quantity", "-", "sha256:8f762fa2aabc29b9d25c34ce89eab8c79f17e8bfac0458b2796af11dc462c409", "stable" },
+  { "d560f9dd", "finance.balance.available", "quantity", "-", "sha256:d560f9dd9699d55daaf34e5eb97bb436dd6e5a7309578ab367a1ddd3a6569486", "stable" },
+  { "1ddfb4db", "finance.balance.ledger", "quantity", "-", "sha256:1ddfb4db15a30d4af1251372de8695a7a2273d6ac602112d65c9c9e91a083687", "stable" },
+  { "a8107351", "finance.fraud.flag", "logical", "-", "sha256:a8107351ffcfe5f6d0b97f4304dea40c0fcc28425407ea1e898cc43ebbcd50da", "stable" },
+  { "bfc413a8", "finance.fraud.score", "quantity", "-", "sha256:bfc413a89c06d5ea9a1498d33208e9b0ebca4c63f69d812daa4e7ac6f8606609", "stable" },
+  { "0cbb25d8", "finance.fx.rate", "quantity", "-", "sha256:0cbb25d832b2dd1c41183d3625db2d6992a1dc3d46601bfe99000299b3404d4e", "stable" },
+  { "1f40287c", "finance.merchant.id", "identity", "-", "sha256:1f40287ce37e706fd9a9c61689137f8b0bdc3215a10920d3e710b049d85902ea", "stable" },
+  { "925cef1c", "finance.terminal.id", "identity", "-", "sha256:925cef1ca0f4973e9d4a6b00defc6a1a1e276d64b8604994d2ae660fc942d910", "stable" },
+  { "dd458aa1", "finance.tx.status", "enum", "-", "sha256:dd458aa12d84d344fc5c05c323ed69a439b99f638a8580f7a70a2b18748c8392", "stable" },
+  { "e6a5b8b1", "finance.tx.type", "enum", "-", "sha256:e6a5b8b16b3a6e6d5c8998c846e9ca3a3bac64b82f3f7ea273f7f8fb6d0789bc", "stable" },
   { "f8c7955a", "health.clinical.body_temperature", "quantity", "Cel", "sha256:f8c7955a2ddfd7c80a0f819b143a1141b559b4c6bbd5442e15ea8dc984061855", "stable" },
   { "6d111c46", "health.clinical.cholesterol_total", "quantity", "mg/dL", "sha256:6d111c46309cd9240cf48aa564c7415c14ca38a25526b7ca5c75b6dd3e2d1d39", "stable" },
   { "8f62d73c", "health.clinical.consciousness", "enum", "-", "sha256:8f62d73c8ab6c7b8a14e9172be73699f2253135cab90845d86b4bb7ec50dbaee", "stable" },
@@ -1092,6 +1511,48 @@ static const standart_type_info_t STANDART_TYPES[] = {
   { "f80dc8e5", "logical.sequence", "quantity", "-", "sha256:f80dc8e5ee8d153ba16bb25611f925ac18c7f8e8121fe75e568ccb0041abae88", "stable" },
   { "345dbf25", "logical.severity", "enum", "-", "sha256:345dbf25fdac1bde224f2d7ce8737e83bd7ef0d9ecd8cb8fc1652e2e0c5330e9", "stable" },
   { "66ed0269", "logical.warning", "logical", "-", "sha256:66ed026997b3bbeac47d4a4f83c6e297523e0497b8c62a11bf779c21493dba04", "stable" },
+  { "5fc8fcd9", "logistics.carrier.id", "identity", "-", "sha256:5fc8fcd96e1f1b49f96e4de79dbd238f501b6f202a3a10527448e080ea847be7", "stable" },
+  { "436e5dc9", "logistics.coldchain.breach", "logical", "-", "sha256:436e5dc98d4d521626094e46836c557fcbcf1faf24a67d2859be988fe5aa7aae", "stable" },
+  { "bf02e9cb", "logistics.coldchain.humidity", "quantity", "%", "sha256:bf02e9cb7d9c9df8532f456c7c0ac510348211a77c5ac30081571f074cfda94a", "stable" },
+  { "b7f7ab31", "logistics.coldchain.temperature", "quantity", "Cel", "sha256:b7f7ab31c035c96355e7445ab907e1bc52786857c9b53b48a4d668e05ee2b7b5", "stable" },
+  { "b5ec916a", "logistics.container.id", "identity", "-", "sha256:b5ec916abdeeff57375d3bfec9517bcc9971a5140cc7a6b07992b5f856222117", "stable" },
+  { "64a19c0d", "logistics.distance_remaining", "quantity", "km", "sha256:64a19c0d5c38294af917c99fdab5c0cbdd8a3385c18dfdaace05ce559c5bd3aa", "stable" },
+  { "506930b4", "logistics.eta", "quantity", "s", "sha256:506930b4c0424c8e8142336156442620dd0c127c9c2eb16664a7c4a514b19693", "stable" },
+  { "1026788c", "logistics.hub.id", "identity", "-", "sha256:1026788c5efbcb46bf3a8b67a2168ae98ac03c778ca6cc01d013b761ca2e8ba3", "stable" },
+  { "da61831c", "logistics.order.id", "identity", "-", "sha256:da61831c97754755b7d5f26a5890b7ae8214ddcb78a2960bff0447358e9500aa", "stable" },
+  { "4eb5b88f", "logistics.package.height", "quantity", "m", "sha256:4eb5b88f7614b8b7f149792224333786eb662e3eabc3a7563babced4c83d3c7a", "stable" },
+  { "ddea7001", "logistics.package.length", "quantity", "m", "sha256:ddea700171cb7caa4dc1cfe105d8775fd58466c5bfc0c7a8adae06bcc949e921", "stable" },
+  { "1ef4eb6c", "logistics.package.volume", "quantity", "m3", "sha256:1ef4eb6c8d0f26dd3e088d2078168191694e2c4bc46e994ce96a4dc7ff1cc766", "stable" },
+  { "ec11ba74", "logistics.package.weight", "quantity", "kg", "sha256:ec11ba743d0a118e3f08a8e90f117ada1e406a5b592a3f02c8dfdd0768dffc39", "stable" },
+  { "d696f7e7", "logistics.package.width", "quantity", "m", "sha256:d696f7e70534740302fa8843b30994068cb45e606826019b41701855bf569d41", "stable" },
+  { "bfe907f7", "logistics.pallet.id", "identity", "-", "sha256:bfe907f7212a39185b70519430d783f23eab87c9148932c55204e05eb607b235", "stable" },
+  { "c884d762", "logistics.parcel.id", "identity", "-", "sha256:c884d762f7ae3b77002de8872dcfc54cc37b0ee64c7ed75f7b8b7733dd813a6a", "stable" },
+  { "dd4883e5", "logistics.proof_of_delivery_ref", "media", "-", "sha256:dd4883e585464c503bcade7560720fe151b74b6fa91614829cb94b2dcb0f7078", "stable" },
+  { "ed120350", "logistics.route.id", "identity", "-", "sha256:ed120350c1610ef806a16e9cc6ab3e133fab3d36f69b5c71f39839040920cc9f", "stable" },
+  { "63fe812a", "logistics.scan.count", "quantity", "-", "sha256:63fe812a4dcf97370ab98dbfa021ea777d9fee4d1570847ca372280bdf1b459f", "stable" },
+  { "7ca4bd56", "logistics.shipment.id", "identity", "-", "sha256:7ca4bd566bbdc22478cdb33451842ccadb2b7ba8617da50d1d16da3707972be0", "stable" },
+  { "81d5b4da", "logistics.shipment.status", "enum", "-", "sha256:81d5b4da43a530d9978c392f91fb3f32a75b293aab18d5288cb1a456d330b1f2", "stable" },
+  { "9131732d", "maritime.callsign", "identity", "-", "sha256:9131732de98505f4cfbee1264bcd55c8822a6fcc46a1d2398773e784a8a3f99e", "stable" },
+  { "f5528fdc", "maritime.cargo.weight", "quantity", "t", "sha256:f5528fdcf50115eadff59509657f7fdc46ba95c4321d95823bfb4c5b7ab42c78", "stable" },
+  { "62b9868d", "maritime.course.cog", "quantity", "deg", "sha256:62b9868d786f5a9ea251975d014ceda5e95836d5f38e2e7439753c9f5b841515", "stable" },
+  { "9d313dbd", "maritime.depth", "quantity", "m", "sha256:9d313dbd60c7a8436fb2edef095b264e3c9eed2374c2f5bab1cab7445b41023f", "stable" },
+  { "39ab989c", "maritime.draft", "quantity", "m", "sha256:39ab989ca22be192c011bd9c4ba3d8c8178ee0d83c9f24abe4d4e996c13bfdb4", "stable" },
+  { "3a08e79c", "maritime.engine.fuel_rate", "quantity", "L/h", "sha256:3a08e79c0eeac3ea4f035232265c3658fb7cd0f1eec993803c367c3039d8aa44", "stable" },
+  { "2b6c5587", "maritime.engine.rpm", "quantity", "/min", "sha256:2b6c55878b17f4c24f871a6f5ab1834f3ec30d9238faaaef6fb8983c234fcb36", "stable" },
+  { "cf378223", "maritime.heading", "quantity", "deg", "sha256:cf3782237ee0b2f40aee7bf1808f93c4444628b585ba076dec84f93a3f139878", "stable" },
+  { "4385a4ee", "maritime.heave", "quantity", "m", "sha256:4385a4ee42e029ec507a1dfb9d34057da1b06534f3bac0fe81b8a341f7df22d5", "stable" },
+  { "c2287a97", "maritime.imo", "identity", "-", "sha256:c2287a9757649cffe4f4c41f9ba58b222c825155b71cae8a318e1fa9c3faa266", "stable" },
+  { "4ac397c3", "maritime.mmsi", "identity", "-", "sha256:4ac397c32688c5d73d31ce746df2c3a784b802abc772382b7498415173ff70e7", "stable" },
+  { "6c2d4fe4", "maritime.nav_status", "enum", "-", "sha256:6c2d4fe4fcdbd6431fb71267f6d844108ab24f5f6b9451e4e4563ebc6bb8dca0", "stable" },
+  { "91cbfde4", "maritime.pitch", "quantity", "deg", "sha256:91cbfde4da7fa698d94a34e5f102f983e9a658ca683b98c2bc3eced0a464e50c", "stable" },
+  { "1e31137a", "maritime.roll", "quantity", "deg", "sha256:1e31137acbd7abd3f19b3657169f652f828fa9e43179abd351b6ebdcfff89e12", "stable" },
+  { "4834263a", "maritime.speed.sog", "quantity", "kn", "sha256:4834263a3070a2cc411ef95aa69100d8509cd18a1da4aa8ac717f8bd5ce7a583", "stable" },
+  { "b34ceccf", "maritime.speed.stw", "quantity", "kn", "sha256:b34ceccf531e1aa9d6f8ab9983f3610d5d39adbbbf12af059fdd2842b83eb8f6", "stable" },
+  { "5085a2d5", "maritime.tank.level", "quantity", "%", "sha256:5085a2d51f0726e45132f46dfdea8723ae8ab487c0b811d5a4ac395066b4a306", "stable" },
+  { "516de091", "maritime.voyage.id", "identity", "-", "sha256:516de09196a452ebbdc6d1d3b4a7c0d5ab51ddbc15accba65a18c8dfa2cbc0fa", "stable" },
+  { "47ec5495", "maritime.wind.apparent_speed", "quantity", "m/s", "sha256:47ec5495ab5b6b0e4a27293e9434dd91979bb8420db739e5271aa0f2cb9ed67c", "stable" },
+  { "48c0c668", "maritime.wind.true_direction", "quantity", "deg", "sha256:48c0c6683d38dae4427ebc73cff98a175816aa619af9dafb8b3d898b4c11beca", "stable" },
+  { "bb42c502", "maritime.wind.true_speed", "quantity", "m/s", "sha256:bb42c5024be4e998e91143c320eb4eb15d22871736706310f0cce15f806444c3", "stable" },
   { "1f09fed4", "media.audio_ref", "media", "-", "sha256:1f09fed46dede8efb64c55594a7c1fa085f24a8599fae30b1ddf30acd73960e0", "stable" },
   { "69c1677e", "media.content_type", "identity", "-", "sha256:69c1677e7267744dd6b5f33a7a6d2f84c8dd8503cd8eee3ebf828990b0c022ac", "stable" },
   { "9d7c93dd", "media.document_ref", "media", "-", "sha256:9d7c93dd1a8454fc3b84dfaff8ec72c683bea161e207b0e8c87d3313f3081c5a", "stable" },
@@ -1115,6 +1576,27 @@ static const standart_type_info_t STANDART_TYPES[] = {
   { "9943a5bf", "network.ssid", "identity", "-", "sha256:9943a5bf9859d137307cdba0be13ddb6bab9629e18832237e75b0bab5a14079a", "stable" },
   { "eb61e38a", "network.tx_power", "quantity", "dBm", "sha256:eb61e38af9270d4e840e9e2cca4ef4bbdb88312d6aedde706a36dbb667a80524", "stable" },
   { "8d5c8d19", "network.uptime", "quantity", "s", "sha256:8d5c8d19e67f63ef729bb34f994f82fce0ce41e3656858ea2392e2585f3bd8c1", "stable" },
+  { "afbedba3", "oilgas.casing.pressure", "quantity", "Pa", "sha256:afbedba351deff5b5dba9a8c4214003b246b52bf6815fa008e5ce988c76afe4c", "stable" },
+  { "f1811fda", "oilgas.flare.temperature", "quantity", "Cel", "sha256:f1811fda20c81c1a4e4b3e036c2719c57cee1e7dcd899dcbb51b9ac84852c383", "stable" },
+  { "d53d0eca", "oilgas.flow.gas", "quantity", "m3/h", "sha256:d53d0eca0296cd8ab2f65bd27e3de07252ab19b58da473d8eae68a6f8853d7f1", "stable" },
+  { "960a2d8a", "oilgas.flow.oil", "quantity", "m3/h", "sha256:960a2d8a82d538b842363152532337cc16e71bdea2d3cb22a3929d7f2641dae9", "stable" },
+  { "dac27abc", "oilgas.flow.water", "quantity", "m3/h", "sha256:dac27abcacee2839ff99845bafd28017b55e57badc8c3685cfbf50a78da51dfb", "stable" },
+  { "af8cd799", "oilgas.gor", "quantity", "-", "sha256:af8cd799e8ac7834fb08b4579c4aee73455152b0d198fb56a86dbeb7aa10ef45", "stable" },
+  { "7c855496", "oilgas.h2s", "quantity", "ppm", "sha256:7c855496ecf1045af6bbaba72ad2d0dbc691f556ba5ab913f350e6557493cf10", "stable" },
+  { "923a01e9", "oilgas.pad.id", "identity", "-", "sha256:923a01e9c896f63e521f2aa83b1b8a9ccf4355edf8fc70a73a19c7c42c340c8b", "stable" },
+  { "8a407209", "oilgas.pipeline.flow", "quantity", "m3/h", "sha256:8a407209aa95972e5d58eb7f44e9dfe61a85618b7aea6126ab23a749a8654a11", "stable" },
+  { "85917d32", "oilgas.pipeline.leak_probability", "quantity", "%", "sha256:85917d327510e531b4b61a52098428cf82d3d18f3418f2f8a97e89f28f9fb9d5", "stable" },
+  { "97882102", "oilgas.pipeline.pressure", "quantity", "Pa", "sha256:978821026f3758a201ee1f906bc989600fd4f33773266f61659ac1aeeaaa8e69", "stable" },
+  { "21af6ec6", "oilgas.safety.esd_active", "logical", "-", "sha256:21af6ec6e31176287b4dd10570333de5464183febb1a2562fcacd4721b9d8bbe", "stable" },
+  { "cc67e84e", "oilgas.safety.gas_alarm", "logical", "-", "sha256:cc67e84ebd004ef7cc488eb8145c0df3ae58389b53b1ebeb8031ce62fba67329", "stable" },
+  { "01fbc6ea", "oilgas.tank.level", "quantity", "%", "sha256:01fbc6ea6ba5c9d77c27cc71ff7cbb4ed5bdeab98c26c61bd19a6df4b0992812", "stable" },
+  { "a8a2aeb0", "oilgas.tank.volume", "quantity", "m3", "sha256:a8a2aeb0af378010b960975991ef7c96369458655b23755e503b5ab4063d6a1b", "stable" },
+  { "d08cb7ca", "oilgas.tubing.pressure", "quantity", "Pa", "sha256:d08cb7ca5b2f772077932a8809f272f4541c51aca633751ab910d51b8c47d228", "stable" },
+  { "3ff7a7b0", "oilgas.water_cut", "quantity", "%", "sha256:3ff7a7b092dedf57ea87780791c6d8b1e58f60eb37c7c2724b27078fd56e755e", "stable" },
+  { "a45aee69", "oilgas.well", "command", "-", "sha256:a45aee69da8aa1b664146776f76697581efcbe4f1deaca796ace7c174a40a772", "stable" },
+  { "2fa4f19d", "oilgas.well.id", "identity", "-", "sha256:2fa4f19de64e2ffa8e946318677f62e7c80c35be93e11a8013f6a8c0c62375a3", "stable" },
+  { "3adade8e", "oilgas.wellhead.pressure", "quantity", "Pa", "sha256:3adade8e3c12fe43b4d15deec061fd83bcee2fafa225de83cb9de42ac52fcd0c", "stable" },
+  { "137c0139", "oilgas.wellhead.temperature", "quantity", "Cel", "sha256:137c013958ae5338c422380f547081a7c9ce5d1a60f6df23640d0a2eda188f8b", "stable" },
   { "92e174d7", "physical.acoustic.frequency", "quantity", "Hz", "sha256:92e174d707c390e0faa679a0177310d6b85bc1f723ca08d1cb1e6843ca1991d3", "stable" },
   { "120041ba", "physical.acoustic.noise_leq", "quantity", "dB", "sha256:120041bafe320231d4ef662b4950328c478956cde4b0995978085e9fb8f76e15", "stable" },
   { "30247b76", "physical.acoustic.sound_pressure", "quantity", "Pa", "sha256:30247b76a8a48d5426070122e3cddb0e2016e469302dcd5abc24622dc6cf170d", "stable" },
@@ -1280,6 +1762,72 @@ static const standart_type_info_t STANDART_TYPES[] = {
   { "8de91233", "physical.thermal.heat_flux", "quantity", "W/m2", "sha256:8de91233ec94a5aca50962bb44dcc290ca19d82d5f7cc0ad7a01ae458f3d9490", "stable" },
   { "46983d60", "physical.thermal.surface_temperature", "quantity", "Cel", "sha256:46983d60df1ec419d9a6d4e45fa6afa391ca7b2d8de87ae8a9fdfab2d3868b3d", "stable" },
   { "cfefd6ba", "physical.thermal.thermal_resistance", "quantity", "K/W", "sha256:cfefd6ba4f3d877d1875a3b89854f5d441503e08ecf3fe4002d8394c63013e57", "stable" },
+  { "efe8ffbb", "rail.bearing.temperature", "quantity", "Cel", "sha256:efe8ffbbfeb772085aaeb102814fda31531b1b9dd66fe2960b2a38d93167ed99", "stable" },
+  { "3ecf6849", "rail.brake.pressure", "quantity", "kPa", "sha256:3ecf684933caee32e92ad41f3020bfccdca13300d0f450196b86e8ed276df270", "stable" },
+  { "93d6b730", "rail.cabin.temperature", "quantity", "Cel", "sha256:93d6b73094b3ac69385579fecd89248e1a2d5387aed11c6c8cc4a2f224bb33e7", "stable" },
+  { "50a4c813", "rail.catenary.voltage", "quantity", "V", "sha256:50a4c81374affa103ddb147de87b84a208098dc3856e36c034d216311b986263", "stable" },
+  { "9d560a00", "rail.door.closed", "logical", "-", "sha256:9d560a008444db92db56d000fb58ac31d91dd8814c30b161b8f520cb493aae40", "stable" },
+  { "ba7b6464", "rail.line.id", "identity", "-", "sha256:ba7b64643dbf239385d7af232469952014d2fc3a8843fc7f73aae339ae0e2b98", "stable" },
+  { "cda832af", "rail.pantograph.force", "quantity", "N", "sha256:cda832af34a270f52731fc913e53493d57a289f21e898488e7d5db113a9342ef", "stable" },
+  { "82f72b3c", "rail.signal.id", "identity", "-", "sha256:82f72b3cceb10753a1b48b397e2525c610dc9aa90803e4affa1090f7bffdfadf", "stable" },
+  { "851c8008", "rail.signal.state", "enum", "-", "sha256:851c8008e29f1b106b200bd19d4d065587664e773ef568301b94fbf4b6e3c92d", "stable" },
+  { "4b6b30c8", "rail.tcs.emergency_brake", "logical", "-", "sha256:4b6b30c83b9f4f33627d2f5972855c717b037b34cce8e2c91cb9f3466f4628c9", "stable" },
+  { "9da96c7f", "rail.train.acceleration", "quantity", "m/s2", "sha256:9da96c7fa7d222ef53d89a7d9f39ac3e460047ecee697067e195bd0f2327dac7", "stable" },
+  { "0a009606", "rail.train.id", "identity", "-", "sha256:0a009606a06a30df0c8bc179b5746c23fded74e713a10a858410884e377cc21c", "stable" },
+  { "bbb11183", "rail.train.mode", "enum", "-", "sha256:bbb11183537fc1dc9102953769cd605d3a67526ebc54724fa2d6c38a0f39313e", "stable" },
+  { "abd0ba33", "rail.train.speed", "quantity", "km/h", "sha256:abd0ba3353566c64f06c2915282c5f3d126928167af8716ea242c7eeedfd9f1e", "stable" },
+  { "13430914", "rail.wagon.id", "identity", "-", "sha256:13430914b5e8582418efe61dea5e39a076536ffcb19713ec6719c19618606d9e", "stable" },
+  { "f3a5140d", "rail.wheel.temperature", "quantity", "Cel", "sha256:f3a5140d942df7efc372af9aeabc7a8dfa86704a3a18fe30ae16e76bdbecb3cd", "stable" },
+  { "820d0dda", "retail.door.open", "logical", "-", "sha256:820d0ddab76983194dc4100428eb54a2e9217976489428609edc7daae9321af9", "stable" },
+  { "a0bde2e1", "retail.footfall.count", "quantity", "-", "sha256:a0bde2e1888e85cc74090e558609466efeb5eb865669b752a5a55ceddf2d72b4", "stable" },
+  { "055d91b4", "retail.inventory.count", "quantity", "-", "sha256:055d91b44a4d3174fcf2c165b10bf4c3fb61cbc1b96b9bbf317977bf229dacc6", "stable" },
+  { "fc452554", "retail.inventory.reserved", "quantity", "-", "sha256:fc45255418466582731a95553f58f8ee8c8bc9f561eb8aeb67adc65b38ac6c50", "stable" },
+  { "c472c2f0", "retail.payment.method", "enum", "-", "sha256:c472c2f0a14e57dff9cbdd3e59cedb2917f4fea846049733f6667d7803b5ba52", "stable" },
+  { "0cfe9128", "retail.pos.terminal_id", "identity", "-", "sha256:0cfe91289ebd0a5a08103992e402c87f94e5bd73508a10a27caf36958611f313", "stable" },
+  { "0c695ffb", "retail.price.amount", "quantity", "-", "sha256:0c695ffb45a746c0d5fdbcbec292d4ae9685a481a3bf9c10fb19a3aafd7c2bce", "stable" },
+  { "0e04ee04", "retail.price.currency", "identity", "-", "sha256:0e04ee049e01124ede72d31a0ccd2396eac590bd306ccce7b4c8d29e3a37f524", "stable" },
+  { "184722e7", "retail.queue.length", "quantity", "-", "sha256:184722e782e3ef13eff75390d726506fefcc07a96be730bc4c617e6afbd62fb9", "stable" },
+  { "c10089e3", "retail.sales.amount", "quantity", "-", "sha256:c10089e3ca615456be4c9f9cda9aa7a5a43a98946459cfab0a38a95faae1d56d", "stable" },
+  { "d0fdff28", "retail.sales.quantity", "quantity", "-", "sha256:d0fdff289156be92639e6be6201ca9e3c54ec0a8dbc3125500295fbaf3553e5e", "stable" },
+  { "49695e4e", "retail.shelf.stockout", "logical", "-", "sha256:49695e4ed874190394d1f9a5966c7a87ac4f631a5c364e745c96f77ca00114af", "stable" },
+  { "3207986f", "retail.shelf.temperature", "quantity", "Cel", "sha256:3207986ffac3b78e29934502fb778375f40b070df9d6ac17aa0ad29a2ea62779", "stable" },
+  { "1eda0b4b", "retail.sku.id", "identity", "-", "sha256:1eda0b4bb766065974c57b3b6633ae821121ab7904b24c8251b623ef3ff33ed8", "stable" },
+  { "623ec769", "retail.store.id", "identity", "-", "sha256:623ec76961c19174369b6c3610c008625b54e259268774ff9c0b967d8c3ec464", "stable" },
+  { "0aa37d99", "retail.transaction.id", "identity", "-", "sha256:0aa37d99e9567ffbb4f57853b05347e0c416de1ae965ae72eea380e5b40c14c5", "stable" },
+  { "094f09a3", "retail.transaction.status", "enum", "-", "sha256:094f09a3d2820c9d46179af588cb4c9dc992f78e5681b147594a35b9a57a5ea6", "stable" },
+  { "486fe0b7", "robotics.battery.soc", "quantity", "%", "sha256:486fe0b72e6d0c97def9ddba263a5af3ab090c2d7b08abb3a438e2637c3232da", "stable" },
+  { "a194ef27", "robotics.battery.voltage", "quantity", "V", "sha256:a194ef271ae36fcfbd4268112f8d34da313f17afac60d092bbd92cf8b0bb4522", "stable" },
+  { "f1138480", "robotics.camera.stream_ref", "media", "-", "sha256:f1138480353071efa241a95d4c80effef912359a2e509c750855c583558cd24b", "stable" },
+  { "136f5848", "robotics.lidar.range_max", "quantity", "m", "sha256:136f58485ca2fac53526fc4ac7479629afd10a10059aa077ad722e8c71072a68", "stable" },
+  { "2046704b", "robotics.lidar.range_min", "quantity", "m", "sha256:2046704b9f725cc2a6ebefccdcaddf91550c0bc9090669e5e0d250298bb12ada", "stable" },
+  { "9d0a0e51", "robotics.map.id", "identity", "-", "sha256:9d0a0e518eaecef0bcdfe222a6e427db9aa5c5a7e858c4f830de5912a43c8115", "stable" },
+  { "470036f9", "robotics.mission", "command", "-", "sha256:470036f91555719118e1ee452ab4be3e62350489d85da3640a5621640782f918", "stable" },
+  { "99a21ead", "robotics.mission.id", "identity", "-", "sha256:99a21eadd5c9e58838473dd77574bdd16968f28c8186b495903e50a2cafe3ffa", "stable" },
+  { "6172ced5", "robotics.nav.state", "enum", "-", "sha256:6172ced5e705ff3214c13c444e8b4214ce104adeff35b9a5e8378641a621c19c", "stable" },
+  { "35ff866e", "robotics.obstacle.detected", "logical", "-", "sha256:35ff866e0529e28a89f0bf9472430cf83b2061f3aab244fd7c3f1a1a99565dca", "stable" },
+  { "30030da7", "robotics.obstacle.distance", "quantity", "m", "sha256:30030da7ff7722d8d9bb4690e2f8cead144812a5a28cc0d4a415941f595f3345", "stable" },
+  { "2636e07f", "robotics.pose.x", "quantity", "m", "sha256:2636e07f5a6864a05522f2de3cb948323ef8aee72b9822daf4032744c9ae8cae", "stable" },
+  { "36b193ad", "robotics.pose.y", "quantity", "m", "sha256:36b193ad37e08363d286ea3efae75e6b43824180406f7962fe94f27df073e9f6", "stable" },
+  { "aed2f2e9", "robotics.pose.yaw", "quantity", "deg", "sha256:aed2f2e96e12564b7446f501aba0ce32fbf15e8914b1565eb89f67ed142fafd4", "stable" },
+  { "41e25277", "robotics.pose.z", "quantity", "m", "sha256:41e252771b2aa7af082c77027e102761b3ffc1b400912daa8079b752f980f9f4", "stable" },
+  { "0cd1d481", "robotics.robot.id", "identity", "-", "sha256:0cd1d48155d18ec8583c0987957f9cfe9383cc0d43d597defc67e2a291f495b5", "stable" },
+  { "c251912c", "robotics.task.state", "enum", "-", "sha256:c251912c41e66bddadac43956d952842e1cfc8ae804295fa40f125b9dfc68e7f", "stable" },
+  { "554933cc", "robotics.velocity.angular", "quantity", "deg/s", "sha256:554933cc1616c7880dddb1ad53e6a371af7be79a4e631c3e65140b57df35e6e7", "stable" },
+  { "d1b876c7", "robotics.velocity.linear", "quantity", "m/s", "sha256:d1b876c7c93c31248b8dd6e01c95df0e6e9e7e42f67daa6eab302fa92f8eb00f", "stable" },
+  { "e9b90f6d", "safety.alarm", "command", "-", "sha256:e9b90f6d9069e200dcee406dbfd1c0574b8a521c50d8a1e520349319fdfaf34b", "stable" },
+  { "83db6dc2", "safety.detector.id", "identity", "-", "sha256:83db6dc226b8d93cc39c4105c22909f14dd11a2765f91b7a5fc78f957fc7783b", "stable" },
+  { "e7341ff2", "safety.evacuation.progress", "quantity", "%", "sha256:e7341ff2228ff39dc8c8a0c0b5c692ba00ba5a4faa540469324ce6da58a8b700", "stable" },
+  { "815e8304", "safety.fire.alarm", "logical", "-", "sha256:815e83049f27bc77636d1ac441bc30888a36f4a11c02b5c3eae15a5fc54a34b3", "stable" },
+  { "10dac617", "safety.fire.heat", "logical", "-", "sha256:10dac617c711ea52f96f9efc9c971a569666390c402950d2ef709df48dcf1374", "stable" },
+  { "bd32ffda", "safety.fire.smoke", "logical", "-", "sha256:bd32ffdab24e5acb84672b47f202a6d0de24bb9e2fe662a4f4660dfda43c4303", "stable" },
+  { "b4cfc4e0", "safety.fire.temperature", "quantity", "Cel", "sha256:b4cfc4e0b4849b6c1d6c4cb776d226c5ac88e90ca1ec10a8a32c84198cdd6862", "stable" },
+  { "cec1f437", "safety.gas.alarm", "logical", "-", "sha256:cec1f4374332cecd70d0fd03c7764e8f80f897d90c43c9bf9c27f0fdd71e5a8d", "stable" },
+  { "0ec9377e", "safety.gas.ch4", "quantity", "ppm", "sha256:0ec9377e43a329fc2a3cc386734c9d76045d6fb9ba43f9ee9fa3356450dc3461", "stable" },
+  { "6c47aea3", "safety.gas.co", "quantity", "ppm", "sha256:6c47aea307ddf54cb63b4fc7a599d33da724ce8ee59a43cd87982677b4d7d709", "stable" },
+  { "d1987680", "safety.intrusion.alarm", "logical", "-", "sha256:d19876808e88ff10866be895612f5b5a1a185c97c5c61fe6894b174d71222bad", "stable" },
+  { "e9cbf4d9", "safety.panic.button", "logical", "-", "sha256:e9cbf4d9a961ce4487f63869ae79b52c6095524f4fc366ab24784e368711e80a", "stable" },
+  { "9253ae47", "safety.system.state", "enum", "-", "sha256:9253ae47f505208a856ace23e5e686e5365340241f45785cef362fec87af6ef9", "stable" },
+  { "04675e08", "safety.zone.id", "identity", "-", "sha256:04675e084c5e40b5e988aff6d8f568fa94a8cb3ebbe45c7afdfb4a5ce75adaf3", "stable" },
   { "b346cbbc", "smarthome.appliance.energy", "quantity", "Wh", "sha256:b346cbbcb9219e4f408484a051c707dc1f2a21a4af7c18764c0231a4550ed774", "stable" },
   { "4fd9fd46", "smarthome.appliance.power", "quantity", "W", "sha256:4fd9fd46293e1d77c0cf1015c1b043aa912e47bce72739f47891f79dc7cfc7bb", "stable" },
   { "9c6cd064", "smarthome.appliance.state", "enum", "-", "sha256:9c6cd064cf0a19ae39de08836a9ef82f390a21269fa43dfec48ec1d1dd6b716e", "stable" },
@@ -1302,6 +1850,25 @@ static const standart_type_info_t STANDART_TYPES[] = {
   { "b5786b2d", "smarthome.vacuum.state", "enum", "-", "sha256:b5786b2d665b6d11135566aff080b68eb8dca03bcdc91404d4e89d77b22c4478", "stable" },
   { "e85d911a", "smarthome.washer.cycle", "enum", "-", "sha256:e85d911a4fe76677e162c5e74590090ef5a9df46f928bd97be21e9fc4808f34c", "stable" },
   { "9ffe4859", "smarthome.washer.cycle_progress", "quantity", "%", "sha256:9ffe48591011fb41db35cdd8cec9377a93f65d2e3f5f7e9915985c43656849da", "stable" },
+  { "2751e463", "telecom.cellular.cell_id", "quantity", "-", "sha256:2751e4638069db46407fbae62a35617abfd5cb7f78aae98de060f6768c8f4248", "stable" },
+  { "216929ab", "telecom.cellular.earfcn", "quantity", "-", "sha256:216929ab61a67218523bf389a66c9ef6cf570897ae62bec4e4c1c367ffc9f3ec", "stable" },
+  { "546f150f", "telecom.cellular.imei", "identity", "-", "sha256:546f150f92bc91504691edf0641fc540bd4b8ffa73ba21d81debd6dcef3dfeed", "stable" },
+  { "5c5588b4", "telecom.cellular.imsi", "identity", "-", "sha256:5c5588b4a7f14ed36d93bcb13ff3130dab929d1290b191912ac6bd68ed008e77", "stable" },
+  { "3abb1599", "telecom.cellular.pci", "quantity", "-", "sha256:3abb15995c7514dfe5a228904070a6fb17d55b56cc5d58e0e896443224aeb84f", "stable" },
+  { "41741f15", "telecom.cellular.rat", "enum", "-", "sha256:41741f156d80137b5b5e1f86b7bc7b7b731c9b78e9390d96b29d682d9c584ac6", "stable" },
+  { "93fd4256", "telecom.cellular.reg_state", "enum", "-", "sha256:93fd425682ed144e35270c7476921cf1ffb5c5c6d0fc0278b46f87236dfc3171", "stable" },
+  { "6a910bd7", "telecom.cellular.rsrp", "quantity", "dBm", "sha256:6a910bd7836b7b57fb1df944d853acc109d4c5a524575fbb11ad8939528030a8", "stable" },
+  { "43d6c36e", "telecom.cellular.rsrq", "quantity", "dB", "sha256:43d6c36ecd4cc840b4a0297f4506484c348d3190939d3520e16f3f13beb25557", "stable" },
+  { "f2d35ff8", "telecom.cellular.rssi", "quantity", "dBm", "sha256:f2d35ff84ebc7bafc05e34b2768bb97ba7a34069163d279e40c042fb7365a632", "stable" },
+  { "73ec8996", "telecom.cellular.sinr", "quantity", "dB", "sha256:73ec899625ee7cde1cd42a8c5f6055a92305bc8fef535054e7b02c2f739a53e2", "stable" },
+  { "0a6007f5", "telecom.data.bytes_down", "quantity", "By", "sha256:0a6007f5e2f85d2fc1e26b9a1f701bb2057585311b521413b79b9b8cd89aad5c", "stable" },
+  { "462fa730", "telecom.data.bytes_up", "quantity", "By", "sha256:462fa730c4aff721f76eafad02bda044132c143af0e6c79748a6128fd1229d66", "stable" },
+  { "b5565c4e", "telecom.emergency.call_active", "logical", "-", "sha256:b5565c4ec1be9cc0038ec13e198c3db352920f5988f7bd6cb9f6123251ecb6c1", "stable" },
+  { "0e0dd735", "telecom.session.duration", "quantity", "s", "sha256:0e0dd7350cbe274be852df31ac1f20d45f6946dd010a1dfcfc56b644642292fe", "stable" },
+  { "6a295171", "telecom.voice.mos", "quantity", "-", "sha256:6a295171312eea214c62d819da4f3ed79279f2354a2ccf558b4e3a96c3690813", "stable" },
+  { "bdebd5f6", "telecom.wifi.bandwidth_mhz", "quantity", "MHz", "sha256:bdebd5f608d71a073155becb5d3d09c6f30d1ba9a04fcd35cd9dcb11f05abbf0", "stable" },
+  { "34c8301c", "telecom.wifi.channel", "quantity", "-", "sha256:34c8301cb250479d0f8520ddaddfe404ac22d98ca4ad9cd84fa663bbc5261e49", "stable" },
+  { "9b56bf50", "telecom.wifi.rssi", "quantity", "dBm", "sha256:9b56bf50b4610ffdf2863206e054fd626cd8b56023ec51e921e8d85c1b611430", "stable" },
   { "6bdd779f", "temporal.deadline", "quantity", "s", "sha256:6bdd779fcda20a95aa513f375273a80256196d59cf48e912c41853fd6ddc4ad5", "stable" },
   { "fb2badbe", "temporal.duration", "temporal", "s", "sha256:fb2badbef8d8563b8528261739ef62f81b148013c95fdd8599bb7a94b35152c1", "stable" },
   { "416e57b3", "temporal.sample_interval", "quantity", "s", "sha256:416e57b38ccfb4af97fbbe2cf0ecb946c3df26066fa6d62bf38e39ee1203520e", "stable" },

@@ -1,0 +1,22 @@
+sid: 6c2d4fe4
+path: maritime.nav_status
+aliases:
+  short: maritime.nav_status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Навигационный статус AIS
+  en: AIS nav status
+fingerprint: sha256:6c2d4fe4fcdbd6431fb71267f6d844108ab24f5f6b9451e4e4563ebc6bb8dca0
+enumValues:
+  - underway
+  - anchored
+  - moored
+  - aground
+  - restricted
+  - undefined

@@ -1,0 +1,21 @@
+sid: 9253ae47
+path: safety.system.state
+aliases:
+  short: system.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы безопасности
+  en: Safety system state
+fingerprint: sha256:9253ae47f505208a856ace23e5e686e5365340241f45785cef362fec87af6ef9
+enumValues:
+  - normal
+  - alarm
+  - fault
+  - maintenance
+  - disabled

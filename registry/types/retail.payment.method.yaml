@@ -1,0 +1,21 @@
+sid: c472c2f0
+path: retail.payment.method
+aliases:
+  short: payment.method
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Способ оплаты
+  en: Payment method
+fingerprint: sha256:c472c2f0a14e57dff9cbdd3e59cedb2917f4fea846049733f6667d7803b5ba52
+enumValues:
+  - cash
+  - card
+  - qr
+  - nfc
+  - other
