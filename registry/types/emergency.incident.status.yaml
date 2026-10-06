@@ -1,0 +1,21 @@
+sid: a31ba798
+path: emergency.incident.status
+aliases:
+  short: incident.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус происшествия
+  en: Incident status
+fingerprint: sha256:a31ba7987b6133757e95b15ee5aab7504f6e25e739cf0164af6991f774cf81fa
+enumValues:
+  - dispatched
+  - enroute
+  - onscene
+  - resolved
+  - cancelled

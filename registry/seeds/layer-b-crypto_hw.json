@@ -1,0 +1,123 @@
+{
+  "layer": "B4",
+  "name": "layer-b-crypto_hw.json",
+  "types": [
+    {
+      "path": "crypto.miner.hashrate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Miner hashrate",
+      "titleRu": "Хешрейт",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crypto.miner.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Miner power",
+      "titleRu": "Мощность майнера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crypto.miner.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Miner temperature",
+      "titleRu": "Температура майнера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crypto.miner.fan_rpm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Miner fan RPM",
+      "titleRu": "Обороты вентилятора майнера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crypto.node.peers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Node peer count",
+      "titleRu": "Число пиров",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crypto.node.block_height",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Block height",
+      "titleRu": "Высота блока",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crypto.miner.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Miner id",
+      "titleRu": "ID майнера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crypto.wallet.address",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wallet address",
+      "titleRu": "Адрес кошелька",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "crypto.miner.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Miner state",
+      "titleRu": "Состояние майнера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mining",
+        "idle",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

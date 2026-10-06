@@ -1,0 +1,162 @@
+{
+  "layer": "B4",
+  "name": "layer-b-airport.json",
+  "types": [
+    {
+      "path": "airport.code",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Airport IATA/ICAO",
+      "titleRu": "Код аэропорта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airport.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Airport flight id",
+      "titleRu": "ID рейса (аэропорт)",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airport.gate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gate id",
+      "titleRu": "ID выхода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airport.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stand id",
+      "titleRu": "ID стоянки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airport.flight.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Airport flight status",
+      "titleRu": "Статус рейса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scheduled",
+        "boarding",
+        "departed",
+        "arrived",
+        "delayed",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "airport.runway.vis",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Runway visibility",
+      "titleRu": "Видимость на ВПП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airport.runway.friction",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Runway friction",
+      "titleRu": "Сцепление ВПП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airport.baggage.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Baggage piece count",
+      "titleRu": "Число багажа",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airport.passenger.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passenger queue length",
+      "titleRu": "Очередь пассажиров",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airport.fuel.dispensed",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fuel dispensed",
+      "titleRu": "Заправлено топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airport.security.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Airport security alarm",
+      "titleRu": "Тревога авиабезопасности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "airport.jetbridge",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Jet bridge command",
+      "titleRu": "Команда телетрапа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dock",
+        "undock",
+        "stop"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

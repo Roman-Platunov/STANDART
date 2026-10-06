@@ -1,0 +1,171 @@
+{
+  "layer": "B4",
+  "name": "layer-b-astronomy.json",
+  "types": [
+    {
+      "path": "astronomy.seeing.fwhm",
+      "kind": "quantity",
+      "unit": "arcsec",
+      "titleEn": "Seeing FWHM",
+      "titleRu": "Смётие атмосферы FWHM",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "astronomy.sky.background",
+      "kind": "quantity",
+      "unit": "mag/arcsec2",
+      "titleEn": "Sky background",
+      "titleRu": "Фон неба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "astronomy.transparency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Atmospheric transparency",
+      "titleRu": "Прозрачность атмосферы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "astronomy.dome.azimuth",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Dome azimuth",
+      "titleRu": "Азимут купола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "astronomy.telescope.altitude",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Telescope altitude",
+      "titleRu": "Высота телескопа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "astronomy.telescope.azimuth",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Telescope azimuth",
+      "titleRu": "Азимут телескопа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "astronomy.ccd.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CCD temperature",
+      "titleRu": "Температура ПЗС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "astronomy.exposure.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Exposure time",
+      "titleRu": "Выдержка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "astronomy.humidity.dome",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dome humidity",
+      "titleRu": "Влажность в куполе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "astronomy.observatory.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Observatory id",
+      "titleRu": "ID обсерватории",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "astronomy.target.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Target id",
+      "titleRu": "ID объекта наблюдения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "astronomy.dome.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dome state",
+      "titleRu": "Состояние купола",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "moving",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

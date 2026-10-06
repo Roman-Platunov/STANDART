@@ -1,0 +1,100 @@
+{
+  "layer": "B4",
+  "name": "layer-b-government.json",
+  "types": [
+    {
+      "path": "government.agency.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Agency id",
+      "titleRu": "ID ведомства",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "government.service.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Public service id",
+      "titleRu": "ID госуслуги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "government.case.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Case id",
+      "titleRu": "ID дела",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "government.case.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Case status",
+      "titleRu": "Статус обращения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "submitted",
+        "in_review",
+        "approved",
+        "rejected",
+        "closed"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "government.queue.wait",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Service wait time",
+      "titleRu": "Ожидание в МФЦ/службе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "government.kiosk.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Kiosk uptime",
+      "titleRu": "Аптайм киоска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "government.kiosk.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Service kiosk online",
+      "titleRu": "Киоск онлайн",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

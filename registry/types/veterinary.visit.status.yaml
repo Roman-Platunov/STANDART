@@ -1,0 +1,20 @@
+sid: 147dd6d9
+path: veterinary.visit.status
+aliases:
+  short: visit.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус визита
+  en: Vet visit status
+fingerprint: sha256:147dd6d922a1dc4e0a59e3bc582c16926ce104eec032eda5b182bd2bc27c853f
+enumValues:
+  - scheduled
+  - in_progress
+  - complete
+  - cancelled

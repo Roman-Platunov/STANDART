@@ -1,0 +1,139 @@
+{
+  "layer": "B4",
+  "name": "layer-b-textile.json",
+  "types": [
+    {
+      "path": "textile.yarn.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Yarn tension",
+      "titleRu": "Натяжение нити",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile.loom.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Loom speed",
+      "titleRu": "Скорость ткацкого станка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile.dye.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dye bath temperature",
+      "titleRu": "Температура красильной ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile.dye.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dye bath pH",
+      "titleRu": "pH красильной ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "textile.humidity.room",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Textile room humidity",
+      "titleRu": "Влажность цеха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "textile.fabric.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fabric moisture",
+      "titleRu": "Влажность ткани",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "textile.defect.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Defect count",
+      "titleRu": "Число дефектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Textile lot id",
+      "titleRu": "ID партии текстиля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "textile.process.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Textile process state",
+      "titleRu": "Состояние процесса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spinning",
+        "weaving",
+        "dyeing",
+        "finishing",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 34be4cc6
+path: battery.test.result
+aliases:
+  short: test.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат теста АКБ
+  en: Battery test result
+fingerprint: sha256:34be4cc6d14c3bcec2e399533f685ee4ca7177b5fb61c92c958d433816003729
+enumValues:
+  - pass
+  - fail
+  - rework
+  - quarantine

@@ -1,0 +1,22 @@
+sid: "502784e2"
+path: legal.contract.status
+aliases:
+  short: contract.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус договора
+  en: Contract status
+fingerprint: sha256:502784e2a08237a6b748308fc12e32326422bdfb5c5b58ccb8361ed28aa6c899
+enumValues:
+  - draft
+  - review
+  - signed
+  - active
+  - terminated
+  - expired

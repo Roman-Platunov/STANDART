@@ -1,0 +1,22 @@
+sid: afc1324e
+path: postal.item.status
+aliases:
+  short: postal.item.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус ПО
+  en: Postal item status
+fingerprint: sha256:afc1324ea57a8af271b61049bbcbf03b84c99c436be24331cd582ba091ca61eb
+enumValues:
+  - accepted
+  - in_transit
+  - out_for_delivery
+  - delivered
+  - returned
+  - lost

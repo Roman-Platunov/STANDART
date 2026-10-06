@@ -1,0 +1,136 @@
+{
+  "layer": "B4",
+  "name": "layer-b-port.json",
+  "types": [
+    {
+      "path": "port.code",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Port code",
+      "titleRu": "Код порта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "port.berth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Berth id",
+      "titleRu": "ID причала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "port.vessel.visit_id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vessel visit id",
+      "titleRu": "ID судозахода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "port.crane.moves",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Crane moves",
+      "titleRu": "Движения крана",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "port.crane.productivity",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Crane productivity",
+      "titleRu": "Производительность крана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "port.yard.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Yard occupancy",
+      "titleRu": "Занятость терминала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "port.gate.truck_queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gate truck queue",
+      "titleRu": "Очередь грузовиков",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "port.tide.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Port tide level",
+      "titleRu": "Уровень прилива в порту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "port.berth.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Berth status",
+      "titleRu": "Статус причала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "occupied",
+        "reserved",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "port.security.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Port security breach",
+      "titleRu": "Нарушение портовой охраны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

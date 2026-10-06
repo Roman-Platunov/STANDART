@@ -1,0 +1,118 @@
+{
+  "layer": "B4",
+  "name": "layer-b-museum.json",
+  "types": [
+    {
+      "path": "museum.object.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Museum object id",
+      "titleRu": "ID экспоната",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "museum.gallery.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gallery id",
+      "titleRu": "ID зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "museum.showcase.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Showcase temperature",
+      "titleRu": "Температура витрины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "museum.showcase.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Showcase humidity",
+      "titleRu": "Влажность витрины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "museum.showcase.lux",
+      "kind": "quantity",
+      "unit": "lx",
+      "titleEn": "Showcase illuminance",
+      "titleRu": "Освещённость витрины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "museum.visitor.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Visitor count",
+      "titleRu": "Число посетителей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "museum.alarm.intrusion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Museum intrusion alarm",
+      "titleRu": "Тревога музея",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "museum.showcase.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Showcase open",
+      "titleRu": "Витрина открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "museum.object.image_ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Object image",
+      "titleRu": "Изображение экспоната",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

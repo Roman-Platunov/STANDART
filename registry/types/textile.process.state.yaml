@@ -1,0 +1,22 @@
+sid: da7e93fe
+path: textile.process.state
+aliases:
+  short: process.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние процесса
+  en: Textile process state
+fingerprint: sha256:da7e93feed19ea513d20b23ee7def067c99072e331d02e2bce5348e56891b94c
+enumValues:
+  - spinning
+  - weaving
+  - dyeing
+  - finishing
+  - idle
+  - fault

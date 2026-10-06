@@ -1,0 +1,23 @@
+sid: "78682415"
+path: chemical.reactor.state
+aliases:
+  short: reactor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние реактора
+  en: Reactor state
+fingerprint: sha256:786824157eb687616671441a1331491a503ee7ff94b2cf28a8d7f83d064aa3cd
+enumValues:
+  - idle
+  - charging
+  - reaction
+  - cooling
+  - discharge
+  - cip
+  - fault

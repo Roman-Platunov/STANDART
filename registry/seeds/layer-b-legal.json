@@ -1,0 +1,95 @@
+{
+  "layer": "B4",
+  "name": "layer-b-legal.json",
+  "types": [
+    {
+      "path": "legal.matter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Legal matter id",
+      "titleRu": "ID дела",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "legal.contract.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Contract id",
+      "titleRu": "ID договора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "legal.party.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Party id",
+      "titleRu": "ID стороны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "legal.contract.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Contract status",
+      "titleRu": "Статус договора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "draft",
+        "review",
+        "signed",
+        "active",
+        "terminated",
+        "expired"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "legal.deadline",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Legal deadline unix",
+      "titleRu": "Дедлайн (юр.)",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "legal.document.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Legal document ref",
+      "titleRu": "Юридический документ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "legal.hold.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Legal hold active",
+      "titleRu": "Legal hold активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "restricted"
+    }
+  ]
+}

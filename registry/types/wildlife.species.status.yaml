@@ -1,0 +1,21 @@
+sid: be82c12c
+path: wildlife.species.status
+aliases:
+  short: species.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Охранный статус
+  en: Conservation status
+fingerprint: sha256:be82c12c042bb1cdc09dca366f10cffcc784297246437f27fe01c142833d492c
+enumValues:
+  - least_concern
+  - near_threatened
+  - vulnerable
+  - endangered
+  - critical

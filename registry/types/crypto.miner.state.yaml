@@ -1,0 +1,20 @@
+sid: 726b500c
+path: crypto.miner.state
+aliases:
+  short: miner.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние майнера
+  en: Miner state
+fingerprint: sha256:726b500c437490b6f2c7abc5db6217d0d565839148d4d32224be9aaef665f896
+enumValues:
+  - mining
+  - idle
+  - fault
+  - offline

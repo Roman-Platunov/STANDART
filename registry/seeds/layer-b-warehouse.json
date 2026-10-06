@@ -1,0 +1,163 @@
+{
+  "layer": "B4",
+  "name": "layer-b-warehouse.json",
+  "types": [
+    {
+      "path": "warehouse.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Warehouse site id",
+      "titleRu": "ID склада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "warehouse.location.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Storage location id",
+      "titleRu": "ID ячейки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "warehouse.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Warehouse SKU id",
+      "titleRu": "SKU склада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "warehouse.inventory.qty",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Inventory quantity",
+      "titleRu": "Количество на складе",
+      "encodings": [
+        "i32",
+        "f32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warehouse.location.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Location temperature",
+      "titleRu": "Температура зоны хранения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warehouse.location.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Location humidity",
+      "titleRu": "Влажность зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "warehouse.picker.productivity",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Picker productivity",
+      "titleRu": "Производительность комплектовщика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warehouse.agv.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Warehouse AGV battery",
+      "titleRu": "Заряд AGV склада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "warehouse.task.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Warehouse task type",
+      "titleRu": "Тип складской задачи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inbound",
+        "putaway",
+        "pick",
+        "pack",
+        "ship",
+        "cycle_count"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "warehouse.task.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Warehouse task status",
+      "titleRu": "Статус складской задачи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "queued",
+        "assigned",
+        "active",
+        "done",
+        "exception"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "warehouse.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dock door open",
+      "titleRu": "Дверь дока открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

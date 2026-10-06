@@ -1,0 +1,126 @@
+{
+  "layer": "B4",
+  "name": "layer-b-vending.json",
+  "types": [
+    {
+      "path": "vending.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vending machine id",
+      "titleRu": "ID автомата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vending.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vending SKU id",
+      "titleRu": "SKU автомата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vending.inventory.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vending inventory",
+      "titleRu": "Остаток в автомате",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vending.cash.amount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cash in machine",
+      "titleRu": "Наличные в автомате",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vending.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Vending temperature",
+      "titleRu": "Температура автомата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vending.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vending door open",
+      "titleRu": "Дверь автомата открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vending.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vending jam",
+      "titleRu": "Застревание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vending.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vending state",
+      "titleRu": "Состояние автомата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "empty",
+        "fault",
+        "offline",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vending.command",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Vending command",
+      "titleRu": "Команда автомата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vend",
+        "refund",
+        "reboot",
+        "lock"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

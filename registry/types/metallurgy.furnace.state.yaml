@@ -1,0 +1,22 @@
+sid: da7edcd1
+path: metallurgy.furnace.state
+aliases:
+  short: furnace.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Furnace state
+fingerprint: sha256:da7edcd1bc87cba3e630b0fac9e0c967595bbcc20c7ee5e5916cca0c253afc1a
+enumValues:
+  - idle
+  - charging
+  - melting
+  - refining
+  - tapping
+  - fault

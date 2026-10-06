@@ -1,0 +1,19 @@
+sid: 60902a5e
+path: care.nurse_call
+aliases:
+  short: care.nurse_call
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Вызов медсестры
+  en: Nurse call command
+fingerprint: sha256:60902a5ef8a6155a79f1fb963d7bc8665bc8b76a16709e1d71221a864d907c16
+enumValues:
+  - call
+  - ack
+  - cancel

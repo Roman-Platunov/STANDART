@@ -1,0 +1,136 @@
+{
+  "layer": "B4",
+  "name": "layer-b-entertainment.json",
+  "types": [
+    {
+      "path": "entertainment.venue.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Venue id",
+      "titleRu": "ID площадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "entertainment.show.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Show id",
+      "titleRu": "ID шоу",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "entertainment.audience.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Audience count",
+      "titleRu": "Число зрителей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "entertainment.stage.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Stage SPL",
+      "titleRu": "Уровень звука сцены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "entertainment.stage.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stage temperature",
+      "titleRu": "Температура сцены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "entertainment.light.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Stage lighting power",
+      "titleRu": "Мощность сценического света",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "entertainment.ride.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Amusement ride speed",
+      "titleRu": "Скорость аттракциона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "entertainment.ride.gforce",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ride g-force",
+      "titleRu": "Перегрузка аттракциона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "entertainment.ride.e_stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ride e-stop",
+      "titleRu": "Аварийный стоп аттракциона",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "entertainment.show.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Show state",
+      "titleRu": "Состояние шоу",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rehearsal",
+        "doors",
+        "live",
+        "intermission",
+        "ended"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

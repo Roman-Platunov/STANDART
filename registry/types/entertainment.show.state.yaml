@@ -1,0 +1,21 @@
+sid: 1c3a3492
+path: entertainment.show.state
+aliases:
+  short: show.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шоу
+  en: Show state
+fingerprint: sha256:1c3a3492fad5256ce270ec5232ddbf7b37bc2de2b2733e901e51b943c0fc4417
+enumValues:
+  - rehearsal
+  - doors
+  - live
+  - intermission
+  - ended

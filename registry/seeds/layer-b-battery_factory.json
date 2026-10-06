@@ -1,0 +1,145 @@
+{
+  "layer": "B4",
+  "name": "layer-b-battery_factory.json",
+  "types": [
+    {
+      "path": "battery.cell.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Cell voltage",
+      "titleRu": "Напряжение ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery.cell.capacity",
+      "kind": "quantity",
+      "unit": "A.h",
+      "titleEn": "Cell capacity",
+      "titleRu": "Ёмкость ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery.cell.impedance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Cell impedance",
+      "titleRu": "Сопротивление ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery.formation.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Formation current",
+      "titleRu": "Ток формирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery.formation.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Formation temperature",
+      "titleRu": "Температура формирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery.module.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Module SoC factory",
+      "titleRu": "SoC модуля (производство)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "battery.eol.capacity_retention",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "EOL capacity retention",
+      "titleRu": "Остаточная ёмкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "battery.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cell id",
+      "titleRu": "ID ячейки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Battery lot id",
+      "titleRu": "ID партии АКБ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery.test.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Battery test result",
+      "titleRu": "Результат теста АКБ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "rework",
+        "quarantine"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

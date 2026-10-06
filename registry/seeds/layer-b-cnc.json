@@ -1,0 +1,184 @@
+{
+  "layer": "B4",
+  "name": "layer-b-cnc.json",
+  "types": [
+    {
+      "path": "cnc.spindle.rpm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Spindle RPM",
+      "titleRu": "Обороты шпинделя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cnc.spindle.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Spindle load",
+      "titleRu": "Нагрузка шпинделя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 200
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cnc.feed.rate",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cnc.tool.wear",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tool wear",
+      "titleRu": "Износ инструмента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cnc.axis.x",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Axis X position",
+      "titleRu": "Координата X",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cnc.axis.y",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Axis Y position",
+      "titleRu": "Координата Y",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cnc.axis.z",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Axis Z position",
+      "titleRu": "Координата Z",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cnc.coolant.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Coolant flow",
+      "titleRu": "Расход СОЖ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cnc.coolant.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура СОЖ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cnc.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CNC door open",
+      "titleRu": "Дверь станка открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cnc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CNC state",
+      "titleRu": "Состояние ЧПУ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "running",
+        "feed_hold",
+        "alarm",
+        "setup"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cnc.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CNC machine id",
+      "titleRu": "ID станка ЧПУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cnc.program.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CNC program id",
+      "titleRu": "ID программы ЧПУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+sid: "7248e368"
+path: meteorology.humidity.relative
+aliases:
+  short: humidity.relative
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Отн. влажность (метео)
+  en: Met relative humidity
+fingerprint: sha256:7248e368ca47a50224d7c118da9b5ad5e42aef1bffbb2b874c8dd1261691bd66
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,18 @@
+sid: f0593fba
+path: arvr.controller.battery
+aliases:
+  short: controller.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заряд контроллера
+  en: Controller battery
+fingerprint: sha256:f0593fba6a56d93a2edc3979c270bf4d4f9c1a9a649a219a93151667050c65c7
+range:
+  min: 0
+  max: 100

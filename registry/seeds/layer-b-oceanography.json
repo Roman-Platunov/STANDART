@@ -1,0 +1,164 @@
+{
+  "layer": "B4",
+  "name": "layer-b-oceanography.json",
+  "types": [
+    {
+      "path": "oceanography.wave.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Significant wave height",
+      "titleRu": "Значительная высота волны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.wave.period",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Wave period",
+      "titleRu": "Период волны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.wave.direction",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Wave direction",
+      "titleRu": "Направление волны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.current.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Ocean current speed",
+      "titleRu": "Скорость течения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.current.direction",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Ocean current direction",
+      "titleRu": "Направление течения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.sea.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sea surface temperature",
+      "titleRu": "Температура поверхности моря",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.sea.salinity",
+      "kind": "quantity",
+      "unit": "ppt",
+      "titleEn": "Sea salinity",
+      "titleRu": "Солёность моря",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.sea.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Sea level",
+      "titleRu": "Уровень моря",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.tide.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tide height",
+      "titleRu": "Высота прилива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.chlorophyll",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Chlorophyll-a",
+      "titleRu": "Хлорофилл-a",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.dissolved_oxygen",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Ocean dissolved oxygen",
+      "titleRu": "Растворённый кислород (океан)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oceanography.buoy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ocean buoy id",
+      "titleRu": "ID буя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

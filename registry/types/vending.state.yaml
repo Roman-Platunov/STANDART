@@ -1,0 +1,21 @@
+sid: ca4c863c
+path: vending.state
+aliases:
+  short: vending.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние автомата
+  en: Vending state
+fingerprint: sha256:ca4c863c1cc8f884f7391ca9cf218db0990f3f526b0c64be39554896b2b2e69d
+enumValues:
+  - ok
+  - empty
+  - fault
+  - offline
+  - maintenance

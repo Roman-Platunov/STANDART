@@ -1,0 +1,22 @@
+sid: e597450a
+path: warehouse.task.type
+aliases:
+  short: task.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип складской задачи
+  en: Warehouse task type
+fingerprint: sha256:e597450a3c784fab8bd8a3fb1c8c5a0fcda144473439eac2e14ac9fbd6c40f60
+enumValues:
+  - inbound
+  - putaway
+  - pick
+  - pack
+  - ship
+  - cycle_count

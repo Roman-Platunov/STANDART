@@ -1,0 +1,22 @@
+sid: 15516dd9
+path: meteorology.precip.type
+aliases:
+  short: precip.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип осадков
+  en: Precipitation type
+fingerprint: sha256:15516dd9c65f9ab5791bc8b460788d2ceb0b7bd7deda4981e28d7aee935231e9
+enumValues:
+  - none
+  - rain
+  - snow
+  - sleet
+  - hail
+  - freezing_rain

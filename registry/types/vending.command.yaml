@@ -1,0 +1,20 @@
+sid: 73a67064
+path: vending.command
+aliases:
+  short: vending.command
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда автомата
+  en: Vending command
+fingerprint: sha256:73a67064c6d6faa5eb3027fa351cd12ec01f63c4fcc9eec89c416817359db0d0
+enumValues:
+  - vend
+  - refund
+  - reboot
+  - lock

@@ -1,0 +1,20 @@
+sid: bd9912d7
+path: cement.plant.state
+aliases:
+  short: plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Cement plant state
+fingerprint: sha256:bd9912d78960955d3dec69780e87027d2ef322d1fb82f04e6789014feeac7f81
+enumValues:
+  - stop
+  - start
+  - run
+  - maintenance

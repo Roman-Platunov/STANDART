@@ -1,0 +1,175 @@
+{
+  "layer": "B4",
+  "name": "layer-b-waste.json",
+  "types": [
+    {
+      "path": "waste.landfill.gas_ch4",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Landfill methane",
+      "titleRu": "Метан полигона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waste.landfill.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Landfill temperature",
+      "titleRu": "Температура полигона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste.landfill.leachate_level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Leachate level",
+      "titleRu": "Уровень фильтрата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waste.incinerator.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Incinerator temperature",
+      "titleRu": "Температура сжигания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste.incinerator.emissions_co",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Incinerator CO",
+      "titleRu": "CO мусоросжигания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste.recycling.sort_rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sort accuracy",
+      "titleRu": "Точность сортировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waste.compost.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Compost temperature",
+      "titleRu": "Температура компоста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste.compost.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Compost moisture",
+      "titleRu": "Влажность компоста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waste.truck.fill",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Garbage truck fill",
+      "titleRu": "Заполненность мусоровоза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waste.facility.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Waste facility id",
+      "titleRu": "ID объекта отходов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waste.stream.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Waste stream type",
+      "titleRu": "Тип потока отходов",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mixed",
+        "organic",
+        "plastic",
+        "paper",
+        "metal",
+        "hazardous",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

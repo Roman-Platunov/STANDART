@@ -1,0 +1,21 @@
+sid: 842d493b
+path: advertising.campaign.status
+aliases:
+  short: campaign.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус кампании
+  en: Campaign status
+fingerprint: sha256:842d493b526dec6edf64e3bf5c5e85c48afe72157a77fcd9793705146ccbbdf5
+enumValues:
+  - draft
+  - scheduled
+  - live
+  - paused
+  - ended

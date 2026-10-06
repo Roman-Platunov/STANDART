@@ -1,0 +1,20 @@
+sid: e80cb678
+path: astronomy.dome.state
+aliases:
+  short: dome.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние купола
+  en: Dome state
+fingerprint: sha256:e80cb6788648a22a808c4f80968e52e5d1a4f7320739678c52f832bc2596b3d7
+enumValues:
+  - open
+  - closed
+  - moving
+  - fault

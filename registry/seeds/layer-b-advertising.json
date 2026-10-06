@@ -1,0 +1,125 @@
+{
+  "layer": "B4",
+  "name": "layer-b-advertising.json",
+  "types": [
+    {
+      "path": "advertising.screen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DOOH screen id",
+      "titleRu": "ID экрана DOOH",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "advertising.campaign.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Campaign id",
+      "titleRu": "ID кампании",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "advertising.impressions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Impressions",
+      "titleRu": "Показы",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "advertising.playouts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Playouts",
+      "titleRu": "Выходы ролика",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "advertising.screen.brightness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Screen brightness ad",
+      "titleRu": "Яркость экрана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "advertising.audience.dwell",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Audience dwell time",
+      "titleRu": "Время взгляда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "advertising.screen.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ad screen online",
+      "titleRu": "Экран онлайн",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "advertising.creative.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Creative asset ref",
+      "titleRu": "Креатив",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "advertising.campaign.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Campaign status",
+      "titleRu": "Статус кампании",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "draft",
+        "scheduled",
+        "live",
+        "paused",
+        "ended"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

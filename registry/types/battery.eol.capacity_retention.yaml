@@ -1,0 +1,18 @@
+sid: 642b4f41
+path: battery.eol.capacity_retention
+aliases:
+  short: eol.capacity_retention
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Остаточная ёмкость
+  en: EOL capacity retention
+fingerprint: sha256:642b4f41cee2e7128faad6c29c33c8bebec8e80a649e1e0ac3c88f9ef574abaf
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,21 @@
+sid: 048fa393
+path: semiconductor.tool.state
+aliases:
+  short: tool.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Tool state
+fingerprint: sha256:048fa39326e364e8abd7d0a2c433a396fa07289ccd8c2b9dac533aede0c53259
+enumValues:
+  - idle
+  - running
+  - pm
+  - alarm
+  - offline

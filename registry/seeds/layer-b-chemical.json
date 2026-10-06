@@ -1,0 +1,175 @@
+{
+  "layer": "B4",
+  "name": "layer-b-chemical.json",
+  "types": [
+    {
+      "path": "chemical.reactor.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chemical reactor temperature",
+      "titleRu": "Температура химреактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chemical.reactor.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chemical reactor pressure",
+      "titleRu": "Давление химреактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chemical.reactor.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reactor level",
+      "titleRu": "Уровень реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chemical.reactor.agitation",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Agitator speed",
+      "titleRu": "Скорость мешалки реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chemical.column.top_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Column top temperature",
+      "titleRu": "Температура верха колонны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chemical.column.bottom_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Column bottom temperature",
+      "titleRu": "Температура низа колонны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chemical.column.reflux",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reflux ratio",
+      "titleRu": "Флегмовое число",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chemical.concentration.product",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product concentration",
+      "titleRu": "Концентрация продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chemical.voc.emission",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Plant VOC emission",
+      "titleRu": "Выбросы ЛОС завода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chemical.interlock.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Safety interlock trip",
+      "titleRu": "Срабатывание блокировки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chemical.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chemical batch id",
+      "titleRu": "ID химпартии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chemical.reactor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reactor state",
+      "titleRu": "Состояние реактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "charging",
+        "reaction",
+        "cooling",
+        "discharge",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 1d188e0f
+path: customs.inspection.status
+aliases:
+  short: inspection.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус досмотра
+  en: Inspection status
+fingerprint: sha256:1d188e0f3efb99855d93625d95c67d200dce4c4e0c6310e257e5f2254d173f22
+enumValues:
+  - pending
+  - cleared
+  - hold
+  - seize
+  - inspect

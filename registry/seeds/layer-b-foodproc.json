@@ -1,0 +1,179 @@
+{
+  "layer": "B4",
+  "name": "layer-b-foodproc.json",
+  "types": [
+    {
+      "path": "foodproc.cook.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cooking temperature",
+      "titleRu": "Температура приготовления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foodproc.cook.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cooking humidity",
+      "titleRu": "Влажность приготовления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "foodproc.pasteurization.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pasteurization temperature",
+      "titleRu": "Температура пастеризации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foodproc.pasteurization.hold_time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Pasteurization hold time",
+      "titleRu": "Выдержка пастеризации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foodproc.mixer.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Mixer speed",
+      "titleRu": "Скорость мешалки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foodproc.filler.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Filler volume",
+      "titleRu": "Объём дозатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foodproc.metal.detect_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Metal detector trips",
+      "titleRu": "Срабатывания металлодетектора",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foodproc.weight.checkweigher",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Checkweigher weight",
+      "titleRu": "Вес чеквейера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foodproc.cip.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CIP active",
+      "titleRu": "CIP активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "foodproc.cip.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "CIP conductivity",
+      "titleRu": "Проводимость CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foodproc.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food batch id",
+      "titleRu": "ID пищевой партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foodproc.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food line id",
+      "titleRu": "ID линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foodproc.line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Food line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "running",
+        "cip",
+        "changeover",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

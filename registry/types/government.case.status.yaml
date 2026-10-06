@@ -1,0 +1,21 @@
+sid: 03d39f2b
+path: government.case.status
+aliases:
+  short: case.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус обращения
+  en: Case status
+fingerprint: sha256:03d39f2bc3f6c8d873cd9ef260fad2d10ac4e69ff38dbb52bf02ff98d4454676
+enumValues:
+  - submitted
+  - in_review
+  - approved
+  - rejected
+  - closed

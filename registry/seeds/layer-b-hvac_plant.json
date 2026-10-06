@@ -1,0 +1,161 @@
+{
+  "layer": "B4",
+  "name": "layer-b-hvac_plant.json",
+  "types": [
+    {
+      "path": "hvac.chiller.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Chiller power",
+      "titleRu": "Мощность чиллера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac.chiller.cop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Chiller COP",
+      "titleRu": "COP чиллера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac.chiller.leaving_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chilled water leaving temp",
+      "titleRu": "Т уходящей охл. воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac.chiller.entering_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chilled water entering temp",
+      "titleRu": "Т входящей охл. воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac.boiler.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Boiler power",
+      "titleRu": "Мощность котла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac.boiler.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Boiler efficiency",
+      "titleRu": "КПД котла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hvac.cooling_tower.approach",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cooling tower approach",
+      "titleRu": "Аппроуч градирни",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac.cooling_tower.fan_speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cooling tower fan",
+      "titleRu": "Вентилятор градирни",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hvac.ahu.static_pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "AHU static pressure",
+      "titleRu": "Статическое давление ПВУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HVAC plant id",
+      "titleRu": "ID теплохладоцентра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hvac.chiller.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chiller state",
+      "titleRu": "Состояние чиллера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "starting",
+        "running",
+        "unloading",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

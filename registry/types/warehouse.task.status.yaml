@@ -1,0 +1,21 @@
+sid: a8b3239a
+path: warehouse.task.status
+aliases:
+  short: task.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус складской задачи
+  en: Warehouse task status
+fingerprint: sha256:a8b3239a894c456fa504fba6f8420f3435ed7560557bf73dbbeeb19ad5aa7237
+enumValues:
+  - queued
+  - assigned
+  - active
+  - done
+  - exception

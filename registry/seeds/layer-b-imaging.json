@@ -1,0 +1,130 @@
+{
+  "layer": "B4",
+  "name": "layer-b-imaging.json",
+  "types": [
+    {
+      "path": "imaging.study.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Imaging study id",
+      "titleRu": "ID исследования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "imaging.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Imaging device id",
+      "titleRu": "ID аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "imaging.modality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Imaging modality",
+      "titleRu": "Модальность",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "xr",
+        "ct",
+        "mr",
+        "us",
+        "pet",
+        "mg",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "imaging.dose.ctdi",
+      "kind": "quantity",
+      "unit": "mGy",
+      "titleEn": "CTDIvol",
+      "titleRu": "CTDIvol",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "imaging.dose.dap",
+      "kind": "quantity",
+      "unit": "Gy.cm2",
+      "titleEn": "Dose area product",
+      "titleRu": "Произведение доза-площадь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "imaging.mr.field",
+      "kind": "quantity",
+      "unit": "T",
+      "titleEn": "MR field strength",
+      "titleRu": "Индукция МРТ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "imaging.us.frequency",
+      "kind": "quantity",
+      "unit": "MHz",
+      "titleEn": "Ultrasound frequency",
+      "titleRu": "Частота УЗИ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "imaging.study.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Study status",
+      "titleRu": "Статус исследования",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scheduled",
+        "in_progress",
+        "complete",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "imaging.dicom.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "DICOM reference",
+      "titleRu": "Ссылка DICOM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

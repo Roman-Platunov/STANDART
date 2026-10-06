@@ -1,0 +1,138 @@
+{
+  "layer": "B4",
+  "name": "layer-b-welding.json",
+  "types": [
+    {
+      "path": "welding.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Welding current",
+      "titleRu": "Сварочный ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welding.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Welding voltage",
+      "titleRu": "Сварочное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welding.wire.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Wire feed speed",
+      "titleRu": "Скорость подачи проволоки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welding.gas.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Shielding gas flow",
+      "titleRu": "Расход защитного газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welding.arc.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Arc time",
+      "titleRu": "Время горения дуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welding.heat.input",
+      "kind": "quantity",
+      "unit": "kJ/mm",
+      "titleEn": "Heat input",
+      "titleRu": "Погонная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welding.arc.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Arc on",
+      "titleRu": "Дуга горит",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "welding.wps.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WPS id",
+      "titleRu": "ID WPS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "welding.joint.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Weld joint id",
+      "titleRu": "ID сварного шва",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "welding.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Welding process",
+      "titleRu": "Способ сварки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mig",
+        "tig",
+        "stick",
+        "saw",
+        "laser",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

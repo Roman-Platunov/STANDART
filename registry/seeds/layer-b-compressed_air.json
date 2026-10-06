@@ -1,0 +1,107 @@
+{
+  "layer": "B4",
+  "name": "layer-b-compressed_air.json",
+  "types": [
+    {
+      "path": "compressed_air.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Compressed air pressure",
+      "titleRu": "Давление сжатого воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Compressed air flow",
+      "titleRu": "Расход сжатого воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air.dewpoint",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Compressed air dew point",
+      "titleRu": "Точка росы сжатого воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air.compressor.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Compressor power",
+      "titleRu": "Мощность компрессора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air.compressor.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Compressor temperature",
+      "titleRu": "Температура компрессора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air.leak.estimate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Air leak estimate",
+      "titleRu": "Оценка утечек воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air.dryer.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dryer fault",
+      "titleRu": "Неисправность осушителя",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "compressed_air.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compressed air system id",
+      "titleRu": "ID системы сжатого воздуха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

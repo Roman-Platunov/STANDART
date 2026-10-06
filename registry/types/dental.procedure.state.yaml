@@ -1,0 +1,22 @@
+sid: 5d9fc2fb
+path: dental.procedure.state
+aliases:
+  short: procedure.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние процедуры
+  en: Dental procedure state
+fingerprint: sha256:5d9fc2fb256985f0aa3450a5abcdf01fa595a12b77cd171fef7dbc4d055dd51b
+enumValues:
+  - idle
+  - exam
+  - cleaning
+  - filling
+  - surgery
+  - imaging

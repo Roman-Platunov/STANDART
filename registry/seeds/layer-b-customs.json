@@ -1,0 +1,113 @@
+{
+  "layer": "B4",
+  "name": "layer-b-customs.json",
+  "types": [
+    {
+      "path": "customs.declaration.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Customs declaration id",
+      "titleRu": "ID декларации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "customs.shipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Customs shipment id",
+      "titleRu": "ID партии таможни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "customs.inspection.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Inspection status",
+      "titleRu": "Статус досмотра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pending",
+        "cleared",
+        "hold",
+        "seize",
+        "inspect"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "customs.xray.anomaly_score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "X-ray anomaly score",
+      "titleRu": "Скор аномалии рентгена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "customs.weight.declared",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Declared weight",
+      "titleRu": "Заявленный вес",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "customs.weight.measured",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Measured weight",
+      "titleRu": "Измеренный вес",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "customs.seal.intact",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seal intact",
+      "titleRu": "Пломба цела",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "customs.scan.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Customs scan media",
+      "titleRu": "Скан таможни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

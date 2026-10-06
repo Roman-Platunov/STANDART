@@ -1,0 +1,21 @@
+sid: 33fa7a7e
+path: cnc.state
+aliases:
+  short: cnc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ЧПУ
+  en: CNC state
+fingerprint: sha256:33fa7a7e1df0e0eb0d5cca061aa92a43c2121fbf0d21efa9424340888aa8f088
+enumValues:
+  - idle
+  - running
+  - feed_hold
+  - alarm
+  - setup

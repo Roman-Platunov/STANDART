@@ -1,0 +1,22 @@
+sid: 4af940ae
+path: airport.flight.status
+aliases:
+  short: flight.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус рейса
+  en: Airport flight status
+fingerprint: sha256:4af940aeacdb19e4064f9a8c810b87e5c133b01e1ef9302ba5babd04662e1915
+enumValues:
+  - scheduled
+  - boarding
+  - departed
+  - arrived
+  - delayed
+  - cancelled

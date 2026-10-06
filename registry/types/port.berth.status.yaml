@@ -1,0 +1,20 @@
+sid: c8dcf7fe
+path: port.berth.status
+aliases:
+  short: berth.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус причала
+  en: Berth status
+fingerprint: sha256:c8dcf7fe6b32e6ab39378e2b64429e870f353f51d29028e0d14dfd237b1fbcb0
+enumValues:
+  - free
+  - occupied
+  - reserved
+  - maintenance

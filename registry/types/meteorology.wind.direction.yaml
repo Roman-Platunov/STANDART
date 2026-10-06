@@ -1,0 +1,18 @@
+sid: 9ff4b6cd
+path: meteorology.wind.direction
+aliases:
+  short: wind.direction
+kind: quantity
+unit: deg
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Направление ветра (метео)
+  en: Met wind direction
+fingerprint: sha256:9ff4b6cd70daddab69de3ab8cee13afab927abe66d41a8657750dca62c2df73a
+range:
+  min: 0
+  max: 360

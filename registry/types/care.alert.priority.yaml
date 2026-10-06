@@ -1,0 +1,20 @@
+sid: 172fb7c4
+path: care.alert.priority
+aliases:
+  short: alert.priority
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Приоритет оповещения
+  en: Care alert priority
+fingerprint: sha256:172fb7c4dfbc999079a4c3773c8b76869e24fd44f6ad91c2c07acd2365da2a40
+enumValues:
+  - low
+  - medium
+  - high
+  - critical

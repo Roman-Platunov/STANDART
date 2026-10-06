@@ -1,0 +1,166 @@
+{
+  "layer": "B4",
+  "name": "layer-b-beverage.json",
+  "types": [
+    {
+      "path": "beverage.ferment.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fermentation temperature",
+      "titleRu": "Температура брожения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beverage.ferment.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Fermentation pressure",
+      "titleRu": "Давление брожения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beverage.ferment.sg",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Specific gravity",
+      "titleRu": "Плотность сусла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beverage.ferment.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ferment pH",
+      "titleRu": "pH брожения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "beverage.ferment.brix",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Brix",
+      "titleRu": "Брикс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beverage.carbonation",
+      "kind": "quantity",
+      "unit": "vol",
+      "titleEn": "CO2 volumes",
+      "titleRu": "Степень карбонизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beverage.bright.tank_level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bright tank level",
+      "titleRu": "Уровень, %",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "beverage.filler.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Bottle filler speed",
+      "titleRu": "Скорость розлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beverage.wine.alcohol",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Alcohol by volume",
+      "titleRu": "Крепость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "beverage.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Beverage batch id",
+      "titleRu": "ID партии напитка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "beverage.style",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Beverage style",
+      "titleRu": "Стиль напитка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lager",
+        "ale",
+        "wine",
+        "cider",
+        "soda",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

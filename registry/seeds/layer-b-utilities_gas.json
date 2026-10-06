@@ -1,0 +1,133 @@
+{
+  "layer": "B4",
+  "name": "layer-b-utilities_gas.json",
+  "types": [
+    {
+      "path": "utilities.gas.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Gas distribution pressure",
+      "titleRu": "Давление газораспределения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "utilities.gas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Gas distribution flow",
+      "titleRu": "Расход газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "utilities.gas.calorific",
+      "kind": "quantity",
+      "unit": "MJ/m3",
+      "titleEn": "Calorific value",
+      "titleRu": "Теплотворная способность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "utilities.gas.odorant",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Odorant concentration",
+      "titleRu": "Концентрация одоранта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "utilities.gas.leak_rate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Gas leak rate",
+      "titleRu": "Утечка газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "utilities.gas.leak_alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas leak alarm utility",
+      "titleRu": "Тревога утечки газа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "utilities.district.heat_supply_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "District heat supply temp",
+      "titleRu": "Т подачи теплосети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "utilities.district.heat_return_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "District heat return temp",
+      "titleRu": "Т обратки теплосети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "utilities.district.heat_flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "District heat flow",
+      "titleRu": "Расход теплосети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "utilities.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Utility station id",
+      "titleRu": "ID станции сетей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

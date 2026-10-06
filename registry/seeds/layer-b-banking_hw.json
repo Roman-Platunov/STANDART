@@ -1,0 +1,122 @@
+{
+  "layer": "B4",
+  "name": "layer-b-banking_hw.json",
+  "types": [
+    {
+      "path": "banking.atm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ATM id",
+      "titleRu": "ID банкомата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "banking.branch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Branch id",
+      "titleRu": "ID отделения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "banking.atm.cash_cassettes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cash cassette fill",
+      "titleRu": "Заполненность кассет",
+      "encodings": [
+        "f32"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "banking.atm.transaction_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "ATM transactions",
+      "titleRu": "Транзакции банкомата",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "banking.atm.card_retained",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Card retained",
+      "titleRu": "Карта изъята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "banking.atm.tamper",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ATM tamper",
+      "titleRu": "Вскрытие банкомата",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "banking.vault.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vault open",
+      "titleRu": "Хранилище открыто",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "banking.atm.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ATM state",
+      "titleRu": "Состояние банкомата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "in_service",
+        "out_of_service",
+        "maintenance",
+        "offline"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "banking.queue.length",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Branch queue length",
+      "titleRu": "Очередь в отделении",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    }
+  ]
+}

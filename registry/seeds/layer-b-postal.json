@@ -1,0 +1,98 @@
+{
+  "layer": "B4",
+  "name": "layer-b-postal.json",
+  "types": [
+    {
+      "path": "postal.office.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Post office id",
+      "titleRu": "ID отделения связи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "postal.item.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Postal item id",
+      "titleRu": "ID почтового отправления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "postal.item.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Postal item status",
+      "titleRu": "Статус ПО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "accepted",
+        "in_transit",
+        "out_for_delivery",
+        "delivered",
+        "returned",
+        "lost"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "postal.item.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Postal item weight",
+      "titleRu": "Масса ПО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "postal.sorting.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Sorting throughput",
+      "titleRu": "Производительность сортировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "postal.delivery.attempts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Delivery attempts",
+      "titleRu": "Попытки вручения",
+      "encodings": [
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "postal.mailbox.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mailbox full",
+      "titleRu": "Ящик переполнен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

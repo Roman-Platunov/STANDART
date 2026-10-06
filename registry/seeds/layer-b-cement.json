@@ -1,0 +1,147 @@
+{
+  "layer": "B4",
+  "name": "layer-b-cement.json",
+  "types": [
+    {
+      "path": "cement.kiln.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Kiln temperature",
+      "titleRu": "Температура печи цемента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement.kiln.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Kiln rotation speed",
+      "titleRu": "Обороты печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement.rawmill.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Raw mill power",
+      "titleRu": "Мощность сырьевой мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement.finishmill.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Finish mill power",
+      "titleRu": "Мощность цементной мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement.clinker.free_lime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Free lime",
+      "titleRu": "Свободная известь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 10
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cement.emission.nox",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Cement NOx",
+      "titleRu": "NOx цементного завода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement.emission.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Cement dust emission",
+      "titleRu": "Пыль цементного завода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement.silo.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cement silo level",
+      "titleRu": "Уровень силоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cement.kiln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Kiln id",
+      "titleRu": "ID печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cement.plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cement plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stop",
+        "start",
+        "run",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

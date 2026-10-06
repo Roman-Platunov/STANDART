@@ -1,0 +1,18 @@
+sid: 3d47c111
+path: hvac.boiler.efficiency
+aliases:
+  short: boiler.efficiency
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: КПД котла
+  en: Boiler efficiency
+fingerprint: sha256:3d47c1112f0b28c5cc66dd380ef3db85204cead18d9ac725425458e822b08c29
+range:
+  min: 0
+  max: 100

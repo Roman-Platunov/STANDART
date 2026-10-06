@@ -1,0 +1,21 @@
+sid: 2dd5daac
+path: hvac.chiller.state
+aliases:
+  short: chiller.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние чиллера
+  en: Chiller state
+fingerprint: sha256:2dd5daac362f5ceaeb1c0fa63eccdcadcb5a1b30ff5cf37c515b34b19795f7be
+enumValues:
+  - off
+  - starting
+  - running
+  - unloading
+  - fault

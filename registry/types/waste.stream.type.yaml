@@ -1,0 +1,23 @@
+sid: 344cd568
+path: waste.stream.type
+aliases:
+  short: stream.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип потока отходов
+  en: Waste stream type
+fingerprint: sha256:344cd5682019ce532ebed7b52f111df11f0b52d70888bc55ca24afbac887f50f
+enumValues:
+  - mixed
+  - organic
+  - plastic
+  - paper
+  - metal
+  - hazardous
+  - other

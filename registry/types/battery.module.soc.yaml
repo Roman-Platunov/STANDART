@@ -1,0 +1,18 @@
+sid: 0e9a8112
+path: battery.module.soc
+aliases:
+  short: module.soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: SoC модуля (производство)
+  en: Module SoC factory
+fingerprint: sha256:0e9a81120f4e00067b317ded6a9b5ba7b4a2ee5d200e30d71d2f72d26a58c871
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,21 @@
+sid: 553ca8c7
+path: foodproc.line.state
+aliases:
+  short: line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Food line state
+fingerprint: sha256:553ca8c7332f08b47d0d9aa6e262b98a1229011b9ecdfe4d247d46f753a24829
+enumValues:
+  - idle
+  - running
+  - cip
+  - changeover
+  - fault

@@ -1,0 +1,112 @@
+{
+  "layer": "B4",
+  "name": "layer-b-wildlife.json",
+  "types": [
+    {
+      "path": "wildlife.animal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wildlife animal id",
+      "titleRu": "ID дикого животного",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildlife.collar.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tracking collar id",
+      "titleRu": "ID ошейника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildlife.collar.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Collar battery",
+      "titleRu": "Заряд ошейника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wildlife.activity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wildlife activity",
+      "titleRu": "Активность животного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildlife.population.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Population count",
+      "titleRu": "Численность популяции",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildlife.poaching.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Poaching alert",
+      "titleRu": "Тревога браконьерства",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wildlife.camera.trap_ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Camera trap media",
+      "titleRu": "Фотоловушка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildlife.species.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Conservation status",
+      "titleRu": "Охранный статус",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "least_concern",
+        "near_threatened",
+        "vulnerable",
+        "endangered",
+        "critical"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

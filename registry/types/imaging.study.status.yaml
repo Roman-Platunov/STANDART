@@ -1,0 +1,20 @@
+sid: 2ee96b68
+path: imaging.study.status
+aliases:
+  short: study.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус исследования
+  en: Study status
+fingerprint: sha256:2ee96b68ec6b43ba802ee510d0ceb343d8169a6bae5c02765e98e6afa5083ade
+enumValues:
+  - scheduled
+  - in_progress
+  - complete
+  - cancelled

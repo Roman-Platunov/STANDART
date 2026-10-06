@@ -1,0 +1,154 @@
+{
+  "layer": "B4",
+  "name": "layer-b-emergency.json",
+  "types": [
+    {
+      "path": "emergency.incident.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Incident id",
+      "titleRu": "ID происшествия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "emergency.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Emergency unit id",
+      "titleRu": "ID подразделения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "emergency.incident.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Incident type",
+      "titleRu": "Тип происшествия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fire",
+        "medical",
+        "police",
+        "rescue",
+        "hazmat",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "emergency.incident.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Incident status",
+      "titleRu": "Статус происшествия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dispatched",
+        "enroute",
+        "onscene",
+        "resolved",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "emergency.response.eta",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Response ETA",
+      "titleRu": "ETA реагирования",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emergency.ambulance.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Ambulance speed",
+      "titleRu": "Скорость скорой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emergency.siren.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Siren active",
+      "titleRu": "Сирена включена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "emergency.lights.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency lights active",
+      "titleRu": "Проблесковые маячки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "emergency.firefighter.air_pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "SCBA air pressure",
+      "titleRu": "Давление в дыхательном аппарате",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emergency.firefighter.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Turnout gear temperature",
+      "titleRu": "Температура снаряжения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emergency.bodycam.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Bodycam media ref",
+      "titleRu": "Ссылка на бодикамеру",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

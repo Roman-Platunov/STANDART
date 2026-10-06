@@ -1,0 +1,144 @@
+{
+  "layer": "B4",
+  "name": "layer-b-seismology.json",
+  "types": [
+    {
+      "path": "seismology.ground.acceleration",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "PGA",
+      "titleRu": "Пиковое ускорение грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seismology.ground.velocity",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "PGV",
+      "titleRu": "Пиковая скорость грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seismology.ground.displacement",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ground displacement seismic",
+      "titleRu": "Сейсмическое смещение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seismology.magnitude",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Earthquake magnitude",
+      "titleRu": "Магнитуда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seismology.depth",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Hypocenter depth",
+      "titleRu": "Глубина очага",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seismology.intensity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Macroseismic intensity",
+      "titleRu": "Интенсивность",
+      "encodings": [
+        "f32",
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seismology.volcano.tremor",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Volcanic tremor amplitude",
+      "titleRu": "Амплитуда вулканического дрожания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seismology.volcano.so2",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Volcanic SO2 flux",
+      "titleRu": "Поток SO2 вулкана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seismology.alert.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seismic alert active",
+      "titleRu": "Сейсмическое оповещение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "seismology.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Seismic station id",
+      "titleRu": "ID сейсмостанции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seismology.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Seismic event id",
+      "titleRu": "ID сейсмического события",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

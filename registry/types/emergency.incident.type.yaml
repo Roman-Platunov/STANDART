@@ -1,0 +1,22 @@
+sid: 65bf2d28
+path: emergency.incident.type
+aliases:
+  short: incident.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип происшествия
+  en: Incident type
+fingerprint: sha256:65bf2d28da8010f0c8d6950f080a0182af7d4a2ecf7a1523d8259bcefa6c98b4
+enumValues:
+  - fire
+  - medical
+  - police
+  - rescue
+  - hazmat
+  - other

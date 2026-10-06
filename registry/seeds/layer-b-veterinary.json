@@ -1,0 +1,143 @@
+{
+  "layer": "B4",
+  "name": "layer-b-veterinary.json",
+  "types": [
+    {
+      "path": "veterinary.animal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Animal id",
+      "titleRu": "ID животного",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "veterinary.owner.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pet owner id",
+      "titleRu": "ID владельца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "veterinary.vitals.heart_rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Animal heart rate",
+      "titleRu": "Пульс животного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "veterinary.vitals.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Animal body temperature",
+      "titleRu": "Температура животного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "veterinary.vitals.respiratory_rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Animal respiratory rate",
+      "titleRu": "ЧД животного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "veterinary.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Animal weight vet",
+      "titleRu": "Масса животного (вет)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "veterinary.activity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Animal activity score",
+      "titleRu": "Активность животного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "veterinary.species",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Species",
+      "titleRu": "Вид животного",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dog",
+        "cat",
+        "horse",
+        "cow",
+        "pig",
+        "bird",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "veterinary.visit.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vet visit status",
+      "titleRu": "Статус визита",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scheduled",
+        "in_progress",
+        "complete",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "veterinary.image.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Vet image ref",
+      "titleRu": "Снимок ветклиники",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 0b3d1105
+path: workforce.attendance.status
+aliases:
+  short: attendance.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус явки
+  en: Attendance status
+fingerprint: sha256:0b3d1105d7d28c4a647a72384fa94c28d0c5deecc8de1ae5697493acadbc2f5f
+enumValues:
+  - present
+  - absent
+  - late
+  - leave
+  - remote

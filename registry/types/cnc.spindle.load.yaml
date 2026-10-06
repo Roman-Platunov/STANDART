@@ -1,0 +1,18 @@
+sid: 2222ff56
+path: cnc.spindle.load
+aliases:
+  short: spindle.load
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Нагрузка шпинделя
+  en: Spindle load
+fingerprint: sha256:2222ff56f9388c57a388fecaf72cc54e62801ca221049e9b1b29464aa3afbccf
+range:
+  min: 0
+  max: 200

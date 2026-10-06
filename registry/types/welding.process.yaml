@@ -1,0 +1,22 @@
+sid: c64cf8cd
+path: welding.process
+aliases:
+  short: welding.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Способ сварки
+  en: Welding process
+fingerprint: sha256:c64cf8cd742fb07101cc8f44e325e1f44b0a91983c312cd42a32948a0de04ecb
+enumValues:
+  - mig
+  - tig
+  - stick
+  - saw
+  - laser
+  - other

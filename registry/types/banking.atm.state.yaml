@@ -1,0 +1,20 @@
+sid: d2078203
+path: banking.atm.state
+aliases:
+  short: atm.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние банкомата
+  en: ATM state
+fingerprint: sha256:d207820315cdc73281288b15e6c47bce285c47169a9574d168d9c945dd67ef38
+enumValues:
+  - in_service
+  - out_of_service
+  - maintenance
+  - offline

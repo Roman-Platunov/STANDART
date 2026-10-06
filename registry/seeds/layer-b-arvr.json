@@ -1,0 +1,148 @@
+{
+  "layer": "B4",
+  "name": "layer-b-arvr.json",
+  "types": [
+    {
+      "path": "arvr.headset.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Headset battery",
+      "titleRu": "Заряд шлема",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "arvr.headset.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Headset temperature",
+      "titleRu": "Температура шлема",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "arvr.tracking.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tracking quality",
+      "titleRu": "Качество трекинга",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "arvr.frame.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "XR frame rate",
+      "titleRu": "Частота кадров XR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "arvr.latency",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Motion-to-photon latency",
+      "titleRu": "Задержка XR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "arvr.controller.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Controller battery",
+      "titleRu": "Заряд контроллера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "arvr.passthrough.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Passthrough on",
+      "titleRu": "Passthrough включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "arvr.session.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "XR session id",
+      "titleRu": "ID XR-сессии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "arvr.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "XR device id",
+      "titleRu": "ID XR-устройства",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "arvr.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "XR mode",
+      "titleRu": "Режим XR",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vr",
+        "ar",
+        "mr",
+        "passthrough"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

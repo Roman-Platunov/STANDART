@@ -1,0 +1,135 @@
+{
+  "layer": "B4",
+  "name": "layer-b-aquaculture.json",
+  "types": [
+    {
+      "path": "aquaculture.tank.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fish tank temperature",
+      "titleRu": "Температура бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquaculture.tank.do",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Tank dissolved oxygen",
+      "titleRu": "Кислород в бассейне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquaculture.tank.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tank pH",
+      "titleRu": "pH бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aquaculture.tank.nh3",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Tank ammonia",
+      "titleRu": "Аммиак в бассейне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquaculture.tank.salinity",
+      "kind": "quantity",
+      "unit": "ppt",
+      "titleEn": "Tank salinity",
+      "titleRu": "Солёность бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquaculture.feed.rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Норма кормления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquaculture.biomass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Biomass",
+      "titleRu": "Биомасса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquaculture.mortality.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Mortality count",
+      "titleRu": "Отход",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquaculture.cage.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cage id",
+      "titleRu": "ID садка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aquaculture.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aqua batch id",
+      "titleRu": "ID партии аквакультуры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

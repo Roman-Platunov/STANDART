@@ -1,0 +1,158 @@
+{
+  "layer": "B4",
+  "name": "layer-b-metallurgy.json",
+  "types": [
+    {
+      "path": "metallurgy.furnace.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metallurgy.melt.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metallurgy.rolling.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Rolling force",
+      "titleRu": "Усилие прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metallurgy.rolling.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Rolling speed",
+      "titleRu": "Скорость прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metallurgy.casting.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Caster mold level",
+      "titleRu": "Уровень в кристаллизаторе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "metallurgy.slag.basicity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Slag basicity",
+      "titleRu": "Основность шлака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metallurgy.oxygen.lance",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Oxygen lance flow",
+      "titleRu": "Расход кислорода фурмы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metallurgy.coil.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Coil thickness",
+      "titleRu": "Толщина рулона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metallurgy.coil.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Coil width",
+      "titleRu": "Ширина рулона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metallurgy.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metallurgy.furnace.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnace state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "charging",
+        "melting",
+        "refining",
+        "tapping",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

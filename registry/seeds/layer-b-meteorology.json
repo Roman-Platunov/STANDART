@@ -1,0 +1,269 @@
+{
+  "layer": "B4",
+  "name": "layer-b-meteorology.json",
+  "types": [
+    {
+      "path": "meteorology.temperature.air",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Met air temperature",
+      "titleRu": "Температура воздуха (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.temperature.soil",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Met soil temperature",
+      "titleRu": "Температура почвы (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.humidity.relative",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Met relative humidity",
+      "titleRu": "Отн. влажность (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.pressure.msl",
+      "kind": "quantity",
+      "unit": "hPa",
+      "titleEn": "Mean sea level pressure",
+      "titleRu": "Давление на уровне моря",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.pressure.station",
+      "kind": "quantity",
+      "unit": "hPa",
+      "titleEn": "Station pressure",
+      "titleRu": "Давление на станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.wind.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Met wind speed",
+      "titleRu": "Скорость ветра (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.wind.gust",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Met wind gust",
+      "titleRu": "Порыв ветра (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.wind.direction",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Met wind direction",
+      "titleRu": "Направление ветра (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 360
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.precipitation.rate",
+      "kind": "quantity",
+      "unit": "mm/h",
+      "titleEn": "Precipitation rate met",
+      "titleRu": "Интенсивность осадков (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.precipitation.total",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Precipitation total",
+      "titleRu": "Сумма осадков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.snow.depth",
+      "kind": "quantity",
+      "unit": "cm",
+      "titleEn": "Snow depth",
+      "titleRu": "Высота снега",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.cloud.base",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Cloud base",
+      "titleRu": "Нижняя граница облаков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.cloud.cover",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cloud cover met",
+      "titleRu": "Облачность (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.visibility",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Met visibility",
+      "titleRu": "Видимость (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.solar.irradiance",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "Met solar irradiance",
+      "titleRu": "Инсоляция (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.uv.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Met UV index",
+      "titleRu": "УФ-индекс (метео)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.lightning.strikes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Lightning strikes",
+      "titleRu": "Удары молний",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meteorology.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Weather station id",
+      "titleRu": "ID метеостанции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meteorology.precip.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Precipitation type",
+      "titleRu": "Тип осадков",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "none",
+        "rain",
+        "snow",
+        "sleet",
+        "hail",
+        "freezing_rain"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

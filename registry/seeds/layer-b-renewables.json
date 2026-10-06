@@ -1,0 +1,151 @@
+{
+  "layer": "B4",
+  "name": "layer-b-renewables.json",
+  "types": [
+    {
+      "path": "renewables.hydro.head",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Hydro head",
+      "titleRu": "Напор ГЭС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "renewables.hydro.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Hydro flow",
+      "titleRu": "Расход ГЭС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "renewables.hydro.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Hydro power",
+      "titleRu": "Мощность ГЭС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "renewables.geo.well_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Geothermal well temperature",
+      "titleRu": "Температура геотермальной скважины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "renewables.geo.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Geothermal power",
+      "titleRu": "Мощность геотермии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "renewables.tidal.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tidal height renewables",
+      "titleRu": "Высота прилива (ВИЭ)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "renewables.tidal.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Tidal power",
+      "titleRu": "Мощность прилива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "renewables.wave.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Wave power",
+      "titleRu": "Мощность волн",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "renewables.biogas.ch4",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Biogas methane fraction",
+      "titleRu": "Доля метана в биогазе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "renewables.biogas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Biogas flow",
+      "titleRu": "Расход биогаза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "renewables.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Renewables plant id",
+      "titleRu": "ID ВИЭ-станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

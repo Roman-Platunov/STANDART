@@ -1,0 +1,124 @@
+{
+  "layer": "B4",
+  "name": "layer-b-care.json",
+  "types": [
+    {
+      "path": "care.facility.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Care facility id",
+      "titleRu": "ID учреждения ухода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "care.resident.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Resident id",
+      "titleRu": "ID проживающего",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "care.room.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Care room temperature",
+      "titleRu": "Температура комнаты ухода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "care.bed.occupied",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bed occupied",
+      "titleRu": "Кровать занята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "care.bed.exit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bed exit alarm",
+      "titleRu": "Выход из кровати",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "care.fall.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fall detected",
+      "titleRu": "Падение обнаружено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "care.nurse.call.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Nurse call count",
+      "titleRu": "Вызовы медсестры",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "care.alert.priority",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Care alert priority",
+      "titleRu": "Приоритет оповещения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "care.nurse_call",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Nurse call command",
+      "titleRu": "Вызов медсестры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "call",
+        "ack",
+        "cancel"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

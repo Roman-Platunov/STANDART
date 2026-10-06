@@ -1,0 +1,125 @@
+{
+  "layer": "B4",
+  "name": "layer-b-workforce.json",
+  "types": [
+    {
+      "path": "workforce.employee.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Employee id",
+      "titleRu": "ID сотрудника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "workforce.shift.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shift id",
+      "titleRu": "ID смены",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "workforce.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Workforce site id",
+      "titleRu": "ID площадки персонала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "workforce.hours.worked",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Hours worked",
+      "titleRu": "Отработанные часы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "workforce.overtime.hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Overtime hours",
+      "titleRu": "Сверхурочные",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "workforce.clocked_in",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Clocked in",
+      "titleRu": "На смене",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "workforce.fatigue.score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fatigue score",
+      "titleRu": "Индекс усталости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "workforce.attendance.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Attendance status",
+      "titleRu": "Статус явки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "present",
+        "absent",
+        "late",
+        "leave",
+        "remote"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "workforce.headcount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Headcount on site",
+      "titleRu": "Численность на площадке",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    }
+  ]
+}

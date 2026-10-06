@@ -1,0 +1,125 @@
+{
+  "layer": "B4",
+  "name": "layer-b-dental.json",
+  "types": [
+    {
+      "path": "dental.patient.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dental patient id",
+      "titleRu": "ID пациента стоматологии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "dental.chair.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dental chair id",
+      "titleRu": "ID кресла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dental.chair.water_pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Dental water pressure",
+      "titleRu": "Давление воды (стомат)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dental.compressor.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Dental compressor pressure",
+      "titleRu": "Давление компрессора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dental.suction.vacuum",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Dental suction vacuum",
+      "titleRu": "Вакуум отсоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dental.xray.dose",
+      "kind": "quantity",
+      "unit": "uSv",
+      "titleEn": "Dental X-ray dose",
+      "titleRu": "Доза дентального рентгена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "dental.autoclave.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Autoclave ready",
+      "titleRu": "Автоклав готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dental.autoclave.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Autoclave temperature",
+      "titleRu": "Температура автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dental.procedure.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dental procedure state",
+      "titleRu": "Состояние процедуры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "exam",
+        "cleaning",
+        "filling",
+        "surgery",
+        "imaging"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
