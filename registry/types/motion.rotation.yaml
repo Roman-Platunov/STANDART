@@ -1,0 +1,12 @@
+id: std:motion.rotation
+kind: quantity
+domain: motion
+defaultUnit: deg
+encodings: [f32, f64]
+range: { min: -3600, max: 3600, unit: deg }
+sensitivity: public
+status: stable
+title: { ru: Угол поворота, en: Rotation }
+description:
+  ru: Угол поворота в градусах.
+  en: Rotation angle in degrees.

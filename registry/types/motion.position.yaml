@@ -1,0 +1,12 @@
+id: std:motion.position
+kind: quantity
+domain: motion
+defaultUnit: m
+encodings: [f32, f64]
+range: { min: -1.0e9, max: 1.0e9, unit: m }
+sensitivity: public
+status: stable
+title: { ru: Позиция, en: Position }
+description:
+  ru: Линейное положение по оси (локальная система).
+  en: Linear position along an axis (local frame).

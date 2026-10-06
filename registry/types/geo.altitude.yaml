@@ -1,0 +1,12 @@
+id: std:geo.altitude
+kind: quantity
+domain: geo
+defaultUnit: m
+encodings: [f32, f64]
+range: { min: -1000, max: 100000, unit: m }
+sensitivity: personal
+status: stable
+title: { ru: Высота, en: Altitude }
+description:
+  ru: Высота над уровнем моря или эллипсоидом.
+  en: Altitude above sea level or ellipsoid.

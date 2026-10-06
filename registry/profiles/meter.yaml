@@ -1,0 +1,16 @@
+id: meter
+version: 0.1.0
+title: { ru: Электросчётчик / измеритель, en: Electrical meter }
+description:
+  ru: Устройство измерения электрических величин.
+  en: Device measuring electrical quantities.
+required:
+  - std:elec.voltage
+  - std:elec.current
+  - std:elec.power
+  - std:id.device
+optional:
+  - std:elec.energy
+  - std:elec.frequency
+  - std:time.timestamp
+  - std:net.uptime

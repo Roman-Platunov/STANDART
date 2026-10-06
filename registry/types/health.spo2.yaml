@@ -1,0 +1,12 @@
+id: std:health.spo2
+kind: quantity
+domain: health
+defaultUnit: "%"
+encodings: [u8, f32]
+range: { min: 0, max: 100, unit: "%" }
+sensitivity: personal
+status: stable
+title: { ru: SpO2, en: SpO2 }
+description:
+  ru: Насыщение крови кислородом (потребительский тип).
+  en: Blood oxygen saturation (consumer type).

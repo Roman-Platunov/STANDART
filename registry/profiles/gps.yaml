@@ -1,0 +1,16 @@
+id: gps
+version: 0.1.0
+title: { ru: GPS / GNSS трекер, en: GPS / GNSS tracker }
+description:
+  ru: Устройство геопозиционирования.
+  en: Geopositioning device.
+required:
+  - std:geo.geopoint
+  - std:id.device
+optional:
+  - std:geo.altitude
+  - std:geo.heading
+  - std:motion.velocity
+  - std:time.timestamp
+  - std:elec.battery_soc
+  - std:net.rssi

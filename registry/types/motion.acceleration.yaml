@@ -1,0 +1,12 @@
+id: std:motion.acceleration
+kind: quantity
+domain: motion
+defaultUnit: "m/s2"
+encodings: [f32, f64]
+range: { min: -1.0e6, max: 1.0e6, unit: "m/s2" }
+sensitivity: public
+status: stable
+title: { ru: Ускорение, en: Acceleration }
+description:
+  ru: Линейное ускорение.
+  en: Linear acceleration.

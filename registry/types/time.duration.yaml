@@ -1,0 +1,12 @@
+id: std:time.duration
+kind: temporal
+domain: time
+defaultUnit: s
+encodings: [f32, f64, i32]
+range: { min: 0, max: 1.0e15, unit: s }
+sensitivity: public
+status: stable
+title: { ru: Длительность, en: Duration }
+description:
+  ru: Длительность интервала в секундах.
+  en: Interval duration in seconds.

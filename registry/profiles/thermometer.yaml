@@ -1,0 +1,14 @@
+id: thermometer
+version: 0.1.0
+title: { ru: Термометр, en: Thermometer }
+description:
+  ru: Устройство, измеряющее температуру окружающей среды.
+  en: Device measuring ambient temperature.
+required:
+  - std:env.temperature
+  - std:id.device
+optional:
+  - std:env.humidity
+  - std:time.timestamp
+  - std:elec.battery_soc
+  - std:net.rssi

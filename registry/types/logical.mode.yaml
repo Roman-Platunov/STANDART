@@ -1,0 +1,12 @@
+id: std:logical.mode
+kind: enum
+domain: logical
+defaultUnit: "-"
+encodings: [enum, utf8]
+enumValues: [off, on, auto, sleep, error]
+sensitivity: public
+status: stable
+title: { ru: Режим, en: Mode }
+description:
+  ru: Общий режим работы устройства.
+  en: Generic device operating mode.

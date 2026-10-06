@@ -1,0 +1,12 @@
+id: std:logical.level
+kind: quantity
+domain: logical
+defaultUnit: "%"
+encodings: [u8, f32]
+range: { min: 0, max: 100, unit: "%" }
+sensitivity: public
+status: stable
+title: { ru: Уровень, en: Level }
+description:
+  ru: Нормированный уровень 0–100%.
+  en: Normalized level 0–100%.

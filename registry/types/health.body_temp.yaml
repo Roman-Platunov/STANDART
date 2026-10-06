@@ -1,0 +1,12 @@
+id: std:health.body_temp
+kind: quantity
+domain: health
+defaultUnit: Cel
+encodings: [f32, i16]
+range: { min: 25, max: 45, unit: Cel }
+sensitivity: personal
+status: stable
+title: { ru: Температура тела, en: Body temperature }
+description:
+  ru: Температура тела (потребительский тип).
+  en: Body temperature (consumer type).

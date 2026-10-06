@@ -1,0 +1,19 @@
+{
+  "name": "standart",
+  "version": "0.1.0",
+  "description": "STANDART — open data type registry for devices",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate.mjs",
+    "codegen": "node tools/codegen.mjs",
+    "build": "npm run validate && npm run codegen"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "yaml": "^2.7.0"
+  },
+  "license": "Apache-2.0"
+}

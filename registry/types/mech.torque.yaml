@@ -1,0 +1,12 @@
+id: std:mech.torque
+kind: quantity
+domain: mech
+defaultUnit: "N.m"
+encodings: [f32, f64]
+range: { min: -1.0e9, max: 1.0e9, unit: "N.m" }
+sensitivity: public
+status: stable
+title: { ru: Крутящий момент, en: Torque }
+description:
+  ru: Крутящий момент.
+  en: Mechanical torque.

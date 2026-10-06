@@ -1,0 +1,11 @@
+id: std:time.timestamp
+kind: temporal
+domain: time
+defaultUnit: s
+encodings: [i32, f64, utf8]
+sensitivity: public
+status: stable
+title: { ru: Метка времени, en: Timestamp }
+description:
+  ru: Момент времени (Unix seconds или ISO-8601 в utf8).
+  en: Point in time (Unix seconds or ISO-8601 as utf8).

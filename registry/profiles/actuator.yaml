@@ -1,0 +1,16 @@
+id: actuator
+version: 0.1.0
+title: { ru: Исполнительный механизм, en: Actuator }
+description:
+  ru: Устройство, принимающее команды и сообщающее состояние.
+  en: Device that accepts commands and reports state.
+required:
+  - std:act.power
+  - std:id.device
+optional:
+  - std:act.command
+  - std:act.setpoint
+  - std:logical.mode
+  - std:logical.level
+  - std:time.timestamp
+  - std:net.uptime

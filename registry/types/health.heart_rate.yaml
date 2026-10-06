@@ -1,0 +1,12 @@
+id: std:health.heart_rate
+kind: quantity
+domain: health
+defaultUnit: "/min"
+encodings: [u8, i16, f32]
+range: { min: 0, max: 300, unit: "/min" }
+sensitivity: personal
+status: stable
+title: { ru: Частота пульса, en: Heart rate }
+description:
+  ru: Частота сердечных сокращений (потребительский тип, не медсертификация).
+  en: Heart rate (consumer type, not medical certification).

@@ -1,0 +1,12 @@
+id: std:elec.voltage
+kind: quantity
+domain: elec
+defaultUnit: V
+encodings: [f32, f64, i32]
+range: { min: -100000, max: 100000, unit: V }
+sensitivity: public
+status: stable
+title: { ru: Напряжение, en: Voltage }
+description:
+  ru: Электрическое напряжение.
+  en: Electrical voltage.

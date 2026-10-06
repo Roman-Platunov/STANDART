@@ -1,0 +1,12 @@
+id: std:elec.frequency
+kind: quantity
+domain: elec
+defaultUnit: Hz
+encodings: [f32, f64]
+range: { min: 0, max: 1.0e12, unit: Hz }
+sensitivity: public
+status: stable
+title: { ru: Частота, en: Frequency }
+description:
+  ru: Электрическая частота.
+  en: Electrical frequency.

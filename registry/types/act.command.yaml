@@ -1,0 +1,12 @@
+id: std:act.command
+kind: command
+domain: act
+defaultUnit: "-"
+encodings: [enum, utf8]
+enumValues: [start, stop, reset, open, close, toggle]
+sensitivity: public
+status: stable
+title: { ru: Команда, en: Command }
+description:
+  ru: Команда воздействия на исполнительный механизм.
+  en: Actuation command for an actuator.

@@ -1,0 +1,12 @@
+id: std:motion.velocity
+kind: quantity
+domain: motion
+defaultUnit: "m/s"
+encodings: [f32, f64]
+range: { min: -1.0e6, max: 1.0e6, unit: "m/s" }
+sensitivity: public
+status: stable
+title: { ru: Скорость, en: Velocity }
+description:
+  ru: Линейная скорость.
+  en: Linear velocity.
