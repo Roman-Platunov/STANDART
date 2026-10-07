@@ -1,0 +1,21 @@
+sid: f4f8c7d1
+path: sewer_pump.state
+aliases:
+  short: sewer_pump.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние насоса КНС
+  en: Pump state
+fingerprint: sha256:f4f8c7d138a8c6e6daf53b16982aefffa3f8ac9d8b1a8363596588b73462351f
+enumValues:
+  - off
+  - lead
+  - lag
+  - fault
+  - bypass

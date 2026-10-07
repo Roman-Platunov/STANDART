@@ -1,0 +1,111 @@
+{
+  "layer": "B9",
+  "name": "layer-b-deicing.json",
+  "types": [
+    {
+      "path": "deicing.pad.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Deicing pad id",
+      "titleRu": "ID площадки антиобледенения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deicing.aircraft.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aircraft being deiced",
+      "titleRu": "ID обрабатываемого ВС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deicing.fluid.used",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fluid used",
+      "titleRu": "Расход жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deicing.holdover.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Holdover time",
+      "titleRu": "Время защиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deicing.oat",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outside air temperature",
+      "titleRu": "Температура наружного воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deicing.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Deice duration",
+      "titleRu": "Длительность обработки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deicing.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Deicing in progress",
+      "titleRu": "Обработка идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "deicing.fluid",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Deicing fluid type",
+      "titleRu": "Тип противообледенительной жидкости",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "type1",
+        "type2",
+        "type3",
+        "type4",
+        "none"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

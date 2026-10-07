@@ -1,0 +1,112 @@
+{
+  "layer": "B9",
+  "name": "layer-b-heat_treat.json",
+  "types": [
+    {
+      "path": "heat_treat.furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat-treat furnace id",
+      "titleRu": "ID печи термообработки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_treat.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat-treat batch id",
+      "titleRu": "ID садки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_treat.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_treat.soak.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Soak time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_treat.atmosphere.o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Atmosphere O2",
+      "titleRu": "O₂ атмосферы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_treat.hardness",
+      "kind": "quantity",
+      "unit": "HV",
+      "titleEn": "Result hardness",
+      "titleRu": "Твёрдость результата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_treat.recipe.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recipe conformance",
+      "titleRu": "Соответствие рецепту",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heat_treat.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Heat-treat process",
+      "titleRu": "Процесс термообработки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "anneal",
+        "quench",
+        "temper",
+        "carburize",
+        "nitride",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

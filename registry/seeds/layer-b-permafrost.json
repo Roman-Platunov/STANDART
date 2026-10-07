@@ -1,0 +1,103 @@
+{
+  "layer": "B9",
+  "name": "layer-b-permafrost.json",
+  "types": [
+    {
+      "path": "permafrost.borehole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Permafrost borehole id",
+      "titleRu": "ID скважины мерзлоты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "permafrost.temp.ground",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ground temperature",
+      "titleRu": "Температура грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "permafrost.active.layer_m",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Active layer thickness",
+      "titleRu": "Мощность деятельного слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "permafrost.subsidence",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Subsidence",
+      "titleRu": "Просадка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "permafrost.ice.content",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ground ice content",
+      "titleRu": "Содержание льда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "permafrost.thaw.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Thaw alert",
+      "titleRu": "Тревога оттаивания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "permafrost.zone",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Permafrost zone",
+      "titleRu": "Зона мерзлоты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "continuous",
+        "discontinuous",
+        "sporadic",
+        "isolated"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

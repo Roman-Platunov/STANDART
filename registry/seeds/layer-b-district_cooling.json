@@ -1,0 +1,111 @@
+{
+  "layer": "B9",
+  "name": "layer-b-district_cooling.json",
+  "types": [
+    {
+      "path": "district_cooling.loop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "District cooling loop id",
+      "titleRu": "ID контура холодоснабжения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "district_cooling.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "District cooling plant id",
+      "titleRu": "ID станции холода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "district_cooling.supply.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chilled supply temp",
+      "titleRu": "Температура подачи холода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_cooling.return.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chilled return temp",
+      "titleRu": "Температура обратки холода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_cooling.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Loop flow",
+      "titleRu": "Расход контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_cooling.power.cooling",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Cooling power",
+      "titleRu": "Холодопроизводительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_cooling.delta_t",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Supply-return delta T",
+      "titleRu": "Перепад температур",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_cooling.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "District cooling mode",
+      "titleRu": "Режим холодосети",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "ice_store",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

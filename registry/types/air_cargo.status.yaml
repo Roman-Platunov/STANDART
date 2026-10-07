@@ -1,0 +1,22 @@
+sid: e392995b
+path: air_cargo.status
+aliases:
+  short: air_cargo.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус авиагруза
+  en: Air cargo status
+fingerprint: sha256:e392995b4e5eff2202a153c19545dabfd0730c124c249c758f9ccab359cb3130
+enumValues:
+  - accept
+  - build
+  - depart
+  - arrive
+  - deliver
+  - hold

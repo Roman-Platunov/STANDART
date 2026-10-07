@@ -1,0 +1,112 @@
+{
+  "layer": "B9",
+  "name": "layer-b-autoclave_composite.json",
+  "types": [
+    {
+      "path": "autoclave_composite.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Composite autoclave id",
+      "titleRu": "ID автоклава композитов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "autoclave_composite.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Autoclave run id",
+      "titleRu": "ID цикла автоклава",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "autoclave_composite.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Autoclave temperature",
+      "titleRu": "Температура автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autoclave_composite.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Autoclave pressure",
+      "titleRu": "Давление автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autoclave_composite.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Bag vacuum",
+      "titleRu": "Вакуум мешка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autoclave_composite.ramp.K_min",
+      "kind": "quantity",
+      "unit": "K/min",
+      "titleEn": "Temp ramp rate",
+      "titleRu": "Скорость нагрева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autoclave_composite.recipe.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cure recipe pass",
+      "titleRu": "Рецепт отверждения OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "autoclave_composite.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Autoclave state",
+      "titleRu": "Состояние автоклава",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "ramp",
+        "soak",
+        "cool",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B9",
+  "name": "layer-b-hotel_ops.json",
+  "types": [
+    {
+      "path": "hotel_ops.property.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hotel property id",
+      "titleRu": "ID гостиницы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hotel_ops.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hotel room id",
+      "titleRu": "ID номера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hotel_ops.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Occupancy",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hotel_ops.adr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Average daily rate",
+      "titleRu": "Средняя цена номера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hotel_ops.energy.room",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Room energy draw",
+      "titleRu": "Энергопотребление номера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hotel_ops.hk.minutes",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Housekeeping minutes",
+      "titleRu": "Минуты уборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hotel_ops.room.dnd",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Do not disturb",
+      "titleRu": "Не беспокоить",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hotel_ops.room.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Room state",
+      "titleRu": "Состояние номера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vacant",
+        "occupied",
+        "dirty",
+        "clean",
+        "ooo",
+        "oos"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

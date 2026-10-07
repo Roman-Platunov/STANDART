@@ -1,0 +1,108 @@
+{
+  "layer": "B9",
+  "name": "layer-b-invasive_species.json",
+  "types": [
+    {
+      "path": "invasive_species.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Survey site id",
+      "titleRu": "ID участка мониторинга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "invasive_species.taxon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Taxon id",
+      "titleRu": "ID таксона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "invasive_species.density",
+      "kind": "quantity",
+      "unit": "/m2",
+      "titleEn": "Population density",
+      "titleRu": "Плотность популяции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "invasive_species.area.ha",
+      "kind": "quantity",
+      "unit": "ha",
+      "titleEn": "Infested area",
+      "titleRu": "Площадь заражения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "invasive_species.trap.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trap captures",
+      "titleRu": "Отлов в ловушках",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "invasive_species.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Invasion alert",
+      "titleRu": "Тревога инвазии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "invasive_species.photo.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Detection photo ref",
+      "titleRu": "Референс фото",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "invasive_species.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Invasion status",
+      "titleRu": "Статус инвазии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "absent",
+        "detected",
+        "established",
+        "controlled",
+        "eradicated"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

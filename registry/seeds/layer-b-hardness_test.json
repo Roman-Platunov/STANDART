@@ -1,0 +1,115 @@
+{
+  "layer": "B9",
+  "name": "layer-b-hardness_test.json",
+  "types": [
+    {
+      "path": "hardness_test.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hardness tester id",
+      "titleRu": "ID твердомера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hardness_test.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hardness sample id",
+      "titleRu": "ID образца твёрдости",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hardness_test.value",
+      "kind": "quantity",
+      "unit": "HV",
+      "titleEn": "Hardness value",
+      "titleRu": "Значение твёрдости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hardness_test.load",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Test load",
+      "titleRu": "Нагрузка испытания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hardness_test.indent.depth",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Indentation depth",
+      "titleRu": "Глубина отпечатка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hardness_test.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In specification",
+      "titleRu": "В спецификации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hardness_test.scale",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hardness scale",
+      "titleRu": "Шкала твёрдости",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hv",
+        "hb",
+        "hrc",
+        "hrb",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hardness_test.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hardness result",
+      "titleRu": "Результат твёрдости",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "retest"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

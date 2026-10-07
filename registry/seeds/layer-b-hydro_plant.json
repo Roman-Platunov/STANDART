@@ -1,0 +1,112 @@
+{
+  "layer": "B9",
+  "name": "layer-b-hydro_plant.json",
+  "types": [
+    {
+      "path": "hydro_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hydro plant id",
+      "titleRu": "ID ГЭС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydro_plant.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Turbine unit id",
+      "titleRu": "ID гидроагрегата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydro_plant.head",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Net head",
+      "titleRu": "Напор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_plant.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Turbine flow",
+      "titleRu": "Расход через турбину",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_plant.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Unit power",
+      "titleRu": "Мощность агрегата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_plant.reservoir.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Reservoir level",
+      "titleRu": "Уровень водохранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_plant.spill.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Spillway flow",
+      "titleRu": "Расход водосброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_plant.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hydro unit mode",
+      "titleRu": "Режим гидроагрегата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "generate",
+        "condense",
+        "idle",
+        "gate_test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "layer": "B9",
+  "name": "layer-b-additive_mfg.json",
+  "types": [
+    {
+      "path": "additive_mfg.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AM job id",
+      "titleRu": "ID задания АП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "additive_mfg.printer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AM printer id",
+      "titleRu": "ID 3D-принтера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "additive_mfg.layer",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Current layer",
+      "titleRu": "Текущий слой",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "additive_mfg.build.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Build progress",
+      "titleRu": "Прогресс построения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "additive_mfg.chamber.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "additive_mfg.powder.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Powder level",
+      "titleRu": "Уровень порошка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "additive_mfg.recoater.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recoater fault",
+      "titleRu": "Сбой рекоутера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "additive_mfg.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AM process",
+      "titleRu": "Процесс АП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sls",
+        "slm",
+        "fdm",
+        "sla",
+        "ebm",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

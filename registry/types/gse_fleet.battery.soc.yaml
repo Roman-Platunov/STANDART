@@ -1,0 +1,18 @@
+sid: 7c8b7669
+path: gse_fleet.battery.soc
+aliases:
+  short: gse_fleet.battery.soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: SoC АКБ GSE
+  en: GSE battery SoC
+fingerprint: sha256:7c8b76698c037b11649c31f128dc5ea5cf6c065d35fea58d39f07f00f0d9235d
+range:
+  min: 0
+  max: 100

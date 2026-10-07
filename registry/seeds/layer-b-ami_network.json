@@ -1,0 +1,100 @@
+{
+  "layer": "B9",
+  "name": "layer-b-ami_network.json",
+  "types": [
+    {
+      "path": "ami_network.concentrator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AMI concentrator id",
+      "titleRu": "ID концентратора AMI",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ami_network.meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AMI meter id",
+      "titleRu": "ID счётчика AMI",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ami_network.read.success",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Read success rate",
+      "titleRu": "Успешность опросов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ami_network.latency.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Read latency",
+      "titleRu": "Задержка опроса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ami_network.meters.online",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Online meters",
+      "titleRu": "Счётчиков online",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ami_network.outage.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Last-gasp outage",
+      "titleRu": "Фиксация отключения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ami_network.tech",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AMI technology",
+      "titleRu": "Технология AMI",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rf_mesh",
+        "plc",
+        "cellular",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

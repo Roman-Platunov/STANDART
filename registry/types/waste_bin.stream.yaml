@@ -1,0 +1,21 @@
+sid: bd0c862f
+path: waste_bin.stream
+aliases:
+  short: waste_bin.stream
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Поток отходов
+  en: Waste stream
+fingerprint: sha256:bd0c862f9d3c71e4d116eb44dec786a1377ab0d44a204169f130ce091b2ea13f
+enumValues:
+  - mixed
+  - recycle
+  - organic
+  - glass
+  - other

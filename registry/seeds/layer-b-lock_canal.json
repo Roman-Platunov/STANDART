@@ -1,0 +1,109 @@
+{
+  "layer": "B9",
+  "name": "layer-b-lock_canal.json",
+  "types": [
+    {
+      "path": "lock_canal.lock.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Canal lock id",
+      "titleRu": "ID шлюза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lock_canal.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vessel in lock",
+      "titleRu": "ID судна в шлюзе",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lock_canal.chamber.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Chamber water level",
+      "titleRu": "Уровень в камере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lock_canal.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Lock cycle time",
+      "titleRu": "Время цикла шлюзования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lock_canal.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vessels waiting",
+      "titleRu": "Судов в ожидании",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lock_canal.gate.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gate open",
+      "titleRu": "Ворота открыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lock_canal.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lock fault",
+      "titleRu": "Неисправность шлюза",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lock_canal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lock state",
+      "titleRu": "Состояние шлюза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "fill",
+        "empty",
+        "transit",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

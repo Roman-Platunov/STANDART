@@ -1,0 +1,115 @@
+{
+  "layer": "B9",
+  "name": "layer-b-blow_mold.json",
+  "types": [
+    {
+      "path": "blow_mold.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blow molding machine id",
+      "titleRu": "ID машины выдува",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blow_mold.mold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blow mold id",
+      "titleRu": "ID формы выдува",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blow_mold.parison.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Parison temperature",
+      "titleRu": "Температура парисоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blow_mold.blow.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Blow pressure",
+      "titleRu": "Давление выдува",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blow_mold.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blow_mold.wall.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wall thickness",
+      "titleRu": "Толщина стенки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blow_mold.leak.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Leak reject rate",
+      "titleRu": "Доля утечек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "blow_mold.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Blow process",
+      "titleRu": "Процесс выдува",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ebm",
+        "isbm",
+        "injection_blow",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

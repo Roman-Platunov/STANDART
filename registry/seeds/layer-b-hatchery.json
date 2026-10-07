@@ -1,0 +1,118 @@
+{
+  "layer": "B9",
+  "name": "layer-b-hatchery.json",
+  "types": [
+    {
+      "path": "hatchery.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hatchery id",
+      "titleRu": "ID инкубатория",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hatchery.setter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Setter id",
+      "titleRu": "ID инкубатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hatchery.setter.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Setter temperature",
+      "titleRu": "Температура инкубации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hatchery.setter.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Setter humidity",
+      "titleRu": "Влажность инкубации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hatchery.hatch.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hatch rate",
+      "titleRu": "Выводимость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hatchery.eggs.set",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Eggs set",
+      "titleRu": "Заложено яиц",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hatchery.chicks.pulled",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Chicks pulled",
+      "titleRu": "Выведено цыплят",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hatchery.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hatchery stage",
+      "titleRu": "Стадия инкубации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "set",
+        "transfer",
+        "hatch",
+        "pull",
+        "clean"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

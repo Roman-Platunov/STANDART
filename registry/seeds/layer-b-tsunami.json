@@ -1,0 +1,109 @@
+{
+  "layer": "B9",
+  "name": "layer-b-tsunami.json",
+  "types": [
+    {
+      "path": "tsunami.buoy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tsunami buoy id",
+      "titleRu": "ID цунами-буя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tsunami.warning.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tsunami warning id",
+      "titleRu": "ID предупреждения о цунами",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tsunami.wave.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tsunami wave height",
+      "titleRu": "Высота волны цунами",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tsunami.eta.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "ETA to coast",
+      "titleRu": "ETA к берегу",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tsunami.sea.level_anomaly",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Sea level anomaly",
+      "titleRu": "Аномалия уровня моря",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tsunami.warning.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Warning active",
+      "titleRu": "Предупреждение активно",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tsunami.evacuation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Evacuation ordered",
+      "titleRu": "Эвакуация объявлена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tsunami.level",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tsunami alert level",
+      "titleRu": "Уровень тревоги цунами",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "watch",
+        "advisory",
+        "warning",
+        "cancel"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "layer": "B9",
+  "name": "layer-b-biodiversity.json",
+  "types": [
+    {
+      "path": "biodiversity.plot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Biodiversity plot id",
+      "titleRu": "ID площадки биоразнообразия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biodiversity.shannon",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shannon index",
+      "titleRu": "Индекс Шеннона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biodiversity.species.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Species count",
+      "titleRu": "Число видов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biodiversity.biomass",
+      "kind": "quantity",
+      "unit": "t/ha",
+      "titleEn": "Biomass",
+      "titleRu": "Биомасса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biodiversity.acoustic.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Acoustic complexity index",
+      "titleRu": "Акустический индекс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biodiversity.checklist.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Species checklist ref",
+      "titleRu": "Референс чек-листа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biodiversity.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Survey method",
+      "titleRu": "Метод учёта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "transect",
+        "camera_trap",
+        "edna",
+        "acoustic",
+        "remote",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "biodiversity.trend",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Biodiversity trend",
+      "titleRu": "Тренд биоразнообразия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "increasing",
+        "stable",
+        "declining",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

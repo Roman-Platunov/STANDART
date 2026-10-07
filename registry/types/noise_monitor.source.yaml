@@ -1,0 +1,22 @@
+sid: f1f7c2cc
+path: noise_monitor.source
+aliases:
+  short: noise_monitor.source
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Доминирующий источник
+  en: Dominant source
+fingerprint: sha256:f1f7c2cc9199d72cd70ff35a3c170626e2a1764909bd9ca8e12bf64890b2469a
+enumValues:
+  - road
+  - rail
+  - aircraft
+  - industry
+  - construction
+  - other

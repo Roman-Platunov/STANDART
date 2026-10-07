@@ -1,0 +1,21 @@
+sid: b9e25a51
+path: hydro_plant.mode
+aliases:
+  short: hydro_plant.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим гидроагрегата
+  en: Hydro unit mode
+fingerprint: sha256:b9e25a51dc21b7316a8106fad82aa6e9ef2d0fa4c954c620a3adf0e26fe6bd08
+enumValues:
+  - generate
+  - condense
+  - idle
+  - gate_test
+  - fault

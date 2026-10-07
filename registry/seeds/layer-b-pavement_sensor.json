@@ -1,0 +1,112 @@
+{
+  "layer": "B9",
+  "name": "layer-b-pavement_sensor.json",
+  "types": [
+    {
+      "path": "pavement_sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pavement sensor id",
+      "titleRu": "ID датчика покрытия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pavement_sensor.segment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Road segment id",
+      "titleRu": "ID участка дороги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pavement_sensor.surface.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Surface temperature",
+      "titleRu": "Температура покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pavement_sensor.subsurface.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Subsurface temperature",
+      "titleRu": "Температура основания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pavement_sensor.freeze.point",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Freeze point",
+      "titleRu": "Точка замерзания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pavement_sensor.salinity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Surface salinity index",
+      "titleRu": "Индекс солёности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pavement_sensor.ice",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ice present",
+      "titleRu": "Лёд на покрытии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pavement_sensor.condition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pavement condition",
+      "titleRu": "Состояние покрытия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "moist",
+        "wet",
+        "frost",
+        "ice",
+        "snow"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

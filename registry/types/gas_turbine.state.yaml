@@ -1,0 +1,22 @@
+sid: b053c64f
+path: gas_turbine.state
+aliases:
+  short: gas_turbine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ГТУ
+  en: GT state
+fingerprint: sha256:b053c64f68355695bab7bc94a299d4bc0a8cbdc4d48fadd47a9684743c52cd5f
+enumValues:
+  - off
+  - start
+  - load
+  - peak
+  - cooldown
+  - fault

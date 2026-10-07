@@ -1,0 +1,110 @@
+{
+  "layer": "B9",
+  "name": "layer-b-volcano.json",
+  "types": [
+    {
+      "path": "volcano.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Volcano id",
+      "titleRu": "ID вулкана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "volcano.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Volcano monitoring station id",
+      "titleRu": "ID станции мониторинга вулкана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "volcano.emission.so2",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "SO2 emission rate",
+      "titleRu": "Выброс SO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "volcano.seismic.tremor",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Seismic tremor amplitude",
+      "titleRu": "Амплитуда тремора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "volcano.deformation",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ground deformation",
+      "titleRu": "Деформация грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "volcano.plume.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Ash plume height",
+      "titleRu": "Высота пеплового столба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "volcano.eruption",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Eruption ongoing",
+      "titleRu": "Извержение идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "volcano.alert",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Volcano alert level",
+      "titleRu": "Уровень тревоги вулкана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "green",
+        "yellow",
+        "orange",
+        "red"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

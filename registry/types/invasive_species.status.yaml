@@ -1,0 +1,21 @@
+sid: b393e278
+path: invasive_species.status
+aliases:
+  short: invasive_species.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус инвазии
+  en: Invasion status
+fingerprint: sha256:b393e278e6c5301cef5ec8476314952106580926a0498eec3c483318791d44d0
+enumValues:
+  - absent
+  - detected
+  - established
+  - controlled
+  - eradicated

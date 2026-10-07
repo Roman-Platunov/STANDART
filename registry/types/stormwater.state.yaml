@@ -1,0 +1,21 @@
+sid: d3326f7a
+path: stormwater.state
+aliases:
+  short: stormwater.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ливнёвки
+  en: Stormwater state
+fingerprint: sha256:d3326f7a28d5b0c5a34ba30a353e2fd39acb201d9f0680a99d1924ac67d88cc4
+enumValues:
+  - dry
+  - filling
+  - discharging
+  - overflow
+  - maintenance

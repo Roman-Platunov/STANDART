@@ -1,0 +1,20 @@
+sid: 8e6d5aed
+path: balancing_machine.result
+aliases:
+  short: balancing_machine.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат балансировки
+  en: Balance result
+fingerprint: sha256:8e6d5aed7e8f4d49e637160ae7c1285a57c73e2c1d48f24c33bfffd5b96f8c96
+enumValues:
+  - pass
+  - trim
+  - fail
+  - abort

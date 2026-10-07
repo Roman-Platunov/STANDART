@@ -1,0 +1,110 @@
+{
+  "layer": "B9",
+  "name": "layer-b-spent_fuel.json",
+  "types": [
+    {
+      "path": "spent_fuel.cask.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spent fuel cask id",
+      "titleRu": "ID контейнера ОЯТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spent_fuel.pool.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spent fuel pool id",
+      "titleRu": "ID бассейна выдержки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spent_fuel.pool.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pool temperature",
+      "titleRu": "Температура бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spent_fuel.pool.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Pool water level",
+      "titleRu": "Уровень воды бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spent_fuel.cask.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cask surface temperature",
+      "titleRu": "Температура контейнера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spent_fuel.dose.rate",
+      "kind": "quantity",
+      "unit": "uSv/h",
+      "titleEn": "Area dose rate",
+      "titleRu": "Мощность дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spent_fuel.cooling.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cooling OK",
+      "titleRu": "Охлаждение OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spent_fuel.storage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Storage mode",
+      "titleRu": "Режим хранения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pool",
+        "dry_cask",
+        "transport",
+        "reprocess"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

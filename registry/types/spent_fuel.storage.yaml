@@ -1,0 +1,20 @@
+sid: ed35efba
+path: spent_fuel.storage
+aliases:
+  short: spent_fuel.storage
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим хранения
+  en: Storage mode
+fingerprint: sha256:ed35efbac399f3cae625938d117598cd8c115090ad73e7a1964f8b1b93c7ea31
+enumValues:
+  - pool
+  - dry_cask
+  - transport
+  - reprocess

@@ -1,0 +1,21 @@
+sid: ef313696
+path: greenhouse_ops.mode
+aliases:
+  short: greenhouse_ops.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим теплицы
+  en: Greenhouse mode
+fingerprint: sha256:ef3136961aac960900fe9ddf855839b5a361ec6aad330ca45c87cad2b8632d3a
+enumValues:
+  - heat
+  - cool
+  - vent
+  - enrich
+  - night

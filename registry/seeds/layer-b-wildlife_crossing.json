@@ -1,0 +1,106 @@
+{
+  "layer": "B9",
+  "name": "layer-b-wildlife_crossing.json",
+  "types": [
+    {
+      "path": "wildlife_crossing.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wildlife crossing id",
+      "titleRu": "ID экодука",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildlife_crossing.camera.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Crossing camera id",
+      "titleRu": "ID камеры перехода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildlife_crossing.crossings.day",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Crossings per day",
+      "titleRu": "Переходов в сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildlife_crossing.species.richness",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Species richness",
+      "titleRu": "Видовое богатство",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildlife_crossing.roadkill.nearby",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Nearby roadkill count",
+      "titleRu": "ДТП с животными рядом",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildlife_crossing.fence.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fence breach",
+      "titleRu": "Разрыв ограждения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wildlife_crossing.image.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Crossing image ref",
+      "titleRu": "Референс снимка перехода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildlife_crossing.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Crossing type",
+      "titleRu": "Тип перехода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "overpass",
+        "underpass",
+        "culvert",
+        "canopy",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B9",
+  "name": "layer-b-baggage_system.json",
+  "types": [
+    {
+      "path": "baggage_system.airport.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Airport baggage system id",
+      "titleRu": "ID системы багажа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "baggage_system.bag.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bag tag id",
+      "titleRu": "ID багажной бирки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "baggage_system.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bags per hour",
+      "titleRu": "Мест багажа в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baggage_system.missort.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Missort rate",
+      "titleRu": "Доля ошибок сортировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "baggage_system.carousel.wait_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Carousel wait",
+      "titleRu": "Ожидание на ленте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baggage_system.eds.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "EDS queue length",
+      "titleRu": "Очередь EDS",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baggage_system.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Conveyor jam",
+      "titleRu": "Затор конвейера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "baggage_system.bag.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bag state",
+      "titleRu": "Состояние багажа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "checkin",
+        "screen",
+        "sort",
+        "load",
+        "reclaim",
+        "lost"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

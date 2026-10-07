@@ -1,0 +1,115 @@
+{
+  "layer": "B9",
+  "name": "layer-b-smr.json",
+  "types": [
+    {
+      "path": "smr.module.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SMR module id",
+      "titleRu": "ID модуля ММР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smr.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SMR plant id",
+      "titleRu": "ID станции ММР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smr.power",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Module power",
+      "titleRu": "Мощность модуля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 110
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smr.coolant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smr.coolant.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Coolant flow",
+      "titleRu": "Расход теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smr.containment.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Containment pressure",
+      "titleRu": "Давление гермообъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smr.scram",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Module scram",
+      "titleRu": "АЗ модуля",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SMR state",
+      "titleRu": "Состояние ММР",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "startup",
+        "power",
+        "coast_down",
+        "refuel",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

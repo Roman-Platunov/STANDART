@@ -1,0 +1,109 @@
+{
+  "layer": "B9",
+  "name": "layer-b-cmm.json",
+  "types": [
+    {
+      "path": "cmm.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CMM id",
+      "titleRu": "ID КИМ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cmm.part.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Measured part id",
+      "titleRu": "ID измеряемой детали",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cmm.deviation.max",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Max deviation",
+      "titleRu": "Макс. отклонение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmm.points",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Measured points",
+      "titleRu": "Число точек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmm.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Measurement cycle",
+      "titleRu": "Цикл измерения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmm.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CMM room temperature",
+      "titleRu": "Температура комнаты КИМ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmm.in_tolerance",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In tolerance",
+      "titleRu": "В допуске",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cmm.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CMM result",
+      "titleRu": "Результат КИМ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "rework",
+        "incomplete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

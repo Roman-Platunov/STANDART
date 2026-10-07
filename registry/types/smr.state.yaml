@@ -1,0 +1,21 @@
+sid: 5a69793c
+path: smr.state
+aliases:
+  short: smr.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ММР
+  en: SMR state
+fingerprint: sha256:5a69793c525f861d3b3ff0dde7bbe1d5c9b3e011f6e0dfc7dabc45f7d19c383f
+enumValues:
+  - startup
+  - power
+  - coast_down
+  - refuel
+  - fault

@@ -1,0 +1,129 @@
+{
+  "layer": "B9",
+  "name": "layer-b-gas_turbine.json",
+  "types": [
+    {
+      "path": "gas_turbine.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gas turbine unit id",
+      "titleRu": "ID газовой турбины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gas_turbine.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GT plant id",
+      "titleRu": "ID ГТУ-станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gas_turbine.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "GT power",
+      "titleRu": "Мощность ГТУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_turbine.exhaust.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Exhaust temperature",
+      "titleRu": "Температура выхлопа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_turbine.n1",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "N1 speed",
+      "titleRu": "Обороты N1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 110
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gas_turbine.fuel.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Fuel flow",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_turbine.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_turbine.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Unit trip",
+      "titleRu": "Отключение агрегата",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gas_turbine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "GT state",
+      "titleRu": "Состояние ГТУ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "start",
+        "load",
+        "peak",
+        "cooldown",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

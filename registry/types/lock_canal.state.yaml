@@ -1,0 +1,21 @@
+sid: 05dbdfcc
+path: lock_canal.state
+aliases:
+  short: lock_canal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шлюза
+  en: Lock state
+fingerprint: sha256:05dbdfccbefb8faa48265d2c68b52d341b5c9f7b08b41dcd579b0837ae93e792
+enumValues:
+  - idle
+  - fill
+  - empty
+  - transit
+  - maintenance

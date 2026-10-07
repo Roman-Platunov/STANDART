@@ -1,0 +1,21 @@
+sid: e9b74beb
+path: kitchen_hood.state
+aliases:
+  short: kitchen_hood.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зонта
+  en: Hood state
+fingerprint: sha256:e9b74beb9aabb260f210da3ed96b498020c1c7a885884354ae98c4816099be57
+enumValues:
+  - off
+  - idle
+  - cook
+  - wash
+  - fault

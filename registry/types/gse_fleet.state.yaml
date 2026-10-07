@@ -1,0 +1,21 @@
+sid: 5366006b
+path: gse_fleet.state
+aliases:
+  short: gse_fleet.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние GSE
+  en: GSE state
+fingerprint: sha256:5366006b0dc5fdf70bc9aa17e18c2bf9dc4312dbe24e1805b6cfdf3e1ddd1455
+enumValues:
+  - available
+  - in_use
+  - charging
+  - maintenance
+  - down

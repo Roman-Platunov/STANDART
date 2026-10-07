@@ -1,0 +1,21 @@
+sid: dd2c17a9
+path: coal_plant.state
+aliases:
+  short: coal_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние угольного блока
+  en: Coal unit state
+fingerprint: sha256:dd2c17a96ee12a0435a73f7ca156f193a7795e9b5f980bec1430814778c9eff8
+enumValues:
+  - start
+  - load
+  - low_load
+  - outage
+  - fault

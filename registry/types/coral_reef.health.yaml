@@ -1,0 +1,21 @@
+sid: 8be728d8
+path: coral_reef.health
+aliases:
+  short: coral_reef.health
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние рифа
+  en: Reef health
+fingerprint: sha256:8be728d8d20a6464fab0472b9c6c21b6a94249b072578903f091f0ae8d3952a9
+enumValues:
+  - pristine
+  - good
+  - fair
+  - poor
+  - critical

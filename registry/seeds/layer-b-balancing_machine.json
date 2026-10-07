@@ -1,0 +1,109 @@
+{
+  "layer": "B9",
+  "name": "layer-b-balancing_machine.json",
+  "types": [
+    {
+      "path": "balancing_machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Balancing machine id",
+      "titleRu": "ID балансировочного станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "balancing_machine.rotor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rotor id",
+      "titleRu": "ID ротора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "balancing_machine.unbalance",
+      "kind": "quantity",
+      "unit": "g.mm",
+      "titleEn": "Residual unbalance",
+      "titleRu": "Остаточный дисбаланс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "balancing_machine.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Balance speed",
+      "titleRu": "Скорость балансировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "balancing_machine.correction.mass",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Correction mass",
+      "titleRu": "Корректирующая масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "balancing_machine.plane",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Correction plane count",
+      "titleRu": "Число плоскостей",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "balancing_machine.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Balance pass",
+      "titleRu": "Балансировка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "balancing_machine.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Balance result",
+      "titleRu": "Результат балансировки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "trim",
+        "fail",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

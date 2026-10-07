@@ -1,0 +1,111 @@
+{
+  "layer": "B9",
+  "name": "layer-b-smart_meter.json",
+  "types": [
+    {
+      "path": "smart_meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Smart meter id",
+      "titleRu": "ID умного счётчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smart_meter.premise.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Premise id",
+      "titleRu": "ID объекта учёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smart_meter.energy.import",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Import energy",
+      "titleRu": "Энергия потребления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_meter.energy.export",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Export energy",
+      "titleRu": "Энергия выдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_meter.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Instant power",
+      "titleRu": "Мгновенная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_meter.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Voltage",
+      "titleRu": "Напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_meter.tamper",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tamper detected",
+      "titleRu": "Вскрытие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smart_meter.commodity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Meter commodity",
+      "titleRu": "Вид учёта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "electric",
+        "gas",
+        "water",
+        "heat",
+        "cooling"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+sid: 76abebdf
+path: injection_mold.state
+aliases:
+  short: injection_mold.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ТПА
+  en: IMM state
+fingerprint: sha256:76abebdf7e95f75dcf5e4dcb8ed1a11f7683b9e49c81941d680496c6123df982
+enumValues:
+  - idle
+  - inject
+  - pack
+  - cool
+  - eject
+  - fault

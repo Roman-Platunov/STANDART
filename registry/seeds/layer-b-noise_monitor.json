@@ -1,0 +1,112 @@
+{
+  "layer": "B9",
+  "name": "layer-b-noise_monitor.json",
+  "types": [
+    {
+      "path": "noise_monitor.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Noise monitor station id",
+      "titleRu": "ID станции шума",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "noise_monitor.laeq",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "LAeq",
+      "titleRu": "LAeq",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noise_monitor.lmax",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "LAmax",
+      "titleRu": "LAmax",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noise_monitor.lnight",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Night level",
+      "titleRu": "Ночной уровень",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noise_monitor.exceedance.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Exceedance minutes",
+      "titleRu": "Минуты превышения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noise_monitor.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Noise alarm",
+      "titleRu": "Тревога по шуму",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "noise_monitor.spectrum.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Spectrum ref",
+      "titleRu": "Референс спектра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "noise_monitor.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dominant source",
+      "titleRu": "Доминирующий источник",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "road",
+        "rail",
+        "aircraft",
+        "industry",
+        "construction",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

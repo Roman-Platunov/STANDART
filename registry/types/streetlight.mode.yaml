@@ -1,0 +1,21 @@
+sid: d2736fbf
+path: streetlight.mode
+aliases:
+  short: streetlight.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим освещения
+  en: Streetlight mode
+fingerprint: sha256:d2736fbfccf0ed0e27772403ae9082b066537407f84d1704272ff10d367a3f31
+enumValues:
+  - photocell
+  - schedule
+  - adaptive
+  - manual
+  - off

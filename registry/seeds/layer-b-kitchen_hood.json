@@ -1,0 +1,110 @@
+{
+  "layer": "B9",
+  "name": "layer-b-kitchen_hood.json",
+  "types": [
+    {
+      "path": "kitchen_hood.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Kitchen hood id",
+      "titleRu": "ID кухонного зонта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "kitchen_hood.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Kitchen site id",
+      "titleRu": "ID кухни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "kitchen_hood.exhaust.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Exhaust airflow",
+      "titleRu": "Расход вытяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kitchen_hood.filter.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Filter differential pressure",
+      "titleRu": "Перепад на фильтре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kitchen_hood.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hood temperature",
+      "titleRu": "Температура зонта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kitchen_hood.fire.suppression",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Suppression discharged",
+      "titleRu": "Пожаротушение сработало",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "kitchen_hood.fan.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Exhaust fan on",
+      "titleRu": "Вытяжной вентилятор вкл",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "kitchen_hood.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hood state",
+      "titleRu": "Состояние зонта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "idle",
+        "cook",
+        "wash",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

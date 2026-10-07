@@ -1,0 +1,21 @@
+sid: a1261a9f
+path: smart_meter.commodity
+aliases:
+  short: smart_meter.commodity
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Вид учёта
+  en: Meter commodity
+fingerprint: sha256:a1261a9f1b46b09777fafa55ad267e85f4400d4cd22e90b1bc89ff027a3be5a6
+enumValues:
+  - electric
+  - gas
+  - water
+  - heat
+  - cooling

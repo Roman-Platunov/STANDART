@@ -1,0 +1,22 @@
+sid: b7592ae9
+path: baggage_system.bag.state
+aliases:
+  short: bag.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние багажа
+  en: Bag state
+fingerprint: sha256:b7592ae9eb7cad7a81f06d081f0daf2166f684b6bda0c0a322e8b5205d1e8731
+enumValues:
+  - checkin
+  - screen
+  - sort
+  - load
+  - reclaim
+  - lost

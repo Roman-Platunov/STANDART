@@ -1,0 +1,21 @@
+sid: 3b130584
+path: cold_chain_truck.mode
+aliases:
+  short: cold_chain_truck.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим рефа
+  en: Reefer mode
+fingerprint: sha256:3b130584d914bf8bd9c28f365b67558d9a8dc9d58680af93f518cb5803a6a28a
+enumValues:
+  - continuous
+  - cycle
+  - start_stop
+  - off
+  - defrost

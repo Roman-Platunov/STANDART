@@ -1,0 +1,107 @@
+{
+  "layer": "B9",
+  "name": "layer-b-vts.json",
+  "types": [
+    {
+      "path": "vts.center.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VTS center id",
+      "titleRu": "ID СУДС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vts.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tracked vessel id",
+      "titleRu": "ID сопровождаемого судна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vts.traffic.density",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Traffic density index",
+      "titleRu": "Индекс плотности движения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vts.closest.point_m",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Closest point of approach",
+      "titleRu": "Кратчайшее сближение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vts.incidents",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Incidents today",
+      "titleRu": "Инцидентов сегодня",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vts.alert.collision",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Collision risk alert",
+      "titleRu": "Риск столкновения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vts.alert.grounding",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grounding risk alert",
+      "titleRu": "Риск посадки на мель",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vts.service",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "VTS service level",
+      "titleRu": "Уровень службы СУДС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "information",
+        "traffic_org",
+        "navigational"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

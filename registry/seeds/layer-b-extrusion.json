@@ -1,0 +1,113 @@
+{
+  "layer": "B9",
+  "name": "layer-b-extrusion.json",
+  "types": [
+    {
+      "path": "extrusion.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Extrusion line id",
+      "titleRu": "ID линии экструзии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extrusion.die.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Extrusion die id",
+      "titleRu": "ID фильеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extrusion.melt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrusion.screw.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Screw RPM",
+      "titleRu": "Обороты шнека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrusion.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Die pressure",
+      "titleRu": "Давление у фильеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrusion.haul.off_m_min",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Haul-off speed",
+      "titleRu": "Скорость отвода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrusion.dimension",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Product dimension",
+      "titleRu": "Размер профиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrusion.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Extrusion product",
+      "titleRu": "Продукт экструзии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pipe",
+        "profile",
+        "sheet",
+        "film",
+        "cable",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

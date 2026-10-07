@@ -1,0 +1,22 @@
+sid: 46b2908a
+path: pavement_sensor.condition
+aliases:
+  short: pavement_sensor.condition
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние покрытия
+  en: Pavement condition
+fingerprint: sha256:46b2908a1471dd92038d88202cc66ea371547484227f598c8cc580744e7b2edd
+enumValues:
+  - dry
+  - moist
+  - wet
+  - frost
+  - ice
+  - snow

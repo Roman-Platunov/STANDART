@@ -1,0 +1,115 @@
+{
+  "layer": "B9",
+  "name": "layer-b-irrigation_district.json",
+  "types": [
+    {
+      "path": "irrigation_district.canal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Irrigation canal id",
+      "titleRu": "ID оросительного канала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "irrigation_district.gate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Canal gate id",
+      "titleRu": "ID затвора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "irrigation_district.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Canal flow",
+      "titleRu": "Расход канала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrigation_district.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Canal level",
+      "titleRu": "Уровень в канале",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrigation_district.gate.opening",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Gate opening",
+      "titleRu": "Открытие затвора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "irrigation_district.delivery.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Delivered volume",
+      "titleRu": "Поданный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrigation_district.shortage",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Water shortage",
+      "titleRu": "Дефицит воды",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "irrigation_district.season",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Irrigation season",
+      "titleRu": "Сезон орошения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "startup",
+        "peak",
+        "shoulder",
+        "shutdown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

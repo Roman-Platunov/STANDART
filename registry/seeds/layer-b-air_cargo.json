@@ -1,0 +1,112 @@
+{
+  "layer": "B9",
+  "name": "layer-b-air_cargo.json",
+  "types": [
+    {
+      "path": "air_cargo.shipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Air cargo shipment id",
+      "titleRu": "ID авиагруза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "air_cargo.uld.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ULD id",
+      "titleRu": "ID авиаконтейнера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "air_cargo.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Shipment weight",
+      "titleRu": "Масса груза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_cargo.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Shipment volume",
+      "titleRu": "Объём груза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_cargo.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "ULD temperature",
+      "titleRu": "Температура ULD",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_cargo.dwell.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Airport dwell",
+      "titleRu": "Простой в аэропорту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_cargo.dangerous",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dangerous goods flag",
+      "titleRu": "Опасный груз",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "air_cargo.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Air cargo status",
+      "titleRu": "Статус авиагруза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "accept",
+        "build",
+        "depart",
+        "arrive",
+        "deliver",
+        "hold"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

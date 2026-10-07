@@ -1,0 +1,120 @@
+{
+  "layer": "B9",
+  "name": "layer-b-grain_elevator.json",
+  "types": [
+    {
+      "path": "grain_elevator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grain elevator id",
+      "titleRu": "ID элеватора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grain_elevator.bin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grain bin id",
+      "titleRu": "ID силоса зерна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grain_elevator.bin.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bin fill level",
+      "titleRu": "Заполнение силоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "grain_elevator.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Grain moisture",
+      "titleRu": "Влажность зерна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "grain_elevator.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Grain temperature",
+      "titleRu": "Температура зерна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grain_elevator.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Dust concentration",
+      "titleRu": "Концентрация пыли",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grain_elevator.hotspot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hotspot detected",
+      "titleRu": "Очаг самосогревания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "grain_elevator.commodity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grain commodity",
+      "titleRu": "Культура",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wheat",
+        "corn",
+        "soy",
+        "barley",
+        "rice",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

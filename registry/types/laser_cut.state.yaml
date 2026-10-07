@@ -1,0 +1,21 @@
+sid: 43233e0d
+path: laser_cut.state
+aliases:
+  short: laser_cut.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние лазерной резки
+  en: Laser cut state
+fingerprint: sha256:43233e0d35fc1092b19364c7d64a370397cf2dcff5149ac697a10439d39702ae
+enumValues:
+  - idle
+  - pierce
+  - cut
+  - mark
+  - fault

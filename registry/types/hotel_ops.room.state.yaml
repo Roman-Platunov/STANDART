@@ -1,0 +1,22 @@
+sid: cb274336
+path: hotel_ops.room.state
+aliases:
+  short: hotel_ops.room.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние номера
+  en: Room state
+fingerprint: sha256:cb2743362eb69d99b590d79ee8e637648bd336372e4bed305dc7eb5e73b8f244
+enumValues:
+  - vacant
+  - occupied
+  - dirty
+  - clean
+  - ooo
+  - oos

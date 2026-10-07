@@ -1,0 +1,114 @@
+{
+  "layer": "B9",
+  "name": "layer-b-waste_bin.json",
+  "types": [
+    {
+      "path": "waste_bin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Smart waste bin id",
+      "titleRu": "ID умного контейнера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waste_bin.route.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Collection route id",
+      "titleRu": "ID маршрута сбора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waste_bin.fill",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fill level",
+      "titleRu": "Уровень заполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waste_bin.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bin temperature",
+      "titleRu": "Температура контейнера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_bin.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Contents weight",
+      "titleRu": "Масса содержимого",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_bin.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bin full",
+      "titleRu": "Контейнер полон",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "waste_bin.fire.risk",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire risk",
+      "titleRu": "Риск возгорания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "waste_bin.stream",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Waste stream",
+      "titleRu": "Поток отходов",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mixed",
+        "recycle",
+        "organic",
+        "glass",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

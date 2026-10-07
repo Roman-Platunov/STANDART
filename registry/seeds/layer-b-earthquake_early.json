@@ -1,0 +1,111 @@
+{
+  "layer": "B9",
+  "name": "layer-b-earthquake_early.json",
+  "types": [
+    {
+      "path": "earthquake_early.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Earthquake event id",
+      "titleRu": "ID землетрясения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "earthquake_early.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EEW station id",
+      "titleRu": "ID станции СЭЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "earthquake_early.mag",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Magnitude estimate",
+      "titleRu": "Оценка магнитуды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "earthquake_early.pga",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Peak ground acceleration",
+      "titleRu": "Пиковое ускорение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "earthquake_early.warning.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Warning lead time",
+      "titleRu": "Время предупреждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "earthquake_early.depth",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Hypocenter depth",
+      "titleRu": "Глубина очага",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "earthquake_early.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "EEW alert issued",
+      "titleRu": "СЭЗ выдано",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "earthquake_early.intensity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shaking intensity",
+      "titleRu": "Интенсивность тряски",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "weak",
+        "light",
+        "moderate",
+        "strong",
+        "severe"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

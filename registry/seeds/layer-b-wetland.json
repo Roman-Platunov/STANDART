@@ -1,0 +1,105 @@
+{
+  "layer": "B9",
+  "name": "layer-b-wetland.json",
+  "types": [
+    {
+      "path": "wetland.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wetland site id",
+      "titleRu": "ID водно-болотного угодья",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wetland.water.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Water level",
+      "titleRu": "Уровень воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wetland.salinity",
+      "kind": "quantity",
+      "unit": "PSU",
+      "titleEn": "Salinity",
+      "titleRu": "Солёность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wetland.vegetation.cover",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vegetation cover",
+      "titleRu": "Покрытие растительностью",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wetland.methane.flux",
+      "kind": "quantity",
+      "unit": "mg/m2/h",
+      "titleEn": "Methane flux",
+      "titleRu": "Поток метана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wetland.bird.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bird count",
+      "titleRu": "Учёт птиц",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wetland.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wetland type",
+      "titleRu": "Тип угодья",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "marsh",
+        "swamp",
+        "bog",
+        "fen",
+        "mangrove",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

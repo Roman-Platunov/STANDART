@@ -1,0 +1,116 @@
+{
+  "layer": "B9",
+  "name": "layer-b-laser_cut.json",
+  "types": [
+    {
+      "path": "laser_cut.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Laser cutter id",
+      "titleRu": "ID лазерного станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laser_cut.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Laser cut job id",
+      "titleRu": "ID задания резки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laser_cut.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Laser power",
+      "titleRu": "Мощность лазера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laser_cut.speed",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Cut speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laser_cut.gas.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Assist gas pressure",
+      "titleRu": "Давление газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laser_cut.pierce.time_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Pierce time",
+      "titleRu": "Время прокола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laser_cut.nest.utilization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Nest utilization",
+      "titleRu": "Использование листа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "laser_cut.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Laser cut state",
+      "titleRu": "Состояние лазерной резки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "pierce",
+        "cut",
+        "mark",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

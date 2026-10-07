@@ -1,0 +1,113 @@
+{
+  "layer": "B9",
+  "name": "layer-b-runway_ops.json",
+  "types": [
+    {
+      "path": "runway_ops.runway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway id",
+      "titleRu": "ID ВПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "runway_ops.cfr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Contaminant/friction report",
+      "titleRu": "Отчёт о сцеплении",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "runway_ops.mu",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Friction mu",
+      "titleRu": "Коэффициент сцепления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "runway_ops.wind.cross",
+      "kind": "quantity",
+      "unit": "kn",
+      "titleEn": "Crosswind component",
+      "titleRu": "Боковой ветер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "runway_ops.rvr",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Runway visual range",
+      "titleRu": "Дальность видимости на ВПП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "runway_ops.ops.hour",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Movements per hour",
+      "titleRu": "Движений в час",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "runway_ops.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Runway closed",
+      "titleRu": "ВПП закрыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "runway_ops.condition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Runway condition",
+      "titleRu": "Состояние ВПП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "wet",
+        "snow",
+        "ice",
+        "slush",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

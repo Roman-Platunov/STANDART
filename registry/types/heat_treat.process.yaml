@@ -1,0 +1,22 @@
+sid: 3ec020e2
+path: heat_treat.process
+aliases:
+  short: heat_treat.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Процесс термообработки
+  en: Heat-treat process
+fingerprint: sha256:3ec020e20fed428cbdd0bfdd032fa3ba242422e51fe33c068072eed6a2e51e71
+enumValues:
+  - anneal
+  - quench
+  - temper
+  - carburize
+  - nitride
+  - other

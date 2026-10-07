@@ -1,0 +1,20 @@
+sid: 124780a2
+path: volcano.alert
+aliases:
+  short: volcano.alert
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Уровень тревоги вулкана
+  en: Volcano alert level
+fingerprint: sha256:124780a2d62cfa2293d7ab78cb97fe3538396fa22c8cb2a64ee580a436aa0cf6
+enumValues:
+  - green
+  - yellow
+  - orange
+  - red

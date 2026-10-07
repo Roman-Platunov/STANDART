@@ -1,0 +1,114 @@
+{
+  "layer": "B9",
+  "name": "layer-b-streetlight.json",
+  "types": [
+    {
+      "path": "streetlight.fixture.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Streetlight fixture id",
+      "titleRu": "ID светильника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "streetlight.cabinet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lighting cabinet id",
+      "titleRu": "ID шкафа освещения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "streetlight.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Fixture power",
+      "titleRu": "Мощность светильника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "streetlight.dim",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dimming level",
+      "titleRu": "Уровень диммирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "streetlight.lux",
+      "kind": "quantity",
+      "unit": "lx",
+      "titleEn": "Illuminance",
+      "titleRu": "Освещённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "streetlight.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Light on",
+      "titleRu": "Свет включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "streetlight.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fixture fault",
+      "titleRu": "Неисправность светильника",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "streetlight.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Streetlight mode",
+      "titleRu": "Режим освещения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "photocell",
+        "schedule",
+        "adaptive",
+        "manual",
+        "off"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

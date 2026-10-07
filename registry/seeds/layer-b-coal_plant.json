@@ -1,0 +1,131 @@
+{
+  "layer": "B9",
+  "name": "layer-b-coal_plant.json",
+  "types": [
+    {
+      "path": "coal_plant.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coal unit id",
+      "titleRu": "ID угольного блока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coal_plant.boiler.steam_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Main steam temperature",
+      "titleRu": "Температура острого пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coal_plant.boiler.steam_pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Main steam pressure",
+      "titleRu": "Давление острого пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coal_plant.mill.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Coal mill throughput",
+      "titleRu": "Производительность мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coal_plant.emissions.sox",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "SOx emissions",
+      "titleRu": "Выбросы SOx",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coal_plant.emissions.nox",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "NOx emissions",
+      "titleRu": "Выбросы NOx",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coal_plant.ash.fly_level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fly ash silo level",
+      "titleRu": "Уровень золы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coal_plant.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Unit power",
+      "titleRu": "Мощность блока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coal_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Coal unit state",
+      "titleRu": "Состояние угольного блока",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "load",
+        "low_load",
+        "outage",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

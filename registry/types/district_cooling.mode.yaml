@@ -1,0 +1,20 @@
+sid: 13198d4a
+path: district_cooling.mode
+aliases:
+  short: district_cooling.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим холодосети
+  en: District cooling mode
+fingerprint: sha256:13198d4a4ef0485580af6a1af6114a32216bf927332888d7a726e4ce9064de42
+enumValues:
+  - run
+  - ice_store
+  - idle
+  - fault

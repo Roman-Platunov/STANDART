@@ -1,0 +1,22 @@
+sid: 3e4b0126
+path: autoclave_composite.state
+aliases:
+  short: autoclave_composite.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние автоклава
+  en: Autoclave state
+fingerprint: sha256:3e4b0126042b2767dde216100adaa4702daf374812cbe135ec936539945931ed
+enumValues:
+  - load
+  - ramp
+  - soak
+  - cool
+  - unload
+  - fault

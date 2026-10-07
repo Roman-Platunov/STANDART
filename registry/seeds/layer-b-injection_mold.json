@@ -1,0 +1,113 @@
+{
+  "layer": "B9",
+  "name": "layer-b-injection_mold.json",
+  "types": [
+    {
+      "path": "injection_mold.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Injection molding machine id",
+      "titleRu": "ID ТПА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "injection_mold.tool.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mold tool id",
+      "titleRu": "ID пресс-формы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "injection_mold.melt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "injection_mold.mold.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mold temperature",
+      "titleRu": "Температура формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "injection_mold.injection.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Injection pressure",
+      "titleRu": "Давление впрыска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "injection_mold.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "injection_mold.shot.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Shot weight",
+      "titleRu": "Масса впрыска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "injection_mold.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "IMM state",
+      "titleRu": "Состояние ТПА",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "inject",
+        "pack",
+        "cool",
+        "eject",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

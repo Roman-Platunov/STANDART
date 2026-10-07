@@ -1,0 +1,22 @@
+sid: 2755a996
+path: runway_ops.condition
+aliases:
+  short: runway_ops.condition
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ВПП
+  en: Runway condition
+fingerprint: sha256:2755a9965fb91642223d1e181b213f4c9533c59acd8af9bb2ef4484052ef904c
+enumValues:
+  - dry
+  - wet
+  - snow
+  - ice
+  - slush
+  - closed

@@ -1,0 +1,111 @@
+{
+  "layer": "B9",
+  "name": "layer-b-stormwater.json",
+  "types": [
+    {
+      "path": "stormwater.basin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stormwater basin id",
+      "titleRu": "ID ливневого бассейна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stormwater.outfall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Outfall id",
+      "titleRu": "ID выпуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stormwater.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Basin water level",
+      "titleRu": "Уровень в бассейне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stormwater.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Outfall flow",
+      "titleRu": "Расход выпуска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stormwater.rainfall",
+      "kind": "quantity",
+      "unit": "mm/h",
+      "titleEn": "Local rainfall",
+      "titleRu": "Локальные осадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stormwater.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Discharge turbidity",
+      "titleRu": "Мутность сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stormwater.overflow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CSO/SSO overflow",
+      "titleRu": "Переполнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stormwater.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stormwater state",
+      "titleRu": "Состояние ливнёвки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "filling",
+        "discharging",
+        "overflow",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

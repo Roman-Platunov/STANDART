@@ -1,0 +1,120 @@
+{
+  "layer": "B9",
+  "name": "layer-b-coral_reef.json",
+  "types": [
+    {
+      "path": "coral_reef.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reef site id",
+      "titleRu": "ID рифа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coral_reef.cover",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Live coral cover",
+      "titleRu": "Покрытие живыми кораллами",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coral_reef.bleaching",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bleaching extent",
+      "titleRu": "Доля отбеливания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coral_reef.sst",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sea surface temperature",
+      "titleRu": "Температура поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coral_reef.dhw",
+      "kind": "quantity",
+      "unit": "C.week",
+      "titleEn": "Degree heating weeks",
+      "titleRu": "Градусо-недели нагрева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coral_reef.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Water turbidity",
+      "titleRu": "Мутность воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coral_reef.photo.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Reef photo ref",
+      "titleRu": "Референс фото рифа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coral_reef.health",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reef health",
+      "titleRu": "Состояние рифа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pristine",
+        "good",
+        "fair",
+        "poor",
+        "critical"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B9",
+  "name": "layer-b-greenhouse_ops.json",
+  "types": [
+    {
+      "path": "greenhouse_ops.house.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Greenhouse id",
+      "titleRu": "ID теплицы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "greenhouse_ops.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Greenhouse zone id",
+      "titleRu": "ID зоны теплицы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "greenhouse_ops.temp.air",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air temperature",
+      "titleRu": "Температура воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "greenhouse_ops.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "greenhouse_ops.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO2 enrichment",
+      "titleRu": "Обогащение CO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "greenhouse_ops.par",
+      "kind": "quantity",
+      "unit": "umol/m2/s",
+      "titleEn": "PAR",
+      "titleRu": "ФАР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "greenhouse_ops.vent.opening",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vent opening",
+      "titleRu": "Открытие форточек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "greenhouse_ops.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Greenhouse mode",
+      "titleRu": "Режим теплицы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "cool",
+        "vent",
+        "enrich",
+        "night"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

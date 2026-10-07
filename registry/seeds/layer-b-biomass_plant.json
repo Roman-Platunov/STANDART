@@ -1,0 +1,116 @@
+{
+  "layer": "B9",
+  "name": "layer-b-biomass_plant.json",
+  "types": [
+    {
+      "path": "biomass_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Biomass plant id",
+      "titleRu": "ID биотопливной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biomass_plant.boiler.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Biomass boiler id",
+      "titleRu": "ID котла на биомассе",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biomass_plant.fuel.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fuel moisture",
+      "titleRu": "Влажность топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biomass_plant.furnace.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура топки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biomass_plant.steam.flow",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steam flow",
+      "titleRu": "Расход пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biomass_plant.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Electric power",
+      "titleRu": "Электрическая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biomass_plant.emissions.co",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "CO emissions",
+      "titleRu": "Выбросы CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biomass_plant.fuel",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Biomass fuel",
+      "titleRu": "Вид биотоплива",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "woodchip",
+        "pellet",
+        "agri",
+        "rdf",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

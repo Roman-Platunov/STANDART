@@ -1,0 +1,121 @@
+{
+  "layer": "B9",
+  "name": "layer-b-feed_mill.json",
+  "types": [
+    {
+      "path": "feed_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Feed mill id",
+      "titleRu": "ID комбикормового завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "feed_mill.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Feed batch id",
+      "titleRu": "ID партии корма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "feed_mill.mixer.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Mix time",
+      "titleRu": "Время смешивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feed_mill.pellet.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pellet die temperature",
+      "titleRu": "Температура гранулирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feed_mill.pellet.durability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pellet durability",
+      "titleRu": "Прочность гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "feed_mill.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Mill throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feed_mill.protein",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Crude protein",
+      "titleRu": "Сырой протеин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "feed_mill.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feed product",
+      "titleRu": "Тип корма",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "poultry",
+        "swine",
+        "cattle",
+        "aqua",
+        "pet",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

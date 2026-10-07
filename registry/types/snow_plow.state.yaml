@@ -1,0 +1,21 @@
+sid: b7ddb931
+path: snow_plow.state
+aliases:
+  short: snow_plow.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние снегоуборки
+  en: Plow state
+fingerprint: sha256:b7ddb931094c9f6a364478ceca74aebcc1749a1303af6b636224d8cf70b6ff01
+enumValues:
+  - depot
+  - patrol
+  - plow
+  - salt
+  - done

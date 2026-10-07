@@ -1,0 +1,121 @@
+{
+  "layer": "B9",
+  "name": "layer-b-orchard.json",
+  "types": [
+    {
+      "path": "orchard.block.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Orchard block id",
+      "titleRu": "ID квартала сада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "orchard.tree.row_id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tree row id",
+      "titleRu": "ID ряда деревьев",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "orchard.soil.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soil moisture",
+      "titleRu": "Влажность почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "orchard.canopy.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Canopy temperature",
+      "titleRu": "Температура кроны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "orchard.frost.risk",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Frost risk index",
+      "titleRu": "Индекс риска заморозков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "orchard.yield.estimate",
+      "kind": "quantity",
+      "unit": "t/ha",
+      "titleEn": "Yield estimate",
+      "titleRu": "Оценка урожайности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "orchard.ndvi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Block NDVI",
+      "titleRu": "NDVI квартала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "orchard.crop",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Orchard crop",
+      "titleRu": "Культура сада",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "apple",
+        "citrus",
+        "grape",
+        "stone",
+        "nut",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

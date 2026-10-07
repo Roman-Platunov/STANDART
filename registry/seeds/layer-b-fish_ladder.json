@@ -1,0 +1,109 @@
+{
+  "layer": "B9",
+  "name": "layer-b-fish_ladder.json",
+  "types": [
+    {
+      "path": "fish_ladder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fish ladder id",
+      "titleRu": "ID рыбохода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fish_ladder.dam.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Associated dam id",
+      "titleRu": "ID связанной плотины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fish_ladder.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Attraction flow",
+      "titleRu": "Привлекающий расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fish_ladder.count.upstream",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Upstream fish count",
+      "titleRu": "Рыб вверх",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fish_ladder.count.downstream",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Downstream fish count",
+      "titleRu": "Рыб вниз",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fish_ladder.water.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ladder water temperature",
+      "titleRu": "Температура воды в рыбоходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fish_ladder.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ladder open",
+      "titleRu": "Рыбоход открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fish_ladder.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fishway type",
+      "titleRu": "Тип рыбохода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pool",
+        "denil",
+        "vertical_slot",
+        "nature_like",
+        "elevator"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

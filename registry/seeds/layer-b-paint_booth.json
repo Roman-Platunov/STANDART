@@ -1,0 +1,117 @@
+{
+  "layer": "B9",
+  "name": "layer-b-paint_booth.json",
+  "types": [
+    {
+      "path": "paint_booth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paint booth id",
+      "titleRu": "ID окрасочной камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_booth.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paint job id",
+      "titleRu": "ID задания окраски",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_booth.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Booth temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Booth humidity",
+      "titleRu": "Влажность камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth.airflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Booth airflow",
+      "titleRu": "Воздухообмен камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth.voc",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "VOC concentration",
+      "titleRu": "Концентрация ЛОС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth.film.thickness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Dry film thickness",
+      "titleRu": "Толщина сухой плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Paint stage",
+      "titleRu": "Стадия окраски",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "spray",
+        "flash",
+        "bake",
+        "cool",
+        "inspect"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

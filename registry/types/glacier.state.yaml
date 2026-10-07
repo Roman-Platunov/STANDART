@@ -1,0 +1,21 @@
+sid: 22f88acc
+path: glacier.state
+aliases:
+  short: glacier.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ледника
+  en: Glacier state
+fingerprint: sha256:22f88acc605f1e3a2e788c3d9ca1766276f2366e362cef7dea343f363135d739
+enumValues:
+  - stable
+  - retreating
+  - advancing
+  - surging
+  - disintegrating

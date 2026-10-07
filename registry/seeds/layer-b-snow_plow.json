@@ -1,0 +1,110 @@
+{
+  "layer": "B9",
+  "name": "layer-b-snow_plow.json",
+  "types": [
+    {
+      "path": "snow_plow.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Snow plow id",
+      "titleRu": "ID снегоуборщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snow_plow.route.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plow route id",
+      "titleRu": "ID маршрута уборки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snow_plow.blade.down",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Blade down 1/0",
+      "titleRu": "Отвал опущен",
+      "encodings": [
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_plow.salt.rate",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Salt application rate",
+      "titleRu": "Норма соли",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_plow.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Plow speed",
+      "titleRu": "Скорость уборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_plow.coverage.km",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Route covered",
+      "titleRu": "Пройдено по маршруту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_plow.spreader.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spreader on",
+      "titleRu": "Разбрасыватель вкл",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "snow_plow.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plow state",
+      "titleRu": "Состояние снегоуборки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "depot",
+        "patrol",
+        "plow",
+        "salt",
+        "done"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

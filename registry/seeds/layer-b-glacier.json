@@ -1,0 +1,110 @@
+{
+  "layer": "B9",
+  "name": "layer-b-glacier.json",
+  "types": [
+    {
+      "path": "glacier.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Glacier id",
+      "titleRu": "ID ледника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glacier.stake.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mass-balance stake id",
+      "titleRu": "ID рейки баланса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glacier.mass.balance",
+      "kind": "quantity",
+      "unit": "mmwe",
+      "titleEn": "Mass balance",
+      "titleRu": "Массовый баланс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glacier.velocity",
+      "kind": "quantity",
+      "unit": "m/d",
+      "titleEn": "Surface velocity",
+      "titleRu": "Скорость поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glacier.terminus.advance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Terminus position change",
+      "titleRu": "Смещение языка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glacier.albedo",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Surface albedo",
+      "titleRu": "Альбедо поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glacier.imagery.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Glacier imagery ref",
+      "titleRu": "Референс снимков ледника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glacier.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Glacier state",
+      "titleRu": "Состояние ледника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stable",
+        "retreating",
+        "advancing",
+        "surging",
+        "disintegrating"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

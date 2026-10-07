@@ -1,0 +1,115 @@
+{
+  "layer": "B9",
+  "name": "layer-b-composite_layup.json",
+  "types": [
+    {
+      "path": "composite_layup.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Layup job id",
+      "titleRu": "ID выкладки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "composite_layup.tool.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Layup tool id",
+      "titleRu": "ID оснастки выкладки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "composite_layup.plies",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Plies laid",
+      "titleRu": "Уложено слоёв",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "composite_layup.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Layup room temperature",
+      "titleRu": "Температура комнаты выкладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "composite_layup.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Layup room humidity",
+      "titleRu": "Влажность комнаты выкладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "composite_layup.out_time.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Prepreg out-time",
+      "titleRu": "Время препрега вне холода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "composite_layup.fod",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "FOD detected",
+      "titleRu": "Обнаружен FOD",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "composite_layup.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Layup stage",
+      "titleRu": "Стадия выкладки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "kit",
+        "layup",
+        "bag",
+        "cure",
+        "demold",
+        "inspect"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

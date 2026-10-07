@@ -1,0 +1,110 @@
+{
+  "layer": "B9",
+  "name": "layer-b-sewer_pump.json",
+  "types": [
+    {
+      "path": "sewer_pump.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lift station id",
+      "titleRu": "ID КНС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sewer_pump.pump.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sewage pump id",
+      "titleRu": "ID насоса КНС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sewer_pump.wetwell.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Wet well level",
+      "titleRu": "Уровень в приёмнике",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sewer_pump.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pump flow",
+      "titleRu": "Расход насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sewer_pump.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Pump runtime",
+      "titleRu": "Наработка насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sewer_pump.starts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Start count",
+      "titleRu": "Число пусков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sewer_pump.high.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High level alarm",
+      "titleRu": "Авария высокого уровня",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sewer_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pump state",
+      "titleRu": "Состояние насоса КНС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "lead",
+        "lag",
+        "fault",
+        "bypass"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

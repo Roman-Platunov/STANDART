@@ -1,0 +1,126 @@
+{
+  "layer": "B9",
+  "name": "layer-b-gse_fleet.json",
+  "types": [
+    {
+      "path": "gse_fleet.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GSE asset id",
+      "titleRu": "ID наземной техники",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gse_fleet.airport.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GSE airport id",
+      "titleRu": "ID аэропорта GSE",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gse_fleet.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "GSE battery SoC",
+      "titleRu": "SoC АКБ GSE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gse_fleet.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Runtime hours",
+      "titleRu": "Моточасы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gse_fleet.utilization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Utilization",
+      "titleRu": "Утилизация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gse_fleet.assigned",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Assigned to flight",
+      "titleRu": "Назначен на рейс",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gse_fleet.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "GSE type",
+      "titleRu": "Тип GSE",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pushback",
+        "belt",
+        "loader",
+        "gpu",
+        "asute",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gse_fleet.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "GSE state",
+      "titleRu": "Состояние GSE",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "in_use",
+        "charging",
+        "maintenance",
+        "down"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

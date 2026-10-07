@@ -1,0 +1,111 @@
+{
+  "layer": "B9",
+  "name": "layer-b-cold_chain_truck.json",
+  "types": [
+    {
+      "path": "cold_chain_truck.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reefer truck id",
+      "titleRu": "ID рефрижератора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_chain_truck.trip.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cold chain trip id",
+      "titleRu": "ID рейса холодовой цепи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_chain_truck.cargo.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cargo temperature",
+      "titleRu": "Температура груза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_truck.setpoint",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Setpoint temperature",
+      "titleRu": "Уставка температуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_truck.door.open_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Door open time",
+      "titleRu": "Время открытой двери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_truck.fuel.reefer",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Reefer fuel used",
+      "titleRu": "Топливо рефа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_truck.excursion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature excursion",
+      "titleRu": "Температурная экскурсия",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cold_chain_truck.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reefer mode",
+      "titleRu": "Режим рефа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "continuous",
+        "cycle",
+        "start_stop",
+        "off",
+        "defrost"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
