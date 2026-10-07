@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-ultrafilt_skid.json",
+  "types": [
+    {
+      "path": "ultrafilt_skid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UF / DF skid id",
+      "titleRu": "ID станции УФ/ДФ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ultrafilt_skid.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ultrafilt_skid.tmp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Transmembrane pressure",
+      "titleRu": "Трансмембранное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ultrafilt_skid.flux",
+      "kind": "quantity",
+      "unit": "L/m2/h",
+      "titleEn": "Permeate flux",
+      "titleRu": "Поток пермеата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ultrafilt_skid.conc",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Concentration factor",
+      "titleRu": "Коэффициент концентрирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ultrafilt_skid.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Retentate volume",
+      "titleRu": "Объём ретентата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ultrafilt_skid.fouling",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fouling high",
+      "titleRu": "Высокое загрязнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ultrafilt_skid.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "concentrate",
+        "diafilter",
+        "recover",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B28",
+  "name": "layer-b-softgel_line.json",
+  "types": [
+    {
+      "path": "softgel_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Softgel encapsulation line id",
+      "titleRu": "ID линии мягких желатиновых капсул",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "softgel_line.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "softgel_line.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Capsules per hour",
+      "titleRu": "Капсул в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "softgel_line.fill",
+      "kind": "quantity",
+      "unit": "mg",
+      "titleEn": "Fill weight",
+      "titleRu": "Масса наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "softgel_line.ribbon",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gelatin ribbon temperature",
+      "titleRu": "Температура ленты желатина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "softgel_line.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "softgel_line.seal.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seal OK",
+      "titleRu": "Шов OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "softgel_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "fill",
+        "dry",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

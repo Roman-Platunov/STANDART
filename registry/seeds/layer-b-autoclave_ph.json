@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-autoclave_ph.json",
+  "types": [
+    {
+      "path": "autoclave_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma autoclave id",
+      "titleRu": "ID фармацевтического автоклава",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "autoclave_ph.load.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Load id",
+      "titleRu": "ID загрузки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "autoclave_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autoclave_ph.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Chamber pressure",
+      "titleRu": "Давление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autoclave_ph.f0",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "F0",
+      "titleRu": "F0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autoclave_ph.hold.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Hold time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autoclave_ph.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cycle pass",
+      "titleRu": "Цикл пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "autoclave_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Autoclave state",
+      "titleRu": "Состояние автоклава",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "expose",
+        "exhaust",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

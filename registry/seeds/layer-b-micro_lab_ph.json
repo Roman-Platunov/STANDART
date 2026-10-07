@@ -1,0 +1,108 @@
+{
+  "layer": "B28",
+  "name": "layer-b-micro_lab_ph.json",
+  "types": [
+    {
+      "path": "micro_lab_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma microbiology lab id",
+      "titleRu": "ID микробиологической лаборатории",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "micro_lab_ph.samples",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Samples in process",
+      "titleRu": "Проб в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micro_lab_ph.positive",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Positives today",
+      "titleRu": "Положительных за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micro_lab_ph.incubators",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Incubators OK",
+      "titleRu": "Инкубаторов OK",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micro_lab_ph.tat.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Average TAT",
+      "titleRu": "Средний TAT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micro_lab_ph.env",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "EM plates incubating",
+      "titleRu": "Чашек мониторинга",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micro_lab_ph.oos",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "OOS active",
+      "titleRu": "OOS активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "micro_lab_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lab state",
+      "titleRu": "Состояние лаборатории",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "busy",
+        "clean",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

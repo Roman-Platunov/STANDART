@@ -1,0 +1,109 @@
+{
+  "layer": "B28",
+  "name": "layer-b-em_sample.json",
+  "types": [
+    {
+      "path": "em_sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Environmental monitoring sample id",
+      "titleRu": "ID пробы мониторинга среды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "em_sample.location.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Location id",
+      "titleRu": "ID точки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "em_sample.cfu",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "CFU count",
+      "titleRu": "КОЕ",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "em_sample.incub.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Incubation days",
+      "titleRu": "Дней инкубации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "em_sample.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Incubator temperature",
+      "titleRu": "Температура инкубатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "em_sample.action",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Action limit breaches",
+      "titleRu": "Превышений action",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "em_sample.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Alert / action",
+      "titleRu": "Alert / action",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "em_sample.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sample type",
+      "titleRu": "Тип пробы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "settle",
+        "active_air",
+        "surface",
+        "glove",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

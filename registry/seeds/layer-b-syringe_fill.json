@@ -1,0 +1,119 @@
+{
+  "layer": "B28",
+  "name": "layer-b-syringe_fill.json",
+  "types": [
+    {
+      "path": "syringe_fill.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Prefilled syringe line id",
+      "titleRu": "ID линии предзаполненных шприцев",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "syringe_fill.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "syringe_fill.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Syringes per hour",
+      "titleRu": "Шприцев в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "syringe_fill.volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "syringe_fill.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "syringe_fill.bubble",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bubble reject",
+      "titleRu": "Брак по пузырькам",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "syringe_fill.needle.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Needle assembly OK",
+      "titleRu": "Сборка иглы OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "syringe_fill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "assemble",
+        "inspect",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

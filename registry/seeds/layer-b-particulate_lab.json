@@ -1,0 +1,107 @@
+{
+  "layer": "B28",
+  "name": "layer-b-particulate_lab.json",
+  "types": [
+    {
+      "path": "particulate_lab.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Particulate matter lab id",
+      "titleRu": "ID лаборатории механических включений",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "particulate_lab.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sample id",
+      "titleRu": "ID образца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "particulate_lab.p10",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "≥10 µm count",
+      "titleRu": "Частиц ≥10 мкм",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particulate_lab.p25",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "≥25 µm count",
+      "titleRu": "Частиц ≥25 мкм",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particulate_lab.volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Sample volume",
+      "titleRu": "Объём пробы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particulate_lab.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Test time",
+      "titleRu": "Время теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particulate_lab.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "USP / PhEur pass",
+      "titleRu": "USP / PhEur пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "particulate_lab.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "light_obsc",
+        "microscopic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

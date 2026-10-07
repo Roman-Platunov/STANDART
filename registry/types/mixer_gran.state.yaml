@@ -1,0 +1,21 @@
+sid: 695de505
+path: mixer_gran.state
+aliases:
+  short: mixer_gran.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние смесителя
+  en: Mixer state
+fingerprint: sha256:695de5053bcad0f4cff7c2c44e1e8a40c79959312dc743f297ec54c10b9748a3
+enumValues:
+  - mix
+  - granulate
+  - discharge
+  - idle
+  - fault

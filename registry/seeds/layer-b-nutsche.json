@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-nutsche.json",
+  "types": [
+    {
+      "path": "nutsche.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Nutsche filter id",
+      "titleRu": "ID фильтра Нучча",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nutsche.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nutsche.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Filter pressure",
+      "titleRu": "Давление фильтрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nutsche.cake",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Cake height",
+      "titleRu": "Высота кека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nutsche.wash",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Wash volume",
+      "titleRu": "Объём промывки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nutsche.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Jacket temperature",
+      "titleRu": "Температура рубашки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nutsche.discharge",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready to discharge",
+      "titleRu": "Готово к выгрузке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nutsche.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Filter state",
+      "titleRu": "Состояние фильтра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "filter",
+        "wash",
+        "dry",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 58cc5e0b
+path: filter_dryer.state
+aliases:
+  short: filter_dryer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние аппарата
+  en: Unit state
+fingerprint: sha256:58cc5e0b54f37dffbf23a8af299ff1f3d888b6891f50dfafafea5f33a51da066
+enumValues:
+  - filter
+  - wash
+  - dry
+  - discharge
+  - fault

@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-sip_skid.json",
+  "types": [
+    {
+      "path": "sip_skid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SIP skid id",
+      "titleRu": "ID станции SIP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sip_skid.circuit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Circuit id",
+      "titleRu": "ID контура",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sip_skid.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "SIP temperature",
+      "titleRu": "Температура SIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sip_skid.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sip_skid.f0",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "F0",
+      "titleRu": "F0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sip_skid.hold.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Hold time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sip_skid.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SIP pass",
+      "titleRu": "SIP пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sip_skid.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SIP state",
+      "titleRu": "Состояние SIP",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "hold",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

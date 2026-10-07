@@ -1,0 +1,110 @@
+{
+  "layer": "B28",
+  "name": "layer-b-vacuum_ph.json",
+  "types": [
+    {
+      "path": "vacuum_ph.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma vacuum system id",
+      "titleRu": "ID вакуумной системы фарма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vacuum_ph.level",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "System vacuum",
+      "titleRu": "Вакуум системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacuum_ph.pumps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pumps running",
+      "titleRu": "Насосов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacuum_ph.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "System power",
+      "titleRu": "Мощность системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacuum_ph.users",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Users online",
+      "titleRu": "Потребителей онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacuum_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pump temperature",
+      "titleRu": "Температура насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacuum_ph.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vacuum low",
+      "titleRu": "Низкий вакуум",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vacuum_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "standby",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B28",
+  "name": "layer-b-clean_steam_ph.json",
+  "types": [
+    {
+      "path": "clean_steam_ph.gen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Clean steam generator id",
+      "titleRu": "ID генератора чистого пара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "clean_steam_ph.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clean_steam_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Steam temperature",
+      "titleRu": "Температура пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clean_steam_ph.ncg",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Non-condensables",
+      "titleRu": "Неконденсируемые",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "clean_steam_ph.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Condensate conductivity",
+      "titleRu": "Проводимость конденсата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clean_steam_ph.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Steam output",
+      "titleRu": "Выработка пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clean_steam_ph.quality.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quality OK",
+      "titleRu": "Качество OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "clean_steam_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Generator state",
+      "titleRu": "Состояние генератора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

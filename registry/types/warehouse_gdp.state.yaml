@@ -1,0 +1,20 @@
+sid: fccf6591
+path: warehouse_gdp.state
+aliases:
+  short: warehouse_gdp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние склада
+  en: Warehouse state
+fingerprint: sha256:fccf65914c1dae7ba0ac0902346f47debe5474aae751d1f81c2b26fd9d7798a6
+enumValues:
+  - ok
+  - excursion
+  - maintain
+  - offline

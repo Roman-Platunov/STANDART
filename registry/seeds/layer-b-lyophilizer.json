@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-lyophilizer.json",
+  "types": [
+    {
+      "path": "lyophilizer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lyophilizer id",
+      "titleRu": "ID лиофильной сушилки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lyophilizer.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lyophilizer.shelf.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Shelf temperature",
+      "titleRu": "Температура полок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lyophilizer.product.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lyophilizer.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber vacuum",
+      "titleRu": "Вакуум камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lyophilizer.condenser",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Condenser temperature",
+      "titleRu": "Температура конденсатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lyophilizer.primary.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Primary drying done",
+      "titleRu": "Первичная сушка завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lyophilizer.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Phase",
+      "titleRu": "Фаза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "freeze",
+        "primary",
+        "secondary",
+        "stopper",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

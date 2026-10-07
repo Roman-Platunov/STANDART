@@ -1,0 +1,115 @@
+{
+  "layer": "B28",
+  "name": "layer-b-centrifuge_ph.json",
+  "types": [
+    {
+      "path": "centrifuge_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma centrifuge id",
+      "titleRu": "ID фармацевтической центрифуги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "centrifuge_ph.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "centrifuge_ph.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Bowl speed",
+      "titleRu": "Обороты барабана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_ph.g",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Relative centrifugal force",
+      "titleRu": "Относительная центробежная сила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_ph.cake",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cake solids",
+      "titleRu": "Сухое вещество кека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_ph.imbalance",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Imbalance",
+      "titleRu": "Дисбаланс",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "centrifuge_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Centrifuge state",
+      "titleRu": "Состояние центрифуги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "feed",
+        "spin",
+        "wash",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

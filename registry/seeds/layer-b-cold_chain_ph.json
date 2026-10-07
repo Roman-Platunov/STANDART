@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-cold_chain_ph.json",
+  "types": [
+    {
+      "path": "cold_chain_ph.logger.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cold-chain logger id",
+      "titleRu": "ID логгера холодовой цепи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_chain_ph.shipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shipment id",
+      "titleRu": "ID отгрузки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_chain_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Logged temperature",
+      "titleRu": "Записанная температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_ph.min",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Min temperature",
+      "titleRu": "Мин. температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_ph.max",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Max temperature",
+      "titleRu": "Макс. температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_ph.duration.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Transit duration",
+      "titleRu": "Длительность перевозки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_ph.excursion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature excursion",
+      "titleRu": "Выход температуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cold_chain_ph.range",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Range",
+      "titleRu": "Диапазон",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "crt",
+        "cold",
+        "frozen",
+        "ultra",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

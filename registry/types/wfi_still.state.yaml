@@ -1,0 +1,20 @@
+sid: 5f6eba68
+path: wfi_still.state
+aliases:
+  short: wfi_still.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дистиллятора
+  en: Still state
+fingerprint: sha256:5f6eba6849c59dad671c828915c72d0da5fa9cc45d8fc8b39885482ae2372b11
+enumValues:
+  - produce
+  - sanitize
+  - idle
+  - fault

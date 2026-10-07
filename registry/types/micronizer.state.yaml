@@ -1,0 +1,20 @@
+sid: 61f0db03
+path: micronizer.state
+aliases:
+  short: micronizer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние мельницы
+  en: Mill state
+fingerprint: sha256:61f0db0327fabcdfb4fceb908aef88315ee7b4cd835268c1bbdacc8fd6dc0762
+enumValues:
+  - grind
+  - idle
+  - clean
+  - fault

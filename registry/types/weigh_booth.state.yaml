@@ -1,0 +1,20 @@
+sid: 7a537edf
+path: weigh_booth.state
+aliases:
+  short: weigh_booth.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кабины
+  en: Booth state
+fingerprint: sha256:7a537edfe3fd113b5efe1ab075f1841ada168b676cd2c3c085d37239b8e45928
+enumValues:
+  - weigh
+  - idle
+  - clean
+  - fault

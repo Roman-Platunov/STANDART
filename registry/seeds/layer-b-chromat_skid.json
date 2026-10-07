@@ -1,0 +1,112 @@
+{
+  "layer": "B28",
+  "name": "layer-b-chromat_skid.json",
+  "types": [
+    {
+      "path": "chromat_skid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chromatography skid id",
+      "titleRu": "ID хроматографической станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chromat_skid.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Run id",
+      "titleRu": "ID прогона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chromat_skid.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Flow rate",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chromat_skid.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Column pressure",
+      "titleRu": "Давление колонки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chromat_skid.uv",
+      "kind": "quantity",
+      "unit": "mAU",
+      "titleEn": "UV absorbance",
+      "titleRu": "Поглощение УФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chromat_skid.conductivity",
+      "kind": "quantity",
+      "unit": "mS/cm",
+      "titleEn": "Conductivity",
+      "titleRu": "Проводимость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chromat_skid.peak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Peak collecting",
+      "titleRu": "Сбор пика",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chromat_skid.step",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Step",
+      "titleRu": "Шаг",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "equilibrate",
+        "load",
+        "wash",
+        "elute",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

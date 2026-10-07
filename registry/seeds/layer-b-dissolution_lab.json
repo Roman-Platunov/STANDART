@@ -1,0 +1,114 @@
+{
+  "layer": "B28",
+  "name": "layer-b-dissolution_lab.json",
+  "types": [
+    {
+      "path": "dissolution_lab.bath.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dissolution bath id",
+      "titleRu": "ID бани растворения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dissolution_lab.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sample id",
+      "titleRu": "ID образца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dissolution_lab.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Medium temperature",
+      "titleRu": "Температура среды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dissolution_lab.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Paddle / basket speed",
+      "titleRu": "Обороты мешалки/корзинки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dissolution_lab.release",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Percent released",
+      "titleRu": "Процент высвобождения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dissolution_lab.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Sample time",
+      "titleRu": "Время отбора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dissolution_lab.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec pass",
+      "titleRu": "Спецификация пройдена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dissolution_lab.apparatus",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Apparatus",
+      "titleRu": "Аппарат",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "paddle",
+        "basket",
+        "flow",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

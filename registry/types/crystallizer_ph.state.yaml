@@ -1,0 +1,21 @@
+sid: 72f36278
+path: crystallizer_ph.state
+aliases:
+  short: crystallizer_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кристаллизатора
+  en: Crystallizer state
+fingerprint: sha256:72f362788c0c1c6988f26b66b9e3fb22171738ead312078c8fc641828403bad6
+enumValues:
+  - dissolve
+  - cool
+  - age
+  - filter
+  - fault

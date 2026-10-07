@@ -1,0 +1,20 @@
+sid: 051acb91
+path: bioreactor_cell.mode
+aliases:
+  short: bioreactor_cell.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:051acb917b279e6761da6d9f928fef85f6ce6ea5fb7f099f4eb3c13f450a4d4c
+enumValues:
+  - batch
+  - fed_batch
+  - perfusion
+  - other

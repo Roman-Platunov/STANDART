@@ -1,0 +1,123 @@
+{
+  "layer": "B28",
+  "name": "layer-b-cartoner_ph.json",
+  "types": [
+    {
+      "path": "cartoner_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma cartoner id",
+      "titleRu": "ID картонажной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cartoner_ph.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cartoner_ph.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cartons per hour",
+      "titleRu": "Пачек в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cartoner_ph.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cartoner_ph.leaflet",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Leaflet insert success",
+      "titleRu": "Вложение инструкции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cartoner_ph.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cartoner_ph.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Jam",
+      "titleRu": "Затор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cartoner_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cartoner state",
+      "titleRu": "Состояние картонажной",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "erect",
+        "load",
+        "close",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

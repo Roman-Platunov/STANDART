@@ -1,0 +1,122 @@
+{
+  "layer": "B28",
+  "name": "layer-b-inspect_vial.json",
+  "types": [
+    {
+      "path": "inspect_vial.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automatic vial inspection id",
+      "titleRu": "ID автоинспекции флаконов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inspect_vial.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inspect_vial.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Vials per hour",
+      "titleRu": "Флаконов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inspect_vial.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Total reject",
+      "titleRu": "Общий брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inspect_vial.particle",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Particle reject",
+      "titleRu": "Брак по частицам",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inspect_vial.cosmetic",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cosmetic reject",
+      "titleRu": "Косметический брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inspect_vial.retest",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Retest mode",
+      "titleRu": "Режим перепроверки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "inspect_vial.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inspect",
+        "calibrate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B28",
+  "name": "layer-b-api_dryer.json",
+  "types": [
+    {
+      "path": "api_dryer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "API dryer id",
+      "titleRu": "ID сушилки АФИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "api_dryer.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "api_dryer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "api_dryer.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LOD / moisture",
+      "titleRu": "Влажность / ППП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "api_dryer.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber vacuum",
+      "titleRu": "Вакуум камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "api_dryer.time.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Drying time",
+      "titleRu": "Время сушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "api_dryer.endpoint",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Endpoint reached",
+      "titleRu": "Достигнута конечная точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "api_dryer.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tray",
+        "agitated",
+        "filter",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B28",
+  "name": "layer-b-inhaler_fill.json",
+  "types": [
+    {
+      "path": "inhaler_fill.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inhaler filling line id",
+      "titleRu": "ID линии наполнения ингаляторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inhaler_fill.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inhaler_fill.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inhaler_fill.dose",
+      "kind": "quantity",
+      "unit": "mg",
+      "titleEn": "Dose weight",
+      "titleRu": "Масса дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inhaler_fill.propellant",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Propellant fill",
+      "titleRu": "Наполнение пропеллента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inhaler_fill.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inhaler_fill.leak.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak test OK",
+      "titleRu": "Тест на герметичность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "inhaler_fill.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mdi",
+        "dpi",
+        "soft_mist",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 77b16010
+path: isolator_fill.state
+aliases:
+  short: isolator_fill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние изолятора
+  en: Isolator state
+fingerprint: sha256:77b16010ac3e449eb4b76462cdca85a31664388f88d8a1f66f084dbe576d2beb
+enumValues:
+  - decon
+  - fill
+  - idle
+  - fault

@@ -1,0 +1,114 @@
+{
+  "layer": "B28",
+  "name": "layer-b-granulation_ph.json",
+  "types": [
+    {
+      "path": "granulation_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma granulator id",
+      "titleRu": "ID фармацевтического гранулятора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "granulation_ph.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "granulation_ph.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Impeller power",
+      "titleRu": "Мощность импеллера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "granulation_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "granulation_ph.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Granule moisture",
+      "titleRu": "Влажность гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "granulation_ph.liquid",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Binder added",
+      "titleRu": "Добавлено связующего",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "granulation_ph.endpoint",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Endpoint reached",
+      "titleRu": "Достигнута конечная точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "granulation_ph.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wet",
+        "dry",
+        "melt",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: bc943c6b
+path: serial_pack_ph.state
+aliases:
+  short: serial_pack_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:bc943c6b574c8752187586c57bc8679495087b0fafbf76a1b0aa7eac0c5cebe0
+enumValues:
+  - code
+  - verify
+  - aggregate
+  - idle
+  - fault

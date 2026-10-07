@@ -1,0 +1,115 @@
+{
+  "layer": "B28",
+  "name": "layer-b-vial_fill.json",
+  "types": [
+    {
+      "path": "vial_fill.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vial filling line id",
+      "titleRu": "ID линии наполнения флаконов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vial_fill.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vial_fill.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Vials per hour",
+      "titleRu": "Флаконов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vial_fill.volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vial_fill.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vial_fill.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Check-weigh mean",
+      "titleRu": "Средний контрольный вес",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vial_fill.aseptic.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aseptic OK",
+      "titleRu": "Асептика OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vial_fill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "setup",
+        "fill",
+        "stopper",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

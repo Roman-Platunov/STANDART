@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-buffer_prep.json",
+  "types": [
+    {
+      "path": "buffer_prep.skid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Buffer preparation skid id",
+      "titleRu": "ID станции приготовления буферов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "buffer_prep.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "buffer_prep.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Batch volume",
+      "titleRu": "Объём партии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buffer_prep.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buffer_prep.conductivity",
+      "kind": "quantity",
+      "unit": "mS/cm",
+      "titleEn": "Conductivity",
+      "titleRu": "Проводимость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buffer_prep.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Temperature",
+      "titleRu": "Температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buffer_prep.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "buffer_prep.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Skid state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "weigh",
+        "mix",
+        "adjust",
+        "transfer",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 6bebd0aa
+path: roller_compact.state
+aliases:
+  short: roller_compact.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние уплотнения
+  en: Compactor state
+fingerprint: sha256:6bebd0aaa379f1f062c642ab89f5c7ca1b6890f2e91231c6c8a945bc409647e0
+enumValues:
+  - compact
+  - mill
+  - idle
+  - fault

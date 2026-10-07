@@ -1,0 +1,112 @@
+{
+  "layer": "B28",
+  "name": "layer-b-water_system_ph.json",
+  "types": [
+    {
+      "path": "water_system_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma water system id",
+      "titleRu": "ID системы фармацевтической воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "water_system_ph.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Loop conductivity",
+      "titleRu": "Проводимость контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_system_ph.toc",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "TOC",
+      "titleRu": "ТОС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_system_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Loop temperature",
+      "titleRu": "Температура контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_system_ph.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Loop flow",
+      "titleRu": "Расход контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_system_ph.ozone",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Ozone residual",
+      "titleRu": "Остаточный озон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_system_ph.sanitize",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sanitization running",
+      "titleRu": "Санитизация идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "water_system_ph.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Класс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pw",
+        "wfi",
+        "hpw",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

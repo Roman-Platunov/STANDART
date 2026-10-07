@@ -1,0 +1,20 @@
+sid: 29134f7f
+path: micro_lab_ph.state
+aliases:
+  short: micro_lab_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние лаборатории
+  en: Lab state
+fingerprint: sha256:29134f7f675d5d21eaa54204b2e392f45354f526971f2c702af02c3cfbb9b351
+enumValues:
+  - open
+  - busy
+  - clean
+  - closed

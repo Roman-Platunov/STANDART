@@ -1,0 +1,118 @@
+{
+  "layer": "B28",
+  "name": "layer-b-warehouse_gdp.json",
+  "types": [
+    {
+      "path": "warehouse_gdp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GDP warehouse id",
+      "titleRu": "ID склада GDP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "warehouse_gdp.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zone temperature",
+      "titleRu": "Температура зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warehouse_gdp.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "warehouse_gdp.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Location occupancy",
+      "titleRu": "Занятость ячеек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "warehouse_gdp.excursions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Temp excursions today",
+      "titleRu": "Выходов температуры за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warehouse_gdp.picks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Picks today",
+      "titleRu": "Отборов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warehouse_gdp.quarantine",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quarantine zone active",
+      "titleRu": "Зона карантина активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "warehouse_gdp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Warehouse state",
+      "titleRu": "Состояние склада",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "excursion",
+        "maintain",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

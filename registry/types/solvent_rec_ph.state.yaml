@@ -1,0 +1,20 @@
+sid: 4d9c797b
+path: solvent_rec_ph.state
+aliases:
+  short: solvent_rec_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:4d9c797bedd08b9858c6d78531fbdb73b9a1f58cd3917b2fc4009c5248a5319a
+enumValues:
+  - distill
+  - idle
+  - clean
+  - fault

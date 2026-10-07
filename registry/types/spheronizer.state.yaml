@@ -1,0 +1,21 @@
+sid: 3884fe12
+path: spheronizer.state
+aliases:
+  short: spheronizer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сферонизатора
+  en: Spheronizer state
+fingerprint: sha256:3884fe12f5e81a93eb25bf3f29423719a792631b8a74cf133566a2ed571559e5
+enumValues:
+  - load
+  - sphere
+  - discharge
+  - idle
+  - fault

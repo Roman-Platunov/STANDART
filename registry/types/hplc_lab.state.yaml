@@ -1,0 +1,20 @@
+sid: cef57dab
+path: hplc_lab.state
+aliases:
+  short: hplc_lab.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:cef57dabda699e12e988d550e823925db73c6236559f26ed9043428e8afd195f
+enumValues:
+  - run
+  - equilibrate
+  - idle
+  - fault

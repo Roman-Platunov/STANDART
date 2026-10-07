@@ -1,0 +1,114 @@
+{
+  "layer": "B28",
+  "name": "layer-b-endotoxin.json",
+  "types": [
+    {
+      "path": "endotoxin.assay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Endotoxin assay id",
+      "titleRu": "ID анализа эндотоксинов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "endotoxin.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sample id",
+      "titleRu": "ID образца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "endotoxin.result",
+      "kind": "quantity",
+      "unit": "EU/mL",
+      "titleEn": "Endotoxin result",
+      "titleRu": "Результат эндотоксинов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "endotoxin.limit",
+      "kind": "quantity",
+      "unit": "EU/mL",
+      "titleEn": "Specification limit",
+      "titleRu": "Предел спецификации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "endotoxin.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Spike recovery",
+      "titleRu": "Извлечение spike",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "endotoxin.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Assay time",
+      "titleRu": "Время анализа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "endotoxin.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pass",
+      "titleRu": "Пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "endotoxin.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lalma",
+        "lalkinetic",
+        "recom",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

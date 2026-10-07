@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-viral_filter.json",
+  "types": [
+    {
+      "path": "viral_filter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Viral filtration skid id",
+      "titleRu": "ID станции вирусной фильтрации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "viral_filter.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "viral_filter.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Filter pressure",
+      "titleRu": "Давление фильтра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "viral_filter.flux",
+      "kind": "quantity",
+      "unit": "L/m2/h",
+      "titleEn": "Flux",
+      "titleRu": "Поток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "viral_filter.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Processed volume",
+      "titleRu": "Обработанный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "viral_filter.integrity",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Integrity test value",
+      "titleRu": "Значение теста целостности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "viral_filter.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Integrity pass",
+      "titleRu": "Целостность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "viral_filter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Skid state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "filter",
+        "flush",
+        "test",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

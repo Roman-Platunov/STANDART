@@ -1,0 +1,110 @@
+{
+  "layer": "B28",
+  "name": "layer-b-weigh_booth.json",
+  "types": [
+    {
+      "path": "weigh_booth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Weighing booth id",
+      "titleRu": "ID кабины отвешивания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weigh_booth.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weigh_booth.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Dispensed weight",
+      "titleRu": "Отвешенная масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_booth.target",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Target weight",
+      "titleRu": "Целевая масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_booth.airflow",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Face velocity",
+      "titleRu": "Скорость потока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_booth.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Booth pressure",
+      "titleRu": "Давление кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_booth.verified",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Second person verified",
+      "titleRu": "Проверено вторым лицом",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "weigh_booth.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Booth state",
+      "titleRu": "Состояние кабины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "weigh",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

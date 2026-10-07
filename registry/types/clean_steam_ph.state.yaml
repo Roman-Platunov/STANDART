@@ -1,0 +1,20 @@
+sid: cbb8cd78
+path: clean_steam_ph.state
+aliases:
+  short: clean_steam_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние генератора
+  en: Generator state
+fingerprint: sha256:cbb8cd78dfdf08ca994b7414bd1811c514a6bce6187d1bfceb2023a1fcb3f715
+enumValues:
+  - produce
+  - idle
+  - maintain
+  - fault

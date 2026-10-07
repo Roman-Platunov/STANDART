@@ -1,0 +1,20 @@
+sid: 0c028832
+path: dispensary.state
+aliases:
+  short: dispensary.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зоны
+  en: Area state
+fingerprint: sha256:0c02883285f74cc803aaac0485c700a936078d6d948523d96568a49d291f71dc
+enumValues:
+  - open
+  - busy
+  - clean
+  - closed

@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-particle_mon_cr.json",
+  "types": [
+    {
+      "path": "particle_mon_cr.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cleanroom particle sensor id",
+      "titleRu": "ID датчика частиц чистого помещения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "particle_mon_cr.p05",
+      "kind": "quantity",
+      "unit": "/m3",
+      "titleEn": "≥0.5 µm count",
+      "titleRu": "Частиц ≥0.5 мкм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particle_mon_cr.p50",
+      "kind": "quantity",
+      "unit": "/m3",
+      "titleEn": "≥5.0 µm count",
+      "titleRu": "Частиц ≥5.0 мкм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particle_mon_cr.sample.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Sample interval",
+      "titleRu": "Интервал отбора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particle_mon_cr.alarm",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Alarms today",
+      "titleRu": "Тревог за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particle_mon_cr.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Sample flow",
+      "titleRu": "Расход пробоотбора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particle_mon_cr.excursion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Excursion",
+      "titleRu": "Превышение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "particle_mon_cr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sensor state",
+      "titleRu": "Состояние датчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "alarm",
+        "calibrate",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

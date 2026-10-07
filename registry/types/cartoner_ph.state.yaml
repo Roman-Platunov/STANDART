@@ -1,0 +1,21 @@
+sid: 1027da32
+path: cartoner_ph.state
+aliases:
+  short: cartoner_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние картонажной
+  en: Cartoner state
+fingerprint: sha256:1027da32a242d20352b722c3087fb5678313485d01c8bd0010c9fff61bad2675
+enumValues:
+  - erect
+  - load
+  - close
+  - idle
+  - fault

@@ -1,0 +1,118 @@
+{
+  "layer": "B28",
+  "name": "layer-b-serial_pack_ph.json",
+  "types": [
+    {
+      "path": "serial_pack_ph.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Serialization packing line id",
+      "titleRu": "ID линии сериализации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "serial_pack_ph.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "serial_pack_ph.coded",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units coded per hour",
+      "titleRu": "Единиц с кодом в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "serial_pack_ph.verify",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Verify success",
+      "titleRu": "Успешность верификации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "serial_pack_ph.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "serial_pack_ph.agg",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Aggregation events",
+      "titleRu": "Событий агрегации",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "serial_pack_ph.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Track & trace online",
+      "titleRu": "Прослеживаемость онлайн",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "serial_pack_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "code",
+        "verify",
+        "aggregate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

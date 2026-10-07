@@ -1,0 +1,20 @@
+sid: e7fa577a
+path: particle_mon_cr.state
+aliases:
+  short: particle_mon_cr.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние датчика
+  en: Sensor state
+fingerprint: sha256:e7fa577ac2efb561796ace8fed0a8c9136a3e4eef4df8a47258f7a41b430e77c
+enumValues:
+  - monitor
+  - alarm
+  - calibrate
+  - offline

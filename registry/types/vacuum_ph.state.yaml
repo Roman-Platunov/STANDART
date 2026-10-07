@@ -1,0 +1,20 @@
+sid: 412d7006
+path: vacuum_ph.state
+aliases:
+  short: vacuum_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:412d70065467f9836bcd5c93811578496779b63cc199f6d4addd5015d77eaa16
+enumValues:
+  - run
+  - standby
+  - maintain
+  - fault

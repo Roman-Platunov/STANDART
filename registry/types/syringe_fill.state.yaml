@@ -1,0 +1,21 @@
+sid: b767c1ca
+path: syringe_fill.state
+aliases:
+  short: syringe_fill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:b767c1cac7947689707377f6c1753ceaf00eea1ef4e1dca7967989e54f3d2b60
+enumValues:
+  - fill
+  - assemble
+  - inspect
+  - idle
+  - fault

@@ -1,0 +1,21 @@
+sid: e8d1f645
+path: centrifuge_ph.state
+aliases:
+  short: centrifuge_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние центрифуги
+  en: Centrifuge state
+fingerprint: sha256:e8d1f6451aa00a30e81171cbde26123fdd4115f3e1fbc2430cccbbb918a22d8f
+enumValues:
+  - feed
+  - spin
+  - wash
+  - unload
+  - fault

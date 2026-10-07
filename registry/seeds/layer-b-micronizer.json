@@ -1,0 +1,114 @@
+{
+  "layer": "B28",
+  "name": "layer-b-micronizer.json",
+  "types": [
+    {
+      "path": "micronizer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Micronizer / jet mill id",
+      "titleRu": "ID микронизатора / струйной мельницы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "micronizer.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "micronizer.d90",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "D90 particle size",
+      "titleRu": "D90 размера частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micronizer.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Grind pressure",
+      "titleRu": "Давление измельчения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micronizer.feed",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micronizer.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Yield",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "micronizer.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "PSD in spec",
+      "titleRu": "РЧР в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "micronizer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние мельницы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grind",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

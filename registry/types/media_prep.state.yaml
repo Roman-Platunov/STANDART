@@ -1,0 +1,21 @@
+sid: 51ca4de1
+path: media_prep.state
+aliases:
+  short: media_prep.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Skid state
+fingerprint: sha256:51ca4de150fe6087b9f50cfb144f5b42e8508647dce64b5d9f962de9b41c0b99
+enumValues:
+  - weigh
+  - mix
+  - filter
+  - transfer
+  - fault

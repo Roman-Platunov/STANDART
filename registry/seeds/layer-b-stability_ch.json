@@ -1,0 +1,119 @@
+{
+  "layer": "B28",
+  "name": "layer-b-stability_ch.json",
+  "types": [
+    {
+      "path": "stability_ch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stability chamber id",
+      "titleRu": "ID климатической камеры стабильности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stability_ch.study.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Study id",
+      "titleRu": "ID исследования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stability_ch.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Set temperature",
+      "titleRu": "Уставка температуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stability_ch.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Set humidity",
+      "titleRu": "Уставка влажности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stability_ch.dev.temp",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Temperature deviation",
+      "titleRu": "Отклонение температуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stability_ch.dev.rh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "RH deviation",
+      "titleRu": "Отклонение RH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stability_ch.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chamber alarm",
+      "titleRu": "Тревога камеры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stability_ch.condition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Condition",
+      "titleRu": "Условие",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "long",
+        "accel",
+        "intermed",
+        "photo",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

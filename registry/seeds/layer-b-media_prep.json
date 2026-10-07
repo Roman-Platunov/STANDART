@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-media_prep.json",
+  "types": [
+    {
+      "path": "media_prep.skid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Media preparation skid id",
+      "titleRu": "ID станции приготовления сред",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "media_prep.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "media_prep.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Batch volume",
+      "titleRu": "Объём партии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "media_prep.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mix temperature",
+      "titleRu": "Температура смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "media_prep.conductivity",
+      "kind": "quantity",
+      "unit": "mS/cm",
+      "titleEn": "Conductivity",
+      "titleRu": "Проводимость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "media_prep.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "media_prep.sterile",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sterile filtered",
+      "titleRu": "Стерильно отфильтровано",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "media_prep.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Skid state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "weigh",
+        "mix",
+        "filter",
+        "transfer",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B28",
+  "name": "layer-b-nitrogen_ph.json",
+  "types": [
+    {
+      "path": "nitrogen_ph.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma nitrogen system id",
+      "titleRu": "ID системы азота фарма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nitrogen_ph.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Supply pressure",
+      "titleRu": "Давление подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nitrogen_ph.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Purity",
+      "titleRu": "Чистота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nitrogen_ph.dew",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dew point",
+      "titleRu": "Точка росы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nitrogen_ph.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nitrogen_ph.o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "O2 impurity",
+      "titleRu": "Примесь O2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nitrogen_ph.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quality alarm",
+      "titleRu": "Тревога качества",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nitrogen_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "supply",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

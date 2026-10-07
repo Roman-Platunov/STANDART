@@ -1,0 +1,112 @@
+{
+  "layer": "B28",
+  "name": "layer-b-wfi_still.json",
+  "types": [
+    {
+      "path": "wfi_still.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WFI still id",
+      "titleRu": "ID дистиллятора ВДИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wfi_still.output",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "WFI production",
+      "titleRu": "Выработка ВДИ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wfi_still.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "WFI conductivity",
+      "titleRu": "Проводимость ВДИ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wfi_still.toc",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "TOC",
+      "titleRu": "ТОС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wfi_still.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "WFI temperature",
+      "titleRu": "Температура ВДИ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wfi_still.steam",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Heating steam",
+      "titleRu": "Греющий пар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wfi_still.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wfi_still.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Still state",
+      "titleRu": "Состояние дистиллятора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "sanitize",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

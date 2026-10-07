@@ -1,0 +1,114 @@
+{
+  "layer": "B28",
+  "name": "layer-b-bioreactor_cell.json",
+  "types": [
+    {
+      "path": "bioreactor_cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cell culture bioreactor id",
+      "titleRu": "ID биореактора клеточной культуры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bioreactor_cell.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bioreactor_cell.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Culture temperature",
+      "titleRu": "Температура культуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bioreactor_cell.do",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bioreactor_cell.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bioreactor_cell.viable",
+      "kind": "quantity",
+      "unit": "/mL",
+      "titleEn": "Viable cell density",
+      "titleRu": "Плотность жизнеспособных клеток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bioreactor_cell.contamination",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Contamination flag",
+      "titleRu": "Признак контаминации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bioreactor_cell.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "batch",
+        "fed_batch",
+        "perfusion",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

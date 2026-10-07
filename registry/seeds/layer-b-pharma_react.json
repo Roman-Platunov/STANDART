@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-pharma_react.json",
+  "types": [
+    {
+      "path": "pharma_react.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma reactor id",
+      "titleRu": "ID фармацевтического реактора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pharma_react.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pharma_react.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Jacket / batch temperature",
+      "titleRu": "Температура рубашки/партии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_react.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Vessel pressure",
+      "titleRu": "Давление аппарата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_react.agitation",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Agitation speed",
+      "titleRu": "Обороты мешалки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_react.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_react.cip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CIP active",
+      "titleRu": "CIP активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pharma_react.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reactor state",
+      "titleRu": "Состояние реактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "react",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 1d0efe64
+path: softgel_line.state
+aliases:
+  short: softgel_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:1d0efe64c187fcd4772fb0331b91c894d0b48a37181a23e68622d5c0832b31bf
+enumValues:
+  - form
+  - fill
+  - dry
+  - idle
+  - fault

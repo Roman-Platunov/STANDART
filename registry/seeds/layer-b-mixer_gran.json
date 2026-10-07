@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-mixer_gran.json",
+  "types": [
+    {
+      "path": "mixer_gran.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "High-shear mixer granulator id",
+      "titleRu": "ID высокоскоростного смесителя-гранулятора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mixer_gran.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mixer_gran.impeller",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Impeller speed",
+      "titleRu": "Обороты импеллера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mixer_gran.chopper",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Chopper speed",
+      "titleRu": "Обороты чоппера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mixer_gran.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Power draw",
+      "titleRu": "Потребляемая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mixer_gran.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mixer_gran.endpoint",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Endpoint",
+      "titleRu": "Конечная точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mixer_gran.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mixer state",
+      "titleRu": "Состояние смесителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "granulate",
+        "discharge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

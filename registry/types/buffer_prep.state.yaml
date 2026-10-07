@@ -1,0 +1,21 @@
+sid: 74cc70a3
+path: buffer_prep.state
+aliases:
+  short: buffer_prep.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Skid state
+fingerprint: sha256:74cc70a3f1a08d45656a64687cfd6b6440f2a21ba8d27542336a3abd607a8d2d
+enumValues:
+  - weigh
+  - mix
+  - adjust
+  - transfer
+  - fault

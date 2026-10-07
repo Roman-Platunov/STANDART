@@ -1,0 +1,21 @@
+sid: 1e464a90
+path: sip_skid.state
+aliases:
+  short: sip_skid.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние SIP
+  en: SIP state
+fingerprint: sha256:1e464a904771dac660fcb251b73d36e0d127343a9daa234af0be493db1bbfda6
+enumValues:
+  - heat
+  - hold
+  - cool
+  - idle
+  - fault

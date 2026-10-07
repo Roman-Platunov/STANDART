@@ -1,0 +1,115 @@
+{
+  "layer": "B28",
+  "name": "layer-b-patch_coat.json",
+  "types": [
+    {
+      "path": "patch_coat.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transdermal patch coating line id",
+      "titleRu": "ID линии покрытия трансдермальных пластырей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "patch_coat.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "patch_coat.coat",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Coat weight",
+      "titleRu": "Масса покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "patch_coat.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Web speed",
+      "titleRu": "Скорость полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "patch_coat.oven",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oven temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "patch_coat.uniform",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Coat uniformity",
+      "titleRu": "Равномерность покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "patch_coat.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coat in spec",
+      "titleRu": "Покрытие в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "patch_coat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "coat",
+        "dry",
+        "laminate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

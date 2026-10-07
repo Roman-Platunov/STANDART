@@ -1,0 +1,118 @@
+{
+  "layer": "B28",
+  "name": "layer-b-dispensary.json",
+  "types": [
+    {
+      "path": "dispensary.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dispensary area id",
+      "titleRu": "ID зоны диспенсации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dispensary.orders",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open orders",
+      "titleRu": "Открытых заказов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dispensary.accuracy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Weigh accuracy",
+      "titleRu": "Точность отвешивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dispensary.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Area temperature",
+      "titleRu": "Температура зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dispensary.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dispensary.completed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Orders completed today",
+      "titleRu": "Заказов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dispensary.quarantine",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Material quarantine",
+      "titleRu": "Карантин материала",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dispensary.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Area state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "busy",
+        "clean",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

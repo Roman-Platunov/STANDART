@@ -1,0 +1,20 @@
+sid: f479f1f2
+path: inspect_vial.state
+aliases:
+  short: inspect_vial.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:f479f1f2323116fd844777ade0757f51bd6ce529a6c21c7d4c456a233b1d0272
+enumValues:
+  - inspect
+  - calibrate
+  - idle
+  - fault

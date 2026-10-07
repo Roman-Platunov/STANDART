@@ -1,0 +1,21 @@
+sid: 4e4a54db
+path: nutsche.state
+aliases:
+  short: nutsche.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фильтра
+  en: Filter state
+fingerprint: sha256:4e4a54db81c3223f4482f9ce7de17f7d660af9aca3828a00c289c4cecbd42d2a
+enumValues:
+  - filter
+  - wash
+  - dry
+  - idle
+  - fault

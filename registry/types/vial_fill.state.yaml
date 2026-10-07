@@ -1,0 +1,21 @@
+sid: 1aa8cf8a
+path: vial_fill.state
+aliases:
+  short: vial_fill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:1aa8cf8abec35e641d726bbdf6cc66d453ad1454152bc57e7845bc39a47abf09
+enumValues:
+  - setup
+  - fill
+  - stopper
+  - idle
+  - fault

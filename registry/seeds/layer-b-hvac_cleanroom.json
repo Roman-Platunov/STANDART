@@ -1,0 +1,117 @@
+{
+  "layer": "B28",
+  "name": "layer-b-hvac_cleanroom.json",
+  "types": [
+    {
+      "path": "hvac_cleanroom.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cleanroom HVAC zone id",
+      "titleRu": "ID зоны HVAC чистого помещения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hvac_cleanroom.ach",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Air changes per hour",
+      "titleRu": "Кратность воздухообмена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_cleanroom.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Room differential",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_cleanroom.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Room temperature",
+      "titleRu": "Температура помещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_cleanroom.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hvac_cleanroom.hepa.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "HEPA DP",
+      "titleRu": "Перепад на HEPA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_cleanroom.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Environmental alarm",
+      "titleRu": "Тревога среды",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hvac_cleanroom.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Класс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

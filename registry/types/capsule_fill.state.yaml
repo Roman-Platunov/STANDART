@@ -1,0 +1,20 @@
+sid: ef085730
+path: capsule_fill.state
+aliases:
+  short: capsule_fill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:ef0857309e738f72cc203e02428ec6f909127fe94e73b5717a61d1cffb034a4f
+enumValues:
+  - fill
+  - close
+  - idle
+  - fault

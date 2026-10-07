@@ -1,0 +1,110 @@
+{
+  "layer": "B28",
+  "name": "layer-b-roller_compact.json",
+  "types": [
+    {
+      "path": "roller_compact.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Roller compactor id",
+      "titleRu": "ID валкового уплотнения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "roller_compact.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "roller_compact.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Roll force",
+      "titleRu": "Усилие валков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roller_compact.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Roll gap",
+      "titleRu": "Зазор валков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roller_compact.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Roll speed",
+      "titleRu": "Обороты валков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roller_compact.ribbon",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Ribbon density",
+      "titleRu": "Плотность ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roller_compact.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ribbon in spec",
+      "titleRu": "Лента в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "roller_compact.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Compactor state",
+      "titleRu": "Состояние уплотнения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "compact",
+        "mill",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

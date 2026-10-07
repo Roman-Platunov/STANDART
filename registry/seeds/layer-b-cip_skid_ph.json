@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-cip_skid_ph.json",
+  "types": [
+    {
+      "path": "cip_skid_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma CIP skid id",
+      "titleRu": "ID станции CIP фарма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cip_skid_ph.circuit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Circuit id",
+      "titleRu": "ID контура",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cip_skid_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CIP temperature",
+      "titleRu": "Температура CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip_skid_ph.conductivity",
+      "kind": "quantity",
+      "unit": "mS/cm",
+      "titleEn": "Return conductivity",
+      "titleRu": "Проводимость возврата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip_skid_ph.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "CIP flow",
+      "titleRu": "Расход CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip_skid_ph.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Step time",
+      "titleRu": "Время шага",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip_skid_ph.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CIP pass",
+      "titleRu": "CIP пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cip_skid_ph.step",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Step",
+      "titleRu": "Шаг",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pre_rinse",
+        "caustic",
+        "acid",
+        "final_rinse",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

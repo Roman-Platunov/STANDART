@@ -1,0 +1,110 @@
+{
+  "layer": "B28",
+  "name": "layer-b-milling_api.json",
+  "types": [
+    {
+      "path": "milling_api.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "API milling unit id",
+      "titleRu": "ID установки измельчения АФИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "milling_api.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "milling_api.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Mill speed",
+      "titleRu": "Обороты мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "milling_api.d50",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "D50",
+      "titleRu": "D50",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "milling_api.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "milling_api.throughput",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "milling_api.screen.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Screen OK",
+      "titleRu": "Сито OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "milling_api.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hammer",
+        "pin",
+        "cone",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

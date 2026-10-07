@@ -1,0 +1,110 @@
+{
+  "layer": "B28",
+  "name": "layer-b-fluid_bed_ph.json",
+  "types": [
+    {
+      "path": "fluid_bed_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fluid-bed processor id",
+      "titleRu": "ID аппарата псевдоожиженного слоя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fluid_bed_ph.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fluid_bed_ph.inlet",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet air temperature",
+      "titleRu": "Температура воздуха на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fluid_bed_ph.product",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fluid_bed_ph.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Process air",
+      "titleRu": "Технологический воздух",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fluid_bed_ph.spray",
+      "kind": "quantity",
+      "unit": "g/min",
+      "titleEn": "Spray rate",
+      "titleRu": "Скорость распыла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fluid_bed_ph.endpoint",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Endpoint reached",
+      "titleRu": "Достигнута конечная точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fluid_bed_ph.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "granulate",
+        "coat",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B28",
+  "name": "layer-b-ointment_fill.json",
+  "types": [
+    {
+      "path": "ointment_fill.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ointment / cream fill line id",
+      "titleRu": "ID линии наполнения мазей/кремов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ointment_fill.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ointment_fill.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Tubes / jars per hour",
+      "titleRu": "Туб/банок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ointment_fill.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Fill weight",
+      "titleRu": "Масса наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ointment_fill.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Product viscosity",
+      "titleRu": "Вязкость продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ointment_fill.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ointment_fill.seal.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seal OK",
+      "titleRu": "Запайка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ointment_fill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "seal",
+        "code",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B28",
+  "name": "layer-b-cell_bank.json",
+  "types": [
+    {
+      "path": "cell_bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cell bank freezer id",
+      "titleRu": "ID криохранилища клеточного банка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cell_bank.vial.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vial id",
+      "titleRu": "ID флакона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cell_bank.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Storage temperature",
+      "titleRu": "Температура хранения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_bank.ln2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LN2 level",
+      "titleRu": "Уровень LN2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cell_bank.access",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Accesses today",
+      "titleRu": "Доступов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_bank.inventory",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vials in store",
+      "titleRu": "Флаконов на хранении",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_bank.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature alarm",
+      "titleRu": "Тревога температуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cell_bank.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bank type",
+      "titleRu": "Тип банка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mcb",
+        "wcb",
+        "pc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

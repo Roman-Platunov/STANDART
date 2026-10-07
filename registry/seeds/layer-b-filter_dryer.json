@@ -1,0 +1,115 @@
+{
+  "layer": "B28",
+  "name": "layer-b-filter_dryer.json",
+  "types": [
+    {
+      "path": "filter_dryer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Filter-dryer id",
+      "titleRu": "ID фильтр-сушилки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "filter_dryer.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "filter_dryer.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Filter pressure",
+      "titleRu": "Давление фильтрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_dryer.cake",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cake solids",
+      "titleRu": "Сухое вещество кека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "filter_dryer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Jacket temperature",
+      "titleRu": "Температура рубашки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_dryer.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Drying vacuum",
+      "titleRu": "Вакуум сушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_dryer.dry.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Drying done",
+      "titleRu": "Сушка завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "filter_dryer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние аппарата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "filter",
+        "wash",
+        "dry",
+        "discharge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

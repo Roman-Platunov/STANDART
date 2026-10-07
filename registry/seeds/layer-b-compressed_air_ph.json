@@ -1,0 +1,112 @@
+{
+  "layer": "B28",
+  "name": "layer-b-compressed_air_ph.json",
+  "types": [
+    {
+      "path": "compressed_air_ph.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma compressed air id",
+      "titleRu": "ID сжатого воздуха фарма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "compressed_air_ph.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Supply pressure",
+      "titleRu": "Давление подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air_ph.dew",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dew point",
+      "titleRu": "Точка росы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air_ph.oil",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Oil residual",
+      "titleRu": "Остаток масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air_ph.particles",
+      "kind": "quantity",
+      "unit": "/m3",
+      "titleEn": "Particle count",
+      "titleRu": "Число частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air_ph.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressed_air_ph.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "compressed_air_ph.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ISO class",
+      "titleRu": "Класс ISO",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "iso1",
+        "iso2",
+        "iso3",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

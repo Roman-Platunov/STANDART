@@ -1,0 +1,115 @@
+{
+  "layer": "B28",
+  "name": "layer-b-tablet_coat_ph.json",
+  "types": [
+    {
+      "path": "tablet_coat_ph.pan.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tablet coating pan id",
+      "titleRu": "ID дражировочного котла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tablet_coat_ph.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tablet_coat_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Exhaust temperature",
+      "titleRu": "Температура вытяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tablet_coat_ph.spray",
+      "kind": "quantity",
+      "unit": "g/min",
+      "titleEn": "Spray rate",
+      "titleRu": "Скорость распыла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tablet_coat_ph.weight.gain",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Weight gain",
+      "titleRu": "Привес",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tablet_coat_ph.pan.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Pan speed",
+      "titleRu": "Обороты котла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tablet_coat_ph.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coating complete",
+      "titleRu": "Покрытие завершено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tablet_coat_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pan state",
+      "titleRu": "Состояние котла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "preheat",
+        "spray",
+        "dry",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

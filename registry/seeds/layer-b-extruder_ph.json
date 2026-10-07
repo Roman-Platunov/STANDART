@@ -1,0 +1,114 @@
+{
+  "layer": "B28",
+  "name": "layer-b-extruder_ph.json",
+  "types": [
+    {
+      "path": "extruder_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma extruder id",
+      "titleRu": "ID фармацевтического экструдера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extruder_ph.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extruder_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Barrel temperature",
+      "titleRu": "Температура цилиндра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extruder_ph.screw",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Screw speed",
+      "titleRu": "Обороты шнека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extruder_ph.torque",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Torque",
+      "titleRu": "Момент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "extruder_ph.feed",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extruder_ph.melt.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Melt OK",
+      "titleRu": "Расплав OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "extruder_ph.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hme",
+        "wet",
+        "melt",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-crystallizer_ph.json",
+  "types": [
+    {
+      "path": "crystallizer_ph.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma crystallizer id",
+      "titleRu": "ID фармацевтического кристаллизатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crystallizer_ph.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crystallizer_ph.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Batch temperature",
+      "titleRu": "Температура партии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crystallizer_ph.cool.rate",
+      "kind": "quantity",
+      "unit": "K/min",
+      "titleEn": "Cooling rate",
+      "titleRu": "Скорость охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crystallizer_ph.supersat",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Supersaturation proxy",
+      "titleRu": "Пересыщение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crystallizer_ph.agitation",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Agitation",
+      "titleRu": "Перемешивание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crystallizer_ph.seeded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seeded",
+      "titleRu": "Затравлено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crystallizer_ph.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Crystallizer state",
+      "titleRu": "Состояние кристаллизатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dissolve",
+        "cool",
+        "age",
+        "filter",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

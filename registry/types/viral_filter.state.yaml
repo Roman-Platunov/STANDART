@@ -1,0 +1,21 @@
+sid: 0dcd2d70
+path: viral_filter.state
+aliases:
+  short: viral_filter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Skid state
+fingerprint: sha256:0dcd2d703ab426499fe9400ecb6543fe8caf3a502a1168a0c011ef29cd2c2f60
+enumValues:
+  - filter
+  - flush
+  - test
+  - idle
+  - fault

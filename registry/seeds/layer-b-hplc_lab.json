@@ -1,0 +1,110 @@
+{
+  "layer": "B28",
+  "name": "layer-b-hplc_lab.json",
+  "types": [
+    {
+      "path": "hplc_lab.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HPLC system id",
+      "titleRu": "ID системы ВЭЖХ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hplc_lab.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sequence / run id",
+      "titleRu": "ID последовательности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hplc_lab.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "System pressure",
+      "titleRu": "Давление системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hplc_lab.flow",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Flow rate",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hplc_lab.rt.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Retention time",
+      "titleRu": "Время удерживания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hplc_lab.area",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Peak area",
+      "titleRu": "Площадь пика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hplc_lab.sst.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SST OK",
+      "titleRu": "SST OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hplc_lab.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "equilibrate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

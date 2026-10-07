@@ -1,0 +1,21 @@
+sid: e1d7f6f5
+path: tablet_coat_ph.state
+aliases:
+  short: tablet_coat_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние котла
+  en: Pan state
+fingerprint: sha256:e1d7f6f575303301ed7a77c793845eb80d03787411b2e45a72aba93be1423df6
+enumValues:
+  - preheat
+  - spray
+  - dry
+  - idle
+  - fault

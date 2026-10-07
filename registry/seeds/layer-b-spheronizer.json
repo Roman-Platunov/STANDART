@@ -1,0 +1,115 @@
+{
+  "layer": "B28",
+  "name": "layer-b-spheronizer.json",
+  "types": [
+    {
+      "path": "spheronizer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spheronizer id",
+      "titleRu": "ID сферонизатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spheronizer.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spheronizer.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Plate speed",
+      "titleRu": "Обороты диска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spheronizer.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Residence time",
+      "titleRu": "Время пребывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spheronizer.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Spherical yield",
+      "titleRu": "Выход сфер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spheronizer.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Pellet size",
+      "titleRu": "Размер пеллет",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spheronizer.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spheronization done",
+      "titleRu": "Сферонизация завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spheronizer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Spheronizer state",
+      "titleRu": "Состояние сферонизатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "sphere",
+        "discharge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

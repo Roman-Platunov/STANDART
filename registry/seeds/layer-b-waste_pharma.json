@@ -1,0 +1,116 @@
+{
+  "layer": "B28",
+  "name": "layer-b-waste_pharma.json",
+  "types": [
+    {
+      "path": "waste_pharma.stream.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma waste stream id",
+      "titleRu": "ID потока фармотходов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waste_pharma.volume",
+      "kind": "quantity",
+      "unit": "L/d",
+      "titleEn": "Daily volume",
+      "titleRu": "Суточный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_pharma.cod",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "COD",
+      "titleRu": "ХПК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_pharma.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_pharma.solvent",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solvent fraction",
+      "titleRu": "Доля растворителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waste_pharma.drums",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Drums staged",
+      "titleRu": "Бочек на площадке",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_pharma.hazard",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hazardous flag",
+      "titleRu": "Опасный отход",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "waste_pharma.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "aqueous",
+        "solvent",
+        "solid",
+        "bio",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

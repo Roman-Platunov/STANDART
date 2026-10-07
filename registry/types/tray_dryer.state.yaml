@@ -1,0 +1,21 @@
+sid: 79eaef86
+path: tray_dryer.state
+aliases:
+  short: tray_dryer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сушилки
+  en: Dryer state
+fingerprint: sha256:79eaef86ded1e8aa14f526fd7cea5c85221f87eae7faf847b3bc2a11050cb438
+enumValues:
+  - load
+  - dry
+  - cool
+  - idle
+  - fault

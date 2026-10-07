@@ -1,0 +1,21 @@
+sid: 054dce94
+path: ointment_fill.state
+aliases:
+  short: ointment_fill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:054dce94be2c620a29b91c0ec76c0b9f935437276daf95ba2f7ac6f175cc178d
+enumValues:
+  - fill
+  - seal
+  - code
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: bbfb6404
+path: nitrogen_ph.state
+aliases:
+  short: nitrogen_ph.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:bbfb64045b81176ce30e735c0ba20c16bfb980df464950863d823397162a5165
+enumValues:
+  - supply
+  - idle
+  - maintain
+  - fault

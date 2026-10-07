@@ -1,0 +1,18 @@
+sid: fdbf5add
+path: hvac_cleanroom.humidity
+aliases:
+  short: hvac_cleanroom.humidity
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Относительная влажность
+  en: Relative humidity
+fingerprint: sha256:fdbf5addcfd16003120ae51d02ffc62fe53b8945dac2d7b48d0d0719959de74b
+range:
+  min: 0
+  max: 100

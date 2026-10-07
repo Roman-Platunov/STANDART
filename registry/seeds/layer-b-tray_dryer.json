@@ -1,0 +1,119 @@
+{
+  "layer": "B28",
+  "name": "layer-b-tray_dryer.json",
+  "types": [
+    {
+      "path": "tray_dryer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tray dryer id",
+      "titleRu": "ID полочной сушилки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tray_dryer.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tray_dryer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tray_dryer.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chamber humidity",
+      "titleRu": "Влажность камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tray_dryer.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tray_dryer.time.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Drying time",
+      "titleRu": "Время сушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tray_dryer.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Drying complete",
+      "titleRu": "Сушка завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tray_dryer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dryer state",
+      "titleRu": "Состояние сушилки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "dry",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

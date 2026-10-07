@@ -1,0 +1,111 @@
+{
+  "layer": "B28",
+  "name": "layer-b-isolator_fill.json",
+  "types": [
+    {
+      "path": "isolator_fill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Filling isolator id",
+      "titleRu": "ID изолятора наполнения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "isolator_fill.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Isolator pressure",
+      "titleRu": "Давление изолятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_fill.particles",
+      "kind": "quantity",
+      "unit": "/m3",
+      "titleEn": "Particle count",
+      "titleRu": "Число частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_fill.h2o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2O2 residual",
+      "titleRu": "Остаток H2O2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_fill.gloves",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Glove integrity OK count",
+      "titleRu": "Перчаток OK",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_fill.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Isolator temperature",
+      "titleRu": "Температура изолятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_fill.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Containment breach",
+      "titleRu": "Нарушение герметичности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "isolator_fill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Isolator state",
+      "titleRu": "Состояние изолятора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "decon",
+        "fill",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

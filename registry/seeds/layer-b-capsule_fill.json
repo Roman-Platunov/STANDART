@@ -1,0 +1,118 @@
+{
+  "layer": "B28",
+  "name": "layer-b-capsule_fill.json",
+  "types": [
+    {
+      "path": "capsule_fill.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Capsule filling machine id",
+      "titleRu": "ID машины наполнения капсул",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "capsule_fill.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "capsule_fill.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Capsules per hour",
+      "titleRu": "Капсул в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "capsule_fill.weight",
+      "kind": "quantity",
+      "unit": "mg",
+      "titleEn": "Fill weight",
+      "titleRu": "Масса наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "capsule_fill.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "capsule_fill.rsd",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Weight RSD",
+      "titleRu": "RSD массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "capsule_fill.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Weight in spec",
+      "titleRu": "Масса в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "capsule_fill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "close",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

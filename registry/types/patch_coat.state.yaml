@@ -1,0 +1,21 @@
+sid: 384962ff
+path: patch_coat.state
+aliases:
+  short: patch_coat.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:384962ff85ab0ae0684ac89e6c30e71f9e5de076223d677be739c6eedd3ceff2
+enumValues:
+  - coat
+  - dry
+  - laminate
+  - idle
+  - fault
