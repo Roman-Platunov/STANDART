@@ -1,0 +1,21 @@
+sid: 3e8511e7
+path: clearance.status
+aliases:
+  short: clearance.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус допуска
+  en: Clearance status
+fingerprint: sha256:3e8511e7b6a68ecc233b0bbca340026fc8f5f141e690d89db8eb1f42c37c227e
+enumValues:
+  - requested
+  - issued
+  - active
+  - released
+  - cancelled

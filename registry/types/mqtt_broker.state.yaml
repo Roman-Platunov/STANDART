@@ -1,0 +1,20 @@
+sid: 83ed9145
+path: mqtt_broker.state
+aliases:
+  short: mqtt_broker.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние брокера
+  en: Broker state
+fingerprint: sha256:83ed9145bfcfdb83789602ef03d8e9fd819d7a01db775942a4a53d3f27d82428
+enumValues:
+  - online
+  - degraded
+  - failover
+  - offline

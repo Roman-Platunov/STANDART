@@ -1,0 +1,20 @@
+sid: 6b68b125
+path: uwb_anchor.mode
+aliases:
+  short: uwb_anchor.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим дальнометрии
+  en: Ranging mode
+fingerprint: sha256:6b68b12529b8c15fed678acbb8ae2b3f3da76ee249f24382b28f5b1098ef563d
+enumValues:
+  - tdoa
+  - twr
+  - pdoa
+  - hybrid

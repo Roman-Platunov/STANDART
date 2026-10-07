@@ -1,0 +1,112 @@
+{
+  "layer": "B11",
+  "name": "layer-b-container_track.json",
+  "types": [
+    {
+      "path": "container_track.box.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Container id",
+      "titleRu": "ID контейнера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "container_track.trip.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Container trip id",
+      "titleRu": "ID рейса контейнера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "container_track.lat",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Latitude",
+      "titleRu": "Широта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "container_track.lon",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Longitude",
+      "titleRu": "Долгота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "container_track.dwell.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Dwell time",
+      "titleRu": "Время простоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "container_track.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Internal temperature",
+      "titleRu": "Внутренняя температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "container_track.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door open",
+      "titleRu": "Дверь открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "container_track.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Container status",
+      "titleRu": "Статус контейнера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gate_in",
+        "vessel",
+        "rail",
+        "truck",
+        "depot",
+        "delivered"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

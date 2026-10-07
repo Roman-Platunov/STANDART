@@ -1,0 +1,116 @@
+{
+  "layer": "B11",
+  "name": "layer-b-leak_detection.json",
+  "types": [
+    {
+      "path": "leak_detection.segment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipeline segment id",
+      "titleRu": "ID участка трубопровода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leak_detection.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LDS system id",
+      "titleRu": "ID системы обнаружения утечек",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leak_detection.pressure.drop",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Pressure drop anomaly",
+      "titleRu": "Аномалия падения давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_detection.flow.imbalance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flow imbalance",
+      "titleRu": "Дисбаланс расхода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leak_detection.location.km",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Estimated leak location",
+      "titleRu": "Оценка места утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_detection.rate.estimate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Estimated leak rate",
+      "titleRu": "Оценка расхода утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_detection.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak alarm",
+      "titleRu": "Тревога утечки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "leak_detection.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "LDS method",
+      "titleRu": "Метод СОУ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cpm",
+        "rttm",
+        "acoustic",
+        "fiber",
+        "mass_balance",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

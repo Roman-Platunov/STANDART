@@ -1,0 +1,21 @@
+sid: 9eface3d
+path: tamper_seal.state
+aliases:
+  short: tamper_seal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пломбы
+  en: Seal state
+fingerprint: sha256:9eface3d99598deae509a66efff44ee0209e015615a609bd37880e2efcc12805
+enumValues:
+  - armed
+  - intact
+  - tampered
+  - disarmed
+  - fault

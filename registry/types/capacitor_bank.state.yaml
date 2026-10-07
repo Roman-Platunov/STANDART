@@ -1,0 +1,21 @@
+sid: 34ce5c1c
+path: capacitor_bank.state
+aliases:
+  short: capacitor_bank.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние батареи
+  en: Bank state
+fingerprint: sha256:34ce5c1cb0a3af239657a2b08a3ea486e0a6f924558e0b1914af681bac642214
+enumValues:
+  - off
+  - partial
+  - full
+  - fault
+  - locked

@@ -1,0 +1,111 @@
+{
+  "layer": "B11",
+  "name": "layer-b-co2_storage.json",
+  "types": [
+    {
+      "path": "co2_storage.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CO2 storage site id",
+      "titleRu": "ID хранилища CO₂",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "co2_storage.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Injection well id",
+      "titleRu": "ID нагнетательной скважины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "co2_storage.injection.rate",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Injection rate",
+      "titleRu": "Скорость закачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_storage.reservoir.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Reservoir pressure",
+      "titleRu": "Пластовое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_storage.plume.area_km2",
+      "kind": "quantity",
+      "unit": "km2",
+      "titleEn": "Plume area",
+      "titleRu": "Площадь шлейфа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_storage.seismic.rate",
+      "kind": "quantity",
+      "unit": "/d",
+      "titleEn": "Induced seismicity rate",
+      "titleRu": "Частота наведённой сейсмичности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_storage.mmv.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "MMV alert",
+      "titleRu": "Тревога МКиВ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "co2_storage.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Storage state",
+      "titleRu": "Состояние хранения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inject",
+        "monitor",
+        "suspend",
+        "close",
+        "post_closure"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

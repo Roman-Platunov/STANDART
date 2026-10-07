@@ -1,0 +1,22 @@
+sid: e4e59b1b
+path: oms.cause
+aliases:
+  short: oms.cause
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Причина отключения
+  en: Outage cause
+fingerprint: sha256:e4e59b1b05c3e654a128b346ec9706efb33a969e69b8239b2e7522fa9a188d6c
+enumValues:
+  - equipment
+  - vegetation
+  - weather
+  - animal
+  - public
+  - unknown

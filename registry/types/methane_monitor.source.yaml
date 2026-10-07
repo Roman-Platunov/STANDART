@@ -1,0 +1,21 @@
+sid: 0b606374
+path: methane_monitor.source
+aliases:
+  short: methane_monitor.source
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Сектор источника
+  en: Source sector
+fingerprint: sha256:0b6063742fd4d224d3a5612cd4ee26e88b0dc49dd101c925ab39119328826d59
+enumValues:
+  - oilgas
+  - landfill
+  - agri
+  - coal
+  - other

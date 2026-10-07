@@ -1,0 +1,21 @@
+sid: d6e51f60
+path: ev_depot.mode
+aliases:
+  short: ev_depot.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим зарядки депо
+  en: Depot charge mode
+fingerprint: sha256:d6e51f60269769ef9b57ed837bdeadf544508540a8198b020570457ae6f03b07
+enumValues:
+  - overnight
+  - opportunity
+  - v2g
+  - idle
+  - peak_avoid

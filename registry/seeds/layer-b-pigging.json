@@ -1,0 +1,118 @@
+{
+  "layer": "B11",
+  "name": "layer-b-pigging.json",
+  "types": [
+    {
+      "path": "pigging.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pig run id",
+      "titleRu": "ID прогона снаряда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pigging.tool.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pig tool id",
+      "titleRu": "ID внутритрубного снаряда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pigging.odometer",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Pig odometer",
+      "titleRu": "Одометр снаряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pigging.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Pig speed",
+      "titleRu": "Скорость снаряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pigging.pressure.diff",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pigging.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pig stuck",
+      "titleRu": "Снаряд застрял",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pigging.tool.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pig type",
+      "titleRu": "Тип снаряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cleaning",
+        "gauging",
+        "mfl",
+        "ut",
+        "geo",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pigging.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pig run state",
+      "titleRu": "Состояние прогона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "launch",
+        "run",
+        "receive",
+        "stuck",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

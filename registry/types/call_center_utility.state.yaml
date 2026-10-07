@@ -1,0 +1,21 @@
+sid: dd0e8fad
+path: call_center_utility.state
+aliases:
+  short: call_center_utility.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние обращения
+  en: Case state
+fingerprint: sha256:dd0e8fadf3308bd93cb4b602cdc973fa2f5072c7107a9e650c33a839653fea1f
+enumValues:
+  - queued
+  - active
+  - hold
+  - closed
+  - escalated

@@ -1,0 +1,21 @@
+sid: fdd8c9bd
+path: wind_farm.turbine.state
+aliases:
+  short: turbine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние турбины
+  en: Turbine state
+fingerprint: sha256:fdd8c9bdc480dc31e24372fc057ad82f29d42e216109c1647668c0d9efab2af5
+enumValues:
+  - producing
+  - idle
+  - curtailed
+  - fault
+  - maintenance

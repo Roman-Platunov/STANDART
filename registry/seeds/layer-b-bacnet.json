@@ -1,0 +1,114 @@
+{
+  "layer": "B11",
+  "name": "layer-b-bacnet.json",
+  "types": [
+    {
+      "path": "bacnet.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BACnet device id",
+      "titleRu": "ID устройства BACnet",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bacnet.object.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BACnet object id",
+      "titleRu": "ID объекта BACnet",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bacnet.objects",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Object count",
+      "titleRu": "Число объектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bacnet.cov.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "COV rate",
+      "titleRu": "Скорость COV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bacnet.apdu.timeout_ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "APDU timeout",
+      "titleRu": "Таймаут APDU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bacnet.bbmd",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "BBMD enabled",
+      "titleRu": "BBMD включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bacnet.network",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Network type",
+      "titleRu": "Тип сети",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ip",
+        "mstp",
+        "sc",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bacnet.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Device state",
+      "titleRu": "Состояние устройства",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "offline",
+        "fault",
+        "download"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

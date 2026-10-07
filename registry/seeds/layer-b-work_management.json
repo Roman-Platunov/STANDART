@@ -1,0 +1,117 @@
+{
+  "layer": "B11",
+  "name": "layer-b-work_management.json",
+  "types": [
+    {
+      "path": "work_management.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Work management order id",
+      "titleRu": "ID наряда управления работами",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "work_management.crew.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Crew id",
+      "titleRu": "ID бригады",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "work_management.priority",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Priority",
+      "titleRu": "Приоритет",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "work_management.eta.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "ETA to site",
+      "titleRu": "ETA на объект",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "work_management.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Planned duration",
+      "titleRu": "Плановая длительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "work_management.switching.required",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Switching required",
+      "titleRu": "Требуются переключения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "work_management.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Work type",
+      "titleRu": "Тип работ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "construction",
+        "maintenance",
+        "emergency",
+        "inspection",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "work_management.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Work status",
+      "titleRu": "Статус работ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "planned",
+        "scheduled",
+        "dispatched",
+        "on_site",
+        "complete",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

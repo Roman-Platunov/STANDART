@@ -1,0 +1,114 @@
+{
+  "layer": "B11",
+  "name": "layer-b-ble_beacon.json",
+  "types": [
+    {
+      "path": "ble_beacon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BLE beacon id",
+      "titleRu": "ID BLE-маяка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ble_beacon.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Beacon site id",
+      "titleRu": "ID площадки маяка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ble_beacon.rssi",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RSSI",
+      "titleRu": "RSSI",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ble_beacon.tx.power",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "TX power",
+      "titleRu": "Мощность передачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ble_beacon.battery.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery",
+      "titleRu": "Батарея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ble_beacon.interval.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Advertising interval",
+      "titleRu": "Интервал рекламы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ble_beacon.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Beacon advertising",
+      "titleRu": "Маяк вещает",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ble_beacon.protocol",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Beacon protocol",
+      "titleRu": "Протокол маяка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ibeacon",
+        "eddystone",
+        "altbeacon",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

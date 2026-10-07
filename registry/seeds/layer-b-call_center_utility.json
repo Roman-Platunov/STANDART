@@ -1,0 +1,116 @@
+{
+  "layer": "B11",
+  "name": "layer-b-call_center_utility.json",
+  "types": [
+    {
+      "path": "call_center_utility.queue.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Utility call queue id",
+      "titleRu": "ID очереди контакт-центра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "call_center_utility.case.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Customer case id",
+      "titleRu": "ID обращения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "call_center_utility.wait.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Average wait",
+      "titleRu": "Среднее ожидание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "call_center_utility.asa.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "ASA",
+      "titleRu": "ASA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "call_center_utility.outage.calls",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Outage-related calls",
+      "titleRu": "Звонков по отключениям",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "call_center_utility.agents",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Agents available",
+      "titleRu": "Доступных операторов",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "call_center_utility.reason",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Call reason",
+      "titleRu": "Причина звонка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "outage",
+        "billing",
+        "move",
+        "gas_smell",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "call_center_utility.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Case state",
+      "titleRu": "Состояние обращения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "queued",
+        "active",
+        "hold",
+        "closed",
+        "escalated"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

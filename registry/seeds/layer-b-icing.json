@@ -1,0 +1,118 @@
+{
+  "layer": "B11",
+  "name": "layer-b-icing.json",
+  "types": [
+    {
+      "path": "icing.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Icing site id",
+      "titleRu": "ID площадки обледенения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "icing.accretion",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ice accretion",
+      "titleRu": "Нарост льда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icing.rate",
+      "kind": "quantity",
+      "unit": "mm/h",
+      "titleEn": "Icing rate",
+      "titleRu": "Скорость обледенения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icing.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Surface temperature",
+      "titleRu": "Температура поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icing.load",
+      "kind": "quantity",
+      "unit": "kg/m",
+      "titleEn": "Ice load on conductor",
+      "titleRu": "Гололёдная нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icing.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Icing alert",
+      "titleRu": "Тревога обледенения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "icing.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ice type",
+      "titleRu": "Тип обледенения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rime",
+        "glaze",
+        "wet_snow",
+        "frost",
+        "none"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "icing.severity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Icing severity",
+      "titleRu": "Тяжесть обледенения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "none",
+        "light",
+        "moderate",
+        "severe"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

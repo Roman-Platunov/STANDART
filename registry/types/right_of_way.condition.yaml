@@ -1,0 +1,21 @@
+sid: 6e5b922b
+path: right_of_way.condition
+aliases:
+  short: right_of_way.condition
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние трассы
+  en: ROW condition
+fingerprint: sha256:6e5b922b11d5fadc57fc358e21819c3536947320c27dc3c41a23de2b202413c1
+enumValues:
+  - clear
+  - overgrown
+  - encroached
+  - washout
+  - unknown

@@ -1,0 +1,110 @@
+{
+  "layer": "B11",
+  "name": "layer-b-co2_transport.json",
+  "types": [
+    {
+      "path": "co2_transport.pipeline.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CO2 pipeline id",
+      "titleRu": "ID CO₂-трубопровода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "co2_transport.compressor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CO2 compressor id",
+      "titleRu": "ID компрессора CO₂",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "co2_transport.flow",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "CO2 mass flow",
+      "titleRu": "Массовый расход CO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_transport.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Pipeline pressure",
+      "titleRu": "Давление трубопровода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_transport.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pipeline temperature",
+      "titleRu": "Температура трубопровода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_transport.phase",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Phase indicator 0=gas 1=dense",
+      "titleRu": "Фаза 0=газ 1=плотная",
+      "encodings": [
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_transport.leak.suspect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak suspect",
+      "titleRu": "Подозрение на утечку",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "co2_transport.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Transport state",
+      "titleRu": "Состояние транспорта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "flowing",
+        "vent",
+        "maintenance",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

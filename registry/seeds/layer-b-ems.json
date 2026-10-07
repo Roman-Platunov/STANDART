@@ -1,0 +1,109 @@
+{
+  "layer": "B11",
+  "name": "layer-b-ems.json",
+  "types": [
+    {
+      "path": "ems.area.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EMS control area id",
+      "titleRu": "ID зоны EMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ems.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Generating unit id",
+      "titleRu": "ID генерирующего блока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ems.generation",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Area generation",
+      "titleRu": "Генерация зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ems.load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Area load",
+      "titleRu": "Нагрузка зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ems.interchange",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Net interchange",
+      "titleRu": "Сальдо перетоков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ems.agc.units",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Units on AGC",
+      "titleRu": "Блоков на АРЧМ",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ems.contingency.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Contingency alarm",
+      "titleRu": "Тревога по N-1",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ems.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "EMS state",
+      "titleRu": "Состояние EMS",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "alert",
+        "emergency",
+        "restorative"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

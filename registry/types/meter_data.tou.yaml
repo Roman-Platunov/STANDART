@@ -1,0 +1,21 @@
+sid: a28028d0
+path: meter_data.tou
+aliases:
+  short: meter_data.tou
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Период ТОУ
+  en: TOU period
+fingerprint: sha256:a28028d082f97897f14d574d3220d4b57d9b94332c4e1e7f7f31ff583b17b464
+enumValues:
+  - peak
+  - offpeak
+  - shoulder
+  - critical
+  - flat

@@ -1,0 +1,20 @@
+sid: 8303798d
+path: asset_health.strategy
+aliases:
+  short: asset_health.strategy
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Стратегия ТО
+  en: Maintenance strategy
+fingerprint: sha256:8303798d0f595cffa41b00354ebb1115520d74b1b3cdab491485fce6178d32ff
+enumValues:
+  - run_to_fail
+  - time_based
+  - condition
+  - risk_based

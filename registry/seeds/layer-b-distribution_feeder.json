@@ -1,0 +1,110 @@
+{
+  "layer": "B11",
+  "name": "layer-b-distribution_feeder.json",
+  "types": [
+    {
+      "path": "distribution_feeder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Distribution feeder id",
+      "titleRu": "ID распределительного фидера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "distribution_feeder.recloser.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Recloser id",
+      "titleRu": "ID реклоузера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "distribution_feeder.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Feeder current",
+      "titleRu": "Ток фидера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distribution_feeder.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Feeder voltage",
+      "titleRu": "Напряжение фидера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distribution_feeder.customers.out",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Customers out",
+      "titleRu": "Потребителей без питания",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distribution_feeder.saidi.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "SAIDI minutes",
+      "titleRu": "SAIDI минуты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distribution_feeder.lockout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recloser lockout",
+      "titleRu": "Блокировка реклоузера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "distribution_feeder.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feeder state",
+      "titleRu": "Состояние фидера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "energized",
+        "faulted",
+        "sectionalized",
+        "outage",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

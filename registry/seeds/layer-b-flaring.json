@@ -1,0 +1,116 @@
+{
+  "layer": "B11",
+  "name": "layer-b-flaring.json",
+  "types": [
+    {
+      "path": "flaring.stack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flare stack id",
+      "titleRu": "ID факельной трубы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flaring.flow",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Flare gas flow",
+      "titleRu": "Расход на факел",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flaring.pilot.flame",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pilot flame on 1/0",
+      "titleRu": "Дежурный факел",
+      "encodings": [
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flaring.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Flare tip temperature",
+      "titleRu": "Температура оголовка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flaring.smoke.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Smoke index",
+      "titleRu": "Индекс дымности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flaring.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Destruction efficiency",
+      "titleRu": "Эффективность сжигания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flaring.unlit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Unlit flare",
+      "titleRu": "Незаженный факел",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flaring.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Flare state",
+      "titleRu": "Состояние факела",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pilot",
+        "flaring",
+        "steam_assist",
+        "off",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

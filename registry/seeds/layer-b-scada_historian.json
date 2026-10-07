@@ -1,0 +1,119 @@
+{
+  "layer": "B11",
+  "name": "layer-b-scada_historian.json",
+  "types": [
+    {
+      "path": "scada_historian.server.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Historian server id",
+      "titleRu": "ID сервера историка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scada_historian.tag.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Historian tag id",
+      "titleRu": "ID тега историка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scada_historian.write.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Write rate",
+      "titleRu": "Скорость записи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scada_historian.lag.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Ingest lag",
+      "titleRu": "Отставание записи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scada_historian.storage.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Storage used",
+      "titleRu": "Использование хранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scada_historian.archive.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Archive healthy",
+      "titleRu": "Архив здоров",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scada_historian.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tag quality",
+      "titleRu": "Качество тега",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "uncertain",
+        "bad",
+        "not_connected"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scada_historian.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Historian state",
+      "titleRu": "Состояние историка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "degraded",
+        "offline",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

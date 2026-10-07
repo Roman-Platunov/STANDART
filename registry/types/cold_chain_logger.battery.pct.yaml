@@ -1,0 +1,18 @@
+sid: 44dcd5fa
+path: cold_chain_logger.battery.pct
+aliases:
+  short: cold_chain_logger.battery.pct
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея логгера
+  en: Logger battery
+fingerprint: sha256:44dcd5fafe8186ad73e8de1f45aed813b3e7814a5178b949671c484c1ee903b9
+range:
+  min: 0
+  max: 100

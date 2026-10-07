@@ -1,0 +1,21 @@
+sid: d311e2ba
+path: co2_transport.state
+aliases:
+  short: co2_transport.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние транспорта
+  en: Transport state
+fingerprint: sha256:d311e2ba8cd98cc5ca647128a220105763a610cfd2b8d685e6b6db0aef580929
+enumValues:
+  - idle
+  - flowing
+  - vent
+  - maintenance
+  - fault

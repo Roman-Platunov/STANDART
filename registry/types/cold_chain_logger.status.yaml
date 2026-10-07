@@ -1,0 +1,21 @@
+sid: ac54364f
+path: cold_chain_logger.status
+aliases:
+  short: cold_chain_logger.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус логгера
+  en: Logger status
+fingerprint: sha256:ac54364f72420a852bd7a610604c1340fb89b97209f98f3f88d4abea2db5cc03
+enumValues:
+  - ok
+  - warning
+  - alarm
+  - offline
+  - complete

@@ -1,0 +1,19 @@
+sid: 7d4c56b8
+path: reactor_shunt.state
+aliases:
+  short: reactor_shunt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние реактора
+  en: Reactor state
+fingerprint: sha256:7d4c56b8df561c74ea6d13dd46be887527ef41466444c3eee43c31871e82d71f
+enumValues:
+  - offline
+  - online
+  - fault

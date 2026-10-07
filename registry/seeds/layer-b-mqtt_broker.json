@@ -1,0 +1,112 @@
+{
+  "layer": "B11",
+  "name": "layer-b-mqtt_broker.json",
+  "types": [
+    {
+      "path": "mqtt_broker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MQTT broker id",
+      "titleRu": "ID MQTT-брокера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mqtt_broker.client.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MQTT client id",
+      "titleRu": "ID MQTT-клиента",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mqtt_broker.clients",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Connected clients",
+      "titleRu": "Подключённых клиентов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mqtt_broker.msg.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Message rate",
+      "titleRu": "Скорость сообщений",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mqtt_broker.retained",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Retained messages",
+      "titleRu": "Retained-сообщений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mqtt_broker.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Broker CPU",
+      "titleRu": "CPU брокера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mqtt_broker.ha.healthy",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "HA healthy",
+      "titleRu": "HA здоров",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mqtt_broker.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Broker state",
+      "titleRu": "Состояние брокера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "degraded",
+        "failover",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

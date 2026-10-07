@@ -1,0 +1,117 @@
+{
+  "layer": "B11",
+  "name": "layer-b-dms.json",
+  "types": [
+    {
+      "path": "dms.network.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DMS network model id",
+      "titleRu": "ID модели сети DMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dms.switch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Switching device id",
+      "titleRu": "ID коммутационного аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dms.voltage.violation",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Voltage violations",
+      "titleRu": "Нарушений напряжения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dms.loss.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Technical losses",
+      "titleRu": "Технические потери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dms.flisr.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "FLISR operations today",
+      "titleRu": "Операций FLISR сегодня",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dms.study.mode",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Study mode active",
+      "titleRu": "Режим расчёта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dms.switch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Switch state",
+      "titleRu": "Состояние выключателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "racked_out",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dms.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "DMS mode",
+      "titleRu": "Режим DMS",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "advisory",
+        "closed_loop",
+        "manual"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

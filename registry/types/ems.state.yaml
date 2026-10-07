@@ -1,0 +1,20 @@
+sid: e06b0296
+path: ems.state
+aliases:
+  short: ems.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние EMS
+  en: EMS state
+fingerprint: sha256:e06b0296e318ca870785964d8f31a189b589da6ca97454dd83ea8888238b865d
+enumValues:
+  - normal
+  - alert
+  - emergency
+  - restorative

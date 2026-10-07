@@ -1,0 +1,107 @@
+{
+  "layer": "B11",
+  "name": "layer-b-shock_logger.json",
+  "types": [
+    {
+      "path": "shock_logger.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shock logger id",
+      "titleRu": "ID логгера ударов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shock_logger.shipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shipment id",
+      "titleRu": "ID отправления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shock_logger.peak.g",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Peak g",
+      "titleRu": "Пиковое ускорение g",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shock_logger.events",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shock events",
+      "titleRu": "Событий удара",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shock_logger.tilt.deg",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Max tilt",
+      "titleRu": "Макс. наклон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shock_logger.threshold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Threshold exceeded",
+      "titleRu": "Порог превышен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shock_logger.profile.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Shock profile ref",
+      "titleRu": "Референс профиля ударов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shock_logger.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Logger status",
+      "titleRu": "Статус логгера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "event",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

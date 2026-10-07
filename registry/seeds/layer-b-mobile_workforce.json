@@ -1,0 +1,116 @@
+{
+  "layer": "B11",
+  "name": "layer-b-mobile_workforce.json",
+  "types": [
+    {
+      "path": "mobile_workforce.tech.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Field technician id",
+      "titleRu": "ID полевого техника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mobile_workforce.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Field job id",
+      "titleRu": "ID полевого задания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mobile_workforce.jobs.day",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Jobs today",
+      "titleRu": "Заданий сегодня",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mobile_workforce.travel.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Travel minutes",
+      "titleRu": "Минуты в пути",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mobile_workforce.gps.accuracy",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "GPS accuracy",
+      "titleRu": "Точность GPS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mobile_workforce.on_site",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "On site",
+      "titleRu": "На объекте",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mobile_workforce.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tech status",
+      "titleRu": "Статус техника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "enroute",
+        "on_site",
+        "break",
+        "offline"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mobile_workforce.skill",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Primary skill",
+      "titleRu": "Основная специальность",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "electric",
+        "gas",
+        "water",
+        "telecom",
+        "general"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

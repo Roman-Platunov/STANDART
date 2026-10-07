@@ -1,0 +1,111 @@
+{
+  "layer": "B11",
+  "name": "layer-b-zwave.json",
+  "types": [
+    {
+      "path": "zwave.controller.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Z-Wave controller id",
+      "titleRu": "ID контроллера Z-Wave",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "zwave.node.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Z-Wave node id",
+      "titleRu": "ID узла Z-Wave",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "zwave.rssi",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RSSI",
+      "titleRu": "RSSI",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zwave.hop.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hop count",
+      "titleRu": "Число хопов",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zwave.battery.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Node battery",
+      "titleRu": "Батарея узла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "zwave.nodes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Network nodes",
+      "titleRu": "Узлов в сети",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zwave.inclusion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Inclusion mode",
+      "titleRu": "Режим включения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "zwave.security",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Security level",
+      "titleRu": "Уровень безопасности",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "none",
+        "s0",
+        "s2"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

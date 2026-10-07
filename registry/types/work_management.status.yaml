@@ -1,0 +1,22 @@
+sid: d0e424d2
+path: work_management.status
+aliases:
+  short: work_management.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус работ
+  en: Work status
+fingerprint: sha256:d0e424d2e0becaa4212079edb4d3a7a823cdd6bfb888c26e976ef905be802849
+enumValues:
+  - planned
+  - scheduled
+  - dispatched
+  - on_site
+  - complete
+  - cancelled

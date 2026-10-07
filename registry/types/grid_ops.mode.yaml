@@ -1,0 +1,20 @@
+sid: 10491f09
+path: grid_ops.mode
+aliases:
+  short: grid_ops.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим энергосистемы
+  en: Grid ops mode
+fingerprint: sha256:10491f0985735fea42ac6cce8332533fb93b9f9f280d97d7980c9080087dbe39
+enumValues:
+  - normal
+  - alert
+  - emergency
+  - restorative

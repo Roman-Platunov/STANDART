@@ -1,0 +1,117 @@
+{
+  "layer": "B11",
+  "name": "layer-b-matter_fabric.json",
+  "types": [
+    {
+      "path": "matter_fabric.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Matter fabric id",
+      "titleRu": "ID фабрики Matter",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "matter_fabric.node.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Matter node id",
+      "titleRu": "ID узла Matter",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "matter_fabric.nodes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fabric nodes",
+      "titleRu": "Узлов в фабрике",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "matter_fabric.controllers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fabric controllers",
+      "titleRu": "Контроллеров",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "matter_fabric.fail.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Command fail rate",
+      "titleRu": "Доля ошибок команд",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "matter_fabric.commissioning",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Commissioning active",
+      "titleRu": "Комиссия активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "matter_fabric.transport",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Transport",
+      "titleRu": "Транспорт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "thread",
+        "wifi",
+        "ethernet",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "matter_fabric.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fabric state",
+      "titleRu": "Состояние фабрики",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "partial",
+        "orphaned",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

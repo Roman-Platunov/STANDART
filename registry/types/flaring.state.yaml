@@ -1,0 +1,21 @@
+sid: 1a9a4386
+path: flaring.state
+aliases:
+  short: flaring.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние факела
+  en: Flare state
+fingerprint: sha256:1a9a4386cf5c7bd7b6076abe01e4214cd89440b5c8ebf864b19dd311ed773a7a
+enumValues:
+  - pilot
+  - flaring
+  - steam_assist
+  - off
+  - fault

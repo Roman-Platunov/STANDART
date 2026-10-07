@@ -1,0 +1,116 @@
+{
+  "layer": "B11",
+  "name": "layer-b-transmission.json",
+  "types": [
+    {
+      "path": "transmission.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transmission line id",
+      "titleRu": "ID ЛЭП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "transmission.tower.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tower id",
+      "titleRu": "ID опоры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "transmission.line.mw",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Line active power",
+      "titleRu": "Активная мощность линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transmission.line.mvar",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Line reactive power",
+      "titleRu": "Реактивная мощность линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transmission.line.loading",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Line loading",
+      "titleRu": "Загрузка линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 150
+      },
+      "status": "stable"
+    },
+    {
+      "path": "transmission.sag",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Conductor sag",
+      "titleRu": "Провес провода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transmission.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Line fault",
+      "titleRu": "Повреждение линии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "transmission.voltage.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Voltage class kV",
+      "titleRu": "Класс напряжения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "110",
+        "220",
+        "330",
+        "500",
+        "750",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "layer": "B11",
+  "name": "layer-b-right_of_way.json",
+  "types": [
+    {
+      "path": "right_of_way.segment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ROW segment id",
+      "titleRu": "ID участка трассы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "right_of_way.patrol.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Patrol id",
+      "titleRu": "ID обхода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "right_of_way.vegetation.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Vegetation height",
+      "titleRu": "Высота растительности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "right_of_way.clearance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Ground clearance",
+      "titleRu": "Клиренс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "right_of_way.encroachment.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Encroachments",
+      "titleRu": "Нарушений охранной зоны",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "right_of_way.access.blocked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Access blocked",
+      "titleRu": "Доступ перекрыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "right_of_way.drone.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "ROW drone survey ref",
+      "titleRu": "Референс облёта трассы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "right_of_way.condition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ROW condition",
+      "titleRu": "Состояние трассы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "clear",
+        "overgrown",
+        "encroached",
+        "washout",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

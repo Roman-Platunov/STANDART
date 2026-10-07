@@ -1,0 +1,20 @@
+sid: 7ed5aee2
+path: vpp.mode
+aliases:
+  short: vpp.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим ВЭС
+  en: VPP mode
+fingerprint: sha256:7ed5aee2ef61717f3ee0ef75bc61f0e7a31a91af866882df197e7886ca7b5b77
+enumValues:
+  - aggregate
+  - dispatch
+  - standby
+  - fault

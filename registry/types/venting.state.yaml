@@ -1,0 +1,20 @@
+sid: "12814584"
+path: venting.state
+aliases:
+  short: venting.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сброса
+  en: Vent state
+fingerprint: sha256:1281458442df1353fc3d53ee36e177a297abd3351ec81772a71a46e92dac6e8c
+enumValues:
+  - idle
+  - venting
+  - complete
+  - fault

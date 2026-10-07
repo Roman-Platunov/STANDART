@@ -1,0 +1,15 @@
+sid: "03958184"
+path: mqtt_broker.ha.healthy
+aliases:
+  short: ha.healthy
+kind: logical
+unit: "-"
+encodings:
+  - bool
+  - u8
+sensitivity: public
+status: stable
+title:
+  ru: HA здоров
+  en: HA healthy
+fingerprint: sha256:0395818425cd7687e621e51530a0ef255325655932da7ac9636b17acc1db3e74

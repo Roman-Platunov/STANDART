@@ -1,0 +1,119 @@
+{
+  "layer": "B11",
+  "name": "layer-b-cold_chain_logger.json",
+  "types": [
+    {
+      "path": "cold_chain_logger.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cold chain logger id",
+      "titleRu": "ID логгера холодовой цепи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_chain_logger.shipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shipment id",
+      "titleRu": "ID отправления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_chain_logger.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Logger temperature",
+      "titleRu": "Температура логгера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_logger.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Logger humidity",
+      "titleRu": "Влажность логгера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_logger.excursion.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Excursion minutes",
+      "titleRu": "Минуты экскурсии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_logger.battery.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Logger battery",
+      "titleRu": "Батарея логгера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cold_chain_logger.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature alarm",
+      "titleRu": "Температурная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cold_chain_logger.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Logger status",
+      "titleRu": "Статус логгера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "warning",
+        "alarm",
+        "offline",
+        "complete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

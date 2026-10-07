@@ -1,0 +1,20 @@
+sid: 487f1283
+path: scada_historian.state
+aliases:
+  short: scada_historian.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние историка
+  en: Historian state
+fingerprint: sha256:487f1283eeb86cacd06b45dac40e35a1a977014bf435b8fa90555ee3cbaa7baa
+enumValues:
+  - online
+  - degraded
+  - offline
+  - maintenance

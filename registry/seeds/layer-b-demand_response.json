@@ -1,0 +1,117 @@
+{
+  "layer": "B11",
+  "name": "layer-b-demand_response.json",
+  "types": [
+    {
+      "path": "demand_response.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DR event id",
+      "titleRu": "ID события УС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "demand_response.resource.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DR resource id",
+      "titleRu": "ID ресурса УС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "demand_response.curtail.kw",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Curtailed demand",
+      "titleRu": "Сниженная нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "demand_response.baseline.kw",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Baseline demand",
+      "titleRu": "Базовая нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "demand_response.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Event duration",
+      "titleRu": "Длительность события",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "demand_response.opt_out",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Customer opt-out",
+      "titleRu": "Отказ клиента",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "demand_response.program",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "DR program",
+      "titleRu": "Программа УС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "capacity",
+        "energy",
+        "ancillary",
+        "emergency",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "demand_response.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Event state",
+      "titleRu": "Состояние события",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scheduled",
+        "active",
+        "complete",
+        "cancelled",
+        "failed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

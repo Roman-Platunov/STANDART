@@ -1,0 +1,21 @@
+sid: 1b409724
+path: digital_twin.state
+aliases:
+  short: digital_twin.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние двойника
+  en: Twin state
+fingerprint: sha256:1b409724ae3c1f841b807bbfb8dc88aafbf510c7409eb848439a4c156706cc9a
+enumValues:
+  - synced
+  - stale
+  - simulating
+  - training
+  - offline

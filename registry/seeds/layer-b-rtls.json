@@ -1,0 +1,111 @@
+{
+  "layer": "B11",
+  "name": "layer-b-rtls.json",
+  "types": [
+    {
+      "path": "rtls.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RTLS system id",
+      "titleRu": "ID системы RTLS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rtls.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tracked asset id",
+      "titleRu": "ID отслеживаемого актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rtls.x",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Asset X",
+      "titleRu": "Координата X",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rtls.y",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Asset Y",
+      "titleRu": "Координата Y",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rtls.accuracy",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Position accuracy",
+      "titleRu": "Точность позиции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rtls.update.hz",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Update rate",
+      "titleRu": "Частота обновления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rtls.geofence.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Geofence breach",
+      "titleRu": "Нарушение геозоны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rtls.tech",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "RTLS technology",
+      "titleRu": "Технология RTLS",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "uwb",
+        "ble",
+        "wifi",
+        "vision",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B11",
+  "name": "layer-b-reactor_shunt.json",
+  "types": [
+    {
+      "path": "reactor_shunt.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shunt reactor id",
+      "titleRu": "ID шунтирующего реактора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reactor_shunt.mvar",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Absorbed reactive power",
+      "titleRu": "Потребляемая реактивная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reactor_shunt.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Reactor current",
+      "titleRu": "Ток реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reactor_shunt.oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reactor_shunt.winding.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Winding temperature",
+      "titleRu": "Температура обмотки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reactor_shunt.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reactor online",
+      "titleRu": "Реактор включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "reactor_shunt.cooling",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cooling state",
+      "titleRu": "Охлаждение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "off",
+        "auto"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "reactor_shunt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reactor state",
+      "titleRu": "Состояние реактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "offline",
+        "online",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

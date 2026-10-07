@@ -1,0 +1,20 @@
+sid: 302c173a
+path: street_furniture.status
+aliases:
+  short: street_furniture.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус актива
+  en: Asset status
+fingerprint: sha256:302c173a7f8cf88eb703e7d3f7a537bf427f2b8afc2010a72165d8dd69f86676
+enumValues:
+  - ok
+  - needs_repair
+  - removed
+  - planned

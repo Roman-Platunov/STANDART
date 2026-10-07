@@ -1,0 +1,20 @@
+sid: dc2d4473
+path: synchrophasor.quality
+aliases:
+  short: synchrophasor.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество данных
+  en: Data quality
+fingerprint: sha256:dc2d4473ce2869f956198a3667bd8f2b500f4eaad5aa7deebb4bc9ff958f9672
+enumValues:
+  - good
+  - suspect
+  - bad
+  - offline

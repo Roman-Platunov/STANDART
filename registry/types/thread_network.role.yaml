@@ -1,0 +1,21 @@
+sid: 917d37ca
+path: thread_network.role
+aliases:
+  short: thread_network.role
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Роль узла
+  en: Node role
+fingerprint: sha256:917d37ca9e6adc9682e0281e1f8f0bb3485bd530b5d2bd05b2ee33ad941ccd33
+enumValues:
+  - leader
+  - router
+  - reed
+  - end_device
+  - detached

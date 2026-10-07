@@ -1,0 +1,18 @@
+sid: 06576e5c
+path: knx.bus.load
+aliases:
+  short: bus.load
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Загрузка шины
+  en: Bus load
+fingerprint: sha256:06576e5c03fe7dd0f5ee1998dabcb684af5f2e070d79a10648c4dc149c3bc2b2
+range:
+  min: 0
+  max: 100

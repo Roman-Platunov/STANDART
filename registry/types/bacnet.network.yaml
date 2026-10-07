@@ -1,0 +1,20 @@
+sid: fba2bcf8
+path: bacnet.network
+aliases:
+  short: bacnet.network
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип сети
+  en: Network type
+fingerprint: sha256:fba2bcf880beb4f1c377e558c786866ea67c43aa41ab751004ac3d4af156b380
+enumValues:
+  - ip
+  - mstp
+  - sc
+  - other

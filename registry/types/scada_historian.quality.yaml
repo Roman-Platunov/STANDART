@@ -1,0 +1,20 @@
+sid: c5b01a0e
+path: scada_historian.quality
+aliases:
+  short: scada_historian.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество тега
+  en: Tag quality
+fingerprint: sha256:c5b01a0e9530344a85525a594c06c7ae82f33b3345221290e3fdf95a01627aaf
+enumValues:
+  - good
+  - uncertain
+  - bad
+  - not_connected

@@ -1,0 +1,19 @@
+sid: 7d0d9616
+path: zigbee.role
+aliases:
+  short: zigbee.role
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Роль устройства
+  en: Device role
+fingerprint: sha256:7d0d96169e8505a8247ed52c06c3f43bd2ab0e585ee6e01762db3ea3be25f185
+enumValues:
+  - coordinator
+  - router
+  - end_device

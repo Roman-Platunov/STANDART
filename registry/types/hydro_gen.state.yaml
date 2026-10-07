@@ -1,0 +1,21 @@
+sid: 4693dbeb
+path: hydro_gen.state
+aliases:
+  short: hydro_gen.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние генератора
+  en: Generator state
+fingerprint: sha256:4693dbeb2511b98ddff738d53ba82cf1cd9a0b09eb098de0d8778384fa765e8f
+enumValues:
+  - offline
+  - sync
+  - generate
+  - condense
+  - fault

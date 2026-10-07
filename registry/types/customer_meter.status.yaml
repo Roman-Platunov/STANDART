@@ -1,0 +1,20 @@
+sid: 45e5930c
+path: customer_meter.status
+aliases:
+  short: customer_meter.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус услуги
+  en: Service status
+fingerprint: sha256:45e5930c91ecea59b23358cad2a16bd9c94cd1f89aac81a0bb246324e623ade1
+enumValues:
+  - active
+  - vacant
+  - disconnected
+  - finaled

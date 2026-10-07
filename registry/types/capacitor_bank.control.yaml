@@ -1,0 +1,21 @@
+sid: 42e865e1
+path: capacitor_bank.control
+aliases:
+  short: capacitor_bank.control
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим управления
+  en: Control mode
+fingerprint: sha256:42e865e1d130e23e03112be9b9d8d91c89dcf85d8c22b832a63db2cec59d1f7d
+enumValues:
+  - fixed
+  - voltage
+  - var
+  - time
+  - remote

@@ -1,0 +1,18 @@
+sid: 09952ad8
+path: matter_fabric.fail.rate
+aliases:
+  short: fail.rate
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Доля ошибок команд
+  en: Command fail rate
+fingerprint: sha256:09952ad87f3b6828601caaaf78737cf182d066b669282502debb46d2d9559eca
+range:
+  min: 0
+  max: 100

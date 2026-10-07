@@ -1,0 +1,21 @@
+sid: 8e23d14d
+path: asset_health.condition
+aliases:
+  short: asset_health.condition
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Оценка состояния
+  en: Condition grade
+fingerprint: sha256:8e23d14da7b6f9f12732a4b08986e90af0667f03b361f944e214ee611ad6a27b
+enumValues:
+  - good
+  - fair
+  - poor
+  - critical
+  - unknown

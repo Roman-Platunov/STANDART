@@ -1,0 +1,110 @@
+{
+  "layer": "B11",
+  "name": "layer-b-synchrophasor.json",
+  "types": [
+    {
+      "path": "synchrophasor.pmu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PMU id",
+      "titleRu": "ID УСВИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "synchrophasor.pdc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PDC id",
+      "titleRu": "ID PDC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "synchrophasor.voltage.mag",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Voltage magnitude",
+      "titleRu": "Модуль напряжения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synchrophasor.voltage.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Voltage angle",
+      "titleRu": "Угол напряжения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synchrophasor.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synchrophasor.rocof",
+      "kind": "quantity",
+      "unit": "Hz/s",
+      "titleEn": "Rate of change of frequency",
+      "titleRu": "Скорость изменения частоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synchrophasor.stream.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "PMU stream healthy",
+      "titleRu": "Поток УСВИ OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "synchrophasor.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Data quality",
+      "titleRu": "Качество данных",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "suspect",
+        "bad",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: b9fe5e7f
+path: distribution_feeder.state
+aliases:
+  short: distribution_feeder.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фидера
+  en: Feeder state
+fingerprint: sha256:b9fe5e7f71b1d894398d27abf6fc8044041db262b626d6605fa624ecdd81557e
+enumValues:
+  - energized
+  - faulted
+  - sectionalized
+  - outage
+  - maintenance

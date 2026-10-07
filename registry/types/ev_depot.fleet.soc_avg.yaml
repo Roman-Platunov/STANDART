@@ -1,0 +1,18 @@
+sid: 3897c170
+path: ev_depot.fleet.soc_avg
+aliases:
+  short: fleet.soc_avg
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Средний SoC флота
+  en: Fleet average SoC
+fingerprint: sha256:3897c170a5549e71736a083600ca9c9c3fd5cd027cb41584542443a2bc2c5448
+range:
+  min: 0
+  max: 100

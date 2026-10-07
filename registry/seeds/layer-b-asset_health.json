@@ -1,0 +1,126 @@
+{
+  "layer": "B11",
+  "name": "layer-b-asset_health.json",
+  "types": [
+    {
+      "path": "asset_health.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Asset id",
+      "titleRu": "ID актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asset_health.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Health index",
+      "titleRu": "Индекс состояния",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asset_health.risk",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Risk score",
+      "titleRu": "Оценка риска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asset_health.age.y",
+      "kind": "quantity",
+      "unit": "y",
+      "titleEn": "Asset age years",
+      "titleRu": "Возраст актива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asset_health.rul.y",
+      "kind": "quantity",
+      "unit": "y",
+      "titleEn": "Remaining useful life",
+      "titleRu": "Остаточный ресурс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asset_health.replace.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Replacement due",
+      "titleRu": "Требуется замена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asset_health.condition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Condition grade",
+      "titleRu": "Оценка состояния",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "fair",
+        "poor",
+        "critical",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asset_health.strategy",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Maintenance strategy",
+      "titleRu": "Стратегия ТО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run_to_fail",
+        "time_based",
+        "condition",
+        "risk_based"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

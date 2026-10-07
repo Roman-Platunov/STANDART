@@ -1,0 +1,20 @@
+sid: 2230dd42
+path: matter_fabric.state
+aliases:
+  short: matter_fabric.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фабрики
+  en: Fabric state
+fingerprint: sha256:2230dd421d7d334af877c3c872fbd11ba34da6bf60c5f0a1c0be7db50a1baaae
+enumValues:
+  - active
+  - partial
+  - orphaned
+  - offline

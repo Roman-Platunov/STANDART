@@ -1,0 +1,116 @@
+{
+  "layer": "B11",
+  "name": "layer-b-meter_data.json",
+  "types": [
+    {
+      "path": "meter_data.meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Interval meter id",
+      "titleRu": "ID интервального счётчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meter_data.channel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Meter channel id",
+      "titleRu": "ID канала учёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meter_data.kwh",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Interval energy",
+      "titleRu": "Энергия интервала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_data.kw",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Interval demand",
+      "titleRu": "Мощность интервала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_data.interval.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Interval length",
+      "titleRu": "Длина интервала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_data.estimated",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Estimated read",
+      "titleRu": "Оценочное показание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meter_data.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Read status",
+      "titleRu": "Статус показания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "actual",
+        "estimated",
+        "missing",
+        "edited"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meter_data.tou",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "TOU period",
+      "titleRu": "Период ТОУ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "peak",
+        "offpeak",
+        "shoulder",
+        "critical",
+        "flat"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

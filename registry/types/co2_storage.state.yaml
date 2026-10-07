@@ -1,0 +1,21 @@
+sid: ea920279
+path: co2_storage.state
+aliases:
+  short: co2_storage.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние хранения
+  en: Storage state
+fingerprint: sha256:ea9202791cd9f52ce8e83da3360629795741662c5b012353b8740e3dfa95c6e1
+enumValues:
+  - inject
+  - monitor
+  - suspend
+  - close
+  - post_closure

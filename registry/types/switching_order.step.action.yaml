@@ -1,0 +1,22 @@
+sid: 5cc0f958
+path: switching_order.step.action
+aliases:
+  short: step.action
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Действие шага
+  en: Step action
+fingerprint: sha256:5cc0f95886f233ce27a5f114c7f56761583e92252eba09b8237d4fb34d1f8be8
+enumValues:
+  - open
+  - close
+  - check
+  - tag
+  - ground
+  - unground

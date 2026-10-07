@@ -1,0 +1,114 @@
+{
+  "layer": "B11",
+  "name": "layer-b-hydro_gen.json",
+  "types": [
+    {
+      "path": "hydro_gen.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hydro generator id",
+      "titleRu": "ID гидрогенератора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydro_gen.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Generator power",
+      "titleRu": "Мощность генератора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_gen.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Terminal voltage",
+      "titleRu": "Напряжение на выводах",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_gen.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_gen.stator.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stator temperature",
+      "titleRu": "Температура статора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_gen.bearing.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bearing temperature",
+      "titleRu": "Температура подшипника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_gen.excitation.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Excitation current",
+      "titleRu": "Ток возбуждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_gen.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Generator state",
+      "titleRu": "Состояние генератора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "offline",
+        "sync",
+        "generate",
+        "condense",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

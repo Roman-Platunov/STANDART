@@ -1,0 +1,21 @@
+sid: 63dcc79c
+path: nb_iot.state
+aliases:
+  short: nb_iot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние устройства
+  en: Device state
+fingerprint: sha256:63dcc79c7ed68485b53cf1a3bd479956f04859f0d23f48ce697921495036f0e3
+enumValues:
+  - idle
+  - connected
+  - psm
+  - edrx
+  - offline

@@ -1,0 +1,115 @@
+{
+  "layer": "B11",
+  "name": "layer-b-uwb_anchor.json",
+  "types": [
+    {
+      "path": "uwb_anchor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UWB anchor id",
+      "titleRu": "ID якоря UWB",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uwb_anchor.tag.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UWB tag id",
+      "titleRu": "ID метки UWB",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uwb_anchor.range",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Measured range",
+      "titleRu": "Измеренная дальность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uwb_anchor.x",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tag X",
+      "titleRu": "Координата X метки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uwb_anchor.y",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tag Y",
+      "titleRu": "Координата Y метки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uwb_anchor.z",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tag Z",
+      "titleRu": "Координата Z метки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uwb_anchor.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fix quality",
+      "titleRu": "Качество фиксации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "uwb_anchor.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ranging mode",
+      "titleRu": "Режим дальнометрии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tdoa",
+        "twr",
+        "pdoa",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

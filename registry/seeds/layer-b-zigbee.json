@@ -1,0 +1,111 @@
+{
+  "layer": "B11",
+  "name": "layer-b-zigbee.json",
+  "types": [
+    {
+      "path": "zigbee.coordinator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Zigbee coordinator id",
+      "titleRu": "ID координатора Zigbee",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "zigbee.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Zigbee device id",
+      "titleRu": "ID устройства Zigbee",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "zigbee.lqi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Link quality indicator",
+      "titleRu": "LQI",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zigbee.rssi",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RSSI",
+      "titleRu": "RSSI",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zigbee.children",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Child devices",
+      "titleRu": "Дочерних устройств",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zigbee.msg.fail",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Message failure rate",
+      "titleRu": "Доля потерь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "zigbee.permit.join",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Permit join open",
+      "titleRu": "Разрешено присоединение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "zigbee.role",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Device role",
+      "titleRu": "Роль устройства",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "coordinator",
+        "router",
+        "end_device"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

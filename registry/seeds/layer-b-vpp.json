@@ -1,0 +1,113 @@
+{
+  "layer": "B11",
+  "name": "layer-b-vpp.json",
+  "types": [
+    {
+      "path": "vpp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Virtual power plant id",
+      "titleRu": "ID виртуальной электростанции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vpp.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VPP asset id",
+      "titleRu": "ID актива ВЭС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vpp.capacity.available",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Available capacity",
+      "titleRu": "Доступная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vpp.dispatch.kw",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Dispatched power",
+      "titleRu": "Диспетчеризуемая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vpp.assets.online",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Assets online",
+      "titleRu": "Активов online",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vpp.forecast.error",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Forecast error",
+      "titleRu": "Ошибка прогноза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vpp.market.cleared",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Market cleared",
+      "titleRu": "Рынок закрыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vpp.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "VPP mode",
+      "titleRu": "Режим ВЭС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "aggregate",
+        "dispatch",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "layer": "B11",
+  "name": "layer-b-knx.json",
+  "types": [
+    {
+      "path": "knx.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "KNX device id",
+      "titleRu": "ID устройства KNX",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "knx.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "KNX line id",
+      "titleRu": "ID линии KNX",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "knx.group.writes",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Group write rate",
+      "titleRu": "Скорость group write",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "knx.bus.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bus load",
+      "titleRu": "Загрузка шины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "knx.devices.online",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Devices online",
+      "titleRu": "Устройств online",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "knx.programming",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Programming mode",
+      "titleRu": "Режим программирования",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "knx.medium",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "KNX medium",
+      "titleRu": "Среда KNX",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tp",
+        "ip",
+        "rf",
+        "pl"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "knx.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "busy",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B11",
+  "name": "layer-b-vegetation_mgmt.json",
+  "types": [
+    {
+      "path": "vegetation_mgmt.span.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Line span id",
+      "titleRu": "ID пролёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vegetation_mgmt.work.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vegetation work order id",
+      "titleRu": "ID работ по растительности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vegetation_mgmt.clearance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Vegetation clearance",
+      "titleRu": "Клиренс до растительности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vegetation_mgmt.growth.rate",
+      "kind": "quantity",
+      "unit": "m/y",
+      "titleEn": "Growth rate",
+      "titleRu": "Скорость роста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vegetation_mgmt.risk.score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Risk score",
+      "titleRu": "Оценка риска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vegetation_mgmt.trim.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Trim due",
+      "titleRu": "Требуется обрезка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vegetation_mgmt.lidar.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "LiDAR survey ref",
+      "titleRu": "Референс LiDAR",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vegetation_mgmt.priority",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Work priority",
+      "titleRu": "Приоритет работ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "routine",
+        "priority",
+        "urgent",
+        "emergency"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

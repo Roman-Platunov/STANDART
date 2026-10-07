@@ -1,0 +1,20 @@
+sid: df45e450
+path: opcua.state
+aliases:
+  short: opcua.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сервера
+  en: Server state
+fingerprint: sha256:df45e450673a2f1b798987b1d455bc6860cc663582efc4ea8dc656d478268e73
+enumValues:
+  - running
+  - failed
+  - suspended
+  - shutdown

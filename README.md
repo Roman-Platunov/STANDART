@@ -12,9 +12,9 @@ A device does not describe itself in prose — it sends a **short code (`sid`)**
 | Short sid | `24d3556f` |
 | Fingerprint | `sha256:24d3556f…` (anti-duplicate) |
 
-Registry version: **0.12.0** · **4034** parameters · regenerate via `npm run expand` · **Public open-source repository**.
+Registry version: **0.13.0** · **4522** parameters · regenerate via `npm run expand` · **Public open-source repository**.
 
-**Coverage:** layers A–B10 in `registry/seeds/` (broad multi-industry). Open growing registry — not an infinite dump of every sensor on Earth. Add missing types via seeds + `npm run expand`.
+**Coverage:** layers A–B11 in `registry/seeds/` (broad multi-industry). Open growing registry — not an infinite dump of every sensor on Earth. Add missing types via seeds + `npm run expand`.
 
 | Artifact | Location | License |
 |----------|----------|---------|

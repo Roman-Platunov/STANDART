@@ -1,0 +1,120 @@
+{
+  "layer": "B11",
+  "name": "layer-b-solar_farm.json",
+  "types": [
+    {
+      "path": "solar_farm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Solar farm id",
+      "titleRu": "ID солнечной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "solar_farm.inverter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Farm inverter id",
+      "titleRu": "ID инвертора СЭС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "solar_farm.power.ac",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "AC power",
+      "titleRu": "Мощность AC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_farm.irradiance",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "POA irradiance",
+      "titleRu": "Облучённость POA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_farm.pr",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Performance ratio",
+      "titleRu": "Performance ratio",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "solar_farm.soiling",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soiling loss",
+      "titleRu": "Потери от загрязнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "solar_farm.tracker.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Tracker angle",
+      "titleRu": "Угол трекера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_farm.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Solar farm state",
+      "titleRu": "Состояние СЭС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "producing",
+        "curtailed",
+        "night",
+        "fault",
+        "cleaning"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

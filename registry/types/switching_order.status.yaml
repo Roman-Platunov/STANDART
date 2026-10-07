@@ -1,0 +1,21 @@
+sid: 0b20dfd5
+path: switching_order.status
+aliases:
+  short: switching_order.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус бланка
+  en: Order status
+fingerprint: sha256:0b20dfd524d1d9b32105f93fb80b7da5920bfe546912f6dca3ac9a148e084c71
+enumValues:
+  - draft
+  - approved
+  - in_progress
+  - complete
+  - aborted

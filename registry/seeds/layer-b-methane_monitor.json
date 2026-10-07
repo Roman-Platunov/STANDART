@@ -1,0 +1,109 @@
+{
+  "layer": "B11",
+  "name": "layer-b-methane_monitor.json",
+  "types": [
+    {
+      "path": "methane_monitor.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Methane site id",
+      "titleRu": "ID площадки метана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "methane_monitor.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Methane sensor id",
+      "titleRu": "ID датчика метана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "methane_monitor.ch4",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Methane concentration",
+      "titleRu": "Концентрация метана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methane_monitor.flux",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Emission flux",
+      "titleRu": "Поток выбросов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methane_monitor.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Local wind",
+      "titleRu": "Локальный ветер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methane_monitor.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak detected",
+      "titleRu": "Утечка обнаружена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "methane_monitor.plume.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Plume map ref",
+      "titleRu": "Референс карты шлейфа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "methane_monitor.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Source sector",
+      "titleRu": "Сектор источника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "oilgas",
+        "landfill",
+        "agri",
+        "coal",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

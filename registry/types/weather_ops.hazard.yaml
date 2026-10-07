@@ -1,0 +1,22 @@
+sid: a44251c0
+path: weather_ops.hazard
+aliases:
+  short: weather_ops.hazard
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Доминирующая опасность
+  en: Dominant hazard
+fingerprint: sha256:a44251c01874de5c726edc0d34578cb8cfdcd4ad7e6f9188c1a87c026c3d8427
+enumValues:
+  - none
+  - wind
+  - ice
+  - flood
+  - heat
+  - storm

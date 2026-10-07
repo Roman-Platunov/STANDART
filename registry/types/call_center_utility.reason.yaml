@@ -1,0 +1,21 @@
+sid: 4b35bb0b
+path: call_center_utility.reason
+aliases:
+  short: call_center_utility.reason
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Причина звонка
+  en: Call reason
+fingerprint: sha256:4b35bb0b8d6b55b89f68ee8aca84c1860118a0a5bfc47de875c66b930e953f8d
+enumValues:
+  - outage
+  - billing
+  - move
+  - gas_smell
+  - other

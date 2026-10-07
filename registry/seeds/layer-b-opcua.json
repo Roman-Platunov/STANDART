@@ -1,0 +1,112 @@
+{
+  "layer": "B11",
+  "name": "layer-b-opcua.json",
+  "types": [
+    {
+      "path": "opcua.server.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OPC UA server id",
+      "titleRu": "ID OPC UA сервера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "opcua.node.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OPC UA node id",
+      "titleRu": "ID узла OPC UA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "opcua.subscriptions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active subscriptions",
+      "titleRu": "Активных подписок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "opcua.sessions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active sessions",
+      "titleRu": "Активных сессий",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "opcua.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Read latency",
+      "titleRu": "Задержка чтения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "opcua.secure",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Secure channel active",
+      "titleRu": "Безопасный канал активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "opcua.security",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Security mode",
+      "titleRu": "Режим безопасности",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "none",
+        "sign",
+        "sign_encrypt"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "opcua.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Server state",
+      "titleRu": "Состояние сервера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "running",
+        "failed",
+        "suspended",
+        "shutdown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

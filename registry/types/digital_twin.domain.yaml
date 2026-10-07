@@ -1,0 +1,22 @@
+sid: 11af4dab
+path: digital_twin.domain
+aliases:
+  short: digital_twin.domain
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Домен двойника
+  en: Twin domain
+fingerprint: sha256:11af4dab470067327206a877300ba58c664ce8cb2e4983a7ef94fcd4fabb6ec7
+enumValues:
+  - energy
+  - building
+  - factory
+  - city
+  - vehicle
+  - other

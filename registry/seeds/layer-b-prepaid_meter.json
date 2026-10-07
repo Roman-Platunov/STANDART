@@ -1,0 +1,109 @@
+{
+  "layer": "B11",
+  "name": "layer-b-prepaid_meter.json",
+  "types": [
+    {
+      "path": "prepaid_meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Prepaid meter id",
+      "titleRu": "ID предоплатного счётчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "prepaid_meter.customer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Prepaid customer id",
+      "titleRu": "ID клиента предоплаты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "prepaid_meter.credit",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Credit remaining minor units",
+      "titleRu": "Остаток кредита",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "prepaid_meter.days.left",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days of credit left",
+      "titleRu": "Дней кредита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "prepaid_meter.power.limit",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Power limit",
+      "titleRu": "Лимит мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "prepaid_meter.low.credit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low credit warning",
+      "titleRu": "Предупреждение о низком кредите",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "prepaid_meter.disconnected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Disconnected for credit",
+      "titleRu": "Отключён по кредиту",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "prepaid_meter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Prepaid state",
+      "titleRu": "Состояние предоплаты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "low",
+        "emergency",
+        "disconnected",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

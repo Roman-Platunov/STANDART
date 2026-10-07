@@ -1,0 +1,110 @@
+{
+  "layer": "B11",
+  "name": "layer-b-grid_ops.json",
+  "types": [
+    {
+      "path": "grid_ops.control.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grid control area id",
+      "titleRu": "ID зоны управления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grid_ops.tie.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tie-line id",
+      "titleRu": "ID межсистемной связи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grid_ops.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "System frequency",
+      "titleRu": "Частота системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grid_ops.ace",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Area control error",
+      "titleRu": "Ошибка регулирования зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grid_ops.reserve.spinning",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Spinning reserve",
+      "titleRu": "Вращающийся резерв",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grid_ops.load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "System load",
+      "titleRu": "Нагрузка системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grid_ops.underfreq",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Under-frequency event",
+      "titleRu": "Снижение частоты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "grid_ops.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grid ops mode",
+      "titleRu": "Режим энергосистемы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "alert",
+        "emergency",
+        "restorative"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

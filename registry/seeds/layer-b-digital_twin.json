@@ -1,0 +1,121 @@
+{
+  "layer": "B11",
+  "name": "layer-b-digital_twin.json",
+  "types": [
+    {
+      "path": "digital_twin.model.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Digital twin model id",
+      "titleRu": "ID цифровой модели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "digital_twin.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Twinned asset id",
+      "titleRu": "ID сдвоенного актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "digital_twin.fidelity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Model fidelity",
+      "titleRu": "Точность модели",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "digital_twin.sync.lag_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Sync lag",
+      "titleRu": "Отставание синхронизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "digital_twin.sim.runs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Simulation runs today",
+      "titleRu": "Прогонов симуляции сегодня",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "digital_twin.drift",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Model drift detected",
+      "titleRu": "Обнаружен дрейф модели",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "digital_twin.domain",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Twin domain",
+      "titleRu": "Домен двойника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "energy",
+        "building",
+        "factory",
+        "city",
+        "vehicle",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "digital_twin.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Twin state",
+      "titleRu": "Состояние двойника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "synced",
+        "stale",
+        "simulating",
+        "training",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

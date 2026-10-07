@@ -1,0 +1,18 @@
+sid: 6017028b
+path: ble_beacon.battery.pct
+aliases:
+  short: ble_beacon.battery.pct
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея
+  en: Battery
+fingerprint: sha256:6017028b32d2d02467c205aac8aa22d81bd245e8ab9517625beb047a6e745199
+range:
+  min: 0
+  max: 100

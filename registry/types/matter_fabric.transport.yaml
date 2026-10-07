@@ -1,0 +1,20 @@
+sid: c9066b21
+path: matter_fabric.transport
+aliases:
+  short: matter_fabric.transport
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Транспорт
+  en: Transport
+fingerprint: sha256:c9066b210c10a370d030fe4f264545d377b8a8225be402df98922c62bec50a05
+enumValues:
+  - thread
+  - wifi
+  - ethernet
+  - other

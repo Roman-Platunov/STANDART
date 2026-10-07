@@ -1,0 +1,20 @@
+sid: b61686db
+path: knx.state
+aliases:
+  short: knx.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:b61686dbe23d4da990b244e787cd4c91ce5b0644bddc63fbd817acf25fb92d3b
+enumValues:
+  - normal
+  - busy
+  - fault
+  - offline

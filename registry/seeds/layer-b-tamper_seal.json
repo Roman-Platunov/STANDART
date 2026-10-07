@@ -1,0 +1,119 @@
+{
+  "layer": "B11",
+  "name": "layer-b-tamper_seal.json",
+  "types": [
+    {
+      "path": "tamper_seal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Electronic seal id",
+      "titleRu": "ID электронной пломбы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tamper_seal.container.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sealed container id",
+      "titleRu": "ID опломбированного контейнера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tamper_seal.intact",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seal intact",
+      "titleRu": "Пломба цела",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tamper_seal.tamper",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tamper detected",
+      "titleRu": "Вскрытие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tamper_seal.battery.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Seal battery",
+      "titleRu": "Батарея пломбы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tamper_seal.open.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open events",
+      "titleRu": "Событий открытия",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tamper_seal.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Seal type",
+      "titleRu": "Тип пломбы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bolt",
+        "cable",
+        "rfid",
+        "ble",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tamper_seal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Seal state",
+      "titleRu": "Состояние пломбы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "armed",
+        "intact",
+        "tampered",
+        "disarmed",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

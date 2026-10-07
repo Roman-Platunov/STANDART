@@ -1,0 +1,22 @@
+sid: be0de2f4
+path: container_track.status
+aliases:
+  short: container_track.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус контейнера
+  en: Container status
+fingerprint: sha256:be0de2f432fbc28300f2f23f473985485e51a01207e30eebf56dad117ddcd8fa
+enumValues:
+  - gate_in
+  - vessel
+  - rail
+  - truck
+  - depot
+  - delivered

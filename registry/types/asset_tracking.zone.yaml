@@ -1,0 +1,21 @@
+sid: a0c09e34
+path: asset_tracking.zone
+aliases:
+  short: asset_tracking.zone
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Последняя зона
+  en: Last zone
+fingerprint: sha256:a0c09e34dd4c76a93147090c903a0e1c44de37267da76fa9e752ed6373e54bbe
+enumValues:
+  - warehouse
+  - yard
+  - vehicle
+  - unknown
+  - other

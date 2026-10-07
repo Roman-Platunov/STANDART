@@ -1,0 +1,20 @@
+sid: f36a452d
+path: modbus_gw.state
+aliases:
+  short: modbus_gw.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шлюза
+  en: Gateway state
+fingerprint: sha256:f36a452da10f572a7993fc5487897039d49639b0396f7b71c3783d8cb8b9f647
+enumValues:
+  - ok
+  - timeout
+  - exception
+  - offline

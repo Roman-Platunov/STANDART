@@ -1,0 +1,20 @@
+sid: a3143389
+path: iot_gateway.state
+aliases:
+  short: iot_gateway.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шлюза
+  en: Gateway state
+fingerprint: sha256:a3143389acd99b86951fec7f69b05dab7149345039648d0b049feffedcf97754
+enumValues:
+  - online
+  - degraded
+  - offline
+  - updating

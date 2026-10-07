@@ -1,0 +1,121 @@
+{
+  "layer": "B11",
+  "name": "layer-b-venting.json",
+  "types": [
+    {
+      "path": "venting.source.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vent source id",
+      "titleRu": "ID источника сброса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "venting.flow",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Vent flow",
+      "titleRu": "Расход сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "venting.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Vent duration",
+      "titleRu": "Длительность сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "venting.gas.ch4_frac",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Methane fraction",
+      "titleRu": "Доля метана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "venting.authorized",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Authorized vent",
+      "titleRu": "Разрешённый сброс",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "venting.emergency",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency vent",
+      "titleRu": "Аварийный сброс",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "venting.reason",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vent reason",
+      "titleRu": "Причина сброса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "maintenance",
+        "upset",
+        "startup",
+        "blowdown",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "venting.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vent state",
+      "titleRu": "Состояние сброса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "venting",
+        "complete",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

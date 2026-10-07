@@ -1,0 +1,22 @@
+sid: ff3988fd
+path: oms.state
+aliases:
+  short: oms.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние отключения
+  en: Outage state
+fingerprint: sha256:ff3988fd06e32ae0ae8d879284a688be7527533cc36bd83b937cf2a000be8f4d
+enumValues:
+  - reported
+  - confirmed
+  - crew_enroute
+  - restoring
+  - restored
+  - cancelled

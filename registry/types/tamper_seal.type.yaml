@@ -1,0 +1,21 @@
+sid: 4f842021
+path: tamper_seal.type
+aliases:
+  short: tamper_seal.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип пломбы
+  en: Seal type
+fingerprint: sha256:4f842021319ea4a4c40ddba473a1ee141e3b5bfe1a15c0bebc3e94b38b627e85
+enumValues:
+  - bolt
+  - cable
+  - rfid
+  - ble
+  - other

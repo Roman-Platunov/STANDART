@@ -1,0 +1,109 @@
+{
+  "layer": "B11",
+  "name": "layer-b-nb_iot.json",
+  "types": [
+    {
+      "path": "nb_iot.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NB-IoT device id",
+      "titleRu": "ID устройства NB-IoT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nb_iot.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NB-IoT cell id",
+      "titleRu": "ID соты NB-IoT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nb_iot.rsrp",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RSRP",
+      "titleRu": "RSRP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nb_iot.ecl",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Coverage enhancement level",
+      "titleRu": "Уровень усиления покрытия",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nb_iot.tx.power",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "TX power",
+      "titleRu": "Мощность передачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nb_iot.msg.day",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Messages per day",
+      "titleRu": "Сообщений в сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nb_iot.attached",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Network attached",
+      "titleRu": "Зарегистрировано в сети",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nb_iot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Device state",
+      "titleRu": "Состояние устройства",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "connected",
+        "psm",
+        "edrx",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

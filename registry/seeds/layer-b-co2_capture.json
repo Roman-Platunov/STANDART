@@ -1,0 +1,120 @@
+{
+  "layer": "B11",
+  "name": "layer-b-co2_capture.json",
+  "types": [
+    {
+      "path": "co2_capture.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Capture unit id",
+      "titleRu": "ID установки улавливания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "co2_capture.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Host plant id",
+      "titleRu": "ID площадки улавливания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "co2_capture.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "CO2 capture rate",
+      "titleRu": "Скорость улавливания CO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_capture.capture.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Capture percentage",
+      "titleRu": "Доля улавливания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "co2_capture.solvent.lean",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Lean solvent loading",
+      "titleRu": "Нагрузка бедного растворителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_capture.energy.penalty",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Energy penalty",
+      "titleRu": "Энергозатраты на тонну",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_capture.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CO2 product purity",
+      "titleRu": "Чистота CO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "co2_capture.tech",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Capture technology",
+      "titleRu": "Технология улавливания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "amine",
+        "oxyfuel",
+        "membrane",
+        "calcium",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

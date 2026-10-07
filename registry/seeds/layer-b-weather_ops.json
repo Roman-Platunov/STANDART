@@ -1,0 +1,114 @@
+{
+  "layer": "B11",
+  "name": "layer-b-weather_ops.json",
+  "types": [
+    {
+      "path": "weather_ops.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ops weather station id",
+      "titleRu": "ID оперативной метеостанции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weather_ops.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air temperature",
+      "titleRu": "Температура воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weather_ops.wind.gust",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind gust",
+      "titleRu": "Порыв ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weather_ops.precip",
+      "kind": "quantity",
+      "unit": "mm/h",
+      "titleEn": "Precipitation rate",
+      "titleRu": "Интенсивность осадков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weather_ops.visibility",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Visibility",
+      "titleRu": "Видимость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weather_ops.lightning.rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Lightning rate",
+      "titleRu": "Частота молний",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weather_ops.warning",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Weather warning active",
+      "titleRu": "Метеопредупреждение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "weather_ops.hazard",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dominant hazard",
+      "titleRu": "Доминирующая опасность",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "none",
+        "wind",
+        "ice",
+        "flood",
+        "heat",
+        "storm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

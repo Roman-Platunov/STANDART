@@ -1,0 +1,21 @@
+sid: 3b7e5a6e
+path: solar_farm.state
+aliases:
+  short: solar_farm.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние СЭС
+  en: Solar farm state
+fingerprint: sha256:3b7e5a6e2f8b61007e045bc9c0a8329f4c52db639aa105a5d2e64a361297900b
+enumValues:
+  - producing
+  - curtailed
+  - night
+  - fault
+  - cleaning

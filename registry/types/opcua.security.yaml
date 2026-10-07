@@ -1,0 +1,19 @@
+sid: b0427174
+path: opcua.security
+aliases:
+  short: opcua.security
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим безопасности
+  en: Security mode
+fingerprint: sha256:b0427174c4758ae25d42011f5ae437904b8af07eb9c91418aaf7ef751a9751c9
+enumValues:
+  - none
+  - sign
+  - sign_encrypt

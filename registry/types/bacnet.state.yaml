@@ -1,0 +1,20 @@
+sid: a487514b
+path: bacnet.state
+aliases:
+  short: bacnet.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние устройства
+  en: Device state
+fingerprint: sha256:a487514ba231129245923bd45e239fd6dadff7dbebe1f0bd51665ef218982f9a
+enumValues:
+  - online
+  - offline
+  - fault
+  - download

@@ -1,0 +1,20 @@
+sid: fce629b8
+path: meter_data.status
+aliases:
+  short: meter_data.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус показания
+  en: Read status
+fingerprint: sha256:fce629b8c87927667025628fda2768425cc00023084f387d7c57b8cfd048105a
+enumValues:
+  - actual
+  - estimated
+  - missing
+  - edited

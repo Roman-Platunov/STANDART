@@ -1,0 +1,21 @@
+sid: 6e76d797
+path: demand_response.program
+aliases:
+  short: demand_response.program
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Программа УС
+  en: DR program
+fingerprint: sha256:6e76d7978a0218f8299f17c9429901bab524dbaab08bec0a4ef38d9025aef9d9
+enumValues:
+  - capacity
+  - energy
+  - ancillary
+  - emergency
+  - other

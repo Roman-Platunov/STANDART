@@ -1,0 +1,21 @@
+sid: 2d0c931e
+path: mobile_workforce.status
+aliases:
+  short: mobile_workforce.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус техника
+  en: Tech status
+fingerprint: sha256:2d0c931e94cdd803b30bce48437bbedceffe8844d5f2eba2254254223aacf084
+enumValues:
+  - available
+  - enroute
+  - on_site
+  - break
+  - offline

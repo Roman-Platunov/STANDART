@@ -1,0 +1,120 @@
+{
+  "layer": "B11",
+  "name": "layer-b-asset_tracking.json",
+  "types": [
+    {
+      "path": "asset_tracking.tag.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Asset tracking tag id",
+      "titleRu": "ID метки актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asset_tracking.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tracked asset id",
+      "titleRu": "ID актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asset_tracking.battery.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tag battery",
+      "titleRu": "Батарея метки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asset_tracking.last.seen_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Minutes since last seen",
+      "titleRu": "Минут с последнего сигнала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asset_tracking.moves.day",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Moves today",
+      "titleRu": "Перемещений сегодня",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asset_tracking.missing",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Asset missing",
+      "titleRu": "Актив пропал",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asset_tracking.zone",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Last zone",
+      "titleRu": "Последняя зона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "warehouse",
+        "yard",
+        "vehicle",
+        "unknown",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asset_tracking.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tracking state",
+      "titleRu": "Состояние трекинга",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "stale",
+        "low_battery",
+        "missing",
+        "retired"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

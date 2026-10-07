@@ -1,0 +1,21 @@
+sid: 1f95342a
+path: asset_tracking.state
+aliases:
+  short: asset_tracking.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние трекинга
+  en: Tracking state
+fingerprint: sha256:1f95342a47fcd2b953991a3e98d6b7906fc6dfc58d6ee82688d180e552a3104f
+enumValues:
+  - ok
+  - stale
+  - low_battery
+  - missing
+  - retired

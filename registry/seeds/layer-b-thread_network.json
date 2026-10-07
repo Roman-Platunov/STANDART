@@ -1,0 +1,107 @@
+{
+  "layer": "B11",
+  "name": "layer-b-thread_network.json",
+  "types": [
+    {
+      "path": "thread_network.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thread network id",
+      "titleRu": "ID сети Thread",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thread_network.router.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thread router id",
+      "titleRu": "ID роутера Thread",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thread_network.nodes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Network nodes",
+      "titleRu": "Узлов сети",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thread_network.routers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active routers",
+      "titleRu": "Активных роутеров",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thread_network.partition.id",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Partition id",
+      "titleRu": "ID партиции",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thread_network.channel",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Channel",
+      "titleRu": "Канал",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thread_network.leader.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leader present",
+      "titleRu": "Лидер присутствует",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thread_network.role",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Node role",
+      "titleRu": "Роль узла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "leader",
+        "router",
+        "reed",
+        "end_device",
+        "detached"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

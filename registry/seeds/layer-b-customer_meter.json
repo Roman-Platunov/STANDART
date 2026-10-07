@@ -1,0 +1,115 @@
+{
+  "layer": "B11",
+  "name": "layer-b-customer_meter.json",
+  "types": [
+    {
+      "path": "customer_meter.account.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Customer account id",
+      "titleRu": "ID лицевого счёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "customer_meter.service.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Service point id",
+      "titleRu": "ID точки поставки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "customer_meter.usage.kwh",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Billing period usage",
+      "titleRu": "Потребление за период",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "customer_meter.bill.amount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bill amount minor units",
+      "titleRu": "Сумма счёта",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "internal",
+      "status": "stable"
+    },
+    {
+      "path": "customer_meter.arrears.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days in arrears",
+      "titleRu": "Дней просрочки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "internal",
+      "status": "stable"
+    },
+    {
+      "path": "customer_meter.disconnect.eligible",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Disconnect eligible",
+      "titleRu": "Доступно отключение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "customer_meter.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Service status",
+      "titleRu": "Статус услуги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "vacant",
+        "disconnected",
+        "finaled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "customer_meter.rate",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rate class",
+      "titleRu": "Тарифный класс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "residential",
+        "commercial",
+        "industrial",
+        "lighting",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

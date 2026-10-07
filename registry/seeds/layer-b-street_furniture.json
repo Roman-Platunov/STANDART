@@ -1,0 +1,119 @@
+{
+  "layer": "B11",
+  "name": "layer-b-street_furniture.json",
+  "types": [
+    {
+      "path": "street_furniture.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Street furniture asset id",
+      "titleRu": "ID элемента уличной инфраструктуры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "street_furniture.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "City zone id",
+      "titleRu": "ID городской зоны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "street_furniture.condition",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Condition score",
+      "titleRu": "Оценка состояния",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "street_furniture.inspect.age_d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days since inspection",
+      "titleRu": "Дней с осмотра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "street_furniture.damage",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Damage reported",
+      "titleRu": "Повреждение сообщено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "street_furniture.photo.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Asset photo ref",
+      "titleRu": "Референс фото",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "street_furniture.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furniture type",
+      "titleRu": "Тип элемента",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bench",
+        "bin",
+        "bollard",
+        "sign",
+        "kiosk",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "street_furniture.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Asset status",
+      "titleRu": "Статус актива",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "needs_repair",
+        "removed",
+        "planned"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

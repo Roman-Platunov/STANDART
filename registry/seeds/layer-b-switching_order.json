@@ -1,0 +1,115 @@
+{
+  "layer": "B11",
+  "name": "layer-b-switching_order.json",
+  "types": [
+    {
+      "path": "switching_order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Switching order id",
+      "titleRu": "ID бланка переключений",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "switching_order.step.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Switching step id",
+      "titleRu": "ID шага переключений",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "switching_order.steps.total",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Total steps",
+      "titleRu": "Всего шагов",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "switching_order.steps.done",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Completed steps",
+      "titleRu": "Выполненных шагов",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "switching_order.hold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hold tag applied",
+      "titleRu": "Вывешен запрет",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "switching_order.verified",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Step verified",
+      "titleRu": "Шаг проверен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "switching_order.step.action",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Step action",
+      "titleRu": "Действие шага",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "close",
+        "check",
+        "tag",
+        "ground",
+        "unground"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "switching_order.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Order status",
+      "titleRu": "Статус бланка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "draft",
+        "approved",
+        "in_progress",
+        "complete",
+        "aborted"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

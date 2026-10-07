@@ -1,0 +1,21 @@
+sid: 15583f0d
+path: prepaid_meter.state
+aliases:
+  short: prepaid_meter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние предоплаты
+  en: Prepaid state
+fingerprint: sha256:15583f0d04d063be99cfda91a0510fb42b7cfc17a562a9ea9072346e8ff0d1d0
+enumValues:
+  - ok
+  - low
+  - emergency
+  - disconnected
+  - fault

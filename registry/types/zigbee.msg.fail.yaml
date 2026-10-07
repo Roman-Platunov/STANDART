@@ -1,0 +1,18 @@
+sid: 3d49a335
+path: zigbee.msg.fail
+aliases:
+  short: msg.fail
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Доля потерь
+  en: Message failure rate
+fingerprint: sha256:3d49a335953d0c199b6e928a28a87d81454ee62b04ce2cb4ff925d6ab0d31b85
+range:
+  min: 0
+  max: 100

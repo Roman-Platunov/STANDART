@@ -1,0 +1,20 @@
+sid: a29e825e
+path: ble_beacon.protocol
+aliases:
+  short: ble_beacon.protocol
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Протокол маяка
+  en: Beacon protocol
+fingerprint: sha256:a29e825e87af362391341c204d652e71b792f1bfeede931d59df987f4988f163
+enumValues:
+  - ibeacon
+  - eddystone
+  - altbeacon
+  - other

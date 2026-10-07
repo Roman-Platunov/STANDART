@@ -1,0 +1,117 @@
+{
+  "layer": "B11",
+  "name": "layer-b-iot_gateway.json",
+  "types": [
+    {
+      "path": "iot_gateway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IoT gateway id",
+      "titleRu": "ID IoT-шлюза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "iot_gateway.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gateway site id",
+      "titleRu": "ID площадки шлюза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "iot_gateway.devices",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Connected devices",
+      "titleRu": "Подключённых устройств",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iot_gateway.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CPU load",
+      "titleRu": "Загрузка CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "iot_gateway.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Аптайм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "iot_gateway.msg.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Message rate",
+      "titleRu": "Скорость сообщений",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iot_gateway.backhaul.up",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Backhaul up",
+      "titleRu": "Канал связи OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "iot_gateway.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gateway state",
+      "titleRu": "Состояние шлюза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "degraded",
+        "offline",
+        "updating"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

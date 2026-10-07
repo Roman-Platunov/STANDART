@@ -1,0 +1,114 @@
+{
+  "layer": "B11",
+  "name": "layer-b-cathodic_protection.json",
+  "types": [
+    {
+      "path": "cathodic_protection.rectifier.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CP rectifier id",
+      "titleRu": "ID станции катодной защиты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cathodic_protection.testpoint.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CP test point id",
+      "titleRu": "ID контрольно-измерительного пункта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cathodic_protection.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Rectifier voltage",
+      "titleRu": "Напряжение выпрямителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathodic_protection.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Rectifier current",
+      "titleRu": "Ток выпрямителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathodic_protection.pipe.potential",
+      "kind": "quantity",
+      "unit": "mV",
+      "titleEn": "Pipe-to-soil potential",
+      "titleRu": "Потенциал труба–земля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathodic_protection.on.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "On potential compliance",
+      "titleRu": "Соответствие критерию",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cathodic_protection.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CP alarm",
+      "titleRu": "Тревога КЗ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cathodic_protection.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CP state",
+      "titleRu": "Состояние КЗ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "off",
+        "interrupted",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

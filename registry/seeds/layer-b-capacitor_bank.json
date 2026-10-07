@@ -1,0 +1,118 @@
+{
+  "layer": "B11",
+  "name": "layer-b-capacitor_bank.json",
+  "types": [
+    {
+      "path": "capacitor_bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Capacitor bank id",
+      "titleRu": "ID батареи конденсаторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "capacitor_bank.kvar",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Reactive output",
+      "titleRu": "Реактивная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "capacitor_bank.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Bank voltage",
+      "titleRu": "Напряжение батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "capacitor_bank.steps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Steps online",
+      "titleRu": "Включённых ступеней",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "capacitor_bank.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bank temperature",
+      "titleRu": "Температура батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "capacitor_bank.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bank online",
+      "titleRu": "Батарея включена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "capacitor_bank.control",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Control mode",
+      "titleRu": "Режим управления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fixed",
+        "voltage",
+        "var",
+        "time",
+        "remote"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "capacitor_bank.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bank state",
+      "titleRu": "Состояние батареи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "partial",
+        "full",
+        "fault",
+        "locked"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

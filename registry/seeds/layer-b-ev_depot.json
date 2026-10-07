@@ -1,0 +1,114 @@
+{
+  "layer": "B11",
+  "name": "layer-b-ev_depot.json",
+  "types": [
+    {
+      "path": "ev_depot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV depot id",
+      "titleRu": "ID депо ЭС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ev_depot.charger.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Depot charger id",
+      "titleRu": "ID зарядки депо",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ev_depot.fleet.soc_avg",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fleet average SoC",
+      "titleRu": "Средний SoC флота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ev_depot.power.total",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Total depot charging power",
+      "titleRu": "Суммарная мощность зарядки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_depot.vehicles.charging",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicles charging",
+      "titleRu": "ТС на зарядке",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_depot.schedule.deficit",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Energy schedule deficit",
+      "titleRu": "Дефицит энергии расписания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_depot.grid.limit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grid limit active",
+      "titleRu": "Лимит сети активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ev_depot.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Depot charge mode",
+      "titleRu": "Режим зарядки депо",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "overnight",
+        "opportunity",
+        "v2g",
+        "idle",
+        "peak_avoid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

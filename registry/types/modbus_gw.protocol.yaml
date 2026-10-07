@@ -1,0 +1,20 @@
+sid: f1ff2b5b
+path: modbus_gw.protocol
+aliases:
+  short: modbus_gw.protocol
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Протокол Modbus
+  en: Modbus protocol
+fingerprint: sha256:f1ff2b5b4bef979e9d6b3dfee6f142f53ff611bd338823f6d24b2ba04d00207a
+enumValues:
+  - rtu
+  - tcp
+  - ascii
+  - udp

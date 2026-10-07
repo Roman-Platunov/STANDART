@@ -1,0 +1,120 @@
+{
+  "layer": "B11",
+  "name": "layer-b-wind_farm.json",
+  "types": [
+    {
+      "path": "wind_farm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wind farm id",
+      "titleRu": "ID ветропарка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wind_farm.turbine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wind turbine id",
+      "titleRu": "ID ветротурбины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wind_farm.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Farm power",
+      "titleRu": "Мощность ветропарка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_farm.turbine.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Turbine power",
+      "titleRu": "Мощность турбины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_farm.wind.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Hub wind speed",
+      "titleRu": "Скорость ветра на ступице",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_farm.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Turbine availability",
+      "titleRu": "Доступность турбины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wind_farm.curtailment",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Curtailment",
+      "titleRu": "Ограничение выдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wind_farm.turbine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Turbine state",
+      "titleRu": "Состояние турбины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "producing",
+        "idle",
+        "curtailed",
+        "fault",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

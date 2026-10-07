@@ -1,0 +1,114 @@
+{
+  "layer": "B11",
+  "name": "layer-b-clearance.json",
+  "types": [
+    {
+      "path": "clearance.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Clearance / LOTO id",
+      "titleRu": "ID допуска / LOTO",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "clearance.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cleared asset id",
+      "titleRu": "ID выведенного актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "clearance.workers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Workers under clearance",
+      "titleRu": "Работников под допуском",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clearance.locks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Locks applied",
+      "titleRu": "Навешенных замков",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clearance.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Clearance active",
+      "titleRu": "Допуск действует",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "clearance.tested.deenergized",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tested de-energized",
+      "titleRu": "Проверено отсутствие напряжения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "clearance.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Clearance type",
+      "titleRu": "Тип допуска",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "working",
+        "switching",
+        "hotline",
+        "confined",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "clearance.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Clearance status",
+      "titleRu": "Статус допуска",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "requested",
+        "issued",
+        "active",
+        "released",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

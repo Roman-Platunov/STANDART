@@ -1,0 +1,20 @@
+sid: 239d49ed
+path: dms.switch.state
+aliases:
+  short: switch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние выключателя
+  en: Switch state
+fingerprint: sha256:239d49ed187c0c21d38ef51a80bfd35486993a2976691441087ca22678690ff6
+enumValues:
+  - open
+  - closed
+  - racked_out
+  - unknown

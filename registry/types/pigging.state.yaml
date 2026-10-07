@@ -1,0 +1,21 @@
+sid: 9d34364e
+path: pigging.state
+aliases:
+  short: pigging.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние прогона
+  en: Pig run state
+fingerprint: sha256:9d34364ea4acb016441a77d94f40637a5fe2eb08705da226836ab02999514d24
+enumValues:
+  - launch
+  - run
+  - receive
+  - stuck
+  - abort

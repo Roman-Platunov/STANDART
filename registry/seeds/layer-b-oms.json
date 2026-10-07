@@ -1,0 +1,117 @@
+{
+  "layer": "B11",
+  "name": "layer-b-oms.json",
+  "types": [
+    {
+      "path": "oms.outage.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Outage id",
+      "titleRu": "ID отключения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oms.feeder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Affected feeder id",
+      "titleRu": "ID затронутого фидера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oms.customers.affected",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Customers affected",
+      "titleRu": "Затронутых потребителей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oms.etr.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Estimated time to restore",
+      "titleRu": "Оценка времени восстановления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oms.crews.assigned",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Crews assigned",
+      "titleRu": "Назначенных бригад",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oms.confirmed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Outage confirmed",
+      "titleRu": "Отключение подтверждено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oms.cause",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Outage cause",
+      "titleRu": "Причина отключения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "equipment",
+        "vegetation",
+        "weather",
+        "animal",
+        "public",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oms.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Outage state",
+      "titleRu": "Состояние отключения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "reported",
+        "confirmed",
+        "crew_enroute",
+        "restoring",
+        "restored",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+sid: 505f0962
+path: zwave.battery.pct
+aliases:
+  short: zwave.battery.pct
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея узла
+  en: Node battery
+fingerprint: sha256:505f09621ef933c776e50180d48dc84761e55e899db6f7aa1dc8e1d461703db4
+range:
+  min: 0
+  max: 100

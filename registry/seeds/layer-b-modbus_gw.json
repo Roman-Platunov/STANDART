@@ -1,0 +1,119 @@
+{
+  "layer": "B11",
+  "name": "layer-b-modbus_gw.json",
+  "types": [
+    {
+      "path": "modbus_gw.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Modbus gateway id",
+      "titleRu": "ID Modbus-шлюза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "modbus_gw.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Modbus device id",
+      "titleRu": "ID устройства Modbus",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "modbus_gw.poll.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Poll rate",
+      "titleRu": "Скорость опроса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "modbus_gw.error.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Error rate",
+      "titleRu": "Доля ошибок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "modbus_gw.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Poll latency",
+      "titleRu": "Задержка опроса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "modbus_gw.device.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Device online",
+      "titleRu": "Устройство online",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "modbus_gw.protocol",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Modbus protocol",
+      "titleRu": "Протокол Modbus",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rtu",
+        "tcp",
+        "ascii",
+        "udp"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "modbus_gw.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gateway state",
+      "titleRu": "Состояние шлюза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "timeout",
+        "exception",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

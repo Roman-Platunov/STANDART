@@ -1,0 +1,21 @@
+sid: 381ac999
+path: venting.reason
+aliases:
+  short: venting.reason
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Причина сброса
+  en: Vent reason
+fingerprint: sha256:381ac999f86c60fc7146b8e68c16e3f2eb30caa4411ea335f7d86df9bf03c73a
+enumValues:
+  - maintenance
+  - upset
+  - startup
+  - blowdown
+  - other

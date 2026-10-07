@@ -1,0 +1,112 @@
+{
+  "layer": "B11",
+  "name": "layer-b-lora_network.json",
+  "types": [
+    {
+      "path": "lora_network.gateway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LoRa gateway id",
+      "titleRu": "ID LoRa-шлюза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lora_network.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LoRa end device id",
+      "titleRu": "ID конечного устройства LoRa",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lora_network.rssi",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RSSI",
+      "titleRu": "RSSI",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lora_network.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "SNR",
+      "titleRu": "SNR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lora_network.sf",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Spreading factor",
+      "titleRu": "Фактор расширения",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lora_network.duty.cycle",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Duty cycle",
+      "titleRu": "Скважность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lora_network.join.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Join accepted",
+      "titleRu": "Join принят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lora_network.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Device class",
+      "titleRu": "Класс устройства",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "a",
+        "b",
+        "c"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 873e97ef
+path: customer_meter.rate
+aliases:
+  short: customer_meter.rate
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тарифный класс
+  en: Rate class
+fingerprint: sha256:873e97ef5164c0bd3ad66e3b204713511b7fc24712697cce5241895d83a28ecc
+enumValues:
+  - residential
+  - commercial
+  - industrial
+  - lighting
+  - other

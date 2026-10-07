@@ -1,0 +1,21 @@
+sid: f067c49a
+path: demand_response.state
+aliases:
+  short: demand_response.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние события
+  en: Event state
+fingerprint: sha256:f067c49a216f6b82e0d35821967c4c7f13ae5a9ec9c793d6b797b192d7e177e4
+enumValues:
+  - scheduled
+  - active
+  - complete
+  - cancelled
+  - failed

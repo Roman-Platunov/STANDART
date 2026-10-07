@@ -1,0 +1,120 @@
+{
+  "layer": "B11",
+  "name": "layer-b-hydrogen_plant.json",
+  "types": [
+    {
+      "path": "hydrogen_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hydrogen plant id",
+      "titleRu": "ID водородного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrogen_plant.stack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Electrolyzer stack id",
+      "titleRu": "ID стека электролизёра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrogen_plant.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Electrolyzer power",
+      "titleRu": "Мощность электролизёра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_plant.h2.rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "H2 production rate",
+      "titleRu": "Производительность H₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_plant.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "System efficiency",
+      "titleRu": "КПД системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_plant.o2.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "O2 purity",
+      "titleRu": "Чистота O₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_plant.stack.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stack temperature",
+      "titleRu": "Температура стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_plant.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Electrolyzer type",
+      "titleRu": "Тип электролизёра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "alkaline",
+        "pem",
+        "soec",
+        "aem",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

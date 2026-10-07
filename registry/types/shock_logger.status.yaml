@@ -1,0 +1,20 @@
+sid: 227d9b85
+path: shock_logger.status
+aliases:
+  short: shock_logger.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус логгера
+  en: Logger status
+fingerprint: sha256:227d9b85ecef218092eb7b4850457f833609a26c58224d9271fb4942eccd0922
+enumValues:
+  - ok
+  - event
+  - alarm
+  - offline
