@@ -1,0 +1,21 @@
+sid: ead36f23
+path: quality_gate.type
+aliases:
+  short: quality_gate.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип ворот
+  en: Gate type
+fingerprint: sha256:ead36f2394a8e69488785656de17aa216105aa36513fcb0a92074fcb07f8b255
+enumValues:
+  - incoming
+  - in_process
+  - final
+  - skip_lot
+  - audit

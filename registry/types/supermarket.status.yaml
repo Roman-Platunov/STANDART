@@ -1,0 +1,20 @@
+sid: 1f90cd89
+path: supermarket.status
+aliases:
+  short: supermarket.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус зоны
+  en: Zone status
+fingerprint: sha256:1f90cd89d689c197026bf70033cca1f617ffba7a0eef801e096419c1cbfeb62e
+enumValues:
+  - ok
+  - low
+  - empty
+  - overstock

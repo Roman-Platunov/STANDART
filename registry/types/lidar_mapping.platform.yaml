@@ -1,0 +1,21 @@
+sid: d58a488c
+path: lidar_mapping.platform
+aliases:
+  short: lidar_mapping.platform
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Платформа
+  en: Platform
+fingerprint: sha256:d58a488c5faf2db24dbba16bc364463f8713593e01dadc606ffa7bef90d65e2f
+enumValues:
+  - airborne
+  - mobile
+  - uav
+  - terrestrial
+  - bathymetric

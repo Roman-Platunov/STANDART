@@ -1,0 +1,21 @@
+sid: 7b6cf02d
+path: lone_worker.status
+aliases:
+  short: lone_worker.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус работника
+  en: Worker status
+fingerprint: sha256:7b6cf02d74b9be658182de69e2ad69d5b03792214cd9bcfdeda449a1efc68fcf
+enumValues:
+  - ok
+  - overdue
+  - alarm
+  - offline
+  - safe

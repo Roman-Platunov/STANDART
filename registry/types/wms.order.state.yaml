@@ -1,0 +1,22 @@
+sid: 70e26bb5
+path: wms.order.state
+aliases:
+  short: wms.order.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние заказа
+  en: Order state
+fingerprint: sha256:70e26bb5aaa8d50b43e5f16b41f1ae7b6e9f2ce36fe9f3274d8de201231277c9
+enumValues:
+  - released
+  - allocated
+  - picked
+  - packed
+  - shipped
+  - cancelled

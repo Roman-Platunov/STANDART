@@ -1,0 +1,110 @@
+{
+  "layer": "B12",
+  "name": "layer-b-genealogy.json",
+  "types": [
+    {
+      "path": "genealogy.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch / lot id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "genealogy.component.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Component lot id",
+      "titleRu": "ID партии компонента",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "genealogy.depth",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trace depth",
+      "titleRu": "Глубина трассировки",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genealogy.nodes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Graph nodes",
+      "titleRu": "Узлов графа",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genealogy.complete",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Trace complete",
+      "titleRu": "Трассировка полная",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "genealogy.graph.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Genealogy graph ref",
+      "titleRu": "Референс графа происхождения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "genealogy.direction",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Trace direction",
+      "titleRu": "Направление трассировки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "forward",
+        "backward",
+        "both"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "genealogy.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Trace status",
+      "titleRu": "Статус трассировки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "partial",
+        "broken",
+        "quarantine"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

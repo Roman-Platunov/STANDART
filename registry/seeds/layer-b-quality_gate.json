@@ -1,0 +1,119 @@
+{
+  "layer": "B12",
+  "name": "layer-b-quality_gate.json",
+  "types": [
+    {
+      "path": "quality_gate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Quality gate id",
+      "titleRu": "ID контрольной точки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "quality_gate.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inspected lot id",
+      "titleRu": "ID проверяемой партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "quality_gate.sample.size",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sample size",
+      "titleRu": "Объём выборки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quality_gate.defect.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Defect rate",
+      "titleRu": "Доля дефектов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "quality_gate.aql",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "AQL",
+      "titleRu": "AQL",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quality_gate.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gate passed",
+      "titleRu": "Ворота пройдены",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "quality_gate.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gate type",
+      "titleRu": "Тип ворот",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "incoming",
+        "in_process",
+        "final",
+        "skip_lot",
+        "audit"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "quality_gate.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gate result",
+      "titleRu": "Результат ворот",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "conditional",
+        "hold"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

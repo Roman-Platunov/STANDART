@@ -1,0 +1,20 @@
+sid: "09252916"
+path: occupancy_sensor.state
+aliases:
+  short: occupancy_sensor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние датчика
+  en: Sensor state
+fingerprint: sha256:0925291659e2c5ac2ca63af1a1748a6fac869bfea4b7b2d74a1cb87ad6a74735
+enumValues:
+  - ok
+  - fault
+  - offline
+  - calibrating

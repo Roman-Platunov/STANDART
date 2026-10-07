@@ -1,0 +1,21 @@
+sid: 465b3805
+path: recipe_mgmt.status
+aliases:
+  short: recipe_mgmt.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус рецепта
+  en: Recipe status
+fingerprint: sha256:465b38054cba1a22b7f217d0291c2a00cf80c72a8c12ff3c65e2f4fa5c2617ac
+enumValues:
+  - draft
+  - review
+  - approved
+  - obsolete
+  - archived

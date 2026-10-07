@@ -1,0 +1,21 @@
+sid: 2cbc6ba2
+path: cycle_count.status
+aliases:
+  short: cycle_count.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус пересчёта
+  en: Count status
+fingerprint: sha256:2cbc6ba2079009279b81553a0eca448ad0ae52da5a21b2cd8a5942c0eeae9263
+enumValues:
+  - scheduled
+  - in_progress
+  - review
+  - posted
+  - cancelled

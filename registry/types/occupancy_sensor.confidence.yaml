@@ -1,0 +1,18 @@
+sid: 0b862372
+path: occupancy_sensor.confidence
+aliases:
+  short: occupancy_sensor.confidence
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Уверенность детекции
+  en: Detection confidence
+fingerprint: sha256:0b862372c01383928e65b6094d958d0a194ae75a51dfb7b571f1e4b120a222f9
+range:
+  min: 0
+  max: 100

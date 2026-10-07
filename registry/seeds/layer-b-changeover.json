@@ -1,0 +1,120 @@
+{
+  "layer": "B12",
+  "name": "layer-b-changeover.json",
+  "types": [
+    {
+      "path": "changeover.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Changeover line id",
+      "titleRu": "ID линии переналадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "changeover.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Changeover event id",
+      "titleRu": "ID события переналадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "changeover.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Changeover duration",
+      "titleRu": "Длительность переналадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "changeover.target.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Target duration",
+      "titleRu": "Целевая длительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "changeover.external.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "External time",
+      "titleRu": "Внешнее время",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "changeover.internal.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Internal time",
+      "titleRu": "Внутреннее время",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "changeover.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Changeover type",
+      "titleRu": "Тип переналадки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sku",
+        "format",
+        "color",
+        "tool",
+        "clean",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "changeover.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Changeover state",
+      "titleRu": "Состояние переналадки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "planned",
+        "prep",
+        "execute",
+        "verify",
+        "complete",
+        "aborted"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: f6109b3c
+path: site_security.mode
+aliases:
+  short: site_security.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим охраны
+  en: Security mode
+fingerprint: sha256:f6109b3c95608f2ee4ab1f7ee62d73ed1a16557cd39739976caf1ff2d3f65ddf
+enumValues:
+  - open
+  - controlled
+  - locked
+  - emergency

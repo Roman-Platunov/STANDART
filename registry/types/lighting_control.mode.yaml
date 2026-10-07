@@ -1,0 +1,21 @@
+sid: 7f002f7f
+path: lighting_control.mode
+aliases:
+  short: lighting_control.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим управления
+  en: Control mode
+fingerprint: sha256:7f002f7ff94e26f62982bebe10338f0057438ec47d379a47fc6ce5b405f1a2f1
+enumValues:
+  - manual
+  - schedule
+  - occupancy
+  - daylight
+  - scene

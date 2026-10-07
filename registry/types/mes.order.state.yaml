@@ -1,0 +1,21 @@
+sid: e95a1b4c
+path: mes.order.state
+aliases:
+  short: mes.order.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние заказа
+  en: Order state
+fingerprint: sha256:e95a1b4c58f95f82ce658ff4c883cdf81c191d783745588a2c441661b4c8ffe8
+enumValues:
+  - released
+  - running
+  - held
+  - complete
+  - scrap

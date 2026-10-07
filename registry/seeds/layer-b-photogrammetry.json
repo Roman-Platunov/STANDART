@@ -1,0 +1,113 @@
+{
+  "layer": "B12",
+  "name": "layer-b-photogrammetry.json",
+  "types": [
+    {
+      "path": "photogrammetry.project.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Photogrammetry project id",
+      "titleRu": "ID проекта фотограмметрии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "photogrammetry.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight id",
+      "titleRu": "ID облёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "photogrammetry.images",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Image count",
+      "titleRu": "Число снимков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "photogrammetry.gsd",
+      "kind": "quantity",
+      "unit": "cm",
+      "titleEn": "Ground sample distance",
+      "titleRu": "GSD",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "photogrammetry.overlap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Forward overlap",
+      "titleRu": "Продольное перекрытие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "photogrammetry.rmse",
+      "kind": "quantity",
+      "unit": "cm",
+      "titleEn": "Control RMSE",
+      "titleRu": "RMSE опорных точек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "photogrammetry.ortho.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Orthomosaic ref",
+      "titleRu": "Референс ортофото",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "photogrammetry.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Project state",
+      "titleRu": "Состояние проекта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "capture",
+        "process",
+        "qc",
+        "deliver",
+        "archive"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "layer": "B12",
+  "name": "layer-b-facility_ops.json",
+  "types": [
+    {
+      "path": "facility_ops.building.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Facility building id",
+      "titleRu": "ID здания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "facility_ops.wo.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Facility work order id",
+      "titleRu": "ID заявки эксплуатации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "facility_ops.wo.open",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open work orders",
+      "titleRu": "Открытых заявок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "facility_ops.energy.eui",
+      "kind": "quantity",
+      "unit": "kWh/m2",
+      "titleEn": "Energy use intensity",
+      "titleRu": "Удельное энергопотребление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "facility_ops.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Building occupancy",
+      "titleRu": "Заполненность здания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "facility_ops.comfort.complaints",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Comfort complaints today",
+      "titleRu": "Жалоб на комфорт сегодня",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "facility_ops.wo.priority",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "WO priority",
+      "titleRu": "Приоритет заявки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "low",
+        "medium",
+        "high",
+        "emergency"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "facility_ops.wo.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "WO status",
+      "titleRu": "Статус заявки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "new",
+        "assigned",
+        "wip",
+        "done",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

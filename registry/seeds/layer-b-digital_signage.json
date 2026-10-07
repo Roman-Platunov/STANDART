@@ -1,0 +1,112 @@
+{
+  "layer": "B12",
+  "name": "layer-b-digital_signage.json",
+  "types": [
+    {
+      "path": "digital_signage.player.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Signage player id",
+      "titleRu": "ID плеера вывески",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "digital_signage.screen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Screen id",
+      "titleRu": "ID экрана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "digital_signage.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Player uptime",
+      "titleRu": "Аптайм плеера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "digital_signage.content.age_h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Content age hours",
+      "titleRu": "Возраст контента (ч)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "digital_signage.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Player online",
+      "titleRu": "Плеер online",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "digital_signage.proof",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Proof of play",
+      "titleRu": "Подтверждение показа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "digital_signage.playlist.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Playlist ref",
+      "titleRu": "Референс плейлиста",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "digital_signage.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Player state",
+      "titleRu": "Состояние плеера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "playing",
+        "idle",
+        "updating",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B12",
+  "name": "layer-b-supermarket.json",
+  "types": [
+    {
+      "path": "supermarket.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Supermarket zone id",
+      "titleRu": "ID зоны супермаркета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "supermarket.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Supermarket SKU id",
+      "titleRu": "ID SKU супермаркета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "supermarket.min",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Min quantity",
+      "titleRu": "Мин. количество",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "supermarket.max",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Max quantity",
+      "titleRu": "Макс. количество",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "supermarket.on_hand",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "On-hand quantity",
+      "titleRu": "Остаток",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "supermarket.replenish.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Replenish due",
+      "titleRu": "Требуется пополнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "supermarket.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Supermarket type",
+      "titleRu": "Тип супермаркета",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "parts",
+        "wip",
+        "fg",
+        "consumable"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "supermarket.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone status",
+      "titleRu": "Статус зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "low",
+        "empty",
+        "overstock"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

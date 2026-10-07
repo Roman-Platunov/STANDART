@@ -1,0 +1,21 @@
+sid: e0892553
+path: serialization.level
+aliases:
+  short: serialization.level
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Уровень упаковки
+  en: Pack level
+fingerprint: sha256:e089255335e85db315515796b8d8f835f49b5543dcf4a9ba86f7de36bb45f792
+enumValues:
+  - unit
+  - bundle
+  - case
+  - pallet
+  - shipment

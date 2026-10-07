@@ -1,0 +1,113 @@
+{
+  "layer": "B12",
+  "name": "layer-b-site_power.json",
+  "types": [
+    {
+      "path": "site_power.distro.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Temporary distro id",
+      "titleRu": "ID временного щита",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "site_power.genset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site genset id",
+      "titleRu": "ID площадочного ДГУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "site_power.load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Site electrical load",
+      "titleRu": "Электронагрузка площадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "site_power.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Distro voltage",
+      "titleRu": "Напряжение щита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "site_power.fuel.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Genset fuel",
+      "titleRu": "Топливо ДГУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "site_power.rcd.trips",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "RCD trips",
+      "titleRu": "Срабатывания УЗО",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "site_power.earth.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Earth continuity OK",
+      "titleRu": "Заземление OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "site_power.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Power source",
+      "titleRu": "Источник питания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grid",
+        "genset",
+        "hybrid",
+        "battery"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

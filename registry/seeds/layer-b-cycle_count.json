@@ -1,0 +1,124 @@
+{
+  "layer": "B12",
+  "name": "layer-b-cycle_count.json",
+  "types": [
+    {
+      "path": "cycle_count.task.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cycle count task id",
+      "titleRu": "ID задания пересчёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cycle_count.location.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Count location id",
+      "titleRu": "ID ячейки пересчёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cycle_count.variance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Count variance",
+      "titleRu": "Расхождение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cycle_count.accuracy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Count accuracy",
+      "titleRu": "Точность пересчёта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cycle_count.sku.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "SKUs counted",
+      "titleRu": "Посчитанных SKU",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cycle_count.blind",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blind count",
+      "titleRu": "Слепой пересчёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cycle_count.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Count method",
+      "titleRu": "Метод пересчёта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "abc",
+        "random",
+        "opportunity",
+        "full",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cycle_count.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Count status",
+      "titleRu": "Статус пересчёта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scheduled",
+        "in_progress",
+        "review",
+        "posted",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

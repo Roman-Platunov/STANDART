@@ -1,0 +1,119 @@
+{
+  "layer": "B12",
+  "name": "layer-b-serialization.json",
+  "types": [
+    {
+      "path": "serialization.serial.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Serial number id",
+      "titleRu": "ID серийного номера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "serialization.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Serialized SKU id",
+      "titleRu": "ID сериализуемого SKU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "serialization.commissioned",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Commissioned today",
+      "titleRu": "Введено сегодня",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "serialization.verified.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Verified percentage",
+      "titleRu": "Доля верифицированных",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "serialization.aggregated",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aggregated",
+      "titleRu": "Агрегирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "serialization.quarantine",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In quarantine",
+      "titleRu": "На карантине",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "serialization.level",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pack level",
+      "titleRu": "Уровень упаковки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "unit",
+        "bundle",
+        "case",
+        "pallet",
+        "shipment"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "serialization.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Serial status",
+      "titleRu": "Статус серийника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "commissioned",
+        "packed",
+        "shipped",
+        "decommissioned",
+        "destroyed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

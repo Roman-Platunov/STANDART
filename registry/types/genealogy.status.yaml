@@ -1,0 +1,20 @@
+sid: ca37b1b8
+path: genealogy.status
+aliases:
+  short: genealogy.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус трассировки
+  en: Trace status
+fingerprint: sha256:ca37b1b88f60879378f8ab0df612b2fefe5ae396e33bd9d4d3138fe4bb43dc40
+enumValues:
+  - ok
+  - partial
+  - broken
+  - quarantine

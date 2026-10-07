@@ -1,0 +1,115 @@
+{
+  "layer": "B12",
+  "name": "layer-b-wayfinding.json",
+  "types": [
+    {
+      "path": "wayfinding.kiosk.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wayfinding kiosk id",
+      "titleRu": "ID киоска навигации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wayfinding.route.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Route id",
+      "titleRu": "ID маршрута",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wayfinding.queries.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Queries per hour",
+      "titleRu": "Запросов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wayfinding.route.length_m",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Route length",
+      "titleRu": "Длина маршрута",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wayfinding.eta.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Walking ETA",
+      "titleRu": "ETA пешком",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wayfinding.accessible",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Accessible route",
+      "titleRu": "Доступный маршрут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wayfinding.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wayfinding mode",
+      "titleRu": "Режим навигации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "indoor",
+        "outdoor",
+        "parking",
+        "transit"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wayfinding.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kiosk state",
+      "titleRu": "Состояние киоска",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "guiding",
+        "arrived",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: c9e6e4a7
+path: lone_worker.mode
+aliases:
+  short: lone_worker.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим мониторинга
+  en: Monitoring mode
+fingerprint: sha256:c9e6e4a70a663d09638f8302ec60c4ee33847c0385a5050547254cf72c451cb2
+enumValues:
+  - timed
+  - motion
+  - manual
+  - hybrid

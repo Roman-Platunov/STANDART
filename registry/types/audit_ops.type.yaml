@@ -1,0 +1,21 @@
+sid: 9accf577
+path: audit_ops.type
+aliases:
+  short: audit_ops.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип аудита
+  en: Audit type
+fingerprint: sha256:9accf577a907782d53fe93155f01a7e8b454f464dbb37555bdfe2d5434c9d767
+enumValues:
+  - internal
+  - supplier
+  - regulatory
+  - certification
+  - customer

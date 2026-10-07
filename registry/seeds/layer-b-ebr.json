@@ -1,0 +1,119 @@
+{
+  "layer": "B12",
+  "name": "layer-b-ebr.json",
+  "types": [
+    {
+      "path": "ebr.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EBR batch id",
+      "titleRu": "ID серии EBR",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ebr.step.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EBR step id",
+      "titleRu": "ID шага EBR",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ebr.steps.complete",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Steps complete",
+      "titleRu": "Выполненных шагов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ebr.deviations",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open deviations",
+      "titleRu": "Открытых отклонений",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ebr.signed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Batch record signed",
+      "titleRu": "Запись подписана",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ebr.hold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Batch on hold",
+      "titleRu": "Серия на удержании",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ebr.step.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Step state",
+      "titleRu": "Состояние шага",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pending",
+        "in_progress",
+        "complete",
+        "exception",
+        "skipped"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ebr.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "EBR status",
+      "titleRu": "Статус EBR",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "review",
+        "approved",
+        "rejected",
+        "archived"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

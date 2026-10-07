@@ -1,0 +1,124 @@
+{
+  "layer": "B12",
+  "name": "layer-b-tms.json",
+  "types": [
+    {
+      "path": "tms.shipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "TMS shipment id",
+      "titleRu": "ID отправления TMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tms.carrier.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Carrier id",
+      "titleRu": "ID перевозчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tms.cost",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shipment cost minor units",
+      "titleRu": "Стоимость перевозки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tms.eta.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "ETA minutes",
+      "titleRu": "ETA минуты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tms.on_time.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "On-time percentage",
+      "titleRu": "Доля вовремя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tms.distance.km",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Planned distance",
+      "titleRu": "Плановая дистанция",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tms.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Transport mode",
+      "titleRu": "Вид перевозки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tl",
+        "ltl",
+        "parcel",
+        "rail",
+        "ocean",
+        "air",
+        "intermodal"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tms.shipment.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shipment state",
+      "titleRu": "Состояние отправления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "planned",
+        "tendered",
+        "in_transit",
+        "delivered",
+        "exception",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

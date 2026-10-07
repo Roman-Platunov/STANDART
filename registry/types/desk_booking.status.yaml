@@ -1,0 +1,21 @@
+sid: 16596c5d
+path: desk_booking.status
+aliases:
+  short: desk_booking.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус места
+  en: Desk status
+fingerprint: sha256:16596c5d82ab25e665c4a5ba21824bad3e53ee45fef3bab66fd3898150f73389
+enumValues:
+  - free
+  - booked
+  - checked_in
+  - blocked
+  - offline

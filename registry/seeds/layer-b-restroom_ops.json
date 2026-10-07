@@ -1,0 +1,129 @@
+{
+  "layer": "B12",
+  "name": "layer-b-restroom_ops.json",
+  "types": [
+    {
+      "path": "restroom_ops.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Restroom id",
+      "titleRu": "ID санузла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "restroom_ops.visits.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Visits per hour",
+      "titleRu": "Визитов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "restroom_ops.soap.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soap level",
+      "titleRu": "Уровень мыла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "restroom_ops.paper.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Paper level",
+      "titleRu": "Уровень бумаги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "restroom_ops.odor.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Odor index",
+      "titleRu": "Индекс запаха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "restroom_ops.clean.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cleaning due",
+      "titleRu": "Требуется уборка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "restroom_ops.occupancy",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Occupancy",
+      "titleRu": "Занятость",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vacant",
+        "occupied",
+        "full",
+        "closed"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "restroom_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Restroom state",
+      "titleRu": "Состояние санузла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "needs_service",
+        "closed",
+        "flood"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

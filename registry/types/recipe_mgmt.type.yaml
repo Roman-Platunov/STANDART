@@ -1,0 +1,20 @@
+sid: d60bc9ae
+path: recipe_mgmt.type
+aliases:
+  short: recipe_mgmt.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип рецепта
+  en: Recipe type
+fingerprint: sha256:d60bc9ae28eb0119ba39db1c625238d7fffc79e3e4b114c9d7cd7414812b65c9
+enumValues:
+  - batch
+  - continuous
+  - discrete
+  - hybrid

@@ -1,0 +1,21 @@
+sid: a1a0c18d
+path: mes.operation.state
+aliases:
+  short: operation.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние операции
+  en: Operation state
+fingerprint: sha256:a1a0c18d24fc901d24adb7cf779871d1a9fe625786e89841d0ac700b42feb915
+enumValues:
+  - ready
+  - setup
+  - run
+  - down
+  - complete

@@ -1,0 +1,123 @@
+{
+  "layer": "B12",
+  "name": "layer-b-desk_booking.json",
+  "types": [
+    {
+      "path": "desk_booking.desk.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Desk id",
+      "titleRu": "ID рабочего места",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "desk_booking.user.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Booker user id",
+      "titleRu": "ID пользователя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "desk_booking.occupancy.day",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Daily desk occupancy",
+      "titleRu": "Занятость мест за день",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "desk_booking.no_show.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "No-show rate",
+      "titleRu": "Доля неявок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "desk_booking.checked_in",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Checked in",
+      "titleRu": "Чек-ин выполнен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "desk_booking.sensor.occupied",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sensor occupied",
+      "titleRu": "Датчик: занято",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "desk_booking.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Desk status",
+      "titleRu": "Статус места",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "booked",
+        "checked_in",
+        "blocked",
+        "offline"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "desk_booking.policy",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Booking policy",
+      "titleRu": "Политика бронирования",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hot",
+        "assigned",
+        "neighborhood",
+        "reserved"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

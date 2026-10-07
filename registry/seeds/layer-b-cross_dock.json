@@ -1,0 +1,120 @@
+{
+  "layer": "B12",
+  "name": "layer-b-cross_dock.json",
+  "types": [
+    {
+      "path": "cross_dock.facility.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cross-dock facility id",
+      "titleRu": "ID кросс-дока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cross_dock.flow.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cross-dock flow id",
+      "titleRu": "ID потока кросс-дока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cross_dock.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cross_dock.dwell.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Average dwell",
+      "titleRu": "Средний простой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cross_dock.missort.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Missort rate",
+      "titleRu": "Доля ошибок сортировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cross_dock.doors.active",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active doors",
+      "titleRu": "Активных ворот",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cross_dock.flow.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Flow type",
+      "titleRu": "Тип потока",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flow_through",
+        "merge",
+        "break_bulk",
+        "transload"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cross_dock.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Facility state",
+      "titleRu": "Состояние объекта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receiving",
+        "sorting",
+        "staging",
+        "shipping",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

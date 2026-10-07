@@ -1,0 +1,22 @@
+sid: 27215c99
+path: formwork.state
+aliases:
+  short: formwork.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние опалубки
+  en: Formwork state
+fingerprint: sha256:27215c99482b93fdb0687ad64d73f289b902d527da7203e8767b5241e1c7bb7a
+enumValues:
+  - erect
+  - ready
+  - pour
+  - cure
+  - strip
+  - store

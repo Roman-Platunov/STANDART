@@ -1,0 +1,121 @@
+{
+  "layer": "B12",
+  "name": "layer-b-capa.json",
+  "types": [
+    {
+      "path": "capa.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CAPA id",
+      "titleRu": "ID CAPA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "capa.source.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CAPA source id",
+      "titleRu": "ID источника CAPA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "capa.age.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "CAPA age days",
+      "titleRu": "Возраст CAPA (дни)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "capa.actions.open",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open actions",
+      "titleRu": "Открытых действий",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "capa.effectiveness",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Effectiveness verified",
+      "titleRu": "Эффективность подтверждена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "capa.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CAPA type",
+      "titleRu": "Тип CAPA",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "corrective",
+        "preventive",
+        "both"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "capa.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Source type",
+      "titleRu": "Тип источника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ncr",
+        "complaint",
+        "audit",
+        "deviation",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "capa.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CAPA status",
+      "titleRu": "Статус CAPA",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "investigation",
+        "action",
+        "verify",
+        "closed",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

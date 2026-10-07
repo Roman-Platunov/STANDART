@@ -1,0 +1,20 @@
+sid: 61585f48
+path: kanban.status
+aliases:
+  short: kanban.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус карточки
+  en: Card status
+fingerprint: sha256:61585f481d292ce90a5a1ded749de959b2b6c70d40a82ad3cfdebb2741740d84
+enumValues:
+  - full
+  - in_transit
+  - empty
+  - blocked

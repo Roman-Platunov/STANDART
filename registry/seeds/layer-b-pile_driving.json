@@ -1,0 +1,110 @@
+{
+  "layer": "B12",
+  "name": "layer-b-pile_driving.json",
+  "types": [
+    {
+      "path": "pile_driving.pile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pile id",
+      "titleRu": "ID сваи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pile_driving.rig.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Piling rig id",
+      "titleRu": "ID сваебойной установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pile_driving.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Embedded depth",
+      "titleRu": "Глубина погружения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pile_driving.blows",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Blow count",
+      "titleRu": "Число ударов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pile_driving.energy",
+      "kind": "quantity",
+      "unit": "J",
+      "titleEn": "Hammer energy",
+      "titleRu": "Энергия молота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pile_driving.refusal",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Refusal set",
+      "titleRu": "Отказ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pile_driving.accepted",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pile accepted",
+      "titleRu": "Свая принята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pile_driving.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Piling method",
+      "titleRu": "Метод погружения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "driven",
+        "cfa",
+        "bored",
+        "screw",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "layer": "B12",
+  "name": "layer-b-andon.json",
+  "types": [
+    {
+      "path": "andon.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Andon station id",
+      "titleRu": "ID станции андон",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "andon.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Production line id",
+      "titleRu": "ID производственной линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "andon.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Andon active",
+      "titleRu": "Андон активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "andon.response.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Response time",
+      "titleRu": "Время реакции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "andon.stops.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Stops per hour",
+      "titleRu": "Остановок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "andon.downtime.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Downtime minutes",
+      "titleRu": "Минуты простоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "andon.reason",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Andon reason",
+      "titleRu": "Причина андона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "quality",
+        "parts",
+        "equipment",
+        "safety",
+        "help",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "andon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Andon state",
+      "titleRu": "Состояние андона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "green",
+        "yellow",
+        "red",
+        "cleared"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

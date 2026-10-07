@@ -1,0 +1,22 @@
+sid: 23f9e129
+path: ehs_incident.type
+aliases:
+  short: ehs_incident.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип происшествия
+  en: Incident type
+fingerprint: sha256:23f9e1299e24c9959c25e5f95a1ebbf4ffe6fa9bce2a52dafdc899f02fe0a42d
+enumValues:
+  - injury
+  - illness
+  - env
+  - property
+  - near_miss
+  - other

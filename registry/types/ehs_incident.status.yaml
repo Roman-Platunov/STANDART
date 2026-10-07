@@ -1,0 +1,21 @@
+sid: "72911418"
+path: ehs_incident.status
+aliases:
+  short: ehs_incident.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус происшествия
+  en: Incident status
+fingerprint: sha256:7291141891be2536dac4836b1241251607dd9482c25a66ffe7081e5873b65343
+enumValues:
+  - reported
+  - investigate
+  - corrective
+  - closed
+  - void

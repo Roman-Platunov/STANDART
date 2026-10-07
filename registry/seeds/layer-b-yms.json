@@ -1,0 +1,117 @@
+{
+  "layer": "B12",
+  "name": "layer-b-yms.json",
+  "types": [
+    {
+      "path": "yms.yard.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Yard id",
+      "titleRu": "ID двора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "yms.trailer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Trailer id",
+      "titleRu": "ID прицепа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "yms.spots.free",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Free yard spots",
+      "titleRu": "Свободных мест",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "yms.dwell.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Average trailer dwell",
+      "titleRu": "Средний простой прицепа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "yms.moves.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Yard moves per hour",
+      "titleRu": "Перестановок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "yms.trailer.reefer",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reefer trailer",
+      "titleRu": "Рефрижераторный прицеп",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "yms.trailer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Trailer state",
+      "titleRu": "Состояние прицепа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inbound",
+        "staged",
+        "at_door",
+        "outbound",
+        "empty",
+        "bad_order"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "yms.task",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Yard task",
+      "titleRu": "Задача двора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spot",
+        "pull",
+        "shuttle",
+        "inspect",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

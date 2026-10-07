@@ -1,0 +1,21 @@
+sid: e7843e36
+path: gnss_cors.constellation
+aliases:
+  short: gnss_cors.constellation
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Созвездие
+  en: Constellation
+fingerprint: sha256:e7843e367094c2dc9760ac3ac1e01e290e5ac565510d56e9a38895965002ab6f
+enumValues:
+  - gps
+  - glonass
+  - galileo
+  - beidou
+  - multi

@@ -1,0 +1,23 @@
+sid: 7f1e9c32
+path: tms.mode
+aliases:
+  short: tms.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Вид перевозки
+  en: Transport mode
+fingerprint: sha256:7f1e9c326f9aa870a7d814d54b94bb4b9f25ba6aa4b3fc308a744c500ebb5910
+enumValues:
+  - tl
+  - ltl
+  - parcel
+  - rail
+  - ocean
+  - air
+  - intermodal

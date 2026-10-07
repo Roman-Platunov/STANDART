@@ -1,0 +1,114 @@
+{
+  "layer": "B12",
+  "name": "layer-b-geotech.json",
+  "types": [
+    {
+      "path": "geotech.borehole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Borehole id",
+      "titleRu": "ID скважины изысканий",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "geotech.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Soil sample id",
+      "titleRu": "ID пробы грунта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "geotech.spt.n",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "SPT N-value",
+      "titleRu": "Число ударов SPT",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geotech.cpt.qc",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "CPT tip resistance",
+      "titleRu": "Сопротивление конуса CPT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geotech.water.table_m",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Water table depth",
+      "titleRu": "Глубина УГВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geotech.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soil moisture",
+      "titleRu": "Влажность грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "geotech.log.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Borehole log ref",
+      "titleRu": "Референс колонки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "geotech.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Investigation method",
+      "titleRu": "Метод изысканий",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spt",
+        "cpt",
+        "auger",
+        "core",
+        "geophysics",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

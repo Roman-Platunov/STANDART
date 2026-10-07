@@ -1,0 +1,21 @@
+sid: eac5f159
+path: training_ops.status
+aliases:
+  short: training_ops.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус обучения
+  en: Training status
+fingerprint: sha256:eac5f15965532e42c93c1e509a919de3f7dcb58eb9dd6875bdb871d4c1c1059c
+enumValues:
+  - assigned
+  - in_progress
+  - complete
+  - expired
+  - waived

@@ -1,0 +1,113 @@
+{
+  "layer": "B12",
+  "name": "layer-b-kanban.json",
+  "types": [
+    {
+      "path": "kanban.card.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Kanban card id",
+      "titleRu": "ID карточки канбан",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "kanban.bin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Kanban bin id",
+      "titleRu": "ID ячейки канбан",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "kanban.qty",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Card quantity",
+      "titleRu": "Количество на карточке",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kanban.wip",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "WIP cards",
+      "titleRu": "Карточек в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kanban.lead.time_h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Lead time hours",
+      "titleRu": "Время цикла (ч)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kanban.empty",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bin empty",
+      "titleRu": "Ячейка пуста",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "kanban.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kanban type",
+      "titleRu": "Тип канбан",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "production",
+        "withdrawal",
+        "signal",
+        "supplier"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "kanban.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Card status",
+      "titleRu": "Статус карточки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "full",
+        "in_transit",
+        "empty",
+        "blocked"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

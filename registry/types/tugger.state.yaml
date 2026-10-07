@@ -1,0 +1,22 @@
+sid: 3806afc7
+path: tugger.state
+aliases:
+  short: tugger.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние тягача
+  en: Train state
+fingerprint: sha256:3806afc7928c024162a883af09cf13cc2fc07082e174ed101beea7a9c48ba31c
+enumValues:
+  - depot
+  - run
+  - load
+  - unload
+  - delay
+  - fault

@@ -1,0 +1,22 @@
+sid: 7dd67d87
+path: permit_to_work.status
+aliases:
+  short: permit_to_work.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус наряда
+  en: Permit status
+fingerprint: sha256:7dd67d87068001d08f1910cddab28c1f7f73cbe622962dc9620755d10fe63332
+enumValues:
+  - requested
+  - issued
+  - active
+  - suspended
+  - closed
+  - cancelled

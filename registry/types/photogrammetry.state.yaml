@@ -1,0 +1,21 @@
+sid: 6908fc33
+path: photogrammetry.state
+aliases:
+  short: photogrammetry.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние проекта
+  en: Project state
+fingerprint: sha256:6908fc33cb5643651e52eab68afe8026bd64d5810d4219d6916682035449ac59
+enumValues:
+  - capture
+  - process
+  - qc
+  - deliver
+  - archive

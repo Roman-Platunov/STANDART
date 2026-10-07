@@ -1,0 +1,20 @@
+sid: 5f731ea0
+path: wayfinding.state
+aliases:
+  short: wayfinding.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние киоска
+  en: Kiosk state
+fingerprint: sha256:5f731ea00eca7768022b809372d396c4a4cb5b526e813979092e4f5054f0e3b4
+enumValues:
+  - idle
+  - guiding
+  - arrived
+  - offline

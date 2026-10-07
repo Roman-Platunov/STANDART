@@ -1,0 +1,119 @@
+{
+  "layer": "B12",
+  "name": "layer-b-occupancy_sensor.json",
+  "types": [
+    {
+      "path": "occupancy_sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Occupancy sensor id",
+      "titleRu": "ID датчика присутствия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "occupancy_sensor.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Occupancy zone id",
+      "titleRu": "ID зоны присутствия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "occupancy_sensor.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "People count",
+      "titleRu": "Число людей",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "occupancy_sensor.confidence",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Detection confidence",
+      "titleRu": "Уверенность детекции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "occupancy_sensor.occupied",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Zone occupied",
+      "titleRu": "Зона занята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "occupancy_sensor.motion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Motion detected",
+      "titleRu": "Обнаружено движение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "occupancy_sensor.tech",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sensor technology",
+      "titleRu": "Технология датчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pir",
+        "mmwave",
+        "camera",
+        "co2",
+        "badge",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "occupancy_sensor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sensor state",
+      "titleRu": "Состояние датчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "fault",
+        "offline",
+        "calibrating"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

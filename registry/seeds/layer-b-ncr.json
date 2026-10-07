@@ -1,0 +1,120 @@
+{
+  "layer": "B12",
+  "name": "layer-b-ncr.json",
+  "types": [
+    {
+      "path": "ncr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NCR id",
+      "titleRu": "ID несоответствия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ncr.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Affected lot id",
+      "titleRu": "ID затронутой партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ncr.qty",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Affected quantity",
+      "titleRu": "Затронутое количество",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ncr.age.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "NCR age days",
+      "titleRu": "Возраст NCR (дни)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ncr.containment",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Containment done",
+      "titleRu": "Сдерживание выполнено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ncr.severity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Severity",
+      "titleRu": "Серьёзность",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "minor",
+        "major",
+        "critical"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ncr.disposition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Disposition",
+      "titleRu": "Распоряжение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "use_as_is",
+        "rework",
+        "scrap",
+        "return",
+        "sort"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ncr.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "NCR status",
+      "titleRu": "Статус NCR",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "review",
+        "disposition",
+        "closed",
+        "void"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

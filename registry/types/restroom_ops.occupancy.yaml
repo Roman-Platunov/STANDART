@@ -1,0 +1,20 @@
+sid: 69cbc555
+path: restroom_ops.occupancy
+aliases:
+  short: restroom_ops.occupancy
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Занятость
+  en: Occupancy
+fingerprint: sha256:69cbc555870abb421848df698059854cfdf6be8be50f3a70762a14559c6f1677
+enumValues:
+  - vacant
+  - occupied
+  - full
+  - closed

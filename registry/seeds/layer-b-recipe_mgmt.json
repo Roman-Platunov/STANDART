@@ -1,0 +1,113 @@
+{
+  "layer": "B12",
+  "name": "layer-b-recipe_mgmt.json",
+  "types": [
+    {
+      "path": "recipe_mgmt.recipe.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Recipe id",
+      "titleRu": "ID рецепта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "recipe_mgmt.version.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Recipe version id",
+      "titleRu": "ID версии рецепта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "recipe_mgmt.params",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Parameter count",
+      "titleRu": "Число параметров",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "recipe_mgmt.runs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Production runs",
+      "titleRu": "Производственных прогонов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "recipe_mgmt.approved",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recipe approved",
+      "titleRu": "Рецепт утверждён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "recipe_mgmt.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recipe locked",
+      "titleRu": "Рецепт заблокирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "recipe_mgmt.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Recipe type",
+      "titleRu": "Тип рецепта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "batch",
+        "continuous",
+        "discrete",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "recipe_mgmt.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Recipe status",
+      "titleRu": "Статус рецепта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "draft",
+        "review",
+        "approved",
+        "obsolete",
+        "archived"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

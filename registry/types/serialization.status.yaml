@@ -1,0 +1,21 @@
+sid: 867ff4c3
+path: serialization.status
+aliases:
+  short: serialization.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус серийника
+  en: Serial status
+fingerprint: sha256:867ff4c3ff0df36af07fdec90a2833592b4f3d9e9f978f05b75adb4a91cd2dd9
+enumValues:
+  - commissioned
+  - packed
+  - shipped
+  - decommissioned
+  - destroyed

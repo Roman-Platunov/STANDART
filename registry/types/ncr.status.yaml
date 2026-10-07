@@ -1,0 +1,21 @@
+sid: 900b5630
+path: ncr.status
+aliases:
+  short: ncr.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус NCR
+  en: NCR status
+fingerprint: sha256:900b563088ee464680830e9de4150eb99d910b1fba487752375a70750287a372
+enumValues:
+  - open
+  - review
+  - disposition
+  - closed
+  - void

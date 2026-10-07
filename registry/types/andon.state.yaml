@@ -1,0 +1,20 @@
+sid: e60edc52
+path: andon.state
+aliases:
+  short: andon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние андона
+  en: Andon state
+fingerprint: sha256:e60edc523e6e2f1e951d582ae6e87c20187ed40996a2b21735c9d9275e84d0ef
+enumValues:
+  - green
+  - yellow
+  - red
+  - cleared

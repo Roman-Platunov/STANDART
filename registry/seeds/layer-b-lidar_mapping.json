@@ -1,0 +1,109 @@
+{
+  "layer": "B12",
+  "name": "layer-b-lidar_mapping.json",
+  "types": [
+    {
+      "path": "lidar_mapping.mission.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lidar mission id",
+      "titleRu": "ID миссии лидара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lidar_mapping.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lidar sensor id",
+      "titleRu": "ID лидарного сенсора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lidar_mapping.points",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Point count",
+      "titleRu": "Число точек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lidar_mapping.density",
+      "kind": "quantity",
+      "unit": "/m2",
+      "titleEn": "Point density",
+      "titleRu": "Плотность точек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lidar_mapping.accuracy",
+      "kind": "quantity",
+      "unit": "cm",
+      "titleEn": "Vertical accuracy",
+      "titleRu": "Вертикальная точность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lidar_mapping.coverage.km2",
+      "kind": "quantity",
+      "unit": "km2",
+      "titleEn": "Coverage area",
+      "titleRu": "Площадь покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lidar_mapping.cloud.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Point cloud ref",
+      "titleRu": "Референс облака точек",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lidar_mapping.platform",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Platform",
+      "titleRu": "Платформа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "airborne",
+        "mobile",
+        "uav",
+        "terrestrial",
+        "bathymetric"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

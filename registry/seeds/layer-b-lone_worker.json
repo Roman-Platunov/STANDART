@@ -1,0 +1,119 @@
+{
+  "layer": "B12",
+  "name": "layer-b-lone_worker.json",
+  "types": [
+    {
+      "path": "lone_worker.worker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lone worker id",
+      "titleRu": "ID одиночного работника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lone_worker.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Safety device id",
+      "titleRu": "ID устройства безопасности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lone_worker.checkin.age_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Minutes since check-in",
+      "titleRu": "Минут с чек-ина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lone_worker.battery.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Device battery",
+      "titleRu": "Батарея устройства",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lone_worker.man_down",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Man-down alarm",
+      "titleRu": "Тревога «человек упал»",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lone_worker.duress",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Duress alarm",
+      "titleRu": "Тревога принуждения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lone_worker.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Worker status",
+      "titleRu": "Статус работника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "overdue",
+        "alarm",
+        "offline",
+        "safe"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lone_worker.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Monitoring mode",
+      "titleRu": "Режим мониторинга",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "timed",
+        "motion",
+        "manual",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

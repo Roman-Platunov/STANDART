@@ -1,0 +1,21 @@
+sid: 449930c0
+path: ebr.step.state
+aliases:
+  short: step.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шага
+  en: Step state
+fingerprint: sha256:449930c0fb35c5758b71791d893ae8f63e83b8fef59f05472414c1ba056303e6
+enumValues:
+  - pending
+  - in_progress
+  - complete
+  - exception
+  - skipped

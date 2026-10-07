@@ -1,0 +1,20 @@
+sid: d25ef534
+path: facility_ops.wo.priority
+aliases:
+  short: wo.priority
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Приоритет заявки
+  en: WO priority
+fingerprint: sha256:d25ef534c08cc01dcf41aee9a2275f7c28870c66466549928b67ea71c5a88cb1
+enumValues:
+  - low
+  - medium
+  - high
+  - emergency

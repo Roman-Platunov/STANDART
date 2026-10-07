@@ -1,0 +1,119 @@
+{
+  "layer": "B12",
+  "name": "layer-b-shade_control.json",
+  "types": [
+    {
+      "path": "shade_control.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shade zone id",
+      "titleRu": "ID зоны штор",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shade_control.motor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shade motor id",
+      "titleRu": "ID привода штор",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shade_control.position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Shade position",
+      "titleRu": "Положение штор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shade_control.solar.gain",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "Solar gain",
+      "titleRu": "Солнечная нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shade_control.auto",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Auto mode",
+      "titleRu": "Авторежим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shade_control.glare",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Glare detected",
+      "titleRu": "Блик обнаружен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shade_control.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shade type",
+      "titleRu": "Тип штор",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roller",
+        "venetian",
+        "louver",
+        "curtain",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shade_control.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shade state",
+      "titleRu": "Состояние штор",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "moving",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

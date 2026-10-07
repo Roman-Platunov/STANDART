@@ -1,0 +1,21 @@
+sid: 6211d215
+path: meeting_room.status
+aliases:
+  short: meeting_room.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус комнаты
+  en: Room status
+fingerprint: sha256:6211d215892ba37d62d0fd5588ee87c180d44a3fb433b865516b881e850f935d
+enumValues:
+  - free
+  - booked
+  - in_use
+  - blocked
+  - cleaning

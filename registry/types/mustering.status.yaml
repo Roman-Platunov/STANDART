@@ -1,0 +1,21 @@
+sid: 68ac9702
+path: mustering.status
+aliases:
+  short: mustering.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус сбора
+  en: Muster status
+fingerprint: sha256:68ac9702bd3c85f010170cd95086962d573f184b399ce85cac82124ea29d3991
+enumValues:
+  - activated
+  - in_progress
+  - complete
+  - all_clear
+  - cancelled

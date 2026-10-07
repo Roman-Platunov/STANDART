@@ -1,0 +1,22 @@
+sid: "33947e74"
+path: loading_dock.appointment.state
+aliases:
+  short: appointment.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние слота
+  en: Appointment state
+fingerprint: sha256:33947e744f4f318514ace08d16936fff1e463c67ccdb318fa52347bb4dd9cafc
+enumValues:
+  - booked
+  - arrived
+  - docked
+  - complete
+  - no_show
+  - cancelled

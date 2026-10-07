@@ -1,0 +1,20 @@
+sid: 150ae533
+path: scrap_tracking.status
+aliases:
+  short: scrap_tracking.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус брака
+  en: Scrap status
+fingerprint: sha256:150ae533f8fe4610a72a65fc549e381c09a7fa1f47e5bee1c0bd15d19bee20c9
+enumValues:
+  - logged
+  - reviewed
+  - closed
+  - void

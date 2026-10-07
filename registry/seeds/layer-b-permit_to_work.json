@@ -1,0 +1,118 @@
+{
+  "layer": "B12",
+  "name": "layer-b-permit_to_work.json",
+  "types": [
+    {
+      "path": "permit_to_work.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Permit to work id",
+      "titleRu": "ID наряда-допуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "permit_to_work.area.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Work area id",
+      "titleRu": "ID зоны работ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "permit_to_work.workers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Workers under permit",
+      "titleRu": "Работников по наряду",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "permit_to_work.valid.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Validity hours",
+      "titleRu": "Срок действия (ч)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "permit_to_work.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Permit active",
+      "titleRu": "Наряд действует",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "permit_to_work.gas.test",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas test required",
+      "titleRu": "Требуется газоанализ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "permit_to_work.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Permit type",
+      "titleRu": "Тип наряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hot",
+        "cold",
+        "confined",
+        "electrical",
+        "excavation",
+        "height",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "permit_to_work.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Permit status",
+      "titleRu": "Статус наряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "requested",
+        "issued",
+        "active",
+        "suspended",
+        "closed",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

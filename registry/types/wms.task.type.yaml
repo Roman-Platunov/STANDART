@@ -1,0 +1,21 @@
+sid: e858c067
+path: wms.task.type
+aliases:
+  short: wms.task.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип задачи
+  en: Task type
+fingerprint: sha256:e858c067d50fc028aafe955d96810bea47ef39d5849c22594bc4a2e784ccb495
+enumValues:
+  - pick
+  - putaway
+  - replenish
+  - count
+  - move

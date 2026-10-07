@@ -1,0 +1,21 @@
+sid: c4484202
+path: digital_signage.state
+aliases:
+  short: digital_signage.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние плеера
+  en: Player state
+fingerprint: sha256:c4484202f101d15ac9d82b1be562f2ba139ae3b4c2f116b1e8a2be1ba7a8b719
+enumValues:
+  - playing
+  - idle
+  - updating
+  - offline
+  - fault

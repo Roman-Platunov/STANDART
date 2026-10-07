@@ -1,0 +1,118 @@
+{
+  "layer": "B12",
+  "name": "layer-b-scrap_tracking.json",
+  "types": [
+    {
+      "path": "scrap_tracking.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Scrap lot id",
+      "titleRu": "ID партии брака",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scrap_tracking.reason.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Scrap reason id",
+      "titleRu": "ID причины брака",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scrap_tracking.qty",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Scrap quantity",
+      "titleRu": "Количество брака",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_tracking.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Доля брака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scrap_tracking.cost",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Scrap cost minor units",
+      "titleRu": "Стоимость брака",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_tracking.reworkable",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reworkable",
+      "titleRu": "Подлежит переработке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scrap_tracking.disposition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Disposition",
+      "titleRu": "Распоряжение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scrap",
+        "rework",
+        "use_as_is",
+        "return",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scrap_tracking.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Scrap status",
+      "titleRu": "Статус брака",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "logged",
+        "reviewed",
+        "closed",
+        "void"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

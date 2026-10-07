@@ -1,0 +1,21 @@
+sid: dab8f1b6
+path: cross_dock.state
+aliases:
+  short: cross_dock.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние объекта
+  en: Facility state
+fingerprint: sha256:dab8f1b6ecee685065333a66da47fbe5b09724cd8e9a811f0e3d596244c45e9e
+enumValues:
+  - receiving
+  - sorting
+  - staging
+  - shipping
+  - idle

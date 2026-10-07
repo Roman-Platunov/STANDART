@@ -1,0 +1,21 @@
+sid: 7a60389c
+path: roofing.state
+aliases:
+  short: roofing.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кровли
+  en: Roofing state
+fingerprint: sha256:7a60389cc4947ec522df3609da72e3a655ec4c3fb7aaa712e12e7e034013a00d
+enumValues:
+  - prep
+  - install
+  - flash
+  - inspect
+  - complete

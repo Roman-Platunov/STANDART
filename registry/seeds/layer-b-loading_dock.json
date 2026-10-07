@@ -1,0 +1,122 @@
+{
+  "layer": "B12",
+  "name": "layer-b-loading_dock.json",
+  "types": [
+    {
+      "path": "loading_dock.door.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dock door id",
+      "titleRu": "ID док-ворот",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loading_dock.appointment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dock appointment id",
+      "titleRu": "ID слота дока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loading_dock.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trucks in queue",
+      "titleRu": "Грузовиков в очереди",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loading_dock.dwell.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Truck dwell",
+      "titleRu": "Простой грузовика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loading_dock.utilization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Door utilization",
+      "titleRu": "Загрузка ворот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "loading_dock.leveler.engaged",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leveler engaged",
+      "titleRu": "Уравнитель задействован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "loading_dock.door.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Door state",
+      "titleRu": "Состояние ворот",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "occupied",
+        "loading",
+        "unloading",
+        "blocked",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "loading_dock.appointment.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Appointment state",
+      "titleRu": "Состояние слота",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "booked",
+        "arrived",
+        "docked",
+        "complete",
+        "no_show",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 486edfeb
+path: satcom.state
+aliases:
+  short: satcom.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние терминала
+  en: Terminal state
+fingerprint: sha256:486edfeb7c3ea2d4ae04877793c3ba5dc60c955b41407c4850cf04ea8eebb1ae
+enumValues:
+  - idle
+  - acquiring
+  - online
+  - rain_fade
+  - fault

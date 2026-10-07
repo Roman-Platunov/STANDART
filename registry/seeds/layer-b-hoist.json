@@ -1,0 +1,116 @@
+{
+  "layer": "B12",
+  "name": "layer-b-hoist.json",
+  "types": [
+    {
+      "path": "hoist.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Material hoist id",
+      "titleRu": "ID подъёмника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hoist.load",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Cage load",
+      "titleRu": "Нагрузка кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hoist.floor",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Current floor",
+      "titleRu": "Текущий этаж",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hoist.trips.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Trips per hour",
+      "titleRu": "Рейсов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hoist.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind speed",
+      "titleRu": "Скорость ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hoist.gate.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Landing gate closed",
+      "titleRu": "Дверь площадки закрыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hoist.direction",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Direction",
+      "titleRu": "Направление",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "down",
+        "stopped"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hoist.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hoist state",
+      "titleRu": "Состояние подъёмника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "run",
+        "overload",
+        "fault",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

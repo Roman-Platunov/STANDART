@@ -1,0 +1,110 @@
+{
+  "layer": "B12",
+  "name": "layer-b-spc.json",
+  "types": [
+    {
+      "path": "spc.chart.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SPC chart id",
+      "titleRu": "ID карты СПК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spc.characteristic.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Characteristic id",
+      "titleRu": "ID характеристики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spc.xbar",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "X-bar",
+      "titleRu": "X-среднее",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spc.r",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Range R",
+      "titleRu": "Размах R",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spc.cpk",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cpk",
+      "titleRu": "Cpk",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spc.ppk",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ppk",
+      "titleRu": "Ppk",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spc.control.oos",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Out of control",
+      "titleRu": "Вне управления",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spc.rule",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rule set",
+      "titleRu": "Набор правил",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "none",
+        "western_electric",
+        "nelson",
+        "custom"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

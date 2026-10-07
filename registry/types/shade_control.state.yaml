@@ -1,0 +1,20 @@
+sid: 620e337c
+path: shade_control.state
+aliases:
+  short: shade_control.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние штор
+  en: Shade state
+fingerprint: sha256:620e337cbc50693bdee3c66f2bc4a642a1a1015efb07f57a5407500ed1692179
+enumValues:
+  - open
+  - closed
+  - moving
+  - fault

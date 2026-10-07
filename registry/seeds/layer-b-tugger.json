@@ -1,0 +1,119 @@
+{
+  "layer": "B12",
+  "name": "layer-b-tugger.json",
+  "types": [
+    {
+      "path": "tugger.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tugger train id",
+      "titleRu": "ID тягача с тележками",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tugger.route.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Milk-run route id",
+      "titleRu": "ID маршрута молоковозки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tugger.stops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stops on route",
+      "titleRu": "Остановок на маршруте",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tugger.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Route cycle time",
+      "titleRu": "Время цикла маршрута",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tugger.utilization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Capacity utilization",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tugger.carts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Carts attached",
+      "titleRu": "Прицепленных тележек",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tugger.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Train state",
+      "titleRu": "Состояние тягача",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "depot",
+        "run",
+        "load",
+        "unload",
+        "delay",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tugger.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dispatch mode",
+      "titleRu": "Режим диспетчеризации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fixed",
+        "demand",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

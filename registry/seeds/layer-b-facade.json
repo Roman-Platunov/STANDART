@@ -1,0 +1,118 @@
+{
+  "layer": "B12",
+  "name": "layer-b-facade.json",
+  "types": [
+    {
+      "path": "facade.panel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Facade panel id",
+      "titleRu": "ID фасадной панели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "facade.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Facade zone id",
+      "titleRu": "ID зоны фасада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "facade.deflection",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Panel deflection",
+      "titleRu": "Прогиб панели",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "facade.leak.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Water test pressure",
+      "titleRu": "Давление испытания на воду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "facade.u_value",
+      "kind": "quantity",
+      "unit": "W/m2/K",
+      "titleEn": "U-value",
+      "titleRu": "Коэффициент теплопередачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "facade.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Water ingress",
+      "titleRu": "Проникновение воды",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "facade.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Facade type",
+      "titleRu": "Тип фасада",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "curtain",
+        "rainscreen",
+        "brick",
+        "metal",
+        "glass",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "facade.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Facade state",
+      "titleRu": "Состояние фасада",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "install",
+        "seal",
+        "test",
+        "complete",
+        "defect"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

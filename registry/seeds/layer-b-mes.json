@@ -1,0 +1,134 @@
+{
+  "layer": "B12",
+  "name": "layer-b-mes.json",
+  "types": [
+    {
+      "path": "mes.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MES production order id",
+      "titleRu": "ID производственного заказа MES",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mes.operation.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MES operation id",
+      "titleRu": "ID операции MES",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mes.oee",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "OEE",
+      "titleRu": "OEE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mes.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Availability",
+      "titleRu": "Доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mes.performance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Performance",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mes.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Quality",
+      "titleRu": "Качество",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mes.order.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Order state",
+      "titleRu": "Состояние заказа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "released",
+        "running",
+        "held",
+        "complete",
+        "scrap"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mes.operation.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Operation state",
+      "titleRu": "Состояние операции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "setup",
+        "run",
+        "down",
+        "complete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

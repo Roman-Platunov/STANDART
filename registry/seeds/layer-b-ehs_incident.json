@@ -1,0 +1,116 @@
+{
+  "layer": "B12",
+  "name": "layer-b-ehs_incident.json",
+  "types": [
+    {
+      "path": "ehs_incident.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EHS incident id",
+      "titleRu": "ID происшествия ОТ и ПБ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ehs_incident.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Incident site id",
+      "titleRu": "ID площадки происшествия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ehs_incident.severity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Severity score",
+      "titleRu": "Оценка тяжести",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ehs_incident.days.away",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days away",
+      "titleRu": "Дней нетрудоспособности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ehs_incident.recordable",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recordable incident",
+      "titleRu": "Учётное происшествие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ehs_incident.near_miss",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Near miss",
+      "titleRu": "Почти происшествие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ehs_incident.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Incident type",
+      "titleRu": "Тип происшествия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "injury",
+        "illness",
+        "env",
+        "property",
+        "near_miss",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ehs_incident.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Incident status",
+      "titleRu": "Статус происшествия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "reported",
+        "investigate",
+        "corrective",
+        "closed",
+        "void"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

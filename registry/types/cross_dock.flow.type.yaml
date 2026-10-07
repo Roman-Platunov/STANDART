@@ -1,0 +1,20 @@
+sid: 328ac8e1
+path: cross_dock.flow.type
+aliases:
+  short: flow.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип потока
+  en: Flow type
+fingerprint: sha256:328ac8e190c7da461404749504577ce10850f4b3f6461f9d07c8893636436e8d
+enumValues:
+  - flow_through
+  - merge
+  - break_bulk
+  - transload

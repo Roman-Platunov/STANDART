@@ -1,0 +1,21 @@
+sid: e91bcb1b
+path: punch_list.status
+aliases:
+  short: punch_list.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус пункта
+  en: Item status
+fingerprint: sha256:e91bcb1b23e96b0f1a599d0e566bc1545d634a1d920109661eef3aa23f139eb2
+enumValues:
+  - open
+  - wip
+  - ready
+  - closed
+  - void

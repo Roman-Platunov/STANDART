@@ -1,0 +1,20 @@
+sid: 67611c57
+path: gnss_cors.state
+aliases:
+  short: gnss_cors.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:67611c5724310f291dfa680b3eb170a8d0ea992b8eea8b05e26032251e8e70a0
+enumValues:
+  - online
+  - degraded
+  - offline
+  - maintenance

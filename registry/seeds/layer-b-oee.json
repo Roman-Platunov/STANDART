@@ -1,0 +1,129 @@
+{
+  "layer": "B12",
+  "name": "layer-b-oee.json",
+  "types": [
+    {
+      "path": "oee.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OEE asset id",
+      "titleRu": "ID актива OEE",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oee.value",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "OEE",
+      "titleRu": "OEE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oee.factor.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Availability",
+      "titleRu": "Доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oee.factor.performance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Performance",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oee.factor.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Quality",
+      "titleRu": "Качество",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oee.mtbf.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "MTBF",
+      "titleRu": "MTBF",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oee.mttr.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "MTTR",
+      "titleRu": "MTTR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oee.period",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reporting period",
+      "titleRu": "Период отчёта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "shift",
+        "day",
+        "week",
+        "month"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

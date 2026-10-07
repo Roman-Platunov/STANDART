@@ -1,0 +1,22 @@
+sid: 1a56dc05
+path: tower_crane.state
+aliases:
+  short: tower_crane.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние крана
+  en: Crane state
+fingerprint: sha256:1a56dc052711a5192eab6bed3174b4a267a8e124cbb29303c3667a37a76b333b
+enumValues:
+  - idle
+  - slewing
+  - hoisting
+  - traveling
+  - outofservice
+  - fault

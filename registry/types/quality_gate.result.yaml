@@ -1,0 +1,20 @@
+sid: ff029645
+path: quality_gate.result
+aliases:
+  short: quality_gate.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат ворот
+  en: Gate result
+fingerprint: sha256:ff029645368e630798f0a6336a0b187094721fd6f126d79058b5571b4c50d4d7
+enumValues:
+  - pass
+  - fail
+  - conditional
+  - hold

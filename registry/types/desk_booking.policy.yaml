@@ -1,0 +1,20 @@
+sid: 12c74722
+path: desk_booking.policy
+aliases:
+  short: desk_booking.policy
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Политика бронирования
+  en: Booking policy
+fingerprint: sha256:12c74722fa2f8453f1cf22eff1ad8203b8bcbc4d3b7c7c02d4310f27f8cea049
+enumValues:
+  - hot
+  - assigned
+  - neighborhood
+  - reserved

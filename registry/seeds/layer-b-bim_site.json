@@ -1,0 +1,111 @@
+{
+  "layer": "B12",
+  "name": "layer-b-bim_site.json",
+  "types": [
+    {
+      "path": "bim_site.model.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BIM model id",
+      "titleRu": "ID BIM-модели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bim_site.element.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BIM element id",
+      "titleRu": "ID элемента BIM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bim_site.lod",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Level of detail",
+      "titleRu": "Уровень детализации",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bim_site.clash.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Clash count",
+      "titleRu": "Число коллизий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bim_site.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Construction progress",
+      "titleRu": "Прогресс строительства",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bim_site.federated",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Federated model",
+      "titleRu": "Федеративная модель",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bim_site.ifc.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "IFC model ref",
+      "titleRu": "Референс IFC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bim_site.discipline",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Discipline",
+      "titleRu": "Дисциплина",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "arch",
+        "struct",
+        "mep",
+        "civil",
+        "combined"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

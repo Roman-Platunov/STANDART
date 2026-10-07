@@ -1,0 +1,22 @@
+sid: 9d67269a
+path: capa.status
+aliases:
+  short: capa.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус CAPA
+  en: CAPA status
+fingerprint: sha256:9d67269aa261182787efea80ea201a385691fa4ed628282ba6315cdb38ab1631
+enumValues:
+  - open
+  - investigation
+  - action
+  - verify
+  - closed
+  - cancelled

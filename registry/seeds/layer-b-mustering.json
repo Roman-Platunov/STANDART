@@ -1,0 +1,114 @@
+{
+  "layer": "B12",
+  "name": "layer-b-mustering.json",
+  "types": [
+    {
+      "path": "mustering.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Muster zone id",
+      "titleRu": "ID пункта сбора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mustering.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Muster event id",
+      "titleRu": "ID сбора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mustering.expected",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Expected headcount",
+      "titleRu": "Ожидаемая численность",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mustering.accounted",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Accounted headcount",
+      "titleRu": "Учтённых",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mustering.missing",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Missing headcount",
+      "titleRu": "Недостающих",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mustering.complete",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Muster complete",
+      "titleRu": "Сбор завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mustering.trigger",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Muster trigger",
+      "titleRu": "Причина сбора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "drill",
+        "fire",
+        "gas",
+        "security",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mustering.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Muster status",
+      "titleRu": "Статус сбора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "activated",
+        "in_progress",
+        "complete",
+        "all_clear",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

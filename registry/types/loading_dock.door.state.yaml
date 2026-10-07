@@ -1,0 +1,22 @@
+sid: 865a4e92
+path: loading_dock.door.state
+aliases:
+  short: loading_dock.door.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ворот
+  en: Door state
+fingerprint: sha256:865a4e927ed4b9b76cf77756be32e8d39fcc168eef8d4e46cb493d2eaea1c16d
+enumValues:
+  - free
+  - occupied
+  - loading
+  - unloading
+  - blocked
+  - maintenance

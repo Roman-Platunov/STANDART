@@ -1,0 +1,118 @@
+{
+  "layer": "B12",
+  "name": "layer-b-formwork.json",
+  "types": [
+    {
+      "path": "formwork.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Formwork system id",
+      "titleRu": "ID опалубки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "formwork.pour.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Related pour id",
+      "titleRu": "ID связанного бетонирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "formwork.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Form pressure",
+      "titleRu": "Давление на опалубку",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "formwork.area",
+      "kind": "quantity",
+      "unit": "m2",
+      "titleEn": "Form contact area",
+      "titleRu": "Площадь контакта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "formwork.reuse.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reuse cycles",
+      "titleRu": "Циклы повторного использования",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "formwork.stripped",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Forms stripped",
+      "titleRu": "Опалубка снята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "formwork.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Formwork type",
+      "titleRu": "Тип опалубки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "timber",
+        "steel",
+        "aluminum",
+        "plastic",
+        "tunnel",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "formwork.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Formwork state",
+      "titleRu": "Состояние опалубки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "erect",
+        "ready",
+        "pour",
+        "cure",
+        "strip",
+        "store"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 77ee3fd2
+path: audit_ops.status
+aliases:
+  short: audit_ops.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус аудита
+  en: Audit status
+fingerprint: sha256:77ee3fd2c8fd12adc57a9eb0168f157731fcdb94e0618e27b409c4029b011169
+enumValues:
+  - planned
+  - in_progress
+  - report
+  - follow_up
+  - closed

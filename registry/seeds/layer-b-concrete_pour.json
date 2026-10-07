@@ -1,0 +1,112 @@
+{
+  "layer": "B12",
+  "name": "layer-b-concrete_pour.json",
+  "types": [
+    {
+      "path": "concrete_pour.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Concrete pour id",
+      "titleRu": "ID бетонирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "concrete_pour.truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mixer truck id",
+      "titleRu": "ID автобетоносмесителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "concrete_pour.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Pour volume",
+      "titleRu": "Объём укладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "concrete_pour.slump",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Slump",
+      "titleRu": "Осадка конуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "concrete_pour.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Concrete temperature",
+      "titleRu": "Температура бетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "concrete_pour.maturity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Maturity index",
+      "titleRu": "Индекс зрелости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "concrete_pour.hold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pour on hold",
+      "titleRu": "Укладка на паузе",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "concrete_pour.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pour state",
+      "titleRu": "Состояние укладки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "batch",
+        "transit",
+        "place",
+        "cure",
+        "test",
+        "reject"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

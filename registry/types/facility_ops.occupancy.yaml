@@ -1,0 +1,18 @@
+sid: ea7301c3
+path: facility_ops.occupancy
+aliases:
+  short: facility_ops.occupancy
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заполненность здания
+  en: Building occupancy
+fingerprint: sha256:ea7301c31119dcf083f301897a78a5890cd49a3e02a0200604370f1ed102826c
+range:
+  min: 0
+  max: 100

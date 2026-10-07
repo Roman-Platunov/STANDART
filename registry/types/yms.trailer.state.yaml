@@ -1,0 +1,22 @@
+sid: "68106256"
+path: yms.trailer.state
+aliases:
+  short: trailer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние прицепа
+  en: Trailer state
+fingerprint: sha256:68106256595b84424e292c1b9cdb0404a74b04d078892cd62884b00eff6c2b73
+enumValues:
+  - inbound
+  - staged
+  - at_door
+  - outbound
+  - empty
+  - bad_order

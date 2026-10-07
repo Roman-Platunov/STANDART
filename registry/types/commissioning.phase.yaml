@@ -1,0 +1,22 @@
+sid: f5e98dae
+path: commissioning.phase
+aliases:
+  short: commissioning.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза пусконаладки
+  en: Cx phase
+fingerprint: sha256:f5e98dae545e361254d291c972553622fe58a3bfa1f24b1c2345565e723ae9aa
+enumValues:
+  - design
+  - install
+  - prefunc
+  - func
+  - seasonal
+  - complete

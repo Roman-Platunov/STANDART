@@ -1,0 +1,22 @@
+sid: e7f97a6d
+path: tms.shipment.state
+aliases:
+  short: shipment.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние отправления
+  en: Shipment state
+fingerprint: sha256:e7f97a6d49df7008629158e33b60e6785d6a3daddc3a00840ba7587fba6a33fe
+enumValues:
+  - planned
+  - tendered
+  - in_transit
+  - delivered
+  - exception
+  - cancelled

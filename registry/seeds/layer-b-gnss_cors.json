@@ -1,0 +1,121 @@
+{
+  "layer": "B12",
+  "name": "layer-b-gnss_cors.json",
+  "types": [
+    {
+      "path": "gnss_cors.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CORS station id",
+      "titleRu": "ID станции CORS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gnss_cors.satellites",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tracked satellites",
+      "titleRu": "Сопровождаемых спутников",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gnss_cors.pdop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "PDOP",
+      "titleRu": "PDOP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gnss_cors.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Correction latency",
+      "titleRu": "Задержка поправок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gnss_cors.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Service availability",
+      "titleRu": "Доступность сервиса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gnss_cors.integrity.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Integrity OK",
+      "titleRu": "Целостность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gnss_cors.constellation",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Constellation",
+      "titleRu": "Созвездие",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gps",
+        "glonass",
+        "galileo",
+        "beidou",
+        "multi"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gnss_cors.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "degraded",
+        "offline",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

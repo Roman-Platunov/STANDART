@@ -1,0 +1,22 @@
+sid: c61ad10f
+path: concrete_pour.state
+aliases:
+  short: concrete_pour.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние укладки
+  en: Pour state
+fingerprint: sha256:c61ad10f48e2c31d60ef1230e9e708148a388746b2ab85b93b7f817040c84c02
+enumValues:
+  - batch
+  - transit
+  - place
+  - cure
+  - test
+  - reject

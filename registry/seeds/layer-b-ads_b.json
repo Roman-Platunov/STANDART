@@ -1,0 +1,112 @@
+{
+  "layer": "B12",
+  "name": "layer-b-ads_b.json",
+  "types": [
+    {
+      "path": "ads_b.receiver.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ADS-B receiver id",
+      "titleRu": "ID приёмника ADS-B",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ads_b.aircraft.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aircraft ICAO id",
+      "titleRu": "ICAO код ВС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ads_b.altitude",
+      "kind": "quantity",
+      "unit": "ft",
+      "titleEn": "Pressure altitude",
+      "titleRu": "Барометрическая высота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ads_b.speed",
+      "kind": "quantity",
+      "unit": "kn",
+      "titleEn": "Ground speed",
+      "titleRu": "Путевая скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ads_b.track",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Track angle",
+      "titleRu": "Путевой угол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ads_b.messages.s",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Message rate",
+      "titleRu": "Скорость сообщений",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ads_b.emergency",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency squawk",
+      "titleRu": "Аварийный код",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ads_b.category",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Emitter category",
+      "titleRu": "Категория излучателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "light",
+        "small",
+        "large",
+        "heavy",
+        "rotor",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

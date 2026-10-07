@@ -1,0 +1,121 @@
+{
+  "layer": "B12",
+  "name": "layer-b-wms.json",
+  "types": [
+    {
+      "path": "wms.warehouse.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WMS warehouse id",
+      "titleRu": "ID склада WMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wms.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WMS order id",
+      "titleRu": "ID заказа WMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wms.lines.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Lines per hour",
+      "titleRu": "Строк в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wms.accuracy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inventory accuracy",
+      "titleRu": "Точность запасов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wms.backorders",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Backorder lines",
+      "titleRu": "Строк бэкордера",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wms.wave.size",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wave size",
+      "titleRu": "Размер волны",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wms.order.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Order state",
+      "titleRu": "Состояние заказа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "released",
+        "allocated",
+        "picked",
+        "packed",
+        "shipped",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wms.task.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Task type",
+      "titleRu": "Тип задачи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pick",
+        "putaway",
+        "replenish",
+        "count",
+        "move"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

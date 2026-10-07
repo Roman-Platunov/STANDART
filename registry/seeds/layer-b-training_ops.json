@@ -1,0 +1,125 @@
+{
+  "layer": "B12",
+  "name": "layer-b-training_ops.json",
+  "types": [
+    {
+      "path": "training_ops.course.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Training course id",
+      "titleRu": "ID курса обучения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "training_ops.learner.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Learner id",
+      "titleRu": "ID обучаемого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "training_ops.completion",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Completion",
+      "titleRu": "Завершение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "training_ops.score",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Assessment score",
+      "titleRu": "Оценка теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "training_ops.due.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days until due",
+      "titleRu": "Дней до срока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "training_ops.certified",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Certified",
+      "titleRu": "Сертифицирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "training_ops.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Training method",
+      "titleRu": "Метод обучения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "classroom",
+        "elearning",
+        "ojt",
+        "simulation",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "training_ops.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Training status",
+      "titleRu": "Статус обучения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assigned",
+        "in_progress",
+        "complete",
+        "expired",
+        "waived"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

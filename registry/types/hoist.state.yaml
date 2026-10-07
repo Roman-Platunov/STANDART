@@ -1,0 +1,21 @@
+sid: fb0aaed8
+path: hoist.state
+aliases:
+  short: hoist.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние подъёмника
+  en: Hoist state
+fingerprint: sha256:fb0aaed8bbb382c8b1be048cbd68d570c284abb640acb0acb7789c90401fdc3e
+enumValues:
+  - idle
+  - run
+  - overload
+  - fault
+  - maintenance

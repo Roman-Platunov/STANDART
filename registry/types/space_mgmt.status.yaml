@@ -1,0 +1,20 @@
+sid: 94a817a4
+path: space_mgmt.status
+aliases:
+  short: space_mgmt.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус помещения
+  en: Space status
+fingerprint: sha256:94a817a400c1d001f27af95de4ea2736e96802cee94cded9f1c8b5607f91a8a3
+enumValues:
+  - occupied
+  - vacant
+  - fitout
+  - closed

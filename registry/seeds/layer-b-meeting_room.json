@@ -1,0 +1,114 @@
+{
+  "layer": "B12",
+  "name": "layer-b-meeting_room.json",
+  "types": [
+    {
+      "path": "meeting_room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Meeting room id",
+      "titleRu": "ID переговорной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meeting_room.booking.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Room booking id",
+      "titleRu": "ID бронирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meeting_room.capacity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Room capacity",
+      "titleRu": "Вместимость",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meeting_room.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Current occupants",
+      "titleRu": "Текущих участников",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meeting_room.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Room CO2",
+      "titleRu": "CO₂ в комнате",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meeting_room.in_use",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Room in use",
+      "titleRu": "Комната занята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meeting_room.av.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AV state",
+      "titleRu": "Состояние AV",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "fault",
+        "offline",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meeting_room.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Room status",
+      "titleRu": "Статус комнаты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "booked",
+        "in_use",
+        "blocked",
+        "cleaning"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

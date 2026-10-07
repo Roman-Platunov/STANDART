@@ -1,0 +1,124 @@
+{
+  "layer": "B12",
+  "name": "layer-b-commissioning.json",
+  "types": [
+    {
+      "path": "commissioning.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Commissioned system id",
+      "titleRu": "ID вводимой системы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "commissioning.test.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Commissioning test id",
+      "titleRu": "ID приёмочного испытания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "commissioning.tests.pass",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tests passed",
+      "titleRu": "Пройденных испытаний",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "commissioning.open.issues",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open issues",
+      "titleRu": "Открытых замечаний",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "commissioning.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Commissioning progress",
+      "titleRu": "Прогресс пусконаладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "commissioning.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready for occupancy",
+      "titleRu": "Готово к эксплуатации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "commissioning.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cx phase",
+      "titleRu": "Фаза пусконаладки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "design",
+        "install",
+        "prefunc",
+        "func",
+        "seasonal",
+        "complete"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "commissioning.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Test result",
+      "titleRu": "Результат испытания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "deferred",
+        "na"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

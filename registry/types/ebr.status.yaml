@@ -1,0 +1,21 @@
+sid: 17754bcd
+path: ebr.status
+aliases:
+  short: ebr.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус EBR
+  en: EBR status
+fingerprint: sha256:17754bcd98d6ebaacebcc0f216bd7eaf9141f9068106be39ebf4c527ac20adb8
+enumValues:
+  - open
+  - review
+  - approved
+  - rejected
+  - archived

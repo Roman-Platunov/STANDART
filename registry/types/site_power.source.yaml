@@ -1,0 +1,20 @@
+sid: dd5add8e
+path: site_power.source
+aliases:
+  short: site_power.source
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Источник питания
+  en: Power source
+fingerprint: sha256:dd5add8e6ef2e409bec1c5d0fcd58a93e13844b2468710499e690db891a60268
+enumValues:
+  - grid
+  - genset
+  - hybrid
+  - battery

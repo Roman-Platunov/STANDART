@@ -1,0 +1,21 @@
+sid: 31f1bf87
+path: facility_ops.wo.status
+aliases:
+  short: facility_ops.wo.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус заявки
+  en: WO status
+fingerprint: sha256:31f1bf87c83a8cc2963e83f77db388afcec77969731c4c9f59a5c78e128aeb6c
+enumValues:
+  - new
+  - assigned
+  - wip
+  - done
+  - cancelled

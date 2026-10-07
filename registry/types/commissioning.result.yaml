@@ -1,0 +1,20 @@
+sid: f6d00fb0
+path: commissioning.result
+aliases:
+  short: commissioning.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат испытания
+  en: Test result
+fingerprint: sha256:f6d00fb0eac8dfdde398467f8986a3cf36a55ceb63b6df9bed5e9c44a578ec36
+enumValues:
+  - pass
+  - fail
+  - deferred
+  - na

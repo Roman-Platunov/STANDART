@@ -1,0 +1,21 @@
+sid: 4e6e1e49
+path: facade.state
+aliases:
+  short: facade.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фасада
+  en: Facade state
+fingerprint: sha256:4e6e1e49591b384c40f15f6fc83ebd4d8c1e48d67a5ef424977e3d4923cb3870
+enumValues:
+  - install
+  - seal
+  - test
+  - complete
+  - defect

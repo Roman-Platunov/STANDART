@@ -1,0 +1,22 @@
+sid: ef424778
+path: changeover.state
+aliases:
+  short: changeover.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние переналадки
+  en: Changeover state
+fingerprint: sha256:ef4247784d4fd9827978015e54da820d4fbc7beec8fb6f9e559bb21065690c6d
+enumValues:
+  - planned
+  - prep
+  - execute
+  - verify
+  - complete
+  - aborted

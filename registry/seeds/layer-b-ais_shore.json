@@ -1,0 +1,110 @@
+{
+  "layer": "B12",
+  "name": "layer-b-ais_shore.json",
+  "types": [
+    {
+      "path": "ais_shore.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AIS shore station id",
+      "titleRu": "ID береговой станции АИС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ais_shore.vessel.mmsi",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vessel MMSI",
+      "titleRu": "MMSI судна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ais_shore.range.nm",
+      "kind": "quantity",
+      "unit": "NM",
+      "titleEn": "Coverage range",
+      "titleRu": "Дальность покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ais_shore.targets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tracked targets",
+      "titleRu": "Сопровождаемых целей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ais_shore.sog",
+      "kind": "quantity",
+      "unit": "kn",
+      "titleEn": "Speed over ground",
+      "titleRu": "Скорость относительно грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ais_shore.cog",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Course over ground",
+      "titleRu": "Курс относительно грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ais_shore.aton",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "AtoN message",
+      "titleRu": "Сообщение СНО",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ais_shore.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AIS class",
+      "titleRu": "Класс АИС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "a",
+        "b",
+        "base",
+        "aton",
+        "sar"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

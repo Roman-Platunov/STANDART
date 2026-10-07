@@ -1,0 +1,120 @@
+{
+  "layer": "B12",
+  "name": "layer-b-lighting_control.json",
+  "types": [
+    {
+      "path": "lighting_control.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lighting zone id",
+      "titleRu": "ID зоны освещения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lighting_control.fixture.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Controllable fixture id",
+      "titleRu": "ID управляемого светильника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lighting_control.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Light level",
+      "titleRu": "Уровень света",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lighting_control.lux",
+      "kind": "quantity",
+      "unit": "lx",
+      "titleEn": "Measured lux",
+      "titleRu": "Измеренная освещённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lighting_control.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Zone lighting power",
+      "titleRu": "Мощность освещения зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lighting_control.daylight",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Daylight harvesting",
+      "titleRu": "Использование дневного света",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lighting_control.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Control mode",
+      "titleRu": "Режим управления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "manual",
+        "schedule",
+        "occupancy",
+        "daylight",
+        "scene"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lighting_control.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "off",
+        "dimmed",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

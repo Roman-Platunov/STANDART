@@ -1,0 +1,112 @@
+{
+  "layer": "B12",
+  "name": "layer-b-satcom.json",
+  "types": [
+    {
+      "path": "satcom.terminal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Satcom terminal id",
+      "titleRu": "ID спутникового терминала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "satcom.beam.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Beam id",
+      "titleRu": "ID луча",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "satcom.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Link SNR",
+      "titleRu": "SNR канала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "satcom.throughput",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Throughput",
+      "titleRu": "Пропускная способность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "satcom.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Round-trip latency",
+      "titleRu": "Задержка RTT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "satcom.antenna.az",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Antenna azimuth",
+      "titleRu": "Азимут антенны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "satcom.antenna.el",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Antenna elevation",
+      "titleRu": "Угол места антенны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "satcom.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Terminal state",
+      "titleRu": "Состояние терминала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "acquiring",
+        "online",
+        "rain_fade",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

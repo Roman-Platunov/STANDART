@@ -1,0 +1,120 @@
+{
+  "layer": "B12",
+  "name": "layer-b-audit_ops.json",
+  "types": [
+    {
+      "path": "audit_ops.audit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Audit id",
+      "titleRu": "ID аудита",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "audit_ops.findings.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Finding id",
+      "titleRu": "ID находки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "audit_ops.findings.open",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open findings",
+      "titleRu": "Открытых находок",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "audit_ops.score",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Audit score",
+      "titleRu": "Оценка аудита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "audit_ops.duration.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Audit duration",
+      "titleRu": "Длительность аудита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "audit_ops.critical",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Critical finding",
+      "titleRu": "Критическая находка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "audit_ops.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Audit type",
+      "titleRu": "Тип аудита",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "internal",
+        "supplier",
+        "regulatory",
+        "certification",
+        "customer"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "audit_ops.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Audit status",
+      "titleRu": "Статус аудита",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "planned",
+        "in_progress",
+        "report",
+        "follow_up",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

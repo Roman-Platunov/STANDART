@@ -1,0 +1,20 @@
+sid: b8ec7651
+path: meeting_room.av.state
+aliases:
+  short: av.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние AV
+  en: AV state
+fingerprint: sha256:b8ec76515e677bb41683fb6b9bad14e109eaebce966db4d1b45949ba838103ef
+enumValues:
+  - ok
+  - fault
+  - offline
+  - unknown

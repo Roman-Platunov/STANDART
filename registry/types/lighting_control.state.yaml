@@ -1,0 +1,20 @@
+sid: 34e4bd70
+path: lighting_control.state
+aliases:
+  short: lighting_control.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зоны
+  en: Zone state
+fingerprint: sha256:34e4bd7049178c52cca8d4b4797623f4ce7d974a2dd728d94d20c3adc2415df1
+enumValues:
+  - on
+  - off
+  - dimmed
+  - fault

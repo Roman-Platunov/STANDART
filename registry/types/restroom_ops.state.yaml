@@ -1,0 +1,20 @@
+sid: b7d04bbc
+path: restroom_ops.state
+aliases:
+  short: restroom_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние санузла
+  en: Restroom state
+fingerprint: sha256:b7d04bbc76d80ef2e4251620fd797f92207feadadb9addad945e172cc4790816
+enumValues:
+  - ok
+  - needs_service
+  - closed
+  - flood

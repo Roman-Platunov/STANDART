@@ -1,0 +1,116 @@
+{
+  "layer": "B12",
+  "name": "layer-b-punch_list.json",
+  "types": [
+    {
+      "path": "punch_list.item.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Punch item id",
+      "titleRu": "ID пункта дефектовки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "punch_list.area.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Punch area id",
+      "titleRu": "ID зоны дефектовки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "punch_list.open",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open punch items",
+      "titleRu": "Открытых пунктов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "punch_list.overdue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Overdue items",
+      "titleRu": "Просроченных пунктов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "punch_list.age.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Item age days",
+      "titleRu": "Возраст пункта (дни)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "punch_list.critical",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Critical punch",
+      "titleRu": "Критический пункт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "punch_list.discipline",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Discipline",
+      "titleRu": "Дисциплина",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "arch",
+        "struct",
+        "mep",
+        "civil",
+        "fire",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "punch_list.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Item status",
+      "titleRu": "Статус пункта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "wip",
+        "ready",
+        "closed",
+        "void"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
