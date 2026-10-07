@@ -1,0 +1,115 @@
+{
+  "layer": "B15",
+  "name": "layer-b-trolleybus.json",
+  "types": [
+    {
+      "path": "trolleybus.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Trolleybus id",
+      "titleRu": "ID троллейбуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "trolleybus.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trolleybus.line.v",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Overhead voltage",
+      "titleRu": "Напряжение контактной сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trolleybus.aux.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Onboard battery SOC",
+      "titleRu": "SOC бортовой батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "trolleybus.pax",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passengers",
+      "titleRu": "Пассажиры",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trolleybus.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Traction power",
+      "titleRu": "Тяговая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trolleybus.dewire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dewired",
+      "titleRu": "Сход штанг",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "trolleybus.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Power mode",
+      "titleRu": "Режим питания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wire",
+        "battery",
+        "depot",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

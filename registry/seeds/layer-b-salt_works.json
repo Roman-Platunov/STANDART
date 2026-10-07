@@ -1,0 +1,117 @@
+{
+  "layer": "B15",
+  "name": "layer-b-salt_works.json",
+  "types": [
+    {
+      "path": "salt_works.pond.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Salt pond id",
+      "titleRu": "ID садки соли",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "salt_works.sg",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Brine SG",
+      "titleRu": "Плотность рассола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "salt_works.level",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Pond level",
+      "titleRu": "Уровень садки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "salt_works.nacl",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "NaCl",
+      "titleRu": "NaCl",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "salt_works.harvest",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Harvest rate",
+      "titleRu": "Съём соли",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "salt_works.evap",
+      "kind": "quantity",
+      "unit": "mm/d",
+      "titleEn": "Evaporation",
+      "titleRu": "Испарение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "salt_works.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Harvest ready",
+      "titleRu": "Готово к съёму",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "salt_works.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Стадия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "intake",
+        "evap",
+        "crystallize",
+        "harvest",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

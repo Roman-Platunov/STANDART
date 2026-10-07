@@ -1,0 +1,21 @@
+sid: 8712b81f
+path: burn_in.state
+aliases:
+  short: burn_in.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние камеры
+  en: Chamber state
+fingerprint: sha256:8712b81fdf2f119cdd1e5c879480ffb7ef0857b622a64fb8693bc554f91f36f1
+enumValues:
+  - load
+  - soak
+  - test
+  - unload
+  - fault

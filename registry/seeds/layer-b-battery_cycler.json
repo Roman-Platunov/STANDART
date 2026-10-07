@@ -1,0 +1,111 @@
+{
+  "layer": "B15",
+  "name": "layer-b-battery_cycler.json",
+  "types": [
+    {
+      "path": "battery_cycler.channel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cycler channel id",
+      "titleRu": "ID канала циклера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery_cycler.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cycled cell id",
+      "titleRu": "ID циклируемой ячейки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery_cycler.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Channel current",
+      "titleRu": "Ток канала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_cycler.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Cell voltage",
+      "titleRu": "Напряжение ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_cycler.capacity",
+      "kind": "quantity",
+      "unit": "A.h",
+      "titleEn": "Cycle capacity",
+      "titleRu": "Ёмкость цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_cycler.cycle",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cycle index",
+      "titleRu": "Номер цикла",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_cycler.cutoff",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cutoff reached",
+      "titleRu": "Достигнут отсечки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "battery_cycler.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cc",
+        "cv",
+        "cccv",
+        "pulse",
+        "rest",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

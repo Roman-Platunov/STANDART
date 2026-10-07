@@ -1,0 +1,117 @@
+{
+  "layer": "B15",
+  "name": "layer-b-tea_factory.json",
+  "types": [
+    {
+      "path": "tea_factory.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tea factory id",
+      "titleRu": "ID чайной фабрики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tea_factory.wither.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wither moisture",
+      "titleRu": "Влажность завяливания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tea_factory.roll.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Rolling temperature",
+      "titleRu": "Температура скрутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tea_factory.ferment.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Fermentation time",
+      "titleRu": "Время ферментации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tea_factory.dryer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dryer temperature",
+      "titleRu": "Температура сушилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tea_factory.made.tea",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Made tea rate",
+      "titleRu": "Выпуск готового чая",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tea_factory.fire.risk",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dryer fire risk",
+      "titleRu": "Риск возгорания сушилки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tea_factory.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "orthodox",
+        "ctc",
+        "green",
+        "oolong",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

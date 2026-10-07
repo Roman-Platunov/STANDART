@@ -1,0 +1,112 @@
+{
+  "layer": "B15",
+  "name": "layer-b-optical_fiber.json",
+  "types": [
+    {
+      "path": "optical_fiber.draw.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fiber draw tower id",
+      "titleRu": "ID вытяжной башни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "optical_fiber.preform.d",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Preform diameter",
+      "titleRu": "Диаметр преформы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optical_fiber.draw.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Draw speed",
+      "titleRu": "Скорость вытяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optical_fiber.diameter",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Fiber diameter",
+      "titleRu": "Диаметр волокна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optical_fiber.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Draw tension",
+      "titleRu": "Натяжение вытяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optical_fiber.proof",
+      "kind": "quantity",
+      "unit": "GPa",
+      "titleEn": "Proof test",
+      "titleRu": "Прочность на разрыв",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optical_fiber.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fiber break",
+      "titleRu": "Обрыв волокна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "optical_fiber.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fiber type",
+      "titleRu": "Тип волокна",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "smf",
+        "mmf",
+        "pm",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

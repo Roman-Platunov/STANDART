@@ -1,0 +1,111 @@
+{
+  "layer": "B15",
+  "name": "layer-b-carbon_fiber.json",
+  "types": [
+    {
+      "path": "carbon_fiber.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Carbon fiber line id",
+      "titleRu": "ID линии углеволокна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "carbon_fiber.tow",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tow count",
+      "titleRu": "Число филаментов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_fiber.ox.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oxidation temperature",
+      "titleRu": "Температура окисления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_fiber.carbonize.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Carbonization temperature",
+      "titleRu": "Температура карбонизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_fiber.modulus",
+      "kind": "quantity",
+      "unit": "GPa",
+      "titleEn": "Tensile modulus",
+      "titleRu": "Модуль упругости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_fiber.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_fiber.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tow break",
+      "titleRu": "Обрыв жгута",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "carbon_fiber.precursor",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Precursor",
+      "titleRu": "Прекурсор",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pan",
+        "pitch",
+        "rayon",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

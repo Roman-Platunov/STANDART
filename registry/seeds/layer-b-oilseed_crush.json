@@ -1,0 +1,125 @@
+{
+  "layer": "B15",
+  "name": "layer-b-oilseed_crush.json",
+  "types": [
+    {
+      "path": "oilseed_crush.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Crush plant id",
+      "titleRu": "ID маслоэкстракционного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oilseed_crush.seed.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Seed moisture",
+      "titleRu": "Влажность семян",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_crush.press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Press temperature",
+      "titleRu": "Температура пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_crush.oil.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oil yield",
+      "titleRu": "Выход масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_crush.hexane",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Residual hexane",
+      "titleRu": "Остаточный гексан",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_crush.meal.prot",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Meal protein",
+      "titleRu": "Белок шрота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_crush.solvent.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Solvent recovery OK",
+      "titleRu": "Регенерация растворителя OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oilseed_crush.seed",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Seed",
+      "titleRu": "Сырьё",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "soy",
+        "rapeseed",
+        "sunflower",
+        "palm",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

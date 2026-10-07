@@ -1,0 +1,118 @@
+{
+  "layer": "B15",
+  "name": "layer-b-uranium_mill.json",
+  "types": [
+    {
+      "path": "uranium_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Uranium mill id",
+      "titleRu": "ID уранового завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uranium_mill.feed.u",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Feed U3O8 equivalent",
+      "titleRu": "U в питании",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uranium_mill.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "U recovery",
+      "titleRu": "Извлечение урана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "uranium_mill.leach.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Leach pH",
+      "titleRu": "pH выщелачивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uranium_mill.yellowcake",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Yellowcake production",
+      "titleRu": "Выпуск закиси-окиси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uranium_mill.radon",
+      "kind": "quantity",
+      "unit": "Bq/m3",
+      "titleEn": "Workplace radon",
+      "titleRu": "Радон на рабочем месте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uranium_mill.containment",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Containment OK",
+      "titleRu": "Герметичность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "uranium_mill.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "acid",
+        "alkaline",
+        "isl",
+        "ix",
+        "sx",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

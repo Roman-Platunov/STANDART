@@ -1,0 +1,116 @@
+{
+  "layer": "B15",
+  "name": "layer-b-chlor_alkali.json",
+  "types": [
+    {
+      "path": "chlor_alkali.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chlor-alkali cell id",
+      "titleRu": "ID электролизёра хлора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chlor_alkali.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Cell current",
+      "titleRu": "Ток ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlor_alkali.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Cell voltage",
+      "titleRu": "Напряжение ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlor_alkali.naoh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Caustic strength",
+      "titleRu": "Концентрация щёлочи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chlor_alkali.cl2",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Chlorine production",
+      "titleRu": "Выпуск хлора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlor_alkali.h2",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Hydrogen production",
+      "titleRu": "Выпуск водорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlor_alkali.membrane.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Membrane OK",
+      "titleRu": "Мембрана OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chlor_alkali.tech",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Technology",
+      "titleRu": "Технология",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "membrane",
+        "mercury",
+        "diaphragm",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

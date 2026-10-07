@@ -1,0 +1,115 @@
+{
+  "layer": "B15",
+  "name": "layer-b-burn_in.json",
+  "types": [
+    {
+      "path": "burn_in.chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Burn-in chamber id",
+      "titleRu": "ID камеры отжига",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "burn_in.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Burn-in lot id",
+      "titleRu": "ID партии отжига",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "burn_in.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "burn_in.bias",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Bias voltage",
+      "titleRu": "Напряжение смещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "burn_in.duration.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Burn-in duration",
+      "titleRu": "Длительность отжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "burn_in.fail",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fail rate",
+      "titleRu": "Доля отказов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "burn_in.dut.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "DUT failed",
+      "titleRu": "Отказ ИС",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "burn_in.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chamber state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "soak",
+        "test",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

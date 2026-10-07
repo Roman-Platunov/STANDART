@@ -1,0 +1,111 @@
+{
+  "layer": "B15",
+  "name": "layer-b-motor_mfg.json",
+  "types": [
+    {
+      "path": "motor_mfg.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Motor line id",
+      "titleRu": "ID линии электродвигателей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "motor_mfg.serial",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Motor serial",
+      "titleRu": "Серийный номер двигателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "motor_mfg.winding.r",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Winding resistance",
+      "titleRu": "Сопротивление обмотки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "motor_mfg.imbalance",
+      "kind": "quantity",
+      "unit": "g.mm",
+      "titleEn": "Rotor imbalance",
+      "titleRu": "Дисбаланс ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "motor_mfg.nvh",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "NVH level",
+      "titleRu": "Уровень NVH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "motor_mfg.hipot",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Hi-pot voltage",
+      "titleRu": "Напряжение hi-pot",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "motor_mfg.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "EOL pass",
+      "titleRu": "EOL пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "motor_mfg.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Motor type",
+      "titleRu": "Тип двигателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "im",
+        "pmsm",
+        "synrm",
+        "dc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

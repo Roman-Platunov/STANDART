@@ -1,0 +1,114 @@
+{
+  "layer": "B15",
+  "name": "layer-b-zinc_smelter.json",
+  "types": [
+    {
+      "path": "zinc_smelter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Zinc smelter id",
+      "titleRu": "ID цинкового завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "zinc_smelter.roaster.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Roaster temperature",
+      "titleRu": "Температура обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zinc_smelter.leach.zn",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Pregnant Zn",
+      "titleRu": "Цинк в ПР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zinc_smelter.cell.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Cell current",
+      "titleRu": "Ток электролизёра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zinc_smelter.cathode.mass",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Cathode zinc",
+      "titleRu": "Выпуск катодного цинка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zinc_smelter.so2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Roaster SO2",
+      "titleRu": "SO2 обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zinc_smelter.short",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cell short",
+      "titleRu": "Короткое замыкание ванны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "zinc_smelter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Smelter state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roast",
+        "leach",
+        "electrowin",
+        "cast",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 7aeeff6f
+path: methanol_plant.state
+aliases:
+  short: methanol_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:7aeeff6f0e64d6a5dc379eb3e4ef0dba7f3694c3c941329a4863263513b0474c
+enumValues:
+  - start
+  - run
+  - turndown
+  - stop
+  - fault

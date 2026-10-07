@@ -1,0 +1,121 @@
+{
+  "layer": "B15",
+  "name": "layer-b-ethanol_plant.json",
+  "types": [
+    {
+      "path": "ethanol_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ethanol plant id",
+      "titleRu": "ID этанольного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ethanol_plant.ferment.brix",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fermenter Brix",
+      "titleRu": "Brix ферментёра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_plant.beer",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Beer alcohol",
+      "titleRu": "Спирт в бражке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_plant.still.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Beer still temperature",
+      "titleRu": "Температура бражной колонны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_plant.prod",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Ethanol production",
+      "titleRu": "Выпуск этанола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_plant.ddgs.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "DDGS moisture",
+      "titleRu": "Влажность DDGS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_plant.infection",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ferment infection",
+      "titleRu": "Инфекция ферментации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ethanol_plant.feedstock",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feedstock",
+      "titleRu": "Сырьё",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "corn",
+        "wheat",
+        "cane",
+        "cellulosic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

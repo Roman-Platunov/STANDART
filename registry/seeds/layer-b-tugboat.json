@@ -1,0 +1,113 @@
+{
+  "layer": "B15",
+  "name": "layer-b-tugboat.json",
+  "types": [
+    {
+      "path": "tugboat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tugboat id",
+      "titleRu": "ID буксира",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tugboat.bollard",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Bollard pull",
+      "titleRu": "Тяга на гаке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tugboat.engine.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Engine power",
+      "titleRu": "Мощность двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tugboat.winch.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Winch tension",
+      "titleRu": "Натяжение лебёдки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tugboat.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tugboat.heading",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Heading",
+      "titleRu": "Курс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tugboat.assist",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Assist engaged",
+      "titleRu": "Работает на сопровождении",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tugboat.duty",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Duty",
+      "titleRu": "Назначение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "escort",
+        "harbor",
+        "ocean",
+        "ice",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

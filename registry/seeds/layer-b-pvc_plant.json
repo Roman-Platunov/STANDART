@@ -1,0 +1,116 @@
+{
+  "layer": "B15",
+  "name": "layer-b-pvc_plant.json",
+  "types": [
+    {
+      "path": "pvc_plant.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PVC reactor id",
+      "titleRu": "ID реактора ПВХ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pvc_plant.vc.conv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "VCM conversion",
+      "titleRu": "Конверсия ВХ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pvc_plant.reactor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Polymerization temperature",
+      "titleRu": "Температура полимеризации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pvc_plant.kvalue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "K-value",
+      "titleRu": "Значение K",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pvc_plant.residual.vc",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Residual VCM",
+      "titleRu": "Остаточный ВХ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pvc_plant.prod",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "PVC production",
+      "titleRu": "Выпуск ПВХ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pvc_plant.inhibitor",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Inhibitor injected",
+      "titleRu": "Ингибитор подан",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pvc_plant.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "suspension",
+        "emulsion",
+        "bulk",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

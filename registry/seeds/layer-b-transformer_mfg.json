@@ -1,0 +1,113 @@
+{
+  "layer": "B15",
+  "name": "layer-b-transformer_mfg.json",
+  "types": [
+    {
+      "path": "transformer_mfg.unit.serial",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transformer serial",
+      "titleRu": "Серийный номер трансформатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "transformer_mfg.turns.ratio",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Turns ratio",
+      "titleRu": "Коэффициент трансформации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer_mfg.no_load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "No-load loss",
+      "titleRu": "Холостой ход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer_mfg.pd",
+      "kind": "quantity",
+      "unit": "pC",
+      "titleEn": "Partial discharge",
+      "titleRu": "Частичные разряды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer_mfg.oil.bdv",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Oil BDV",
+      "titleRu": "Пробивное напряжение масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer_mfg.winding.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Winding temperature",
+      "titleRu": "Температура обмотки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer_mfg.impulse.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Impulse pass",
+      "titleRu": "Импульс пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "transformer_mfg.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "power",
+        "distribution",
+        "cast",
+        "dry",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

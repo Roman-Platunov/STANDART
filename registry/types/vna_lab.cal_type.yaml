@@ -1,0 +1,20 @@
+sid: 3cb32c2e
+path: vna_lab.cal_type
+aliases:
+  short: vna_lab.cal_type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип калибровки
+  en: Cal type
+fingerprint: sha256:3cb32c2e2ad15cc9c1ab28f3c3852f34b5dc9adaa89af36dd9920b2b4ef963f1
+enumValues:
+  - solt
+  - trl
+  - unknown_thru
+  - none

@@ -1,0 +1,22 @@
+sid: 901c6ff7
+path: electrolyte_fill.state
+aliases:
+  short: electrolyte_fill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:901c6ff784343a42c822cf55ce36c75c5fc35eaf6c6f295966871b2a3d991f5e
+enumValues:
+  - evac
+  - fill
+  - soak
+  - seal
+  - idle
+  - fault

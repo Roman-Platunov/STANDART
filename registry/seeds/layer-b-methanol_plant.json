@@ -1,0 +1,117 @@
+{
+  "layer": "B15",
+  "name": "layer-b-methanol_plant.json",
+  "types": [
+    {
+      "path": "methanol_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Methanol plant id",
+      "titleRu": "ID метанольного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "methanol_plant.syngas.h2co",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "H2/CO ratio",
+      "titleRu": "Соотношение H2/CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methanol_plant.reactor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methanol_plant.reactor.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Reactor pressure",
+      "titleRu": "Давление реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methanol_plant.prod",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Methanol production",
+      "titleRu": "Выпуск метанола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methanol_plant.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product purity",
+      "titleRu": "Чистота продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "methanol_plant.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Plant trip",
+      "titleRu": "Аварийный останов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "methanol_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "run",
+        "turndown",
+        "stop",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

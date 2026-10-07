@@ -1,0 +1,125 @@
+{
+  "layer": "B15",
+  "name": "layer-b-rice_mill.json",
+  "types": [
+    {
+      "path": "rice_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rice mill id",
+      "titleRu": "ID рисозавода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rice_mill.paddy.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Paddy moisture",
+      "titleRu": "Влажность падди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rice_mill.head.rice",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Head rice yield",
+      "titleRu": "Выход целого зерна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rice_mill.broken",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Broken fraction",
+      "titleRu": "Дроблёнка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rice_mill.whiteness",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Whiteness",
+      "titleRu": "Белизна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rice_mill.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Mill throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rice_mill.stone",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stone detected",
+      "titleRu": "Обнаружен камень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rice_mill.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "brown",
+        "white",
+        "parboiled",
+        "broken",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

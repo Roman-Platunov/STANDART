@@ -1,0 +1,117 @@
+{
+  "layer": "B15",
+  "name": "layer-b-ferroalloy.json",
+  "types": [
+    {
+      "path": "ferroalloy.furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ferroalloy furnace id",
+      "titleRu": "ID печи ферросплавов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ferroalloy.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Furnace power",
+      "titleRu": "Мощность печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ferroalloy.tap.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tap temperature",
+      "titleRu": "Температура выпуска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ferroalloy.si",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Si in alloy",
+      "titleRu": "Кремний в сплаве",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ferroalloy.coke.rate",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Reductant rate",
+      "titleRu": "Расход восстановителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ferroalloy.production",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Alloy production",
+      "titleRu": "Выпуск сплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ferroalloy.hang",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Burden hang",
+      "titleRu": "Зависание шихты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ferroalloy.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fesil",
+        "femh",
+        "fecr",
+        "sica",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

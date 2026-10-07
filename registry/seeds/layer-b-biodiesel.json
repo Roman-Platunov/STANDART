@@ -1,0 +1,121 @@
+{
+  "layer": "B15",
+  "name": "layer-b-biodiesel.json",
+  "types": [
+    {
+      "path": "biodiesel.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Biodiesel reactor id",
+      "titleRu": "ID реактора биодизеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biodiesel.fffa",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Feed FFA",
+      "titleRu": "СЖК сырья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biodiesel.methanol",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Methanol feed",
+      "titleRu": "Подача метанола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biodiesel.reactor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biodiesel.conv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Conversion",
+      "titleRu": "Конверсия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biodiesel.glycerin",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Glycerin make",
+      "titleRu": "Выпуск глицерина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biodiesel.wash.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wash clear",
+      "titleRu": "Промывка чистая",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "biodiesel.feedstock",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feedstock",
+      "titleRu": "Сырьё",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "soy",
+        "rape",
+        "uco",
+        "tallow",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

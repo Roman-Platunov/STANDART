@@ -1,0 +1,111 @@
+{
+  "layer": "B15",
+  "name": "layer-b-barge_ops.json",
+  "types": [
+    {
+      "path": "barge_ops.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Barge id",
+      "titleRu": "ID баржи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "barge_ops.tow.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tow id",
+      "titleRu": "ID состава барж",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "barge_ops.draft",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Draft",
+      "titleRu": "Осадка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "barge_ops.cargo",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Cargo mass",
+      "titleRu": "Масса груза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "barge_ops.freeboard",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Freeboard",
+      "titleRu": "Надводный борт",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "barge_ops.list",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "List",
+      "titleRu": "Крен",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "barge_ops.grounded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aground",
+      "titleRu": "На мели",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "barge_ops.cargo_type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cargo type",
+      "titleRu": "Тип груза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "liquid",
+        "container",
+        "project",
+        "empty"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

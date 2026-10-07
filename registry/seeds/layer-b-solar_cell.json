@@ -1,0 +1,120 @@
+{
+  "layer": "B15",
+  "name": "layer-b-solar_cell.json",
+  "types": [
+    {
+      "path": "solar_cell.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cell line id",
+      "titleRu": "ID линии солнечных элементов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "solar_cell.eff",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cell efficiency",
+      "titleRu": "КПД элемента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "solar_cell.voc",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Open-circuit voltage",
+      "titleRu": "Напряжение холостого хода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_cell.isc",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Short-circuit current",
+      "titleRu": "Ток короткого замыкания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_cell.ff",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fill factor",
+      "titleRu": "Коэффициент заполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "solar_cell.bin",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Power bin",
+      "titleRu": "Бин мощности",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_cell.el.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "EL pass",
+      "titleRu": "EL пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "solar_cell.arch",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Architecture",
+      "titleRu": "Архитектура",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "perc",
+        "topcon",
+        "hjt",
+        "ibc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

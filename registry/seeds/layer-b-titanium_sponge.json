@@ -1,0 +1,114 @@
+{
+  "layer": "B15",
+  "name": "layer-b-titanium_sponge.json",
+  "types": [
+    {
+      "path": "titanium_sponge.retort.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Kroll retort id",
+      "titleRu": "ID реторты Кролла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "titanium_sponge.mg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Magnesium temperature",
+      "titleRu": "Температура магния",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "titanium_sponge.ticl4.feed",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "TiCl4 feed",
+      "titleRu": "Подача TiCl4",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "titanium_sponge.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Retort vacuum",
+      "titleRu": "Вакуум реторты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "titanium_sponge.cycle.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Reduction cycle",
+      "titleRu": "Цикл восстановления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "titanium_sponge.yield",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Sponge mass",
+      "titleRu": "Масса губки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "titanium_sponge.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Retort leak",
+      "titleRu": "Натекание реторты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "titanium_sponge.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Retort state",
+      "titleRu": "Состояние реторты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "reduce",
+        "distill",
+        "cool",
+        "dump",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

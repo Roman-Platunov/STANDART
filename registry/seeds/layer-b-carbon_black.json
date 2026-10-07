@@ -1,0 +1,113 @@
+{
+  "layer": "B15",
+  "name": "layer-b-carbon_black.json",
+  "types": [
+    {
+      "path": "carbon_black.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Carbon black reactor id",
+      "titleRu": "ID реактора техуглерода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "carbon_black.oil.rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Feedstock oil",
+      "titleRu": "Расход сырья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_black.air.rate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Process air",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_black.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_black.iodine",
+      "kind": "quantity",
+      "unit": "g/kg",
+      "titleEn": "Iodine number",
+      "titleRu": "Йодное число",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_black.yield",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Black production",
+      "titleRu": "Выпуск техуглерода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_black.filter.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bag filter OK",
+      "titleRu": "Фильтр в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "carbon_black.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Марка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "n220",
+        "n330",
+        "n550",
+        "n660",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

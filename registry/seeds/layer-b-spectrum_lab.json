@@ -1,0 +1,113 @@
+{
+  "layer": "B15",
+  "name": "layer-b-spectrum_lab.json",
+  "types": [
+    {
+      "path": "spectrum_lab.instrument.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spectrum analyzer id",
+      "titleRu": "ID анализатора спектра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spectrum_lab.cf",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Center frequency",
+      "titleRu": "Центральная частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spectrum_lab.rbw",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "RBW",
+      "titleRu": "Полоса разрешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spectrum_lab.peak",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Peak amplitude",
+      "titleRu": "Пиковая амплитуда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spectrum_lab.span",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Span",
+      "titleRu": "Полоса обзора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spectrum_lab.nf",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Noise floor",
+      "titleRu": "Шумовой пол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spectrum_lab.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Input overload",
+      "titleRu": "Перегрузка входа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spectrum_lab.detector",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Detector",
+      "titleRu": "Детектор",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "peak",
+        "rms",
+        "sample",
+        "quasi_peak",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

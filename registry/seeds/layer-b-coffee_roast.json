@@ -1,0 +1,111 @@
+{
+  "layer": "B15",
+  "name": "layer-b-coffee_roast.json",
+  "types": [
+    {
+      "path": "coffee_roast.roaster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coffee roaster id",
+      "titleRu": "ID ростера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coffee_roast.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Roast batch id",
+      "titleRu": "ID обжарки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coffee_roast.bean.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bean temperature",
+      "titleRu": "Температура зерна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee_roast.air.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air temperature",
+      "titleRu": "Температура воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee_roast.ror",
+      "kind": "quantity",
+      "unit": "K/min",
+      "titleEn": "Rate of rise",
+      "titleRu": "Скорость роста температуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee_roast.development.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Development time",
+      "titleRu": "Время развития",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee_roast.crack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "First crack",
+      "titleRu": "Первый крэк",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coffee_roast.profile",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Profile",
+      "titleRu": "Профиль",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "light",
+        "medium",
+        "dark",
+        "omni",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

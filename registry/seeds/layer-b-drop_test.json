@@ -1,0 +1,109 @@
+{
+  "layer": "B15",
+  "name": "layer-b-drop_test.json",
+  "types": [
+    {
+      "path": "drop_test.rig.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Drop test rig id",
+      "titleRu": "ID стенда сброса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drop_test.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sample id",
+      "titleRu": "ID образца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drop_test.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Drop height",
+      "titleRu": "Высота сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drop_test.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Package mass",
+      "titleRu": "Масса упаковки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drop_test.accel",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Peak acceleration",
+      "titleRu": "Пиковое ускорение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drop_test.drops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Drop count",
+      "titleRu": "Число сбросов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drop_test.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Package failed",
+      "titleRu": "Упаковка не прошла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "drop_test.orient",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Orientation",
+      "titleRu": "Ориентация",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "face",
+        "edge",
+        "corner",
+        "tumble"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

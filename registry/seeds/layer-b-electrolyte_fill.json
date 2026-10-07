@@ -1,0 +1,112 @@
+{
+  "layer": "B15",
+  "name": "layer-b-electrolyte_fill.json",
+  "types": [
+    {
+      "path": "electrolyte_fill.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fill station id",
+      "titleRu": "ID станции заливки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrolyte_fill.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Filled cell id",
+      "titleRu": "ID заливаемой ячейки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrolyte_fill.mass",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Fill mass",
+      "titleRu": "Масса электролита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyte_fill.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Fill vacuum",
+      "titleRu": "Вакуум заливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyte_fill.soak.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Soak time",
+      "titleRu": "Время пропитки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyte_fill.moisture",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Electrolyte moisture",
+      "titleRu": "Влага электролита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyte_fill.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fill leak",
+      "titleRu": "Утечка при заливке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "electrolyte_fill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "evac",
+        "fill",
+        "soak",
+        "seal",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

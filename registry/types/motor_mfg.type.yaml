@@ -1,0 +1,21 @@
+sid: 18c2f9ca
+path: motor_mfg.type
+aliases:
+  short: motor_mfg.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип двигателя
+  en: Motor type
+fingerprint: sha256:18c2f9ca0b1112505e135e8cd5c522b166821e6bee6ce8753d161c38792debca
+enumValues:
+  - im
+  - pmsm
+  - synrm
+  - dc
+  - other

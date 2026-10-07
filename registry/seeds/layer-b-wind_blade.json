@@ -1,0 +1,112 @@
+{
+  "layer": "B15",
+  "name": "layer-b-wind_blade.json",
+  "types": [
+    {
+      "path": "wind_blade.mold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blade mold id",
+      "titleRu": "ID формы лопасти",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wind_blade.serial",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blade serial",
+      "titleRu": "Серийный номер лопасти",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wind_blade.infusion.p",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Infusion vacuum",
+      "titleRu": "Вакуум инфузии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_blade.resin.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Resin temperature",
+      "titleRu": "Температура смолы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_blade.cure.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cure temperature",
+      "titleRu": "Температура отверждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_blade.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Blade length",
+      "titleRu": "Длина лопасти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_blade.dry.spot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dry spot",
+      "titleRu": "Сухое пятно",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wind_blade.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mold state",
+      "titleRu": "Состояние формы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "layup",
+        "infuse",
+        "cure",
+        "demold",
+        "finish",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

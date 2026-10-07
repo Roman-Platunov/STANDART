@@ -1,0 +1,110 @@
+{
+  "layer": "B15",
+  "name": "layer-b-metro_ops.json",
+  "types": [
+    {
+      "path": "metro_ops.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metro train id",
+      "titleRu": "ID состава метро",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metro_ops.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metro line id",
+      "titleRu": "ID линии метро",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metro_ops.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Train speed",
+      "titleRu": "Скорость состава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_ops.headway.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Headway",
+      "titleRu": "Интервал",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_ops.pax",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passengers onboard",
+      "titleRu": "Пассажиров в составе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_ops.aux.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Auxiliary power",
+      "titleRu": "Собственные нужды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_ops.ato",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ATO engaged",
+      "titleRu": "АТО включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "metro_ops.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Drive mode",
+      "titleRu": "Режим ведения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ato",
+        "atp",
+        "manual",
+        "yard",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

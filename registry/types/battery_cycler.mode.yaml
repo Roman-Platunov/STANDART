@@ -1,0 +1,22 @@
+sid: 2739b5a5
+path: battery_cycler.mode
+aliases:
+  short: battery_cycler.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:2739b5a50081ba5d995bf011c75f1f2d946941604ff0a92095e546a2c1b347eb
+enumValues:
+  - cc
+  - cv
+  - cccv
+  - pulse
+  - rest
+  - fault

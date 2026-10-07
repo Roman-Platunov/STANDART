@@ -1,0 +1,22 @@
+sid: f0cdb2c8
+path: crematorium.state
+aliases:
+  short: crematorium.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние крематора
+  en: Cremator state
+fingerprint: sha256:f0cdb2c8edef277f69124657cee534daa1cc0dbc9efbf3b1da7b25329c33b83f
+enumValues:
+  - preheat
+  - charge
+  - burn
+  - cool
+  - idle
+  - fault

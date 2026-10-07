@@ -1,0 +1,21 @@
+sid: 089c72d2
+path: aoi_inspect.stage
+aliases:
+  short: aoi_inspect.stage
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Этап
+  en: Stage
+fingerprint: sha256:089c72d2708a0c6e92b85ccdd2909f2229c9e6e46c092ba8195c6f6a62a05acd
+enumValues:
+  - pre_reflow
+  - post_reflow
+  - spi
+  - axi
+  - other

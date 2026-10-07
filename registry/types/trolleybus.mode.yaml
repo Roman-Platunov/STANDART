@@ -1,0 +1,20 @@
+sid: fc130eb4
+path: trolleybus.mode
+aliases:
+  short: trolleybus.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим питания
+  en: Power mode
+fingerprint: sha256:fc130eb447c25dfc20768bb2bb8ad5435bc0717dfc2d3fa05fb05f5e897685a9
+enumValues:
+  - wire
+  - battery
+  - depot
+  - fault

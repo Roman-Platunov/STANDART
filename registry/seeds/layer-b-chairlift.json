@@ -1,0 +1,116 @@
+{
+  "layer": "B15",
+  "name": "layer-b-chairlift.json",
+  "types": [
+    {
+      "path": "chairlift.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chairlift id",
+      "titleRu": "ID кресельной канатной дороги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chairlift.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Rope speed",
+      "titleRu": "Скорость каната",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chairlift.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Load",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chairlift.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Tower wind",
+      "titleRu": "Ветер на опоре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chairlift.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Rope tension",
+      "titleRu": "Натяжение каната",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chairlift.chairs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Chairs on line",
+      "titleRu": "Кресел на линии",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chairlift.evac",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Evacuation",
+      "titleRu": "Эвакуация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chairlift.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lift state",
+      "titleRu": "Состояние дороги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "hold",
+        "evac",
+        "night",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B15",
+  "name": "layer-b-urea_plant.json",
+  "types": [
+    {
+      "path": "urea_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Urea plant id",
+      "titleRu": "ID карбамидного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "urea_plant.reactor.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Reactor pressure",
+      "titleRu": "Давление реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "urea_plant.reactor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "urea_plant.nh3.co2",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "NH3/CO2 ratio",
+      "titleRu": "Соотношение NH3/CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "urea_plant.prod",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Urea production",
+      "titleRu": "Выпуск карбамида",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "urea_plant.biuret",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Biuret",
+      "titleRu": "Биурет",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "urea_plant.stripper.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stripper OK",
+      "titleRu": "Стриппер OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "urea_plant.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stamicarbon",
+        "snam",
+        "tec",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

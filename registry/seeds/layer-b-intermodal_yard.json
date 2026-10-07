@@ -1,0 +1,113 @@
+{
+  "layer": "B15",
+  "name": "layer-b-intermodal_yard.json",
+  "types": [
+    {
+      "path": "intermodal_yard.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Intermodal yard id",
+      "titleRu": "ID контейнерной площадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "intermodal_yard.crane.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RMG/RTG id",
+      "titleRu": "ID крана RMG/RTG",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "intermodal_yard.moves",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Moves per hour",
+      "titleRu": "Операций в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intermodal_yard.dwell.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Average dwell",
+      "titleRu": "Средний простой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intermodal_yard.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ground slots used",
+      "titleRu": "Занятость слотов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "intermodal_yard.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gate queue",
+      "titleRu": "Очередь на воротах",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intermodal_yard.congested",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Yard congested",
+      "titleRu": "Площадка перегружена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "intermodal_yard.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rail",
+        "truck",
+        "mixed",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

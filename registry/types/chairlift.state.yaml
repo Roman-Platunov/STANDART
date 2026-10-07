@@ -1,0 +1,21 @@
+sid: 4f5f22a9
+path: chairlift.state
+aliases:
+  short: chairlift.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дороги
+  en: Lift state
+fingerprint: sha256:4f5f22a95d260d8fe051299dd32c24f0ae1121c70e6c064816cb11f22b772548
+enumValues:
+  - open
+  - hold
+  - evac
+  - night
+  - fault

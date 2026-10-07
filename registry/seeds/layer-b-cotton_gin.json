@@ -1,0 +1,125 @@
+{
+  "layer": "B15",
+  "name": "layer-b-cotton_gin.json",
+  "types": [
+    {
+      "path": "cotton_gin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cotton gin id",
+      "titleRu": "ID хлопкозавода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cotton_gin.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Seed cotton moisture",
+      "titleRu": "Влажность хлопка-сырца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cotton_gin.turnout",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lint turnout",
+      "titleRu": "Выход волокна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cotton_gin.trash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Trash content",
+      "titleRu": "Сорность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cotton_gin.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Ginning rate",
+      "titleRu": "Производительность джина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cotton_gin.micronaire",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Micronaire",
+      "titleRu": "Микронейр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cotton_gin.choke",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gin choke",
+      "titleRu": "Завал джина",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cotton_gin.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gin state",
+      "titleRu": "Состояние джина",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gin",
+        "press",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

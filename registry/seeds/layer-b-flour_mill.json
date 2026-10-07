@@ -1,0 +1,125 @@
+{
+  "layer": "B15",
+  "name": "layer-b-flour_mill.json",
+  "types": [
+    {
+      "path": "flour_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flour mill id",
+      "titleRu": "ID мельницы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flour_mill.wheat.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wheat moisture",
+      "titleRu": "Влажность зерна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flour_mill.extraction",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Extraction rate",
+      "titleRu": "Выход муки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flour_mill.ash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flour ash",
+      "titleRu": "Зольность муки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flour_mill.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Mill throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flour_mill.sifter.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Sifter speed",
+      "titleRu": "Обороты рассева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flour_mill.choke",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mill choke",
+      "titleRu": "Завал мельницы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flour_mill.stream",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stream",
+      "titleRu": "Поток",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "patent",
+        "clear",
+        "whole",
+        "semolina",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B15",
+  "name": "layer-b-pe_plant.json",
+  "types": [
+    {
+      "path": "pe_plant.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PE reactor id",
+      "titleRu": "ID реактора ПЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pe_plant.grade.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PE grade id",
+      "titleRu": "ID марки ПЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pe_plant.reactor.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Reactor pressure",
+      "titleRu": "Давление реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pe_plant.mi",
+      "kind": "quantity",
+      "unit": "g/10min",
+      "titleEn": "Melt index",
+      "titleRu": "Показатель текучести",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pe_plant.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Resin density",
+      "titleRu": "Плотность смолы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pe_plant.prod",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "PE production",
+      "titleRu": "Выпуск ПЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pe_plant.fouling",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reactor fouling",
+      "titleRu": "Загрязнение реактора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pe_plant.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ldpe",
+        "hdpe_slurry",
+        "hdpe_gas",
+        "lldpe",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

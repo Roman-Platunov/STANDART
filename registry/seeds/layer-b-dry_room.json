@@ -1,0 +1,117 @@
+{
+  "layer": "B15",
+  "name": "layer-b-dry_room.json",
+  "types": [
+    {
+      "path": "dry_room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dry room id",
+      "titleRu": "ID сухого помещения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dry_room.dp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dewpoint",
+      "titleRu": "Точка росы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dry_room.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Room temperature",
+      "titleRu": "Температура помещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dry_room.rh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dry_room.ach",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Air changes",
+      "titleRu": "Кратность воздухообмена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dry_room.particles",
+      "kind": "quantity",
+      "unit": "/L",
+      "titleEn": "Particle count",
+      "titleRu": "Счёт частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dry_room.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Humidity in spec",
+      "titleRu": "Влажность в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dry_room.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Room state",
+      "titleRu": "Состояние помещения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "excursion",
+        "purge",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

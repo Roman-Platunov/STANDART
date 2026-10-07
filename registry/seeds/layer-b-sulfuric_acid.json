@@ -1,0 +1,124 @@
+{
+  "layer": "B15",
+  "name": "layer-b-sulfuric_acid.json",
+  "types": [
+    {
+      "path": "sulfuric_acid.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sulfuric acid plant id",
+      "titleRu": "ID сернокислотного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sulfuric_acid.so2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Converter SO2",
+      "titleRu": "SO2 на конвертере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_acid.bed.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Catalyst bed temperature",
+      "titleRu": "Температура слоя катализатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_acid.conversion",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "SO2 conversion",
+      "titleRu": "Конверсия SO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_acid.prod",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Acid production",
+      "titleRu": "Выпуск кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_acid.strength",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Acid strength",
+      "titleRu": "Концентрация кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_acid.mist",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Acid mist high",
+      "titleRu": "Туман кислоты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sulfuric_acid.contact",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Contact process",
+      "titleRu": "Контактный процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "single",
+        "dcda",
+        "wet",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

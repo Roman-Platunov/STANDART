@@ -1,0 +1,111 @@
+{
+  "layer": "B15",
+  "name": "layer-b-cable_mfg.json",
+  "types": [
+    {
+      "path": "cable_mfg.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cable line id",
+      "titleRu": "ID кабельной линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cable_mfg.reel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reel id",
+      "titleRu": "ID барабана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cable_mfg.extrude.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Extruder temperature",
+      "titleRu": "Температура экструдера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_mfg.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Cable diameter",
+      "titleRu": "Диаметр кабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_mfg.spark",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Spark tester",
+      "titleRu": "Искровой тестер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_mfg.line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_mfg.spark.hit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spark hit",
+      "titleRu": "Пробой на искре",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cable_mfg.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукция",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lv",
+        "mv",
+        "hv",
+        "fo",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

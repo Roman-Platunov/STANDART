@@ -1,0 +1,121 @@
+{
+  "layer": "B15",
+  "name": "layer-b-rare_earth.json",
+  "types": [
+    {
+      "path": "rare_earth.circuit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RE circuit id",
+      "titleRu": "ID цепи РЗЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rare_earth.feed.treo",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Feed TREO",
+      "titleRu": "TREO в питании",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rare_earth.sx.stages",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "SX stages online",
+      "titleRu": "Ступеней экстракции",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rare_earth.nd",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Nd in raffinate",
+      "titleRu": "Nd в рафинате",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rare_earth.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Circuit pH",
+      "titleRu": "pH цепи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rare_earth.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "RE recovery",
+      "titleRu": "Извлечение РЗЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rare_earth.crud",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crud layer",
+      "titleRu": "Промежуточный слой",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rare_earth.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roast",
+        "leach",
+        "sx",
+        "precip",
+        "calcine",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

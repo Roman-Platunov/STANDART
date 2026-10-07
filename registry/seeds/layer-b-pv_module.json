@@ -1,0 +1,109 @@
+{
+  "layer": "B15",
+  "name": "layer-b-pv_module.json",
+  "types": [
+    {
+      "path": "pv_module.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Module line id",
+      "titleRu": "ID линии модулей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pv_module.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Module SKU id",
+      "titleRu": "ID SKU модуля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pv_module.laminate.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Laminator temperature",
+      "titleRu": "Температура ламинатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pv_module.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Flash power",
+      "titleRu": "Мощность вспышки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pv_module.el.defects",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "EL defect count",
+      "titleRu": "Дефектов EL",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pv_module.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Modules per hour",
+      "titleRu": "Модулей в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pv_module.hi_pot.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hi-pot pass",
+      "titleRu": "Hi-pot пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pv_module.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Module type",
+      "titleRu": "Тип модуля",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "glass_back",
+        "glass_glass",
+        "flex",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

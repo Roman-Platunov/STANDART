@@ -1,0 +1,21 @@
+sid: 131b848b
+path: dry_room.state
+aliases:
+  short: dry_room.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние помещения
+  en: Room state
+fingerprint: sha256:131b848bf945b1e114982e06ae514349b3089693179774f0e48955ffdd7eca5e
+enumValues:
+  - ok
+  - excursion
+  - purge
+  - offline
+  - fault

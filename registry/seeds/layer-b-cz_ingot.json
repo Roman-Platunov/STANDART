@@ -1,0 +1,112 @@
+{
+  "layer": "B15",
+  "name": "layer-b-cz_ingot.json",
+  "types": [
+    {
+      "path": "cz_ingot.puller.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CZ puller id",
+      "titleRu": "ID установки Чохральского",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cz_ingot.ingot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ingot id",
+      "titleRu": "ID слитка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cz_ingot.melt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cz_ingot.pull.speed",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Pull speed",
+      "titleRu": "Скорость вытягивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cz_ingot.rotation",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Crystal rotation",
+      "titleRu": "Вращение кристалла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cz_ingot.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Crystal diameter",
+      "titleRu": "Диаметр кристалла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cz_ingot.dislocation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dislocation",
+      "titleRu": "Дислокация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cz_ingot.dopant",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dopant",
+      "titleRu": "Легирование",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "b",
+        "p",
+        "ga",
+        "as",
+        "none",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

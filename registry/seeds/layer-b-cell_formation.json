@@ -1,0 +1,112 @@
+{
+  "layer": "B15",
+  "name": "layer-b-cell_formation.json",
+  "types": [
+    {
+      "path": "cell_formation.channel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Formation channel id",
+      "titleRu": "ID канала формирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cell_formation.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cell id",
+      "titleRu": "ID ячейки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cell_formation.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Formation current",
+      "titleRu": "Ток формирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_formation.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Cell voltage",
+      "titleRu": "Напряжение ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_formation.capacity",
+      "kind": "quantity",
+      "unit": "A.h",
+      "titleEn": "Formed capacity",
+      "titleRu": "Сформированная ёмкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_formation.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cell temperature",
+      "titleRu": "Температура ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_formation.vent",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vent event",
+      "titleRu": "Срабатывание клапана",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cell_formation.step",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Step",
+      "titleRu": "Шаг",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rest",
+        "charge",
+        "discharge",
+        "age",
+        "grade",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

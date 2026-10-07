@@ -1,0 +1,112 @@
+{
+  "layer": "B15",
+  "name": "layer-b-ip_ingress.json",
+  "types": [
+    {
+      "path": "ip_ingress.chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IP test chamber id",
+      "titleRu": "ID камеры IP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ip_ingress.dut.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DUT id",
+      "titleRu": "ID испытуемого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ip_ingress.dust.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Dust duration",
+      "titleRu": "Длительность пыли",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ip_ingress.water.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Water pressure",
+      "titleRu": "Давление воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ip_ingress.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Spray flow",
+      "titleRu": "Расход струи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ip_ingress.rating",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Target IP code",
+      "titleRu": "Целевой код IP",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ip_ingress.ingress",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ingress detected",
+      "titleRu": "Обнаружено проникновение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ip_ingress.test",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Test",
+      "titleRu": "Испытание",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ip5x",
+        "ip6x",
+        "ipx4",
+        "ipx5",
+        "ipx7",
+        "ipx8",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

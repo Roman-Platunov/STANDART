@@ -1,0 +1,118 @@
+{
+  "layer": "B15",
+  "name": "layer-b-crematorium.json",
+  "types": [
+    {
+      "path": "crematorium.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cremator id",
+      "titleRu": "ID крематора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crematorium.primary.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Primary chamber temperature",
+      "titleRu": "Температура основной камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crematorium.secondary.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Secondary chamber temperature",
+      "titleRu": "Температура дожига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crematorium.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cycle time",
+      "titleRu": "Длительность цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crematorium.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Stack CO",
+      "titleRu": "CO в трубе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crematorium.opacity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stack opacity",
+      "titleRu": "Дымность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crematorium.charge.lock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Charge locked",
+      "titleRu": "Загрузка заблокирована",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crematorium.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cremator state",
+      "titleRu": "Состояние крематора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "preheat",
+        "charge",
+        "burn",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "layer": "B15",
+  "name": "layer-b-starch_plant.json",
+  "types": [
+    {
+      "path": "starch_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Starch plant id",
+      "titleRu": "ID крахмального завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "starch_plant.steep.time",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Steep time",
+      "titleRu": "Время замачивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "starch_plant.so2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Steep SO2",
+      "titleRu": "SO2 замочки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "starch_plant.protein",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Gluten protein",
+      "titleRu": "Белок клейковины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "starch_plant.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Starch moisture",
+      "titleRu": "Влажность крахмала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "starch_plant.prod",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Starch production",
+      "titleRu": "Выпуск крахмала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "starch_plant.mill.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mill OK",
+      "titleRu": "Мельница OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "starch_plant.feedstock",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feedstock",
+      "titleRu": "Сырьё",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "corn",
+        "wheat",
+        "potato",
+        "cassava",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

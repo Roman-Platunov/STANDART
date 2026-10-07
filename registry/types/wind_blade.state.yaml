@@ -1,0 +1,22 @@
+sid: fd498d4a
+path: wind_blade.state
+aliases:
+  short: wind_blade.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние формы
+  en: Mold state
+fingerprint: sha256:fd498d4ab4ea1cb87c7f12af3a9f950b0b413d6b756e1ae65e63ed18a7e5c3c6
+enumValues:
+  - layup
+  - infuse
+  - cure
+  - demold
+  - finish
+  - fault

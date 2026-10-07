@@ -1,0 +1,121 @@
+{
+  "layer": "B15",
+  "name": "layer-b-olive_mill.json",
+  "types": [
+    {
+      "path": "olive_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Olive mill id",
+      "titleRu": "ID маслодельни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "olive_mill.paste.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Paste temperature",
+      "titleRu": "Температура пасты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "olive_mill.malax.time",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Malaxation time",
+      "titleRu": "Время малоаксации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "olive_mill.oil.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oil yield",
+      "titleRu": "Выход масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "olive_mill.acidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Free acidity",
+      "titleRu": "Кислотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "olive_mill.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fruit throughput",
+      "titleRu": "Переработка плодов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "olive_mill.decant.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Decanter OK",
+      "titleRu": "Декантер OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "olive_mill.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Категория",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "evoo",
+        "voo",
+        "lampante",
+        "pomace",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

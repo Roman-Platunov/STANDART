@@ -1,0 +1,118 @@
+{
+  "layer": "B15",
+  "name": "layer-b-aoi_inspect.json",
+  "types": [
+    {
+      "path": "aoi_inspect.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AOI machine id",
+      "titleRu": "ID машины АОИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aoi_inspect.board.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Board id",
+      "titleRu": "ID платы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aoi_inspect.defects",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Defect count",
+      "titleRu": "Число дефектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aoi_inspect.false.call",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "False call rate",
+      "titleRu": "Ложные срабатывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aoi_inspect.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aoi_inspect.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inspection coverage",
+      "titleRu": "Покрытие контроля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aoi_inspect.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Board fail",
+      "titleRu": "Плата не прошла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aoi_inspect.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Этап",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pre_reflow",
+        "post_reflow",
+        "spi",
+        "axi",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

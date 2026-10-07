@@ -1,0 +1,110 @@
+{
+  "layer": "B15",
+  "name": "layer-b-vna_lab.json",
+  "types": [
+    {
+      "path": "vna_lab.instrument.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VNA id",
+      "titleRu": "ID векторного анализатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vna_lab.setup.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VNA setup id",
+      "titleRu": "ID установки VNA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vna_lab.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Stimulus frequency",
+      "titleRu": "Частота стимула",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vna_lab.s11",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "S11",
+      "titleRu": "S11",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vna_lab.s21",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "S21",
+      "titleRu": "S21",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vna_lab.power",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Stimulus power",
+      "titleRu": "Мощность стимула",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vna_lab.cal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Calibrated",
+      "titleRu": "Откалиброван",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vna_lab.cal_type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cal type",
+      "titleRu": "Тип калибровки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "solt",
+        "trl",
+        "unknown_thru",
+        "none"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "layer": "B15",
+  "name": "layer-b-wool_scour.json",
+  "types": [
+    {
+      "path": "wool_scour.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wool scour line id",
+      "titleRu": "ID линии мойки шерсти",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wool_scour.bowl.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bowl temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wool_scour.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Scour pH",
+      "titleRu": "pH мойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wool_scour.grease",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Residual grease",
+      "titleRu": "Остаточный жир",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wool_scour.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Clean yield",
+      "titleRu": "Выход чистой шерсти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wool_scour.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Greasy throughput",
+      "titleRu": "Переработка грязной шерсти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wool_scour.foam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Excess foam",
+      "titleRu": "Избыточная пена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wool_scour.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scour",
+        "rinse",
+        "dry",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

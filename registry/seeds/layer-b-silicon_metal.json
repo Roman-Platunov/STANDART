@@ -1,0 +1,120 @@
+{
+  "layer": "B15",
+  "name": "layer-b-silicon_metal.json",
+  "types": [
+    {
+      "path": "silicon_metal.furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Silicon furnace id",
+      "titleRu": "ID печи кремния",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "silicon_metal.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Furnace power",
+      "titleRu": "Мощность печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silicon_metal.si",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Silicon grade",
+      "titleRu": "Содержание кремния",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "silicon_metal.quartz.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Quartz feed",
+      "titleRu": "Подача кварца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silicon_metal.electrode.pos",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Electrode position",
+      "titleRu": "Положение электрода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silicon_metal.offgas.co",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Offgas CO",
+      "titleRu": "CO отходящих газов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "silicon_metal.tap.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tap ready",
+      "titleRu": "Готовность к выпуску",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "silicon_metal.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Марка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mg",
+        "cg",
+        "eg",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

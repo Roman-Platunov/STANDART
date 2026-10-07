@@ -1,0 +1,111 @@
+{
+  "layer": "B15",
+  "name": "layer-b-electrode_coat.json",
+  "types": [
+    {
+      "path": "electrode_coat.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coating line id",
+      "titleRu": "ID линии намазки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrode_coat.gap",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Coating gap",
+      "titleRu": "Зазор намазки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_coat.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Web speed",
+      "titleRu": "Скорость полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_coat.loading",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Areal loading",
+      "titleRu": "Нагрузка на площадь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_coat.dryer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dryer temperature",
+      "titleRu": "Температура сушилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_coat.moisture",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Residual moisture",
+      "titleRu": "Остаточная влага",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_coat.streak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Streak defect",
+      "titleRu": "Полоса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "electrode_coat.side",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Electrode",
+      "titleRu": "Электрод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "anode",
+        "cathode",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

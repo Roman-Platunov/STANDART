@@ -1,0 +1,22 @@
+sid: d89b8c96
+path: zinc_smelter.state
+aliases:
+  short: zinc_smelter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Smelter state
+fingerprint: sha256:d89b8c966cf16918a9c205f74a401e483baffa3ba7a7203ba6e8b462d469d947
+enumValues:
+  - roast
+  - leach
+  - electrowin
+  - cast
+  - idle
+  - fault

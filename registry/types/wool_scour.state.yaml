@@ -1,0 +1,21 @@
+sid: ecf39361
+path: wool_scour.state
+aliases:
+  short: wool_scour.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:ecf3936134985b1ed959721075e436b0e59cb23f4832388ee68f74eb300751ef
+enumValues:
+  - scour
+  - rinse
+  - dry
+  - idle
+  - fault

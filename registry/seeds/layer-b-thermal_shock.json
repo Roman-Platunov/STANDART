@@ -1,0 +1,109 @@
+{
+  "layer": "B15",
+  "name": "layer-b-thermal_shock.json",
+  "types": [
+    {
+      "path": "thermal_shock.chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thermal shock chamber id",
+      "titleRu": "ID камеры термошока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thermal_shock.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shock run id",
+      "titleRu": "ID прогона термошока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thermal_shock.hot",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hot zone",
+      "titleRu": "Горячая зона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_shock.cold",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cold zone",
+      "titleRu": "Холодная зона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_shock.dwell.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Dwell time",
+      "titleRu": "Выдержка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_shock.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cycle count",
+      "titleRu": "Число циклов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_shock.transfer",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In transfer",
+      "titleRu": "Перенос",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thermal_shock.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "air",
+        "liquid",
+        "two_zone",
+        "three_zone"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
