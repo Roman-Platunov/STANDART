@@ -1,0 +1,22 @@
+sid: 49086d19
+path: filter_press.state
+aliases:
+  short: filter_press.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:49086d19436c9aee2f3f8904d7eb78d1e8116e9c8853b0f4d8c8209fcf9ca493
+enumValues:
+  - fill
+  - press
+  - dry
+  - discharge
+  - idle
+  - fault

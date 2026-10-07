@@ -1,0 +1,22 @@
+sid: 48dde9da
+path: muck_haul.state
+aliases:
+  short: muck_haul.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние самосвала
+  en: Truck state
+fingerprint: sha256:48dde9da0bca590b32e053fcc324247f98c772272be09e7af6cff67da4bdb77e
+enumValues:
+  - load
+  - haul
+  - dump
+  - spot
+  - idle
+  - fault

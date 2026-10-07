@@ -1,0 +1,111 @@
+{
+  "layer": "B18",
+  "name": "layer-b-tunnel_boring.json",
+  "types": [
+    {
+      "path": "tunnel_boring.tbm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "TBM id",
+      "titleRu": "ID ТПМК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tunnel_boring.drive.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Drive id",
+      "titleRu": "ID проходки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tunnel_boring.advance",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Advance rate",
+      "titleRu": "Скорость проходки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_boring.thrust",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Total thrust",
+      "titleRu": "Суммарный распор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_boring.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Cutterhead torque",
+      "titleRu": "Момент ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_boring.face.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Face pressure",
+      "titleRu": "Давление забоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_boring.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "TBM stuck",
+      "titleRu": "ТПМК зажат",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tunnel_boring.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "TBM mode",
+      "titleRu": "Режим ТПМК",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "epb",
+        "slurry",
+        "hard_rock",
+        "open",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

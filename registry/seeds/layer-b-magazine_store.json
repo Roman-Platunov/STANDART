@@ -1,0 +1,115 @@
+{
+  "layer": "B18",
+  "name": "layer-b-magazine_store.json",
+  "types": [
+    {
+      "path": "magazine_store.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Explosives magazine id",
+      "titleRu": "ID склада ВВ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "magazine_store.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Magazine temperature",
+      "titleRu": "Температура склада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "magazine_store.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "magazine_store.inventory",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Explosive inventory",
+      "titleRu": "Запас ВВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "magazine_store.detonators",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Detonator count",
+      "titleRu": "Число детонаторов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "magazine_store.access",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Access events today",
+      "titleRu": "Доступов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "magazine_store.intrusion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Intrusion alarm",
+      "titleRu": "Тревога проникновения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "magazine_store.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Magazine state",
+      "titleRu": "Состояние склада",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "secure",
+        "issue",
+        "return",
+        "audit",
+        "alarm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

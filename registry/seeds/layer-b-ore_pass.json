@@ -1,0 +1,117 @@
+{
+  "layer": "B18",
+  "name": "layer-b-ore_pass.json",
+  "types": [
+    {
+      "path": "ore_pass.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ore pass id",
+      "titleRu": "ID рудоспуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ore_pass.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fill level",
+      "titleRu": "Уровень заполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ore_pass.flow",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Draw rate",
+      "titleRu": "Скорость выпуска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ore_pass.hang.up",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hang-up events",
+      "titleRu": "Зависаний",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ore_pass.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Wall vibration",
+      "titleRu": "Вибрация стенок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ore_pass.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pass temperature",
+      "titleRu": "Температура рудоспуска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ore_pass.blocked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pass blocked",
+      "titleRu": "Рудоспуск забит",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ore_pass.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pass state",
+      "titleRu": "Состояние рудоспуска",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "draw",
+        "hang",
+        "blast_clear",
+        "closed",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

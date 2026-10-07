@@ -1,0 +1,112 @@
+{
+  "layer": "B18",
+  "name": "layer-b-spinning_reserve.json",
+  "types": [
+    {
+      "path": "spinning_reserve.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reserve unit id",
+      "titleRu": "ID блока резерва",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spinning_reserve.headroom",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Headroom",
+      "titleRu": "Свободная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spinning_reserve.ramp",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Ramp rate",
+      "titleRu": "Скорость набора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spinning_reserve.response.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Response time",
+      "titleRu": "Время отклика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spinning_reserve.committed",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Committed reserve",
+      "titleRu": "Заявленный резерв",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spinning_reserve.deployed",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Deployed reserve",
+      "titleRu": "Выданный резерв",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spinning_reserve.available",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reserve available",
+      "titleRu": "Резерв доступен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spinning_reserve.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Class",
+      "titleRu": "Класс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spinning",
+        "non_spin",
+        "replacement",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

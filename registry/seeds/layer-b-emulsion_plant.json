@@ -1,0 +1,113 @@
+{
+  "layer": "B18",
+  "name": "layer-b-emulsion_plant.json",
+  "types": [
+    {
+      "path": "emulsion_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Emulsion plant id",
+      "titleRu": "ID завода эмульсии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "emulsion_plant.prod",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Emulsion production",
+      "titleRu": "Выпуск эмульсии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emulsion_plant.an.ratio",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "AN/fuel ratio",
+      "titleRu": "Соотношение AN/ГСМ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emulsion_plant.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Viscosity",
+      "titleRu": "Вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emulsion_plant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Process temperature",
+      "titleRu": "Температура процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emulsion_plant.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Density",
+      "titleRu": "Плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emulsion_plant.quality.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quality OK",
+      "titleRu": "Качество OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "emulsion_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "sensitize",
+        "load",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

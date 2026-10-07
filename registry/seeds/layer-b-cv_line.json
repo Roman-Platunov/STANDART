@@ -1,0 +1,110 @@
+{
+  "layer": "B18",
+  "name": "layer-b-cv_line.json",
+  "types": [
+    {
+      "path": "cv_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CV line id",
+      "titleRu": "ID линии непрерывной вулканизации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cv_line.reel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CV reel id",
+      "titleRu": "ID барабана CV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cv_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cv_line.tube.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CV tube temperature",
+      "titleRu": "Температура трубы CV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cv_line.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tube pressure",
+      "titleRu": "Давление трубы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cv_line.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Cable diameter",
+      "titleRu": "Диаметр кабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cv_line.eccentric",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Eccentricity high",
+      "titleRu": "Высокий эксцентриситет",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cv_line.compound",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Compound",
+      "titleRu": "Компаунд",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "xlpe",
+        "epr",
+        "pe",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "layer": "B18",
+  "name": "layer-b-oil_fill_xfmr.json",
+  "types": [
+    {
+      "path": "oil_fill_xfmr.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transformer tank id",
+      "titleRu": "ID бака трансформатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oil_fill_xfmr.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Fill vacuum",
+      "titleRu": "Вакуум при заливке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_fill_xfmr.oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_fill_xfmr.moisture",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Oil moisture",
+      "titleRu": "Влага в масле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_fill_xfmr.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oil level",
+      "titleRu": "Уровень масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oil_fill_xfmr.bdv",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Oil BDV",
+      "titleRu": "Пробивное напряжение масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_fill_xfmr.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready for energize",
+      "titleRu": "Готов к включению",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oil_fill_xfmr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fill state",
+      "titleRu": "Состояние заливки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "evac",
+        "fill",
+        "impregnate",
+        "settle",
+        "complete",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

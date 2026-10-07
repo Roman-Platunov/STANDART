@@ -1,0 +1,21 @@
+sid: 5b6ae382
+path: segment_lining.state
+aliases:
+  short: segment_lining.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние обделки
+  en: Lining state
+fingerprint: sha256:5b6ae382fb287f1a5829ce97cdc7d492ef2f3fc5af4345403d4ae145a2b72988
+enumValues:
+  - erect
+  - grout
+  - advance
+  - idle
+  - fault

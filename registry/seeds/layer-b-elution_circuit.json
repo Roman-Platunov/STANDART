@@ -1,0 +1,112 @@
+{
+  "layer": "B18",
+  "name": "layer-b-elution_circuit.json",
+  "types": [
+    {
+      "path": "elution_circuit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Elution circuit id",
+      "titleRu": "ID контура элюирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "elution_circuit.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Elution temperature",
+      "titleRu": "Температура элюирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elution_circuit.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Eluant flow",
+      "titleRu": "Расход элюента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elution_circuit.au",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Pregnant Au",
+      "titleRu": "Au в ПР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elution_circuit.cn",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Cyanide",
+      "titleRu": "Цианид",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elution_circuit.carbon",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Carbon inventory",
+      "titleRu": "Запас угля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elution_circuit.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Strip ready",
+      "titleRu": "Готово к снятию",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "elution_circuit.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "zadra",
+        "aal",
+        "anglo",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: "65312e79"
+path: auger_cast.state
+aliases:
+  short: auger_cast.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сваи
+  en: Pile state
+fingerprint: sha256:65312e79b27922b3607c9f50bb60627a851bf5a2649408b7873b0bad10de9b36
+enumValues:
+  - drill
+  - concrete
+  - cage
+  - complete
+  - fault

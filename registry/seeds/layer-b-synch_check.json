@@ -1,0 +1,113 @@
+{
+  "layer": "B18",
+  "name": "layer-b-synch_check.json",
+  "types": [
+    {
+      "path": "synch_check.bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sync-check bay id",
+      "titleRu": "ID ячейки синхронизации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "synch_check.dV",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Voltage difference",
+      "titleRu": "Разность напряжений",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synch_check.df",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency difference",
+      "titleRu": "Разность частот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synch_check.dangle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Angle difference",
+      "titleRu": "Разность углов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synch_check.window.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Sync window",
+      "titleRu": "Окно синхронизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synch_check.slip",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Slip frequency",
+      "titleRu": "Частота скольжения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synch_check.in_window",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In sync window",
+      "titleRu": "В окне синхронизации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "synch_check.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sync state",
+      "titleRu": "Состояние синхронизации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "ready",
+        "close",
+        "block",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

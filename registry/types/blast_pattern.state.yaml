@@ -1,0 +1,22 @@
+sid: 6a390c1e
+path: blast_pattern.state
+aliases:
+  short: blast_pattern.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние взрыва
+  en: Blast state
+fingerprint: sha256:6a390c1e2a77992cd7ee808edc9d02512b14ce31cafb825ba72903c28a512d1c
+enumValues:
+  - design
+  - drill
+  - load
+  - fire
+  - muck
+  - complete

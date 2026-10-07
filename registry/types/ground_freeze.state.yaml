@@ -1,0 +1,21 @@
+sid: 42b5f51e
+path: ground_freeze.state
+aliases:
+  short: ground_freeze.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Plant state
+fingerprint: sha256:42b5f51e44657d82f6a675a1a730d16f10e54764ccd72745fb15b6603cc90855
+enumValues:
+  - freeze
+  - hold
+  - thaw
+  - idle
+  - fault

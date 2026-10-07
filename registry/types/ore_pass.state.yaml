@@ -1,0 +1,22 @@
+sid: bdea0e04
+path: ore_pass.state
+aliases:
+  short: ore_pass.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние рудоспуска
+  en: Pass state
+fingerprint: sha256:bdea0e04b177dc10599d87cc7d1c156228bc70d0b328d6aaa8ccd3daf62ed771
+enumValues:
+  - open
+  - draw
+  - hang
+  - blast_clear
+  - closed
+  - fault

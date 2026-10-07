@@ -1,0 +1,108 @@
+{
+  "layer": "B18",
+  "name": "layer-b-relay_test.json",
+  "types": [
+    {
+      "path": "relay_test.set.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Relay test set id",
+      "titleRu": "ID испытательной установки реле",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "relay_test.relay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Relay under test id",
+      "titleRu": "ID испытуемого реле",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "relay_test.pickup",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Pickup current",
+      "titleRu": "Ток срабатывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "relay_test.time.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Operate time",
+      "titleRu": "Время срабатывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "relay_test.points",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Test points",
+      "titleRu": "Точек теста",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "relay_test.fail",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Failed points",
+      "titleRu": "Непройденных точек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "relay_test.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Relay pass",
+      "titleRu": "Реле прошло",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "relay_test.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Result",
+      "titleRu": "Результат",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "retest",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

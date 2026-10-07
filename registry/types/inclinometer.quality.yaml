@@ -1,0 +1,20 @@
+sid: e6f07845
+path: inclinometer.quality
+aliases:
+  short: inclinometer.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество данных
+  en: Data quality
+fingerprint: sha256:e6f07845058423b9a27f44e45f5b97bfd899c7951aa856c234b045618d98875d
+enumValues:
+  - good
+  - suspect
+  - gap
+  - offline

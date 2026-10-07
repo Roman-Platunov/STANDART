@@ -1,0 +1,112 @@
+{
+  "layer": "B18",
+  "name": "layer-b-hpgr.json",
+  "types": [
+    {
+      "path": "hpgr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HPGR id",
+      "titleRu": "ID валковой дробилки высокого давления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hpgr.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Specific pressure",
+      "titleRu": "Удельное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Roll gap",
+      "titleRu": "Зазор валков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Drive power",
+      "titleRu": "Мощность привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr.roll.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Roll speed",
+      "titleRu": "Скорость валков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr.skew",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Roll skew",
+      "titleRu": "Перекос валков",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hpgr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "HPGR state",
+      "titleRu": "Состояние HPGR",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

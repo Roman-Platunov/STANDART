@@ -1,0 +1,119 @@
+{
+  "layer": "B18",
+  "name": "layer-b-hydrocyclone.json",
+  "types": [
+    {
+      "path": "hydrocyclone.cluster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cyclone cluster id",
+      "titleRu": "ID блока гидроциклонов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrocyclone.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Feed pressure",
+      "titleRu": "Давление питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrocyclone.feed.dens",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Feed density",
+      "titleRu": "Плотность питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hydrocyclone.uf.dens",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Underflow density",
+      "titleRu": "Плотность песков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hydrocyclone.cut.size",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Cut size",
+      "titleRu": "Размер разделения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrocyclone.units",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cyclones online",
+      "titleRu": "Циклонов онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrocyclone.roping",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Roping",
+      "titleRu": "Жгут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hydrocyclone.duty",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Duty",
+      "titleRu": "Назначение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "classify",
+        "dewater",
+        "deslime",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

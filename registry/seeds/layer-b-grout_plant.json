@@ -1,0 +1,111 @@
+{
+  "layer": "B18",
+  "name": "layer-b-grout_plant.json",
+  "types": [
+    {
+      "path": "grout_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grout plant id",
+      "titleRu": "ID растворного узла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grout_plant.hole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grout hole id",
+      "titleRu": "ID скважины инъекции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grout_plant.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Injection pressure",
+      "titleRu": "Давление инъекции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grout_plant.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Grout flow",
+      "titleRu": "Расход раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grout_plant.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Injected volume",
+      "titleRu": "Закачанный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grout_plant.wcr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Water-cement ratio",
+      "titleRu": "В/Ц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grout_plant.take.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Refusal reached",
+      "titleRu": "Отказ достигнут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "grout_plant.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grout type",
+      "titleRu": "Тип раствора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cement",
+        "chemical",
+        "foam",
+        "bentonite",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

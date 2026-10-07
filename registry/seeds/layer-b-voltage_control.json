@@ -1,0 +1,113 @@
+{
+  "layer": "B18",
+  "name": "layer-b-voltage_control.json",
+  "types": [
+    {
+      "path": "voltage_control.bus.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Controlled bus id",
+      "titleRu": "ID регулируемой шины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "voltage_control.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Bus voltage",
+      "titleRu": "Напряжение шины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "voltage_control.setpoint",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Voltage setpoint",
+      "titleRu": "Уставка напряжения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "voltage_control.reactive",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Reactive output",
+      "titleRu": "Выдача реактивной",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "voltage_control.tap",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tap position",
+      "titleRu": "Положение анцапфы",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "voltage_control.cap",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Cap bank vars",
+      "titleRu": "Вар батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "voltage_control.limit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Voltage limit",
+      "titleRu": "Предел напряжения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "voltage_control.device",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Device",
+      "titleRu": "Устройство",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "avr",
+        "oltc",
+        "svc",
+        "statcom",
+        "cap",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

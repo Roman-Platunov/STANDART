@@ -1,0 +1,111 @@
+{
+  "layer": "B18",
+  "name": "layer-b-blast_pattern.json",
+  "types": [
+    {
+      "path": "blast_pattern.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blast pattern id",
+      "titleRu": "ID схемы взрыва",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blast_pattern.bench.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bench id",
+      "titleRu": "ID уступа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blast_pattern.holes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hole count",
+      "titleRu": "Число скважин",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_pattern.burden",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Burden",
+      "titleRu": "Л.с.с.",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_pattern.spacing",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Spacing",
+      "titleRu": "Расстояние между скважинами",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_pattern.pf",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Powder factor",
+      "titleRu": "Удельный расход ВВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_pattern.cleared",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Area cleared",
+      "titleRu": "Зона очищена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "blast_pattern.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Blast state",
+      "titleRu": "Состояние взрыва",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "design",
+        "drill",
+        "load",
+        "fire",
+        "muck",
+        "complete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

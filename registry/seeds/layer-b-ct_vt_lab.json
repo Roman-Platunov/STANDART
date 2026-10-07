@@ -1,0 +1,114 @@
+{
+  "layer": "B18",
+  "name": "layer-b-ct_vt_lab.json",
+  "types": [
+    {
+      "path": "ct_vt_lab.bench.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Instrument transformer bench id",
+      "titleRu": "ID стенда ТТ/ТН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ct_vt_lab.dut.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CT/VT under test id",
+      "titleRu": "ID испытуемого ТТ/ТН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ct_vt_lab.ratio.error",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ratio error",
+      "titleRu": "Погрешность коэффициента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -100,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ct_vt_lab.phase.error",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Phase displacement",
+      "titleRu": "Угловая погрешность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ct_vt_lab.burden",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Test burden",
+      "titleRu": "Нагрузка испытания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ct_vt_lab.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Applied voltage",
+      "titleRu": "Приложенное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ct_vt_lab.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Class pass",
+      "titleRu": "Класс пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ct_vt_lab.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ct",
+        "vt",
+        "cvt",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

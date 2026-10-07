@@ -1,0 +1,118 @@
+{
+  "layer": "B18",
+  "name": "layer-b-flotation_cell.json",
+  "types": [
+    {
+      "path": "flotation_cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flotation cell id",
+      "titleRu": "ID флотомашины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flotation_cell.bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flotation bank id",
+      "titleRu": "ID ряда флотации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flotation_cell.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Air rate",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flotation_cell.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pulp level",
+      "titleRu": "Уровень пульпы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flotation_cell.frother",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Frother dose",
+      "titleRu": "Доза пенообразователя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flotation_cell.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cell recovery",
+      "titleRu": "Извлечение в камере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flotation_cell.sanded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cell sanded",
+      "titleRu": "Заиление камеры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flotation_cell.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cell type",
+      "titleRu": "Тип камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mech",
+        "column",
+        "jameson",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

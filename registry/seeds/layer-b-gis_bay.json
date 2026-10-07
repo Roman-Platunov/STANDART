@@ -1,0 +1,112 @@
+{
+  "layer": "B18",
+  "name": "layer-b-gis_bay.json",
+  "types": [
+    {
+      "path": "gis_bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GIS bay id",
+      "titleRu": "ID ячейки КРУЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gis_bay.sf6.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "SF6 pressure",
+      "titleRu": "Давление SF6",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gis_bay.sf6.dew",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "SF6 dewpoint",
+      "titleRu": "Точка росы SF6",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gis_bay.pd",
+      "kind": "quantity",
+      "unit": "pC",
+      "titleEn": "Partial discharge",
+      "titleRu": "Частичные разряды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gis_bay.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bay temperature",
+      "titleRu": "Температура ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gis_bay.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "CB operations",
+      "titleRu": "Переключений выключателя",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gis_bay.sf6.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SF6 low",
+      "titleRu": "Низкий SF6",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gis_bay.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bay state",
+      "titleRu": "Состояние ячейки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "energized",
+        "isolated",
+        "earthed",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

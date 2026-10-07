@@ -1,0 +1,109 @@
+{
+  "layer": "B18",
+  "name": "layer-b-tap_changer.json",
+  "types": [
+    {
+      "path": "tap_changer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OLTC id",
+      "titleRu": "ID РПН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tap_changer.xfmr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transformer id",
+      "titleRu": "ID трансформатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tap_changer.position",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tap position",
+      "titleRu": "Положение анцапфы",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tap_changer.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Operation count",
+      "titleRu": "Число переключений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tap_changer.motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tap_changer.oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Compartment oil temperature",
+      "titleRu": "Температура масла отсека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tap_changer.in_progress",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tap in progress",
+      "titleRu": "Переключение идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tap_changer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "OLTC state",
+      "titleRu": "Состояние РПН",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "raise",
+        "lower",
+        "block",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

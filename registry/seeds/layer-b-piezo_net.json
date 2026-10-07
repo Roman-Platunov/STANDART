@@ -1,0 +1,116 @@
+{
+  "layer": "B18",
+  "name": "layer-b-piezo_net.json",
+  "types": [
+    {
+      "path": "piezo_net.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Piezometer id",
+      "titleRu": "ID пьезометра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "piezo_net.head",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Hydraulic head",
+      "titleRu": "Напор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "piezo_net.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Pore pressure",
+      "titleRu": "Поровое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "piezo_net.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sensor temperature",
+      "titleRu": "Температура датчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "piezo_net.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tip depth",
+      "titleRu": "Глубина наконечника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "piezo_net.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Logger battery",
+      "titleRu": "Батарея логгера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "piezo_net.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pressure alarm",
+      "titleRu": "Тревога давления",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "piezo_net.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vibrating_wire",
+        "pneumatic",
+        "standpipe",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

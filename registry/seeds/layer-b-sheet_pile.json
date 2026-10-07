@@ -1,0 +1,109 @@
+{
+  "layer": "B18",
+  "name": "layer-b-sheet_pile.json",
+  "types": [
+    {
+      "path": "sheet_pile.wall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sheet pile wall id",
+      "titleRu": "ID шпунтовой стенки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sheet_pile.rig.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Driving rig id",
+      "titleRu": "ID копра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sheet_pile.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Driven depth",
+      "titleRu": "Глубина забивки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sheet_pile.blow",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Blow count",
+      "titleRu": "Число ударов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sheet_pile.vib.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Vibrator frequency",
+      "titleRu": "Частота вибратора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sheet_pile.deviation",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Plumb deviation",
+      "titleRu": "Отклонение от вертикали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sheet_pile.refusal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Driving refusal",
+      "titleRu": "Отказ при забивке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sheet_pile.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vibro",
+        "impact",
+        "press",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

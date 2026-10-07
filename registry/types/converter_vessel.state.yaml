@@ -1,0 +1,22 @@
+sid: ec26a1d5
+path: converter_vessel.state
+aliases:
+  short: converter_vessel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние конвертера
+  en: Converter state
+fingerprint: sha256:ec26a1d50749f3e573f66e7b5863026eb0c6fa09f5cc027607d49e9b1ebdf9f5
+enumValues:
+  - charge
+  - blow
+  - reblow
+  - tap
+  - idle
+  - fault

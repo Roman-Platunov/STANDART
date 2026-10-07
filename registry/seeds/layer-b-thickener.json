@@ -1,0 +1,116 @@
+{
+  "layer": "B18",
+  "name": "layer-b-thickener.json",
+  "types": [
+    {
+      "path": "thickener.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thickener id",
+      "titleRu": "ID сгустителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thickener.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Rake torque",
+      "titleRu": "Момент скребков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thickener.bed",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Bed level",
+      "titleRu": "Уровень слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thickener.underflow",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Underflow density",
+      "titleRu": "Плотность сгущенного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thickener.floc",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Flocculant dose",
+      "titleRu": "Доза флокулянта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thickener.overflow.turb",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Overflow turbidity",
+      "titleRu": "Мутность слива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thickener.rake.up",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rake raised",
+      "titleRu": "Скребки подняты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thickener.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Thickener state",
+      "titleRu": "Состояние сгустителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "rake_up",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

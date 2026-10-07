@@ -1,0 +1,110 @@
+{
+  "layer": "B18",
+  "name": "layer-b-load_shed.json",
+  "types": [
+    {
+      "path": "load_shed.scheme.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Load-shed scheme id",
+      "titleRu": "ID схемы АЧР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "load_shed.feeder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shed feeder id",
+      "titleRu": "ID отключаемого фидера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "load_shed.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Trigger frequency",
+      "titleRu": "Частота срабатывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "load_shed.armed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Steps armed",
+      "titleRu": "Вооружённых ступеней",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "load_shed.shed.mw",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Shed MW",
+      "titleRu": "Отключённая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "load_shed.delay.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Step delay",
+      "titleRu": "Задержка ступени",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "load_shed.tripped",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scheme tripped",
+      "titleRu": "Схема сработала",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "load_shed.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Scheme state",
+      "titleRu": "Состояние схемы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "armed",
+        "tripped",
+        "blocked",
+        "reset",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

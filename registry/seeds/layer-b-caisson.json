@@ -1,0 +1,112 @@
+{
+  "layer": "B18",
+  "name": "layer-b-caisson.json",
+  "types": [
+    {
+      "path": "caisson.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Caisson id",
+      "titleRu": "ID кессона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "caisson.air.lock.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Air-lock pressure",
+      "titleRu": "Давление шлюза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "caisson.advance",
+      "kind": "quantity",
+      "unit": "m/d",
+      "titleEn": "Sink rate",
+      "titleRu": "Скорость погружения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "caisson.edge.resist",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cutting-edge resistance",
+      "titleRu": "Сопротивление ножа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "caisson.tilt",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Tilt",
+      "titleRu": "Крен",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "caisson.workers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Workers below",
+      "titleRu": "Рабочих внизу",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "caisson.blow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blow risk",
+      "titleRu": "Риск выброса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "caisson.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Caisson state",
+      "titleRu": "Состояние кессона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sink",
+        "excavate",
+        "seal",
+        "hold",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

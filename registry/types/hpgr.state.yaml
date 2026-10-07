@@ -1,0 +1,20 @@
+sid: 09fe012e
+path: hpgr.state
+aliases:
+  short: hpgr.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние HPGR
+  en: HPGR state
+fingerprint: sha256:09fe012e7fb470d297f9bcc7c7bb364f187e793316771b98d449d46acd462b62
+enumValues:
+  - run
+  - idle
+  - maintain
+  - fault

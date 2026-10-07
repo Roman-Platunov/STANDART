@@ -1,0 +1,21 @@
+sid: 87b28ab5
+path: caisson.state
+aliases:
+  short: caisson.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кессона
+  en: Caisson state
+fingerprint: sha256:87b28ab5d3f95f6ec0ba9ec67bb9c1bea1ccf01ce443d359b40a79aff6a62f44
+enumValues:
+  - sink
+  - excavate
+  - seal
+  - hold
+  - fault

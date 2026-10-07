@@ -1,0 +1,21 @@
+sid: 8bf9eb35
+path: gis_bay.state
+aliases:
+  short: gis_bay.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ячейки
+  en: Bay state
+fingerprint: sha256:8bf9eb359ba47948f78617369c0592e5bbd1afcde2f7b8fc913b4c7582f7f232
+enumValues:
+  - energized
+  - isolated
+  - earthed
+  - maintain
+  - fault

@@ -1,0 +1,115 @@
+{
+  "layer": "B18",
+  "name": "layer-b-extensometer.json",
+  "types": [
+    {
+      "path": "extensometer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Extensometer id",
+      "titleRu": "ID экстензометра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extensometer.disp",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Displacement",
+      "titleRu": "Смещение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extensometer.rate",
+      "kind": "quantity",
+      "unit": "mm/d",
+      "titleEn": "Rate",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extensometer.anchors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active anchors",
+      "titleRu": "Активных анкеров",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extensometer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sensor temperature",
+      "titleRu": "Температура датчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extensometer.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Logger battery",
+      "titleRu": "Батарея логгера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "extensometer.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Displacement alarm",
+      "titleRu": "Тревога смещения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "extensometer.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rod",
+        "wire",
+        "magnetic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

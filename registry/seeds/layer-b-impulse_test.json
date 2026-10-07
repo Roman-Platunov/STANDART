@@ -1,0 +1,109 @@
+{
+  "layer": "B18",
+  "name": "layer-b-impulse_test.json",
+  "types": [
+    {
+      "path": "impulse_test.generator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Impulse generator id",
+      "titleRu": "ID импульсного генератора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "impulse_test.dut.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Impulse DUT id",
+      "titleRu": "ID испытуемого импульсом",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "impulse_test.peak",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Peak voltage",
+      "titleRu": "Пиковое напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "impulse_test.front.us",
+      "kind": "quantity",
+      "unit": "us",
+      "titleEn": "Front time",
+      "titleRu": "Длительность фронта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "impulse_test.tail.us",
+      "kind": "quantity",
+      "unit": "us",
+      "titleEn": "Tail time",
+      "titleRu": "Длительность хвоста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "impulse_test.shots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shot count",
+      "titleRu": "Число импульсов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "impulse_test.chop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chopped wave",
+      "titleRu": "Срезанная волна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "impulse_test.wave",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Waveform",
+      "titleRu": "Форма волны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "li",
+        "si",
+        "chopped",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

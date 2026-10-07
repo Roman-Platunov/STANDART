@@ -1,0 +1,18 @@
+sid: 8bcf03bb
+path: extensometer.battery
+aliases:
+  short: extensometer.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея логгера
+  en: Logger battery
+fingerprint: sha256:8bcf03bb5a230afdfde0efc26860bb931f1484bd1e464d1b49046dfdeeace725
+range:
+  min: 0
+  max: 100

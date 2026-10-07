@@ -1,0 +1,111 @@
+{
+  "layer": "B18",
+  "name": "layer-b-partial_discharge.json",
+  "types": [
+    {
+      "path": "partial_discharge.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PD sensor id",
+      "titleRu": "ID датчика ЧР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "partial_discharge.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Monitored asset id",
+      "titleRu": "ID контролируемого актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "partial_discharge.qiec",
+      "kind": "quantity",
+      "unit": "pC",
+      "titleEn": "Apparent charge",
+      "titleRu": "Кажущийся заряд",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "partial_discharge.pps",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Pulses per second",
+      "titleRu": "Импульсов в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "partial_discharge.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Noise floor",
+      "titleRu": "Шумовой пол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "partial_discharge.phase",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Phase resolved peak",
+      "titleRu": "Фазовый пик",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "partial_discharge.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "PD alarm",
+      "titleRu": "Тревога ЧР",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "partial_discharge.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Likely source",
+      "titleRu": "Вероятный источник",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "void",
+        "corona",
+        "surface",
+        "floating",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

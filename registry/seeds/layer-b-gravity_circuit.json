@@ -1,0 +1,117 @@
+{
+  "layer": "B18",
+  "name": "layer-b-gravity_circuit.json",
+  "types": [
+    {
+      "path": "gravity_circuit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gravity circuit id",
+      "titleRu": "ID гравитационного контура",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gravity_circuit.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gravity_circuit.conc.grade",
+      "kind": "quantity",
+      "unit": "g/t",
+      "titleEn": "Concentrate grade",
+      "titleRu": "Содержание в концентрате",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gravity_circuit.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Gravity recovery",
+      "titleRu": "Гравитационное извлечение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gravity_circuit.fluidize",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Fluidization water",
+      "titleRu": "Вода псевдоожижения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gravity_circuit.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Bowl speed",
+      "titleRu": "Обороты чаши",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gravity_circuit.purge",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Purge active",
+      "titleRu": "Продувка активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gravity_circuit.unit",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit type",
+      "titleRu": "Тип аппарата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "knelson",
+        "falcon",
+        "spiral",
+        "jig",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+sid: 0bc520d3
+path: oil_fill_xfmr.state
+aliases:
+  short: oil_fill_xfmr.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние заливки
+  en: Fill state
+fingerprint: sha256:0bc520d35956702927539b9589091f6edaeb570219b73b09bdfc991d2c351b7a
+enumValues:
+  - evac
+  - fill
+  - impregnate
+  - settle
+  - complete
+  - fault

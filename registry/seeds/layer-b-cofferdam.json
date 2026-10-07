@@ -1,0 +1,113 @@
+{
+  "layer": "B18",
+  "name": "layer-b-cofferdam.json",
+  "types": [
+    {
+      "path": "cofferdam.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cofferdam id",
+      "titleRu": "ID перемычки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cofferdam.water.out",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Inside water level",
+      "titleRu": "Уровень воды внутри",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cofferdam.pump.rate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Dewatering rate",
+      "titleRu": "Производительность откачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cofferdam.seepage",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Seepage",
+      "titleRu": "Фильтрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cofferdam.strut.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Strut force",
+      "titleRu": "Усилие распорки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cofferdam.freeboard",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Freeboard",
+      "titleRu": "Запас борта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cofferdam.flood",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flood risk",
+      "titleRu": "Риск затопления",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cofferdam.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cofferdam state",
+      "titleRu": "Состояние перемычки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "install",
+        "dewater",
+        "work",
+        "flood",
+        "remove"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

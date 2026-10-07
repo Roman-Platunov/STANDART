@@ -1,0 +1,20 @@
+sid: 4baa7930
+path: thickener.state
+aliases:
+  short: thickener.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сгустителя
+  en: Thickener state
+fingerprint: sha256:4baa7930905621c0e4f274c54b68a1170e2fbe86b6ba40b2062b0b07fa001ff8
+enumValues:
+  - run
+  - rake_up
+  - idle
+  - fault

@@ -1,0 +1,110 @@
+{
+  "layer": "B18",
+  "name": "layer-b-stranding.json",
+  "types": [
+    {
+      "path": "stranding.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stranding machine id",
+      "titleRu": "ID крутильной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stranding.reel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Product reel id",
+      "titleRu": "ID барабана продукции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stranding.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stranding.lay",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Lay length",
+      "titleRu": "Шаг свивки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stranding.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Wire tension",
+      "titleRu": "Натяжение проволоки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stranding.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Strand diameter",
+      "titleRu": "Диаметр пряди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stranding.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wire break",
+      "titleRu": "Обрыв проволоки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stranding.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукция",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "conductor",
+        "armor",
+        "rope",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

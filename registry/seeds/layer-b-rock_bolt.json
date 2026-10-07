@@ -1,0 +1,111 @@
+{
+  "layer": "B18",
+  "name": "layer-b-rock_bolt.json",
+  "types": [
+    {
+      "path": "rock_bolt.pattern.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bolt pattern id",
+      "titleRu": "ID схемы анкеров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rock_bolt.hole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bolt hole id",
+      "titleRu": "ID шпура анкера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rock_bolt.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Bolt length",
+      "titleRu": "Длина анкера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rock_bolt.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Install torque",
+      "titleRu": "Момент установки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rock_bolt.load",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Bolt load",
+      "titleRu": "Нагрузка на анкер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rock_bolt.grout",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Grout volume",
+      "titleRu": "Объём раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rock_bolt.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bolt failed",
+      "titleRu": "Анкер отказал",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rock_bolt.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bolt type",
+      "titleRu": "Тип анкера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "resin",
+        "grouted",
+        "swellex",
+        "cable",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

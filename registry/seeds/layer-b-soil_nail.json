@@ -1,0 +1,111 @@
+{
+  "layer": "B18",
+  "name": "layer-b-soil_nail.json",
+  "types": [
+    {
+      "path": "soil_nail.wall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Soil nail wall id",
+      "titleRu": "ID стены грунтовых анкеров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soil_nail.nail.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Nail id",
+      "titleRu": "ID анкера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soil_nail.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Nail length",
+      "titleRu": "Длина анкера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soil_nail.grout.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Grout pressure",
+      "titleRu": "Давление инъекции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soil_nail.test.load",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Proof load",
+      "titleRu": "Контрольная нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soil_nail.face.thick",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Facing thickness",
+      "titleRu": "Толщина облицовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soil_nail.creep",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Creep alarm",
+      "titleRu": "Тревога ползучести",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "soil_nail.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Стадия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "drill",
+        "grout",
+        "test",
+        "face",
+        "complete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

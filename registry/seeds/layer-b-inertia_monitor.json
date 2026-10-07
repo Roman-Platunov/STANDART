@@ -1,0 +1,116 @@
+{
+  "layer": "B18",
+  "name": "layer-b-inertia_monitor.json",
+  "types": [
+    {
+      "path": "inertia_monitor.area.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inertia area id",
+      "titleRu": "ID зоны инерции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inertia_monitor.inertia",
+      "kind": "quantity",
+      "unit": "J.s",
+      "titleEn": "System inertia",
+      "titleRu": "Инерция системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inertia_monitor.rocof",
+      "kind": "quantity",
+      "unit": "Hz/s",
+      "titleEn": "RoCoF",
+      "titleRu": "Скорость изменения частоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inertia_monitor.nadir",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency nadir",
+      "titleRu": "Минимум частоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inertia_monitor.snsp",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "SNSP",
+      "titleRu": "Доля несинхронной генерации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inertia_monitor.online",
+      "kind": "quantity",
+      "unit": "J.s",
+      "titleEn": "Online inertia",
+      "titleRu": "Онлайн-инерция",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inertia_monitor.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low inertia alert",
+      "titleRu": "Тревога низкой инерции",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "inertia_monitor.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Estimate quality",
+      "titleRu": "Качество оценки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "estimated",
+        "degraded",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B18",
+  "name": "layer-b-island_mode.json",
+  "types": [
+    {
+      "path": "island_mode.microgrid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Island microgrid id",
+      "titleRu": "ID островной микросети",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "island_mode.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Island frequency",
+      "titleRu": "Частота острова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "island_mode.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Island voltage",
+      "titleRu": "Напряжение острова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "island_mode.load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Island load",
+      "titleRu": "Нагрузка острова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "island_mode.gen",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Island generation",
+      "titleRu": "Генерация острова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "island_mode.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Storage SOC",
+      "titleRu": "SOC накопителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "island_mode.islanded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Islanded",
+      "titleRu": "В острове",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "island_mode.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grid",
+        "island",
+        "resynch",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

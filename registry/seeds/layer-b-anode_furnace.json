@@ -1,0 +1,120 @@
+{
+  "layer": "B18",
+  "name": "layer-b-anode_furnace.json",
+  "types": [
+    {
+      "path": "anode_furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anode furnace id",
+      "titleRu": "ID анодной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anode_furnace.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anode furnace heat id",
+      "titleRu": "ID плавки анодной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anode_furnace.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_furnace.s",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sulfur content",
+      "titleRu": "Содержание серы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "anode_furnace.o2",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Poling / O2 rate",
+      "titleRu": "Расход кислорода/дразнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_furnace.cu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Copper grade",
+      "titleRu": "Содержание меди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "anode_furnace.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cast ready",
+      "titleRu": "Готово к разливке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "anode_furnace.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnace state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "oxidize",
+        "reduce",
+        "cast",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

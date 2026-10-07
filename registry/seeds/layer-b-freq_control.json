@@ -1,0 +1,112 @@
+{
+  "layer": "B18",
+  "name": "layer-b-freq_control.json",
+  "types": [
+    {
+      "path": "freq_control.area.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Control area id",
+      "titleRu": "ID зоны регулирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "freq_control.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "System frequency",
+      "titleRu": "Частота системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freq_control.ace",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "ACE",
+      "titleRu": "ACE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freq_control.reg",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Regulation MW",
+      "titleRu": "Регулирующая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freq_control.bias",
+      "kind": "quantity",
+      "unit": "W/Hz",
+      "titleEn": "Frequency bias",
+      "titleRu": "Статизм по частоте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freq_control.cps1",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "CPS1",
+      "titleRu": "CPS1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freq_control.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Frequency alert",
+      "titleRu": "Тревога частоты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "freq_control.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Control mode",
+      "titleRu": "Режим управления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "agc",
+        "manual",
+        "emergency",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

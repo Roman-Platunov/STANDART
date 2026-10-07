@@ -1,0 +1,117 @@
+{
+  "layer": "B18",
+  "name": "layer-b-filter_press.json",
+  "types": [
+    {
+      "path": "filter_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Filter press id",
+      "titleRu": "ID фильтр-пресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "filter_press.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_press.cake.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cake moisture",
+      "titleRu": "Влажность кека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "filter_press.feed.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Feed pressure",
+      "titleRu": "Давление питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_press.plates",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Plates in service",
+      "titleRu": "Плит в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_press.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Dry solids rate",
+      "titleRu": "Производительность по сухому",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_press.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cloth leak",
+      "titleRu": "Протечка ткани",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "filter_press.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "press",
+        "dry",
+        "discharge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

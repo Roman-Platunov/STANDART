@@ -1,0 +1,111 @@
+{
+  "layer": "B18",
+  "name": "layer-b-ground_freeze.json",
+  "types": [
+    {
+      "path": "ground_freeze.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Freeze plant id",
+      "titleRu": "ID замораживающей станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ground_freeze.hole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Freeze hole id",
+      "titleRu": "ID замораживающей скважины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ground_freeze.brine.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Brine temperature",
+      "titleRu": "Температура рассола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_freeze.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Brine flow",
+      "titleRu": "Расход рассола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_freeze.wall.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Frozen wall temperature",
+      "titleRu": "Температура ледогрунтовой стенки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_freeze.thickness",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Wall thickness",
+      "titleRu": "Толщина стенки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_freeze.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wall breach risk",
+      "titleRu": "Риск прорыва стенки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ground_freeze.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "freeze",
+        "hold",
+        "thaw",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

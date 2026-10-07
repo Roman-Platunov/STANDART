@@ -1,0 +1,110 @@
+{
+  "layer": "B18",
+  "name": "layer-b-slope_monitor.json",
+  "types": [
+    {
+      "path": "slope_monitor.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slope site id",
+      "titleRu": "ID склонового участка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "slope_monitor.prism.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Prism id",
+      "titleRu": "ID призмы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "slope_monitor.disp",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Displacement",
+      "titleRu": "Смещение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slope_monitor.rate",
+      "kind": "quantity",
+      "unit": "mm/d",
+      "titleEn": "Velocity",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slope_monitor.accel",
+      "kind": "quantity",
+      "unit": "mm/d",
+      "titleEn": "Acceleration",
+      "titleRu": "Ускорение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slope_monitor.rain",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Rain since last",
+      "titleRu": "Осадки с прошлого замера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slope_monitor.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Slope alarm",
+      "titleRu": "Тревога склона",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "slope_monitor.level",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Alarm level",
+      "titleRu": "Уровень тревоги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "green",
+        "yellow",
+        "orange",
+        "red"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

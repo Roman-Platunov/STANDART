@@ -1,0 +1,22 @@
+sid: 906018c2
+path: anode_furnace.state
+aliases:
+  short: anode_furnace.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Furnace state
+fingerprint: sha256:906018c258261dcb6df7f15b2ff9d7d1109c78b3bf42460ec4c0de5d0ee73d7a
+enumValues:
+  - charge
+  - oxidize
+  - reduce
+  - cast
+  - idle
+  - fault

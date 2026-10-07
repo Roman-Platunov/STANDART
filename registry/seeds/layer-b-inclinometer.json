@@ -1,0 +1,112 @@
+{
+  "layer": "B18",
+  "name": "layer-b-inclinometer.json",
+  "types": [
+    {
+      "path": "inclinometer.borehole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inclinometer borehole id",
+      "titleRu": "ID инклинометрической скважины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inclinometer.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Probe depth",
+      "titleRu": "Глубина зонда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inclinometer.disp",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Cumulative displacement",
+      "titleRu": "Накопленное смещение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inclinometer.rate",
+      "kind": "quantity",
+      "unit": "mm/d",
+      "titleEn": "Displacement rate",
+      "titleRu": "Скорость смещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inclinometer.azimuth",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Movement azimuth",
+      "titleRu": "Азимут смещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inclinometer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Probe temperature",
+      "titleRu": "Температура зонда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inclinometer.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Movement alarm",
+      "titleRu": "Тревога смещения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "inclinometer.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Data quality",
+      "titleRu": "Качество данных",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "suspect",
+        "gap",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "layer": "B18",
+  "name": "layer-b-vibration_blast.json",
+  "types": [
+    {
+      "path": "vibration_blast.monitor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blast vibration monitor id",
+      "titleRu": "ID монитора вибрации взрыва",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vibration_blast.shot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shot id",
+      "titleRu": "ID взрыва",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vibration_blast.ppv",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Peak particle velocity",
+      "titleRu": "Пиковая скорость частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vibration_blast.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Dominant frequency",
+      "titleRu": "Доминирующая частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vibration_blast.airblast",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Airblast overpressure",
+      "titleRu": "Воздушная волна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vibration_blast.distance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Distance to blast",
+      "titleRu": "Расстояние до взрыва",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vibration_blast.exceed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Limit exceeded",
+      "titleRu": "Превышение лимита",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vibration_blast.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Record quality",
+      "titleRu": "Качество записи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "clip",
+        "noise",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

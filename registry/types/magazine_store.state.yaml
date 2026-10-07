@@ -1,0 +1,21 @@
+sid: 6d1b7475
+path: magazine_store.state
+aliases:
+  short: magazine_store.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние склада
+  en: Magazine state
+fingerprint: sha256:6d1b7475259963257abe6c2ec74a6b982df1243fc675318caa458789ae9654d5
+enumValues:
+  - secure
+  - issue
+  - return
+  - audit
+  - alarm

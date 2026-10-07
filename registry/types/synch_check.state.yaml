@@ -1,0 +1,21 @@
+sid: 0fed631a
+path: synch_check.state
+aliases:
+  short: synch_check.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние синхронизации
+  en: Sync state
+fingerprint: sha256:0fed631ad067cb209e97d1de8618fe7a6b482391154646a1d92998d1496b5335
+enumValues:
+  - monitor
+  - ready
+  - close
+  - block
+  - fault

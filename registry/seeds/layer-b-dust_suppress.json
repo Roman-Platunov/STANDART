@@ -1,0 +1,116 @@
+{
+  "layer": "B18",
+  "name": "layer-b-dust_suppress.json",
+  "types": [
+    {
+      "path": "dust_suppress.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dust suppress system id",
+      "titleRu": "ID системы пылеподавления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dust_suppress.water",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Water rate",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dust_suppress.chem",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Chemical rate",
+      "titleRu": "Расход реагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dust_suppress.pm10",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "PM10",
+      "titleRu": "PM10",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dust_suppress.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Area coverage",
+      "titleRu": "Покрытие площади",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dust_suppress.nozzles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Nozzles active",
+      "titleRu": "Активных форсунок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dust_suppress.wind.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wind too high",
+      "titleRu": "Слишком сильный ветер",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dust_suppress.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spray",
+        "fog",
+        "foam",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

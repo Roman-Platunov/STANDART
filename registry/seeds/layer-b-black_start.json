@@ -1,0 +1,116 @@
+{
+  "layer": "B18",
+  "name": "layer-b-black_start.json",
+  "types": [
+    {
+      "path": "black_start.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Black-start unit id",
+      "titleRu": "ID блока чёрного пуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "black_start.plan.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Black-start plan id",
+      "titleRu": "ID плана чёрного пуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "black_start.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Restoration progress",
+      "titleRu": "Прогресс восстановления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "black_start.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Island frequency",
+      "titleRu": "Частота острова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "black_start.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Bus voltage",
+      "titleRu": "Напряжение шин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "black_start.crank.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Crank time remaining",
+      "titleRu": "Остаток времени запуска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "black_start.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Black-start active",
+      "titleRu": "Чёрный пуск активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "black_start.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Phase",
+      "titleRu": "Фаза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "crank",
+        "energize",
+        "sync",
+        "complete",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

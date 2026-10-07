@@ -1,0 +1,110 @@
+{
+  "layer": "B18",
+  "name": "layer-b-segment_lining.json",
+  "types": [
+    {
+      "path": "segment_lining.ring.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ring id",
+      "titleRu": "ID кольца обделки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "segment_lining.tbm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lining TBM id",
+      "titleRu": "ID ТПМК обделки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "segment_lining.rings",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rings built",
+      "titleRu": "Собрано колец",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "segment_lining.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Annulus gap",
+      "titleRu": "Зазор за обделкой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "segment_lining.bolt.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Bolt torque",
+      "titleRu": "Момент болтов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "segment_lining.oval",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ovality",
+      "titleRu": "Овальность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "segment_lining.damage",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Segment damage",
+      "titleRu": "Повреждение тюбинга",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "segment_lining.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lining state",
+      "titleRu": "Состояние обделки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "erect",
+        "grout",
+        "advance",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

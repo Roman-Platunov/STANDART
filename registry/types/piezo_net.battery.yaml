@@ -1,0 +1,18 @@
+sid: e6b928e6
+path: piezo_net.battery
+aliases:
+  short: piezo_net.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея логгера
+  en: Logger battery
+fingerprint: sha256:e6b928e621eca2e971a37af0aeb365b3cbf5f41204f4ef7d54477c0cb3893c1f
+range:
+  min: 0
+  max: 100

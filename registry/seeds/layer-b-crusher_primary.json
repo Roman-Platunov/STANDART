@@ -1,0 +1,116 @@
+{
+  "layer": "B18",
+  "name": "layer-b-crusher_primary.json",
+  "types": [
+    {
+      "path": "crusher_primary.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Primary crusher id",
+      "titleRu": "ID первичной дробилки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crusher_primary.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Motor power",
+      "titleRu": "Мощность двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crusher_primary.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crusher_primary.css",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Closed-side setting",
+      "titleRu": "Разгрузочная щель",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crusher_primary.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chamber level",
+      "titleRu": "Уровень в камере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crusher_primary.lube.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Lube pressure",
+      "titleRu": "Давление смазки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crusher_primary.tramp",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tramp metal",
+      "titleRu": "Недробимый предмет",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crusher_primary.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gyratory",
+        "jaw",
+        "impact",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

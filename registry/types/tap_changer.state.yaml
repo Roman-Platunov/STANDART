@@ -1,0 +1,21 @@
+sid: b5ab2ae9
+path: tap_changer.state
+aliases:
+  short: tap_changer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние РПН
+  en: OLTC state
+fingerprint: sha256:b5ab2ae95ee62235fcc51e6d68dab83eab09a900f23ab6096f105c51f3138499
+enumValues:
+  - idle
+  - raise
+  - lower
+  - block
+  - fault

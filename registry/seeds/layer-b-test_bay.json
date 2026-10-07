@@ -1,0 +1,111 @@
+{
+  "layer": "B18",
+  "name": "layer-b-test_bay.json",
+  "types": [
+    {
+      "path": "test_bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HV test bay id",
+      "titleRu": "ID высоковольтного испытательного стенда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "test_bay.dut.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DUT id",
+      "titleRu": "ID испытуемого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "test_bay.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Test voltage",
+      "titleRu": "Испытательное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "test_bay.current",
+      "kind": "quantity",
+      "unit": "mA",
+      "titleEn": "Leakage current",
+      "titleRu": "Ток утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "test_bay.duration.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Hold duration",
+      "titleRu": "Длительность выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "test_bay.pd",
+      "kind": "quantity",
+      "unit": "pC",
+      "titleEn": "Partial discharge",
+      "titleRu": "Частичные разряды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "test_bay.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Test pass",
+      "titleRu": "Испытание пройдено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "test_bay.test",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Test type",
+      "titleRu": "Тип испытания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ac",
+        "dc",
+        "impulse",
+        "pd",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

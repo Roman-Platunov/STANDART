@@ -1,0 +1,120 @@
+{
+  "layer": "B18",
+  "name": "layer-b-shotcrete.json",
+  "types": [
+    {
+      "path": "shotcrete.rig.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shotcrete rig id",
+      "titleRu": "ID торкрет-установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shotcrete.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Spray rate",
+      "titleRu": "Производительность набрызга",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shotcrete.accel",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Accelerator dose",
+      "titleRu": "Доза ускорителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shotcrete.rebound",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rebound",
+      "titleRu": "Отскок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shotcrete.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Layer thickness",
+      "titleRu": "Толщина слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shotcrete.air.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Air pressure",
+      "titleRu": "Давление воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shotcrete.blockage",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hose blockage",
+      "titleRu": "Засор рукава",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shotcrete.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wet",
+        "dry",
+        "robot",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

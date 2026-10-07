@@ -1,0 +1,20 @@
+sid: ec526d6e
+path: inertia_monitor.quality
+aliases:
+  short: inertia_monitor.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество оценки
+  en: Estimate quality
+fingerprint: sha256:ec526d6eb72c56391fdc713a1cdfd0f1454a182bab8eb35d9d53c9f3c7f0bfde
+enumValues:
+  - good
+  - estimated
+  - degraded
+  - offline

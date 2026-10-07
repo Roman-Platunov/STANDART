@@ -1,0 +1,109 @@
+{
+  "layer": "B18",
+  "name": "layer-b-core_stack.json",
+  "types": [
+    {
+      "path": "core_stack.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Core stacking line id",
+      "titleRu": "ID линии шихтовки магнитопровода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "core_stack.core.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Core id",
+      "titleRu": "ID магнитопровода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "core_stack.lamination",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Laminations stacked",
+      "titleRu": "Набрано листов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "core_stack.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Joint gap",
+      "titleRu": "Зазор стыка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "core_stack.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Clamp pressure",
+      "titleRu": "Давление зажима",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "core_stack.loss",
+      "kind": "quantity",
+      "unit": "W/kg",
+      "titleEn": "Predicted core loss",
+      "titleRu": "Прогноз потерь в стали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "core_stack.burr",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Burr detected",
+      "titleRu": "Обнаружен заусенец",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "core_stack.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Core type",
+      "titleRu": "Тип магнитопровода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "step_lap",
+        "butt",
+        "wound",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

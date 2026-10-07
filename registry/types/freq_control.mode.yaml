@@ -1,0 +1,20 @@
+sid: acf1ef04
+path: freq_control.mode
+aliases:
+  short: freq_control.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим управления
+  en: Control mode
+fingerprint: sha256:acf1ef04b4dcd293e2392abf1f0562c4b011911630cdc81cbe9efbeb60d5046f
+enumValues:
+  - agc
+  - manual
+  - emergency
+  - other

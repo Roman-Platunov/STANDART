@@ -1,0 +1,111 @@
+{
+  "layer": "B18",
+  "name": "layer-b-auger_cast.json",
+  "types": [
+    {
+      "path": "auger_cast.rig.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CFA rig id",
+      "titleRu": "ID буровой CFA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "auger_cast.pile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CFA pile id",
+      "titleRu": "ID сваи CFA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "auger_cast.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Drill depth",
+      "titleRu": "Глубина бурения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "auger_cast.concrete",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Concrete volume",
+      "titleRu": "Объём бетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "auger_cast.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Concrete pressure",
+      "titleRu": "Давление бетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "auger_cast.auger.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Auger RPM",
+      "titleRu": "Обороты шнека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "auger_cast.overbreak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overbreak",
+      "titleRu": "Перебур",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "auger_cast.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pile state",
+      "titleRu": "Состояние сваи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "drill",
+        "concrete",
+        "cage",
+        "complete",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

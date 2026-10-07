@@ -1,0 +1,21 @@
+sid: 1906d456
+path: electrowin_cu.state
+aliases:
+  short: electrowin_cu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ванны
+  en: Cell state
+fingerprint: sha256:1906d4568040e637b56c536a0d3436d600f1efe19fc046d94cdc1522cb533d06
+enumValues:
+  - plate
+  - strip
+  - idle
+  - maintain
+  - fault

@@ -1,0 +1,112 @@
+{
+  "layer": "B18",
+  "name": "layer-b-muck_haul.json",
+  "types": [
+    {
+      "path": "muck_haul.truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Muck truck id",
+      "titleRu": "ID самосвала породы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "muck_haul.cycle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Haul cycle id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "muck_haul.load",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Payload",
+      "titleRu": "Груз",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "muck_haul.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "muck_haul.distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Haul distance",
+      "titleRu": "Дальность откатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "muck_haul.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "muck_haul.queue",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "At queue",
+      "titleRu": "В очереди",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "muck_haul.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Truck state",
+      "titleRu": "Состояние самосвала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "haul",
+        "dump",
+        "spot",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

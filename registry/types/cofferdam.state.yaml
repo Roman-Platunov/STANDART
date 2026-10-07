@@ -1,0 +1,21 @@
+sid: 821b6c9b
+path: cofferdam.state
+aliases:
+  short: cofferdam.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние перемычки
+  en: Cofferdam state
+fingerprint: sha256:821b6c9b7d37110d3e1f91d95adad542118061718cd55bf1f47bfc19dc060aa6
+enumValues:
+  - install
+  - dewater
+  - work
+  - flood
+  - remove

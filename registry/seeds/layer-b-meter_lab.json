@@ -1,0 +1,113 @@
+{
+  "layer": "B18",
+  "name": "layer-b-meter_lab.json",
+  "types": [
+    {
+      "path": "meter_lab.bench.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Meter lab bench id",
+      "titleRu": "ID стенда поверки счётчиков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meter_lab.meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Meter under test id",
+      "titleRu": "ID поверяемого счётчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meter_lab.error",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Registration error",
+      "titleRu": "Погрешность учёта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -100,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meter_lab.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Test current",
+      "titleRu": "Ток испытания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_lab.pf",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Test power factor",
+      "titleRu": "Коэффициент мощности испытания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_lab.points",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Load points",
+      "titleRu": "Точек нагрузки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_lab.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Calibration pass",
+      "titleRu": "Поверка пройдена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meter_lab.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Result",
+      "titleRu": "Результат",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "adjust",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B18",
+  "name": "layer-b-ball_mill.json",
+  "types": [
+    {
+      "path": "ball_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ball mill id",
+      "titleRu": "ID шаровой мельницы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ball_mill.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Mill power",
+      "titleRu": "Мощность мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill.density",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pulp density",
+      "titleRu": "Плотность пульпы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill.product.p80",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Product P80",
+      "titleRu": "P80 продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill.ball.charge",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ball charge",
+      "titleRu": "Загрузка шаров",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill.sound.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mill sound high",
+      "titleRu": "Высокий шум мельницы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ball_mill.circuit",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Discharge",
+      "titleRu": "Разгрузка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "overflow",
+        "grate",
+        "peripheral",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

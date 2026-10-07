@@ -1,0 +1,21 @@
+sid: b583dfc5
+path: emulsion_plant.state
+aliases:
+  short: emulsion_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:b583dfc59dc306c4ae68d08abe8af6ae22e5dafe1df8e26bcff27247dcff2822
+enumValues:
+  - mix
+  - sensitize
+  - load
+  - idle
+  - fault

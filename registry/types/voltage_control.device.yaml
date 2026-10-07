@@ -1,0 +1,22 @@
+sid: 5f0fc2e4
+path: voltage_control.device
+aliases:
+  short: voltage_control.device
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Устройство
+  en: Device
+fingerprint: sha256:5f0fc2e41749cb9cb39d7decf17e6f9356c78d6cfd14cbe07f4accea7a4e075e
+enumValues:
+  - avr
+  - oltc
+  - svc
+  - statcom
+  - cap
+  - other

@@ -1,0 +1,22 @@
+sid: 8e22fabb
+path: black_start.phase
+aliases:
+  short: black_start.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза
+  en: Phase
+fingerprint: sha256:8e22fabb71a1616c51cdfcc6bb9e9bcb2f5bb6efd0c93364211734be6944e631
+enumValues:
+  - idle
+  - crank
+  - energize
+  - sync
+  - complete
+  - abort

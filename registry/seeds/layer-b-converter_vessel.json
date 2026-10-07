@@ -1,0 +1,112 @@
+{
+  "layer": "B18",
+  "name": "layer-b-converter_vessel.json",
+  "types": [
+    {
+      "path": "converter_vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Converter vessel id",
+      "titleRu": "ID конвертера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "converter_vessel.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Converter heat id",
+      "titleRu": "ID плавки конвертера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "converter_vessel.blow.o2",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Oxygen blow",
+      "titleRu": "Продувка кислородом",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "converter_vessel.bath.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "converter_vessel.slag.basicity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Slag basicity",
+      "titleRu": "Основность шлака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "converter_vessel.lance.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Lance height",
+      "titleRu": "Высота фурмы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "converter_vessel.slopping",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Slopping",
+      "titleRu": "Выбросы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "converter_vessel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Converter state",
+      "titleRu": "Состояние конвертера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "blow",
+        "reblow",
+        "tap",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

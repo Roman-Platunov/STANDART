@@ -1,0 +1,21 @@
+sid: 4bd3b66b
+path: load_shed.state
+aliases:
+  short: load_shed.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние схемы
+  en: Scheme state
+fingerprint: sha256:4bd3b66beb3878c8255ea9a5402a1f7f0e95476801fb67c7ccd4633b3de75b3e
+enumValues:
+  - armed
+  - tripped
+  - blocked
+  - reset
+  - fault

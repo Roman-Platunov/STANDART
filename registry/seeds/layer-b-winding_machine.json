@@ -1,0 +1,109 @@
+{
+  "layer": "B18",
+  "name": "layer-b-winding_machine.json",
+  "types": [
+    {
+      "path": "winding_machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Winding machine id",
+      "titleRu": "ID намоточного станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "winding_machine.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID катушки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "winding_machine.turns",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Turns wound",
+      "titleRu": "Намотано витков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winding_machine.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Wire tension",
+      "titleRu": "Натяжение провода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winding_machine.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Spindle speed",
+      "titleRu": "Обороты шпинделя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winding_machine.layer",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Current layer",
+      "titleRu": "Текущий слой",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winding_machine.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wire break",
+      "titleRu": "Обрыв провода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "winding_machine.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Winding type",
+      "titleRu": "Тип обмотки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hv",
+        "lv",
+        "foil",
+        "disc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
