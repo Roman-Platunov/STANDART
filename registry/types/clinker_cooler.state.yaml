@@ -1,0 +1,20 @@
+sid: ef7bb36b
+path: clinker_cooler.state
+aliases:
+  short: clinker_cooler.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние холодильника
+  en: Cooler state
+fingerprint: sha256:ef7bb36b8552c3422b5783fe0fd8f31e94b18dbe068bd1aa6054cb8b3c9bf4db
+enumValues:
+  - cool
+  - idle
+  - maintain
+  - fault

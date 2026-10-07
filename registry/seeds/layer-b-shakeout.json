@@ -1,0 +1,112 @@
+{
+  "layer": "B27",
+  "name": "layer-b-shakeout.json",
+  "types": [
+    {
+      "path": "shakeout.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shakeout machine id",
+      "titleRu": "ID выбивной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shakeout.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shakeout.vib",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shakeout.sand.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sand temperature",
+      "titleRu": "Температура песка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shakeout.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Dust level",
+      "titleRu": "Пыль",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shakeout.castings",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Castings per hour",
+      "titleRu": "Отливок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shakeout.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Jam",
+      "titleRu": "Затор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shakeout.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "shake",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

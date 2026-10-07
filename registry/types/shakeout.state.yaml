@@ -1,0 +1,20 @@
+sid: bc8db185
+path: shakeout.state
+aliases:
+  short: shakeout.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:bc8db185632043c4f494995f4d9de822fd7d06ced33cc662a25de5676d40dc46
+enumValues:
+  - shake
+  - idle
+  - maintain
+  - fault

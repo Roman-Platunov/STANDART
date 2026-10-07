@@ -1,0 +1,110 @@
+{
+  "layer": "B27",
+  "name": "layer-b-foil_roll_al.json",
+  "types": [
+    {
+      "path": "foil_roll_al.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aluminum foil mill id",
+      "titleRu": "ID фольгопрокатного стана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foil_roll_al.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foil_roll_al.thick",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Foil thickness",
+      "titleRu": "Толщина фольги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foil_roll_al.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foil_roll_al.pinholes",
+      "kind": "quantity",
+      "unit": "/m2",
+      "titleEn": "Pinholes",
+      "titleRu": "Точечных отверстий",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foil_roll_al.oil",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Rolling oil",
+      "titleRu": "Прокатное масло",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foil_roll_al.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Foil break",
+      "titleRu": "Обрыв фольги",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "foil_roll_al.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "idle",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

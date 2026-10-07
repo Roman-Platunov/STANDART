@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-ni_flash.json",
+  "types": [
+    {
+      "path": "ni_flash.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Nickel flash furnace id",
+      "titleRu": "ID флэш-печи никеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ni_flash.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ni_flash.matte",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Matte production",
+      "titleRu": "Выпуск штейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ni_flash.ni",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Matte Ni grade",
+      "titleRu": "Содержание Ni в штейне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ni_flash.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Concentrate feed",
+      "titleRu": "Подача концентрата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ni_flash.o2",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Oxygen enrichment",
+      "titleRu": "Обогащение кислородом",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ni_flash.accrete",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Accretion risk",
+      "titleRu": "Риск наростов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ni_flash.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnace state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "smelt",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

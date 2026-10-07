@@ -1,0 +1,20 @@
+sid: 5260e24f
+path: refract_press.state
+aliases:
+  short: refract_press.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:5260e24f0c8be33181b05e521a7d01d97295e5ea2c48a63bd0a38b51aa0b819e
+enumValues:
+  - press
+  - idle
+  - tool
+  - fault

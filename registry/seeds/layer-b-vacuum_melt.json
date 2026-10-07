@@ -1,0 +1,111 @@
+{
+  "layer": "B27",
+  "name": "layer-b-vacuum_melt.json",
+  "types": [
+    {
+      "path": "vacuum_melt.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vacuum induction melt id",
+      "titleRu": "ID вакуумно-индукционной плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vacuum_melt.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vacuum_melt.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber vacuum",
+      "titleRu": "Вакуум камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacuum_melt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Metal temperature",
+      "titleRu": "Температура металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacuum_melt.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Power",
+      "titleRu": "Мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacuum_melt.o",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Oxygen",
+      "titleRu": "Кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacuum_melt.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vacuum leak",
+      "titleRu": "Натекание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vacuum_melt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnace state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "evacuate",
+        "melt",
+        "cast",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

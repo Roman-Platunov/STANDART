@@ -1,0 +1,20 @@
+sid: 2d967056
+path: float_bath.state
+aliases:
+  short: float_bath.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ванны
+  en: Bath state
+fingerprint: sha256:2d967056197b97969c0e52002dc23b6cfdc8ec85d1bcb5e7afbc636637884d60
+enumValues:
+  - form
+  - idle
+  - maintain
+  - fault

@@ -1,0 +1,122 @@
+{
+  "layer": "B27",
+  "name": "layer-b-precious_ref.json",
+  "types": [
+    {
+      "path": "precious_ref.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Precious metals refinery id",
+      "titleRu": "ID аффинажа драгметаллов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "precious_ref.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lot id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "precious_ref.au",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Gold purity",
+      "titleRu": "Чистота золота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "precious_ref.ag",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Silver purity",
+      "titleRu": "Чистота серебра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "precious_ref.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovery",
+      "titleRu": "Извлечение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "precious_ref.cycle.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Refine cycle",
+      "titleRu": "Цикл аффинажа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "precious_ref.assay.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Assay OK",
+      "titleRu": "Проба OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "precious_ref.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "electro",
+        "miller",
+        "wohlwill",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

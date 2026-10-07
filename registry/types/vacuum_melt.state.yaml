@@ -1,0 +1,21 @@
+sid: 1ae1a78d
+path: vacuum_melt.state
+aliases:
+  short: vacuum_melt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Furnace state
+fingerprint: sha256:1ae1a78d805d3751a3b23da5edff41c5889c96e7bda57f5f0221481d2989c983
+enumValues:
+  - evacuate
+  - melt
+  - cast
+  - idle
+  - fault

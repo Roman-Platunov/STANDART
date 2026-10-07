@@ -1,0 +1,111 @@
+{
+  "layer": "B27",
+  "name": "layer-b-brick_tunnel.json",
+  "types": [
+    {
+      "path": "brick_tunnel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brick tunnel kiln id",
+      "titleRu": "ID туннельной печи кирпича",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brick_tunnel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Firing temperature",
+      "titleRu": "Температура обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brick_tunnel.cars",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cars in kiln",
+      "titleRu": "Вагонеток в печи",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brick_tunnel.push.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Push interval",
+      "titleRu": "Интервал толкания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brick_tunnel.fuel",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brick_tunnel.strength",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Fired strength",
+      "titleRu": "Прочность после обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brick_tunnel.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Car stuck",
+      "titleRu": "Вагонетка застряла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "brick_tunnel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kiln state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fire",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

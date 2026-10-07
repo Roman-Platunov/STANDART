@@ -1,0 +1,20 @@
+sid: 757ba790
+path: extrusion_al.state
+aliases:
+  short: extrusion_al.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:757ba790b0c8257e2e1db35571212744c23b92f60e9a6b04dd5b39755f2ecab2
+enumValues:
+  - extrude
+  - die_change
+  - idle
+  - fault

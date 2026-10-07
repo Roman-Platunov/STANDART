@@ -1,0 +1,20 @@
+sid: 67a00cec
+path: press_tile.state
+aliases:
+  short: press_tile.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:67a00cecfbc99b9eaedea98f1b931e96115ab7f90e4c3e20082868054d8eb841
+enumValues:
+  - press
+  - idle
+  - tool
+  - fault

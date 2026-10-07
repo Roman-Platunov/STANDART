@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-cu_smelter.json",
+  "types": [
+    {
+      "path": "cu_smelter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Copper smelter id",
+      "titleRu": "ID медеплавильного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cu_smelter.matte",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Matte production",
+      "titleRu": "Выпуск штейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_smelter.cu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Matte Cu grade",
+      "titleRu": "Содержание Cu в штейне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cu_smelter.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_smelter.so2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "SO2 in off-gas",
+      "titleRu": "SO2 в отходящих",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_smelter.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Concentrate feed",
+      "titleRu": "Подача концентрата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_smelter.ace",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Acid plant OK",
+      "titleRu": "Кислотный цех OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cu_smelter.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flash",
+        "bath",
+        "blast",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

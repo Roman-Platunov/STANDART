@@ -1,0 +1,21 @@
+sid: 939d39a0
+path: cu_convert.state
+aliases:
+  short: cu_convert.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние конвертера
+  en: Converter state
+fingerprint: sha256:939d39a0525abe1f8d04e771bf746d74722d4b72089dbf42570a212bb80aec1d
+enumValues:
+  - charge
+  - blow
+  - skim
+  - pour
+  - fault

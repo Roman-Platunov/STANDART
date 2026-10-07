@@ -1,0 +1,120 @@
+{
+  "layer": "B27",
+  "name": "layer-b-ceramic_kiln.json",
+  "types": [
+    {
+      "path": "ceramic_kiln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ceramic kiln id",
+      "titleRu": "ID керамической печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ceramic_kiln.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Firing temperature",
+      "titleRu": "Температура обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ceramic_kiln.cycle.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Firing cycle",
+      "titleRu": "Цикл обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ceramic_kiln.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Atmosphere O2",
+      "titleRu": "O2 атмосферы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ceramic_kiln.shrink",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Shrinkage",
+      "titleRu": "Усадка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ceramic_kiln.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ceramic_kiln.crack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crack risk",
+      "titleRu": "Риск трещин",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ceramic_kiln.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tunnel",
+        "roller",
+        "shuttle",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

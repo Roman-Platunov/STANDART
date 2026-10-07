@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-press_tile.json",
+  "types": [
+    {
+      "path": "press_tile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tile press id",
+      "titleRu": "ID пресса плитки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "press_tile.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Press force",
+      "titleRu": "Усилие пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "press_tile.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "press_tile.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Green density",
+      "titleRu": "Плотность сырца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "press_tile.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Tile thickness",
+      "titleRu": "Толщина плитки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "press_tile.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "press_tile.crack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Green crack",
+      "titleRu": "Трещина сырца",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "press_tile.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "press",
+        "idle",
+        "tool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

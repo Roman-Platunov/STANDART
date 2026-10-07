@@ -1,0 +1,110 @@
+{
+  "layer": "B27",
+  "name": "layer-b-paint_line_al.json",
+  "types": [
+    {
+      "path": "paint_line_al.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aluminum coil coating line id",
+      "titleRu": "ID линии окраски алюминиевой полосы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_line_al.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_line_al.dft",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Dry film thickness",
+      "titleRu": "Толщина сухой плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_line_al.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_line_al.cure",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cure temperature",
+      "titleRu": "Температура отверждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_line_al.color",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Delta E",
+      "titleRu": "Дельта E",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_line_al.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coat pass",
+      "titleRu": "Покрытие принято",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paint_line_al.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "coat",
+        "cure",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

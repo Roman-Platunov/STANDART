@@ -1,0 +1,20 @@
+sid: 6f8db19a
+path: cement_kiln.state
+aliases:
+  short: cement_kiln.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Kiln state
+fingerprint: sha256:6f8db19aebad9b4cc7a1d55eab1fe498214ab0d8e7040b68c1d88eec29202d08
+enumValues:
+  - run
+  - heat
+  - idle
+  - fault

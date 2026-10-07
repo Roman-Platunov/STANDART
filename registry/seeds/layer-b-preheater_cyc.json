@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-preheater_cyc.json",
+  "types": [
+    {
+      "path": "preheater_cyc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Preheater cyclone string id",
+      "titleRu": "ID циклонной системы подогревателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "preheater_cyc.temp.top",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Top cyclone temperature",
+      "titleRu": "Температура верхнего циклона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "preheater_cyc.temp.bottom",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bottom cyclone temperature",
+      "titleRu": "Температура нижнего циклона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "preheater_cyc.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "String DP",
+      "titleRu": "Перепад по системе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "preheater_cyc.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Exit O2",
+      "titleRu": "O2 на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "preheater_cyc.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO",
+      "titleRu": "CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "preheater_cyc.buildup",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Build-up alarm",
+      "titleRu": "Тревога налипания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "preheater_cyc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "String state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "purge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

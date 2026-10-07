@@ -1,0 +1,20 @@
+sid: 3aa3023a
+path: zn_roaster.state
+aliases:
+  short: zn_roaster.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние обжига
+  en: Roaster state
+fingerprint: sha256:3aa3023a096e203bfea7f63b805c9028770b9b30a494ced9aa39859151450b59
+enumValues:
+  - roast
+  - idle
+  - maintain
+  - fault

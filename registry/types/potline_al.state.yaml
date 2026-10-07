@@ -1,0 +1,20 @@
+sid: adb0aa96
+path: potline_al.state
+aliases:
+  short: potline_al.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние серии
+  en: Potline state
+fingerprint: sha256:adb0aa969da46946d2b72afdf943b0817dd533c30f60a24d606e65575a496e7b
+enumValues:
+  - produce
+  - tap
+  - idle
+  - fault

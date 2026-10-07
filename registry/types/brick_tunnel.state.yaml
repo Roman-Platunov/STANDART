@@ -1,0 +1,20 @@
+sid: a2645a8c
+path: brick_tunnel.state
+aliases:
+  short: brick_tunnel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Kiln state
+fingerprint: sha256:a2645a8c947fb013e7156d163564c139e92b93fad5b7661ed9d78eaf9d879729
+enumValues:
+  - fire
+  - idle
+  - maintain
+  - fault

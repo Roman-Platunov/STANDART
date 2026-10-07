@@ -1,0 +1,120 @@
+{
+  "layer": "B27",
+  "name": "layer-b-glaze_line.json",
+  "types": [
+    {
+      "path": "glaze_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Glaze application line id",
+      "titleRu": "ID линии глазурования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glaze_line.weight",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Glaze weight",
+      "titleRu": "Масса глазури",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glaze_line.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Glaze viscosity",
+      "titleRu": "Вязкость глазури",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glaze_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glaze_line.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Coverage",
+      "titleRu": "Покрытие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glaze_line.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glaze_line.drip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Drip defect",
+      "titleRu": "Дефект потёка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "glaze_line.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spray",
+        "disk",
+        "waterfall",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

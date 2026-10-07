@@ -1,0 +1,113 @@
+{
+  "layer": "B27",
+  "name": "layer-b-core_shoot.json",
+  "types": [
+    {
+      "path": "core_shoot.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Core shooter id",
+      "titleRu": "ID пескострельной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "core_shoot.box.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Core box id",
+      "titleRu": "ID стержневого ящика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "core_shoot.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shots today",
+      "titleRu": "Выстрелов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "core_shoot.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "core_shoot.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Core reject",
+      "titleRu": "Брак стержней",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "core_shoot.gas",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Amine / gas use",
+      "titleRu": "Расход амина/газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "core_shoot.blow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Incomplete blow",
+      "titleRu": "Неполный выстрел",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "core_shoot.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cold_box",
+        "hot_box",
+        "shell",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

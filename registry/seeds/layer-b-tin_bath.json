@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-tin_bath.json",
+  "types": [
+    {
+      "path": "tin_bath.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tin bath (float) id",
+      "titleRu": "ID оловянной ванны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tin_bath.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tin temperature",
+      "titleRu": "Температура олова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tin_bath.level",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Tin level",
+      "titleRu": "Уровень олова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tin_bath.o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Atmosphere O2",
+      "titleRu": "O2 в атмосфере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tin_bath.dross",
+      "kind": "quantity",
+      "unit": "kg/d",
+      "titleEn": "Dross removed",
+      "titleRu": "Дросса удалено",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tin_bath.h2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "H2 in atmosphere",
+      "titleRu": "H2 в атмосфере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tin_bath.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Atmosphere leak",
+      "titleRu": "Подсос атмосферы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tin_bath.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bath state",
+      "titleRu": "Состояние ванны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

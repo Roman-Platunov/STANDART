@@ -1,0 +1,20 @@
+sid: 2ffc95d2
+path: foundry_cupola.state
+aliases:
+  short: foundry_cupola.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние вагранки
+  en: Cupola state
+fingerprint: sha256:2ffc95d2dfa8b943df03d6390f648c8d2d7027898f666d08e0bb7013d750f3d4
+enumValues:
+  - melt
+  - tap
+  - idle
+  - fault

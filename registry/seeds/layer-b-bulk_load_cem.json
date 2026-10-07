@@ -1,0 +1,115 @@
+{
+  "layer": "B27",
+  "name": "layer-b-bulk_load_cem.json",
+  "types": [
+    {
+      "path": "bulk_load_cem.silo.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cement bulk loading silo id",
+      "titleRu": "ID силоса отгрузки цемента",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bulk_load_cem.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Loading rate",
+      "titleRu": "Скорость погрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bulk_load_cem.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Silo level",
+      "titleRu": "Уровень силоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bulk_load_cem.trucks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trucks today",
+      "titleRu": "Машин за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bulk_load_cem.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Loading dust",
+      "titleRu": "Пыль при погрузке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bulk_load_cem.weight",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Last load weight",
+      "titleRu": "Масса последней отгрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bulk_load_cem.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Loading active",
+      "titleRu": "Погрузка идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bulk_load_cem.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Silo state",
+      "titleRu": "Состояние силоса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

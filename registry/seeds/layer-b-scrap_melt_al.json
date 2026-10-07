@@ -1,0 +1,117 @@
+{
+  "layer": "B27",
+  "name": "layer-b-scrap_melt_al.json",
+  "types": [
+    {
+      "path": "scrap_melt_al.furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aluminum scrap furnace id",
+      "titleRu": "ID печи плавки алюминиевого лома",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scrap_melt_al.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Metal temperature",
+      "titleRu": "Температура металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_melt_al.charge",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Charge rate",
+      "titleRu": "Скорость загрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_melt_al.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Metal recovery",
+      "titleRu": "Извлечение металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scrap_melt_al.dross",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Dross rate",
+      "titleRu": "Выход дросса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_melt_al.fuel",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_melt_al.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tap ready",
+      "titleRu": "Готово к выпуску",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scrap_melt_al.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnace state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "melt",
+        "tap",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

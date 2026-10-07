@@ -1,0 +1,120 @@
+{
+  "layer": "B27",
+  "name": "layer-b-quench_tank.json",
+  "types": [
+    {
+      "path": "quench_tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Quench tank id",
+      "titleRu": "ID закалочного бака",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "quench_tank.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Quenchant temperature",
+      "titleRu": "Температура закалочной среды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quench_tank.agitation",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Agitation",
+      "titleRu": "Перемешивание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "quench_tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level",
+      "titleRu": "Уровень бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "quench_tank.cooling",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Cooling power",
+      "titleRu": "Мощность охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quench_tank.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Quench cycles today",
+      "titleRu": "Закалок за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quench_tank.hot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quenchant too hot",
+      "titleRu": "Среда перегрета",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "quench_tank.media",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Media",
+      "titleRu": "Среда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "oil",
+        "polymer",
+        "water",
+        "salt",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

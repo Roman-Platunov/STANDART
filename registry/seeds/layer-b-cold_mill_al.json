@@ -1,0 +1,114 @@
+{
+  "layer": "B27",
+  "name": "layer-b-cold_mill_al.json",
+  "types": [
+    {
+      "path": "cold_mill_al.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aluminum cold mill id",
+      "titleRu": "ID стана холодной прокатки алюминия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_mill_al.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_mill_al.exit.thick",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Exit thickness",
+      "titleRu": "Толщина на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_mill_al.reduction",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reduction",
+      "titleRu": "Обжатие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cold_mill_al.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_mill_al.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Strip tension",
+      "titleRu": "Натяжение полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_mill_al.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Strip break",
+      "titleRu": "Обрыв полосы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cold_mill_al.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "idle",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

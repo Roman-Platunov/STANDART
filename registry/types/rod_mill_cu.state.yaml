@@ -1,0 +1,20 @@
+sid: 6925351d
+path: rod_mill_cu.state
+aliases:
+  short: rod_mill_cu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стана
+  en: Mill state
+fingerprint: sha256:6925351d5b5d1ae17c4f640e60bea816952cb160ca616f777f825bb3afc29038
+enumValues:
+  - roll
+  - idle
+  - change
+  - fault

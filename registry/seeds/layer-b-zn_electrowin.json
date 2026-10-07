@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-zn_electrowin.json",
+  "types": [
+    {
+      "path": "zn_electrowin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Zinc electrowinning cellhouse id",
+      "titleRu": "ID цеха электроэкстракции цинка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "zn_electrowin.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Cell current",
+      "titleRu": "Ток ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_electrowin.ce",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Current efficiency",
+      "titleRu": "Выход по току",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "zn_electrowin.cathodes",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Cathode production",
+      "titleRu": "Выпуск катодов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_electrowin.acid",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Cell acid",
+      "titleRu": "Кислота в ванне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_electrowin.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Electrolyte temperature",
+      "titleRu": "Температура электролита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_electrowin.short",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cell short",
+      "titleRu": "Короткое замыкание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "zn_electrowin.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cellhouse state",
+      "titleRu": "Состояние цеха",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plate",
+        "strip",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

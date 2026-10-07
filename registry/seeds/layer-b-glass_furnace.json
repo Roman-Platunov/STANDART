@@ -1,0 +1,112 @@
+{
+  "layer": "B27",
+  "name": "layer-b-glass_furnace.json",
+  "types": [
+    {
+      "path": "glass_furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Glass melting furnace id",
+      "titleRu": "ID стекловаренной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glass_furnace.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Glass temperature",
+      "titleRu": "Температура стекла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_furnace.pull",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Pull rate",
+      "titleRu": "Съём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_furnace.fuel",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_furnace.crown",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Crown temperature",
+      "titleRu": "Температура свода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_furnace.level",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Glass level",
+      "titleRu": "Уровень стекла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_furnace.seed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seeds high",
+      "titleRu": "Высокая пузыристость",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "glass_furnace.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "float",
+        "container",
+        "fiber",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

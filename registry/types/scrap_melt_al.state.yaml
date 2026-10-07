@@ -1,0 +1,21 @@
+sid: "76693138"
+path: scrap_melt_al.state
+aliases:
+  short: scrap_melt_al.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Furnace state
+fingerprint: sha256:76693138fa998a383ed84a96a27a0d1bd6a4831e0333d848521d2afed7f4211c
+enumValues:
+  - charge
+  - melt
+  - tap
+  - idle
+  - fault

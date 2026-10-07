@@ -1,0 +1,20 @@
+sid: 1c9e7c2b
+path: cold_mill_al.state
+aliases:
+  short: cold_mill_al.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стана
+  en: Mill state
+fingerprint: sha256:1c9e7c2bc3bd86cbe6ca972d54712decdb4c9c79b69b8a4b7e991b3d3cc27676
+enumValues:
+  - roll
+  - idle
+  - change
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-spray_dryer_cer.json",
+  "types": [
+    {
+      "path": "spray_dryer_cer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ceramic spray dryer id",
+      "titleRu": "ID распылительной сушилки керамики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spray_dryer_cer.inlet",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet temperature",
+      "titleRu": "Температура на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spray_dryer_cer.outlet",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outlet temperature",
+      "titleRu": "Температура на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spray_dryer_cer.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Powder moisture",
+      "titleRu": "Влажность порошка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spray_dryer_cer.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Powder output",
+      "titleRu": "Выпуск порошка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spray_dryer_cer.atom",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Atomizer speed",
+      "titleRu": "Обороты распылителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spray_dryer_cer.stick",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chamber sticking",
+      "titleRu": "Налипание в камере",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spray_dryer_cer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dryer state",
+      "titleRu": "Состояние сушилки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "clean",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

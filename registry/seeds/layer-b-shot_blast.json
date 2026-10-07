@@ -1,0 +1,120 @@
+{
+  "layer": "B27",
+  "name": "layer-b-shot_blast.json",
+  "types": [
+    {
+      "path": "shot_blast.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shot blast machine id",
+      "titleRu": "ID дробемётной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shot_blast.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shot_blast.wheel",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Wheel speed",
+      "titleRu": "Обороты турбины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shot_blast.media",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Media level",
+      "titleRu": "Уровень дроби",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shot_blast.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Coverage",
+      "titleRu": "Покрытие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shot_blast.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Dust",
+      "titleRu": "Пыль",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shot_blast.media.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Media low",
+      "titleRu": "Мало дроби",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shot_blast.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blast",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

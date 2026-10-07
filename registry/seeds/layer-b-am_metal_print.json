@@ -1,0 +1,115 @@
+{
+  "layer": "B27",
+  "name": "layer-b-am_metal_print.json",
+  "types": [
+    {
+      "path": "am_metal_print.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metal AM printer id",
+      "titleRu": "ID металлического 3D-принтера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "am_metal_print.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Build job id",
+      "titleRu": "ID задания построения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "am_metal_print.layer",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Layer thickness",
+      "titleRu": "Толщина слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "am_metal_print.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Laser / beam power",
+      "titleRu": "Мощность лазера/пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "am_metal_print.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Build progress",
+      "titleRu": "Прогресс построения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "am_metal_print.o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Chamber O2",
+      "titleRu": "O2 в камере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "am_metal_print.recoater",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recoater fault",
+      "titleRu": "Отказ рекоутера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "am_metal_print.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lpbf",
+        "ebmelt",
+        "ded",
+        "binder",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

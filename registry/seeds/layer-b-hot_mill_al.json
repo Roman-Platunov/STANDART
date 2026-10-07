@@ -1,0 +1,110 @@
+{
+  "layer": "B27",
+  "name": "layer-b-hot_mill_al.json",
+  "types": [
+    {
+      "path": "hot_mill_al.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aluminum hot mill id",
+      "titleRu": "ID стана горячей прокатки алюминия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hot_mill_al.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hot_mill_al.exit.thick",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Exit thickness",
+      "titleRu": "Толщина на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_mill_al.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Exit temperature",
+      "titleRu": "Температура на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_mill_al.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_mill_al.force",
+      "kind": "quantity",
+      "unit": "MN",
+      "titleEn": "Rolling force",
+      "titleRu": "Усилие прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_mill_al.cobble",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cobble",
+      "titleRu": "Авария полосы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hot_mill_al.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "idle",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

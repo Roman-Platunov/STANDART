@@ -1,0 +1,21 @@
+sid: 44220af2
+path: invest_cast.state
+aliases:
+  short: invest_cast.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:44220af2a41d869aac1608a676bd23793cba9220ad357a570e24db06b2db1e83
+enumValues:
+  - shell
+  - dewax
+  - pour
+  - knockout
+  - fault

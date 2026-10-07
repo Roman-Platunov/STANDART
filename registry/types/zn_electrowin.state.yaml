@@ -1,0 +1,20 @@
+sid: 2afbb6ee
+path: zn_electrowin.state
+aliases:
+  short: zn_electrowin.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние цеха
+  en: Cellhouse state
+fingerprint: sha256:2afbb6eeeb90b1127b6554b9694310018a18695bf86875c97b7c806b18553747
+enumValues:
+  - plate
+  - strip
+  - idle
+  - fault

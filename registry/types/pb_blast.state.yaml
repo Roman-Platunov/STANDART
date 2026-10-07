@@ -1,0 +1,20 @@
+sid: "63522263"
+path: pb_blast.state
+aliases:
+  short: pb_blast.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Furnace state
+fingerprint: sha256:635222639cf7b3166d3a06b34bd93c7fffeb70d4d71e29a648c2f581169fd78b
+enumValues:
+  - blow
+  - tap
+  - idle
+  - fault

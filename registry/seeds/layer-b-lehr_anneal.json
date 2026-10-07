@@ -1,0 +1,112 @@
+{
+  "layer": "B27",
+  "name": "layer-b-lehr_anneal.json",
+  "types": [
+    {
+      "path": "lehr_anneal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Annealing lehr id",
+      "titleRu": "ID печи отжига стекла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lehr_anneal.temp.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Entry temperature",
+      "titleRu": "Температура на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lehr_anneal.temp.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Exit temperature",
+      "titleRu": "Температура на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lehr_anneal.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Belt speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lehr_anneal.stress",
+      "kind": "quantity",
+      "unit": "nm/cm",
+      "titleEn": "Residual stress proxy",
+      "titleRu": "Остаточные напряжения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lehr_anneal.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Lehr power",
+      "titleRu": "Мощность печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lehr_anneal.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ribbon break",
+      "titleRu": "Обрыв ленты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lehr_anneal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lehr state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "anneal",
+        "idle",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

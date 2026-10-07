@@ -1,0 +1,115 @@
+{
+  "layer": "B27",
+  "name": "layer-b-hip_press.json",
+  "types": [
+    {
+      "path": "hip_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HIP press id",
+      "titleRu": "ID установки ГИП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hip_press.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hip_press.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "HIP pressure",
+      "titleRu": "Давление ГИП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hip_press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "HIP temperature",
+      "titleRu": "Температура ГИП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hip_press.hold.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Hold time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hip_press.density",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative density",
+      "titleRu": "Относительная плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hip_press.cycle.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cycle complete",
+      "titleRu": "Цикл завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hip_press.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "press",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

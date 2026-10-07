@@ -1,0 +1,20 @@
+sid: f872e5c1
+path: hot_mill_al.state
+aliases:
+  short: hot_mill_al.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стана
+  en: Mill state
+fingerprint: sha256:f872e5c1b28fef26816ce02d4fdc85311e9c03ef495e555c3eaec1d6f6c743ee
+enumValues:
+  - roll
+  - idle
+  - change
+  - fault

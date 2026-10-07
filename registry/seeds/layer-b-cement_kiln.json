@@ -1,0 +1,112 @@
+{
+  "layer": "B27",
+  "name": "layer-b-cement_kiln.json",
+  "types": [
+    {
+      "path": "cement_kiln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cement kiln id",
+      "titleRu": "ID цементной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cement_kiln.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Burning zone temperature",
+      "titleRu": "Температура зоны спекания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_kiln.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Kiln speed",
+      "titleRu": "Обороты печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_kiln.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Raw meal feed",
+      "titleRu": "Подача сырьевой муки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_kiln.fuel",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_kiln.nox",
+      "kind": "quantity",
+      "unit": "mg/Nm3",
+      "titleEn": "NOx",
+      "titleRu": "NOx",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_kiln.coating",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coating ring",
+      "titleRu": "Кольцо обмазки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cement_kiln.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kiln state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "heat",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

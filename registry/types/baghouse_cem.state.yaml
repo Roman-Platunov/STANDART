@@ -1,0 +1,20 @@
+sid: 4782766f
+path: baghouse_cem.state
+aliases:
+  short: baghouse_cem.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фильтра
+  en: Baghouse state
+fingerprint: sha256:4782766f835a2f8a3cc85a5bb5aad4516ff0df3dc09e4a8a7a12dbf7a9813b69
+enumValues:
+  - filter
+  - pulse
+  - offline
+  - fault

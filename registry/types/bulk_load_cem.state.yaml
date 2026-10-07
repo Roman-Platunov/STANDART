@@ -1,0 +1,20 @@
+sid: 06869fb6
+path: bulk_load_cem.state
+aliases:
+  short: bulk_load_cem.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние силоса
+  en: Silo state
+fingerprint: sha256:06869fb6344cc4057e6e7e2d29ac3e73f3952dd7322e7df27429b2240f7fac6a
+enumValues:
+  - load
+  - idle
+  - maintain
+  - fault

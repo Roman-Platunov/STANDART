@@ -1,0 +1,20 @@
+sid: "72793942"
+path: forehearth.state
+aliases:
+  short: forehearth.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние питателя
+  en: Forehearth state
+fingerprint: sha256:7279394246d079e6261fc680b6ec803684b0f295f3679eaec540e718aaff8768
+enumValues:
+  - feed
+  - idle
+  - drain
+  - fault

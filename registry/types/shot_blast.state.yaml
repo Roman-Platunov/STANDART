@@ -1,0 +1,20 @@
+sid: 5fd4c6ee
+path: shot_blast.state
+aliases:
+  short: shot_blast.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:5fd4c6ee50f86d37b05c730344412dc757f1b4eeb9dc1dfd12fb95954def245a
+enumValues:
+  - blast
+  - idle
+  - maintain
+  - fault

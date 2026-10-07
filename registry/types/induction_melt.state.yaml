@@ -1,0 +1,21 @@
+sid: c0ea6a31
+path: induction_melt.state
+aliases:
+  short: induction_melt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Furnace state
+fingerprint: sha256:c0ea6a31b2ba47283b68c52a0ef54ef1fcbce62d9153b5277602f323ff7222ce
+enumValues:
+  - charge
+  - melt
+  - tap
+  - idle
+  - fault

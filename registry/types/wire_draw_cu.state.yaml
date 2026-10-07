@@ -1,0 +1,20 @@
+sid: aea03c14
+path: wire_draw_cu.state
+aliases:
+  short: wire_draw_cu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:aea03c146dd87d3e5d86a0bdec64b7cbd2c8d7f567654e47cdb314558150bc36
+enumValues:
+  - draw
+  - anneal
+  - idle
+  - fault

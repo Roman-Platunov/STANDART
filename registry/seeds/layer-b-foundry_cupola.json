@@ -1,0 +1,112 @@
+{
+  "layer": "B27",
+  "name": "layer-b-foundry_cupola.json",
+  "types": [
+    {
+      "path": "foundry_cupola.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cupola furnace id",
+      "titleRu": "ID вагранки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foundry_cupola.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Iron temperature",
+      "titleRu": "Температура чугуна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foundry_cupola.melt",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Melt rate",
+      "titleRu": "Скорость плавки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foundry_cupola.coke",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Coke rate",
+      "titleRu": "Расход кокса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foundry_cupola.blast",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Blast air",
+      "titleRu": "Дутьё",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foundry_cupola.ce",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Carbon equivalent",
+      "titleRu": "Углеродный эквивалент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foundry_cupola.bridge",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bridging",
+      "titleRu": "Зависание шихты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "foundry_cupola.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cupola state",
+      "titleRu": "Состояние вагранки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "melt",
+        "tap",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B27",
+  "name": "layer-b-float_bath.json",
+  "types": [
+    {
+      "path": "float_bath.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Float glass tin bath id",
+      "titleRu": "ID ванны расплава float",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "float_bath.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_bath.thick",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Glass thickness",
+      "titleRu": "Толщина стекла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_bath.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ribbon width",
+      "titleRu": "Ширина ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_bath.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Ribbon speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_bath.n2",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Protective atmosphere",
+      "titleRu": "Защитная атмосфера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_bath.dross",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dross high",
+      "titleRu": "Высокий дросс",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "float_bath.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bath state",
+      "titleRu": "Состояние ванны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

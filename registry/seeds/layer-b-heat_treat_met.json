@@ -1,0 +1,115 @@
+{
+  "layer": "B27",
+  "name": "layer-b-heat_treat_met.json",
+  "types": [
+    {
+      "path": "heat_treat_met.furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metal heat-treat furnace id",
+      "titleRu": "ID печи термообработки металла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_treat_met.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lot id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_treat_met.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_treat_met.soak.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Soak time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_treat_met.atmosphere",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Atmosphere control",
+      "titleRu": "Контроль атмосферы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "heat_treat_met.hardness",
+      "kind": "quantity",
+      "unit": "HV",
+      "titleEn": "Hardness result",
+      "titleRu": "Твёрдость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_treat_met.recipe.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recipe complete",
+      "titleRu": "Режим завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heat_treat_met.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "harden",
+        "temper",
+        "anneal",
+        "normalize",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

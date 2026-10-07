@@ -1,0 +1,118 @@
+{
+  "layer": "B27",
+  "name": "layer-b-invest_cast.json",
+  "types": [
+    {
+      "path": "invest_cast.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Investment casting line id",
+      "titleRu": "ID линии точного литья",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "invest_cast.tree.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tree / mold id",
+      "titleRu": "ID ёлки/формы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "invest_cast.shell.layers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shell layers",
+      "titleRu": "Слоёв оболочки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "invest_cast.pour.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pour temperature",
+      "titleRu": "Температура заливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "invest_cast.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Casting yield",
+      "titleRu": "Выход годного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "invest_cast.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "invest_cast.shell.crack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Shell crack",
+      "titleRu": "Трещина оболочки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "invest_cast.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "shell",
+        "dewax",
+        "pour",
+        "knockout",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

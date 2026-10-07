@@ -1,0 +1,20 @@
+sid: 2c0be86c
+path: pack_cement.state
+aliases:
+  short: pack_cement.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:2c0be86cf50d229b09ed5cfab1d5d6eafcba42cd8df7878b187ad56e38595a87
+enumValues:
+  - pack
+  - idle
+  - clean
+  - fault

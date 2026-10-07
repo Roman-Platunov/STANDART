@@ -1,0 +1,117 @@
+{
+  "layer": "B27",
+  "name": "layer-b-powder_atom.json",
+  "types": [
+    {
+      "path": "powder_atom.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metal powder atomizer id",
+      "titleRu": "ID атомизатора металлического порошка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "powder_atom.gas",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Atomizing gas",
+      "titleRu": "Газ атомизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "powder_atom.d50",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Median particle size",
+      "titleRu": "Медианный размер частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "powder_atom.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Yield in size band",
+      "titleRu": "Выход в фракции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "powder_atom.o",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Oxygen in powder",
+      "titleRu": "Кислород в порошке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "powder_atom.rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Powder rate",
+      "titleRu": "Скорость получения порошка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "powder_atom.nozzle.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Nozzle OK",
+      "titleRu": "Сопло OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "powder_atom.gas_type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Atomizing medium",
+      "titleRu": "Среда атомизации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ar",
+        "n2",
+        "air",
+        "water",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

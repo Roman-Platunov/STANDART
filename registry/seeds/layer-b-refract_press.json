@@ -1,0 +1,114 @@
+{
+  "layer": "B27",
+  "name": "layer-b-refract_press.json",
+  "types": [
+    {
+      "path": "refract_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Refractory press id",
+      "titleRu": "ID пресса огнеупоров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "refract_press.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Product SKU id",
+      "titleRu": "ID SKU изделия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "refract_press.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Press force",
+      "titleRu": "Усилие пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "refract_press.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Bulk density",
+      "titleRu": "Кажущаяся плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "refract_press.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mix moisture",
+      "titleRu": "Влажность смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "refract_press.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "refract_press.crack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Green crack",
+      "titleRu": "Трещина сырца",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "refract_press.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "press",
+        "idle",
+        "tool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

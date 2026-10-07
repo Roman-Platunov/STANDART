@@ -1,0 +1,120 @@
+{
+  "layer": "B27",
+  "name": "layer-b-alumina_calc.json",
+  "types": [
+    {
+      "path": "alumina_calc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Alumina calciner id",
+      "titleRu": "ID кальцинатора глинозёма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "alumina_calc.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Calcination temperature",
+      "titleRu": "Температура кальцинации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alumina_calc.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Alumina output",
+      "titleRu": "Выпуск глинозёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alumina_calc.loi",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LOI",
+      "titleRu": "ППП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "alumina_calc.fuel",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alumina_calc.alpha",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Alpha alumina",
+      "titleRu": "Альфа-глинозём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "alumina_calc.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "alumina_calc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Calciner state",
+      "titleRu": "Состояние кальцинатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "calcine",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

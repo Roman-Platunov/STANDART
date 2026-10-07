@@ -1,0 +1,113 @@
+{
+  "layer": "B27",
+  "name": "layer-b-die_cast_al.json",
+  "types": [
+    {
+      "path": "die_cast_al.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aluminum die-cast machine id",
+      "titleRu": "ID машины литья алюминия под давлением",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "die_cast_al.die.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Die id",
+      "titleRu": "ID пресс-формы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "die_cast_al.shot",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shots today",
+      "titleRu": "Впрысков за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast_al.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast_al.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Die temperature",
+      "titleRu": "Температура формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast_al.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "die_cast_al.flash",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flash / short shot",
+      "titleRu": "Облой / недолив",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "die_cast_al.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cast",
+        "spray",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

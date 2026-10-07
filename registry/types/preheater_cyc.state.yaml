@@ -1,0 +1,20 @@
+sid: 628a5825
+path: preheater_cyc.state
+aliases:
+  short: preheater_cyc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: String state
+fingerprint: sha256:628a582563271589ef40caf68eda0c1b892b69b9c8235a7f691786b7042c837d
+enumValues:
+  - run
+  - purge
+  - idle
+  - fault

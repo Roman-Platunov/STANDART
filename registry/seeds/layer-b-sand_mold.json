@@ -1,0 +1,124 @@
+{
+  "layer": "B27",
+  "name": "layer-b-sand_mold.json",
+  "types": [
+    {
+      "path": "sand_mold.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sand molding line id",
+      "titleRu": "ID линии песчаных форм",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sand_mold.molds",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Molds per hour",
+      "titleRu": "Форм в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sand_mold.compact",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mold compactness",
+      "titleRu": "Уплотнение формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sand_mold.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sand moisture",
+      "titleRu": "Влажность песка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sand_mold.strength",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Green strength",
+      "titleRu": "Сырая прочность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sand_mold.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mold reject",
+      "titleRu": "Брак форм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sand_mold.ram.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ram OK",
+      "titleRu": "Набивка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sand_mold.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "green",
+        "no_bake",
+        "shell",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B27",
+  "name": "layer-b-coating_glass.json",
+  "types": [
+    {
+      "path": "coating_glass.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Glass coating line id",
+      "titleRu": "ID линии нанесения покрытий на стекло",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coating_glass.thick",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Coating thickness",
+      "titleRu": "Толщина покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coating_glass.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coating_glass.uniform",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uniformity",
+      "titleRu": "Равномерность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coating_glass.defect",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Defects per m2",
+      "titleRu": "Дефектов на м²",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coating_glass.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber vacuum",
+      "titleRu": "Вакуум камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coating_glass.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coat in spec",
+      "titleRu": "Покрытие в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coating_glass.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sputter",
+        "cvd",
+        "spray",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

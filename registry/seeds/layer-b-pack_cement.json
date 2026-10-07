@@ -1,0 +1,120 @@
+{
+  "layer": "B27",
+  "name": "layer-b-pack_cement.json",
+  "types": [
+    {
+      "path": "pack_cement.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cement packing line id",
+      "titleRu": "ID линии фасовки цемента",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pack_cement.bags",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bags per hour",
+      "titleRu": "Мешков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pack_cement.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Bag weight",
+      "titleRu": "Масса мешка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pack_cement.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pack_cement.spillage",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Spillage",
+      "titleRu": "Просыпь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pack_cement.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pack_cement.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bag jam",
+      "titleRu": "Замятие мешка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pack_cement.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pack",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

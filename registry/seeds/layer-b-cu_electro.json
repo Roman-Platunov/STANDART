@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-cu_electro.json",
+  "types": [
+    {
+      "path": "cu_electro.tankhouse.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Copper tankhouse id",
+      "titleRu": "ID электролизного цеха меди",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cu_electro.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Cell current",
+      "titleRu": "Ток ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_electro.ce",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Current efficiency",
+      "titleRu": "Выход по току",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cu_electro.cathodes",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Cathode production",
+      "titleRu": "Выпуск катодов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_electro.acid",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Electrolyte acid",
+      "titleRu": "Кислота электролита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_electro.cu",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Cu in electrolyte",
+      "titleRu": "Cu в электролите",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_electro.short",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cell short",
+      "titleRu": "Короткое замыкание ванны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cu_electro.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tankhouse state",
+      "titleRu": "Состояние цеха",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plate",
+        "strip",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B27",
+  "name": "layer-b-forehearth.json",
+  "types": [
+    {
+      "path": "forehearth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Glass forehearth id",
+      "titleRu": "ID питателя/фронтальной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "forehearth.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gob temperature",
+      "titleRu": "Температура капли",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forehearth.flow",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Glass flow",
+      "titleRu": "Расход стекла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forehearth.level",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Glass level",
+      "titleRu": "Уровень стекла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forehearth.zones",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Zones in control",
+      "titleRu": "Зон под управлением",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forehearth.gas",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fuel gas",
+      "titleRu": "Топливный газ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forehearth.stable",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature stable",
+      "titleRu": "Температура стабильна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "forehearth.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Forehearth state",
+      "titleRu": "Состояние питателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "feed",
+        "idle",
+        "drain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

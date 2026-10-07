@@ -1,0 +1,111 @@
+{
+  "layer": "B27",
+  "name": "layer-b-induction_melt.json",
+  "types": [
+    {
+      "path": "induction_melt.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Induction melting furnace id",
+      "titleRu": "ID индукционной плавильной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "induction_melt.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "induction_melt.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Coil power",
+      "titleRu": "Мощность индуктора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "induction_melt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Metal temperature",
+      "titleRu": "Температура металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "induction_melt.charge",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Charge weight",
+      "titleRu": "Масса шихты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "induction_melt.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "induction_melt.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tap ready",
+      "titleRu": "Готово к выпуску",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "induction_melt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnace state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "melt",
+        "tap",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

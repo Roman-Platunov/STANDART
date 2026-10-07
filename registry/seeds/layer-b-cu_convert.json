@@ -1,0 +1,121 @@
+{
+  "layer": "B27",
+  "name": "layer-b-cu_convert.json",
+  "types": [
+    {
+      "path": "cu_convert.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Copper converter id",
+      "titleRu": "ID медного конвертера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cu_convert.blow",
+      "kind": "quantity",
+      "unit": "Nm3/min",
+      "titleEn": "Air / O2 blow",
+      "titleRu": "Продувка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_convert.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_convert.cu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Blister Cu",
+      "titleRu": "Черновая медь Cu",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cu_convert.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cu_convert.so2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "SO2 in gas",
+      "titleRu": "SO2 в газе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cu_convert.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready to pour",
+      "titleRu": "Готово к сливу",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cu_convert.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Converter state",
+      "titleRu": "Состояние конвертера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "blow",
+        "skim",
+        "pour",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: aba793e2
+path: anode_bake.state
+aliases:
+  short: anode_bake.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Furnace state
+fingerprint: sha256:aba793e27fcefbc7a002b1173cf54fa6ecffd6c923674b9129c2eca910e991c9
+enumValues:
+  - fire
+  - cool
+  - idle
+  - fault

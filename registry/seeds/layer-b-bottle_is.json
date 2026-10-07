@@ -1,0 +1,119 @@
+{
+  "layer": "B27",
+  "name": "layer-b-bottle_is.json",
+  "types": [
+    {
+      "path": "bottle_is.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IS bottle machine id",
+      "titleRu": "ID машины ИС для бутылок",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bottle_is.gobs",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Gobs per minute",
+      "titleRu": "Капель в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_is.pack",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pack-to-melt",
+      "titleRu": "Выход годного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bottle_is.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bottle_is.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mold temperature",
+      "titleRu": "Температура формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_is.sections",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sections running",
+      "titleRu": "Секций в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_is.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stuck ware",
+      "titleRu": "Застревание изделий",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bottle_is.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blow_blow",
+        "press_blow",
+        "nnpb",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

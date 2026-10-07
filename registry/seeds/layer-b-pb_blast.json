@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-pb_blast.json",
+  "types": [
+    {
+      "path": "pb_blast.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lead blast furnace id",
+      "titleRu": "ID шахтной печи свинца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pb_blast.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tuyere / hearth temperature",
+      "titleRu": "Температура фурмы/горна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pb_blast.bullion",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Bullion production",
+      "titleRu": "Выпуск чернового свинца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pb_blast.coke",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Coke rate",
+      "titleRu": "Расход кокса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pb_blast.slag.pb",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pb in slag",
+      "titleRu": "Pb в шлаке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pb_blast.so2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "SO2 in gas",
+      "titleRu": "SO2 в газе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pb_blast.freeze",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hearth freeze risk",
+      "titleRu": "Риск замораживания горна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pb_blast.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnace state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blow",
+        "tap",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

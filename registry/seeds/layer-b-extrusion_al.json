@@ -1,0 +1,114 @@
+{
+  "layer": "B27",
+  "name": "layer-b-extrusion_al.json",
+  "types": [
+    {
+      "path": "extrusion_al.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aluminum extrusion press id",
+      "titleRu": "ID пресса экструзии алюминия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extrusion_al.die.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Die id",
+      "titleRu": "ID матрицы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extrusion_al.force",
+      "kind": "quantity",
+      "unit": "MN",
+      "titleEn": "Ram force",
+      "titleRu": "Усилие плунжера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrusion_al.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Exit speed",
+      "titleRu": "Скорость на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrusion_al.billet.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Billet temperature",
+      "titleRu": "Температура слитка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrusion_al.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "extrusion_al.die.wear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Die wear high",
+      "titleRu": "Высокий износ матрицы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "extrusion_al.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "extrude",
+        "die_change",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

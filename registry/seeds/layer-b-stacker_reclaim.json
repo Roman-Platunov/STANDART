@@ -1,0 +1,112 @@
+{
+  "layer": "B27",
+  "name": "layer-b-stacker_reclaim.json",
+  "types": [
+    {
+      "path": "stacker_reclaim.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stacker-reclaimer id",
+      "titleRu": "ID стакер-реклаймера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stacker_reclaim.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Stack / reclaim rate",
+      "titleRu": "Скорость штабелирования/забора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_reclaim.boom",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Boom angle",
+      "titleRu": "Угол стрелы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_reclaim.travel",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Travel position",
+      "titleRu": "Позиция перемещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_reclaim.stock",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Stockpile mass",
+      "titleRu": "Масса штабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_reclaim.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Machine power",
+      "titleRu": "Мощность машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_reclaim.auto",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Automatic mode",
+      "titleRu": "Автоматический режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stacker_reclaim.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stack",
+        "reclaim",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 0d146f75
+path: spray_dryer_cer.state
+aliases:
+  short: spray_dryer_cer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сушилки
+  en: Dryer state
+fingerprint: sha256:0d146f7568bfa2dbdf1b3f2c86d4e579e1c700d067b35480c477ae999d962288
+enumValues:
+  - dry
+  - clean
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: 354c7b36
+path: foil_roll_al.state
+aliases:
+  short: foil_roll_al.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стана
+  en: Mill state
+fingerprint: sha256:354c7b363db3c0a542376c56680841f1bcdea8145f5113c511e478251ccedb5c
+enumValues:
+  - roll
+  - idle
+  - change
+  - fault

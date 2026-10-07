@@ -1,0 +1,120 @@
+{
+  "layer": "B27",
+  "name": "layer-b-zn_roaster.json",
+  "types": [
+    {
+      "path": "zn_roaster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Zinc roaster id",
+      "titleRu": "ID цинкового обжигового аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "zn_roaster.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bed temperature",
+      "titleRu": "Температура слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_roaster.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Concentrate feed",
+      "titleRu": "Подача концентрата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_roaster.s",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sulfur in calcine",
+      "titleRu": "Сера в огарке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "zn_roaster.so2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "SO2 in gas",
+      "titleRu": "SO2 в газе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "zn_roaster.air",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Roasting air",
+      "titleRu": "Воздух обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_roaster.hotspot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hotspot",
+      "titleRu": "Горячая точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "zn_roaster.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Roaster state",
+      "titleRu": "Состояние обжига",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roast",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

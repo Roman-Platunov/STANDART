@@ -1,0 +1,112 @@
+{
+  "layer": "B27",
+  "name": "layer-b-rod_mill_cu.json",
+  "types": [
+    {
+      "path": "rod_mill_cu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Copper rod mill id",
+      "titleRu": "ID стана медной катанки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rod_mill_cu.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Rod diameter",
+      "titleRu": "Диаметр катанки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rod_mill_cu.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Rolling speed",
+      "titleRu": "Скорость прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rod_mill_cu.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rod_mill_cu.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Finishing temperature",
+      "titleRu": "Температура чистовой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rod_mill_cu.oxy",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Oxygen in rod",
+      "titleRu": "Кислород в катанке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rod_mill_cu.cobble",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cobble",
+      "titleRu": "Авария",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rod_mill_cu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "idle",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

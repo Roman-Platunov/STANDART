@@ -1,0 +1,21 @@
+sid: 9dc68534
+path: hip_press.state
+aliases:
+  short: hip_press.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Press state
+fingerprint: sha256:9dc68534d688236fcd1475368896557ced2531ee60bb2a3d4b1e482f52a5ca9f
+enumValues:
+  - heat
+  - press
+  - cool
+  - idle
+  - fault

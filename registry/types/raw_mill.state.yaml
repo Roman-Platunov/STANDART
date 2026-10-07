@@ -1,0 +1,20 @@
+sid: 10e28a41
+path: raw_mill.state
+aliases:
+  short: raw_mill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние мельницы
+  en: Mill state
+fingerprint: sha256:10e28a41961abf5ade46e24cb8a61f7e064a3f86cf65808e5adc72975066e516
+enumValues:
+  - grind
+  - idle
+  - maintain
+  - fault

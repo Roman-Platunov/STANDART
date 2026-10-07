@@ -1,0 +1,120 @@
+{
+  "layer": "B27",
+  "name": "layer-b-raw_mill.json",
+  "types": [
+    {
+      "path": "raw_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Raw mill id",
+      "titleRu": "ID сырьевой мельницы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "raw_mill.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raw_mill.fineness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Residue",
+      "titleRu": "Остаток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "raw_mill.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "raw_mill.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Mill power",
+      "titleRu": "Мощность мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raw_mill.lsf",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Lime saturation factor",
+      "titleRu": "Коэффициент насыщения известью",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raw_mill.chem.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chemistry OK",
+      "titleRu": "Химия OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "raw_mill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние мельницы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grind",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

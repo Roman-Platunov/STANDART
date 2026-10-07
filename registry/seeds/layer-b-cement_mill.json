@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-cement_mill.json",
+  "types": [
+    {
+      "path": "cement_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cement finish mill id",
+      "titleRu": "ID цементной мельницы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cement_mill.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Mill power",
+      "titleRu": "Мощность мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_mill.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Cement output",
+      "titleRu": "Выпуск цемента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_mill.blaine",
+      "kind": "quantity",
+      "unit": "/cm2",
+      "titleEn": "Blaine fineness",
+      "titleRu": "Тонкость Блейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_mill.resid",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Residue 45 µm",
+      "titleRu": "Остаток 45 мкм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cement_mill.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mill temperature",
+      "titleRu": "Температура мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_mill.separator",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Separator online",
+      "titleRu": "Сепаратор онлайн",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cement_mill.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ball",
+        "vertical",
+        "roller",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

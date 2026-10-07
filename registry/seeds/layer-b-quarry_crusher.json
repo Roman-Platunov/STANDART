@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-quarry_crusher.json",
+  "types": [
+    {
+      "path": "quarry_crusher.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Quarry crusher id",
+      "titleRu": "ID дробилки карьера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "quarry_crusher.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quarry_crusher.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Crusher power",
+      "titleRu": "Мощность дробилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quarry_crusher.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Product size",
+      "titleRu": "Размер продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quarry_crusher.vib",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quarry_crusher.liners",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Liner life left",
+      "titleRu": "Остаток ресурса футеровки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "quarry_crusher.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crusher jam",
+      "titleRu": "Засор дробилки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "quarry_crusher.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "jaw",
+        "gyratory",
+        "impact",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

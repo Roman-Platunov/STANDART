@@ -1,0 +1,114 @@
+{
+  "layer": "B27",
+  "name": "layer-b-potline_al.json",
+  "types": [
+    {
+      "path": "potline_al.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aluminum potline id",
+      "titleRu": "ID серии электролизёров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "potline_al.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Line current",
+      "titleRu": "Сила тока серии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potline_al.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Average pot voltage",
+      "titleRu": "Среднее напряжение ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potline_al.ce",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Current efficiency",
+      "titleRu": "Выход по току",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "potline_al.pots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pots online",
+      "titleRu": "Ванн онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potline_al.af",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Anode effects today",
+      "titleRu": "Анодных эффектов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potline_al.ae",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Anode effect active",
+      "titleRu": "Анодный эффект активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "potline_al.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Potline state",
+      "titleRu": "Состояние серии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "tap",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

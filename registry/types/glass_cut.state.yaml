@@ -1,0 +1,20 @@
+sid: 6f9aa624
+path: glass_cut.state
+aliases:
+  short: glass_cut.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:6f9aa6249467b693892c00502c64f4dcc4c8ebbea2e263e7ea7d3589f733caad
+enumValues:
+  - cut
+  - snap
+  - idle
+  - fault

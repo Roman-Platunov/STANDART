@@ -1,0 +1,20 @@
+sid: 4b83423c
+path: zn_leach.stage
+aliases:
+  short: zn_leach.stage
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Стадия
+  en: Stage
+fingerprint: sha256:4b83423cafe1bfcb0ec0af40eba15762925063988d7c74256265bec064c4b5ef
+enumValues:
+  - neutral
+  - acid
+  - hot_acid
+  - other

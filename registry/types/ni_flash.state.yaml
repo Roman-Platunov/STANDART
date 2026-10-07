@@ -1,0 +1,20 @@
+sid: 121c969c
+path: ni_flash.state
+aliases:
+  short: ni_flash.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Furnace state
+fingerprint: sha256:121c969cecdd65258a29068dccdfa7e07d32651e1952dba839cc728b544c0bb4
+enumValues:
+  - smelt
+  - idle
+  - maintain
+  - fault

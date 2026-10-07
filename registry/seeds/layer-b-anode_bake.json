@@ -1,0 +1,111 @@
+{
+  "layer": "B27",
+  "name": "layer-b-anode_bake.json",
+  "types": [
+    {
+      "path": "anode_bake.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anode baking furnace id",
+      "titleRu": "ID печи обжига анодов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anode_bake.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Peak temperature",
+      "titleRu": "Пиковая температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_bake.cycle.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Fire cycle",
+      "titleRu": "Цикл обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_bake.anodes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Anodes in fire",
+      "titleRu": "Анодов в обжиге",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_bake.fuel",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_bake.resist",
+      "kind": "quantity",
+      "unit": "uOhm.m",
+      "titleEn": "Baked resistivity",
+      "titleRu": "Удельное сопротивление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_bake.crack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crack risk",
+      "titleRu": "Риск трещин",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "anode_bake.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnace state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fire",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: af8c9d46
+path: tin_bath.state
+aliases:
+  short: tin_bath.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ванны
+  en: Bath state
+fingerprint: sha256:af8c9d468ecc4d134cdaf63e901fce75c2ad1098392a44f509910f66420b3405
+enumValues:
+  - form
+  - idle
+  - maintain
+  - fault

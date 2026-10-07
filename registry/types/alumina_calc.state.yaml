@@ -1,0 +1,20 @@
+sid: d32902ce
+path: alumina_calc.state
+aliases:
+  short: alumina_calc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кальцинатора
+  en: Calciner state
+fingerprint: sha256:d32902cee6981b761eb879bf2d3f033b703a74f465000317da25e421ab259ddb
+enumValues:
+  - calcine
+  - idle
+  - maintain
+  - fault

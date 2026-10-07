@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-zn_leach.json",
+  "types": [
+    {
+      "path": "zn_leach.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Zinc leach circuit id",
+      "titleRu": "ID контура выщелачивания цинка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "zn_leach.zn",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Zn in solution",
+      "titleRu": "Zn в растворе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_leach.acid",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Free acid",
+      "titleRu": "Свободная кислота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_leach.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Leach temperature",
+      "titleRu": "Температура выщелачивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_leach.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Zn recovery",
+      "titleRu": "Извлечение Zn",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "zn_leach.fe",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Iron in solution",
+      "titleRu": "Железо в растворе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zn_leach.filter.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Filter OK",
+      "titleRu": "Фильтр OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "zn_leach.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Стадия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "neutral",
+        "acid",
+        "hot_acid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

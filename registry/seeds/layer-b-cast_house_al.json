@@ -1,0 +1,115 @@
+{
+  "layer": "B27",
+  "name": "layer-b-cast_house_al.json",
+  "types": [
+    {
+      "path": "cast_house_al.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aluminum casthouse id",
+      "titleRu": "ID литейного отделения алюминия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cast_house_al.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cast_house_al.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Metal temperature",
+      "titleRu": "Температура металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cast_house_al.cast",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Casting rate",
+      "titleRu": "Скорость разливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cast_house_al.h",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Hydrogen",
+      "titleRu": "Водород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cast_house_al.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap in charge",
+      "titleRu": "Лом в шихте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cast_house_al.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready to cast",
+      "titleRu": "Готово к разливке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cast_house_al.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ingot",
+        "billet",
+        "slab",
+        "sow",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

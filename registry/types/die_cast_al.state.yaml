@@ -1,0 +1,20 @@
+sid: 3e4540a2
+path: die_cast_al.state
+aliases:
+  short: die_cast_al.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:3e4540a2608567f9c18f27a746c068a90285ba7926efa9b11c78b460169f7264
+enumValues:
+  - cast
+  - spray
+  - idle
+  - fault

@@ -1,0 +1,114 @@
+{
+  "layer": "B27",
+  "name": "layer-b-anodize_line.json",
+  "types": [
+    {
+      "path": "anodize_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anodizing line id",
+      "titleRu": "ID линии анодирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anodize_line.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lot id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anodize_line.thick",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Anodic thickness",
+      "titleRu": "Толщина анодного слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anodize_line.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Bath current",
+      "titleRu": "Ток ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anodize_line.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anodize_line.seal",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Seal quality",
+      "titleRu": "Качество уплотнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "anodize_line.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In spec",
+      "titleRu": "В норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "anodize_line.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sulfuric",
+        "hard",
+        "chromic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

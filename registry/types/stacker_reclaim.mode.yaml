@@ -1,0 +1,20 @@
+sid: 4f6db565
+path: stacker_reclaim.mode
+aliases:
+  short: stacker_reclaim.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:4f6db5652a245783027a87bdad897aab6a45d561ed4ca4863b05b88bef40dc00
+enumValues:
+  - stack
+  - reclaim
+  - idle
+  - fault

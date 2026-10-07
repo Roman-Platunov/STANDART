@@ -1,0 +1,116 @@
+{
+  "layer": "B27",
+  "name": "layer-b-clinker_cooler.json",
+  "types": [
+    {
+      "path": "clinker_cooler.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Clinker cooler id",
+      "titleRu": "ID холодильника клинкера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "clinker_cooler.exit.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Clinker exit temperature",
+      "titleRu": "Температура клинкера на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clinker_cooler.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Cooling air",
+      "titleRu": "Охлаждающий воздух",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clinker_cooler.grate",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Grate speed",
+      "titleRu": "Скорость колосниковой решётки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clinker_cooler.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Heat recovery",
+      "titleRu": "Рекуперация тепла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "clinker_cooler.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Clinker throughput",
+      "titleRu": "Пропуск клинкера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clinker_cooler.snowman",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Snowman risk",
+      "titleRu": "Риск «снеговика»",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "clinker_cooler.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cooler state",
+      "titleRu": "Состояние холодильника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cool",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

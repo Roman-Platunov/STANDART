@@ -1,0 +1,20 @@
+sid: 7487e06e
+path: cu_electro.state
+aliases:
+  short: cu_electro.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние цеха
+  en: Tankhouse state
+fingerprint: sha256:7487e06e94324d6684903f666709fec7b51029e2758ef3b68be9feddddd87c7b
+enumValues:
+  - plate
+  - strip
+  - idle
+  - fault

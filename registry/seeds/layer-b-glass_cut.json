@@ -1,0 +1,120 @@
+{
+  "layer": "B27",
+  "name": "layer-b-glass_cut.json",
+  "types": [
+    {
+      "path": "glass_cut.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Glass cutting line id",
+      "titleRu": "ID линии резки стекла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glass_cut.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Cut speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_cut.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cut yield",
+      "titleRu": "Выход резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glass_cut.breakage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Breakage",
+      "titleRu": "Бой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glass_cut.sheets",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Sheets per hour",
+      "titleRu": "Листов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_cut.score",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Score force",
+      "titleRu": "Усилие надреза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_cut.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Line jam",
+      "titleRu": "Затор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "glass_cut.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "snap",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

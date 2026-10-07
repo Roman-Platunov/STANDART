@@ -1,0 +1,110 @@
+{
+  "layer": "B27",
+  "name": "layer-b-wire_draw_cu.json",
+  "types": [
+    {
+      "path": "wire_draw_cu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Copper wire drawing line id",
+      "titleRu": "ID линии волочения меди",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wire_draw_cu.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Exit diameter",
+      "titleRu": "Диаметр на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_draw_cu.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Drawing speed",
+      "titleRu": "Скорость волочения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_draw_cu.breaks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Breaks today",
+      "titleRu": "Обрывов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_draw_cu.dies",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dies in train",
+      "titleRu": "Волоков в линии",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_draw_cu.lube.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Lubricant temperature",
+      "titleRu": "Температура смазки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_draw_cu.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wire break",
+      "titleRu": "Обрыв проволоки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wire_draw_cu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "draw",
+        "anneal",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
