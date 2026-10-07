@@ -1,0 +1,20 @@
+sid: 5f7c397d
+path: bushing_tap.state
+aliases:
+  short: bushing_tap.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:5f7c397d65f328075d96057d08307e603cf54354b03896961160cc43f8712021
+enumValues:
+  - ok
+  - watch
+  - alarm
+  - offline

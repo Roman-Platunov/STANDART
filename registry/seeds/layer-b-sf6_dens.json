@@ -1,0 +1,111 @@
+{
+  "layer": "B23",
+  "name": "layer-b-sf6_dens.json",
+  "types": [
+    {
+      "path": "sf6_dens.cb.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SF6 breaker density id",
+      "titleRu": "ID плотности SF6 выключателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sf6_dens.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Gas density",
+      "titleRu": "Плотность газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_dens.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Pressure",
+      "titleRu": "Давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_dens.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Temperature",
+      "titleRu": "Температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_dens.trend",
+      "kind": "quantity",
+      "unit": "%/d",
+      "titleEn": "Density trend",
+      "titleRu": "Тренд плотности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_dens.refills",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Refills this year",
+      "titleRu": "Дозаправок за год",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_dens.lockout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Density lockout",
+      "titleRu": "Блокировка по плотности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sf6_dens.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "alarm",
+        "lockout",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B23",
+  "name": "layer-b-neutral_shift.json",
+  "types": [
+    {
+      "path": "neutral_shift.bus.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Neutral displacement monitor id",
+      "titleRu": "ID смещения нейтрали",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "neutral_shift.vo",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Neutral voltage",
+      "titleRu": "Напряжение нейтрали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "neutral_shift.unbalance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Voltage unbalance",
+      "titleRu": "Несимметрия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "neutral_shift.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "neutral_shift.duration.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Shift duration",
+      "titleRu": "Длительность смещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "neutral_shift.events",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Events today",
+      "titleRu": "Событий за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "neutral_shift.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Neutral shift alarm",
+      "titleRu": "Тревога смещения нейтрали",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "neutral_shift.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

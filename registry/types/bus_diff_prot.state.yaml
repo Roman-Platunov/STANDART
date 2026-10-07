@@ -1,0 +1,20 @@
+sid: 13549d69
+path: bus_diff_prot.state
+aliases:
+  short: bus_diff_prot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:13549d698aeffd1b1212fd4b42899c7f8a2b163fdaf6bcda76acd8471a9d7f95
+enumValues:
+  - ok
+  - pickup
+  - trip
+  - check

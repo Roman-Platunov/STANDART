@@ -1,0 +1,20 @@
+sid: 851aa0ae
+path: phase_shift_xfmr.state
+aliases:
+  short: phase_shift_xfmr.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:851aa0ae7684c756d144562326fd60c83582b13005318df68bf198e19c3ddfdf
+enumValues:
+  - regulate
+  - hold
+  - bypass
+  - fault

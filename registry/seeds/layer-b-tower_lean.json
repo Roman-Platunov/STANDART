@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-tower_lean.json",
+  "types": [
+    {
+      "path": "tower_lean.tower.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transmission tower id",
+      "titleRu": "ID опоры ВЛ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tower_lean.tilt",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Tilt",
+      "titleRu": "Наклон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tower_lean.twist",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Twist",
+      "titleRu": "Кручение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tower_lean.vib",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tower_lean.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind speed",
+      "titleRu": "Скорость ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tower_lean.ice",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ice thickness",
+      "titleRu": "Толщина гололёда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tower_lean.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lean alarm",
+      "titleRu": "Тревога наклона",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tower_lean.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

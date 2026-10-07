@@ -1,0 +1,20 @@
+sid: 8603f150
+path: cable_pd_mon.state
+aliases:
+  short: cable_pd_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:8603f150530a090a2ac0f387f56eec9c4918a8df05dd6a3c1a48fb6ecf1bc380
+enumValues:
+  - ok
+  - watch
+  - alarm
+  - offline

@@ -1,0 +1,121 @@
+{
+  "layer": "B23",
+  "name": "layer-b-pq_meter.json",
+  "types": [
+    {
+      "path": "pq_meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Power quality meter id",
+      "titleRu": "ID анализатора качества электроэнергии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pq_meter.feeder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Feeder id",
+      "titleRu": "ID фидера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pq_meter.thd.v",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Voltage THD",
+      "titleRu": "КНИ напряжения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pq_meter.thd.i",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Current THD",
+      "titleRu": "КНИ тока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pq_meter.unbalance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Voltage unbalance",
+      "titleRu": "Несимметрия напряжения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pq_meter.sags",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sag events today",
+      "titleRu": "Провалов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pq_meter.event",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "PQ event",
+      "titleRu": "Событие КЭ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pq_meter.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Meter class",
+      "titleRu": "Класс прибора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "a",
+        "s",
+        "b",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 865c271b
+path: line_diff_prot.state
+aliases:
+  short: line_diff_prot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:865c271b5a9891e9b10e66d94f742fa46d098713058ff5a735556e5d46f2374f
+enumValues:
+  - ok
+  - pickup
+  - trip
+  - channel_fail

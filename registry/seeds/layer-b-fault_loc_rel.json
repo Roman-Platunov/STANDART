@@ -1,0 +1,118 @@
+{
+  "layer": "B23",
+  "name": "layer-b-fault_loc_rel.json",
+  "types": [
+    {
+      "path": "fault_loc_rel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fault locator id",
+      "titleRu": "ID определителя места повреждения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fault_loc_rel.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Line id",
+      "titleRu": "ID линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fault_loc_rel.distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Estimated distance",
+      "titleRu": "Оценка расстояния",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fault_loc_rel.reactance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Fault reactance",
+      "titleRu": "Реактивность КЗ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fault_loc_rel.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Fault current",
+      "titleRu": "Ток КЗ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fault_loc_rel.confidence",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Location confidence",
+      "titleRu": "Достоверность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fault_loc_rel.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Trip recorded",
+      "titleRu": "Зафиксировано отключение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fault_loc_rel.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fault type",
+      "titleRu": "Тип КЗ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ag",
+        "bg",
+        "cg",
+        "ab",
+        "bc",
+        "ca",
+        "abc",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

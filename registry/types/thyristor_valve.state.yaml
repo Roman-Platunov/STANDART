@@ -1,0 +1,20 @@
+sid: 4d53d075
+path: thyristor_valve.state
+aliases:
+  short: thyristor_valve.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:4d53d0752239ce0a0ef3552b204047097bebc079bc5d3b05f8f44b3354f10688
+enumValues:
+  - conduct
+  - block
+  - bypass
+  - fault

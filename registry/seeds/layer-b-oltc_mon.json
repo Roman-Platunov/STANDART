@@ -1,0 +1,114 @@
+{
+  "layer": "B23",
+  "name": "layer-b-oltc_mon.json",
+  "types": [
+    {
+      "path": "oltc_mon.xfmr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OLTC transformer id",
+      "titleRu": "ID трансформатора с РПН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oltc_mon.tap",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tap position",
+      "titleRu": "Положение РПН",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oltc_mon.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Operations today",
+      "titleRu": "Операций за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oltc_mon.motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Drive current",
+      "titleRu": "Ток привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oltc_mon.oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Diverter oil temperature",
+      "titleRu": "Температура масла контактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oltc_mon.contact.wear",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Contact wear",
+      "titleRu": "Износ контактов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oltc_mon.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tap stuck",
+      "titleRu": "РПН заклинило",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oltc_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "raise",
+        "lower",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

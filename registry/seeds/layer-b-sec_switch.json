@@ -1,0 +1,114 @@
+{
+  "layer": "B23",
+  "name": "layer-b-sec_switch.json",
+  "types": [
+    {
+      "path": "sec_switch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sectionalizer id",
+      "titleRu": "ID секционализатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sec_switch.counts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Count-to-open remaining",
+      "titleRu": "Осталось счётов до отключения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sec_switch.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current",
+      "titleRu": "Ток линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sec_switch.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Operations today",
+      "titleRu": "Операций за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sec_switch.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cabinet temperature",
+      "titleRu": "Температура шкафа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sec_switch.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery",
+      "titleRu": "Батарея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sec_switch.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Open",
+      "titleRu": "Отключён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sec_switch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "open",
+        "count",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

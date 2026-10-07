@@ -1,0 +1,20 @@
+sid: f238b488
+path: harm_analyzer.state
+aliases:
+  short: harm_analyzer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:f238b488b37dfa5e56f213ce21acadce84161c768904458042fe4e4a5a00da64
+enumValues:
+  - ok
+  - watch
+  - alarm
+  - offline

@@ -1,0 +1,20 @@
+sid: 3d209361
+path: rfi_mon.state
+aliases:
+  short: rfi_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:3d20936183798f94e65caf96d495e0441dda287342b1b08e10f1fa267bf74e55
+enumValues:
+  - ok
+  - watch
+  - alarm
+  - offline

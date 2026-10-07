@@ -1,0 +1,110 @@
+{
+  "layer": "B23",
+  "name": "layer-b-island_rel.json",
+  "types": [
+    {
+      "path": "island_rel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Island detection relay id",
+      "titleRu": "ID реле обнаружения острова",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "island_rel.feeder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Feeder id",
+      "titleRu": "ID фидера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "island_rel.rocof",
+      "kind": "quantity",
+      "unit": "Hz/s",
+      "titleEn": "Rate of change of frequency",
+      "titleRu": "Скорость изменения частоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "island_rel.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "island_rel.vs",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Vector shift",
+      "titleRu": "Векторный сдвиг",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "island_rel.trips",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trips today",
+      "titleRu": "Отключений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "island_rel.island",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Island detected",
+      "titleRu": "Остров обнаружен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "island_rel.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rocof",
+        "vs",
+        "passive",
+        "active",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

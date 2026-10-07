@@ -1,0 +1,115 @@
+{
+  "layer": "B23",
+  "name": "layer-b-insulator_leak.json",
+  "types": [
+    {
+      "path": "insulator_leak.string.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Insulator string id",
+      "titleRu": "ID гирлянды изоляторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "insulator_leak.current",
+      "kind": "quantity",
+      "unit": "mA",
+      "titleEn": "Leakage current",
+      "titleRu": "Ток утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "insulator_leak.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "insulator_leak.esdd",
+      "kind": "quantity",
+      "unit": "mg/m2",
+      "titleEn": "ESDD",
+      "titleRu": "ЭСЗП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "insulator_leak.flashovers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Flashovers",
+      "titleRu": "Перекрытий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "insulator_leak.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Surface temperature",
+      "titleRu": "Температура поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "insulator_leak.pollute",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pollution high",
+      "titleRu": "Высокое загрязнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "insulator_leak.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "wash_due",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

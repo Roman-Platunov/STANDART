@@ -1,0 +1,20 @@
+sid: b5f95248
+path: filter_dc.state
+aliases:
+  short: filter_dc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:b5f9524802c8b81583e22d27e547f0e80b642c979d999f4750c54006d46b3470
+enumValues:
+  - in
+  - out
+  - fault
+  - test

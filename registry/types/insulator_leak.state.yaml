@@ -1,0 +1,20 @@
+sid: 36717c17
+path: insulator_leak.state
+aliases:
+  short: insulator_leak.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:36717c17a1d541ca7f2024b62709e785da65e876bd2db535a12488516e48c3f5
+enumValues:
+  - ok
+  - wash_due
+  - alarm
+  - offline

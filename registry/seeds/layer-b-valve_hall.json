@@ -1,0 +1,115 @@
+{
+  "layer": "B23",
+  "name": "layer-b-valve_hall.json",
+  "types": [
+    {
+      "path": "valve_hall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HVDC valve hall id",
+      "titleRu": "ID зала вентилей HVDC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "valve_hall.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hall temperature",
+      "titleRu": "Температура зала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "valve_hall.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "valve_hall.dust",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Particulates",
+      "titleRu": "Пыль",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "valve_hall.sf6",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "SF6 / air quality",
+      "titleRu": "SF6 / воздух",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "valve_hall.access",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "People in hall",
+      "titleRu": "Людей в зале",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "valve_hall.interlock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Access interlock OK",
+      "titleRu": "Блокировка доступа OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "valve_hall.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "energized",
+        "isolated",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

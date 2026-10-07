@@ -1,0 +1,109 @@
+{
+  "layer": "B23",
+  "name": "layer-b-bfp_relay.json",
+  "types": [
+    {
+      "path": "bfp_relay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Breaker failure protection id",
+      "titleRu": "ID УРОВ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bfp_relay.cb.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Circuit breaker id",
+      "titleRu": "ID выключателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bfp_relay.timer.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "BF timer",
+      "titleRu": "Выдержка УРОВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bfp_relay.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Breaker current",
+      "titleRu": "Ток выключателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bfp_relay.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "BF operations today",
+      "titleRu": "Срабатываний УРОВ за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bfp_relay.pickup.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Current pickup delay",
+      "titleRu": "Задержка пуска по току",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bfp_relay.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Breaker failed",
+      "titleRu": "Выключатель отказал",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bfp_relay.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "timing",
+        "trip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

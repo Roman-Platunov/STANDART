@@ -1,0 +1,20 @@
+sid: d33b83a4
+path: flicker_mon.state
+aliases:
+  short: flicker_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:d33b83a488732f53f4b65d4e477f54e0402c17943fea0813c458d5323458b65e
+enumValues:
+  - ok
+  - watch
+  - alarm
+  - offline

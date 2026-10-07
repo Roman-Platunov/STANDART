@@ -1,0 +1,113 @@
+{
+  "layer": "B23",
+  "name": "layer-b-oil_dga_mon.json",
+  "types": [
+    {
+      "path": "oil_dga_mon.xfmr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Monitored transformer id",
+      "titleRu": "ID трансформатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oil_dga_mon.h2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Hydrogen",
+      "titleRu": "Водород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_dga_mon.c2h2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Acetylene",
+      "titleRu": "Ацетилен",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_dga_mon.c2h4",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Ethylene",
+      "titleRu": "Этилен",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_dga_mon.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Carbon monoxide",
+      "titleRu": "Оксид углерода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_dga_mon.moisture",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Oil moisture",
+      "titleRu": "Влага в масле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_dga_mon.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "DGA alarm",
+      "titleRu": "Тревога ХАРГ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oil_dga_mon.fault",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fault class",
+      "titleRu": "Класс повреждения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "none",
+        "pd",
+        "thermal",
+        "arc",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-cooling_hvdc.json",
+  "types": [
+    {
+      "path": "cooling_hvdc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HVDC cooling skid id",
+      "titleRu": "ID охлаждения HVDC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cooling_hvdc.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Coolant flow",
+      "titleRu": "Расход теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_hvdc.in.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet temperature",
+      "titleRu": "Температура на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_hvdc.out.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outlet temperature",
+      "titleRu": "Температура на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_hvdc.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Coolant conductivity",
+      "titleRu": "Проводимость теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_hvdc.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Loop pressure",
+      "titleRu": "Давление контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_hvdc.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak",
+      "titleRu": "Утечка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cooling_hvdc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "standby",
+        "flush",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

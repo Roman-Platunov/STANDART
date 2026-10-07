@@ -1,0 +1,115 @@
+{
+  "layer": "B23",
+  "name": "layer-b-svc_thyristor.json",
+  "types": [
+    {
+      "path": "svc_thyristor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SVC id",
+      "titleRu": "ID СТК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "svc_thyristor.q",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Reactive power",
+      "titleRu": "Реактивная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "svc_thyristor.tcr.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "TCR firing angle",
+      "titleRu": "Угол TCR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "svc_thyristor.tsc.steps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "TSC steps in",
+      "titleRu": "Ступеней TSC",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "svc_thyristor.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Bus voltage",
+      "titleRu": "Напряжение шины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "svc_thyristor.harmonics",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "THD",
+      "titleRu": "КНИ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "svc_thyristor.resonance",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Resonance risk",
+      "titleRu": "Риск резонанса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "svc_thyristor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "bypass",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

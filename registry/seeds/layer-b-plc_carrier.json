@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-plc_carrier.json",
+  "types": [
+    {
+      "path": "plc_carrier.link.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Power-line carrier link id",
+      "titleRu": "ID ВЧ-связи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plc_carrier.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "SNR",
+      "titleRu": "ОСШ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plc_carrier.level",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Receive level",
+      "titleRu": "Уровень приёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plc_carrier.freq",
+      "kind": "quantity",
+      "unit": "kHz",
+      "titleEn": "Carrier frequency",
+      "titleRu": "Несущая",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plc_carrier.ber",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bit error rate",
+      "titleRu": "ВЕО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plc_carrier.noise",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Noise floor",
+      "titleRu": "Шумовой фон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plc_carrier.guard",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Guard signal lost",
+      "titleRu": "Потерян охранный сигнал",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "plc_carrier.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "degrade",
+        "fail",
+        "test"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: f4924275
+path: neutral_shift.state
+aliases:
+  short: neutral_shift.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:f4924275ed547042f8f314bb6d852e479ecd2973bf04fa81274fc9c67e85770c
+enumValues:
+  - ok
+  - watch
+  - alarm
+  - offline

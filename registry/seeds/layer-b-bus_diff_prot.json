@@ -1,0 +1,108 @@
+{
+  "layer": "B23",
+  "name": "layer-b-bus_diff_prot.json",
+  "types": [
+    {
+      "path": "bus_diff_prot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Busbar differential protection id",
+      "titleRu": "ID ДЗШ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bus_diff_prot.bus.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bus id",
+      "titleRu": "ID шины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bus_diff_prot.idiff",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Differential current",
+      "titleRu": "Дифференциальный ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_diff_prot.ibias",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Restraint current",
+      "titleRu": "Ток торможения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_diff_prot.ct.sat",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Saturated CTs",
+      "titleRu": "Насыщенных ТТ",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_diff_prot.trips",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trips today",
+      "titleRu": "Отключений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_diff_prot.zone",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Zone fault",
+      "titleRu": "КЗ в зоне",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bus_diff_prot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "pickup",
+        "trip",
+        "check"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

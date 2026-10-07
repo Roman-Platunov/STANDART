@@ -1,0 +1,111 @@
+{
+  "layer": "B23",
+  "name": "layer-b-shunt_react.json",
+  "types": [
+    {
+      "path": "shunt_react.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shunt reactor id",
+      "titleRu": "ID шунтирующего реактора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shunt_react.q",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Absorbed vars",
+      "titleRu": "Потребляемые вар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shunt_react.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Reactor current",
+      "titleRu": "Ток реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shunt_react.oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shunt_react.vib",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shunt_react.tap",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tertiary tap",
+      "titleRu": "Отпайка",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shunt_react.energized",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Energized",
+      "titleRu": "Под напряжением",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shunt_react.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "oil",
+        "air_core",
+        "vcsr",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

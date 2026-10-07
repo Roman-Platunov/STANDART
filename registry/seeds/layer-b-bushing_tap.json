@@ -1,0 +1,114 @@
+{
+  "layer": "B23",
+  "name": "layer-b-bushing_tap.json",
+  "types": [
+    {
+      "path": "bushing_tap.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bushing monitor id",
+      "titleRu": "ID монитора ввода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bushing_tap.xfmr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transformer id",
+      "titleRu": "ID трансформатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bushing_tap.cap",
+      "kind": "quantity",
+      "unit": "pF",
+      "titleEn": "Capacitance",
+      "titleRu": "Ёмкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bushing_tap.pf",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Power factor",
+      "titleRu": "Тангенс дельта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bushing_tap.leak",
+      "kind": "quantity",
+      "unit": "mA",
+      "titleEn": "Leakage current",
+      "titleRu": "Ток утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bushing_tap.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bushing temperature",
+      "titleRu": "Температура ввода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bushing_tap.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bushing alarm",
+      "titleRu": "Тревога ввода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bushing_tap.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

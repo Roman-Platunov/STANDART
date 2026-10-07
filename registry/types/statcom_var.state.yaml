@@ -1,0 +1,20 @@
+sid: 669cded4
+path: statcom_var.state
+aliases:
+  short: statcom_var.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:669cded47bf02b3e40df8169beef09d8e6babf675eb4da0e0602067a9c04f155
+enumValues:
+  - run
+  - standby
+  - blocked
+  - fault

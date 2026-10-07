@@ -1,0 +1,116 @@
+{
+  "layer": "B23",
+  "name": "layer-b-earth_grid.json",
+  "types": [
+    {
+      "path": "earth_grid.sub.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Substation earth grid id",
+      "titleRu": "ID заземляющего контура ПС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "earth_grid.resistance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Grid resistance",
+      "titleRu": "Сопротивление контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "earth_grid.step",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Step voltage",
+      "titleRu": "Шаговое напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "earth_grid.touch",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Touch voltage",
+      "titleRu": "Напряжение прикосновения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "earth_grid.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Fault current share",
+      "titleRu": "Доля тока КЗ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "earth_grid.corrosion",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Corrosion index",
+      "titleRu": "Индекс коррозии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "earth_grid.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "GPR alarm",
+      "titleRu": "Тревога потенциала",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "earth_grid.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "degrade",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

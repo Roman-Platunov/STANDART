@@ -2255,3 +2255,119 @@ domains:
     title: { ru: Вагоны диагностики КС, en: Catenary inspection car }
   - code: tamping_unit
     title: { ru: Подбивочные блоки, en: Tamping unit }
+  - code: hvdc_conv
+    title: { ru: Преобразователи HVDC, en: HVDC converter }
+  - code: statcom_var
+    title: { ru: СТАТКОМ, en: STATCOM }
+  - code: svc_thyristor
+    title: { ru: СТК, en: SVC }
+  - code: sync_condenser
+    title: { ru: Синхронные компенсаторы, en: Synchronous condenser }
+  - code: phase_shift_xfmr
+    title: { ru: Фазосдвигающие трансформаторы, en: Phase-shifting transformer }
+  - code: series_cap_bank
+    title: { ru: Последовательные конденсаторы, en: Series capacitor bank }
+  - code: shunt_react
+    title: { ru: Шунтирующие реакторы, en: Shunt reactor }
+  - code: oil_dga_mon
+    title: { ru: ХАРГ масла, en: Transformer DGA }
+  - code: bushing_tap
+    title: { ru: Мониторы вводов, en: Bushing monitor }
+  - code: cable_pd_mon
+    title: { ru: ЧР кабелей, en: Cable PD monitor }
+  - code: dyn_line_rating
+    title: { ru: Динамический рейтинг ВЛ, en: Dynamic line rating }
+  - code: fault_loc_rel
+    title: { ru: ОМП линий, en: Fault locator }
+  - code: feeder_reclose
+    title: { ru: Реклоузеры фидеров, en: Feeder recloser }
+  - code: sec_switch
+    title: { ru: Секционализаторы, en: Sectionalizer }
+  - code: volt_reg_feeder
+    title: { ru: Регуляторы напряжения фидеров, en: Feeder voltage regulator }
+  - code: oltc_mon
+    title: { ru: Мониторы РПН, en: OLTC monitor }
+  - code: earth_grid
+    title: { ru: Контуры заземления, en: Earth grid }
+  - code: sub_dc_batt
+    title: { ru: DC-батареи ПС, en: Substation DC battery }
+  - code: sf6_gas_mon
+    title: { ru: Мониторы SF6, en: SF6 gas monitor }
+  - code: pq_meter
+    title: { ru: Анализаторы КЭ, en: Power quality meter }
+  - code: harm_analyzer
+    title: { ru: Анализаторы гармоник, en: Harmonic analyzer }
+  - code: flicker_mon
+    title: { ru: Фликерметры, en: Flicker meter }
+  - code: inrush_cap
+    title: { ru: Броски конденсаторов, en: Capacitor inrush }
+  - code: island_rel
+    title: { ru: Обнаружение острова, en: Island detection }
+  - code: ufr_relay
+    title: { ru: Реле снижения частоты, en: Underfrequency relay }
+  - code: line_diff_prot
+    title: { ru: ДЗЛ, en: Line differential protection }
+  - code: bus_diff_prot
+    title: { ru: ДЗШ, en: Busbar differential protection }
+  - code: xfmr_diff_prot
+    title: { ru: ДЗТ, en: Transformer differential protection }
+  - code: bfp_relay
+    title: { ru: УРОВ, en: Breaker failure protection }
+  - code: synch_scope
+    title: { ru: Синхроскопы, en: Synchroscope }
+  - code: arc_flash_rel
+    title: { ru: Дуговая защита, en: Arc-flash relay }
+  - code: cb_wear_mon
+    title: { ru: Износ выключателей, en: Circuit breaker wear }
+  - code: sf6_dens
+    title: { ru: Плотность SF6, en: SF6 density }
+  - code: gis_p_mon
+    title: { ru: Давление КРУЭ, en: GIS pressure }
+  - code: wave_trap
+    title: { ru: ВЧ-заградители, en: Line wave trap }
+  - code: plc_carrier
+    title: { ru: ВЧ-связь, en: Power-line carrier }
+  - code: opgw_fiber
+    title: { ru: ОКГТ, en: OPGW fiber }
+  - code: tower_lean
+    title: { ru: Наклон опор ВЛ, en: Tower lean }
+  - code: insulator_leak
+    title: { ru: Утечка изоляторов, en: Insulator leakage }
+  - code: corona_cam
+    title: { ru: УФ-камеры короны, en: Corona camera }
+  - code: rfi_mon
+    title: { ru: РЧ-помехи, en: RFI monitor }
+  - code: ground_fault
+    title: { ru: ОЗЗ, en: Ground fault }
+  - code: neutral_shift
+    title: { ru: Смещение нейтрали, en: Neutral shift }
+  - code: feranti_rise
+    title: { ru: Эффект Ферранти, en: Ferranti rise }
+  - code: sssc_dev
+    title: { ru: SSSC, en: SSSC }
+  - code: upfc_dev
+    title: { ru: UPFC, en: UPFC }
+  - code: tcsc_bay
+    title: { ru: TCSC, en: TCSC }
+  - code: vsc_hvdc
+    title: { ru: VSC-HVDC, en: VSC-HVDC }
+  - code: lcc_hvdc
+    title: { ru: LCC-HVDC, en: LCC-HVDC }
+  - code: filter_ac
+    title: { ru: Фильтры гармоник AC, en: AC harmonic filter }
+  - code: filter_dc
+    title: { ru: Фильтры DC, en: DC filter }
+  - code: smoothing_rx
+    title: { ru: Сглаживающие реакторы, en: Smoothing reactor }
+  - code: valve_hall
+    title: { ru: Залы вентилей HVDC, en: HVDC valve hall }
+  - code: thyristor_valve
+    title: { ru: Тиристорные вентили, en: Thyristor valve }
+  - code: igbt_valve
+    title: { ru: Вентили IGBT/MMC, en: IGBT valve }
+  - code: cooling_hvdc
+    title: { ru: Охлаждение HVDC, en: HVDC cooling }
+  - code: fire_hvdc
+    title: { ru: Пожарная защита HVDC, en: HVDC fire zone }
+  - code: electrode_line
+    title: { ru: Электродные линии HVDC, en: HVDC electrode line }

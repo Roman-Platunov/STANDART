@@ -1,0 +1,111 @@
+{
+  "layer": "B23",
+  "name": "layer-b-ground_fault.json",
+  "types": [
+    {
+      "path": "ground_fault.feeder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ground-fault detector id",
+      "titleRu": "ID ОЗЗ фидера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ground_fault.io",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Residual current",
+      "titleRu": "Ток нулевой последовательности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_fault.vo",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Residual voltage",
+      "titleRu": "Напряжение нулевой последовательности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_fault.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "I0/V0 angle",
+      "titleRu": "Угол I0/V0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_fault.duration.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Fault duration",
+      "titleRu": "Длительность замыкания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_fault.events",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Events today",
+      "titleRu": "Событий за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_fault.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Earth fault active",
+      "titleRu": "ОЗЗ активно",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ground_fault.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "healthy",
+        "alarm",
+        "trip",
+        "intermittent"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

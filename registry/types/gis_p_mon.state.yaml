@@ -1,0 +1,20 @@
+sid: 7ed606d0
+path: gis_p_mon.state
+aliases:
+  short: gis_p_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:7ed606d0ee632498a8c91dc7778874da0465edeeae12b518a1941a67c992fab2
+enumValues:
+  - ok
+  - watch
+  - alarm
+  - lockout

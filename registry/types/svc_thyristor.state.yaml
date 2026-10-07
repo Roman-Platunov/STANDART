@@ -1,0 +1,20 @@
+sid: 7b64c1be
+path: svc_thyristor.state
+aliases:
+  short: svc_thyristor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:7b64c1be38bb5ec82bc9ddab9d007eec2d57f8010497db0bef407ee2e08ed408
+enumValues:
+  - run
+  - bypass
+  - idle
+  - fault

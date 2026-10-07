@@ -1,0 +1,20 @@
+sid: e2834799
+path: cooling_hvdc.state
+aliases:
+  short: cooling_hvdc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:e283479952e3210e897ebd93b75b9601a6b82b9b53f3f685620e6873a8e4aff5
+enumValues:
+  - run
+  - standby
+  - flush
+  - fault

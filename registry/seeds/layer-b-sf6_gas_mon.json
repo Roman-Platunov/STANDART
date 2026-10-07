@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-sf6_gas_mon.json",
+  "types": [
+    {
+      "path": "sf6_gas_mon.compartment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SF6 compartment id",
+      "titleRu": "ID отсека SF6",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sf6_gas_mon.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Gas pressure",
+      "titleRu": "Давление газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_gas_mon.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Gas density",
+      "titleRu": "Плотность газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_gas_mon.dew",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dew point",
+      "titleRu": "Точка росы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_gas_mon.leak",
+      "kind": "quantity",
+      "unit": "%/d",
+      "titleEn": "Leak rate",
+      "titleRu": "Скорость утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_gas_mon.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sf6_gas_mon.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low density",
+      "titleRu": "Низкая плотность",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sf6_gas_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "refill",
+        "alarm",
+        "lockout"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

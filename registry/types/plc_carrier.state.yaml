@@ -1,0 +1,20 @@
+sid: dd497ef1
+path: plc_carrier.state
+aliases:
+  short: plc_carrier.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:dd497ef1d9aaa77cb864e6bdfc9f5e5c9806b40b8480984735d60686cb44cff4
+enumValues:
+  - ok
+  - degrade
+  - fail
+  - test

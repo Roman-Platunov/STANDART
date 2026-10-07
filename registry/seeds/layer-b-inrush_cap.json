@@ -1,0 +1,111 @@
+{
+  "layer": "B23",
+  "name": "layer-b-inrush_cap.json",
+  "types": [
+    {
+      "path": "inrush_cap.bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Capacitor inrush recorder id",
+      "titleRu": "ID регистратора броска конденсаторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inrush_cap.peak",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Peak inrush",
+      "titleRu": "Пик броска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inrush_cap.duration.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Inrush duration",
+      "titleRu": "Длительность броска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inrush_cap.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Bus voltage at close",
+      "titleRu": "Напряжение при включении",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inrush_cap.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Switching ops today",
+      "titleRu": "Коммутаций за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inrush_cap.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inrush_cap.over",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overcurrent",
+      "titleRu": "Сверхток",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "inrush_cap.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "record",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

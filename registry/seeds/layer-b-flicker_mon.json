@@ -1,0 +1,111 @@
+{
+  "layer": "B23",
+  "name": "layer-b-flicker_mon.json",
+  "types": [
+    {
+      "path": "flicker_mon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flicker meter id",
+      "titleRu": "ID фликерметра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flicker_mon.pst",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Short-term flicker Pst",
+      "titleRu": "Кратковременный фликер Pst",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flicker_mon.plt",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Long-term flicker Plt",
+      "titleRu": "Длительный фликер Plt",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flicker_mon.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "RMS voltage",
+      "titleRu": "Действующее напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flicker_mon.events",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exceedances today",
+      "titleRu": "Превышений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flicker_mon.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flicker_mon.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flicker alarm",
+      "titleRu": "Тревога фликера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flicker_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

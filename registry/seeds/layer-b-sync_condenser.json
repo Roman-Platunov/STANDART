@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-sync_condenser.json",
+  "types": [
+    {
+      "path": "sync_condenser.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Synchronous condenser id",
+      "titleRu": "ID синхронного компенсатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sync_condenser.q",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Reactive power",
+      "titleRu": "Реактивная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_condenser.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Rotor speed",
+      "titleRu": "Обороты ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_condenser.exc.v",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Excitation voltage",
+      "titleRu": "Напряжение возбуждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_condenser.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Winding temperature",
+      "titleRu": "Температура обмотки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_condenser.vib",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_condenser.clutch",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Clutch engaged",
+      "titleRu": "Муфта включена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sync_condenser.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "start",
+        "coast",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

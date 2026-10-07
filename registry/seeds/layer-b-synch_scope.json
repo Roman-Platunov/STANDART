@@ -1,0 +1,110 @@
+{
+  "layer": "B23",
+  "name": "layer-b-synch_scope.json",
+  "types": [
+    {
+      "path": "synch_scope.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Synchroscope / check-sync id",
+      "titleRu": "ID синхроскопа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "synch_scope.cb.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Breaker id",
+      "titleRu": "ID выключателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "synch_scope.d_freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Slip frequency",
+      "titleRu": "Скольжение частоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synch_scope.d_angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Phase angle difference",
+      "titleRu": "Разность углов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synch_scope.d_volt",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Voltage difference",
+      "titleRu": "Разность напряжений",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synch_scope.wait.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Wait for window",
+      "titleRu": "Ожидание окна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "synch_scope.window",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sync window open",
+      "titleRu": "Окно синхронизации открыто",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "synch_scope.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wait",
+        "close_permit",
+        "block",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

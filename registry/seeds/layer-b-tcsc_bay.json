@@ -1,0 +1,116 @@
+{
+  "layer": "B23",
+  "name": "layer-b-tcsc_bay.json",
+  "types": [
+    {
+      "path": "tcsc_bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "TCSC bay id",
+      "titleRu": "ID ТУПК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tcsc_bay.x",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Apparent reactance",
+      "titleRu": "Кажущееся сопротивление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tcsc_bay.alpha",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Firing angle",
+      "titleRu": "Угол зажигания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tcsc_bay.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current",
+      "titleRu": "Ток линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tcsc_bay.boost",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Compensation boost",
+      "titleRu": "Усиление компенсации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tcsc_bay.ssr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "SSR damping index",
+      "titleRu": "Индекс демпфирования ССР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tcsc_bay.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bypassed",
+      "titleRu": "Зашунтирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tcsc_bay.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "capacitive",
+        "inductive",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

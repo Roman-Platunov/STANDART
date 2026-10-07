@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-rfi_mon.json",
+  "types": [
+    {
+      "path": "rfi_mon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RFI / corona RF monitor id",
+      "titleRu": "ID РЧ-монитора помех",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rfi_mon.level",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RFI level",
+      "titleRu": "Уровень РЧ-помех",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rfi_mon.freq",
+      "kind": "quantity",
+      "unit": "MHz",
+      "titleEn": "Peak frequency",
+      "titleRu": "Частота пика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rfi_mon.pulses",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Pulse rate",
+      "titleRu": "Частота импульсов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rfi_mon.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "SNR",
+      "titleRu": "ОСШ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rfi_mon.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sensor temperature",
+      "titleRu": "Температура датчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rfi_mon.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "RFI alarm",
+      "titleRu": "Тревога помех",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rfi_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: eb3fad75
+path: fire_hvdc.state
+aliases:
+  short: fire_hvdc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:eb3fad7548b959b6098c61bd7e530250910d9306b9d08cfa2d713a4684531cb5
+enumValues:
+  - normal
+  - alert
+  - alarm
+  - release

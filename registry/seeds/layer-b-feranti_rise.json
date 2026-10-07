@@ -1,0 +1,116 @@
+{
+  "layer": "B23",
+  "name": "layer-b-feranti_rise.json",
+  "types": [
+    {
+      "path": "feranti_rise.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ferranti-effect monitor id",
+      "titleRu": "ID монитора эффекта Ферранти",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "feranti_rise.vs",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Sending-end voltage",
+      "titleRu": "Напряжение начала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feranti_rise.vr",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Receiving-end voltage",
+      "titleRu": "Напряжение конца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feranti_rise.rise",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Voltage rise",
+      "titleRu": "Подъём напряжения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "feranti_rise.mvar",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Charging vars",
+      "titleRu": "Зарядная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feranti_rise.load",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current",
+      "titleRu": "Ток линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feranti_rise.overv",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overvoltage",
+      "titleRu": "Перенапряжение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "feranti_rise.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "rise",
+        "reactor_in",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

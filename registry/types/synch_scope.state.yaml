@@ -1,0 +1,20 @@
+sid: 4f0f7543
+path: synch_scope.state
+aliases:
+  short: synch_scope.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:4f0f7543206c9f3a03f1d70467453f94029d41fc8d35fa7bdc0af25162ffda75
+enumValues:
+  - wait
+  - close_permit
+  - block
+  - fault

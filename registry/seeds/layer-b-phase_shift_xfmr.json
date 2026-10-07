@@ -1,0 +1,115 @@
+{
+  "layer": "B23",
+  "name": "layer-b-phase_shift_xfmr.json",
+  "types": [
+    {
+      "path": "phase_shift_xfmr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Phase-shifting transformer id",
+      "titleRu": "ID фазосдвигающего трансформатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "phase_shift_xfmr.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Phase shift",
+      "titleRu": "Сдвиг фазы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "phase_shift_xfmr.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Through power",
+      "titleRu": "Сквозная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "phase_shift_xfmr.tap",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tap position",
+      "titleRu": "Положение РПН",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "phase_shift_xfmr.oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "phase_shift_xfmr.loading",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Loading",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "phase_shift_xfmr.lock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tap lock",
+      "titleRu": "Блокировка РПН",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "phase_shift_xfmr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "regulate",
+        "hold",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

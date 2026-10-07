@@ -1,0 +1,21 @@
+sid: 13781aab
+path: vsc_hvdc.control
+aliases:
+  short: vsc_hvdc.control
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Управление
+  en: Control
+fingerprint: sha256:13781aab2f0a2103c8163fdc7680d7d0a91ee2959f31166cd4075667881d606d
+enumValues:
+  - p_q
+  - vdc_q
+  - acv
+  - island
+  - fault

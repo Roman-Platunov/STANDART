@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-sssc_dev.json",
+  "types": [
+    {
+      "path": "sssc_dev.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SSSC device id",
+      "titleRu": "ID СССК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sssc_dev.inject.v",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Injected voltage",
+      "titleRu": "Инжектируемое напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sssc_dev.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current",
+      "titleRu": "Ток линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sssc_dev.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Injection angle",
+      "titleRu": "Угол инжекции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sssc_dev.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Controlled power",
+      "titleRu": "Управляемая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sssc_dev.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Converter temperature",
+      "titleRu": "Температура преобразователя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sssc_dev.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bypassed",
+      "titleRu": "Зашунтирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sssc_dev.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inject",
+        "bypass",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

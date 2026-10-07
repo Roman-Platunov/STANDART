@@ -1,0 +1,111 @@
+{
+  "layer": "B23",
+  "name": "layer-b-opgw_fiber.json",
+  "types": [
+    {
+      "path": "opgw_fiber.span.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OPGW span id",
+      "titleRu": "ID пролёта ОКГТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "opgw_fiber.loss",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Span loss",
+      "titleRu": "Затухание пролёта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "opgw_fiber.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cable temperature",
+      "titleRu": "Температура кабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "opgw_fiber.strain",
+      "kind": "quantity",
+      "unit": "ue",
+      "titleEn": "Strain",
+      "titleRu": "Деформация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "opgw_fiber.otdr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "OTDR event loss",
+      "titleRu": "Потери события OTDR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "opgw_fiber.fibers.ok",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fibers healthy",
+      "titleRu": "Исправных волокон",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "opgw_fiber.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fiber break",
+      "titleRu": "Обрыв волокна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "opgw_fiber.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "break",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

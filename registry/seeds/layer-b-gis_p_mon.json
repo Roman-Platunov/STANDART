@@ -1,0 +1,115 @@
+{
+  "layer": "B23",
+  "name": "layer-b-gis_p_mon.json",
+  "types": [
+    {
+      "path": "gis_p_mon.bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GIS bay pressure id",
+      "titleRu": "ID давления отсека КРУЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gis_p_mon.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Compartment pressure",
+      "titleRu": "Давление отсека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gis_p_mon.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Compartment temperature",
+      "titleRu": "Температура отсека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gis_p_mon.pd",
+      "kind": "quantity",
+      "unit": "pC",
+      "titleEn": "PD level",
+      "titleRu": "Уровень ЧР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gis_p_mon.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Moisture",
+      "titleRu": "Влага",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gis_p_mon.alarms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active alarms",
+      "titleRu": "Активных аварий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gis_p_mon.low.p",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low pressure",
+      "titleRu": "Низкое давление",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gis_p_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "alarm",
+        "lockout"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

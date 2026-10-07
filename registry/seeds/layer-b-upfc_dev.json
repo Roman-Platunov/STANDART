@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-upfc_dev.json",
+  "types": [
+    {
+      "path": "upfc_dev.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UPFC id",
+      "titleRu": "ID УПКМ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "upfc_dev.p",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Controlled P",
+      "titleRu": "Управляемая P",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upfc_dev.q",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Controlled Q",
+      "titleRu": "Управляемая Q",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upfc_dev.series.v",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Series voltage",
+      "titleRu": "Последовательное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upfc_dev.shunt.i",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Shunt current",
+      "titleRu": "Ток шунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upfc_dev.dc.v",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "DC link voltage",
+      "titleRu": "Напряжение DC-звена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upfc_dev.limit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Capability limit",
+      "titleRu": "Предел диапазона",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "upfc_dev.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pq",
+        "voltage",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "layer": "B23",
+  "name": "layer-b-xfmr_diff_prot.json",
+  "types": [
+    {
+      "path": "xfmr_diff_prot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transformer differential protection id",
+      "titleRu": "ID ДЗТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "xfmr_diff_prot.xfmr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transformer id",
+      "titleRu": "ID трансформатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "xfmr_diff_prot.idiff",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Differential current",
+      "titleRu": "Дифференциальный ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "xfmr_diff_prot.ih2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "2nd harmonic",
+      "titleRu": "2-я гармоника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "xfmr_diff_prot.ih5",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "5th harmonic",
+      "titleRu": "5-я гармоника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "xfmr_diff_prot.trips",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trips today",
+      "titleRu": "Отключений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "xfmr_diff_prot.inrush",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Inrush block",
+      "titleRu": "Блокировка от броска",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "xfmr_diff_prot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "pickup",
+        "trip",
+        "inrush"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-wave_trap.json",
+  "types": [
+    {
+      "path": "wave_trap.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Line wave trap id",
+      "titleRu": "ID ВЧ-заградителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wave_trap.impedance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Blocking impedance",
+      "titleRu": "Заградительное сопротивление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_trap.freq",
+      "kind": "quantity",
+      "unit": "kHz",
+      "titleEn": "Tuning frequency",
+      "titleRu": "Частота настройки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_trap.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current",
+      "titleRu": "Ток линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_trap.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coil temperature",
+      "titleRu": "Температура катушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_trap.pd",
+      "kind": "quantity",
+      "unit": "pC",
+      "titleEn": "PD",
+      "titleRu": "ЧР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_trap.detune",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Detuned",
+      "titleRu": "Расстроено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wave_trap.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "detune",
+        "fault",
+        "bypass"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

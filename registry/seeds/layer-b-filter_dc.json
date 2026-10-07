@@ -1,0 +1,120 @@
+{
+  "layer": "B23",
+  "name": "layer-b-filter_dc.json",
+  "types": [
+    {
+      "path": "filter_dc.bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DC filter bank id",
+      "titleRu": "ID фильтра DC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "filter_dc.ripple",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "DC voltage ripple",
+      "titleRu": "Пульсации DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "filter_dc.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Filter current",
+      "titleRu": "Ток фильтра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_dc.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Component temperature",
+      "titleRu": "Температура элементов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_dc.pd",
+      "kind": "quantity",
+      "unit": "pC",
+      "titleEn": "PD",
+      "titleRu": "ЧР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_dc.unbalance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Unbalance",
+      "titleRu": "Несимметрия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "filter_dc.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Filter trip",
+      "titleRu": "Отключение фильтра",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "filter_dc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "in",
+        "out",
+        "fault",
+        "test"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

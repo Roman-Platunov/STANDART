@@ -1,0 +1,20 @@
+sid: 8ec54cbf
+path: ufr_relay.state
+aliases:
+  short: ufr_relay.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:8ec54cbf44fa0cce72198090ae4b26c1b611e0b67348d79b3381ab6185d9615f
+enumValues:
+  - armed
+  - trip
+  - blocked
+  - fault

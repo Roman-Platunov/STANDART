@@ -1,0 +1,20 @@
+sid: 0f3fc9cf
+path: dyn_line_rating.state
+aliases:
+  short: dyn_line_rating.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:0f3fc9cfc2239251c266bd0a1712b150dac535b29c7f88ec7c51802d41da6050
+enumValues:
+  - normal
+  - boost
+  - restrict
+  - offline

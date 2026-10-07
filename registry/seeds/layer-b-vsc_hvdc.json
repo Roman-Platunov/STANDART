@@ -1,0 +1,117 @@
+{
+  "layer": "B23",
+  "name": "layer-b-vsc_hvdc.json",
+  "types": [
+    {
+      "path": "vsc_hvdc.pole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VSC-HVDC pole id",
+      "titleRu": "ID полюса VSC-HVDC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vsc_hvdc.p",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Active power",
+      "titleRu": "Активная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vsc_hvdc.q",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Reactive power",
+      "titleRu": "Реактивная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vsc_hvdc.dc.v",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "DC voltage",
+      "titleRu": "Напряжение DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vsc_hvdc.mod",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Modulation index",
+      "titleRu": "Индекс модуляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vsc_hvdc.igbt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "IGBT temperature",
+      "titleRu": "Температура IGBT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vsc_hvdc.blocked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blocked",
+      "titleRu": "Заблокирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vsc_hvdc.control",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Control",
+      "titleRu": "Управление",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "p_q",
+        "vdc_q",
+        "acv",
+        "island",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

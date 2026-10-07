@@ -1,0 +1,111 @@
+{
+  "layer": "B23",
+  "name": "layer-b-smoothing_rx.json",
+  "types": [
+    {
+      "path": "smoothing_rx.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HVDC smoothing reactor id",
+      "titleRu": "ID сглаживающего реактора HVDC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smoothing_rx.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "DC current",
+      "titleRu": "Ток DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smoothing_rx.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Winding temperature",
+      "titleRu": "Температура обмотки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smoothing_rx.l",
+      "kind": "quantity",
+      "unit": "H",
+      "titleEn": "Inductance",
+      "titleRu": "Индуктивность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smoothing_rx.vib",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smoothing_rx.pd",
+      "kind": "quantity",
+      "unit": "pC",
+      "titleEn": "PD",
+      "titleRu": "ЧР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smoothing_rx.hot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overtemperature",
+      "titleRu": "Перегрев",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smoothing_rx.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "in",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "layer": "B23",
+  "name": "layer-b-feeder_reclose.json",
+  "types": [
+    {
+      "path": "feeder_reclose.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Feeder recloser id",
+      "titleRu": "ID реклоузера фидера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "feeder_reclose.shots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reclose shots today",
+      "titleRu": "АПВ за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feeder_reclose.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Feeder current",
+      "titleRu": "Ток фидера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feeder_reclose.lockout",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Lockouts today",
+      "titleRu": "Блокировок за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feeder_reclose.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Operations today",
+      "titleRu": "Операций за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feeder_reclose.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Control battery",
+      "titleRu": "Батарея управления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "feeder_reclose.lock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Locked out",
+      "titleRu": "Заблокирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "feeder_reclose.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "close",
+        "open",
+        "lockout",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

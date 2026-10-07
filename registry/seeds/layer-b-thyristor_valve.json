@@ -1,0 +1,111 @@
+{
+  "layer": "B23",
+  "name": "layer-b-thyristor_valve.json",
+  "types": [
+    {
+      "path": "thyristor_valve.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thyristor valve id",
+      "titleRu": "ID тиристорного вентиля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thyristor_valve.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Junction temperature",
+      "titleRu": "Температура перехода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thyristor_valve.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Valve current",
+      "titleRu": "Ток вентиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thyristor_valve.failed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Failed levels",
+      "titleRu": "Отказных уровней",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thyristor_valve.coolant",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thyristor_valve.snubber",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Snubber voltage",
+      "titleRu": "Напряжение снаббера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thyristor_valve.redundancy",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Redundancy exhausted",
+      "titleRu": "Резерв исчерпан",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thyristor_valve.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "conduct",
+        "block",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 8bf4728f
+path: opgw_fiber.state
+aliases:
+  short: opgw_fiber.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:8bf4728ffb9e6f0843d9b762ab538fd095b67bb800d6ca20886d930bc007a677
+enumValues:
+  - ok
+  - watch
+  - break
+  - offline

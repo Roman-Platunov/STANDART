@@ -1,0 +1,20 @@
+sid: 0d4d10a9
+path: sf6_gas_mon.state
+aliases:
+  short: sf6_gas_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:0d4d10a98554e6a63e48fb1f91557d480e3878dfea89338ccc844c0fa2b57b7b
+enumValues:
+  - ok
+  - refill
+  - alarm
+  - lockout

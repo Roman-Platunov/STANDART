@@ -1,0 +1,20 @@
+sid: 5828313d
+path: cb_wear_mon.state
+aliases:
+  short: cb_wear_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:5828313db15b42ced67c3217358216e953d11287b73b0818cf9b198f7d715db3
+enumValues:
+  - ok
+  - watch
+  - overhaul
+  - fault

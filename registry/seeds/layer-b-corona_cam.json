@@ -1,0 +1,113 @@
+{
+  "layer": "B23",
+  "name": "layer-b-corona_cam.json",
+  "types": [
+    {
+      "path": "corona_cam.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UV corona camera id",
+      "titleRu": "ID УФ-камеры короны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "corona_cam.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inspected asset id",
+      "titleRu": "ID объекта осмотра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "corona_cam.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Corona photon count",
+      "titleRu": "Счёт фотонов короны",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "corona_cam.gain",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Camera gain",
+      "titleRu": "Усиление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "corona_cam.distance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Standoff distance",
+      "titleRu": "Дистанция",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "corona_cam.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "corona_cam.hotspot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Corona hotspot",
+      "titleRu": "Очаг короны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "corona_cam.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scan",
+        "idle",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

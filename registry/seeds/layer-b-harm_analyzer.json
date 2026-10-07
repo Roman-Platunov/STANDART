@@ -1,0 +1,128 @@
+{
+  "layer": "B23",
+  "name": "layer-b-harm_analyzer.json",
+  "types": [
+    {
+      "path": "harm_analyzer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Harmonic analyzer id",
+      "titleRu": "ID анализатора гармоник",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "harm_analyzer.h5",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "5th harmonic",
+      "titleRu": "5-я гармоника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "harm_analyzer.h7",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "7th harmonic",
+      "titleRu": "7-я гармоника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "harm_analyzer.h11",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "11th harmonic",
+      "titleRu": "11-я гармоника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "harm_analyzer.k.factor",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "K-factor",
+      "titleRu": "K-фактор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "harm_analyzer.ihd",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Individual harmonic max",
+      "titleRu": "Макс. индивидуальная гармоника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "harm_analyzer.limit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Limit exceeded",
+      "titleRu": "Превышен лимит",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "harm_analyzer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

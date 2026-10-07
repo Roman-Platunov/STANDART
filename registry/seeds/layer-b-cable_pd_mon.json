@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-cable_pd_mon.json",
+  "types": [
+    {
+      "path": "cable_pd_mon.circuit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cable circuit id",
+      "titleRu": "ID кабельной линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cable_pd_mon.pd",
+      "kind": "quantity",
+      "unit": "pC",
+      "titleEn": "PD magnitude",
+      "titleRu": "Амплитуда ЧР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_pd_mon.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "PD pulse rate",
+      "titleRu": "Частота импульсов ЧР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_pd_mon.tan.delta",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tan delta",
+      "titleRu": "Тангенс дельта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_pd_mon.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sheath temperature",
+      "titleRu": "Температура оболочки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_pd_mon.load",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Load current",
+      "titleRu": "Ток нагрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_pd_mon.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "PD alarm",
+      "titleRu": "Тревога ЧР",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cable_pd_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

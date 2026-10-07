@@ -1,0 +1,20 @@
+sid: "64399544"
+path: inrush_cap.state
+aliases:
+  short: inrush_cap.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:64399544e76340a55ed473fa3ff7a5388726dead3310b27fe205261a8ed654b1
+enumValues:
+  - ready
+  - record
+  - idle
+  - fault

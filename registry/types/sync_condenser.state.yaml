@@ -1,0 +1,20 @@
+sid: 43ee0b3f
+path: sync_condenser.state
+aliases:
+  short: sync_condenser.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:43ee0b3fb698b3da8cb96e271f38ed602f9a1a228f01173ed6b7ef4dfefe545b
+enumValues:
+  - run
+  - start
+  - coast
+  - fault

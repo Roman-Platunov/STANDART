@@ -1,0 +1,20 @@
+sid: a5aab28c
+path: series_cap_bank.state
+aliases:
+  short: series_cap_bank.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:a5aab28c0c562f7cece805230db0a41733918281602eb423a7025fb3e6b56509
+enumValues:
+  - insert
+  - bypass
+  - reinsert
+  - fault

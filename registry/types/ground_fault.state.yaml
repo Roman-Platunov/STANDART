@@ -1,0 +1,20 @@
+sid: ab30203f
+path: ground_fault.state
+aliases:
+  short: ground_fault.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:ab30203f017660e44a6497ba6d3377674ea2ea2e2d93fc651977ffc5351fa2a9
+enumValues:
+  - healthy
+  - alarm
+  - trip
+  - intermittent

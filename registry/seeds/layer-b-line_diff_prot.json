@@ -1,0 +1,109 @@
+{
+  "layer": "B23",
+  "name": "layer-b-line_diff_prot.json",
+  "types": [
+    {
+      "path": "line_diff_prot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Line differential protection id",
+      "titleRu": "ID ДЗЛ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "line_diff_prot.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Line id",
+      "titleRu": "ID линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "line_diff_prot.idiff",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Differential current",
+      "titleRu": "Дифференциальный ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "line_diff_prot.ibias",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Bias current",
+      "titleRu": "Ток торможения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "line_diff_prot.channel.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Channel delay",
+      "titleRu": "Задержка канала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "line_diff_prot.trips",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trips today",
+      "titleRu": "Отключений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "line_diff_prot.comm.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Channel OK",
+      "titleRu": "Канал OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "line_diff_prot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "pickup",
+        "trip",
+        "channel_fail"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

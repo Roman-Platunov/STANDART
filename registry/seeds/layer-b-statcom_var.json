@@ -1,0 +1,116 @@
+{
+  "layer": "B23",
+  "name": "layer-b-statcom_var.json",
+  "types": [
+    {
+      "path": "statcom_var.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "STATCOM id",
+      "titleRu": "ID СТАТКОМ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "statcom_var.q",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Reactive power",
+      "titleRu": "Реактивная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "statcom_var.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Bus voltage",
+      "titleRu": "Напряжение шины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "statcom_var.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Converter current",
+      "titleRu": "Ток преобразователя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "statcom_var.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Module temperature",
+      "titleRu": "Температура модуля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "statcom_var.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Capability used",
+      "titleRu": "Использование диапазона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "statcom_var.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Trip",
+      "titleRu": "Отключение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "statcom_var.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "standby",
+        "blocked",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

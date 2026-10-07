@@ -1,0 +1,20 @@
+sid: 42bc6e8c
+path: feeder_reclose.state
+aliases:
+  short: feeder_reclose.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:42bc6e8ce7668bffe00f038bc6546f448c16ff10e658f979d50608e1f42a2ded
+enumValues:
+  - close
+  - open
+  - lockout
+  - fault

@@ -1,0 +1,121 @@
+{
+  "layer": "B23",
+  "name": "layer-b-filter_ac.json",
+  "types": [
+    {
+      "path": "filter_ac.bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AC harmonic filter id",
+      "titleRu": "ID фильтра гармоник AC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "filter_ac.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Filter current",
+      "titleRu": "Ток фильтра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_ac.detune",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Detuning",
+      "titleRu": "Расстройка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "filter_ac.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_ac.q",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Filter vars",
+      "titleRu": "Реактив фильтра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "filter_ac.unbalance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Branch unbalance",
+      "titleRu": "Несимметрия ветвей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "filter_ac.out",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Filter out of service",
+      "titleRu": "Фильтр выведен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "filter_ac.tune",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tuning",
+      "titleRu": "Настройка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hp11",
+        "hp13",
+        "hp24",
+        "c",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

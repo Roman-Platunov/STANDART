@@ -1,0 +1,20 @@
+sid: "8e681017"
+path: xfmr_diff_prot.state
+aliases:
+  short: xfmr_diff_prot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:8e6810172f286e602b6b7c1bd6ecba5105925491354ac5714452b926f1f59caf
+enumValues:
+  - ok
+  - pickup
+  - trip
+  - inrush

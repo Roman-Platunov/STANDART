@@ -1,0 +1,20 @@
+sid: 152657c3
+path: corona_cam.state
+aliases:
+  short: corona_cam.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:152657c3f131a5636ee3b1b6e11e274938cb377c2d553d5f8bd872869b3030b9
+enumValues:
+  - scan
+  - idle
+  - fault
+  - offline

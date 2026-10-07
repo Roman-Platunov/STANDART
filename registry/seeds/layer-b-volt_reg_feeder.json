@@ -1,0 +1,110 @@
+{
+  "layer": "B23",
+  "name": "layer-b-volt_reg_feeder.json",
+  "types": [
+    {
+      "path": "volt_reg_feeder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Feeder voltage regulator id",
+      "titleRu": "ID регулятора напряжения фидера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "volt_reg_feeder.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Regulated voltage",
+      "titleRu": "Регулируемое напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "volt_reg_feeder.tap",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tap position",
+      "titleRu": "Положение анцапфы",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "volt_reg_feeder.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Load current",
+      "titleRu": "Ток нагрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "volt_reg_feeder.ldc",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "LDC compensation",
+      "titleRu": "Компенсация LDC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "volt_reg_feeder.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tap operations today",
+      "titleRu": "Переключений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "volt_reg_feeder.lock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tap lock",
+      "titleRu": "Блокировка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "volt_reg_feeder.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "auto",
+        "manual",
+        "band",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

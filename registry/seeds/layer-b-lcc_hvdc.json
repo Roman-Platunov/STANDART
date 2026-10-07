@@ -1,0 +1,111 @@
+{
+  "layer": "B23",
+  "name": "layer-b-lcc_hvdc.json",
+  "types": [
+    {
+      "path": "lcc_hvdc.pole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LCC-HVDC pole id",
+      "titleRu": "ID полюса LCC-HVDC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lcc_hvdc.p",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Transferred power",
+      "titleRu": "Передаваемая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lcc_hvdc.alpha",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Firing angle alpha",
+      "titleRu": "Угол alpha",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lcc_hvdc.gamma",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Extinction angle gamma",
+      "titleRu": "Угол gamma",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lcc_hvdc.dc.i",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "DC current",
+      "titleRu": "Ток DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lcc_hvdc.comm.fail",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Commutation failures",
+      "titleRu": "Срывов коммутации",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lcc_hvdc.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bypass pair",
+      "titleRu": "Байпасная пара",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lcc_hvdc.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rectifier",
+        "inverter",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

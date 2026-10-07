@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-dyn_line_rating.json",
+  "types": [
+    {
+      "path": "dyn_line_rating.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Overhead line id",
+      "titleRu": "ID ВЛ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dyn_line_rating.ampacity",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Dynamic ampacity",
+      "titleRu": "Динамическая пропускная способность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dyn_line_rating.sag",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Conductor sag",
+      "titleRu": "Провес провода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dyn_line_rating.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Conductor temperature",
+      "titleRu": "Температура провода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dyn_line_rating.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Crosswind",
+      "titleRu": "Боковой ветер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dyn_line_rating.solar",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "Solar irradiance",
+      "titleRu": "Солнечная радиация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dyn_line_rating.limit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rating limited",
+      "titleRu": "Ограничение рейтинга",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dyn_line_rating.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "boost",
+        "restrict",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: a80cb457
+path: earth_grid.state
+aliases:
+  short: earth_grid.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:a80cb45768626f9734645345f27150b8db7a993158753472d6e3992fa9b3dd17
+enumValues:
+  - ok
+  - degrade
+  - alarm
+  - offline

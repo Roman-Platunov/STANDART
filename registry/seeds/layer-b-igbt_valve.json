@@ -1,0 +1,110 @@
+{
+  "layer": "B23",
+  "name": "layer-b-igbt_valve.json",
+  "types": [
+    {
+      "path": "igbt_valve.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MMC / IGBT valve id",
+      "titleRu": "ID вентиля MMC/IGBT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "igbt_valve.sm.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Submodule temperature",
+      "titleRu": "Температура субмодуля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "igbt_valve.sm.v",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Submodule voltage",
+      "titleRu": "Напряжение субмодуля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "igbt_valve.failed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Failed submodules",
+      "titleRu": "Отказных субмодулей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "igbt_valve.switching",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Switching frequency",
+      "titleRu": "Частота коммутации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "igbt_valve.coolant",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "igbt_valve.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Submodule bypassed",
+      "titleRu": "Субмодуль зашунтирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "igbt_valve.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "blocked",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

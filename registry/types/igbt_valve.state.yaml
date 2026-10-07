@@ -1,0 +1,19 @@
+sid: 5745a429
+path: igbt_valve.state
+aliases:
+  short: igbt_valve.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:5745a4296638d5c5015957f346dddd3226a9e6b361c7e90921b9ae6694255451
+enumValues:
+  - run
+  - blocked
+  - fault

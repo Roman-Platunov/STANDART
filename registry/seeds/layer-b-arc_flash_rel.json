@@ -1,0 +1,108 @@
+{
+  "layer": "B23",
+  "name": "layer-b-arc_flash_rel.json",
+  "types": [
+    {
+      "path": "arc_flash_rel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Arc-flash relay id",
+      "titleRu": "ID реле дуговой защиты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "arc_flash_rel.cubicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cubicle id",
+      "titleRu": "ID ячейки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "arc_flash_rel.light",
+      "kind": "quantity",
+      "unit": "lx",
+      "titleEn": "Light intensity",
+      "titleRu": "Освещённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "arc_flash_rel.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Overcurrent pickup",
+      "titleRu": "Пуск по току",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "arc_flash_rel.trips",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trips today",
+      "titleRu": "Отключений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "arc_flash_rel.sensors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sensors healthy",
+      "titleRu": "Исправных датчиков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "arc_flash_rel.arc",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Arc detected",
+      "titleRu": "Дуга обнаружена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "arc_flash_rel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "trip",
+        "sensor_fail",
+        "blocked"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

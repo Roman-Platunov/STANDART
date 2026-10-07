@@ -1,0 +1,116 @@
+{
+  "layer": "B23",
+  "name": "layer-b-sub_dc_batt.json",
+  "types": [
+    {
+      "path": "sub_dc_batt.bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Substation DC battery bank id",
+      "titleRu": "ID аккумуляторной батареи ПС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sub_dc_batt.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Bank voltage",
+      "titleRu": "Напряжение батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sub_dc_batt.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Charge/discharge current",
+      "titleRu": "Ток заряда/разряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sub_dc_batt.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "State of charge",
+      "titleRu": "SOC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sub_dc_batt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Battery temperature",
+      "titleRu": "Температура батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sub_dc_batt.ripple",
+      "kind": "quantity",
+      "unit": "mV",
+      "titleEn": "Ripple voltage",
+      "titleRu": "Пульсации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sub_dc_batt.ground",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "DC ground fault",
+      "titleRu": "Замыкание на землю DC",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sub_dc_batt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "float",
+        "boost",
+        "discharge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

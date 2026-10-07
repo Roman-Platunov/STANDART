@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-series_cap_bank.json",
+  "types": [
+    {
+      "path": "series_cap_bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Series capacitor bank id",
+      "titleRu": "ID батареи последовательных конденсаторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "series_cap_bank.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Bank voltage",
+      "titleRu": "Напряжение батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "series_cap_bank.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current",
+      "titleRu": "Ток линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "series_cap_bank.var",
+      "kind": "quantity",
+      "unit": "var",
+      "titleEn": "Inserted vars",
+      "titleRu": "Введённые вар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "series_cap_bank.bypass.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Bypass duration",
+      "titleRu": "Длительность шунтирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "series_cap_bank.mov.energy",
+      "kind": "quantity",
+      "unit": "kJ",
+      "titleEn": "MOV energy",
+      "titleRu": "Энергия ОПН",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "series_cap_bank.bypassed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bypassed",
+      "titleRu": "Зашунтирована",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "series_cap_bank.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "insert",
+        "bypass",
+        "reinsert",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

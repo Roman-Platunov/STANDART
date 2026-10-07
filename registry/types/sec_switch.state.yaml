@@ -1,0 +1,20 @@
+sid: 6427cab9
+path: sec_switch.state
+aliases:
+  short: sec_switch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:6427cab97199bba7ca8fa2beb808c8cfffa930162b33bc7c61ad3a40607f8150
+enumValues:
+  - closed
+  - open
+  - count
+  - fault

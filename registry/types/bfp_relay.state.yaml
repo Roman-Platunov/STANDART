@@ -1,0 +1,20 @@
+sid: d1e5736c
+path: bfp_relay.state
+aliases:
+  short: bfp_relay.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:d1e5736c9e9198210c7590142f6a7c6647d10010aed7257f3fc71c91a2307247
+enumValues:
+  - idle
+  - timing
+  - trip
+  - fault

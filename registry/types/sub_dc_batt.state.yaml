@@ -1,0 +1,20 @@
+sid: 99f7c75f
+path: sub_dc_batt.state
+aliases:
+  short: sub_dc_batt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:99f7c75fb43bd963e85738b9a8becda7dcf7692bcf2630d1c303aeaee14d359d
+enumValues:
+  - float
+  - boost
+  - discharge
+  - fault

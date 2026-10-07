@@ -1,0 +1,21 @@
+sid: 3b90bac9
+path: oil_dga_mon.fault
+aliases:
+  short: oil_dga_mon.fault
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Класс повреждения
+  en: Fault class
+fingerprint: sha256:3b90bac9ace5d95e0b9f884dd12e022046ca283d47e6fe014396523e9f5c1d03
+enumValues:
+  - none
+  - pd
+  - thermal
+  - arc
+  - unknown

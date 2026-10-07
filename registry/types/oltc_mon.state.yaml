@@ -1,0 +1,20 @@
+sid: "91278426"
+path: oltc_mon.state
+aliases:
+  short: oltc_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:912784262fa7582006d3da63915d035c7d7210e7345e26a5c91df79acb091345
+enumValues:
+  - idle
+  - raise
+  - lower
+  - fault

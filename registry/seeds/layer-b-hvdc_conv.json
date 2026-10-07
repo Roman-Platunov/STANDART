@@ -1,0 +1,113 @@
+{
+  "layer": "B23",
+  "name": "layer-b-hvdc_conv.json",
+  "types": [
+    {
+      "path": "hvdc_conv.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HVDC converter id",
+      "titleRu": "ID преобразователя HVDC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hvdc_conv.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Converter power",
+      "titleRu": "Мощность преобразователя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvdc_conv.dc.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "DC voltage",
+      "titleRu": "Напряжение DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvdc_conv.dc.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "DC current",
+      "titleRu": "Ток DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvdc_conv.firing",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Firing / modulation angle",
+      "titleRu": "Угол зажигания / модуляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvdc_conv.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Valve temperature",
+      "titleRu": "Температура вентиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvdc_conv.block",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blocked",
+      "titleRu": "Заблокирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hvdc_conv.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rectifier",
+        "inverter",
+        "statcom",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

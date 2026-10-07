@@ -1,0 +1,115 @@
+{
+  "layer": "B23",
+  "name": "layer-b-cb_wear_mon.json",
+  "types": [
+    {
+      "path": "cb_wear_mon.cb.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Circuit breaker id",
+      "titleRu": "ID выключателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cb_wear_mon.i2t",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "I2t wear",
+      "titleRu": "Износ I2t",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cb_wear_mon.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Operations",
+      "titleRu": "Коммутаций",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cb_wear_mon.time.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Opening time",
+      "titleRu": "Время отключения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cb_wear_mon.contact.wear",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Contact wear",
+      "titleRu": "Износ контактов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cb_wear_mon.coil.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Trip coil current",
+      "titleRu": "Ток отключающей катушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cb_wear_mon.overhaul",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overhaul due",
+      "titleRu": "Нужен ремонт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cb_wear_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "overhaul",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "layer": "B23",
+  "name": "layer-b-fire_hvdc.json",
+  "types": [
+    {
+      "path": "fire_hvdc.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HVDC fire zone id",
+      "titleRu": "ID зоны пожарной защиты HVDC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fire_hvdc.smoke",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Smoke density",
+      "titleRu": "Плотность дыма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fire_hvdc.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zone temperature",
+      "titleRu": "Температура зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_hvdc.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO",
+      "titleRu": "CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_hvdc.detectors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Detectors in alarm",
+      "titleRu": "Датчиков в тревоге",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_hvdc.suppress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Suppression ready",
+      "titleRu": "Готовность тушения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fire_hvdc.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire alarm",
+      "titleRu": "Пожарная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fire_hvdc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "alert",
+        "alarm",
+        "release"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

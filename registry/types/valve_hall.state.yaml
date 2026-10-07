@@ -1,0 +1,20 @@
+sid: eb1c961d
+path: valve_hall.state
+aliases:
+  short: valve_hall.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:eb1c961d15e42d2fcd4dfdae9cdeb729666344c54399943fe0fd420a40b9f87d
+enumValues:
+  - energized
+  - isolated
+  - maintain
+  - fault

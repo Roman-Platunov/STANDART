@@ -1,0 +1,110 @@
+{
+  "layer": "B23",
+  "name": "layer-b-ufr_relay.json",
+  "types": [
+    {
+      "path": "ufr_relay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Underfrequency relay id",
+      "titleRu": "ID реле снижения частоты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ufr_relay.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "System frequency",
+      "titleRu": "Частота системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ufr_relay.setpoint",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Trip setpoint",
+      "titleRu": "Уставка отключения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ufr_relay.stage",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shed stage",
+      "titleRu": "Ступень отключения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ufr_relay.mw",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Armed MW",
+      "titleRu": "Вооружённая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ufr_relay.trips",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Operations today",
+      "titleRu": "Срабатываний за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ufr_relay.armed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Armed",
+      "titleRu": "Вооружено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ufr_relay.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "armed",
+        "trip",
+        "blocked",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

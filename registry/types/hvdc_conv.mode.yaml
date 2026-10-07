@@ -1,0 +1,21 @@
+sid: 716277d6
+path: hvdc_conv.mode
+aliases:
+  short: hvdc_conv.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:716277d641220e86fc975c3badecab1a0effe6d798324a0569c1c42eef647f46
+enumValues:
+  - rectifier
+  - inverter
+  - statcom
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: 6b6fc800
+path: lcc_hvdc.mode
+aliases:
+  short: lcc_hvdc.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:6b6fc80003fa557eef91e66b77187fc7fda28ac1d79f29e0a042b446450b43e2
+enumValues:
+  - rectifier
+  - inverter
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: 364b3cf0
+path: arc_flash_rel.state
+aliases:
+  short: arc_flash_rel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:364b3cf054e553fc057cc027cdf23ccbacd63f9aa4f1efc6d4244a7707a91dbf
+enumValues:
+  - ok
+  - trip
+  - sensor_fail
+  - blocked

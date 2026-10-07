@@ -1,0 +1,112 @@
+{
+  "layer": "B23",
+  "name": "layer-b-electrode_line.json",
+  "types": [
+    {
+      "path": "electrode_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HVDC electrode line id",
+      "titleRu": "ID электродной линии HVDC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrode_line.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Earth/sea electrode current",
+      "titleRu": "Ток электрода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_line.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Electrode voltage",
+      "titleRu": "Напряжение электрода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_line.corr",
+      "kind": "quantity",
+      "unit": "mm/y",
+      "titleEn": "Corrosion rate",
+      "titleRu": "Скорость коррозии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_line.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Electrode temperature",
+      "titleRu": "Температура электрода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_line.leak",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Stray current",
+      "titleRu": "Блуждающий ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_line.imbalance",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pole imbalance",
+      "titleRu": "Дисбаланс полюсов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "electrode_line.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "land",
+        "sea",
+        "deepwell",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
