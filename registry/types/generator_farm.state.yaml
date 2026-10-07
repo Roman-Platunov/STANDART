@@ -1,0 +1,21 @@
+sid: 6f0ac321
+path: generator_farm.state
+aliases:
+  short: generator_farm.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фермы
+  en: Farm state
+fingerprint: sha256:6f0ac321e50d497374977efd0db7d1930dff6ff9464d0af83a9d2d7d68d0c4d5
+enumValues:
+  - standby
+  - run
+  - test
+  - maintain
+  - fault

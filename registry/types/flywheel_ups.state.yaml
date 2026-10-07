@@ -1,0 +1,20 @@
+sid: 6b29d010
+path: flywheel_ups.state
+aliases:
+  short: flywheel_ups.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние маховика
+  en: Flywheel state
+fingerprint: sha256:6b29d010cbb57f270fd0001c5bc2256597ea9d42f0852026c045e89c1771e047
+enumValues:
+  - ready
+  - discharge
+  - recharge
+  - fault

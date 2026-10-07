@@ -1,0 +1,110 @@
+{
+  "layer": "B19",
+  "name": "layer-b-rear_door.json",
+  "types": [
+    {
+      "path": "rear_door.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rear-door HX id",
+      "titleRu": "ID теплообменника задней двери",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rear_door.rack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HX rack id",
+      "titleRu": "ID стойки теплообменника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rear_door.air.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet air temperature",
+      "titleRu": "Температура входящего воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rear_door.air.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outlet air temperature",
+      "titleRu": "Температура исходящего воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rear_door.water.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water inlet",
+      "titleRu": "Вход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rear_door.water.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Water flow",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rear_door.clog",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coil clog risk",
+      "titleRu": "Риск засорения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rear_door.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "HX state",
+      "titleRu": "Состояние ТО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "bypass",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

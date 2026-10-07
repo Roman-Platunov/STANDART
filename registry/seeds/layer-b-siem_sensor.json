@@ -1,0 +1,118 @@
+{
+  "layer": "B19",
+  "name": "layer-b-siem_sensor.json",
+  "types": [
+    {
+      "path": "siem_sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SIEM sensor id",
+      "titleRu": "ID сенсора SIEM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "siem_sensor.eps",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Events per second",
+      "titleRu": "Событий в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "siem_sensor.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Queue depth",
+      "titleRu": "Глубина очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "siem_sensor.drop",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Drop rate",
+      "titleRu": "Доля дропов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "siem_sensor.sources",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Log sources",
+      "titleRu": "Источников логов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "siem_sensor.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CPU",
+      "titleRu": "CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "siem_sensor.healthy",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sensor healthy",
+      "titleRu": "Сенсор здоров",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "siem_sensor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sensor state",
+      "titleRu": "Состояние сенсора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "collect",
+        "parse",
+        "forward",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B19",
+  "name": "layer-b-backup_robot.json",
+  "types": [
+    {
+      "path": "backup_robot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Backup job robot id",
+      "titleRu": "ID робота резервного копирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "backup_robot.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Backup job id",
+      "titleRu": "ID задания бэкапа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "backup_robot.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Job progress",
+      "titleRu": "Прогресс задания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "backup_robot.throughput",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Throughput",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "backup_robot.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Elapsed",
+      "titleRu": "Прошло",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "backup_robot.errors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Errors",
+      "titleRu": "Ошибок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "backup_robot.success",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Last job success",
+      "titleRu": "Последнее задание успешно",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "backup_robot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Robot state",
+      "titleRu": "Состояние робота",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "run",
+        "verify",
+        "retry",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

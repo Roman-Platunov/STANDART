@@ -1,0 +1,112 @@
+{
+  "layer": "B19",
+  "name": "layer-b-flywheel_ups.json",
+  "types": [
+    {
+      "path": "flywheel_ups.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flywheel UPS id",
+      "titleRu": "ID маховикового ИБП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flywheel_ups.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Rotor RPM",
+      "titleRu": "Обороты ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flywheel_ups.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Stored energy",
+      "titleRu": "Запасённая энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flywheel_ups.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Output power",
+      "titleRu": "Выходная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flywheel_ups.bearing.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bearing temperature",
+      "titleRu": "Температура подшипника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flywheel_ups.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Enclosure vacuum",
+      "titleRu": "Вакуум корпуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flywheel_ups.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Supporting load",
+      "titleRu": "Поддерживает нагрузку",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flywheel_ups.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Flywheel state",
+      "titleRu": "Состояние маховика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "discharge",
+        "recharge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

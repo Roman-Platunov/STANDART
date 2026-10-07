@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-containment_dc.json",
+  "types": [
+    {
+      "path": "containment_dc.aisle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Containment aisle id",
+      "titleRu": "ID изолированного ряда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "containment_dc.delta.t",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Aisle delta-T",
+      "titleRu": "Перепад температуры ряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "containment_dc.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Containment pressure",
+      "titleRu": "Давление в изоляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "containment_dc.bypass",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bypass air",
+      "titleRu": "Байпас воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "containment_dc.doors.open",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Doors open",
+      "titleRu": "Открытых дверей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "containment_dc.temp.max",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Max aisle temperature",
+      "titleRu": "Макс. температура ряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "containment_dc.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Containment breach",
+      "titleRu": "Нарушение изоляции",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "containment_dc.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hot",
+        "cold",
+        "chimney",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

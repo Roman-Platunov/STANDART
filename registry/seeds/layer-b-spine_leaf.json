@@ -1,0 +1,112 @@
+{
+  "layer": "B19",
+  "name": "layer-b-spine_leaf.json",
+  "types": [
+    {
+      "path": "spine_leaf.fabric.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fabric id",
+      "titleRu": "ID фабрики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spine_leaf.switch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fabric switch id",
+      "titleRu": "ID коммутатора фабрики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spine_leaf.ecmp",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "ECMP paths",
+      "titleRu": "Путей ECMP",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spine_leaf.bgp.peers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "BGP peers up",
+      "titleRu": "Пиров BGP up",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spine_leaf.drops",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Drop rate",
+      "titleRu": "Скорость дропов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spine_leaf.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Link utilization",
+      "titleRu": "Загрузка линков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spine_leaf.congestion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Congestion",
+      "titleRu": "Перегрузка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spine_leaf.role",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Role",
+      "titleRu": "Роль",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spine",
+        "leaf",
+        "border",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

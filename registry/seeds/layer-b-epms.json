@@ -1,0 +1,114 @@
+{
+  "layer": "B19",
+  "name": "layer-b-epms.json",
+  "types": [
+    {
+      "path": "epms.meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EPMS meter id",
+      "titleRu": "ID счётчика EPMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "epms.branch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Branch circuit id",
+      "titleRu": "ID отходящей линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "epms.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Active power",
+      "titleRu": "Активная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "epms.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Energy",
+      "titleRu": "Энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "epms.pf",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Power factor",
+      "titleRu": "Коэффициент мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "epms.thd",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "THD",
+      "titleRu": "КНИ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "epms.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Meter alarm",
+      "titleRu": "Тревога счётчика",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "epms.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Data quality",
+      "titleRu": "Качество данных",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "suspect",
+        "gap",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B19",
+  "name": "layer-b-ddos_scrub.json",
+  "types": [
+    {
+      "path": "ddos_scrub.center.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Scrubbing center id",
+      "titleRu": "ID центра очистки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ddos_scrub.ingress",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Ingress traffic",
+      "titleRu": "Входящий трафик",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ddos_scrub.clean",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Clean traffic",
+      "titleRu": "Очищенный трафик",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ddos_scrub.drops",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Dropped attack",
+      "titleRu": "Сброшенная атака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ddos_scrub.mitigations",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active mitigations",
+      "titleRu": "Активных митигаций",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ddos_scrub.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Scrub latency",
+      "titleRu": "Задержка очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ddos_scrub.under.attack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Under attack",
+      "titleRu": "Под атакой",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ddos_scrub.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Center state",
+      "titleRu": "Состояние центра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "detect",
+        "mitigate",
+        "overflow",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: dd4a7cbf
+path: battery_monitor.chem
+aliases:
+  short: battery_monitor.chem
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Химия
+  en: Chemistry
+fingerprint: sha256:dd4a7cbf07bacb8dba28732000de2d827ab139cd8bcff3ce0cae7e84ac91cf0b
+enumValues:
+  - vrla
+  - flooded
+  - li_ion
+  - ni_cd
+  - other

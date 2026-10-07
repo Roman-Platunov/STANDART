@@ -1,0 +1,20 @@
+sid: "8e765828"
+path: sts_switch.source
+aliases:
+  short: sts_switch.source
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Активный ввод
+  en: Active source
+fingerprint: sha256:8e765828c83c2abe4b21c4371c80c088ccc81164c42a3387728553fddbbaaaef
+enumValues:
+  - preferred
+  - alternate
+  - offline
+  - fault

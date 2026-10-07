@@ -1,0 +1,111 @@
+{
+  "layer": "B19",
+  "name": "layer-b-ats_switch.json",
+  "types": [
+    {
+      "path": "ats_switch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ATS id",
+      "titleRu": "ID АВР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ats_switch.utility.v",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Utility voltage",
+      "titleRu": "Напряжение сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ats_switch.gen.v",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Generator voltage",
+      "titleRu": "Напряжение генератора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ats_switch.transfers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Transfer count",
+      "titleRu": "Число переключений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ats_switch.delay.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Transfer delay",
+      "titleRu": "Задержка переключения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ats_switch.load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Load power",
+      "titleRu": "Мощность нагрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ats_switch.on_gen",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "On generator",
+      "titleRu": "На генераторе",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ats_switch.position",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Position",
+      "titleRu": "Положение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "utility",
+        "generator",
+        "neutral",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

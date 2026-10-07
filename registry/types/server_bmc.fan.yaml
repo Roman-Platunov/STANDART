@@ -1,0 +1,18 @@
+sid: 1a00e10f
+path: server_bmc.fan
+aliases:
+  short: server_bmc.fan
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Скорость вентиляторов
+  en: Fan duty
+fingerprint: sha256:1a00e10fd2d08e9ec0c8f073547a84f2fb821750e01ac27d12bff60a5b93d975
+range:
+  min: 0
+  max: 100

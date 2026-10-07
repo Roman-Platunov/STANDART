@@ -1,0 +1,20 @@
+sid: bddf12ae
+path: hot_aisle.state
+aliases:
+  short: hot_aisle.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ряда
+  en: Aisle state
+fingerprint: sha256:bddf12aead94d7e7e30980eb5f78bc233d8be383f256f881ce275395c41a6eeb
+enumValues:
+  - sealed
+  - open
+  - maintain
+  - alarm

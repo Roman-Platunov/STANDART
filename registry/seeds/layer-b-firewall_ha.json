@@ -1,0 +1,113 @@
+{
+  "layer": "B19",
+  "name": "layer-b-firewall_ha.json",
+  "types": [
+    {
+      "path": "firewall_ha.pair.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Firewall HA pair id",
+      "titleRu": "ID пары МЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "firewall_ha.node.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Firewall node id",
+      "titleRu": "ID узла МЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "firewall_ha.sessions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sessions",
+      "titleRu": "Сессий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "firewall_ha.throughput",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Throughput",
+      "titleRu": "Пропускная способность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "firewall_ha.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CPU",
+      "titleRu": "CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "firewall_ha.ha.age.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "HA sync age",
+      "titleRu": "Возраст синхронизации HA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "firewall_ha.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Active unit",
+      "titleRu": "Активный узел",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "firewall_ha.role",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "HA role",
+      "titleRu": "Роль HA",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "passive",
+        "standalone",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

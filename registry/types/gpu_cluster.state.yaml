@@ -1,0 +1,21 @@
+sid: 46cac156
+path: gpu_cluster.state
+aliases:
+  short: gpu_cluster.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кластера
+  en: Cluster state
+fingerprint: sha256:46cac1564c117ae97589a2bd0904609a5f2cb2c9a9286a6ff21368b849d608bb
+enumValues:
+  - idle
+  - train
+  - infer
+  - maintain
+  - fault

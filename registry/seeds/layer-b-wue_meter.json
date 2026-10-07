@@ -1,0 +1,113 @@
+{
+  "layer": "B19",
+  "name": "layer-b-wue_meter.json",
+  "types": [
+    {
+      "path": "wue_meter.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WUE site id",
+      "titleRu": "ID площадки WUE",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wue_meter.wue",
+      "kind": "quantity",
+      "unit": "L/kWh",
+      "titleEn": "WUE",
+      "titleRu": "WUE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wue_meter.makeup",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Makeup water",
+      "titleRu": "Подпиточная вода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wue_meter.blowdown",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Blowdown",
+      "titleRu": "Продувка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wue_meter.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cycles of concentration",
+      "titleRu": "Кратность концентрирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wue_meter.it.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "IT energy",
+      "titleRu": "Энергия ИТ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wue_meter.drought",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Drought mode",
+      "titleRu": "Режим засухи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wue_meter.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Water source",
+      "titleRu": "Источник воды",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "potable",
+        "reclaimed",
+        "rain",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 03fbf345
+path: ntp_stratum.source
+aliases:
+  short: ntp_stratum.source
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Источник времени
+  en: Time source
+fingerprint: sha256:03fbf345df2c6f44f41e7d8cf4927e353d066825691aab7f36d12674487b6755
+enumValues:
+  - gps
+  - atomic
+  - upstream
+  - local
+  - other

@@ -1,0 +1,122 @@
+{
+  "layer": "B19",
+  "name": "layer-b-dcim.json",
+  "types": [
+    {
+      "path": "dcim.instance.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DCIM instance id",
+      "titleRu": "ID инстанса DCIM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dcim.assets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Managed assets",
+      "titleRu": "Управляемых активов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dcim.alarms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open alarms",
+      "titleRu": "Открытых аварий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dcim.capacity.power",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Power capacity used",
+      "titleRu": "Использование мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dcim.capacity.cool",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cooling capacity used",
+      "titleRu": "Использование холода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dcim.capacity.space",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Space capacity used",
+      "titleRu": "Использование пространства",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dcim.sync.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Collectors OK",
+      "titleRu": "Сборщики OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dcim.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "DCIM state",
+      "titleRu": "Состояние DCIM",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "degraded",
+        "maintenance",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

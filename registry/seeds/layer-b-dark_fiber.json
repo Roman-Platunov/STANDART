@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-dark_fiber.json",
+  "types": [
+    {
+      "path": "dark_fiber.span.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dark fiber span id",
+      "titleRu": "ID тёмного волокна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dark_fiber.length",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Span length",
+      "titleRu": "Длина участка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dark_fiber.loss",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Span loss",
+      "titleRu": "Потери участка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dark_fiber.fibers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fiber count",
+      "titleRu": "Число волокон",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dark_fiber.lease",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lit / leased",
+      "titleRu": "Засвечено / сдано",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dark_fiber.otdr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "OTDR event loss",
+      "titleRu": "Потери события OTDR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dark_fiber.cut",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fiber cut",
+      "titleRu": "Обрыв волокна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dark_fiber.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Span state",
+      "titleRu": "Состояние участка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dark",
+        "lit",
+        "repair",
+        "reserved"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

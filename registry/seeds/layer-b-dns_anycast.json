@@ -1,0 +1,119 @@
+{
+  "layer": "B19",
+  "name": "layer-b-dns_anycast.json",
+  "types": [
+    {
+      "path": "dns_anycast.node.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anycast DNS node id",
+      "titleRu": "ID anycast DNS-узла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dns_anycast.qps",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Queries per second",
+      "titleRu": "Запросов в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dns_anycast.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Response latency",
+      "titleRu": "Задержка ответа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dns_anycast.nxdomain",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "NXDOMAIN ratio",
+      "titleRu": "Доля NXDOMAIN",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dns_anycast.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CPU",
+      "titleRu": "CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dns_anycast.peers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Anycast peers",
+      "titleRu": "Пиров anycast",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dns_anycast.healthy",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Node healthy",
+      "titleRu": "Узел здоров",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dns_anycast.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Node state",
+      "titleRu": "Состояние узла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "announce",
+        "withdraw",
+        "drain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: ffa115c3
+path: storage_array.state
+aliases:
+  short: storage_array.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние массива
+  en: Array state
+fingerprint: sha256:ffa115c3eb79e40f906321f8f0215f35e55cddf122a6901bd0a7dbe6be2e6604
+enumValues:
+  - optimal
+  - degraded
+  - rebuild
+  - fault

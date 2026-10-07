@@ -1,0 +1,114 @@
+{
+  "layer": "B19",
+  "name": "layer-b-cross_connect.json",
+  "types": [
+    {
+      "path": "cross_connect.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cross-connect id",
+      "titleRu": "ID кросс-коннекта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cross_connect.a.end",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "A-end id",
+      "titleRu": "ID стороны A",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cross_connect.z.end",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Z-end id",
+      "titleRu": "ID стороны Z",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cross_connect.loss",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Link loss",
+      "titleRu": "Потери линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cross_connect.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Cable length",
+      "titleRu": "Длина кабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cross_connect.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Circuit active",
+      "titleRu": "Цепь активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cross_connect.media",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Media",
+      "titleRu": "Среда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "smf",
+        "mmf",
+        "cat6",
+        "coax",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cross_connect.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "provisioned",
+        "live",
+        "pending",
+        "decommission"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

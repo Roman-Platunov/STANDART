@@ -1,0 +1,20 @@
+sid: e1406eff
+path: dcim.state
+aliases:
+  short: dcim.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние DCIM
+  en: DCIM state
+fingerprint: sha256:e1406efffc5f5fb28f3ce685520e5a16bac052f079d719ee7de8ab514551f8dc
+enumValues:
+  - ok
+  - degraded
+  - maintenance
+  - offline

@@ -1,0 +1,18 @@
+sid: 4cc38fa4
+path: siem_sensor.drop
+aliases:
+  short: siem_sensor.drop
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Доля дропов
+  en: Drop rate
+fingerprint: sha256:4cc38fa42c5f4561f9e8a0970a743a857974f4e755b3cf0d932af1271aecf76b
+range:
+  min: 0
+  max: 100

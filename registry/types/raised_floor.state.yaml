@@ -1,0 +1,20 @@
+sid: ee5c1f70
+path: raised_floor.state
+aliases:
+  short: raised_floor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пола
+  en: Floor state
+fingerprint: sha256:ee5c1f70749c7ebe7014c6be6a34104c4c9f6cd77c41f39d57bef3c251c6da56
+enumValues:
+  - ok
+  - low_pressure
+  - flood
+  - maintain

@@ -1,0 +1,20 @@
+sid: b4aea667
+path: two_phase_cool.state
+aliases:
+  short: two_phase_cool.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние контура
+  en: Loop state
+fingerprint: sha256:b4aea667327850552f0f0485a0f849cd88da08b1994a81314f3ab6595cad6169
+enumValues:
+  - boil
+  - condense
+  - idle
+  - fault

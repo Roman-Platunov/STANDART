@@ -1,0 +1,110 @@
+{
+  "layer": "B19",
+  "name": "layer-b-thermal_map.json",
+  "types": [
+    {
+      "path": "thermal_map.hall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mapped hall id",
+      "titleRu": "ID картографируемого зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thermal_map.sensors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sensor count",
+      "titleRu": "Число датчиков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_map.temp.max",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Max temperature",
+      "titleRu": "Макс. температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_map.temp.min",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Min temperature",
+      "titleRu": "Мин. температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_map.hot.spots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hot spots",
+      "titleRu": "Горячих точек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_map.refresh.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Map refresh",
+      "titleRu": "Обновление карты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_map.stale",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Map stale",
+      "titleRu": "Карта устарела",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thermal_map.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Map quality",
+      "titleRu": "Качество карты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "sparse",
+        "stale",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

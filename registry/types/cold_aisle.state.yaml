@@ -1,0 +1,20 @@
+sid: 0f80d5d1
+path: cold_aisle.state
+aliases:
+  short: cold_aisle.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ряда
+  en: Aisle state
+fingerprint: sha256:0f80d5d143a7598ab21ea075a28d47e88bf42e3ae9980836021c72a25174478f
+enumValues:
+  - sealed
+  - open
+  - maintain
+  - alarm

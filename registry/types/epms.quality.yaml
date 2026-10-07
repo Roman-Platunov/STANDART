@@ -1,0 +1,20 @@
+sid: 52e96c89
+path: epms.quality
+aliases:
+  short: epms.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество данных
+  en: Data quality
+fingerprint: sha256:52e96c89799c2a7c476202eabe9a6210efc25d99bc7f3248a34a8c6ede0c67c0
+enumValues:
+  - good
+  - suspect
+  - gap
+  - offline

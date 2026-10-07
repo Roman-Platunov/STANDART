@@ -1,0 +1,116 @@
+{
+  "layer": "B19",
+  "name": "layer-b-crah_unit.json",
+  "types": [
+    {
+      "path": "crah_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CRAH id",
+      "titleRu": "ID воздухоохладителя ЦОД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crah_unit.supply.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crah_unit.chw.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CHW temperature",
+      "titleRu": "Температура холодной воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crah_unit.valve",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Valve position",
+      "titleRu": "Положение клапана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crah_unit.airflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Airflow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crah_unit.filter.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Filter DP",
+      "titleRu": "Перепад на фильтре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crah_unit.freeze",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Freeze protect",
+      "titleRu": "Защита от замерзания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crah_unit.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CRAH state",
+      "titleRu": "Состояние CRAH",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "defrost",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

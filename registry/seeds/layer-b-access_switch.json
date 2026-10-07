@@ -1,0 +1,110 @@
+{
+  "layer": "B19",
+  "name": "layer-b-access_switch.json",
+  "types": [
+    {
+      "path": "access_switch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Access switch id",
+      "titleRu": "ID access-коммутатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "access_switch.ports.up",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ports up",
+      "titleRu": "Портов up",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "access_switch.poe",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "PoE power drawn",
+      "titleRu": "Потребление PoE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "access_switch.poe.budget",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "PoE budget",
+      "titleRu": "Бюджет PoE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "access_switch.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Switch temperature",
+      "titleRu": "Температура коммутатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "access_switch.macs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "MAC table size",
+      "titleRu": "Размер таблицы MAC",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "access_switch.stack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stack member",
+      "titleRu": "Участник стека",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access_switch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Switch state",
+      "titleRu": "Состояние коммутатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "degraded",
+        "down",
+        "maintain"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

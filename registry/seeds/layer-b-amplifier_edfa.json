@@ -1,0 +1,112 @@
+{
+  "layer": "B19",
+  "name": "layer-b-amplifier_edfa.json",
+  "types": [
+    {
+      "path": "amplifier_edfa.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EDFA id",
+      "titleRu": "ID EDFA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "amplifier_edfa.gain",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Gain",
+      "titleRu": "Усиление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amplifier_edfa.input",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Input power",
+      "titleRu": "Входная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amplifier_edfa.output",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Output power",
+      "titleRu": "Выходная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amplifier_edfa.pump",
+      "kind": "quantity",
+      "unit": "mA",
+      "titleEn": "Pump current",
+      "titleRu": "Ток накачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amplifier_edfa.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Module temperature",
+      "titleRu": "Температура модуля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amplifier_edfa.los",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "LOS",
+      "titleRu": "Потеря сигнала",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "amplifier_edfa.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "booster",
+        "line",
+        "preamp",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

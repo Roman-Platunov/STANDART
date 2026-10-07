@@ -1,0 +1,18 @@
+sid: b480e27c
+path: siem_sensor.cpu
+aliases:
+  short: siem_sensor.cpu
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: CPU
+  en: CPU
+fingerprint: sha256:b480e27cd6f3305dee81611534a12373e96f1442e50b97a5e952824e4d6552e2
+range:
+  min: 0
+  max: 100

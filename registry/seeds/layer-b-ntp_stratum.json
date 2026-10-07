@@ -1,0 +1,110 @@
+{
+  "layer": "B19",
+  "name": "layer-b-ntp_stratum.json",
+  "types": [
+    {
+      "path": "ntp_stratum.server.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NTP server id",
+      "titleRu": "ID сервера NTP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ntp_stratum.stratum",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stratum",
+      "titleRu": "Стратум",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ntp_stratum.offset",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Offset",
+      "titleRu": "Смещение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ntp_stratum.jitter",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Jitter",
+      "titleRu": "Джиттер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ntp_stratum.reach",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reach register",
+      "titleRu": "Регистр достижимости",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ntp_stratum.peers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active peers",
+      "titleRu": "Активных пиров",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ntp_stratum.sync",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Synchronized",
+      "titleRu": "Синхронизирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ntp_stratum.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Time source",
+      "titleRu": "Источник времени",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gps",
+        "atomic",
+        "upstream",
+        "local",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-leak_rope.json",
+  "types": [
+    {
+      "path": "leak_rope.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Leak detection zone id",
+      "titleRu": "ID зоны контроля протечек",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leak_rope.distance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Leak distance",
+      "titleRu": "Расстояние до протечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_rope.resistance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Cable resistance",
+      "titleRu": "Сопротивление кабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_rope.zones",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Zones alarmed",
+      "titleRu": "Зон в тревоге",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_rope.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Controller temperature",
+      "titleRu": "Температура контроллера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_rope.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Backup battery",
+      "titleRu": "Резервная батарея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leak_rope.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak alarm",
+      "titleRu": "Тревога протечки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "leak_rope.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "leak",
+        "cable_fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

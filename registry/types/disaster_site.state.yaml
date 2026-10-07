@@ -1,0 +1,21 @@
+sid: 4c6fe0a2
+path: disaster_site.state
+aliases:
+  short: disaster_site.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние DR
+  en: DR state
+fingerprint: sha256:4c6fe0a219d37564105909ad3331e29504a77de4f469ef5eec0c86051a613118
+enumValues:
+  - standby
+  - failover
+  - failback
+  - test
+  - fault

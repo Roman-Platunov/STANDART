@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-object_store.json",
+  "types": [
+    {
+      "path": "object_store.cluster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Object store cluster id",
+      "titleRu": "ID кластера объектного хранилища",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "object_store.capacity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Capacity used",
+      "titleRu": "Использование ёмкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "object_store.objects",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Object count",
+      "titleRu": "Число объектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "object_store.get.rps",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "GET rate",
+      "titleRu": "Скорость GET",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "object_store.put.rps",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "PUT rate",
+      "titleRu": "Скорость PUT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "object_store.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "P99 latency",
+      "titleRu": "Задержка P99",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "object_store.healthy",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cluster healthy",
+      "titleRu": "Кластер здоров",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "object_store.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cluster state",
+      "titleRu": "Состояние кластера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "degraded",
+        "rebalance",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-server_bmc.json",
+  "types": [
+    {
+      "path": "server_bmc.node.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Server node id",
+      "titleRu": "ID серверного узла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "server_bmc.cpu.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CPU temperature",
+      "titleRu": "Температура CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "server_bmc.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Node power",
+      "titleRu": "Мощность узла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "server_bmc.fan",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fan duty",
+      "titleRu": "Скорость вентиляторов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "server_bmc.mem.ce",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Correctable ECC",
+      "titleRu": "Исправляемые ECC",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "server_bmc.uptime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Uptime",
+      "titleRu": "Аптайм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "server_bmc.health.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Health OK",
+      "titleRu": "Состояние OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "server_bmc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Power state",
+      "titleRu": "Состояние питания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "standby",
+        "off",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

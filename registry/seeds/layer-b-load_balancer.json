@@ -1,0 +1,114 @@
+{
+  "layer": "B19",
+  "name": "layer-b-load_balancer.json",
+  "types": [
+    {
+      "path": "load_balancer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Load balancer id",
+      "titleRu": "ID балансировщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "load_balancer.cps",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Connections per second",
+      "titleRu": "Соединений в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "load_balancer.active",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active connections",
+      "titleRu": "Активных соединений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "load_balancer.backends.up",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Backends up",
+      "titleRu": "Бэкендов up",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "load_balancer.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CPU",
+      "titleRu": "CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "load_balancer.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "P95 latency",
+      "titleRu": "Задержка P95",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "load_balancer.failover",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Failover active",
+      "titleRu": "Отказоустойчивость активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "load_balancer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "LB state",
+      "titleRu": "Состояние БЛ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "standby",
+        "degraded",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

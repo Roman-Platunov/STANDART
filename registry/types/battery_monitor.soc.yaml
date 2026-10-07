@@ -1,0 +1,18 @@
+sid: 3a17a31f
+path: battery_monitor.soc
+aliases:
+  short: battery_monitor.soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: SOC
+  en: State of charge
+fingerprint: sha256:3a17a31f6c854d54a8f6c66d69d9eac879561789fe983900dfffc98284ad71ff
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,117 @@
+{
+  "layer": "B19",
+  "name": "layer-b-battery_monitor.json",
+  "types": [
+    {
+      "path": "battery_monitor.string.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Battery string id",
+      "titleRu": "ID батареиной сборки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery_monitor.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "String voltage",
+      "titleRu": "Напряжение сборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_monitor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "String current",
+      "titleRu": "Ток сборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_monitor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Battery temperature",
+      "titleRu": "Температура АКБ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_monitor.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "State of charge",
+      "titleRu": "SOC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "battery_monitor.impedance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Internal impedance",
+      "titleRu": "Внутреннее сопротивление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_monitor.weak.cell",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Weak cell",
+      "titleRu": "Слабый элемент",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "battery_monitor.chem",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chemistry",
+      "titleRu": "Химия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vrla",
+        "flooded",
+        "li_ion",
+        "ni_cd",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

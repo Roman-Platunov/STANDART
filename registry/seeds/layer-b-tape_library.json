@@ -1,0 +1,109 @@
+{
+  "layer": "B19",
+  "name": "layer-b-tape_library.json",
+  "types": [
+    {
+      "path": "tape_library.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tape library id",
+      "titleRu": "ID ленточной библиотеки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tape_library.slots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Occupied slots",
+      "titleRu": "Занятых слотов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tape_library.mounts",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Mounts per hour",
+      "titleRu": "Монтирований в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tape_library.drives",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Drives online",
+      "titleRu": "Приводов онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tape_library.robots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Robot arms",
+      "titleRu": "Манипуляторов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tape_library.errors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Media errors",
+      "titleRu": "Ошибок носителей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tape_library.door",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door open",
+      "titleRu": "Дверь открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tape_library.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Library state",
+      "titleRu": "Состояние библиотеки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "mount",
+        "inventory",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

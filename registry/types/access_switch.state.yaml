@@ -1,0 +1,20 @@
+sid: 933ea36b
+path: access_switch.state
+aliases:
+  short: access_switch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние коммутатора
+  en: Switch state
+fingerprint: sha256:933ea36b37d1f61f62f40601661b0547d197d7346ef1b2e506dff036d0d6d10b
+enumValues:
+  - up
+  - degraded
+  - down
+  - maintain

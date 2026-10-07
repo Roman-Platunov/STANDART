@@ -1,0 +1,21 @@
+sid: 2bb9ee2a
+path: ddos_scrub.state
+aliases:
+  short: ddos_scrub.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние центра
+  en: Center state
+fingerprint: sha256:2bb9ee2a8266b04a71334f3800c5be48bd6f851d2b85ecc46566f3d5ebe0e10f
+enumValues:
+  - idle
+  - detect
+  - mitigate
+  - overflow
+  - fault

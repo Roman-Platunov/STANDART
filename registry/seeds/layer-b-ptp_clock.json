@@ -1,0 +1,111 @@
+{
+  "layer": "B19",
+  "name": "layer-b-ptp_clock.json",
+  "types": [
+    {
+      "path": "ptp_clock.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PTP clock id",
+      "titleRu": "ID часов PTP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ptp_clock.offset",
+      "kind": "quantity",
+      "unit": "ns",
+      "titleEn": "Offset from master",
+      "titleRu": "Смещение от мастера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ptp_clock.path.delay",
+      "kind": "quantity",
+      "unit": "ns",
+      "titleEn": "Mean path delay",
+      "titleRu": "Средняя задержка пути",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ptp_clock.freq",
+      "kind": "quantity",
+      "unit": "ppb",
+      "titleEn": "Frequency offset",
+      "titleRu": "Частотное смещение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ptp_clock.gm.class",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "GM class",
+      "titleRu": "Класс GM",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ptp_clock.steps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Steps removed",
+      "titleRu": "Шагов удаления",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ptp_clock.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Locked",
+      "titleRu": "Захвачен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ptp_clock.role",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Role",
+      "titleRu": "Роль",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gm",
+        "bc",
+        "tc",
+        "oc",
+        "slave"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B19",
+  "name": "layer-b-sts_switch.json",
+  "types": [
+    {
+      "path": "sts_switch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "STS id",
+      "titleRu": "ID статического переключателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sts_switch.load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Load power",
+      "titleRu": "Мощность нагрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sts_switch.pref.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Preferred source voltage",
+      "titleRu": "Напряжение предпочтительного ввода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sts_switch.alt.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Alternate source voltage",
+      "titleRu": "Напряжение резервного ввода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sts_switch.transfers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Transfer count",
+      "titleRu": "Число переключений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sts_switch.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "SCR temperature",
+      "titleRu": "Температура тиристоров",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sts_switch.on_alt",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "On alternate",
+      "titleRu": "На резерве",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sts_switch.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Active source",
+      "titleRu": "Активный ввод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "preferred",
+        "alternate",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

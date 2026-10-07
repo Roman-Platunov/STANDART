@@ -1,0 +1,109 @@
+{
+  "layer": "B19",
+  "name": "layer-b-sync_e.json",
+  "types": [
+    {
+      "path": "sync_e.node.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SyncE node id",
+      "titleRu": "ID узла SyncE",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sync_e.ql",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Quality level",
+      "titleRu": "Уровень качества",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_e.offset",
+      "kind": "quantity",
+      "unit": "ns",
+      "titleEn": "Time error",
+      "titleRu": "Ошибка времени",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_e.holdover.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Holdover remaining",
+      "titleRu": "Остаток holdover",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_e.ssm",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "SSM code",
+      "titleRu": "Код SSM",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_e.ports",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sync ports locked",
+      "titleRu": "Синхр. портов захвачено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sync_e.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Frequency locked",
+      "titleRu": "Частота захвачена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sync_e.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sync state",
+      "titleRu": "Состояние синхронизации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "locked",
+        "holdover",
+        "freerun",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

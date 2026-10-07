@@ -1,0 +1,113 @@
+{
+  "layer": "B19",
+  "name": "layer-b-tor_switch.json",
+  "types": [
+    {
+      "path": "tor_switch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ToR switch id",
+      "titleRu": "ID ToR-коммутатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tor_switch.rack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ToR rack id",
+      "titleRu": "ID стойки ToR",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tor_switch.ports.up",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Access ports up",
+      "titleRu": "Access-портов up",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tor_switch.uplink.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uplink utilization",
+      "titleRu": "Загрузка аплинков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tor_switch.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Switch temperature",
+      "titleRu": "Температура коммутатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tor_switch.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Switch power",
+      "titleRu": "Мощность коммутатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tor_switch.fan.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fan fail",
+      "titleRu": "Отказ вентилятора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tor_switch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ToR state",
+      "titleRu": "Состояние ToR",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "degraded",
+        "down",
+        "maintain"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 643a8ec3
+path: wue_meter.source
+aliases:
+  short: wue_meter.source
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Источник воды
+  en: Water source
+fingerprint: sha256:643a8ec3d84b9bf6597822806075b0e7c9dbe6fdaf8e0a4c9bf52cccd6e2f282
+enumValues:
+  - potable
+  - reclaimed
+  - rain
+  - mixed
+  - other

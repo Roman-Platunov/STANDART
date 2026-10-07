@@ -1,0 +1,21 @@
+sid: afea3a6e
+path: tape_library.state
+aliases:
+  short: tape_library.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние библиотеки
+  en: Library state
+fingerprint: sha256:afea3a6e19ee2b00622cd0d8e7848f509d7e50445676ad148f5783a83fdfdb74
+enumValues:
+  - ready
+  - mount
+  - inventory
+  - offline
+  - fault

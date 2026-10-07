@@ -1,0 +1,113 @@
+{
+  "layer": "B19",
+  "name": "layer-b-san_switch.json",
+  "types": [
+    {
+      "path": "san_switch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SAN switch id",
+      "titleRu": "ID SAN-коммутатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "san_switch.ports.up",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ports up",
+      "titleRu": "Портов up",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "san_switch.crc",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "CRC errors",
+      "titleRu": "Ошибок CRC",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "san_switch.bb.credit",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "BB credit zero events",
+      "titleRu": "Событий нулевого BB credit",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "san_switch.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Switch temperature",
+      "titleRu": "Температура коммутатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "san_switch.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fabric utilization",
+      "titleRu": "Загрузка фабрики",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "san_switch.isl.down",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ISL down",
+      "titleRu": "ISL down",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "san_switch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Switch state",
+      "titleRu": "Состояние коммутатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "degraded",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

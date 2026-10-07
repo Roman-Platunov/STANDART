@@ -1,0 +1,20 @@
+sid: 8c994cd5
+path: load_balancer.state
+aliases:
+  short: load_balancer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние БЛ
+  en: LB state
+fingerprint: sha256:8c994cd547a61d51f6d5b278eaa2fa776aee5429cd85031d878efa1d5885c764
+enumValues:
+  - active
+  - standby
+  - degraded
+  - fault

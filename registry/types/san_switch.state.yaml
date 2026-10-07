@@ -1,0 +1,20 @@
+sid: acefd3f8
+path: san_switch.state
+aliases:
+  short: san_switch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние коммутатора
+  en: Switch state
+fingerprint: sha256:acefd3f887ac25ae649b1a6132e85be928359d295db3be7c212df42723ded3a4
+enumValues:
+  - online
+  - degraded
+  - offline
+  - fault

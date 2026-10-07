@@ -1,0 +1,20 @@
+sid: 3de58d0f
+path: ids_sensor.state
+aliases:
+  short: ids_sensor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние датчика
+  en: Sensor state
+fingerprint: sha256:3de58d0fe63ea75179d1c27b7f55c76effbdb7ce2c72db3319c44574740efdeb
+enumValues:
+  - monitor
+  - inline
+  - bypass
+  - fault

@@ -1,0 +1,111 @@
+{
+  "layer": "B19",
+  "name": "layer-b-optic_xcvr.json",
+  "types": [
+    {
+      "path": "optic_xcvr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Optical transceiver id",
+      "titleRu": "ID оптического трансивера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "optic_xcvr.port.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Host port id",
+      "titleRu": "ID порта хоста",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "optic_xcvr.tx.power",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "TX power",
+      "titleRu": "Мощность TX",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optic_xcvr.rx.power",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RX power",
+      "titleRu": "Мощность RX",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optic_xcvr.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Module temperature",
+      "titleRu": "Температура модуля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optic_xcvr.bias",
+      "kind": "quantity",
+      "unit": "mA",
+      "titleEn": "Laser bias",
+      "titleRu": "Ток смещения лазера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optic_xcvr.los",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "LOS",
+      "titleRu": "Потеря сигнала",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "optic_xcvr.form",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Form factor",
+      "titleRu": "Форм-фактор",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sfp",
+        "sfp28",
+        "qsfp",
+        "osfp",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

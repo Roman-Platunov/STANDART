@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-cable_tray.json",
+  "types": [
+    {
+      "path": "cable_tray.segment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cable tray segment id",
+      "titleRu": "ID участка лотка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cable_tray.fill",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fill ratio",
+      "titleRu": "Коэффициент заполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cable_tray.weight",
+      "kind": "quantity",
+      "unit": "kg/m",
+      "titleEn": "Linear weight",
+      "titleRu": "Погонная масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_tray.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tray temperature",
+      "titleRu": "Температура лотка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_tray.cables",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cable count",
+      "titleRu": "Число кабелей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_tray.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Segment length",
+      "titleRu": "Длина участка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cable_tray.overfill",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overfill",
+      "titleRu": "Переполнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cable_tray.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ladder",
+        "trough",
+        "wire_mesh",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

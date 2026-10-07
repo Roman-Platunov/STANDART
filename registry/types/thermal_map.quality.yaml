@@ -1,0 +1,20 @@
+sid: c8bf880f
+path: thermal_map.quality
+aliases:
+  short: thermal_map.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество карты
+  en: Map quality
+fingerprint: sha256:c8bf880f99b3ab7dbbaa2b3c094c5a896a6a11d78a608dc254e524ea6553c493
+enumValues:
+  - good
+  - sparse
+  - stale
+  - offline

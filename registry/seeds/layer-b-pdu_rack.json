@@ -1,0 +1,108 @@
+{
+  "layer": "B19",
+  "name": "layer-b-pdu_rack.json",
+  "types": [
+    {
+      "path": "pdu_rack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rack PDU id",
+      "titleRu": "ID PDU стойки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pdu_rack.rack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rack id",
+      "titleRu": "ID стойки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pdu_rack.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "PDU power",
+      "titleRu": "Мощность PDU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pdu_rack.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "PDU current",
+      "titleRu": "Ток PDU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pdu_rack.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "PDU voltage",
+      "titleRu": "Напряжение PDU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pdu_rack.outlets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Outlets energized",
+      "titleRu": "Включённых розеток",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pdu_rack.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overload",
+      "titleRu": "Перегрузка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pdu_rack.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Phase",
+      "titleRu": "Фазность",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "single",
+        "three",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 7aa52842
+path: siem_sensor.state
+aliases:
+  short: siem_sensor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сенсора
+  en: Sensor state
+fingerprint: sha256:7aa52842fc946ffaa7c12e6722ae930162c1e41568ba633c520c5f2a5aea2d9e
+enumValues:
+  - collect
+  - parse
+  - forward
+  - fault

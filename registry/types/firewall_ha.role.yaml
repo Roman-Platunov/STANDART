@@ -1,0 +1,20 @@
+sid: f60e854b
+path: firewall_ha.role
+aliases:
+  short: firewall_ha.role
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Роль HA
+  en: HA role
+fingerprint: sha256:f60e854bda877060789a77820743fc8f2dfe6cb42182e6dfd0b5c76f20488eab
+enumValues:
+  - active
+  - passive
+  - standalone
+  - fault

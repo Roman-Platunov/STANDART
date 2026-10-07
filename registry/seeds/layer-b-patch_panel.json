@@ -1,0 +1,108 @@
+{
+  "layer": "B19",
+  "name": "layer-b-patch_panel.json",
+  "types": [
+    {
+      "path": "patch_panel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Patch panel id",
+      "titleRu": "ID патч-панели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "patch_panel.ports",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ports populated",
+      "titleRu": "Занятых портов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "patch_panel.capacity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Port capacity",
+      "titleRu": "Ёмкость портов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "patch_panel.moves",
+      "kind": "quantity",
+      "unit": "/d",
+      "titleEn": "Moves per day",
+      "titleRu": "Переключений в сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "patch_panel.errors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Label mismatches",
+      "titleRu": "Несовпадений маркировки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "patch_panel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Panel temperature",
+      "titleRu": "Температура панели",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "patch_panel.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Panel locked",
+      "titleRu": "Панель заперта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "patch_panel.media",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Media",
+      "titleRu": "Среда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "copper",
+        "fiber",
+        "mixed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "layer": "B19",
+  "name": "layer-b-roadm.json",
+  "types": [
+    {
+      "path": "roadm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ROADM id",
+      "titleRu": "ID ROADM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "roadm.degrees",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Degrees equipped",
+      "titleRu": "Оснащённых направлений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roadm.add",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Add channels",
+      "titleRu": "Add-каналов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roadm.drop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Drop channels",
+      "titleRu": "Drop-каналов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roadm.wss.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "WSS temperature",
+      "titleRu": "Температура WSS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roadm.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Shelf power",
+      "titleRu": "Мощность полки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roadm.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ROADM alarm",
+      "titleRu": "Тревога ROADM",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "roadm.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ROADM state",
+      "titleRu": "Состояние ROADM",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "reconfig",
+        "degraded",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

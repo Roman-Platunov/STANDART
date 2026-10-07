@@ -1,0 +1,20 @@
+sid: 1b818b80
+path: sync_e.state
+aliases:
+  short: sync_e.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние синхронизации
+  en: Sync state
+fingerprint: sha256:1b818b80e998720bc23b5d259b03a1e8cb26b3f5bf57aacad5aaf34ab3574c47
+enumValues:
+  - locked
+  - holdover
+  - freerun
+  - fault

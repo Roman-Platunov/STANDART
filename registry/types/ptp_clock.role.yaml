@@ -1,0 +1,21 @@
+sid: 97d95f29
+path: ptp_clock.role
+aliases:
+  short: ptp_clock.role
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Роль
+  en: Role
+fingerprint: sha256:97d95f2999708f785b106c041ed18e3912b2beb2ad7615d50610c93ce24fee59
+enumValues:
+  - gm
+  - bc
+  - tc
+  - oc
+  - slave

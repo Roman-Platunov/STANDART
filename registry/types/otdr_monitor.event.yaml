@@ -1,0 +1,21 @@
+sid: 0b38a542
+path: otdr_monitor.event
+aliases:
+  short: otdr_monitor.event
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип события
+  en: Event type
+fingerprint: sha256:0b38a54296dad3f95ea405222322b0cef8208e5ffb4b57b505909b1824a38357
+enumValues:
+  - ok
+  - splice
+  - bend
+  - cut
+  - unknown

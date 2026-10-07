@@ -1,0 +1,20 @@
+sid: 47f5b757
+path: vpn_concentrator.state
+aliases:
+  short: vpn_concentrator.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние концентратора
+  en: Concentrator state
+fingerprint: sha256:47f5b7571824a886e8a8612f1d4e7605e72903f8c7e55b17e4f543acf7405d18
+enumValues:
+  - active
+  - standby
+  - degraded
+  - fault

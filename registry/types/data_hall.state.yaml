@@ -1,0 +1,21 @@
+sid: 37400e1b
+path: data_hall.state
+aliases:
+  short: data_hall.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зала
+  en: Hall state
+fingerprint: sha256:37400e1bbd71ea0e4dba98aacb5d7150702088d96db7b68345d484b5e1a859c3
+enumValues:
+  - normal
+  - high_load
+  - maintenance
+  - emergency
+  - offline

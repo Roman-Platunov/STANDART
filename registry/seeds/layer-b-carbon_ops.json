@@ -1,0 +1,120 @@
+{
+  "layer": "B19",
+  "name": "layer-b-carbon_ops.json",
+  "types": [
+    {
+      "path": "carbon_ops.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Carbon ops site id",
+      "titleRu": "ID площадки углеродного учёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "carbon_ops.intensity",
+      "kind": "quantity",
+      "unit": "g/kWh",
+      "titleEn": "Grid carbon intensity",
+      "titleRu": "Углеродоёмкость сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_ops.scope2",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Scope 2 emissions",
+      "titleRu": "Выбросы Scope 2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_ops.renewable",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Renewable share",
+      "titleRu": "Доля ВИЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "carbon_ops.cfe",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Carbon-free energy",
+      "titleRu": "Безуглеродная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "carbon_ops.load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Matched load",
+      "titleRu": "Сопоставленная нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carbon_ops.target.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "On track",
+      "titleRu": "В графике цели",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "carbon_ops.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Accounting method",
+      "titleRu": "Метод учёта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "location",
+        "market",
+        "hourly",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

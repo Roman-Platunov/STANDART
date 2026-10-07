@@ -1,0 +1,110 @@
+{
+  "layer": "B19",
+  "name": "layer-b-chip_cool.json",
+  "types": [
+    {
+      "path": "chip_cool.loop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chip cooling loop id",
+      "titleRu": "ID контура охлаждения чипов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chip_cool.node.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cooled node id",
+      "titleRu": "ID охлаждаемого узла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chip_cool.coolant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chip_cool.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Coolant flow",
+      "titleRu": "Расход теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chip_cool.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Loop pressure",
+      "titleRu": "Давление контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chip_cool.tj",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Junction temperature",
+      "titleRu": "Температура перехода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chip_cool.dry",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low flow",
+      "titleRu": "Малый расход",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chip_cool.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cold_plate",
+        "microchannel",
+        "spray",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

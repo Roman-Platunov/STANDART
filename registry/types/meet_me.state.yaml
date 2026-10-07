@@ -1,0 +1,20 @@
+sid: 3d528c3d
+path: meet_me.state
+aliases:
+  short: meet_me.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние помещения
+  en: Room state
+fingerprint: sha256:3d528c3d03272ad7072f3bdc886f91f77bf9309dfdd5bca325b1eacceab9057e
+enumValues:
+  - open
+  - restricted
+  - audit
+  - offline

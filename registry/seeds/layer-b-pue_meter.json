@@ -1,0 +1,116 @@
+{
+  "layer": "B19",
+  "name": "layer-b-pue_meter.json",
+  "types": [
+    {
+      "path": "pue_meter.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PUE site id",
+      "titleRu": "ID площадки PUE",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pue_meter.pue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "PUE",
+      "titleRu": "PUE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pue_meter.dcie",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "DCiE",
+      "titleRu": "DCiE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pue_meter.it",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "IT energy rate",
+      "titleRu": "Мощность ИТ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pue_meter.facility",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Facility energy rate",
+      "titleRu": "Мощность инфраструктуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pue_meter.cooling",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Cooling power",
+      "titleRu": "Мощность охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pue_meter.target.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "On target",
+      "titleRu": "В целевом диапазоне",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pue_meter.window",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Window",
+      "titleRu": "Окно",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "instant",
+        "daily",
+        "monthly",
+        "trailing"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

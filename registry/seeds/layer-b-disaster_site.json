@@ -1,0 +1,119 @@
+{
+  "layer": "B19",
+  "name": "layer-b-disaster_site.json",
+  "types": [
+    {
+      "path": "disaster_site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DR site id",
+      "titleRu": "ID площадки DR",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "disaster_site.pair.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paired production site id",
+      "titleRu": "ID парной прод-площадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "disaster_site.rpo.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Achieved RPO",
+      "titleRu": "Достигнутый RPO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "disaster_site.rto.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Achieved RTO",
+      "titleRu": "Достигнутый RTO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "disaster_site.replication",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Replication lag proxy",
+      "titleRu": "Отставание репликации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "disaster_site.capacity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Standby capacity",
+      "titleRu": "Резервная ёмкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "disaster_site.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Failover ready",
+      "titleRu": "Готов к переключению",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "disaster_site.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "DR state",
+      "titleRu": "Состояние DR",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "failover",
+        "failback",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

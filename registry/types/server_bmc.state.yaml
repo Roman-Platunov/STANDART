@@ -1,0 +1,20 @@
+sid: 03cf6218
+path: server_bmc.state
+aliases:
+  short: server_bmc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние питания
+  en: Power state
+fingerprint: sha256:03cf62184000ac171c2c1fd310205a8970fce3a02bbf72610c19a568fc7da936
+enumValues:
+  - on
+  - standby
+  - off
+  - fault

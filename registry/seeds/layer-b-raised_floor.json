@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-raised_floor.json",
+  "types": [
+    {
+      "path": "raised_floor.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Raised floor zone id",
+      "titleRu": "ID зоны фальшпола",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "raised_floor.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Plenum pressure",
+      "titleRu": "Давление пленума",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raised_floor.tiles.open",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Open tile area",
+      "titleRu": "Доля открытых плиток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "raised_floor.height",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Floor height",
+      "titleRu": "Высота пола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raised_floor.leak",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Leak points",
+      "titleRu": "Точек протечки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raised_floor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Plenum temperature",
+      "titleRu": "Температура пленума",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raised_floor.access",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tile removed",
+      "titleRu": "Плитка снята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "raised_floor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Floor state",
+      "titleRu": "Состояние пола",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "low_pressure",
+        "flood",
+        "maintain"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

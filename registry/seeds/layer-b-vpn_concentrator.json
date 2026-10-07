@@ -1,0 +1,114 @@
+{
+  "layer": "B19",
+  "name": "layer-b-vpn_concentrator.json",
+  "types": [
+    {
+      "path": "vpn_concentrator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VPN concentrator id",
+      "titleRu": "ID VPN-концентратора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vpn_concentrator.tunnels",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tunnels up",
+      "titleRu": "Туннелей up",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vpn_concentrator.users",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Users connected",
+      "titleRu": "Пользователей подключено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vpn_concentrator.throughput",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Throughput",
+      "titleRu": "Пропускная способность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vpn_concentrator.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CPU",
+      "titleRu": "CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vpn_concentrator.auth.fail",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Auth failures",
+      "titleRu": "Ошибок аутентификации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vpn_concentrator.ha",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "HA active",
+      "titleRu": "HA активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vpn_concentrator.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Concentrator state",
+      "titleRu": "Состояние концентратора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "standby",
+        "degraded",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

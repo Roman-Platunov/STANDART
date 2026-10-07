@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-waf_appliance.json",
+  "types": [
+    {
+      "path": "waf_appliance.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WAF appliance id",
+      "titleRu": "ID WAF",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waf_appliance.rps",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Requests per second",
+      "titleRu": "Запросов в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waf_appliance.blocks",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Blocks per second",
+      "titleRu": "Блокировок в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waf_appliance.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CPU",
+      "titleRu": "CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waf_appliance.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Added latency",
+      "titleRu": "Добавленная задержка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waf_appliance.rules",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active rules",
+      "titleRu": "Активных правил",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waf_appliance.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bypass mode",
+      "titleRu": "Режим байпаса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "waf_appliance.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "block",
+        "detect",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

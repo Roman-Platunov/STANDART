@@ -1,0 +1,20 @@
+sid: f599da0d
+path: tor_switch.state
+aliases:
+  short: tor_switch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ToR
+  en: ToR state
+fingerprint: sha256:f599da0d4cbac599036dc1db87038ddcc40c23704c4d27020508a39e0f6dc43c
+enumValues:
+  - up
+  - degraded
+  - down
+  - maintain

@@ -1,0 +1,20 @@
+sid: 0da04c4d
+path: nas_head.state
+aliases:
+  short: nas_head.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние контроллера
+  en: Head state
+fingerprint: sha256:0da04c4d9a8b019b6ad5cbb613adf2814dafb15312c824a81dc27363cbbb8ae9
+enumValues:
+  - active
+  - standby
+  - degraded
+  - fault

@@ -1,0 +1,20 @@
+sid: dae45639
+path: rear_door.state
+aliases:
+  short: rear_door.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ТО
+  en: HX state
+fingerprint: sha256:dae456392dc15f42d58bb1ef33eafd3b6823087350e0913c322482ec2065989f
+enumValues:
+  - active
+  - bypass
+  - offline
+  - fault

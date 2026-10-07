@@ -1,0 +1,20 @@
+sid: 808c31dc
+path: cdn_pop.state
+aliases:
+  short: cdn_pop.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние PoP
+  en: PoP state
+fingerprint: sha256:808c31dc7688fb9ea3190468e5a3604ea7c4f550e9c5f917ec61b2d251377d17
+enumValues:
+  - serving
+  - drain
+  - maintain
+  - offline

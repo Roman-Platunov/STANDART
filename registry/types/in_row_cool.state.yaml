@@ -1,0 +1,20 @@
+sid: b60dd590
+path: in_row_cool.state
+aliases:
+  short: in_row_cool.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние охладителя
+  en: Cooler state
+fingerprint: sha256:b60dd5908c3db2a16c4fcc71987cdf1fa008f5f1b96fe8ba9e9879f7365855cb
+enumValues:
+  - run
+  - idle
+  - standby
+  - fault

@@ -1,0 +1,120 @@
+{
+  "layer": "B19",
+  "name": "layer-b-generator_farm.json",
+  "types": [
+    {
+      "path": "generator_farm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Generator farm id",
+      "titleRu": "ID фермы генераторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "generator_farm.online",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Units online",
+      "titleRu": "Агрегатов онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "generator_farm.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Total power",
+      "titleRu": "Суммарная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "generator_farm.fuel",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fuel inventory",
+      "titleRu": "Запас топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "generator_farm.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Fleet runtime",
+      "titleRu": "Наработка парка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "generator_farm.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Average load",
+      "titleRu": "Средняя нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "generator_farm.test",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Test mode",
+      "titleRu": "Режим теста",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "generator_farm.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Farm state",
+      "titleRu": "Состояние фермы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "run",
+        "test",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

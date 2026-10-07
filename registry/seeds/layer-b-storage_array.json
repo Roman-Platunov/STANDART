@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-storage_array.json",
+  "types": [
+    {
+      "path": "storage_array.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Storage array id",
+      "titleRu": "ID дискового массива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "storage_array.iops",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "IOPS",
+      "titleRu": "IOPS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "storage_array.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Latency",
+      "titleRu": "Задержка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "storage_array.capacity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Capacity used",
+      "titleRu": "Использование ёмкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "storage_array.throughput",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Throughput",
+      "titleRu": "Пропускная способность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "storage_array.spares",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hot spares",
+      "titleRu": "Горячих запасных",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "storage_array.degraded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "RAID degraded",
+      "titleRu": "RAID деградирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "storage_array.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Array state",
+      "titleRu": "Состояние массива",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "optimal",
+        "degraded",
+        "rebuild",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

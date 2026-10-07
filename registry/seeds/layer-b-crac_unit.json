@@ -1,0 +1,117 @@
+{
+  "layer": "B19",
+  "name": "layer-b-crac_unit.json",
+  "types": [
+    {
+      "path": "crac_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CRAC id",
+      "titleRu": "ID кондиционера машинного зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crac_unit.supply.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crac_unit.return.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return temperature",
+      "titleRu": "Температура обратки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crac_unit.fan.speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fan speed",
+      "titleRu": "Скорость вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crac_unit.cooling",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Cooling capacity",
+      "titleRu": "Холодопроизводительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crac_unit.dewpoint",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply dewpoint",
+      "titleRu": "Точка росы подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crac_unit.humidify",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Humidifying",
+      "titleRu": "Увлажнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crac_unit.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cool",
+        "dehumidify",
+        "reheat",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "layer": "B19",
+  "name": "layer-b-colocation.json",
+  "types": [
+    {
+      "path": "colocation.cage.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Colo cage id",
+      "titleRu": "ID клетки колокации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "colocation.customer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Customer id",
+      "titleRu": "ID клиента",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "colocation.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Contracted power",
+      "titleRu": "Контрактная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "colocation.used",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Used power",
+      "titleRu": "Используемая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "colocation.racks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Racks",
+      "titleRu": "Стоек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "colocation.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cage temperature",
+      "titleRu": "Температура клетки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "colocation.access",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Access granted",
+      "titleRu": "Доступ разрешён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "colocation.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cage state",
+      "titleRu": "Состояние клетки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "install",
+        "decommission",
+        "suspended"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

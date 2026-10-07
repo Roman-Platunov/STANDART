@@ -1,0 +1,116 @@
+{
+  "layer": "B19",
+  "name": "layer-b-in_row_cool.json",
+  "types": [
+    {
+      "path": "in_row_cool.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "In-row cooler id",
+      "titleRu": "ID внутрирядного охладителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "in_row_cool.supply.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "in_row_cool.return.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return temperature",
+      "titleRu": "Температура обратки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "in_row_cool.fan",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fan speed",
+      "titleRu": "Скорость вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "in_row_cool.cooling",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Cooling capacity",
+      "titleRu": "Холодопроизводительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "in_row_cool.water.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Water flow",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "in_row_cool.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak detected",
+      "titleRu": "Обнаружена протечка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "in_row_cool.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cooler state",
+      "titleRu": "Состояние охладителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

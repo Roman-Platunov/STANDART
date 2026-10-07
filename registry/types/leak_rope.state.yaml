@@ -1,0 +1,20 @@
+sid: "71e03279"
+path: leak_rope.state
+aliases:
+  short: leak_rope.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зоны
+  en: Zone state
+fingerprint: sha256:71e0327977eb30fed744dcacf425d80f1cf672a81dc7f233ba9692796814eb41
+enumValues:
+  - normal
+  - leak
+  - cable_fault
+  - offline

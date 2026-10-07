@@ -1,0 +1,110 @@
+{
+  "layer": "B19",
+  "name": "layer-b-hot_aisle.json",
+  "types": [
+    {
+      "path": "hot_aisle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hot aisle id",
+      "titleRu": "ID горячего ряда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hot_aisle.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return temperature",
+      "titleRu": "Температура обратки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_aisle.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Aisle pressure",
+      "titleRu": "Давление ряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_aisle.racks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Racks in aisle",
+      "titleRu": "Стоек в ряду",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_aisle.exhaust.max",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Max exhaust",
+      "titleRu": "Макс. выхлоп",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_aisle.doors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Doors open",
+      "titleRu": "Открытых дверей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_aisle.overtemp",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overtemperature",
+      "titleRu": "Перегрев",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hot_aisle.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Aisle state",
+      "titleRu": "Состояние ряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sealed",
+        "open",
+        "maintain",
+        "alarm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

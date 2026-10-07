@@ -1,0 +1,109 @@
+{
+  "layer": "B19",
+  "name": "layer-b-meet_me.json",
+  "types": [
+    {
+      "path": "meet_me.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Meet-me room id",
+      "titleRu": "ID узла взаимных соединений",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meet_me.cross.connects",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active cross-connects",
+      "titleRu": "Активных кросс-коннектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meet_me.cabinets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cabinets occupied",
+      "titleRu": "Занято шкафов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meet_me.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Room power",
+      "titleRu": "Мощность помещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meet_me.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Room temperature",
+      "titleRu": "Температура помещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meet_me.orders",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open orders",
+      "titleRu": "Открытых заказов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meet_me.access",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Access in progress",
+      "titleRu": "Доступ выполняется",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meet_me.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Room state",
+      "titleRu": "Состояние помещения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "restricted",
+        "audit",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

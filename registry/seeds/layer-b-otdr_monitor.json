@@ -1,0 +1,111 @@
+{
+  "layer": "B19",
+  "name": "layer-b-otdr_monitor.json",
+  "types": [
+    {
+      "path": "otdr_monitor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OTDR monitor id",
+      "titleRu": "ID монитора OTDR",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "otdr_monitor.fiber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Monitored fiber id",
+      "titleRu": "ID контролируемого волокна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "otdr_monitor.loss",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Event loss",
+      "titleRu": "Потери события",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "otdr_monitor.distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Event distance",
+      "titleRu": "Дальность события",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "otdr_monitor.reflectance",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Reflectance",
+      "titleRu": "Отражение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "otdr_monitor.scan.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Hours since scan",
+      "titleRu": "Часов с последнего скана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "otdr_monitor.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fiber alarm",
+      "titleRu": "Тревога волокна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "otdr_monitor.event",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Event type",
+      "titleRu": "Тип события",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "splice",
+        "bend",
+        "cut",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: dc6e4b0c
+path: roadm.state
+aliases:
+  short: roadm.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ROADM
+  en: ROADM state
+fingerprint: sha256:dc6e4b0c32d6f7f2fb2a3c9553ad8953f73024dbd1a318840e07ecb0c9983cf7
+enumValues:
+  - normal
+  - reconfig
+  - degraded
+  - fault

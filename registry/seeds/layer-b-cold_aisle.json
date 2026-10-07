@@ -1,0 +1,119 @@
+{
+  "layer": "B19",
+  "name": "layer-b-cold_aisle.json",
+  "types": [
+    {
+      "path": "cold_aisle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cold aisle id",
+      "titleRu": "ID холодного ряда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_aisle.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_aisle.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Aisle pressure",
+      "titleRu": "Давление ряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_aisle.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cold_aisle.racks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Racks in aisle",
+      "titleRu": "Стоек в ряду",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_aisle.blanking",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Blanking coverage",
+      "titleRu": "Покрытие заглушками",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cold_aisle.underpress",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Underpressure",
+      "titleRu": "Разряжение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cold_aisle.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Aisle state",
+      "titleRu": "Состояние ряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sealed",
+        "open",
+        "maintain",
+        "alarm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

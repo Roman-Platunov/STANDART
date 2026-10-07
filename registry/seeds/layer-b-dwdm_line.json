@@ -1,0 +1,109 @@
+{
+  "layer": "B19",
+  "name": "layer-b-dwdm_line.json",
+  "types": [
+    {
+      "path": "dwdm_line.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DWDM system id",
+      "titleRu": "ID системы DWDM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dwdm_line.channel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wavelength channel id",
+      "titleRu": "ID длины волны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dwdm_line.power",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Channel power",
+      "titleRu": "Мощность канала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dwdm_line.osnr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "OSNR",
+      "titleRu": "OSNR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dwdm_line.q",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Q-factor",
+      "titleRu": "Q-фактор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dwdm_line.channels",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Channels lit",
+      "titleRu": "Засвеченных каналов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dwdm_line.fec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "FEC active",
+      "titleRu": "FEC активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dwdm_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "degraded",
+        "down",
+        "maintain"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

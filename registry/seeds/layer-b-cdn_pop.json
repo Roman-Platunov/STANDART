@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-cdn_pop.json",
+  "types": [
+    {
+      "path": "cdn_pop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CDN PoP id",
+      "titleRu": "ID PoP CDN",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cdn_pop.bandwidth",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Egress bandwidth",
+      "titleRu": "Исходящая полоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cdn_pop.cache.hit",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cache hit ratio",
+      "titleRu": "Доля попаданий в кэш",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cdn_pop.requests",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Requests per second",
+      "titleRu": "Запросов в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cdn_pop.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Origin latency",
+      "titleRu": "Задержка до origin",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cdn_pop.nodes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cache nodes",
+      "titleRu": "Кэш-узлов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cdn_pop.healthy",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "PoP healthy",
+      "titleRu": "PoP здоров",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cdn_pop.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PoP state",
+      "titleRu": "Состояние PoP",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "serving",
+        "drain",
+        "maintain",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

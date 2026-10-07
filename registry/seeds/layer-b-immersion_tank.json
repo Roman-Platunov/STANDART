@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-immersion_tank.json",
+  "types": [
+    {
+      "path": "immersion_tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Immersion tank id",
+      "titleRu": "ID ванны иммерсии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "immersion_tank.fluid.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fluid temperature",
+      "titleRu": "Температура жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "immersion_tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fluid level",
+      "titleRu": "Уровень жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "immersion_tank.it.load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "IT load",
+      "titleRu": "ИТ-нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "immersion_tank.cdu.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CDU temperature",
+      "titleRu": "Температура CDU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "immersion_tank.nodes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Nodes immersed",
+      "titleRu": "Погружённых узлов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "immersion_tank.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "External leak",
+      "titleRu": "Внешняя протечка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "immersion_tank.fluid",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fluid",
+      "titleRu": "Жидкость",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mineral",
+        "synthetic",
+        "engineered",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

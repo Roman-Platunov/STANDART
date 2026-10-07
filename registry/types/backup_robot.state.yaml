@@ -1,0 +1,21 @@
+sid: c97199bd
+path: backup_robot.state
+aliases:
+  short: backup_robot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние робота
+  en: Robot state
+fingerprint: sha256:c97199bdb171b023941aeb490af6024cf03994812ab1109d01a906690149ba9f
+enumValues:
+  - idle
+  - run
+  - verify
+  - retry
+  - fault

@@ -1,0 +1,119 @@
+{
+  "layer": "B19",
+  "name": "layer-b-ids_sensor.json",
+  "types": [
+    {
+      "path": "ids_sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IDS sensor id",
+      "titleRu": "ID датчика IDS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ids_sensor.alerts",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Alerts per hour",
+      "titleRu": "Алертов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ids_sensor.throughput",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Inspected throughput",
+      "titleRu": "Просматриваемый трафик",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ids_sensor.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sensor CPU",
+      "titleRu": "CPU датчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ids_sensor.drops",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Packet drop",
+      "titleRu": "Дроп пакетов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ids_sensor.signatures",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active signatures",
+      "titleRu": "Активных сигнатур",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ids_sensor.inline",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Inline mode",
+      "titleRu": "Режим inline",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ids_sensor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sensor state",
+      "titleRu": "Состояние датчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "inline",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

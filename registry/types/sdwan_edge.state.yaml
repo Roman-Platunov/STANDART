@@ -1,0 +1,20 @@
+sid: d60fcfcf
+path: sdwan_edge.state
+aliases:
+  short: sdwan_edge.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние edge
+  en: Edge state
+fingerprint: sha256:d60fcfcf9980923a9aeb3cd6510d99fe1c9eb8f38a33c8ee4c5bf8b1ad7184e0
+enumValues:
+  - up
+  - degraded
+  - down
+  - provision

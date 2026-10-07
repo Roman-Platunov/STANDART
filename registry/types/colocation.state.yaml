@@ -1,0 +1,20 @@
+sid: ac0e651d
+path: colocation.state
+aliases:
+  short: colocation.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние клетки
+  en: Cage state
+fingerprint: sha256:ac0e651d5bac160f0713a9285b65f51836fcec3ba711c7d1037343f3027048d5
+enumValues:
+  - active
+  - install
+  - decommission
+  - suspended

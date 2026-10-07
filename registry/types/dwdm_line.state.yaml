@@ -1,0 +1,20 @@
+sid: af4d2d9a
+path: dwdm_line.state
+aliases:
+  short: dwdm_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:af4d2d9a5b347d04291df5ed14182766f7ca003ce3751f1ccac3d4fc53dff6ab
+enumValues:
+  - up
+  - degraded
+  - down
+  - maintain

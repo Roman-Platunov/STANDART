@@ -1,0 +1,20 @@
+sid: 851ce918
+path: crah_unit.state
+aliases:
+  short: crah_unit.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние CRAH
+  en: CRAH state
+fingerprint: sha256:851ce9180b14195560b9f81b76f75086bc31f15c2d74e56f562f88531135a600
+enumValues:
+  - run
+  - idle
+  - defrost
+  - fault

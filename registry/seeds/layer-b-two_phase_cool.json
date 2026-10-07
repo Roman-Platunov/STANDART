@@ -1,0 +1,120 @@
+{
+  "layer": "B19",
+  "name": "layer-b-two_phase_cool.json",
+  "types": [
+    {
+      "path": "two_phase_cool.loop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Two-phase loop id",
+      "titleRu": "ID двухфазного контура",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "two_phase_cool.sat.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Saturation temperature",
+      "titleRu": "Температура насыщения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "two_phase_cool.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Loop pressure",
+      "titleRu": "Давление контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "two_phase_cool.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vapor quality",
+      "titleRu": "Паросодержание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "two_phase_cool.heat",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Heat rejection",
+      "titleRu": "Отвод тепла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "two_phase_cool.pump",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pump speed",
+      "titleRu": "Скорость насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "two_phase_cool.dryout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dryout risk",
+      "titleRu": "Риск осушения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "two_phase_cool.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Loop state",
+      "titleRu": "Состояние контура",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "boil",
+        "condense",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

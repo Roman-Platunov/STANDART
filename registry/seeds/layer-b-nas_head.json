@@ -1,0 +1,119 @@
+{
+  "layer": "B19",
+  "name": "layer-b-nas_head.json",
+  "types": [
+    {
+      "path": "nas_head.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NAS head id",
+      "titleRu": "ID NAS-контроллера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nas_head.ops",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "NFS/SMB ops",
+      "titleRu": "Операций NFS/SMB",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nas_head.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Op latency",
+      "titleRu": "Задержка операций",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nas_head.capacity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Capacity used",
+      "titleRu": "Использование ёмкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nas_head.clients",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Connected clients",
+      "titleRu": "Подключённых клиентов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nas_head.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CPU",
+      "titleRu": "CPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nas_head.ha",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "HA partner up",
+      "titleRu": "HA-партнёр up",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nas_head.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Head state",
+      "titleRu": "Состояние контроллера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "standby",
+        "degraded",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

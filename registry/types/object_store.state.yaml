@@ -1,0 +1,20 @@
+sid: 57037fa3
+path: object_store.state
+aliases:
+  short: object_store.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кластера
+  en: Cluster state
+fingerprint: sha256:57037fa33517274e3233d6655954c07ad2db606ec44bfcdaa8a9078a5591759c
+enumValues:
+  - ok
+  - degraded
+  - rebalance
+  - fault

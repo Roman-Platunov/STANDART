@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-sdwan_edge.json",
+  "types": [
+    {
+      "path": "sdwan_edge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SD-WAN edge id",
+      "titleRu": "ID SD-WAN edge",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sdwan_edge.tunnels",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tunnels up",
+      "titleRu": "Туннелей up",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sdwan_edge.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Underlay latency",
+      "titleRu": "Задержка underlay",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sdwan_edge.loss",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Packet loss",
+      "titleRu": "Потери пакетов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sdwan_edge.jitter.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Jitter",
+      "titleRu": "Джиттер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sdwan_edge.bandwidth",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "Available bandwidth",
+      "titleRu": "Доступная полоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sdwan_edge.sla.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SLA breach",
+      "titleRu": "Нарушение SLA",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sdwan_edge.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Edge state",
+      "titleRu": "Состояние edge",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "degraded",
+        "down",
+        "provision"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

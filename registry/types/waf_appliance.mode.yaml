@@ -1,0 +1,20 @@
+sid: "73354376"
+path: waf_appliance.mode
+aliases:
+  short: waf_appliance.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:73354376f15ca042bcbf59e39c0b9f152e09c73f42c63877c7ea9b6daa852f30
+enumValues:
+  - block
+  - detect
+  - bypass
+  - fault

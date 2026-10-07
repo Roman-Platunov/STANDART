@@ -1,0 +1,119 @@
+{
+  "layer": "B19",
+  "name": "layer-b-gpu_cluster.json",
+  "types": [
+    {
+      "path": "gpu_cluster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GPU cluster id",
+      "titleRu": "ID GPU-кластера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gpu_cluster.node.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GPU node id",
+      "titleRu": "ID GPU-узла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gpu_cluster.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "GPU utilization",
+      "titleRu": "Загрузка GPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gpu_cluster.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "GPU power",
+      "titleRu": "Мощность GPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gpu_cluster.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "GPU temperature",
+      "titleRu": "Температура GPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gpu_cluster.mem",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "GPU memory used",
+      "titleRu": "Память GPU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gpu_cluster.throttle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Thermal throttle",
+      "titleRu": "Термотроттлинг",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gpu_cluster.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cluster state",
+      "titleRu": "Состояние кластера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "train",
+        "infer",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

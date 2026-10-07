@@ -1,0 +1,116 @@
+{
+  "layer": "B19",
+  "name": "layer-b-data_hall.json",
+  "types": [
+    {
+      "path": "data_hall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Data hall id",
+      "titleRu": "ID машинного зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "data_hall.it.load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "IT load",
+      "titleRu": "ИТ-нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "data_hall.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hall temperature",
+      "titleRu": "Температура зала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "data_hall.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hall humidity",
+      "titleRu": "Влажность зала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "data_hall.racks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Racks occupied",
+      "titleRu": "Занято стоек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "data_hall.pue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hall PUE",
+      "titleRu": "PUE зала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "data_hall.hot.spot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hot spot",
+      "titleRu": "Горячая точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "data_hall.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hall state",
+      "titleRu": "Состояние зала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "high_load",
+        "maintenance",
+        "emergency",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

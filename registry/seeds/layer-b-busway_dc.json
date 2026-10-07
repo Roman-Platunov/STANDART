@@ -1,0 +1,115 @@
+{
+  "layer": "B19",
+  "name": "layer-b-busway_dc.json",
+  "types": [
+    {
+      "path": "busway_dc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DC busway id",
+      "titleRu": "ID шинопровода ЦОД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "busway_dc.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Busway current",
+      "titleRu": "Ток шинопровода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "busway_dc.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Busway voltage",
+      "titleRu": "Напряжение шинопровода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "busway_dc.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Joint temperature",
+      "titleRu": "Температура стыка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "busway_dc.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Load",
+      "titleRu": "Нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "busway_dc.taps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tap-offs active",
+      "titleRu": "Активных отводов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "busway_dc.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Busway alarm",
+      "titleRu": "Тревога шинопровода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "busway_dc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Busway state",
+      "titleRu": "Состояние шинопровода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "energized",
+        "isolated",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

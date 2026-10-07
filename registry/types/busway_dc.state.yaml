@@ -1,0 +1,20 @@
+sid: 34f81fa0
+path: busway_dc.state
+aliases:
+  short: busway_dc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шинопровода
+  en: Busway state
+fingerprint: sha256:34f81fa0f0fb7d88b9d161d39faf14ae8040b6df9dc3431ccf9051d15b48d594
+enumValues:
+  - energized
+  - isolated
+  - maintain
+  - fault
