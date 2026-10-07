@@ -1,0 +1,22 @@
+sid: cc46bb33
+path: distillery.state
+aliases:
+  short: distillery.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дистилляции
+  en: Distillery state
+fingerprint: sha256:cc46bb3312424ecbdcde2f3415cda94fc5207ee2b7e9eef5b7b07904194136ba
+enumValues:
+  - idle
+  - heat
+  - run
+  - cut
+  - cool
+  - fault

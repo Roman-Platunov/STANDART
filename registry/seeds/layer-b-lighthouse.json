@@ -1,0 +1,116 @@
+{
+  "layer": "B7",
+  "name": "layer-b-lighthouse.json",
+  "types": [
+    {
+      "path": "lighthouse.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lighthouse / beacon id",
+      "titleRu": "ID маяка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lighthouse.lamp.intensity",
+      "kind": "quantity",
+      "unit": "cd",
+      "titleEn": "Lamp intensity",
+      "titleRu": "Сила света",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lighthouse.rotation.period",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Rotation period",
+      "titleRu": "Период вращения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lighthouse.visibility",
+      "kind": "quantity",
+      "unit": "NM",
+      "titleEn": "Nominal range",
+      "titleRu": "Дальность видимости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lighthouse.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Beacon battery SoC",
+      "titleRu": "SoC батареи маяка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lighthouse.lamp.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lamp on",
+      "titleRu": "Лампа включена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lighthouse.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Beacon fault",
+      "titleRu": "Неисправность маяка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lighthouse.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AtoN type",
+      "titleRu": "Тип СНО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lighthouse",
+        "buoy",
+        "racon",
+        "ais_aton",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B7",
+  "name": "layer-b-sugar_mill.json",
+  "types": [
+    {
+      "path": "sugar_mill.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sugar mill id",
+      "titleRu": "ID сахарного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sugar_mill.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sugar batch id",
+      "titleRu": "ID партии сахара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sugar_mill.cane.pol",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cane pol",
+      "titleRu": "Поляризация тростника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sugar_mill.juice.brix",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Juice Brix",
+      "titleRu": "Брикс сока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sugar_mill.evaporator.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Evaporator temperature",
+      "titleRu": "Температура выпарки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sugar_mill.crystal.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Crystal size",
+      "titleRu": "Размер кристаллов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sugar_mill.bagasse.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bagasse moisture",
+      "titleRu": "Влажность багассы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sugar_mill.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sugar mill product",
+      "titleRu": "Продукт сахарного завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "raw",
+        "refined",
+        "molasses",
+        "ethanol",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 5e64f97d
+path: biogas.state
+aliases:
+  short: biogas.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние биогаза
+  en: Biogas plant state
+fingerprint: sha256:5e64f97d86ce930641b137845d549a6f517dd3e4d3a047fc9e2d9e2c6bbc335f
+enumValues:
+  - feed
+  - digest
+  - store
+  - generate
+  - fault

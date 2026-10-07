@@ -1,0 +1,128 @@
+{
+  "layer": "B7",
+  "name": "layer-b-archive_climate.json",
+  "types": [
+    {
+      "path": "archive_climate.vault.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Archive vault id",
+      "titleRu": "ID хранилища архива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "archive_climate.logger.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Climate logger id",
+      "titleRu": "ID климатического логгера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "archive_climate.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Vault temperature",
+      "titleRu": "Температура хранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "archive_climate.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vault RH",
+      "titleRu": "ОВх хранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "archive_climate.lux",
+      "kind": "quantity",
+      "unit": "lx",
+      "titleEn": "Light level",
+      "titleRu": "Освещённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "archive_climate.uv",
+      "kind": "quantity",
+      "unit": "uW/cm2",
+      "titleEn": "UV irradiance",
+      "titleRu": "УФ-облучённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "archive_climate.pollutant.voc",
+      "kind": "quantity",
+      "unit": "ppb",
+      "titleEn": "VOC level",
+      "titleRu": "Уровень ЛОС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "archive_climate.excursion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Climate excursion",
+      "titleRu": "Климатическая экскурсия",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "archive_climate.collection",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Collection type",
+      "titleRu": "Тип коллекции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "paper",
+        "film",
+        "textile",
+        "digital_media",
+        "mixed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

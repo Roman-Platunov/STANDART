@@ -1,0 +1,22 @@
+sid: c80faf58
+path: meat_proc.stage
+aliases:
+  short: meat_proc.stage
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Стадия мясопереработки
+  en: Meat process stage
+fingerprint: sha256:c80faf58613b18c5a84009f73416d3146547375c1db7f54ecfd576a3c192e727
+enumValues:
+  - receive
+  - slaughter
+  - cut
+  - grind
+  - pack
+  - ship

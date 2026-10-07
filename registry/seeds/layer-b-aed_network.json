@@ -1,0 +1,111 @@
+{
+  "layer": "B7",
+  "name": "layer-b-aed_network.json",
+  "types": [
+    {
+      "path": "aed_network.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AED device id",
+      "titleRu": "ID АВД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aed_network.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AED site id",
+      "titleRu": "ID места установки АВД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aed_network.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "AED ready",
+      "titleRu": "АВД готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aed_network.pads.expired",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pads expired",
+      "titleRu": "Электроды просрочены",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aed_network.battery.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "AED battery",
+      "titleRu": "Батарея АВД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aed_network.self_test.age_h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Hours since self-test",
+      "titleRu": "Часы с самотеста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aed_network.location.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "AED map location ref",
+      "titleRu": "Референс на карте",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aed_network.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AED status",
+      "titleRu": "Статус АВД",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "needs_service",
+        "in_use",
+        "missing"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

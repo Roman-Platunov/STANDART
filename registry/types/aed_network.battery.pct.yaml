@@ -1,0 +1,18 @@
+sid: e379dca2
+path: aed_network.battery.pct
+aliases:
+  short: battery.pct
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея АВД
+  en: AED battery
+fingerprint: sha256:e379dca20f58c174e7c16e3d6eb55a0bf27953d8bbf2b43d597b775f7dbd71b7
+range:
+  min: 0
+  max: 100

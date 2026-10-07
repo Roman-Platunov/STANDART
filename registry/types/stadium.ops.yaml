@@ -1,0 +1,22 @@
+sid: "19152985"
+path: stadium.ops
+aliases:
+  short: stadium.ops
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза работы стадиона
+  en: Stadium ops phase
+fingerprint: sha256:1915298569f0f348302f17a6ae0714d17e67738628920130b5268c459c2f51d4
+enumValues:
+  - closed
+  - ingress
+  - in_play
+  - halftime
+  - egress
+  - clear

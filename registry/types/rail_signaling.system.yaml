@@ -1,0 +1,21 @@
+sid: 3d1b210a
+path: rail_signaling.system
+aliases:
+  short: rail_signaling.system
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Система СЦБ
+  en: Signaling system
+fingerprint: sha256:3d1b210aa89282c6ba9283fd14b61322a4ff15dab654b00eb23dc2b612701de6
+enumValues:
+  - etcs
+  - ptc
+  - cbtc
+  - relay
+  - other

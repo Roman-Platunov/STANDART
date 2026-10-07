@@ -1,0 +1,20 @@
+sid: bc277bcb
+path: vaccine_coldchain.status
+aliases:
+  short: vaccine_coldchain.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус холодовой цепи
+  en: Cold-chain status
+fingerprint: sha256:bc277bcb23deb54d3ec27729f3a7653fbf9db51e0a77cc0b3bb6f05837e8b412
+enumValues:
+  - ok
+  - warning
+  - compromised
+  - quarantine

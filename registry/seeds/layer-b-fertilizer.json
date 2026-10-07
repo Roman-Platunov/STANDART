@@ -1,0 +1,134 @@
+{
+  "layer": "B7",
+  "name": "layer-b-fertilizer.json",
+  "types": [
+    {
+      "path": "fertilizer.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fertilizer plant id",
+      "titleRu": "ID завода удобрений",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fertilizer.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fertilizer batch id",
+      "titleRu": "ID партии удобрений",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fertilizer.reactor.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fertilizer.reactor.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Reactor pressure",
+      "titleRu": "Давление реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fertilizer.nh3.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Ammonia feed rate",
+      "titleRu": "Подача аммиака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fertilizer.npk.n",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Nitrogen content",
+      "titleRu": "Содержание N",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fertilizer.granule.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Granule size",
+      "titleRu": "Размер гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fertilizer.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fertilizer.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fertilizer product",
+      "titleRu": "Тип удобрения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "urea",
+        "an",
+        "npk",
+        "dap",
+        "map",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

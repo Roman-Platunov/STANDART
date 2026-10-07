@@ -1,0 +1,110 @@
+{
+  "layer": "B7",
+  "name": "layer-b-infusion_pump.json",
+  "types": [
+    {
+      "path": "infusion_pump.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Infusion pump id",
+      "titleRu": "ID инфузомата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "infusion_pump.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Infusion order id",
+      "titleRu": "ID назначения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "infusion_pump.rate",
+      "kind": "quantity",
+      "unit": "mL/h",
+      "titleEn": "Infusion rate",
+      "titleRu": "Скорость инфузии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "infusion_pump.vtbi",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Volume to be infused",
+      "titleRu": "Объём к введению",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "infusion_pump.infused",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Volume infused",
+      "titleRu": "Введённый объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "infusion_pump.occlusion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Occlusion alarm",
+      "titleRu": "Окклюзия",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "infusion_pump.air_in_line",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Air-in-line alarm",
+      "titleRu": "Воздух в линии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "infusion_pump.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Infusion mode",
+      "titleRu": "Режим инфузии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "continuous",
+        "bolus",
+        "pca",
+        "taper",
+        "standby"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

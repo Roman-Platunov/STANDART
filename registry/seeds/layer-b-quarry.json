@@ -1,0 +1,125 @@
+{
+  "layer": "B7",
+  "name": "layer-b-quarry.json",
+  "types": [
+    {
+      "path": "quarry.blast.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blast pattern id",
+      "titleRu": "ID взрывного блока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "quarry.face.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Quarry face id",
+      "titleRu": "ID уступа карьера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "quarry.blast.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Blast vibration PPV",
+      "titleRu": "Вибрация взрыва PPV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quarry.haul.tonnage",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Hauled tonnage",
+      "titleRu": "Перевезённая масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quarry.crusher.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Crusher throughput",
+      "titleRu": "Производительность дробилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quarry.pit.slope_angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Pit slope angle",
+      "titleRu": "Угол откоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quarry.water.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Pit water level",
+      "titleRu": "Уровень воды в карьере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quarry.blast.clearance",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blast clearance given",
+      "titleRu": "Разрешение на взрыв",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "quarry.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Quarry stage",
+      "titleRu": "Стадия карьера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "drill",
+        "blast",
+        "load",
+        "haul",
+        "crush",
+        "stockpile"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B7",
+  "name": "layer-b-meat_proc.json",
+  "types": [
+    {
+      "path": "meat_proc.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Meat lot id",
+      "titleRu": "ID партии мяса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meat_proc.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Processing line id",
+      "titleRu": "ID линии мясопереработки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meat_proc.carcass.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Carcass weight",
+      "titleRu": "Масса туши",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meat_proc.chill.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chill room temperature",
+      "titleRu": "Температура охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meat_proc.metal.detect_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Metal detector hits",
+      "titleRu": "Срабатывания металлодетектора",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meat_proc.pack.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Vacuum pack pressure",
+      "titleRu": "Вакуум упаковки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meat_proc.haccp.hold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "HACCP hold",
+      "titleRu": "Удержание по HACCP",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meat_proc.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Meat process stage",
+      "titleRu": "Стадия мясопереработки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receive",
+        "slaughter",
+        "cut",
+        "grind",
+        "pack",
+        "ship"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

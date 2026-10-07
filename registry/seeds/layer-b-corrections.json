@@ -1,0 +1,106 @@
+{
+  "layer": "B7",
+  "name": "layer-b-corrections.json",
+  "types": [
+    {
+      "path": "corrections.facility.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Correctional facility id",
+      "titleRu": "ID ИУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "corrections.wing.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Housing wing id",
+      "titleRu": "ID корпуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "corrections.population",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Facility population",
+      "titleRu": "Численность",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "internal",
+      "status": "stable"
+    },
+    {
+      "path": "corrections.lock.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active lock count",
+      "titleRu": "Число активных замков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "corrections.door.forced",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Forced door alarm",
+      "titleRu": "Взлом двери",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "corrections.duress.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Duress alarm",
+      "titleRu": "Тревога принуждения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "corrections.radio.channels",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active radio channels",
+      "titleRu": "Активные радиоканалы",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "corrections.lockdown",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lockdown level",
+      "titleRu": "Уровень изоляции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "partial",
+        "full",
+        "emergency"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

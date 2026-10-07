@@ -1,0 +1,131 @@
+{
+  "layer": "B7",
+  "name": "layer-b-soil_carbon.json",
+  "types": [
+    {
+      "path": "soil_carbon.plot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Soil carbon plot id",
+      "titleRu": "ID участка углерода почвы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soil_carbon.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Soil sample id",
+      "titleRu": "ID пробы почвы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soil_carbon.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soil organic carbon",
+      "titleRu": "Органический углерод почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "soil_carbon.bulk.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Bulk density",
+      "titleRu": "Плотность сложения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soil_carbon.stock",
+      "kind": "quantity",
+      "unit": "t/ha",
+      "titleEn": "Carbon stock",
+      "titleRu": "Запас углерода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soil_carbon.n2o.flux",
+      "kind": "quantity",
+      "unit": "kg/ha/d",
+      "titleEn": "N2O flux",
+      "titleRu": "Поток N₂O",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soil_carbon.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soil moisture",
+      "titleRu": "Влажность почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "soil_carbon.lab.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Lab report ref",
+      "titleRu": "Референс лабораторного отчёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soil_carbon.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SOC method",
+      "titleRu": "Метод SOC",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry_combustion",
+        "lois",
+        "mir",
+        "nir",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

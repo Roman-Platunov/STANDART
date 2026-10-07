@@ -1,0 +1,21 @@
+sid: 4ae05c0e
+path: wte.state
+aliases:
+  short: wte.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние WtE
+  en: WTE plant state
+fingerprint: sha256:4ae05c0ec2fa5f03f3a2b4457807a4ab843f8ea4d01da2883b9285706977e6a7
+enumValues:
+  - start
+  - run
+  - ramp_down
+  - outage
+  - fault

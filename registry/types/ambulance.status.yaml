@@ -1,0 +1,22 @@
+sid: 64a357b2
+path: ambulance.status
+aliases:
+  short: ambulance.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус СМП
+  en: Ambulance status
+fingerprint: sha256:64a357b216f28d774bb11b3df031d15fe171bef1f783340c42836ed4f43b170e
+enumValues:
+  - available
+  - dispatched
+  - on_scene
+  - transport
+  - hospital
+  - out_of_service

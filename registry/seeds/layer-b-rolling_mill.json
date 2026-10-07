@@ -1,0 +1,125 @@
+{
+  "layer": "B7",
+  "name": "layer-b-rolling_mill.json",
+  "types": [
+    {
+      "path": "rolling_mill.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rolling stand id",
+      "titleRu": "ID клети",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rolling_mill.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rolling_mill.entry.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Entry thickness",
+      "titleRu": "Толщина на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rolling_mill.exit.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Exit thickness",
+      "titleRu": "Толщина на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rolling_mill.roll.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Roll force",
+      "titleRu": "Усилие прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rolling_mill.roll.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Strip speed",
+      "titleRu": "Скорость полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rolling_mill.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Strip tension",
+      "titleRu": "Натяжение полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rolling_mill.temp.strip",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Strip temperature",
+      "titleRu": "Температура полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rolling_mill.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill product",
+      "titleRu": "Продукт прокатки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hot_strip",
+        "cold_strip",
+        "plate",
+        "bar",
+        "wire"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "layer": "B7",
+  "name": "layer-b-dairy_extend.json",
+  "types": [
+    {
+      "path": "dairy_extend.silo.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Milk silo id",
+      "titleRu": "ID молочного силоса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dairy_extend.raw.somatic_cells",
+      "kind": "quantity",
+      "unit": "/mL",
+      "titleEn": "Somatic cell count",
+      "titleRu": "Соматические клетки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy_extend.pasteur.htst_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "HTST pasteurization temp",
+      "titleRu": "Температура пастеризации HTST",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy_extend.homogen.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Homogenizer pressure",
+      "titleRu": "Давление гомогенизатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy_extend.separator.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Separator speed",
+      "titleRu": "Обороты сепаратора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy_extend.cheese.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cheese moisture",
+      "titleRu": "Влажность сыра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dairy_extend.culture.activity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Starter culture activity",
+      "titleRu": "Активность закваски",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy_extend.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dairy product type",
+      "titleRu": "Тип молочного продукта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "milk",
+        "yogurt",
+        "cheese",
+        "butter",
+        "powder",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

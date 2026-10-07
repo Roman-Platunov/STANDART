@@ -1,0 +1,126 @@
+{
+  "layer": "B7",
+  "name": "layer-b-distillery.json",
+  "types": [
+    {
+      "path": "distillery.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spirit batch id",
+      "titleRu": "ID партии дистиллята",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "distillery.still.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Still temperature",
+      "titleRu": "Температура куба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distillery.still.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Still pressure",
+      "titleRu": "Давление куба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distillery.vapor.abv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vapor ABV",
+      "titleRu": "Крепость паров",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "distillery.spirit.abv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Spirit ABV",
+      "titleRu": "Крепость спирта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "distillery.cut.heads_pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Heads cut fraction",
+      "titleRu": "Доля голов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "distillery.leak.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spirit vapor leak",
+      "titleRu": "Утечка паров",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "distillery.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Distillery state",
+      "titleRu": "Состояние дистилляции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "heat",
+        "run",
+        "cut",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

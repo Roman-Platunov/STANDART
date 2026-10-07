@@ -1,0 +1,130 @@
+{
+  "layer": "B7",
+  "name": "layer-b-brewery.json",
+  "types": [
+    {
+      "path": "brewery.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brew batch id",
+      "titleRu": "ID партии пива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brewery.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brew tank id",
+      "titleRu": "ID танкового оборудования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brewery.mash.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mash temperature",
+      "titleRu": "Температура затирания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brewery.wort.gravity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wort specific gravity",
+      "titleRu": "Плотность сусла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brewery.ferment.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fermentation temperature",
+      "titleRu": "Температура брожения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brewery.ferment.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Fermenter pressure",
+      "titleRu": "Давление в ферментере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brewery.yeast.viability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Yeast viability",
+      "titleRu": "Жизнеспособность дрожжей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "brewery.co2.dissolved",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Dissolved CO2",
+      "titleRu": "Растворённый CO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brewery.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Brewery stage",
+      "titleRu": "Стадия пивоварения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mash",
+        "lauter",
+        "boil",
+        "ferment",
+        "condition",
+        "package"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

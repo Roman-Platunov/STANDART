@@ -1,0 +1,128 @@
+{
+  "layer": "B7",
+  "name": "layer-b-stadium.json",
+  "types": [
+    {
+      "path": "stadium.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stadium id",
+      "titleRu": "ID стадиона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stadium.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stadium event id",
+      "titleRu": "ID события",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stadium.attendance",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Attendance",
+      "titleRu": "Посещаемость",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stadium.turnstile.rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Turnstile rate",
+      "titleRu": "Проход через турникеты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stadium.crowd.density",
+      "kind": "quantity",
+      "unit": "/m2",
+      "titleEn": "Crowd density",
+      "titleRu": "Плотность толпы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stadium.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Crowd noise",
+      "titleRu": "Шум трибун",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stadium.pitch.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pitch moisture",
+      "titleRu": "Влажность газона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stadium.ejection.gate_open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ejection gate open",
+      "titleRu": "Эвакуационные ворота открыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stadium.ops",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stadium ops phase",
+      "titleRu": "Фаза работы стадиона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "ingress",
+        "in_play",
+        "halftime",
+        "egress",
+        "clear"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B7",
+  "name": "layer-b-geothermal.json",
+  "types": [
+    {
+      "path": "geothermal.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Geothermal well id",
+      "titleRu": "ID геотермальной скважины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "geothermal.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Geothermal plant id",
+      "titleRu": "ID геотермальной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "geothermal.well.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wellhead temperature",
+      "titleRu": "Температура устья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geothermal.well.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Wellhead pressure",
+      "titleRu": "Давление устья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geothermal.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Brine mass flow",
+      "titleRu": "Расход рассола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geothermal.silica",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Silica concentration",
+      "titleRu": "Концентрация кремнезёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geothermal.power.net",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Net electric power",
+      "titleRu": "Чистая электрическая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geothermal.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Geothermal type",
+      "titleRu": "Тип геотермальной станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flash",
+        "binary",
+        "dry_steam",
+        "enhanced"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

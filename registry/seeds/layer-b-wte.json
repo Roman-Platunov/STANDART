@@ -1,0 +1,138 @@
+{
+  "layer": "B7",
+  "name": "layer-b-wte.json",
+  "types": [
+    {
+      "path": "wte.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Waste-to-energy plant id",
+      "titleRu": "ID мусоросжигательного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wte.boiler.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WTE boiler id",
+      "titleRu": "ID котла WtE",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wte.furnace.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура топки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wte.steam.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wte.steam.flow",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steam flow",
+      "titleRu": "Расход пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wte.emissions.nox",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "NOx emissions",
+      "titleRu": "Выбросы NOx",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wte.emissions.dioxin",
+      "kind": "quantity",
+      "unit": "ng/m3",
+      "titleEn": "Dioxin TEQ",
+      "titleRu": "Диоксины TEQ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wte.ash.bottom_mass",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Bottom ash mass",
+      "titleRu": "Масса шлака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wte.power.export",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Exported electric power",
+      "titleRu": "Отпускаемая электроэнергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wte.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "WTE plant state",
+      "titleRu": "Состояние WtE",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "run",
+        "ramp_down",
+        "outage",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

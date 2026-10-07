@@ -1,0 +1,116 @@
+{
+  "layer": "B7",
+  "name": "layer-b-pulp.json",
+  "types": [
+    {
+      "path": "pulp.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pulp batch id",
+      "titleRu": "ID партии целлюлозы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pulp.digester.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pulp digester id",
+      "titleRu": "ID варочного котла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pulp.digester.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Digester temperature",
+      "titleRu": "Температура варки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulp.kappa",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Kappa number",
+      "titleRu": "Число Каппа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulp.stock.freeness",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "CSF freeness",
+      "titleRu": "Степень помола CSF",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulp.bleach.cl2_eq",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Chlorine equivalent",
+      "titleRu": "Хлор-эквивалент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulp.stock.consistency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pulp consistency",
+      "titleRu": "Концентрация массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pulp.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pulp process",
+      "titleRu": "Процесс целлюлозы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "kraft",
+        "sulfite",
+        "mechanical",
+        "recycle",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

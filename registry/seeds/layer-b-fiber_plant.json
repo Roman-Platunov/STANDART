@@ -1,0 +1,125 @@
+{
+  "layer": "B7",
+  "name": "layer-b-fiber_plant.json",
+  "types": [
+    {
+      "path": "fiber_plant.preform.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Optical preform id",
+      "titleRu": "ID преформы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fiber_plant.draw.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Draw tower id",
+      "titleRu": "ID вытяжной башни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fiber_plant.draw.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Draw speed",
+      "titleRu": "Скорость вытяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fiber_plant.fiber.diameter",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Fiber diameter",
+      "titleRu": "Диаметр волокна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fiber_plant.coating.diameter",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Coating diameter",
+      "titleRu": "Диаметр покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fiber_plant.attenuation",
+      "kind": "quantity",
+      "unit": "dB/km",
+      "titleEn": "Attenuation",
+      "titleRu": "Затухание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fiber_plant.proof.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Proof test tension",
+      "titleRu": "Натяжение proof-теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fiber_plant.break.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fiber break detected",
+      "titleRu": "Обрыв волокна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fiber_plant.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fiber plant stage",
+      "titleRu": "Стадия производства волокна",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "preform",
+        "draw",
+        "coat",
+        "proof",
+        "spool",
+        "test"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

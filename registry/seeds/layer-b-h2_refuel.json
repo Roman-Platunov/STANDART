@@ -1,0 +1,122 @@
+{
+  "layer": "B7",
+  "name": "layer-b-h2_refuel.json",
+  "types": [
+    {
+      "path": "h2_refuel.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "H2 refueling station id",
+      "titleRu": "ID водородной заправки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "h2_refuel.dispenser.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "H2 dispenser id",
+      "titleRu": "ID водородного раздаточного",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "h2_refuel.storage.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Storage pressure",
+      "titleRu": "Давление хранения H₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_refuel.dispenser.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Dispenser nozzle pressure",
+      "titleRu": "Давление на пистолете",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_refuel.dispenser.flow",
+      "kind": "quantity",
+      "unit": "kg/min",
+      "titleEn": "H2 flow rate",
+      "titleRu": "Расход водорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_refuel.dispenser.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Precooled H2 temperature",
+      "titleRu": "Температура охлаждённого H₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_refuel.session.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Session dispensed mass",
+      "titleRu": "Масса за сессию",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_refuel.leak.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "H2 leak detected",
+      "titleRu": "Утечка водорода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "h2_refuel.protocol",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Refueling protocol",
+      "titleRu": "Протокол заправки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "h70",
+        "h35",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

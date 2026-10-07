@@ -1,0 +1,124 @@
+{
+  "layer": "B7",
+  "name": "layer-b-fab_metrology.json",
+  "types": [
+    {
+      "path": "fab_metrology.tool.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metrology tool id",
+      "titleRu": "ID метрологического инструмента",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fab_metrology.wafer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wafer id",
+      "titleRu": "ID пластины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fab_metrology.overlay",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Overlay error",
+      "titleRu": "Ошибка совмещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_metrology.cd",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Critical dimension",
+      "titleRu": "Критический размер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_metrology.film.thickness",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Film thickness",
+      "titleRu": "Толщина плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_metrology.particle.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Particle count",
+      "titleRu": "Число частиц",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_metrology.defect.density",
+      "kind": "quantity",
+      "unit": "/cm2",
+      "titleEn": "Defect density",
+      "titleRu": "Плотность дефектов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_metrology.spc.oos",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SPC out of spec",
+      "titleRu": "SPC вне допуска",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fab_metrology.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Metrology method",
+      "titleRu": "Метод метрологии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cdsem",
+        "overlay",
+        "ellipsometry",
+        "afm",
+        "xray",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

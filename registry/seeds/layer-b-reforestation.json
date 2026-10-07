@@ -1,0 +1,119 @@
+{
+  "layer": "B7",
+  "name": "layer-b-reforestation.json",
+  "types": [
+    {
+      "path": "reforestation.project.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reforestation project id",
+      "titleRu": "ID проекта лесовосстановления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reforestation.plot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Planting plot id",
+      "titleRu": "ID участка посадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reforestation.seedlings.planted",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Seedlings planted",
+      "titleRu": "Высажено саженцев",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reforestation.survival",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Survival rate",
+      "titleRu": "Приживаемость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "reforestation.canopy.cover",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Canopy cover",
+      "titleRu": "Сомкнутость крон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "reforestation.biomass",
+      "kind": "quantity",
+      "unit": "t/ha",
+      "titleEn": "Aboveground biomass",
+      "titleRu": "Надземная биомасса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reforestation.ndvi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Plot NDVI",
+      "titleRu": "NDVI участка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reforestation.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reforestation stage",
+      "titleRu": "Стадия лесовосстановления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "site_prep",
+        "plant",
+        "tend",
+        "monitor",
+        "complete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

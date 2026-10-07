@@ -1,0 +1,122 @@
+{
+  "layer": "B7",
+  "name": "layer-b-wildfire.json",
+  "types": [
+    {
+      "path": "wildfire.incident.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wildfire incident id",
+      "titleRu": "ID лесного пожара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildfire.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wildfire sensor id",
+      "titleRu": "ID датчика пожара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildfire.fwi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fire weather index",
+      "titleRu": "Индекс пожароопасности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildfire.spread.rate",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Spread rate",
+      "titleRu": "Скорость распространения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildfire.area.ha",
+      "kind": "quantity",
+      "unit": "ha",
+      "titleEn": "Burned area",
+      "titleRu": "Площадь выгорания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildfire.smoke.pm25",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Smoke PM2.5",
+      "titleRu": "Дым PM2.5",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildfire.evacuation.order",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Evacuation order active",
+      "titleRu": "Эвакуация объявлена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wildfire.hotspot.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Hotspot imagery ref",
+      "titleRu": "Референс горячих точек",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildfire.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wildfire phase",
+      "titleRu": "Фаза лесного пожара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "watch",
+        "initial",
+        "extended",
+        "contained",
+        "out"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B7",
+  "name": "layer-b-vaccine_coldchain.json",
+  "types": [
+    {
+      "path": "vaccine_coldchain.shipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vaccine shipment id",
+      "titleRu": "ID партии вакцин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vaccine_coldchain.logger.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Temp logger id",
+      "titleRu": "ID логгера температуры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vaccine_coldchain.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Shipment temperature",
+      "titleRu": "Температура перевозки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vaccine_coldchain.excursion.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Excursion duration",
+      "titleRu": "Длительность экскурсии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vaccine_coldchain.doses",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dose count",
+      "titleRu": "Число доз",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vaccine_coldchain.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cold-chain alarm",
+      "titleRu": "Авария холодовой цепи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vaccine_coldchain.range",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Required temp range",
+      "titleRu": "Требуемый диапазон",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "frozen",
+        "refrigerated",
+        "ultra_cold",
+        "controlled_room"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vaccine_coldchain.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cold-chain status",
+      "titleRu": "Статус холодовой цепи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "warning",
+        "compromised",
+        "quarantine"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

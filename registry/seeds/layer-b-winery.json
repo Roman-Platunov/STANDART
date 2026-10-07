@@ -1,0 +1,134 @@
+{
+  "layer": "B7",
+  "name": "layer-b-winery.json",
+  "types": [
+    {
+      "path": "winery.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wine lot id",
+      "titleRu": "ID партии вина",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "winery.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wine tank id",
+      "titleRu": "ID винной ёмкости",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "winery.must.brix",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Must Brix",
+      "titleRu": "Брикс сусла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winery.must.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Must pH",
+      "titleRu": "pH сусла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winery.barrel.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Barrel temperature",
+      "titleRu": "Температура бочки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winery.barrel.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cellar humidity",
+      "titleRu": "Влажность погреба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "winery.so2.free",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Free SO2",
+      "titleRu": "Свободный SO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winery.alcohol.abv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Alcohol by volume",
+      "titleRu": "Крепость ABV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "winery.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Winery stage",
+      "titleRu": "Стадия виноделия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "crush",
+        "ferment",
+        "press",
+        "age",
+        "blend",
+        "bottle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

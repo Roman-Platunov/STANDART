@@ -1,0 +1,21 @@
+sid: "7183e134"
+path: fire_protection.state
+aliases:
+  short: fire_protection.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ОПС
+  en: Fire system state
+fingerprint: sha256:7183e1348a04c51de1d9da5f3802c2b1b04ea72886bcf995507ee599c75358e1
+enumValues:
+  - normal
+  - alarm
+  - supervisory
+  - trouble
+  - test

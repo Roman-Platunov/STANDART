@@ -1,0 +1,18 @@
+sid: 220db222
+path: pumped_storage.efficiency
+aliases:
+  short: pumped_storage.efficiency
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: КПД цикла
+  en: Round-trip efficiency
+fingerprint: sha256:220db2227b16e237004864ad8938efa2e32f54830e8dcedb290720346d0147a3
+range:
+  min: 0
+  max: 100

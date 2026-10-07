@@ -1,0 +1,127 @@
+{
+  "layer": "B7",
+  "name": "layer-b-der_grid.json",
+  "types": [
+    {
+      "path": "der_grid.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DER asset id",
+      "titleRu": "ID объекта ВИЭ/накопителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "der_grid.feeder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Distribution feeder id",
+      "titleRu": "ID фидера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "der_grid.export.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Export power",
+      "titleRu": "Мощность выдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "der_grid.import.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Import power",
+      "titleRu": "Мощность потребления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "der_grid.pf",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Power factor",
+      "titleRu": "Коэффициент мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "der_grid.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "POC voltage",
+      "titleRu": "Напряжение в точке присоединения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "der_grid.curtailment",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Curtailment fraction",
+      "titleRu": "Доля ограничения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "der_grid.island.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Island detected",
+      "titleRu": "Островной режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "der_grid.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "DER mode",
+      "titleRu": "Режим DER",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grid_follow",
+        "grid_form",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+sid: 11ac85f2
+path: gas_detection.gas
+aliases:
+  short: gas_detection.gas
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Целевой газ
+  en: Target gas
+fingerprint: sha256:11ac85f2a67805e61e04b79be53db659aa7ac7f4c4950dea9eedd90914f19dd2
+enumValues:
+  - ch4
+  - h2s
+  - co
+  - o2
+  - nh3
+  - voc
+  - other

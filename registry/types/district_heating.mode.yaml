@@ -1,0 +1,21 @@
+sid: 69d76f1e
+path: district_heating.mode
+aliases:
+  short: district_heating.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим теплосети
+  en: District heating mode
+fingerprint: sha256:69d76f1ebe87ae2075cc58af938d88fbfdeea491171019946ac78fbe402c507c
+enumValues:
+  - heat
+  - idle
+  - bypass
+  - maintenance
+  - fault

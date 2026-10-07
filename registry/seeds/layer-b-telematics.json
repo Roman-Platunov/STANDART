@@ -1,0 +1,125 @@
+{
+  "layer": "B7",
+  "name": "layer-b-telematics.json",
+  "types": [
+    {
+      "path": "telematics.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Telematics vehicle id",
+      "titleRu": "ID ТС телематики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "telematics.policy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Insurance policy id",
+      "titleRu": "ID страхового полиса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "telematics.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Vehicle speed",
+      "titleRu": "Скорость ТС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telematics.accel.harsh",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Harsh accel events",
+      "titleRu": "Резкие ускорения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telematics.brake.harsh",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Harsh brake events",
+      "titleRu": "Резкие торможения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telematics.score.driving",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Driving score",
+      "titleRu": "Оценка вождения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "telematics.odometer",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Odometer",
+      "titleRu": "Одометр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telematics.crash.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crash detected",
+      "titleRu": "ДТП зафиксировано",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "telematics.trip.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Trip state",
+      "titleRu": "Состояние поездки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "trip",
+        "parked",
+        "tow"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

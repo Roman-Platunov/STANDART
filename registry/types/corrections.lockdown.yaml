@@ -1,0 +1,20 @@
+sid: "53529549"
+path: corrections.lockdown
+aliases:
+  short: corrections.lockdown
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Уровень изоляции
+  en: Lockdown level
+fingerprint: sha256:53529549f54bc633cb13d48ae20d0211f8f1865bb7d471579a68f6793dab47bb
+enumValues:
+  - normal
+  - partial
+  - full
+  - emergency

@@ -1,0 +1,129 @@
+{
+  "layer": "B7",
+  "name": "layer-b-cleanroom.json",
+  "types": [
+    {
+      "path": "cleanroom.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cleanroom id",
+      "titleRu": "ID чистой комнаты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cleanroom.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cleanroom zone id",
+      "titleRu": "ID зоны чистой комнаты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cleanroom.particles.0_5",
+      "kind": "quantity",
+      "unit": "/m3",
+      "titleEn": "Particles ≥0.5 µm",
+      "titleRu": "Частицы ≥0.5 мкм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cleanroom.particles.5_0",
+      "kind": "quantity",
+      "unit": "/m3",
+      "titleEn": "Particles ≥5.0 µm",
+      "titleRu": "Частицы ≥5.0 мкм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cleanroom.pressure.diff",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Room differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cleanroom.air.ach",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Air changes per hour",
+      "titleRu": "Кратность воздухообмена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cleanroom.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cleanroom humidity",
+      "titleRu": "Влажность чистой комнаты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cleanroom.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cleanroom temperature",
+      "titleRu": "Температура чистой комнаты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cleanroom.class.iso",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ISO cleanroom class",
+      "titleRu": "Класс ISO",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "iso3",
+        "iso5",
+        "iso7",
+        "iso8",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

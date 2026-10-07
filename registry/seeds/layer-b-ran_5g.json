@@ -1,0 +1,129 @@
+{
+  "layer": "B7",
+  "name": "layer-b-ran_5g.json",
+  "types": [
+    {
+      "path": "ran_5g.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "5G site id",
+      "titleRu": "ID площадки 5G",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ran_5g.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "5G cell id",
+      "titleRu": "ID соты 5G",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ran_5g.prb.utilization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "PRB utilization",
+      "titleRu": "Загрузка PRB",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ran_5g.ue.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Connected UE count",
+      "titleRu": "Число UE",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ran_5g.throughput.dl",
+      "kind": "quantity",
+      "unit": "bit/s",
+      "titleEn": "DL throughput",
+      "titleRu": "Пропускная способность DL",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ran_5g.latency.p95",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "P95 latency",
+      "titleRu": "Задержка P95",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ran_5g.rsrp",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RSRP",
+      "titleRu": "RSRP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ran_5g.sinr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "SINR",
+      "titleRu": "SINR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ran_5g.band",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "5G band",
+      "titleRu": "Диапазон 5G",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "n1",
+        "n3",
+        "n28",
+        "n78",
+        "n258",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

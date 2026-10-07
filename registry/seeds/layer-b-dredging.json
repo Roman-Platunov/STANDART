@@ -1,0 +1,112 @@
+{
+  "layer": "B7",
+  "name": "layer-b-dredging.json",
+  "types": [
+    {
+      "path": "dredging.project.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dredging project id",
+      "titleRu": "ID проекта дноуглубления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dredging.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dredger vessel id",
+      "titleRu": "ID земснаряда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dredging.depth.target",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Target dredge depth",
+      "titleRu": "Целевая глубина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dredging.depth.achieved",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Achieved depth",
+      "titleRu": "Достигнутая глубина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dredging.volume.removed",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Volume removed",
+      "titleRu": "Изъятый объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dredging.spoil.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Spoil density",
+      "titleRu": "Плотность грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dredging.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Plume turbidity",
+      "titleRu": "Мутность шлейфа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dredging.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dredging method",
+      "titleRu": "Метод дноуглубления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cutter",
+        "trailing",
+        "hopper",
+        "backhoe",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

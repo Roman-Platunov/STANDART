@@ -1,0 +1,20 @@
+sid: 64ed2ce4
+path: telematics.trip.state
+aliases:
+  short: trip.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние поездки
+  en: Trip state
+fingerprint: sha256:64ed2ce45c8868c4b6e4ac4f526093b7a146e38ca9b1800e966d770b8fc267e2
+enumValues:
+  - idle
+  - trip
+  - parked
+  - tow

@@ -1,0 +1,21 @@
+sid: a4225504
+path: harbor_ops.berth.state
+aliases:
+  short: berth.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние причала
+  en: Berth state
+fingerprint: sha256:a4225504d6c211f78bef746e58c4054965cfab5f59774c423df033b731932acc
+enumValues:
+  - free
+  - alongside
+  - working
+  - departing
+  - blocked

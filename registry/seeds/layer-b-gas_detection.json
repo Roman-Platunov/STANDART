@@ -1,0 +1,121 @@
+{
+  "layer": "B7",
+  "name": "layer-b-gas_detection.json",
+  "types": [
+    {
+      "path": "gas_detection.detector.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gas detector id",
+      "titleRu": "ID газоанализатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gas_detection.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Detection zone id",
+      "titleRu": "ID зоны детекции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gas_detection.lel",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LEL percent",
+      "titleRu": "Доля НКПР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gas_detection.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oxygen percent",
+      "titleRu": "Доля кислорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gas_detection.h2s",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2S ppm",
+      "titleRu": "H₂S ppm",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_detection.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO ppm",
+      "titleRu": "CO ppm",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_detection.alarm.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High gas alarm",
+      "titleRu": "Высокая газовая тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gas_detection.gas",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Target gas",
+      "titleRu": "Целевой газ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ch4",
+        "h2s",
+        "co",
+        "o2",
+        "nh3",
+        "voc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

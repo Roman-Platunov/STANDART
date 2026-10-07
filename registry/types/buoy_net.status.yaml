@@ -1,0 +1,21 @@
+sid: bc22e437
+path: buoy_net.status
+aliases:
+  short: buoy_net.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус буя
+  en: Buoy status
+fingerprint: sha256:bc22e4372856892c0e2b8f456852aac318500060e2536e7d3c161fba9e14f4f6
+enumValues:
+  - online
+  - delayed
+  - adrift
+  - recovered
+  - lost

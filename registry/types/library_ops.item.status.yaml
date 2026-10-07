@@ -1,0 +1,22 @@
+sid: 5d63e48c
+path: library_ops.item.status
+aliases:
+  short: library_ops.item.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус единицы
+  en: Item status
+fingerprint: sha256:5d63e48c2eef25dd1eda6fa255bc5f37daf7c2f668b4a983f114efa20764c73d
+enumValues:
+  - available
+  - loaned
+  - hold
+  - repair
+  - lost
+  - weeded

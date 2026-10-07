@@ -1,0 +1,111 @@
+{
+  "layer": "B7",
+  "name": "layer-b-tidal.json",
+  "types": [
+    {
+      "path": "tidal.array.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tidal array id",
+      "titleRu": "ID приливного массива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tidal.turbine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tidal turbine id",
+      "titleRu": "ID приливной турбины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tidal.current.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Tidal current speed",
+      "titleRu": "Скорость приливного течения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tidal.turbine.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Turbine power",
+      "titleRu": "Мощность турбины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tidal.turbine.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Turbine RPM",
+      "titleRu": "Обороты турбины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tidal.water.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tidal water level",
+      "titleRu": "Уровень прилива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tidal.cable.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Export cable fault",
+      "titleRu": "Неисправность кабеля",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tidal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tidal turbine state",
+      "titleRu": "Состояние приливной турбины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "generating",
+        "feather",
+        "fault",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

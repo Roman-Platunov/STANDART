@@ -1,0 +1,130 @@
+{
+  "layer": "B7",
+  "name": "layer-b-biogas.json",
+  "types": [
+    {
+      "path": "biogas.digester.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anaerobic digester id",
+      "titleRu": "ID биореактора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biogas.digester.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Digester temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biogas.digester.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Digester pH",
+      "titleRu": "pH реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biogas.gas.ch4_fraction",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Methane fraction",
+      "titleRu": "Доля метана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biogas.gas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Biogas flow",
+      "titleRu": "Расход биогаза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biogas.h2s",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2S concentration",
+      "titleRu": "Концентрация H₂S",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biogas.engine.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "CHP engine power",
+      "titleRu": "Мощность когенерации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biogas.flare.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flare active",
+      "titleRu": "Факел активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "biogas.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Biogas plant state",
+      "titleRu": "Состояние биогаза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "feed",
+        "digest",
+        "store",
+        "generate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

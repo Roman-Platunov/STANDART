@@ -1,0 +1,22 @@
+sid: 1587bc02
+path: endoscope.status
+aliases:
+  short: endoscope.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус эндоскопа
+  en: Endoscope status
+fingerprint: sha256:1587bc0295692a986633bdd6147ebeeb11dc42d5df4b969c701057dc79a7205e
+enumValues:
+  - clean
+  - in_use
+  - soiled
+  - reprocessing
+  - quarantine
+  - repair

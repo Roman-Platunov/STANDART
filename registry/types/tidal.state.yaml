@@ -1,0 +1,21 @@
+sid: 16ac9f32
+path: tidal.state
+aliases:
+  short: tidal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние приливной турбины
+  en: Tidal turbine state
+fingerprint: sha256:16ac9f32f167cd9820b365376de199ae327c9060de49880a26841c6ee3048b30
+enumValues:
+  - idle
+  - generating
+  - feather
+  - fault
+  - maintenance

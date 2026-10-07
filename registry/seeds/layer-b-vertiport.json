@@ -1,0 +1,125 @@
+{
+  "layer": "B7",
+  "name": "layer-b-vertiport.json",
+  "types": [
+    {
+      "path": "vertiport.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vertiport id",
+      "titleRu": "ID вертипорта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vertiport.pad.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Landing pad id",
+      "titleRu": "ID посадочной площадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vertiport.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "eVTOL flight id",
+      "titleRu": "ID рейса eVTOL",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vertiport.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Pad wind speed",
+      "titleRu": "Ветер на площадке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertiport.pad.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pad occupancy",
+      "titleRu": "Занятость площадок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vertiport.charger.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "eVTOL charger power",
+      "titleRu": "Мощность зарядки eVTOL",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertiport.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Community noise level",
+      "titleRu": "Уровень шума",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertiport.pad.clear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pad clear for landing",
+      "titleRu": "Площадка свободна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vertiport.ops",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vertiport ops status",
+      "titleRu": "Статус вертипорта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "weather_hold",
+        "closed",
+        "emergency"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

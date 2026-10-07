@@ -1,0 +1,20 @@
+sid: dc8dab30
+path: underground_mining.status
+aliases:
+  short: underground_mining.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус шахты
+  en: Mine status
+fingerprint: sha256:dc8dab300340adf6f94a84d65b3c6ba5cab206b1b7751bd0ea12ce7bef7708ab
+enumValues:
+  - active
+  - standby
+  - evacuated
+  - sealed

@@ -1,0 +1,125 @@
+{
+  "layer": "B7",
+  "name": "layer-b-cannery.json",
+  "types": [
+    {
+      "path": "cannery.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cannery batch id",
+      "titleRu": "ID партии консервов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cannery.retort.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Retort id",
+      "titleRu": "ID автоклава",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cannery.fill.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Fill weight",
+      "titleRu": "Масса наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cannery.retort.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Retort temperature",
+      "titleRu": "Температура автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cannery.retort.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Retort pressure",
+      "titleRu": "Давление автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cannery.f0.value",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "F0 lethality",
+      "titleRu": "Летальность F0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cannery.seam.tightness",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Seam tightness score",
+      "titleRu": "Герметичность шва",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cannery.can.defect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Can defect detected",
+      "titleRu": "Дефект банки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cannery.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cannery stage",
+      "titleRu": "Стадия консервирования",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "fill",
+        "seal",
+        "retort",
+        "cool",
+        "label"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 5a634b4e
+path: confined_space.status
+aliases:
+  short: confined_space.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус наряда
+  en: Permit status
+fingerprint: sha256:5a634b4e64c08ef0ef5149ec16c6b11c4c94e562c114b89f65777a233ebe4168
+enumValues:
+  - closed
+  - permitted
+  - occupied
+  - emergency
+  - cleared

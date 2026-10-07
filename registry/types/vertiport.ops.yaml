@@ -1,0 +1,20 @@
+sid: 84b445cf
+path: vertiport.ops
+aliases:
+  short: vertiport.ops
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус вертипорта
+  en: Vertiport ops status
+fingerprint: sha256:84b445cfdf858f5d40692396d994c75bfc4566d639c2fa3a2c66df70f619dd75
+enumValues:
+  - open
+  - weather_hold
+  - closed
+  - emergency

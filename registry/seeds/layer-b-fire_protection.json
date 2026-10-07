@@ -1,0 +1,110 @@
+{
+  "layer": "B7",
+  "name": "layer-b-fire_protection.json",
+  "types": [
+    {
+      "path": "fire_protection.panel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fire panel id",
+      "titleRu": "ID пожарной панели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fire_protection.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fire zone id",
+      "titleRu": "ID пожарной зоны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fire_protection.alarm.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire alarm active",
+      "titleRu": "Пожарная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fire_protection.sprinkler.flow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sprinkler flow switch",
+      "titleRu": "Спринклерный расход",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fire_protection.hydrant.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Hydrant pressure",
+      "titleRu": "Давление гидранта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_protection.pump.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Fire pump pressure",
+      "titleRu": "Давление пожарного насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_protection.smoke.density",
+      "kind": "quantity",
+      "unit": "%/m",
+      "titleEn": "Smoke density",
+      "titleRu": "Плотность дыма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_protection.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fire system state",
+      "titleRu": "Состояние ОПС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "alarm",
+        "supervisory",
+        "trouble",
+        "test"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

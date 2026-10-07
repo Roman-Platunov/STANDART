@@ -1,0 +1,110 @@
+{
+  "layer": "B7",
+  "name": "layer-b-endoscope.json",
+  "types": [
+    {
+      "path": "endoscope.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Endoscope id",
+      "titleRu": "ID эндоскопа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "endoscope.reprocess.cycle_id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reprocessing cycle id",
+      "titleRu": "ID цикла обработки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "endoscope.leak.test_pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Leak test pressure",
+      "titleRu": "Давление теста на герметичность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "endoscope.leak.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak test pass",
+      "titleRu": "Тест герметичности OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "endoscope.wash.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wash temperature",
+      "titleRu": "Температура мойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "endoscope.storage.days",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days in storage",
+      "titleRu": "Дни хранения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "endoscope.image.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Procedure image ref",
+      "titleRu": "Референс изображения процедуры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "endoscope.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Endoscope status",
+      "titleRu": "Статус эндоскопа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "clean",
+        "in_use",
+        "soiled",
+        "reprocessing",
+        "quarantine",
+        "repair"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

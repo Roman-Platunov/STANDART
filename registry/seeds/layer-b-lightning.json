@@ -1,0 +1,98 @@
+{
+  "layer": "B7",
+  "name": "layer-b-lightning.json",
+  "types": [
+    {
+      "path": "lightning.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lightning sensor id",
+      "titleRu": "ID датчика молний",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lightning.strike.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Strike count",
+      "titleRu": "Число ударов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lightning.distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Nearest strike distance",
+      "titleRu": "Дистанция до ближайшего удара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lightning.rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Strike rate",
+      "titleRu": "Частота ударов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lightning.peak.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Peak current",
+      "titleRu": "Пиковый ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lightning.warning.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lightning warning active",
+      "titleRu": "Предупреждение о грозе",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lightning.density",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lightning density",
+      "titleRu": "Плотность молний",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "none",
+        "sparse",
+        "moderate",
+        "intense"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

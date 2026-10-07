@@ -1,0 +1,110 @@
+{
+  "layer": "B7",
+  "name": "layer-b-organ_logistics.json",
+  "types": [
+    {
+      "path": "organ_logistics.case.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Organ case id",
+      "titleRu": "ID трансплантационного кейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "organ_logistics.courier.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Courier id",
+      "titleRu": "ID курьера органа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "organ_logistics.ischemia.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cold ischemia time",
+      "titleRu": "Холодная ишемия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "organ_logistics.container.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Container temperature",
+      "titleRu": "Температура контейнера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "organ_logistics.eta.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "ETA to recipient hospital",
+      "titleRu": "ETA в клинику",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "organ_logistics.temp.excursion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature excursion",
+      "titleRu": "Нарушение температуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "organ_logistics.chain.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Chain-of-custody ref",
+      "titleRu": "Референс цепочки хранения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "organ_logistics.organ",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Organ type",
+      "titleRu": "Тип органа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "kidney",
+        "liver",
+        "heart",
+        "lung",
+        "pancreas",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "layer": "B7",
+  "name": "layer-b-float_glass.json",
+  "types": [
+    {
+      "path": "float_glass.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Float glass line id",
+      "titleRu": "ID линии флоат-стекла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "float_glass.furnace.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melter temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_glass.tin.bath_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tin bath temperature",
+      "titleRu": "Температура оловянной ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_glass.ribbon.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ribbon thickness",
+      "titleRu": "Толщина ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_glass.ribbon.width",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Ribbon width",
+      "titleRu": "Ширина ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_glass.anneal.lehr_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Lehr temperature",
+      "titleRu": "Температура отжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_glass.defect.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Optical defects",
+      "titleRu": "Оптические дефекты",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "float_glass.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Glass grade",
+      "titleRu": "Марка стекла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "clear",
+        "tinted",
+        "low_iron",
+        "coated",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

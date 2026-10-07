@@ -1,0 +1,124 @@
+{
+  "layer": "B7",
+  "name": "layer-b-district_heating.json",
+  "types": [
+    {
+      "path": "district_heating.loop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "District heating loop id",
+      "titleRu": "ID контура теплосети",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "district_heating.substation.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat substation id",
+      "titleRu": "ID теплового пункта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "district_heating.supply.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_heating.return.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return temperature",
+      "titleRu": "Температура обратки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_heating.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Loop flow rate",
+      "titleRu": "Расход теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_heating.pressure.diff",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_heating.heat.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Delivered heat power",
+      "titleRu": "Отпускаемая тепловая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_heating.leak.suspect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Network leak suspect",
+      "titleRu": "Подозрение на утечку",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "district_heating.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "District heating mode",
+      "titleRu": "Режим теплосети",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "idle",
+        "bypass",
+        "maintenance",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

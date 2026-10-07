@@ -1,0 +1,20 @@
+sid: 4425afa8
+path: aed_network.status
+aliases:
+  short: aed_network.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус АВД
+  en: AED status
+fingerprint: sha256:4425afa8b736aada2d4cc1db273c7cca04b5911b0622e8fc080baaa0f39cbe10
+enumValues:
+  - ready
+  - needs_service
+  - in_use
+  - missing

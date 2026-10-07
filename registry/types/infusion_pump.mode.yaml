@@ -1,0 +1,21 @@
+sid: 1ab5615e
+path: infusion_pump.mode
+aliases:
+  short: infusion_pump.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим инфузии
+  en: Infusion mode
+fingerprint: sha256:1ab5615eeb2ebcd658541b44864fceefefe3c059fbab89819c000b3cad0d7b1d
+enumValues:
+  - continuous
+  - bolus
+  - pca
+  - taper
+  - standby

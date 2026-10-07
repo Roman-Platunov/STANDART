@@ -1,0 +1,111 @@
+{
+  "layer": "B7",
+  "name": "layer-b-cathlab.json",
+  "types": [
+    {
+      "path": "cathlab.case.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cath lab case id",
+      "titleRu": "ID процедуры катетеризации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cathlab.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cath lab room id",
+      "titleRu": "ID рентгеноперационной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cathlab.fluoro.time",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Fluoro time",
+      "titleRu": "Время флюороскопии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathlab.dose.ak",
+      "kind": "quantity",
+      "unit": "mGy",
+      "titleEn": "Air kerma",
+      "titleRu": "Воздушная керма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathlab.contrast.volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Contrast volume",
+      "titleRu": "Объём контраста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathlab.heparin.units",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Heparin units",
+      "titleRu": "Единицы гепарина",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathlab.emergency",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency case",
+      "titleRu": "Экстренный случай",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cathlab.procedure",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cath procedure",
+      "titleRu": "Тип процедуры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "diag",
+        "pci",
+        "ep",
+        "structural",
+        "peripheral",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

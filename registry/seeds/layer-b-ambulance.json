@@ -1,0 +1,116 @@
+{
+  "layer": "B7",
+  "name": "layer-b-ambulance.json",
+  "types": [
+    {
+      "path": "ambulance.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ambulance unit id",
+      "titleRu": "ID бригады СМП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ambulance.incident.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Incident id",
+      "titleRu": "ID вызова",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ambulance.eta.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "ETA to scene",
+      "titleRu": "ETA на место",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ambulance.patient.spo2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Patient SpO2",
+      "titleRu": "SpO₂ пациента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ambulance.patient.hr",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Patient heart rate",
+      "titleRu": "ЧСС пациента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "ambulance.defib.joules",
+      "kind": "quantity",
+      "unit": "J",
+      "titleEn": "Defib energy",
+      "titleRu": "Энергия дефибрилляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ambulance.lights.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency lights active",
+      "titleRu": "Проблесковые маячки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ambulance.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ambulance status",
+      "titleRu": "Статус СМП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "dispatched",
+        "on_scene",
+        "transport",
+        "hospital",
+        "out_of_service"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

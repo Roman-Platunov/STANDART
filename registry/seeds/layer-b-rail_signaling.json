@@ -1,0 +1,125 @@
+{
+  "layer": "B7",
+  "name": "layer-b-rail_signaling.json",
+  "types": [
+    {
+      "path": "rail_signaling.block.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Signal block id",
+      "titleRu": "ID блок-участка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail_signaling.signal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wayside signal id",
+      "titleRu": "ID светофора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail_signaling.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Train consist id",
+      "titleRu": "ID состава",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail_signaling.aspect",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Signal aspect",
+      "titleRu": "Показание сигнала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "clear",
+        "approach",
+        "stop",
+        "restricting",
+        "dark"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail_signaling.track.occupied",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Track circuit occupied",
+      "titleRu": "Рельсовая цепь занята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail_signaling.interlock.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Route interlocked",
+      "titleRu": "Маршрут заблокирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail_signaling.axle.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Axle counter",
+      "titleRu": "Счётчик осей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_signaling.balise.passed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Balises passed",
+      "titleRu": "Пройденные бализы",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_signaling.system",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Signaling system",
+      "titleRu": "Система СЦБ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "etcs",
+        "ptc",
+        "cbtc",
+        "relay",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

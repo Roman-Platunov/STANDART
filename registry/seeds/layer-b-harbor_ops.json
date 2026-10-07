@@ -1,0 +1,110 @@
+{
+  "layer": "B7",
+  "name": "layer-b-harbor_ops.json",
+  "types": [
+    {
+      "path": "harbor_ops.berth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Commercial berth id",
+      "titleRu": "ID коммерческого причала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "harbor_ops.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Calling vessel id",
+      "titleRu": "ID судна у причала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "harbor_ops.draft",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Available draft",
+      "titleRu": "Доступная осадка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "harbor_ops.tide.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tide height",
+      "titleRu": "Уровень прилива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "harbor_ops.crane.moves",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Crane moves per hour",
+      "titleRu": "Операции крана в час",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "harbor_ops.pilot.wait_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Pilot wait time",
+      "titleRu": "Ожидание лоцмана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "harbor_ops.channel.clear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Channel clear",
+      "titleRu": "Фарватер свободен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "harbor_ops.berth.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Berth state",
+      "titleRu": "Состояние причала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "alongside",
+        "working",
+        "departing",
+        "blocked"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

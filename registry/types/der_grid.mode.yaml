@@ -1,0 +1,20 @@
+sid: f1d186f9
+path: der_grid.mode
+aliases:
+  short: der_grid.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим DER
+  en: DER mode
+fingerprint: sha256:f1d186f97b7160036ddf8de8c95ee0a8156d084f5815a66b294df1316ef38a73
+enumValues:
+  - grid_follow
+  - grid_form
+  - idle
+  - fault

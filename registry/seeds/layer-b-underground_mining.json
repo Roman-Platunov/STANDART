@@ -1,0 +1,127 @@
+{
+  "layer": "B7",
+  "name": "layer-b-underground_mining.json",
+  "types": [
+    {
+      "path": "underground_mining.level.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mine level id",
+      "titleRu": "ID горизонта шахты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "underground_mining.heading.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heading id",
+      "titleRu": "ID забоя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "underground_mining.gas.ch4",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Methane concentration",
+      "titleRu": "Концентрация метана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "underground_mining.gas.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO concentration",
+      "titleRu": "Концентрация CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underground_mining.airflow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Ventilation airflow",
+      "titleRu": "Расход воздуха вентиляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underground_mining.roof.convergence",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Roof convergence",
+      "titleRu": "Конвергенция кровли",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underground_mining.dust.pm",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Dust PM concentration",
+      "titleRu": "Пыль PM",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underground_mining.refuge.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Refuge chamber OK",
+      "titleRu": "Камера убежища OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "underground_mining.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mine status",
+      "titleRu": "Статус шахты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "standby",
+        "evacuated",
+        "sealed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

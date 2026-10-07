@@ -1,0 +1,111 @@
+{
+  "layer": "B7",
+  "name": "layer-b-sterilizer.json",
+  "types": [
+    {
+      "path": "sterilizer.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sterilizer id",
+      "titleRu": "ID стерилизатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sterilizer.cycle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sterilizer cycle id",
+      "titleRu": "ID цикла стерилизации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sterilizer.chamber.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sterilizer.chamber.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber pressure",
+      "titleRu": "Давление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sterilizer.exposure.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Exposure time",
+      "titleRu": "Время экспозиции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sterilizer.bi.pass",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "BI pass (1/0)",
+      "titleRu": "БИ пройден",
+      "encodings": [
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sterilizer.cycle.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cycle accepted",
+      "titleRu": "Цикл принят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sterilizer.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sterilization method",
+      "titleRu": "Метод стерилизации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "steam",
+        "eto",
+        "h2o2",
+        "plasma",
+        "dry_heat",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "layer": "B7",
+  "name": "layer-b-library_ops.json",
+  "types": [
+    {
+      "path": "library_ops.branch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Library branch id",
+      "titleRu": "ID филиала библиотеки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "library_ops.item.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Catalog item id",
+      "titleRu": "ID единицы хранения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "library_ops.checkouts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active checkouts",
+      "titleRu": "Активные выдачи",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "library_ops.overdue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Overdue items",
+      "titleRu": "Просроченные",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "library_ops.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Public occupancy",
+      "titleRu": "Посещаемость",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "library_ops.rfid.reads",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "RFID reads/hour",
+      "titleRu": "RFID-считывания/час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "library_ops.security.gate_alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Security gate alarm",
+      "titleRu": "Тревога ворот безопасности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "library_ops.item.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Item status",
+      "titleRu": "Статус единицы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "loaned",
+        "hold",
+        "repair",
+        "lost",
+        "weeded"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

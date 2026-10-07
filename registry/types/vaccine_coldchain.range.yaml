@@ -1,0 +1,20 @@
+sid: 55e6278e
+path: vaccine_coldchain.range
+aliases:
+  short: vaccine_coldchain.range
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Требуемый диапазон
+  en: Required temp range
+fingerprint: sha256:55e6278e86dfc2c9cee1cd809bd76ddaf514de1dd24c26817a02f75291dccf6f
+enumValues:
+  - frozen
+  - refrigerated
+  - ultra_cold
+  - controlled_room

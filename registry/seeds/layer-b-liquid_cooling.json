@@ -1,0 +1,123 @@
+{
+  "layer": "B7",
+  "name": "layer-b-liquid_cooling.json",
+  "types": [
+    {
+      "path": "liquid_cooling.loop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Liquid cooling loop id",
+      "titleRu": "ID контура жидкостного охлаждения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "liquid_cooling.cdu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CDU id",
+      "titleRu": "ID CDU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "liquid_cooling.supply.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant supply temp",
+      "titleRu": "Температура подачи хладагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "liquid_cooling.return.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant return temp",
+      "titleRu": "Температура обратки хладагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "liquid_cooling.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Coolant flow",
+      "titleRu": "Расход хладагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "liquid_cooling.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Loop pressure",
+      "titleRu": "Давление контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "liquid_cooling.pdu.heat_load",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "IT heat load",
+      "titleRu": "Тепловыделение ИТ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "liquid_cooling.leak.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coolant leak detected",
+      "titleRu": "Утечка хладагента",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "liquid_cooling.topology",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cooling topology",
+      "titleRu": "Топология охлаждения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rdhx",
+        "cold_plate",
+        "immersion",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

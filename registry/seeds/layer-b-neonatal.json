@@ -1,0 +1,131 @@
+{
+  "layer": "B7",
+  "name": "layer-b-neonatal.json",
+  "types": [
+    {
+      "path": "neonatal.patient.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Neonate patient id",
+      "titleRu": "ID новорождённого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "neonatal.incubator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Incubator id",
+      "titleRu": "ID инкубатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "neonatal.incubator.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Incubator air temp",
+      "titleRu": "Температура инкубатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "neonatal.incubator.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Incubator humidity",
+      "titleRu": "Влажность инкубатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "neonatal.spo2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Neonate SpO2",
+      "titleRu": "SpO₂ новорождённого",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "neonatal.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Neonate weight",
+      "titleRu": "Масса новорождённого",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "neonatal.bilirubin",
+      "kind": "quantity",
+      "unit": "mg/dL",
+      "titleEn": "Bilirubin",
+      "titleRu": "Билирубин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "neonatal.apnea.event",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Apnea event",
+      "titleRu": "Эпизод апноэ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "neonatal.support",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Respiratory support",
+      "titleRu": "Респираторная поддержка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "room_air",
+        "cpap",
+        "ventilator",
+        "ecmo"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

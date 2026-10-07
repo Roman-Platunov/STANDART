@@ -1,0 +1,132 @@
+{
+  "layer": "B7",
+  "name": "layer-b-foundry.json",
+  "types": [
+    {
+      "path": "foundry.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat / melt id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foundry.mold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mold id",
+      "titleRu": "ID формы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foundry.melt.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foundry.pour.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pour temperature",
+      "titleRu": "Температура заливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foundry.mold.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mold sand moisture",
+      "titleRu": "Влажность формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "foundry.casting.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Casting weight",
+      "titleRu": "Масса отливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foundry.scrap.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Доля брака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "foundry.chemistry.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chemistry in spec",
+      "titleRu": "Химия в допуске",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "foundry.metal",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Foundry metal",
+      "titleRu": "Металл литья",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "iron",
+        "steel",
+        "aluminum",
+        "bronze",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

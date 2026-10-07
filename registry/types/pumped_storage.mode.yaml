@@ -1,0 +1,21 @@
+sid: 5a9d1a8b
+path: pumped_storage.mode
+aliases:
+  short: pumped_storage.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим ГАЭС
+  en: Pumped storage mode
+fingerprint: sha256:5a9d1a8bb043ef4d02645efa520c28e85f44e67a0a8c1d694de03fc66a645dea
+enumValues:
+  - generate
+  - pump
+  - spin
+  - idle
+  - fault

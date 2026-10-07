@@ -1,0 +1,116 @@
+{
+  "layer": "B7",
+  "name": "layer-b-pumped_storage.json",
+  "types": [
+    {
+      "path": "pumped_storage.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pumped storage plant id",
+      "titleRu": "ID ГАЭС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pumped_storage.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pump-turbine unit id",
+      "titleRu": "ID гидроагрегата ГАЭС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pumped_storage.upper.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Upper reservoir level",
+      "titleRu": "Уровень верхнего бьефа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pumped_storage.lower.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Lower reservoir level",
+      "titleRu": "Уровень нижнего бьефа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pumped_storage.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Unit power (+gen/-pump)",
+      "titleRu": "Мощность агрегата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pumped_storage.head",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Net head",
+      "titleRu": "Напор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pumped_storage.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Round-trip efficiency",
+      "titleRu": "КПД цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pumped_storage.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pumped storage mode",
+      "titleRu": "Режим ГАЭС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "generate",
+        "pump",
+        "spin",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

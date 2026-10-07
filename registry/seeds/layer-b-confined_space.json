@@ -1,0 +1,117 @@
+{
+  "layer": "B7",
+  "name": "layer-b-confined_space.json",
+  "types": [
+    {
+      "path": "confined_space.permit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Confined space permit id",
+      "titleRu": "ID наряда на замкнутое пространство",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "confined_space.space.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Confined space id",
+      "titleRu": "ID замкнутого пространства",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "confined_space.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Entry O2",
+      "titleRu": "O₂ при входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "confined_space.lel",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Entry LEL",
+      "titleRu": "НКПР при входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "confined_space.entrant.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Entrants inside",
+      "titleRu": "Число внутри",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "confined_space.attendant.present",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Attendant present",
+      "titleRu": "Наблюдающий на месте",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "confined_space.rescue.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rescue team ready",
+      "titleRu": "Спасательная готовность",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "confined_space.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Permit status",
+      "titleRu": "Статус наряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "permitted",
+        "occupied",
+        "emergency",
+        "cleared"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "layer": "B7",
+  "name": "layer-b-fill_finish.json",
+  "types": [
+    {
+      "path": "fill_finish.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fill-finish batch id",
+      "titleRu": "ID серии розлива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fill_finish.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fill-finish line id",
+      "titleRu": "ID линии розлива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fill_finish.fill.volume",
+      "kind": "quantity",
+      "unit": "uL",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fill_finish.fill.weight",
+      "kind": "quantity",
+      "unit": "mg",
+      "titleEn": "Fill weight",
+      "titleRu": "Масса наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fill_finish.vial.reject_rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Доля брака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fill_finish.isolator.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Isolator pressure",
+      "titleRu": "Давление изолятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fill_finish.particulate.airborne",
+      "kind": "quantity",
+      "unit": "/m3",
+      "titleEn": "Airborne particulates",
+      "titleRu": "Частицы в воздухе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fill_finish.sterility.hold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sterility hold",
+      "titleRu": "Удержание по стерильности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fill_finish.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fill-finish stage",
+      "titleRu": "Стадия розлива",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "fill",
+        "stopper",
+        "cap",
+        "inspect",
+        "pack"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

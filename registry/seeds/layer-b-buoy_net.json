@@ -1,0 +1,125 @@
+{
+  "layer": "B7",
+  "name": "layer-b-buoy_net.json",
+  "types": [
+    {
+      "path": "buoy_net.buoy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ocean buoy id",
+      "titleRu": "ID океанографического буя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "buoy_net.wave.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Significant wave height",
+      "titleRu": "Значительная высота волны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buoy_net.wave.period",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Wave period",
+      "titleRu": "Период волны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buoy_net.sst",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sea surface temperature",
+      "titleRu": "Температура поверхности моря",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buoy_net.salinity",
+      "kind": "quantity",
+      "unit": "PSU",
+      "titleEn": "Salinity",
+      "titleRu": "Солёность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buoy_net.current.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Surface current",
+      "titleRu": "Поверхностное течение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buoy_net.battery.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Buoy battery voltage",
+      "titleRu": "Напряжение батареи буя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "buoy_net.telemetry.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Buoy telemetry ref",
+      "titleRu": "Референс телеметрии буя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "buoy_net.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Buoy status",
+      "titleRu": "Статус буя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "delayed",
+        "adrift",
+        "recovered",
+        "lost"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
