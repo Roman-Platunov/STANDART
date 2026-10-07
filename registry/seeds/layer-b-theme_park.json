@@ -1,0 +1,111 @@
+{
+  "layer": "B6",
+  "name": "layer-b-theme_park.json",
+  "types": [
+    {
+      "path": "theme_park.ride.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Theme park ride id",
+      "titleRu": "ID аттракциона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "theme_park.ride.wait_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Ride wait time",
+      "titleRu": "Ожидание аттракциона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "theme_park.ride.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Ride throughput",
+      "titleRu": "Пропускная способность аттракциона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "theme_park.ride.gforce",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ride peak g-force",
+      "titleRu": "Пиковая перегрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "theme_park.ride.e_stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ride e-stop theme",
+      "titleRu": "Е-стоп аттракциона",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "theme_park.ride.restraints_ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Restraints locked",
+      "titleRu": "Фиксаторы закрыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "theme_park.ride.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Theme ride state",
+      "titleRu": "Состояние аттракциона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "open",
+        "cycle",
+        "evac",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "theme_park.park.attendance",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Park attendance",
+      "titleRu": "Посещаемость парка",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    }
+  ]
+}

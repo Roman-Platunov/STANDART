@@ -1,0 +1,110 @@
+{
+  "layer": "B6",
+  "name": "layer-b-flood.json",
+  "types": [
+    {
+      "path": "flood.gauge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flood gauge id",
+      "titleRu": "ID гидропоста",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flood.water.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Flood water level",
+      "titleRu": "Уровень паводка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flood.water.rise_rate",
+      "kind": "quantity",
+      "unit": "m/h",
+      "titleEn": "Water rise rate",
+      "titleRu": "Скорость подъёма воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flood.discharge",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "River discharge",
+      "titleRu": "Расход реки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flood.rainfall.basin",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Basin rainfall",
+      "titleRu": "Осадки по бассейну",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flood.alert.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flood alert active",
+      "titleRu": "Паводковая тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flood.alert.level",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Flood alert level",
+      "titleRu": "Уровень паводковой опасности",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "watch",
+        "warning",
+        "severe"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flood.camera.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Flood camera ref",
+      "titleRu": "Камера паводка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

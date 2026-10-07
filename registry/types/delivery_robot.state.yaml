@@ -1,0 +1,22 @@
+sid: 2ac2d299
+path: delivery_robot.state
+aliases:
+  short: delivery_robot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние робота-доставщика
+  en: Delivery robot state
+fingerprint: sha256:2ac2d299d45915b2f511876f7ea4cab112f23c7c513a039d5d5917661248fae0
+enumValues:
+  - idle
+  - to_pickup
+  - to_dropoff
+  - waiting
+  - returning
+  - fault

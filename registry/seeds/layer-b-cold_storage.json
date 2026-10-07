@@ -1,0 +1,115 @@
+{
+  "layer": "B6",
+  "name": "layer-b-cold_storage.json",
+  "types": [
+    {
+      "path": "cold_storage.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cold storage room id",
+      "titleRu": "ID холодильной камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_storage.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cold storage temperature",
+      "titleRu": "Температура хладосклада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_storage.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cold storage humidity",
+      "titleRu": "Влажность хладосклада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cold_storage.door.open_time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Door open duration",
+      "titleRu": "Время открытой двери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_storage.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Cold storage energy",
+      "titleRu": "Энергия хладосклада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_storage.defrost.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Defrost active",
+      "titleRu": "Оттайка активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cold_storage.alarm.high_temp",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High temp alarm cold",
+      "titleRu": "Тревога высокой температуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cold_storage.zone",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cold storage zone type",
+      "titleRu": "Тип зоны хладосклада",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "chilled",
+        "frozen",
+        "deep_freeze",
+        "controlled_atmosphere"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

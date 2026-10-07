@@ -1,0 +1,22 @@
+sid: 7ffc1c50
+path: dialysis.session.state
+aliases:
+  short: dialysis.session.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сеанса диализа
+  en: Dialysis session state
+fingerprint: sha256:7ffc1c5053f7e672a8ec1e56f18ed9fc9847d240ad798b5699670b65a886df22
+enumValues:
+  - prep
+  - prime
+  - treatment
+  - rinseback
+  - done
+  - fault

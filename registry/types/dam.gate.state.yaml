@@ -1,0 +1,20 @@
+sid: 6d280a62
+path: dam.gate.state
+aliases:
+  short: gate.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние затвора
+  en: Dam gate state
+fingerprint: sha256:6d280a6267c390df3ac391c3aedcc0cd44e3438e3d14fa8c2e6ab1beffa37f79
+enumValues:
+  - closed
+  - partly_open
+  - open
+  - fault

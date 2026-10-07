@@ -1,0 +1,21 @@
+sid: 598f41b6
+path: genomics.run.state
+aliases:
+  short: genomics.run.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние прогона
+  en: Sequencing run state
+fingerprint: sha256:598f41b6eaf030612995b59a794c52abf3aa9a4c5c33436cd208bd654ab48562
+enumValues:
+  - loading
+  - sequencing
+  - wash
+  - complete
+  - failed

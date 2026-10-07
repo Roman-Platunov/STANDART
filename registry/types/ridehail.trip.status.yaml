@@ -1,0 +1,22 @@
+sid: 54bd9923
+path: ridehail.trip.status
+aliases:
+  short: trip.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус поездки
+  en: Ridehail trip status
+fingerprint: sha256:54bd9923e0ca11a2610774439487d82e33c039b3c7c1fc30f67773882f23e041
+enumValues:
+  - requested
+  - accepted
+  - arriving
+  - in_trip
+  - completed
+  - cancelled

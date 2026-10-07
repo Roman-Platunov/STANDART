@@ -1,0 +1,20 @@
+sid: e7d4f77e
+path: marina.berth.status
+aliases:
+  short: marina.berth.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус места марины
+  en: Marina berth status
+fingerprint: sha256:e7d4f77ea332d4f286bc25499bebe94e0ed41d07b0da35d64f48ee2742303903
+enumValues:
+  - free
+  - occupied
+  - reserved
+  - maintenance

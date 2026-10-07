@@ -1,0 +1,126 @@
+{
+  "layer": "B6",
+  "name": "layer-b-ridehail.json",
+  "types": [
+    {
+      "path": "ridehail.trip.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ridehail trip id",
+      "titleRu": "ID поездки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ridehail.driver.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ridehail driver id",
+      "titleRu": "ID водителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "ridehail.rider.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rider id",
+      "titleRu": "ID пассажира",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "ridehail.eta.pickup",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Pickup ETA",
+      "titleRu": "ETA подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ridehail.fare.amount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fare amount",
+      "titleRu": "Стоимость поездки",
+      "encodings": [
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ridehail.trip.distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Trip distance ridehail",
+      "titleRu": "Дистанция поездки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ridehail.rating",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trip rating",
+      "titleRu": "Оценка поездки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 1,
+        "max": 5
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ridehail.trip.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ridehail trip status",
+      "titleRu": "Статус поездки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "requested",
+        "accepted",
+        "arriving",
+        "in_trip",
+        "completed",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ridehail.safety.share",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Trip share active",
+      "titleRu": "Поделиться поездкой",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

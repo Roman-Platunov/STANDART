@@ -1,0 +1,127 @@
+{
+  "layer": "B6",
+  "name": "layer-b-pipeline_integrity.json",
+  "types": [
+    {
+      "path": "pipeline_integrity.segment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipeline segment id",
+      "titleRu": "ID участка трубопровода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pipeline_integrity.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Integrity pressure",
+      "titleRu": "Давление (целостность)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_integrity.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Integrity flow",
+      "titleRu": "Расход (целостность)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_integrity.cp.potential",
+      "kind": "quantity",
+      "unit": "mV",
+      "titleEn": "Cathodic protection potential",
+      "titleRu": "Потенциал ЭХЗ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_integrity.wall.loss",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wall loss",
+      "titleRu": "Потеря толщины стенки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_integrity.pig.odometer",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Pig odometer",
+      "titleRu": "Одометр внутритрубного снаряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_integrity.leak.suspect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak suspect",
+      "titleRu": "Подозрение на утечку",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pipeline_integrity.pig.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pig run state",
+      "titleRu": "Состояние прогона снаряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "running",
+        "stuck",
+        "complete"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pipeline_integrity.ili.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "ILI report ref",
+      "titleRu": "Отчёт ВТД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

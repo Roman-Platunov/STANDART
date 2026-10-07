@@ -1,0 +1,120 @@
+{
+  "layer": "B6",
+  "name": "layer-b-callcenter.json",
+  "types": [
+    {
+      "path": "callcenter.agent.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Agent id",
+      "titleRu": "ID оператора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "callcenter.queue.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Call queue id",
+      "titleRu": "ID очереди звонков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "callcenter.queue.wait",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Queue wait time",
+      "titleRu": "Ожидание в очереди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "callcenter.asa",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Average speed of answer",
+      "titleRu": "Среднее время ответа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "callcenter.aht",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Average handle time",
+      "titleRu": "Среднее время обработки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "callcenter.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Agent occupancy",
+      "titleRu": "Загрузка операторов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "callcenter.sla",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Service level",
+      "titleRu": "Уровень сервиса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "callcenter.agent.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Agent state",
+      "titleRu": "Состояние оператора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "on_call",
+        "wrap",
+        "break",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

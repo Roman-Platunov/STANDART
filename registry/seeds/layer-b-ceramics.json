@@ -1,0 +1,123 @@
+{
+  "layer": "B6",
+  "name": "layer-b-ceramics.json",
+  "types": [
+    {
+      "path": "ceramics.kiln.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ceramics kiln temperature",
+      "titleRu": "Температура керамической печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ceramics.kiln.ramp",
+      "kind": "quantity",
+      "unit": "Cel/h",
+      "titleEn": "Kiln ramp rate",
+      "titleRu": "Скорость нагрева печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ceramics.glaze.viscosity",
+      "kind": "quantity",
+      "unit": "Pa.s",
+      "titleEn": "Glaze viscosity",
+      "titleRu": "Вязкость глазури",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ceramics.green.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Green body moisture",
+      "titleRu": "Влажность сырца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ceramics.shrinkage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Firing shrinkage",
+      "titleRu": "Усадка при обжиге",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 30
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ceramics.strength",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Ceramic flexural strength",
+      "titleRu": "Прочность керамики",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ceramics.kiln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ceramics kiln id",
+      "titleRu": "ID керамической печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ceramics.firing.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Firing state",
+      "titleRu": "Состояние обжига",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "ramp",
+        "soak",
+        "cool",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

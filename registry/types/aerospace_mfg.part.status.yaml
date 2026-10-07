@@ -1,0 +1,22 @@
+sid: b1c2ff42
+path: aerospace_mfg.part.status
+aliases:
+  short: part.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус авиадетали
+  en: Aerospace part status
+fingerprint: sha256:b1c2ff42afe74b9e22167bf6f982c488de1c6580e1b3232faf05ad85c99710ff
+enumValues:
+  - raw
+  - in_process
+  - inspect
+  - accepted
+  - rejected
+  - quarantine

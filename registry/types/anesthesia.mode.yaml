@@ -1,0 +1,20 @@
+sid: f653a3ad
+path: anesthesia.mode
+aliases:
+  short: anesthesia.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим вентиляции наркоза
+  en: Anesthesia vent mode
+fingerprint: sha256:f653a3ad20a2488427a1e8399cbb232dae9f62ff24da49f64af63168ebd5d1f4
+enumValues:
+  - manual
+  - volume
+  - pressure
+  - spontaneous

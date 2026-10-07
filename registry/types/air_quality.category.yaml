@@ -1,0 +1,22 @@
+sid: 9233b47f
+path: air_quality.category
+aliases:
+  short: air_quality.category
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Категория качества воздуха
+  en: AQ category
+fingerprint: sha256:9233b47fb635168d108baf143fe9b5afe4edd5f09eac769f65164fa647307f0f
+enumValues:
+  - good
+  - moderate
+  - unhealthy_sensitive
+  - unhealthy
+  - very_unhealthy
+  - hazardous

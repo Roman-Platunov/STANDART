@@ -1,0 +1,121 @@
+{
+  "layer": "B6",
+  "name": "layer-b-saf.json",
+  "types": [
+    {
+      "path": "saf.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SAF batch id",
+      "titleRu": "ID партии SAF",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "saf.blend.ratio",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "SAF blend ratio",
+      "titleRu": "Доля SAF в смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "saf.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "SAF density",
+      "titleRu": "Плотность SAF",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "saf.freeze.point",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Freeze point",
+      "titleRu": "Температура замерзания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "saf.flash.point",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Flash point",
+      "titleRu": "Температура вспышки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "saf.aromatics",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Aromatics content",
+      "titleRu": "Содержание ароматики",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "saf.pathway",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SAF pathway",
+      "titleRu": "Путь производства SAF",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hefa",
+        "ft",
+        "atj",
+        "pth",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "saf.spec.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SAF spec pass",
+      "titleRu": "Спецификация SAF OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

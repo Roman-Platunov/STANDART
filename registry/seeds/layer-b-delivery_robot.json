@@ -1,0 +1,134 @@
+{
+  "layer": "B6",
+  "name": "layer-b-delivery_robot.json",
+  "types": [
+    {
+      "path": "delivery_robot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Delivery robot id",
+      "titleRu": "ID робота-доставщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "delivery_robot.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Delivery order id",
+      "titleRu": "ID заказа доставки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "delivery_robot.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Delivery robot battery",
+      "titleRu": "Заряд робота-доставщика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "delivery_robot.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Delivery robot speed",
+      "titleRu": "Скорость робота-доставщика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "delivery_robot.cargo.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Cargo weight robot",
+      "titleRu": "Масса груза робота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "delivery_robot.compartment.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Compartment open",
+      "titleRu": "Отсек открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "delivery_robot.obstacle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Obstacle ahead robot",
+      "titleRu": "Препятствие перед роботом",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "delivery_robot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Delivery robot state",
+      "titleRu": "Состояние робота-доставщика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "to_pickup",
+        "to_dropoff",
+        "waiting",
+        "returning",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "delivery_robot.command",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Delivery robot command",
+      "titleRu": "Команда робота-доставщика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "pause",
+        "open",
+        "return",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

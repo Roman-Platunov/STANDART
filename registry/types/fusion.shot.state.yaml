@@ -1,0 +1,21 @@
+sid: 5ac4b7f6
+path: fusion.shot.state
+aliases:
+  short: shot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние импульса
+  en: Fusion shot state
+fingerprint: sha256:5ac4b7f615f1485beb4cfd77ebd46733f94844b3b85d491821e803e3f0eb3727
+enumValues:
+  - idle
+  - prep
+  - pulse
+  - rampdown
+  - fault

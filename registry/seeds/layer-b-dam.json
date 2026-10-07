@@ -1,0 +1,142 @@
+{
+  "layer": "B6",
+  "name": "layer-b-dam.json",
+  "types": [
+    {
+      "path": "dam.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dam id",
+      "titleRu": "ID плотины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dam.reservoir.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Reservoir level dam",
+      "titleRu": "Уровень водохранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dam.reservoir.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Reservoir volume dam",
+      "titleRu": "Объём водохранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dam.seepage.flow",
+      "kind": "quantity",
+      "unit": "L/s",
+      "titleEn": "Seepage flow",
+      "titleRu": "Фильтрационный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dam.piezometer.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Piezometer level",
+      "titleRu": "Уровень пьезометра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dam.displacement",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Dam crest displacement",
+      "titleRu": "Смещение гребня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dam.spillway.gate_opening",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Spillway gate opening",
+      "titleRu": "Открытие водосброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dam.turbine.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Dam turbine power",
+      "titleRu": "Мощность турбины ГЭС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dam.alert.seepage",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seepage alert",
+      "titleRu": "Тревога фильтрации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dam.gate.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dam gate state",
+      "titleRu": "Состояние затвора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "partly_open",
+        "open",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

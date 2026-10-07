@@ -1,0 +1,21 @@
+sid: 2c56f8e1
+path: accelerator.state
+aliases:
+  short: accelerator.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ускорителя
+  en: Accelerator state
+fingerprint: sha256:2c56f8e140151c02e6968faa9304d81c7f63cdb21c3ffc8a44be586ba6bd5eef
+enumValues:
+  - off
+  - warmup
+  - standby
+  - beam
+  - fault

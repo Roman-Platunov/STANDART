@@ -1,0 +1,118 @@
+{
+  "layer": "B6",
+  "name": "layer-b-avalanche.json",
+  "types": [
+    {
+      "path": "avalanche.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Avalanche zone id",
+      "titleRu": "ID лавиноопасной зоны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "avalanche.snow.depth",
+      "kind": "quantity",
+      "unit": "cm",
+      "titleEn": "Avalanche snow depth",
+      "titleRu": "Высота снега (лавины)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "avalanche.snow.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Snowpack temperature",
+      "titleRu": "Температура снежного покрова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "avalanche.wind.loading",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind loading",
+      "titleRu": "Ветровая нагрузка на склон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "avalanche.stability.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Snow stability index",
+      "titleRu": "Индекс стабильности снега",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "avalanche.alert.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Avalanche alert",
+      "titleRu": "Лавинная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "avalanche.danger",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Avalanche danger level",
+      "titleRu": "Уровень лавинной опасности",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "avalanche.control",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Avalanche control command",
+      "titleRu": "Команда лавинной службы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "close_road",
+        "open_road",
+        "blast",
+        "hold"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "layer": "B6",
+  "name": "layer-b-fusion.json",
+  "types": [
+    {
+      "path": "fusion.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fusion device id",
+      "titleRu": "ID термоядерной установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fusion.plasma.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Plasma current",
+      "titleRu": "Ток плазмы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fusion.plasma.density",
+      "kind": "quantity",
+      "unit": "/m3",
+      "titleEn": "Plasma density",
+      "titleRu": "Плотность плазмы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fusion.plasma.temperature",
+      "kind": "quantity",
+      "unit": "keV",
+      "titleEn": "Plasma temperature",
+      "titleRu": "Температура плазмы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fusion.magnetic.field",
+      "kind": "quantity",
+      "unit": "T",
+      "titleEn": "Toroidal field",
+      "titleRu": "Тороидальное поле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fusion.nbi.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "NBI power",
+      "titleRu": "Мощность ИНБ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fusion.ecrh.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "ECRH power",
+      "titleRu": "Мощность ЭЦРН",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fusion.divertor.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Divertor temperature",
+      "titleRu": "Температура дивертора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fusion.disruption",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Disruption detected",
+      "titleRu": "Срыв плазмы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fusion.shot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fusion shot state",
+      "titleRu": "Состояние импульса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "prep",
+        "pulse",
+        "rampdown",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

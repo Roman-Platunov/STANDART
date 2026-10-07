@@ -1,0 +1,22 @@
+sid: d0225fe1
+path: ev_battery_pack.state
+aliases:
+  short: ev_battery_pack.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пакета
+  en: Pack state
+fingerprint: sha256:d0225fe136990e3d61823c8c6dfadcd2956d1a1ae21dcf1d46026aa5e1e6c5f4
+enumValues:
+  - idle
+  - charge
+  - discharge
+  - balance
+  - fault
+  - thermal_event

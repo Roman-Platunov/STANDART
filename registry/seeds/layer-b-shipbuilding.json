@@ -1,0 +1,125 @@
+{
+  "layer": "B6",
+  "name": "layer-b-shipbuilding.json",
+  "types": [
+    {
+      "path": "shipbuilding.hull.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hull block id",
+      "titleRu": "ID секции корпуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shipbuilding.yard.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shipyard id",
+      "titleRu": "ID верфи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shipbuilding.welding.meters",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Weld length completed",
+      "titleRu": "Длина сваренных швов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shipbuilding.block.weight",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Hull block weight",
+      "titleRu": "Масса секции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shipbuilding.crane.load",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Shipyard crane load",
+      "titleRu": "Нагрузка крана верфи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shipbuilding.drydock.water_level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Dry dock water level",
+      "titleRu": "Уровень воды в доке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shipbuilding.coating.thickness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Coating thickness",
+      "titleRu": "Толщина покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shipbuilding.nd_test.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "NDT pass",
+      "titleRu": "НК пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shipbuilding.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shipbuilding stage",
+      "titleRu": "Стадия постройки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "steel_cut",
+        "block_build",
+        "erection",
+        "outfitting",
+        "launch",
+        "trials"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

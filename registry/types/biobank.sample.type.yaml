@@ -1,0 +1,23 @@
+sid: bf0f4dcb
+path: biobank.sample.type
+aliases:
+  short: sample.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип образца биобанка
+  en: Biobank sample type
+fingerprint: sha256:bf0f4dcbb0b7d2be92aafcbf40ae8afce1ca268c35a942fce4076243dc12fce3
+enumValues:
+  - blood
+  - plasma
+  - serum
+  - dna
+  - rna
+  - tissue
+  - other

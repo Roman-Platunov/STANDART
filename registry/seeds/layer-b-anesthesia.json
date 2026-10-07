@@ -1,0 +1,131 @@
+{
+  "layer": "B6",
+  "name": "layer-b-anesthesia.json",
+  "types": [
+    {
+      "path": "anesthesia.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anesthesia machine id",
+      "titleRu": "ID наркозного аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anesthesia.case.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anesthesia case id",
+      "titleRu": "ID анестезии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "anesthesia.o2.fraction",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inspired O2 fraction",
+      "titleRu": "Доля O2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "anesthesia.agent.et",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "End-tidal agent",
+      "titleRu": "Конечно-экспираторная концентрация агента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "anesthesia.n2o.fraction",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "N2O fraction",
+      "titleRu": "Доля N2O",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 80
+      },
+      "status": "stable"
+    },
+    {
+      "path": "anesthesia.fresh_gas.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Fresh gas flow",
+      "titleRu": "Поток свежего газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anesthesia.airway.pressure",
+      "kind": "quantity",
+      "unit": "cm[H2O]",
+      "titleEn": "Airway pressure",
+      "titleRu": "Давление в дыхательных путях",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "anesthesia.alarm.apnea",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Apnea alarm",
+      "titleRu": "Тревога апноэ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "anesthesia.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Anesthesia vent mode",
+      "titleRu": "Режим вентиляции наркоза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "manual",
+        "volume",
+        "pressure",
+        "spontaneous"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

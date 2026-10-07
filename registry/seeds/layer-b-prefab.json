@@ -1,0 +1,99 @@
+{
+  "layer": "B6",
+  "name": "layer-b-prefab.json",
+  "types": [
+    {
+      "path": "prefab.module.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Prefab module id",
+      "titleRu": "ID модульной секции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "prefab.project.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Prefab project id",
+      "titleRu": "ID модульного проекта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "prefab.concrete.strength",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Prefab concrete strength",
+      "titleRu": "Прочность бетона модуля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "prefab.module.weight",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Module weight",
+      "titleRu": "Масса модуля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "prefab.tolerance.deviation",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Dimensional deviation",
+      "titleRu": "Отклонение размеров",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "prefab.qa.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Prefab QA pass",
+      "titleRu": "ОТК модуля пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "prefab.module.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Prefab module status",
+      "titleRu": "Статус модуля",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cast",
+        "cure",
+        "finish",
+        "ship",
+        "install",
+        "hold"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

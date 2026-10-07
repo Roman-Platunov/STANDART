@@ -1,0 +1,125 @@
+{
+  "layer": "B6",
+  "name": "layer-b-smart_clothing.json",
+  "types": [
+    {
+      "path": "smart_clothing.garment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Smart garment id",
+      "titleRu": "ID умной одежды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smart_clothing.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Garment battery",
+      "titleRu": "Заряд умной одежды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smart_clothing.heating.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Garment heating power",
+      "titleRu": "Мощность подогрева одежды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_clothing.stretch",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fabric stretch",
+      "titleRu": "Растяжение ткани",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smart_clothing.impact.g",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Impact g-force clothing",
+      "titleRu": "Ударная перегрузка одежды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_clothing.wet",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Garment wet detected",
+      "titleRu": "Одежда намокла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smart_clothing.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Smart clothing mode",
+      "titleRu": "Режим умной одежды",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "heat",
+        "sense",
+        "sos"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smart_clothing.command",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Smart clothing command",
+      "titleRu": "Команда умной одежды",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat_on",
+        "heat_off",
+        "sos",
+        "locate"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

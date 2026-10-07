@@ -1,0 +1,100 @@
+{
+  "layer": "B6",
+  "name": "layer-b-sonar_nav.json",
+  "types": [
+    {
+      "path": "sonar.depth.below_keel",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Depth below keel",
+      "titleRu": "Глубина под килем",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sonar.active.range",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Active sonar range",
+      "titleRu": "Дальность активного сонара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sonar.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Sonar frequency",
+      "titleRu": "Частота сонара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sonar.noise.ambient",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Ambient noise level",
+      "titleRu": "Уровень окружающего шума",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrophone.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Hydrophone SPL",
+      "titleRu": "Уровень на гидрофоне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sonar.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sonar system id",
+      "titleRu": "ID сонарной системы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sonar.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sonar mode",
+      "titleRu": "Режим сонара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "passive",
+        "active",
+        "imaging",
+        "obstacle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

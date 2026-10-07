@@ -1,0 +1,150 @@
+{
+  "layer": "B6",
+  "name": "layer-b-tunnel.json",
+  "types": [
+    {
+      "path": "tunnel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tunnel id",
+      "titleRu": "ID тоннеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tunnel.tbm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "TBM id",
+      "titleRu": "ID ТПМК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tunnel.tbm.advance",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "TBM advance",
+      "titleRu": "Продвижение ТПМК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel.tbm.thrust",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "TBM thrust",
+      "titleRu": "Усилие щита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel.tbm.face_pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Face pressure",
+      "titleRu": "Давление призабойной зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel.gas.ch4",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Tunnel methane",
+      "titleRu": "Метан в тоннеле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel.gas.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Tunnel CO",
+      "titleRu": "CO в тоннеле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel.airflow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Tunnel airflow",
+      "titleRu": "Вентиляция тоннеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel.convergence",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Tunnel convergence",
+      "titleRu": "Конвергенция тоннеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel.fire.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tunnel fire alarm",
+      "titleRu": "Пожар в тоннеле",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tunnel.tbm.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "TBM state",
+      "titleRu": "Состояние ТПМК",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "boring",
+        "ring_build",
+        "maintenance",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

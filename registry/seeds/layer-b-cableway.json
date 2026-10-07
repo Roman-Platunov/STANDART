@@ -1,0 +1,104 @@
+{
+  "layer": "B6",
+  "name": "layer-b-cableway.json",
+  "types": [
+    {
+      "path": "cableway.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cableway line id",
+      "titleRu": "ID канатной дороги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cableway.cabin.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Cabin speed",
+      "titleRu": "Скорость кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cableway.cable.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Haul rope tension",
+      "titleRu": "Натяжение каната",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cableway.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Cableway wind",
+      "titleRu": "Ветер на канатке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cableway.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cableway load",
+      "titleRu": "Загрузка канатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cableway.e_stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cableway e-stop",
+      "titleRu": "Аварийный стоп канатки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cableway.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cableway state",
+      "titleRu": "Состояние канатной дороги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "open",
+        "wind_hold",
+        "evacuation",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

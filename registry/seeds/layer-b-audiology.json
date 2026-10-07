@@ -1,0 +1,108 @@
+{
+  "layer": "B6",
+  "name": "layer-b-audiology.json",
+  "types": [
+    {
+      "path": "audiology.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Audiometer id",
+      "titleRu": "ID аудиометра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "audiology.patient.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Audiology patient id",
+      "titleRu": "ID пациента сурдологии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "audiology.threshold.250",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Hearing threshold 250Hz",
+      "titleRu": "Порог 250 Гц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "audiology.threshold.1000",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Hearing threshold 1kHz",
+      "titleRu": "Порог 1 кГц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "audiology.threshold.4000",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Hearing threshold 4kHz",
+      "titleRu": "Порог 4 кГц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "audiology.tympanometry.pressure",
+      "kind": "quantity",
+      "unit": "daPa",
+      "titleEn": "Tympanometric pressure",
+      "titleRu": "Давление тимпанометрии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "audiology.ear",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Test ear",
+      "titleRu": "Ухо тестирования",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "left",
+        "right",
+        "both"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "audiology.audiogram.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Audiogram ref",
+      "titleRu": "Аудиограмма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

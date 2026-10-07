@@ -1,0 +1,21 @@
+sid: c9ded01a
+path: theme_park.ride.state
+aliases:
+  short: ride.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние аттракциона
+  en: Theme ride state
+fingerprint: sha256:c9ded01a42a3fd345113d32a57e24a15b3f9e324056bd466c8ebfc31b9b716b2
+enumValues:
+  - closed
+  - open
+  - cycle
+  - evac
+  - fault

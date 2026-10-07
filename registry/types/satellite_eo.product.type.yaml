@@ -1,0 +1,21 @@
+sid: c41d149e
+path: satellite_eo.product.type
+aliases:
+  short: product.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип продукта ДЗЗ
+  en: EO product type
+fingerprint: sha256:c41d149e0d465420a46ad6005a29de190ed50698c3e83f3578c1944c5b618cb5
+enumValues:
+  - optical
+  - sar
+  - thermal
+  - hyperspectral
+  - other

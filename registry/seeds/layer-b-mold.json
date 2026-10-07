@@ -1,0 +1,93 @@
+{
+  "layer": "B6",
+  "name": "layer-b-mold.json",
+  "types": [
+    {
+      "path": "mold.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mold sensor id",
+      "titleRu": "ID датчика плесени",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mold.risk.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Mold risk index",
+      "titleRu": "Индекс риска плесени",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mold.spore.count",
+      "kind": "quantity",
+      "unit": "/m3",
+      "titleEn": "Spore count",
+      "titleRu": "Концентрация спор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mold.surface.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Surface moisture mold",
+      "titleRu": "Влажность поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mold.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mold detected",
+      "titleRu": "Плесень обнаружена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mold.severity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mold severity",
+      "titleRu": "Степень поражения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "low",
+        "moderate",
+        "high"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

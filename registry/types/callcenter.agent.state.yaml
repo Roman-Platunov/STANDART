@@ -1,0 +1,21 @@
+sid: e6144cf1
+path: callcenter.agent.state
+aliases:
+  short: agent.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние оператора
+  en: Agent state
+fingerprint: sha256:e6144cf140d828a845ff89bf433c3f49460fcaa2ced2f4ed62eb8c069b00ab0c
+enumValues:
+  - available
+  - on_call
+  - wrap
+  - break
+  - offline

@@ -1,0 +1,118 @@
+{
+  "layer": "B6",
+  "name": "layer-b-genomics.json",
+  "types": [
+    {
+      "path": "genomics.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sequencing run id",
+      "titleRu": "ID прогона секвенирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "genomics.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Genomics sample id",
+      "titleRu": "ID геномного образца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "genomics.cluster.density",
+      "kind": "quantity",
+      "unit": "/mm2",
+      "titleEn": "Cluster density",
+      "titleRu": "Плотность кластеров",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genomics.q30",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Percent Q30",
+      "titleRu": "Доля Q30",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "genomics.yield.gb",
+      "kind": "quantity",
+      "unit": "Gigabase",
+      "titleEn": "Yield gigabases",
+      "titleRu": "Выход гигабаз",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genomics.error.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Error rate",
+      "titleRu": "Частота ошибок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "genomics.run.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sequencing run state",
+      "titleRu": "Состояние прогона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "loading",
+        "sequencing",
+        "wash",
+        "complete",
+        "failed"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "genomics.fastq.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "FASTQ ref",
+      "titleRu": "Ссылка FASTQ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

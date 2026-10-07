@@ -1,0 +1,20 @@
+sid: 1f87d3d9
+path: avalanche.control
+aliases:
+  short: avalanche.control
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда лавинной службы
+  en: Avalanche control command
+fingerprint: sha256:1f87d3d9f8c0fd21cdabf975f8810410415c17d7afa7e82416725d5923e3681c
+enumValues:
+  - close_road
+  - open_road
+  - blast
+  - hold

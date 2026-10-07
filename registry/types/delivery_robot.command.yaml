@@ -1,0 +1,21 @@
+sid: 539c66e5
+path: delivery_robot.command
+aliases:
+  short: delivery_robot.command
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда робота-доставщика
+  en: Delivery robot command
+fingerprint: sha256:539c66e53d285f55fcf7074944b5b606a592df3db54b4b36844858f4b0eaf391
+enumValues:
+  - start
+  - pause
+  - open
+  - return
+  - abort

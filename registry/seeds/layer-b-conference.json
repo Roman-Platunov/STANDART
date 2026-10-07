@@ -1,0 +1,107 @@
+{
+  "layer": "B6",
+  "name": "layer-b-conference.json",
+  "types": [
+    {
+      "path": "conference.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Conference room id",
+      "titleRu": "ID конференц-зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "conference.meeting.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Meeting id",
+      "titleRu": "ID встречи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "conference.participants",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Participant count",
+      "titleRu": "Число участников",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conference.audio.level",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Conference audio level",
+      "titleRu": "Уровень звука конференции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conference.mic.muted",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mic muted conference",
+      "titleRu": "Микрофон выключен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "conference.recording",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Conference recording",
+      "titleRu": "Идёт запись конференции",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "conference.screen.sharing",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Screen sharing",
+      "titleRu": "Демонстрация экрана",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "conference.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Conference state",
+      "titleRu": "Состояние конференции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scheduled",
+        "lobby",
+        "live",
+        "ended"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

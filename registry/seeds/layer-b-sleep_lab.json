@@ -1,0 +1,118 @@
+{
+  "layer": "B6",
+  "name": "layer-b-sleep_lab.json",
+  "types": [
+    {
+      "path": "sleep_lab.study.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sleep study id",
+      "titleRu": "ID исследования сна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "sleep_lab.patient.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sleep lab patient id",
+      "titleRu": "ID пациента сомнологии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "sleep_lab.ahi",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Apnea-hypopnea index",
+      "titleRu": "Индекс апноэ-гипопноэ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "sleep_lab.spo2.min",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Min SpO2 sleep",
+      "titleRu": "Мин. SpO2 сна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sleep_lab.sleep.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sleep efficiency",
+      "titleRu": "Эффективность сна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sleep_lab.cpap.pressure",
+      "kind": "quantity",
+      "unit": "cm[H2O]",
+      "titleEn": "CPAP pressure",
+      "titleRu": "Давление CPAP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "sleep_lab.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Scored sleep stage",
+      "titleRu": "Стадия сна (скоринг)",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wake",
+        "n1",
+        "n2",
+        "n3",
+        "rem"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "sleep_lab.psg.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "PSG recording ref",
+      "titleRu": "Запись ПСГ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

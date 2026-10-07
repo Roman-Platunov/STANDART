@@ -1,0 +1,121 @@
+{
+  "layer": "B6",
+  "name": "layer-b-ophthalmology.json",
+  "types": [
+    {
+      "path": "ophthalmology.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ophthalmology device id",
+      "titleRu": "ID офтальмологического аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ophthalmology.patient.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ophtho patient id",
+      "titleRu": "ID пациента офтальмологии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "ophthalmology.iop",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "Intraocular pressure",
+      "titleRu": "Внутриглазное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "ophthalmology.axial.length",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Axial length",
+      "titleRu": "Осевая длина глаза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "ophthalmology.refraction.sphere",
+      "kind": "quantity",
+      "unit": "D",
+      "titleEn": "Sphere refraction",
+      "titleRu": "Сфера рефракции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "ophthalmology.refraction.cylinder",
+      "kind": "quantity",
+      "unit": "D",
+      "titleEn": "Cylinder refraction",
+      "titleRu": "Цилиндр рефракции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "ophthalmology.oct.thickness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Retinal thickness",
+      "titleRu": "Толщина сетчатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "ophthalmology.image.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Ocular image ref",
+      "titleRu": "Снимок глаза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ophthalmology.eye",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Eye laterality",
+      "titleRu": "Глаз",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "od",
+        "os",
+        "ou"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "layer": "B6",
+  "name": "layer-b-radar_meteo.json",
+  "types": [
+    {
+      "path": "radar_meteo.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Weather radar id",
+      "titleRu": "ID метеорадара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radar_meteo.reflectivity",
+      "kind": "quantity",
+      "unit": "dBZ",
+      "titleEn": "Radar reflectivity",
+      "titleRu": "Отражаемость радара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radar_meteo.velocity",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Doppler velocity",
+      "titleRu": "Доплеровская скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radar_meteo.echo.top",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Echo top height",
+      "titleRu": "Верхняя граница эха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radar_meteo.precip.rate",
+      "kind": "quantity",
+      "unit": "mm/h",
+      "titleEn": "Radar precip rate",
+      "titleRu": "Осадки по радару",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radar_meteo.scan.elevation",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Scan elevation",
+      "titleRu": "Угол сканирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radar_meteo.severe.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Severe weather detected",
+      "titleRu": "Опасные явления обнаружены",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "radar_meteo.image.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Radar image ref",
+      "titleRu": "Карта радара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radar_meteo.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Radar product",
+      "titleRu": "Продукт радара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "z",
+        "v",
+        "width",
+        "dual_pol",
+        "composite"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

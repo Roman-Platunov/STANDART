@@ -1,0 +1,123 @@
+{
+  "layer": "B6",
+  "name": "layer-b-tire_mfg.json",
+  "types": [
+    {
+      "path": "tire_mfg.mold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tire mold id",
+      "titleRu": "ID пресс-формы шины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tire_mfg.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tire batch id",
+      "titleRu": "ID партии шин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tire_mfg.curing.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tire curing temperature",
+      "titleRu": "Температура вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mfg.curing.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Tire curing pressure",
+      "titleRu": "Давление вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mfg.curing.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Curing time",
+      "titleRu": "Время вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mfg.uniformity.rfv",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Radial force variation",
+      "titleRu": "Радиальная сила RFV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mfg.balance.static",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Static imbalance",
+      "titleRu": "Статический дисбаланс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mfg.tread.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Tread depth new",
+      "titleRu": "Глубина протектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mfg.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tire inspection result",
+      "titleRu": "Результат контроля шины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "rework",
+        "scrap"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

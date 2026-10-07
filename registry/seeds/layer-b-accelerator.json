@@ -1,0 +1,126 @@
+{
+  "layer": "B6",
+  "name": "layer-b-accelerator.json",
+  "types": [
+    {
+      "path": "accelerator.facility.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Accelerator facility id",
+      "titleRu": "ID ускорителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "accelerator.beam.energy",
+      "kind": "quantity",
+      "unit": "MeV",
+      "titleEn": "Beam energy",
+      "titleRu": "Энергия пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "accelerator.beam.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Beam current",
+      "titleRu": "Ток пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "accelerator.beam.emittance",
+      "kind": "quantity",
+      "unit": "m.rad",
+      "titleEn": "Beam emittance",
+      "titleRu": "Эмиттанс пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "accelerator.rf.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Accelerating RF power",
+      "titleRu": "РЧ мощность ускорения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "accelerator.vacuum.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Beamline vacuum",
+      "titleRu": "Вакуум канала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "accelerator.magnet.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Magnet current accel",
+      "titleRu": "Ток магнита ускорителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "accelerator.interlock.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Accelerator interlock trip",
+      "titleRu": "Блокировка ускорителя",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "accelerator.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Accelerator state",
+      "titleRu": "Состояние ускорителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "warmup",
+        "standby",
+        "beam",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

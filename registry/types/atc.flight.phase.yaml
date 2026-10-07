@@ -1,0 +1,22 @@
+sid: 638f08a7
+path: atc.flight.phase
+aliases:
+  short: flight.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза полёта УВД
+  en: ATC flight phase
+fingerprint: sha256:638f08a7efd23637f4a99b2e7ae61be53ec91fdefdb35d80a1ae0f965cc53639
+enumValues:
+  - depart
+  - climb
+  - cruise
+  - descent
+  - approach
+  - land

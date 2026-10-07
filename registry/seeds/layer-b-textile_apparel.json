@@ -1,0 +1,111 @@
+{
+  "layer": "B6",
+  "name": "layer-b-textile_apparel.json",
+  "types": [
+    {
+      "path": "apparel.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Apparel SKU id",
+      "titleRu": "SKU одежды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "apparel.cut.lot_id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cut lot id",
+      "titleRu": "ID раскройной партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "apparel.sewing.spm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Sewing stitches per minute",
+      "titleRu": "Стежков в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apparel.fabric.usage",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Fabric usage",
+      "titleRu": "Расход ткани",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apparel.defect.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Apparel defect count",
+      "titleRu": "Дефекты одежды",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apparel.iron.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ironing temperature",
+      "titleRu": "Температура утюжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apparel.needle.broken",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Needle broken",
+      "titleRu": "Сломана игла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "apparel.line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Apparel line state",
+      "titleRu": "Состояние швейной линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "cutting",
+        "sewing",
+        "finishing",
+        "packing",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

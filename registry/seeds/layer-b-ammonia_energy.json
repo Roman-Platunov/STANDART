@@ -1,0 +1,117 @@
+{
+  "layer": "B6",
+  "name": "layer-b-ammonia_energy.json",
+  "types": [
+    {
+      "path": "ammonia.tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ammonia tank level",
+      "titleRu": "Уровень аммиака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ammonia.tank.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Ammonia tank pressure",
+      "titleRu": "Давление аммиака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia.tank.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ammonia tank temperature",
+      "titleRu": "Температура аммиака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia.cracker.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cracker temperature",
+      "titleRu": "Температура крекера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia.engine.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Ammonia engine power",
+      "titleRu": "Мощность аммиачного двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia.leak.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ammonia leak detected",
+      "titleRu": "Утечка аммиака",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ammonia.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ammonia energy system id",
+      "titleRu": "ID аммиачной энергосистемы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ammonia.system.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ammonia system state",
+      "titleRu": "Состояние аммиачной системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "store",
+        "crack",
+        "generate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

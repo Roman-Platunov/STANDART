@@ -1,0 +1,22 @@
+sid: 171d7052
+path: asphalt.job.state
+aliases:
+  short: asphalt.job.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние укладки
+  en: Asphalt job state
+fingerprint: sha256:171d705282d655597b85d24f3aa6462ed2cdaabbd62ba419107e53489eafeab3
+enumValues:
+  - idle
+  - mixing
+  - hauling
+  - paving
+  - compacting
+  - done

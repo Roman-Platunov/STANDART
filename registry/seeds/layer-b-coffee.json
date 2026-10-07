@@ -1,0 +1,152 @@
+{
+  "layer": "B6",
+  "name": "layer-b-coffee.json",
+  "types": [
+    {
+      "path": "coffee.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coffee machine id",
+      "titleRu": "ID кофемашины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coffee.boiler.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Boiler temperature",
+      "titleRu": "Температура бойлера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee.brew.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Brew pressure",
+      "titleRu": "Давление пролива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee.grind.size",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Grind size setting",
+      "titleRu": "Помол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee.shot.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Shot time",
+      "titleRu": "Время эспрессо",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee.shot.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Shot weight",
+      "titleRu": "Масса эспрессо",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee.milk.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Milk temperature",
+      "titleRu": "Температура молока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coffee.bean.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bean hopper level",
+      "titleRu": "Уровень зёрен",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coffee.drink",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Coffee drink type",
+      "titleRu": "Тип напитка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "espresso",
+        "americano",
+        "latte",
+        "cappuccino",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coffee.machine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Coffee machine state",
+      "titleRu": "Состояние кофемашины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "heating",
+        "grinding",
+        "brewing",
+        "steaming",
+        "cleaning",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

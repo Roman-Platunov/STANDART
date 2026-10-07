@@ -1,0 +1,22 @@
+sid: dce9ccd2
+path: apparel.line.state
+aliases:
+  short: apparel.line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние швейной линии
+  en: Apparel line state
+fingerprint: sha256:dce9ccd2545ad1ca1fd83aee875020c00b6ddd73871043da06a289f28a181055
+enumValues:
+  - idle
+  - cutting
+  - sewing
+  - finishing
+  - packing
+  - fault

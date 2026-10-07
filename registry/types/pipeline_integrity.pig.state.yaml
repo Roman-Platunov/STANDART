@@ -1,0 +1,20 @@
+sid: 895ff55b
+path: pipeline_integrity.pig.state
+aliases:
+  short: pig.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние прогона снаряда
+  en: Pig run state
+fingerprint: sha256:895ff55b106e0a8feec38db5cb15c930db1749b88cfb0312933ddc2eb9a294a2
+enumValues:
+  - idle
+  - running
+  - stuck
+  - complete

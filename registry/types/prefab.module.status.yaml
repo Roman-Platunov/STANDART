@@ -1,0 +1,22 @@
+sid: a09194fa
+path: prefab.module.status
+aliases:
+  short: module.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус модуля
+  en: Prefab module status
+fingerprint: sha256:a09194faf0f1fddef33cf90f7ca784ba230a4360bb2389dfa29aa5c04785d4fe
+enumValues:
+  - cast
+  - cure
+  - finish
+  - ship
+  - install
+  - hold

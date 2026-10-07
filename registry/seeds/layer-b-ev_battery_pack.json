@@ -1,0 +1,161 @@
+{
+  "layer": "B6",
+  "name": "layer-b-ev_battery_pack.json",
+  "types": [
+    {
+      "path": "ev_battery_pack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV battery pack id",
+      "titleRu": "ID тяговой батареи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ev_battery_pack.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pack SoC",
+      "titleRu": "SoC пакета",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ev_battery_pack.soh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pack SoH",
+      "titleRu": "SoH пакета",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ev_battery_pack.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Pack voltage",
+      "titleRu": "Напряжение пакета",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_battery_pack.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Pack current",
+      "titleRu": "Ток пакета",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_battery_pack.temp.max",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Max cell temperature",
+      "titleRu": "Макс. температура ячеек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_battery_pack.temp.min",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Min cell temperature",
+      "titleRu": "Мин. температура ячеек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_battery_pack.cell_delta_v",
+      "kind": "quantity",
+      "unit": "mV",
+      "titleEn": "Cell voltage delta",
+      "titleRu": "Разброс напряжения ячеек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_battery_pack.isolation",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Isolation resistance",
+      "titleRu": "Сопротивление изоляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_battery_pack.contactor.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Main contactor closed",
+      "titleRu": "Контактор замкнут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ev_battery_pack.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pack state",
+      "titleRu": "Состояние пакета",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "charge",
+        "discharge",
+        "balance",
+        "fault",
+        "thermal_event"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

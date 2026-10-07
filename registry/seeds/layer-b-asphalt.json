@@ -1,0 +1,126 @@
+{
+  "layer": "B6",
+  "name": "layer-b-asphalt.json",
+  "types": [
+    {
+      "path": "asphalt.plant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Asphalt mix temperature",
+      "titleRu": "Температура асфальтобетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt.aggregate.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Aggregate moisture",
+      "titleRu": "Влажность щебня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 20
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asphalt.bitumen.content",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bitumen content",
+      "titleRu": "Содержание битума",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 15
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asphalt.paver.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Paver speed",
+      "titleRu": "Скорость укладчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt.compactor.passes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Compactor passes",
+      "titleRu": "Проходы катка",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt.mat.density",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mat density",
+      "titleRu": "Плотность покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asphalt.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Asphalt plant id",
+      "titleRu": "ID АБЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asphalt.job.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Asphalt job state",
+      "titleRu": "Состояние укладки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "mixing",
+        "hauling",
+        "paving",
+        "compacting",
+        "done"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

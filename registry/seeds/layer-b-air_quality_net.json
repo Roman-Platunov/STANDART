@@ -1,0 +1,141 @@
+{
+  "layer": "B6",
+  "name": "layer-b-air_quality_net.json",
+  "types": [
+    {
+      "path": "air_quality.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AQ station id",
+      "titleRu": "ID станции воздуха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "air_quality.pm25",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Network PM2.5",
+      "titleRu": "PM2.5 сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_quality.pm10",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Network PM10",
+      "titleRu": "PM10 сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_quality.no2",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Network NO2",
+      "titleRu": "NO2 сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_quality.o3",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Network O3",
+      "titleRu": "O3 сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_quality.so2",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Network SO2",
+      "titleRu": "SO2 сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_quality.co",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Network CO",
+      "titleRu": "CO сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_quality.aqi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Network AQI",
+      "titleRu": "AQI сети",
+      "encodings": [
+        "u8",
+        "f32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_quality.pollen.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pollen index",
+      "titleRu": "Индекс пыльцы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_quality.category",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AQ category",
+      "titleRu": "Категория качества воздуха",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "moderate",
+        "unhealthy_sensitive",
+        "unhealthy",
+        "very_unhealthy",
+        "hazardous"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

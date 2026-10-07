@@ -1,0 +1,20 @@
+sid: 82a5fabd
+path: flood.alert.level
+aliases:
+  short: alert.level
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Уровень паводковой опасности
+  en: Flood alert level
+fingerprint: sha256:82a5fabd2683ebae1db1b2c51e11ebd32bc4ec09591a2b925ec31e97995352ff
+enumValues:
+  - normal
+  - watch
+  - warning
+  - severe

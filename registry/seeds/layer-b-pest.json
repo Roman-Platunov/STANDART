@@ -1,0 +1,96 @@
+{
+  "layer": "B6",
+  "name": "layer-b-pest.json",
+  "types": [
+    {
+      "path": "pest.trap.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pest trap id",
+      "titleRu": "ID ловушки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pest.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pest zone id",
+      "titleRu": "ID зоны мониторинга вредителей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pest.trap.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trap capture count",
+      "titleRu": "Отлов в ловушке",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pest.activity.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pest activity index",
+      "titleRu": "Индекс активности вредителей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pest.alert.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pest alert",
+      "titleRu": "Тревога вредителей",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pest.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pest type",
+      "titleRu": "Тип вредителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rodent",
+        "cockroach",
+        "mosquito",
+        "fly",
+        "moth",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pest.trap.image_ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Trap image",
+      "titleRu": "Снимок ловушки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

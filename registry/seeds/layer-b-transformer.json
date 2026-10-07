@@ -1,0 +1,141 @@
+{
+  "layer": "B6",
+  "name": "layer-b-transformer.json",
+  "types": [
+    {
+      "path": "transformer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Power transformer id",
+      "titleRu": "ID силового трансформатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "transformer.oil.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Transformer oil temp",
+      "titleRu": "Температура масла трансформатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer.winding.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Winding temperature",
+      "titleRu": "Температура обмотки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer.load.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Transformer load pct",
+      "titleRu": "Нагрузка трансформатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 150
+      },
+      "status": "stable"
+    },
+    {
+      "path": "transformer.dga.h2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "DGA hydrogen",
+      "titleRu": "ВРГ водород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer.dga.c2h2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "DGA acetylene",
+      "titleRu": "ВРГ ацетилен",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer.moisture",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Oil moisture",
+      "titleRu": "Влага в масле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer.bushing.tan_delta",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bushing tan delta",
+      "titleRu": "tgδ ввода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transformer.alarm.gas",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Buchholz / gas alarm",
+      "titleRu": "Газовая защита",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "transformer.cooling",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cooling state",
+      "titleRu": "Состояние охлаждения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "off",
+        "auto"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

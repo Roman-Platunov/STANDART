@@ -1,0 +1,18 @@
+sid: b7a55add
+path: bakery.oven.humidity
+aliases:
+  short: oven.humidity
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Влажность печи
+  en: Oven humidity bakery
+fingerprint: sha256:b7a55addb9f056ab07684e395591d65ff2df0e47b14293a926f0486112258bcf
+range:
+  min: 0
+  max: 100

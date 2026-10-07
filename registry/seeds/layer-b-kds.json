@@ -1,0 +1,103 @@
+{
+  "layer": "B6",
+  "name": "layer-b-kds.json",
+  "types": [
+    {
+      "path": "kds.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Kitchen display station id",
+      "titleRu": "ID станции KDS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "kds.ticket.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Kitchen ticket id",
+      "titleRu": "ID заказа кухни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "kds.ticket.age",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Ticket age",
+      "titleRu": "Возраст заказа на кухне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kds.tickets.open",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open tickets",
+      "titleRu": "Открытые заказы кухни",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kds.bump.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Average bump time",
+      "titleRu": "Среднее время отдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kds.ticket.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kitchen ticket status",
+      "titleRu": "Статус заказа кухни",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "new",
+        "in_prep",
+        "ready",
+        "bumped",
+        "void"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "kds.command",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "KDS command",
+      "titleRu": "Команда KDS",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bump",
+        "recall",
+        "rush",
+        "void"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

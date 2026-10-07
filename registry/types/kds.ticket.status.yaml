@@ -1,0 +1,21 @@
+sid: 1d7a385e
+path: kds.ticket.status
+aliases:
+  short: ticket.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус заказа кухни
+  en: Kitchen ticket status
+fingerprint: sha256:1d7a385e6d1881383182c520c85ff5ceedaca738807cf17edcb1a8e9d97ab2d8
+enumValues:
+  - new
+  - in_prep
+  - ready
+  - bumped
+  - void

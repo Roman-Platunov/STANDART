@@ -1,0 +1,20 @@
+sid: 95966dd1
+path: zoo.animal.welfare
+aliases:
+  short: animal.welfare
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние благополучия
+  en: Animal welfare state
+fingerprint: sha256:95966dd13a4c6e7a0be326cd424c6b52807ac1f16b7a98139cfc1de7e7d24397
+enumValues:
+  - normal
+  - observe
+  - veterinary
+  - critical

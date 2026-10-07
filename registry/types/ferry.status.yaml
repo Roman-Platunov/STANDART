@@ -1,0 +1,21 @@
+sid: c655e3bf
+path: ferry.status
+aliases:
+  short: ferry.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус парома
+  en: Ferry status
+fingerprint: sha256:c655e3bf1ef7c950ff4a1bef6f8e33656dfd3e38bf9be8b8fddb73f898351cb7
+enumValues:
+  - docked
+  - boarding
+  - departed
+  - arriving
+  - cancelled

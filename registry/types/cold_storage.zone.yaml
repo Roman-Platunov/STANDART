@@ -1,0 +1,20 @@
+sid: ba17d123
+path: cold_storage.zone
+aliases:
+  short: cold_storage.zone
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип зоны хладосклада
+  en: Cold storage zone type
+fingerprint: sha256:ba17d1236e8debf3aa624851235a4f0fe5e954e8bd91b47466b3ed2c0c4dac05
+enumValues:
+  - chilled
+  - frozen
+  - deep_freeze
+  - controlled_atmosphere

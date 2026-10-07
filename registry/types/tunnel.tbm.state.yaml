@@ -1,0 +1,21 @@
+sid: bdbf7322
+path: tunnel.tbm.state
+aliases:
+  short: tbm.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ТПМК
+  en: TBM state
+fingerprint: sha256:bdbf7322433e0dd65365c5af7774639fc171e46036ac12adf4cc38d41fde5a7b
+enumValues:
+  - idle
+  - boring
+  - ring_build
+  - maintenance
+  - fault

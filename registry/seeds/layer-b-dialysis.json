@@ -1,0 +1,138 @@
+{
+  "layer": "B6",
+  "name": "layer-b-dialysis.json",
+  "types": [
+    {
+      "path": "dialysis.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dialysis machine id",
+      "titleRu": "ID аппарата диализа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dialysis.patient.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dialysis patient id",
+      "titleRu": "ID пациента диализа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "dialysis.blood.flow",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Blood flow rate",
+      "titleRu": "Скорость кровотока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "dialysis.dialysate.flow",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Dialysate flow",
+      "titleRu": "Скорость диализата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dialysis.uf.rate",
+      "kind": "quantity",
+      "unit": "mL/h",
+      "titleEn": "Ultrafiltration rate",
+      "titleRu": "Скорость ультрафильтрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "dialysis.uf.goal",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "UF goal",
+      "titleRu": "Цель ультрафильтрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "dialysis.venous.pressure",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "Venous pressure",
+      "titleRu": "Венозное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "dialysis.conductivity",
+      "kind": "quantity",
+      "unit": "mS/cm",
+      "titleEn": "Dialysate conductivity",
+      "titleRu": "Проводимость диализата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dialysis.alarm.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dialysis alarm",
+      "titleRu": "Тревога диализа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dialysis.session.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dialysis session state",
+      "titleRu": "Состояние сеанса диализа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "prime",
+        "treatment",
+        "rinseback",
+        "done",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

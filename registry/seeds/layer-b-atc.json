@@ -1,0 +1,110 @@
+{
+  "layer": "B6",
+  "name": "layer-b-atc.json",
+  "types": [
+    {
+      "path": "atc.sector.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ATC sector id",
+      "titleRu": "ID сектора УВД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "atc.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ATC flight id",
+      "titleRu": "ID рейса УВД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "atc.aircraft.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Aircraft in sector",
+      "titleRu": "ВС в секторе",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "atc.separation.min",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Minimum separation",
+      "titleRu": "Минимальное эшелонирование",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "atc.workload.index",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Controller workload",
+      "titleRu": "Нагрузка диспетчера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "atc.alert.conflict",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Conflict alert",
+      "titleRu": "Конфликт траекторий",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "atc.alert.msaW",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "MSA warning",
+      "titleRu": "Предупреждение MSAW",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "atc.flight.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ATC flight phase",
+      "titleRu": "Фаза полёта УВД",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "depart",
+        "climb",
+        "cruise",
+        "descent",
+        "approach",
+        "land"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

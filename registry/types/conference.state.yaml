@@ -1,0 +1,20 @@
+sid: "12292487"
+path: conference.state
+aliases:
+  short: conference.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние конференции
+  en: Conference state
+fingerprint: sha256:12292487619fc495001292818e7861b26837e789467d06263ba2122c67fa5438
+enumValues:
+  - scheduled
+  - lobby
+  - live
+  - ended

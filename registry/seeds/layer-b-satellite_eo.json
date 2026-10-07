@@ -1,0 +1,127 @@
+{
+  "layer": "B6",
+  "name": "layer-b-satellite_eo.json",
+  "types": [
+    {
+      "path": "satellite_eo.scene.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EO scene id",
+      "titleRu": "ID сцены ДЗЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "satellite_eo.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EO sensor id",
+      "titleRu": "ID сенсора ДЗЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "satellite_eo.cloud.cover",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scene cloud cover",
+      "titleRu": "Облачность сцены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "satellite_eo.resolution",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Ground sample distance",
+      "titleRu": "Пространственное разрешение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "satellite_eo.ndvi.mean",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Scene mean NDVI",
+      "titleRu": "Средний NDVI сцены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "satellite_eo.off_nadir",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Off-nadir angle",
+      "titleRu": "Угол от надира",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "satellite_eo.sun.elevation",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Sun elevation",
+      "titleRu": "Высота Солнца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "satellite_eo.product.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "EO product ref",
+      "titleRu": "Продукт ДЗЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "satellite_eo.product.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "EO product type",
+      "titleRu": "Тип продукта ДЗЗ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "optical",
+        "sar",
+        "thermal",
+        "hyperspectral",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

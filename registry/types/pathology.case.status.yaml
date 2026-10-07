@@ -1,0 +1,22 @@
+sid: 9074e9ee
+path: pathology.case.status
+aliases:
+  short: pathology.case.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус случая
+  en: Pathology case status
+fingerprint: sha256:9074e9ee204bed4c2727cea432a5ddb9673aaf79491a435fdcc84e73097098d8
+enumValues:
+  - accession
+  - gross
+  - processing
+  - staining
+  - signout
+  - amended

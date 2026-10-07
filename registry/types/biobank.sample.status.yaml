@@ -1,0 +1,21 @@
+sid: bf03ddb9
+path: biobank.sample.status
+aliases:
+  short: sample.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус образца биобанка
+  en: Biobank sample status
+fingerprint: sha256:bf03ddb934da5260a0bc6822b05721d66481dc068c953bdcd539c97a245014dd
+enumValues:
+  - available
+  - reserved
+  - issued
+  - depleted
+  - destroyed

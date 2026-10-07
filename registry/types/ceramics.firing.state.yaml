@@ -1,0 +1,22 @@
+sid: 70214ea1
+path: ceramics.firing.state
+aliases:
+  short: firing.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние обжига
+  en: Firing state
+fingerprint: sha256:70214ea1c92c8f91388f1083cd6dd1265ef077c83892cc321e654bb04e46bb40
+enumValues:
+  - load
+  - ramp
+  - soak
+  - cool
+  - unload
+  - fault

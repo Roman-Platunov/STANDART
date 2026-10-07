@@ -1,0 +1,21 @@
+sid: ac85d672
+path: cableway.state
+aliases:
+  short: cableway.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние канатной дороги
+  en: Cableway state
+fingerprint: sha256:ac85d672a87c7527f50596b620b6ce7980494e3bdb5f391fb838983e36f1a106
+enumValues:
+  - closed
+  - open
+  - wind_hold
+  - evacuation
+  - fault

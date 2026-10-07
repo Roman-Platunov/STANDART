@@ -1,0 +1,23 @@
+sid: 21aa2fa5
+path: coffee.machine.state
+aliases:
+  short: coffee.machine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кофемашины
+  en: Coffee machine state
+fingerprint: sha256:21aa2fa52e362d52d68ec312eb5de89057844d33f1581f3c0550529e71d449f3
+enumValues:
+  - idle
+  - heating
+  - grinding
+  - brewing
+  - steaming
+  - cleaning
+  - fault

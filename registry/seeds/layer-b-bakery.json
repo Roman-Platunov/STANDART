@@ -1,0 +1,123 @@
+{
+  "layer": "B6",
+  "name": "layer-b-bakery.json",
+  "types": [
+    {
+      "path": "bakery.oven.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bakery oven id",
+      "titleRu": "ID печи пекарни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bakery.oven.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bakery oven temperature",
+      "titleRu": "Температура печи пекарни",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bakery.oven.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oven humidity bakery",
+      "titleRu": "Влажность печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bakery.dough.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dough temperature",
+      "titleRu": "Температура теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bakery.proof.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Proofer humidity",
+      "titleRu": "Влажность расстойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bakery.mixer.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Mix time",
+      "titleRu": "Время замеса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bakery.loaf.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Loaf weight",
+      "titleRu": "Масса изделия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bakery.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bakery stage",
+      "titleRu": "Стадия выпечки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "ferment",
+        "proof",
+        "bake",
+        "cool",
+        "pack"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: d9848881
+path: ammonia.system.state
+aliases:
+  short: ammonia.system.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние аммиачной системы
+  en: Ammonia system state
+fingerprint: sha256:d9848881637dd977b3085d77dcd67637d38dc13eb1a75b4d8b455350f245675c
+enumValues:
+  - idle
+  - store
+  - crack
+  - generate
+  - fault

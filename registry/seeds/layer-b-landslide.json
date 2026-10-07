@@ -1,0 +1,116 @@
+{
+  "layer": "B6",
+  "name": "layer-b-landslide.json",
+  "types": [
+    {
+      "path": "landslide.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Landslide site id",
+      "titleRu": "ID оползневого участка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "landslide.displacement",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Landslide displacement",
+      "titleRu": "Смещение оползня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "landslide.velocity",
+      "kind": "quantity",
+      "unit": "mm/d",
+      "titleEn": "Landslide velocity",
+      "titleRu": "Скорость оползня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "landslide.soil.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Slope soil moisture",
+      "titleRu": "Влажность склона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "landslide.pore.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Pore water pressure",
+      "titleRu": "Поровое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "landslide.inclinometer.tilt",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Inclinometer tilt",
+      "titleRu": "Наклон инклинометра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "landslide.alert.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Landslide alert",
+      "titleRu": "Оползневая тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "landslide.risk",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Landslide risk",
+      "titleRu": "Риск оползня",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "low",
+        "moderate",
+        "high",
+        "critical"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+sid: 5a1a68e4
+path: bloodbank.unit.status
+aliases:
+  short: bloodbank.unit.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус дозы
+  en: Blood unit status
+fingerprint: sha256:5a1a68e426e261e204759713e369a18a60a5e0d64b7c6d3d25a472c44291302b
+enumValues:
+  - available
+  - reserved
+  - issued
+  - transfused
+  - discarded
+  - quarantine
