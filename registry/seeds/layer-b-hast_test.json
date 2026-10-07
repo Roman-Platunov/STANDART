@@ -1,0 +1,113 @@
+{
+  "layer": "B17",
+  "name": "layer-b-hast_test.json",
+  "types": [
+    {
+      "path": "hast_test.chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HAST chamber id",
+      "titleRu": "ID камеры HAST",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hast_test.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HAST lot id",
+      "titleRu": "ID партии HAST",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hast_test.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hast_test.rh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hast_test.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Chamber pressure",
+      "titleRu": "Давление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hast_test.duration.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Stress duration",
+      "titleRu": "Длительность стресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hast_test.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chamber leak",
+      "titleRu": "Натекание камеры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hast_test.bias",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bias mode",
+      "titleRu": "Режим смещения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "biased",
+        "unbiased",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

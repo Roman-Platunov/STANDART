@@ -1,0 +1,116 @@
+{
+  "layer": "B17",
+  "name": "layer-b-waste_service.json",
+  "types": [
+    {
+      "path": "waste_service.truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lavatory truck id",
+      "titleRu": "ID ассенизаторской машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waste_service.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Waste service flight id",
+      "titleRu": "ID рейса ассенизации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waste_service.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Waste removed",
+      "titleRu": "Откачано отходов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_service.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Service duration",
+      "titleRu": "Длительность обслуживания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_service.tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Truck tank level",
+      "titleRu": "Уровень бака машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waste_service.rinse",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Rinse water",
+      "titleRu": "Вода промывки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_service.spill",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spill",
+      "titleRu": "Разлив",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "waste_service.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "approach",
+        "connect",
+        "pump",
+        "rinse",
+        "complete",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

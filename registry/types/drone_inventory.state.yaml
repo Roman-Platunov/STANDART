@@ -1,0 +1,21 @@
+sid: 331bbad3
+path: drone_inventory.state
+aliases:
+  short: drone_inventory.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дрона
+  en: Drone state
+fingerprint: sha256:331bbad3f2cf555a156113fb10f2e51590f86d2b5f6399dcc608e520ca99a348
+enumValues:
+  - fly
+  - scan
+  - charge
+  - idle
+  - fault

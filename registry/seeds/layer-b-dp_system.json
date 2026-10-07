@@ -1,0 +1,115 @@
+{
+  "layer": "B17",
+  "name": "layer-b-dp_system.json",
+  "types": [
+    {
+      "path": "dp_system.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DP vessel id",
+      "titleRu": "ID судна с ДП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dp_system.pos.error",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Position error",
+      "titleRu": "Ошибка позиции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dp_system.heading.error",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Heading error",
+      "titleRu": "Ошибка курса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dp_system.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Relative wind",
+      "titleRu": "Относительный ветер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dp_system.power.avail",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Power available",
+      "titleRu": "Доступная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dp_system.consequence",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Consequence class",
+      "titleRu": "Класс последствий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dp_system.green",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Green zone",
+      "titleRu": "Зелёная зона",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dp_system.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "DP class",
+      "titleRu": "Класс ДП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dp1",
+        "dp2",
+        "dp3",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

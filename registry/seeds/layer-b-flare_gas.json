@@ -1,0 +1,117 @@
+{
+  "layer": "B17",
+  "name": "layer-b-flare_gas.json",
+  "types": [
+    {
+      "path": "flare_gas.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flare stack id",
+      "titleRu": "ID факела",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flare_gas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flare gas flow",
+      "titleRu": "Расход факельного газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flare_gas.pilot.flame",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pilot flame strength",
+      "titleRu": "Сила пламени запальника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flare_gas.tip.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tip temperature",
+      "titleRu": "Температура оголовка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flare_gas.steam",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Assist steam",
+      "titleRu": "Пар помощи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flare_gas.smokeless",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Smokeless capacity",
+      "titleRu": "Бездымная способность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flare_gas.pilot.out",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pilot out",
+      "titleRu": "Запальник погас",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flare_gas.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Flare state",
+      "titleRu": "Состояние факела",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "purge",
+        "flaring",
+        "emergency",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

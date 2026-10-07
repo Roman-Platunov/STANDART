@@ -1,0 +1,119 @@
+{
+  "layer": "B17",
+  "name": "layer-b-inkjet_code.json",
+  "types": [
+    {
+      "path": "inkjet_code.head.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inkjet head id",
+      "titleRu": "ID струйной головки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inkjet_code.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Print job id",
+      "titleRu": "ID задания печати",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inkjet_code.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inkjet_code.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Ink viscosity",
+      "titleRu": "Вязкость чернил",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inkjet_code.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Code reject rate",
+      "titleRu": "Брак кода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inkjet_code.solvent",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solvent level",
+      "titleRu": "Уровень растворителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inkjet_code.grade.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Code grade OK",
+      "titleRu": "Класс кода OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "inkjet_code.tech",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Technology",
+      "titleRu": "Технология",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cij",
+        "tij",
+        "dod",
+        "laser",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

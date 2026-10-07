@@ -1,0 +1,112 @@
+{
+  "layer": "B17",
+  "name": "layer-b-hull_stress.json",
+  "types": [
+    {
+      "path": "hull_stress.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hull monitor vessel id",
+      "titleRu": "ID судна мониторинга корпуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hull_stress.sagging",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Sagging stress",
+      "titleRu": "Напряжение прогиба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hull_stress.hogging",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Hogging stress",
+      "titleRu": "Напряжение перегиба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hull_stress.torsion",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Torsional stress",
+      "titleRu": "Кручение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hull_stress.accel",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Bow acceleration",
+      "titleRu": "Ускорение носа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hull_stress.slamming",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Slam events",
+      "titleRu": "Удары волн",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hull_stress.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stress alarm",
+      "titleRu": "Тревога напряжений",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hull_stress.sea",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sea state",
+      "titleRu": "Волнение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "calm",
+        "moderate",
+        "rough",
+        "extreme"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

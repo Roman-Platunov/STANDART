@@ -1,0 +1,21 @@
+sid: a5463db9
+path: tilt_tray.state
+aliases:
+  short: tilt_tray.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сортера
+  en: Sorter state
+fingerprint: sha256:a5463db9c624ad5c79435b520d42f278b5514fb8848f26760adfcdcd5992a7e3
+enumValues:
+  - run
+  - idle
+  - purge
+  - maintain
+  - fault

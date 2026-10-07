@@ -1,0 +1,114 @@
+{
+  "layer": "B17",
+  "name": "layer-b-hangar_ops.json",
+  "types": [
+    {
+      "path": "hangar_ops.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hangar id",
+      "titleRu": "ID ангара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hangar_ops.aircraft.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hangar aircraft id",
+      "titleRu": "ID ВС в ангаре",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hangar_ops.door.open",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Door open",
+      "titleRu": "Открытие ворот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hangar_ops.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hangar temperature",
+      "titleRu": "Температура ангара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hangar_ops.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Aircraft inside",
+      "titleRu": "ВС внутри",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hangar_ops.crane.load",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Crane load",
+      "titleRu": "Нагрузка крана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hangar_ops.fire.clear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire clear",
+      "titleRu": "Пожарная готовность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hangar_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hangar state",
+      "titleRu": "Состояние ангара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "work",
+        "closed",
+        "emergency",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

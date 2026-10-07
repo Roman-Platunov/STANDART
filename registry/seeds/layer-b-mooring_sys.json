@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-mooring_sys.json",
+  "types": [
+    {
+      "path": "mooring_sys.berth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mooring berth id",
+      "titleRu": "ID швартовного причала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mooring_sys.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mooring line id",
+      "titleRu": "ID швартова",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mooring_sys.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Line tension",
+      "titleRu": "Натяжение швартова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mooring_sys.hook.load",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Quick-release hook load",
+      "titleRu": "Нагрузка на гак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mooring_sys.fender",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Fender load",
+      "titleRu": "Нагрузка на кранцы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mooring_sys.offset",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Ship offset",
+      "titleRu": "Смещение судна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mooring_sys.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tension alarm",
+      "titleRu": "Тревога натяжения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mooring_sys.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mooring state",
+      "titleRu": "Состояние швартовки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "secure",
+        "adjust",
+        "release",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

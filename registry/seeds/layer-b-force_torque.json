@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-force_torque.json",
+  "types": [
+    {
+      "path": "force_torque.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FT sensor id",
+      "titleRu": "ID датчика сила-момент",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "force_torque.robot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Robot id",
+      "titleRu": "ID робота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "force_torque.fx",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Force X",
+      "titleRu": "Сила X",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "force_torque.fy",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Force Y",
+      "titleRu": "Сила Y",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "force_torque.fz",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Force Z",
+      "titleRu": "Сила Z",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "force_torque.tz",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Torque Z",
+      "titleRu": "Момент Z",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "force_torque.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overload",
+      "titleRu": "Перегрузка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "force_torque.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "control",
+        "teach",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

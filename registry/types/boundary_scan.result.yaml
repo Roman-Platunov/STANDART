@@ -1,0 +1,20 @@
+sid: cf257276
+path: boundary_scan.result
+aliases:
+  short: boundary_scan.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат
+  en: Result
+fingerprint: sha256:cf2572768e807224b6fa00ad0d5a30f83fe52008e5f7b0dac3e64095763fe6f2
+enumValues:
+  - pass
+  - fail
+  - infra_fail
+  - abort

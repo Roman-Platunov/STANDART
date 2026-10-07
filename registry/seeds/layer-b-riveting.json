@@ -1,0 +1,109 @@
+{
+  "layer": "B17",
+  "name": "layer-b-riveting.json",
+  "types": [
+    {
+      "path": "riveting.gun.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Riveter id",
+      "titleRu": "ID клепального пистолета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "riveting.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rivet job id",
+      "titleRu": "ID задания клёпки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "riveting.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Set force",
+      "titleRu": "Усилие постановки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "riveting.stroke",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Stroke",
+      "titleRu": "Ход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "riveting.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rivets set",
+      "titleRu": "Поставлено заклёпок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "riveting.air.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Air pressure",
+      "titleRu": "Давление воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "riveting.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Set OK",
+      "titleRu": "Постановка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "riveting.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rivet type",
+      "titleRu": "Тип заклёпки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blind",
+        "solid",
+        "self_pierce",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

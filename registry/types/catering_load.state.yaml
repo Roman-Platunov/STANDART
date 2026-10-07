@@ -1,0 +1,22 @@
+sid: a45a26b0
+path: catering_load.state
+aliases:
+  short: catering_load.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:a45a26b0fa4b0266621a87f0112eaa040c21c60e3b257e474d22f66e9581c376
+enumValues:
+  - stage
+  - dock
+  - load
+  - offload
+  - complete
+  - fault

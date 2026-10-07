@@ -1,0 +1,22 @@
+sid: 72094a0c
+path: apron_ops.phase
+aliases:
+  short: apron_ops.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза
+  en: Phase
+fingerprint: sha256:72094a0c8f53e1e3ad31793ce46a90ef8fe8b25cb35a290e94791287dfcfac22
+enumValues:
+  - inbound
+  - onblock
+  - service
+  - push
+  - clear
+  - idle

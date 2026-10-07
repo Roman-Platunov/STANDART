@@ -1,0 +1,21 @@
+sid: d5318a57
+path: gate_assign.status
+aliases:
+  short: gate_assign.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус
+  en: Status
+fingerprint: sha256:d5318a57d9d67ab454c6d3a55789425a77469e88d2f7a89c96601ae9714c653c
+enumValues:
+  - free
+  - assigned
+  - boarding
+  - closed
+  - blocked

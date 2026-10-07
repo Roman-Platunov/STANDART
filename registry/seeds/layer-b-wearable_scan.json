@@ -1,0 +1,114 @@
+{
+  "layer": "B17",
+  "name": "layer-b-wearable_scan.json",
+  "types": [
+    {
+      "path": "wearable_scan.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wearable scanner id",
+      "titleRu": "ID носимого сканера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wearable_scan.user.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wearable user id",
+      "titleRu": "ID пользователя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wearable_scan.scans",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Scans per hour",
+      "titleRu": "Сканов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wearable_scan.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery",
+      "titleRu": "Батарея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wearable_scan.trigger",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Triggers",
+      "titleRu": "Нажатий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wearable_scan.uptime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Session uptime",
+      "titleRu": "Время сессии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wearable_scan.paired",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Paired",
+      "titleRu": "Сопряжён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wearable_scan.form",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Form factor",
+      "titleRu": "Форм-фактор",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ring",
+        "glove",
+        "wrist",
+        "headset",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 1627ee11
+path: echo_sounder.mode
+aliases:
+  short: echo_sounder.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:1627ee118ec073c4a106e729b423a4d36f6c7a31933cae7ba8e256770ddd73b7
+enumValues:
+  - single
+  - dual
+  - multibeam
+  - other

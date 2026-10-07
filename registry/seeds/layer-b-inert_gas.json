@@ -1,0 +1,117 @@
+{
+  "layer": "B17",
+  "name": "layer-b-inert_gas.json",
+  "types": [
+    {
+      "path": "inert_gas.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IG system id",
+      "titleRu": "ID системы инертного газа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inert_gas.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "IG oxygen",
+      "titleRu": "Кислород в ИГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inert_gas.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Deck pressure",
+      "titleRu": "Давление на палубе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inert_gas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "IG flow",
+      "titleRu": "Расход ИГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inert_gas.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "IG temperature",
+      "titleRu": "Температура ИГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inert_gas.dewpoint",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "IG dewpoint",
+      "titleRu": "Точка росы ИГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inert_gas.high.o2",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High O2",
+      "titleRu": "Высокий O2",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "inert_gas.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "IG state",
+      "titleRu": "Состояние ИГ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "topup",
+        "vent",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

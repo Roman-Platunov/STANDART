@@ -1,0 +1,112 @@
+{
+  "layer": "B17",
+  "name": "layer-b-ict_test.json",
+  "types": [
+    {
+      "path": "ict_test.fixture.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ICT fixture id",
+      "titleRu": "ID оснастки ICT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ict_test.board.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ICT board id",
+      "titleRu": "ID платы ICT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ict_test.points",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Test points",
+      "titleRu": "Точек теста",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ict_test.fail",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fail count",
+      "titleRu": "Число отказов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ict_test.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ict_test.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "First-pass yield",
+      "titleRu": "Выход с первого прохода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ict_test.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Board pass",
+      "titleRu": "Плата прошла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ict_test.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Result",
+      "titleRu": "Результат",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "retest",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

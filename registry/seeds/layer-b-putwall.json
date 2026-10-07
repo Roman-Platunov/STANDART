@@ -1,0 +1,113 @@
+{
+  "layer": "B17",
+  "name": "layer-b-putwall.json",
+  "types": [
+    {
+      "path": "putwall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Putwall id",
+      "titleRu": "ID стены выкладки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "putwall.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Putwall order id",
+      "titleRu": "ID заказа putwall",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "putwall.slots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active slots",
+      "titleRu": "Активных ячеек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "putwall.puts",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Puts per hour",
+      "titleRu": "Выкладок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "putwall.complete",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Orders complete",
+      "titleRu": "Заказов завершено",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "putwall.exceptions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exceptions",
+      "titleRu": "Исключения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "putwall.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Slot full",
+      "titleRu": "Ячейка полна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "putwall.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Putwall state",
+      "titleRu": "Состояние putwall",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "put",
+        "pack",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

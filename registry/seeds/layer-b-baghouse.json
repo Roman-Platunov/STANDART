@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-baghouse.json",
+  "types": [
+    {
+      "path": "baghouse.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Baghouse id",
+      "titleRu": "ID рукавного фильтра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "baghouse.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse.pulse",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Pulse rate",
+      "titleRu": "Частота импульсов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Outlet dust",
+      "titleRu": "Пыль на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse.bags",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bags in service",
+      "titleRu": "Рукавов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse.broken.bag",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Broken bag",
+      "titleRu": "Порванный рукав",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "baghouse.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Baghouse state",
+      "titleRu": "Состояние фильтра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "filter",
+        "pulse",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: ddb45d94
+path: tank_gauging.method
+aliases:
+  short: tank_gauging.method
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Метод
+  en: Method
+fingerprint: sha256:ddb45d94c7f418d76e43373bb3265821638d0007c38813136398710289402829
+enumValues:
+  - servo
+  - radar
+  - float
+  - htg
+  - other

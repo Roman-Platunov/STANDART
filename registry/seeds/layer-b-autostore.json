@@ -1,0 +1,108 @@
+{
+  "layer": "B17",
+  "name": "layer-b-autostore.json",
+  "types": [
+    {
+      "path": "autostore.grid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AutoStore grid id",
+      "titleRu": "ID сетки AutoStore",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "autostore.robot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AutoStore robot id",
+      "titleRu": "ID робота AutoStore",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "autostore.bins",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bins in system",
+      "titleRu": "Контейнеров в системе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autostore.robots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Robots online",
+      "titleRu": "Роботов онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autostore.ports",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ports active",
+      "titleRu": "Активных портов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autostore.tph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bins per hour",
+      "titleRu": "Контейнеров в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autostore.blocked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grid blocked",
+      "titleRu": "Сетка заблокирована",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "autostore.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grid state",
+      "titleRu": "Состояние сетки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "recover",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

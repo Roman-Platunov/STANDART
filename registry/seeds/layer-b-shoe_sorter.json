@@ -1,0 +1,119 @@
+{
+  "layer": "B17",
+  "name": "layer-b-shoe_sorter.json",
+  "types": [
+    {
+      "path": "shoe_sorter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shoe sorter id",
+      "titleRu": "ID сортера с башмаками",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shoe_sorter.rate",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Sort rate",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_sorter.divert.acc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Divert accuracy",
+      "titleRu": "Точность отвода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shoe_sorter.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Item gap",
+      "titleRu": "Интервал между грузами",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_sorter.lanes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active lanes",
+      "titleRu": "Активных линий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_sorter.missort",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Missort rate",
+      "titleRu": "Доля ошибочной сортировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shoe_sorter.photoeye",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Photoeye blocked",
+      "titleRu": "Фотодатчик перекрыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shoe_sorter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sorter state",
+      "titleRu": "Состояние сортера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "clear",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

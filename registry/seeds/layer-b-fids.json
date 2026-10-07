@@ -1,0 +1,114 @@
+{
+  "layer": "B17",
+  "name": "layer-b-fids.json",
+  "types": [
+    {
+      "path": "fids.display.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FIDS display id",
+      "titleRu": "ID табло FIDS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fids.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Displayed flight id",
+      "titleRu": "ID отображаемого рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fids.updates",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Update rate",
+      "titleRu": "Частота обновлений",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fids.latency.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Data latency",
+      "titleRu": "Задержка данных",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fids.brightness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Brightness",
+      "titleRu": "Яркость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fids.errors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Display errors",
+      "titleRu": "Ошибки отображения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fids.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Display online",
+      "titleRu": "Табло онлайн",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fids.view",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "View",
+      "titleRu": "Вид",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "departures",
+        "arrivals",
+        "gate",
+        "baggage",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

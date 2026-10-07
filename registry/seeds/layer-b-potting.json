@@ -1,0 +1,110 @@
+{
+  "layer": "B17",
+  "name": "layer-b-potting.json",
+  "types": [
+    {
+      "path": "potting.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Potting station id",
+      "titleRu": "ID станции заливки компаунда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "potting.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Potting batch id",
+      "titleRu": "ID партии компаунда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "potting.mix.ratio",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Mix ratio",
+      "titleRu": "Соотношение смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potting.shot",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Shot volume",
+      "titleRu": "Объём дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potting.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Viscosity",
+      "titleRu": "Вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potting.cure.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cure temperature",
+      "titleRu": "Температура отверждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potting.void",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Void detected",
+      "titleRu": "Обнаружена раковина",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "potting.chem",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chemistry",
+      "titleRu": "Химия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "epoxy",
+        "pu",
+        "silicone",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

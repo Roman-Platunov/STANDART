@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-stretch_hood.json",
+  "types": [
+    {
+      "path": "stretch_hood.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stretch-hood machine id",
+      "titleRu": "ID машины стретч-худа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stretch_hood.pallet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pallet id",
+      "titleRu": "ID паллеты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stretch_hood.film",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Film thickness",
+      "titleRu": "Толщина плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stretch_hood.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stretch_hood.height",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Hood height",
+      "titleRu": "Высота колпака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stretch_hood.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Hold-down force",
+      "titleRu": "Усилие прижима",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stretch_hood.tear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Film tear",
+      "titleRu": "Разрыв плёнки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stretch_hood.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "feed",
+        "hood",
+        "seal",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

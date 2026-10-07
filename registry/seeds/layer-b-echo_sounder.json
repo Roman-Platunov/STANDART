@@ -1,0 +1,110 @@
+{
+  "layer": "B17",
+  "name": "layer-b-echo_sounder.json",
+  "types": [
+    {
+      "path": "echo_sounder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Echo sounder id",
+      "titleRu": "ID эхолота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "echo_sounder.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sounder vessel id",
+      "titleRu": "ID судна эхолота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "echo_sounder.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Water depth",
+      "titleRu": "Глубина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "echo_sounder.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "echo_sounder.draft",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Transducer draft",
+      "titleRu": "Осадка антенны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "echo_sounder.offset",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Keel offset",
+      "titleRu": "Смещение от киля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "echo_sounder.shallow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Shallow alarm",
+      "titleRu": "Тревога мелководья",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "echo_sounder.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "single",
+        "dual",
+        "multibeam",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

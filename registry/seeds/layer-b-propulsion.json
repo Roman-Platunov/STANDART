@@ -1,0 +1,117 @@
+{
+  "layer": "B17",
+  "name": "layer-b-propulsion.json",
+  "types": [
+    {
+      "path": "propulsion.shaft.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Propulsion shaft id",
+      "titleRu": "ID гребного вала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "propulsion.thrust",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Thrust",
+      "titleRu": "Упор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propulsion.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Shaft torque",
+      "titleRu": "Крутящий момент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propulsion.pitch",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Propeller pitch",
+      "titleRu": "Шаг винта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "propulsion.bearing.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bearing temperature",
+      "titleRu": "Температура подшипника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propulsion.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Shaft vibration",
+      "titleRu": "Вибрация вала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propulsion.astern",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Astern",
+      "titleRu": "Задний ход",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "propulsion.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Propulsor",
+      "titleRu": "Движитель",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fpp",
+        "cpp",
+        "azimuth",
+        "waterjet",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

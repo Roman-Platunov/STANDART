@@ -1,0 +1,20 @@
+sid: 1aa01673
+path: baghouse.state
+aliases:
+  short: baghouse.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фильтра
+  en: Baghouse state
+fingerprint: sha256:1aa01673510b5402ecd97c320ba031e6e1cd3dc524d761de542b8e6ce0c7d19a
+enumValues:
+  - filter
+  - pulse
+  - offline
+  - fault

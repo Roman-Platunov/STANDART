@@ -1,0 +1,115 @@
+{
+  "layer": "B17",
+  "name": "layer-b-jet_bridge.json",
+  "types": [
+    {
+      "path": "jet_bridge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Jet bridge id",
+      "titleRu": "ID телетрапа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "jet_bridge.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gate stand id",
+      "titleRu": "ID стоянки у выхода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "jet_bridge.cabin.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Cabin height",
+      "titleRu": "Высота кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jet_bridge.extension",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Bridge extension",
+      "titleRu": "Выдвижение моста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jet_bridge.rotation",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Rotation angle",
+      "titleRu": "Угол поворота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jet_bridge.floor.slope",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Floor slope",
+      "titleRu": "Уклон пола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "jet_bridge.docked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aircraft docked",
+      "titleRu": "Стыковка с ВС",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "jet_bridge.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bridge state",
+      "titleRu": "Состояние телетрапа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "park",
+        "approach",
+        "docked",
+        "retract",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

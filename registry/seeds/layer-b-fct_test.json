@@ -1,0 +1,113 @@
+{
+  "layer": "B17",
+  "name": "layer-b-fct_test.json",
+  "types": [
+    {
+      "path": "fct_test.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FCT station id",
+      "titleRu": "ID станции FCT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fct_test.uut.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UUT id",
+      "titleRu": "ID испытуемого изделия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fct_test.duration.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Test duration",
+      "titleRu": "Длительность теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fct_test.steps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Steps executed",
+      "titleRu": "Выполнено шагов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fct_test.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Yield",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fct_test.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "UUT power",
+      "titleRu": "Потребление ИИ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fct_test.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "FCT pass",
+      "titleRu": "FCT пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fct_test.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Result",
+      "titleRu": "Результат",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "retest",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

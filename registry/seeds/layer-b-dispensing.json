@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-dispensing.json",
+  "types": [
+    {
+      "path": "dispensing.valve.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dispense valve id",
+      "titleRu": "ID дозирующего клапана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dispensing.recipe.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dispense recipe id",
+      "titleRu": "ID рецепта дозирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dispensing.volume",
+      "kind": "quantity",
+      "unit": "uL",
+      "titleEn": "Dispense volume",
+      "titleRu": "Объём дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dispensing.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Valve pressure",
+      "titleRu": "Давление клапана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dispensing.speed",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Path speed",
+      "titleRu": "Скорость траектории",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dispensing.weight",
+      "kind": "quantity",
+      "unit": "mg",
+      "titleEn": "Shot weight",
+      "titleRu": "Масса дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dispensing.clog",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Nozzle clog",
+      "titleRu": "Засор сопла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dispensing.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dot",
+        "line",
+        "area",
+        "fill",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

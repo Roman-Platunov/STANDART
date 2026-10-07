@@ -1,0 +1,21 @@
+sid: 0b672ce2
+path: autopilot_nav.mode
+aliases:
+  short: autopilot_nav.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:0b672ce2ffc58746cab29405e7fff23538329007f1d77ec244d457dac77303ff
+enumValues:
+  - heading
+  - track
+  - wind
+  - standby
+  - fault

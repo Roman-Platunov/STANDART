@@ -1,0 +1,112 @@
+{
+  "layer": "B17",
+  "name": "layer-b-potable_water_svc.json",
+  "types": [
+    {
+      "path": "potable_water_svc.truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Water service truck id",
+      "titleRu": "ID водозаправщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "potable_water_svc.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Water service flight id",
+      "titleRu": "ID рейса водозаправки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "potable_water_svc.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Water delivered",
+      "titleRu": "Подано воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potable_water_svc.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Fill flow",
+      "titleRu": "Расход заправки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potable_water_svc.chlorine",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Chlorine residual",
+      "titleRu": "Остаточный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potable_water_svc.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Service duration",
+      "titleRu": "Длительность обслуживания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potable_water_svc.sample",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sample taken",
+      "titleRu": "Проба отобрана",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "potable_water_svc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "approach",
+        "connect",
+        "fill",
+        "disconnect",
+        "complete",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

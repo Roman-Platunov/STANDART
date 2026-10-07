@@ -1,0 +1,21 @@
+sid: 75ffe905
+path: stretch_hood.state
+aliases:
+  short: stretch_hood.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:75ffe90500ea19847c09284e044a6ae8f4cc70dee6fd3fb1b83b46f5fb3f4efe
+enumValues:
+  - feed
+  - hood
+  - seal
+  - idle
+  - fault

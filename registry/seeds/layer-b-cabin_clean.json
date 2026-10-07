@@ -1,0 +1,112 @@
+{
+  "layer": "B17",
+  "name": "layer-b-cabin_clean.json",
+  "types": [
+    {
+      "path": "cabin_clean.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cabin clean flight id",
+      "titleRu": "ID рейса уборки салона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cabin_clean.crew.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Clean crew id",
+      "titleRu": "ID бригады уборки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cabin_clean.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Clean duration",
+      "titleRu": "Длительность уборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cabin_clean.seats",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Seats cleaned",
+      "titleRu": "Очищено кресел",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cabin_clean.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Progress",
+      "titleRu": "Прогресс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cabin_clean.findings",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Findings",
+      "titleRu": "Находки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cabin_clean.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cabin ready",
+      "titleRu": "Салон готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cabin_clean.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Clean type",
+      "titleRu": "Тип уборки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "transit",
+        "overnight",
+        "deep",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

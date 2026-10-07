@@ -1,0 +1,21 @@
+sid: 3fd09e90
+path: autostore.state
+aliases:
+  short: autostore.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сетки
+  en: Grid state
+fingerprint: sha256:3fd09e909e50955c6f4a6fbc268024c25caed01d9bca915351b90e67bb365cee
+enumValues:
+  - run
+  - idle
+  - recover
+  - maintain
+  - fault

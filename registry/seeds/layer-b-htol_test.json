@@ -1,0 +1,115 @@
+{
+  "layer": "B17",
+  "name": "layer-b-htol_test.json",
+  "types": [
+    {
+      "path": "htol_test.chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HTOL chamber id",
+      "titleRu": "ID камеры HTOL",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "htol_test.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HTOL lot id",
+      "titleRu": "ID партии HTOL",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "htol_test.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "htol_test.bias",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Bias voltage",
+      "titleRu": "Напряжение смещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "htol_test.duration.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Stress duration",
+      "titleRu": "Длительность стресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "htol_test.fail",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fail rate",
+      "titleRu": "Доля отказов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "htol_test.dut.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "DUT failed",
+      "titleRu": "Отказ ИС",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "htol_test.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chamber state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "stress",
+        "readout",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

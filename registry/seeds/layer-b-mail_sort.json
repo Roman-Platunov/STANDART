@@ -1,0 +1,120 @@
+{
+  "layer": "B17",
+  "name": "layer-b-mail_sort.json",
+  "types": [
+    {
+      "path": "mail_sort.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mail sorter id",
+      "titleRu": "ID сортировщика почты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mail_sort.rate",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Items per hour",
+      "titleRu": "Отправлений в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mail_sort.ocr.acc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "OCR accuracy",
+      "titleRu": "Точность OCR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mail_sort.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mail_sort.bins",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active bins",
+      "titleRu": "Активных накопителей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mail_sort.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Max thickness",
+      "titleRu": "Макс. толщина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mail_sort.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Jam",
+      "titleRu": "Замятие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mail_sort.stream",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stream",
+      "titleRu": "Поток",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "letter",
+        "flat",
+        "parcel",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

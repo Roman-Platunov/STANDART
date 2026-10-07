@@ -1,0 +1,21 @@
+sid: 12a2cc9a
+path: fids.view
+aliases:
+  short: fids.view
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Вид
+  en: View
+fingerprint: sha256:12a2cc9a2ce57f01a21377c406bd77c9cea6b815ce9ef0c9350c4b9c2f713f67
+enumValues:
+  - departures
+  - arrivals
+  - gate
+  - baggage
+  - other

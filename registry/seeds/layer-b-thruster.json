@@ -1,0 +1,116 @@
+{
+  "layer": "B17",
+  "name": "layer-b-thruster.json",
+  "types": [
+    {
+      "path": "thruster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thruster id",
+      "titleRu": "ID подруливающего устройства",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thruster.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Thruster power",
+      "titleRu": "Мощность ПУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thruster.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Azimuth angle",
+      "titleRu": "Угол азимута",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thruster.unit.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Thruster RPM",
+      "titleRu": "Обороты ПУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thruster.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Load",
+      "titleRu": "Нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thruster.oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thruster.emstop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency stop",
+      "titleRu": "Аварийный останов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thruster.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tunnel",
+        "azimuth",
+        "retractable",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: a73ef95c
+path: shuttle_asrs.state
+aliases:
+  short: shuttle_asrs.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние прохода
+  en: Aisle state
+fingerprint: sha256:a73ef95cb17e64eb732654ea500446996e1b33319eab3140d58a9afb9aafedfc
+enumValues:
+  - run
+  - idle
+  - recover
+  - maintain
+  - fault

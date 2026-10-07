@@ -1,0 +1,21 @@
+sid: 28c2bcdb
+path: putwall.state
+aliases:
+  short: putwall.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние putwall
+  en: Putwall state
+fingerprint: sha256:28c2bcdb245e5877198069aac8f27042dd04ca5aa916b47bd57d54f2e04c1f45
+enumValues:
+  - open
+  - put
+  - pack
+  - idle
+  - fault

@@ -1,0 +1,113 @@
+{
+  "layer": "B17",
+  "name": "layer-b-tank_gauging.json",
+  "types": [
+    {
+      "path": "tank_gauging.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gauged tank id",
+      "titleRu": "ID измеряемого резервуара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tank_gauging.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Product level",
+      "titleRu": "Уровень продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_gauging.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Average temperature",
+      "titleRu": "Средняя температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_gauging.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Observed density",
+      "titleRu": "Наблюдаемая плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_gauging.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Gross volume",
+      "titleRu": "Валовый объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_gauging.water",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Free water",
+      "titleRu": "Свободная вода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_gauging.alarm.hh",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High-high alarm",
+      "titleRu": "Авария верхнего уровня",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tank_gauging.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "servo",
+        "radar",
+        "float",
+        "htg",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

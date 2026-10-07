@@ -1,0 +1,21 @@
+sid: c9da1418
+path: mooring_sys.state
+aliases:
+  short: mooring_sys.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние швартовки
+  en: Mooring state
+fingerprint: sha256:c9da1418675bcbc16ef1ec149c4b80f5156ee2397873d69b91a77a659380a4c6
+enumValues:
+  - secure
+  - adjust
+  - release
+  - idle
+  - fault

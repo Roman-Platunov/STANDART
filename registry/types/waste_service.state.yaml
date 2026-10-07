@@ -1,0 +1,22 @@
+sid: 3e69e22b
+path: waste_service.state
+aliases:
+  short: waste_service.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:3e69e22b4df11885b17216beb8a73aad21e8268795d55659c21275b004ee3851
+enumValues:
+  - approach
+  - connect
+  - pump
+  - rinse
+  - complete
+  - fault

@@ -1,0 +1,113 @@
+{
+  "layer": "B17",
+  "name": "layer-b-radar_nav.json",
+  "types": [
+    {
+      "path": "radar_nav.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Nav radar id",
+      "titleRu": "ID навигационного радара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radar_nav.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Radar vessel id",
+      "titleRu": "ID судна радара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radar_nav.range",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Range scale",
+      "titleRu": "Шкала дальности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radar_nav.targets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tracked targets",
+      "titleRu": "Сопровождаемых целей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radar_nav.heading",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Heading marker",
+      "titleRu": "Курсовая черта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radar_nav.sea.clutter",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sea clutter",
+      "titleRu": "Морские помехи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "radar_nav.arpa",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ARPA active",
+      "titleRu": "ARPA активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "radar_nav.band",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Band",
+      "titleRu": "Диапазон",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "x",
+        "s",
+        "dual",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "layer": "B17",
+  "name": "layer-b-vapor_recovery.json",
+  "types": [
+    {
+      "path": "vapor_recovery.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VRU id",
+      "titleRu": "ID установки рекуперации паров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vapor_recovery.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Vapor flow",
+      "titleRu": "Расход паров",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vapor_recovery.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovery efficiency",
+      "titleRu": "КПД рекуперации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vapor_recovery.hc.out",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Outlet HC",
+      "titleRu": "УВ на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vapor_recovery.adsorb.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Adsorbent temperature",
+      "titleRu": "Температура адсорбента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vapor_recovery.vacuum",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Regeneration vacuum",
+      "titleRu": "Вакуум регенерации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vapor_recovery.breakthrough",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Breakthrough",
+      "titleRu": "Проскок",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vapor_recovery.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "adsorb",
+        "absorb",
+        "condense",
+        "membrane",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

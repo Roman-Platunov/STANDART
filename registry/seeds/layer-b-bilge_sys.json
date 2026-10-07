@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-bilge_sys.json",
+  "types": [
+    {
+      "path": "bilge_sys.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bilge vessel id",
+      "titleRu": "ID судна льял",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bilge_sys.pump.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bilge pump id",
+      "titleRu": "ID льяльного насоса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bilge_sys.level",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Bilge level",
+      "titleRu": "Уровень в льяле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bilge_sys.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Pump flow",
+      "titleRu": "Расход насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bilge_sys.oil",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Oil content",
+      "titleRu": "Содержание нефти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bilge_sys.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Pump runtime",
+      "titleRu": "Наработка насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bilge_sys.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High bilge",
+      "titleRu": "Высокий уровень льял",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bilge_sys.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bilge state",
+      "titleRu": "Состояние льял",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "auto",
+        "manual",
+        "alarm",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

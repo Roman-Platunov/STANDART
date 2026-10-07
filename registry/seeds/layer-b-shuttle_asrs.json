@@ -1,0 +1,114 @@
+{
+  "layer": "B17",
+  "name": "layer-b-shuttle_asrs.json",
+  "types": [
+    {
+      "path": "shuttle_asrs.aisle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shuttle aisle id",
+      "titleRu": "ID прохода шаттлов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shuttle_asrs.shuttle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shuttle id",
+      "titleRu": "ID шаттла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shuttle_asrs.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Shuttle speed",
+      "titleRu": "Скорость шаттла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shuttle_asrs.lifts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Lifts online",
+      "titleRu": "Подъёмников онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shuttle_asrs.tph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Transactions per hour",
+      "titleRu": "Транзакций в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shuttle_asrs.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Utilization",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shuttle_asrs.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Shuttle stuck",
+      "titleRu": "Шаттл застрял",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shuttle_asrs.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Aisle state",
+      "titleRu": "Состояние прохода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "recover",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "layer": "B17",
+  "name": "layer-b-screwdriving.json",
+  "types": [
+    {
+      "path": "screwdriving.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Screwdriving station id",
+      "titleRu": "ID станции завинчивания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "screwdriving.program.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Screw program id",
+      "titleRu": "ID программы завинчивания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "screwdriving.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Final torque",
+      "titleRu": "Конечный момент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "screwdriving.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Final angle",
+      "titleRu": "Конечный угол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "screwdriving.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Driver RPM",
+      "titleRu": "Обороты шуруповёрта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "screwdriving.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "screwdriving.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "OK result",
+      "titleRu": "Результат OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "screwdriving.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Result",
+      "titleRu": "Результат",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "nook",
+        "rewok",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

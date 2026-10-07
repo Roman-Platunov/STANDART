@@ -1,0 +1,118 @@
+{
+  "layer": "B17",
+  "name": "layer-b-drone_inventory.json",
+  "types": [
+    {
+      "path": "drone_inventory.drone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inventory drone id",
+      "titleRu": "ID дрона инвентаризации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drone_inventory.mission.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inventory mission id",
+      "titleRu": "ID миссии инвентаризации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drone_inventory.scans",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Scans per hour",
+      "titleRu": "Сканов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone_inventory.accuracy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Location accuracy",
+      "titleRu": "Точность локации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "drone_inventory.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery",
+      "titleRu": "Батарея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "drone_inventory.aisles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Aisles covered",
+      "titleRu": "Пройдено проходов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drone_inventory.low.light",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low light",
+      "titleRu": "Мало света",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "drone_inventory.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Drone state",
+      "titleRu": "Состояние дрона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fly",
+        "scan",
+        "charge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

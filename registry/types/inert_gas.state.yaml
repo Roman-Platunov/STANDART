@@ -1,0 +1,21 @@
+sid: "84e74441"
+path: inert_gas.state
+aliases:
+  short: inert_gas.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ИГ
+  en: IG state
+fingerprint: sha256:84e744414001b573d78f2b79348b463bb5fb5ed5415f9be2c04981b68284e53a
+enumValues:
+  - produce
+  - topup
+  - vent
+  - offline
+  - fault

@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-die_bond.json",
+  "types": [
+    {
+      "path": "die_bond.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Die bonder id",
+      "titleRu": "ID установки посадки кристалла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "die_bond.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bond lot id",
+      "titleRu": "ID партии посадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "die_bond.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Bond force",
+      "titleRu": "Усилие посадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_bond.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bond temperature",
+      "titleRu": "Температура посадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_bond.accuracy",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Placement accuracy",
+      "titleRu": "Точность посадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_bond.uph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_bond.epoxy.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Epoxy OK",
+      "titleRu": "Эпоксид OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "die_bond.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "epoxy",
+        "eutectic",
+        "solder",
+        "sinter",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-pushback_ops.json",
+  "types": [
+    {
+      "path": "pushback_ops.tug.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pushback tug id",
+      "titleRu": "ID тягача",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pushback_ops.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pushback flight id",
+      "titleRu": "ID рейса на выталкивании",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pushback_ops.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Push force",
+      "titleRu": "Усилие выталкивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pushback_ops.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Push speed",
+      "titleRu": "Скорость выталкивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pushback_ops.heading",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Aircraft heading",
+      "titleRu": "Курс ВС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pushback_ops.duration.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Push duration",
+      "titleRu": "Длительность выталкивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pushback_ops.towbar",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Towbar connected",
+      "titleRu": "Штанга подключена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pushback_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Push state",
+      "titleRu": "Состояние выталкивания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "connect",
+        "push",
+        "disconnect",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+sid: 245df0c8
+path: drone_inventory.battery
+aliases:
+  short: drone_inventory.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея
+  en: Battery
+fingerprint: sha256:245df0c80a76007216fb26be64cdcae78ba11b4ec48945d29d4980d4afc4fdcb
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,20 @@
+sid: 58f4a614
+path: esp_dust.state
+aliases:
+  short: esp_dust.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ЭФ
+  en: ESP state
+fingerprint: sha256:58f4a6141adea67cd240e6e8c9551bbe2fcd2050404734f661d851ba711fefed
+enumValues:
+  - energized
+  - offline
+  - purge
+  - fault

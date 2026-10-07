@@ -1,0 +1,116 @@
+{
+  "layer": "B17",
+  "name": "layer-b-express_hub.json",
+  "types": [
+    {
+      "path": "express_hub.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Express hub id",
+      "titleRu": "ID экспресс-хаба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "express_hub.inbound",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Inbound rate",
+      "titleRu": "Входящий поток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "express_hub.outbound",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Outbound rate",
+      "titleRu": "Исходящий поток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "express_hub.dwell.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Average dwell",
+      "titleRu": "Средний простой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "express_hub.exceptions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exceptions open",
+      "titleRu": "Открытых исключений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "express_hub.dock.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dock utilization",
+      "titleRu": "Загрузка доков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "express_hub.congested",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hub congested",
+      "titleRu": "Хаб перегружен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "express_hub.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hub state",
+      "titleRu": "Состояние хаба",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "peak",
+        "normal",
+        "valley",
+        "closed",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

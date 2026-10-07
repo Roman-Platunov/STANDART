@@ -1,0 +1,21 @@
+sid: 2f0044eb
+path: express_hub.state
+aliases:
+  short: express_hub.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние хаба
+  en: Hub state
+fingerprint: sha256:2f0044eb51a04f8c361455f3e868b696029fcf9f71a261c45640c7035e3ec785
+enumValues:
+  - peak
+  - normal
+  - valley
+  - closed
+  - fault

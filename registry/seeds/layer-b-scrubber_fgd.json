@@ -1,0 +1,112 @@
+{
+  "layer": "B17",
+  "name": "layer-b-scrubber_fgd.json",
+  "types": [
+    {
+      "path": "scrubber_fgd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FGD scrubber id",
+      "titleRu": "ID скруббера сероочистки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scrubber_fgd.so2.in",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Inlet SO2",
+      "titleRu": "SO2 на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_fgd.so2.out",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Outlet SO2",
+      "titleRu": "SO2 на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_fgd.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Slurry pH",
+      "titleRu": "pH суспензии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_fgd.limestone",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Limestone feed",
+      "titleRu": "Подача известняка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_fgd.gypsum",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Gypsum make",
+      "titleRu": "Выпуск гипса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_fgd.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bypass open",
+      "titleRu": "Байпас открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scrubber_fgd.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wet",
+        "dry",
+        "semidry",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "layer": "B17",
+  "name": "layer-b-apron_ops.json",
+  "types": [
+    {
+      "path": "apron_ops.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Apron stand id",
+      "titleRu": "ID стоянки на перроне",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "apron_ops.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "apron_ops.vehicles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicles on stand",
+      "titleRu": "Техники на стоянке",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apron_ops.turn.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Turnaround time",
+      "titleRu": "Время оборота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apron_ops.fuel.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fueling progress",
+      "titleRu": "Прогресс заправки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "apron_ops.bag.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bag progress",
+      "titleRu": "Прогресс багажа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "apron_ops.fod",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "FOD detected",
+      "titleRu": "Обнаружен FOD",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "apron_ops.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Phase",
+      "titleRu": "Фаза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inbound",
+        "onblock",
+        "service",
+        "push",
+        "clear",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

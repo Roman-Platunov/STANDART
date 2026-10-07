@@ -1,0 +1,112 @@
+{
+  "layer": "B17",
+  "name": "layer-b-boundary_scan.json",
+  "types": [
+    {
+      "path": "boundary_scan.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Boundary scan station id",
+      "titleRu": "ID станции boundary scan",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "boundary_scan.board.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "JTAG board id",
+      "titleRu": "ID платы JTAG",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "boundary_scan.chains",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "TAP chains",
+      "titleRu": "Цепей TAP",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boundary_scan.faults",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Faults found",
+      "titleRu": "Найдено неисправностей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boundary_scan.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Net coverage",
+      "titleRu": "Покрытие сетей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "boundary_scan.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Test time",
+      "titleRu": "Время теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boundary_scan.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scan pass",
+      "titleRu": "Скан пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "boundary_scan.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Result",
+      "titleRu": "Результат",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "infra_fail",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 072f40eb
+path: gangway.state
+aliases:
+  short: gangway.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние трапа
+  en: Gangway state
+fingerprint: sha256:072f40eb48b927c8e9d93e69a2049be9fe2cc0a482a40c3ad740d283fe768ba0
+enumValues:
+  - stowed
+  - deploy
+  - landed
+  - recover
+  - fault

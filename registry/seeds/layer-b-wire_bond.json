@@ -1,0 +1,115 @@
+{
+  "layer": "B17",
+  "name": "layer-b-wire_bond.json",
+  "types": [
+    {
+      "path": "wire_bond.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wire bonder id",
+      "titleRu": "ID разварщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wire_bond.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wire bond lot id",
+      "titleRu": "ID партии разварки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wire_bond.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Bond force",
+      "titleRu": "Усилие разварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_bond.us.power",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ultrasonic power",
+      "titleRu": "Мощность ультразвука",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wire_bond.pull",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Pull strength",
+      "titleRu": "Прочность на отрыв",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_bond.uph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bonds per hour",
+      "titleRu": "Разварок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_bond.nsop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "NSOP",
+      "titleRu": "Неприварка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wire_bond.wire",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wire metal",
+      "titleRu": "Металл проволоки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "au",
+        "cu",
+        "al",
+        "ag",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B17",
+  "name": "layer-b-underfill.json",
+  "types": [
+    {
+      "path": "underfill.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Underfill station id",
+      "titleRu": "ID станции подзаливки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "underfill.board.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Board id",
+      "titleRu": "ID платы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "underfill.volume",
+      "kind": "quantity",
+      "unit": "uL",
+      "titleEn": "Dispense volume",
+      "titleRu": "Объём дозирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underfill.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Substrate temperature",
+      "titleRu": "Температура подложки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underfill.flow.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Flow time",
+      "titleRu": "Время растекания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underfill.void.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Void percentage",
+      "titleRu": "Доля пустот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "underfill.filleted",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fillet complete",
+      "titleRu": "Галтель завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "underfill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "preheat",
+        "dispense",
+        "flow",
+        "cure",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

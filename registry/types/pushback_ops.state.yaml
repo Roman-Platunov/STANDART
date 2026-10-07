@@ -1,0 +1,21 @@
+sid: ac2bd11e
+path: pushback_ops.state
+aliases:
+  short: pushback_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние выталкивания
+  en: Push state
+fingerprint: sha256:ac2bd11e2f99fd868e53453cb53ce654388781e8aaee3f1aa2419ffccb21e84c
+enumValues:
+  - connect
+  - push
+  - disconnect
+  - idle
+  - fault

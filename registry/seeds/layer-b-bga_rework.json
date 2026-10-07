@@ -1,0 +1,112 @@
+{
+  "layer": "B17",
+  "name": "layer-b-bga_rework.json",
+  "types": [
+    {
+      "path": "bga_rework.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BGA rework station id",
+      "titleRu": "ID станции ремонта BGA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bga_rework.board.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rework board id",
+      "titleRu": "ID платы ремонта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bga_rework.peak.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Peak temperature",
+      "titleRu": "Пиковая температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bga_rework.profile.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Profile duration",
+      "titleRu": "Длительность профиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bga_rework.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Placement force",
+      "titleRu": "Усилие посадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bga_rework.alignment",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Alignment error",
+      "titleRu": "Ошибка совмещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bga_rework.xray.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "X-ray OK",
+      "titleRu": "Рентген OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bga_rework.step",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Step",
+      "titleRu": "Шаг",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "remove",
+        "clean",
+        "place",
+        "reflow",
+        "inspect",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

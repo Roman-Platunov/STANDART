@@ -1,0 +1,22 @@
+sid: 36e45c71
+path: potable_water_svc.state
+aliases:
+  short: potable_water_svc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:36e45c7159ee5517e3aa0e2f7613dc82abec73fcd9582c1527e9485ffa817061
+enumValues:
+  - approach
+  - connect
+  - fill
+  - disconnect
+  - complete
+  - fault

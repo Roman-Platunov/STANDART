@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-autopilot_nav.json",
+  "types": [
+    {
+      "path": "autopilot_nav.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Autopilot id",
+      "titleRu": "ID авторулевого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "autopilot_nav.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Autopilot vessel id",
+      "titleRu": "ID судна авторулевого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "autopilot_nav.set.heading",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Set heading",
+      "titleRu": "Заданный курс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autopilot_nav.actual.heading",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Actual heading",
+      "titleRu": "Фактический курс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autopilot_nav.rudder",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Rudder angle",
+      "titleRu": "Угол руля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autopilot_nav.yaw.rate",
+      "kind": "quantity",
+      "unit": "deg/s",
+      "titleEn": "Yaw rate",
+      "titleRu": "Угловая скорость рыскания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "autopilot_nav.engaged",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Autopilot engaged",
+      "titleRu": "Авторулевой включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "autopilot_nav.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heading",
+        "track",
+        "wind",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

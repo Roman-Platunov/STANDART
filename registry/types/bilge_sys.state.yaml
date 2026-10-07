@@ -1,0 +1,21 @@
+sid: 7afe574b
+path: bilge_sys.state
+aliases:
+  short: bilge_sys.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние льял
+  en: Bilge state
+fingerprint: sha256:7afe574bf6f5f269cf1bbbe23ad4a89f76399b45f362d8dbdb3eb8604e3127f0
+enumValues:
+  - dry
+  - auto
+  - manual
+  - alarm
+  - fault

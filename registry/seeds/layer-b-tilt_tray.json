@@ -1,0 +1,120 @@
+{
+  "layer": "B17",
+  "name": "layer-b-tilt_tray.json",
+  "types": [
+    {
+      "path": "tilt_tray.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tilt-tray sorter id",
+      "titleRu": "ID сортера с опрокидыванием",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tilt_tray.rate",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Sort rate",
+      "titleRu": "Производительность сортировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tilt_tray.accuracy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sort accuracy",
+      "titleRu": "Точность сортировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tilt_tray.recirc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recirc rate",
+      "titleRu": "Доля рециркуляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tilt_tray.chutes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active chutes",
+      "titleRu": "Активных лотков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tilt_tray.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Carrier speed",
+      "titleRu": "Скорость носителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tilt_tray.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Jam",
+      "titleRu": "Замятие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tilt_tray.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sorter state",
+      "titleRu": "Состояние сортера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "purge",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

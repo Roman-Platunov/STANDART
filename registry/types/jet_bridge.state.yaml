@@ -1,0 +1,21 @@
+sid: 1e6d4d4b
+path: jet_bridge.state
+aliases:
+  short: jet_bridge.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние телетрапа
+  en: Bridge state
+fingerprint: sha256:1e6d4d4bcf81c0945e56820771cd4622ca6df614fa1c8da944f810aca389b531
+enumValues:
+  - park
+  - approach
+  - docked
+  - retract
+  - fault

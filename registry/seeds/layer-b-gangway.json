@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-gangway.json",
+  "types": [
+    {
+      "path": "gangway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gangway id",
+      "titleRu": "ID трапа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gangway.berth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gangway berth id",
+      "titleRu": "ID причала трапа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gangway.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Gangway angle",
+      "titleRu": "Угол трапа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gangway.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Extended length",
+      "titleRu": "Выдвинутая длина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gangway.load",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Live load",
+      "titleRu": "Полезная нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gangway.motion",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Relative motion",
+      "titleRu": "Относительное перемещение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gangway.landed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Landed",
+      "titleRu": "Посажен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gangway.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gangway state",
+      "titleRu": "Состояние трапа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stowed",
+        "deploy",
+        "landed",
+        "recover",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

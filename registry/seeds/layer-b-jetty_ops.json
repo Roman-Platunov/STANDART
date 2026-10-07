@@ -1,0 +1,112 @@
+{
+  "layer": "B17",
+  "name": "layer-b-jetty_ops.json",
+  "types": [
+    {
+      "path": "jetty_ops.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Jetty id",
+      "titleRu": "ID причала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "jetty_ops.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Berthed vessel id",
+      "titleRu": "ID ошвартованного судна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "jetty_ops.load.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Transfer rate",
+      "titleRu": "Скорость перевалки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jetty_ops.draft",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Alongside draft",
+      "titleRu": "Осадка у причала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jetty_ops.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Jetty wind",
+      "titleRu": "Ветер на причале",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jetty_ops.current",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Current",
+      "titleRu": "Течение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jetty_ops.esd",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ESD active",
+      "titleRu": "Аварийный останов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "jetty_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Jetty state",
+      "titleRu": "Состояние причала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "berth",
+        "connect",
+        "transfer",
+        "disconnect",
+        "weather"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

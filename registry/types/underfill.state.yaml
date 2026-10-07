@@ -1,0 +1,22 @@
+sid: 7bc79318
+path: underfill.state
+aliases:
+  short: underfill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:7bc79318666b2c0deebfe1a5ccf8159ae3e6bc4961ffdd23eab2b84cdc6d67fe
+enumValues:
+  - preheat
+  - dispense
+  - flow
+  - cure
+  - idle
+  - fault

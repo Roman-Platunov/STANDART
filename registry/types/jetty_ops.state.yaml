@@ -1,0 +1,22 @@
+sid: 4d6b6e0d
+path: jetty_ops.state
+aliases:
+  short: jetty_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние причала
+  en: Jetty state
+fingerprint: sha256:4d6b6e0dacc941a38ed0b4d9070bb2591c7172a2150fc0e007baaa4f5c28d451
+enumValues:
+  - idle
+  - berth
+  - connect
+  - transfer
+  - disconnect
+  - weather

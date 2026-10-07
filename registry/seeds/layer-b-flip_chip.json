@@ -1,0 +1,110 @@
+{
+  "layer": "B17",
+  "name": "layer-b-flip_chip.json",
+  "types": [
+    {
+      "path": "flip_chip.bonder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flip-chip bonder id",
+      "titleRu": "ID установки флип-чип",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flip_chip.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flip-chip lot id",
+      "titleRu": "ID партии флип-чип",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flip_chip.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Bond force",
+      "titleRu": "Усилие посадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flip_chip.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reflow temperature",
+      "titleRu": "Температура оплавления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flip_chip.accuracy",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Placement accuracy",
+      "titleRu": "Точность посадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flip_chip.bumps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bump count",
+      "titleRu": "Число бампов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flip_chip.void",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Joint void",
+      "titleRu": "Пустота в соединении",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flip_chip.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "c4",
+        "tcub",
+        "tcncp",
+        "solder",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

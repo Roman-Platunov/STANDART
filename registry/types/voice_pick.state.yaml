@@ -1,0 +1,21 @@
+sid: 25fbdafb
+path: voice_pick.state
+aliases:
+  short: voice_pick.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сессии
+  en: Session state
+fingerprint: sha256:25fbdafb4dae7e6ce26bf3acaa06f85f91e51381f59872a6ec492d2d157fdc81
+enumValues:
+  - login
+  - pick
+  - break
+  - logout
+  - fault

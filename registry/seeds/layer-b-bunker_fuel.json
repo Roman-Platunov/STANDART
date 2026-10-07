@@ -1,0 +1,112 @@
+{
+  "layer": "B17",
+  "name": "layer-b-bunker_fuel.json",
+  "types": [
+    {
+      "path": "bunker_fuel.barge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bunker barge id",
+      "titleRu": "ID бункеровщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bunker_fuel.delivery.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bunker delivery id",
+      "titleRu": "ID бункеровки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bunker_fuel.mass",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Delivered mass",
+      "titleRu": "Отданная масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bunker_fuel.flow",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Transfer rate",
+      "titleRu": "Скорость перекачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bunker_fuel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fuel temperature",
+      "titleRu": "Температура топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bunker_fuel.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Viscosity",
+      "titleRu": "Вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bunker_fuel.sample",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sample taken",
+      "titleRu": "Проба отобрана",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bunker_fuel.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Марка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vlsfo",
+        "hsfo",
+        "mgo",
+        "lng",
+        "methanol",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

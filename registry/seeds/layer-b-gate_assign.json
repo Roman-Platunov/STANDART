@@ -1,0 +1,109 @@
+{
+  "layer": "B17",
+  "name": "layer-b-gate_assign.json",
+  "types": [
+    {
+      "path": "gate_assign.gate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gate id",
+      "titleRu": "ID выхода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gate_assign.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Assigned flight id",
+      "titleRu": "ID назначенного рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gate_assign.dwell.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Gate dwell",
+      "titleRu": "Простой у выхода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gate_assign.conflicts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Conflict count",
+      "titleRu": "Число конфликтов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gate_assign.buffer.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Buffer time",
+      "titleRu": "Буферное время",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gate_assign.pax",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Expected passengers",
+      "titleRu": "Ожидаемые пассажиры",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gate_assign.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Assignment locked",
+      "titleRu": "Назначение зафиксировано",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gate_assign.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Status",
+      "titleRu": "Статус",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "assigned",
+        "boarding",
+        "closed",
+        "blocked"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-laser_mark.json",
+  "types": [
+    {
+      "path": "laser_mark.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Laser marker id",
+      "titleRu": "ID лазерного маркиратора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laser_mark.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mark job id",
+      "titleRu": "ID задания маркировки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laser_mark.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Laser power",
+      "titleRu": "Мощность лазера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laser_mark.speed",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Mark speed",
+      "titleRu": "Скорость маркировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laser_mark.depth",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Engrave depth",
+      "titleRu": "Глубина гравировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laser_mark.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laser_mark.interlock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Interlock OK",
+      "titleRu": "Блокировка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "laser_mark.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Source",
+      "titleRu": "Источник",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fiber",
+        "co2",
+        "uv",
+        "green",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

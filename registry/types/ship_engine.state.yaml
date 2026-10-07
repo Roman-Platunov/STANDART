@@ -1,0 +1,21 @@
+sid: 6b317d59
+path: ship_engine.state
+aliases:
+  short: ship_engine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние двигателя
+  en: Engine state
+fingerprint: sha256:6b317d59bebb95ce4d4576ca5cfb473807916293cd900726be360ff13cf0eec2
+enumValues:
+  - stop
+  - standby
+  - run
+  - maneuver
+  - fault

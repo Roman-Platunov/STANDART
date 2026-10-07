@@ -1,0 +1,110 @@
+{
+  "layer": "B17",
+  "name": "layer-b-uld_ops.json",
+  "types": [
+    {
+      "path": "uld_ops.uld.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ULD id",
+      "titleRu": "ID ULD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uld_ops.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ULD flight id",
+      "titleRu": "ID рейса ULD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uld_ops.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "ULD mass",
+      "titleRu": "Масса ULD",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_ops.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Used volume",
+      "titleRu": "Используемый объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_ops.build.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Build time",
+      "titleRu": "Время сборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_ops.pieces",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pieces",
+      "titleRu": "Мест",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_ops.secured",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Net secured",
+      "titleRu": "Сетка закреплена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "uld_ops.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ULD type",
+      "titleRu": "Тип ULD",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pmc",
+        "ake",
+        "akn",
+        "pag",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

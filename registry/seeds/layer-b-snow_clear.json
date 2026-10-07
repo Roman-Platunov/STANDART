@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-snow_clear.json",
+  "types": [
+    {
+      "path": "snow_clear.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Snow clear vehicle id",
+      "titleRu": "ID снегоуборочной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snow_clear.runway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cleared surface id",
+      "titleRu": "ID очищаемой поверхности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snow_clear.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Vehicle speed",
+      "titleRu": "Скорость машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_clear.width",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Clearing width",
+      "titleRu": "Ширина очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_clear.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Snow depth",
+      "titleRu": "Высота снега",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_clear.friction",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Friction estimate",
+      "titleRu": "Оценка трения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_clear.chemical",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chemical applied",
+      "titleRu": "Химия нанесена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "snow_clear.tool",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tool",
+      "titleRu": "Орудие",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plow",
+        "broom",
+        "blower",
+        "spreader",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-catering_load.json",
+  "types": [
+    {
+      "path": "catering_load.truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Catering truck id",
+      "titleRu": "ID кейтерингового грузовика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "catering_load.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Catering flight id",
+      "titleRu": "ID рейса кейтеринга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "catering_load.carts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Carts loaded",
+      "titleRu": "Загружено тележек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catering_load.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Load mass",
+      "titleRu": "Масса загрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catering_load.lift.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Lift height",
+      "titleRu": "Высота подъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catering_load.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Service duration",
+      "titleRu": "Длительность обслуживания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catering_load.secure",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Load secured",
+      "titleRu": "Груз закреплён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "catering_load.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stage",
+        "dock",
+        "load",
+        "offload",
+        "complete",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

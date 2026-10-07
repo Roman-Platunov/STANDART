@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-sealant_robot.json",
+  "types": [
+    {
+      "path": "sealant_robot.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sealant cell id",
+      "titleRu": "ID ячейки герметика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sealant_robot.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sealant job id",
+      "titleRu": "ID задания герметика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sealant_robot.bead.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Bead width",
+      "titleRu": "Ширина валика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sealant_robot.flow",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Dispense flow",
+      "titleRu": "Расход дозирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sealant_robot.speed",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Tool speed",
+      "titleRu": "Скорость инструмента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sealant_robot.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cartridge pressure",
+      "titleRu": "Давление картриджа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sealant_robot.gap",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gap in bead",
+      "titleRu": "Разрыв валика",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sealant_robot.chem",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chemistry",
+      "titleRu": "Химия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pu",
+        "ms",
+        "silicone",
+        "epoxy",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+sid: 2af2d124
+path: turnaround_ops.phase
+aliases:
+  short: turnaround_ops.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза
+  en: Phase
+fingerprint: sha256:2af2d124b08562c36db0038b5e592ba569c6c9893e73dae37a95d7adf8b6bc5c
+enumValues:
+  - inbound
+  - onblock
+  - service
+  - boarding
+  - push
+  - complete

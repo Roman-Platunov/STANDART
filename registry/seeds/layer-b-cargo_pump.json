@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-cargo_pump.json",
+  "types": [
+    {
+      "path": "cargo_pump.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cargo pump id",
+      "titleRu": "ID грузового насоса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cargo_pump.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Source tank id",
+      "titleRu": "ID танка-источника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cargo_pump.rate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pump rate",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cargo_pump.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cargo_pump.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Pump RPM",
+      "titleRu": "Обороты насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cargo_pump.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Casing temperature",
+      "titleRu": "Температура корпуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cargo_pump.cavitation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cavitation",
+      "titleRu": "Кавитация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cargo_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pump state",
+      "titleRu": "Состояние насоса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stop",
+        "start",
+        "run",
+        "strip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

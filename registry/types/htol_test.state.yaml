@@ -1,0 +1,21 @@
+sid: 867bd4ab
+path: htol_test.state
+aliases:
+  short: htol_test.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние камеры
+  en: Chamber state
+fingerprint: sha256:867bd4ab157102dd56d3b476f2a25a8dd86442752d40125e8bd1fe00bdfe9936
+enumValues:
+  - load
+  - stress
+  - readout
+  - unload
+  - fault

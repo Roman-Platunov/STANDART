@@ -1,0 +1,21 @@
+sid: e77a8a98
+path: flare_gas.state
+aliases:
+  short: flare_gas.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние факела
+  en: Flare state
+fingerprint: sha256:e77a8a98404ad608b7def3f3ac780ba107d95127558f06cc521e157af0ca61c1
+enumValues:
+  - standby
+  - purge
+  - flaring
+  - emergency
+  - offline

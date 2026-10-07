@@ -1,0 +1,115 @@
+{
+  "layer": "B17",
+  "name": "layer-b-turnaround_ops.json",
+  "types": [
+    {
+      "path": "turnaround_ops.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Turnaround flight id",
+      "titleRu": "ID рейса на обороте",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "turnaround_ops.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Turnaround stand id",
+      "titleRu": "ID стоянки оборота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "turnaround_ops.planned.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Planned turn",
+      "titleRu": "Плановый оборот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "turnaround_ops.actual.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Actual turn",
+      "titleRu": "Фактический оборот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "turnaround_ops.critical.path",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Critical path progress",
+      "titleRu": "Прогресс критического пути",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "turnaround_ops.delays",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open delays",
+      "titleRu": "Открытые задержки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "turnaround_ops.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready for departure",
+      "titleRu": "Готов к вылету",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "turnaround_ops.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Phase",
+      "titleRu": "Фаза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inbound",
+        "onblock",
+        "service",
+        "boarding",
+        "push",
+        "complete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

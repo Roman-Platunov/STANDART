@@ -1,0 +1,116 @@
+{
+  "layer": "B17",
+  "name": "layer-b-esp_dust.json",
+  "types": [
+    {
+      "path": "esp_dust.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ESP id",
+      "titleRu": "ID электрофильтра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "esp_dust.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Field voltage",
+      "titleRu": "Напряжение поля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_dust.current",
+      "kind": "quantity",
+      "unit": "mA",
+      "titleEn": "Field current",
+      "titleRu": "Ток поля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_dust.opacity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Outlet opacity",
+      "titleRu": "Дымность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "esp_dust.rapping",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Rapping rate",
+      "titleRu": "Частота встряхивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_dust.spark",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Spark rate",
+      "titleRu": "Частота пробоев",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_dust.hopper.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hopper full",
+      "titleRu": "Бункер полон",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "esp_dust.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ESP state",
+      "titleRu": "Состояние ЭФ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "energized",
+        "offline",
+        "purge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

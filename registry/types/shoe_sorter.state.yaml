@@ -1,0 +1,20 @@
+sid: fc8ec694
+path: shoe_sorter.state
+aliases:
+  short: shoe_sorter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сортера
+  en: Sorter state
+fingerprint: sha256:fc8ec69494c75d318f499c1a0858c921aa2eef2ec4d8ba808801f6f09cbde665
+enumValues:
+  - run
+  - idle
+  - clear
+  - fault

@@ -1,0 +1,118 @@
+{
+  "layer": "B17",
+  "name": "layer-b-voice_pick.json",
+  "types": [
+    {
+      "path": "voice_pick.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Voice device id",
+      "titleRu": "ID голосового терминала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "voice_pick.picker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Picker id",
+      "titleRu": "ID комплектовщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "voice_pick.lines",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Lines per hour",
+      "titleRu": "Строк в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "voice_pick.accuracy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pick accuracy",
+      "titleRu": "Точность отбора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "voice_pick.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Device battery",
+      "titleRu": "Батарея устройства",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "voice_pick.exceptions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exceptions",
+      "titleRu": "Исключения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "voice_pick.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Device online",
+      "titleRu": "Устройство онлайн",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "voice_pick.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Session state",
+      "titleRu": "Состояние сессии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "login",
+        "pick",
+        "break",
+        "logout",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 7ceec6cf
+path: force_torque.mode
+aliases:
+  short: force_torque.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:7ceec6cfc8a386471bc5ccb0536e6cee7ff79a64b85bbe20c1148704ccf4d49b
+enumValues:
+  - monitor
+  - control
+  - teach
+  - idle
+  - fault

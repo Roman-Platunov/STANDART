@@ -1,0 +1,115 @@
+{
+  "layer": "B17",
+  "name": "layer-b-gpu_unit.json",
+  "types": [
+    {
+      "path": "gpu_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GPU id",
+      "titleRu": "ID наземного источника питания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gpu_unit.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GPU stand id",
+      "titleRu": "ID стоянки GPU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gpu_unit.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Output voltage",
+      "titleRu": "Выходное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gpu_unit.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Output current",
+      "titleRu": "Выходной ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gpu_unit.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gpu_unit.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Load",
+      "titleRu": "Нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gpu_unit.connected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aircraft connected",
+      "titleRu": "Подключено к ВС",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gpu_unit.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fixed",
+        "mobile",
+        "diesel",
+        "electric",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

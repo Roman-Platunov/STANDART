@@ -1,0 +1,114 @@
+{
+  "layer": "B17",
+  "name": "layer-b-rf_gun.json",
+  "types": [
+    {
+      "path": "rf_gun.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RF gun id",
+      "titleRu": "ID ТСД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rf_gun.user.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Operator id",
+      "titleRu": "ID оператора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rf_gun.scans",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Scans per hour",
+      "titleRu": "Сканов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rf_gun.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery",
+      "titleRu": "Батарея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rf_gun.errors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Scan errors",
+      "titleRu": "Ошибки сканирования",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rf_gun.signal",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "WLAN RSSI",
+      "titleRu": "RSSI WLAN",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rf_gun.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Device online",
+      "titleRu": "Устройство онлайн",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rf_gun.app",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Application",
+      "titleRu": "Приложение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receive",
+        "pick",
+        "pack",
+        "count",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 1f730630
+path: hangar_ops.state
+aliases:
+  short: hangar_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ангара
+  en: Hangar state
+fingerprint: sha256:1f7306307a4ec51b5db4b9130c9e6ada80d025e63b850b931c30ea46b615a963
+enumValues:
+  - open
+  - work
+  - closed
+  - emergency
+  - fault

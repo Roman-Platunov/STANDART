@@ -1,0 +1,111 @@
+{
+  "layer": "B17",
+  "name": "layer-b-ship_engine.json",
+  "types": [
+    {
+      "path": "ship_engine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Main engine id",
+      "titleRu": "ID ГД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ship_engine.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vessel id",
+      "titleRu": "ID судна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ship_engine.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Shaft power",
+      "titleRu": "Мощность на валу",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ship_engine.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Engine RPM",
+      "titleRu": "Обороты двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ship_engine.fuel.rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ship_engine.exhaust.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Exhaust temperature",
+      "titleRu": "Температура выхлопа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ship_engine.slowdown",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Slowdown active",
+      "titleRu": "Замедление активно",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ship_engine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Engine state",
+      "titleRu": "Состояние двигателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stop",
+        "standby",
+        "run",
+        "maneuver",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
