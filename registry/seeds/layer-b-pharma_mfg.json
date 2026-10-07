@@ -1,0 +1,165 @@
+{
+  "layer": "B5",
+  "name": "layer-b-pharma_mfg.json",
+  "types": [
+    {
+      "path": "pharma_mfg.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma manufacturing batch",
+      "titleRu": "ID фармпартии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pharma_mfg.equipment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma equipment id",
+      "titleRu": "ID фармоборудования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pharma_mfg.granulator.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Granulator speed",
+      "titleRu": "Скорость гранулятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_mfg.tablet.press_force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Tablet press force",
+      "titleRu": "Усилие таблетпресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_mfg.tablet.hardness",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Tablet hardness",
+      "titleRu": "Твёрдость таблетки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_mfg.tablet.weight",
+      "kind": "quantity",
+      "unit": "mg",
+      "titleEn": "Tablet weight",
+      "titleRu": "Масса таблетки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_mfg.coating.drum_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coating drum temperature",
+      "titleRu": "Температура дражировочного барабана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_mfg.lyophilizer.shelf_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Lyophilizer shelf temp",
+      "titleRu": "Температура полки лиофилизатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_mfg.lyophilizer.chamber_pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Lyophilizer pressure",
+      "titleRu": "Давление лиофилизатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_mfg.isolator.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Isolator pressure",
+      "titleRu": "Давление изолятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharma_mfg.cleanroom.door_interlock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cleanroom door interlock",
+      "titleRu": "Блокировка двери чистой зоны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pharma_mfg.batch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pharma batch state",
+      "titleRu": "Состояние фармпартии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dispensing",
+        "granulation",
+        "compression",
+        "coating",
+        "packaging",
+        "released",
+        "rejected"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

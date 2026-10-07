@@ -1,0 +1,163 @@
+{
+  "layer": "B5",
+  "name": "layer-b-heavy_equipment.json",
+  "types": [
+    {
+      "path": "heavy.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heavy machine id",
+      "titleRu": "ID тяжёлой техники",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heavy.machine.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Heavy machine type",
+      "titleRu": "Тип техники",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "excavator",
+        "loader",
+        "bulldozer",
+        "crane",
+        "grader",
+        "forklift",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heavy.engine.hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Engine hours",
+      "titleRu": "Моточасы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heavy.engine.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Engine load heavy",
+      "titleRu": "Нагрузка двигателя техники",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "heavy.hydraulic.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Hydraulic pressure",
+      "titleRu": "Давление гидравлики",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heavy.hydraulic.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hydraulic temperature",
+      "titleRu": "Температура гидравлики",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heavy.bucket.load",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Bucket/load weight",
+      "titleRu": "Масса ковша/груза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heavy.fuel.rate",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Heavy fuel rate",
+      "titleRu": "Расход топлива техники",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heavy.safety.seat_switch",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Operator seat occupied",
+      "titleRu": "Оператор на сиденье",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heavy.safety.backup_alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Backup alarm active",
+      "titleRu": "Звуковой сигнал заднего хода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heavy.machine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Heavy machine state",
+      "titleRu": "Состояние техники",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "idle",
+        "working",
+        "transport",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+sid: fbf47620
+path: biotech.run.state
+aliases:
+  short: biotech.run.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние биотех-процесса
+  en: Biotech run state
+fingerprint: sha256:fbf47620a92ae845930a114acabdfb52bf6b3531099ce3110b2746480c99670e
+enumValues:
+  - setup
+  - inoculation
+  - growth
+  - harvest
+  - cip
+  - fault

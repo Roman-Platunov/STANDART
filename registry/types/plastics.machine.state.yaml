@@ -1,0 +1,21 @@
+sid: a5d537cd
+path: plastics.machine.state
+aliases:
+  short: plastics.machine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ТПА
+  en: IMM state
+fingerprint: sha256:a5d537cd4a7dd63749188bec4b1709aba045f7689157d53550a6cbfc5bcb5300
+enumValues:
+  - idle
+  - heating
+  - cycling
+  - alarm
+  - maintenance

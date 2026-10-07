@@ -1,0 +1,20 @@
+sid: bb2c9ecd
+path: transit.vehicle.state
+aliases:
+  short: transit.vehicle.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ОТ
+  en: Transit vehicle state
+fingerprint: sha256:bb2c9ecd47caa7b68bb187503d723ff9b4fb567f74132f2139889c1637e94b4f
+enumValues:
+  - in_service
+  - out_of_service
+  - depot
+  - fault

@@ -1,0 +1,158 @@
+{
+  "layer": "B5",
+  "name": "layer-b-dairy.json",
+  "types": [
+    {
+      "path": "dairy.cow.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cow id",
+      "titleRu": "ID коровы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dairy.parlor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Milking parlor id",
+      "titleRu": "ID доильного зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dairy.milk.yield",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Milk yield",
+      "titleRu": "Надой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy.milk.fat",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Milk fat",
+      "titleRu": "Жирность молока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 10
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dairy.milk.protein",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Milk protein",
+      "titleRu": "Белок молока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 10
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dairy.milk.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Milk temperature",
+      "titleRu": "Температура молока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy.milk.scc",
+      "kind": "quantity",
+      "unit": "/mL",
+      "titleEn": "Somatic cell count",
+      "titleRu": "Соматические клетки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy.cow.activity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cow activity",
+      "titleRu": "Активность коровы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy.cow.rumination",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Rumination time",
+      "titleRu": "Время жвачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy.cow.in_heat",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cow in heat",
+      "titleRu": "Охота",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dairy.milking.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Milking state",
+      "titleRu": "Состояние доения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "prep",
+        "milking",
+        "detach",
+        "wash"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

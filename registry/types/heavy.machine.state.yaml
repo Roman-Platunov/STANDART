@@ -1,0 +1,21 @@
+sid: 3ef0806a
+path: heavy.machine.state
+aliases:
+  short: machine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние техники
+  en: Heavy machine state
+fingerprint: sha256:3ef0806aaac3ebc2222e03090bab75e607699aaff992aed976cb6ac051583722
+enumValues:
+  - off
+  - idle
+  - working
+  - transport
+  - fault

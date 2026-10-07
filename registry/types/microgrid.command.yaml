@@ -1,0 +1,21 @@
+sid: ff7f94e3
+path: microgrid.command
+aliases:
+  short: microgrid.command
+kind: command
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Команда микросети
+  en: Microgrid command
+fingerprint: sha256:ff7f94e313e6ba3228fc767e77548924765306b9623b9bed5727e45359d24319
+enumValues:
+  - connect
+  - island
+  - shed_load
+  - charge
+  - discharge

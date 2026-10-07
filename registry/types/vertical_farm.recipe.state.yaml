@@ -1,0 +1,20 @@
+sid: 86f04051
+path: vertical_farm.recipe.state
+aliases:
+  short: recipe.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Стадия рецепта выращивания
+  en: Grow recipe stage
+fingerprint: sha256:86f04051915631e2cc56983706a2ad77b1578075113e4a9502846bd18e5cc017
+enumValues:
+  - germination
+  - vegetative
+  - flowering
+  - harvest

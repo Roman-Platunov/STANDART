@@ -1,0 +1,23 @@
+sid: aa217cac
+path: pcb.board.state
+aliases:
+  short: board.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние платы
+  en: PCB board state
+fingerprint: sha256:aa217cac69db28c4155bcfc41767f8a51357ddb83c5e150e48b14e9b1f68a548
+enumValues:
+  - bare
+  - smt
+  - reflow
+  - aoi
+  - ict
+  - pass
+  - fail

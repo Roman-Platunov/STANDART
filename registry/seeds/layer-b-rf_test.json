@@ -1,0 +1,129 @@
+{
+  "layer": "B5",
+  "name": "layer-b-rf_test.json",
+  "types": [
+    {
+      "path": "rf_test.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "RF test frequency",
+      "titleRu": "Частота RF-теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rf_test.power",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "RF test power",
+      "titleRu": "Мощность RF-теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rf_test.span",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Spectrum span",
+      "titleRu": "Полоса обзора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rf_test.noise_floor",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Noise floor",
+      "titleRu": "Уровень шумов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rf_test.vswr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Test VSWR",
+      "titleRu": "КСВ (тест)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rf_test.aclr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "ACLR",
+      "titleRu": "ACLR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rf_test.evm",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "EVM",
+      "titleRu": "EVM",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rf_test.instrument.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RF instrument id",
+      "titleRu": "ID RF-прибора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rf_test.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "RF test result",
+      "titleRu": "Результат RF-теста",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "marginal"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

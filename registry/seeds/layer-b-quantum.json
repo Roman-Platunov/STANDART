@@ -1,0 +1,133 @@
+{
+  "layer": "B5",
+  "name": "layer-b-quantum.json",
+  "types": [
+    {
+      "path": "quantum.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Quantum device id",
+      "titleRu": "ID квантового устройства",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "quantum.qubit.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Qubit count",
+      "titleRu": "Число кубитов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quantum.qubit.t1",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "T1 coherence",
+      "titleRu": "Время T1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quantum.qubit.t2",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "T2 coherence",
+      "titleRu": "Время T2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quantum.fidelity.gate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Gate fidelity",
+      "titleRu": "Верность гейта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "quantum.fidelity.readout",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Readout fidelity",
+      "titleRu": "Верность считывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "quantum.cryo.temperature",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Quantum fridge temperature",
+      "titleRu": "Температура квантового холодильника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quantum.job.queue_depth",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Job queue depth",
+      "titleRu": "Глубина очереди задач",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "quantum.job.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Quantum job state",
+      "titleRu": "Состояние квантовой задачи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "queued",
+        "calibrating",
+        "running",
+        "done",
+        "failed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

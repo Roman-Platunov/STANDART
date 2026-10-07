@@ -1,0 +1,115 @@
+{
+  "layer": "B5",
+  "name": "layer-b-cinema.json",
+  "types": [
+    {
+      "path": "cinema.screen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cinema screen id",
+      "titleRu": "ID зала кинотеатра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cinema.show.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cinema show id",
+      "titleRu": "ID сеанса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cinema.projector.lamp_hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Projector lamp hours",
+      "titleRu": "Моточасы лампы проектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cinema.projector.light_output",
+      "kind": "quantity",
+      "unit": "lm",
+      "titleEn": "Projector light output",
+      "titleRu": "Световой поток проектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cinema.audio.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Cinema SPL",
+      "titleRu": "Уровень звука кинозала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cinema.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cinema occupancy",
+      "titleRu": "Заполненность зала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cinema.door.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Auditorium door closed",
+      "titleRu": "Двери зала закрыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cinema.show.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cinema show state",
+      "titleRu": "Состояние сеанса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scheduled",
+        "ads",
+        "feature",
+        "credits",
+        "ended"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

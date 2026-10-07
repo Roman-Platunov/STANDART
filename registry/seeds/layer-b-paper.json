@@ -1,0 +1,135 @@
+{
+  "layer": "B5",
+  "name": "layer-b-paper.json",
+  "types": [
+    {
+      "path": "paper.machine.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Paper machine speed",
+      "titleRu": "Скорость БДМ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper.basis.weight",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Basis weight",
+      "titleRu": "Масса 1 м²",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Paper moisture",
+      "titleRu": "Влажность бумаги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper.calender.pressure",
+      "kind": "quantity",
+      "unit": "kN/m",
+      "titleEn": "Calender pressure",
+      "titleRu": "Давление каландра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper.pulp.consistency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pulp consistency",
+      "titleRu": "Концентрация массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 20
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper.pulp.freeness",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Pulp freeness CSF",
+      "titleRu": "Степень помола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper.steam.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Dryer steam pressure",
+      "titleRu": "Давление пара сушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper.reel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paper reel id",
+      "titleRu": "ID тамбура",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paper.machine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Paper machine state",
+      "titleRu": "Состояние БДМ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stop",
+        "thread",
+        "run",
+        "broke",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "layer": "B5",
+  "name": "layer-b-biotech.json",
+  "types": [
+    {
+      "path": "biotech.bioreactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bioreactor id",
+      "titleRu": "ID биореактора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biotech.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Biotech batch id",
+      "titleRu": "ID биотех-партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biotech.bioreactor.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bioreactor temperature",
+      "titleRu": "Температура биореактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biotech.bioreactor.do",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bioreactor DO",
+      "titleRu": "РК биореактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biotech.bioreactor.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bioreactor pH",
+      "titleRu": "pH биореактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biotech.bioreactor.agitation",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Bioreactor agitation",
+      "titleRu": "Перемешивание биореактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biotech.bioreactor.od",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Optical density",
+      "titleRu": "Оптическая плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biotech.bioreactor.viable_cells",
+      "kind": "quantity",
+      "unit": "/mL",
+      "titleEn": "Viable cell density",
+      "titleRu": "Концентрация живых клеток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biotech.sequencer.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sequencer cycles",
+      "titleRu": "Циклы секвенатора",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biotech.pcr.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "PCR block temperature",
+      "titleRu": "Температура блока ПЦР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biotech.run.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Biotech run state",
+      "titleRu": "Состояние биотех-процесса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "setup",
+        "inoculation",
+        "growth",
+        "harvest",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

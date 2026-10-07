@@ -1,0 +1,20 @@
+sid: 5ec81f5c
+path: vision.result
+aliases:
+  short: vision.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат визуального контроля
+  en: Vision result
+fingerprint: sha256:5ec81f5cede986b0857a0218a6f8289b6fe97bca459eff51eef8f3498fbc37a6
+enumValues:
+  - pass
+  - fail
+  - rework
+  - no_read

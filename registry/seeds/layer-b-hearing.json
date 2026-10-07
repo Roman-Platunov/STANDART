@@ -1,0 +1,102 @@
+{
+  "layer": "B5",
+  "name": "layer-b-hearing.json",
+  "types": [
+    {
+      "path": "hearing.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hearing aid id",
+      "titleRu": "ID слухового аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hearing.user.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hearing aid user id",
+      "titleRu": "ID пользователя СА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "hearing.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hearing aid battery",
+      "titleRu": "Заряд СА",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hearing.gain",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Hearing aid gain",
+      "titleRu": "Усиление СА",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "hearing.environment.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Environment SPL hearing",
+      "titleRu": "Уровень окружения (слух)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hearing.program",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hearing program",
+      "titleRu": "Программа СА",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "quiet",
+        "speech",
+        "noise",
+        "music",
+        "streaming"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hearing.streaming.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Audio streaming active",
+      "titleRu": "Стриминг активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

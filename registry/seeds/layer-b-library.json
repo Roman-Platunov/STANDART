@@ -1,0 +1,113 @@
+{
+  "layer": "B5",
+  "name": "layer-b-library.json",
+  "types": [
+    {
+      "path": "library.item.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Library item id",
+      "titleRu": "ID единицы хранения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "library.patron.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Patron id",
+      "titleRu": "ID читателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "library.archive.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Archive temperature",
+      "titleRu": "Температура архива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "library.archive.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Archive humidity",
+      "titleRu": "Влажность архива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "library.item.checked_out",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Item checked out",
+      "titleRu": "Выдано",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "library.security.gate_alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Library gate alarm",
+      "titleRu": "Тревога ворот библиотеки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "library.visits.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Library visits",
+      "titleRu": "Посещения библиотеки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "library.item.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Library item status",
+      "titleRu": "Статус единицы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "loaned",
+        "reserved",
+        "repair",
+        "lost"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

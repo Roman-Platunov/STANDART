@@ -1,0 +1,167 @@
+{
+  "layer": "B5",
+  "name": "layer-b-road.json",
+  "types": [
+    {
+      "path": "road.segment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Road segment id",
+      "titleRu": "ID участка дороги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "road.surface.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Road surface temperature",
+      "titleRu": "Температура покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road.surface.friction",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Road friction",
+      "titleRu": "Сцепление покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road.ice.probability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ice probability",
+      "titleRu": "Вероятность гололёда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "road.water.film",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Water film thickness",
+      "titleRu": "Толщина водяной плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road.salt.concentration",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "De-icing salt concentration",
+      "titleRu": "Концентрация реагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road.wim.axle_weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Weigh-in-motion axle weight",
+      "titleRu": "Вес оси (WIM)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road.wim.gross_weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Weigh-in-motion GVW",
+      "titleRu": "Полная масса (WIM)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road.toll.transactions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Toll transactions",
+      "titleRu": "Транзакции проезда",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road.anpr.read_ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ANPR read OK",
+      "titleRu": "Распознавание номера OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "road.camera.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Road camera id",
+      "titleRu": "ID дорожной камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "road.condition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Road condition",
+      "titleRu": "Состояние дороги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "wet",
+        "snow",
+        "ice",
+        "slush",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

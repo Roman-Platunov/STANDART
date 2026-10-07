@@ -1,0 +1,138 @@
+{
+  "layer": "B5",
+  "name": "layer-b-groundstation.json",
+  "types": [
+    {
+      "path": "groundstation.antenna.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ground antenna id",
+      "titleRu": "ID антенны ЗС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "groundstation.pass.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Satellite pass id",
+      "titleRu": "ID сеанса связи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "groundstation.antenna.azimuth",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Antenna azimuth",
+      "titleRu": "Азимут антенны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "groundstation.antenna.elevation",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Antenna elevation",
+      "titleRu": "Угол места антенны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "groundstation.link.ebn0",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Eb/N0",
+      "titleRu": "Eb/N0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "groundstation.link.esno",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Es/N0",
+      "titleRu": "Es/N0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "groundstation.link.ber",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ground link BER",
+      "titleRu": "BER наземной линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "groundstation.rf.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Uplink RF power",
+      "titleRu": "Мощность аплинка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "groundstation.rain.attenuation",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Rain attenuation",
+      "titleRu": "Дождевое затухание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "groundstation.pass.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pass state",
+      "titleRu": "Состояние сеанса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scheduled",
+        "tracking",
+        "lost_lock",
+        "complete",
+        "failed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

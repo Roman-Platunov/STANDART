@@ -1,0 +1,126 @@
+{
+  "layer": "B5",
+  "name": "layer-b-glass.json",
+  "types": [
+    {
+      "path": "glass.furnace.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Glass furnace temperature",
+      "titleRu": "Температура стекловаренной печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass.forehearth.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Forehearth temperature",
+      "titleRu": "Температура питателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass.lehr.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Lehr temperature",
+      "titleRu": "Температура отжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass.forming.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Forming speed",
+      "titleRu": "Скорость формования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass.bottle.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Bottle weight",
+      "titleRu": "Масса бутылки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass.defect.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Glass defect count",
+      "titleRu": "Дефекты стекла",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass.tin.bath_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Float tin bath temperature",
+      "titleRu": "Температура оловянной ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Glass line id",
+      "titleRu": "ID линии стекла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glass.line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Glass line state",
+      "titleRu": "Состояние линии стекла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stop",
+        "heatup",
+        "production",
+        "drain",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

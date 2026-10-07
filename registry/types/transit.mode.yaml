@@ -1,0 +1,23 @@
+sid: 0b623028
+path: transit.mode
+aliases:
+  short: transit.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Вид ОТ
+  en: Transit mode
+fingerprint: sha256:0b6230283441615dfd4212e106fa919491c5db98e2513acb473953ce95db4152
+enumValues:
+  - bus
+  - tram
+  - metro
+  - trolley
+  - brt
+  - ferry
+  - other

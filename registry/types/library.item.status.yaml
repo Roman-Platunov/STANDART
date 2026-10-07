@@ -1,0 +1,21 @@
+sid: c1f996fb
+path: library.item.status
+aliases:
+  short: library.item.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус единицы
+  en: Library item status
+fingerprint: sha256:c1f996fb98e5eb8d93740dfec3348f938934b6e86eef9122e659f27f990521eb
+enumValues:
+  - available
+  - loaned
+  - reserved
+  - repair
+  - lost

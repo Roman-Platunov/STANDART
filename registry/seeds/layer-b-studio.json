@@ -1,0 +1,135 @@
+{
+  "layer": "B5",
+  "name": "layer-b-studio.json",
+  "types": [
+    {
+      "path": "studio.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Studio room id",
+      "titleRu": "ID студии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "studio.audio.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Studio SPL",
+      "titleRu": "Уровень звука студии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "studio.mic.level",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Mic input level",
+      "titleRu": "Уровень микрофона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "studio.headphones.impedance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Headphone impedance",
+      "titleRu": "Сопротивление наушников",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "studio.talkback.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Talkback active",
+      "titleRu": "Служебная связь",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "studio.recording",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recording active",
+      "titleRu": "Идёт запись",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "studio.red_light",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recording red light",
+      "titleRu": "Красная лампа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "studio.session.timecode",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Session timecode",
+      "titleRu": "Таймкод сессии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "studio.take.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Take media ref",
+      "titleRu": "Ссылка на дубль",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "studio.session.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Studio session state",
+      "titleRu": "Состояние студии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "rehearse",
+        "record",
+        "mix",
+        "review"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

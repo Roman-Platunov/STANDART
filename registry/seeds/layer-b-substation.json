@@ -1,0 +1,165 @@
+{
+  "layer": "B5",
+  "name": "layer-b-substation.json",
+  "types": [
+    {
+      "path": "substation.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Substation id",
+      "titleRu": "ID подстанции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "substation.bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bay id",
+      "titleRu": "ID ячейки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "substation.voltage.hv",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "HV bus voltage",
+      "titleRu": "Напряжение ВН",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "substation.voltage.mv",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "MV bus voltage",
+      "titleRu": "Напряжение СН",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "substation.current.feeder",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Feeder current",
+      "titleRu": "Ток фидера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "substation.transformer.oil_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Transformer oil temperature",
+      "titleRu": "Температура масла трансформатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "substation.transformer.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Transformer load",
+      "titleRu": "Нагрузка трансформатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 150
+      },
+      "status": "stable"
+    },
+    {
+      "path": "substation.sf6.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "SF6 pressure",
+      "titleRu": "Давление SF6",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "substation.power.mw",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Bay active power",
+      "titleRu": "Активная мощность ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "substation.breaker.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Breaker closed",
+      "titleRu": "Выключатель включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "substation.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Protection trip",
+      "titleRu": "Срабатывание защиты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "substation.breaker.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Breaker state",
+      "titleRu": "Состояние выключателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "intermediate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

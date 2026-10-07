@@ -1,0 +1,156 @@
+{
+  "layer": "B5",
+  "name": "layer-b-transit.json",
+  "types": [
+    {
+      "path": "transit.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transit vehicle id",
+      "titleRu": "ID ОТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "transit.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transit line id",
+      "titleRu": "ID маршрута ОТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "transit.stop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transit stop id",
+      "titleRu": "ID остановки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "transit.passenger.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passenger count transit",
+      "titleRu": "Пассажиры ОТ",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transit.passenger.door_cycle",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Door cycles",
+      "titleRu": "Циклы дверей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transit.delay",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Schedule delay",
+      "titleRu": "Опоздание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "transit.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Transit occupancy",
+      "titleRu": "Заполненность салона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "transit.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Transit door open",
+      "titleRu": "Двери ОТ открыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "transit.wheelchair.ramp",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wheelchair ramp deployed",
+      "titleRu": "Пандус выдвинут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "transit.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Transit mode",
+      "titleRu": "Вид ОТ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bus",
+        "tram",
+        "metro",
+        "trolley",
+        "brt",
+        "ferry",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "transit.vehicle.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Transit vehicle state",
+      "titleRu": "Состояние ОТ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "in_service",
+        "out_of_service",
+        "depot",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "layer": "B5",
+  "name": "layer-b-vision_inspect.json",
+  "types": [
+    {
+      "path": "vision.camera.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inspection camera id",
+      "titleRu": "ID камеры контроля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vision.recipe.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vision recipe id",
+      "titleRu": "ID рецепта зрения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vision.defect.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vision defect count",
+      "titleRu": "Дефекты зрения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vision.cycle.time",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Vision cycle time",
+      "titleRu": "Время цикла зрения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vision.score.confidence",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Detection confidence",
+      "titleRu": "Уверенность детекции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vision.exposure",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Camera exposure",
+      "titleRu": "Экспозиция камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vision.trigger.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vision trigger",
+      "titleRu": "Триггер камеры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vision.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vision result",
+      "titleRu": "Результат визуального контроля",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "rework",
+        "no_read"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vision.image.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Inspection image ref",
+      "titleRu": "Снимок контроля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

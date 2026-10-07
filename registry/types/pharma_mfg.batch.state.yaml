@@ -1,0 +1,23 @@
+sid: f30a37ca
+path: pharma_mfg.batch.state
+aliases:
+  short: pharma_mfg.batch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фармпартии
+  en: Pharma batch state
+fingerprint: sha256:f30a37cadac1f0bbe51640cb0158873781c589a4cd6986c249e517ba61b719a8
+enumValues:
+  - dispensing
+  - granulation
+  - compression
+  - coating
+  - packaging
+  - released
+  - rejected

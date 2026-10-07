@@ -1,0 +1,111 @@
+{
+  "layer": "B5",
+  "name": "layer-b-timebase.json",
+  "types": [
+    {
+      "path": "timebase.source.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Time source id",
+      "titleRu": "ID источника времени",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "timebase.offset",
+      "kind": "quantity",
+      "unit": "ns",
+      "titleEn": "Time offset",
+      "titleRu": "Смещение времени",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "timebase.jitter",
+      "kind": "quantity",
+      "unit": "ns",
+      "titleEn": "Time jitter",
+      "titleRu": "Джиттер времени",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "timebase.allan_dev",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Allan deviation",
+      "titleRu": "Дисперсия Аллана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "timebase.gps.satellites",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Timing GPS satellites",
+      "titleRu": "Спутники для синхронизации",
+      "encodings": [
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "timebase.lock.ptp",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "PTP locked",
+      "titleRu": "PTP в захвате",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "timebase.lock.gnss",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "GNSS time locked",
+      "titleRu": "GNSS-время в захвате",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "timebase.source.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Time source type",
+      "titleRu": "Тип источника времени",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gnss",
+        "atomic",
+        "ptp_gm",
+        "ntp",
+        "holdover"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "layer": "B5",
+  "name": "layer-b-ski.json",
+  "types": [
+    {
+      "path": "ski.lift.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ski lift id",
+      "titleRu": "ID подъёмника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ski.lift.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Lift speed",
+      "titleRu": "Скорость подъёмника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ski.lift.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Lift wind speed",
+      "titleRu": "Ветер на подъёмнике",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ski.lift.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lift load",
+      "titleRu": "Загрузка подъёмника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ski.snow.depth",
+      "kind": "quantity",
+      "unit": "cm",
+      "titleEn": "Ski snow depth",
+      "titleRu": "Высота снега (курорт)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ski.snowmaking.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Snowmaking pressure",
+      "titleRu": "Давление снегогенератора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ski.snowmaking.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Snowmaking water flow",
+      "titleRu": "Расход воды снегогена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ski.slope.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Slope temperature",
+      "titleRu": "Температура склона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ski.lift.e_stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lift e-stop",
+      "titleRu": "Аварийный стоп подъёмника",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ski.lift.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lift state",
+      "titleRu": "Состояние подъёмника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "open",
+        "wind_hold",
+        "maintenance",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

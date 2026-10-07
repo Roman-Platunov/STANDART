@@ -1,0 +1,21 @@
+sid: 384ed897
+path: paper.machine.state
+aliases:
+  short: paper.machine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние БДМ
+  en: Paper machine state
+fingerprint: sha256:384ed8979ef36fa9f857becc6d6a97b0615f305febe93e85eba4152224262c45
+enumValues:
+  - stop
+  - thread
+  - run
+  - broke
+  - maintenance

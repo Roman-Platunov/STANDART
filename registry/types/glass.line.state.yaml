@@ -1,0 +1,21 @@
+sid: 5b0109f7
+path: glass.line.state
+aliases:
+  short: glass.line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии стекла
+  en: Glass line state
+fingerprint: sha256:5b0109f73e4cc8715eb586b68d15457a74638c9490c173144262357111533e4e
+enumValues:
+  - stop
+  - heatup
+  - production
+  - drain
+  - maintenance

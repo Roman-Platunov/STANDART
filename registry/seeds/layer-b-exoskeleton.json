@@ -1,0 +1,114 @@
+{
+  "layer": "B5",
+  "name": "layer-b-exoskeleton.json",
+  "types": [
+    {
+      "path": "exoskeleton.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Exoskeleton id",
+      "titleRu": "ID экзоскелета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "exoskeleton.user.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Exoskeleton user id",
+      "titleRu": "ID пользователя экзоскелета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "exoskeleton.joint.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Assist torque",
+      "titleRu": "Момент помощи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "exoskeleton.joint.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Joint angle exo",
+      "titleRu": "Угол сустава экзоскелета",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "exoskeleton.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Exoskeleton battery",
+      "titleRu": "Заряд экзоскелета",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "exoskeleton.steps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exo step count",
+      "titleRu": "Шаги экзоскелета",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "exoskeleton.assist.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Assist active",
+      "titleRu": "Помощь активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "exoskeleton.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Exoskeleton mode",
+      "titleRu": "Режим экзоскелета",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "walk",
+        "lift",
+        "sit",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

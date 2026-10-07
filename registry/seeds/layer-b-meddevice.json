@@ -1,0 +1,172 @@
+{
+  "layer": "B5",
+  "name": "layer-b-meddevice.json",
+  "types": [
+    {
+      "path": "meddevice.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Medical device id",
+      "titleRu": "ID медоборудования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meddevice.patient.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Med device patient id",
+      "titleRu": "ID пациента (устройство)",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "meddevice.infusion.rate",
+      "kind": "quantity",
+      "unit": "mL/h",
+      "titleEn": "Infusion rate",
+      "titleRu": "Скорость инфузии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "meddevice.infusion.vtbi",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Volume to be infused",
+      "titleRu": "Объём к введению",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "meddevice.ventilator.fio2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ventilator FiO2",
+      "titleRu": "FiO2 ИВЛ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 21,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meddevice.ventilator.peep",
+      "kind": "quantity",
+      "unit": "cm[H2O]",
+      "titleEn": "Ventilator PEEP",
+      "titleRu": "ПДКВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "meddevice.ventilator.tidal_volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Tidal volume",
+      "titleRu": "Дыхательный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "meddevice.monitor.hr",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Patient monitor HR",
+      "titleRu": "ЧСС монитора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "meddevice.monitor.spo2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Patient monitor SpO2",
+      "titleRu": "SpO2 монитора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meddevice.defib.energy",
+      "kind": "quantity",
+      "unit": "J",
+      "titleEn": "Defibrillator energy",
+      "titleRu": "Энергия дефибриллятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meddevice.alarm.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Medical device alarm",
+      "titleRu": "Тревога медоборудования",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meddevice.ventilator.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ventilator mode",
+      "titleRu": "Режим ИВЛ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vc",
+        "pc",
+        "ps",
+        "simv",
+        "cpap",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

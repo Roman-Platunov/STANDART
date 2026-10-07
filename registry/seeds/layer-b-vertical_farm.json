@@ -1,0 +1,160 @@
+{
+  "layer": "B5",
+  "name": "layer-b-vertical_farm.json",
+  "types": [
+    {
+      "path": "vertical_farm.rack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grow rack id",
+      "titleRu": "ID стеллажа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vertical_farm.light.ppfd",
+      "kind": "quantity",
+      "unit": "umol/m2/s",
+      "titleEn": "PPFD",
+      "titleRu": "ППФП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertical_farm.light.photoperiod",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Photoperiod",
+      "titleRu": "Фотопериод",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertical_farm.air.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Vertical farm air temp",
+      "titleRu": "Температура воздуха ВФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertical_farm.air.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vertical farm humidity",
+      "titleRu": "Влажность ВФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vertical_farm.air.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Vertical farm CO2",
+      "titleRu": "CO2 ВФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertical_farm.nutrient.ec",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Nutrient EC",
+      "titleRu": "ЭС раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertical_farm.nutrient.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Nutrient pH",
+      "titleRu": "pH раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 14
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vertical_farm.water.do",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Nutrient DO",
+      "titleRu": "РК раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertical_farm.biomass.estimate",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Biomass estimate",
+      "titleRu": "Оценка биомассы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertical_farm.recipe.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grow recipe stage",
+      "titleRu": "Стадия рецепта выращивания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "germination",
+        "vegetative",
+        "flowering",
+        "harvest"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "layer": "B5",
+  "name": "layer-b-survey.json",
+  "types": [
+    {
+      "path": "survey.instrument.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Survey instrument id",
+      "titleRu": "ID геодезического прибора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "survey.point.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Survey point id",
+      "titleRu": "ID точки съёмки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "survey.total_station.hz",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Horizontal angle",
+      "titleRu": "Горизонтальный угол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey.total_station.v",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Vertical angle",
+      "titleRu": "Вертикальный угол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey.total_station.slope_distance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Slope distance",
+      "titleRu": "Наклонное расстояние",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey.gnss.accuracy_h",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "GNSS horizontal accuracy",
+      "titleRu": "Горизонтальная точность GNSS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey.gnss.accuracy_v",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "GNSS vertical accuracy",
+      "titleRu": "Вертикальная точность GNSS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey.lidar.points",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Point cloud size",
+      "titleRu": "Число точек облака",
+      "encodings": [
+        "i32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey.scanner.range",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Laser scanner range",
+      "titleRu": "Дальность сканера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey.gnss.fix",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Survey GNSS fix",
+      "titleRu": "Режим GNSS съёмки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "autonomous",
+        "dgps",
+        "rtk_float",
+        "rtk_fixed",
+        "ppp"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "survey.pointcloud.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Point cloud ref",
+      "titleRu": "Ссылка на облако точек",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

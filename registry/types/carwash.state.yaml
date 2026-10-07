@@ -1,0 +1,21 @@
+sid: 90a77214
+path: carwash.state
+aliases:
+  short: carwash.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние мойки
+  en: Car wash state
+fingerprint: sha256:90a77214c4d4c78449e6ccd5bf2d3b11782a67051b3f25098a716371b470031f
+enumValues:
+  - idle
+  - occupied
+  - running
+  - rinse
+  - fault

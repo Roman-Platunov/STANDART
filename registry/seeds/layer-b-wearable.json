@@ -1,0 +1,123 @@
+{
+  "layer": "B5",
+  "name": "layer-b-wearable.json",
+  "types": [
+    {
+      "path": "wearable.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wearable device id",
+      "titleRu": "ID носимого устройства",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wearable.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wearable battery",
+      "titleRu": "Заряд носимого",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wearable.skin.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Skin temperature",
+      "titleRu": "Температура кожи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "wearable.eda",
+      "kind": "quantity",
+      "unit": "uS",
+      "titleEn": "Electrodermal activity",
+      "titleRu": "КГР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "wearable.spo2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wearable SpO2",
+      "titleRu": "SpO2 носимого",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wearable.steps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wearable steps",
+      "titleRu": "Шаги носимого",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "wearable.on_wrist",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "On-wrist detected",
+      "titleRu": "На запястье",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wearable.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wearable type",
+      "titleRu": "Тип носимого",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "watch",
+        "ring",
+        "band",
+        "scarf",
+        "patch",
+        "glasses",
+        "earbuds",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

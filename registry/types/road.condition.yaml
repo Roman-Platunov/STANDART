@@ -1,0 +1,22 @@
+sid: 49cd2ae4
+path: road.condition
+aliases:
+  short: road.condition
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дороги
+  en: Road condition
+fingerprint: sha256:49cd2ae484c50440c7db77fa71892b3ff876ea52c2e9fc88193421bf37566bdc
+enumValues:
+  - dry
+  - wet
+  - snow
+  - ice
+  - slush
+  - unknown

@@ -1,0 +1,122 @@
+{
+  "layer": "B5",
+  "name": "layer-b-office.json",
+  "types": [
+    {
+      "path": "office.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Office room id",
+      "titleRu": "ID кабинета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "office.desk.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Desk id",
+      "titleRu": "ID стола",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "office.room.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Office occupancy",
+      "titleRu": "Заполненность офиса",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "office.desk.height",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Sit-stand desk height",
+      "titleRu": "Высота стола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "office.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Office CO2",
+      "titleRu": "CO2 офиса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "office.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Office noise",
+      "titleRu": "Шум офиса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "office.meeting.in_progress",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Meeting in progress",
+      "titleRu": "Совещание идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "office.av.muted",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "AV muted",
+      "titleRu": "Звук AV выключен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "office.room.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Office room type",
+      "titleRu": "Тип помещения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "focus",
+        "meeting",
+        "phone",
+        "lounge"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 3d04d02f
+path: studio.session.state
+aliases:
+  short: studio.session.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние студии
+  en: Studio session state
+fingerprint: sha256:3d04d02f5e52904568105f354376dadbc312372ef532e39a615deb0f2e864ccc
+enumValues:
+  - idle
+  - rehearse
+  - record
+  - mix
+  - review

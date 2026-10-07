@@ -1,0 +1,123 @@
+{
+  "layer": "B5",
+  "name": "layer-b-carwash.json",
+  "types": [
+    {
+      "path": "carwash.bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Car wash bay id",
+      "titleRu": "ID мойки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "carwash.water.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Wash water flow",
+      "titleRu": "Расход воды мойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carwash.water.recycled",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recycled water share",
+      "titleRu": "Доля оборотной воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "carwash.chemical.dose",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Chemical dose",
+      "titleRu": "Доза химии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carwash.cycle.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Wash cycle time",
+      "titleRu": "Время цикла мойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carwash.brush.pressure",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Brush pressure",
+      "titleRu": "Прижим щёток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carwash.cycle.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wash cycle type",
+      "titleRu": "Тип мойки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "touchless",
+        "brush",
+        "premium",
+        "express"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "carwash.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Car wash state",
+      "titleRu": "Состояние мойки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "occupied",
+        "running",
+        "rinse",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "layer": "B5",
+  "name": "layer-b-asrs.json",
+  "types": [
+    {
+      "path": "asrs.crane.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ASRS crane id",
+      "titleRu": "ID крана АСКС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asrs.location.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ASRS location id",
+      "titleRu": "ID ячейки АСКС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asrs.crane.x",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "ASRS crane X",
+      "titleRu": "Координата X крана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asrs.crane.y",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "ASRS crane Y",
+      "titleRu": "Координата Y крана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asrs.crane.z",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "ASRS crane Z",
+      "titleRu": "Координата Z крана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asrs.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "ASRS throughput",
+      "titleRu": "Производительность АСКС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asrs.utilization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "ASRS utilization",
+      "titleRu": "Загрузка АСКС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asrs.crane.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ASRS crane state",
+      "titleRu": "Состояние крана АСКС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "moving",
+        "picking",
+        "placing",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asrs.command",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "ASRS command",
+      "titleRu": "Команда АСКС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "store",
+        "retrieve",
+        "home",
+        "stop"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

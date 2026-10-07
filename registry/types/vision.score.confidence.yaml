@@ -1,0 +1,18 @@
+sid: 21dd8dec
+path: vision.score.confidence
+aliases:
+  short: score.confidence
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Уверенность детекции
+  en: Detection confidence
+fingerprint: sha256:21dd8dec36700c0952d5a2d00f2c2034b49b535e7fce80cec2c0000fc7d53b6c
+range:
+  min: 0
+  max: 100

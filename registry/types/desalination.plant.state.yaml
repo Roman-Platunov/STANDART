@@ -1,0 +1,21 @@
+sid: bad3264b
+path: desalination.plant.state
+aliases:
+  short: desalination.plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние опреснения
+  en: Desalination state
+fingerprint: sha256:bad3264b3fe5a639ea84c9d663a13408ba17022abc276448a3ac6acbd5620fbb
+enumValues:
+  - stop
+  - start
+  - produce
+  - cip
+  - fault

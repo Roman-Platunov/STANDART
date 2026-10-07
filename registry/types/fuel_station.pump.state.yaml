@@ -1,0 +1,22 @@
+sid: f06841d4
+path: fuel_station.pump.state
+aliases:
+  short: pump.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние колонки
+  en: Pump state
+fingerprint: sha256:f06841d4662311eafe49a8ccfd489d86aa80e095a94352c1802845d1d25abf28
+enumValues:
+  - idle
+  - authorized
+  - fueling
+  - hanging
+  - fault
+  - locked

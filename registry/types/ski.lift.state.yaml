@@ -1,0 +1,21 @@
+sid: 504c4994
+path: ski.lift.state
+aliases:
+  short: lift.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние подъёмника
+  en: Lift state
+fingerprint: sha256:504c4994838934966e4ba068c7bbf837ad765dddc64d874ebd900d4899e383d0
+enumValues:
+  - closed
+  - open
+  - wind_hold
+  - maintenance
+  - fault

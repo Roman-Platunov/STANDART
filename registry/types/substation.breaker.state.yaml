@@ -1,0 +1,20 @@
+sid: ae288015
+path: substation.breaker.state
+aliases:
+  short: breaker.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние выключателя
+  en: Breaker state
+fingerprint: sha256:ae288015d27015b407712d584959139b6691b4b1acab34c7b55ffcc11cbf0fc5
+enumValues:
+  - open
+  - closed
+  - intermediate
+  - fault

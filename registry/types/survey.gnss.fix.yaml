@@ -1,0 +1,21 @@
+sid: 07a94e8a
+path: survey.gnss.fix
+aliases:
+  short: gnss.fix
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим GNSS съёмки
+  en: Survey GNSS fix
+fingerprint: sha256:07a94e8affc1c92a1e3c62d7b564d71ee429580d9211b7aa5c9c1fc4dd42bbef
+enumValues:
+  - autonomous
+  - dgps
+  - rtk_float
+  - rtk_fixed
+  - ppp

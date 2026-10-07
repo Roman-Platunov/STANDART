@@ -1,0 +1,143 @@
+{
+  "layer": "B5",
+  "name": "layer-b-lng.json",
+  "types": [
+    {
+      "path": "lng.tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LNG tank level",
+      "titleRu": "Уровень СПГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lng.tank.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "LNG tank pressure",
+      "titleRu": "Давление СПГ-резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng.tank.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "LNG tank temperature",
+      "titleRu": "Температура СПГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng.boiloff.rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Boil-off rate",
+      "titleRu": "Скорость испарения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng.loading.rate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "LNG loading rate",
+      "titleRu": "Скорость налива СПГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng.regas.outlet_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Regas outlet temperature",
+      "titleRu": "Температура на выходе регазификации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng.regas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Regas flow",
+      "titleRu": "Расход регазификации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng.gas_detect.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "LNG gas detection alarm",
+      "titleRu": "Газоанализатор СПГ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lng.terminal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LNG terminal id",
+      "titleRu": "ID СПГ-терминала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lng.operation",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "LNG operation",
+      "titleRu": "Операция СПГ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "loading",
+        "unloading",
+        "regas",
+        "hold"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

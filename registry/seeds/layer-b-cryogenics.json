@@ -1,0 +1,128 @@
+{
+  "layer": "B5",
+  "name": "layer-b-cryogenics.json",
+  "types": [
+    {
+      "path": "cryogenics.cryostat.temperature",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Cryostat temperature",
+      "titleRu": "Температура криостата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryogenics.ln2.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LN2 level",
+      "titleRu": "Уровень жидкого азота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cryogenics.lhe.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LHe level",
+      "titleRu": "Уровень жидкого гелия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cryogenics.vacuum.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Cryostat vacuum",
+      "titleRu": "Вакуум криостата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryogenics.pulse_tube.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Pulse tube power",
+      "titleRu": "Мощность криокулера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryogenics.magnet.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Magnet current",
+      "titleRu": "Ток магнита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryogenics.magnet.field",
+      "kind": "quantity",
+      "unit": "T",
+      "titleEn": "Magnet field",
+      "titleRu": "Поле магнита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryogenics.quench.detect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Magnet quench detected",
+      "titleRu": "Квенч магнита",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cryogenics.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cryogenic system id",
+      "titleRu": "ID криосистемы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

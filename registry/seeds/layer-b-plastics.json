@@ -1,0 +1,127 @@
+{
+  "layer": "B5",
+  "name": "layer-b-plastics.json",
+  "types": [
+    {
+      "path": "plastics.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Injection molding machine id",
+      "titleRu": "ID ТПА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plastics.barrel.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Barrel temperature",
+      "titleRu": "Температура цилиндра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastics.mold.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mold temperature",
+      "titleRu": "Температура формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastics.injection.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Injection pressure",
+      "titleRu": "Давление впрыска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastics.injection.speed",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Injection speed",
+      "titleRu": "Скорость впрыска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastics.cycle.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time plastics",
+      "titleRu": "Время цикла ТПА",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastics.clamp.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Clamp force",
+      "titleRu": "Усилие смыкания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastics.shot.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Shot weight",
+      "titleRu": "Масса впрыска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastics.machine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "IMM state",
+      "titleRu": "Состояние ТПА",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "heating",
+        "cycling",
+        "alarm",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

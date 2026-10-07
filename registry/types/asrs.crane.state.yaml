@@ -1,0 +1,21 @@
+sid: 194d7a27
+path: asrs.crane.state
+aliases:
+  short: crane.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние крана АСКС
+  en: ASRS crane state
+fingerprint: sha256:194d7a273bc70d7da0894846e5e2604fe6fe6303a83d16c2f338db0c1025ecff
+enumValues:
+  - idle
+  - moving
+  - picking
+  - placing
+  - fault

@@ -1,0 +1,21 @@
+sid: 5baac94e
+path: timebase.source.type
+aliases:
+  short: source.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип источника времени
+  en: Time source type
+fingerprint: sha256:5baac94e2d3bf1bd182c13529d35810fa4ed85922cf161d0473233215b78a0bb
+enumValues:
+  - gnss
+  - atomic
+  - ptp_gm
+  - ntp
+  - holdover

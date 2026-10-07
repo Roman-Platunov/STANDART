@@ -1,0 +1,22 @@
+sid: 24e17f47
+path: meddevice.ventilator.mode
+aliases:
+  short: ventilator.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим ИВЛ
+  en: Ventilator mode
+fingerprint: sha256:24e17f47e9bb5fa72fa5acd507752c930569ab42cd119d20707d61a3c2ac7f3f
+enumValues:
+  - vc
+  - pc
+  - ps
+  - simv
+  - cpap
+  - other

@@ -1,0 +1,21 @@
+sid: b3523ebd
+path: groundstation.pass.state
+aliases:
+  short: pass.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сеанса
+  en: Pass state
+fingerprint: sha256:b3523ebd6f10e82f8d4be0ccf70c853111e2f2b6c88358d0f47df2de3aa7d02f
+enumValues:
+  - scheduled
+  - tracking
+  - lost_lock
+  - complete
+  - failed

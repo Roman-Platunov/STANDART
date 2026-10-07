@@ -1,0 +1,20 @@
+sid: 5a28d97a
+path: microgrid.mode
+aliases:
+  short: microgrid.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим микросети
+  en: Microgrid mode
+fingerprint: sha256:5a28d97a032cfd850620240191da63992e74a038ec6a9e3d5949d5ff14640a67
+enumValues:
+  - grid_tied
+  - island
+  - black_start
+  - fault

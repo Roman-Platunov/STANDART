@@ -1,0 +1,137 @@
+{
+  "layer": "B5",
+  "name": "layer-b-fuel_station.json",
+  "types": [
+    {
+      "path": "fuel_station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel station id",
+      "titleRu": "ID АЗС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fuel_station.pump.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel pump id",
+      "titleRu": "ID колонки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fuel_station.dispensed.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Dispensed fuel volume",
+      "titleRu": "Отпущено топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_station.tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Station tank level",
+      "titleRu": "Уровень резервуара АЗС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fuel_station.tank.water",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Tank water bottom",
+      "titleRu": "Вода на дне резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_station.vapor.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Vapor recovery pressure",
+      "titleRu": "Давление УЛФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_station.leak.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "UST leak alarm",
+      "titleRu": "Тревога утечки УРТ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fuel_station.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fuel product",
+      "titleRu": "Вид топлива",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gasoline95",
+        "gasoline98",
+        "diesel",
+        "lpg",
+        "cng",
+        "adblue",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fuel_station.pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pump state",
+      "titleRu": "Состояние колонки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "authorized",
+        "fueling",
+        "hanging",
+        "fault",
+        "locked"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

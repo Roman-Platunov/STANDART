@@ -1,0 +1,142 @@
+{
+  "layer": "B5",
+  "name": "layer-b-poultry.json",
+  "types": [
+    {
+      "path": "poultry.house.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Poultry house id",
+      "titleRu": "ID птичника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "poultry.house.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Poultry house temperature",
+      "titleRu": "Температура птичника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "poultry.house.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Poultry house humidity",
+      "titleRu": "Влажность птичника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "poultry.house.nh3",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Poultry ammonia",
+      "titleRu": "Аммиак в птичнике",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "poultry.house.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Poultry CO2",
+      "titleRu": "CO2 в птичнике",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "poultry.feed.consumed",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Feed consumed poultry",
+      "titleRu": "Расход корма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "poultry.water.consumed",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Water consumed poultry",
+      "titleRu": "Расход воды птицы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "poultry.bird.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Bird weight",
+      "titleRu": "Масса птицы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "poultry.mortality.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Poultry mortality",
+      "titleRu": "Падёж",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "poultry.ventilation.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ventilation mode poultry",
+      "titleRu": "Режим вентиляции птичника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "min",
+        "tunnel",
+        "natural",
+        "mixed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

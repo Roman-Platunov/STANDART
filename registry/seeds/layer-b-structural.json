@@ -1,0 +1,158 @@
+{
+  "layer": "B5",
+  "name": "layer-b-structural.json",
+  "types": [
+    {
+      "path": "structural.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Structural asset id",
+      "titleRu": "ID конструкции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "structural.asset.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Structural asset type",
+      "titleRu": "Тип конструкции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bridge",
+        "tunnel",
+        "dam",
+        "building",
+        "tower",
+        "pipeline",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "structural.strain",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Structural strain",
+      "titleRu": "Деформация конструкции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "structural.displacement",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Structural displacement",
+      "titleRu": "Смещение конструкции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "structural.tilt",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Structural tilt",
+      "titleRu": "Крен конструкции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "structural.vibration.rms",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Structural vibration RMS",
+      "titleRu": "Вибрация конструкции RMS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "structural.crack.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Crack width",
+      "titleRu": "Ширина трещины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "structural.cable.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Cable tension",
+      "titleRu": "Натяжение троса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "structural.concrete.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Concrete humidity",
+      "titleRu": "Влажность бетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "structural.scour.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Scour depth",
+      "titleRu": "Глубина размыва",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "structural.alert.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Structural alert",
+      "titleRu": "Конструктивная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

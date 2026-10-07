@@ -1,0 +1,131 @@
+{
+  "layer": "B5",
+  "name": "layer-b-desalination.json",
+  "types": [
+    {
+      "path": "desalination.feed.salinity",
+      "kind": "quantity",
+      "unit": "ppt",
+      "titleEn": "Feed salinity",
+      "titleRu": "Солёность исходной воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desalination.permeate.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Permeate flow",
+      "titleRu": "Расход пермеата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desalination.permeate.salinity",
+      "kind": "quantity",
+      "unit": "ppt",
+      "titleEn": "Permeate salinity",
+      "titleRu": "Солёность пермеата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desalination.ro.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "RO pressure",
+      "titleRu": "Давление ОО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desalination.ro.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "RO recovery",
+      "titleRu": "Выход пермеата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "desalination.energy.sec",
+      "kind": "quantity",
+      "unit": "kWh/m3",
+      "titleEn": "Specific energy consumption",
+      "titleRu": "Удельное энергопотребление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desalination.antiscalant.dose",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Antiscalant dose",
+      "titleRu": "Доза антискаланта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desalination.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Desalination plant id",
+      "titleRu": "ID опреснителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "desalination.plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Desalination state",
+      "titleRu": "Состояние опреснения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stop",
+        "start",
+        "produce",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

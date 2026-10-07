@@ -1,0 +1,21 @@
+sid: 800884c0
+path: lng.operation
+aliases:
+  short: lng.operation
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Операция СПГ
+  en: LNG operation
+fingerprint: sha256:800884c0187062418530be0255ee0e794d88cee7ba638d0ffa0d6a41814658a4
+enumValues:
+  - idle
+  - loading
+  - unloading
+  - regas
+  - hold

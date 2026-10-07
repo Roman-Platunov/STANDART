@@ -1,0 +1,154 @@
+{
+  "layer": "B5",
+  "name": "layer-b-underwater.json",
+  "types": [
+    {
+      "path": "underwater.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ROV/AUV id",
+      "titleRu": "ID подводного аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "underwater.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Underwater depth",
+      "titleRu": "Глубина погружения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underwater.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Ambient water pressure",
+      "titleRu": "Давление воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underwater.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature underwater",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underwater.thruster.rpm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Thruster RPM",
+      "titleRu": "Обороты движителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underwater.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Underwater vehicle SoC",
+      "titleRu": "Заряд подводного аппарата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "underwater.sonar.range",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Sonar range",
+      "titleRu": "Дальность сонара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underwater.cable.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Tether tension",
+      "titleRu": "Натяжение кабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "underwater.leak.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hull leak detected",
+      "titleRu": "Протечка корпуса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "underwater.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Underwater mode",
+      "titleRu": "Режим подводного аппарата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "surface",
+        "dive",
+        "cruise",
+        "hover",
+        "emergency"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "underwater.camera.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Underwater camera ref",
+      "titleRu": "Подводная камера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 9de5ad4e
+path: cinema.show.state
+aliases:
+  short: cinema.show.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сеанса
+  en: Cinema show state
+fingerprint: sha256:9de5ad4edf3e0cadd58ed01b045b4ab55ebf2953aacf115cb1c582e462a0c2da
+enumValues:
+  - scheduled
+  - ads
+  - feature
+  - credits
+  - ended

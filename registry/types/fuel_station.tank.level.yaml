@@ -1,0 +1,18 @@
+sid: df9690a1
+path: fuel_station.tank.level
+aliases:
+  short: tank.level
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Уровень резервуара АЗС
+  en: Station tank level
+fingerprint: sha256:df9690a1e741257ea86214e6a4ed2fa71bc0940db1c261fcb90682e32722284d
+range:
+  min: 0
+  max: 100

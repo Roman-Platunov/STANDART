@@ -1,0 +1,110 @@
+{
+  "layer": "B5",
+  "name": "layer-b-beekeeping.json",
+  "types": [
+    {
+      "path": "beekeeping.hive.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hive id",
+      "titleRu": "ID улья",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "beekeeping.hive.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Hive weight",
+      "titleRu": "Масса улья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beekeeping.hive.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hive temperature",
+      "titleRu": "Температура улья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beekeeping.hive.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hive humidity",
+      "titleRu": "Влажность улья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "beekeeping.hive.sound",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Hive acoustic level",
+      "titleRu": "Акустика улья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beekeeping.foraging.activity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Foraging activity",
+      "titleRu": "Лётная активность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "beekeeping.swarm.risk",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Swarm risk",
+      "titleRu": "Риск роения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "beekeeping.theft.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hive theft alarm",
+      "titleRu": "Тревога кражи улья",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

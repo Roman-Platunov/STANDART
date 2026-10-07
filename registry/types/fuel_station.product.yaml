@@ -1,0 +1,23 @@
+sid: 340f0990
+path: fuel_station.product
+aliases:
+  short: fuel_station.product
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Вид топлива
+  en: Fuel product
+fingerprint: sha256:340f099059baf33040606168e97c48a21d6badd24970e3fa48f60cf490685b88
+enumValues:
+  - gasoline95
+  - gasoline98
+  - diesel
+  - lpg
+  - cng
+  - adblue
+  - other

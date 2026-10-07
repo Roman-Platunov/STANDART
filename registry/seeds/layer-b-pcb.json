@@ -1,0 +1,147 @@
+{
+  "layer": "B5",
+  "name": "layer-b-pcb.json",
+  "types": [
+    {
+      "path": "pcb.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SMT line id",
+      "titleRu": "ID линии SMT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pcb.board.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PCB board id",
+      "titleRu": "ID платы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pcb.reflow.zone1_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reflow zone 1 temp",
+      "titleRu": "Температура зоны 1 пайки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb.reflow.zone2_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reflow zone 2 temp",
+      "titleRu": "Температура зоны 2 пайки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb.reflow.zone3_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reflow zone 3 temp",
+      "titleRu": "Температура зоны 3 пайки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb.placer.ppm",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Placement PPM",
+      "titleRu": "PPM установки компонентов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb.aoi.defect_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "AOI defect count",
+      "titleRu": "Дефекты АОИ",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb.spi.volume",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solder paste volume",
+      "titleRu": "Объём пасты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 200
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pcb.ict.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "ICT yield",
+      "titleRu": "Выход годных ICT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pcb.board.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PCB board state",
+      "titleRu": "Состояние платы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bare",
+        "smt",
+        "reflow",
+        "aoi",
+        "ict",
+        "pass",
+        "fail"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

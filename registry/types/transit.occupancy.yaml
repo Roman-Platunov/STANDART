@@ -1,0 +1,18 @@
+sid: 397ac174
+path: transit.occupancy
+aliases:
+  short: transit.occupancy
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заполненность салона
+  en: Transit occupancy
+fingerprint: sha256:397ac1744720a0b04accf7dc7ceacbdc9e87e7c035b88218cde0caa5e326d63b
+range:
+  min: 0
+  max: 100

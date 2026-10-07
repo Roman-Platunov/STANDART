@@ -1,0 +1,23 @@
+sid: 22676d7e
+path: structural.asset.type
+aliases:
+  short: asset.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип конструкции
+  en: Structural asset type
+fingerprint: sha256:22676d7e9475a781ca8fb64cb329f124e88fb7c534df032b50226515776924ec
+enumValues:
+  - bridge
+  - tunnel
+  - dam
+  - building
+  - tower
+  - pipeline
+  - other

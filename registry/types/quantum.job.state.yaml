@@ -1,0 +1,21 @@
+sid: 6c964a80
+path: quantum.job.state
+aliases:
+  short: quantum.job.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние квантовой задачи
+  en: Quantum job state
+fingerprint: sha256:6c964a8090476ac55cc117022ce5932b551c09c11b97a1c0f1dedbee03314e40
+enumValues:
+  - queued
+  - calibrating
+  - running
+  - done
+  - failed

@@ -1,0 +1,21 @@
+sid: 8baf9a54
+path: dairy.milking.state
+aliases:
+  short: milking.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние доения
+  en: Milking state
+fingerprint: sha256:8baf9a546770e8c5819cfd9294f7cc4c508bf45c1cb662d89973f5901247efd1
+enumValues:
+  - idle
+  - prep
+  - milking
+  - detach
+  - wash

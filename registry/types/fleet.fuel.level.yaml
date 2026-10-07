@@ -1,0 +1,18 @@
+sid: 03ccea03
+path: fleet.fuel.level
+aliases:
+  short: fuel.level
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Уровень топлива автопарка
+  en: Fleet fuel level
+fingerprint: sha256:03ccea035a335b18adc880922c6ea310ec80bd6c62327fdde8ce781758589d7f
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,148 @@
+{
+  "layer": "B5",
+  "name": "layer-b-microgrid.json",
+  "types": [
+    {
+      "path": "microgrid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Microgrid id",
+      "titleRu": "ID микросети",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "microgrid.load.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Microgrid load",
+      "titleRu": "Нагрузка микросети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "microgrid.generation.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Microgrid generation",
+      "titleRu": "Генерация микросети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "microgrid.storage.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Microgrid storage SoC",
+      "titleRu": "Заряд накопителя микросети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "microgrid.storage.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Microgrid storage power",
+      "titleRu": "Мощность накопителя микросети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "microgrid.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Microgrid frequency",
+      "titleRu": "Частота микросети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "microgrid.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Microgrid voltage",
+      "titleRu": "Напряжение микросети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "microgrid.islanded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Islanded mode",
+      "titleRu": "Островной режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "microgrid.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Microgrid mode",
+      "titleRu": "Режим микросети",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grid_tied",
+        "island",
+        "black_start",
+        "fault"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "microgrid.command",
+      "kind": "command",
+      "unit": "-",
+      "titleEn": "Microgrid command",
+      "titleRu": "Команда микросети",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "connect",
+        "island",
+        "shed_load",
+        "charge",
+        "discharge"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

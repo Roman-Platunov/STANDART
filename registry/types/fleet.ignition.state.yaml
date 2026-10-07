@@ -1,0 +1,19 @@
+sid: 2198fdac
+path: fleet.ignition.state
+aliases:
+  short: ignition.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Зажигание (парк)
+  en: Fleet ignition state
+fingerprint: sha256:2198fdaccf9bd25e56875ad6b90e4b3e13bc329a0a39bb562649e8b1b431784c
+enumValues:
+  - off
+  - on
+  - accessory

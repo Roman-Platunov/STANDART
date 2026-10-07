@@ -1,0 +1,177 @@
+{
+  "layer": "B5",
+  "name": "layer-b-fleet.json",
+  "types": [
+    {
+      "path": "fleet.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fleet vehicle id",
+      "titleRu": "ID ТС автопарка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fleet.driver.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fleet driver id",
+      "titleRu": "ID водителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "fleet.vehicle.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Fleet vehicle speed",
+      "titleRu": "Скорость ТС автопарка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet.fuel.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fleet fuel level",
+      "titleRu": "Уровень топлива автопарка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fleet.fuel.consumed",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fleet fuel consumed",
+      "titleRu": "Расход топлива автопарка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet.idle.time",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Idle time",
+      "titleRu": "Время простоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet.harsh.brake_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Harsh brake events",
+      "titleRu": "Резкие торможения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet.harsh.accel_count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Harsh accel events",
+      "titleRu": "Резкие ускорения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet.score.eco",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Eco driving score",
+      "titleRu": "Экоскор вождения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fleet.seatbelt.fastened",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seatbelt fastened fleet",
+      "titleRu": "Ремень пристёгнут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fleet.camera.event",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dashcam event",
+      "titleRu": "Событие видеорегистратора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fleet.ignition.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fleet ignition state",
+      "titleRu": "Зажигание (парк)",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "on",
+        "accessory"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fleet.dashcam.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Dashcam clip ref",
+      "titleRu": "Клип регистратора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    }
+  ]
+}
