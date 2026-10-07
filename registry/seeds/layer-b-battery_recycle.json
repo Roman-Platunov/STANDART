@@ -1,0 +1,119 @@
+{
+  "layer": "B8",
+  "name": "layer-b-battery_recycle.json",
+  "types": [
+    {
+      "path": "battery_recycle.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Battery recycle batch id",
+      "titleRu": "ID партии переработки АКБ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery_recycle.furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Recycling furnace id",
+      "titleRu": "ID печи переработки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery_recycle.feed.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Feed mass",
+      "titleRu": "Масса загрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_recycle.furnace.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_recycle.black_mass.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Black mass yield",
+      "titleRu": "Выход black mass",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "battery_recycle.li.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lithium recovery",
+      "titleRu": "Извлечение лития",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "battery_recycle.emissions.hf",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "HF emissions",
+      "titleRu": "Выбросы HF",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_recycle.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Recycle process",
+      "titleRu": "Процесс переработки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pyro",
+        "hydro",
+        "direct",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

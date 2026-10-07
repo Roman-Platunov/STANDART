@@ -1,0 +1,112 @@
+{
+  "layer": "B8",
+  "name": "layer-b-wood_panel.json",
+  "types": [
+    {
+      "path": "wood_panel.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Panel press id",
+      "titleRu": "ID пресса плит",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wood_panel.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Panel batch id",
+      "titleRu": "ID партии плит",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wood_panel.press.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Press temperature",
+      "titleRu": "Температура пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_panel.press.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Press pressure",
+      "titleRu": "Давление пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_panel.board.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Board thickness",
+      "titleRu": "Толщина плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_panel.board.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Board density",
+      "titleRu": "Плотность плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_panel.formaldehyde",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Formaldehyde emission",
+      "titleRu": "Эмиссия формальдегида",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_panel.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Panel type",
+      "titleRu": "Тип плиты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "particle",
+        "mdf",
+        "osb",
+        "plywood",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

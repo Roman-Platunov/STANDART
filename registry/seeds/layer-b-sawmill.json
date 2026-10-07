@@ -1,0 +1,120 @@
+{
+  "layer": "B8",
+  "name": "layer-b-sawmill.json",
+  "types": [
+    {
+      "path": "sawmill.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sawmill line id",
+      "titleRu": "ID лесопильной линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sawmill.log.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Log id",
+      "titleRu": "ID бревна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sawmill.log.diameter",
+      "kind": "quantity",
+      "unit": "cm",
+      "titleEn": "Log diameter",
+      "titleRu": "Диаметр бревна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sawmill.kerf",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Kerf width",
+      "titleRu": "Ширина пропила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sawmill.lumber.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lumber yield",
+      "titleRu": "Выход пиломатериала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sawmill.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lumber moisture",
+      "titleRu": "Влажность пиломатериала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sawmill.throughput",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Log throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sawmill.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lumber grade",
+      "titleRu": "Сорт пиломатериала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "select",
+        "common1",
+        "common2",
+        "utility",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: b88b246d
+path: bridge_health.condition
+aliases:
+  short: bridge_health.condition
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние моста
+  en: Bridge condition
+fingerprint: sha256:b88b246d4c8d53991aa2ab5499a9194edc056c800723d964f52ca430441da322
+enumValues:
+  - good
+  - fair
+  - poor
+  - critical

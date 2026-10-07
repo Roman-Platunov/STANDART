@@ -1,0 +1,20 @@
+sid: eb584f52
+path: battery_recycle.process
+aliases:
+  short: battery_recycle.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Процесс переработки
+  en: Recycle process
+fingerprint: sha256:eb584f521647f54e739f06323c3632e65fca86d37174aa13a5aeb32fb9b79674
+enumValues:
+  - pyro
+  - hydro
+  - direct
+  - hybrid

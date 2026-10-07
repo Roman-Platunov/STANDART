@@ -1,0 +1,21 @@
+sid: 0297b5ba
+path: cubesat_ops.mode
+aliases:
+  short: cubesat_ops.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим CubeSat
+  en: CubeSat mode
+fingerprint: sha256:0297b5ba98f120c6b7e28bc3019a66adb0ad38637ab4bb34fe8297ec5a459ced
+enumValues:
+  - detumble
+  - nominal
+  - payload
+  - safe
+  - deorbit

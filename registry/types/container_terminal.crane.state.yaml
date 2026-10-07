@@ -1,0 +1,21 @@
+sid: 94675fe8
+path: container_terminal.crane.state
+aliases:
+  short: container_terminal.crane.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние крана
+  en: Crane state
+fingerprint: sha256:94675fe84b991c52312ea76cbee2fa2d0659366cbae4fafb8b6c5f43a36f7f09
+enumValues:
+  - idle
+  - ship
+  - yard
+  - maintenance
+  - fault

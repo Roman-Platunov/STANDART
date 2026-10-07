@@ -1,0 +1,20 @@
+sid: cd09186d
+path: wind_lidar.mount
+aliases:
+  short: wind_lidar.mount
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип установки лидара
+  en: Lidar mount
+fingerprint: sha256:cd09186dd75a5c102e781512e38e7414e67cc757bb1ff13ffa2d322710610aa7
+enumValues:
+  - ground
+  - nacelle
+  - floating
+  - other

@@ -1,0 +1,20 @@
+sid: b399be48
+path: landfill_gas.disposition
+aliases:
+  short: landfill_gas.disposition
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Назначение газа
+  en: Gas disposition
+fingerprint: sha256:b399be48fe01716c3e56dcec4d77b75e311eee2d42fa19802b894d0aa275b2c7
+enumValues:
+  - flare
+  - engine
+  - pipeline
+  - vent_emergency

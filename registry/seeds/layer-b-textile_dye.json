@@ -1,0 +1,112 @@
+{
+  "layer": "B8",
+  "name": "layer-b-textile_dye.json",
+  "types": [
+    {
+      "path": "textile_dye.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dye batch id",
+      "titleRu": "ID партии крашения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "textile_dye.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dye machine id",
+      "titleRu": "ID красильной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "textile_dye.bath.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dye bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_dye.bath.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dye bath pH",
+      "titleRu": "pH ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_dye.liquor.ratio",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Liquor ratio",
+      "titleRu": "Модуль ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_dye.color.delta_e",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Color ΔE",
+      "titleRu": "Цветовое отклонение ΔE",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_dye.water.use",
+      "kind": "quantity",
+      "unit": "L/kg",
+      "titleEn": "Water use",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_dye.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dye process",
+      "titleRu": "Процесс крашения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "reactive",
+        "disperse",
+        "vat",
+        "pigment",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

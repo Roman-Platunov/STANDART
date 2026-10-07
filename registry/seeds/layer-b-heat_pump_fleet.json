@@ -1,0 +1,111 @@
+{
+  "layer": "B8",
+  "name": "layer-b-heat_pump_fleet.json",
+  "types": [
+    {
+      "path": "heat_pump_fleet.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat pump unit id",
+      "titleRu": "ID теплового насоса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_pump_fleet.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat pump site id",
+      "titleRu": "ID объекта ТН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_pump_fleet.cop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Instant COP",
+      "titleRu": "Мгновенный COP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_pump_fleet.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Electrical power",
+      "titleRu": "Электрическая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_pump_fleet.outdoor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outdoor temperature",
+      "titleRu": "Наружная температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_pump_fleet.supply.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_pump_fleet.defrost",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Defrost active",
+      "titleRu": "Оттайка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heat_pump_fleet.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Heat pump mode",
+      "titleRu": "Режим теплового насоса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "cool",
+        "dhw",
+        "off",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

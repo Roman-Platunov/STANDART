@@ -1,0 +1,113 @@
+{
+  "layer": "B8",
+  "name": "layer-b-pool_ops.json",
+  "types": [
+    {
+      "path": "pool_ops.pool.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pool id",
+      "titleRu": "ID бассейна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pool_ops.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pool temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pool_ops.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pool pH",
+      "titleRu": "pH воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pool_ops.chlorine.free",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Free chlorine",
+      "titleRu": "Свободный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pool_ops.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Turbidity",
+      "titleRu": "Мутность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pool_ops.flow.filter",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Filter flow",
+      "titleRu": "Расход фильтрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pool_ops.closure",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pool closed",
+      "titleRu": "Бассейн закрыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pool_ops.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pool type",
+      "titleRu": "Тип бассейна",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lap",
+        "leisure",
+        "therapy",
+        "spa",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

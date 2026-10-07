@@ -1,0 +1,21 @@
+sid: 23ea1f62
+path: railyard.ops
+aliases:
+  short: railyard.ops
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза работы станции
+  en: Yard ops phase
+fingerprint: sha256:23ea1f62e8aa4192cbc1f8a5b047530a5b5591bc22268c6795760e709d2131c7
+enumValues:
+  - receive
+  - classify
+  - build
+  - depart
+  - hold

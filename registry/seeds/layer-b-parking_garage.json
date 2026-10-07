@@ -1,0 +1,114 @@
+{
+  "layer": "B8",
+  "name": "layer-b-parking_garage.json",
+  "types": [
+    {
+      "path": "parking_garage.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Parking garage id",
+      "titleRu": "ID паркинга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "parking_garage.level.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Parking level id",
+      "titleRu": "ID уровня паркинга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "parking_garage.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Occupancy",
+      "titleRu": "Занятость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "parking_garage.spaces.free",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Free spaces",
+      "titleRu": "Свободные места",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "parking_garage.entry.rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Entry rate",
+      "titleRu": "Въезд/мин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "parking_garage.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO level",
+      "titleRu": "Уровень CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "parking_garage.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Garage full",
+      "titleRu": "Паркинг полон",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "parking_garage.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Garage mode",
+      "titleRu": "Режим паркинга",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "full",
+        "event",
+        "closed",
+        "evacuation"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

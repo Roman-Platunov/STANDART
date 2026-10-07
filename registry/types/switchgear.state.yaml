@@ -1,0 +1,21 @@
+sid: 7dff226c
+path: switchgear.state
+aliases:
+  short: switchgear.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ячейки
+  en: Bay state
+fingerprint: sha256:7dff226c5e63dbad173f99997e28caa52fc137bfd16011cecf8ed1a4d87889d1
+enumValues:
+  - service
+  - test
+  - isolated
+  - earth
+  - fault

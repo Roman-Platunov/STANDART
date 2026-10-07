@@ -1,0 +1,120 @@
+{
+  "layer": "B8",
+  "name": "layer-b-shoe_mfg.json",
+  "types": [
+    {
+      "path": "shoe_mfg.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Footwear SKU id",
+      "titleRu": "ID артикула обуви",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shoe_mfg.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Footwear line id",
+      "titleRu": "ID линии обуви",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shoe_mfg.cutting.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cutting yield",
+      "titleRu": "Выход раскроя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shoe_mfg.stitch.spm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Stitching SPM",
+      "titleRu": "Стежков в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_mfg.sole.bond_force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Sole bond force",
+      "titleRu": "Сила склейки подошвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_mfg.defect.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Defect rate",
+      "titleRu": "Доля брака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shoe_mfg.pairs.hour",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pairs per hour",
+      "titleRu": "Пар в час",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_mfg.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Footwear stage",
+      "titleRu": "Стадия производства обуви",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "stitch",
+        "last",
+        "sole",
+        "finish",
+        "pack"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

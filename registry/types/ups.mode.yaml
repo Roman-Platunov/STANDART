@@ -1,0 +1,21 @@
+sid: f81c9516
+path: ups.mode
+aliases:
+  short: ups.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим ИБП
+  en: UPS mode
+fingerprint: sha256:f81c95165cb7c12f796b1a303e8c7bcb3a80d8159e9831dd1c36f5dd64aa507f
+enumValues:
+  - online
+  - bypass
+  - battery
+  - eco
+  - fault

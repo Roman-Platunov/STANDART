@@ -1,0 +1,20 @@
+sid: 10e43a84
+path: edge_pop.state
+aliases:
+  short: edge_pop.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние PoP
+  en: PoP state
+fingerprint: sha256:10e43a84516e2e332e3b14a024d4d45bd7a4716ad7ec40be8ed90ac1dbc219aa
+enumValues:
+  - serving
+  - draining
+  - maintenance
+  - down

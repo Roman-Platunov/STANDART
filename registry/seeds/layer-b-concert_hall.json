@@ -1,0 +1,111 @@
+{
+  "layer": "B8",
+  "name": "layer-b-concert_hall.json",
+  "types": [
+    {
+      "path": "concert_hall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Concert hall id",
+      "titleRu": "ID концертного зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "concert_hall.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Performance event id",
+      "titleRu": "ID представления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "concert_hall.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Hall SPL",
+      "titleRu": "Уровень звука в зале",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "concert_hall.rt60",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Reverberation time",
+      "titleRu": "Время реверберации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "concert_hall.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Audience count",
+      "titleRu": "Число зрителей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "concert_hall.hvac.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Audience CO2",
+      "titleRu": "CO₂ в зале",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "concert_hall.doors.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "House doors locked",
+      "titleRu": "Двери зала закрыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "concert_hall.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Show phase",
+      "titleRu": "Фаза шоу",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dark",
+        "load_in",
+        "rehearsal",
+        "doors",
+        "show",
+        "load_out"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

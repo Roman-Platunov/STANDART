@@ -1,0 +1,109 @@
+{
+  "layer": "B8",
+  "name": "layer-b-bus_depot.json",
+  "types": [
+    {
+      "path": "bus_depot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bus depot id",
+      "titleRu": "ID автобусного парка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bus_depot.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Depot bus id",
+      "titleRu": "ID автобуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bus_depot.fleet.available",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Buses available",
+      "titleRu": "Доступно автобусов",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_depot.fuel.dispensed",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fuel dispensed today",
+      "titleRu": "Выдано топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_depot.charger.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Depot charger power",
+      "titleRu": "Мощность зарядки парка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_depot.wash.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wash cycles",
+      "titleRu": "Циклы мойки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_depot.dispatch.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready for dispatch",
+      "titleRu": "Готов к выпуску",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bus_depot.vehicle.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Depot vehicle state",
+      "titleRu": "Состояние ТС в парке",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "parked",
+        "prep",
+        "out",
+        "maintenance",
+        "out_of_service"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

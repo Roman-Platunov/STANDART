@@ -1,0 +1,21 @@
+sid: "66987307"
+path: atm_network.state
+aliases:
+  short: atm_network.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние банкомата
+  en: ATM state
+fingerprint: sha256:669873072b4f9986111d336a569d6ddcbe627b1008a70c796484e0d12d35c174
+enumValues:
+  - online
+  - out_of_cash
+  - maintenance
+  - captured
+  - offline

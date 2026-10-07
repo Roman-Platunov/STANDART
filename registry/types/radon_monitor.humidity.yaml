@@ -1,0 +1,18 @@
+sid: ff53f67c
+path: radon_monitor.humidity
+aliases:
+  short: radon_monitor.humidity
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Влажность помещения
+  en: Room humidity
+fingerprint: sha256:ff53f67cda8e026af331320de2e82bc914284d9ae8cd272b4d1a7ec2dc2849ed
+range:
+  min: 0
+  max: 100

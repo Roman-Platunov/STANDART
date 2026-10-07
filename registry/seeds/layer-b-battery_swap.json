@@ -1,0 +1,107 @@
+{
+  "layer": "B8",
+  "name": "layer-b-battery_swap.json",
+  "types": [
+    {
+      "path": "battery_swap.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Battery swap station id",
+      "titleRu": "ID станции смены АКБ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery_swap.cabinet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Swap cabinet id",
+      "titleRu": "ID шкафа АКБ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery_swap.slots.full",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Full batteries available",
+      "titleRu": "Полевые АКБ",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_swap.slots.empty",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Empty slots",
+      "titleRu": "Пустые слоты",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_swap.cycle.time_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Swap cycle time",
+      "titleRu": "Время смены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_swap.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicles in queue",
+      "titleRu": "Очередь ТС",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_swap.robot.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Swap robot ready",
+      "titleRu": "Робот готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "battery_swap.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Swap station state",
+      "titleRu": "Состояние станции смены",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "busy",
+        "maintenance",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

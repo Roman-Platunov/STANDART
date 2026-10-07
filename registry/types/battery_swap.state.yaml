@@ -1,0 +1,20 @@
+sid: cd0624eb
+path: battery_swap.state
+aliases:
+  short: battery_swap.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции смены
+  en: Swap station state
+fingerprint: sha256:cd0624eb0605ab3e29cbd57a8f03af6fed456dfb18c722ad4f5786b26d387b8f
+enumValues:
+  - open
+  - busy
+  - maintenance
+  - closed

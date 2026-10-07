@@ -1,0 +1,15 @@
+sid: d32d09e3
+path: scada_rtu.alarm.unacked
+aliases:
+  short: alarm.unacked
+kind: logical
+unit: "-"
+encodings:
+  - bool
+  - u8
+sensitivity: public
+status: stable
+title:
+  ru: Неквитированная тревога
+  en: Unacked alarm
+fingerprint: sha256:d32d09e313d92b1643a9772ff2665e50a163d3ae980e77266cb58d96d019988e

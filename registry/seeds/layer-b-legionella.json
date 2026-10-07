@@ -1,0 +1,109 @@
+{
+  "layer": "B8",
+  "name": "layer-b-legionella.json",
+  "types": [
+    {
+      "path": "legionella.loop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Water loop id",
+      "titleRu": "ID контура воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "legionella.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Legionella sample id",
+      "titleRu": "ID пробы легионеллы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "legionella.cfu",
+      "kind": "quantity",
+      "unit": "/L",
+      "titleEn": "CFU per liter",
+      "titleRu": "КОЕ/л",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "legionella.temp.outlet",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outlet temperature",
+      "titleRu": "Температура на точке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "legionella.chlorine",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Residual disinfectant",
+      "titleRu": "Остаточный дезинфектант",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "legionella.flush.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flush due",
+      "titleRu": "Требуется промывка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "legionella.positive",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Culture positive",
+      "titleRu": "Культура положительная",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "legionella.risk.level",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Legionella risk",
+      "titleRu": "Риск легионеллы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "low",
+        "medium",
+        "high",
+        "outbreak"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

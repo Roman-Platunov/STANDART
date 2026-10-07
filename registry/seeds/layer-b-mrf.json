@@ -1,0 +1,118 @@
+{
+  "layer": "B8",
+  "name": "layer-b-mrf.json",
+  "types": [
+    {
+      "path": "mrf.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MRF plant id",
+      "titleRu": "ID мусоросортировки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mrf.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sorting line id",
+      "titleRu": "ID линии сортировки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mrf.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mrf.recovery.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Material recovery rate",
+      "titleRu": "Извлечение вторсырья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mrf.contamination",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Outbound contamination",
+      "titleRu": "Засор исходящего",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mrf.baler.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Baler cycles",
+      "titleRu": "Циклы пресса",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mrf.optical.online",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Optical sorter online",
+      "titleRu": "Оптический сепаратор online",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mrf.stream",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Inbound stream",
+      "titleRu": "Входящий поток",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "single",
+        "dual",
+        "commingled",
+        "cnd",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

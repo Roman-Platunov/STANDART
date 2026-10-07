@@ -1,0 +1,113 @@
+{
+  "layer": "B8",
+  "name": "layer-b-cooling_tower.json",
+  "types": [
+    {
+      "path": "cooling_tower.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cooling tower id",
+      "titleRu": "ID градирни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cooling_tower.basin.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Basin temperature",
+      "titleRu": "Температура бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_tower.temp.approach",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Approach temperature",
+      "titleRu": "Подход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_tower.fan.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Fan power",
+      "titleRu": "Мощность вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_tower.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Basin conductivity",
+      "titleRu": "Электропроводность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_tower.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cycles of concentration",
+      "titleRu": "Кратность упаривания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_tower.legionella.risk",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Legionella risk flag",
+      "titleRu": "Риск легионеллы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cooling_tower.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cooling tower mode",
+      "titleRu": "Режим градирни",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "fan_low",
+        "fan_high",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

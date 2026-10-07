@@ -1,0 +1,21 @@
+sid: 7f0d4991
+path: school_bus.status
+aliases:
+  short: school_bus.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус школьного автобуса
+  en: School bus status
+fingerprint: sha256:7f0d499121547c80dffe175f7b97504eaf3cfb8e123518b8947ff679cda26d87
+enumValues:
+  - depot
+  - to_school
+  - at_school
+  - to_home
+  - out_of_service

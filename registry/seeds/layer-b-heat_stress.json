@@ -1,0 +1,98 @@
+{
+  "layer": "B8",
+  "name": "layer-b-heat_stress.json",
+  "types": [
+    {
+      "path": "heat_stress.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat stress station id",
+      "titleRu": "ID станции теплового стресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_stress.wbgt",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wet-bulb globe temperature",
+      "titleRu": "WBGT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_stress.heat_index",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Heat index",
+      "titleRu": "Индекс жары",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_stress.duration.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Hours above threshold",
+      "titleRu": "Часы выше порога",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_stress.workforce.at_risk",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Workers at risk count",
+      "titleRu": "Работников в зоне риска",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_stress.work.stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Work stoppage recommended",
+      "titleRu": "Рекомендована остановка работ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heat_stress.level",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Heat stress level",
+      "titleRu": "Уровень теплового стресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "caution",
+        "warning",
+        "danger",
+        "extreme"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

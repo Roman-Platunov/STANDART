@@ -1,0 +1,21 @@
+sid: 04bbe0f7
+path: scada_rtu.protocol
+aliases:
+  short: scada_rtu.protocol
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Протокол RTU
+  en: RTU protocol
+fingerprint: sha256:04bbe0f7b9982174b3186944a48434b45535d836c39b419ae0e7c4db70a7d854
+enumValues:
+  - dnp3
+  - iec104
+  - modbus
+  - opcua
+  - other

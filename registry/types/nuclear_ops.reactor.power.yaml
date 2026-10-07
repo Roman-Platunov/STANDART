@@ -1,0 +1,18 @@
+sid: "44341155"
+path: nuclear_ops.reactor.power
+aliases:
+  short: nuclear_ops.reactor.power
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Тепловая мощность реактора
+  en: Reactor thermal power
+fingerprint: sha256:443411559b42966d6064bd95d1c66d97e4a8338d7fb0662d7154aafe5bd188aa
+range:
+  min: 0
+  max: 110

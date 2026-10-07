@@ -1,0 +1,21 @@
+sid: db3f17b6
+path: parking_garage.mode
+aliases:
+  short: parking_garage.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим паркинга
+  en: Garage mode
+fingerprint: sha256:db3f17b6c7c84eaf14999919b2e3d93946353de4952849c78a6caa7f1bebdb9e
+enumValues:
+  - open
+  - full
+  - event
+  - closed
+  - evacuation

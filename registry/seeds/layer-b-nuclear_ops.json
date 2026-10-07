@@ -1,0 +1,128 @@
+{
+  "layer": "B8",
+  "name": "layer-b-nuclear_ops.json",
+  "types": [
+    {
+      "path": "nuclear_ops.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Nuclear unit id",
+      "titleRu": "ID энергоблока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nuclear_ops.channel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Instrumentation channel id",
+      "titleRu": "ID канала КИПиА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nuclear_ops.reactor.power",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reactor thermal power",
+      "titleRu": "Тепловая мощность реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 110
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nuclear_ops.coolant.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Primary coolant flow",
+      "titleRu": "Расход теплоносителя I контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear_ops.coolant.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear_ops.containment.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Containment pressure",
+      "titleRu": "Давление гермообъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear_ops.dose.rate",
+      "kind": "quantity",
+      "unit": "uSv/h",
+      "titleEn": "Area dose rate",
+      "titleRu": "Мощность дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nuclear_ops.scram",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reactor scram",
+      "titleRu": "Аварийная защита",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nuclear_ops.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Nuclear unit mode",
+      "titleRu": "Режим энергоблока",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "startup",
+        "power",
+        "hot_standby",
+        "cold_shutdown",
+        "refuel"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

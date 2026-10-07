@@ -1,0 +1,121 @@
+{
+  "layer": "B8",
+  "name": "layer-b-ups.json",
+  "types": [
+    {
+      "path": "ups.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UPS system id",
+      "titleRu": "ID ИБП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ups.load.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "UPS load",
+      "titleRu": "Нагрузка ИБП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 150
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ups.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "UPS battery SoC",
+      "titleRu": "SoC батареи ИБП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ups.input.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Input voltage",
+      "titleRu": "Входное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ups.output.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Output voltage",
+      "titleRu": "Выходное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ups.runtime.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Estimated runtime",
+      "titleRu": "Остаток автономии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ups.on_battery",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "On battery",
+      "titleRu": "Работа от батареи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ups.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "UPS mode",
+      "titleRu": "Режим ИБП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "bypass",
+        "battery",
+        "eco",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

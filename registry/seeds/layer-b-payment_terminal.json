@@ -1,0 +1,114 @@
+{
+  "layer": "B8",
+  "name": "layer-b-payment_terminal.json",
+  "types": [
+    {
+      "path": "payment_terminal.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Payment terminal id",
+      "titleRu": "ID платёжного терминала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "payment_terminal.merchant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Merchant id",
+      "titleRu": "ID мерчанта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "payment_terminal.txn.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Transactions today",
+      "titleRu": "Транзакций сегодня",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "payment_terminal.txn.amount",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Amount today (minor units)",
+      "titleRu": "Сумма сегодня",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "payment_terminal.battery.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Terminal battery",
+      "titleRu": "Батарея терминала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "payment_terminal.tamper",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tamper flag",
+      "titleRu": "Вскрытие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "payment_terminal.offline",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Offline mode",
+      "titleRu": "Офлайн-режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "payment_terminal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Terminal state",
+      "titleRu": "Состояние терминала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "card",
+        "pin",
+        "auth",
+        "approved",
+        "declined",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

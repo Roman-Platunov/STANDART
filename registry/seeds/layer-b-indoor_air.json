@@ -1,0 +1,116 @@
+{
+  "layer": "B8",
+  "name": "layer-b-indoor_air.json",
+  "types": [
+    {
+      "path": "indoor_air.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IAQ zone id",
+      "titleRu": "ID зоны качества воздуха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "indoor_air.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IAQ sensor id",
+      "titleRu": "ID датчика IAQ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "indoor_air.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Indoor CO2",
+      "titleRu": "CO₂ в помещении",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "indoor_air.pm25",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Indoor PM2.5",
+      "titleRu": "PM2.5 в помещении",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "indoor_air.tvoc",
+      "kind": "quantity",
+      "unit": "ppb",
+      "titleEn": "TVOC",
+      "titleRu": "ЛХОВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "indoor_air.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Indoor temperature",
+      "titleRu": "Температура в помещении",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "indoor_air.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Indoor humidity",
+      "titleRu": "Влажность в помещении",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "indoor_air.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "IAQ category",
+      "titleRu": "Категория IAQ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "excellent",
+        "good",
+        "moderate",
+        "poor",
+        "hazardous"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

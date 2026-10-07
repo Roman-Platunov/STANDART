@@ -1,0 +1,21 @@
+sid: b902a056
+path: bus_depot.vehicle.state
+aliases:
+  short: bus_depot.vehicle.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ТС в парке
+  en: Depot vehicle state
+fingerprint: sha256:b902a0565773cdd0f876eb16a8f8088e54f113d8eafe0d939e7aa69298e4fdd1
+enumValues:
+  - parked
+  - prep
+  - out
+  - maintenance
+  - out_of_service

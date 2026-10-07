@@ -1,0 +1,111 @@
+{
+  "layer": "B8",
+  "name": "layer-b-traffic_signal.json",
+  "types": [
+    {
+      "path": "traffic_signal.intersection.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Intersection id",
+      "titleRu": "ID перекрёстка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "traffic_signal.controller.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Signal controller id",
+      "titleRu": "ID контроллера СО",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "traffic_signal.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle length",
+      "titleRu": "Длина цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "traffic_signal.green.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Green time",
+      "titleRu": "Время зелёного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "traffic_signal.queue.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Approach queue",
+      "titleRu": "Очередь на подходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "traffic_signal.ped.wait_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Pedestrian wait",
+      "titleRu": "Ожидание пешехода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "traffic_signal.preempt.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Transit/emergency preempt",
+      "titleRu": "Приоритет спецтранспорта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "traffic_signal.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Signal mode",
+      "titleRu": "Режим СО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fixed",
+        "actuated",
+        "adaptive",
+        "flash",
+        "dark"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "layer": "B8",
+  "name": "layer-b-bridge_health.json",
+  "types": [
+    {
+      "path": "bridge_health.bridge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bridge id",
+      "titleRu": "ID моста",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bridge_health.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SHM sensor id",
+      "titleRu": "ID датчика SHM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bridge_health.strain",
+      "kind": "quantity",
+      "unit": "ue",
+      "titleEn": "Strain",
+      "titleRu": "Деформация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bridge_health.deflection",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Midspan deflection",
+      "titleRu": "Прогиб",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bridge_health.vibration.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Modal frequency",
+      "titleRu": "Модальная частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bridge_health.tilt",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Pier tilt",
+      "titleRu": "Крен опоры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bridge_health.scour.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Scour depth",
+      "titleRu": "Глубина размыва",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bridge_health.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Structural alert",
+      "titleRu": "Конструктивное предупреждение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bridge_health.condition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bridge condition",
+      "titleRu": "Состояние моста",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "fair",
+        "poor",
+        "critical"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: ea63c98c
+path: compressor_station.state
+aliases:
+  short: compressor_station.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние КС
+  en: Compressor state
+fingerprint: sha256:ea63c98c7641a575db832ccf7c0a713003f4a9f14fd7de320459f7b9dd4a2d7a
+enumValues:
+  - offline
+  - start
+  - load
+  - unload
+  - fault

@@ -1,0 +1,110 @@
+{
+  "layer": "B8",
+  "name": "layer-b-dark_store.json",
+  "types": [
+    {
+      "path": "dark_store.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dark store id",
+      "titleRu": "ID даркстора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dark_store.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pick order id",
+      "titleRu": "ID заказа сборки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dark_store.pick.rate",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Picks per hour",
+      "titleRu": "Сборок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dark_store.order.sla_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Order SLA",
+      "titleRu": "SLA заказа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dark_store.sku.oos",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "OOS SKUs",
+      "titleRu": "SKU out-of-stock",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dark_store.temp.cold",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cold zone temperature",
+      "titleRu": "Температура холодной зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dark_store.capacity.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "At capacity",
+      "titleRu": "На пределе мощности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dark_store.order.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Order state",
+      "titleRu": "Состояние заказа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "queued",
+        "picking",
+        "packed",
+        "handoff",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B8",
+  "name": "layer-b-inverter_string.json",
+  "types": [
+    {
+      "path": "inverter_string.inverter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PV inverter id",
+      "titleRu": "ID инвертора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inverter_string.string.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PV string id",
+      "titleRu": "ID стринга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "inverter_string.dc.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "DC power",
+      "titleRu": "Мощность DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inverter_string.ac.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "AC power",
+      "titleRu": "Мощность AC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inverter_string.dc.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "DC voltage",
+      "titleRu": "Напряжение DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "inverter_string.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Conversion efficiency",
+      "titleRu": "КПД преобразования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inverter_string.soiling",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soiling loss estimate",
+      "titleRu": "Потери от загрязнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "inverter_string.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Inverter state",
+      "titleRu": "Состояние инвертора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "producing",
+        "mppt",
+        "curtailed",
+        "night",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

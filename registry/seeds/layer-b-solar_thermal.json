@@ -1,0 +1,112 @@
+{
+  "layer": "B8",
+  "name": "layer-b-solar_thermal.json",
+  "types": [
+    {
+      "path": "solar_thermal.array.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Solar thermal array id",
+      "titleRu": "ID солнечного коллектора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "solar_thermal.collector.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Collector temperature",
+      "titleRu": "Температура коллектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_thermal.storage.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Storage temperature",
+      "titleRu": "Температура аккумулятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_thermal.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Loop flow",
+      "titleRu": "Расход контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_thermal.irradiance",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "Irradiance",
+      "titleRu": "Облучённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_thermal.energy.day",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Daily energy",
+      "titleRu": "Энергия за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_thermal.stagnation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stagnation condition",
+      "titleRu": "Застой перегрева",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "solar_thermal.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Collector type",
+      "titleRu": "Тип коллектора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flat",
+        "evacuated",
+        "concentrating",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

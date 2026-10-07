@@ -1,0 +1,117 @@
+{
+  "layer": "B8",
+  "name": "layer-b-atm_network.json",
+  "types": [
+    {
+      "path": "atm_network.terminal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ATM id",
+      "titleRu": "ID банкомата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "atm_network.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ATM site id",
+      "titleRu": "ID площадки банкомата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "atm_network.cash.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cash cassette level",
+      "titleRu": "Уровень кассет",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "atm_network.txn.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Transactions today",
+      "titleRu": "Транзакций сегодня",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "atm_network.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Availability",
+      "titleRu": "Доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "atm_network.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cash jam",
+      "titleRu": "Замятие купюр",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "atm_network.skimmer.suspect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Skimmer suspect",
+      "titleRu": "Подозрение на скиммер",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "atm_network.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ATM state",
+      "titleRu": "Состояние банкомата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "out_of_cash",
+        "maintenance",
+        "captured",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

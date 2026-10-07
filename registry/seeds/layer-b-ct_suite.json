@@ -1,0 +1,112 @@
+{
+  "layer": "B8",
+  "name": "layer-b-ct_suite.json",
+  "types": [
+    {
+      "path": "ct_suite.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CT system id",
+      "titleRu": "ID КТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ct_suite.study.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CT study id",
+      "titleRu": "ID исследования КТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "ct_suite.tube.current",
+      "kind": "quantity",
+      "unit": "mA",
+      "titleEn": "Tube current",
+      "titleRu": "Ток трубки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ct_suite.tube.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Tube voltage",
+      "titleRu": "Напряжение трубки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ct_suite.dose.ctdi",
+      "kind": "quantity",
+      "unit": "mGy",
+      "titleEn": "CTDIvol",
+      "titleRu": "CTDIvol",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ct_suite.gantry.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gantry temperature",
+      "titleRu": "Температура гентри",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ct_suite.contrast.volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Contrast volume",
+      "titleRu": "Объём контраста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ct_suite.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CT state",
+      "titleRu": "Состояние КТ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "scan",
+        "warmup",
+        "service",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

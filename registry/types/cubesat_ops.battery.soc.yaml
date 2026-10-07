@@ -1,0 +1,18 @@
+sid: 7e14cc93
+path: cubesat_ops.battery.soc
+aliases:
+  short: cubesat_ops.battery.soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: SoC батареи спутника
+  en: Satellite battery SoC
+fingerprint: sha256:7e14cc93070d81568d34b6a6c24877d8805a89b0a18f85d313f4bd587fe5757c
+range:
+  min: 0
+  max: 100

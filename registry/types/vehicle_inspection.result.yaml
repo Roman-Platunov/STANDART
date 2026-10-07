@@ -1,0 +1,20 @@
+sid: 7f26d38d
+path: vehicle_inspection.result
+aliases:
+  short: vehicle_inspection.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат ТО
+  en: Inspection result
+fingerprint: sha256:7f26d38dd04fd91ad8ccbd12e7897094b3318d04789e287eaf8b49cd5434e08e
+enumValues:
+  - pass
+  - fail
+  - advisory
+  - abort

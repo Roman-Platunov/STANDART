@@ -1,0 +1,118 @@
+{
+  "layer": "B8",
+  "name": "layer-b-spa_ops.json",
+  "types": [
+    {
+      "path": "spa_ops.facility.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spa facility id",
+      "titleRu": "ID спа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spa_ops.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Treatment room id",
+      "titleRu": "ID кабинета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spa_ops.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Facility occupancy",
+      "titleRu": "Занятость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spa_ops.sauna.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sauna temperature",
+      "titleRu": "Температура сауны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spa_ops.steam.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Steam room humidity",
+      "titleRu": "Влажность парной",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spa_ops.booking.wait_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Booking wait",
+      "titleRu": "Ожидание записи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spa_ops.room.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Room ready",
+      "titleRu": "Кабинет готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spa_ops.room.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Room state",
+      "titleRu": "Состояние кабинета",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "occupied",
+        "turnover",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 163b0e66
+path: traffic_signal.mode
+aliases:
+  short: traffic_signal.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим СО
+  en: Signal mode
+fingerprint: sha256:163b0e6662c069ecd2c231ab905dc90bd395d7a903066957f6a5a6de3fa76598
+enumValues:
+  - fixed
+  - actuated
+  - adaptive
+  - flash
+  - dark

@@ -1,0 +1,21 @@
+sid: fdee1ee7
+path: dark_store.order.state
+aliases:
+  short: order.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние заказа
+  en: Order state
+fingerprint: sha256:fdee1ee7c808284fd5cb5121173b936cb01cea8b6992195f7ad2bf7bef488dc0
+enumValues:
+  - queued
+  - picking
+  - packed
+  - handoff
+  - cancelled

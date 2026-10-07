@@ -1,0 +1,114 @@
+{
+  "layer": "B8",
+  "name": "layer-b-theater_ops.json",
+  "types": [
+    {
+      "path": "theater_ops.house.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Theater house id",
+      "titleRu": "ID театрального зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "theater_ops.production.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Production id",
+      "titleRu": "ID постановки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "theater_ops.fly.cue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fly cue number",
+      "titleRu": "Номер полётного кью",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "theater_ops.dimmer.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "House dimmer level",
+      "titleRu": "Уровень света",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "theater_ops.stage.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stage temperature",
+      "titleRu": "Температура сцены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "theater_ops.fire.curtain",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire curtain deployed",
+      "titleRu": "Пожарный занавес",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "theater_ops.smx.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stage manager GO",
+      "titleRu": "СМ: GO",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "theater_ops.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Theater phase",
+      "titleRu": "Фаза спектакля",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rehearsal",
+        "preset",
+        "act",
+        "intermission",
+        "curtain",
+        "strike"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

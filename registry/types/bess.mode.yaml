@@ -1,0 +1,21 @@
+sid: f1befeb8
+path: bess.mode
+aliases:
+  short: bess.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим СНЭЭ
+  en: BESS mode
+fingerprint: sha256:f1befeb8639e3d947d7f9a2313f7d36a16b57ff0169ea92421ff421f45e6cf45
+enumValues:
+  - idle
+  - charge
+  - discharge
+  - standby
+  - fault

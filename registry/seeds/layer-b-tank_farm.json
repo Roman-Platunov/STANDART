@@ -1,0 +1,116 @@
+{
+  "layer": "B8",
+  "name": "layer-b-tank_farm.json",
+  "types": [
+    {
+      "path": "tank_farm.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Storage tank id",
+      "titleRu": "ID резервуара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tank_farm.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tank farm site id",
+      "titleRu": "ID резервуарного парка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tank_farm.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level",
+      "titleRu": "Уровень в резервуаре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tank_farm.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Product volume",
+      "titleRu": "Объём продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_farm.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_farm.vapor.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Vapor pressure",
+      "titleRu": "Давление паров",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_farm.bund.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bund high level",
+      "titleRu": "Авария обвалования",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tank_farm.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stored product",
+      "titleRu": "Хранимый продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "crude",
+        "gasoline",
+        "diesel",
+        "jet",
+        "chemical",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

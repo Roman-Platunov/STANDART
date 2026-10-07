@@ -1,0 +1,22 @@
+sid: a6a131de
+path: pharmacy_compound.status
+aliases:
+  short: pharmacy_compound.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус изготовления
+  en: Compound status
+fingerprint: sha256:a6a131dedfb3f366af5a00fb93687b69d5198ff16c804ae6ff88b8667b2f5862
+enumValues:
+  - queued
+  - weigh
+  - mix
+  - verify
+  - dispense
+  - reject

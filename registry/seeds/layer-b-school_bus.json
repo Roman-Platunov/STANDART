@@ -1,0 +1,109 @@
+{
+  "layer": "B8",
+  "name": "layer-b-school_bus.json",
+  "types": [
+    {
+      "path": "school_bus.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "School bus id",
+      "titleRu": "ID школьного автобуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "school_bus.route.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "School bus route id",
+      "titleRu": "ID школьного маршрута",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "school_bus.riders",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Riders on board",
+      "titleRu": "Пассажиров на борту",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "school_bus.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Bus speed",
+      "titleRu": "Скорость автобуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "school_bus.stop.dwell_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Stop dwell",
+      "titleRu": "Стоянка на остановке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "school_bus.stop_arm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stop arm extended",
+      "titleRu": "Стоп-сигнал выдвинут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "school_bus.child.left_behind",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Child check alarm",
+      "titleRu": "Проверка «ребёнок в салоне»",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "school_bus.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "School bus status",
+      "titleRu": "Статус школьного автобуса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "depot",
+        "to_school",
+        "at_school",
+        "to_home",
+        "out_of_service"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

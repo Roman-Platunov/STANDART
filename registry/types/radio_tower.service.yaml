@@ -1,0 +1,22 @@
+sid: a32a94ae
+path: radio_tower.service
+aliases:
+  short: radio_tower.service
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Служба на мачте
+  en: Tower service
+fingerprint: sha256:a32a94ae0de7d4fcaa9864e2b9b25da52c66621a7013a43b4bf7c892ce82017e
+enumValues:
+  - fm
+  - am
+  - tv
+  - cellular
+  - microwave
+  - other

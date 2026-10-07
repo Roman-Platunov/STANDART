@@ -1,0 +1,114 @@
+{
+  "layer": "B8",
+  "name": "layer-b-vehicle_inspection.json",
+  "types": [
+    {
+      "path": "vehicle_inspection.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inspection station id",
+      "titleRu": "ID пункта ТО",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vehicle_inspection.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inspected vehicle id",
+      "titleRu": "ID проверяемого ТС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vehicle_inspection.emissions.co",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CO emissions",
+      "titleRu": "Выбросы CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vehicle_inspection.emissions.hc",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "HC emissions",
+      "titleRu": "Выбросы HC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle_inspection.brake.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Brake force",
+      "titleRu": "Тормозная сила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle_inspection.headlamp.intensity",
+      "kind": "quantity",
+      "unit": "cd",
+      "titleEn": "Headlamp intensity",
+      "titleRu": "Сила света фар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vehicle_inspection.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Inspection pass",
+      "titleRu": "ТО пройдено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vehicle_inspection.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Inspection result",
+      "titleRu": "Результат ТО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "advisory",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

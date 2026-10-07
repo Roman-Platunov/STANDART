@@ -1,0 +1,112 @@
+{
+  "layer": "B8",
+  "name": "layer-b-parcel_locker.json",
+  "types": [
+    {
+      "path": "parcel_locker.bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Locker bank id",
+      "titleRu": "ID постамата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "parcel_locker.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Locker cell id",
+      "titleRu": "ID ячейки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "parcel_locker.parcel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Parcel id",
+      "titleRu": "ID посылки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "parcel_locker.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cell occupancy",
+      "titleRu": "Занятость ячеек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "parcel_locker.dwell.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Average dwell",
+      "titleRu": "Среднее хранение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "parcel_locker.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cell door open",
+      "titleRu": "Дверь ячейки открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "parcel_locker.tamper",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tamper detected",
+      "titleRu": "Вскрытие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "parcel_locker.cell.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cell state",
+      "titleRu": "Состояние ячейки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "empty",
+        "reserved",
+        "occupied",
+        "expired",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

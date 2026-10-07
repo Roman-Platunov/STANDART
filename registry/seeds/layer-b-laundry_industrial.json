@@ -1,0 +1,117 @@
+{
+  "layer": "B8",
+  "name": "layer-b-laundry_industrial.json",
+  "types": [
+    {
+      "path": "laundry_industrial.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Industrial laundry id",
+      "titleRu": "ID прачечной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laundry_industrial.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wash batch id",
+      "titleRu": "ID партии стирки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laundry_industrial.washer.load_kg",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Washer load",
+      "titleRu": "Загрузка стиральной машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laundry_industrial.water.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wash temperature",
+      "titleRu": "Температура стирки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laundry_industrial.dryer.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Exit moisture",
+      "titleRu": "Влажность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "laundry_industrial.chemical.dose",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Chemical dose",
+      "titleRu": "Доза химии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laundry_industrial.throughput",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laundry_industrial.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Laundry stage",
+      "titleRu": "Стадия прачечной",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sort",
+        "wash",
+        "extract",
+        "dry",
+        "finish",
+        "pack"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

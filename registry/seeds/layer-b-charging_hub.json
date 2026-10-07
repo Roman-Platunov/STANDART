@@ -1,0 +1,111 @@
+{
+  "layer": "B8",
+  "name": "layer-b-charging_hub.json",
+  "types": [
+    {
+      "path": "charging_hub.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV charging hub id",
+      "titleRu": "ID хаба зарядки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "charging_hub.stall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Charger stall id",
+      "titleRu": "ID зарядного места",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "charging_hub.stalls.occupied",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Occupied stalls",
+      "titleRu": "Занятые места",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "charging_hub.power.total",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Total charging power",
+      "titleRu": "Суммарная мощность зарядки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "charging_hub.queue.wait_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Queue wait",
+      "titleRu": "Ожидание в очереди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "charging_hub.session.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Session energy",
+      "titleRu": "Энергия сессии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "charging_hub.payment.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Payment authorized",
+      "titleRu": "Оплата авторизована",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "charging_hub.stall.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stall state",
+      "titleRu": "Состояние места",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "preparing",
+        "charging",
+        "finishing",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: e7bbb145
+path: mri_suite.state
+aliases:
+  short: mri_suite.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние МРТ
+  en: MRI state
+fingerprint: sha256:e7bbb1459664abdf717654498bc58d73a8fd3deefcf14ea92f037c181113bbb8
+enumValues:
+  - idle
+  - scan
+  - service
+  - quench_recovery
+  - fault

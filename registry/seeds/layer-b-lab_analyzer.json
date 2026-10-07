@@ -1,0 +1,115 @@
+{
+  "layer": "B8",
+  "name": "layer-b-lab_analyzer.json",
+  "types": [
+    {
+      "path": "lab_analyzer.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lab analyzer id",
+      "titleRu": "ID анализатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lab_analyzer.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lab sample id",
+      "titleRu": "ID пробы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "lab_analyzer.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Samples per hour",
+      "titleRu": "Проб в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lab_analyzer.qc.bias",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "QC bias",
+      "titleRu": "Смещение QC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lab_analyzer.reagent.remaining",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reagent remaining",
+      "titleRu": "Остаток реагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lab_analyzer.qc.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "QC failed",
+      "titleRu": "QC не пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lab_analyzer.maintenance.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Maintenance due",
+      "titleRu": "Требуется ТО",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lab_analyzer.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Analyzer type",
+      "titleRu": "Тип анализатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "chem",
+        "heme",
+        "coag",
+        "immunoassay",
+        "molecular",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

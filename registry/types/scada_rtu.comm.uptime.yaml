@@ -1,0 +1,18 @@
+sid: 0c1ac67c
+path: scada_rtu.comm.uptime
+aliases:
+  short: comm.uptime
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Доступность связи
+  en: Comm uptime
+fingerprint: sha256:0c1ac67c76f0a0a135a62f53be3294409ea63b2697db101852b4345294f64253
+range:
+  min: 0
+  max: 100

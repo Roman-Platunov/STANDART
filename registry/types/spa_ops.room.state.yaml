@@ -1,0 +1,20 @@
+sid: 2a7b4bde
+path: spa_ops.room.state
+aliases:
+  short: room.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кабинета
+  en: Room state
+fingerprint: sha256:2a7b4bdec6cc1426cd084735238c4b3bcbfb93b788ffc2c29cfdc148800f5f6f
+enumValues:
+  - free
+  - occupied
+  - turnover
+  - closed

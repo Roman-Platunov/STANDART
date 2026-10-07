@@ -1,0 +1,110 @@
+{
+  "layer": "B8",
+  "name": "layer-b-campus_energy.json",
+  "types": [
+    {
+      "path": "campus_energy.campus.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Campus id",
+      "titleRu": "ID кампуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "campus_energy.meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Campus meter id",
+      "titleRu": "ID счётчика кампуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "campus_energy.demand.kW",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Campus demand",
+      "titleRu": "Нагрузка кампуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "campus_energy.pv.export",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Campus PV export",
+      "titleRu": "Выдача PV кампуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "campus_energy.eui",
+      "kind": "quantity",
+      "unit": "kWh/m2",
+      "titleEn": "Energy use intensity",
+      "titleRu": "Удельное энергопотребление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "campus_energy.carbon.intensity",
+      "kind": "quantity",
+      "unit": "kg/kWh",
+      "titleEn": "Grid carbon intensity",
+      "titleRu": "Углеродоёмкость сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "campus_energy.dr.event",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Demand response event",
+      "titleRu": "Событие управления спросом",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "campus_energy.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Campus energy mode",
+      "titleRu": "Энергорежим кампуса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "peak_shave",
+        "island",
+        "emergency"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

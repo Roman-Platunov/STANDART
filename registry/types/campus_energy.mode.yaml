@@ -1,0 +1,20 @@
+sid: 13dcb476
+path: campus_energy.mode
+aliases:
+  short: campus_energy.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Энергорежим кампуса
+  en: Campus energy mode
+fingerprint: sha256:13dcb476eb1e4f924ba99665bd1c79a3663fd16994fd09c936c15c8e58cca4f0
+enumValues:
+  - normal
+  - peak_shave
+  - island
+  - emergency

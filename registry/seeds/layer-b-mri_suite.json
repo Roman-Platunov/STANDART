@@ -1,0 +1,115 @@
+{
+  "layer": "B8",
+  "name": "layer-b-mri_suite.json",
+  "types": [
+    {
+      "path": "mri_suite.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MRI system id",
+      "titleRu": "ID МРТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mri_suite.study.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MRI study id",
+      "titleRu": "ID исследования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "mri_suite.field.t",
+      "kind": "quantity",
+      "unit": "T",
+      "titleEn": "Main field strength",
+      "titleRu": "Индукция поля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mri_suite.helium.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Helium level",
+      "titleRu": "Уровень гелия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mri_suite.sar",
+      "kind": "quantity",
+      "unit": "W/kg",
+      "titleEn": "SAR",
+      "titleRu": "Удельное поглощение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mri_suite.room.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Equipment room temp",
+      "titleRu": "Температура аппаратной",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mri_suite.quench",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Magnet quench",
+      "titleRu": "Квенч магнита",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mri_suite.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "MRI state",
+      "titleRu": "Состояние МРТ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "scan",
+        "service",
+        "quench_recovery",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

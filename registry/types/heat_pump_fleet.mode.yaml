@@ -1,0 +1,21 @@
+sid: 1caac7e6
+path: heat_pump_fleet.mode
+aliases:
+  short: heat_pump_fleet.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим теплового насоса
+  en: Heat pump mode
+fingerprint: sha256:1caac7e670897a17baf58d2fe3f864aa7d7c1cbd67b577bcaeb9046f460f5463
+enumValues:
+  - heat
+  - cool
+  - dhw
+  - off
+  - fault

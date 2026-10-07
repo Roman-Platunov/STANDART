@@ -1,0 +1,110 @@
+{
+  "layer": "B8",
+  "name": "layer-b-magnetometer_net.json",
+  "types": [
+    {
+      "path": "magnetometer_net.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Magnetometer station id",
+      "titleRu": "ID магнитометрической станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "magnetometer_net.bx",
+      "kind": "quantity",
+      "unit": "nT",
+      "titleEn": "Magnetic field Bx",
+      "titleRu": "Компонента Bx",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "magnetometer_net.by",
+      "kind": "quantity",
+      "unit": "nT",
+      "titleEn": "Magnetic field By",
+      "titleRu": "Компонента By",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "magnetometer_net.bz",
+      "kind": "quantity",
+      "unit": "nT",
+      "titleEn": "Magnetic field Bz",
+      "titleRu": "Компонента Bz",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "magnetometer_net.kp",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Kp index local",
+      "titleRu": "Локальный Kp",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "magnetometer_net.storm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Geomagnetic storm flag",
+      "titleRu": "Геомагнитная буря",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "magnetometer_net.plot.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Magnetogram ref",
+      "titleRu": "Референс магнитограммы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "magnetometer_net.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Data quality",
+      "titleRu": "Качество данных",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "disturbed",
+        "calibration",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

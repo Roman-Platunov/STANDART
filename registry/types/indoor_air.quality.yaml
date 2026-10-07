@@ -1,0 +1,21 @@
+sid: 8d831cb2
+path: indoor_air.quality
+aliases:
+  short: indoor_air.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Категория IAQ
+  en: IAQ category
+fingerprint: sha256:8d831cb26f304d7167d14f9cc9813564db1dcecf07f542b95edb6b72da1e0b4c
+enumValues:
+  - excellent
+  - good
+  - moderate
+  - poor
+  - hazardous

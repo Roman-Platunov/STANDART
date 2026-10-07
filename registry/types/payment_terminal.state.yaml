@@ -1,0 +1,23 @@
+sid: d0965953
+path: payment_terminal.state
+aliases:
+  short: payment_terminal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние терминала
+  en: Terminal state
+fingerprint: sha256:d096595316b3274e130e7e6d2ce1e907b1b09dff45564ea2a414e9d1ecf94add
+enumValues:
+  - idle
+  - card
+  - pin
+  - auth
+  - approved
+  - declined
+  - fault

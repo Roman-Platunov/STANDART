@@ -1,0 +1,118 @@
+{
+  "layer": "B8",
+  "name": "layer-b-edge_pop.json",
+  "types": [
+    {
+      "path": "edge_pop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Edge PoP id",
+      "titleRu": "ID краевой точки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "edge_pop.rack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Edge rack id",
+      "titleRu": "ID стойки edge",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "edge_pop.bandwidth.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bandwidth utilization",
+      "titleRu": "Загрузка канала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "edge_pop.cache.hit_ratio",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cache hit ratio",
+      "titleRu": "Cache hit ratio",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "edge_pop.latency.p95",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "P95 latency",
+      "titleRu": "Задержка P95",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "edge_pop.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "PoP power",
+      "titleRu": "Мощность PoP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "edge_pop.anycast.healthy",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Anycast healthy",
+      "titleRu": "Anycast здоров",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "edge_pop.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PoP state",
+      "titleRu": "Состояние PoP",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "serving",
+        "draining",
+        "maintenance",
+        "down"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

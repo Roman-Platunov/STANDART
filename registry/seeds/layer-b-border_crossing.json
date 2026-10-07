@@ -1,0 +1,109 @@
+{
+  "layer": "B8",
+  "name": "layer-b-border_crossing.json",
+  "types": [
+    {
+      "path": "border_crossing.point.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Border crossing id",
+      "titleRu": "ID пункта пропуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "border_crossing.lane.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Border lane id",
+      "titleRu": "ID полосы пропуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "border_crossing.queue.vehicles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicles in queue",
+      "titleRu": "ТС в очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "border_crossing.wait.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Average wait",
+      "titleRu": "Среднее ожидание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "border_crossing.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Vehicles per hour",
+      "titleRu": "ТС в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "border_crossing.secondary",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Secondary inspection",
+      "titleRu": "Досмотр второй линии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "border_crossing.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Watchlist alert",
+      "titleRu": "Срабатывание списка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "border_crossing.lane.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lane type",
+      "titleRu": "Тип полосы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "car",
+        "truck",
+        "bus",
+        "pedestrian",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

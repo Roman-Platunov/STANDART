@@ -1,0 +1,108 @@
+{
+  "layer": "B8",
+  "name": "layer-b-railyard.json",
+  "types": [
+    {
+      "path": "railyard.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rail yard id",
+      "titleRu": "ID сортировочной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "railyard.track.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Yard track id",
+      "titleRu": "ID пути",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "railyard.consist.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Consist id",
+      "titleRu": "ID состава",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "railyard.cars.staged",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cars staged",
+      "titleRu": "Вагонов на путях",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "railyard.hump.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Hump speed",
+      "titleRu": "Скорость горки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "railyard.dwell.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Average dwell",
+      "titleRu": "Средний простой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "railyard.derail.detector",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hotbox / derail detector trip",
+      "titleRu": "Срабатывание ДИСК/КТСМ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "railyard.ops",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Yard ops phase",
+      "titleRu": "Фаза работы станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receive",
+        "classify",
+        "build",
+        "depart",
+        "hold"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

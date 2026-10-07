@@ -1,0 +1,101 @@
+{
+  "layer": "B8",
+  "name": "layer-b-radon_monitor.json",
+  "types": [
+    {
+      "path": "radon_monitor.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Radon monitor id",
+      "titleRu": "ID монитора радона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radon_monitor.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Radon site id",
+      "titleRu": "ID площадки радона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radon_monitor.bq_m3",
+      "kind": "quantity",
+      "unit": "Bq/m3",
+      "titleEn": "Radon concentration",
+      "titleRu": "Концентрация радона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radon_monitor.avg_24h",
+      "kind": "quantity",
+      "unit": "Bq/m3",
+      "titleEn": "24h average radon",
+      "titleRu": "Средний радон за 24ч",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radon_monitor.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Room humidity",
+      "titleRu": "Влажность помещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "radon_monitor.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Radon alarm",
+      "titleRu": "Тревога по радону",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "radon_monitor.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Measurement method",
+      "titleRu": "Метод измерения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "continuous",
+        "charcoal",
+        "electret",
+        "alpha_track"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B8",
+  "name": "layer-b-pharmacy_compound.json",
+  "types": [
+    {
+      "path": "pharmacy_compound.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compound order id",
+      "titleRu": "ID рецепта изготовления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pharmacy_compound.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compound batch id",
+      "titleRu": "ID серии изготовления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pharmacy_compound.weigh.g",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Weighed amount",
+      "titleRu": "Взвешенная масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy_compound.volume.mL",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Compounded volume",
+      "titleRu": "Объём препарата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy_compound.beyond_use.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Beyond-use date days",
+      "titleRu": "Срок годности (дни)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy_compound.sterile",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sterile compound",
+      "titleRu": "Стерильное изготовление",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pharmacy_compound.double_check",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Independent double-check",
+      "titleRu": "Независимая двойная проверка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pharmacy_compound.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Compound status",
+      "titleRu": "Статус изготовления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "queued",
+        "weigh",
+        "mix",
+        "verify",
+        "dispense",
+        "reject"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

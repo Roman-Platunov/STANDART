@@ -1,0 +1,18 @@
+sid: c7424298
+path: scada_rtu.cpu
+aliases:
+  short: scada_rtu.cpu
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Загрузка CPU RTU
+  en: RTU CPU load
+fingerprint: sha256:c7424298b01266a64c949d7bf1464fba75b752864ab38b40f00b8abce744e4ed
+range:
+  min: 0
+  max: 100

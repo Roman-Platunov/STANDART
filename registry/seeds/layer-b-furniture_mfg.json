@@ -1,0 +1,112 @@
+{
+  "layer": "B8",
+  "name": "layer-b-furniture_mfg.json",
+  "types": [
+    {
+      "path": "furniture_mfg.workorder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Furniture work order",
+      "titleRu": "Наряд мебели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "furniture_mfg.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Furniture SKU id",
+      "titleRu": "ID артикула мебели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "furniture_mfg.cnc.cycle_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "CNC cycle time",
+      "titleRu": "Цикл ЧПУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "furniture_mfg.edge.glue_temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Edge banding glue temp",
+      "titleRu": "Температура клея кромки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "furniture_mfg.finish.thickness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Finish coat thickness",
+      "titleRu": "Толщина покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "furniture_mfg.assembly.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Assembly torque",
+      "titleRu": "Момент сборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "furniture_mfg.defect.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Defects",
+      "titleRu": "Дефекты",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "furniture_mfg.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furniture stage",
+      "titleRu": "Стадия производства мебели",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "edge",
+        "drill",
+        "finish",
+        "assemble",
+        "pack"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

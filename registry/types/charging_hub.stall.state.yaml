@@ -1,0 +1,22 @@
+sid: 01adaf14
+path: charging_hub.stall.state
+aliases:
+  short: stall.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние места
+  en: Stall state
+fingerprint: sha256:01adaf14c24a0b5420f5d40ca5a6dc2a11cd3517a60b78e2c5fbc43a65e98f89
+enumValues:
+  - free
+  - preparing
+  - charging
+  - finishing
+  - fault
+  - offline

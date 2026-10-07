@@ -1,0 +1,109 @@
+{
+  "layer": "B8",
+  "name": "layer-b-toll_plaza.json",
+  "types": [
+    {
+      "path": "toll_plaza.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Toll plaza id",
+      "titleRu": "ID пункта оплаты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "toll_plaza.lane.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Toll lane id",
+      "titleRu": "ID полосы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "toll_plaza.throughput",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Vehicles per minute",
+      "titleRu": "ТС в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "toll_plaza.queue.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Queue length",
+      "titleRu": "Длина очереди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "toll_plaza.revenue.session",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Session transactions",
+      "titleRu": "Транзакций за сессию",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "toll_plaza.lane.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lane open",
+      "titleRu": "Полоса открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "toll_plaza.violation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Toll violation",
+      "titleRu": "Нарушение оплаты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "toll_plaza.lane.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lane type",
+      "titleRu": "Тип полосы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cash",
+        "etc",
+        "mixed",
+        "hov",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

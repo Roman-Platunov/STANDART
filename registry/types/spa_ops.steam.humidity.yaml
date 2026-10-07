@@ -1,0 +1,18 @@
+sid: ca610fb0
+path: spa_ops.steam.humidity
+aliases:
+  short: steam.humidity
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Влажность парной
+  en: Steam room humidity
+fingerprint: sha256:ca610fb03078d8e1e9e83e77923a5d99bc687c6eab68066d2e1c6fc0c7745526
+range:
+  min: 0
+  max: 100

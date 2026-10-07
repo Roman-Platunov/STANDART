@@ -1,0 +1,21 @@
+sid: 476eb7e5
+path: border_crossing.lane.type
+aliases:
+  short: lane.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип полосы
+  en: Lane type
+fingerprint: sha256:476eb7e56d5bc513a1d11abe84aea823d23a5fbbcfd4f72185a366d75d58d225
+enumValues:
+  - car
+  - truck
+  - bus
+  - pedestrian
+  - closed

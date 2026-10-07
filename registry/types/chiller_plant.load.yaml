@@ -1,0 +1,18 @@
+sid: 43d70473
+path: chiller_plant.load
+aliases:
+  short: chiller_plant.load
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Нагрузка
+  en: Plant load
+fingerprint: sha256:43d704739ec43d4b0a702a63222c3e7ef44d4f0aab0a111c5a3076b14437c9ce
+range:
+  min: 0
+  max: 100

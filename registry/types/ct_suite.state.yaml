@@ -1,0 +1,21 @@
+sid: dfa91ade
+path: ct_suite.state
+aliases:
+  short: ct_suite.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние КТ
+  en: CT state
+fingerprint: sha256:dfa91adefe06808deb1752de12b607f7bd90c6c16743a011446813547325dbbc
+enumValues:
+  - idle
+  - scan
+  - warmup
+  - service
+  - fault

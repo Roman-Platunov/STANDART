@@ -1,0 +1,110 @@
+{
+  "layer": "B8",
+  "name": "layer-b-blood_gas.json",
+  "types": [
+    {
+      "path": "blood_gas.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blood gas analyzer id",
+      "titleRu": "ID анализатора КЩС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blood_gas.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ABG sample id",
+      "titleRu": "ID пробы КЩС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "personal"
+    },
+    {
+      "path": "blood_gas.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Blood pH",
+      "titleRu": "pH крови",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "blood_gas.pco2",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "pCO2",
+      "titleRu": "pCO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "blood_gas.po2",
+      "kind": "quantity",
+      "unit": "mm[Hg]",
+      "titleEn": "pO2",
+      "titleRu": "pO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "blood_gas.lactate",
+      "kind": "quantity",
+      "unit": "mmol/L",
+      "titleEn": "Lactate",
+      "titleRu": "Лактат",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "blood_gas.hco3",
+      "kind": "quantity",
+      "unit": "mmol/L",
+      "titleEn": "HCO3",
+      "titleRu": "HCO₃",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "personal",
+      "status": "stable"
+    },
+    {
+      "path": "blood_gas.sample.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sample type",
+      "titleRu": "Тип пробы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "arterial",
+        "venous",
+        "capillary"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

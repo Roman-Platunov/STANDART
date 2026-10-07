@@ -1,0 +1,21 @@
+sid: e2246f79
+path: chiller_plant.mode
+aliases:
+  short: chiller_plant.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим холодильной станции
+  en: Chiller plant mode
+fingerprint: sha256:e2246f792faba7a81bbbca7582d5d6069bdd47e1d513adb376150cf53dc9eb10
+enumValues:
+  - off
+  - staging
+  - run
+  - economizer
+  - fault

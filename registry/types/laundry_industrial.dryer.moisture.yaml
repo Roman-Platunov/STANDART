@@ -1,0 +1,18 @@
+sid: 8bd44993
+path: laundry_industrial.dryer.moisture
+aliases:
+  short: dryer.moisture
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Влажность на выходе
+  en: Exit moisture
+fingerprint: sha256:8bd449936e1419308aa25a1c7bb219968232b64047b83f1806cd3d0fe4f3f43e
+range:
+  min: 0
+  max: 100

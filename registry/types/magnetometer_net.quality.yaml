@@ -1,0 +1,20 @@
+sid: 4a6d7516
+path: magnetometer_net.quality
+aliases:
+  short: magnetometer_net.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество данных
+  en: Data quality
+fingerprint: sha256:4a6d751699a9d0d55325f6a9600c6ab85adf13060eba34ca470b4c79cb0b2498
+enumValues:
+  - good
+  - disturbed
+  - calibration
+  - offline

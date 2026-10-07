@@ -1,0 +1,109 @@
+{
+  "layer": "B8",
+  "name": "layer-b-weigh_station.json",
+  "types": [
+    {
+      "path": "weigh_station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Weigh station id",
+      "titleRu": "ID весового контроля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weigh_station.lane.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Weigh lane id",
+      "titleRu": "ID полосы весов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weigh_station.gross.kg",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Gross vehicle weight",
+      "titleRu": "Полная масса ТС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_station.axle.kg",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Max axle weight",
+      "titleRu": "Макс. нагрузка на ось",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_station.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Approach speed",
+      "titleRu": "Скорость на подъезде",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_station.overweight",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overweight flag",
+      "titleRu": "Перевес",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "weigh_station.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Station open",
+      "titleRu": "Пункт открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "weigh_station.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Weigh result",
+      "titleRu": "Результат взвешивания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bypass",
+        "static",
+        "citation",
+        "out_of_service"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

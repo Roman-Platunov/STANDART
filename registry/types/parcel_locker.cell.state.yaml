@@ -1,0 +1,21 @@
+sid: ec5872c4
+path: parcel_locker.cell.state
+aliases:
+  short: cell.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ячейки
+  en: Cell state
+fingerprint: sha256:ec5872c4357c07559a9b8310296a0891526e6f791d7b1d45cc3a2bd4c45b9604
+enumValues:
+  - empty
+  - reserved
+  - occupied
+  - expired
+  - fault

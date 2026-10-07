@@ -1,0 +1,136 @@
+{
+  "layer": "B8",
+  "name": "layer-b-bess.json",
+  "types": [
+    {
+      "path": "bess.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BESS system id",
+      "titleRu": "ID СНЭЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bess.rack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Battery rack id",
+      "titleRu": "ID стойки батарей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bess.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "BESS state of charge",
+      "titleRu": "SoC СНЭЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bess.soh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "BESS state of health",
+      "titleRu": "SoH СНЭЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bess.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "BESS power (+dis/-chg)",
+      "titleRu": "Мощность СНЭЭ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bess.temp.max",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Max cell temperature",
+      "titleRu": "Макс. температура ячеек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bess.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Availability",
+      "titleRu": "Доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bess.contactor.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Main contactor closed",
+      "titleRu": "Контактор замкнут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bess.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "BESS mode",
+      "titleRu": "Режим СНЭЭ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "charge",
+        "discharge",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

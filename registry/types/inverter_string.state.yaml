@@ -1,0 +1,21 @@
+sid: 93dcc4cc
+path: inverter_string.state
+aliases:
+  short: inverter_string.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние инвертора
+  en: Inverter state
+fingerprint: sha256:93dcc4cc27f4d18a091dabc409e6ec165626427ddc67f8ce98a5648a2158bb3e
+enumValues:
+  - producing
+  - mppt
+  - curtailed
+  - night
+  - fault

@@ -1,0 +1,112 @@
+{
+  "layer": "B8",
+  "name": "layer-b-compressor_station.json",
+  "types": [
+    {
+      "path": "compressor_station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compressor station id",
+      "titleRu": "ID КС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "compressor_station.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compressor unit id",
+      "titleRu": "ID ГПА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "compressor_station.suction.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Suction pressure",
+      "titleRu": "Давление всасывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressor_station.discharge.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressor_station.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Gas flow",
+      "titleRu": "Расход газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressor_station.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Unit vibration",
+      "titleRu": "Вибрация агрегата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressor_station.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Unit power",
+      "titleRu": "Мощность агрегата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compressor_station.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Compressor state",
+      "titleRu": "Состояние КС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "offline",
+        "start",
+        "load",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

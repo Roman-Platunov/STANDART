@@ -1,0 +1,20 @@
+sid: bcd8a398
+path: weigh_station.result
+aliases:
+  short: weigh_station.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат взвешивания
+  en: Weigh result
+fingerprint: sha256:bcd8a39889c53bdf3671027c8cfc90e120ec2e5607c277a246953e6f03407524
+enumValues:
+  - bypass
+  - static
+  - citation
+  - out_of_service

@@ -1,0 +1,115 @@
+{
+  "layer": "B8",
+  "name": "layer-b-cubesat_ops.json",
+  "types": [
+    {
+      "path": "cubesat_ops.sat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CubeSat id",
+      "titleRu": "ID CubeSat",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cubesat_ops.pass.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ground pass id",
+      "titleRu": "ID сеанса связи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cubesat_ops.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Satellite battery SoC",
+      "titleRu": "SoC батареи спутника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cubesat_ops.temp.board",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Board temperature",
+      "titleRu": "Температура платы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cubesat_ops.link.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Downlink SNR",
+      "titleRu": "SNR линии вниз",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cubesat_ops.pointing.error",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Pointing error",
+      "titleRu": "Ошибка наведения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cubesat_ops.safe.mode",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Safe mode",
+      "titleRu": "Safe mode",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cubesat_ops.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CubeSat mode",
+      "titleRu": "Режим CubeSat",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "detumble",
+        "nominal",
+        "payload",
+        "safe",
+        "deorbit"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

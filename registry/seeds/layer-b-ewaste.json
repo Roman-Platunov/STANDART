@@ -1,0 +1,115 @@
+{
+  "layer": "B8",
+  "name": "layer-b-ewaste.json",
+  "types": [
+    {
+      "path": "ewaste.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "E-waste batch id",
+      "titleRu": "ID партии электролома",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ewaste.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "E-waste line id",
+      "titleRu": "ID линии электролома",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ewaste.intake.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Intake mass",
+      "titleRu": "Масса приёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ewaste.shred.throughput",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Shred throughput",
+      "titleRu": "Производительность шредера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ewaste.metal.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Metal recovery",
+      "titleRu": "Извлечение металлов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ewaste.battery.removed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Batteries removed",
+      "titleRu": "Извлечено батарей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ewaste.hazard.hold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hazardous hold",
+      "titleRu": "Удержание опасных",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ewaste.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "E-waste stage",
+      "titleRu": "Стадия электролома",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receive",
+        "sort",
+        "dismantle",
+        "shred",
+        "separate",
+        "ship"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

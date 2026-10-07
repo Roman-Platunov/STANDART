@@ -1,0 +1,116 @@
+{
+  "layer": "B8",
+  "name": "layer-b-chiller_plant.json",
+  "types": [
+    {
+      "path": "chiller_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chiller plant id",
+      "titleRu": "ID холодильной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chiller_plant.chiller.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chiller id",
+      "titleRu": "ID чиллера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chiller_plant.chw.supply",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CHW supply temp",
+      "titleRu": "Температура подачи ХВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chiller_plant.chw.return",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CHW return temp",
+      "titleRu": "Температура обратки ХВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chiller_plant.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Plant power",
+      "titleRu": "Мощность станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chiller_plant.cop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Coefficient of performance",
+      "titleRu": "Холодильный коэффициент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chiller_plant.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Plant load",
+      "titleRu": "Нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chiller_plant.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chiller plant mode",
+      "titleRu": "Режим холодильной станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "staging",
+        "run",
+        "economizer",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

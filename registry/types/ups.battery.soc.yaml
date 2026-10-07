@@ -1,0 +1,18 @@
+sid: bf4b96d4
+path: ups.battery.soc
+aliases:
+  short: ups.battery.soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: SoC батареи ИБП
+  en: UPS battery SoC
+fingerprint: sha256:bf4b96d49ef74f3e461ed24d153ad4dd479497c9c16953b34ecbf89027b854c6
+range:
+  min: 0
+  max: 100

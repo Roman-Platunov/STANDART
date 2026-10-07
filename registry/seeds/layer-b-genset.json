@@ -1,0 +1,130 @@
+{
+  "layer": "B8",
+  "name": "layer-b-genset.json",
+  "types": [
+    {
+      "path": "genset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Generator set id",
+      "titleRu": "ID ДГУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "genset.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Gen set power",
+      "titleRu": "Мощность ДГУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genset.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Output frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genset.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Output voltage",
+      "titleRu": "Напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genset.fuel.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fuel level",
+      "titleRu": "Уровень топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "genset.coolant.temperature",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genset.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Runtime hours",
+      "titleRu": "Моточасы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genset.auto.start",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Auto-start armed",
+      "titleRu": "Автозапуск готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "genset.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Genset state",
+      "titleRu": "Состояние ДГУ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "cranking",
+        "running",
+        "cooldown",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

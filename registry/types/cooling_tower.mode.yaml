@@ -1,0 +1,21 @@
+sid: 1ff360ad
+path: cooling_tower.mode
+aliases:
+  short: cooling_tower.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим градирни
+  en: Cooling tower mode
+fingerprint: sha256:1ff360adbc0ffee5b5b4ebd038aa05c519bdefe0b9f2b49ca9f1709c2e6d929a
+enumValues:
+  - off
+  - fan_low
+  - fan_high
+  - bypass
+  - fault

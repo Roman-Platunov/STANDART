@@ -1,0 +1,115 @@
+{
+  "layer": "B8",
+  "name": "layer-b-drought.json",
+  "types": [
+    {
+      "path": "drought.region.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Drought region id",
+      "titleRu": "ID региона засухи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drought.spi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Standardized precipitation index",
+      "titleRu": "Индекс SPI",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drought.soil.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soil moisture anomaly",
+      "titleRu": "Аномалия влажности почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drought.reservoir.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reservoir storage",
+      "titleRu": "Наполнение водохранилищ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "drought.days.without_rain",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days without rain",
+      "titleRu": "Дней без дождя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drought.restriction.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Water restriction active",
+      "titleRu": "Ограничения на воду",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "drought.map.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Drought map ref",
+      "titleRu": "Референс карты засухи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drought.category",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Drought category",
+      "titleRu": "Категория засухи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "d0",
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

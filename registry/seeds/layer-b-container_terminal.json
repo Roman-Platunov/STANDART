@@ -1,0 +1,113 @@
+{
+  "layer": "B8",
+  "name": "layer-b-container_terminal.json",
+  "types": [
+    {
+      "path": "container_terminal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Container terminal id",
+      "titleRu": "ID контейнерного терминала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "container_terminal.crane.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "STS crane id",
+      "titleRu": "ID причального крана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "container_terminal.box.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Container id",
+      "titleRu": "ID контейнера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "container_terminal.moves.hour",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Moves per hour",
+      "titleRu": "Операций в час",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "container_terminal.yard.utilization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Yard utilization",
+      "titleRu": "Загрузка склада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "container_terminal.truck.turn_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Truck turn time",
+      "titleRu": "Оборот грузовика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "container_terminal.reefer.power_draw",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Reefer power draw",
+      "titleRu": "Мощность рефов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "container_terminal.crane.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Crane state",
+      "titleRu": "Состояние крана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "ship",
+        "yard",
+        "maintenance",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

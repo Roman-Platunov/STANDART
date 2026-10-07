@@ -1,0 +1,119 @@
+{
+  "layer": "B8",
+  "name": "layer-b-wind_lidar.json",
+  "types": [
+    {
+      "path": "wind_lidar.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wind lidar id",
+      "titleRu": "ID ветрового лидара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wind_lidar.wind.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Hub-height wind speed",
+      "titleRu": "Скорость ветра на высоте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_lidar.wind.direction",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Wind direction",
+      "titleRu": "Направление ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_lidar.ti",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Turbulence intensity",
+      "titleRu": "Интенсивность турбулентности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wind_lidar.shear",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wind shear exponent",
+      "titleRu": "Показатель сдвига ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_lidar.data.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Data availability",
+      "titleRu": "Доступность данных",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wind_lidar.profile.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Wind profile ref",
+      "titleRu": "Референс профиля ветра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wind_lidar.mount",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lidar mount",
+      "titleRu": "Тип установки лидара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ground",
+        "nacelle",
+        "floating",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

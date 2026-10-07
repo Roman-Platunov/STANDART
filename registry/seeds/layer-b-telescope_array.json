@@ -1,0 +1,115 @@
+{
+  "layer": "B8",
+  "name": "layer-b-telescope_array.json",
+  "types": [
+    {
+      "path": "telescope_array.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Telescope array id",
+      "titleRu": "ID массива телескопов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "telescope_array.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Telescope unit id",
+      "titleRu": "ID телескопа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "telescope_array.seeing",
+      "kind": "quantity",
+      "unit": "arcsec",
+      "titleEn": "Seeing",
+      "titleRu": "Смётость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telescope_array.sky.mag",
+      "kind": "quantity",
+      "unit": "mag/arcsec2",
+      "titleEn": "Sky background",
+      "titleRu": "Фон неба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telescope_array.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dome humidity",
+      "titleRu": "Влажность купола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "telescope_array.tracking.error",
+      "kind": "quantity",
+      "unit": "arcsec",
+      "titleEn": "Tracking error",
+      "titleRu": "Ошибка гидирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telescope_array.dome.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dome open",
+      "titleRu": "Купол открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "telescope_array.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Telescope state",
+      "titleRu": "Состояние телескопа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "slewing",
+        "tracking",
+        "weather_hold",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

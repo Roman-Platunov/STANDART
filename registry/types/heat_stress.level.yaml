@@ -1,0 +1,20 @@
+sid: 6da694ad
+path: heat_stress.level
+aliases:
+  short: heat_stress.level
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Уровень теплового стресса
+  en: Heat stress level
+fingerprint: sha256:6da694ad3c09ada96d8f03cc9b5b82581a0e0f332dca231799bc2f391816c44f
+enumValues:
+  - caution
+  - warning
+  - danger
+  - extreme

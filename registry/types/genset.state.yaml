@@ -1,0 +1,21 @@
+sid: 16fdd9a6
+path: genset.state
+aliases:
+  short: genset.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ДГУ
+  en: Genset state
+fingerprint: sha256:16fdd9a6745d60192c2ea720860f8f6a3673ee76c165ec76981cc93130bc3f2c
+enumValues:
+  - off
+  - cranking
+  - running
+  - cooldown
+  - fault

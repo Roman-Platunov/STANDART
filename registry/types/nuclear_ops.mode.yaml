@@ -1,0 +1,21 @@
+sid: 94395ccc
+path: nuclear_ops.mode
+aliases:
+  short: nuclear_ops.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим энергоблока
+  en: Nuclear unit mode
+fingerprint: sha256:94395cccc333c4a34d9006ec84c78f55105e08662b37d1d2621816c4dcd896b5
+enumValues:
+  - startup
+  - power
+  - hot_standby
+  - cold_shutdown
+  - refuel

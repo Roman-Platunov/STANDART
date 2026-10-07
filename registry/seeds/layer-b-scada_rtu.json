@@ -1,0 +1,118 @@
+{
+  "layer": "B8",
+  "name": "layer-b-scada_rtu.json",
+  "types": [
+    {
+      "path": "scada_rtu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RTU id",
+      "titleRu": "ID RTU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scada_rtu.point.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SCADA point id",
+      "titleRu": "ID точки SCADA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scada_rtu.scan.latency_ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Scan latency",
+      "titleRu": "Задержка опроса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scada_rtu.comm.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Comm uptime",
+      "titleRu": "Доступность связи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scada_rtu.cpu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "RTU CPU load",
+      "titleRu": "Загрузка CPU RTU",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scada_rtu.link.up",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "RTU link up",
+      "titleRu": "Связь RTU OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scada_rtu.alarm.unacked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Unacked alarm",
+      "titleRu": "Неквитированная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scada_rtu.protocol",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "RTU protocol",
+      "titleRu": "Протокол RTU",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dnp3",
+        "iec104",
+        "modbus",
+        "opcua",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

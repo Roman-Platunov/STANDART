@@ -1,0 +1,21 @@
+sid: aab07c3b
+path: telescope_array.state
+aliases:
+  short: telescope_array.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние телескопа
+  en: Telescope state
+fingerprint: sha256:aab07c3b25dd2f9a47dd77f1f2266c3f6962055ccd60bb7928f16a23fdffe11a
+enumValues:
+  - idle
+  - slewing
+  - tracking
+  - weather_hold
+  - fault

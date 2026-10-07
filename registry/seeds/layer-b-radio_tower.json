@@ -1,0 +1,111 @@
+{
+  "layer": "B8",
+  "name": "layer-b-radio_tower.json",
+  "types": [
+    {
+      "path": "radio_tower.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Radio tower id",
+      "titleRu": "ID радиомачты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radio_tower.tx.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transmitter id",
+      "titleRu": "ID передатчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radio_tower.tx.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Transmit power",
+      "titleRu": "Мощность передатчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radio_tower.vswr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "VSWR",
+      "titleRu": "КСВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radio_tower.tower.tilt",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Tower tilt",
+      "titleRu": "Наклон мачты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radio_tower.obstruction.light",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Obstruction light status 1/0",
+      "titleRu": "Заградительный огонь",
+      "encodings": [
+        "u8"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radio_tower.ice.detected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ice on structure",
+      "titleRu": "Обледенение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "radio_tower.service",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tower service",
+      "titleRu": "Служба на мачте",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fm",
+        "am",
+        "tv",
+        "cellular",
+        "microwave",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
