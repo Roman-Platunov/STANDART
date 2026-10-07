@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-skin_pass.json",
+  "types": [
+    {
+      "path": "skin_pass.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Skin-pass mill id",
+      "titleRu": "ID дрессировочного стана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "skin_pass.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "skin_pass.elong",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Elongation",
+      "titleRu": "Удлинение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "skin_pass.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Rolling force",
+      "titleRu": "Усилие прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "skin_pass.roughness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Surface roughness Ra",
+      "titleRu": "Шероховатость Ra",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "skin_pass.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "skin_pass.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pass complete",
+      "titleRu": "Проход завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "skin_pass.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "idle",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

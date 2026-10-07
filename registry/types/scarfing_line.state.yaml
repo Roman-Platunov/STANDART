@@ -1,0 +1,20 @@
+sid: a6e6cf39
+path: scarfing_line.state
+aliases:
+  short: scarfing_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:a6e6cf390ad8771c18869d80b26ccde58f7ec72a30e2f6f5a32c12292abc4944
+enumValues:
+  - scarf
+  - idle
+  - maintain
+  - fault

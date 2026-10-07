@@ -1,0 +1,115 @@
+{
+  "layer": "B26",
+  "name": "layer-b-oscillator_mold.json",
+  "types": [
+    {
+      "path": "oscillator_mold.caster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mold oscillator id",
+      "titleRu": "ID качания кристаллизатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oscillator_mold.stroke",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Stroke",
+      "titleRu": "Ход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oscillator_mold.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Oscillation frequency",
+      "titleRu": "Частота качания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oscillator_mold.neg.strip",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Negative strip time",
+      "titleRu": "Время отрицательной полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oscillator_mold.friction",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Friction index",
+      "titleRu": "Индекс трения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oscillator_mold.powder",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Mold powder use",
+      "titleRu": "Расход шлакообразующей смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oscillator_mold.stick",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sticker alarm",
+      "titleRu": "Тревога залипания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oscillator_mold.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Oscillator state",
+      "titleRu": "Состояние качания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "oscillate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

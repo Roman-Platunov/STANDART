@@ -1,0 +1,113 @@
+{
+  "layer": "B26",
+  "name": "layer-b-sample_lab_st.json",
+  "types": [
+    {
+      "path": "sample_lab_st.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steel sample lab id",
+      "titleRu": "ID экспресс-лаборатории стали",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sample_lab_st.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sample_lab_st.c",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Carbon",
+      "titleRu": "Углерод",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sample_lab_st.tat.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Turnaround time",
+      "titleRu": "Время анализа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sample_lab_st.samples",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Samples today",
+      "titleRu": "Проб за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sample_lab_st.o",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Oxygen",
+      "titleRu": "Кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sample_lab_st.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chemistry in spec",
+      "titleRu": "Химия в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sample_lab_st.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "oes",
+        "xrf",
+        "combustion",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

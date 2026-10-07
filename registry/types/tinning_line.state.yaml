@@ -1,0 +1,20 @@
+sid: 2c8cd21a
+path: tinning_line.state
+aliases:
+  short: tinning_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:2c8cd21a17c08db8cfd7b9352dda2e73312b0d2267315bc96a564fd890f46c65
+enumValues:
+  - plate
+  - reflow
+  - idle
+  - fault

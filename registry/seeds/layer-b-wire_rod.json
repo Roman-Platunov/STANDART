@@ -1,0 +1,115 @@
+{
+  "layer": "B26",
+  "name": "layer-b-wire_rod.json",
+  "types": [
+    {
+      "path": "wire_rod.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wire rod mill id",
+      "titleRu": "ID стана катанки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wire_rod.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID бунта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wire_rod.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Rod diameter",
+      "titleRu": "Диаметр катанки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_rod.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Finishing speed",
+      "titleRu": "Скорость чистовой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_rod.lay.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Laying head temperature",
+      "titleRu": "Температура виткоукладчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_rod.stelm",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stelmor cooling proxy",
+      "titleRu": "Охлаждение Stelmor",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wire_rod.cobble",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cobble",
+      "titleRu": "Авария",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wire_rod.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "cool",
+        "coil",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B26",
+  "name": "layer-b-sinter_strand.json",
+  "types": [
+    {
+      "path": "sinter_strand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sinter strand id",
+      "titleRu": "ID агломерационной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sinter_strand.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Strand speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sinter_strand.btp",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Burn-through point",
+      "titleRu": "Точка дожига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sinter_strand.fe",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fe content",
+      "titleRu": "Содержание Fe",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sinter_strand.strength",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tumbler index",
+      "titleRu": "Барабанный индекс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sinter_strand.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Sinter output",
+      "titleRu": "Выпуск агломерата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sinter_strand.hot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hot return high",
+      "titleRu": "Высокий горячий возврат",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sinter_strand.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Strand state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sinter",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

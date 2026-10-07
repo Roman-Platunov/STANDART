@@ -1,0 +1,116 @@
+{
+  "layer": "B26",
+  "name": "layer-b-oxygen_plant.json",
+  "types": [
+    {
+      "path": "oxygen_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ASU / oxygen plant id",
+      "titleRu": "ID КА / кислородной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oxygen_plant.o2",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Oxygen production",
+      "titleRu": "Выработка кислорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oxygen_plant.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "O2 purity",
+      "titleRu": "Чистота O2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oxygen_plant.n2",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Nitrogen production",
+      "titleRu": "Выработка азота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oxygen_plant.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Plant power",
+      "titleRu": "Мощность станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oxygen_plant.liquid",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "LOX inventory",
+      "titleRu": "Запас ЖК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oxygen_plant.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Plant trip",
+      "titleRu": "Отключение станции",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oxygen_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "turndown",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

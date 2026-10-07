@@ -1,0 +1,20 @@
+sid: b7576ec3
+path: scrap_preheat.state
+aliases:
+  short: scrap_preheat.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние подогревателя
+  en: Preheater state
+fingerprint: sha256:b7576ec3dac430fec5d6657f128fcae5d3d065775d5230dc2f005f37c50d8a84
+enumValues:
+  - preheat
+  - charge
+  - idle
+  - fault

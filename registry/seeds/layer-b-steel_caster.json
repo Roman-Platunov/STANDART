@@ -1,0 +1,115 @@
+{
+  "layer": "B26",
+  "name": "layer-b-steel_caster.json",
+  "types": [
+    {
+      "path": "steel_caster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Continuous caster id",
+      "titleRu": "ID МНЛЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steel_caster.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steel_caster.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Casting speed",
+      "titleRu": "Скорость разливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_caster.mold.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mold level",
+      "titleRu": "Уровень в кристаллизаторе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "steel_caster.superheat",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Steel superheat",
+      "titleRu": "Перегрев стали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_caster.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Slab / billet width",
+      "titleRu": "Ширина сляба/заготовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_caster.breakout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Breakout risk",
+      "titleRu": "Риск прорыва",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "steel_caster.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "slab",
+        "bloom",
+        "billet",
+        "beam_blank",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

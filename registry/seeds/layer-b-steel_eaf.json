@@ -1,0 +1,111 @@
+{
+  "layer": "B26",
+  "name": "layer-b-steel_eaf.json",
+  "types": [
+    {
+      "path": "steel_eaf.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Electric arc furnace id",
+      "titleRu": "ID ДСП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steel_eaf.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steel_eaf.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Active power",
+      "titleRu": "Активная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_eaf.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Electrode current",
+      "titleRu": "Ток электродов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_eaf.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_eaf.tap.weight",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Tap weight",
+      "titleRu": "Масса выпуска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_eaf.foaming",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Foamy slag",
+      "titleRu": "Пенный шлак",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "steel_eaf.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "EAF state",
+      "titleRu": "Состояние ДСП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "melt",
+        "refine",
+        "tap",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

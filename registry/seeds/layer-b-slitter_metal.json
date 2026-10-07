@@ -1,0 +1,119 @@
+{
+  "layer": "B26",
+  "name": "layer-b-slitter_metal.json",
+  "types": [
+    {
+      "path": "slitter_metal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metal slitter id",
+      "titleRu": "ID металлического слиттера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "slitter_metal.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Slit speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slitter_metal.knives",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Knife sets",
+      "titleRu": "Комплектов ножей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slitter_metal.width.tol",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Width tolerance",
+      "titleRu": "Допуск по ширине",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slitter_metal.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Edge scrap",
+      "titleRu": "Кромочный отход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "slitter_metal.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "slitter_metal.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Strip jam",
+      "titleRu": "Затор полосы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "slitter_metal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Slitter state",
+      "titleRu": "Состояние слиттера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "setup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

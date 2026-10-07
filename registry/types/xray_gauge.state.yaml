@@ -1,0 +1,20 @@
+sid: e292228f
+path: xray_gauge.state
+aliases:
+  short: xray_gauge.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние толщиномера
+  en: Gauge state
+fingerprint: sha256:e292228fea93a48666ae59310c184a7556a7f54315f837b47e39c13d7954af65
+enumValues:
+  - measure
+  - calibrate
+  - offline
+  - fault

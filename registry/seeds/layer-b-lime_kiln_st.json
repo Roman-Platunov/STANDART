@@ -1,0 +1,116 @@
+{
+  "layer": "B26",
+  "name": "layer-b-lime_kiln_st.json",
+  "types": [
+    {
+      "path": "lime_kiln_st.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steel plant lime kiln id",
+      "titleRu": "ID известково-обжигательной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lime_kiln_st.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Kiln temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_st.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Lime output",
+      "titleRu": "Выпуск извести",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_st.loi",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LOI / residual CO2",
+      "titleRu": "ППП / остаточный CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_st.fuel",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_st.reactivity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reactivity index",
+      "titleRu": "Индекс реакционной способности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_st.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quality OK",
+      "titleRu": "Качество OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lime_kiln_st.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kiln state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "calcine",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

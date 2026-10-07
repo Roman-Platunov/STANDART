@@ -1,0 +1,20 @@
+sid: "98e75547"
+path: hot_strip.state
+aliases:
+  short: hot_strip.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стана
+  en: Mill state
+fingerprint: sha256:98e755479d4951f9c0c87d651efe16e9c40b2898087d2651d056330f774bd234
+enumValues:
+  - roll
+  - idle
+  - change
+  - fault

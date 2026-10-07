@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-rh_degasser.json",
+  "types": [
+    {
+      "path": "rh_degasser.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RH degasser id",
+      "titleRu": "ID вакууматора RH",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rh_degasser.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rh_degasser.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Vessel vacuum",
+      "titleRu": "Вакуум в камере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rh_degasser.h",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Hydrogen",
+      "titleRu": "Водород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rh_degasser.n",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Nitrogen",
+      "titleRu": "Азот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rh_degasser.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Treatment time",
+      "titleRu": "Время обработки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rh_degasser.snorkel.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Snorkel OK",
+      "titleRu": "Патрубок OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rh_degasser.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "RH state",
+      "titleRu": "Состояние RH",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "evacuate",
+        "treat",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

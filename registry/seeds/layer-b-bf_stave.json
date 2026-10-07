@@ -1,0 +1,111 @@
+{
+  "layer": "B26",
+  "name": "layer-b-bf_stave.json",
+  "types": [
+    {
+      "path": "bf_stave.bf.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blast furnace id",
+      "titleRu": "ID доменной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bf_stave.cool.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Stave cooling flow",
+      "titleRu": "Расход охлаждения холодильников",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bf_stave.heat.load",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Heat load",
+      "titleRu": "Тепловая нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bf_stave.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stave temperature",
+      "titleRu": "Температура холодильника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bf_stave.leak",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cooling leaks",
+      "titleRu": "Утечек охлаждения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bf_stave.top.gas",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Top gas flow",
+      "titleRu": "Расход колошникового газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bf_stave.hotspot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hotspot",
+      "titleRu": "Горячая точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bf_stave.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "BF cooling state",
+      "titleRu": "Состояние охлаждения ДП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blow",
+        "bank",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

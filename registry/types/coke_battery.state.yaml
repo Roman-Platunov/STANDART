@@ -1,0 +1,20 @@
+sid: db317702
+path: coke_battery.state
+aliases:
+  short: coke_battery.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние батареи
+  en: Battery state
+fingerprint: sha256:db317702bf9b78062efb5128bdf06a46988a92d9364e9455e61b514a68f52a81
+enumValues:
+  - carbonize
+  - push
+  - idle
+  - fault

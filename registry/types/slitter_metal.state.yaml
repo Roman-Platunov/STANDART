@@ -1,0 +1,20 @@
+sid: e7c61c40
+path: slitter_metal.state
+aliases:
+  short: slitter_metal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние слиттера
+  en: Slitter state
+fingerprint: sha256:e7c61c40b27c18c0bfe960994241de82eae7d54454d756c3c2b55e167bb33072
+enumValues:
+  - run
+  - setup
+  - idle
+  - fault

@@ -1,0 +1,21 @@
+sid: 5c30d93e
+path: steel_bof.state
+aliases:
+  short: steel_bof.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние конвертера
+  en: BOF state
+fingerprint: sha256:5c30d93e5eda1fe1c664e1cd7d5512bf8859bcf0a6609da48c6551bd1317dba2
+enumValues:
+  - charge
+  - blow
+  - reblow
+  - tap
+  - fault

@@ -1,0 +1,20 @@
+sid: 5306155e
+path: eddy_inspect.state
+aliases:
+  short: eddy_inspect.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:5306155ed742149dce644578306af91b54e3f080f838450ae33f91bd388a55a4
+enumValues:
+  - inspect
+  - calibrate
+  - idle
+  - fault

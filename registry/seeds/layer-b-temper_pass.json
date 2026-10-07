@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-temper_pass.json",
+  "types": [
+    {
+      "path": "temper_pass.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Temper mill id",
+      "titleRu": "ID темпера-стана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "temper_pass.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "temper_pass.elong",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Elongation",
+      "titleRu": "Удлинение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "temper_pass.force",
+      "kind": "quantity",
+      "unit": "MN",
+      "titleEn": "Rolling force",
+      "titleRu": "Усилие прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "temper_pass.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "temper_pass.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Entry tension",
+      "titleRu": "Входное натяжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "temper_pass.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Strip break",
+      "titleRu": "Обрыв полосы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "temper_pass.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "idle",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

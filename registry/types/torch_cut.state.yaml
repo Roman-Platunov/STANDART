@@ -1,0 +1,20 @@
+sid: 7d91e050
+path: torch_cut.state
+aliases:
+  short: torch_cut.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние резки
+  en: Torch state
+fingerprint: sha256:7d91e0505fa2981b968441e32fcfcdb0b21facfe9c087376470a256c997cb977
+enumValues:
+  - cut
+  - idle
+  - change
+  - fault

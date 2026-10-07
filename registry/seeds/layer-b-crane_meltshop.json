@@ -1,0 +1,115 @@
+{
+  "layer": "B26",
+  "name": "layer-b-crane_meltshop.json",
+  "types": [
+    {
+      "path": "crane_meltshop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Meltshop crane id",
+      "titleRu": "ID крана сталеплавильного цеха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crane_meltshop.load",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Hook load",
+      "titleRu": "Нагрузка на крюк",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_meltshop.swl",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Safe working load",
+      "titleRu": "Грузоподъёмность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_meltshop.moves",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Moves today",
+      "titleRu": "Перемещений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_meltshop.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Utilization",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crane_meltshop.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cabin / motor temperature",
+      "titleRu": "Температура кабины/двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_meltshop.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overload",
+      "titleRu": "Перегруз",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crane_meltshop.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Crane state",
+      "titleRu": "Состояние крана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "travel",
+        "lift",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

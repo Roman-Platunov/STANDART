@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-tinning_line.json",
+  "types": [
+    {
+      "path": "tinning_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Electrolytic tinning line id",
+      "titleRu": "ID линии лужения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tinning_line.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tinning_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tinning_line.coat",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Tin coating",
+      "titleRu": "Оловянное покрытие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tinning_line.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Plating current",
+      "titleRu": "Ток осаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tinning_line.oil",
+      "kind": "quantity",
+      "unit": "mg/m2",
+      "titleEn": "DOS oil",
+      "titleRu": "Масло DOS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tinning_line.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coat in spec",
+      "titleRu": "Покрытие в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tinning_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plate",
+        "reflow",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

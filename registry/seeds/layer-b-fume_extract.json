@@ -1,0 +1,116 @@
+{
+  "layer": "B26",
+  "name": "layer-b-fume_extract.json",
+  "types": [
+    {
+      "path": "fume_extract.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Meltshop fume extraction id",
+      "titleRu": "ID газоочистки сталеплавильного цеха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fume_extract.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Extracted flow",
+      "titleRu": "Отсасываемый расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fume_extract.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Filter DP",
+      "titleRu": "Перепад на фильтре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fume_extract.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Outlet dust",
+      "titleRu": "Пыль на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fume_extract.fan",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fan speed",
+      "titleRu": "Скорость вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fume_extract.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Fan power",
+      "titleRu": "Мощность вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fume_extract.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bypass open",
+      "titleRu": "Байпас открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fume_extract.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "extract",
+        "pulse",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 065fc39c
+path: baghouse_steel.state
+aliases:
+  short: baghouse_steel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фильтра
+  en: Baghouse state
+fingerprint: sha256:065fc39cf3dbf63609ac4d32e883dd762fb2bafc294c3ef4b32471cfbc051d79
+enumValues:
+  - filter
+  - pulse
+  - offline
+  - fault

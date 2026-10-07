@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-anneal_furnace.json",
+  "types": [
+    {
+      "path": "anneal_furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Annealing furnace id",
+      "titleRu": "ID печи отжига",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anneal_furnace.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil / charge id",
+      "titleRu": "ID рулона/садки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anneal_furnace.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zone temperature",
+      "titleRu": "Температура зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anneal_furnace.dew",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Atmosphere dew point",
+      "titleRu": "Точка росы атмосферы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anneal_furnace.h2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "H2 in atmosphere",
+      "titleRu": "H2 в атмосфере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "anneal_furnace.soak.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Soak time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anneal_furnace.recipe.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recipe on track",
+      "titleRu": "Режим по графику",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "anneal_furnace.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "batch",
+        "cal",
+        "cal_h2",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

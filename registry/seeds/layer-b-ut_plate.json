@@ -1,0 +1,113 @@
+{
+  "layer": "B26",
+  "name": "layer-b-ut_plate.json",
+  "types": [
+    {
+      "path": "ut_plate.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plate ultrasonic test id",
+      "titleRu": "ID УЗК листа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ut_plate.plate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plate id",
+      "titleRu": "ID листа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ut_plate.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scan coverage",
+      "titleRu": "Покрытие сканирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ut_plate.indications",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Indications",
+      "titleRu": "Индикаций",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ut_plate.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Max indication depth",
+      "titleRu": "Макс. глубина индикации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ut_plate.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Scan speed",
+      "titleRu": "Скорость сканирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ut_plate.reject",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reject",
+      "titleRu": "Брак",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ut_plate.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Class",
+      "titleRu": "Класс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "repair",
+        "reject",
+        "retest"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

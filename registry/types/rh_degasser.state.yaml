@@ -1,0 +1,20 @@
+sid: cde5735f
+path: rh_degasser.state
+aliases:
+  short: rh_degasser.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние RH
+  en: RH state
+fingerprint: sha256:cde5735fad115e8079eb609e3c9b3848aa7cc828e8a468ffb843d4f06a8fcf59
+enumValues:
+  - evacuate
+  - treat
+  - idle
+  - fault

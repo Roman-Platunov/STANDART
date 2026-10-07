@@ -1,0 +1,116 @@
+{
+  "layer": "B26",
+  "name": "layer-b-pellet_plant.json",
+  "types": [
+    {
+      "path": "pellet_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Iron ore pellet plant id",
+      "titleRu": "ID фабрики окатышей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pellet_plant.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Green pellet feed",
+      "titleRu": "Подача сырых окатышей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plant.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fired pellet output",
+      "titleRu": "Выпуск обожжённых",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Induration temperature",
+      "titleRu": "Температура обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plant.ccs",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Cold compression strength",
+      "titleRu": "Прочность на сжатие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plant.feo",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "FeO content",
+      "titleRu": "Содержание FeO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plant.quality.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quality OK",
+      "titleRu": "Качество OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pellet_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние фабрики",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "indurate",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "layer": "B26",
+  "name": "layer-b-eddy_inspect.json",
+  "types": [
+    {
+      "path": "eddy_inspect.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Eddy-current inspection id",
+      "titleRu": "ID вихретокового контроля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "eddy_inspect.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil / tube id",
+      "titleRu": "ID рулона/трубы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "eddy_inspect.defects",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Defects found",
+      "titleRu": "Дефектов найдено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eddy_inspect.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Inspection speed",
+      "titleRu": "Скорость контроля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eddy_inspect.sensitivity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sensitivity",
+      "titleRu": "Чувствительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "eddy_inspect.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "eddy_inspect.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Defect alarm",
+      "titleRu": "Тревога дефекта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "eddy_inspect.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inspect",
+        "calibrate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

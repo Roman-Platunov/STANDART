@@ -1,0 +1,20 @@
+sid: f2c4689a
+path: work_roll.state
+aliases:
+  short: work_roll.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние валка
+  en: Roll state
+fingerprint: sha256:f2c4689a839f72aad56bd4e4c25ad16e3b5619f3abf8c3ec36560dc39ddea97b
+enumValues:
+  - in_mill
+  - spare
+  - grind
+  - scrap

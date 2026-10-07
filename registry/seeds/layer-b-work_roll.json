@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-work_roll.json",
+  "types": [
+    {
+      "path": "work_roll.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Work roll id",
+      "titleRu": "ID рабочего валка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "work_roll.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stand id",
+      "titleRu": "ID клети",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "work_roll.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Diameter",
+      "titleRu": "Диаметр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "work_roll.tonnage",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Rolled tonnage",
+      "titleRu": "Прокатанный тоннаж",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "work_roll.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Roll temperature",
+      "titleRu": "Температура валка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "work_roll.wear",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Wear",
+      "titleRu": "Износ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "work_roll.change.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Change due",
+      "titleRu": "Пора менять",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "work_roll.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Roll state",
+      "titleRu": "Состояние валка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "in_mill",
+        "spare",
+        "grind",
+        "scrap"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

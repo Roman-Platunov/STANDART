@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-argon_inject.json",
+  "types": [
+    {
+      "path": "argon_inject.ladle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ladle argon stir id",
+      "titleRu": "ID аргонной продувки ковша",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "argon_inject.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "argon_inject.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Argon flow",
+      "titleRu": "Расход аргона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "argon_inject.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Plug pressure",
+      "titleRu": "Давление пробки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "argon_inject.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Stir time",
+      "titleRu": "Время продувки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "argon_inject.temp.drop",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Temperature drop",
+      "titleRu": "Падение температуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "argon_inject.plug.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Porous plug OK",
+      "titleRu": "Пористая пробка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "argon_inject.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stir state",
+      "titleRu": "Состояние продувки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stir",
+        "idle",
+        "blocked",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

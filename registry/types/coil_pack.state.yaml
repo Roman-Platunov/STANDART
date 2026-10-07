@@ -1,0 +1,21 @@
+sid: 4f802d69
+path: coil_pack.state
+aliases:
+  short: coil_pack.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:4f802d6978ca6c1f754867c21d5ccb19cd52cf98e24606853cf055f27a34f6c8
+enumValues:
+  - weigh
+  - wrap
+  - band
+  - label
+  - fault

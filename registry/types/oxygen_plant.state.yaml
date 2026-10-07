@@ -1,0 +1,20 @@
+sid: a051fa71
+path: oxygen_plant.state
+aliases:
+  short: oxygen_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Plant state
+fingerprint: sha256:a051fa71897a24fc4ac0518516466113c9afd776addb03a9c9bdfbf33c8389e5
+enumValues:
+  - produce
+  - turndown
+  - idle
+  - fault

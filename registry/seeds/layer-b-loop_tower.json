@@ -1,0 +1,115 @@
+{
+  "layer": "B26",
+  "name": "layer-b-loop_tower.json",
+  "types": [
+    {
+      "path": "loop_tower.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Looper / accumulator tower id",
+      "titleRu": "ID петлевого/накопительного устройства",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loop_tower.fill",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fill level",
+      "titleRu": "Степень заполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "loop_tower.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Strip tension",
+      "titleRu": "Натяжение полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loop_tower.speed.in",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Entry speed",
+      "titleRu": "Скорость на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loop_tower.speed.out",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Exit speed",
+      "titleRu": "Скорость на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loop_tower.dancers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dancer position proxy",
+      "titleRu": "Позиция танцора",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loop_tower.empty",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Near empty",
+      "titleRu": "Почти пуст",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "loop_tower.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tower state",
+      "titleRu": "Состояние накопителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "hold",
+        "empty",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

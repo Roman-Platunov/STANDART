@@ -1,0 +1,112 @@
+{
+  "layer": "B26",
+  "name": "layer-b-xray_gauge.json",
+  "types": [
+    {
+      "path": "xray_gauge.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "X-ray thickness gauge id",
+      "titleRu": "ID рентгеновского толщиномера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "xray_gauge.thick",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Measured thickness",
+      "titleRu": "Измеренная толщина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "xray_gauge.dev",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Deviation from target",
+      "titleRu": "Отклонение от цели",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "xray_gauge.alloy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Alloy compensation",
+      "titleRu": "Компенсация сплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "xray_gauge.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Strip temperature",
+      "titleRu": "Температура полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "xray_gauge.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Measurement rate",
+      "titleRu": "Частота измерений",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "xray_gauge.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Thickness alarm",
+      "titleRu": "Тревога толщины",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "xray_gauge.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gauge state",
+      "titleRu": "Состояние толщиномера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "measure",
+        "calibrate",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

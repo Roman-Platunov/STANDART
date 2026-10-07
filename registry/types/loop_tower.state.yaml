@@ -1,0 +1,20 @@
+sid: 6ccd3939
+path: loop_tower.state
+aliases:
+  short: loop_tower.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние накопителя
+  en: Tower state
+fingerprint: sha256:6ccd3939091dd00d661dbd047fdf6bf844f8857b0a5eb06d5f5dbc1fcf192906
+enumValues:
+  - fill
+  - hold
+  - empty
+  - fault

@@ -1,0 +1,120 @@
+{
+  "layer": "B26",
+  "name": "layer-b-dri_plant.json",
+  "types": [
+    {
+      "path": "dri_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DRI / HBI plant id",
+      "titleRu": "ID завода ПВЖ/HBI",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dri_plant.metallization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Metallization",
+      "titleRu": "Степень металлизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dri_plant.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "DRI output",
+      "titleRu": "Выпуск ПВЖ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dri_plant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reduction temperature",
+      "titleRu": "Температура восстановления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dri_plant.gas",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Reducing gas",
+      "titleRu": "Восстановительный газ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dri_plant.carbon",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product carbon",
+      "titleRu": "Углерод в продукте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dri_plant.reoxid",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reoxidation risk",
+      "titleRu": "Риск реоксидации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dri_plant.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "midrex",
+        "hyl",
+        "fluid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

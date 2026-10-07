@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-coil_pack.json",
+  "types": [
+    {
+      "path": "coil_pack.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil packing line id",
+      "titleRu": "ID линии упаковки рулонов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coil_pack.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coil_pack.weight",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Coil weight",
+      "titleRu": "Масса рулона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_pack.wrap",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wrap layers",
+      "titleRu": "Слоёв обмотки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_pack.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Pack cycle",
+      "titleRu": "Цикл упаковки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_pack.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Coils per hour",
+      "titleRu": "Рулонов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_pack.label.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Label OK",
+      "titleRu": "Этикетка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coil_pack.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "weigh",
+        "wrap",
+        "band",
+        "label",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

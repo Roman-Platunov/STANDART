@@ -1,0 +1,20 @@
+sid: 2a9871a1
+path: shape_meter.state
+aliases:
+  short: shape_meter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние измерителя
+  en: Meter state
+fingerprint: sha256:2a9871a1fe4706a56629caffe67c6f51f81fc54264d94c7e3d48dab68be7f04c
+enumValues:
+  - measure
+  - calibrate
+  - offline
+  - fault

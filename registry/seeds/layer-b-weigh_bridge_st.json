@@ -1,0 +1,109 @@
+{
+  "layer": "B26",
+  "name": "layer-b-weigh_bridge_st.json",
+  "types": [
+    {
+      "path": "weigh_bridge_st.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steel plant weighbridge id",
+      "titleRu": "ID автовесов меткомбината",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weigh_bridge_st.ticket.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Weigh ticket id",
+      "titleRu": "ID взвешивания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weigh_bridge_st.gross",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Gross weight",
+      "titleRu": "Брутто",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_bridge_st.tare",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Tare weight",
+      "titleRu": "Тара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_bridge_st.net",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Net weight",
+      "titleRu": "Нетто",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_bridge_st.axles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Axles on scale",
+      "titleRu": "Осей на весах",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_bridge_st.valid",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Weighing valid",
+      "titleRu": "Взвешивание действительно",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "weigh_bridge_st.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bridge state",
+      "titleRu": "Состояние весов",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "weigh",
+        "print",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 6ce78af8
+path: plate_mill.state
+aliases:
+  short: plate_mill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стана
+  en: Mill state
+fingerprint: sha256:6ce78af847f7b6340834985597f480574f2c38210da277e34dd1f3ee0a1a88f2
+enumValues:
+  - roll
+  - cool
+  - level
+  - idle
+  - fault

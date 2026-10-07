@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-reheat_furn.json",
+  "types": [
+    {
+      "path": "reheat_furn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reheating furnace id",
+      "titleRu": "ID нагревательной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reheat_furn.slab.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slab / billet id",
+      "titleRu": "ID сляба/заготовки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reheat_furn.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Discharge temperature",
+      "titleRu": "Температура выдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reheat_furn.fuel",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reheat_furn.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flue O2",
+      "titleRu": "O2 в дымовых",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "reheat_furn.scale",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Scale loss",
+      "titleRu": "Угар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reheat_furn.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Discharge ready",
+      "titleRu": "Готово к выдаче",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "reheat_furn.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "walking_beam",
+        "pusher",
+        "rotary",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

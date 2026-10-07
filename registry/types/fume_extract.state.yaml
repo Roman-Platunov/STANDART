@@ -1,0 +1,20 @@
+sid: 21e7fb8a
+path: fume_extract.state
+aliases:
+  short: fume_extract.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:21e7fb8a2068fa6d5f06954b92fdde7bd9990f4f4de844e590a3c91325da04d8
+enumValues:
+  - extract
+  - pulse
+  - idle
+  - fault

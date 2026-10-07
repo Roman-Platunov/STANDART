@@ -1,0 +1,116 @@
+{
+  "layer": "B26",
+  "name": "layer-b-scrap_preheat.json",
+  "types": [
+    {
+      "path": "scrap_preheat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Scrap preheater id",
+      "titleRu": "ID подогревателя лома",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scrap_preheat.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Scrap temperature",
+      "titleRu": "Температура лома",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_preheat.gas",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Off-gas flow",
+      "titleRu": "Расход отходящих газов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_preheat.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Off-gas O2",
+      "titleRu": "O2 в отходящих",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scrap_preheat.charge",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Charge weight",
+      "titleRu": "Масса шихты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_preheat.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Energy saved proxy",
+      "titleRu": "Экономия энергии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_preheat.dioxin",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dioxin risk high",
+      "titleRu": "Высокий риск диоксинов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scrap_preheat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Preheater state",
+      "titleRu": "Состояние подогревателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "preheat",
+        "charge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

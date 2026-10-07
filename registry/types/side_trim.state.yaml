@@ -1,0 +1,20 @@
+sid: 966a2097
+path: side_trim.state
+aliases:
+  short: side_trim.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ножниц
+  en: Trimmer state
+fingerprint: sha256:966a2097f26689d8af1dd7ab853ac460f0edd23583ec0bda104605173c9216e8
+enumValues:
+  - trim
+  - setup
+  - idle
+  - fault

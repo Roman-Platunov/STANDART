@@ -1,0 +1,20 @@
+sid: "24272200"
+path: bf_stave.state
+aliases:
+  short: bf_stave.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние охлаждения ДП
+  en: BF cooling state
+fingerprint: sha256:2427220060a38190c51beb0cbecb5c0b3f9b4271c28b30219853ea0de781084b
+enumValues:
+  - blow
+  - bank
+  - idle
+  - fault

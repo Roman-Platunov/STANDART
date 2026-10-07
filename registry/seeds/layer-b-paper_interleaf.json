@@ -1,0 +1,109 @@
+{
+  "layer": "B26",
+  "name": "layer-b-paper_interleaf.json",
+  "types": [
+    {
+      "path": "paper_interleaf.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Interleaving paper applicator id",
+      "titleRu": "ID укладчика прокладочной бумаги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paper_interleaf.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paper_interleaf.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_interleaf.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Paper tension",
+      "titleRu": "Натяжение бумаги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_interleaf.breaks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Paper breaks today",
+      "titleRu": "Обрывов бумаги за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_interleaf.usage",
+      "kind": "quantity",
+      "unit": "m2/t",
+      "titleEn": "Paper use",
+      "titleRu": "Расход бумаги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_interleaf.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Paper jam",
+      "titleRu": "Замятие бумаги",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paper_interleaf.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Applicator state",
+      "titleRu": "Состояние укладчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "apply",
+        "idle",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

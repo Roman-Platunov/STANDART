@@ -1,0 +1,20 @@
+sid: 6cb02976
+path: slit_line.state
+aliases:
+  short: slit_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:6cb029769739c68fd9f6dde746cfaf32ff36abcc19479e565e778b838e010b47
+enumValues:
+  - slit
+  - setup
+  - idle
+  - fault

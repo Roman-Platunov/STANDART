@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-hot_strip.json",
+  "types": [
+    {
+      "path": "hot_strip.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hot strip mill id",
+      "titleRu": "ID стана горячей полосы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hot_strip.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hot_strip.exit.thick",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Exit thickness",
+      "titleRu": "Толщина на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_strip.exit.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Exit temperature",
+      "titleRu": "Температура на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_strip.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_strip.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Strip width",
+      "titleRu": "Ширина полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_strip.cobble",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cobble",
+      "titleRu": "Авария полосы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hot_strip.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "idle",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

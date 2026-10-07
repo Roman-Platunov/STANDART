@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-cold_mill.json",
+  "types": [
+    {
+      "path": "cold_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cold rolling mill id",
+      "titleRu": "ID стана холодной прокатки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_mill.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_mill.exit.thick",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Exit thickness",
+      "titleRu": "Толщина на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_mill.reduction",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Total reduction",
+      "titleRu": "Суммарное обжатие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cold_mill.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_mill.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Strip tension",
+      "titleRu": "Натяжение полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_mill.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Strip break",
+      "titleRu": "Обрыв полосы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cold_mill.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill type",
+      "titleRu": "Тип стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tandem",
+        "reversing",
+        "sendzimir",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

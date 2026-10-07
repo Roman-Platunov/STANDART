@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-seamless_tube.json",
+  "types": [
+    {
+      "path": "seamless_tube.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Seamless tube mill id",
+      "titleRu": "ID стана бесшовных труб",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seamless_tube.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lot id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seamless_tube.od",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Outside diameter",
+      "titleRu": "Наружный диаметр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seamless_tube.wt",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wall thickness",
+      "titleRu": "Толщина стенки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seamless_tube.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seamless_tube.eccentric",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Eccentricity",
+      "titleRu": "Эксцентриситет",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "seamless_tube.reject",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "NDT reject",
+      "titleRu": "Брак по НК",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "seamless_tube.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mandrel",
+        "plug",
+        "pilger",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

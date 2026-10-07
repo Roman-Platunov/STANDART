@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-pickling_line.json",
+  "types": [
+    {
+      "path": "pickling_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pickling line id",
+      "titleRu": "ID линии травления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pickling_line.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pickling_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pickling_line.acid",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Acid concentration",
+      "titleRu": "Концентрация кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pickling_line.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pickling_line.fe",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Iron in bath",
+      "titleRu": "Железо в ванне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pickling_line.underpickle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Underpickle risk",
+      "titleRu": "Риск недотрава",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pickling_line.acid_type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Acid",
+      "titleRu": "Кислота",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hcl",
+        "h2so4",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

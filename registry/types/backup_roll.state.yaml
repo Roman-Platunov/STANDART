@@ -1,0 +1,20 @@
+sid: dad9e679
+path: backup_roll.state
+aliases:
+  short: backup_roll.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние валка
+  en: Roll state
+fingerprint: sha256:dad9e67912bb5c8daee733fd5ec5c9e8fb57aa10dc0d1506a9d842b9dec3793a
+enumValues:
+  - in_mill
+  - spare
+  - grind
+  - scrap

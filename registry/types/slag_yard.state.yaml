@@ -1,0 +1,20 @@
+sid: b9869497
+path: slag_yard.state
+aliases:
+  short: slag_yard.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние двора
+  en: Yard state
+fingerprint: sha256:b98694973b6aa6c96f068d68ebac980e67e089e275b3b7bae607540668091cae
+enumValues:
+  - receive
+  - process
+  - ship
+  - idle

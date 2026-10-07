@@ -1,0 +1,20 @@
+sid: 79b635c1
+path: lime_kiln_st.state
+aliases:
+  short: lime_kiln_st.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Kiln state
+fingerprint: sha256:79b635c1cd8d0cd7a8f964686df621b29869c7fd1ab9b0de366a41f246134a59
+enumValues:
+  - calcine
+  - idle
+  - maintain
+  - fault

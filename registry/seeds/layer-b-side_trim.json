@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-side_trim.json",
+  "types": [
+    {
+      "path": "side_trim.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Side trimmer id",
+      "titleRu": "ID кромкообрезных ножниц",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "side_trim.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "side_trim.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Trimmed width",
+      "titleRu": "Ширина после обрезки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "side_trim.scrap",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Edge scrap",
+      "titleRu": "Кромочный отход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "side_trim.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "side_trim.knife.life",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Knife life left",
+      "titleRu": "Остаток ресурса ножей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "side_trim.burr",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Burr high",
+      "titleRu": "Высокий заусенец",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "side_trim.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Trimmer state",
+      "titleRu": "Состояние ножниц",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "trim",
+        "setup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

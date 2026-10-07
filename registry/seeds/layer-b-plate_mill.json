@@ -1,0 +1,111 @@
+{
+  "layer": "B26",
+  "name": "layer-b-plate_mill.json",
+  "types": [
+    {
+      "path": "plate_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plate mill id",
+      "titleRu": "ID стана толстого листа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plate_mill.plate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plate id",
+      "titleRu": "ID листа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plate_mill.thick",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Plate thickness",
+      "titleRu": "Толщина листа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plate_mill.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Plate width",
+      "titleRu": "Ширина листа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plate_mill.force",
+      "kind": "quantity",
+      "unit": "MN",
+      "titleEn": "Rolling force",
+      "titleRu": "Усилие прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plate_mill.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Rolling temperature",
+      "titleRu": "Температура прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plate_mill.flat",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flatness OK",
+      "titleRu": "Плоскостность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "plate_mill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние стана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "cool",
+        "level",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-leveler_line.json",
+  "types": [
+    {
+      "path": "leveler_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Leveler / straightener id",
+      "titleRu": "ID правильно-растяжной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leveler_line.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil / plate id",
+      "titleRu": "ID рулона/листа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leveler_line.flatness",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Flatness (I-units)",
+      "titleRu": "Плоскостность (I)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leveler_line.elong",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Elongation",
+      "titleRu": "Удлинение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leveler_line.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Leveling force",
+      "titleRu": "Усилие правки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leveler_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leveler_line.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flatness in spec",
+      "titleRu": "Плоскостность в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "leveler_line.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roller",
+        "tension",
+        "stretch",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

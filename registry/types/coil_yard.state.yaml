@@ -1,0 +1,20 @@
+sid: 4c567eb9
+path: coil_yard.state
+aliases:
+  short: coil_yard.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние склада
+  en: Yard state
+fingerprint: sha256:4c567eb929dd86ee19e18d5187c182c5dada9d020723ffe41ce6abebe1e2117f
+enumValues:
+  - receive
+  - store
+  - ship
+  - idle

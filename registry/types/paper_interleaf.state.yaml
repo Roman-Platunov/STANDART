@@ -1,0 +1,20 @@
+sid: fbfcaf89
+path: paper_interleaf.state
+aliases:
+  short: paper_interleaf.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние укладчика
+  en: Applicator state
+fingerprint: sha256:fbfcaf8940952a4773e03e4df1e4a842342ea6f3cdf231e6e6b0b757e797f3fc
+enumValues:
+  - apply
+  - idle
+  - change
+  - fault

@@ -1,0 +1,112 @@
+{
+  "layer": "B26",
+  "name": "layer-b-hydraulic_agc.json",
+  "types": [
+    {
+      "path": "hydraulic_agc.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hydraulic AGC stand id",
+      "titleRu": "ID клети с гидравлическим АРН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydraulic_agc.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Roll gap",
+      "titleRu": "Зазор валков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydraulic_agc.force",
+      "kind": "quantity",
+      "unit": "MN",
+      "titleEn": "Rolling force",
+      "titleRu": "Усилие прокатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydraulic_agc.thick.dev",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Thickness deviation",
+      "titleRu": "Отклонение толщины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydraulic_agc.cylinder",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Cylinder position",
+      "titleRu": "Позиция цилиндра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydraulic_agc.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Hydraulic pressure",
+      "titleRu": "Давление гидравлики",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydraulic_agc.lock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "AGC locked",
+      "titleRu": "АРН заблокирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hydraulic_agc.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "auto",
+        "manual",
+        "hold",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

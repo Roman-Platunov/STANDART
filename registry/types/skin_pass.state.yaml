@@ -1,0 +1,20 @@
+sid: c85024ca
+path: skin_pass.state
+aliases:
+  short: skin_pass.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стана
+  en: Mill state
+fingerprint: sha256:c85024ca3b0c9c57b33cbdedad7d6410b324da7feb050d7b65740394b06dc9d4
+enumValues:
+  - roll
+  - idle
+  - change
+  - fault

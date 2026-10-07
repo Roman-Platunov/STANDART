@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-oiler_machine.json",
+  "types": [
+    {
+      "path": "oiler_machine.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Strip oiler id",
+      "titleRu": "ID маслонаносителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oiler_machine.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oiler_machine.coat",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Oil coat weight",
+      "titleRu": "Масса масляного покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oiler_machine.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oiler_machine.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oiler_machine.uniform",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Coat uniformity",
+      "titleRu": "Равномерность покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oiler_machine.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coat in spec",
+      "titleRu": "Покрытие в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oiler_machine.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "electrostatic",
+        "spray",
+        "roll",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B26",
+  "name": "layer-b-scarfing_line.json",
+  "types": [
+    {
+      "path": "scarfing_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Scarfing machine id",
+      "titleRu": "ID машины огневой зачистки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scarfing_line.slab.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slab id",
+      "titleRu": "ID сляба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scarfing_line.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Scarf depth",
+      "titleRu": "Глубина зачистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scarfing_line.o2",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Oxygen use",
+      "titleRu": "Расход кислорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scarfing_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Pass speed",
+      "titleRu": "Скорость прохода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scarfing_line.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Surface coverage",
+      "titleRu": "Покрытие поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scarfing_line.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pass complete",
+      "titleRu": "Проход завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scarfing_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scarf",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B26",
+  "name": "layer-b-dummy_bar.json",
+  "types": [
+    {
+      "path": "dummy_bar.caster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dummy bar system id",
+      "titleRu": "ID системы затравки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dummy_bar.position",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Dummy bar position",
+      "titleRu": "Позиция затравки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dummy_bar.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Withdrawal speed",
+      "titleRu": "Скорость вытягивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dummy_bar.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Withdrawal force",
+      "titleRu": "Усилие вытягивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dummy_bar.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Head temperature",
+      "titleRu": "Температура головки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dummy_bar.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Starts this campaign",
+      "titleRu": "Пусков за кампанию",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dummy_bar.engaged",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dummy bar engaged",
+      "titleRu": "Затравка введена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dummy_bar.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dummy bar state",
+      "titleRu": "Состояние затравки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "insert",
+        "withdraw",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

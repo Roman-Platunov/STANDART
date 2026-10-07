@@ -1,0 +1,111 @@
+{
+  "layer": "B26",
+  "name": "layer-b-bar_mill.json",
+  "types": [
+    {
+      "path": "bar_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bar / section mill id",
+      "titleRu": "ID сортового стана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bar_mill.bundle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bundle id",
+      "titleRu": "ID пакета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bar_mill.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Section size",
+      "titleRu": "Размер профиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bar_mill.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Finishing speed",
+      "titleRu": "Скорость чистовой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bar_mill.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Finishing temperature",
+      "titleRu": "Температура чистовой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bar_mill.tonnage",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bar_mill.cobble",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cobble",
+      "titleRu": "Авария",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bar_mill.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rebar",
+        "round",
+        "angle",
+        "channel",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

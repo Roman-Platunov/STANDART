@@ -1,0 +1,21 @@
+sid: c84c42b9
+path: steel_eaf.state
+aliases:
+  short: steel_eaf.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ДСП
+  en: EAF state
+fingerprint: sha256:c84c42b9c1abca3650f581c7902f0647519630ca3f579edb7092728ce49d37ce
+enumValues:
+  - charge
+  - melt
+  - refine
+  - tap
+  - fault

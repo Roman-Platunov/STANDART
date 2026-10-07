@@ -1,0 +1,109 @@
+{
+  "layer": "B26",
+  "name": "layer-b-slit_line.json",
+  "types": [
+    {
+      "path": "slit_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slitting line id",
+      "titleRu": "ID линии продольной резки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "slit_line.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Parent coil id",
+      "titleRu": "ID исходного рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "slit_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slit_line.strips",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Number of strips",
+      "titleRu": "Число полос",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slit_line.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Strip width",
+      "titleRu": "Ширина полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slit_line.burr",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Edge burr",
+      "titleRu": "Заусенец",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slit_line.knife.change",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Knife change due",
+      "titleRu": "Пора менять ножи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "slit_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "slit",
+        "setup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

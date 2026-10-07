@@ -1,0 +1,20 @@
+sid: "201930e8"
+path: tundish_heat.state
+aliases:
+  short: tundish_heat.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние промковша
+  en: Tundish state
+fingerprint: sha256:201930e824d3e730d13a38010cf72c7d15190d8526d33c2b3b463852e84bdf68
+enumValues:
+  - preheat
+  - cast
+  - idle
+  - fault

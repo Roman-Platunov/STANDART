@@ -1,0 +1,118 @@
+{
+  "layer": "B26",
+  "name": "layer-b-tundish_heat.json",
+  "types": [
+    {
+      "path": "tundish_heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tundish heater id",
+      "titleRu": "ID подогрева промковша",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tundish_heat.caster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Caster id",
+      "titleRu": "ID МНЛЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tundish_heat.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tundish temperature",
+      "titleRu": "Температура промковша",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tundish_heat.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Heater power",
+      "titleRu": "Мощность нагрева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tundish_heat.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Steel level",
+      "titleRu": "Уровень стали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tundish_heat.cover",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cover powder",
+      "titleRu": "Накрывающий порошок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tundish_heat.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready for cast",
+      "titleRu": "Готов к разливке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tundish_heat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tundish state",
+      "titleRu": "Состояние промковша",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "preheat",
+        "cast",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

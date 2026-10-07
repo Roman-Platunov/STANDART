@@ -1,0 +1,20 @@
+sid: d31fed86
+path: alloy_bunker.state
+aliases:
+  short: alloy_bunker.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние бункера
+  en: Bunker state
+fingerprint: sha256:d31fed86a6eb6c07ec9c673ec01b804c7451f34ba894c8707b4f5209fdfd7394
+enumValues:
+  - ready
+  - feed
+  - refill
+  - fault

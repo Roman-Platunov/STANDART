@@ -1,0 +1,111 @@
+{
+  "layer": "B26",
+  "name": "layer-b-shape_meter.json",
+  "types": [
+    {
+      "path": "shape_meter.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shape / flatness meter id",
+      "titleRu": "ID измерителя плоскостности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shape_meter.flatness",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Flatness (I-units)",
+      "titleRu": "Плоскостность (I)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shape_meter.crown",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Crown",
+      "titleRu": "Выпуклость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shape_meter.wedge",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Wedge",
+      "titleRu": "Клиновидность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shape_meter.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Strip speed",
+      "titleRu": "Скорость полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shape_meter.zones",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active zones",
+      "titleRu": "Активных зон",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shape_meter.out",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Out of band",
+      "titleRu": "Вне допуска",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shape_meter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Meter state",
+      "titleRu": "Состояние измерителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "measure",
+        "calibrate",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

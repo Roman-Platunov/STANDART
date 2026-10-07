@@ -1,0 +1,124 @@
+{
+  "layer": "B26",
+  "name": "layer-b-mold_level.json",
+  "types": [
+    {
+      "path": "mold_level.caster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Caster mold level control id",
+      "titleRu": "ID уровня в кристаллизаторе",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mold_level.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mold level",
+      "titleRu": "Уровень металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mold_level.setpoint",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Level setpoint",
+      "titleRu": "Уставка уровня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mold_level.noise",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Level noise",
+      "titleRu": "Шум уровня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mold_level.stopper",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stopper position",
+      "titleRu": "Положение стопора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mold_level.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Casting speed",
+      "titleRu": "Скорость разливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mold_level.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Level alarm",
+      "titleRu": "Тревога уровня",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mold_level.sensor",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sensor",
+      "titleRu": "Датчик",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "eddy",
+        "radio",
+        "optical",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

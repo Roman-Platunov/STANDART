@@ -1,0 +1,116 @@
+{
+  "layer": "B26",
+  "name": "layer-b-slag_yard.json",
+  "types": [
+    {
+      "path": "slag_yard.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slag yard id",
+      "titleRu": "ID шлакового двора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "slag_yard.in",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Slag inbound",
+      "titleRu": "Поступление шлака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slag_yard.processed",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Processed",
+      "titleRu": "Переработано",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slag_yard.metal.rec",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Metal recovery",
+      "titleRu": "Извлечение металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "slag_yard.stock",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Stockpile",
+      "titleRu": "Отвал",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slag_yard.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Yard dust",
+      "titleRu": "Пыль на дворе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slag_yard.hot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hot slag present",
+      "titleRu": "Есть горячий шлак",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "slag_yard.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Yard state",
+      "titleRu": "Состояние двора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receive",
+        "process",
+        "ship",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

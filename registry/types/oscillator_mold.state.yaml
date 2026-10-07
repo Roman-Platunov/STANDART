@@ -1,0 +1,19 @@
+sid: cef39a55
+path: oscillator_mold.state
+aliases:
+  short: oscillator_mold.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние качания
+  en: Oscillator state
+fingerprint: sha256:cef39a5504db09caf59da55992141e01efcb39752e990a27fe3d67487f2479a6
+enumValues:
+  - oscillate
+  - idle
+  - fault

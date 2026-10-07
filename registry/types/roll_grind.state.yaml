@@ -1,0 +1,20 @@
+sid: "7e655409"
+path: roll_grind.state
+aliases:
+  short: roll_grind.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станка
+  en: Machine state
+fingerprint: sha256:7e65540924160c9159605e8234802bd37ae7450c7f4b4a1674c7348d810a0abc
+enumValues:
+  - grind
+  - measure
+  - idle
+  - fault

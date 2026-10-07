@@ -1,0 +1,20 @@
+sid: 4b201517
+path: temper_pass.state
+aliases:
+  short: temper_pass.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стана
+  en: Mill state
+fingerprint: sha256:4b2015175f18b962b4eca8dcd3ccfafcd15e9707e1f7ade60d57c0f439338a0f
+enumValues:
+  - roll
+  - idle
+  - change
+  - fault

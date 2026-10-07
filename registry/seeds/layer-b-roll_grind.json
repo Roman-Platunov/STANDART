@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-roll_grind.json",
+  "types": [
+    {
+      "path": "roll_grind.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Roll grinding machine id",
+      "titleRu": "ID вальцешлифовального станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "roll_grind.roll.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Roll id",
+      "titleRu": "ID валка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "roll_grind.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Roll diameter",
+      "titleRu": "Диаметр валка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roll_grind.crown",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Ground crown",
+      "titleRu": "Шлифованная выпуклость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roll_grind.roughness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Ra",
+      "titleRu": "Ra",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roll_grind.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Grind time",
+      "titleRu": "Время шлифовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roll_grind.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grind pass",
+      "titleRu": "Шлифовка принята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "roll_grind.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние станка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grind",
+        "measure",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

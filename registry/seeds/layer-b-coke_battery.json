@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-coke_battery.json",
+  "types": [
+    {
+      "path": "coke_battery.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coke oven battery id",
+      "titleRu": "ID коксовой батареи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coke_battery.ovens",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ovens under fire",
+      "titleRu": "Печей под обогревом",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coke_battery.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Flue temperature",
+      "titleRu": "Температура борова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coke_battery.coke",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Coke production",
+      "titleRu": "Выпуск кокса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coke_battery.gas",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "COG production",
+      "titleRu": "Выпуск коксового газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coke_battery.push",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pushes today",
+      "titleRu": "Выталкиваний за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coke_battery.emission",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door emission",
+      "titleRu": "Эмиссия из дверей",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coke_battery.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Battery state",
+      "titleRu": "Состояние батареи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "carbonize",
+        "push",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

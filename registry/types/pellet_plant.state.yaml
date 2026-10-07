@@ -1,0 +1,20 @@
+sid: 959b88ca
+path: pellet_plant.state
+aliases:
+  short: pellet_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фабрики
+  en: Plant state
+fingerprint: sha256:959b88ca7acfd727819ac76d3d2f3dc955b75c4eccd240142ef5cd4daeb5ab3f
+enumValues:
+  - indurate
+  - idle
+  - maintain
+  - fault

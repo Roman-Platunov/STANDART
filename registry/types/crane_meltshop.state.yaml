@@ -1,0 +1,20 @@
+sid: 9e1b3127
+path: crane_meltshop.state
+aliases:
+  short: crane_meltshop.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние крана
+  en: Crane state
+fingerprint: sha256:9e1b31276394dd9bdc7a6dab61c976c2f4cff2885a77c6db267e6a372c8cc064
+enumValues:
+  - idle
+  - travel
+  - lift
+  - fault

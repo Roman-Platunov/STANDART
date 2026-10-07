@@ -1,0 +1,20 @@
+sid: edbc8b65
+path: sinter_strand.state
+aliases:
+  short: sinter_strand.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Strand state
+fingerprint: sha256:edbc8b650510c29ad47b6dbed1c55d9b4bbb429cf16dca9987fd60a9724f6095
+enumValues:
+  - sinter
+  - idle
+  - maintain
+  - fault

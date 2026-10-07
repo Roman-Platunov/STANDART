@@ -1,0 +1,20 @@
+sid: 976a3067
+path: argon_inject.state
+aliases:
+  short: argon_inject.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние продувки
+  en: Stir state
+fingerprint: sha256:976a306731843fa4e542048e8e8500008528fa4599057d3c718c7a50042b1670
+enumValues:
+  - stir
+  - idle
+  - blocked
+  - fault

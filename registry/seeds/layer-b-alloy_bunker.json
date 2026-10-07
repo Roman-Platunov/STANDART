@@ -1,0 +1,118 @@
+{
+  "layer": "B26",
+  "name": "layer-b-alloy_bunker.json",
+  "types": [
+    {
+      "path": "alloy_bunker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ferroalloy bunker id",
+      "titleRu": "ID бункера ферросплавов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "alloy_bunker.material",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Material code",
+      "titleRu": "Код материала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "alloy_bunker.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bunker level",
+      "titleRu": "Уровень бункера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "alloy_bunker.feed",
+      "kind": "quantity",
+      "unit": "kg/min",
+      "titleEn": "Feed rate",
+      "titleRu": "Скорость подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alloy_bunker.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Moisture",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "alloy_bunker.batch",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Last batch weight",
+      "titleRu": "Масса последней порции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alloy_bunker.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low level",
+      "titleRu": "Низкий уровень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "alloy_bunker.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bunker state",
+      "titleRu": "Состояние бункера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "feed",
+        "refill",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

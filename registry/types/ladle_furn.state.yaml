@@ -1,0 +1,21 @@
+sid: eb419c7a
+path: ladle_furn.state
+aliases:
+  short: ladle_furn.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние УПК
+  en: LF state
+fingerprint: sha256:eb419c7a40f555b384a731667ed7b227e32a66802fad5a27370be146a4730311
+enumValues:
+  - heat
+  - stir
+  - alloy
+  - idle
+  - fault

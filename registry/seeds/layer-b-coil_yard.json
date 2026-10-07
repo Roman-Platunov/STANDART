@@ -1,0 +1,116 @@
+{
+  "layer": "B26",
+  "name": "layer-b-coil_yard.json",
+  "types": [
+    {
+      "path": "coil_yard.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil yard id",
+      "titleRu": "ID склада рулонов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coil_yard.inventory",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Inventory mass",
+      "titleRu": "Масса запасов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_yard.in",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Inbound",
+      "titleRu": "Поступление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_yard.out",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Outbound",
+      "titleRu": "Отгрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_yard.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Yard occupancy",
+      "titleRu": "Занятость склада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coil_yard.age.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Average coil age",
+      "titleRu": "Средний возраст рулона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_yard.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Yard full",
+      "titleRu": "Склад полон",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coil_yard.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Yard state",
+      "titleRu": "Состояние склада",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receive",
+        "store",
+        "ship",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

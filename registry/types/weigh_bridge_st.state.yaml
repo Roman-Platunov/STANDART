@@ -1,0 +1,20 @@
+sid: 120b4e46
+path: weigh_bridge_st.state
+aliases:
+  short: weigh_bridge_st.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние весов
+  en: Bridge state
+fingerprint: sha256:120b4e4600f3d13e55b5ed0dc6ad7594c766c8a01dc03ded0ae50193e8b3590d
+enumValues:
+  - idle
+  - weigh
+  - print
+  - fault

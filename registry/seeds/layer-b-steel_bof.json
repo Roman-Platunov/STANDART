@@ -1,0 +1,115 @@
+{
+  "layer": "B26",
+  "name": "layer-b-steel_bof.json",
+  "types": [
+    {
+      "path": "steel_bof.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BOF converter id",
+      "titleRu": "ID конвертера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steel_bof.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steel_bof.o2",
+      "kind": "quantity",
+      "unit": "Nm3/min",
+      "titleEn": "Oxygen blow rate",
+      "titleRu": "Расход кислорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_bof.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_bof.carbon",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Carbon estimate",
+      "titleRu": "Оценка углерода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "steel_bof.lance.h",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Lance height",
+      "titleRu": "Высота фурмы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steel_bof.slopping",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Slopping",
+      "titleRu": "Выброс",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "steel_bof.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "BOF state",
+      "titleRu": "Состояние конвертера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "blow",
+        "reblow",
+        "tap",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

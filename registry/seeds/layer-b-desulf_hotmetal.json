@@ -1,0 +1,111 @@
+{
+  "layer": "B26",
+  "name": "layer-b-desulf_hotmetal.json",
+  "types": [
+    {
+      "path": "desulf_hotmetal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hot metal desulfurization id",
+      "titleRu": "ID десульфурации чугуна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "desulf_hotmetal.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Torpedo / ladle id",
+      "titleRu": "ID миксера/ковша",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "desulf_hotmetal.s.in",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Sulfur in",
+      "titleRu": "Сера на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desulf_hotmetal.s.out",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Sulfur out",
+      "titleRu": "Сера на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desulf_hotmetal.reagent",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Reagent use",
+      "titleRu": "Расход реагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desulf_hotmetal.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hot metal temperature",
+      "titleRu": "Температура чугуна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desulf_hotmetal.target",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "S target met",
+      "titleRu": "Цель по S достигнута",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "desulf_hotmetal.reagent_type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reagent",
+      "titleRu": "Реагент",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mg",
+        "cao",
+        "caf2",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

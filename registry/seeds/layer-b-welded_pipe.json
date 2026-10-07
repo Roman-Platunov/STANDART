@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-welded_pipe.json",
+  "types": [
+    {
+      "path": "welded_pipe.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Welded pipe mill id",
+      "titleRu": "ID стана сварных труб",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "welded_pipe.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lot id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "welded_pipe.od",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Outside diameter",
+      "titleRu": "Наружный диаметр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welded_pipe.wt",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wall thickness",
+      "titleRu": "Толщина стенки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welded_pipe.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welded_pipe.weld.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Weld power",
+      "titleRu": "Мощность сварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "welded_pipe.ut.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Weld UT fail",
+      "titleRu": "Провал УЗК шва",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "welded_pipe.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "erw",
+        "saw",
+        "hfw",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

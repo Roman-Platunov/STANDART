@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-torch_cut.json",
+  "types": [
+    {
+      "path": "torch_cut.caster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Torch cut-off id",
+      "titleRu": "ID газовой резки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "torch_cut.slab.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cut piece id",
+      "titleRu": "ID отрезанной заготовки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "torch_cut.length",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Cut length",
+      "titleRu": "Длина реза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "torch_cut.o2",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Cutting oxygen",
+      "titleRu": "Кислород резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "torch_cut.speed",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Cut speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "torch_cut.kerf",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Kerf width",
+      "titleRu": "Ширина реза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "torch_cut.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cut complete",
+      "titleRu": "Рез завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "torch_cut.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Torch state",
+      "titleRu": "Состояние резки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "idle",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

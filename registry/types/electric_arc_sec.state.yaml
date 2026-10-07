@@ -1,0 +1,20 @@
+sid: 4b935d56
+path: electric_arc_sec.state
+aliases:
+  short: electric_arc_sec.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дуги
+  en: Arc state
+fingerprint: sha256:4b935d5635cf2ea38188a4fd82e9dbad982734a2d69c93305ed6658d8d6c79d7
+enumValues:
+  - arc
+  - idle
+  - tap
+  - fault

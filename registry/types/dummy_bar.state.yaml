@@ -1,0 +1,20 @@
+sid: 6a12bccf
+path: dummy_bar.state
+aliases:
+  short: dummy_bar.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние затравки
+  en: Dummy bar state
+fingerprint: sha256:6a12bccf56117ad7e095c1bba1a3b0a15124c9995a44554cc3abd619aabf2fd9
+enumValues:
+  - ready
+  - insert
+  - withdraw
+  - fault

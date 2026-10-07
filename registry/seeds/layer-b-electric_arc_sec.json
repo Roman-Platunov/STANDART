@@ -1,0 +1,116 @@
+{
+  "layer": "B26",
+  "name": "layer-b-electric_arc_sec.json",
+  "types": [
+    {
+      "path": "electric_arc_sec.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Secondary EAF / ladle arc id",
+      "titleRu": "ID вторичной дуги / ковшовой",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electric_arc_sec.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Arc power",
+      "titleRu": "Мощность дуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electric_arc_sec.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Arc voltage",
+      "titleRu": "Напряжение дуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electric_arc_sec.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Current",
+      "titleRu": "Ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electric_arc_sec.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Steel temperature",
+      "titleRu": "Температура стали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electric_arc_sec.foamy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Foamy slag index",
+      "titleRu": "Индекс пенного шлака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "electric_arc_sec.flicker",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flicker high",
+      "titleRu": "Высокий фликер",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "electric_arc_sec.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Arc state",
+      "titleRu": "Состояние дуги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "arc",
+        "idle",
+        "tap",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

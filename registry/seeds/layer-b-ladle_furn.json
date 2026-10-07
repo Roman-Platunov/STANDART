@@ -1,0 +1,111 @@
+{
+  "layer": "B26",
+  "name": "layer-b-ladle_furn.json",
+  "types": [
+    {
+      "path": "ladle_furn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ladle furnace id",
+      "titleRu": "ID УПК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ladle_furn.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ladle_furn.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Arc power",
+      "titleRu": "Мощность дуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ladle_furn.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Steel temperature",
+      "titleRu": "Температура стали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ladle_furn.ar",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Argon stir",
+      "titleRu": "Продувка аргоном",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ladle_furn.alloy",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Alloy added",
+      "titleRu": "Добавлено ферросплавов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ladle_furn.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready to cast",
+      "titleRu": "Готово к разливке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ladle_furn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "LF state",
+      "titleRu": "Состояние УПК",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "stir",
+        "alloy",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

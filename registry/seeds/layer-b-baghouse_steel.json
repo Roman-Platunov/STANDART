@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-baghouse_steel.json",
+  "types": [
+    {
+      "path": "baghouse_steel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steel plant baghouse id",
+      "titleRu": "ID рукавного фильтра меткомбината",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "baghouse_steel.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Baghouse DP",
+      "titleRu": "Перепад на фильтре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse_steel.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Outlet dust",
+      "titleRu": "Пыль на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse_steel.pulse",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pulse cycles today",
+      "titleRu": "Импульсов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse_steel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse_steel.hoppers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hoppers high",
+      "titleRu": "Бункеров с высоким уровнем",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "baghouse_steel.bag.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bag failure",
+      "titleRu": "Отказ рукава",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "baghouse_steel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Baghouse state",
+      "titleRu": "Состояние фильтра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "filter",
+        "pulse",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

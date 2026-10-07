@@ -1,0 +1,110 @@
+{
+  "layer": "B26",
+  "name": "layer-b-galv_line.json",
+  "types": [
+    {
+      "path": "galv_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Galvanizing line id",
+      "titleRu": "ID линии цинкования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "galv_line.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "galv_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galv_line.coat",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Coating weight",
+      "titleRu": "Масса покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galv_line.pot.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zinc pot temperature",
+      "titleRu": "Температура цинковой ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galv_line.air.knife",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Air knife pressure",
+      "titleRu": "Давление воздушного ножа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galv_line.spangle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spangle control on",
+      "titleRu": "Контроль узора включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "galv_line.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hdg",
+        "galvneal",
+        "galfan",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
