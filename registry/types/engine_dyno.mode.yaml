@@ -1,0 +1,21 @@
+sid: 69594cf0
+path: engine_dyno.mode
+aliases:
+  short: engine_dyno.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим стенда
+  en: Dyno mode
+fingerprint: sha256:69594cf04166dab65ec644f24dc17119ca237ff3a4eda8b4eb935b9b85e1461b
+enumValues:
+  - steady
+  - sweep
+  - map
+  - endurance
+  - abort

@@ -1,0 +1,21 @@
+sid: 1b5cb9a6
+path: eln.status
+aliases:
+  short: eln.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус эксперимента
+  en: Experiment status
+fingerprint: sha256:1b5cb9a657b43155b41386c61e4b7ba812fecfb22582c2dcbc2ad0d273c822c2
+enumValues:
+  - draft
+  - in_progress
+  - review
+  - signed
+  - archived

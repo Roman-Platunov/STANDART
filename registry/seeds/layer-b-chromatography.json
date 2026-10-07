@@ -1,0 +1,112 @@
+{
+  "layer": "B13",
+  "name": "layer-b-chromatography.json",
+  "types": [
+    {
+      "path": "chromatography.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chromatography system id",
+      "titleRu": "ID хроматографа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chromatography.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chromatography run id",
+      "titleRu": "ID прогона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chromatography.flow",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Mobile phase flow",
+      "titleRu": "Расход элюента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chromatography.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "System pressure",
+      "titleRu": "Давление системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chromatography.column.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Column temperature",
+      "titleRu": "Температура колонки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chromatography.rt.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Retention time",
+      "titleRu": "Время удерживания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chromatography.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "System leak",
+      "titleRu": "Утечка системы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chromatography.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Technique",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hplc",
+        "uhplc",
+        "gc",
+        "ic",
+        "prep",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

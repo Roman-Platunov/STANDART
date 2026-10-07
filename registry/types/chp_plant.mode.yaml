@@ -1,0 +1,21 @@
+sid: 8b46f80d
+path: chp_plant.mode
+aliases:
+  short: chp_plant.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим когенерации
+  en: CHP mode
+fingerprint: sha256:8b46f80dc9335d439d94dd6ff4471cdf436ae6e3d5a15dc1fe5ce88e19af19a3
+enumValues:
+  - heat_led
+  - power_led
+  - follow
+  - island
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B13",
+  "name": "layer-b-print_press.json",
+  "types": [
+    {
+      "path": "print_press.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Printing press id",
+      "titleRu": "ID печатной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "print_press.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Print job id",
+      "titleRu": "ID печатного заказа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "print_press.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Impressions per hour",
+      "titleRu": "Оттисков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_press.density",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ink density",
+      "titleRu": "Плотность краски",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_press.waste",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Makeready waste",
+      "titleRu": "Отходы приладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "print_press.web.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Web tension",
+      "titleRu": "Натяжение полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_press.register.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Register OK",
+      "titleRu": "Приводка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "print_press.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Print process",
+      "titleRu": "Способ печати",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "offset",
+        "flexo",
+        "gravure",
+        "digital",
+        "screen",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

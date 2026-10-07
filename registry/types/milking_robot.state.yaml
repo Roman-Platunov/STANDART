@@ -1,0 +1,22 @@
+sid: 49186f55
+path: milking_robot.state
+aliases:
+  short: milking_robot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние робота
+  en: Robot state
+fingerprint: sha256:49186f55f2a8ae8b15695596d4da7c4693aecd8c441b2aacbf8bda68d3f87133
+enumValues:
+  - idle
+  - attach
+  - milk
+  - post
+  - wash
+  - fault

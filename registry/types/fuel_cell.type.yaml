@@ -1,0 +1,21 @@
+sid: 2c2145fc
+path: fuel_cell.type
+aliases:
+  short: fuel_cell.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип ТЭ
+  en: Fuel cell type
+fingerprint: sha256:2c2145fc9d90ed1700d88ed4b18ed9229add80164e90e99cab7d752e8765391f
+enumValues:
+  - pem
+  - sofc
+  - pafe
+  - mcfc
+  - other

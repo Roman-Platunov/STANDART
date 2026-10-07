@@ -1,0 +1,21 @@
+sid: 6a1ac692
+path: centrifuge_lab.state
+aliases:
+  short: centrifuge_lab.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние центрифуги
+  en: Centrifuge state
+fingerprint: sha256:6a1ac6924631db5721f657f3e6afbd968caef15e1574d3159d772f7c3a543080
+enumValues:
+  - idle
+  - accel
+  - run
+  - brake
+  - fault

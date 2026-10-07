@@ -1,0 +1,116 @@
+{
+  "layer": "B13",
+  "name": "layer-b-ln2_tank.json",
+  "types": [
+    {
+      "path": "ln2_tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LN2 tank id",
+      "titleRu": "ID ёмкости жидкого азота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ln2_tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LN2 level",
+      "titleRu": "Уровень LN₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ln2_tank.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Tank pressure",
+      "titleRu": "Давление ёмкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ln2_tank.loss.rate",
+      "kind": "quantity",
+      "unit": "%/d",
+      "titleEn": "Boil-off rate",
+      "titleRu": "Скорость испарения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ln2_tank.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inner vessel temperature",
+      "titleRu": "Температура внутреннего сосуда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ln2_tank.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low level alarm",
+      "titleRu": "Низкий уровень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ln2_tank.relief",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Relief valve open",
+      "titleRu": "ПК открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ln2_tank.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tank state",
+      "titleRu": "Состояние ёмкости",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "fill",
+        "low",
+        "vent",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

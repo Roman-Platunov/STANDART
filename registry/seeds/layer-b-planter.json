@@ -1,0 +1,119 @@
+{
+  "layer": "B13",
+  "name": "layer-b-planter.json",
+  "types": [
+    {
+      "path": "planter.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Planter id",
+      "titleRu": "ID сеялки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "planter.field.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Field id",
+      "titleRu": "ID поля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "planter.rate.seeds",
+      "kind": "quantity",
+      "unit": "/ha",
+      "titleEn": "Seeding rate",
+      "titleRu": "Норма высева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "planter.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Planting depth",
+      "titleRu": "Глубина заделки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "planter.singulation",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Singulation",
+      "titleRu": "Сингуляция",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "planter.skips",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Skip rate",
+      "titleRu": "Доля пропусков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "planter.section.off",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Section control off",
+      "titleRu": "Секция выключена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "planter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Planter state",
+      "titleRu": "Состояние сеялки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "transport",
+        "plant",
+        "turn",
+        "fill",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

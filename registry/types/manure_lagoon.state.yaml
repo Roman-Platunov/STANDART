@@ -1,0 +1,21 @@
+sid: ca14b847
+path: manure_lagoon.state
+aliases:
+  short: manure_lagoon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние лагуны
+  en: Lagoon state
+fingerprint: sha256:ca14b8476363e50a0c49479dbfbff1f29b2b67181664b625fb9a7385e86f608d
+enumValues:
+  - ok
+  - agitate
+  - pump
+  - full
+  - ice

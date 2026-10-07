@@ -1,0 +1,20 @@
+sid: 376c7931
+path: septic.state
+aliases:
+  short: septic.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:376c793181bfd8c50aaac77b3aae020800df4f2fdc28ac02c0d0d8b6bedca08e
+enumValues:
+  - ok
+  - pump
+  - alarm
+  - service_due

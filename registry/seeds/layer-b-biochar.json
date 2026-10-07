@@ -1,0 +1,119 @@
+{
+  "layer": "B13",
+  "name": "layer-b-biochar.json",
+  "types": [
+    {
+      "path": "biochar.kiln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Biochar kiln id",
+      "titleRu": "ID печи биоугля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biochar.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Biochar batch id",
+      "titleRu": "ID партии биоугля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biochar.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pyrolysis temperature",
+      "titleRu": "Температура пиролиза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biochar.residence.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Residence time",
+      "titleRu": "Время пребывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biochar.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Char yield",
+      "titleRu": "Выход угля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biochar.h_c",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "H/C ratio",
+      "titleRu": "Отношение H/C",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biochar.feed.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Feed moisture",
+      "titleRu": "Влажность сырья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biochar.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process type",
+      "titleRu": "Тип процесса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "slow",
+        "fast",
+        "gasification",
+        "hydrothermal"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

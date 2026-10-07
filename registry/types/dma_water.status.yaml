@@ -1,0 +1,21 @@
+sid: ac7a8665
+path: dma_water.status
+aliases:
+  short: dma_water.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус зоны
+  en: DMA status
+fingerprint: sha256:ac7a86655c8114220b492500d1636e94138d5adecaa12aef9f356c4de08283c3
+enumValues:
+  - stable
+  - leak_watch
+  - burst
+  - isolation
+  - unknown

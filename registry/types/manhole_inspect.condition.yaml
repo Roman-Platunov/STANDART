@@ -1,0 +1,21 @@
+sid: 929c5376
+path: manhole_inspect.condition
+aliases:
+  short: manhole_inspect.condition
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: Condition
+fingerprint: sha256:929c53763851b4d4bbb60794bec6990aa818cfa9bb8e7cb33ed70c134dc63891
+enumValues:
+  - good
+  - fair
+  - poor
+  - collapse
+  - unknown

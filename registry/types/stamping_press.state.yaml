@@ -1,0 +1,21 @@
+sid: 99a8a916
+path: stamping_press.state
+aliases:
+  short: stamping_press.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:99a8a916f5a4efad26175dce0b57614aea6cb484a43fe31bf6a545a1a4629c37
+enumValues:
+  - idle
+  - single
+  - continuous
+  - jog
+  - fault

@@ -1,0 +1,111 @@
+{
+  "layer": "B13",
+  "name": "layer-b-engine_dyno.json",
+  "types": [
+    {
+      "path": "engine_dyno.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Engine dyno stand id",
+      "titleRu": "ID моторного стенда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "engine_dyno.uut.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Engine under test id",
+      "titleRu": "ID испытываемого двигателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "engine_dyno.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Measured torque",
+      "titleRu": "Измеренный момент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_dyno.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Engine speed",
+      "titleRu": "Обороты двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_dyno.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Measured power",
+      "titleRu": "Измеренная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_dyno.oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_dyno.interlock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Safety interlock",
+      "titleRu": "Блокировка безопасности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "engine_dyno.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dyno mode",
+      "titleRu": "Режим стенда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "steady",
+        "sweep",
+        "map",
+        "endurance",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 82c83170
+path: biochar.process
+aliases:
+  short: biochar.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип процесса
+  en: Process type
+fingerprint: sha256:82c831706eb3638a35ff8c042a3f887f7c45eeca1e9aff6f19e8eb87b1550fa9
+enumValues:
+  - slow
+  - fast
+  - gasification
+  - hydrothermal

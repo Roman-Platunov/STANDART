@@ -1,0 +1,22 @@
+sid: 5d9ef55d
+path: bottling_line.state
+aliases:
+  short: bottling_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:5d9ef55d2334f7052c528d82b029ec245dd6585a4beb86a2f8dd6f75ad9c202c
+enumValues:
+  - run
+  - starved
+  - blocked
+  - changeover
+  - cip
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B13",
+  "name": "layer-b-fuel_cell.json",
+  "types": [
+    {
+      "path": "fuel_cell.stack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel cell stack id",
+      "titleRu": "ID стека ТЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fuel_cell.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel cell system id",
+      "titleRu": "ID системы ТЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fuel_cell.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Stack power",
+      "titleRu": "Мощность стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Stack voltage",
+      "titleRu": "Напряжение стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Stack current",
+      "titleRu": "Ток стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stack temperature",
+      "titleRu": "Температура стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell.h2.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hydrogen utilization",
+      "titleRu": "Использование водорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fuel cell type",
+      "titleRu": "Тип ТЭ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pem",
+        "sofc",
+        "pafe",
+        "mcfc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

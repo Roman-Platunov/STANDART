@@ -1,0 +1,118 @@
+{
+  "layer": "B13",
+  "name": "layer-b-seed_bank.json",
+  "types": [
+    {
+      "path": "seed_bank.accession.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Seed accession id",
+      "titleRu": "ID образца семян",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seed_bank.vault.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Seed vault id",
+      "titleRu": "ID хранилища семян",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seed_bank.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Storage temperature",
+      "titleRu": "Температура хранения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seed_bank.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Seed moisture",
+      "titleRu": "Влажность семян",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "seed_bank.viability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Germination / viability",
+      "titleRu": "Всхожесть",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "seed_bank.packets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Packet count",
+      "titleRu": "Число пакетов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seed_bank.regen.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Regeneration due",
+      "titleRu": "Требуется регенерация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "seed_bank.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Accession status",
+      "titleRu": "Статус образца",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "active",
+        "base",
+        "safety",
+        "distributed",
+        "lost"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

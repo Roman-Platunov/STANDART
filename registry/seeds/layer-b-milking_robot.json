@@ -1,0 +1,111 @@
+{
+  "layer": "B13",
+  "name": "layer-b-milking_robot.json",
+  "types": [
+    {
+      "path": "milking_robot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Milking robot id",
+      "titleRu": "ID доильного робота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "milking_robot.cow.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cow id",
+      "titleRu": "ID коровы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "milking_robot.yield.kg",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Milk yield",
+      "titleRu": "Надой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "milking_robot.flow",
+      "kind": "quantity",
+      "unit": "kg/min",
+      "titleEn": "Milk flow",
+      "titleRu": "Скорость молокоотдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "milking_robot.conductivity",
+      "kind": "quantity",
+      "unit": "mS/cm",
+      "titleEn": "Milk conductivity",
+      "titleRu": "Электропроводность молока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "milking_robot.visits.day",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Visits today",
+      "titleRu": "Визитов сегодня",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "milking_robot.kickoff",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Teat cup kick-off",
+      "titleRu": "Сброс стакана",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "milking_robot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Robot state",
+      "titleRu": "Состояние робота",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "attach",
+        "milk",
+        "post",
+        "wash",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B13",
+  "name": "layer-b-coke_oven.json",
+  "types": [
+    {
+      "path": "coke_oven.battery.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coke battery id",
+      "titleRu": "ID коксовой батареи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coke_oven.oven.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coke oven id",
+      "titleRu": "ID коксовой печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coke_oven.flue.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Flue temperature",
+      "titleRu": "Температура обогрева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coke_oven.coking.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Coking time",
+      "titleRu": "Время коксования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coke_oven.gas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Coke oven gas flow",
+      "titleRu": "Расход коксового газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coke_oven.push.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Pushing force",
+      "titleRu": "Усилие выдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coke_oven.door.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door leak",
+      "titleRu": "Утечка из двери",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coke_oven.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Oven state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "coke",
+        "ready",
+        "push",
+        "idle",
+        "repair"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

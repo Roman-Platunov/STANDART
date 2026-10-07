@@ -1,0 +1,22 @@
+sid: 4e61da68
+path: coke_oven.state
+aliases:
+  short: coke_oven.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Oven state
+fingerprint: sha256:4e61da68dc83da7aea9a5b0685f2cde49e3949eb76f3935d2f12ee6487ebe05b
+enumValues:
+  - charge
+  - coke
+  - ready
+  - push
+  - idle
+  - repair

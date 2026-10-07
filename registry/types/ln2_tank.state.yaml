@@ -1,0 +1,21 @@
+sid: 298830ae
+path: ln2_tank.state
+aliases:
+  short: ln2_tank.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ёмкости
+  en: Tank state
+fingerprint: sha256:298830aeab97518df82943814ddbd58799b16138cca49b1a055a20622bc576c7
+enumValues:
+  - ok
+  - fill
+  - low
+  - vent
+  - fault

@@ -1,0 +1,112 @@
+{
+  "layer": "B13",
+  "name": "layer-b-eaf_steel.json",
+  "types": [
+    {
+      "path": "eaf_steel.furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EAF id",
+      "titleRu": "ID ДСП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "eaf_steel.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat id",
+      "titleRu": "ID плавки ДСП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "eaf_steel.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Arc power",
+      "titleRu": "Мощность дуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eaf_steel.tap.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tap temperature",
+      "titleRu": "Температура выпуска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eaf_steel.energy.kwh_t",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Energy per tonne",
+      "titleRu": "Энергоёмкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eaf_steel.scrap.charge",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Scrap charge",
+      "titleRu": "Завалка лома",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eaf_steel.foaming",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Foamy slag",
+      "titleRu": "Пенный шлак",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "eaf_steel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "EAF state",
+      "titleRu": "Состояние ДСП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "melt",
+        "refine",
+        "tap",
+        "delay",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

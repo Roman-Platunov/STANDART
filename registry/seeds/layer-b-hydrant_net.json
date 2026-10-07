@@ -1,0 +1,111 @@
+{
+  "layer": "B13",
+  "name": "layer-b-hydrant_net.json",
+  "types": [
+    {
+      "path": "hydrant_net.hydrant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fire hydrant id",
+      "titleRu": "ID пожарного гидранта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrant_net.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hydrant zone id",
+      "titleRu": "ID зоны гидрантов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrant_net.static.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Static pressure",
+      "titleRu": "Статическое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrant_net.residual.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Residual pressure",
+      "titleRu": "Остаточное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrant_net.flow",
+      "kind": "quantity",
+      "unit": "L/s",
+      "titleEn": "Available flow",
+      "titleRu": "Доступный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrant_net.inspect.age_d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days since inspection",
+      "titleRu": "Дней с осмотра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrant_net.out_of_service",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Out of service",
+      "titleRu": "Выведен из эксплуатации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hydrant_net.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hydrant status",
+      "titleRu": "Статус гидранта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "in_service",
+        "oos",
+        "frozen",
+        "damaged",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

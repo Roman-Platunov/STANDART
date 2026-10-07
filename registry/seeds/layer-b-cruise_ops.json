@@ -1,0 +1,113 @@
+{
+  "layer": "B13",
+  "name": "layer-b-cruise_ops.json",
+  "types": [
+    {
+      "path": "cruise_ops.ship.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cruise ship id",
+      "titleRu": "ID круизного судна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cruise_ops.voyage.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Voyage id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cruise_ops.pax.onboard",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passengers onboard",
+      "titleRu": "Пассажиров на борту",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cruise_ops.crew.onboard",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Crew onboard",
+      "titleRu": "Экипажа на борту",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cruise_ops.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cabin occupancy",
+      "titleRu": "Заполненность кают",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cruise_ops.waste.m3",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Waste generated",
+      "titleRu": "Образовано отходов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cruise_ops.tender.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tender operations",
+      "titleRu": "Работают тендеры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cruise_ops.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Voyage phase",
+      "titleRu": "Фаза рейса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sea",
+        "port",
+        "embark",
+        "debark",
+        "drydock"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

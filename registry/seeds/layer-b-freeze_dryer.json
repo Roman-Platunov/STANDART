@@ -1,0 +1,116 @@
+{
+  "layer": "B13",
+  "name": "layer-b-freeze_dryer.json",
+  "types": [
+    {
+      "path": "freeze_dryer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Freeze dryer id",
+      "titleRu": "ID лиофилизатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "freeze_dryer.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lyophilization batch id",
+      "titleRu": "ID партии сушки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "freeze_dryer.shelf.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Shelf temperature",
+      "titleRu": "Температура полки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freeze_dryer.product.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freeze_dryer.chamber.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber pressure",
+      "titleRu": "Давление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freeze_dryer.residual.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Residual moisture",
+      "titleRu": "Остаточная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "freeze_dryer.collapse",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Collapse detected",
+      "titleRu": "Коллапс структуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "freeze_dryer.step",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cycle step",
+      "titleRu": "Шаг цикла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "freeze",
+        "primary",
+        "secondary",
+        "stopper",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

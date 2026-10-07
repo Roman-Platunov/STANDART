@@ -1,0 +1,113 @@
+{
+  "layer": "B13",
+  "name": "layer-b-manhole_inspect.json",
+  "types": [
+    {
+      "path": "manhole_inspect.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Manhole id",
+      "titleRu": "ID колодца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "manhole_inspect.survey.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CCTV survey id",
+      "titleRu": "ID телеинспекции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "manhole_inspect.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Manhole depth",
+      "titleRu": "Глубина колодца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "manhole_inspect.silt",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Silt depth fraction",
+      "titleRu": "Доля заиления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "manhole_inspect.h2s",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2S in manhole",
+      "titleRu": "H₂S в колодце",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "manhole_inspect.cover.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cover secure",
+      "titleRu": "Люк на месте",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "manhole_inspect.cctv.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "CCTV survey ref",
+      "titleRu": "Референс телеинспекции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "manhole_inspect.condition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Condition",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "fair",
+        "poor",
+        "collapse",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

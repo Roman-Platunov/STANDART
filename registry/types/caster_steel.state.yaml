@@ -1,0 +1,22 @@
+sid: 0ed76bb7
+path: caster_steel.state
+aliases:
+  short: caster_steel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние МНЛЗ
+  en: Caster state
+fingerprint: sha256:0ed76bb7e928ef1db2613415ab95a7d2056a932f60c60abc496e3d0d017cf327
+enumValues:
+  - prep
+  - start
+  - steady
+  - slow
+  - stop
+  - fault

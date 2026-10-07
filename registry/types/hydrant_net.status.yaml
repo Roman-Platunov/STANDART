@@ -1,0 +1,21 @@
+sid: 278448be
+path: hydrant_net.status
+aliases:
+  short: hydrant_net.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус гидранта
+  en: Hydrant status
+fingerprint: sha256:278448be399be5fffb5c3f10d3fe7f2aa5bacc06f7521789fc0f0261fb157605
+enumValues:
+  - in_service
+  - oos
+  - frozen
+  - damaged
+  - unknown

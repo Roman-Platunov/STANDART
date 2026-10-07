@@ -1,0 +1,22 @@
+sid: 849d5e86
+path: lims.test.status
+aliases:
+  short: test.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус испытания
+  en: Test status
+fingerprint: sha256:849d5e869a36f8284433d744509d8cce7c75c2c568cfb9ade23b48995905774b
+enumValues:
+  - received
+  - prep
+  - run
+  - review
+  - released
+  - cancelled

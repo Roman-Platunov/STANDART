@@ -1,0 +1,114 @@
+{
+  "layer": "B13",
+  "name": "layer-b-dac.json",
+  "types": [
+    {
+      "path": "dac.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Direct air capture unit id",
+      "titleRu": "ID установки DAC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dac.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DAC plant id",
+      "titleRu": "ID завода DAC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dac.air.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Process air flow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dac.co2.rate",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "CO2 capture rate",
+      "titleRu": "Скорость улавливания CO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dac.energy.kwh_t",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Energy per tonne",
+      "titleRu": "Энергоёмкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dac.sorbent.cycle",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sorbent cycle count",
+      "titleRu": "Циклов сорбента",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dac.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product purity",
+      "titleRu": "Чистота продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dac.tech",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "DAC technology",
+      "titleRu": "Технология DAC",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "solid",
+        "liquid",
+        "hybrid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

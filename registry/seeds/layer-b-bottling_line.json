@@ -1,0 +1,116 @@
+{
+  "layer": "B13",
+  "name": "layer-b-bottling_line.json",
+  "types": [
+    {
+      "path": "bottling_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bottling line id",
+      "titleRu": "ID линии розлива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bottling_line.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bottled SKU id",
+      "titleRu": "ID разливаемого SKU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bottling_line.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bottles per hour",
+      "titleRu": "Бутылок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottling_line.fill.volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottling_line.reject.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Доля брака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bottling_line.cip.age_h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Hours since CIP",
+      "titleRu": "Часов с CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottling_line.capper.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Capper OK",
+      "titleRu": "Укупорка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bottling_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "starved",
+        "blocked",
+        "changeover",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

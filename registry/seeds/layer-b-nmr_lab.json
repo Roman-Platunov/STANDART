@@ -1,0 +1,116 @@
+{
+  "layer": "B13",
+  "name": "layer-b-nmr_lab.json",
+  "types": [
+    {
+      "path": "nmr_lab.magnet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NMR magnet id",
+      "titleRu": "ID магнита ЯМР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nmr_lab.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NMR sample id",
+      "titleRu": "ID образца ЯМР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nmr_lab.field.mhz",
+      "kind": "quantity",
+      "unit": "MHz",
+      "titleEn": "Proton frequency",
+      "titleRu": "Протонная частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nmr_lab.shim.quality",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shim quality",
+      "titleRu": "Качество шиммирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nmr_lab.spin.hz",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Spin rate",
+      "titleRu": "Скорость вращения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nmr_lab.helium.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Helium level",
+      "titleRu": "Уровень гелия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nmr_lab.lock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Field lock on",
+      "titleRu": "Лок поля",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nmr_lab.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "NMR state",
+      "titleRu": "Состояние ЯМР",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "lock",
+        "shim",
+        "acquire",
+        "cryo_fill",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

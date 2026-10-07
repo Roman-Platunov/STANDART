@@ -1,0 +1,22 @@
+sid: 5096ca1d
+path: fpso.state
+aliases:
+  short: fpso.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние FPSO
+  en: FPSO state
+fingerprint: sha256:5096ca1da03681c69914e7c4633258f60e24ff0f21f721006badc49e66611fe0
+enumValues:
+  - produce
+  - inject
+  - offload
+  - weather_hold
+  - shutdown
+  - fault

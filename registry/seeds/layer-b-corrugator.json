@@ -1,0 +1,117 @@
+{
+  "layer": "B13",
+  "name": "layer-b-corrugator.json",
+  "types": [
+    {
+      "path": "corrugator.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Corrugator line id",
+      "titleRu": "ID гофроагрегата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "corrugator.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Corrugator order id",
+      "titleRu": "ID заказа гофры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "corrugator.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Web speed",
+      "titleRu": "Скорость полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "corrugator.steam.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "corrugator.glue.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Glue gap",
+      "titleRu": "Зазор клея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "corrugator.caliper",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Board caliper",
+      "titleRu": "Толщина картона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "corrugator.waste",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Trim waste",
+      "titleRu": "Отходы обрезки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "corrugator.flute",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Flute type",
+      "titleRu": "Тип гофра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "a",
+        "b",
+        "c",
+        "e",
+        "bc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

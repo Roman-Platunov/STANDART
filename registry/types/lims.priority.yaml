@@ -1,0 +1,20 @@
+sid: 970ee788
+path: lims.priority
+aliases:
+  short: lims.priority
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Приоритет
+  en: Priority
+fingerprint: sha256:970ee7887af87c54907fac25866af9130bf9008187c3a1121d1c2f827695c9cf
+enumValues:
+  - routine
+  - urgent
+  - stat
+  - research

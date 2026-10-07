@@ -1,0 +1,115 @@
+{
+  "layer": "B13",
+  "name": "layer-b-lims.json",
+  "types": [
+    {
+      "path": "lims.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LIMS sample id",
+      "titleRu": "ID пробы LIMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lims.test.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LIMS test id",
+      "titleRu": "ID испытания LIMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lims.tat.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Turnaround time",
+      "titleRu": "Время выполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lims.backlog",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open tests",
+      "titleRu": "Открытых испытаний",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lims.qc.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "QC fail",
+      "titleRu": "QC не пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lims.released",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Result released",
+      "titleRu": "Результат выдан",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lims.test.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Test status",
+      "titleRu": "Статус испытания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "received",
+        "prep",
+        "run",
+        "review",
+        "released",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lims.priority",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Priority",
+      "titleRu": "Приоритет",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "routine",
+        "urgent",
+        "stat",
+        "research"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

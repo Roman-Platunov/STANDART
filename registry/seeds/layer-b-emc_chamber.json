@@ -1,0 +1,117 @@
+{
+  "layer": "B13",
+  "name": "layer-b-emc_chamber.json",
+  "types": [
+    {
+      "path": "emc_chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EMC chamber id",
+      "titleRu": "ID ЭМС-камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "emc_chamber.test.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EMC test id",
+      "titleRu": "ID испытания ЭМС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "emc_chamber.field",
+      "kind": "quantity",
+      "unit": "V/m",
+      "titleEn": "Field strength",
+      "titleRu": "Напряжённость поля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emc_chamber.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Test frequency",
+      "titleRu": "Частота испытания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emc_chamber.margin.db",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Margin",
+      "titleRu": "Запас",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "emc_chamber.door.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chamber door closed",
+      "titleRu": "Дверь камеры закрыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "emc_chamber.test.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Test type",
+      "titleRu": "Тип испытания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "radiated_em",
+        "radiated_im",
+        "conducted",
+        "esd",
+        "surge",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "emc_chamber.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Test result",
+      "titleRu": "Результат испытания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "fail",
+        "abort",
+        "incomplete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

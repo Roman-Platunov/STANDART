@@ -1,0 +1,118 @@
+{
+  "layer": "B13",
+  "name": "layer-b-sinter_plant.json",
+  "types": [
+    {
+      "path": "sinter_plant.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sinter machine id",
+      "titleRu": "ID агломашины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sinter_plant.strand.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Strand speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sinter_plant.bed.height",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Bed height",
+      "titleRu": "Высота слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sinter_plant.ignition.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ignition temperature",
+      "titleRu": "Температура зажигания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sinter_plant.bpt",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Burn-through point",
+      "titleRu": "Точка догорания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sinter_plant.production",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Sinter production",
+      "titleRu": "Выпуск агломерата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sinter_plant.return.fines",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Return fines",
+      "titleRu": "Возврат мелочи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sinter_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sinter state",
+      "titleRu": "Состояние агломерации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "run",
+        "slow",
+        "stop",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

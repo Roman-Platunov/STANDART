@@ -1,0 +1,22 @@
+sid: bd999a25
+path: blast_furnace.state
+aliases:
+  short: blast_furnace.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние доменной печи
+  en: Furnace state
+fingerprint: sha256:bd999a25ecb468a3751e33778ccc0fedf80245730cea95e880f2c55b8e7df531
+enumValues:
+  - bank
+  - blow
+  - full
+  - tap
+  - stop
+  - fault

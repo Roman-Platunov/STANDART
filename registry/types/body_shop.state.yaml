@@ -1,0 +1,21 @@
+sid: "139706e1"
+path: body_shop.state
+aliases:
+  short: body_shop.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ячейки
+  en: Cell state
+fingerprint: sha256:139706e1c19382c5a71419f185b920398a4e8968bacfb0e2167d9248fe46ce97
+enumValues:
+  - run
+  - starved
+  - blocked
+  - fault
+  - changeover

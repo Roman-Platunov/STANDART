@@ -1,0 +1,21 @@
+sid: a3cfdfc1
+path: cruise_ops.phase
+aliases:
+  short: cruise_ops.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза рейса
+  en: Voyage phase
+fingerprint: sha256:a3cfdfc1ebe700e8a3609318f8ad3882da6c7e0f0b137649b18a1f132e6d29eb
+enumValues:
+  - sea
+  - port
+  - embark
+  - debark
+  - drydock

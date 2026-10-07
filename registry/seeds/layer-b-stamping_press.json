@@ -1,0 +1,119 @@
+{
+  "layer": "B13",
+  "name": "layer-b-stamping_press.json",
+  "types": [
+    {
+      "path": "stamping_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stamping press id",
+      "titleRu": "ID штамповочного пресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stamping_press.die.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stamping die id",
+      "titleRu": "ID штампа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stamping_press.spm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Strokes per minute",
+      "titleRu": "Ходов в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stamping_press.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Press force",
+      "titleRu": "Усилие пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stamping_press.tonnage.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tonnage utilization",
+      "titleRu": "Использование тоннажа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stamping_press.scrap.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Доля брака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stamping_press.misfeed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Misfeed",
+      "titleRu": "Перекос подачи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stamping_press.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "single",
+        "continuous",
+        "jog",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

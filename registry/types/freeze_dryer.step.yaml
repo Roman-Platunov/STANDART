@@ -1,0 +1,22 @@
+sid: f9545e42
+path: freeze_dryer.step
+aliases:
+  short: freeze_dryer.step
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Шаг цикла
+  en: Cycle step
+fingerprint: sha256:f9545e42ac2121bb1e53f443503f2af8e81eb0b76af57f6be3e18785c9599728
+enumValues:
+  - freeze
+  - primary
+  - secondary
+  - stopper
+  - unload
+  - fault

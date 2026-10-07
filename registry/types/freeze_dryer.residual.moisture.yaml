@@ -1,0 +1,18 @@
+sid: 3072dd7d
+path: freeze_dryer.residual.moisture
+aliases:
+  short: residual.moisture
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Остаточная влажность
+  en: Residual moisture
+fingerprint: sha256:3072dd7df038300e57cac0d9fa2441450bba3653712743d3e6c7e42a642a6c8b
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,22 @@
+sid: 73ff34eb
+path: ballast_water.mode
+aliases:
+  short: ballast_water.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим СОВБ
+  en: BWTS mode
+fingerprint: sha256:73ff34eb342b2f93ee2d4a7101bb246dde8771f1d6355d0956271e1fd550cca3
+enumValues:
+  - uptake
+  - treat
+  - hold
+  - discharge
+  - bypass
+  - fault

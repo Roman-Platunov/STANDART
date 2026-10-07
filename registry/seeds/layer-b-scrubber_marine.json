@@ -1,0 +1,113 @@
+{
+  "layer": "B13",
+  "name": "layer-b-scrubber_marine.json",
+  "types": [
+    {
+      "path": "scrubber_marine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Marine scrubber id",
+      "titleRu": "ID судового скруббера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scrubber_marine.so2.co2",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "SO2/CO2 ratio",
+      "titleRu": "Отношение SO₂/CO₂",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_marine.washwater.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Washwater pH",
+      "titleRu": "pH промывной воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_marine.pah",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "PAH in washwater",
+      "titleRu": "ПАУ в промывной воде",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_marine.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Washwater turbidity",
+      "titleRu": "Мутность промывной воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_marine.delta_p",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Scrubber dP",
+      "titleRu": "Перепад на скруббере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrubber_marine.overboard",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overboard discharge",
+      "titleRu": "Сброс за борт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scrubber_marine.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Scrubber mode",
+      "titleRu": "Режим скруббера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "hybrid",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

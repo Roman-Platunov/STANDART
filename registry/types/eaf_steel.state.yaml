@@ -1,0 +1,22 @@
+sid: f7d5855e
+path: eaf_steel.state
+aliases:
+  short: eaf_steel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ДСП
+  en: EAF state
+fingerprint: sha256:f7d5855ee8e15ca7b30ffefb4c397d8f90a769ca85c3b19c2da8f2dd93095070
+enumValues:
+  - charge
+  - melt
+  - refine
+  - tap
+  - delay
+  - fault

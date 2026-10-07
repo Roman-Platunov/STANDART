@@ -1,0 +1,21 @@
+sid: a71b9efc
+path: water_tower.state
+aliases:
+  short: water_tower.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние башни
+  en: Tower state
+fingerprint: sha256:a71b9efc48c090565c1f9fa7d8235007777629c6b209ce65a976fff2c716fb9c
+enumValues:
+  - fill
+  - hold
+  - draw
+  - offline
+  - fault

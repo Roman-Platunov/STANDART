@@ -1,0 +1,113 @@
+{
+  "layer": "B13",
+  "name": "layer-b-body_shop.json",
+  "types": [
+    {
+      "path": "body_shop.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Body shop cell id",
+      "titleRu": "ID ячейки кузовного цеха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "body_shop.vin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Body VIN / job id",
+      "titleRu": "ID кузова",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "body_shop.spot.welds",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Spot welds completed",
+      "titleRu": "Точечных сварных точек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "body_shop.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cell cycle time",
+      "titleRu": "Цикл ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "body_shop.ftt",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "First-time-through",
+      "titleRu": "С первого раза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "body_shop.robots.online",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Robots online",
+      "titleRu": "Роботов online",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "body_shop.andons",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Andon in cell",
+      "titleRu": "Андон в ячейке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "body_shop.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cell state",
+      "titleRu": "Состояние ячейки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "starved",
+        "blocked",
+        "fault",
+        "changeover"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

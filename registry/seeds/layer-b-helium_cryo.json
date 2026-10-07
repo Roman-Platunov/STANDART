@@ -1,0 +1,119 @@
+{
+  "layer": "B13",
+  "name": "layer-b-helium_cryo.json",
+  "types": [
+    {
+      "path": "helium_cryo.liquefier.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Helium liquefier id",
+      "titleRu": "ID гелиевого ожижителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "helium_cryo.dewar.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Helium dewar id",
+      "titleRu": "ID дьюара гелия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "helium_cryo.liquefaction",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Liquefaction rate",
+      "titleRu": "Скорость ожижения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "helium_cryo.dewar.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dewar level",
+      "titleRu": "Уровень дьюара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "helium_cryo.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Helium purity",
+      "titleRu": "Чистота гелия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "helium_cryo.compressor.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Compressor power",
+      "titleRu": "Мощность компрессора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "helium_cryo.cold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cold box cold",
+      "titleRu": "Холодный блок холодный",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "helium_cryo.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Liquefier state",
+      "titleRu": "Состояние ожижителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "warmup",
+        "cooldown",
+        "liquefy",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

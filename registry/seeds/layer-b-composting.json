@@ -1,0 +1,118 @@
+{
+  "layer": "B13",
+  "name": "layer-b-composting.json",
+  "types": [
+    {
+      "path": "composting.pile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compost pile id",
+      "titleRu": "ID бурта компоста",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "composting.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compost site id",
+      "titleRu": "ID площадки компостирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "composting.temp.core",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Core temperature",
+      "titleRu": "Температура ядра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "composting.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pile moisture",
+      "titleRu": "Влажность бурта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "composting.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oxygen in pile",
+      "titleRu": "Кислород в бурте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "composting.turn.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Turn count",
+      "titleRu": "Число ворошений",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "composting.mature",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mature compost",
+      "titleRu": "Компост созрел",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "composting.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Compost stage",
+      "titleRu": "Стадия компоста",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "thermophilic",
+        "curing",
+        "screen",
+        "ready"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B13",
+  "name": "layer-b-galvanizing.json",
+  "types": [
+    {
+      "path": "galvanizing.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Galvanizing line id",
+      "titleRu": "ID линии цинкования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "galvanizing.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil id",
+      "titleRu": "ID рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "galvanizing.pot.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zinc pot temperature",
+      "titleRu": "Температура цинковой ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galvanizing.coating.mass",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Coating mass",
+      "titleRu": "Масса покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galvanizing.line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galvanizing.spangle.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Spangle size",
+      "titleRu": "Размер кристалла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galvanizing.uncoated",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bare spot detected",
+      "titleRu": "Непокрытие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "galvanizing.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product type",
+      "titleRu": "Тип покрытия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gi",
+        "ga",
+        "gl",
+        "znmg",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

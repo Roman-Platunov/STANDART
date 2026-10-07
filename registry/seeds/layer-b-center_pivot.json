@@ -1,0 +1,115 @@
+{
+  "layer": "B13",
+  "name": "layer-b-center_pivot.json",
+  "types": [
+    {
+      "path": "center_pivot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Center pivot id",
+      "titleRu": "ID круговой дождевальной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "center_pivot.field.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Irrigated field id",
+      "titleRu": "ID орошаемого поля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "center_pivot.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pivot flow",
+      "titleRu": "Расход машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "center_pivot.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "System pressure",
+      "titleRu": "Давление системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "center_pivot.speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Travel speed",
+      "titleRu": "Скорость движения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "center_pivot.depth.mm",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Applied depth",
+      "titleRu": "Поливная норма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "center_pivot.end_gun",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "End gun on",
+      "titleRu": "Концевое орудие включено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "center_pivot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pivot state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "forward",
+        "reverse",
+        "dry",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

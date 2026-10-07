@@ -1,0 +1,20 @@
+sid: b45b845d
+path: emc_chamber.result
+aliases:
+  short: emc_chamber.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат испытания
+  en: Test result
+fingerprint: sha256:b45b845dbe6cb4df72d58e361ab55d6a133d2665a037edd1504cc190346d1d2d
+enumValues:
+  - pass
+  - fail
+  - abort
+  - incomplete

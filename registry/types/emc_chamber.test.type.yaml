@@ -1,0 +1,22 @@
+sid: 0064280c
+path: emc_chamber.test.type
+aliases:
+  short: test.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип испытания
+  en: Test type
+fingerprint: sha256:0064280ca3e7196fe48045a3d3c91d666b9f5eeef7417ec11206a9a7968dbc3a
+enumValues:
+  - radiated_em
+  - radiated_im
+  - conducted
+  - esd
+  - surge
+  - other

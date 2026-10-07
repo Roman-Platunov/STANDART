@@ -1,0 +1,112 @@
+{
+  "layer": "B13",
+  "name": "layer-b-fishing_vessel.json",
+  "types": [
+    {
+      "path": "fishing_vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fishing vessel id",
+      "titleRu": "ID рыболовного судна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fishing_vessel.trip.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fishing trip id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fishing_vessel.catch.kg",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Catch mass",
+      "titleRu": "Масса улова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fishing_vessel.hold.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hold temperature",
+      "titleRu": "Температура трюма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fishing_vessel.gear.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Gear depth",
+      "titleRu": "Глубина орудия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fishing_vessel.effort.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Fishing effort hours",
+      "titleRu": "Часы промысла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fishing_vessel.vms.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "VMS reporting",
+      "titleRu": "VMS передаёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fishing_vessel.gear",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gear type",
+      "titleRu": "Тип орудия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "trawl",
+        "purse",
+        "longline",
+        "pot",
+        "gillnet",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

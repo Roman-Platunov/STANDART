@@ -1,0 +1,21 @@
+sid: 56db6924
+path: septic.type
+aliases:
+  short: septic.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип системы
+  en: System type
+fingerprint: sha256:56db69243a135752a0b135b30675452e70f61535b3b81ca0584b4d57c1f9c63e
+enumValues:
+  - conventional
+  - aerobic
+  - mound
+  - constructed_wetland
+  - other

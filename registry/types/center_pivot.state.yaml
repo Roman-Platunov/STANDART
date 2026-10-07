@@ -1,0 +1,21 @@
+sid: 30f2e151
+path: center_pivot.state
+aliases:
+  short: center_pivot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Pivot state
+fingerprint: sha256:30f2e1518c01ea7d1aad37585afaf16f9827413872a4ac824fc7311f3c1efa29
+enumValues:
+  - off
+  - forward
+  - reverse
+  - dry
+  - fault

@@ -1,0 +1,114 @@
+{
+  "layer": "B13",
+  "name": "layer-b-vivarium.json",
+  "types": [
+    {
+      "path": "vivarium.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vivarium room id",
+      "titleRu": "ID комнаты вивария",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vivarium.rack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cage rack id",
+      "titleRu": "ID стеллажа клеток",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vivarium.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Room temperature",
+      "titleRu": "Температура комнаты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vivarium.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Room humidity",
+      "titleRu": "Влажность комнаты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vivarium.ach",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Air changes per hour",
+      "titleRu": "Кратность воздухообмена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vivarium.light.lux",
+      "kind": "quantity",
+      "unit": "lx",
+      "titleEn": "Light level",
+      "titleRu": "Освещённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vivarium.pressure.pos",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Positive pressure",
+      "titleRu": "Положительное давление",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vivarium.barrier",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Barrier level",
+      "titleRu": "Уровень барьера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "conventional",
+        "spf",
+        "isolator",
+        "quarantine"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

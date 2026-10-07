@@ -1,0 +1,112 @@
+{
+  "layer": "B13",
+  "name": "layer-b-ballast_water.json",
+  "types": [
+    {
+      "path": "ballast_water.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BWTS id",
+      "titleRu": "ID системы балластных вод",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ballast_water.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ballast tank id",
+      "titleRu": "ID балластной цистерны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ballast_water.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Ballast flow",
+      "titleRu": "Расход балласта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballast_water.tro",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Total residual oxidant",
+      "titleRu": "Остаточный окислитель",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballast_water.uv.dose",
+      "kind": "quantity",
+      "unit": "mJ/cm2",
+      "titleEn": "UV dose",
+      "titleRu": "Доза УФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballast_water.salinity",
+      "kind": "quantity",
+      "unit": "PSU",
+      "titleEn": "Salinity",
+      "titleRu": "Солёность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballast_water.compliant",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Discharge compliant",
+      "titleRu": "Сброс соответствует",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ballast_water.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "BWTS mode",
+      "titleRu": "Режим СОВБ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "uptake",
+        "treat",
+        "hold",
+        "discharge",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

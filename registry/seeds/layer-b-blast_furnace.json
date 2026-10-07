@@ -1,0 +1,114 @@
+{
+  "layer": "B13",
+  "name": "layer-b-blast_furnace.json",
+  "types": [
+    {
+      "path": "blast_furnace.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blast furnace id",
+      "titleRu": "ID доменной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blast_furnace.hot_blast.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hot blast temperature",
+      "titleRu": "Температура горячего дутья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_furnace.hot_blast.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Hot blast pressure",
+      "titleRu": "Давление горячего дутья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_furnace.top.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Top gas pressure",
+      "titleRu": "Давление колошникового газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_furnace.production",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Hot metal production",
+      "titleRu": "Выплавка чугуна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_furnace.coke.rate",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Coke rate",
+      "titleRu": "Расход кокса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_furnace.hanging",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Burden hanging",
+      "titleRu": "Зависание шихты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "blast_furnace.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnace state",
+      "titleRu": "Состояние доменной печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bank",
+        "blow",
+        "full",
+        "tap",
+        "stop",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

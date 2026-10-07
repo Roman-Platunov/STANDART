@@ -1,0 +1,114 @@
+{
+  "layer": "B13",
+  "name": "layer-b-mass_spec.json",
+  "types": [
+    {
+      "path": "mass_spec.instrument.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mass spectrometer id",
+      "titleRu": "ID масс-спектрометра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mass_spec.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MS run id",
+      "titleRu": "ID прогона МС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mass_spec.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Analyzer vacuum",
+      "titleRu": "Вакуум анализатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mass_spec.tune.score",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tune score",
+      "titleRu": "Оценка настройки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mass_spec.injection",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Injections today",
+      "titleRu": "Инжекций сегодня",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mass_spec.capillary.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Capillary temperature",
+      "titleRu": "Температура капилляра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mass_spec.lockmass.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lock mass OK",
+      "titleRu": "Lock mass OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mass_spec.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "MS state",
+      "titleRu": "Состояние МС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "ready",
+        "acquire",
+        "tune",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

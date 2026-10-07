@@ -1,0 +1,117 @@
+{
+  "layer": "B13",
+  "name": "layer-b-ice_rink.json",
+  "types": [
+    {
+      "path": "ice_rink.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ice rink id",
+      "titleRu": "ID ледовой арены",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ice_rink.slab.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Slab temperature",
+      "titleRu": "Температура плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_rink.ice.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ice surface temperature",
+      "titleRu": "Температура льда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_rink.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ice thickness",
+      "titleRu": "Толщина льда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_rink.rh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Arena humidity",
+      "titleRu": "Влажность арены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ice_rink.resurf.age_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Minutes since resurface",
+      "titleRu": "Минут с заливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_rink.event",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Event in progress",
+      "titleRu": "Идёт мероприятие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ice_rink.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rink mode",
+      "titleRu": "Режим арены",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hold",
+        "event",
+        "resurface",
+        "melt",
+        "paint"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: b8a4da8e
+path: wind_tunnel.type
+aliases:
+  short: wind_tunnel.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип трубы
+  en: Tunnel type
+fingerprint: sha256:b8a4da8ea63d5ddc9a521ba08bdaba958268cdca1eb04314d397e7d8935baa5c
+enumValues:
+  - subsonic
+  - transonic
+  - supersonic
+  - climatic
+  - other

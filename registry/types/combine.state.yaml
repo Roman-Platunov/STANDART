@@ -1,0 +1,21 @@
+sid: 07cec2f1
+path: combine.state
+aliases:
+  short: combine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние комбайна
+  en: Combine state
+fingerprint: sha256:07cec2f1695d7cc6f536bdcb047ea7e8264f402edac73968da81e1b47f0f3162
+enumValues:
+  - idle
+  - harvest
+  - unload
+  - transport
+  - fault

@@ -1,0 +1,21 @@
+sid: d667bd0f
+path: greywater.state
+aliases:
+  short: greywater.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:d667bd0f7e204500be0d22fdf1474d6b5a86d0410d3581731dae071a6a930fb1
+enumValues:
+  - treat
+  - reuse
+  - divert
+  - offline
+  - fault

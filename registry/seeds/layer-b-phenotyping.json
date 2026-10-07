@@ -1,0 +1,110 @@
+{
+  "layer": "B13",
+  "name": "layer-b-phenotyping.json",
+  "types": [
+    {
+      "path": "phenotyping.plot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Phenotyping plot id",
+      "titleRu": "ID делянки фенотипирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "phenotyping.platform.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Phenotyping platform id",
+      "titleRu": "ID платформы фенотипирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "phenotyping.height",
+      "kind": "quantity",
+      "unit": "cm",
+      "titleEn": "Plant height",
+      "titleRu": "Высота растения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "phenotyping.ndvi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Plot NDVI",
+      "titleRu": "NDVI делянки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "phenotyping.lai",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Leaf area index",
+      "titleRu": "Индекс листовой поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "phenotyping.biomass.est",
+      "kind": "quantity",
+      "unit": "t/ha",
+      "titleEn": "Biomass estimate",
+      "titleRu": "Оценка биомассы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "phenotyping.image.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "Plot image ref",
+      "titleRu": "Референс снимка делянки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "phenotyping.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Growth stage",
+      "titleRu": "Фаза развития",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "veg",
+        "flower",
+        "grain",
+        "mature",
+        "senesced"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

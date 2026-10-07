@@ -1,0 +1,120 @@
+{
+  "layer": "B13",
+  "name": "layer-b-asu_gas.json",
+  "types": [
+    {
+      "path": "asu_gas.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Air separation plant id",
+      "titleRu": "ID ВРУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asu_gas.column.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ASU column id",
+      "titleRu": "ID колонны ВРУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asu_gas.air.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Feed air flow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asu_gas.o2.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oxygen purity",
+      "titleRu": "Чистота кислорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asu_gas.n2.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Nitrogen purity",
+      "titleRu": "Чистота азота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asu_gas.coldbox.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cold box temperature",
+      "titleRu": "Температура холодного блока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asu_gas.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Plant power",
+      "titleRu": "Мощность установки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asu_gas.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Primary product",
+      "titleRu": "Основной продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "o2",
+        "n2",
+        "ar",
+        "liquid",
+        "mixed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

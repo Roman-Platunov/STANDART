@@ -1,0 +1,21 @@
+sid: d28d88c4
+path: seed_bank.status
+aliases:
+  short: seed_bank.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус образца
+  en: Accession status
+fingerprint: sha256:d28d88c4bb5831c59ff20eae1fea3ddbd799ea7959e2507f3190c46837f735db
+enumValues:
+  - active
+  - base
+  - safety
+  - distributed
+  - lost

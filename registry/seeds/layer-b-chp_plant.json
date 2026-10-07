@@ -1,0 +1,115 @@
+{
+  "layer": "B13",
+  "name": "layer-b-chp_plant.json",
+  "types": [
+    {
+      "path": "chp_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CHP plant id",
+      "titleRu": "ID ТЭЦ / когенерации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chp_plant.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CHP unit id",
+      "titleRu": "ID агрегата когенерации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chp_plant.power.e",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Electric power",
+      "titleRu": "Электрическая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chp_plant.power.th",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Thermal power",
+      "titleRu": "Тепловая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chp_plant.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Overall efficiency",
+      "titleRu": "Общий КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chp_plant.heat.export",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Exported heat",
+      "titleRu": "Отпускаемое тепло",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chp_plant.island",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Island mode",
+      "titleRu": "Островной режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chp_plant.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CHP mode",
+      "titleRu": "Режим когенерации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat_led",
+        "power_led",
+        "follow",
+        "island",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

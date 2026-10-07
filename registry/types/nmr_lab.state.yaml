@@ -1,0 +1,22 @@
+sid: 1c6bb4cc
+path: nmr_lab.state
+aliases:
+  short: nmr_lab.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ЯМР
+  en: NMR state
+fingerprint: sha256:1c6bb4cc34b8e3b1ba097e176cb6950ea0220b4b6318ec39ef2cdcd3cfd080e0
+enumValues:
+  - idle
+  - lock
+  - shim
+  - acquire
+  - cryo_fill
+  - fault

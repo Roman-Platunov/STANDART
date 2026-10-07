@@ -1,0 +1,110 @@
+{
+  "layer": "B13",
+  "name": "layer-b-forging.json",
+  "types": [
+    {
+      "path": "forging.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Forge press id",
+      "titleRu": "ID ковочного пресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "forging.die.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Forge die id",
+      "titleRu": "ID штампа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "forging.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Press force",
+      "titleRu": "Усилие пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forging.billet.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Billet temperature",
+      "titleRu": "Температура заготовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forging.stroke",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stroke count",
+      "titleRu": "Число ходов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forging.energy",
+      "kind": "quantity",
+      "unit": "J",
+      "titleEn": "Blow energy",
+      "titleRu": "Энергия удара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forging.die.crack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Die crack",
+      "titleRu": "Трещина штампа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "forging.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Forge process",
+      "titleRu": "Процесс ковки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "upset",
+        "roll",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B13",
+  "name": "layer-b-climate_chamber.json",
+  "types": [
+    {
+      "path": "climate_chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Climate chamber id",
+      "titleRu": "ID климатической камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "climate_chamber.profile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Profile id",
+      "titleRu": "ID профиля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "climate_chamber.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "climate_chamber.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chamber humidity",
+      "titleRu": "Влажность камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "climate_chamber.ramp.K_min",
+      "kind": "quantity",
+      "unit": "K/min",
+      "titleEn": "Temp ramp",
+      "titleRu": "Скорость изменения температуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "climate_chamber.step",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Profile step",
+      "titleRu": "Шаг профиля",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "climate_chamber.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In specification",
+      "titleRu": "В спецификации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "climate_chamber.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chamber state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "ramp",
+        "soak",
+        "complete",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

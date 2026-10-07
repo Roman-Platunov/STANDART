@@ -1,0 +1,21 @@
+sid: 42d81b77
+path: climate_chamber.state
+aliases:
+  short: climate_chamber.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние камеры
+  en: Chamber state
+fingerprint: sha256:42d81b77328f3b5642e5f1b97f818d61d18ffdb442f99c8d27ee4d05a12e7e00
+enumValues:
+  - idle
+  - ramp
+  - soak
+  - complete
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B13",
+  "name": "layer-b-fpso.json",
+  "types": [
+    {
+      "path": "fpso.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FPSO id",
+      "titleRu": "ID FPSO",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fpso.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Process train id",
+      "titleRu": "ID технологической линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fpso.oil.rate",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Oil production",
+      "titleRu": "Добыча нефти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fpso.gas.rate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Gas production",
+      "titleRu": "Добыча газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fpso.water.cut",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Water cut",
+      "titleRu": "Обводнённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fpso.turret.heading",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Turret / heading",
+      "titleRu": "Курс / турель",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fpso.offload.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Offloading",
+      "titleRu": "Отгрузка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fpso.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "FPSO state",
+      "titleRu": "Состояние FPSO",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "inject",
+        "offload",
+        "weather_hold",
+        "shutdown",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

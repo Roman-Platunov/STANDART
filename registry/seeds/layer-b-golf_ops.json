@@ -1,0 +1,114 @@
+{
+  "layer": "B13",
+  "name": "layer-b-golf_ops.json",
+  "types": [
+    {
+      "path": "golf_ops.course.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Golf course id",
+      "titleRu": "ID гольф-клуба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "golf_ops.hole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hole id",
+      "titleRu": "ID лунки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "golf_ops.green.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Green moisture",
+      "titleRu": "Влажность грина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "golf_ops.green.stimp",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stimp speed",
+      "titleRu": "Скорость грина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "golf_ops.rounds.day",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rounds today",
+      "titleRu": "Раундов сегодня",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "golf_ops.et",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Evapotranspiration",
+      "titleRu": "Эвапотранспирация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "golf_ops.frost.delay",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Frost delay",
+      "titleRu": "Задержка из-за инея",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "golf_ops.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Course status",
+      "titleRu": "Статус поля",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "cart_path",
+        "frost",
+        "closed",
+        "tournament"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

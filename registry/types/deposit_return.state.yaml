@@ -1,0 +1,21 @@
+sid: c803c80a
+path: deposit_return.state
+aliases:
+  short: deposit_return.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние автомата
+  en: RVM state
+fingerprint: sha256:c803c80a33896f0c863947738bbf8ab923d306414063a368b73e4c82dc260d0e
+enumValues:
+  - ready
+  - full
+  - jam
+  - offline
+  - service

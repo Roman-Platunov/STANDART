@@ -1,0 +1,111 @@
+{
+  "layer": "B13",
+  "name": "layer-b-wind_tunnel.json",
+  "types": [
+    {
+      "path": "wind_tunnel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wind tunnel id",
+      "titleRu": "ID аэродинамической трубы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wind_tunnel.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tunnel run id",
+      "titleRu": "ID прогона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wind_tunnel.airspeed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Airspeed",
+      "titleRu": "Скорость потока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_tunnel.q",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Dynamic pressure",
+      "titleRu": "Скоростной напор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_tunnel.re",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reynolds number",
+      "titleRu": "Число Рейнольдса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_tunnel.aoa",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Angle of attack",
+      "titleRu": "Угол атаки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wind_tunnel.model.secure",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Model secured",
+      "titleRu": "Модель закреплена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wind_tunnel.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tunnel type",
+      "titleRu": "Тип трубы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "subsonic",
+        "transonic",
+        "supersonic",
+        "climatic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

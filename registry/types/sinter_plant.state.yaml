@@ -1,0 +1,21 @@
+sid: a614c06f
+path: sinter_plant.state
+aliases:
+  short: sinter_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние агломерации
+  en: Sinter state
+fingerprint: sha256:a614c06f292d962338f01acb05ed8b7dbcd121be7e7b3c73b7d470d849f893a0
+enumValues:
+  - start
+  - run
+  - slow
+  - stop
+  - fault

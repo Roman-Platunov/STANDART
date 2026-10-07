@@ -1,0 +1,18 @@
+sid: 4563002a
+path: cruise_ops.occupancy
+aliases:
+  short: cruise_ops.occupancy
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заполненность кают
+  en: Cabin occupancy
+fingerprint: sha256:4563002a4ce7973c7c89b9c6279ba8968cc03d2c2daeb357a77e3c15e7b51883
+range:
+  min: 0
+  max: 100

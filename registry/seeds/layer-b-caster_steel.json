@@ -1,0 +1,120 @@
+{
+  "layer": "B13",
+  "name": "layer-b-caster_steel.json",
+  "types": [
+    {
+      "path": "caster_steel.strand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Caster strand id",
+      "titleRu": "ID ручья МНЛЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "caster_steel.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Casting heat id",
+      "titleRu": "ID разливаемой плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "caster_steel.cast.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Casting speed",
+      "titleRu": "Скорость разливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "caster_steel.mold.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mold level",
+      "titleRu": "Уровень в кристаллизаторе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "caster_steel.superheat",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Steel superheat",
+      "titleRu": "Перегрев стали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "caster_steel.breakout.risk",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Breakout risk",
+      "titleRu": "Риск прорыва",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "caster_steel.breakout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Breakout alarm",
+      "titleRu": "Прорыв",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "caster_steel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Caster state",
+      "titleRu": "Состояние МНЛЗ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "start",
+        "steady",
+        "slow",
+        "stop",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "layer": "B13",
+  "name": "layer-b-septic.json",
+  "types": [
+    {
+      "path": "septic.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Septic system id",
+      "titleRu": "ID септика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "septic.tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level",
+      "titleRu": "Уровень в септике",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "septic.sludge.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Sludge depth",
+      "titleRu": "Толщина осадка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "septic.scum.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Scum depth",
+      "titleRu": "Толщина корки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "septic.effluent.nh4",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Effluent ammonium",
+      "titleRu": "Аммоний на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "septic.alarm.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High level alarm",
+      "titleRu": "Авария высокого уровня",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "septic.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System type",
+      "titleRu": "Тип системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "conventional",
+        "aerobic",
+        "mound",
+        "constructed_wetland",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "septic.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "pump",
+        "alarm",
+        "service_due"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

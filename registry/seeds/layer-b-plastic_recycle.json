@@ -1,0 +1,120 @@
+{
+  "layer": "B13",
+  "name": "layer-b-plastic_recycle.json",
+  "types": [
+    {
+      "path": "plastic_recycle.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plastic recycle line id",
+      "titleRu": "ID линии переработки пластика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plastic_recycle.bale.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bale id",
+      "titleRu": "ID кипы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plastic_recycle.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastic_recycle.flake.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flake moisture",
+      "titleRu": "Влажность флекса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "plastic_recycle.contamination",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Contamination",
+      "titleRu": "Засор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "plastic_recycle.iv",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Intrinsic viscosity",
+      "titleRu": "Характеристическая вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastic_recycle.food_grade",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Food-grade stream",
+      "titleRu": "Пищевой поток",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "plastic_recycle.polymer",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Polymer",
+      "titleRu": "Полимер",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pet",
+        "hdpe",
+        "pp",
+        "ldpe",
+        "ps",
+        "mixed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "layer": "B13",
+  "name": "layer-b-combine.json",
+  "types": [
+    {
+      "path": "combine.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Combine harvester id",
+      "titleRu": "ID комбайна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "combine.field.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Harvest field id",
+      "titleRu": "ID убираемого поля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "combine.yield",
+      "kind": "quantity",
+      "unit": "t/ha",
+      "titleEn": "Instant yield",
+      "titleRu": "Мгновенная урожайность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "combine.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Grain moisture",
+      "titleRu": "Влажность зерна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "combine.loss",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Grain loss",
+      "titleRu": "Потери зерна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "combine.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "combine.header.down",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Header down",
+      "titleRu": "Жатка опущена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "combine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Combine state",
+      "titleRu": "Состояние комбайна",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "harvest",
+        "unload",
+        "transport",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "layer": "B13",
+  "name": "layer-b-manure_lagoon.json",
+  "types": [
+    {
+      "path": "manure_lagoon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Manure lagoon id",
+      "titleRu": "ID навозохранилища",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "manure_lagoon.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lagoon level",
+      "titleRu": "Уровень лагуны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "manure_lagoon.crust",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Crust index",
+      "titleRu": "Индекс корки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "manure_lagoon.nh3",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Ammonia",
+      "titleRu": "Аммиак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "manure_lagoon.h2s",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Hydrogen sulfide",
+      "titleRu": "Сероводород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "manure_lagoon.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Lagoon temperature",
+      "titleRu": "Температура лагуны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "manure_lagoon.overflow.risk",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overflow risk",
+      "titleRu": "Риск переполнения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "manure_lagoon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lagoon state",
+      "titleRu": "Состояние лагуны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "agitate",
+        "pump",
+        "full",
+        "ice"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

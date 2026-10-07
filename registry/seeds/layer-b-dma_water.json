@@ -1,0 +1,115 @@
+{
+  "layer": "B13",
+  "name": "layer-b-dma_water.json",
+  "types": [
+    {
+      "path": "dma_water.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "District metered area id",
+      "titleRu": "ID зоны учёта воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dma_water.meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DMA meter id",
+      "titleRu": "ID счётчика зоны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dma_water.inflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "DMA inflow",
+      "titleRu": "Приток в зону",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dma_water.night.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Minimum night flow",
+      "titleRu": "Минимальный ночной расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dma_water.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Average pressure",
+      "titleRu": "Среднее давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dma_water.nrw",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Non-revenue water",
+      "titleRu": "Неучтенная вода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dma_water.burst",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Burst suspected",
+      "titleRu": "Подозрение на порыв",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dma_water.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "DMA status",
+      "titleRu": "Статус зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stable",
+        "leak_watch",
+        "burst",
+        "isolation",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

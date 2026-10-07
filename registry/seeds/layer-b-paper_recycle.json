@@ -1,0 +1,128 @@
+{
+  "layer": "B13",
+  "name": "layer-b-paper_recycle.json",
+  "types": [
+    {
+      "path": "paper_recycle.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paper recycle mill id",
+      "titleRu": "ID картонно-бумажного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paper_recycle.pulper.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pulper id",
+      "titleRu": "ID гидроразбивателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paper_recycle.consistency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stock consistency",
+      "titleRu": "Концентрация массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper_recycle.ash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ash content",
+      "titleRu": "Зольность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper_recycle.stickies",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stickies index",
+      "titleRu": "Индекс стики",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_recycle.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fiber yield",
+      "titleRu": "Выход волокна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper_recycle.brightness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Brightness",
+      "titleRu": "Белизна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper_recycle.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Furnish grade",
+      "titleRu": "Марка макулатуры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "occ",
+        "mixed",
+        "onp",
+        "sop",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

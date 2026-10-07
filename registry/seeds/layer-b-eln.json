@@ -1,0 +1,106 @@
+{
+  "layer": "B13",
+  "name": "layer-b-eln.json",
+  "types": [
+    {
+      "path": "eln.notebook.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ELN notebook id",
+      "titleRu": "ID электронного журнала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "eln.experiment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Experiment id",
+      "titleRu": "ID эксперимента",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "eln.entries",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Entry count",
+      "titleRu": "Число записей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eln.attachments",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Attachments",
+      "titleRu": "Вложений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eln.signed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Experiment signed",
+      "titleRu": "Эксперимент подписан",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "eln.witnessed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Witnessed",
+      "titleRu": "Засвидетельствован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "eln.page.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "ELN page ref",
+      "titleRu": "Референс страницы ELN",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "eln.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Experiment status",
+      "titleRu": "Статус эксперимента",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "draft",
+        "in_progress",
+        "review",
+        "signed",
+        "archived"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

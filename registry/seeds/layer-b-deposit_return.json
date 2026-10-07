@@ -1,0 +1,123 @@
+{
+  "layer": "B13",
+  "name": "layer-b-deposit_return.json",
+  "types": [
+    {
+      "path": "deposit_return.rvm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reverse vending machine id",
+      "titleRu": "ID автомата приёма тары",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deposit_return.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RVM site id",
+      "titleRu": "ID площадки RVM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deposit_return.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Containers today",
+      "titleRu": "Тары сегодня",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deposit_return.bin.fill",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bin fill",
+      "titleRu": "Заполнение бункера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "deposit_return.reject.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Доля отказов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "deposit_return.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bin full",
+      "titleRu": "Бункер полон",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "deposit_return.material",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Material",
+      "titleRu": "Материал",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pet",
+        "alu",
+        "glass",
+        "mixed"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "deposit_return.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "RVM state",
+      "titleRu": "Состояние автомата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "full",
+        "jam",
+        "offline",
+        "service"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

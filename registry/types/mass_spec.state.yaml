@@ -1,0 +1,21 @@
+sid: a4e430af
+path: mass_spec.state
+aliases:
+  short: mass_spec.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние МС
+  en: MS state
+fingerprint: sha256:a4e430af6318ce21bdd2d225a7d9d3a03028f18dc01eb94d16c0e811969d3d14
+enumValues:
+  - standby
+  - ready
+  - acquire
+  - tune
+  - fault

@@ -1,0 +1,21 @@
+sid: b4049bae
+path: planter.state
+aliases:
+  short: planter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сеялки
+  en: Planter state
+fingerprint: sha256:b4049baed8aacbcfa0842fc11a93b577470790402a328ef2b2d00b333f680397
+enumValues:
+  - transport
+  - plant
+  - turn
+  - fill
+  - fault

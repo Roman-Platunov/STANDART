@@ -1,0 +1,117 @@
+{
+  "layer": "B13",
+  "name": "layer-b-water_tower.json",
+  "types": [
+    {
+      "path": "water_tower.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Water tower id",
+      "titleRu": "ID водонапорной башни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "water_tower.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level",
+      "titleRu": "Уровень бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "water_tower.level.m",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Water elevation",
+      "titleRu": "Отметка воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_tower.inflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Inflow",
+      "titleRu": "Приток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_tower.outflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Outflow",
+      "titleRu": "Отток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_tower.chlorine",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Residual chlorine",
+      "titleRu": "Остаточный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_tower.overflow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overflow",
+      "titleRu": "Перелив",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "water_tower.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tower state",
+      "titleRu": "Состояние башни",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "hold",
+        "draw",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

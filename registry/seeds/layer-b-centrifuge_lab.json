@@ -1,0 +1,111 @@
+{
+  "layer": "B13",
+  "name": "layer-b-centrifuge_lab.json",
+  "types": [
+    {
+      "path": "centrifuge_lab.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lab centrifuge id",
+      "titleRu": "ID лабораторной центрифуги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "centrifuge_lab.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Centrifuge run id",
+      "titleRu": "ID прогона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "centrifuge_lab.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Rotor speed",
+      "titleRu": "Обороты ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_lab.rcf",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Relative centrifugal force",
+      "titleRu": "Относительное ускорение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_lab.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bowl temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_lab.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Run time",
+      "titleRu": "Время прогона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_lab.imbalance",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Imbalance",
+      "titleRu": "Дисбаланс",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "centrifuge_lab.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Centrifuge state",
+      "titleRu": "Состояние центрифуги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "accel",
+        "run",
+        "brake",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

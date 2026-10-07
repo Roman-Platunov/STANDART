@@ -1,0 +1,21 @@
+sid: 1cfbcdae
+path: golf_ops.status
+aliases:
+  short: golf_ops.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус поля
+  en: Course status
+fingerprint: sha256:1cfbcdae6d312efa52d756bca6fa3b513a51d5e8f982326bc7529b11e0a707d4
+enumValues:
+  - open
+  - cart_path
+  - frost
+  - closed
+  - tournament

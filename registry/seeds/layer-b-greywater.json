@@ -1,0 +1,122 @@
+{
+  "layer": "B13",
+  "name": "layer-b-greywater.json",
+  "types": [
+    {
+      "path": "greywater.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Greywater system id",
+      "titleRu": "ID системы серой воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "greywater.inflow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Inflow",
+      "titleRu": "Приток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "greywater.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Treated turbidity",
+      "titleRu": "Мутность после очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "greywater.reuse.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Reuse flow",
+      "titleRu": "Расход на повтор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "greywater.storage.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Storage level",
+      "titleRu": "Уровень накопителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "greywater.divert.sewer",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Divert to sewer",
+      "titleRu": "Сброс в канализацию",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "greywater.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Source",
+      "titleRu": "Источник",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "shower",
+        "laundry",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "greywater.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "treat",
+        "reuse",
+        "divert",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

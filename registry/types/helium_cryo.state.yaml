@@ -1,0 +1,21 @@
+sid: 147c3f61
+path: helium_cryo.state
+aliases:
+  short: helium_cryo.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ожижителя
+  en: Liquefier state
+fingerprint: sha256:147c3f61eecbb71f6bc2ffb5ce995e8179c410de1f2f3be106b7da8ef79a708d
+enumValues:
+  - warmup
+  - cooldown
+  - liquefy
+  - standby
+  - fault

@@ -1,0 +1,115 @@
+{
+  "layer": "B13",
+  "name": "layer-b-paint_shop.json",
+  "types": [
+    {
+      "path": "paint_shop.booth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paint shop booth id",
+      "titleRu": "ID камеры окраски",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_shop.body.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Body id",
+      "titleRu": "ID кузова в окраске",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_shop.booth.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Booth temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_shop.booth.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Booth humidity",
+      "titleRu": "Влажность камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paint_shop.film.build",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Film build",
+      "titleRu": "Толщина покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_shop.dirt.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dirt defects",
+      "titleRu": "Дефекты грязи",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_shop.oven.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Oven in spec",
+      "titleRu": "Сушка в допуске",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paint_shop.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Paint stage",
+      "titleRu": "Стадия окраски",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pretreat",
+        "e_coat",
+        "primer",
+        "base",
+        "clear",
+        "inspect"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
