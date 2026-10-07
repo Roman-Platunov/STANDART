@@ -1,0 +1,119 @@
+{
+  "layer": "B20",
+  "name": "layer-b-mes_batch.json",
+  "types": [
+    {
+      "path": "mes_batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MES batch id",
+      "titleRu": "ID партии MES",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mes_batch.recipe.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Recipe id",
+      "titleRu": "ID рецепта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mes_batch.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Batch progress",
+      "titleRu": "Прогресс партии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mes_batch.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Yield",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mes_batch.exceptions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exceptions",
+      "titleRu": "Исключений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mes_batch.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Elapsed",
+      "titleRu": "Прошло",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mes_batch.released",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Batch released",
+      "titleRu": "Партия выпущена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mes_batch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Batch state",
+      "titleRu": "Состояние партии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "setup",
+        "run",
+        "hold",
+        "review",
+        "complete",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

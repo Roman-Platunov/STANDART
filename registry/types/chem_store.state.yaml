@@ -1,0 +1,20 @@
+sid: 1ff1d295
+path: chem_store.state
+aliases:
+  short: chem_store.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние склада
+  en: Store state
+fingerprint: sha256:1ff1d2954d7918924678c6b31b041d6bf53198204f9594c71b276f6d7184b048
+enumValues:
+  - ok
+  - alarm
+  - inventory
+  - offline

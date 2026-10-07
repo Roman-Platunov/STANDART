@@ -1,0 +1,21 @@
+sid: 4858743a
+path: aed_cabinet.state
+aliases:
+  short: aed_cabinet.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шкафа
+  en: Cabinet state
+fingerprint: sha256:4858743a7355599a97ec1821571854d823a57217362afcb6e13d384c830b0a4e
+enumValues:
+  - ready
+  - open
+  - service
+  - missing
+  - fault

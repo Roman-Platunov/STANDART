@@ -1,0 +1,113 @@
+{
+  "layer": "B20",
+  "name": "layer-b-glovebox.json",
+  "types": [
+    {
+      "path": "glovebox.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Glovebox id",
+      "titleRu": "ID перчаточного бокса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glovebox.o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Oxygen",
+      "titleRu": "Кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glovebox.h2o",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Moisture",
+      "titleRu": "Влага",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glovebox.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Box pressure",
+      "titleRu": "Давление бокса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glovebox.purge",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Purge flow",
+      "titleRu": "Расход продувки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glovebox.solvent",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Solvent vapor",
+      "titleRu": "Пары растворителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glovebox.regen",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Regenerating",
+      "titleRu": "Регенерация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "glovebox.atm",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Atmosphere",
+      "titleRu": "Атмосфера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "n2",
+        "ar",
+        "he",
+        "air",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

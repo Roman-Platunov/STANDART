@@ -1,0 +1,111 @@
+{
+  "layer": "B20",
+  "name": "layer-b-ground_antlr.json",
+  "types": [
+    {
+      "path": "ground_antlr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ground antenna id",
+      "titleRu": "ID наземной антенны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ground_antlr.pass.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pass id",
+      "titleRu": "ID сеанса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ground_antlr.az",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Azimuth",
+      "titleRu": "Азимут",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_antlr.el",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Elevation",
+      "titleRu": "Угол места",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_antlr.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Downlink SNR",
+      "titleRu": "ОСШ нисходящей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_antlr.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Site wind",
+      "titleRu": "Ветер на площадке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ground_antlr.tracking",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tracking",
+      "titleRu": "Сопровождение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ground_antlr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Antenna state",
+      "titleRu": "Состояние антенны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "slew",
+        "track",
+        "stow",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

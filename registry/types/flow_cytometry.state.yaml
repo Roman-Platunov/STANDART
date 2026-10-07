@@ -1,0 +1,21 @@
+sid: af42c774
+path: flow_cytometry.state
+aliases:
+  short: flow_cytometry.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние прибора
+  en: Instrument state
+fingerprint: sha256:af42c774a873dca8bdd3c4f7f85932afee3efc0cc7049281f9c90cf9cda8b7e0
+enumValues:
+  - ready
+  - acquire
+  - wash
+  - shutdown
+  - fault

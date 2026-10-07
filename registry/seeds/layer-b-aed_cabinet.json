@@ -1,0 +1,115 @@
+{
+  "layer": "B20",
+  "name": "layer-b-aed_cabinet.json",
+  "types": [
+    {
+      "path": "aed_cabinet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AED cabinet id",
+      "titleRu": "ID шкафа АВД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aed_cabinet.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AED device id",
+      "titleRu": "ID АВД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aed_cabinet.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "AED battery",
+      "titleRu": "Батарея АВД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aed_cabinet.self.test.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days since self-test",
+      "titleRu": "Дней с самотеста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aed_cabinet.pads.expiry.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Pad days to expiry",
+      "titleRu": "Дней до срока электродов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aed_cabinet.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cabinet temperature",
+      "titleRu": "Температура шкафа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aed_cabinet.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "AED ready",
+      "titleRu": "АВД готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aed_cabinet.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cabinet state",
+      "titleRu": "Состояние шкафа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "open",
+        "service",
+        "missing",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

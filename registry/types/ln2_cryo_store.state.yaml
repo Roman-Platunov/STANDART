@@ -1,0 +1,21 @@
+sid: b58c19da
+path: ln2_cryo_store.state
+aliases:
+  short: ln2_cryo_store.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние бака
+  en: Tank state
+fingerprint: sha256:b58c19da48699320b4b5dbf68c85d40442d7df79f66c2b0e7615e1b6c263426e
+enumValues:
+  - ok
+  - fill
+  - alarm
+  - inventory
+  - fault

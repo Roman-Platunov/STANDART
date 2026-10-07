@@ -1,0 +1,21 @@
+sid: f6977e9c
+path: shelf_cam.state
+aliases:
+  short: shelf_cam.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние полки
+  en: Shelf state
+fingerprint: sha256:f6977e9c57bbc4bd84ce0d80d14275a552c630c411088c4fcbe519e9bef56155
+enumValues:
+  - ok
+  - oos
+  - misplaced
+  - offline
+  - fault

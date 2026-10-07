@@ -1,0 +1,21 @@
+sid: 9a06f592
+path: alarm_mgmt.state
+aliases:
+  short: alarm_mgmt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние аварий
+  en: Alarm state
+fingerprint: sha256:9a06f592ed34da5bbd2e80aacb9208c2f13455d4fcf2114096b75a0e7c8403ad
+enumValues:
+  - normal
+  - busy
+  - flood
+  - suppress
+  - offline

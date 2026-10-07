@@ -1,0 +1,117 @@
+{
+  "layer": "B20",
+  "name": "layer-b-freezer_ult.json",
+  "types": [
+    {
+      "path": "freezer_ult.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ULT freezer id",
+      "titleRu": "ID ультранизкотемпературного морозильника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "freezer_ult.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freezer_ult.setpoint",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Setpoint",
+      "titleRu": "Уставка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freezer_ult.door.open_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Door open time",
+      "titleRu": "Время открытой двери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freezer_ult.alarm.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Hours in alarm",
+      "titleRu": "Часов в тревоге",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freezer_ult.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Backup battery",
+      "titleRu": "Резервная батарея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "freezer_ult.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature alarm",
+      "titleRu": "Тревога температуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "freezer_ult.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Freezer state",
+      "titleRu": "Состояние морозильника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "warm",
+        "alarm",
+        "defrost",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

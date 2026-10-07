@@ -1,0 +1,111 @@
+{
+  "layer": "B20",
+  "name": "layer-b-gas_cabin.json",
+  "types": [
+    {
+      "path": "gas_cabin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gas cabinet id",
+      "titleRu": "ID газового шкафа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gas_cabin.cylinder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cylinder id",
+      "titleRu": "ID баллона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gas_cabin.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cylinder pressure",
+      "titleRu": "Давление баллона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_cabin.flow",
+      "kind": "quantity",
+      "unit": "sccm",
+      "titleEn": "Delivery flow",
+      "titleRu": "Расход подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_cabin.leak",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Cabinet leak sensor",
+      "titleRu": "Датчик утечки шкафа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_cabin.exhaust",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Exhaust flow",
+      "titleRu": "Расход вытяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_cabin.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas alarm",
+      "titleRu": "Газовая тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gas_cabin.gas",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gas",
+      "titleRu": "Газ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "n2",
+        "h2",
+        "cl2",
+        "nh3",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

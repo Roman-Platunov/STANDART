@@ -1,0 +1,21 @@
+sid: cf5a3ec1
+path: tablet_press.state
+aliases:
+  short: tablet_press.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:cf5a3ec13a3937eb6a74554c824a4ac2299817746814666bedd4f4fac458dba4
+enumValues:
+  - setup
+  - run
+  - sample
+  - clean
+  - fault

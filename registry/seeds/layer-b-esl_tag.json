@@ -1,0 +1,115 @@
+{
+  "layer": "B20",
+  "name": "layer-b-esl_tag.json",
+  "types": [
+    {
+      "path": "esl_tag.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ESL tag id",
+      "titleRu": "ID электронных ценников",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "esl_tag.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Priced SKU id",
+      "titleRu": "ID SKU ценника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "esl_tag.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tag battery",
+      "titleRu": "Батарея ценника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "esl_tag.updates",
+      "kind": "quantity",
+      "unit": "/d",
+      "titleEn": "Price updates",
+      "titleRu": "Обновлений цены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esl_tag.rssi",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Gateway RSSI",
+      "titleRu": "RSSI шлюза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esl_tag.price",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Displayed price",
+      "titleRu": "Отображаемая цена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esl_tag.sync",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In sync",
+      "titleRu": "Синхронизирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "esl_tag.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tag state",
+      "titleRu": "Состояние ценника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "update",
+        "low_batt",
+        "orphan",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 33e04eab
+path: solvent_recovery.state
+aliases:
+  short: solvent_recovery.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:33e04eab5f212d58b9a07ebe881dbfd2505baba877de63734bcdf2642c592081
+enumValues:
+  - feed
+  - distill
+  - condense
+  - idle
+  - fault

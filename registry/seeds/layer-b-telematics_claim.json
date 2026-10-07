@@ -1,0 +1,109 @@
+{
+  "layer": "B20",
+  "name": "layer-b-telematics_claim.json",
+  "types": [
+    {
+      "path": "telematics_claim.claim.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Claim id",
+      "titleRu": "ID убытка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "telematics_claim.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Telematics device id",
+      "titleRu": "ID телематики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "telematics_claim.severity",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Peak crash accel",
+      "titleRu": "Пиковое ускорение ДТП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telematics_claim.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Impact speed",
+      "titleRu": "Скорость удара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telematics_claim.severity.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Event duration",
+      "titleRu": "Длительность события",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telematics_claim.photos",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Photos attached",
+      "titleRu": "Прикреплённых фото",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telematics_claim.fnol",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "FNOL filed",
+      "titleRu": "FNOL подан",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "telematics_claim.severity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Severity",
+      "titleRu": "Тяжесть",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "crash",
+        "near_miss",
+        "theft",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

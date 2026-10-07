@@ -1,0 +1,115 @@
+{
+  "layer": "B20",
+  "name": "layer-b-blister_line.json",
+  "types": [
+    {
+      "path": "blister_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blister line id",
+      "titleRu": "ID линии блистеров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blister_line.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blister batch id",
+      "titleRu": "ID партии блистеров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blister_line.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Blisters per hour",
+      "titleRu": "Блистеров в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blister_line.seal.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Seal temperature",
+      "titleRu": "Температура сварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blister_line.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "blister_line.forming",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Forming temperature",
+      "titleRu": "Температура формовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blister_line.vision.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vision fail",
+      "titleRu": "Брак зрения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "blister_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "fill",
+        "seal",
+        "carton",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

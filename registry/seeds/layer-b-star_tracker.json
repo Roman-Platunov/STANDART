@@ -1,0 +1,111 @@
+{
+  "layer": "B20",
+  "name": "layer-b-star_tracker.json",
+  "types": [
+    {
+      "path": "star_tracker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Star tracker id",
+      "titleRu": "ID звёздного датчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "star_tracker.attitude.err",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Attitude error",
+      "titleRu": "Ошибка ориентации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "star_tracker.stars",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stars tracked",
+      "titleRu": "Сопровождаемых звёзд",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "star_tracker.rate",
+      "kind": "quantity",
+      "unit": "deg/s",
+      "titleEn": "Angular rate",
+      "titleRu": "Угловая скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "star_tracker.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Detector temperature",
+      "titleRu": "Температура детектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "star_tracker.fov",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Field of view",
+      "titleRu": "Поле зрения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "star_tracker.lost",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lost in space",
+      "titleRu": "Потеря ориентировки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "star_tracker.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tracker state",
+      "titleRu": "Состояние датчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "track",
+        "acquire",
+        "blind",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

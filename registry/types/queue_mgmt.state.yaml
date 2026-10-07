@@ -1,0 +1,20 @@
+sid: fedeef02
+path: queue_mgmt.state
+aliases:
+  short: queue_mgmt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Lane state
+fingerprint: sha256:fedeef0248d7f96e02c53558b880caad15518dd84f3a8d40271c1dc32ce5ed1e
+enumValues:
+  - open
+  - closed
+  - express
+  - self_checkout

@@ -1,0 +1,20 @@
+sid: 32b249c5
+path: planogram_ops.state
+aliases:
+  short: planogram_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние планограммы
+  en: Planogram state
+fingerprint: sha256:32b249c5cb1d25a3abed45ec5577c61247e547b2be5b6147cd4016e1ec138f5a
+enumValues:
+  - compliant
+  - drift
+  - reset
+  - unknown

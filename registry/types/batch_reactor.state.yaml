@@ -1,0 +1,22 @@
+sid: d0d3a693
+path: batch_reactor.state
+aliases:
+  short: batch_reactor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние реактора
+  en: Reactor state
+fingerprint: sha256:d0d3a69307dfcfb3ff2a4f73a604423d8482820ecc1c48b5ea98e1a58a459937
+enumValues:
+  - charge
+  - react
+  - cool
+  - discharge
+  - cip
+  - fault

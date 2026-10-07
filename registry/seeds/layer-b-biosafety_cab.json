@@ -1,0 +1,121 @@
+{
+  "layer": "B20",
+  "name": "layer-b-biosafety_cab.json",
+  "types": [
+    {
+      "path": "biosafety_cab.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Biosafety cabinet id",
+      "titleRu": "ID бокса биобезопасности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biosafety_cab.downflow",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Downflow velocity",
+      "titleRu": "Скорость нисходящего потока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biosafety_cab.inflow",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Inflow velocity",
+      "titleRu": "Скорость входящего потока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biosafety_cab.filter.life",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "HEPA life remaining",
+      "titleRu": "Остаток ресурса HEPA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biosafety_cab.hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Runtime hours",
+      "titleRu": "Часы наработки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biosafety_cab.sash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sash height",
+      "titleRu": "Высота створки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biosafety_cab.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cabinet alarm",
+      "titleRu": "Тревога бокса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "biosafety_cab.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Class",
+      "titleRu": "Класс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "i",
+        "ii_a2",
+        "ii_b2",
+        "iii",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

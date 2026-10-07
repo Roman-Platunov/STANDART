@@ -1,0 +1,20 @@
+sid: 24a3fbe7
+path: leo_constellation.state
+aliases:
+  short: leo_constellation.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние группировки
+  en: Constellation state
+fingerprint: sha256:24a3fbe726661585787df6447d42d3df1abd49b1bc79807679fe9ff5c08483a2
+enumValues:
+  - nominal
+  - outage
+  - maneuver
+  - commission

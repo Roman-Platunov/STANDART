@@ -1,0 +1,113 @@
+{
+  "layer": "B20",
+  "name": "layer-b-hot_work_permit.json",
+  "types": [
+    {
+      "path": "hot_work_permit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hot work permit id",
+      "titleRu": "ID наряда на огневые работы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hot_work_permit.area.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Work area id",
+      "titleRu": "ID зоны работ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hot_work_permit.gas",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LEL reading",
+      "titleRu": "Показание НПВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hot_work_permit.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Permit duration",
+      "titleRu": "Длительность наряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_work_permit.watchers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fire watchers",
+      "titleRu": "Постовых",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_work_permit.checks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gas checks",
+      "titleRu": "Газовых замеров",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_work_permit.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Permit active",
+      "titleRu": "Наряд активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hot_work_permit.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Permit state",
+      "titleRu": "Состояние наряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "draft",
+        "issued",
+        "active",
+        "closed",
+        "suspended"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

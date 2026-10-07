@@ -1,0 +1,20 @@
+sid: bb7ca313
+path: fume_hood.state
+aliases:
+  short: fume_hood.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шкафа
+  en: Hood state
+fingerprint: sha256:bb7ca31394e5543c1b29cbed10fb9836806f61b28db219b808fd6d35b0ca0d59
+enumValues:
+  - ok
+  - low_flow
+  - sash_high
+  - fault

@@ -1,0 +1,21 @@
+sid: 513aacff
+path: sequencer_ngs.state
+aliases:
+  short: sequencer_ngs.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние секвенатора
+  en: Sequencer state
+fingerprint: sha256:513aacffd64e90e1a9d1b7c13c0c9e34d429ee8eb70f24ca5faeec2b48b6f426
+enumValues:
+  - load
+  - sequence
+  - wash
+  - idle
+  - fault

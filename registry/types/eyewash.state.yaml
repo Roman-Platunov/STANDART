@@ -1,0 +1,20 @@
+sid: 38ce6b6b
+path: eyewash.state
+aliases:
+  short: eyewash.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:38ce6b6b11faceaaaf788a353a485933c9d5879d14866e838423374988e772e7
+enumValues:
+  - ready
+  - test_due
+  - out_of_service
+  - fault

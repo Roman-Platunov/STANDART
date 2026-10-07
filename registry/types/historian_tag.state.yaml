@@ -1,0 +1,20 @@
+sid: d31ef28b
+path: historian_tag.state
+aliases:
+  short: historian_tag.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние историка
+  en: Historian state
+fingerprint: sha256:d31ef28b607360db3d3e77b0dba44e857d3a5c5dfd1e4c3e3b22667a72841862
+enumValues:
+  - collect
+  - backfill
+  - archive
+  - fault

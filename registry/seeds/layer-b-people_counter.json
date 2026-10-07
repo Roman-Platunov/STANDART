@@ -1,0 +1,108 @@
+{
+  "layer": "B20",
+  "name": "layer-b-people_counter.json",
+  "types": [
+    {
+      "path": "people_counter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "People counter id",
+      "titleRu": "ID счётчика посетителей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "people_counter.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Count zone id",
+      "titleRu": "ID зоны подсчёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "people_counter.in",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Entries",
+      "titleRu": "Входов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "people_counter.out",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exits",
+      "titleRu": "Выходов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "people_counter.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Current occupancy",
+      "titleRu": "Текущая заполненность",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "people_counter.dwell.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Average dwell",
+      "titleRu": "Среднее время пребывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "people_counter.capacity",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "At capacity",
+      "titleRu": "Заполненность максимальна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "people_counter.tech",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Technology",
+      "titleRu": "Технология",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tof",
+        "stereo",
+        "wifi",
+        "thermal",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

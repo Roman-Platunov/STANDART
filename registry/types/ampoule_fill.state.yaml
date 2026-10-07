@@ -1,0 +1,22 @@
+sid: 11fce612
+path: ampoule_fill.state
+aliases:
+  short: ampoule_fill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:11fce612d3af2da09e22ac10a47e83eb6687e2e19aa0e109109622f414188477
+enumValues:
+  - wash
+  - sterilize
+  - fill
+  - seal
+  - inspect
+  - fault

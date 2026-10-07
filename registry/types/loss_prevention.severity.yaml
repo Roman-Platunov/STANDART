@@ -1,0 +1,20 @@
+sid: 062ce759
+path: loss_prevention.severity
+aliases:
+  short: loss_prevention.severity
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тяжесть
+  en: Severity
+fingerprint: sha256:062ce7590678d52508e9f6b649066ea886ef3e99a75117b00035875eaae45c2f
+enumValues:
+  - info
+  - watch
+  - incident
+  - theft

@@ -1,0 +1,111 @@
+{
+  "layer": "B20",
+  "name": "layer-b-thruster_cold.json",
+  "types": [
+    {
+      "path": "thruster_cold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cold-gas thruster id",
+      "titleRu": "ID холодогазового двигателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thruster_cold.pulse.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Pulse width",
+      "titleRu": "Длительность импульса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thruster_cold.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Feed pressure",
+      "titleRu": "Давление питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thruster_cold.impulse",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Impulse bit proxy",
+      "titleRu": "Импульс (прокси)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thruster_cold.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Nozzle temperature",
+      "titleRu": "Температура сопла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thruster_cold.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Firing cycles",
+      "titleRu": "Циклов включения",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thruster_cold.valve.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Valve open",
+      "titleRu": "Клапан открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thruster_cold.propellant",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Propellant",
+      "titleRu": "Рабочее тело",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "n2",
+        "xe",
+        "ar",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

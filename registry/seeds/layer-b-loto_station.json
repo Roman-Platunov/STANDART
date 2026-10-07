@@ -1,0 +1,108 @@
+{
+  "layer": "B20",
+  "name": "layer-b-loto_station.json",
+  "types": [
+    {
+      "path": "loto_station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LOTO station id",
+      "titleRu": "ID станции LOTO",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loto_station.lock.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lock id",
+      "titleRu": "ID блокировки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loto_station.locks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Locks applied",
+      "titleRu": "Наложено блокировок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loto_station.points",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Isolation points",
+      "titleRu": "Точек изоляции",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loto_station.duration.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Isolation duration",
+      "titleRu": "Длительность изоляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loto_station.workers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Workers under LOTO",
+      "titleRu": "Работников под LOTO",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loto_station.verified",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Zero energy verified",
+      "titleRu": "Нулевая энергия подтверждена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "loto_station.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "LOTO state",
+      "titleRu": "Состояние LOTO",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "isolated",
+        "tryout",
+        "release",
+        "complete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 326d3f8d
+path: water_for_inj.state
+aliases:
+  short: water_for_inj.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:326d3f8da583ca8cb472b30c606572e9f45ca2f1065d45ddf4d7b55649ae9b8e
+enumValues:
+  - produce
+  - sanitize
+  - idle
+  - fault

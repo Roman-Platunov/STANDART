@@ -1,0 +1,116 @@
+{
+  "layer": "B20",
+  "name": "layer-b-crystallizer.json",
+  "types": [
+    {
+      "path": "crystallizer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Crystallizer id",
+      "titleRu": "ID кристаллизатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crystallizer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Magma temperature",
+      "titleRu": "Температура магмы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crystallizer.supersat",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Supersaturation",
+      "titleRu": "Пересыщение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crystallizer.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Level",
+      "titleRu": "Уровень",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crystallizer.agitation",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Agitator speed",
+      "titleRu": "Обороты мешалки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crystallizer.size",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Mean crystal size",
+      "titleRu": "Средний размер кристаллов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crystallizer.foul",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fouling",
+      "titleRu": "Загрязнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crystallizer.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cooling",
+        "evap",
+        "reactive",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

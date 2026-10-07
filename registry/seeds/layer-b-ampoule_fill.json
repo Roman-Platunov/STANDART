@@ -1,0 +1,116 @@
+{
+  "layer": "B20",
+  "name": "layer-b-ampoule_fill.json",
+  "types": [
+    {
+      "path": "ampoule_fill.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ampoule fill line id",
+      "titleRu": "ID линии ампул",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ampoule_fill.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ampoule batch id",
+      "titleRu": "ID партии ампул",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ampoule_fill.volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ampoule_fill.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Ampoules per hour",
+      "titleRu": "Ампул в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ampoule_fill.particles",
+      "kind": "quantity",
+      "unit": "/L",
+      "titleEn": "Particle count",
+      "titleRu": "Счёт частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ampoule_fill.seal.fail",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Seal fail rate",
+      "titleRu": "Брак запайки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ampoule_fill.aseptic.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aseptic OK",
+      "titleRu": "Асептика OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ampoule_fill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wash",
+        "sterilize",
+        "fill",
+        "seal",
+        "inspect",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

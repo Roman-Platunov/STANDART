@@ -1,0 +1,116 @@
+{
+  "layer": "B20",
+  "name": "layer-b-ln2_cryo_store.json",
+  "types": [
+    {
+      "path": "ln2_cryo_store.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cryo storage tank id",
+      "titleRu": "ID криохранилища",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ln2_cryo_store.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LN2 level",
+      "titleRu": "Уровень LN2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ln2_cryo_store.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sample temperature",
+      "titleRu": "Температура образцов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ln2_cryo_store.usage",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "LN2 usage",
+      "titleRu": "Расход LN2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ln2_cryo_store.samples",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Samples stored",
+      "titleRu": "Образцов на хранении",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ln2_cryo_store.lid.open_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Lid open time",
+      "titleRu": "Время открытой крышки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ln2_cryo_store.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "LN2 low",
+      "titleRu": "Мало LN2",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ln2_cryo_store.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tank state",
+      "titleRu": "Состояние бака",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "fill",
+        "alarm",
+        "inventory",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

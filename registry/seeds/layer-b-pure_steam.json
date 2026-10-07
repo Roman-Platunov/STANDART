@@ -1,0 +1,116 @@
+{
+  "layer": "B20",
+  "name": "layer-b-pure_steam.json",
+  "types": [
+    {
+      "path": "pure_steam.generator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pure steam generator id",
+      "titleRu": "ID генератора чистого пара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pure_steam.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pure_steam.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Steam temperature",
+      "titleRu": "Температура пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pure_steam.ncg",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Non-condensables",
+      "titleRu": "Неконденсируемые",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pure_steam.dryness",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dryness fraction",
+      "titleRu": "Степень сухости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pure_steam.prod",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Steam production",
+      "titleRu": "Выработка пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pure_steam.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quality OK",
+      "titleRu": "Качество OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pure_steam.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Generator state",
+      "titleRu": "Состояние генератора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "idle",
+        "sanitize",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

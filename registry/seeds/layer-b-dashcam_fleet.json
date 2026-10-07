@@ -1,0 +1,119 @@
+{
+  "layer": "B20",
+  "name": "layer-b-dashcam_fleet.json",
+  "types": [
+    {
+      "path": "dashcam_fleet.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dashcam id",
+      "titleRu": "ID видеорегистратора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dashcam_fleet.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fleet vehicle id",
+      "titleRu": "ID ТС автопарка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dashcam_fleet.events",
+      "kind": "quantity",
+      "unit": "/d",
+      "titleEn": "Events per day",
+      "titleRu": "Событий в сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dashcam_fleet.storage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Storage used",
+      "titleRu": "Занято хранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dashcam_fleet.upload",
+      "kind": "quantity",
+      "unit": "By",
+      "titleEn": "Upload volume",
+      "titleRu": "Объём выгрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dashcam_fleet.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Device battery",
+      "titleRu": "Батарея устройства",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dashcam_fleet.recording",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Recording",
+      "titleRu": "Запись",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dashcam_fleet.trigger",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Last trigger",
+      "titleRu": "Последний триггер",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gforce",
+        "manual",
+        "geofence",
+        "ai",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

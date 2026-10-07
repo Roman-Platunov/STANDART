@@ -1,0 +1,20 @@
+sid: 6a2443ea
+path: star_tracker.state
+aliases:
+  short: star_tracker.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние датчика
+  en: Tracker state
+fingerprint: sha256:6a2443eae7b65231f0398e7cdf2adb4e74812f80c3cec6a784bc3e02adf14289
+enumValues:
+  - track
+  - acquire
+  - blind
+  - fault

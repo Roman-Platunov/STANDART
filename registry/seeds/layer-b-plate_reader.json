@@ -1,0 +1,109 @@
+{
+  "layer": "B20",
+  "name": "layer-b-plate_reader.json",
+  "types": [
+    {
+      "path": "plate_reader.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plate reader id",
+      "titleRu": "ID ридера планшетов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plate_reader.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Read run id",
+      "titleRu": "ID прогона чтения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plate_reader.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Read temperature",
+      "titleRu": "Температура чтения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plate_reader.wells",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wells read",
+      "titleRu": "Прочитано лунок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plate_reader.od",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Mean OD",
+      "titleRu": "Средняя ОП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plate_reader.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Read time",
+      "titleRu": "Время чтения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plate_reader.cal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Calibrated",
+      "titleRu": "Откалиброван",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "plate_reader.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "absorbance",
+        "fluorescence",
+        "luminescence",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

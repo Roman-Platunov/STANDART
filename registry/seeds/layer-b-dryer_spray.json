@@ -1,0 +1,117 @@
+{
+  "layer": "B20",
+  "name": "layer-b-dryer_spray.json",
+  "types": [
+    {
+      "path": "dryer_spray.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spray dryer id",
+      "titleRu": "ID распылительной сушилки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dryer_spray.inlet.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet temperature",
+      "titleRu": "Температура на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dryer_spray.outlet.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outlet temperature",
+      "titleRu": "Температура на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dryer_spray.feed",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dryer_spray.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dryer_spray.atomizer",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Atomizer speed",
+      "titleRu": "Обороты распылителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dryer_spray.stick",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chamber sticking",
+      "titleRu": "Налипание в камере",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dryer_spray.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dryer state",
+      "titleRu": "Состояние сушилки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "spray",
+        "cool",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

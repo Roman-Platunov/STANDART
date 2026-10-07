@@ -1,0 +1,112 @@
+{
+  "layer": "B20",
+  "name": "layer-b-planogram_ops.json",
+  "types": [
+    {
+      "path": "planogram_ops.store.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Store id",
+      "titleRu": "ID магазина",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "planogram_ops.fixture.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fixture id",
+      "titleRu": "ID стеллажа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "planogram_ops.compliance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Compliance",
+      "titleRu": "Соответствие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "planogram_ops.gaps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Facing gaps",
+      "titleRu": "Пропусков фейсингов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "planogram_ops.audits",
+      "kind": "quantity",
+      "unit": "/d",
+      "titleEn": "Audits per day",
+      "titleRu": "Аудитов в сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "planogram_ops.skus",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "SKUs on fixture",
+      "titleRu": "SKU на стеллаже",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "planogram_ops.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reset due",
+      "titleRu": "Пора переставлять",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "planogram_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Planogram state",
+      "titleRu": "Состояние планограммы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "compliant",
+        "drift",
+        "reset",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

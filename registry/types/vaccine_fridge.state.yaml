@@ -1,0 +1,21 @@
+sid: d547603e
+path: vaccine_fridge.state
+aliases:
+  short: vaccine_fridge.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние холодильника
+  en: Fridge state
+fingerprint: sha256:d547603ea389f683d70e81fd3b8658d279235dac4cd8e14a8e38e73d2d2ebbff
+enumValues:
+  - ok
+  - warn
+  - excursion
+  - offline
+  - fault

@@ -1,0 +1,21 @@
+sid: f094251e
+path: dryer_spray.state
+aliases:
+  short: dryer_spray.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сушилки
+  en: Dryer state
+fingerprint: sha256:f094251efa7396ba7bad3930c27e48e7dd85e3ad6aa606fa9405e94f81ebd8ae
+enumValues:
+  - heat
+  - spray
+  - cool
+  - cip
+  - fault

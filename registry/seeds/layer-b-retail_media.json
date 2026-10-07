@@ -1,0 +1,118 @@
+{
+  "layer": "B20",
+  "name": "layer-b-retail_media.json",
+  "types": [
+    {
+      "path": "retail_media.screen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Retail media screen id",
+      "titleRu": "ID экрана retail media",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retail_media.campaign.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Campaign id",
+      "titleRu": "ID кампании",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retail_media.impressions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Impressions",
+      "titleRu": "Показов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail_media.dwell.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Dwell time",
+      "titleRu": "Время просмотра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retail_media.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Screen uptime",
+      "titleRu": "Аптайм экрана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "retail_media.brightness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Brightness",
+      "titleRu": "Яркость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "retail_media.playing",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Creative playing",
+      "titleRu": "Ролик играет",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "retail_media.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Screen state",
+      "titleRu": "Состояние экрана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "play",
+        "idle",
+        "update",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

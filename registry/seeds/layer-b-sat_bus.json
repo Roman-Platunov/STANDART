@@ -1,0 +1,112 @@
+{
+  "layer": "B20",
+  "name": "layer-b-sat_bus.json",
+  "types": [
+    {
+      "path": "sat_bus.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Satellite bus id",
+      "titleRu": "ID платформы КА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sat_bus.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Bus power",
+      "titleRu": "Мощность шины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sat_bus.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Bus voltage",
+      "titleRu": "Напряжение шины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sat_bus.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bus temperature",
+      "titleRu": "Температура платформы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sat_bus.mode.uptime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Mode uptime",
+      "titleRu": "Время в режиме",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sat_bus.faults",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Latched faults",
+      "titleRu": "Зафиксированных отказов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sat_bus.safe",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Safe mode",
+      "titleRu": "Безопасный режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sat_bus.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bus mode",
+      "titleRu": "Режим платформы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "nominal",
+        "safe",
+        "eclipse",
+        "commission",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

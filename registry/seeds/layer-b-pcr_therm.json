@@ -1,0 +1,110 @@
+{
+  "layer": "B20",
+  "name": "layer-b-pcr_therm.json",
+  "types": [
+    {
+      "path": "pcr_therm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thermal cycler id",
+      "titleRu": "ID амплификатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pcr_therm.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PCR run id",
+      "titleRu": "ID прогона ПЦР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pcr_therm.block.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Block temperature",
+      "titleRu": "Температура блока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcr_therm.cycle",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Current cycle",
+      "titleRu": "Текущий цикл",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcr_therm.hold.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Step hold",
+      "titleRu": "Выдержка шага",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcr_therm.lid.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Lid temperature",
+      "titleRu": "Температура крышки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcr_therm.running",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Protocol running",
+      "titleRu": "Протокол выполняется",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pcr_therm.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cycler state",
+      "titleRu": "Состояние амплификатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "run",
+        "pause",
+        "complete",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

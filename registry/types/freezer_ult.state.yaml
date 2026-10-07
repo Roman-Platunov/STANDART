@@ -1,0 +1,21 @@
+sid: 4f326e47
+path: freezer_ult.state
+aliases:
+  short: freezer_ult.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние морозильника
+  en: Freezer state
+fingerprint: sha256:4f326e47aec2bd76b3f989a165f00b35b91018768926c533e929e0a38ebb2803
+enumValues:
+  - ok
+  - warm
+  - alarm
+  - defrost
+  - fault

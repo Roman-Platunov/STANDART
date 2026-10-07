@@ -1,0 +1,114 @@
+{
+  "layer": "B20",
+  "name": "layer-b-leo_constellation.json",
+  "types": [
+    {
+      "path": "leo_constellation.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Constellation id",
+      "titleRu": "ID группировки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leo_constellation.sats",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Satellites active",
+      "titleRu": "Активных КА",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leo_constellation.planes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Orbital planes",
+      "titleRu": "Плоскостей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leo_constellation.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Service coverage",
+      "titleRu": "Покрытие услуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leo_constellation.handover",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Handovers per hour",
+      "titleRu": "Хендоверов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leo_constellation.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "User latency",
+      "titleRu": "Задержка пользователя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leo_constellation.degraded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Service degraded",
+      "titleRu": "Услуга деградирована",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "leo_constellation.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Constellation state",
+      "titleRu": "Состояние группировки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "nominal",
+        "outage",
+        "maneuver",
+        "commission"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

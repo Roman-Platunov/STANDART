@@ -1,0 +1,124 @@
+{
+  "layer": "B20",
+  "name": "layer-b-incubator_co2.json",
+  "types": [
+    {
+      "path": "incubator_co2.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CO2 incubator id",
+      "titleRu": "ID CO2-инкубатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "incubator_co2.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "incubator_co2.co2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CO2 concentration",
+      "titleRu": "Концентрация CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "incubator_co2.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "incubator_co2.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "O2 concentration",
+      "titleRu": "Концентрация O2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "incubator_co2.door.open_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Door open time",
+      "titleRu": "Время открытой двери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "incubator_co2.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Parameter alarm",
+      "titleRu": "Тревога параметра",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "incubator_co2.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Incubator state",
+      "titleRu": "Состояние инкубатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "recover",
+        "decon",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

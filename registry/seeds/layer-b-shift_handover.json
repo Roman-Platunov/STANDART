@@ -1,0 +1,107 @@
+{
+  "layer": "B20",
+  "name": "layer-b-shift_handover.json",
+  "types": [
+    {
+      "path": "shift_handover.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Handover id",
+      "titleRu": "ID передачи смены",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shift_handover.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Unit id",
+      "titleRu": "ID установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shift_handover.open.items",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open items",
+      "titleRu": "Открытых пунктов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shift_handover.alarms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Standing alarms",
+      "titleRu": "Стоящих аварий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shift_handover.permits",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active permits",
+      "titleRu": "Активных нарядов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shift_handover.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Handover duration",
+      "titleRu": "Длительность передачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shift_handover.complete",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Handover complete",
+      "titleRu": "Передача завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shift_handover.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Handover state",
+      "titleRu": "Состояние передачи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "brief",
+        "accept",
+        "complete"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

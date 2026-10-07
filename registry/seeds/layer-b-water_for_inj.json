@@ -1,0 +1,112 @@
+{
+  "layer": "B20",
+  "name": "layer-b-water_for_inj.json",
+  "types": [
+    {
+      "path": "water_for_inj.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WFI system id",
+      "titleRu": "ID системы ВДИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "water_for_inj.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Loop temperature",
+      "titleRu": "Температура контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_for_inj.toc",
+      "kind": "quantity",
+      "unit": "ppb",
+      "titleEn": "TOC",
+      "titleRu": "ООУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_for_inj.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Conductivity",
+      "titleRu": "Проводимость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_for_inj.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Loop flow",
+      "titleRu": "Расход контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_for_inj.endotoxin",
+      "kind": "quantity",
+      "unit": "/L",
+      "titleEn": "Endotoxin count",
+      "titleRu": "Счёт эндотоксина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_for_inj.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In specification",
+      "titleRu": "В спецификации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "water_for_inj.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "sanitize",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

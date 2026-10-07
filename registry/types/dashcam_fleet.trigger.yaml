@@ -1,0 +1,21 @@
+sid: 04c29bdc
+path: dashcam_fleet.trigger
+aliases:
+  short: dashcam_fleet.trigger
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Последний триггер
+  en: Last trigger
+fingerprint: sha256:04c29bdc21866235c7271e8bd00643a6343be24a1279d2a7c6f681c182f1ec82
+enumValues:
+  - gforce
+  - manual
+  - geofence
+  - ai
+  - other

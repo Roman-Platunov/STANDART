@@ -1,0 +1,115 @@
+{
+  "layer": "B20",
+  "name": "layer-b-chem_store.json",
+  "types": [
+    {
+      "path": "chem_store.room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chemical store room id",
+      "titleRu": "ID химсклада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chem_store.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Room temperature",
+      "titleRu": "Температура помещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chem_store.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chem_store.voc",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "VOC level",
+      "titleRu": "Уровень ЛОС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chem_store.containers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Containers on hand",
+      "titleRu": "Ёмкостей в наличии",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chem_store.exhaust",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Exhaust flow",
+      "titleRu": "Расход вытяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chem_store.incompat",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Incompatibility flag",
+      "titleRu": "Флаг несовместимости",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chem_store.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Store state",
+      "titleRu": "Состояние склада",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "alarm",
+        "inventory",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

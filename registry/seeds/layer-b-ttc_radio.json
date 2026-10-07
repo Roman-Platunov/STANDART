@@ -1,0 +1,111 @@
+{
+  "layer": "B20",
+  "name": "layer-b-ttc_radio.json",
+  "types": [
+    {
+      "path": "ttc_radio.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "TT&C radio id",
+      "titleRu": "ID радиолинии ТМИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ttc_radio.sat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "TT&C satellite id",
+      "titleRu": "ID КА ТМИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ttc_radio.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Carrier frequency",
+      "titleRu": "Несущая частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ttc_radio.ebno",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Eb/N0",
+      "titleRu": "Eb/N0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ttc_radio.ber",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bit error rate",
+      "titleRu": "Частота ошибок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ttc_radio.power",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "TX power",
+      "titleRu": "Мощность передатчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ttc_radio.lock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Carrier lock",
+      "titleRu": "Захват несущей",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ttc_radio.band",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Band",
+      "titleRu": "Диапазон",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "uhf",
+        "s",
+        "x",
+        "ka",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

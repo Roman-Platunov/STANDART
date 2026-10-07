@@ -1,0 +1,112 @@
+{
+  "layer": "B20",
+  "name": "layer-b-vaccine_fridge.json",
+  "types": [
+    {
+      "path": "vaccine_fridge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vaccine fridge id",
+      "titleRu": "ID холодильника вакцин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vaccine_fridge.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fridge temperature",
+      "titleRu": "Температура холодильника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vaccine_fridge.min.24h",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "24h minimum",
+      "titleRu": "Минимум за 24 ч",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vaccine_fridge.max.24h",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "24h maximum",
+      "titleRu": "Максимум за 24 ч",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vaccine_fridge.door.open_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Door open time",
+      "titleRu": "Время открытой двери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vaccine_fridge.doses",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Doses on hand",
+      "titleRu": "Дозов в наличии",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vaccine_fridge.excursion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temp excursion",
+      "titleRu": "Выход температуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vaccine_fridge.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fridge state",
+      "titleRu": "Состояние холодильника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "warn",
+        "excursion",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

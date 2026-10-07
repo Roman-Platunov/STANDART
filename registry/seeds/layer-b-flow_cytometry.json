@@ -1,0 +1,109 @@
+{
+  "layer": "B20",
+  "name": "layer-b-flow_cytometry.json",
+  "types": [
+    {
+      "path": "flow_cytometry.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flow cytometer id",
+      "titleRu": "ID проточного цитометра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flow_cytometry.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cytometry run id",
+      "titleRu": "ID прогона цитометрии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flow_cytometry.events",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Events acquired",
+      "titleRu": "Событий собрано",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flow_cytometry.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Event rate",
+      "titleRu": "Скорость событий",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flow_cytometry.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Sheath pressure",
+      "titleRu": "Давление оболочки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flow_cytometry.lasers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Lasers on",
+      "titleRu": "Лазеров включено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flow_cytometry.clog",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flow cell clog",
+      "titleRu": "Засор проточной ячейки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flow_cytometry.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Instrument state",
+      "titleRu": "Состояние прибора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "acquire",
+        "wash",
+        "shutdown",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

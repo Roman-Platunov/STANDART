@@ -1,0 +1,112 @@
+{
+  "layer": "B20",
+  "name": "layer-b-payload_cam.json",
+  "types": [
+    {
+      "path": "payload_cam.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Payload camera id",
+      "titleRu": "ID полезной нагрузки — камера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "payload_cam.integration.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Integration time",
+      "titleRu": "Время экспозиции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "payload_cam.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Focal plane temperature",
+      "titleRu": "Температура ФП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "payload_cam.gain",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gain",
+      "titleRu": "Усиление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "payload_cam.frames",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Frames captured",
+      "titleRu": "Снято кадров",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "payload_cam.data.gb",
+      "kind": "quantity",
+      "unit": "By",
+      "titleEn": "Data volume",
+      "titleRu": "Объём данных",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "payload_cam.imaging",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Imaging",
+      "titleRu": "Съёмка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "payload_cam.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pushbroom",
+        "frame",
+        "video",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 547e538f
+path: payload_cam.mode
+aliases:
+  short: payload_cam.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:547e538f3e5ad7d43b831a741e9f5013e5e0661cfbf6dc6152c26827e834e8c6
+enumValues:
+  - pushbroom
+  - frame
+  - video
+  - idle
+  - fault

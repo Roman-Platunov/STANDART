@@ -1,0 +1,21 @@
+sid: 0d33b013
+path: isolator_pharma.state
+aliases:
+  short: isolator_pharma.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние изолятора
+  en: Isolator state
+fingerprint: sha256:0d33b013d5285e6748cfc108059a08b16781f9ab139a8e7df24603679656b624
+enumValues:
+  - idle
+  - decon
+  - process
+  - maintain
+  - fault

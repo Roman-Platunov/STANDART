@@ -1,0 +1,116 @@
+{
+  "layer": "B20",
+  "name": "layer-b-fume_hood.json",
+  "types": [
+    {
+      "path": "fume_hood.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fume hood id",
+      "titleRu": "ID вытяжного шкафа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fume_hood.face.vel",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Face velocity",
+      "titleRu": "Скорость в створе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fume_hood.sash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sash open",
+      "titleRu": "Открытие створки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fume_hood.alarm.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Alarm duration",
+      "titleRu": "Длительность тревоги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fume_hood.exhaust",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Exhaust flow",
+      "titleRu": "Расход вытяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fume_hood.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hood temperature",
+      "titleRu": "Температура шкафа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fume_hood.safe",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Safe to work",
+      "titleRu": "Безопасно работать",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fume_hood.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hood state",
+      "titleRu": "Состояние шкафа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "low_flow",
+        "sash_high",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

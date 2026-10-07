@@ -1,0 +1,114 @@
+{
+  "layer": "B20",
+  "name": "layer-b-historian_tag.json",
+  "types": [
+    {
+      "path": "historian_tag.server.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Historian server id",
+      "titleRu": "ID сервера историка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "historian_tag.tags",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tags collected",
+      "titleRu": "Собираемых тегов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "historian_tag.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Samples per second",
+      "titleRu": "Отсчётов в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "historian_tag.lag.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Collection lag",
+      "titleRu": "Отставание сбора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "historian_tag.disk",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Disk used",
+      "titleRu": "Занято диска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "historian_tag.gaps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Data gaps open",
+      "titleRu": "Открытых разрывов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "historian_tag.healthy",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Collection healthy",
+      "titleRu": "Сбор здоров",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "historian_tag.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Historian state",
+      "titleRu": "Состояние историка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "collect",
+        "backfill",
+        "archive",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: a7cd2c02
+path: granulator.state
+aliases:
+  short: granulator.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние гранулятора
+  en: Granulator state
+fingerprint: sha256:a7cd2c02100ac309aba7944993143f58c82dbb8466170a95a6ca4c99ab1a7454
+enumValues:
+  - dry_mix
+  - wet_mass
+  - granulate
+  - discharge
+  - fault

@@ -1,0 +1,21 @@
+sid: fd36d362
+path: pcr_therm.state
+aliases:
+  short: pcr_therm.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние амплификатора
+  en: Cycler state
+fingerprint: sha256:fd36d362cf4f439607534404e5a32b25875806fb55989de7976c63b53ba13d87
+enumValues:
+  - idle
+  - run
+  - pause
+  - complete
+  - fault

@@ -1,0 +1,21 @@
+sid: 6f1f5f1a
+path: ground_antlr.state
+aliases:
+  short: ground_antlr.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние антенны
+  en: Antenna state
+fingerprint: sha256:6f1f5f1ad091d5bbdedd43073ac71cc7860914a9e6f50757516b0208487ec237
+enumValues:
+  - idle
+  - slew
+  - track
+  - stow
+  - fault

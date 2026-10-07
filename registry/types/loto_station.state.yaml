@@ -1,0 +1,21 @@
+sid: d1321662
+path: loto_station.state
+aliases:
+  short: loto_station.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние LOTO
+  en: LOTO state
+fingerprint: sha256:d1321662692f75bd7359ac5a55e6472556714fb244365396b24ec84e522caca9
+enumValues:
+  - open
+  - isolated
+  - tryout
+  - release
+  - complete

@@ -1,0 +1,114 @@
+{
+  "layer": "B20",
+  "name": "layer-b-weigh_dispense.json",
+  "types": [
+    {
+      "path": "weigh_dispense.booth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dispensing booth id",
+      "titleRu": "ID кабины отвешивания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weigh_dispense.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dispense batch id",
+      "titleRu": "ID партии отвешивания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weigh_dispense.target",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Target mass",
+      "titleRu": "Целевая масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_dispense.actual",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Actual mass",
+      "titleRu": "Фактическая масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_dispense.tolerance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tolerance used",
+      "titleRu": "Использованный допуск",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "weigh_dispense.components",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Components weighed",
+      "titleRu": "Взвешенных компонентов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weigh_dispense.verified",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Second person verified",
+      "titleRu": "Проверено вторым лицом",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "weigh_dispense.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Booth state",
+      "titleRu": "Состояние кабины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "weigh",
+        "verify",
+        "complete",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

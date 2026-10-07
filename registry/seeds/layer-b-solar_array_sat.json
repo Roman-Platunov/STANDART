@@ -1,0 +1,112 @@
+{
+  "layer": "B20",
+  "name": "layer-b-solar_array_sat.json",
+  "types": [
+    {
+      "path": "solar_array_sat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Solar array id",
+      "titleRu": "ID солнечной батареи КА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "solar_array_sat.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Array current",
+      "titleRu": "Ток батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_array_sat.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Array voltage",
+      "titleRu": "Напряжение батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_array_sat.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Array power",
+      "titleRu": "Мощность батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_array_sat.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Sun angle",
+      "titleRu": "Угол на Солнце",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_array_sat.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Panel temperature",
+      "titleRu": "Температура панели",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solar_array_sat.stowed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stowed",
+      "titleRu": "Сложена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "solar_array_sat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Array state",
+      "titleRu": "Состояние батареи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "deploy",
+        "track",
+        "stow",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

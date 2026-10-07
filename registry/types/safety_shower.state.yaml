@@ -1,0 +1,20 @@
+sid: b1446e91
+path: safety_shower.state
+aliases:
+  short: safety_shower.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние душа
+  en: Shower state
+fingerprint: sha256:b1446e913a7b7e707da8510452442531e802c9f398d2ff7c307eb8c8619d9615
+enumValues:
+  - ready
+  - test_due
+  - out_of_service
+  - fault

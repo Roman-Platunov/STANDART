@@ -1,0 +1,113 @@
+{
+  "layer": "B20",
+  "name": "layer-b-distill_column.json",
+  "types": [
+    {
+      "path": "distill_column.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Distillation column id",
+      "titleRu": "ID ректификационной колонны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "distill_column.top.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Top temperature",
+      "titleRu": "Температура верха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distill_column.bottom.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bottom temperature",
+      "titleRu": "Температура низа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distill_column.reflux",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reflux ratio",
+      "titleRu": "Флегмовое число",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distill_column.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Column pressure",
+      "titleRu": "Давление колонны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distill_column.feed",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distill_column.flood",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flooding",
+      "titleRu": "Захлёбывание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "distill_column.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Column state",
+      "titleRu": "Состояние колонны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "startup",
+        "run",
+        "turndown",
+        "shutdown",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

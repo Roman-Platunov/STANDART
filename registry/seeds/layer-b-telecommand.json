@@ -1,0 +1,113 @@
+{
+  "layer": "B20",
+  "name": "layer-b-telecommand.json",
+  "types": [
+    {
+      "path": "telecommand.session.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "TC session id",
+      "titleRu": "ID сеанса командования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "telecommand.sat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Commanded satellite id",
+      "titleRu": "ID управляемого КА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "telecommand.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Commands queued",
+      "titleRu": "Команд в очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecommand.ack",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "ACK rate",
+      "titleRu": "Доля подтверждений",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "telecommand.latency.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Round-trip latency",
+      "titleRu": "Задержка туда-обратно",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecommand.reject",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rejected commands",
+      "titleRu": "Отклонённых команд",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "telecommand.armed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Uplink armed",
+      "titleRu": "Передача вооружена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "telecommand.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Session state",
+      "titleRu": "Состояние сеанса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "uplink",
+        "verify",
+        "abort",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "layer": "B20",
+  "name": "layer-b-confined_entry.json",
+  "types": [
+    {
+      "path": "confined_entry.permit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Confined space permit id",
+      "titleRu": "ID наряда на замкнутое пространство",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "confined_entry.space.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Space id",
+      "titleRu": "ID пространства",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "confined_entry.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oxygen",
+      "titleRu": "Кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "confined_entry.lel",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LEL",
+      "titleRu": "НПВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "confined_entry.h2s",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2S",
+      "titleRu": "H2S",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "confined_entry.entrants",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Entrants inside",
+      "titleRu": "Входящих внутри",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "confined_entry.attendant",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Attendant present",
+      "titleRu": "Наблюдатель на месте",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "confined_entry.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Entry state",
+      "titleRu": "Состояние входа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "test",
+        "enter",
+        "work",
+        "exit",
+        "rescue",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

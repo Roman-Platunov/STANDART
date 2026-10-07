@@ -1,0 +1,20 @@
+sid: 0943e1e7
+path: reaction_wheel.state
+aliases:
+  short: reaction_wheel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние маховика
+  en: Wheel state
+fingerprint: sha256:0943e1e7d52cce224cdb34f835ca7a44596da574106fc58f8b28d85fd40c8f1b
+enumValues:
+  - run
+  - idle
+  - desat
+  - fault

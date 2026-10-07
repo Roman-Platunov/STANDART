@@ -1,0 +1,22 @@
+sid: ced14af9
+path: confined_entry.state
+aliases:
+  short: confined_entry.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние входа
+  en: Entry state
+fingerprint: sha256:ced14af925cabc47f6b704ac461bbf8d76092530da47bd036c3829d4c7d1af5e
+enumValues:
+  - test
+  - enter
+  - work
+  - exit
+  - rescue
+  - closed

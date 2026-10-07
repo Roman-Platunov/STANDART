@@ -1,0 +1,112 @@
+{
+  "layer": "B20",
+  "name": "layer-b-loss_prevention.json",
+  "types": [
+    {
+      "path": "loss_prevention.store.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LP store id",
+      "titleRu": "ID магазина LP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loss_prevention.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LP event id",
+      "titleRu": "ID события LP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loss_prevention.alarms",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "EAS alarms",
+      "titleRu": "Срабатываний EAS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loss_prevention.shrink",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Shrink estimate",
+      "titleRu": "Оценка потерь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "loss_prevention.cameras",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cameras online",
+      "titleRu": "Камер онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loss_prevention.exceptions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "POS exceptions",
+      "titleRu": "Исключений POS",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loss_prevention.escalate",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Escalation open",
+      "titleRu": "Эскалация открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "loss_prevention.severity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Severity",
+      "titleRu": "Тяжесть",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "info",
+        "watch",
+        "incident",
+        "theft"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

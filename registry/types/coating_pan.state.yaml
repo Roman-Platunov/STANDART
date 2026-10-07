@@ -1,0 +1,21 @@
+sid: 54a18a4a
+path: coating_pan.state
+aliases:
+  short: coating_pan.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние котла
+  en: Pan state
+fingerprint: sha256:54a18a4a6e749033aa51bd0272bf815032248cb52c7e0a55ed5883d6079c03f3
+enumValues:
+  - preheat
+  - spray
+  - dry
+  - cool
+  - fault

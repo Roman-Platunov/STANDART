@@ -1,0 +1,20 @@
+sid: 13be6890
+path: pure_steam.state
+aliases:
+  short: pure_steam.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние генератора
+  en: Generator state
+fingerprint: sha256:13be6890c630b67eea0d39d754fbb2e95c290b06fc3b9c8cd4eb3c121c2f44ee
+enumValues:
+  - produce
+  - idle
+  - sanitize
+  - fault

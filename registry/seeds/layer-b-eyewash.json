@@ -1,0 +1,111 @@
+{
+  "layer": "B20",
+  "name": "layer-b-eyewash.json",
+  "types": [
+    {
+      "path": "eyewash.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Eyewash station id",
+      "titleRu": "ID фонтанчика для глаз",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "eyewash.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Flow rate",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eyewash.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eyewash.last.test.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days since test",
+      "titleRu": "Дней с проверки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eyewash.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Supply pressure",
+      "titleRu": "Давление питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eyewash.activations",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Activations",
+      "titleRu": "Срабатываний",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eyewash.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready",
+      "titleRu": "Готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "eyewash.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "test_due",
+        "out_of_service",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

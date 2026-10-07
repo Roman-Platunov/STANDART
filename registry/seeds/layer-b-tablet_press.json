@@ -1,0 +1,111 @@
+{
+  "layer": "B20",
+  "name": "layer-b-tablet_press.json",
+  "types": [
+    {
+      "path": "tablet_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tablet press id",
+      "titleRu": "ID таблетпресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tablet_press.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tablet batch id",
+      "titleRu": "ID партии таблеток",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tablet_press.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Tablets per hour",
+      "titleRu": "Таблеток в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tablet_press.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Compression force",
+      "titleRu": "Усилие прессования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tablet_press.weight",
+      "kind": "quantity",
+      "unit": "mg",
+      "titleEn": "Tablet weight",
+      "titleRu": "Масса таблетки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tablet_press.hardness",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Hardness",
+      "titleRu": "Твёрдость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tablet_press.reject",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reject high",
+      "titleRu": "Высокий брак",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tablet_press.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "setup",
+        "run",
+        "sample",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

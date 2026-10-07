@@ -1,0 +1,114 @@
+{
+  "layer": "B20",
+  "name": "layer-b-queue_mgmt.json",
+  "types": [
+    {
+      "path": "queue_mgmt.lane.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Queue lane id",
+      "titleRu": "ID кассовой/очереди",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "queue_mgmt.length",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "People in queue",
+      "titleRu": "Людей в очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "queue_mgmt.wait.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Expected wait",
+      "titleRu": "Ожидаемое ожидание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "queue_mgmt.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Customers per hour",
+      "titleRu": "Клиентов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "queue_mgmt.open.lanes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open lanes",
+      "titleRu": "Открытых линий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "queue_mgmt.abandon",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Abandon rate",
+      "titleRu": "Доля отказов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "queue_mgmt.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Long queue alert",
+      "titleRu": "Тревога длинной очереди",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "queue_mgmt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lane state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "express",
+        "self_checkout"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

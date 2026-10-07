@@ -1,0 +1,110 @@
+{
+  "layer": "B20",
+  "name": "layer-b-reaction_wheel.json",
+  "types": [
+    {
+      "path": "reaction_wheel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reaction wheel id",
+      "titleRu": "ID маховика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reaction_wheel.sat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Host satellite id",
+      "titleRu": "ID КА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reaction_wheel.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Wheel speed",
+      "titleRu": "Обороты маховика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reaction_wheel.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Commanded torque",
+      "titleRu": "Заданный момент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reaction_wheel.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reaction_wheel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bearing temperature",
+      "titleRu": "Температура подшипника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reaction_wheel.saturate",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Saturated",
+      "titleRu": "Насыщение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "reaction_wheel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wheel state",
+      "titleRu": "Состояние маховика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "desat",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B20",
+  "name": "layer-b-fitting_room.json",
+  "types": [
+    {
+      "path": "fitting_room.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fitting room id",
+      "titleRu": "ID примерочной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fitting_room.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Occupied rooms",
+      "titleRu": "Занятых кабин",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fitting_room.wait.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Queue wait",
+      "titleRu": "Ожидание в очереди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fitting_room.calls",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Assistance calls",
+      "titleRu": "Вызовов помощи",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fitting_room.dwell.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Average dwell",
+      "titleRu": "Среднее время",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fitting_room.traffic",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Entries per hour",
+      "titleRu": "Входов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fitting_room.assist",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Assistance requested",
+      "titleRu": "Запрошена помощь",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fitting_room.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Room state",
+      "titleRu": "Состояние кабины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "occupied",
+        "assist",
+        "clean",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

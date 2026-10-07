@@ -1,0 +1,110 @@
+{
+  "layer": "B20",
+  "name": "layer-b-alarm_mgmt.json",
+  "types": [
+    {
+      "path": "alarm_mgmt.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Alarm system id",
+      "titleRu": "ID системы аварий",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "alarm_mgmt.active",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active alarms",
+      "titleRu": "Активных аварий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alarm_mgmt.priority1",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Priority-1 alarms",
+      "titleRu": "Аварий приоритета 1",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alarm_mgmt.flood",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Alarm rate",
+      "titleRu": "Частота аварий",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alarm_mgmt.ack.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Mean time to ack",
+      "titleRu": "Среднее время квитирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alarm_mgmt.shelved",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shelved alarms",
+      "titleRu": "Отложенных аварий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alarm_mgmt.flooding",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Alarm flood",
+      "titleRu": "Лавина аварий",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "alarm_mgmt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Alarm state",
+      "titleRu": "Состояние аварий",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "busy",
+        "flood",
+        "suppress",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

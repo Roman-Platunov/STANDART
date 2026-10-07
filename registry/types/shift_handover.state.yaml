@@ -1,0 +1,20 @@
+sid: 9e05791b
+path: shift_handover.state
+aliases:
+  short: shift_handover.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние передачи
+  en: Handover state
+fingerprint: sha256:9e05791bb86da8346066ac067e3d5ccda9f486fa45217e9c546925be29733536
+enumValues:
+  - prep
+  - brief
+  - accept
+  - complete

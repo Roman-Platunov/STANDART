@@ -1,0 +1,21 @@
+sid: f021f593
+path: esl_tag.state
+aliases:
+  short: esl_tag.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ценника
+  en: Tag state
+fingerprint: sha256:f021f593057f8f5d4de419064268c9470be2c24302c37c52a1e26b9754bed3b8
+enumValues:
+  - ok
+  - update
+  - low_batt
+  - orphan
+  - fault

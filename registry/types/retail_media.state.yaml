@@ -1,0 +1,21 @@
+sid: a1cff503
+path: retail_media.state
+aliases:
+  short: retail_media.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние экрана
+  en: Screen state
+fingerprint: sha256:a1cff503f8ffd75faba26d1ac8b9f8acd6a02069f3a93a0d7d745091f15eaddb
+enumValues:
+  - play
+  - idle
+  - update
+  - offline
+  - fault

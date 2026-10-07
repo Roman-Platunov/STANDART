@@ -1,0 +1,21 @@
+sid: ccd70e22
+path: weigh_dispense.state
+aliases:
+  short: weigh_dispense.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кабины
+  en: Booth state
+fingerprint: sha256:ccd70e22321a06d73a7b26334fad96a7115f3ad45a630ef87e17f57fc94220d2
+enumValues:
+  - idle
+  - weigh
+  - verify
+  - complete
+  - fault

@@ -1,0 +1,20 @@
+sid: a0d521f3
+path: plate_reader.mode
+aliases:
+  short: plate_reader.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:a0d521f395f921a0015c133ae8ae58e3b3347b52385911a898879eccd7e8d756
+enumValues:
+  - absorbance
+  - fluorescence
+  - luminescence
+  - other

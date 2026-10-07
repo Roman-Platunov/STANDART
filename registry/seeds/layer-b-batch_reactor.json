@@ -1,0 +1,116 @@
+{
+  "layer": "B20",
+  "name": "layer-b-batch_reactor.json",
+  "types": [
+    {
+      "path": "batch_reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch reactor id",
+      "titleRu": "ID периодического реактора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "batch_reactor.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reactor batch id",
+      "titleRu": "ID партии реактора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "batch_reactor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batch_reactor.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Reactor pressure",
+      "titleRu": "Давление реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batch_reactor.agitation",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Agitator speed",
+      "titleRu": "Обороты мешалки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batch_reactor.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Level",
+      "titleRu": "Уровень",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "batch_reactor.exotherm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Exotherm",
+      "titleRu": "Экзотермия",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "batch_reactor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reactor state",
+      "titleRu": "Состояние реактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "react",
+        "cool",
+        "discharge",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

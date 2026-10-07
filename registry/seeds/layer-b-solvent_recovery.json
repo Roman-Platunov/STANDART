@@ -1,0 +1,121 @@
+{
+  "layer": "B20",
+  "name": "layer-b-solvent_recovery.json",
+  "types": [
+    {
+      "path": "solvent_recovery.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Solvent recovery unit id",
+      "titleRu": "ID установки рекуперации растворителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "solvent_recovery.feed",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Solvent feed",
+      "titleRu": "Подача растворителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solvent_recovery.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovery efficiency",
+      "titleRu": "КПД рекуперации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "solvent_recovery.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovered purity",
+      "titleRu": "Чистота рекуперата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "solvent_recovery.condenser.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Condenser temperature",
+      "titleRu": "Температура конденсатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solvent_recovery.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Still vacuum",
+      "titleRu": "Вакуум куба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "solvent_recovery.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Product ready",
+      "titleRu": "Продукт готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "solvent_recovery.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "feed",
+        "distill",
+        "condense",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

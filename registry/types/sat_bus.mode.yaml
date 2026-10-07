@@ -1,0 +1,21 @@
+sid: df4bd0a7
+path: sat_bus.mode
+aliases:
+  short: sat_bus.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим платформы
+  en: Bus mode
+fingerprint: sha256:df4bd0a73f1e136f53400e8c18136ad80d30aa0da303076ccbe2dd32a2c8022c
+enumValues:
+  - nominal
+  - safe
+  - eclipse
+  - commission
+  - fault

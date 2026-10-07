@@ -1,0 +1,118 @@
+{
+  "layer": "B20",
+  "name": "layer-b-sequencer_ngs.json",
+  "types": [
+    {
+      "path": "sequencer_ngs.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NGS sequencer id",
+      "titleRu": "ID секвенатора NGS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sequencer_ngs.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sequencing run id",
+      "titleRu": "ID прогона секвенирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sequencer_ngs.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Run progress",
+      "titleRu": "Прогресс прогона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sequencer_ngs.q30",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Q30 bases",
+      "titleRu": "Баз Q30",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sequencer_ngs.clusters",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Clusters passing filter",
+      "titleRu": "Кластеров прошедших фильтр",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sequencer_ngs.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Flow cell temperature",
+      "titleRu": "Температура проточной ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sequencer_ngs.complete",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Run complete",
+      "titleRu": "Прогон завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sequencer_ngs.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sequencer state",
+      "titleRu": "Состояние секвенатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "sequence",
+        "wash",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+sid: 3fdc5cda
+path: mes_batch.state
+aliases:
+  short: mes_batch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние партии
+  en: Batch state
+fingerprint: sha256:3fdc5cdab0bfa0b947df88493f32496fd0221dcf4ea8655fe7880cd2bacea391
+enumValues:
+  - setup
+  - run
+  - hold
+  - review
+  - complete
+  - abort

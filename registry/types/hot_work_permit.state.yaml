@@ -1,0 +1,21 @@
+sid: 81e6e986
+path: hot_work_permit.state
+aliases:
+  short: hot_work_permit.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние наряда
+  en: Permit state
+fingerprint: sha256:81e6e986055213a168a463e030304563c3406d2070e743120c3e2d46423897fe
+enumValues:
+  - draft
+  - issued
+  - active
+  - closed
+  - suspended

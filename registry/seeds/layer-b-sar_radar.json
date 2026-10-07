@@ -1,0 +1,113 @@
+{
+  "layer": "B20",
+  "name": "layer-b-sar_radar.json",
+  "types": [
+    {
+      "path": "sar_radar.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SAR payload id",
+      "titleRu": "ID РСА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sar_radar.prf",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "PRF",
+      "titleRu": "Частота повторения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sar_radar.bandwidth",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Chirp bandwidth",
+      "titleRu": "Полоса чирпа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sar_radar.look.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Look angle",
+      "titleRu": "Угол визирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sar_radar.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "RF power",
+      "titleRu": "Мощность СВЧ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sar_radar.swath",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Swath width",
+      "titleRu": "Ширина полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sar_radar.transmit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Transmitting",
+      "titleRu": "Передача",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sar_radar.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "strip",
+        "spot",
+        "scan",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

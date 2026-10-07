@@ -1,0 +1,121 @@
+{
+  "layer": "B20",
+  "name": "layer-b-propellant_tank.json",
+  "types": [
+    {
+      "path": "propellant_tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Propellant tank id",
+      "titleRu": "ID бака топлива КА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "propellant_tank.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tank pressure",
+      "titleRu": "Давление бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propellant_tank.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tank temperature",
+      "titleRu": "Температура бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propellant_tank.fill",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fill fraction",
+      "titleRu": "Степень заполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "propellant_tank.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Propellant mass",
+      "titleRu": "Масса топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propellant_tank.ullage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ullage",
+      "titleRu": "Газовая подушка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "propellant_tank.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low propellant",
+      "titleRu": "Мало топлива",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "propellant_tank.fluid",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fluid",
+      "titleRu": "Жидкость",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hydrazine",
+        "xenon",
+        "n2o4",
+        "green",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

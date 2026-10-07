@@ -1,0 +1,20 @@
+sid: afbc4016
+path: incubator_co2.state
+aliases:
+  short: incubator_co2.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние инкубатора
+  en: Incubator state
+fingerprint: sha256:afbc40160f245c8b777da5d68841f811a0bc95e30d6cf931fb52080b83528bbc
+enumValues:
+  - ok
+  - recover
+  - decon
+  - fault

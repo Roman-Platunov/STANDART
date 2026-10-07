@@ -1,0 +1,115 @@
+{
+  "layer": "B20",
+  "name": "layer-b-coating_pan.json",
+  "types": [
+    {
+      "path": "coating_pan.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coating pan id",
+      "titleRu": "ID дражировочного котла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coating_pan.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coating batch id",
+      "titleRu": "ID партии покрытия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coating_pan.drum.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Drum speed",
+      "titleRu": "Обороты барабана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coating_pan.spray",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Spray rate",
+      "titleRu": "Скорость напыления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coating_pan.inlet.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet air temperature",
+      "titleRu": "Температура входящего воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coating_pan.weight.gain",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Weight gain",
+      "titleRu": "Прирост массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coating_pan.twin",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Twinning",
+      "titleRu": "Слипание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coating_pan.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pan state",
+      "titleRu": "Состояние котла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "preheat",
+        "spray",
+        "dry",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

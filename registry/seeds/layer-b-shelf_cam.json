@@ -1,0 +1,123 @@
+{
+  "layer": "B20",
+  "name": "layer-b-shelf_cam.json",
+  "types": [
+    {
+      "path": "shelf_cam.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shelf camera id",
+      "titleRu": "ID камеры полки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shelf_cam.aisle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aisle id",
+      "titleRu": "ID прохода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shelf_cam.oos",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Out-of-stock estimate",
+      "titleRu": "Оценка out-of-stock",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shelf_cam.planogram",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Planogram compliance",
+      "titleRu": "Соответствие планограмме",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shelf_cam.events",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Shelf events",
+      "titleRu": "Событий полки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shelf_cam.confidence",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Detection confidence",
+      "titleRu": "Уверенность детекции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shelf_cam.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Restock alert",
+      "titleRu": "Тревога пополнения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shelf_cam.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shelf state",
+      "titleRu": "Состояние полки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "oos",
+        "misplaced",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

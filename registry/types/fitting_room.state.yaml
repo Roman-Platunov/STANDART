@@ -1,0 +1,21 @@
+sid: fd1ea4f4
+path: fitting_room.state
+aliases:
+  short: fitting_room.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кабины
+  en: Room state
+fingerprint: sha256:fd1ea4f4247b89a32b333081fb28836bd619c47d65ba8add37eda75066354367
+enumValues:
+  - free
+  - occupied
+  - assist
+  - clean
+  - offline

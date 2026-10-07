@@ -1,0 +1,21 @@
+sid: dcb195d7
+path: distill_column.state
+aliases:
+  short: distill_column.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние колонны
+  en: Column state
+fingerprint: sha256:dcb195d7e7f6b6bcb36378c8a545da2e1caeaf82f378843f8a55942f8fa8d237
+enumValues:
+  - startup
+  - run
+  - turndown
+  - shutdown
+  - fault

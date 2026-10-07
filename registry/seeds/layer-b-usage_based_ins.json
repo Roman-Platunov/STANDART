@@ -1,0 +1,113 @@
+{
+  "layer": "B20",
+  "name": "layer-b-usage_based_ins.json",
+  "types": [
+    {
+      "path": "usage_based_ins.policy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UBI policy id",
+      "titleRu": "ID полиса UBI",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "usage_based_ins.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Insured vehicle id",
+      "titleRu": "ID застрахованного ТС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "usage_based_ins.score",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Driving score",
+      "titleRu": "Оценка вождения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "usage_based_ins.km",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Period distance",
+      "titleRu": "Пробег за период",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "usage_based_ins.hard.brake",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hard brakes",
+      "titleRu": "Резких торможений",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "usage_based_ins.night.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Night driving share",
+      "titleRu": "Доля ночных поездок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "usage_based_ins.claim.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Open claim",
+      "titleRu": "Открытый убыток",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "usage_based_ins.tier",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Risk tier",
+      "titleRu": "Уровень риска",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "low",
+        "medium",
+        "high",
+        "review"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

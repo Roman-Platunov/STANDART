@@ -1,0 +1,21 @@
+sid: 08db4768
+path: sar_radar.mode
+aliases:
+  short: sar_radar.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:08db47683a9754638aefccab1267e0269e4746fd9ab042c0328e7d0fa6a2039b
+enumValues:
+  - strip
+  - spot
+  - scan
+  - idle
+  - fault

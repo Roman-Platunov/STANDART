@@ -1,0 +1,21 @@
+sid: "622509e1"
+path: telecommand.state
+aliases:
+  short: telecommand.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сеанса
+  en: Session state
+fingerprint: sha256:622509e19d9b5ee2ecf2c26ff0ab94d3eb3985f5df0ea93a337e23baf44fa274
+enumValues:
+  - idle
+  - uplink
+  - verify
+  - abort
+  - fault

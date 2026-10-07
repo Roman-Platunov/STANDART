@@ -1,0 +1,21 @@
+sid: 6217846b
+path: blister_line.state
+aliases:
+  short: blister_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:6217846b9537258f0a95429e755fcad1670a4da78baec00cb820e9b5f42c9947
+enumValues:
+  - form
+  - fill
+  - seal
+  - carton
+  - fault

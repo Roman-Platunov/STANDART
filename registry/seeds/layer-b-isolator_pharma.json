@@ -1,0 +1,112 @@
+{
+  "layer": "B20",
+  "name": "layer-b-isolator_pharma.json",
+  "types": [
+    {
+      "path": "isolator_pharma.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharma isolator id",
+      "titleRu": "ID изолятора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "isolator_pharma.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber pressure",
+      "titleRu": "Давление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_pharma.particles",
+      "kind": "quantity",
+      "unit": "/L",
+      "titleEn": "Particle count",
+      "titleRu": "Счёт частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_pharma.h2o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2O2 residual",
+      "titleRu": "Остаток H2O2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_pharma.gloves",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Glove integrity checks due",
+      "titleRu": "Проверок перчаток к сроку",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_pharma.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "isolator_pharma.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Containment breach",
+      "titleRu": "Нарушение герметичности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "isolator_pharma.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Isolator state",
+      "titleRu": "Состояние изолятора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "decon",
+        "process",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

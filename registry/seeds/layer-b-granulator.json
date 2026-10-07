@@ -1,0 +1,111 @@
+{
+  "layer": "B20",
+  "name": "layer-b-granulator.json",
+  "types": [
+    {
+      "path": "granulator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Granulator id",
+      "titleRu": "ID гранулятора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "granulator.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Granulation batch id",
+      "titleRu": "ID партии грануляции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "granulator.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Impeller power",
+      "titleRu": "Мощность импеллера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "granulator.binder",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Binder rate",
+      "titleRu": "Расход связующего",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "granulator.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "granulator.size",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Granule size",
+      "titleRu": "Размер гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "granulator.endpoint",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Endpoint reached",
+      "titleRu": "Достигнута конечная точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "granulator.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Granulator state",
+      "titleRu": "Состояние гранулятора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry_mix",
+        "wet_mass",
+        "granulate",
+        "discharge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
