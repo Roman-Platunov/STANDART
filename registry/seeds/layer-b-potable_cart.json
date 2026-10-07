@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-potable_cart.json",
+  "types": [
+    {
+      "path": "potable_cart.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Potable water cart id",
+      "titleRu": "ID тележки питьевой воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "potable_cart.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "potable_cart.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Water dispensed",
+      "titleRu": "Отдано воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potable_cart.chlorine",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Chlorine residual",
+      "titleRu": "Остаточный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potable_cart.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Fill rate",
+      "titleRu": "Скорость наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potable_cart.tank",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cart tank level",
+      "titleRu": "Уровень бака тележки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "potable_cart.connected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hose connected",
+      "titleRu": "Рукав подключён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "potable_cart.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cart state",
+      "titleRu": "Состояние тележки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "fill",
+        "flush",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B24",
+  "name": "layer-b-tunnel_vent_fan.json",
+  "types": [
+    {
+      "path": "tunnel_vent_fan.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Road / rail tunnel fan id",
+      "titleRu": "ID вентилятора тоннеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tunnel_vent_fan.tunnel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tunnel id",
+      "titleRu": "ID тоннеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tunnel_vent_fan.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Fan speed",
+      "titleRu": "Обороты вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_vent_fan.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Airflow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_vent_fan.co",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO level",
+      "titleRu": "Уровень CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_vent_fan.visibility",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Visibility",
+      "titleRu": "Видимость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_vent_fan.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire mode",
+      "titleRu": "Режим пожара",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tunnel_vent_fan.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "pollution",
+        "fire",
+        "reverse",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

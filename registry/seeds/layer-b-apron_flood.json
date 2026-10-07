@@ -1,0 +1,115 @@
+{
+  "layer": "B24",
+  "name": "layer-b-apron_flood.json",
+  "types": [
+    {
+      "path": "apron_flood.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Apron floodlight zone id",
+      "titleRu": "ID зоны освещения перрона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "apron_flood.lux",
+      "kind": "quantity",
+      "unit": "lx",
+      "titleEn": "Horizontal illuminance",
+      "titleRu": "Освещённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apron_flood.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Lighting power",
+      "titleRu": "Мощность освещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apron_flood.dim",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dim level",
+      "titleRu": "Уровень диммирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "apron_flood.failed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Failed fixtures",
+      "titleRu": "Неисправных светильников",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apron_flood.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fixture temperature",
+      "titleRu": "Температура светильника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apron_flood.night",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Night mode",
+      "titleRu": "Ночной режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "apron_flood.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "dim",
+        "off",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

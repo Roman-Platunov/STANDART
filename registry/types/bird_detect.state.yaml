@@ -1,0 +1,20 @@
+sid: "77218860"
+path: bird_detect.state
+aliases:
+  short: bird_detect.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:77218860c21cfb0d9c59a6f3c86e3cebe639aea054128853d83fce270341b489
+enumValues:
+  - scan
+  - alert
+  - disperse
+  - offline

@@ -1,0 +1,110 @@
+{
+  "layer": "B24",
+  "name": "layer-b-catering_cart.json",
+  "types": [
+    {
+      "path": "catering_cart.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Catering cart / high-loader id",
+      "titleRu": "ID кейтеринг-тележки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "catering_cart.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "catering_cart.trolleys",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trolleys loaded",
+      "titleRu": "Тележек загружено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catering_cart.lift.m",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Lift height",
+      "titleRu": "Высота подъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catering_cart.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Service cycle",
+      "titleRu": "Цикл обслуживания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catering_cart.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cold cart temperature",
+      "titleRu": "Температура холодной тележки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catering_cart.docked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Docked to aircraft",
+      "titleRu": "Состыкован с ВС",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "catering_cart.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cart state",
+      "titleRu": "Состояние тележки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "transit",
+        "serve",
+        "return",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

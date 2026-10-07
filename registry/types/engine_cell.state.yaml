@@ -1,0 +1,20 @@
+sid: 73057af2
+path: engine_cell.state
+aliases:
+  short: engine_cell.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стенда
+  en: Cell state
+fingerprint: sha256:73057af2b21eb7fde3817cdf9f29d9e3e4d1333f38d6ac8001481a3dcd3c4202
+enumValues:
+  - idle
+  - run
+  - cool
+  - fault

@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-fleet_hub.json",
+  "types": [
+    {
+      "path": "fleet_hub.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fleet telematics hub id",
+      "titleRu": "ID хаба телематики флота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fleet_hub.vehicles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicles online",
+      "titleRu": "ТС онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet_hub.alerts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active alerts",
+      "titleRu": "Активных тревог",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet_hub.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Telemetry latency",
+      "titleRu": "Задержка телематики",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet_hub.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hub uptime",
+      "titleRu": "Доступность хаба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fleet_hub.msg",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Message rate",
+      "titleRu": "Сообщений в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet_hub.degraded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Degraded mode",
+      "titleRu": "Деградация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fleet_hub.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hub state",
+      "titleRu": "Состояние хаба",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "degraded",
+        "offline",
+        "maintain"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: a5834f34
+path: heli_pad_ops.state
+aliases:
+  short: heli_pad_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние площадки
+  en: Pad state
+fingerprint: sha256:a5834f341ef24759589900b8571cddfd0e87e6cd70dd1d33a8414368a415a7fd
+enumValues:
+  - open
+  - occupied
+  - closed
+  - weather

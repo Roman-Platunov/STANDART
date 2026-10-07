@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-mro_bay.json",
+  "types": [
+    {
+      "path": "mro_bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MRO hangar bay id",
+      "titleRu": "ID бокса ТОиР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mro_bay.ac.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aircraft id",
+      "titleRu": "ID ВС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mro_bay.open.tasks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open work orders",
+      "titleRu": "Открытых нарядов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mro_bay.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Check progress",
+      "titleRu": "Прогресс формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mro_bay.man.hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Man-hours logged",
+      "titleRu": "Человеко-часов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mro_bay.aog",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "AOG parts waiting",
+      "titleRu": "Ожидание AOG-запчастей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mro_bay.grounded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aircraft grounded",
+      "titleRu": "ВС на земле",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mro_bay.check",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Check type",
+      "titleRu": "Тип формы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "line",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

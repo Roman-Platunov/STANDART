@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-engine_cell.json",
+  "types": [
+    {
+      "path": "engine_cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Engine test cell id",
+      "titleRu": "ID стенда двигателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "engine_cell.esn",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Engine serial",
+      "titleRu": "Серийный номер двигателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "engine_cell.thrust",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Thrust / shaft power proxy",
+      "titleRu": "Тяга / мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_cell.n1",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "N1",
+      "titleRu": "N1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "engine_cell.egt",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "EGT / TOT",
+      "titleRu": "EGT / TOT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_cell.fuel",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Fuel flow",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_cell.abort",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Test abort",
+      "titleRu": "Прерывание испытания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "engine_cell.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cell state",
+      "titleRu": "Состояние стенда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "run",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

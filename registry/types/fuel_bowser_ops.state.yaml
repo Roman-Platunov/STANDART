@@ -1,0 +1,20 @@
+sid: 14f3ba64
+path: fuel_bowser_ops.state
+aliases:
+  short: fuel_bowser_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние заправщика
+  en: Bowser state
+fingerprint: sha256:14f3ba643d1d2c1e0595266d7cffdf3031974e58b453347eff48ba639eb807b1
+enumValues:
+  - idle
+  - fuel
+  - transit
+  - fault

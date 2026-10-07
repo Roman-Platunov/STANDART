@@ -1,0 +1,20 @@
+sid: bc956a17
+path: potable_cart.state
+aliases:
+  short: potable_cart.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние тележки
+  en: Cart state
+fingerprint: sha256:bc956a17e305f7f7dd443c3135ea9c67cdd7d0630f4063cd28dbc419b3e5dca6
+enumValues:
+  - idle
+  - fill
+  - flush
+  - fault

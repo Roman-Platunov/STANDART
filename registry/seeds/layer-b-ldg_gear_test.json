@@ -1,0 +1,110 @@
+{
+  "layer": "B24",
+  "name": "layer-b-ldg_gear_test.json",
+  "types": [
+    {
+      "path": "ldg_gear_test.rig.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Landing gear test rig id",
+      "titleRu": "ID стенда шасси",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ldg_gear_test.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gear unit id",
+      "titleRu": "ID стойки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ldg_gear_test.load",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Applied load",
+      "titleRu": "Приложенная нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ldg_gear_test.stroke",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Stroke",
+      "titleRu": "Ход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ldg_gear_test.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Hydraulic pressure",
+      "titleRu": "Давление гидравлики",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ldg_gear_test.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Test cycles",
+      "titleRu": "Циклов испытания",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ldg_gear_test.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hydraulic leak",
+      "titleRu": "Утечка гидравлики",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ldg_gear_test.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rig state",
+      "titleRu": "Состояние стенда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "setup",
+        "load",
+        "cycle",
+        "inspect",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

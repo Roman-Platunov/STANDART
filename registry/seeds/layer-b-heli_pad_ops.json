@@ -1,0 +1,115 @@
+{
+  "layer": "B24",
+  "name": "layer-b-heli_pad_ops.json",
+  "types": [
+    {
+      "path": "heli_pad_ops.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Helipad ops id",
+      "titleRu": "ID операций вертолётной площадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heli_pad_ops.movements",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Movements today",
+      "titleRu": "Движений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heli_pad_ops.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind",
+      "titleRu": "Ветер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heli_pad_ops.lighting",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pad lighting",
+      "titleRu": "Освещение площадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "heli_pad_ops.fuel",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "JetA dispensed",
+      "titleRu": "Выдано JetA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heli_pad_ops.rvr",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Visibility / RVR",
+      "titleRu": "Видимость / RVR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heli_pad_ops.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pad closed",
+      "titleRu": "Площадка закрыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heli_pad_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pad state",
+      "titleRu": "Состояние площадки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "occupied",
+        "closed",
+        "weather"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

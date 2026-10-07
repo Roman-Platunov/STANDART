@@ -1,0 +1,20 @@
+sid: afaffb86
+path: h2_bus_fill.state
+aliases:
+  short: h2_bus_fill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:afaffb86fdb22235a432d2ef6b177594f7576eda1c4b64eb216c930a7484d4ad
+enumValues:
+  - idle
+  - fill
+  - vent
+  - fault

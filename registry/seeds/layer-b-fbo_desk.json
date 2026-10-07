@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-fbo_desk.json",
+  "types": [
+    {
+      "path": "fbo_desk.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FBO operations desk id",
+      "titleRu": "ID операционного стола FBO",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fbo_desk.movements",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Aircraft movements today",
+      "titleRu": "Движений ВС за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fbo_desk.fuel",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fuel sold today",
+      "titleRu": "Топлива продано за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fbo_desk.hangar",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hangar occupancy",
+      "titleRu": "Занятость ангара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fbo_desk.wait.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Average service wait",
+      "titleRu": "Среднее ожидание сервиса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fbo_desk.slots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open slots",
+      "titleRu": "Свободных слотов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fbo_desk.night",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Night ops",
+      "titleRu": "Ночные операции",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fbo_desk.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Desk state",
+      "titleRu": "Состояние стола",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "busy",
+        "closed",
+        "weather"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

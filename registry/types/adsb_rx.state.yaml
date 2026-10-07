@@ -1,0 +1,20 @@
+sid: 86f2d28e
+path: adsb_rx.state
+aliases:
+  short: adsb_rx.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние приёмника
+  en: Receiver state
+fingerprint: sha256:86f2d28e7748412cad30076079da02b0bf88d7930d91c87ac8957c8c23119c23
+enumValues:
+  - ok
+  - degraded
+  - offline
+  - fault

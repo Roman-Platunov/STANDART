@@ -1,0 +1,110 @@
+{
+  "layer": "B24",
+  "name": "layer-b-h2_bus_fill.json",
+  "types": [
+    {
+      "path": "h2_bus_fill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hydrogen bus fill station id",
+      "titleRu": "ID заправки водородных автобусов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "h2_bus_fill.bus.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bus id",
+      "titleRu": "ID автобуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "h2_bus_fill.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Dispenser pressure",
+      "titleRu": "Давление колонки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_bus_fill.flow",
+      "kind": "quantity",
+      "unit": "kg/min",
+      "titleEn": "Fill rate",
+      "titleRu": "Скорость заправки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_bus_fill.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Dispensed mass",
+      "titleRu": "Отданная масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_bus_fill.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_bus_fill.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Filling",
+      "titleRu": "Заправка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "h2_bus_fill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "fill",
+        "vent",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

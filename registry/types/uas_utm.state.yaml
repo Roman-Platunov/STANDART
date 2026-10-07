@@ -1,0 +1,20 @@
+sid: 7a9a5dba
+path: uas_utm.state
+aliases:
+  short: uas_utm.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние UTM
+  en: UTM state
+fingerprint: sha256:7a9a5dba0204e16cc490f32decbc457296a1d615bfd4acacb854b8f3a3cbb331
+enumValues:
+  - normal
+  - congested
+  - lockdown
+  - offline

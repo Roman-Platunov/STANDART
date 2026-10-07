@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-seat_fit_line.json",
+  "types": [
+    {
+      "path": "seat_fit_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cabin seat fitment line id",
+      "titleRu": "ID линии установки кресел",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seat_fit_line.shipset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shipset id",
+      "titleRu": "ID комплекта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seat_fit_line.seats",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Seats installed",
+      "titleRu": "Кресел установлено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seat_fit_line.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Track bolt torque",
+      "titleRu": "Момент болтов рельса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seat_fit_line.rework",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rework rate",
+      "titleRu": "Доля переделок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "seat_fit_line.rate",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Seats per hour",
+      "titleRu": "Кресел в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seat_fit_line.ifo",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "IFO / IFE connected",
+      "titleRu": "IFO/IFE подключено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "seat_fit_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "kit",
+        "install",
+        "test",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

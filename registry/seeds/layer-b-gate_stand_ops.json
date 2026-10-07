@@ -1,0 +1,109 @@
+{
+  "layer": "B24",
+  "name": "layer-b-gate_stand_ops.json",
+  "types": [
+    {
+      "path": "gate_stand_ops.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gate / stand id",
+      "titleRu": "ID стоянки/гейта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gate_stand_ops.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gate_stand_ops.turn.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Turnaround remaining",
+      "titleRu": "Остаток оборота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gate_stand_ops.delay.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Delay",
+      "titleRu": "Задержка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gate_stand_ops.pax",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passengers boarded",
+      "titleRu": "Пассажиров посажено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gate_stand_ops.bags",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bags loaded",
+      "titleRu": "Багажа загружено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gate_stand_ops.occupied",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stand occupied",
+      "titleRu": "Стоянка занята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gate_stand_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stand state",
+      "titleRu": "Состояние стоянки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "inbound",
+        "turn",
+        "outbound",
+        "blocked"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B24",
+  "name": "layer-b-road_tun_light.json",
+  "types": [
+    {
+      "path": "road_tun_light.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Road tunnel lighting zone id",
+      "titleRu": "ID зоны освещения автотоннеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "road_tun_light.lux",
+      "kind": "quantity",
+      "unit": "lx",
+      "titleEn": "Illuminance",
+      "titleRu": "Освещённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road_tun_light.dim",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dim level",
+      "titleRu": "Диммирование",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "road_tun_light.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Lighting power",
+      "titleRu": "Мощность освещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road_tun_light.failed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Failed fixtures",
+      "titleRu": "Неисправных светильников",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road_tun_light.entry",
+      "kind": "quantity",
+      "unit": "lx",
+      "titleEn": "Entry luminance proxy",
+      "titleRu": "Яркость на въезде",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "road_tun_light.emergency",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency lighting",
+      "titleRu": "Аварийное освещение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "road_tun_light.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "day",
+        "night",
+        "emergency",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

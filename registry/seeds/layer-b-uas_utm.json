@@ -1,0 +1,113 @@
+{
+  "layer": "B24",
+  "name": "layer-b-uas_utm.json",
+  "types": [
+    {
+      "path": "uas_utm.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UAS UTM cell id",
+      "titleRu": "ID ячейки UTM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uas_utm.flights",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active UAS flights",
+      "titleRu": "Активных полётов БВС",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uas_utm.conflicts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Conflicts today",
+      "titleRu": "Конфликтов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uas_utm.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "C2 latency",
+      "titleRu": "Задержка C2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uas_utm.geofence",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Geofence breaches",
+      "titleRu": "Нарушений геозоны",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uas_utm.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Surveillance coverage",
+      "titleRu": "Покрытие наблюдения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "uas_utm.lockdown",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Airspace lockdown",
+      "titleRu": "Блокировка воздушного пространства",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "uas_utm.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "UTM state",
+      "titleRu": "Состояние UTM",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "congested",
+        "lockdown",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

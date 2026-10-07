@@ -1,0 +1,20 @@
+sid: df941ad8
+path: trolley_cat.state
+aliases:
+  short: trolley_cat.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние участка
+  en: Section state
+fingerprint: sha256:df941ad8b4507101b25bf4151d3b15f3150f14087f68a2f3bcaeb48d7579e0bd
+enumValues:
+  - ok
+  - ice
+  - fault
+  - outage

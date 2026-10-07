@@ -1,0 +1,113 @@
+{
+  "layer": "B24",
+  "name": "layer-b-wildlife_fence.json",
+  "types": [
+    {
+      "path": "wildlife_fence.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Airport wildlife fence zone id",
+      "titleRu": "ID зоны ограждения от животных",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wildlife_fence.integrity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fence integrity",
+      "titleRu": "Целостность ограждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wildlife_fence.breaches",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Breaches today",
+      "titleRu": "Прорывов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildlife_fence.cameras",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cameras online",
+      "titleRu": "Камер онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildlife_fence.detections",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Animal detections",
+      "titleRu": "Обнаружений животных",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildlife_fence.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Electrified fence voltage",
+      "titleRu": "Напряжение электроизгороди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wildlife_fence.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fence alarm",
+      "titleRu": "Тревога ограждения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wildlife_fence.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "breach",
+        "maintain",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

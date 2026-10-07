@@ -1,0 +1,111 @@
+{
+  "layer": "B24",
+  "name": "layer-b-blade_shop.json",
+  "types": [
+    {
+      "path": "blade_shop.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fan / blade repair cell id",
+      "titleRu": "ID ячейки ремонта лопаток",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blade_shop.part.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blade serial",
+      "titleRu": "Серийный номер лопатки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blade_shop.blend",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Blend depth",
+      "titleRu": "Глубина зачистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blade_shop.coat.um",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Coating thickness",
+      "titleRu": "Толщина покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blade_shop.balance",
+      "kind": "quantity",
+      "unit": "g.mm",
+      "titleEn": "Balance correction",
+      "titleRu": "Коррекция балансировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blade_shop.cycle.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Repair cycle time",
+      "titleRu": "Цикл ремонта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blade_shop.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Repair pass",
+      "titleRu": "Ремонт принят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "blade_shop.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blend",
+        "weld",
+        "coat",
+        "balance",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

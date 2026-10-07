@@ -1,0 +1,20 @@
+sid: 36ae439f
+path: road_tun_light.state
+aliases:
+  short: road_tun_light.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зоны
+  en: Zone state
+fingerprint: sha256:36ae439fcb97b4bd2c2972ba93f9fb6186b785d44647d949bbce5aa393d11c4e
+enumValues:
+  - day
+  - night
+  - emergency
+  - fault

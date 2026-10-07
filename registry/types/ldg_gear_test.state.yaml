@@ -1,0 +1,21 @@
+sid: 450f8b85
+path: ldg_gear_test.state
+aliases:
+  short: ldg_gear_test.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стенда
+  en: Rig state
+fingerprint: sha256:450f8b8574ec1fc2e9b9de3cd07eaebf538928fecdc7b0fc8a3d1c553c8953e6
+enumValues:
+  - setup
+  - load
+  - cycle
+  - inspect
+  - fault

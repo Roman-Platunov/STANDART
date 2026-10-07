@@ -1,0 +1,117 @@
+{
+  "layer": "B24",
+  "name": "layer-b-insp_drone_ind.json",
+  "types": [
+    {
+      "path": "insp_drone_ind.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Industrial inspection drone id",
+      "titleRu": "ID промышленного инспекционного дрона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "insp_drone_ind.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inspected asset id",
+      "titleRu": "ID обследуемого актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "insp_drone_ind.images",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Images captured",
+      "titleRu": "Снимков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "insp_drone_ind.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inspection coverage",
+      "titleRu": "Покрытие обследования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "insp_drone_ind.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Drone SOC",
+      "titleRu": "SOC дрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "insp_drone_ind.findings",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Findings flagged",
+      "titleRu": "Замеченных дефектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "insp_drone_ind.critical",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Critical finding",
+      "titleRu": "Критический дефект",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "insp_drone_ind.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mission state",
+      "titleRu": "Состояние миссии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plan",
+        "fly",
+        "analyze",
+        "dock",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

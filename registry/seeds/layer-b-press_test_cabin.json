@@ -1,0 +1,112 @@
+{
+  "layer": "B24",
+  "name": "layer-b-press_test_cabin.json",
+  "types": [
+    {
+      "path": "press_test_cabin.ac.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cabin pressurization test aircraft id",
+      "titleRu": "ID ВС испытания герметичности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "press_test_cabin.dp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cabin differential",
+      "titleRu": "Перепад кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "press_test_cabin.leak",
+      "kind": "quantity",
+      "unit": "Pa/min",
+      "titleEn": "Leak rate",
+      "titleRu": "Скорость утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "press_test_cabin.alt",
+      "kind": "quantity",
+      "unit": "ft",
+      "titleEn": "Equivalent altitude",
+      "titleRu": "Эквивалентная высота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "press_test_cabin.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Hold time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "press_test_cabin.doors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Doors sealed",
+      "titleRu": "Дверей герметично",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "press_test_cabin.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Press test pass",
+      "titleRu": "Испытание пройдено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "press_test_cabin.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Test state",
+      "titleRu": "Состояние испытания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "press",
+        "hold",
+        "vent",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

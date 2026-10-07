@@ -1,0 +1,18 @@
+sid: fb49026f
+path: adsb_rx.gps.ok
+aliases:
+  short: gps.ok
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Здоровье GPS
+  en: GPS health
+fingerprint: sha256:fb49026f701a5ffa51b709cd8bc6d17f5b0aefecfce3c76ccccf1776d98f6a36
+range:
+  min: 0
+  max: 100

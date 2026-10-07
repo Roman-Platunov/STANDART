@@ -1,0 +1,21 @@
+sid: 8a23f07e
+path: vertipad_ops.state
+aliases:
+  short: vertipad_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние площадки
+  en: Pad state
+fingerprint: sha256:8a23f07e9a00043c059e531a29fbe30f834e0be330cc8992c8f50e57234d6751
+enumValues:
+  - free
+  - arrive
+  - charge
+  - depart
+  - fault

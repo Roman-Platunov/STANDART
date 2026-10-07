@@ -1,0 +1,20 @@
+sid: d7fb8db2
+path: apron_flood.state
+aliases:
+  short: apron_flood.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зоны
+  en: Zone state
+fingerprint: sha256:d7fb8db224d16b0cc767483b63faabac4dfb046ca89dbb00e3608450f34eb67c
+enumValues:
+  - on
+  - dim
+  - off
+  - fault

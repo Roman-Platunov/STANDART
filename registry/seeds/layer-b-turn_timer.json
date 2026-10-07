@@ -1,0 +1,119 @@
+{
+  "layer": "B24",
+  "name": "layer-b-turn_timer.json",
+  "types": [
+    {
+      "path": "turn_timer.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Turnaround timer flight id",
+      "titleRu": "ID рейса таймера оборота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "turn_timer.target.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Target turn time",
+      "titleRu": "Целевое время оборота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "turn_timer.elapsed.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Elapsed",
+      "titleRu": "Прошло",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "turn_timer.critical",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Critical path tasks open",
+      "titleRu": "Открытых критических задач",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "turn_timer.fuel.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fueling progress",
+      "titleRu": "Прогресс заправки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "turn_timer.clean.pct",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cabin clean progress",
+      "titleRu": "Прогресс уборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "turn_timer.at_risk",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Turn at risk",
+      "titleRu": "Оборот под риском",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "turn_timer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Timer state",
+      "titleRu": "Состояние таймера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "planned",
+        "active",
+        "complete",
+        "late"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: dd6002bd
+path: hydrant_pit.state
+aliases:
+  short: hydrant_pit.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние колодца
+  en: Pit state
+fingerprint: sha256:dd6002bd47da66a608444301b488d20d5c71f8068ca0e1b7e84dc3d94be36a52
+enumValues:
+  - idle
+  - fuel
+  - flush
+  - fault

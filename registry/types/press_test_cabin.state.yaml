@@ -1,0 +1,21 @@
+sid: d30541c1
+path: press_test_cabin.state
+aliases:
+  short: press_test_cabin.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние испытания
+  en: Test state
+fingerprint: sha256:d30541c1b873157b9a59dc95aa25eeab72380572c0f4588c2291ae14d81a2db4
+enumValues:
+  - prep
+  - press
+  - hold
+  - vent
+  - fault

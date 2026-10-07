@@ -1,0 +1,21 @@
+sid: d70e8876
+path: insp_drone_ind.state
+aliases:
+  short: insp_drone_ind.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние миссии
+  en: Mission state
+fingerprint: sha256:d70e8876a64815ac19834c79b9b69be12b3a650932a8df133be6747fa2eeb95b
+enumValues:
+  - plan
+  - fly
+  - analyze
+  - dock
+  - fault

@@ -1,0 +1,20 @@
+sid: 7bc403de
+path: cng_bus_depot.state
+aliases:
+  short: cng_bus_depot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние заправки
+  en: Depot fill state
+fingerprint: sha256:7bc403de6bcd4fd1886db1d3d357ebbf2e1db7c6ea1c581a3492a69221590f65
+enumValues:
+  - idle
+  - fill
+  - maintain
+  - fault

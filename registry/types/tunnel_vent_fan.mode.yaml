@@ -1,0 +1,21 @@
+sid: f1036176
+path: tunnel_vent_fan.mode
+aliases:
+  short: tunnel_vent_fan.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:f1036176d11c901ede536d4a0fd63e19408742ab2d034bca0b4c1e24053618f5
+enumValues:
+  - normal
+  - pollution
+  - fire
+  - reverse
+  - fault

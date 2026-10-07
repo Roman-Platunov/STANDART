@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-fuel_bowser_ops.json",
+  "types": [
+    {
+      "path": "fuel_bowser_ops.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel bowser id",
+      "titleRu": "ID топливозаправщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fuel_bowser_ops.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fuel_bowser_ops.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Volume dispensed",
+      "titleRu": "Отданный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_bowser_ops.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Flow rate",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_bowser_ops.tank",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bowser tank level",
+      "titleRu": "Уровень бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fuel_bowser_ops.deadman",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Deadman hold time",
+      "titleRu": "Время удержания deadman",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_bowser_ops.bonding",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bonding OK",
+      "titleRu": "Заземление OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fuel_bowser_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bowser state",
+      "titleRu": "Состояние заправщика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "fuel",
+        "transit",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "layer": "B24",
+  "name": "layer-b-cargo_hold_mon.json",
+  "types": [
+    {
+      "path": "cargo_hold_mon.hold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cargo hold monitor id",
+      "titleRu": "ID монитора грузового отсека",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cargo_hold_mon.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cargo_hold_mon.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hold temperature",
+      "titleRu": "Температура отсека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cargo_hold_mon.smoke",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Smoke detector level",
+      "titleRu": "Уровень дыма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cargo_hold_mon.door",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Door closed percent",
+      "titleRu": "Процент закрытия двери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cargo_hold_mon.uld",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "ULDs loaded",
+      "titleRu": "ULD загружено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cargo_hold_mon.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire / smoke alarm",
+      "titleRu": "Пожар / дым",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cargo_hold_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hold state",
+      "titleRu": "Состояние отсека",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "empty",
+        "load",
+        "secure",
+        "alarm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

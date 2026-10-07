@@ -1,0 +1,20 @@
+sid: 8f99a0c3
+path: snow_broom.state
+aliases:
+  short: snow_broom.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние щётки
+  en: Broom state
+fingerprint: sha256:8f99a0c3445bd9980c08ffe143038642c7c1a53e4da780748c451e1daefb44cb
+enumValues:
+  - idle
+  - sweep
+  - dump
+  - fault

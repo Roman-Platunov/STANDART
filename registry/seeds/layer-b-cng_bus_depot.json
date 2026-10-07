@@ -1,0 +1,111 @@
+{
+  "layer": "B24",
+  "name": "layer-b-cng_bus_depot.json",
+  "types": [
+    {
+      "path": "cng_bus_depot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CNG bus depot fill id",
+      "titleRu": "ID КПГ-заправки депо",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cng_bus_depot.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cascade pressure",
+      "titleRu": "Давление каскада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cng_bus_depot.flow",
+      "kind": "quantity",
+      "unit": "kg/min",
+      "titleEn": "Fill rate",
+      "titleRu": "Скорость заправки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cng_bus_depot.buses",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Buses filled today",
+      "titleRu": "Автобусов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cng_bus_depot.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cng_bus_depot.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Mass dispensed today",
+      "titleRu": "Масса за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cng_bus_depot.esd",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ESD active",
+      "titleRu": "Аварийный останов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cng_bus_depot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Depot fill state",
+      "titleRu": "Состояние заправки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "fill",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

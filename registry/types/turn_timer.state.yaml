@@ -1,0 +1,20 @@
+sid: c7f30626
+path: turn_timer.state
+aliases:
+  short: turn_timer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние таймера
+  en: Timer state
+fingerprint: sha256:c7f30626ef25c83da98b8252cad6f234cfc4bc23cb12f8eb6155e63e95894c4a
+enumValues:
+  - planned
+  - active
+  - complete
+  - late

@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-smr_radar.json",
+  "types": [
+    {
+      "path": "smr_radar.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Surface movement radar id",
+      "titleRu": "ID РЛС обзора лётного поля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smr_radar.targets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Surface targets",
+      "titleRu": "Наземных целей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smr_radar.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Antenna RPM",
+      "titleRu": "Обороты антенны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smr_radar.rain",
+      "kind": "quantity",
+      "unit": "mm/h",
+      "titleEn": "Rain attenuation proxy",
+      "titleRu": "Осадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smr_radar.alerts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Runway incursion alerts",
+      "titleRu": "Тревог выезда на ВПП",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smr_radar.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smr_radar.incursion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Incursion alarm",
+      "titleRu": "Тревога выезда",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smr_radar.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SMR state",
+      "titleRu": "Состояние SMR",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ops",
+        "stby",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

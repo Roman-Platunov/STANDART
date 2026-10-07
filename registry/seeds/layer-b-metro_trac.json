@@ -1,0 +1,116 @@
+{
+  "layer": "B24",
+  "name": "layer-b-metro_trac.json",
+  "types": [
+    {
+      "path": "metro_trac.section.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metro traction section id",
+      "titleRu": "ID тягового участка метро",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metro_trac.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Third-rail / OCS voltage",
+      "titleRu": "Напряжение тяги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_trac.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Section current",
+      "titleRu": "Ток участка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_trac.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Traction power",
+      "titleRu": "Тяговая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_trac.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Rail / feeder temperature",
+      "titleRu": "Температура рельса/фидера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_trac.regen",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Regen share",
+      "titleRu": "Доля рекуперации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "metro_trac.energized",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Energized",
+      "titleRu": "Под напряжением",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "metro_trac.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Section state",
+      "titleRu": "Состояние участка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "live",
+        "isolated",
+        "fault",
+        "maintain"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

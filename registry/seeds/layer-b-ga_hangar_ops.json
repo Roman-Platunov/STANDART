@@ -1,0 +1,119 @@
+{
+  "layer": "B24",
+  "name": "layer-b-ga_hangar_ops.json",
+  "types": [
+    {
+      "path": "ga_hangar_ops.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GA hangar ops id",
+      "titleRu": "ID операций GA-ангара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ga_hangar_ops.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Aircraft occupancy",
+      "titleRu": "Занятость ВС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ga_hangar_ops.door",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Door open",
+      "titleRu": "Открытие ворот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ga_hangar_ops.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hangar temperature",
+      "titleRu": "Температура ангара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ga_hangar_ops.moves",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Aircraft moves today",
+      "titleRu": "Перестановок за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ga_hangar_ops.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Hangar electrical load",
+      "titleRu": "Электронагрузка ангара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ga_hangar_ops.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire alarm",
+      "titleRu": "Пожарная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ga_hangar_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hangar state",
+      "titleRu": "Состояние ангара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "move",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

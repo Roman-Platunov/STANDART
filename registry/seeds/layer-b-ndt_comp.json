@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-ndt_comp.json",
+  "types": [
+    {
+      "path": "ndt_comp.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Composite NDT job id",
+      "titleRu": "ID НК композита",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ndt_comp.part.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Part id",
+      "titleRu": "ID детали",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ndt_comp.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scan coverage",
+      "titleRu": "Покрытие сканирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ndt_comp.indications",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Indications",
+      "titleRu": "Индикаций",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ndt_comp.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Max indication depth",
+      "titleRu": "Макс. глубина индикации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ndt_comp.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Inspection time",
+      "titleRu": "Время контроля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ndt_comp.reject",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reject",
+      "titleRu": "Брак",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ndt_comp.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ut",
+        "thermography",
+        "shearography",
+        "xray",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

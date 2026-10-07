@@ -1,0 +1,21 @@
+sid: 42133c83
+path: drone_nest_ops.state
+aliases:
+  short: drone_nest_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние гнезда
+  en: Nest state
+fingerprint: sha256:42133c832490a3a1d219ca94d5b7bec340f5310d157bd5cfabd9b3e143662f90
+enumValues:
+  - docked
+  - launch
+  - mission
+  - recover
+  - fault

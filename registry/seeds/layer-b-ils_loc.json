@@ -1,0 +1,113 @@
+{
+  "layer": "B24",
+  "name": "layer-b-ils_loc.json",
+  "types": [
+    {
+      "path": "ils_loc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ILS localizer id",
+      "titleRu": "ID курсового маяка ILS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ils_loc.runway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway id",
+      "titleRu": "ID ВПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ils_loc.ddm",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "DDM",
+      "titleRu": "DDM",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ils_loc.sdm",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "SDM",
+      "titleRu": "SDM",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ils_loc.ident",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ident quality",
+      "titleRu": "Качество опознавания",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ils_loc.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Transmitter power",
+      "titleRu": "Мощность передатчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ils_loc.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ILS alarm",
+      "titleRu": "Тревога ILS",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ils_loc.cat",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Category",
+      "titleRu": "Категория",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "i",
+        "ii",
+        "iii",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "layer": "B24",
+  "name": "layer-b-tram_pan.json",
+  "types": [
+    {
+      "path": "tram_pan.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tram pantograph id",
+      "titleRu": "ID пантографа трамвая",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tram_pan.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tram id",
+      "titleRu": "ID трамвая",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tram_pan.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Contact force",
+      "titleRu": "Прижимное усилие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tram_pan.height",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Collector height",
+      "titleRu": "Высота токосъёмника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tram_pan.arc",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Arcing events",
+      "titleRu": "Дуговых событий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tram_pan.wear",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Strip wear",
+      "titleRu": "Износ накладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tram_pan.up",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Raised",
+      "titleRu": "Поднят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tram_pan.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "down",
+        "fault",
+        "inspect"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

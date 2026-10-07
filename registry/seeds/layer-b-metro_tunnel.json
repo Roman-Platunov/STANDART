@@ -1,0 +1,116 @@
+{
+  "layer": "B24",
+  "name": "layer-b-metro_tunnel.json",
+  "types": [
+    {
+      "path": "metro_tunnel.section.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metro tunnel section id",
+      "titleRu": "ID участка тоннеля метро",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metro_tunnel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tunnel temperature",
+      "titleRu": "Температура тоннеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_tunnel.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "metro_tunnel.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO2",
+      "titleRu": "CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_tunnel.water",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Inflow / sump level",
+      "titleRu": "Приток / уровень зумпфа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_tunnel.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Structure vibration",
+      "titleRu": "Вибрация конструкции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_tunnel.flood",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flood risk",
+      "titleRu": "Риск подтопления",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "metro_tunnel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Section state",
+      "titleRu": "Состояние участка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "wet",
+        "alarm",
+        "maintain"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

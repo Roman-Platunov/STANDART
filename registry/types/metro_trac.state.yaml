@@ -1,0 +1,20 @@
+sid: 0cda1634
+path: metro_trac.state
+aliases:
+  short: metro_trac.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние участка
+  en: Section state
+fingerprint: sha256:0cda163434ea1686e403fe04fe8f2282c547de6dd648e967e78f8fcf39e4c4b2
+enumValues:
+  - live
+  - isolated
+  - fault
+  - maintain

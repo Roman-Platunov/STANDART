@@ -1,0 +1,20 @@
+sid: dd27ee7b
+path: fleet_hub.state
+aliases:
+  short: fleet_hub.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние хаба
+  en: Hub state
+fingerprint: sha256:dd27ee7bad2dcaa4328dd02ce6a08d9c47925038de3556350ff6fd01b499aab3
+enumValues:
+  - ok
+  - degraded
+  - offline
+  - maintain

@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-atc_vox.json",
+  "types": [
+    {
+      "path": "atc_vox.channel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ATC voice channel id",
+      "titleRu": "ID канала УВД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "atc_vox.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Channel occupancy",
+      "titleRu": "Занятость канала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "atc_vox.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Audio SNR",
+      "titleRu": "ОСШ аудио",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "atc_vox.tx",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "TX key-ups today",
+      "titleRu": "Выходов на передачу за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "atc_vox.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "VoIP latency",
+      "titleRu": "Задержка VoIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "atc_vox.recorders",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Recorders online",
+      "titleRu": "Рекордеров онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "atc_vox.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stuck mic",
+      "titleRu": "Залипший микрофон",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "atc_vox.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Channel state",
+      "titleRu": "Состояние канала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "busy",
+        "degraded",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

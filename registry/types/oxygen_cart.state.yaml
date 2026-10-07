@@ -1,0 +1,20 @@
+sid: 58db5c2f
+path: oxygen_cart.state
+aliases:
+  short: oxygen_cart.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние тележки
+  en: Cart state
+fingerprint: sha256:58db5c2f7ede2d32328fc99b2d38c9f3e8c4219c0ab9ef8bf405651c5ac72716
+enumValues:
+  - idle
+  - fill
+  - purge
+  - fault

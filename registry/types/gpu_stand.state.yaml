@@ -1,0 +1,20 @@
+sid: 6fb474c9
+path: gpu_stand.state
+aliases:
+  short: gpu_stand.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние GPU
+  en: GPU state
+fingerprint: sha256:6fb474c9e90c70af01a6ec60232e395867ae21281fe661438851907f93529527
+enumValues:
+  - idle
+  - supply
+  - fault
+  - offline

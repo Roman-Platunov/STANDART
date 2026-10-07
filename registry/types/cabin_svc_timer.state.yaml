@@ -1,0 +1,21 @@
+sid: ddf94cdf
+path: cabin_svc_timer.state
+aliases:
+  short: cabin_svc_timer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сервиса
+  en: Service state
+fingerprint: sha256:ddf94cdf32f1f8e367e164a03819294832efec4137c20e9722ac0a97c1f0c16e
+enumValues:
+  - wait
+  - clean
+  - restock
+  - done
+  - hold

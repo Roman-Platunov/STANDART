@@ -1,0 +1,110 @@
+{
+  "layer": "B24",
+  "name": "layer-b-fire_bottle_ac.json",
+  "types": [
+    {
+      "path": "fire_bottle_ac.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aircraft fire bottle service id",
+      "titleRu": "ID обслуживания огнетушителей ВС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fire_bottle_ac.bottle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bottle serial",
+      "titleRu": "Серийный номер баллона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fire_bottle_ac.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Bottle pressure",
+      "titleRu": "Давление баллона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_bottle_ac.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Agent weight",
+      "titleRu": "Масса состава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_bottle_ac.due.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days to hydrostatic due",
+      "titleRu": "Дней до гидроиспытания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_bottle_ac.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ambient temperature",
+      "titleRu": "Температура среды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_bottle_ac.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low pressure / weight",
+      "titleRu": "Низкое давление/масса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fire_bottle_ac.agent",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Agent",
+      "titleRu": "Состав",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "halon",
+        "hfc",
+        "water",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

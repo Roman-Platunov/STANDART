@@ -1,0 +1,21 @@
+sid: "60171587"
+path: catering_cart.state
+aliases:
+  short: catering_cart.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние тележки
+  en: Cart state
+fingerprint: sha256:6017158722077d898098894cfa750f21ff5a3dee5ab4561149c95a1e5d0facba
+enumValues:
+  - load
+  - transit
+  - serve
+  - return
+  - fault

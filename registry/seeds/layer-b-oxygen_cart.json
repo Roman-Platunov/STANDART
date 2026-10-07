@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-oxygen_cart.json",
+  "types": [
+    {
+      "path": "oxygen_cart.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aircraft oxygen cart id",
+      "titleRu": "ID кислородной тележки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oxygen_cart.ac.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aircraft id",
+      "titleRu": "ID ВС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oxygen_cart.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Bottle pressure",
+      "titleRu": "Давление баллона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oxygen_cart.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oxygen purity",
+      "titleRu": "Чистота кислорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oxygen_cart.filled",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Volume filled (NTP)",
+      "titleRu": "Заполнено (н.у.)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oxygen_cart.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bottle temperature",
+      "titleRu": "Температура баллона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oxygen_cart.connected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Connected",
+      "titleRu": "Подключено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oxygen_cart.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cart state",
+      "titleRu": "Состояние тележки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "fill",
+        "purge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

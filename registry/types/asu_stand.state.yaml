@@ -1,0 +1,20 @@
+sid: 3a05ccde
+path: asu_stand.state
+aliases:
+  short: asu_stand.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ASU
+  en: ASU state
+fingerprint: sha256:3a05ccdeae5c31dc2b71bed0f8013061d2b95bfe2317f6a5afb4824561bc885a
+enumValues:
+  - idle
+  - ready
+  - start
+  - fault

@@ -1,0 +1,110 @@
+{
+  "layer": "B24",
+  "name": "layer-b-snow_broom.json",
+  "types": [
+    {
+      "path": "snow_broom.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway snow broom id",
+      "titleRu": "ID щётки очистки ВПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snow_broom.runway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway id",
+      "titleRu": "ID ВПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snow_broom.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Sweep speed",
+      "titleRu": "Скорость очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_broom.width",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Sweep width",
+      "titleRu": "Ширина очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_broom.snow",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Snow depth ahead",
+      "titleRu": "Глубина снега впереди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_broom.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_broom.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sweeping",
+      "titleRu": "Очистка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "snow_broom.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Broom state",
+      "titleRu": "Состояние щётки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "sweep",
+        "dump",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

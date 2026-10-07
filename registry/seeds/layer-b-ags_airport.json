@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-ags_airport.json",
+  "types": [
+    {
+      "path": "ags_airport.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Airport AGS id",
+      "titleRu": "ID AGS аэропорта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ags_airport.carts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "AGS carts online",
+      "titleRu": "Тележек AGS онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ags_airport.trips",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Trips per hour",
+      "titleRu": "Рейсов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ags_airport.battery.avg",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Average cart SOC",
+      "titleRu": "Средний SOC тележек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ags_airport.jams",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Path conflicts today",
+      "titleRu": "Конфликтов маршрута за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ags_airport.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Control latency",
+      "titleRu": "Задержка управления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ags_airport.hold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "System hold",
+      "titleRu": "Система на удержании",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ags_airport.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AGS state",
+      "titleRu": "Состояние AGS",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "hold",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

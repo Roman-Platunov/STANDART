@@ -1,0 +1,21 @@
+sid: 050a39ca
+path: pushback_tractor.state
+aliases:
+  short: pushback_tractor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние тягача
+  en: Tractor state
+fingerprint: sha256:050a39ca071723525939e8dd709d8095a725c1f6d7b0bff0bcd17a58dc05cc7c
+enumValues:
+  - idle
+  - hook
+  - push
+  - return
+  - fault

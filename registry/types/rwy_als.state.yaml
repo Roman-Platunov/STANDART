@@ -1,0 +1,21 @@
+sid: 5a03d266
+path: rwy_als.state
+aliases:
+  short: rwy_als.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ОВИ
+  en: ALS state
+fingerprint: sha256:5a03d2662f57b3640945ed30973ecc6989cb120dbe3bac8fecad1940d14f623c
+enumValues:
+  - off
+  - low
+  - med
+  - high
+  - fault

@@ -1,0 +1,20 @@
+sid: da76372d
+path: fleet_ev_bay.state
+aliases:
+  short: fleet_ev_bay.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние поста
+  en: Bay state
+fingerprint: sha256:da76372d023e5d626ba27c39dcadd4f7ce28b3fbf58e19c70fff2c6d956e0f4c
+enumValues:
+  - available
+  - charging
+  - finishing
+  - fault

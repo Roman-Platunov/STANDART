@@ -1,0 +1,115 @@
+{
+  "layer": "B24",
+  "name": "layer-b-vertipad_ops.json",
+  "types": [
+    {
+      "path": "vertipad_ops.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vertiport pad id",
+      "titleRu": "ID площадки вертипорта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vertipad_ops.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "eVTOL id",
+      "titleRu": "ID eVTOL",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vertipad_ops.charge",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Charge power",
+      "titleRu": "Мощность зарядки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertipad_ops.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vehicle SOC",
+      "titleRu": "SOC аппарата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vertipad_ops.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind",
+      "titleRu": "Ветер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertipad_ops.dwell.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Pad dwell",
+      "titleRu": "Стоянка на площадке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vertipad_ops.occupied",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pad occupied",
+      "titleRu": "Площадка занята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vertipad_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pad state",
+      "titleRu": "Состояние площадки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "free",
+        "arrive",
+        "charge",
+        "depart",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

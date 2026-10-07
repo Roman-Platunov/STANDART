@@ -1,0 +1,108 @@
+{
+  "layer": "B24",
+  "name": "layer-b-metro_psd_ops.json",
+  "types": [
+    {
+      "path": "metro_psd_ops.door.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Metro PSD door id",
+      "titleRu": "ID платформенных дверей метро",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metro_psd_ops.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Station id",
+      "titleRu": "ID станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metro_psd_ops.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open cycles today",
+      "titleRu": "Циклов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_psd_ops.align",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Train alignment error",
+      "titleRu": "Ошибка выравнивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_psd_ops.open.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Open duration",
+      "titleRu": "Длительность открытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_psd_ops.faults",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Faults today",
+      "titleRu": "Отказов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metro_psd_ops.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Doors locked",
+      "titleRu": "Двери заблокированы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "metro_psd_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Door state",
+      "titleRu": "Состояние дверей",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "open",
+        "inhibited",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

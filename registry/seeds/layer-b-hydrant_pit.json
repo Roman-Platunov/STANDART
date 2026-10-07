@@ -1,0 +1,110 @@
+{
+  "layer": "B24",
+  "name": "layer-b-hydrant_pit.json",
+  "types": [
+    {
+      "path": "hydrant_pit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel hydrant pit id",
+      "titleRu": "ID гидрантного колодца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrant_pit.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stand id",
+      "titleRu": "ID стоянки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrant_pit.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Hydrant pressure",
+      "titleRu": "Давление гидранта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrant_pit.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Fuel flow",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrant_pit.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Volume dispensed",
+      "titleRu": "Отданный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrant_pit.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fuel temperature",
+      "titleRu": "Температура топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrant_pit.esd",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ESD",
+      "titleRu": "Аварийный останов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hydrant_pit.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pit state",
+      "titleRu": "Состояние колодца",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "fuel",
+        "flush",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

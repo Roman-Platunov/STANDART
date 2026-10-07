@@ -1,0 +1,18 @@
+sid: 2d5517d3
+path: ags_airport.battery.avg
+aliases:
+  short: battery.avg
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Средний SOC тележек
+  en: Average cart SOC
+fingerprint: sha256:2d5517d39c6ebc8f6a2226bee7817866618496d51663ba301834fdc2a89c78fa
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-fleet_ev_bay.json",
+  "types": [
+    {
+      "path": "fleet_ev_bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fleet EV charge bay id",
+      "titleRu": "ID поста зарядки флота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fleet_ev_bay.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vehicle id",
+      "titleRu": "ID ТС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fleet_ev_bay.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Charge power",
+      "titleRu": "Мощность зарядки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet_ev_bay.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vehicle SOC",
+      "titleRu": "SOC ТС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fleet_ev_bay.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Session energy",
+      "titleRu": "Энергия сессии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet_ev_bay.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Connector temperature",
+      "titleRu": "Температура разъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fleet_ev_bay.occupied",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bay occupied",
+      "titleRu": "Пост занят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fleet_ev_bay.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bay state",
+      "titleRu": "Состояние поста",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "charging",
+        "finishing",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

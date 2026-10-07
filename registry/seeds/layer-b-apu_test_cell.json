@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-apu_test_cell.json",
+  "types": [
+    {
+      "path": "apu_test_cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "APU test cell id",
+      "titleRu": "ID стенда ВСУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "apu_test_cell.serial",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "APU serial",
+      "titleRu": "Серийный номер ВСУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "apu_test_cell.egt",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "EGT",
+      "titleRu": "EGT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apu_test_cell.speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "APU speed",
+      "titleRu": "Обороты ВСУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "apu_test_cell.bleed",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Bleed pressure",
+      "titleRu": "Давление отбора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apu_test_cell.load",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Electrical load",
+      "titleRu": "Электрическая нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "apu_test_cell.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Acceptance pass",
+      "titleRu": "Приёмка пройдена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "apu_test_cell.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cell state",
+      "titleRu": "Состояние стенда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "load",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

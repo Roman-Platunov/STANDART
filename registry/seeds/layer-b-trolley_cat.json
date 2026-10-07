@@ -1,0 +1,112 @@
+{
+  "layer": "B24",
+  "name": "layer-b-trolley_cat.json",
+  "types": [
+    {
+      "path": "trolley_cat.section.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Trolleybus catenary section id",
+      "titleRu": "ID участка троллейбусной КС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "trolley_cat.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Contact voltage",
+      "titleRu": "Напряжение контактной сети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trolley_cat.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Section current",
+      "titleRu": "Ток участка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trolley_cat.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Wire tension",
+      "titleRu": "Натяжение провода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trolley_cat.height",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wire height",
+      "titleRu": "Высота провода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trolley_cat.ice",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ice thickness",
+      "titleRu": "Толщина льда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trolley_cat.live",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Energized",
+      "titleRu": "Под напряжением",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "trolley_cat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Section state",
+      "titleRu": "Состояние участка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "ice",
+        "fault",
+        "outage"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B24",
+  "name": "layer-b-uld_washer.json",
+  "types": [
+    {
+      "path": "uld_washer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ULD washer id",
+      "titleRu": "ID мойки ULD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uld_washer.uld.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ULD id",
+      "titleRu": "ID ULD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uld_washer.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Wash cycle",
+      "titleRu": "Цикл мойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_washer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wash temperature",
+      "titleRu": "Температура мойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_washer.chem",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Chemical use",
+      "titleRu": "Расход химии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_washer.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "ULDs per hour",
+      "titleRu": "ULD в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_washer.dry",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dry complete",
+      "titleRu": "Сушка завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "uld_washer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Washer state",
+      "titleRu": "Состояние мойки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "wash",
+        "dry",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

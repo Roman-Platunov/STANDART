@@ -1,0 +1,20 @@
+sid: 1aca7cbd
+path: metro_tunnel.state
+aliases:
+  short: metro_tunnel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние участка
+  en: Section state
+fingerprint: sha256:1aca7cbd15ed8dde531f05fb23e8e61cd5eb9167f4dc743803e7dd678c59dda6
+enumValues:
+  - ok
+  - wet
+  - alarm
+  - maintain

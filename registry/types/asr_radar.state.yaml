@@ -1,0 +1,20 @@
+sid: ff5655e2
+path: asr_radar.state
+aliases:
+  short: asr_radar.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние РЛС
+  en: Radar state
+fingerprint: sha256:ff5655e20e5e1868d51f145c0b2ee0eb01691f55f7a67bef60795b55822cde7f
+enumValues:
+  - ops
+  - stby
+  - maintain
+  - fault

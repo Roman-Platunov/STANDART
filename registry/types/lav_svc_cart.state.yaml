@@ -1,0 +1,20 @@
+sid: 8f6ce165
+path: lav_svc_cart.state
+aliases:
+  short: lav_svc_cart.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние тележки
+  en: Cart state
+fingerprint: sha256:8f6ce1653acfbffd06a230272b71904e61c8ebf111814724ba1e1fec953f4130
+enumValues:
+  - idle
+  - service
+  - dump
+  - fault

@@ -1,0 +1,115 @@
+{
+  "layer": "B24",
+  "name": "layer-b-pushback_tractor.json",
+  "types": [
+    {
+      "path": "pushback_tractor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pushback tractor id",
+      "titleRu": "ID тягача буксировки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pushback_tractor.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pushback_tractor.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Tow force",
+      "titleRu": "Усилие буксировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pushback_tractor.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Tow speed",
+      "titleRu": "Скорость буксировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pushback_tractor.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tractor SOC / fuel",
+      "titleRu": "SOC/топливо тягача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pushback_tractor.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Nosewheel angle",
+      "titleRu": "Угол передней стойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pushback_tractor.engaged",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Towbar engaged",
+      "titleRu": "Буксир сцеплен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pushback_tractor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tractor state",
+      "titleRu": "Состояние тягача",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "hook",
+        "push",
+        "return",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 140c35b0
+path: tram_pan.state
+aliases:
+  short: tram_pan.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:140c35b0556363bebb6caf5cfeeba24e1c91014d9f35f03b2a2fff6571ba9f68
+enumValues:
+  - up
+  - down
+  - fault
+  - inspect

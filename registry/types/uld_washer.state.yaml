@@ -1,0 +1,21 @@
+sid: b4436bf1
+path: uld_washer.state
+aliases:
+  short: uld_washer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние мойки
+  en: Washer state
+fingerprint: sha256:b4436bf157f8b464ab515e669af553ead5f4b64f0445b193ce6496bca3e78e28
+enumValues:
+  - load
+  - wash
+  - dry
+  - idle
+  - fault

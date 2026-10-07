@@ -1,0 +1,110 @@
+{
+  "layer": "B24",
+  "name": "layer-b-pitot_bench.json",
+  "types": [
+    {
+      "path": "pitot_bench.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pitot-static test bench id",
+      "titleRu": "ID стенда ПВД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pitot_bench.ac.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aircraft id",
+      "titleRu": "ID ВС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pitot_bench.qc",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Pitot pressure Qc",
+      "titleRu": "Давление ПВД Qc",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pitot_bench.ps",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Static pressure",
+      "titleRu": "Статическое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pitot_bench.leak",
+      "kind": "quantity",
+      "unit": "Pa/min",
+      "titleEn": "Leak rate",
+      "titleRu": "Скорость утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pitot_bench.alt",
+      "kind": "quantity",
+      "unit": "ft",
+      "titleEn": "Simulated altitude",
+      "titleRu": "Имитируемая высота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pitot_bench.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak check pass",
+      "titleRu": "Проверка утечки OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pitot_bench.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bench state",
+      "titleRu": "Состояние стенда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "setup",
+        "test",
+        "vent",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

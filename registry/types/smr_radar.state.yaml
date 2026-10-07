@@ -1,0 +1,20 @@
+sid: 8fc773ac
+path: smr_radar.state
+aliases:
+  short: smr_radar.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние SMR
+  en: SMR state
+fingerprint: sha256:8fc773ac0f5ead3f5851c4eea40a94e7478969d49cfa76bb0fbb885bf3be45d1
+enumValues:
+  - ops
+  - stby
+  - fault
+  - offline

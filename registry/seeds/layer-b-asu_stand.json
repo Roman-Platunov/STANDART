@@ -1,0 +1,109 @@
+{
+  "layer": "B24",
+  "name": "layer-b-asu_stand.json",
+  "types": [
+    {
+      "path": "asu_stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Air start unit id",
+      "titleRu": "ID установки воздушного запуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asu_stand.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stand id",
+      "titleRu": "ID стоянки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asu_stand.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Bleed / air pressure",
+      "titleRu": "Давление воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asu_stand.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air temperature",
+      "titleRu": "Температура воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asu_stand.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Mass flow",
+      "titleRu": "Массовый расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asu_stand.starts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Starts today",
+      "titleRu": "Запусков за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asu_stand.connected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hose connected",
+      "titleRu": "Рукав подключён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asu_stand.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ASU state",
+      "titleRu": "Состояние ASU",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "ready",
+        "start",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B24",
+  "name": "layer-b-vor_beacon.json",
+  "types": [
+    {
+      "path": "vor_beacon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VOR / DME id",
+      "titleRu": "ID VOR/DME",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vor_beacon.bearing",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Radial error",
+      "titleRu": "Ошибка радиала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vor_beacon.mod",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Modulation depth",
+      "titleRu": "Глубина модуляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vor_beacon.dme.nm",
+      "kind": "quantity",
+      "unit": "NM",
+      "titleEn": "DME range check",
+      "titleRu": "Проверка дальности DME",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vor_beacon.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "TX power",
+      "titleRu": "Мощность TX",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vor_beacon.monitors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Monitors OK",
+      "titleRu": "Мониторов OK",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vor_beacon.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Navi aid alarm",
+      "titleRu": "Тревога средства",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vor_beacon.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vor",
+        "dvor",
+        "dme",
+        "vor_dme"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

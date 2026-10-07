@@ -1,0 +1,112 @@
+{
+  "layer": "B24",
+  "name": "layer-b-friction_truck.json",
+  "types": [
+    {
+      "path": "friction_truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway friction truck id",
+      "titleRu": "ID машины замера сцепления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "friction_truck.runway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway id",
+      "titleRu": "ID ВПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "friction_truck.mu",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Friction coefficient",
+      "titleRu": "Коэффициент сцепления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "friction_truck.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Survey speed",
+      "titleRu": "Скорость замера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "friction_truck.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Contaminant depth",
+      "titleRu": "Глубина загрязнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "friction_truck.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Surface temperature",
+      "titleRu": "Температура покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "friction_truck.poor",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Poor friction",
+      "titleRu": "Плохое сцепление",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "friction_truck.contaminant",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Contaminant",
+      "titleRu": "Загрязнение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "wet",
+        "snow",
+        "ice",
+        "slush",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

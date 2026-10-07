@@ -1,0 +1,119 @@
+{
+  "layer": "B24",
+  "name": "layer-b-cabin_svc_timer.json",
+  "types": [
+    {
+      "path": "cabin_svc_timer.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cabin service flight id",
+      "titleRu": "ID рейса кабинного сервиса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cabin_svc_timer.clean.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Clean duration",
+      "titleRu": "Длительность уборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cabin_svc_timer.crew",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cabin crew on task",
+      "titleRu": "Бригады на задаче",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cabin_svc_timer.supplies",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Supplies restock",
+      "titleRu": "Пополнение расходников",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cabin_svc_timer.findings",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Defects found",
+      "titleRu": "Найденных дефектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cabin_svc_timer.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Service progress",
+      "titleRu": "Прогресс сервиса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cabin_svc_timer.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Service complete",
+      "titleRu": "Сервис завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cabin_svc_timer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Service state",
+      "titleRu": "Состояние сервиса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wait",
+        "clean",
+        "restock",
+        "done",
+        "hold"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B24",
+  "name": "layer-b-deice_tank.json",
+  "types": [
+    {
+      "path": "deice_tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "De-icing fluid storage id",
+      "titleRu": "ID склада жидкости антиобледенения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deice_tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level",
+      "titleRu": "Уровень резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "deice_tank.conc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fluid concentration",
+      "titleRu": "Концентрация жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "deice_tank.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fluid temperature",
+      "titleRu": "Температура жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deice_tank.used",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Used today",
+      "titleRu": "Израсходовано за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deice_tank.refract",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Refractometer reading",
+      "titleRu": "Показание рефрактометра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deice_tank.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low level",
+      "titleRu": "Низкий уровень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "deice_tank.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fluid type",
+      "titleRu": "Тип жидкости",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "type_i",
+        "type_ii",
+        "type_iv",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

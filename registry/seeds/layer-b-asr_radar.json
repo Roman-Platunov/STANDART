@@ -1,0 +1,119 @@
+{
+  "layer": "B24",
+  "name": "layer-b-asr_radar.json",
+  "types": [
+    {
+      "path": "asr_radar.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Airport surveillance radar id",
+      "titleRu": "ID обзорного РЛС аэропорта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asr_radar.targets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tracked targets",
+      "titleRu": "Целей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asr_radar.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Antenna RPM",
+      "titleRu": "Обороты антенны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asr_radar.range",
+      "kind": "quantity",
+      "unit": "NM",
+      "titleEn": "Instrumented range",
+      "titleRu": "Инструментальная дальность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asr_radar.clutter",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Clutter level",
+      "titleRu": "Уровень помех",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asr_radar.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asr_radar.stby",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Standby channel",
+      "titleRu": "Резервный канал",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asr_radar.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Radar state",
+      "titleRu": "Состояние РЛС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ops",
+        "stby",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

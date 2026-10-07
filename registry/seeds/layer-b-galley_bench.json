@@ -1,0 +1,109 @@
+{
+  "layer": "B24",
+  "name": "layer-b-galley_bench.json",
+  "types": [
+    {
+      "path": "galley_bench.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Galley equipment test bench id",
+      "titleRu": "ID стенда камбузного оборудования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "galley_bench.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Galley unit id",
+      "titleRu": "ID блока камбуза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "galley_bench.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Power draw",
+      "titleRu": "Потребляемая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galley_bench.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oven / chiller temperature",
+      "titleRu": "Температура духовки/охладителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galley_bench.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Test cycle",
+      "titleRu": "Цикл теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galley_bench.fail",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Failed checks",
+      "titleRu": "Проваленных проверок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "galley_bench.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bench pass",
+      "titleRu": "Стенд пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "galley_bench.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit type",
+      "titleRu": "Тип блока",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "oven",
+        "chiller",
+        "boiler",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

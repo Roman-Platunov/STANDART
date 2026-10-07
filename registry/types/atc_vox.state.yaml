@@ -1,0 +1,20 @@
+sid: 3d37d4c8
+path: atc_vox.state
+aliases:
+  short: atc_vox.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние канала
+  en: Channel state
+fingerprint: sha256:3d37d4c8ff462ff6d3093f979fba400582bb23e269de2d6b33b82ae028b07d9e
+enumValues:
+  - ok
+  - busy
+  - degraded
+  - fault

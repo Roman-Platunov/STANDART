@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-bird_detect.json",
+  "types": [
+    {
+      "path": "bird_detect.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Airport bird radar / detect id",
+      "titleRu": "ID орнитологического радара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bird_detect.tracks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bird tracks",
+      "titleRu": "Траекторий птиц",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bird_detect.risk",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Strike risk score",
+      "titleRu": "Оценка риска столкновения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bird_detect.range",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Detection range",
+      "titleRu": "Дальность обнаружения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bird_detect.dispersals",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dispersals today",
+      "titleRu": "Отпугиваний за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bird_detect.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Mean flock height",
+      "titleRu": "Средняя высота стаи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bird_detect.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High risk alert",
+      "titleRu": "Тревога высокого риска",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bird_detect.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scan",
+        "alert",
+        "disperse",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

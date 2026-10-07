@@ -1,0 +1,113 @@
+{
+  "layer": "B24",
+  "name": "layer-b-avionics_ate.json",
+  "types": [
+    {
+      "path": "avionics_ate.bench.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Avionics ATE bench id",
+      "titleRu": "ID стенда АТЭ авионики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "avionics_ate.lru.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LRU id",
+      "titleRu": "ID LRU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "avionics_ate.pass",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Test pass rate",
+      "titleRu": "Доля прошедших тестов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "avionics_ate.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Test duration",
+      "titleRu": "Длительность теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "avionics_ate.faults",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fault codes",
+      "titleRu": "Кодов неисправностей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "avionics_ate.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Bench power",
+      "titleRu": "Мощность стенда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "avionics_ate.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Unit failed",
+      "titleRu": "Блок не прошёл",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "avionics_ate.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bench state",
+      "titleRu": "Состояние стенда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "test",
+        "calibrate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

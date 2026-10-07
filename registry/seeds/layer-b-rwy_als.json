@@ -1,0 +1,114 @@
+{
+  "layer": "B24",
+  "name": "layer-b-rwy_als.json",
+  "types": [
+    {
+      "path": "rwy_als.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway ALS id",
+      "titleRu": "ID ОВИ ВПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rwy_als.runway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway id",
+      "titleRu": "ID ВПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rwy_als.intensity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Light intensity step",
+      "titleRu": "Ступень интенсивности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rwy_als.failed",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Failed lamps",
+      "titleRu": "Неисправных ламп",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rwy_als.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "System power",
+      "titleRu": "Мощность системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rwy_als.rvr",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Reported RVR",
+      "titleRu": "Заявленная RVR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rwy_als.catiii",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CAT III mode",
+      "titleRu": "Режим CAT III",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rwy_als.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ALS state",
+      "titleRu": "Состояние ОВИ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "low",
+        "med",
+        "high",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

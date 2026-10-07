@@ -1,0 +1,18 @@
+sid: dd6bb94b
+path: atc_vox.occupancy
+aliases:
+  short: atc_vox.occupancy
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Занятость канала
+  en: Channel occupancy
+fingerprint: sha256:dd6bb94b811f512fdb09607289e3461f7da2233b2013b4805fdd336ff9b83db1
+range:
+  min: 0
+  max: 100

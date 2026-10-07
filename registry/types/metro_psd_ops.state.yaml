@@ -1,0 +1,20 @@
+sid: 183522eb
+path: metro_psd_ops.state
+aliases:
+  short: metro_psd_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дверей
+  en: Door state
+fingerprint: sha256:183522eb29ccc7eeaa6cb9cd49b0a902bc80fdc4ea6b6ab8272b61b195e5c603
+enumValues:
+  - closed
+  - open
+  - inhibited
+  - fault

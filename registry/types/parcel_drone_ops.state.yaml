@@ -1,0 +1,21 @@
+sid: d9b5c027
+path: parcel_drone_ops.state
+aliases:
+  short: parcel_drone_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние миссии
+  en: Mission state
+fingerprint: sha256:d9b5c027a3a2d7402a55c66776a3e6e347c6afd0a4a2ab1eccd5109290f8da27
+enumValues:
+  - prep
+  - cruise
+  - drop
+  - return
+  - fault

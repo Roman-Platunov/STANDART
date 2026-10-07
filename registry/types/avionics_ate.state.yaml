@@ -1,0 +1,20 @@
+sid: b1317c78
+path: avionics_ate.state
+aliases:
+  short: avionics_ate.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стенда
+  en: Bench state
+fingerprint: sha256:b1317c78dcdc55cf161ff3014852138f0de6fa4fd1d80742893a704a9eda8782
+enumValues:
+  - idle
+  - test
+  - calibrate
+  - fault

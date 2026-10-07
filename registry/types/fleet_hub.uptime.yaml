@@ -1,0 +1,18 @@
+sid: 20fbe4b7
+path: fleet_hub.uptime
+aliases:
+  short: fleet_hub.uptime
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Доступность хаба
+  en: Hub uptime
+fingerprint: sha256:20fbe4b731549caa85d86a82a0e543482cb31310206c701145e56512f22f9050
+range:
+  min: 0
+  max: 100

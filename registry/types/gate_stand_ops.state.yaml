@@ -1,0 +1,21 @@
+sid: 8d892a08
+path: gate_stand_ops.state
+aliases:
+  short: gate_stand_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стоянки
+  en: Stand state
+fingerprint: sha256:8d892a08e8ce47e53033cd29719e18d0c781b4357091a4b1a046fdcf11a71995
+enumValues:
+  - free
+  - inbound
+  - turn
+  - outbound
+  - blocked

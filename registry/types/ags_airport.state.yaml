@@ -1,0 +1,20 @@
+sid: c36cc88e
+path: ags_airport.state
+aliases:
+  short: ags_airport.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние AGS
+  en: AGS state
+fingerprint: sha256:c36cc88e2d8b9e79c45c9a70c82c22fc74b9116bcbfde8e7618edf43d321f656
+enumValues:
+  - run
+  - hold
+  - maintain
+  - fault

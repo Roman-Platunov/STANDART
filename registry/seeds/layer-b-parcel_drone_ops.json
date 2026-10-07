@@ -1,0 +1,115 @@
+{
+  "layer": "B24",
+  "name": "layer-b-parcel_drone_ops.json",
+  "types": [
+    {
+      "path": "parcel_drone_ops.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Parcel drone ops id",
+      "titleRu": "ID операций дрона-доставки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "parcel_drone_ops.parcel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Parcel id",
+      "titleRu": "ID посылки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "parcel_drone_ops.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Payload mass",
+      "titleRu": "Масса полезной нагрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "parcel_drone_ops.eta.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "ETA",
+      "titleRu": "ETA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "parcel_drone_ops.alt",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Altitude AGL",
+      "titleRu": "Высота AGL",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "parcel_drone_ops.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Drone SOC",
+      "titleRu": "SOC дрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "parcel_drone_ops.delivered",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Delivered",
+      "titleRu": "Доставлено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "parcel_drone_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mission state",
+      "titleRu": "Состояние миссии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "cruise",
+        "drop",
+        "return",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "layer": "B24",
+  "name": "layer-b-bus_depot_ev.json",
+  "types": [
+    {
+      "path": "bus_depot_ev.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV bus depot id",
+      "titleRu": "ID депо электробусов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bus_depot_ev.chargers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Chargers online",
+      "titleRu": "Зарядок онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_depot_ev.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Depot charge power",
+      "titleRu": "Мощность зарядки депо",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_depot_ev.soc.avg",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fleet average SOC",
+      "titleRu": "Средний SOC парка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bus_depot_ev.buses",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Buses on charge",
+      "titleRu": "Автобусов на зарядке",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_depot_ev.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Buses waiting",
+      "titleRu": "Автобусов в очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_depot_ev.peak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Peak demand limit",
+      "titleRu": "Лимит пиковой мощности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bus_depot_ev.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Depot state",
+      "titleRu": "Состояние депо",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "charge",
+        "dispatch",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

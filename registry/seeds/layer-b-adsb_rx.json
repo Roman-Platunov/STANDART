@@ -1,0 +1,119 @@
+{
+  "layer": "B24",
+  "name": "layer-b-adsb_rx.json",
+  "types": [
+    {
+      "path": "adsb_rx.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ADS-B ground receiver id",
+      "titleRu": "ID наземного приёмника ADS-B",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "adsb_rx.targets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tracked targets",
+      "titleRu": "Сопровождаемых целей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "adsb_rx.rate",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Message rate",
+      "titleRu": "Сообщений в секунду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "adsb_rx.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Coverage estimate",
+      "titleRu": "Оценка покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "adsb_rx.gps.ok",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "GPS health",
+      "titleRu": "Здоровье GPS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "adsb_rx.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Feed latency",
+      "titleRu": "Задержка потока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "adsb_rx.spoof",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spoof / anomaly",
+      "titleRu": "Спуфинг / аномалия",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "adsb_rx.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Receiver state",
+      "titleRu": "Состояние приёмника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "degraded",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

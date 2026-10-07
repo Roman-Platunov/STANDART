@@ -1,0 +1,21 @@
+sid: 3badaed1
+path: seat_fit_line.state
+aliases:
+  short: seat_fit_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:3badaed1cc06817adff8ba77015dfb990e17e836c28dac2bbc097bdf39c7f0cf
+enumValues:
+  - kit
+  - install
+  - test
+  - idle
+  - fault
