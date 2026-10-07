@@ -1,0 +1,21 @@
+sid: b68ac7ad
+path: led_epitaxy.state
+aliases:
+  short: led_epitaxy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние реактора
+  en: Reactor state
+fingerprint: sha256:b68ac7ad4349859bf3f60d84af841ed04d96cec56e798f451d74e0e78bb662d2
+enumValues:
+  - heat
+  - grow
+  - cool
+  - idle
+  - fault

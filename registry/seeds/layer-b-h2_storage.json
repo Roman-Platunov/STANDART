@@ -1,0 +1,116 @@
+{
+  "layer": "B21",
+  "name": "layer-b-h2_storage.json",
+  "types": [
+    {
+      "path": "h2_storage.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "H2 storage vessel id",
+      "titleRu": "ID ёмкости хранения H2",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "h2_storage.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Vessel pressure",
+      "titleRu": "Давление ёмкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_storage.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_storage.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "H2 mass",
+      "titleRu": "Масса H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_storage.fill",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fill level",
+      "titleRu": "Степень заполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "h2_storage.leak",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2 leak sensor",
+      "titleRu": "Датчик утечки H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2_storage.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Storage alarm",
+      "titleRu": "Тревога хранения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "h2_storage.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Storage type",
+      "titleRu": "Тип хранения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cgH2",
+        "lh2",
+        "metal_hydride",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

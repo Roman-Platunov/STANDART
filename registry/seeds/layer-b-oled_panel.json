@@ -1,0 +1,118 @@
+{
+  "layer": "B21",
+  "name": "layer-b-oled_panel.json",
+  "types": [
+    {
+      "path": "oled_panel.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OLED panel line id",
+      "titleRu": "ID линии OLED",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oled_panel.panel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Panel id",
+      "titleRu": "ID панели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oled_panel.uniformity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Luminance uniformity",
+      "titleRu": "Равномерность яркости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oled_panel.particles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Particle defects",
+      "titleRu": "Частицевых дефектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oled_panel.lifetime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Projected lifetime",
+      "titleRu": "Прогноз ресурса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oled_panel.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Panel yield",
+      "titleRu": "Выход панелей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oled_panel.mura",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mura detected",
+      "titleRu": "Обнаружена муара",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oled_panel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "deposit",
+        "encaps",
+        "test",
+        "module",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

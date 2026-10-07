@@ -1,0 +1,113 @@
+{
+  "layer": "B21",
+  "name": "layer-b-electrolyzer_pem.json",
+  "types": [
+    {
+      "path": "electrolyzer_pem.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PEM electrolyzer id",
+      "titleRu": "ID PEM-электролизёра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrolyzer_pem.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Stack power",
+      "titleRu": "Мощность стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_pem.h2",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "H2 production",
+      "titleRu": "Выработка H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_pem.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Stack current",
+      "titleRu": "Ток стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_pem.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Stack voltage",
+      "titleRu": "Напряжение стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_pem.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stack temperature",
+      "titleRu": "Температура стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_pem.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stack trip",
+      "titleRu": "Отключение стека",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "electrolyzer_pem.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stack state",
+      "titleRu": "Состояние стека",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "ramp",
+        "produce",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

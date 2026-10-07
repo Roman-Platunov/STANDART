@@ -1,0 +1,21 @@
+sid: 315f1c88
+path: mdf_line.state
+aliases:
+  short: mdf_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:315f1c88dea054fe819c8b667c92800e8959955af7f476457a609251daf2b1f4
+enumValues:
+  - form
+  - press
+  - cool
+  - sand
+  - fault

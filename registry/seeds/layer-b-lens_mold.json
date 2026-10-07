@@ -1,0 +1,110 @@
+{
+  "layer": "B21",
+  "name": "layer-b-lens_mold.json",
+  "types": [
+    {
+      "path": "lens_mold.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lens molding machine id",
+      "titleRu": "ID машины литья линз",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lens_mold.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lens SKU id",
+      "titleRu": "ID SKU линзы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lens_mold.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mold temperature",
+      "titleRu": "Температура формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lens_mold.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lens_mold.power",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Optical power",
+      "titleRu": "Оптическая сила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lens_mold.birefringence",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Birefringence",
+      "titleRu": "Двулучепреломление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lens_mold.reject",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Optical reject",
+      "titleRu": "Оптический брак",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lens_mold.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "injection",
+        "cast",
+        "cnc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

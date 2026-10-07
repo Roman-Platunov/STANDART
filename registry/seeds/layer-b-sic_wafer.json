@@ -1,0 +1,110 @@
+{
+  "layer": "B21",
+  "name": "layer-b-sic_wafer.json",
+  "types": [
+    {
+      "path": "sic_wafer.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SiC wafer lot id",
+      "titleRu": "ID партии пластин SiC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sic_wafer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SiC wafer id",
+      "titleRu": "ID пластины SiC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sic_wafer.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wafer diameter",
+      "titleRu": "Диаметр пластины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sic_wafer.bow",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Bow",
+      "titleRu": "Прогиб",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sic_wafer.mpd",
+      "kind": "quantity",
+      "unit": "/cm2",
+      "titleEn": "Micropipe density",
+      "titleRu": "Плотность микротрубок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sic_wafer.roughness",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Surface roughness",
+      "titleRu": "Шероховатость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sic_wafer.accept",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wafer accepted",
+      "titleRu": "Пластина принята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sic_wafer.polytype",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Polytype",
+      "titleRu": "Политип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "4h",
+        "6h",
+        "3c",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

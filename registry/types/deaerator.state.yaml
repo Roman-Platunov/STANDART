@@ -1,0 +1,20 @@
+sid: f1938ebf
+path: deaerator.state
+aliases:
+  short: deaerator.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние деаэратора
+  en: Deaerator state
+fingerprint: sha256:f1938ebfea65309c6b8e31284ef029ce4b2ca24ae164304a84c003579f4310e3
+enumValues:
+  - run
+  - bypass
+  - idle
+  - fault

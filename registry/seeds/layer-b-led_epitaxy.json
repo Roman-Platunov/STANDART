@@ -1,0 +1,115 @@
+{
+  "layer": "B21",
+  "name": "layer-b-led_epitaxy.json",
+  "types": [
+    {
+      "path": "led_epitaxy.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MOCVD reactor id",
+      "titleRu": "ID реактора MOCVD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "led_epitaxy.wafer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Epi wafer id",
+      "titleRu": "ID эпитаксиальной пластины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "led_epitaxy.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Susceptor temperature",
+      "titleRu": "Температура подложкодержателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "led_epitaxy.growth",
+      "kind": "quantity",
+      "unit": "nm/min",
+      "titleEn": "Growth rate",
+      "titleRu": "Скорость роста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "led_epitaxy.pl.wl",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "PL wavelength",
+      "titleRu": "Длина волны PL",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "led_epitaxy.uniformity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Thickness uniformity",
+      "titleRu": "Равномерность толщины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "led_epitaxy.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Epi in spec",
+      "titleRu": "Эпитаксия в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "led_epitaxy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reactor state",
+      "titleRu": "Состояние реактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "grow",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B21",
+  "name": "layer-b-latex_proc.json",
+  "types": [
+    {
+      "path": "latex_proc.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Latex plant id",
+      "titleRu": "ID латексного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "latex_proc.drc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dry rubber content",
+      "titleRu": "Содержание сухого каучука",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "latex_proc.ammonia",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ammonia content",
+      "titleRu": "Содержание аммиака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "latex_proc.vfa",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "VFA number",
+      "titleRu": "Число ЛЖК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "latex_proc.centrifuge",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Centrifuge speed",
+      "titleRu": "Обороты центрифуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "latex_proc.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Latex throughput",
+      "titleRu": "Переработка латекса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "latex_proc.coag",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coagulation",
+      "titleRu": "Коагуляция",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "latex_proc.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "field",
+        "concentrate",
+        "cream",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "layer": "B21",
+  "name": "layer-b-water_ami.json",
+  "types": [
+    {
+      "path": "water_ami.meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AMI water meter id",
+      "titleRu": "ID AMI-счётчика воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "water_ami.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Instant flow",
+      "titleRu": "Мгновенный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_ami.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Cumulative volume",
+      "titleRu": "Накопленный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_ami.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Service pressure",
+      "titleRu": "Давление у абонента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_ami.leak.score",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Leak score",
+      "titleRu": "Оценка утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "water_ami.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Meter battery",
+      "titleRu": "Батарея счётчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "water_ami.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak suspected",
+      "titleRu": "Подозрение на утечку",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "water_ami.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Meter state",
+      "titleRu": "Состояние счётчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "leak",
+        "reverse",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

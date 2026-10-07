@@ -1,0 +1,111 @@
+{
+  "layer": "B21",
+  "name": "layer-b-gear_cut.json",
+  "types": [
+    {
+      "path": "gear_cut.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gear cutting machine id",
+      "titleRu": "ID зуборезного станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gear_cut.part.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gear part id",
+      "titleRu": "ID зубчатой детали",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gear_cut.module",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Module",
+      "titleRu": "Модуль",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gear_cut.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Cutter speed",
+      "titleRu": "Обороты фрезы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gear_cut.feed",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gear_cut.error",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Tooth error",
+      "titleRu": "Погрешность зуба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gear_cut.tool.wear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tool wear high",
+      "titleRu": "Высокий износ инструмента",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gear_cut.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hob",
+        "shape",
+        "grind",
+        "hone",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

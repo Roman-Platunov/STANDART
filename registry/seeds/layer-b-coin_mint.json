@@ -1,0 +1,115 @@
+{
+  "layer": "B21",
+  "name": "layer-b-coin_mint.json",
+  "types": [
+    {
+      "path": "coin_mint.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coining press id",
+      "titleRu": "ID чеканного пресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coin_mint.denom",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Denomination id",
+      "titleRu": "ID номинала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coin_mint.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Strike force",
+      "titleRu": "Усилие удара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coin_mint.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Coins per hour",
+      "titleRu": "Монет в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coin_mint.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Coin weight",
+      "titleRu": "Масса монеты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coin_mint.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coin_mint.die.wear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Die wear high",
+      "titleRu": "Высокий износ штемпеля",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coin_mint.metal",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Metal",
+      "titleRu": "Металл",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cu_ni",
+        "steel",
+        "ag",
+        "au",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

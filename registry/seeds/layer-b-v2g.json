@@ -1,0 +1,114 @@
+{
+  "layer": "B21",
+  "name": "layer-b-v2g.json",
+  "types": [
+    {
+      "path": "v2g.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "V2G station id",
+      "titleRu": "ID станции V2G",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "v2g.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "V2G vehicle id",
+      "titleRu": "ID автомобиля V2G",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "v2g.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Bidirectional power",
+      "titleRu": "Двунаправленная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "v2g.export",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Exported energy",
+      "titleRu": "Отданная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "v2g.import",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Imported energy",
+      "titleRu": "Принятая энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "v2g.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vehicle SOC",
+      "titleRu": "SOC автомобиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "v2g.dispatch",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grid dispatch active",
+      "titleRu": "Диспетчеризация сети активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "v2g.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "discharge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

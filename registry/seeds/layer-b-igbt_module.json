@@ -1,0 +1,115 @@
+{
+  "layer": "B21",
+  "name": "layer-b-igbt_module.json",
+  "types": [
+    {
+      "path": "igbt_module.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IGBT module line id",
+      "titleRu": "ID линии модулей IGBT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "igbt_module.serial",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Module serial",
+      "titleRu": "Серийный номер модуля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "igbt_module.vcsat",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Vce sat",
+      "titleRu": "Vce нас",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "igbt_module.rth",
+      "kind": "quantity",
+      "unit": "K/W",
+      "titleEn": "Thermal resistance",
+      "titleRu": "Тепловое сопротивление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "igbt_module.void",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solder void",
+      "titleRu": "Пустоты припоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "igbt_module.isolation",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Isolation test",
+      "titleRu": "Испытание изоляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "igbt_module.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Module pass",
+      "titleRu": "Модуль прошёл",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "igbt_module.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "solder",
+        "bond",
+        "pot",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

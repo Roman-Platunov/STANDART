@@ -1,0 +1,111 @@
+{
+  "layer": "B21",
+  "name": "layer-b-cng_station.json",
+  "types": [
+    {
+      "path": "cng_station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CNG station id",
+      "titleRu": "ID АГНКС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cng_station.dispenser.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CNG dispenser id",
+      "titleRu": "ID колонки КПГ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cng_station.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cascade pressure",
+      "titleRu": "Давление каскада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cng_station.flow",
+      "kind": "quantity",
+      "unit": "kg/min",
+      "titleEn": "Fill rate",
+      "titleRu": "Скорость заправки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cng_station.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cng_station.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Dispensed mass",
+      "titleRu": "Отданная масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cng_station.priority",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Priority fill",
+      "titleRu": "Приоритетная заправка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cng_station.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "fill",
+        "vent",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

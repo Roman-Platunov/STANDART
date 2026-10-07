@@ -1,0 +1,118 @@
+{
+  "layer": "B21",
+  "name": "layer-b-camera_module.json",
+  "types": [
+    {
+      "path": "camera_module.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Camera module line id",
+      "titleRu": "ID линии камерных модулей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "camera_module.serial",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Module serial",
+      "titleRu": "Серийный номер модуля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "camera_module.mtf",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "MTF score",
+      "titleRu": "Оценка MTF",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "camera_module.focus",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Focus position",
+      "titleRu": "Позиция фокуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "camera_module.particles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Particle count",
+      "titleRu": "Число частиц",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "camera_module.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Line yield",
+      "titleRu": "Выход линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "camera_module.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Module pass",
+      "titleRu": "Модуль прошёл",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "camera_module.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "aa",
+        "bond",
+        "test",
+        "pack",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

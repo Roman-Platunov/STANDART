@@ -1,0 +1,21 @@
+sid: 362850fd
+path: cng_station.state
+aliases:
+  short: cng_station.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:362850fd967089c995503264e838d8742f6e7f252d4a1db10a915a299136c49a
+enumValues:
+  - idle
+  - fill
+  - vent
+  - maintain
+  - fault

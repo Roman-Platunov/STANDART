@@ -1,0 +1,19 @@
+sid: 1c00b888
+path: soiling_sensor.quality
+aliases:
+  short: soiling_sensor.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество данных
+  en: Data quality
+fingerprint: sha256:1c00b888f9ab7010003c039a7f0cbd9c1ac3e0a2b1484c0ead9d7d5371e949ea
+enumValues:
+  - good
+  - suspect
+  - offline

@@ -1,0 +1,21 @@
+sid: bb2d2d0c
+path: micro_inverter.state
+aliases:
+  short: micro_inverter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние инвертора
+  en: Inverter state
+fingerprint: sha256:bb2d2d0c133344f8ede7ffac5aff231efcb3daeeb50a2fe0f479f1348e737db9
+enumValues:
+  - mppt
+  - clip
+  - night
+  - fault
+  - offline

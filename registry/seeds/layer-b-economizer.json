@@ -1,0 +1,112 @@
+{
+  "layer": "B21",
+  "name": "layer-b-economizer.json",
+  "types": [
+    {
+      "path": "economizer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Boiler economizer id",
+      "titleRu": "ID экономайзера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "economizer.gas.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Flue gas inlet",
+      "titleRu": "Дымовые на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "economizer.gas.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Flue gas outlet",
+      "titleRu": "Дымовые на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "economizer.water.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Feedwater inlet",
+      "titleRu": "Питательная на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "economizer.water.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Feedwater outlet",
+      "titleRu": "Питательная на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "economizer.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Gas-side DP",
+      "titleRu": "Перепад по газу",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "economizer.foul",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fouling high",
+      "titleRu": "Высокое загрязнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "economizer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Economizer state",
+      "titleRu": "Состояние экономайзера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "bypass",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

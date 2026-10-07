@@ -1,0 +1,21 @@
+sid: 2733286f
+path: lumber_kiln.state
+aliases:
+  short: lumber_kiln.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние камеры
+  en: Kiln state
+fingerprint: sha256:2733286f57108afcc77a588d097bdfb13fa8f8e4f199e04ab116f3a0b6edb0c2
+enumValues:
+  - heat
+  - dry
+  - equalize
+  - cool
+  - fault

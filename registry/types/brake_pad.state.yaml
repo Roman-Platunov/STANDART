@@ -1,0 +1,21 @@
+sid: b0e9851c
+path: brake_pad.state
+aliases:
+  short: brake_pad.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:b0e9851c55f2d57c85b83f63ed819124f026ed2a2f0dd2ae3db38d8a35b7a040
+enumValues:
+  - mix
+  - press
+  - cure
+  - grind
+  - fault

@@ -1,0 +1,111 @@
+{
+  "layer": "B21",
+  "name": "layer-b-brake_pad.json",
+  "types": [
+    {
+      "path": "brake_pad.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brake pad line id",
+      "titleRu": "ID линии тормозных колодок",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brake_pad.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pad SKU id",
+      "titleRu": "ID SKU колодки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brake_pad.press.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Press force",
+      "titleRu": "Усилие пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brake_pad.cure.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cure temperature",
+      "titleRu": "Температура отверждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brake_pad.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Pad thickness",
+      "titleRu": "Толщина колодки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brake_pad.shear",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Shear strength",
+      "titleRu": "Прочность на сдвиг",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brake_pad.crack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crack detected",
+      "titleRu": "Обнаружена трещина",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "brake_pad.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "press",
+        "cure",
+        "grind",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

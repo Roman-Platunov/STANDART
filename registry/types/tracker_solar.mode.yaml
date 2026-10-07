@@ -1,0 +1,21 @@
+sid: c033b14d
+path: tracker_solar.mode
+aliases:
+  short: tracker_solar.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:c033b14de42f73cce5daad5602141a8a4407337085afbe0fa0b50f128b905f5e
+enumValues:
+  - track
+  - stow
+  - clean
+  - manual
+  - fault

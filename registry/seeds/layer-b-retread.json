@@ -1,0 +1,113 @@
+{
+  "layer": "B21",
+  "name": "layer-b-retread.json",
+  "types": [
+    {
+      "path": "retread.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Retread line id",
+      "titleRu": "ID линии восстановления шин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retread.casing.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Casing id",
+      "titleRu": "ID каркаса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retread.buff.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Buff depth",
+      "titleRu": "Глубина шероховки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retread.cure.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cure temperature",
+      "titleRu": "Температура вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retread.cure.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cure time",
+      "titleRu": "Время вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retread.inspect",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "NDT pass rate",
+      "titleRu": "Прохождение НК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "retread.reject",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Casing rejected",
+      "titleRu": "Каркас забракован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "retread.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "precu",
+        "mold_cure",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

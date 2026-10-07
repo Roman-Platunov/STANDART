@@ -1,0 +1,111 @@
+{
+  "layer": "B21",
+  "name": "layer-b-rubber_plant.json",
+  "types": [
+    {
+      "path": "rubber_plant.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rubber compounding line id",
+      "titleRu": "ID линии резиносмешения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rubber_plant.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compound batch id",
+      "titleRu": "ID партии смеси",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rubber_plant.mixer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mixer temperature",
+      "titleRu": "Температура смесителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rubber_plant.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rubber_plant.mooney",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Mooney viscosity",
+      "titleRu": "Вязкость Муни",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rubber_plant.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Mix cycle",
+      "titleRu": "Цикл смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rubber_plant.scorch",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scorch risk",
+      "titleRu": "Риск подвулканизации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rubber_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "mix",
+        "dump",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

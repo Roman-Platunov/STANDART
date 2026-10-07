@@ -1,0 +1,20 @@
+sid: f3095a9e
+path: propane_tank.state
+aliases:
+  short: propane_tank.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние резервуара
+  en: Tank state
+fingerprint: sha256:f3095a9e178966623a9698777423db3bb6cda0af63d8eba4b49b52ac368292d2
+enumValues:
+  - ok
+  - refill_due
+  - alarm
+  - offline

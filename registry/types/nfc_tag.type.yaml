@@ -1,0 +1,20 @@
+sid: 5a6343c5
+path: nfc_tag.type
+aliases:
+  short: nfc_tag.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип метки
+  en: Tag type
+fingerprint: sha256:5a6343c56142e7beaa764f0f0e4854e16a8d7a8354557c71ac9eed2d11627c2e
+enumValues:
+  - ntagm
+  - ultralight
+  - desfire
+  - other

@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-lpg_terminal.json",
+  "types": [
+    {
+      "path": "lpg_terminal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LPG terminal id",
+      "titleRu": "ID терминала СУГ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lpg_terminal.tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level",
+      "titleRu": "Уровень резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lpg_terminal.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tank pressure",
+      "titleRu": "Давление резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lpg_terminal.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lpg_terminal.load.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Loading rate",
+      "titleRu": "Скорость налива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lpg_terminal.odor",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Odorant residual",
+      "titleRu": "Остаток одоранта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lpg_terminal.esd",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ESD active",
+      "titleRu": "Аварийный останов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lpg_terminal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Terminal state",
+      "titleRu": "Состояние терминала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receive",
+        "store",
+        "load",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

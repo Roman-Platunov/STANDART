@@ -1,0 +1,21 @@
+sid: c0edfbe7
+path: methanation.state
+aliases:
+  short: methanation.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние реактора
+  en: Reactor state
+fingerprint: sha256:c0edfbe7ce2408c9a634425c5cf03eacc9da561accf0a6a12b378ff6ad7d0a7e
+enumValues:
+  - startup
+  - run
+  - turndown
+  - idle
+  - fault

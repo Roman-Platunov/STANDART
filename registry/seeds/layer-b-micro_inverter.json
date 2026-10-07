@@ -1,0 +1,115 @@
+{
+  "layer": "B21",
+  "name": "layer-b-micro_inverter.json",
+  "types": [
+    {
+      "path": "micro_inverter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Microinverter id",
+      "titleRu": "ID микроинвертора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "micro_inverter.module.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PV module id",
+      "titleRu": "ID модуля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "micro_inverter.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "AC power",
+      "titleRu": "Мощность AC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micro_inverter.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Efficiency",
+      "titleRu": "КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "micro_inverter.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inverter temperature",
+      "titleRu": "Температура инвертора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micro_inverter.voltage.dc",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "DC voltage",
+      "titleRu": "Напряжение DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "micro_inverter.grid",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grid connected",
+      "titleRu": "В сети",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "micro_inverter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Inverter state",
+      "titleRu": "Состояние инвертора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mppt",
+        "clip",
+        "night",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

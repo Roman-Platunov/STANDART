@@ -1,0 +1,20 @@
+sid: 5b0b85ff
+path: economizer.state
+aliases:
+  short: economizer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние экономайзера
+  en: Economizer state
+fingerprint: sha256:5b0b85ffb349916462f656ad5e3d1e663a486a2304887659ca21c426cb2d9fd1
+enumValues:
+  - run
+  - bypass
+  - clean
+  - fault

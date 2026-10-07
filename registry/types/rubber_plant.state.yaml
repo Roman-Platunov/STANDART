@@ -1,0 +1,21 @@
+sid: 9adb7bda
+path: rubber_plant.state
+aliases:
+  short: rubber_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:9adb7bda18a72ec33246611dac26eafb0f607f13737791a03414ddcfb06c663c
+enumValues:
+  - load
+  - mix
+  - dump
+  - idle
+  - fault

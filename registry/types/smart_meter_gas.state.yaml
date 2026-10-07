@@ -1,0 +1,21 @@
+sid: d4ca1b2f
+path: smart_meter_gas.state
+aliases:
+  short: smart_meter_gas.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние счётчика
+  en: Meter state
+fingerprint: sha256:d4ca1b2fe6ec2275dce9e880403857c8edc005a600c62c32c3e49da5222124cf
+enumValues:
+  - ok
+  - low_batt
+  - tamper
+  - offline
+  - fault

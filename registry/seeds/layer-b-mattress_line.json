@@ -1,0 +1,109 @@
+{
+  "layer": "B21",
+  "name": "layer-b-mattress_line.json",
+  "types": [
+    {
+      "path": "mattress_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mattress line id",
+      "titleRu": "ID линии матрасов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mattress_line.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mattress SKU id",
+      "titleRu": "ID SKU матраса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mattress_line.coil",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Coil count",
+      "titleRu": "Число пружин",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mattress_line.foam.dens",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Foam density",
+      "titleRu": "Плотность пены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mattress_line.quilt.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Quilt speed",
+      "titleRu": "Скорость стёжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mattress_line.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mattress_line.tape.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tape edge OK",
+      "titleRu": "Кант OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mattress_line.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "innerspring",
+        "foam",
+        "hybrid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

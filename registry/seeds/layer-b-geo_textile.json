@@ -1,0 +1,112 @@
+{
+  "layer": "B21",
+  "name": "layer-b-geo_textile.json",
+  "types": [
+    {
+      "path": "geo_textile.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Geotextile line id",
+      "titleRu": "ID линии геотекстиля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "geo_textile.basis",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Basis weight",
+      "titleRu": "Поверхностная плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geo_textile.tensile",
+      "kind": "quantity",
+      "unit": "kN/m",
+      "titleEn": "Tensile strength",
+      "titleRu": "Прочность на растяжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geo_textile.perm",
+      "kind": "quantity",
+      "unit": "L/m2/h",
+      "titleEn": "Permittivity proxy",
+      "titleRu": "Водопроницаемость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geo_textile.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geo_textile.width",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Roll width",
+      "titleRu": "Ширина рулона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geo_textile.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Web break",
+      "titleRu": "Обрыв полотна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "geo_textile.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "woven",
+        "nonwoven",
+        "knitted",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

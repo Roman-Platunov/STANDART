@@ -1,0 +1,123 @@
+{
+  "layer": "B21",
+  "name": "layer-b-smart_card.json",
+  "types": [
+    {
+      "path": "smart_card.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Smart card line id",
+      "titleRu": "ID линии смарт-карт",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smart_card.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Card lot id",
+      "titleRu": "ID партии карт",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smart_card.embed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Embed yield",
+      "titleRu": "Выход встройки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smart_card.atr.ok",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "ATR pass rate",
+      "titleRu": "Прохождение ATR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smart_card.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cards per hour",
+      "titleRu": "Карт в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_card.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smart_card.perso",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Personalization running",
+      "titleRu": "Персонализация идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smart_card.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Card type",
+      "titleRu": "Тип карты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "contact",
+        "contactless",
+        "dual",
+        "sim",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

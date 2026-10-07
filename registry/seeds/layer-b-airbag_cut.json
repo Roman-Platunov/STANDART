@@ -1,0 +1,112 @@
+{
+  "layer": "B21",
+  "name": "layer-b-airbag_cut.json",
+  "types": [
+    {
+      "path": "airbag_cut.laser.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Airbag laser cutter id",
+      "titleRu": "ID лазерной резки подушек",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airbag_cut.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cut job id",
+      "titleRu": "ID задания резки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airbag_cut.speed",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Cut speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airbag_cut.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Laser power",
+      "titleRu": "Мощность лазера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airbag_cut.panels",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Panels cut",
+      "titleRu": "Вырезано панелей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airbag_cut.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "airbag_cut.seal.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Edge seal OK",
+      "titleRu": "Кромка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "airbag_cut.fabric",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fabric",
+      "titleRu": "Ткань",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "nylon",
+        "polyester",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

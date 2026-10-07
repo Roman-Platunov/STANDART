@@ -1,0 +1,21 @@
+sid: 51c78199
+path: bagasse_boiler.state
+aliases:
+  short: bagasse_boiler.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние котла
+  en: Boiler state
+fingerprint: sha256:51c78199af51f4b42376377b1f8058637a3682333a2f7dd0ba07de651b0d384e
+enumValues:
+  - start
+  - run
+  - bank
+  - stop
+  - fault

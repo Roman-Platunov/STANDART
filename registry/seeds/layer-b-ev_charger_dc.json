@@ -1,0 +1,111 @@
+{
+  "layer": "B21",
+  "name": "layer-b-ev_charger_dc.json",
+  "types": [
+    {
+      "path": "ev_charger_dc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DC fast charger id",
+      "titleRu": "ID DC-быстрой зарядки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ev_charger_dc.session.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DCFC session id",
+      "titleRu": "ID сессии DCFC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ev_charger_dc.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Charge power",
+      "titleRu": "Мощность зарядки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_charger_dc.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "DC voltage",
+      "titleRu": "Напряжение DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_charger_dc.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "DC current",
+      "titleRu": "Ток DC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_charger_dc.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Connector temperature",
+      "titleRu": "Температура разъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_charger_dc.liquid.cool",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Liquid cooled",
+      "titleRu": "Жидкостное охлаждение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ev_charger_dc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Charger state",
+      "titleRu": "Состояние зарядки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "charging",
+        "derate",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "layer": "B21",
+  "name": "layer-b-tire_mold.json",
+  "types": [
+    {
+      "path": "tire_mold.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tire curing press id",
+      "titleRu": "ID вулканизационного пресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tire_mold.green.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Green tire id",
+      "titleRu": "ID сырой покрышки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tire_mold.cure.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cure temperature",
+      "titleRu": "Температура вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mold.cure.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cure pressure",
+      "titleRu": "Давление вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mold.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cure time",
+      "titleRu": "Время вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mold.bladder.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bladder cycles",
+      "titleRu": "Циклов диафрагмы",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mold.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cure complete",
+      "titleRu": "Вулканизация завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tire_mold.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "cure",
+        "unload",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

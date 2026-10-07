@@ -1,0 +1,21 @@
+sid: 1b9b4304
+path: osb_line.state
+aliases:
+  short: osb_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:1b9b430429b1fdc1f070b864ab2edd41e47277ab611aeb65ff633ef3357ec2fc
+enumValues:
+  - flake
+  - form
+  - press
+  - trim
+  - fault

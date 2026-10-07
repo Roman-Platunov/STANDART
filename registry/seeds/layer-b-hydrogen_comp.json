@@ -1,0 +1,112 @@
+{
+  "layer": "B21",
+  "name": "layer-b-hydrogen_comp.json",
+  "types": [
+    {
+      "path": "hydrogen_comp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "H2 compressor id",
+      "titleRu": "ID компрессора H2",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrogen_comp.suction.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Suction pressure",
+      "titleRu": "Давление всасывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_comp.discharge.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_comp.flow",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "H2 flow",
+      "titleRu": "Расход H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_comp.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Compressor power",
+      "titleRu": "Мощность компрессора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_comp.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Discharge temperature",
+      "titleRu": "Температура нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrogen_comp.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Compressor trip",
+      "titleRu": "Отключение компрессора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hydrogen_comp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Compressor state",
+      "titleRu": "Состояние компрессора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stop",
+        "load",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

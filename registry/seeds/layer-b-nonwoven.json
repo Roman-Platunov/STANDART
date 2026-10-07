@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-nonwoven.json",
+  "types": [
+    {
+      "path": "nonwoven.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Nonwoven line id",
+      "titleRu": "ID линии нетканых материалов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nonwoven.basis",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Basis weight",
+      "titleRu": "Поверхностная плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nonwoven.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nonwoven.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Web thickness",
+      "titleRu": "Толщина полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nonwoven.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Process air",
+      "titleRu": "Технологический воздух",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nonwoven.bonding",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bonding energy proxy",
+      "titleRu": "Энергия скрепления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nonwoven.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Web break",
+      "titleRu": "Обрыв полотна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nonwoven.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spunbond",
+        "meltblown",
+        "carded",
+        "spunlace",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

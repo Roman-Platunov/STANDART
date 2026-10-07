@@ -1,0 +1,119 @@
+{
+  "layer": "B21",
+  "name": "layer-b-soiling_sensor.json",
+  "types": [
+    {
+      "path": "soiling_sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Soiling sensor id",
+      "titleRu": "ID датчика загрязнения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soiling_sensor.ratio",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soiling ratio",
+      "titleRu": "Коэффициент загрязнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "soiling_sensor.loss",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Power loss estimate",
+      "titleRu": "Оценка потери мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "soiling_sensor.clean.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days since clean",
+      "titleRu": "Дней с очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soiling_sensor.irradiance",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "Reference irradiance",
+      "titleRu": "Эталонная освещённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soiling_sensor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sensor temperature",
+      "titleRu": "Температура датчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soiling_sensor.clean.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cleaning due",
+      "titleRu": "Пора чистить",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "soiling_sensor.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Data quality",
+      "titleRu": "Качество данных",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "suspect",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

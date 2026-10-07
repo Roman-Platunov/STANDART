@@ -1,0 +1,113 @@
+{
+  "layer": "B21",
+  "name": "layer-b-soot_blower.json",
+  "types": [
+    {
+      "path": "soot_blower.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Soot blower id",
+      "titleRu": "ID обдувочного аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soot_blower.boiler.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Host boiler id",
+      "titleRu": "ID котла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soot_blower.steam.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Blowing steam pressure",
+      "titleRu": "Давление пара обдувки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soot_blower.travel",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lance travel",
+      "titleRu": "Ход фурмы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "soot_blower.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Blow cycles today",
+      "titleRu": "Циклов обдувки за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soot_blower.duration.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Blow duration",
+      "titleRu": "Длительность обдувки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soot_blower.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blowing",
+      "titleRu": "Обдувка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "soot_blower.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "retractable",
+        "rotary",
+        "wall",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

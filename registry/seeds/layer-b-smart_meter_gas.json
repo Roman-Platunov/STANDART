@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-smart_meter_gas.json",
+  "types": [
+    {
+      "path": "smart_meter_gas.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gas smart meter id",
+      "titleRu": "ID умного газового счётчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smart_meter_gas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Gas flow",
+      "titleRu": "Расход газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_meter_gas.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Corrected volume",
+      "titleRu": "Исправленный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_meter_gas.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Line pressure",
+      "titleRu": "Давление в линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_meter_gas.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smart_meter_gas.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Meter battery",
+      "titleRu": "Батарея счётчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smart_meter_gas.tamper",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tamper",
+      "titleRu": "Вскрытие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smart_meter_gas.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Meter state",
+      "titleRu": "Состояние счётчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "low_batt",
+        "tamper",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

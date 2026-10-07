@@ -1,0 +1,21 @@
+sid: e7b90353
+path: tire_mold.state
+aliases:
+  short: tire_mold.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:e7b90353fddf16a814796667fa1e2175d4f3f060bc5dd193406dfe3262e3c715
+enumValues:
+  - load
+  - cure
+  - unload
+  - idle
+  - fault

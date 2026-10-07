@@ -1,0 +1,21 @@
+sid: 0cbcc465
+path: oled_panel.state
+aliases:
+  short: oled_panel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:0cbcc4657fc2ad53039d903c1ddf8090fe7c0b410a0066a4e8f02b9e9b17e792
+enumValues:
+  - deposit
+  - encaps
+  - test
+  - module
+  - fault

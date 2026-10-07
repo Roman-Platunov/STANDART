@@ -1,0 +1,110 @@
+{
+  "layer": "B21",
+  "name": "layer-b-bearing_mfg.json",
+  "types": [
+    {
+      "path": "bearing_mfg.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bearing line id",
+      "titleRu": "ID линии подшипников",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bearing_mfg.serial",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bearing serial",
+      "titleRu": "Серийный номер подшипника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bearing_mfg.roundness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Race roundness",
+      "titleRu": "Круглость дорожки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bearing_mfg.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Noise test",
+      "titleRu": "Шумовой тест",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bearing_mfg.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Starting torque",
+      "titleRu": "Момент трогания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bearing_mfg.vib",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bearing_mfg.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "EOL pass",
+      "titleRu": "EOL пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bearing_mfg.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bearing type",
+      "titleRu": "Тип подшипника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ball",
+        "roller",
+        "needle",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

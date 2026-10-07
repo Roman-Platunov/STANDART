@@ -1,0 +1,119 @@
+{
+  "layer": "B21",
+  "name": "layer-b-lumber_kiln.json",
+  "types": [
+    {
+      "path": "lumber_kiln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lumber kiln id",
+      "titleRu": "ID сушильной камеры пиломатериалов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lumber_kiln.charge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Kiln charge id",
+      "titleRu": "ID садки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lumber_kiln.db.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dry-bulb temperature",
+      "titleRu": "Температура сухого термометра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lumber_kiln.wb.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wet-bulb temperature",
+      "titleRu": "Температура мокрого термометра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lumber_kiln.emc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "EMC",
+      "titleRu": "Равновесная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lumber_kiln.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wood moisture",
+      "titleRu": "Влажность древесины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lumber_kiln.schedule.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Schedule complete",
+      "titleRu": "Режим завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lumber_kiln.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kiln state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "dry",
+        "equalize",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-electrolyzer_alk.json",
+  "types": [
+    {
+      "path": "electrolyzer_alk.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Alkaline electrolyzer id",
+      "titleRu": "ID щелочного электролизёра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrolyzer_alk.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "System power",
+      "titleRu": "Мощность системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_alk.h2",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "H2 production",
+      "titleRu": "Выработка H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_alk.koh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Electrolyte strength",
+      "titleRu": "Концентрация щёлочи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_alk.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Electrolyte temperature",
+      "titleRu": "Температура электролита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_alk.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "System pressure",
+      "titleRu": "Давление системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrolyzer_alk.gas.cross",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas crossover",
+      "titleRu": "Переток газа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "electrolyzer_alk.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "produce",
+        "purge",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

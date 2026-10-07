@@ -1,0 +1,22 @@
+sid: ad84cbb9
+path: ev_charger_ac.state
+aliases:
+  short: ev_charger_ac.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зарядки
+  en: Charger state
+fingerprint: sha256:ad84cbb95774e71ef4b9f1bb6ec44fb29794e8756ecabb21e1b8b1dc1a29d3cb
+enumValues:
+  - available
+  - preparing
+  - charging
+  - finishing
+  - fault
+  - offline

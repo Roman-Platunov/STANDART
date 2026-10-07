@@ -1,0 +1,21 @@
+sid: 7b1a1ef7
+path: plywood_line.state
+aliases:
+  short: plywood_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:7b1a1ef7f79314cec34390818027b1b474607e354a90dad6a9e0b90d9d2ad3c2
+enumValues:
+  - layup
+  - press
+  - trim
+  - grade
+  - fault

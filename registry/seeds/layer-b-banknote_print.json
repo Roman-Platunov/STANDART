@@ -1,0 +1,119 @@
+{
+  "layer": "B21",
+  "name": "layer-b-banknote_print.json",
+  "types": [
+    {
+      "path": "banknote_print.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Banknote press id",
+      "titleRu": "ID печатной машины банкнот",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "banknote_print.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Print job id",
+      "titleRu": "ID заказа печати",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "banknote_print.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Sheets per hour",
+      "titleRu": "Листов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "banknote_print.register",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Register error",
+      "titleRu": "Ошибка приводки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "banknote_print.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "banknote_print.ink",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ink level",
+      "titleRu": "Уровень краски",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "banknote_print.secure",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Secure mode",
+      "titleRu": "Защищённый режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "banknote_print.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "intaglio",
+        "offset",
+        "silk",
+        "number",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

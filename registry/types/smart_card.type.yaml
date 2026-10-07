@@ -1,0 +1,21 @@
+sid: 1d0c2536
+path: smart_card.type
+aliases:
+  short: smart_card.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип карты
+  en: Card type
+fingerprint: sha256:1d0c25365fbeab9ea01529bcd2816dd377ad3dafba684d71369c7fb78cefcc2c
+enumValues:
+  - contact
+  - contactless
+  - dual
+  - sim
+  - other

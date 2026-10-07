@@ -1,0 +1,114 @@
+{
+  "layer": "B21",
+  "name": "layer-b-optical_coat.json",
+  "types": [
+    {
+      "path": "optical_coat.chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Optical coating chamber id",
+      "titleRu": "ID камеры оптического покрытия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "optical_coat.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coating lot id",
+      "titleRu": "ID партии покрытия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "optical_coat.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber vacuum",
+      "titleRu": "Вакуум камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optical_coat.rate",
+      "kind": "quantity",
+      "unit": "nm/s",
+      "titleEn": "Deposition rate",
+      "titleRu": "Скорость осаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optical_coat.thickness",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Layer thickness",
+      "titleRu": "Толщина слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "optical_coat.reflectance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reflectance",
+      "titleRu": "Отражение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "optical_coat.endpoint",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Endpoint reached",
+      "titleRu": "Достигнута конечная точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "optical_coat.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "evap",
+        "sputter",
+        "ald",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

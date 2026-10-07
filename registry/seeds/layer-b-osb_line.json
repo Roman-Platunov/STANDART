@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-osb_line.json",
+  "types": [
+    {
+      "path": "osb_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OSB line id",
+      "titleRu": "ID линии OSB",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "osb_line.flake.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flake moisture",
+      "titleRu": "Влажность стружки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "osb_line.resin",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Resin rate",
+      "titleRu": "Расход смолы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osb_line.press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Press temperature",
+      "titleRu": "Температура пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osb_line.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Board density",
+      "titleRu": "Плотность плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osb_line.throughput",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Board output",
+      "titleRu": "Выпуск плит",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osb_line.orientation.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Orientation OK",
+      "titleRu": "Ориентация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "osb_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flake",
+        "form",
+        "press",
+        "trim",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

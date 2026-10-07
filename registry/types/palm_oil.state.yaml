@@ -1,0 +1,21 @@
+sid: 9ed8a502
+path: palm_oil.state
+aliases:
+  short: palm_oil.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Mill state
+fingerprint: sha256:9ed8a502bb182e396d1c7653cf1ad0304d48cdd73b913f1a5649d391c529875c
+enumValues:
+  - sterilize
+  - press
+  - clarify
+  - idle
+  - fault

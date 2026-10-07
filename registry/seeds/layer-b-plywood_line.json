@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-plywood_line.json",
+  "types": [
+    {
+      "path": "plywood_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plywood line id",
+      "titleRu": "ID линии фанеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plywood_line.press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Press temperature",
+      "titleRu": "Температура пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plywood_line.press.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Press pressure",
+      "titleRu": "Давление пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plywood_line.glue",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Glue spread",
+      "titleRu": "Расход клея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plywood_line.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Veneer moisture",
+      "titleRu": "Влажность шпона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "plywood_line.throughput",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Panel output",
+      "titleRu": "Выпуск плит",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plywood_line.delam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Delamination risk",
+      "titleRu": "Риск расслоения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "plywood_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "layup",
+        "press",
+        "trim",
+        "grade",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

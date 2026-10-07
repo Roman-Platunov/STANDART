@@ -1,0 +1,116 @@
+{
+  "layer": "B21",
+  "name": "layer-b-air_preheat.json",
+  "types": [
+    {
+      "path": "air_preheat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Air preheater id",
+      "titleRu": "ID воздухоподогревателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "air_preheat.air.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air inlet",
+      "titleRu": "Воздух на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_preheat.air.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air outlet",
+      "titleRu": "Воздух на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_preheat.gas.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas inlet",
+      "titleRu": "Газ на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_preheat.leak",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Leakage estimate",
+      "titleRu": "Оценка перетока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "air_preheat.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Gas DP",
+      "titleRu": "Перепад по газу",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_preheat.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire risk",
+      "titleRu": "Риск возгорания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "air_preheat.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rotary",
+        "tubular",
+        "plate",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

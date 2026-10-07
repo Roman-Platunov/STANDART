@@ -1,0 +1,18 @@
+sid: 1beafe28
+path: smart_meter_gas.battery
+aliases:
+  short: smart_meter_gas.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея счётчика
+  en: Meter battery
+fingerprint: sha256:1beafe288632ed295e3e3e517ebd3f859dc38f332187a13aef3bbe8212fc3b50
+range:
+  min: 0
+  max: 100

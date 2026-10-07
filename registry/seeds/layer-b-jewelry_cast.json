@@ -1,0 +1,115 @@
+{
+  "layer": "B21",
+  "name": "layer-b-jewelry_cast.json",
+  "types": [
+    {
+      "path": "jewelry_cast.flask.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Casting flask id",
+      "titleRu": "ID опоки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "jewelry_cast.alloy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Alloy lot id",
+      "titleRu": "ID партии сплава",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "jewelry_cast.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jewelry_cast.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Cast vacuum",
+      "titleRu": "Вакуум литья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jewelry_cast.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Cast weight",
+      "titleRu": "Масса отливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jewelry_cast.porosity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Porosity",
+      "titleRu": "Пористость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "jewelry_cast.incomplete",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Incomplete fill",
+      "titleRu": "Недолив",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "jewelry_cast.metal",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Metal",
+      "titleRu": "Металл",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "au",
+        "ag",
+        "pt",
+        "brass",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: b83184de
+path: heat_meter.state
+aliases:
+  short: heat_meter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние счётчика
+  en: Meter state
+fingerprint: sha256:b83184deb7ebde6f00af266fd3248369f1d8b51d7302a44a8f3324adcb3fb5a0
+enumValues:
+  - ok
+  - error
+  - no_flow
+  - offline

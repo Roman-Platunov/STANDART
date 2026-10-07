@@ -1,0 +1,121 @@
+{
+  "layer": "B21",
+  "name": "layer-b-palm_oil.json",
+  "types": [
+    {
+      "path": "palm_oil.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Palm oil mill id",
+      "titleRu": "ID пальмового завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "palm_oil.ffb",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "FFB throughput",
+      "titleRu": "Переработка СПП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "palm_oil.oer",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oil extraction rate",
+      "titleRu": "Выход масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "palm_oil.sterilizer.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Sterilizer pressure",
+      "titleRu": "Давление стерилизатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "palm_oil.clarifier.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Clarifier temperature",
+      "titleRu": "Температура отстойника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "palm_oil.ffa",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Free fatty acids",
+      "titleRu": "СЖК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "palm_oil.boiler.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Boiler OK",
+      "titleRu": "Котёл OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "palm_oil.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sterilize",
+        "press",
+        "clarify",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

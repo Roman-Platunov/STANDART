@@ -1,0 +1,21 @@
+sid: 174208ba
+path: water_ami.state
+aliases:
+  short: water_ami.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние счётчика
+  en: Meter state
+fingerprint: sha256:174208ba2f5ea283a383e7c0694a5ce837eadd20f6c0e9eb9a484957f32a8cfe
+enumValues:
+  - ok
+  - leak
+  - reverse
+  - offline
+  - fault

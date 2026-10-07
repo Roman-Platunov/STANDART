@@ -1,0 +1,111 @@
+{
+  "layer": "B21",
+  "name": "layer-b-seatbelt_line.json",
+  "types": [
+    {
+      "path": "seatbelt_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Seatbelt line id",
+      "titleRu": "ID линии ремней",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seatbelt_line.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Seatbelt SKU id",
+      "titleRu": "ID SKU ремня",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seatbelt_line.webbing",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Webbing speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seatbelt_line.retractor.n",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Retractor force",
+      "titleRu": "Усилие втягивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seatbelt_line.tensile",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Tensile strength",
+      "titleRu": "Прочность на разрыв",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seatbelt_line.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Assemblies per hour",
+      "titleRu": "Сборок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seatbelt_line.lock.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lock function OK",
+      "titleRu": "Блокировка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "seatbelt_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "weave",
+        "dye",
+        "assemble",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

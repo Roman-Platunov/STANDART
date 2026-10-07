@@ -1,0 +1,21 @@
+sid: 1d12b762
+path: veneer_line.state
+aliases:
+  short: veneer_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:1d12b7628c92d8b50e317cd8f57f769ba936c84704e3725ba9a472fd1277867a
+enumValues:
+  - peel
+  - clip
+  - dry
+  - idle
+  - fault

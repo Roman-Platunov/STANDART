@@ -1,0 +1,21 @@
+sid: cdf0e376
+path: ev_charger_dc.state
+aliases:
+  short: ev_charger_dc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зарядки
+  en: Charger state
+fingerprint: sha256:cdf0e3761a900dd323366f2c31a6c8bed688796c81ae65886e6ab04c28629bd9
+enumValues:
+  - available
+  - charging
+  - derate
+  - fault
+  - offline

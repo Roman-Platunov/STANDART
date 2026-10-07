@@ -1,0 +1,112 @@
+{
+  "layer": "B21",
+  "name": "layer-b-fuel_cell_stack.json",
+  "types": [
+    {
+      "path": "fuel_cell_stack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel cell stack id",
+      "titleRu": "ID стека ТЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fuel_cell_stack.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Stack power",
+      "titleRu": "Мощность стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell_stack.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Stack voltage",
+      "titleRu": "Напряжение стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell_stack.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Stack current",
+      "titleRu": "Ток стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell_stack.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stack temperature",
+      "titleRu": "Температура стека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell_stack.h2.use",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "H2 consumption",
+      "titleRu": "Расход H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_cell_stack.flood",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cell flooding",
+      "titleRu": "Затопление ячеек",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fuel_cell_stack.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pem",
+        "sofc",
+        "pafc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

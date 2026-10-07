@@ -1,0 +1,119 @@
+{
+  "layer": "B21",
+  "name": "layer-b-passport_mfg.json",
+  "types": [
+    {
+      "path": "passport_mfg.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Passport line id",
+      "titleRu": "ID линии паспортов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "passport_mfg.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Passport lot id",
+      "titleRu": "ID партии паспортов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "passport_mfg.chip.bind",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chip bind yield",
+      "titleRu": "Выход привязки чипа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "passport_mfg.laminate",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Laminate temperature",
+      "titleRu": "Температура ламинации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "passport_mfg.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Booklets per hour",
+      "titleRu": "Буклетов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "passport_mfg.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "passport_mfg.secure",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Secure area OK",
+      "titleRu": "Зона безопасности OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "passport_mfg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "print",
+        "chip",
+        "laminate",
+        "qa",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

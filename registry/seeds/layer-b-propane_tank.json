@@ -1,0 +1,120 @@
+{
+  "layer": "B21",
+  "name": "layer-b-propane_tank.json",
+  "types": [
+    {
+      "path": "propane_tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Propane tank id",
+      "titleRu": "ID пропанового резервуара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "propane_tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Liquid level",
+      "titleRu": "Уровень жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "propane_tank.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tank pressure",
+      "titleRu": "Давление резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propane_tank.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tank temperature",
+      "titleRu": "Температура резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propane_tank.usage",
+      "kind": "quantity",
+      "unit": "kg/d",
+      "titleEn": "Daily usage",
+      "titleRu": "Суточный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "propane_tank.ullage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ullage",
+      "titleRu": "Газовая подушка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "propane_tank.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low level",
+      "titleRu": "Низкий уровень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "propane_tank.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tank state",
+      "titleRu": "Состояние резервуара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "refill_due",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

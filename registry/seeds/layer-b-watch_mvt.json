@@ -1,0 +1,110 @@
+{
+  "layer": "B21",
+  "name": "layer-b-watch_mvt.json",
+  "types": [
+    {
+      "path": "watch_mvt.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Watch movement line id",
+      "titleRu": "ID линии часовых механизмов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "watch_mvt.serial",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Movement serial",
+      "titleRu": "Серийный номер механизма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "watch_mvt.rate",
+      "kind": "quantity",
+      "unit": "s/d",
+      "titleEn": "Rate error",
+      "titleRu": "Суточный ход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "watch_mvt.amplitude",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Balance amplitude",
+      "titleRu": "Амплитуда баланса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "watch_mvt.beat.error",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Beat error",
+      "titleRu": "Ошибка хода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "watch_mvt.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Mainspring torque",
+      "titleRu": "Момент заводной пружины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "watch_mvt.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Timing pass",
+      "titleRu": "Ход принят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "watch_mvt.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Movement type",
+      "titleRu": "Тип механизма",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mechanical",
+        "quartz",
+        "auto",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

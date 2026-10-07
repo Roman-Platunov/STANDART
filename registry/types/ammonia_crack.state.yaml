@@ -1,0 +1,21 @@
+sid: 16811f81
+path: ammonia_crack.state
+aliases:
+  short: ammonia_crack.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние реактора
+  en: Reactor state
+fingerprint: sha256:16811f8170e1fc5891df70c31e0f8f72ca1807b107ec3f6471b0a98733b7a50f
+enumValues:
+  - heat
+  - crack
+  - purge
+  - idle
+  - fault

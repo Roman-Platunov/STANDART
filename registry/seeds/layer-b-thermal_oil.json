@@ -1,0 +1,116 @@
+{
+  "layer": "B21",
+  "name": "layer-b-thermal_oil.json",
+  "types": [
+    {
+      "path": "thermal_oil.heater.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thermal oil heater id",
+      "titleRu": "ID маслонагревателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thermal_oil.supply.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_oil.return.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return temperature",
+      "titleRu": "Температура обратки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_oil.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Oil flow",
+      "titleRu": "Расход масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_oil.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Loop pressure",
+      "titleRu": "Давление контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_oil.burner",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Burner firing",
+      "titleRu": "Нагрузка горелки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thermal_oil.expansion.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Expansion high",
+      "titleRu": "Высокий уровень расширителя",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thermal_oil.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Heater state",
+      "titleRu": "Состояние нагревателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "idle",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

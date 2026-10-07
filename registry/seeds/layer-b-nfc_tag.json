@@ -1,0 +1,123 @@
+{
+  "layer": "B21",
+  "name": "layer-b-nfc_tag.json",
+  "types": [
+    {
+      "path": "nfc_tag.encode.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NFC encode station id",
+      "titleRu": "ID станции кодирования NFC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nfc_tag.encoded",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Tags encoded per hour",
+      "titleRu": "Меток в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nfc_tag.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Encode yield",
+      "titleRu": "Выход кодирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nfc_tag.read",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Verify read rate",
+      "titleRu": "Доля успешного чтения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nfc_tag.uid.dup",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "UID duplicates",
+      "titleRu": "Дублей UID",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nfc_tag.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nfc_tag.lock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lock bits set",
+      "titleRu": "Биты блокировки установлены",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nfc_tag.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tag type",
+      "titleRu": "Тип метки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ntagm",
+        "ultralight",
+        "desfire",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

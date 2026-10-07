@@ -1,0 +1,116 @@
+{
+  "layer": "B21",
+  "name": "layer-b-deaerator.json",
+  "types": [
+    {
+      "path": "deaerator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Deaerator id",
+      "titleRu": "ID деаэратора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deaerator.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deaerator.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Vessel pressure",
+      "titleRu": "Давление аппарата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deaerator.o2",
+      "kind": "quantity",
+      "unit": "ppb",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deaerator.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Water level",
+      "titleRu": "Уровень воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "deaerator.steam",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Pegging steam",
+      "titleRu": "Греющий пар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deaerator.o2.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "O2 high",
+      "titleRu": "Высокий O2",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "deaerator.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Deaerator state",
+      "titleRu": "Состояние деаэратора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "bypass",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

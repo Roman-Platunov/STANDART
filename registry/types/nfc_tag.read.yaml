@@ -1,0 +1,18 @@
+sid: 1d7f0c65
+path: nfc_tag.read
+aliases:
+  short: nfc_tag.read
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Доля успешного чтения
+  en: Verify read rate
+fingerprint: sha256:1d7f0c65ecc9fa991d029b806c8acb8c5e21191dd0928cf1189296e9213e050d
+range:
+  min: 0
+  max: 100

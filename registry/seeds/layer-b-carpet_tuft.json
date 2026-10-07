@@ -1,0 +1,111 @@
+{
+  "layer": "B21",
+  "name": "layer-b-carpet_tuft.json",
+  "types": [
+    {
+      "path": "carpet_tuft.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tufting machine id",
+      "titleRu": "ID тафтинговой машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "carpet_tuft.style.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Carpet style id",
+      "titleRu": "ID стиля ковра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "carpet_tuft.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Machine speed",
+      "titleRu": "Скорость машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carpet_tuft.gauge",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gauge",
+      "titleRu": "Гейдж",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carpet_tuft.pile",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Pile height",
+      "titleRu": "Высота ворса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carpet_tuft.yarn",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Yarn use",
+      "titleRu": "Расход пряжи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carpet_tuft.needle.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Needle break",
+      "titleRu": "Обрыв иглы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "carpet_tuft.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tuft",
+        "coat",
+        "shear",
+        "inspect",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: d597fb02
+path: electrolyzer_alk.state
+aliases:
+  short: electrolyzer_alk.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:d597fb02177b2399a608ca546d1edaa2d06aa0706ae4dde68137601b818237ba
+enumValues:
+  - idle
+  - produce
+  - purge
+  - maintain
+  - fault

@@ -1,0 +1,114 @@
+{
+  "layer": "B21",
+  "name": "layer-b-string_monitor.json",
+  "types": [
+    {
+      "path": "string_monitor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PV string monitor id",
+      "titleRu": "ID монитора стринга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "string_monitor.string.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PV string id",
+      "titleRu": "ID стринга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "string_monitor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "String current",
+      "titleRu": "Ток стринга",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "string_monitor.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "String voltage",
+      "titleRu": "Напряжение стринга",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "string_monitor.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "String power",
+      "titleRu": "Мощность стринга",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "string_monitor.imbalance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Current imbalance",
+      "titleRu": "Дисбаланс тока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "string_monitor.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "String fault",
+      "titleRu": "Отказ стринга",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "string_monitor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "String state",
+      "titleRu": "Состояние стринга",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "shade",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

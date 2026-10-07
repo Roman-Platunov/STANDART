@@ -1,0 +1,21 @@
+sid: f5c17f3c
+path: upholstery.state
+aliases:
+  short: upholstery.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:f5c17f3c0db4afe9dc209e5d0e15ec6cd909cd0ad197bca04196abacde2861c8
+enumValues:
+  - frame
+  - foam
+  - cover
+  - trim
+  - fault

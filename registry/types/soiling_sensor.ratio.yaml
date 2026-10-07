@@ -1,0 +1,18 @@
+sid: b78ae99a
+path: soiling_sensor.ratio
+aliases:
+  short: soiling_sensor.ratio
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Коэффициент загрязнения
+  en: Soiling ratio
+fingerprint: sha256:b78ae99ad66be507ffce992298e8bc8c9849e4fbfbfccf6254eafbaa1e181163
+range:
+  min: 0
+  max: 100

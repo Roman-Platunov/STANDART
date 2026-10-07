@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-mdf_line.json",
+  "types": [
+    {
+      "path": "mdf_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MDF line id",
+      "titleRu": "ID линии МДФ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mdf_line.mat.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mat moisture",
+      "titleRu": "Влажность ковра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mdf_line.press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Press temperature",
+      "titleRu": "Температура пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mdf_line.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Board density",
+      "titleRu": "Плотность плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mdf_line.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Board thickness",
+      "titleRu": "Толщина плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mdf_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Press speed",
+      "titleRu": "Скорость пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mdf_line.blow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blow / blister",
+      "titleRu": "Вздутие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mdf_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "press",
+        "cool",
+        "sand",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

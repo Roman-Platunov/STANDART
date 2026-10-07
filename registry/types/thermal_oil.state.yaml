@@ -1,0 +1,20 @@
+sid: 6fb077ac
+path: thermal_oil.state
+aliases:
+  short: thermal_oil.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние нагревателя
+  en: Heater state
+fingerprint: sha256:6fb077ac8e027200e9a10c84e61afd241385259e08161a3411d225ef3ba2f346
+enumValues:
+  - heat
+  - idle
+  - cool
+  - fault

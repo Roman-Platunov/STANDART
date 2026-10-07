@@ -1,0 +1,21 @@
+sid: ffebeba4
+path: electrolyzer_pem.state
+aliases:
+  short: electrolyzer_pem.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стека
+  en: Stack state
+fingerprint: sha256:ffebeba458ef5ba552c9e0aba9c87a52f11127e2d7204c70868618f07d9fd879
+enumValues:
+  - idle
+  - ramp
+  - produce
+  - standby
+  - fault

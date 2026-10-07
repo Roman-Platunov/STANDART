@@ -1,0 +1,21 @@
+sid: 9e867a4c
+path: passport_mfg.state
+aliases:
+  short: passport_mfg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:9e867a4c01c8ee87acd040f772a01ccab9de4c53861c0bac6edf042365bc4ce0
+enumValues:
+  - print
+  - chip
+  - laminate
+  - qa
+  - fault

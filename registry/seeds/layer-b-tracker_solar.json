@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-tracker_solar.json",
+  "types": [
+    {
+      "path": "tracker_solar.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Solar tracker id",
+      "titleRu": "ID солнечного трекера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tracker_solar.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Tilt / azimuth angle",
+      "titleRu": "Угол наклона / азимута",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tracker_solar.setpoint",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Angle setpoint",
+      "titleRu": "Уставка угла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tracker_solar.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind speed",
+      "titleRu": "Скорость ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tracker_solar.stow",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stow progress",
+      "titleRu": "Прогресс укладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tracker_solar.motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tracker_solar.stowed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stowed",
+      "titleRu": "Уложен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tracker_solar.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "track",
+        "stow",
+        "clean",
+        "manual",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

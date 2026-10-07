@@ -1,0 +1,21 @@
+sid: da23dd9c
+path: camera_module.state
+aliases:
+  short: camera_module.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:da23dd9ce2d6861df92e3fadac1415329ab0957a13ab801f4b0c91ed2121176f
+enumValues:
+  - aa
+  - bond
+  - test
+  - pack
+  - fault

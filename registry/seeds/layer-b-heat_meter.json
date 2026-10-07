@@ -1,0 +1,112 @@
+{
+  "layer": "B21",
+  "name": "layer-b-heat_meter.json",
+  "types": [
+    {
+      "path": "heat_meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heat meter id",
+      "titleRu": "ID теплосчётчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_meter.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Thermal power",
+      "titleRu": "Тепловая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_meter.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Thermal energy",
+      "titleRu": "Тепловая энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_meter.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Volume flow",
+      "titleRu": "Объёмный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_meter.supply.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_meter.return.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return temperature",
+      "titleRu": "Температура обратки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_meter.error",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Meter error",
+      "titleRu": "Ошибка счётчика",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heat_meter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Meter state",
+      "titleRu": "Состояние счётчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "error",
+        "no_flow",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

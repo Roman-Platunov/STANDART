@@ -1,0 +1,125 @@
+{
+  "layer": "B21",
+  "name": "layer-b-veneer_line.json",
+  "types": [
+    {
+      "path": "veneer_line.lathe.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Veneer lathe id",
+      "titleRu": "ID лущильного станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "veneer_line.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Veneer thickness",
+      "titleRu": "Толщина шпона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "veneer_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Peel speed",
+      "titleRu": "Скорость лущения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "veneer_line.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Green moisture",
+      "titleRu": "Влажность сырого шпона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "veneer_line.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovery",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "veneer_line.knife.wear",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Knife wear",
+      "titleRu": "Износ ножа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "veneer_line.spinout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spinout",
+      "titleRu": "Срыв чурака",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "veneer_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "peel",
+        "clip",
+        "dry",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

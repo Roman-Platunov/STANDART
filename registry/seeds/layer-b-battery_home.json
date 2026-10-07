@@ -1,0 +1,120 @@
+{
+  "layer": "B21",
+  "name": "layer-b-battery_home.json",
+  "types": [
+    {
+      "path": "battery_home.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Home battery id",
+      "titleRu": "ID домашней батареи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "battery_home.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "State of charge",
+      "titleRu": "SOC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "battery_home.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Battery power",
+      "titleRu": "Мощность батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_home.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Battery temperature",
+      "titleRu": "Температура батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_home.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cycle count",
+      "titleRu": "Число циклов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "battery_home.soh",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "State of health",
+      "titleRu": "SOH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "battery_home.backup",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Backup mode",
+      "titleRu": "Резервный режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "battery_home.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Battery state",
+      "titleRu": "Состояние батареи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "charge",
+        "discharge",
+        "backup",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

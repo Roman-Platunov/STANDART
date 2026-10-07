@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-ammonia_crack.json",
+  "types": [
+    {
+      "path": "ammonia_crack.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ammonia cracker id",
+      "titleRu": "ID крекера аммиака",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ammonia_crack.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_crack.nh3.conv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "NH3 conversion",
+      "titleRu": "Конверсия NH3",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_crack.h2",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "H2 production",
+      "titleRu": "Выработка H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_crack.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Reactor pressure",
+      "titleRu": "Давление реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_crack.residual.nh3",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Residual NH3",
+      "titleRu": "Остаточный NH3",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_crack.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reactor trip",
+      "titleRu": "Отключение реактора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ammonia_crack.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reactor state",
+      "titleRu": "Состояние реактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "crack",
+        "purge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

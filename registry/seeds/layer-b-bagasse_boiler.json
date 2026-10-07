@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-bagasse_boiler.json",
+  "types": [
+    {
+      "path": "bagasse_boiler.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bagasse boiler id",
+      "titleRu": "ID котла на багассе",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bagasse_boiler.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steam production",
+      "titleRu": "Выработка пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bagasse_boiler.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Drum pressure",
+      "titleRu": "Давление в барабане",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bagasse_boiler.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Steam temperature",
+      "titleRu": "Температура пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bagasse_boiler.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Bagasse feed",
+      "titleRu": "Подача багассы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bagasse_boiler.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flue O2",
+      "titleRu": "O2 в дымовых",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bagasse_boiler.grate.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grate OK",
+      "titleRu": "Колосник OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bagasse_boiler.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Boiler state",
+      "titleRu": "Состояние котла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "start",
+        "run",
+        "bank",
+        "stop",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: f1f6d74c
+path: seatbelt_line.state
+aliases:
+  short: seatbelt_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:f1f6d74ce39e6353382bc45f42a76308360410737edcbc1f632f81e0ef92afca
+enumValues:
+  - weave
+  - dye
+  - assemble
+  - test
+  - fault

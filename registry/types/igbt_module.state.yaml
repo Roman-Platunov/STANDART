@@ -1,0 +1,21 @@
+sid: 9cbce82e
+path: igbt_module.state
+aliases:
+  short: igbt_module.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:9cbce82e9eb8fb99da57018d911ab9519e3119c147f8d2ed3575f7cdd540f66e
+enumValues:
+  - solder
+  - bond
+  - pot
+  - test
+  - fault

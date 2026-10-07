@@ -1,0 +1,20 @@
+sid: 6b5963c5
+path: hydrogen_comp.state
+aliases:
+  short: hydrogen_comp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние компрессора
+  en: Compressor state
+fingerprint: sha256:6b5963c55faa93b4dbab3fd829bb46ea50b24b2978cb596fd98e15d8249fc08b
+enumValues:
+  - stop
+  - load
+  - unload
+  - fault

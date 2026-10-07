@@ -1,0 +1,20 @@
+sid: f51782b7
+path: string_monitor.state
+aliases:
+  short: string_monitor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стринга
+  en: String state
+fingerprint: sha256:f51782b7a2b6038b7500004f48702351bc63665f01a6198cced22741e5a78b33
+enumValues:
+  - ok
+  - shade
+  - fault
+  - offline

@@ -1,0 +1,116 @@
+{
+  "layer": "B21",
+  "name": "layer-b-ev_charger_ac.json",
+  "types": [
+    {
+      "path": "ev_charger_ac.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AC charger id",
+      "titleRu": "ID AC-зарядки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ev_charger_ac.session.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Charge session id",
+      "titleRu": "ID сессии зарядки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ev_charger_ac.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Charge power",
+      "titleRu": "Мощность зарядки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_charger_ac.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Session energy",
+      "titleRu": "Энергия сессии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_charger_ac.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Charge current",
+      "titleRu": "Ток зарядки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ev_charger_ac.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vehicle SOC",
+      "titleRu": "SOC автомобиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ev_charger_ac.occupied",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Connector occupied",
+      "titleRu": "Разъём занят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ev_charger_ac.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Charger state",
+      "titleRu": "Состояние зарядки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "available",
+        "preparing",
+        "charging",
+        "finishing",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

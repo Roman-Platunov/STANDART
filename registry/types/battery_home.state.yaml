@@ -1,0 +1,21 @@
+sid: 56f5ad60
+path: battery_home.state
+aliases:
+  short: battery_home.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние батареи
+  en: Battery state
+fingerprint: sha256:56f5ad602d723daf7ab640a40028b56166fe9c747552ea88bea3fafcc5f42d27
+enumValues:
+  - idle
+  - charge
+  - discharge
+  - backup
+  - fault

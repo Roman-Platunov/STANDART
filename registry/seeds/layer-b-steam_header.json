@@ -1,0 +1,111 @@
+{
+  "layer": "B21",
+  "name": "layer-b-steam_header.json",
+  "types": [
+    {
+      "path": "steam_header.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steam header id",
+      "titleRu": "ID парового коллектора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steam_header.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Header pressure",
+      "titleRu": "Давление коллектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_header.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Steam temperature",
+      "titleRu": "Температура пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_header.flow",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steam flow",
+      "titleRu": "Расход пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_header.superheat",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Degrees superheat",
+      "titleRu": "Перегрев",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_header.users",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Users online",
+      "titleRu": "Потребителей онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_header.low.p",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low pressure",
+      "titleRu": "Низкое давление",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "steam_header.pressure_class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pressure class",
+      "titleRu": "Класс давления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lp",
+        "mp",
+        "hp",
+        "vhp"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

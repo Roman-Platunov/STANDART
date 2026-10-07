@@ -1,0 +1,117 @@
+{
+  "layer": "B21",
+  "name": "layer-b-methanation.json",
+  "types": [
+    {
+      "path": "methanation.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Methanation reactor id",
+      "titleRu": "ID реактора метанирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "methanation.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Catalyst temperature",
+      "titleRu": "Температура катализатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methanation.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Reactor pressure",
+      "titleRu": "Давление реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methanation.ch4",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product CH4",
+      "titleRu": "CH4 в продукте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "methanation.h2.co2",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "H2/CO2 ratio",
+      "titleRu": "Соотношение H2/CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methanation.prod",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "SNG production",
+      "titleRu": "Выпуск SNG",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "methanation.hotspot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hotspot",
+      "titleRu": "Горячая точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "methanation.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reactor state",
+      "titleRu": "Состояние реактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "startup",
+        "run",
+        "turndown",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "layer": "B21",
+  "name": "layer-b-rfid_inlay.json",
+  "types": [
+    {
+      "path": "rfid_inlay.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RFID inlay line id",
+      "titleRu": "ID линии RFID-инлеев",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rfid_inlay.bond.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chip bond yield",
+      "titleRu": "Выход посадки чипа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rfid_inlay.read",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Read success",
+      "titleRu": "Успешность считывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rfid_inlay.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Web speed",
+      "titleRu": "Скорость полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rfid_inlay.antenna",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Antenna pitch",
+      "titleRu": "Шаг антенны",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rfid_inlay.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rfid_inlay.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Web jam",
+      "titleRu": "Замятие полотна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rfid_inlay.freq",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hf",
+        "uhf",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: cff7c4e4
+path: lpg_terminal.state
+aliases:
+  short: lpg_terminal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние терминала
+  en: Terminal state
+fingerprint: sha256:cff7c4e4cfc464c9bfe67bd1cae1ef8d088d5f9867b6fc95448b23a5a821a865
+enumValues:
+  - receive
+  - store
+  - load
+  - idle
+  - fault

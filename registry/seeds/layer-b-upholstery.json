@@ -1,0 +1,114 @@
+{
+  "layer": "B21",
+  "name": "layer-b-upholstery.json",
+  "types": [
+    {
+      "path": "upholstery.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Upholstery station id",
+      "titleRu": "ID станции обивки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "upholstery.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Furniture SKU id",
+      "titleRu": "ID SKU мебели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "upholstery.staple",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Staples used",
+      "titleRu": "Скоб использовано",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upholstery.foam",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Foam used",
+      "titleRu": "Пены использовано",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upholstery.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Station cycle",
+      "titleRu": "Цикл станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upholstery.rework",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rework rate",
+      "titleRu": "Доля переделок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "upholstery.qc.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "QC pass",
+      "titleRu": "ОТК пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "upholstery.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "frame",
+        "foam",
+        "cover",
+        "trim",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
