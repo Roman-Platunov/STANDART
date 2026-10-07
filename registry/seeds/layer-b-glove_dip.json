@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-glove_dip.json",
+  "types": [
+    {
+      "path": "glove_dip.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Glove dipping line id",
+      "titleRu": "ID линии окунания перчаток",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glove_dip.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Gloves per hour",
+      "titleRu": "Перчаток в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glove_dip.latex",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Latex solids",
+      "titleRu": "Сухой остаток латекса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glove_dip.oven",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Curing oven temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glove_dip.thickness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Film thickness",
+      "titleRu": "Толщина плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glove_dip.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glove_dip.pinhole",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pinhole detected",
+      "titleRu": "Обнаружен прокол",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "glove_dip.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "nitrile",
+        "latex",
+        "vinyl",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

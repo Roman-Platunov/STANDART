@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-bag_maker.json",
+  "types": [
+    {
+      "path": "bag_maker.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bag making line id",
+      "titleRu": "ID линии изготовления пакетов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bag_maker.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Bags per minute",
+      "titleRu": "Пакетов в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bag_maker.seal.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Seal temperature",
+      "titleRu": "Температура сварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bag_maker.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bag_maker.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Bag width",
+      "titleRu": "Ширина пакета",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bag_maker.length",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Bag length",
+      "titleRu": "Длина пакета",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bag_maker.seal.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seal integrity OK",
+      "titleRu": "Сварка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bag_maker.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "t_shirt",
+        "flat",
+        "gusset",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-size_press.json",
+  "types": [
+    {
+      "path": "size_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Size press id",
+      "titleRu": "ID клеильного пресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "size_press.pickup",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Starch pickup",
+      "titleRu": "Нанос крахмала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "size_press.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Size viscosity",
+      "titleRu": "Вязкость клея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "size_press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Size temperature",
+      "titleRu": "Температура клея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "size_press.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Press speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "size_press.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Post-size moisture",
+      "titleRu": "Влажность после клея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "size_press.film.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Film split OK",
+      "titleRu": "Расщепление плёнки OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "size_press.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pond",
+        "metered",
+        "spray",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

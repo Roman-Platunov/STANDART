@@ -1,0 +1,20 @@
+sid: a403098b
+path: paper_dryer.state
+aliases:
+  short: paper_dryer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сушки
+  en: Dryer state
+fingerprint: sha256:a403098b7c7b8d32efd900ee07b2011d66858d122d3b5dfed0eb03c405a23dc3
+enumValues:
+  - dry
+  - idle
+  - maintain
+  - fault

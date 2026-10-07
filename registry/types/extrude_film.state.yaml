@@ -1,0 +1,20 @@
+sid: 7fde55f2
+path: extrude_film.state
+aliases:
+  short: extrude_film.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:7fde55f2e3cffe091568cfb979749dde01fb2a596548f48294f73f3c6e8f37f0
+enumValues:
+  - run
+  - purge
+  - idle
+  - fault

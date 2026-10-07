@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-tissue_mach.json",
+  "types": [
+    {
+      "path": "tissue_mach.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tissue machine id",
+      "titleRu": "ID машины санитарно-гигиенической бумаги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tissue_mach.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Yankee speed",
+      "titleRu": "Скорость янки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tissue_mach.basis",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Basis weight",
+      "titleRu": "Масса 1 м²",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tissue_mach.crepe",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Crepe ratio",
+      "titleRu": "Креп",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tissue_mach.yankee.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Yankee temperature",
+      "titleRu": "Температура янки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tissue_mach.production",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Production",
+      "titleRu": "Выработка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tissue_mach.doctor",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Doctor blade change",
+      "titleRu": "Замена шабера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tissue_mach.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Сорт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bath",
+        "facial",
+        "towel",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

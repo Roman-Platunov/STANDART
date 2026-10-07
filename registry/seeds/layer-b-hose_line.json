@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-hose_line.json",
+  "types": [
+    {
+      "path": "hose_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hose manufacturing line id",
+      "titleRu": "ID линии рукавов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hose_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hose_line.od",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Outer diameter",
+      "titleRu": "Наружный диаметр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hose_line.braid",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Braid tension",
+      "titleRu": "Натяжение оплётки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hose_line.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hose_line.cure.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cure temperature",
+      "titleRu": "Температура вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hose_line.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak test fail",
+      "titleRu": "Тест на герметичность не пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hose_line.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hydraulic",
+        "industrial",
+        "auto",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

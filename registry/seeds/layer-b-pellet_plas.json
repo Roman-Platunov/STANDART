@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-pellet_plas.json",
+  "types": [
+    {
+      "path": "pellet_plas.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plastic pelletizer id",
+      "titleRu": "ID гранулятора пластика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pellet_plas.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Pellet output",
+      "titleRu": "Выход гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plas.cutter",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Cutter speed",
+      "titleRu": "Обороты ножа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plas.water",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plas.fines",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fines fraction",
+      "titleRu": "Доля мелочи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plas.bulk",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Bulk density",
+      "titleRu": "Насыпная плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_plas.knife",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Knife change due",
+      "titleRu": "Замена ножей",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pellet_plas.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "strand",
+        "underwater",
+        "hot_face",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

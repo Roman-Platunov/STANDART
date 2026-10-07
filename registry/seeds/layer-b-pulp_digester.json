@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-pulp_digester.json",
+  "types": [
+    {
+      "path": "pulp_digester.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pulp digester id",
+      "titleRu": "ID варочного котла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pulp_digester.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cooking temperature",
+      "titleRu": "Температура варки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulp_digester.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Vessel pressure",
+      "titleRu": "Давление котла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulp_digester.kappa",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Kappa number",
+      "titleRu": "Число Каппа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulp_digester.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pulp yield",
+      "titleRu": "Выход целлюлозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pulp_digester.charge",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Chip charge",
+      "titleRu": "Загрузка щепы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulp_digester.blow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blow valve open",
+      "titleRu": "Клапан сдувки открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pulp_digester.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "kraft",
+        "sulfite",
+        "nssc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

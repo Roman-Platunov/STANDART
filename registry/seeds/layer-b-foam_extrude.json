@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-foam_extrude.json",
+  "types": [
+    {
+      "path": "foam_extrude.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Foam extrusion line id",
+      "titleRu": "ID линии экструзии пенопласта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foam_extrude.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Foam density",
+      "titleRu": "Плотность пены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foam_extrude.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foam_extrude.blowing",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Blowing agent",
+      "titleRu": "Вспениватель",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "foam_extrude.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Die temperature",
+      "titleRu": "Температура головки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foam_extrude.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Board thickness",
+      "titleRu": "Толщина плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foam_extrude.collapse",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cell collapse",
+      "titleRu": "Схлопывание ячеек",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "foam_extrude.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "xps",
+        "eps",
+        "pe_foam",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

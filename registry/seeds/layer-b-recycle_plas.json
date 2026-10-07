@@ -1,0 +1,125 @@
+{
+  "layer": "B29",
+  "name": "layer-b-recycle_plas.json",
+  "types": [
+    {
+      "path": "recycle_plas.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plastic recycling line id",
+      "titleRu": "ID линии переработки пластика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "recycle_plas.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "recycle_plas.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flake / pellet yield",
+      "titleRu": "Выход хлопьев/гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "recycle_plas.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "recycle_plas.contam",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Contamination",
+      "titleRu": "Загрязнение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "recycle_plas.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "recycle_plas.metal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Metal detector trip",
+      "titleRu": "Срабатывание металлодетектора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "recycle_plas.stream",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stream",
+      "titleRu": "Поток",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pet",
+        "hdpe",
+        "pp",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

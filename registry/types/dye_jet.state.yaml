@@ -1,0 +1,20 @@
+sid: 30440dd5
+path: dye_jet.state
+aliases:
+  short: dye_jet.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:30440dd544d2dcef31e1dfe53d561ae0a7071a418ae02d17cca0b23d968fd061
+enumValues:
+  - load
+  - dye
+  - rinse
+  - fault

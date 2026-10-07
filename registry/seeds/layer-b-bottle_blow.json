@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-bottle_blow.json",
+  "types": [
+    {
+      "path": "bottle_blow.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blow molding machine id",
+      "titleRu": "ID машины выдува бутылок",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bottle_blow.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bottles per hour",
+      "titleRu": "Бутылок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_blow.preform.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Preform temperature",
+      "titleRu": "Температура преформы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_blow.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Blow pressure",
+      "titleRu": "Давление выдува",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_blow.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bottle_blow.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Bottle weight",
+      "titleRu": "Масса бутылки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_blow.ovality",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ovality out of spec",
+      "titleRu": "Овальность вне нормы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bottle_blow.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "isbm",
+        "ebm",
+        "injection",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

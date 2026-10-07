@@ -1,0 +1,118 @@
+{
+  "layer": "B29",
+  "name": "layer-b-garment_sew.json",
+  "types": [
+    {
+      "path": "garment_sew.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Garment sewing line id",
+      "titleRu": "ID швейной линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "garment_sew.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Изделий в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "garment_sew.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Line efficiency",
+      "titleRu": "КПД линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "garment_sew.rework",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rework rate",
+      "titleRu": "Переделка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "garment_sew.wip",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "WIP units",
+      "titleRu": "НЗП",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "garment_sew.operators",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Operators present",
+      "titleRu": "Операторов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "garment_sew.bottleneck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bottleneck station",
+      "titleRu": "Узкое место",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "garment_sew.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "changeover",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

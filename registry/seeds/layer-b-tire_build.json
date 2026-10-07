@@ -1,0 +1,115 @@
+{
+  "layer": "B29",
+  "name": "layer-b-tire_build.json",
+  "types": [
+    {
+      "path": "tire_build.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tire building machine id",
+      "titleRu": "ID сборочного станка шин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tire_build.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_build.green",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Green tires per hour",
+      "titleRu": "Сырых шин в час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_build.uniform",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Uniformity index",
+      "titleRu": "Индекс равномерности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_build.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tire_build.bead",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Bead diameter",
+      "titleRu": "Диаметр борта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_build.splice",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Splice fault",
+      "titleRu": "Ошибка стыка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tire_build.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pcr",
+        "tbr",
+        "otr",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

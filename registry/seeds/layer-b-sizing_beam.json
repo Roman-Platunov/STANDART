@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-sizing_beam.json",
+  "types": [
+    {
+      "path": "sizing_beam.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sizing machine id",
+      "titleRu": "ID шлихтовальной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sizing_beam.pickup",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Size pickup",
+      "titleRu": "Нанос шлихты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sizing_beam.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Size box temperature",
+      "titleRu": "Температура корыта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sizing_beam.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Beam moisture",
+      "titleRu": "Влажность снова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sizing_beam.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Sizing speed",
+      "titleRu": "Скорость шлихтования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sizing_beam.viscosity",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Size viscosity",
+      "titleRu": "Вязкость шлихты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sizing_beam.stretch",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stretch high",
+      "titleRu": "Высокая вытяжка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sizing_beam.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "size",
+        "dry",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

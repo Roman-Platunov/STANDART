@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-paper_press.json",
+  "types": [
+    {
+      "path": "paper_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paper press section id",
+      "titleRu": "ID прессовой части",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paper_press.nip",
+      "kind": "quantity",
+      "unit": "kN/m",
+      "titleEn": "Nip load",
+      "titleRu": "Линейное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_press.moisture.in",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inlet moisture",
+      "titleRu": "Влажность на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper_press.moisture.out",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Outlet moisture",
+      "titleRu": "Влажность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper_press.felt.vac",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Felt vacuum",
+      "titleRu": "Вакуум сукна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_press.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Press speed",
+      "titleRu": "Скорость пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_press.felt.change",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Felt change due",
+      "titleRu": "Замена сукна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paper_press.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roll",
+        "shoe",
+        "extended",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

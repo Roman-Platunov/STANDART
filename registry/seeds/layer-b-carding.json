@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-carding.json",
+  "types": [
+    {
+      "path": "carding.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Carding machine id",
+      "titleRu": "ID чесальной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "carding.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Delivery speed",
+      "titleRu": "Скорость выпуска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carding.sliver",
+      "kind": "quantity",
+      "unit": "g/m",
+      "titleEn": "Sliver weight",
+      "titleRu": "Линейная плотность холстика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carding.neps",
+      "kind": "quantity",
+      "unit": "/g",
+      "titleEn": "Neps per gram",
+      "titleRu": "Узелков на грамм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carding.waste",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Waste",
+      "titleRu": "Отходы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "carding.cv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sliver CV%",
+      "titleRu": "Неровнота холстика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "carding.flat",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flat grinding due",
+      "titleRu": "Шлифовка шляпок",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "carding.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Card state",
+      "titleRu": "Состояние чесальной",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "card",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

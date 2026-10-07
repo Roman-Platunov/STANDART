@@ -1,0 +1,20 @@
+sid: 74a96411
+path: blown_film.state
+aliases:
+  short: blown_film.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:74a964117985cbe6bf8854a8da9123d0adfde403dc269fa0d8e8566624fc1437
+enumValues:
+  - run
+  - startup
+  - idle
+  - fault

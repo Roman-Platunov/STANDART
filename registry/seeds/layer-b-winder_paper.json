@@ -1,0 +1,112 @@
+{
+  "layer": "B29",
+  "name": "layer-b-winder_paper.json",
+  "types": [
+    {
+      "path": "winder_paper.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paper winder id",
+      "titleRu": "ID продольно-резательного станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "winder_paper.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Winding speed",
+      "titleRu": "Скорость намотки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winder_paper.tension",
+      "kind": "quantity",
+      "unit": "N/m",
+      "titleEn": "Web tension",
+      "titleRu": "Натяжение полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winder_paper.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Reel diameter",
+      "titleRu": "Диаметр рулона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winder_paper.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Wound length",
+      "titleRu": "Намотанная длина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winder_paper.trim",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Trim width",
+      "titleRu": "Ширина обрезки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winder_paper.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Web break",
+      "titleRu": "Обрыв",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "winder_paper.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Winder state",
+      "titleRu": "Состояние намотки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wind",
+        "splice",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

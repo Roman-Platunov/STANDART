@@ -1,0 +1,20 @@
+sid: 0133d8a6
+path: calendar_rub.state
+aliases:
+  short: calendar_rub.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние каландра
+  en: Calender state
+fingerprint: sha256:0133d8a652476bed848f0ee2e92204b4e7baf25fc7e7f01c30a28feb912e310d
+enumValues:
+  - calender
+  - idle
+  - maintain
+  - fault

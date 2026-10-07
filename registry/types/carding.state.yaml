@@ -1,0 +1,20 @@
+sid: 160ce442
+path: carding.state
+aliases:
+  short: carding.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние чесальной
+  en: Card state
+fingerprint: sha256:160ce44208095e1e856872326575591259185045352c8fab73aeffe396131da6
+enumValues:
+  - card
+  - idle
+  - maintain
+  - fault

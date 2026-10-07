@@ -1,0 +1,119 @@
+{
+  "layer": "B29",
+  "name": "layer-b-box_plant.json",
+  "types": [
+    {
+      "path": "box_plant.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Corrugated box plant line id",
+      "titleRu": "ID линии гофропроизводства",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "box_plant.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Corrugator speed",
+      "titleRu": "Скорость гофроагрегата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "box_plant.waste",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Trim / waste",
+      "titleRu": "Обрезь / отходы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "box_plant.glue",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Starch application",
+      "titleRu": "Нанос крахмала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "box_plant.orders",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Orders in queue",
+      "titleRu": "Заказов в очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "box_plant.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Line uptime",
+      "titleRu": "Готовность линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "box_plant.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Converter jam",
+      "titleRu": "Затор конвертера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "box_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "setup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: fee1895e
+path: cast_film.state
+aliases:
+  short: cast_film.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:fee1895e0f68c001078404ace4838521df0c2028fd5a53c91f3e66bffed048e8
+enumValues:
+  - cast
+  - idle
+  - maintain
+  - fault

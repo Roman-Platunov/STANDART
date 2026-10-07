@@ -1,0 +1,20 @@
+sid: "23723911"
+path: loom_jacq.state
+aliases:
+  short: loom_jacq.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станка
+  en: Loom state
+fingerprint: sha256:23723911549c6cd752b00a1de759a21ff82ac941488292c562c306b1c7f18b2d
+enumValues:
+  - weave
+  - design
+  - idle
+  - fault

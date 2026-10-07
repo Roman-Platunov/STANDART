@@ -1,0 +1,20 @@
+sid: b2845c61
+path: twin_screw.state
+aliases:
+  short: twin_screw.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние экструдера
+  en: Extruder state
+fingerprint: sha256:b2845c61df368cf13d6f09e01f2d8ba85385012e855047f14cd4eb4e755458eb
+enumValues:
+  - run
+  - purge
+  - idle
+  - fault

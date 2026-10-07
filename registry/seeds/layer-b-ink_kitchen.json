@@ -1,0 +1,111 @@
+{
+  "layer": "B29",
+  "name": "layer-b-ink_kitchen.json",
+  "types": [
+    {
+      "path": "ink_kitchen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ink kitchen id",
+      "titleRu": "ID красочной кухни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ink_kitchen.batches",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Batches today",
+      "titleRu": "Партий за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ink_kitchen.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Target viscosity",
+      "titleRu": "Целевая вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ink_kitchen.deltae",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "ΔE match",
+      "titleRu": "ΔE соответствия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ink_kitchen.waste",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Ink waste",
+      "titleRu": "Отходы краски",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ink_kitchen.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mix temperature",
+      "titleRu": "Температура смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ink_kitchen.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ink_kitchen.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kitchen state",
+      "titleRu": "Состояние кухни",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "dispense",
+        "clean",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

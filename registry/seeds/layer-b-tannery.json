@@ -1,0 +1,115 @@
+{
+  "layer": "B29",
+  "name": "layer-b-tannery.json",
+  "types": [
+    {
+      "path": "tannery.drum.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tannery drum id",
+      "titleRu": "ID барабана кожевенного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tannery.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tannery.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Float temperature",
+      "titleRu": "Температура раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tannery.float.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Float pH",
+      "titleRu": "pH раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tannery.time.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Process time",
+      "titleRu": "Время процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tannery.shrink",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Area shrink",
+      "titleRu": "Усадка площади",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tannery.chrome",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chrome exhaust OK",
+      "titleRu": "Отработка хрома OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tannery.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Стадия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "soak",
+        "tan",
+        "retan",
+        "dye",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: aaac5c67
+path: slitter_rw.state
+aliases:
+  short: slitter_rw.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:aaac5c672fa21f861a5689dbc13e1600f18ee94a78f6a6393289909d6628d447
+enumValues:
+  - slit
+  - setup
+  - idle
+  - fault

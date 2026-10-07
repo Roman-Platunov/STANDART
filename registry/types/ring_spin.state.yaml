@@ -1,0 +1,20 @@
+sid: c2fda7cb
+path: ring_spin.state
+aliases:
+  short: ring_spin.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Frame state
+fingerprint: sha256:c2fda7cbd511dcd944c67ec4a948da568886c95cc9e86f80ef147b145c6d5a46
+enumValues:
+  - spin
+  - doff
+  - idle
+  - fault

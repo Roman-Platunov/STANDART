@@ -1,0 +1,20 @@
+sid: 7cae83cf
+path: warping.state
+aliases:
+  short: warping.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:7cae83cf11877e2fc716341d41c01273531d7096e3105d29d9e275c8b4556d81
+enumValues:
+  - warp
+  - creel
+  - idle
+  - fault

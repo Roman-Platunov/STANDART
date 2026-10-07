@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-paper_dryer.json",
+  "types": [
+    {
+      "path": "paper_dryer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paper dryer section id",
+      "titleRu": "ID сушильной части",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paper_dryer.steam",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_dryer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cylinder temperature",
+      "titleRu": "Температура цилиндра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_dryer.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sheet moisture",
+      "titleRu": "Влажность полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper_dryer.hood.hum",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hood humidity",
+      "titleRu": "Влажность колпака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper_dryer.steam.flow",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steam consumption",
+      "titleRu": "Расход пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_dryer.condensate",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Condensate high",
+      "titleRu": "Высокий конденсат",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paper_dryer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dryer state",
+      "titleRu": "Состояние сушки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

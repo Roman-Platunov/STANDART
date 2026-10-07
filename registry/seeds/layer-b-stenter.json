@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-stenter.json",
+  "types": [
+    {
+      "path": "stenter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stenter / tenter frame id",
+      "titleRu": "ID ширильной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stenter.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stenter.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Fabric speed",
+      "titleRu": "Скорость ткани",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stenter.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Exit width",
+      "titleRu": "Ширина на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stenter.overfeed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Overfeed",
+      "titleRu": "Переподача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -20,
+        "max": 50
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stenter.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Exit moisture",
+      "titleRu": "Влажность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stenter.bow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bow / skew alarm",
+      "titleRu": "Дуга / перекос",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stenter.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "heatset",
+        "finish",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

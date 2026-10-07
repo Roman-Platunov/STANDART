@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-stock_prep.json",
+  "types": [
+    {
+      "path": "stock_prep.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stock preparation line id",
+      "titleRu": "ID линии размола",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stock_prep.freeness",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "CSF freeness",
+      "titleRu": "Степень помола CSF",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stock_prep.cons",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Consistency",
+      "titleRu": "Концентрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stock_prep.power",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific refining energy",
+      "titleRu": "Удельная энергия размола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stock_prep.ash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ash content",
+      "titleRu": "Зольность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stock_prep.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Stock flow",
+      "titleRu": "Расход массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stock_prep.screen.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Screen OK",
+      "titleRu": "Сортировка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stock_prep.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "refine",
+        "blend",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

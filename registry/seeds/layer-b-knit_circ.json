@@ -1,0 +1,115 @@
+{
+  "layer": "B29",
+  "name": "layer-b-knit_circ.json",
+  "types": [
+    {
+      "path": "knit_circ.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Circular knitting machine id",
+      "titleRu": "ID кругловязальной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "knit_circ.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Cylinder rpm",
+      "titleRu": "Обороты цилиндра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "knit_circ.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Cylinder diameter",
+      "titleRu": "Диаметр цилиндра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "knit_circ.feeders",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active feeders",
+      "titleRu": "Активных нитеводителей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "knit_circ.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Efficiency",
+      "titleRu": "КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "knit_circ.grams",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Fabric weight",
+      "titleRu": "Масса полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "knit_circ.needle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Needle alarm",
+      "titleRu": "Тревога иглы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "knit_circ.gauge",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gauge",
+      "titleRu": "Класс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "e18",
+        "e24",
+        "e28",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

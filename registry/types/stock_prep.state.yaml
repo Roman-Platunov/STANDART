@@ -1,0 +1,20 @@
+sid: aaee8aab
+path: stock_prep.state
+aliases:
+  short: stock_prep.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:aaee8aab9d3db3b129409f0f05da3a45e396ae75de32c03f51bacabdc2a800ff
+enumValues:
+  - refine
+  - blend
+  - idle
+  - fault

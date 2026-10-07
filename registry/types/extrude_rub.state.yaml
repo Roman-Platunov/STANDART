@@ -1,0 +1,20 @@
+sid: 87577e3b
+path: extrude_rub.state
+aliases:
+  short: extrude_rub.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние экструдера
+  en: Extruder state
+fingerprint: sha256:87577e3bf4fc19e5b5d039b556814f91b645991248eb8dfdaafa9b88f0eb9e6d
+enumValues:
+  - extrude
+  - idle
+  - clean
+  - fault

@@ -1,0 +1,20 @@
+sid: 136d59f4
+path: lime_kiln_pp.state
+aliases:
+  short: lime_kiln_pp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Kiln state
+fingerprint: sha256:136d59f4a1072b3f04242f4fd78c2ead9205f65a0b76074c71aaf1bf6426af09
+enumValues:
+  - run
+  - heat
+  - idle
+  - fault

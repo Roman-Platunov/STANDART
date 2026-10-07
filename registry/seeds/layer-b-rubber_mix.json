@@ -1,0 +1,110 @@
+{
+  "layer": "B29",
+  "name": "layer-b-rubber_mix.json",
+  "types": [
+    {
+      "path": "rubber_mix.mixer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rubber internal mixer id",
+      "titleRu": "ID резиносмесителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rubber_mix.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rubber_mix.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Batch temperature",
+      "titleRu": "Температура смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rubber_mix.energy",
+      "kind": "quantity",
+      "unit": "kWh",
+      "titleEn": "Mix energy",
+      "titleRu": "Энергия смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rubber_mix.ram",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Ram pressure",
+      "titleRu": "Давление плунжера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rubber_mix.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Mix time",
+      "titleRu": "Время смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rubber_mix.dump",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dump ready",
+      "titleRu": "Готово к выгрузке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rubber_mix.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mixer state",
+      "titleRu": "Состояние смесителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "dump",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

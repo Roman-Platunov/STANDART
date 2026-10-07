@@ -1,0 +1,20 @@
+sid: 1c386271
+path: belt_press_r.state
+aliases:
+  short: belt_press_r.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:1c386271a8c82c5b24e81371c9216146c7d583fcf8f2dd106bec4e7834409c4f
+enumValues:
+  - press
+  - cool
+  - idle
+  - fault

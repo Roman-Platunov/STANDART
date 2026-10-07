@@ -1,0 +1,111 @@
+{
+  "layer": "B29",
+  "name": "layer-b-laundry_ind.json",
+  "types": [
+    {
+      "path": "laundry_ind.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Industrial laundry id",
+      "titleRu": "ID промышленной прачечной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "laundry_ind.load",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Batch load",
+      "titleRu": "Загрузка партии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laundry_ind.water",
+      "kind": "quantity",
+      "unit": "L/kg",
+      "titleEn": "Water per kg",
+      "titleRu": "Воды на кг",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laundry_ind.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wash temperature",
+      "titleRu": "Температура стирки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laundry_ind.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cycles today",
+      "titleRu": "Циклов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laundry_ind.chem",
+      "kind": "quantity",
+      "unit": "mL/kg",
+      "titleEn": "Chemical dose",
+      "titleRu": "Доза химиката",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "laundry_ind.hygiene",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hygiene OK",
+      "titleRu": "Гигиена OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "laundry_ind.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние прачечной",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wash",
+        "extract",
+        "dry",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 6dea6196
+path: thermoform.state
+aliases:
+  short: thermoform.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:6dea61966810d096d622a16b4a69dd2b1efefc95bac2b48d91b11c97de0a02c9
+enumValues:
+  - form
+  - trim
+  - idle
+  - fault

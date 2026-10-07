@@ -1,0 +1,119 @@
+{
+  "layer": "B29",
+  "name": "layer-b-garment_cut.json",
+  "types": [
+    {
+      "path": "garment_cut.table.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Garment cutting table id",
+      "titleRu": "ID раскройного стола",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "garment_cut.plies",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ply count",
+      "titleRu": "Число настилов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "garment_cut.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Marker utilization",
+      "titleRu": "Использование лекала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "garment_cut.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Cutter speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "garment_cut.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cut time",
+      "titleRu": "Время раскроя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "garment_cut.waste",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fabric waste",
+      "titleRu": "Отходы ткани",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "garment_cut.vacuum",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vacuum hold OK",
+      "titleRu": "Вакуумный прижим OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "garment_cut.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Table state",
+      "titleRu": "Состояние стола",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spread",
+        "cut",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

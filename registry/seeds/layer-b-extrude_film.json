@@ -1,0 +1,112 @@
+{
+  "layer": "B29",
+  "name": "layer-b-extrude_film.json",
+  "types": [
+    {
+      "path": "extrude_film.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Film extrusion line id",
+      "titleRu": "ID линии экструзии плёнки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extrude_film.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_film.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_film.gauge",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Film gauge",
+      "titleRu": "Толщина плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_film.screw",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Screw speed",
+      "titleRu": "Обороты шнека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_film.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Die pressure",
+      "titleRu": "Давление головки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_film.gel",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gels high",
+      "titleRu": "Высокий гель",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "extrude_film.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "purge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

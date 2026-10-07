@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-leather_fin.json",
+  "types": [
+    {
+      "path": "leather_fin.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Leather finishing line id",
+      "titleRu": "ID линии отделки кожи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leather_fin.coat",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Finish coat weight",
+      "titleRu": "Масса покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leather_fin.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leather_fin.gloss",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gloss",
+      "titleRu": "Блеск",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leather_fin.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leather_fin.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dryer temperature",
+      "titleRu": "Температура сушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leather_fin.adhesion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Adhesion OK",
+      "titleRu": "Адгезия OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "leather_fin.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spray",
+        "press",
+        "dry",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

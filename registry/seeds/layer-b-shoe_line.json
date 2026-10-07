@@ -1,0 +1,115 @@
+{
+  "layer": "B29",
+  "name": "layer-b-shoe_line.json",
+  "types": [
+    {
+      "path": "shoe_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Footwear production line id",
+      "titleRu": "ID линии обуви",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shoe_line.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Pairs per hour",
+      "titleRu": "Пар в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_line.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shoe_line.cement",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cementing temperature",
+      "titleRu": "Температура склейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_line.press.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Press time",
+      "titleRu": "Время прессования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_line.wip",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "WIP pairs",
+      "titleRu": "НЗП пар",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shoe_line.bond",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bond strength OK",
+      "titleRu": "Прочность склейки OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shoe_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "stitch",
+        "assemble",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

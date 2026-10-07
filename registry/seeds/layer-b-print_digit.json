@@ -1,0 +1,123 @@
+{
+  "layer": "B29",
+  "name": "layer-b-print_digit.json",
+  "types": [
+    {
+      "path": "print_digit.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Digital press id",
+      "titleRu": "ID цифровой печатной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "print_digit.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Impressions per hour",
+      "titleRu": "Оттисков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_digit.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Average coverage",
+      "titleRu": "Среднее покрытие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "print_digit.toner",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Toner remaining",
+      "titleRu": "Остаток тонера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "print_digit.jobs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Jobs queued",
+      "titleRu": "Заданий в очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_digit.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "print_digit.fuser",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fuser fault",
+      "titleRu": "Отказ печки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "print_digit.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "toner",
+        "inkjet",
+        "liquid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

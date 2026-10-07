@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-thermoform.json",
+  "types": [
+    {
+      "path": "thermoform.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thermoforming line id",
+      "titleRu": "ID линии термоформования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thermoform.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Cycles per minute",
+      "titleRu": "Циклов в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermoform.sheet.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sheet temperature",
+      "titleRu": "Температура листа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermoform.vacuum",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Forming vacuum",
+      "titleRu": "Вакуум формования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermoform.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thermoform.trim",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Trim scrap",
+      "titleRu": "Обрезь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thermoform.plug",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Plug assist active",
+      "titleRu": "Пуансон активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thermoform.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "trim",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

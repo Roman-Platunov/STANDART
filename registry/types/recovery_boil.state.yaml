@@ -1,0 +1,20 @@
+sid: 45fcffde
+path: recovery_boil.state
+aliases:
+  short: recovery_boil.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние котла
+  en: Boiler state
+fingerprint: sha256:45fcffdebd1cfefe46ea3e51ab53d1e0fd238a76c8f3a311591ecaf47d2f2983
+enumValues:
+  - fire
+  - idle
+  - startup
+  - fault

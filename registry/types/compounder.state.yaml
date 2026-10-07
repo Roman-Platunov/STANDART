@@ -1,0 +1,20 @@
+sid: e5e50d55
+path: compounder.state
+aliases:
+  short: compounder.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:e5e50d55c29a6b3eae249d0fc74189e632483ae8277010a00f45ba773a60d552
+enumValues:
+  - compound
+  - purge
+  - idle
+  - fault

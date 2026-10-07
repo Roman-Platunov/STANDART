@@ -1,0 +1,20 @@
+sid: d398b2f7
+path: box_plant.state
+aliases:
+  short: box_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:d398b2f778bdbd84d753ed87bdc0f64f6f7df4027682d1351a374a4d983e5328
+enumValues:
+  - run
+  - setup
+  - idle
+  - fault

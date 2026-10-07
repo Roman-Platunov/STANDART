@@ -1,0 +1,110 @@
+{
+  "layer": "B29",
+  "name": "layer-b-dye_jet.json",
+  "types": [
+    {
+      "path": "dye_jet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Jet dyeing machine id",
+      "titleRu": "ID машины струйного крашения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dye_jet.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dye_jet.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dye_jet.lr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Liquor ratio",
+      "titleRu": "Модуль ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dye_jet.deltae",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "ΔE to standard",
+      "titleRu": "ΔE к эталону",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dye_jet.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Process time",
+      "titleRu": "Время процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dye_jet.level",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Level dyeing OK",
+      "titleRu": "Равномерность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dye_jet.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "dye",
+        "rinse",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

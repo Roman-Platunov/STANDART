@@ -1,0 +1,20 @@
+sid: dced9cce
+path: spunbond.state
+aliases:
+  short: spunbond.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:dced9cce90c0d8cdb6af8066b2dca2b5489a215e4c5f87c1e89b818bb68d7376
+enumValues:
+  - spin
+  - bond
+  - wind
+  - fault

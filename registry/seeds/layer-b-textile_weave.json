@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-textile_weave.json",
+  "types": [
+    {
+      "path": "textile_weave.loom.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Weaving loom id",
+      "titleRu": "ID ткацкого станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "textile_weave.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Picks per minute",
+      "titleRu": "Уточин в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_weave.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Loom efficiency",
+      "titleRu": "КПД станка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "textile_weave.break.warp",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Warp breaks per hour",
+      "titleRu": "Обрывов основы в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_weave.break.weft",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Weft breaks per hour",
+      "titleRu": "Обрывов утка в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_weave.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Reed width",
+      "titleRu": "Ширина по берду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_weave.stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Machine stop",
+      "titleRu": "Останов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "textile_weave.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "airjet",
+        "rapier",
+        "projectile",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

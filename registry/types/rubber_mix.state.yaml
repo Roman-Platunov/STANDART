@@ -1,0 +1,20 @@
+sid: 0cfc0dc2
+path: rubber_mix.state
+aliases:
+  short: rubber_mix.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние смесителя
+  en: Mixer state
+fingerprint: sha256:0cfc0dc2c4290309b688f4563c5725ec9816715a87dbe48ccc80072f3cb24e9b
+enumValues:
+  - mix
+  - dump
+  - idle
+  - fault

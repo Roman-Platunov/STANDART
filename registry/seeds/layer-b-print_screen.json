@@ -1,0 +1,119 @@
+{
+  "layer": "B29",
+  "name": "layer-b-print_screen.json",
+  "types": [
+    {
+      "path": "print_screen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Screen printing machine id",
+      "titleRu": "ID машины трафаретной печати",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "print_screen.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Print speed",
+      "titleRu": "Скорость печати",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_screen.colors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Colors online",
+      "titleRu": "Красок онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_screen.paste",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Paste viscosity index",
+      "titleRu": "Индекс вязкости пасты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "print_screen.reg",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Register error",
+      "titleRu": "Ошибка приводки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_screen.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "print_screen.squeegee",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Squeegee change",
+      "titleRu": "Замена ракеля",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "print_screen.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rotary",
+        "flat",
+        "digital_hybrid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

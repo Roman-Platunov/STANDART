@@ -1,0 +1,111 @@
+{
+  "layer": "B29",
+  "name": "layer-b-slitter_rw.json",
+  "types": [
+    {
+      "path": "slitter_rw.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slitter-rewinder id",
+      "titleRu": "ID бобинорезательной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "slitter_rw.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Slitting speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slitter_rw.tension",
+      "kind": "quantity",
+      "unit": "N/m",
+      "titleEn": "Web tension",
+      "titleRu": "Натяжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slitter_rw.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Slit width",
+      "titleRu": "Ширина рулона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slitter_rw.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Finished diameter",
+      "titleRu": "Диаметр готового",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slitter_rw.rolls",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rolls per hour",
+      "titleRu": "Рулонов в час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slitter_rw.knife",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Knife change due",
+      "titleRu": "Замена ножей",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "slitter_rw.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "slit",
+        "setup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

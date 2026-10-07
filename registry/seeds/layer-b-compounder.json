@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-compounder.json",
+  "types": [
+    {
+      "path": "compounder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compounding line id",
+      "titleRu": "ID линии компаундирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "compounder.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compounder.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compounder.torque",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Screw torque",
+      "titleRu": "Момент шнека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "compounder.filler",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Filler loading",
+      "titleRu": "Доля наполнителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "compounder.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Die pressure",
+      "titleRu": "Давление головки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compounder.vent",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vacuum vent OK",
+      "titleRu": "Вакуумный отсос OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "compounder.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "compound",
+        "purge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

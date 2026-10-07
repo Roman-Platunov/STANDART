@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-print_flexo.json",
+  "types": [
+    {
+      "path": "print_flexo.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flexo press id",
+      "titleRu": "ID флексомашины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "print_flexo.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Press speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_flexo.density",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ink density",
+      "titleRu": "Плотность краски",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_flexo.register",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Register error",
+      "titleRu": "Ошибка приводки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_flexo.viscosity",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Ink viscosity cup",
+      "titleRu": "Вязкость краски (чашка)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_flexo.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "print_flexo.ghosting",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ghosting",
+      "titleRu": "Двоение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "print_flexo.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "print",
+        "washup",
+        "setup",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

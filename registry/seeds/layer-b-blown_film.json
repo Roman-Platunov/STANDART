@@ -1,0 +1,112 @@
+{
+  "layer": "B29",
+  "name": "layer-b-blown_film.json",
+  "types": [
+    {
+      "path": "blown_film.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blown film line id",
+      "titleRu": "ID линии рукавной плёнки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blown_film.bur",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Blow-up ratio",
+      "titleRu": "Кратность раздува",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blown_film.frost",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Frost line height",
+      "titleRu": "Высота линии кристаллизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blown_film.gauge",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Film gauge",
+      "titleRu": "Толщина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blown_film.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blown_film.layflat",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Layflat width",
+      "titleRu": "Ширина рукава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blown_film.bubble",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bubble unstable",
+      "titleRu": "Нестабильный пузырь",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "blown_film.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "startup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

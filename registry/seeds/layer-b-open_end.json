@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-open_end.json",
+  "types": [
+    {
+      "path": "open_end.rotor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Open-end spinning machine id",
+      "titleRu": "ID пневмомеханической прядильной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "open_end.rotor.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Rotor speed",
+      "titleRu": "Обороты ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "open_end.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Yarn count",
+      "titleRu": "Номер пряжи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "open_end.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Efficiency",
+      "titleRu": "КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "open_end.breaks",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Ends down per hour",
+      "titleRu": "Обрывов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "open_end.trash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Trash extraction",
+      "titleRu": "Выделение сора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "open_end.rotor.clean",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rotor clean due",
+      "titleRu": "Чистка ротора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "open_end.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spin",
+        "piecer",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

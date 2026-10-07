@@ -1,0 +1,111 @@
+{
+  "layer": "B29",
+  "name": "layer-b-tire_cure.json",
+  "types": [
+    {
+      "path": "tire_cure.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tire curing press id",
+      "titleRu": "ID вулканизационного пресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tire_cure.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mold temperature",
+      "titleRu": "Температура пресс-формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_cure.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cure pressure",
+      "titleRu": "Давление вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_cure.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cure time",
+      "titleRu": "Время вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_cure.bladder",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bladder cycles",
+      "titleRu": "Циклов диафрагмы",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_cure.energy",
+      "kind": "quantity",
+      "unit": "kWh",
+      "titleEn": "Energy per cure",
+      "titleRu": "Энергия на цикл",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_cure.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cure complete",
+      "titleRu": "Вулканизация завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tire_cure.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "cure",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

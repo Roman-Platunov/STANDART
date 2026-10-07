@@ -1,0 +1,20 @@
+sid: 0b7ec9f9
+path: shoe_line.state
+aliases:
+  short: shoe_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:0b7ec9f9508fb9267831f9370f71ec8dd30be58beb6fc548743ae023c77e2df4
+enumValues:
+  - cut
+  - stitch
+  - assemble
+  - fault

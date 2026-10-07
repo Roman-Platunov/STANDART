@@ -1,0 +1,20 @@
+sid: 8e9bb2e9
+path: sizing_beam.state
+aliases:
+  short: sizing_beam.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:8e9bb2e913f625c4dabfa19b5c2a15abd19c098094666c5bd974c2941ab6e6ad
+enumValues:
+  - size
+  - dry
+  - idle
+  - fault

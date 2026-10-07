@@ -1,0 +1,121 @@
+{
+  "layer": "B29",
+  "name": "layer-b-bleach_tower.json",
+  "types": [
+    {
+      "path": "bleach_tower.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bleach tower id",
+      "titleRu": "ID башни отбелки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bleach_tower.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tower temperature",
+      "titleRu": "Температура башни",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bleach_tower.brightness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "ISO brightness",
+      "titleRu": "Белизна ISO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bleach_tower.chem",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Chemical charge",
+      "titleRu": "Расход химиката",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bleach_tower.resid",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Residual chemical",
+      "titleRu": "Остаточный химикат",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bleach_tower.cons",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Consistency",
+      "titleRu": "Концентрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bleach_tower.channeling",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Channeling risk",
+      "titleRu": "Риск каналообразования",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bleach_tower.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Ступень",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "d0",
+        "eop",
+        "d1",
+        "p",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

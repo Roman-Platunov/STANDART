@@ -1,0 +1,114 @@
+{
+  "layer": "B29",
+  "name": "layer-b-loom_jacq.json",
+  "types": [
+    {
+      "path": "loom_jacq.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Jacquard loom id",
+      "titleRu": "ID жаккардового станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loom_jacq.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Picks per minute",
+      "titleRu": "Уточин в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loom_jacq.hooks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active hooks",
+      "titleRu": "Активных крючков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loom_jacq.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Efficiency",
+      "titleRu": "КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "loom_jacq.breaks",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Breaks per hour",
+      "titleRu": "Обрывов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loom_jacq.pattern",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pattern repeats",
+      "titleRu": "Раппортов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loom_jacq.harness",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Harness fault",
+      "titleRu": "Отказ ремизки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "loom_jacq.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Loom state",
+      "titleRu": "Состояние станка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "weave",
+        "design",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

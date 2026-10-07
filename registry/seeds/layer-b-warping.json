@@ -1,0 +1,111 @@
+{
+  "layer": "B29",
+  "name": "layer-b-warping.json",
+  "types": [
+    {
+      "path": "warping.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Warping machine id",
+      "titleRu": "ID сновальной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "warping.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Warping speed",
+      "titleRu": "Скорость снования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warping.ends",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ends in beam",
+      "titleRu": "Нитей в навое",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warping.tension",
+      "kind": "quantity",
+      "unit": "cN",
+      "titleEn": "End tension",
+      "titleRu": "Натяжение нити",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warping.breaks",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "End breaks per hour",
+      "titleRu": "Обрывов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warping.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Beam length",
+      "titleRu": "Длина снования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "warping.static",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Static charge high",
+      "titleRu": "Высокий заряд",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "warping.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "warp",
+        "creel",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

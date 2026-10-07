@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-cast_film.json",
+  "types": [
+    {
+      "path": "cast_film.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cast film line id",
+      "titleRu": "ID линии плоскощелевой плёнки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cast_film.chill",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chill roll temperature",
+      "titleRu": "Температура охлаждающего вала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cast_film.gauge",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Film gauge",
+      "titleRu": "Толщина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cast_film.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cast_film.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cast_film.haze",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Haze",
+      "titleRu": "Мутность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cast_film.edge.bead",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Edge bead trim",
+      "titleRu": "Обрезка утолщений",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cast_film.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cast",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

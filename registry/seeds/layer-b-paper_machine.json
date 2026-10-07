@@ -1,0 +1,117 @@
+{
+  "layer": "B29",
+  "name": "layer-b-paper_machine.json",
+  "types": [
+    {
+      "path": "paper_machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paper machine id",
+      "titleRu": "ID бумагоделательной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paper_machine.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Machine speed",
+      "titleRu": "Скорость машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_machine.basis",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Basis weight",
+      "titleRu": "Масса 1 м²",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_machine.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reel moisture",
+      "titleRu": "Влажность на накате",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paper_machine.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Trimmed width",
+      "titleRu": "Ширина обрезки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_machine.production",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Production rate",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paper_machine.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Web break",
+      "titleRu": "Обрыв полотна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paper_machine.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Сорт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fine",
+        "board",
+        "news",
+        "specialty",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

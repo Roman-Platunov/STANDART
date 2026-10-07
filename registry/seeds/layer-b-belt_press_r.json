@@ -1,0 +1,112 @@
+{
+  "layer": "B29",
+  "name": "layer-b-belt_press_r.json",
+  "types": [
+    {
+      "path": "belt_press_r.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Conveyor belt press id",
+      "titleRu": "ID пресса транспортёрной ленты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "belt_press_r.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Press temperature",
+      "titleRu": "Температура пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "belt_press_r.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Press pressure",
+      "titleRu": "Давление пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "belt_press_r.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cure time",
+      "titleRu": "Время вулканизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "belt_press_r.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Belt thickness",
+      "titleRu": "Толщина ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "belt_press_r.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Belt width",
+      "titleRu": "Ширина ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "belt_press_r.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Press cycle done",
+      "titleRu": "Цикл завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "belt_press_r.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "press",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

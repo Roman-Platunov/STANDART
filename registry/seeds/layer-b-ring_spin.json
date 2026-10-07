@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-ring_spin.json",
+  "types": [
+    {
+      "path": "ring_spin.frame.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ring spinning frame id",
+      "titleRu": "ID кольцепрядильной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ring_spin.spindle",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Spindle speed",
+      "titleRu": "Обороты веретена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ring_spin.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Yarn count",
+      "titleRu": "Номер пряжи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ring_spin.ends",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Ends down rate",
+      "titleRu": "Обрывы в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ring_spin.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Frame efficiency",
+      "titleRu": "КПД машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ring_spin.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Frame power",
+      "titleRu": "Мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ring_spin.doff",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Auto-doff running",
+      "titleRu": "Автосъём",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ring_spin.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Frame state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spin",
+        "doff",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

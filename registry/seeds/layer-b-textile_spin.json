@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-textile_spin.json",
+  "types": [
+    {
+      "path": "textile_spin.frame.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spinning frame id",
+      "titleRu": "ID прядильной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "textile_spin.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Yarn count (Ne)",
+      "titleRu": "Номер пряжи (Ne)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_spin.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Spindle speed",
+      "titleRu": "Обороты веретена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_spin.break",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Ends down per hour",
+      "titleRu": "Обрывов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_spin.twist",
+      "kind": "quantity",
+      "unit": "/m",
+      "titleEn": "Twist per meter",
+      "titleRu": "Крутка на метр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_spin.cv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Unevenness CV%",
+      "titleRu": "Неровнота CV%",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "textile_spin.doff",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Doff due",
+      "titleRu": "Съём",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "textile_spin.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ring",
+        "oe",
+        "airjet",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

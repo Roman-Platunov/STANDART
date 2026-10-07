@@ -1,0 +1,20 @@
+sid: 96fdce95
+path: garment_sew.state
+aliases:
+  short: garment_sew.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:96fdce956c5dbe837b22a8ec5b9c4dd2d843d34b97e544718e5117ff5d8bfb59
+enumValues:
+  - run
+  - changeover
+  - idle
+  - fault

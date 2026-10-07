@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-lime_kiln_pp.json",
+  "types": [
+    {
+      "path": "lime_kiln_pp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pulp lime kiln id",
+      "titleRu": "ID известково-обжигательной печи ЦБП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lime_kiln_pp.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Burning zone temperature",
+      "titleRu": "Температура зоны обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_pp.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Kiln speed",
+      "titleRu": "Обороты печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_pp.avail",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CaO availability",
+      "titleRu": "Активность CaO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_pp.fuel",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Fuel gas flow",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_pp.production",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Lime production",
+      "titleRu": "Выработка извести",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln_pp.ring",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ring formation",
+      "titleRu": "Образование кольца",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lime_kiln_pp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kiln state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "heat",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

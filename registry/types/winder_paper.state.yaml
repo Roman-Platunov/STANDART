@@ -1,0 +1,20 @@
+sid: caa12da6
+path: winder_paper.state
+aliases:
+  short: winder_paper.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние намотки
+  en: Winder state
+fingerprint: sha256:caa12da615c3f8ef274deb18c58803e39242cd9ef64a80a5a48e0ae165be6651
+enumValues:
+  - wind
+  - splice
+  - idle
+  - fault

@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-chip_yard.json",
+  "types": [
+    {
+      "path": "chip_yard.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chip yard id",
+      "titleRu": "ID щепового двора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chip_yard.inventory",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Chip inventory",
+      "titleRu": "Запас щепы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chip_yard.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chip moisture",
+      "titleRu": "Влажность щепы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chip_yard.infeed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Infeed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chip_yard.outfeed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Outfeed to digesters",
+      "titleRu": "Выдача на варку",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chip_yard.fines",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fines fraction",
+      "titleRu": "Доля мелочи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chip_yard.frozen",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Frozen pile",
+      "titleRu": "Мёрзлая куча",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chip_yard.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Yard state",
+      "titleRu": "Состояние двора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receive",
+        "store",
+        "reclaim",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

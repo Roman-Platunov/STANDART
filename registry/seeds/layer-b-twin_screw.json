@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-twin_screw.json",
+  "types": [
+    {
+      "path": "twin_screw.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Twin-screw extruder id",
+      "titleRu": "ID двухшнекового экструдера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "twin_screw.screw",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Screw speed",
+      "titleRu": "Обороты шнеков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "twin_screw.torque",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Torque",
+      "titleRu": "Момент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "twin_screw.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zone temperature",
+      "titleRu": "Температура зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "twin_screw.feed",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "twin_screw.sme",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific mechanical energy",
+      "titleRu": "Удельная мех. энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "twin_screw.starve",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Starved feed",
+      "titleRu": "Голодная подача",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "twin_screw.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Extruder state",
+      "titleRu": "Состояние экструдера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "purge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

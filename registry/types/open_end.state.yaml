@@ -1,0 +1,20 @@
+sid: 6af7b011
+path: open_end.state
+aliases:
+  short: open_end.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:6af7b01148dfa86a08c0b3ce8c7c5f20a51a1e1491928767132afefd9675d643
+enumValues:
+  - spin
+  - piecer
+  - idle
+  - fault

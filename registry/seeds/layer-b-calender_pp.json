@@ -1,0 +1,112 @@
+{
+  "layer": "B29",
+  "name": "layer-b-calender_pp.json",
+  "types": [
+    {
+      "path": "calender_pp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paper calender id",
+      "titleRu": "ID суперкаландра бумаги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "calender_pp.nip",
+      "kind": "quantity",
+      "unit": "kN/m",
+      "titleEn": "Nip load",
+      "titleRu": "Линейное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_pp.gloss",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gloss units",
+      "titleRu": "Блеск",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_pp.caliper",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Caliper",
+      "titleRu": "Толщина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_pp.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Roll temperature",
+      "titleRu": "Температура вала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_pp.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Calender speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_pp.barring",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Barring vibration",
+      "titleRu": "Вибрация barring",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "calender_pp.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "soft",
+        "hard",
+        "multi",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

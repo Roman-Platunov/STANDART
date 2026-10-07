@@ -1,0 +1,20 @@
+sid: e5b6f5da
+path: print_flexo.state
+aliases:
+  short: print_flexo.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Press state
+fingerprint: sha256:e5b6f5dabc13800f81f15bd6731e08f16fd2233d6522a56ab9f78ac1acb767c8
+enumValues:
+  - print
+  - washup
+  - setup
+  - fault

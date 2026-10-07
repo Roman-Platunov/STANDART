@@ -1,0 +1,112 @@
+{
+  "layer": "B29",
+  "name": "layer-b-spunbond.json",
+  "types": [
+    {
+      "path": "spunbond.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spunbond line id",
+      "titleRu": "ID линии спанбонд",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spunbond.basis",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Basis weight",
+      "titleRu": "Масса 1 м²",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spunbond.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spunbond.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spunbond.denier",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Filament denier",
+      "titleRu": "Титр филамента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spunbond.bonding",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Calender bonding temperature",
+      "titleRu": "Температура каландровой скрепки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spunbond.web",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Web break",
+      "titleRu": "Обрыв полотна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spunbond.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spin",
+        "bond",
+        "wind",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

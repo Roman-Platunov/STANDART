@@ -1,0 +1,20 @@
+sid: fded3ccc
+path: chip_yard.state
+aliases:
+  short: chip_yard.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние двора
+  en: Yard state
+fingerprint: sha256:fded3ccc654cc3ee7685ad652b21a596680c2d1f2da03ecf7a114b5858de41b4
+enumValues:
+  - receive
+  - store
+  - reclaim
+  - idle

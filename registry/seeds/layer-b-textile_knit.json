@@ -1,0 +1,115 @@
+{
+  "layer": "B29",
+  "name": "layer-b-textile_knit.json",
+  "types": [
+    {
+      "path": "textile_knit.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Knitting machine id",
+      "titleRu": "ID вязальной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "textile_knit.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Cylinder speed",
+      "titleRu": "Обороты цилиндра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_knit.courses",
+      "kind": "quantity",
+      "unit": "/cm",
+      "titleEn": "Courses per cm",
+      "titleRu": "Рядов на см",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_knit.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Efficiency",
+      "titleRu": "КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "textile_knit.defect",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Defects per hour",
+      "titleRu": "Дефектов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_knit.yarn",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Feeders active",
+      "titleRu": "Активных нитеводителей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_knit.needle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Needle break",
+      "titleRu": "Поломка иглы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "textile_knit.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "circular",
+        "flat",
+        "warp",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

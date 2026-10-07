@@ -1,0 +1,20 @@
+sid: c5e88414
+path: garment_cut.state
+aliases:
+  short: garment_cut.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стола
+  en: Table state
+fingerprint: sha256:c5e884144eb6648d3bf028f454be883a27b72bd6613de6ab50e2b599436e3fd1
+enumValues:
+  - spread
+  - cut
+  - idle
+  - fault

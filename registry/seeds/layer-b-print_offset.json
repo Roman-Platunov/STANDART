@@ -1,0 +1,120 @@
+{
+  "layer": "B29",
+  "name": "layer-b-print_offset.json",
+  "types": [
+    {
+      "path": "print_offset.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Offset press id",
+      "titleRu": "ID офсетной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "print_offset.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Sheets per hour",
+      "titleRu": "Листов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_offset.density",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Solid density",
+      "titleRu": "Плотность плашки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_offset.water",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dampening",
+      "titleRu": "Увлажнение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "print_offset.register",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Register error",
+      "titleRu": "Ошибка приводки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "print_offset.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "print_offset.scumming",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scumming",
+      "titleRu": "Тенение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "print_offset.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "print",
+        "makeready",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

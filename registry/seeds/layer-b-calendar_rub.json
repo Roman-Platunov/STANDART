@@ -1,0 +1,112 @@
+{
+  "layer": "B29",
+  "name": "layer-b-calendar_rub.json",
+  "types": [
+    {
+      "path": "calendar_rub.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rubber calender id",
+      "titleRu": "ID каландра резины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "calendar_rub.gauge",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Calendered gauge",
+      "titleRu": "Толщина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calendar_rub.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calendar_rub.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Roll temperature",
+      "titleRu": "Температура вала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calendar_rub.nip",
+      "kind": "quantity",
+      "unit": "kN/m",
+      "titleEn": "Nip load",
+      "titleRu": "Линейное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calendar_rub.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Web width",
+      "titleRu": "Ширина полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calendar_rub.bank",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bank size OK",
+      "titleRu": "Валки OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "calendar_rub.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Calender state",
+      "titleRu": "Состояние каландра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "calender",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

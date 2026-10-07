@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-lamin_pack.json",
+  "types": [
+    {
+      "path": "lamin_pack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Packaging laminator id",
+      "titleRu": "ID ламинатора упаковки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lamin_pack.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lamin_pack.adhesive",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Adhesive coat weight",
+      "titleRu": "Нанос клея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lamin_pack.bond",
+      "kind": "quantity",
+      "unit": "N/15mm",
+      "titleEn": "Bond strength",
+      "titleRu": "Прочность склейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lamin_pack.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Nip temperature",
+      "titleRu": "Температура вала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lamin_pack.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lamin_pack.tunnel",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tunnel curing",
+      "titleRu": "Туннельное отверждение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lamin_pack.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "solvent",
+        "solventless",
+        "extrusion",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

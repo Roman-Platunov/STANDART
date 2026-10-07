@@ -1,0 +1,20 @@
+sid: d6e0369b
+path: tire_cure.state
+aliases:
+  short: tire_cure.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:d6e0369b892f51821d94d7402a20b61fe06ea1badb0bcdc16e25ad88f07107f4
+enumValues:
+  - load
+  - cure
+  - unload
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-recovery_boil.json",
+  "types": [
+    {
+      "path": "recovery_boil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Recovery boiler id",
+      "titleRu": "ID содорегенерационного котла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "recovery_boil.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steam generation",
+      "titleRu": "Выработка пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "recovery_boil.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "recovery_boil.black.solids",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Black liquor solids",
+      "titleRu": "Сухой остаток ЧЩ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "recovery_boil.smelt",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Smelt temperature",
+      "titleRu": "Температура плава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "recovery_boil.nox",
+      "kind": "quantity",
+      "unit": "mg/Nm3",
+      "titleEn": "NOx",
+      "titleRu": "NOx",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "recovery_boil.blackout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bed blackout risk",
+      "titleRu": "Риск погасания слоя",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "recovery_boil.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Boiler state",
+      "titleRu": "Состояние котла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fire",
+        "idle",
+        "startup",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

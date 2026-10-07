@@ -1,0 +1,20 @@
+sid: f1071fe3
+path: print_offset.state
+aliases:
+  short: print_offset.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Press state
+fingerprint: sha256:f1071fe319f74038f5afb2a77e9e44c1346eed0db721f7f0027b1b7a0f00c5cf
+enumValues:
+  - print
+  - makeready
+  - idle
+  - fault

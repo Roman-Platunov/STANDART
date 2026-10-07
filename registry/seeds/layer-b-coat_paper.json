@@ -1,0 +1,116 @@
+{
+  "layer": "B29",
+  "name": "layer-b-coat_paper.json",
+  "types": [
+    {
+      "path": "coat_paper.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paper coater id",
+      "titleRu": "ID меловальной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coat_paper.coat",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Coat weight",
+      "titleRu": "Масса покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coat_paper.solids",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Coating solids",
+      "titleRu": "Сухой остаток покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coat_paper.blade",
+      "kind": "quantity",
+      "unit": "N/m",
+      "titleEn": "Blade load",
+      "titleRu": "Нагрузка ножа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coat_paper.gloss",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Coated gloss",
+      "titleRu": "Блеск покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coat_paper.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Coater speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coat_paper.streak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Streak / skip",
+      "titleRu": "Полоса / пропуск",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coat_paper.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blade",
+        "curtain",
+        "film",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
