@@ -1,0 +1,112 @@
+{
+  "layer": "B16",
+  "name": "layer-b-tailings.json",
+  "types": [
+    {
+      "path": "tailings.dam.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tailings dam id",
+      "titleRu": "ID хвостохранилища",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tailings.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Pond level",
+      "titleRu": "Уровень пруда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings.freeboard",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Freeboard",
+      "titleRu": "Запас борта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings.seepage",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Seepage rate",
+      "titleRu": "Фильтрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings.piezo",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Piezometer",
+      "titleRu": "Пьезометр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Discharge turbidity",
+      "titleRu": "Мутность сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dam alarm",
+      "titleRu": "Тревога дамбы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tailings.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dam state",
+      "titleRu": "Состояние дамбы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "high",
+        "critical",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

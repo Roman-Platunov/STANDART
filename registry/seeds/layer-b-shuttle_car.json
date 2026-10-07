@@ -1,0 +1,117 @@
+{
+  "layer": "B16",
+  "name": "layer-b-shuttle_car.json",
+  "types": [
+    {
+      "path": "shuttle_car.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shuttle car id",
+      "titleRu": "ID самоходного вагона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shuttle_car.load",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Payload",
+      "titleRu": "Груз",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shuttle_car.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Travel speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shuttle_car.cable.out",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Cable out",
+      "titleRu": "Вытравлено кабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shuttle_car.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery SOC",
+      "titleRu": "SOC батареи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shuttle_car.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trips today",
+      "titleRu": "Рейсов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shuttle_car.cable.damage",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cable damage",
+      "titleRu": "Повреждение кабеля",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shuttle_car.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "haul",
+        "dump",
+        "charge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

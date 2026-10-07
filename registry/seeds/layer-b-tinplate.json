@@ -1,0 +1,110 @@
+{
+  "layer": "B16",
+  "name": "layer-b-tinplate.json",
+  "types": [
+    {
+      "path": "tinplate.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tinplate line id",
+      "titleRu": "ID линии жести",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tinplate.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tinplate coil id",
+      "titleRu": "ID рулона жести",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tinplate.coating",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Tin coating mass",
+      "titleRu": "Масса оловянного покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tinplate.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Plating current",
+      "titleRu": "Ток покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tinplate.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tinplate.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Strip thickness",
+      "titleRu": "Толщина полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tinplate.pinhole",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pinhole detected",
+      "titleRu": "Обнаружена пористость",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tinplate.finish",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Finish",
+      "titleRu": "Отделка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bright",
+        "matte",
+        "stone",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

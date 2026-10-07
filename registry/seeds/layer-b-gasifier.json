@@ -1,0 +1,121 @@
+{
+  "layer": "B16",
+  "name": "layer-b-gasifier.json",
+  "types": [
+    {
+      "path": "gasifier.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gasifier id",
+      "titleRu": "ID газификатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gasifier.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bed temperature",
+      "titleRu": "Температура слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gasifier.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Gasifier pressure",
+      "titleRu": "Давление газификатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gasifier.syngas.co",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Syngas CO",
+      "titleRu": "CO в синтез-газе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gasifier.syngas.h2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Syngas H2",
+      "titleRu": "H2 в синтез-газе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gasifier.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feedstock rate",
+      "titleRu": "Подача сырья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gasifier.slag.tap",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Slag tap ready",
+      "titleRu": "Готовность шлакового выпуска",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gasifier.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fixed",
+        "fluid",
+        "entrained",
+        "plasma",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

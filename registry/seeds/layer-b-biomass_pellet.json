@@ -1,0 +1,125 @@
+{
+  "layer": "B16",
+  "name": "layer-b-biomass_pellet.json",
+  "types": [
+    {
+      "path": "biomass_pellet.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pellet mill id",
+      "titleRu": "ID пеллетного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biomass_pellet.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Feed moisture",
+      "titleRu": "Влажность сырья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biomass_pellet.die.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Die temperature",
+      "titleRu": "Температура матрицы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biomass_pellet.durability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pellet durability",
+      "titleRu": "Прочность пеллет",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biomass_pellet.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Pellet rate",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biomass_pellet.fines",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fines",
+      "titleRu": "Мелочь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biomass_pellet.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire risk",
+      "titleRu": "Риск возгорания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "biomass_pellet.feedstock",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feedstock",
+      "titleRu": "Сырьё",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wood",
+        "agri",
+        "torrefied",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

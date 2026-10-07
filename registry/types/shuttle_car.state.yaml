@@ -1,0 +1,22 @@
+sid: d2d34931
+path: shuttle_car.state
+aliases:
+  short: shuttle_car.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:d2d34931e02ee1f5e70f5b6e7d501b4e30441c828f519c0f07e49def1a77a718
+enumValues:
+  - load
+  - haul
+  - dump
+  - charge
+  - idle
+  - fault

@@ -1,0 +1,110 @@
+{
+  "layer": "B16",
+  "name": "layer-b-belt_scale.json",
+  "types": [
+    {
+      "path": "belt_scale.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Belt scale id",
+      "titleRu": "ID ленточных весов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "belt_scale.conveyor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Conveyor id",
+      "titleRu": "ID конвейера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "belt_scale.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Instant rate",
+      "titleRu": "Мгновенный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "belt_scale.total",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Totalized mass",
+      "titleRu": "Накопленная масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "belt_scale.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Belt speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "belt_scale.load",
+      "kind": "quantity",
+      "unit": "kg/m",
+      "titleEn": "Belt loading",
+      "titleRu": "Нагрузка ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "belt_scale.cal.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Calibration due",
+      "titleRu": "Нужна поверка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "belt_scale.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Data quality",
+      "titleRu": "Качество данных",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "suspect",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "layer": "B16",
+  "name": "layer-b-bucketwheel.json",
+  "types": [
+    {
+      "path": "bucketwheel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bucket-wheel excavator id",
+      "titleRu": "ID роторного экскаватора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bucketwheel.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Wheel RPM",
+      "titleRu": "Обороты ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bucketwheel.cut.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Cut depth",
+      "titleRu": "Глубина резания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bucketwheel.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Digging rate",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bucketwheel.belt.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Discharge belt",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bucketwheel.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Drive power",
+      "titleRu": "Мощность привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bucketwheel.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wheel jam",
+      "titleRu": "Заклинивание ротора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bucketwheel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "BWE state",
+      "titleRu": "Состояние РЭ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dig",
+        "reposition",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

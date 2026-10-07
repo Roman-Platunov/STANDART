@@ -1,0 +1,115 @@
+{
+  "layer": "B16",
+  "name": "layer-b-cooperage.json",
+  "types": [
+    {
+      "path": "cooperage.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cooperage id",
+      "titleRu": "ID бондарни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cooperage.barrel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Barrel id",
+      "titleRu": "ID бочки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cooperage.toast.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Toast temperature",
+      "titleRu": "Температура обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooperage.toast.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Toast time",
+      "titleRu": "Время обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooperage.stave.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stave moisture",
+      "titleRu": "Влажность клёпки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cooperage.capacity",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Barrel volume",
+      "titleRu": "Объём бочки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooperage.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Barrel leak",
+      "titleRu": "Течь бочки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cooperage.toast",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Toast level",
+      "titleRu": "Степень обжига",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "light",
+        "medium",
+        "medium_plus",
+        "heavy",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

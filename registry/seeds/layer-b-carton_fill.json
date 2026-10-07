@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-carton_fill.json",
+  "types": [
+    {
+      "path": "carton_fill.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Carton filler id",
+      "titleRu": "ID линии картонной упаковки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "carton_fill.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Carton SKU id",
+      "titleRu": "ID SKU картона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "carton_fill.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Packs per hour",
+      "titleRu": "Упаковок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carton_fill.fill.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carton_fill.seal.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Seal temperature",
+      "titleRu": "Температура сварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "carton_fill.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "carton_fill.aseptic.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aseptic OK",
+      "titleRu": "Асептика OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "carton_fill.format",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Format",
+      "titleRu": "Формат",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "brick",
+        "gable",
+        "pouch",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-dragline.json",
+  "types": [
+    {
+      "path": "dragline.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dragline id",
+      "titleRu": "ID драглайна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dragline.bucket",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Bucket volume",
+      "titleRu": "Объём ковша",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dragline.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dragline.swing",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Swing angle",
+      "titleRu": "Угол поворота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dragline.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Motor power",
+      "titleRu": "Мощность привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dragline.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Material moved",
+      "titleRu": "Перемещённый объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dragline.rope.warn",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rope wear warn",
+      "titleRu": "Износ каната",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dragline.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dragline state",
+      "titleRu": "Состояние драглайна",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dig",
+        "swing",
+        "dump",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

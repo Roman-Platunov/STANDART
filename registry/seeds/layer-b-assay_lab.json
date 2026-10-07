@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-assay_lab.json",
+  "types": [
+    {
+      "path": "assay_lab.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Assay lab id",
+      "titleRu": "ID пробирной лаборатории",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "assay_lab.sample.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sample id",
+      "titleRu": "ID пробы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "assay_lab.turnaround.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Turnaround time",
+      "titleRu": "Срок анализа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "assay_lab.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Samples in queue",
+      "titleRu": "Проб в очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "assay_lab.grade",
+      "kind": "quantity",
+      "unit": "g/t",
+      "titleEn": "Reported grade",
+      "titleRu": "Заявленное содержание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "assay_lab.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sample moisture",
+      "titleRu": "Влажность пробы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "assay_lab.rush",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rush sample",
+      "titleRu": "Срочная проба",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "assay_lab.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fire",
+        "aas",
+        "icp",
+        "xrf",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

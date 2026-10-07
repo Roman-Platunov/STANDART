@@ -1,0 +1,21 @@
+sid: 16de84d1
+path: landfill_leach.state
+aliases:
+  short: landfill_leach.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:16de84d13e7ccaf7c3cb1956b02b35c8031213fea5a2a90d80603e2bc064a88e
+enumValues:
+  - collect
+  - treat
+  - recirc
+  - offline
+  - fault

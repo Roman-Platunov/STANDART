@@ -1,0 +1,111 @@
+{
+  "layer": "B16",
+  "name": "layer-b-pet_preform.json",
+  "types": [
+    {
+      "path": "pet_preform.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Preform machine id",
+      "titleRu": "ID машины преформ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pet_preform.mold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Preform mold id",
+      "titleRu": "ID формы преформ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pet_preform.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_preform.iv",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Intrinsic viscosity",
+      "titleRu": "Характеристическая вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_preform.aa",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Acetaldehyde",
+      "titleRu": "Ацетальдегид",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_preform.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Preform weight",
+      "titleRu": "Масса преформы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_preform.crystal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crystallinity high",
+      "titleRu": "Высокая кристалличность",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pet_preform.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inject",
+        "cool",
+        "eject",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

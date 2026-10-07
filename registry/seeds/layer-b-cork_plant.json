@@ -1,0 +1,117 @@
+{
+  "layer": "B16",
+  "name": "layer-b-cork_plant.json",
+  "types": [
+    {
+      "path": "cork_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cork plant id",
+      "titleRu": "ID пробкового завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cork_plant.boil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Boil temperature",
+      "titleRu": "Температура варки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cork_plant.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cork moisture",
+      "titleRu": "Влажность пробки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cork_plant.tca",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "TCA level",
+      "titleRu": "Уровень TCA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cork_plant.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Cork density",
+      "titleRu": "Плотность пробки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cork_plant.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Closures per hour",
+      "titleRu": "Укупорочных средств в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cork_plant.reject",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Visual reject",
+      "titleRu": "Визуальный брак",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cork_plant.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "natural",
+        "colmated",
+        "agglomerated",
+        "technical",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

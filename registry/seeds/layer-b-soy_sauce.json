@@ -1,0 +1,119 @@
+{
+  "layer": "B16",
+  "name": "layer-b-soy_sauce.json",
+  "types": [
+    {
+      "path": "soy_sauce.ferment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Soy sauce fermenter id",
+      "titleRu": "ID ферментёра соевого соуса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soy_sauce.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brew batch id",
+      "titleRu": "ID партии затора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soy_sauce.moromi.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Moromi temperature",
+      "titleRu": "Температура мороми",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soy_sauce.salt",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Salt content",
+      "titleRu": "Содержание соли",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "soy_sauce.tn",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Total nitrogen",
+      "titleRu": "Общий азот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "soy_sauce.age.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Age days",
+      "titleRu": "Дней выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soy_sauce.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Press ready",
+      "titleRu": "Готово к прессованию",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "soy_sauce.style",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Style",
+      "titleRu": "Стиль",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "koikuchi",
+        "usukuchi",
+        "tamari",
+        "shoyu",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

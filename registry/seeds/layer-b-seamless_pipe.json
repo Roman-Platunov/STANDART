@@ -1,0 +1,115 @@
+{
+  "layer": "B16",
+  "name": "layer-b-seamless_pipe.json",
+  "types": [
+    {
+      "path": "seamless_pipe.mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Seamless mill id",
+      "titleRu": "ID стана бесшовных труб",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seamless_pipe.billet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Billet id",
+      "titleRu": "ID гильзы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seamless_pipe.pierce.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Piercing temperature",
+      "titleRu": "Температура прошивки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seamless_pipe.od",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Pipe OD",
+      "titleRu": "Наружный диаметр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seamless_pipe.wt",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wall thickness",
+      "titleRu": "Толщина стенки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seamless_pipe.elongation",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Elongation",
+      "titleRu": "Удлинение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "seamless_pipe.eccentric",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Eccentric wall",
+      "titleRu": "Эксцентричность стенки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "seamless_pipe.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade family",
+      "titleRu": "Семейство марок",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "linepipe",
+        "octg",
+        "boiler",
+        "mech",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

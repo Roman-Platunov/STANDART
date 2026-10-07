@@ -1,0 +1,21 @@
+sid: 6fbe2ed2
+path: smelter_gas.state
+aliases:
+  short: smelter_gas.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Train state
+fingerprint: sha256:6fbe2ed230cea62d2e1611856a6add4761d3a1adfcd5af2ff033246a4415cf3f
+enumValues:
+  - normal
+  - upset
+  - bypass
+  - offline
+  - fault

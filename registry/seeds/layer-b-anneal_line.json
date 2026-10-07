@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-anneal_line.json",
+  "types": [
+    {
+      "path": "anneal_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Annealing line id",
+      "titleRu": "ID линии отжига",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anneal_line.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Annealed coil id",
+      "titleRu": "ID отожжённого рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anneal_line.furnace.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anneal_line.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anneal_line.h2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "H2 in atmosphere",
+      "titleRu": "H2 в атмосфере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "anneal_line.hardness",
+      "kind": "quantity",
+      "unit": "HV",
+      "titleEn": "Exit hardness",
+      "titleRu": "Твёрдость на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anneal_line.buckle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Strip buckle",
+      "titleRu": "Коробление полосы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "anneal_line.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cal",
+        "batch",
+        "galv_anneal",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

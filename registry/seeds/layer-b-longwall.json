@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-longwall.json",
+  "types": [
+    {
+      "path": "longwall.face.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Longwall face id",
+      "titleRu": "ID лавы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "longwall.shearer.pos",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Shearer position",
+      "titleRu": "Позиция комбайна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "longwall.advance",
+      "kind": "quantity",
+      "unit": "m/d",
+      "titleEn": "Face advance",
+      "titleRu": "Подвигание забоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "longwall.support.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Support pressure",
+      "titleRu": "Давление крепи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "longwall.methane",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Face methane",
+      "titleRu": "Метан на забое",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "longwall.production",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Coal production",
+      "titleRu": "Добыча угля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "longwall.gas.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas alarm",
+      "titleRu": "Газовая тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "longwall.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Face state",
+      "titleRu": "Состояние лавы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "flit",
+        "support",
+        "idle",
+        "evacuate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

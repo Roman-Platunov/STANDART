@@ -1,0 +1,110 @@
+{
+  "layer": "B16",
+  "name": "layer-b-retort_food.json",
+  "types": [
+    {
+      "path": "retort_food.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Retort id",
+      "titleRu": "ID автоклава пищевого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retort_food.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Retort batch id",
+      "titleRu": "ID садки автоклава",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retort_food.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Retort temperature",
+      "titleRu": "Температура автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_food.f0",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "F0 value",
+      "titleRu": "Значение F0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_food.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Retort pressure",
+      "titleRu": "Давление автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_food.comeup.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Come-up time",
+      "titleRu": "Время выхода на режим",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_food.cold.spot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cold spot alarm",
+      "titleRu": "Тревога холодной точки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "retort_food.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "steam",
+        "water_immersion",
+        "water_spray",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

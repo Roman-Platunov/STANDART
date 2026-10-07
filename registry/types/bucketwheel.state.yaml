@@ -1,0 +1,21 @@
+sid: c6ea2744
+path: bucketwheel.state
+aliases:
+  short: bucketwheel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние РЭ
+  en: BWE state
+fingerprint: sha256:c6ea27441abe71ff4b47f77b6c6989d95fbbfc055ace28b1575392bc3310b2cd
+enumValues:
+  - dig
+  - reposition
+  - idle
+  - maintain
+  - fault

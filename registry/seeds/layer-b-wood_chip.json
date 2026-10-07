@@ -1,0 +1,124 @@
+{
+  "layer": "B16",
+  "name": "layer-b-wood_chip.json",
+  "types": [
+    {
+      "path": "wood_chip.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chip plant id",
+      "titleRu": "ID щеподробильного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wood_chip.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Chip size",
+      "titleRu": "Размер щепы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_chip.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chip moisture",
+      "titleRu": "Влажность щепы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wood_chip.bark",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bark content",
+      "titleRu": "Содержание коры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wood_chip.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Chip rate",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_chip.knife.wear",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Knife wear",
+      "titleRu": "Износ ножей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wood_chip.metal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Metal in feed",
+      "titleRu": "Металл в сырье",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wood_chip.species",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Species",
+      "titleRu": "Порода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "softwood",
+        "hardwood",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

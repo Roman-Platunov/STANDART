@@ -1,0 +1,111 @@
+{
+  "layer": "B16",
+  "name": "layer-b-shiploader.json",
+  "types": [
+    {
+      "path": "shiploader.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shiploader id",
+      "titleRu": "ID судопогрузочной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shiploader.berth.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Berth id",
+      "titleRu": "ID причала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shiploader.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Loading rate",
+      "titleRu": "Скорость погрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shiploader.boom.outreach",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Boom outreach",
+      "titleRu": "Вылет стрелы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shiploader.chute.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Chute height",
+      "titleRu": "Высота течки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shiploader.dust",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Dust level",
+      "titleRu": "Пыль",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shiploader.trim",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Trim required",
+      "titleRu": "Нужна дифферентовка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shiploader.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "shift",
+        "idle",
+        "weather",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-glass_bottle.json",
+  "types": [
+    {
+      "path": "glass_bottle.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bottle line id",
+      "titleRu": "ID линии стеклотары",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glass_bottle.mold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mold id",
+      "titleRu": "ID формы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glass_bottle.gob.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gob temperature",
+      "titleRu": "Температура капли",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_bottle.machine.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "BPM",
+      "titleRu": "Бутылок в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_bottle.anneal.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Lehr temperature",
+      "titleRu": "Температура отжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_bottle.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glass_bottle.check.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Check detector fail",
+      "titleRu": "Брак по контролю",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "glass_bottle.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blow_blow",
+        "press_blow",
+        "nnpb",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

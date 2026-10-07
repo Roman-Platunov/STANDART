@@ -1,0 +1,125 @@
+{
+  "layer": "B16",
+  "name": "layer-b-textile_recycle.json",
+  "types": [
+    {
+      "path": "textile_recycle.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Textile recycle line id",
+      "titleRu": "ID линии текстильного рециклинга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "textile_recycle.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_recycle.sort.acc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sort accuracy",
+      "titleRu": "Точность сортировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "textile_recycle.fiber.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fiber yield",
+      "titleRu": "Выход волокна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "textile_recycle.contaminant",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Contamination",
+      "titleRu": "Загрязнение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "textile_recycle.bale.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Bale mass",
+      "titleRu": "Масса кипы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "textile_recycle.metal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Metal detected",
+      "titleRu": "Обнаружен металл",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "textile_recycle.stream",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stream",
+      "titleRu": "Поток",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cotton",
+        "polyester",
+        "mixed",
+        "wool",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

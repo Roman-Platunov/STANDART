@@ -1,0 +1,21 @@
+sid: 80e6e884
+path: torrefaction.state
+aliases:
+  short: torrefaction.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:80e6e884ab6d0b77bdd0fd15df78fe39728cb4bbdc1f1d3cf6a073442a224ed7
+enumValues:
+  - dry
+  - torrefy
+  - cool
+  - idle
+  - fault

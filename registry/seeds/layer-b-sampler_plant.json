@@ -1,0 +1,118 @@
+{
+  "layer": "B16",
+  "name": "layer-b-sampler_plant.json",
+  "types": [
+    {
+      "path": "sampler_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sampling plant id",
+      "titleRu": "ID пробоотборной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sampler_plant.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sampled lot id",
+      "titleRu": "ID опробуемой партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sampler_plant.cut",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cut percentage",
+      "titleRu": "Доля отсечения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sampler_plant.increment",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Increments taken",
+      "titleRu": "Число порций",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sampler_plant.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Sample mass",
+      "titleRu": "Масса пробы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sampler_plant.bias",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bias estimate",
+      "titleRu": "Оценка смещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sampler_plant.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cutter jam",
+      "titleRu": "Застревание отсекателя",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sampler_plant.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cross_belt",
+        "falling_stream",
+        "auger",
+        "manual",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

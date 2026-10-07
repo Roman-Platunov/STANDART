@@ -1,0 +1,21 @@
+sid: a39ab85e
+path: shiploader.state
+aliases:
+  short: shiploader.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:a39ab85e04c7b9deba8691944d76f860887c7783fc571bb450669d4e652fe915
+enumValues:
+  - load
+  - shift
+  - idle
+  - weather
+  - fault

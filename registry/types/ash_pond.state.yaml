@@ -1,0 +1,20 @@
+sid: 5b513113
+path: ash_pond.state
+aliases:
+  short: ash_pond.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пруда
+  en: Pond state
+fingerprint: sha256:5b513113bfa9477d18de438cfb71dbee3255923cf12bcc3822ba271112d38b5d
+enumValues:
+  - normal
+  - high
+  - critical
+  - closed

@@ -1,0 +1,112 @@
+{
+  "layer": "B16",
+  "name": "layer-b-billet_caster.json",
+  "types": [
+    {
+      "path": "billet_caster.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Billet caster id",
+      "titleRu": "ID МНЛЗ заготовки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "billet_caster.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cast heat id",
+      "titleRu": "ID разливаемой плавки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "billet_caster.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Casting speed",
+      "titleRu": "Скорость разливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "billet_caster.superheat",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Superheat",
+      "titleRu": "Перегрев",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "billet_caster.section",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Section size",
+      "titleRu": "Сечение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "billet_caster.cut.length",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Cut length",
+      "titleRu": "Длина реза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "billet_caster.breakout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Breakout",
+      "titleRu": "Прорыв",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "billet_caster.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Caster state",
+      "titleRu": "Состояние МНЛЗ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "start",
+        "steady",
+        "slow",
+        "stop",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

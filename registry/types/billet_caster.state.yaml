@@ -1,0 +1,22 @@
+sid: bdccc96d
+path: billet_caster.state
+aliases:
+  short: billet_caster.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние МНЛЗ
+  en: Caster state
+fingerprint: sha256:bdccc96d477a92c7c294d98f3fb250db2ecc657757635074ab8ef91b7a31be5d
+enumValues:
+  - prep
+  - start
+  - steady
+  - slow
+  - stop
+  - fault

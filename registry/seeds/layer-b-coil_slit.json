@@ -1,0 +1,111 @@
+{
+  "layer": "B16",
+  "name": "layer-b-coil_slit.json",
+  "types": [
+    {
+      "path": "coil_slit.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slitting line id",
+      "titleRu": "ID линии продольной резки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coil_slit.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Parent coil id",
+      "titleRu": "ID исходного рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coil_slit.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_slit.width",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Strip width",
+      "titleRu": "Ширина полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_slit.burr",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Burr height",
+      "titleRu": "Высота заусенца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_slit.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Strip tension",
+      "titleRu": "Натяжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coil_slit.camber",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Camber alarm",
+      "titleRu": "Серповидность",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coil_slit.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "thread",
+        "run",
+        "recoil",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

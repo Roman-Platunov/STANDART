@@ -1,0 +1,112 @@
+{
+  "layer": "B16",
+  "name": "layer-b-ash_pond.json",
+  "types": [
+    {
+      "path": "ash_pond.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ash pond id",
+      "titleRu": "ID золоотвала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ash_pond.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Pond level",
+      "titleRu": "Уровень пруда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ash_pond.freeboard",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Freeboard",
+      "titleRu": "Запас борта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ash_pond.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pond pH",
+      "titleRu": "pH пруда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ash_pond.seepage",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Seepage",
+      "titleRu": "Фильтрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ash_pond.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Discharge turbidity",
+      "titleRu": "Мутность сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ash_pond.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dam alarm",
+      "titleRu": "Тревога дамбы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ash_pond.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pond state",
+      "titleRu": "Состояние пруда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "high",
+        "critical",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

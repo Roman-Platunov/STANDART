@@ -1,0 +1,121 @@
+{
+  "layer": "B16",
+  "name": "layer-b-paste_fill.json",
+  "types": [
+    {
+      "path": "paste_fill.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paste fill plant id",
+      "titleRu": "ID завода закладочной пасты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paste_fill.slump",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Paste slump",
+      "titleRu": "Осадка конуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paste_fill.solids",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solids content",
+      "titleRu": "Содержание твёрдого",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paste_fill.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pump rate",
+      "titleRu": "Производительность насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paste_fill.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Line pressure",
+      "titleRu": "Давление в линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paste_fill.binder",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Binder dosage",
+      "titleRu": "Доза вяжущего",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paste_fill.plug",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Line plugged",
+      "titleRu": "Засор линии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paste_fill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "pump",
+        "flush",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

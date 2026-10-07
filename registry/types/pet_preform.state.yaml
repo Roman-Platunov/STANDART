@@ -1,0 +1,21 @@
+sid: 0f61a543
+path: pet_preform.state
+aliases:
+  short: pet_preform.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:0f61a543dcfa9f69359b3a5bfd294038e55bbdacf197d9887731afb3ea24c53f
+enumValues:
+  - inject
+  - cool
+  - eject
+  - idle
+  - fault

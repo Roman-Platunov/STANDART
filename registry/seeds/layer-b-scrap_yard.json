@@ -1,0 +1,115 @@
+{
+  "layer": "B16",
+  "name": "layer-b-scrap_yard.json",
+  "types": [
+    {
+      "path": "scrap_yard.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Scrap yard id",
+      "titleRu": "ID металлолома",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scrap_yard.pile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Scrap pile id",
+      "titleRu": "ID штабеля лома",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scrap_yard.receipt",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Receipts",
+      "titleRu": "Приёмка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_yard.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Pile density",
+      "titleRu": "Плотность штабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_yard.radiation",
+      "kind": "quantity",
+      "unit": "uSv/h",
+      "titleEn": "Radiation",
+      "titleRu": "Радиация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrap_yard.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Moisture",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scrap_yard.hot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hot scrap",
+      "titleRu": "Горячий лом",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scrap_yard.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Сорт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hms",
+        "busheling",
+        "shred",
+        "cast",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

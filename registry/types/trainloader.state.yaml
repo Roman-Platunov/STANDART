@@ -1,0 +1,21 @@
+sid: 1eb29302
+path: trainloader.state
+aliases:
+  short: trainloader.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние
+  en: State
+fingerprint: sha256:1eb293024b42f69defde5b183a1e25b8f03e8b4788daf416f230ff829e0dc921
+enumValues:
+  - spot
+  - load
+  - move
+  - idle
+  - fault

@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-can_stock.json",
+  "types": [
+    {
+      "path": "can_stock.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Can stock line id",
+      "titleRu": "ID линии жести для банок",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "can_stock.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Can stock coil id",
+      "titleRu": "ID рулона can-stock",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "can_stock.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Gauge",
+      "titleRu": "Толщина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_stock.ear",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Earing",
+      "titleRu": "Ушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "can_stock.uts",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "UTS",
+      "titleRu": "Предел прочности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_stock.oil",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Surface oil",
+      "titleRu": "Масло на поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_stock.pinhole",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pinhole",
+      "titleRu": "Пористость",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "can_stock.alloy",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Alloy",
+      "titleRu": "Сплав",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "3104",
+        "5182",
+        "3003",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

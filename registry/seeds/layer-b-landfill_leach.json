@@ -1,0 +1,113 @@
+{
+  "layer": "B16",
+  "name": "layer-b-landfill_leach.json",
+  "types": [
+    {
+      "path": "landfill_leach.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Landfill cell id",
+      "titleRu": "ID карты полигона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "landfill_leach.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Leachate level",
+      "titleRu": "Уровень фильтрата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "landfill_leach.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Leachate flow",
+      "titleRu": "Расход фильтрата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "landfill_leach.cod",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "COD",
+      "titleRu": "ХПК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "landfill_leach.nh3",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Ammonia",
+      "titleRu": "Аммиак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "landfill_leach.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "landfill_leach.overflow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overflow risk",
+      "titleRu": "Риск перелива",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "landfill_leach.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "collect",
+        "treat",
+        "recirc",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

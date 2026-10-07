@@ -1,0 +1,117 @@
+{
+  "layer": "B16",
+  "name": "layer-b-slag_plant.json",
+  "types": [
+    {
+      "path": "slag_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slag plant id",
+      "titleRu": "ID шлакопереработки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "slag_plant.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Slag feed",
+      "titleRu": "Подача шлака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slag_plant.metal.rec",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Metal recovery",
+      "titleRu": "Извлечение металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "slag_plant.crush.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Product size",
+      "titleRu": "Размер продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slag_plant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Slag temperature",
+      "titleRu": "Температура шлака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slag_plant.dust",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Dust",
+      "titleRu": "Пыль",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slag_plant.explosion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Steam explosion risk",
+      "titleRu": "Риск воздушноводяного взрыва",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "slag_plant.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Source",
+      "titleRu": "Источник",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bf",
+        "bof",
+        "eaf",
+        "nonferrous",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

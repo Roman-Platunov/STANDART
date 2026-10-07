@@ -1,0 +1,125 @@
+{
+  "layer": "B16",
+  "name": "layer-b-torrefaction.json",
+  "types": [
+    {
+      "path": "torrefaction.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Torrefaction reactor id",
+      "titleRu": "ID реактора торрефикации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "torrefaction.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "torrefaction.residence.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Residence time",
+      "titleRu": "Время пребывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "torrefaction.mass.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mass yield",
+      "titleRu": "Выход по массе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "torrefaction.energy.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Energy yield",
+      "titleRu": "Выход по энергии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "torrefaction.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "torrefaction.exotherm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Exotherm",
+      "titleRu": "Экзотермия",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "torrefaction.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "torrefy",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+sid: "18051164"
+path: longwall.state
+aliases:
+  short: longwall.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние лавы
+  en: Face state
+fingerprint: sha256:180511644170013731d84543e90b2747e78a94aa8a8563def5b2504e739555b5
+enumValues:
+  - cut
+  - flit
+  - support
+  - idle
+  - evacuate
+  - fault

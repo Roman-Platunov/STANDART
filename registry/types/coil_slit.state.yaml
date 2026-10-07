@@ -1,0 +1,21 @@
+sid: 82a1d293
+path: coil_slit.state
+aliases:
+  short: coil_slit.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:82a1d2939d54448f364fa3a37852eb49104814fc820b85f649daa77475fe82d0
+enumValues:
+  - thread
+  - run
+  - recoil
+  - idle
+  - fault

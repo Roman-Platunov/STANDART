@@ -1,0 +1,113 @@
+{
+  "layer": "B16",
+  "name": "layer-b-tire_recycle.json",
+  "types": [
+    {
+      "path": "tire_recycle.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tire recycle plant id",
+      "titleRu": "ID завода переработки шин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tire_recycle.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Tire feed",
+      "titleRu": "Подача шин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_recycle.crumb.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Crumb size",
+      "titleRu": "Размер крошки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_recycle.steel",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steel recovery",
+      "titleRu": "Извлечение стали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_recycle.fiber",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fiber recovery",
+      "titleRu": "Извлечение корда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_recycle.crumb.out",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Crumb output",
+      "titleRu": "Выпуск крошки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_recycle.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire risk",
+      "titleRu": "Риск возгорания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tire_recycle.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "shred",
+        "grind",
+        "devulcanize",
+        "pyrolysis",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

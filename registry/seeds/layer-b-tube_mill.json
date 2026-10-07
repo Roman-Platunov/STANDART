@@ -1,0 +1,111 @@
+{
+  "layer": "B16",
+  "name": "layer-b-tube_mill.json",
+  "types": [
+    {
+      "path": "tube_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tube mill id",
+      "titleRu": "ID трубосварочного стана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tube_mill.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tube heat id",
+      "titleRu": "ID партии труб",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tube_mill.od",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Outside diameter",
+      "titleRu": "Наружный диаметр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tube_mill.wt",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wall thickness",
+      "titleRu": "Толщина стенки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tube_mill.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tube_mill.weld.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Weld power",
+      "titleRu": "Мощность сварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tube_mill.ndt.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "NDT fail",
+      "titleRu": "НК не пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tube_mill.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "erw",
+        "hf",
+        "laser",
+        "spiral",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

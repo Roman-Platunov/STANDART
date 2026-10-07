@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-temper_mill.json",
+  "types": [
+    {
+      "path": "temper_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Temper mill id",
+      "titleRu": "ID дрессировочного стана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "temper_mill.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tempered coil id",
+      "titleRu": "ID дрессированного рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "temper_mill.elongation",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Elongation",
+      "titleRu": "Удлинение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "temper_mill.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Roll force",
+      "titleRu": "Усилие валков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "temper_mill.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "temper_mill.roughness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Surface roughness",
+      "titleRu": "Шероховатость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "temper_mill.flatness.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flatness OK",
+      "titleRu": "Плоскостность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "temper_mill.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "wet",
+        "skinpass",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

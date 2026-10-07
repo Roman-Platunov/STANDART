@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-electrorefin.json",
+  "types": [
+    {
+      "path": "electrorefin.tankhouse.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tankhouse id",
+      "titleRu": "ID электролизного цеха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrorefin.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Refining cell id",
+      "titleRu": "ID ванны рафинирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrorefin.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Cell current",
+      "titleRu": "Ток ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrorefin.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Cell voltage",
+      "titleRu": "Напряжение ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrorefin.ce",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Current efficiency",
+      "titleRu": "Выход по току",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "electrorefin.cathode",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Cathode production",
+      "titleRu": "Выпуск катодов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrorefin.short",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cell short",
+      "titleRu": "Короткое замыкание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "electrorefin.metal",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Metal",
+      "titleRu": "Металл",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cu",
+        "ni",
+        "zn",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

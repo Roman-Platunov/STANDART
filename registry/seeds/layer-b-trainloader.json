@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-trainloader.json",
+  "types": [
+    {
+      "path": "trainloader.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Train loader id",
+      "titleRu": "ID вагонопогрузчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "trainloader.consist.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Train consist id",
+      "titleRu": "ID состава",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "trainloader.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Load rate",
+      "titleRu": "Скорость погрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trainloader.car.mass",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Car mass",
+      "titleRu": "Масса вагона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trainloader.cars",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cars loaded",
+      "titleRu": "Загружено вагонов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trainloader.silo.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Silo level",
+      "titleRu": "Уровень силоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "trainloader.overfill",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overfill",
+      "titleRu": "Перегруз",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "trainloader.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spot",
+        "load",
+        "move",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

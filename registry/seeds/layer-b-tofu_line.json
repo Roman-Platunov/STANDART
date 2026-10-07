@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-tofu_line.json",
+  "types": [
+    {
+      "path": "tofu_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tofu line id",
+      "titleRu": "ID линии тофу",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tofu_line.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tofu SKU id",
+      "titleRu": "ID SKU тофу",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tofu_line.soymilk.brix",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Soymilk Brix",
+      "titleRu": "Brix соевого молока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tofu_line.coagulant",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Coagulant dose",
+      "titleRu": "Доза коагулянта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tofu_line.press.kpa",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Press pressure",
+      "titleRu": "Давление пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tofu_line.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Yield",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tofu_line.texture.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Texture OK",
+      "titleRu": "Текстура OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tofu_line.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "silken",
+        "firm",
+        "fried",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

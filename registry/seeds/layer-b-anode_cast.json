@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-anode_cast.json",
+  "types": [
+    {
+      "path": "anode_cast.wheel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Casting wheel id",
+      "titleRu": "ID разливочного колеса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anode_cast.heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anode heat id",
+      "titleRu": "ID плавки анодов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anode_cast.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Casting temperature",
+      "titleRu": "Температура разливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_cast.mass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Anode mass",
+      "titleRu": "Масса анода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_cast.rate",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Anodes per hour",
+      "titleRu": "Анодов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anode_cast.cu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Copper grade",
+      "titleRu": "Содержание меди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "anode_cast.stick",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mold stick",
+      "titleRu": "Прилипание к изложнице",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "anode_cast.metal",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Metal",
+      "titleRu": "Металл",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cu",
+        "ni",
+        "pb",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

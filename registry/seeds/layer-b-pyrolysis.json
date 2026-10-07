@@ -1,0 +1,121 @@
+{
+  "layer": "B16",
+  "name": "layer-b-pyrolysis.json",
+  "types": [
+    {
+      "path": "pyrolysis.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pyrolysis reactor id",
+      "titleRu": "ID реактора пиролиза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pyrolysis.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pyrolysis.oil.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oil yield",
+      "titleRu": "Выход масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pyrolysis.char.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Char yield",
+      "titleRu": "Выход угля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pyrolysis.gas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Gas flow",
+      "titleRu": "Расход газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pyrolysis.residence.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Residence time",
+      "titleRu": "Время пребывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pyrolysis.condenser.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Condenser OK",
+      "titleRu": "Конденсатор OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pyrolysis.feedstock",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feedstock",
+      "titleRu": "Сырьё",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plastic",
+        "tire",
+        "biomass",
+        "msw",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "layer": "B16",
+  "name": "layer-b-malt_house.json",
+  "types": [
+    {
+      "path": "malt_house.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Malthouse id",
+      "titleRu": "ID солодовни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "malt_house.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Malt batch id",
+      "titleRu": "ID партии солода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "malt_house.steep.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Steep moisture",
+      "titleRu": "Влажность замачивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "malt_house.germ.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Germination temperature",
+      "titleRu": "Температура проращивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "malt_house.kiln.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Kiln temperature",
+      "titleRu": "Температура сушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "malt_house.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Malt moisture",
+      "titleRu": "Влажность солода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "malt_house.mold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mold risk",
+      "titleRu": "Риск плесени",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "malt_house.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Стадия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "steep",
+        "germinate",
+        "kiln",
+        "store",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "layer": "B16",
+  "name": "layer-b-heap_leach.json",
+  "types": [
+    {
+      "path": "heap_leach.pad.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heap leach pad id",
+      "titleRu": "ID кучного выщелачивания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heap_leach.irrigate",
+      "kind": "quantity",
+      "unit": "L/m2/h",
+      "titleEn": "Irrigation rate",
+      "titleRu": "Орошение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heap_leach.pls.grade",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "PLS grade",
+      "titleRu": "Содержание в ПР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heap_leach.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Solution pH",
+      "titleRu": "pH раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heap_leach.pond.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pond level",
+      "titleRu": "Уровень пруда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "heap_leach.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Estimated recovery",
+      "titleRu": "Оценка извлечения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "heap_leach.liner.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Liner leak",
+      "titleRu": "Утечка через мембрану",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heap_leach.metal",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Metal",
+      "titleRu": "Металл",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "au",
+        "cu",
+        "u",
+        "ni",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

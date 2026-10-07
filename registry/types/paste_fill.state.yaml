@@ -1,0 +1,21 @@
+sid: 53d43d07
+path: paste_fill.state
+aliases:
+  short: paste_fill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:53d43d0777a82ab9009eba62d37898b4b58f7fd8b04e8502135518d6ca1cb7ed
+enumValues:
+  - mix
+  - pump
+  - flush
+  - idle
+  - fault

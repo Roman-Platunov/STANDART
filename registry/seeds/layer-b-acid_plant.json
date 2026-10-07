@@ -1,0 +1,120 @@
+{
+  "layer": "B16",
+  "name": "layer-b-acid_plant.json",
+  "types": [
+    {
+      "path": "acid_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Acid plant id",
+      "titleRu": "ID кислотного цеха металлургии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "acid_plant.so2.in",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inlet SO2",
+      "titleRu": "SO2 на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "acid_plant.conversion",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Conversion",
+      "titleRu": "Конверсия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "acid_plant.prod",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Acid production",
+      "titleRu": "Выпуск кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "acid_plant.mist",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Acid mist",
+      "titleRu": "Туман кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "acid_plant.catalyst.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Catalyst temperature",
+      "titleRu": "Температура катализатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "acid_plant.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas bypass",
+      "titleRu": "Байпас газа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "acid_plant.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gas source",
+      "titleRu": "Источник газа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "smelter",
+        "roaster",
+        "sulfur",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

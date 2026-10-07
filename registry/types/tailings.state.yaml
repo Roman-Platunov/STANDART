@@ -1,0 +1,20 @@
+sid: 29f1762b
+path: tailings.state
+aliases:
+  short: tailings.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дамбы
+  en: Dam state
+fingerprint: sha256:29f1762b8f93b27ab021cc3ca28e2c7ad61880ea8382736807dbeb70c3318a89
+enumValues:
+  - normal
+  - high
+  - critical
+  - offline

@@ -1,0 +1,111 @@
+{
+  "layer": "B16",
+  "name": "layer-b-foil_mill.json",
+  "types": [
+    {
+      "path": "foil_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Foil mill id",
+      "titleRu": "ID фольгопрокатного стана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foil_mill.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Foil coil id",
+      "titleRu": "ID рулона фольги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "foil_mill.thickness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Foil thickness",
+      "titleRu": "Толщина фольги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foil_mill.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Mill speed",
+      "titleRu": "Скорость стана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foil_mill.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Strip tension",
+      "titleRu": "Натяжение полосы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foil_mill.oil",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Rolling oil",
+      "titleRu": "Прокатное масло",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "foil_mill.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Strip break",
+      "titleRu": "Обрыв полосы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "foil_mill.pass",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pass",
+      "titleRu": "Проход",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rough",
+        "intermediate",
+        "finish",
+        "pack",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

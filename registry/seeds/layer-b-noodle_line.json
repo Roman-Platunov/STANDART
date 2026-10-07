@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-noodle_line.json",
+  "types": [
+    {
+      "path": "noodle_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Noodle line id",
+      "titleRu": "ID линии лапши",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "noodle_line.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Noodle SKU id",
+      "titleRu": "ID SKU лапши",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "noodle_line.dough.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dough moisture",
+      "titleRu": "Влажность теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "noodle_line.sheet.thick",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Sheet thickness",
+      "titleRu": "Толщина пласта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noodle_line.steam.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Steam temperature",
+      "titleRu": "Температура пропарки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noodle_line.fry.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fryer temperature",
+      "titleRu": "Температура фритюра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noodle_line.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sheet break",
+      "titleRu": "Обрыв пласта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "noodle_line.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "instant",
+        "fresh",
+        "dried",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "layer": "B16",
+  "name": "layer-b-glass_recycle.json",
+  "types": [
+    {
+      "path": "glass_recycle.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cullet plant id",
+      "titleRu": "ID завода стеклобоя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glass_recycle.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Cullet throughput",
+      "titleRu": "Переработка боя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_recycle.contaminant",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Contamination",
+      "titleRu": "Загрязнение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glass_recycle.ceramic",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CSP content",
+      "titleRu": "Содержание CSP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_recycle.color.sort",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Color sort accuracy",
+      "titleRu": "Точность сортировки по цвету",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glass_recycle.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Moisture",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glass_recycle.magnet.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Magnet OK",
+      "titleRu": "Магнит OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "glass_recycle.color",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Color stream",
+      "titleRu": "Цветовой поток",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flint",
+        "amber",
+        "green",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

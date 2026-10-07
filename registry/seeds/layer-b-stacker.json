@@ -1,0 +1,111 @@
+{
+  "layer": "B16",
+  "name": "layer-b-stacker.json",
+  "types": [
+    {
+      "path": "stacker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stacker id",
+      "titleRu": "ID штабелеукладчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stacker.stockpile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stockpile id",
+      "titleRu": "ID штабеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stacker.boom.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Boom angle",
+      "titleRu": "Угол стрелы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker.luff",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Luff angle",
+      "titleRu": "Угол подъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Stacking rate",
+      "titleRu": "Скорость укладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker.travel",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Travel position",
+      "titleRu": "Позиция хода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker.collision",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Collision risk",
+      "titleRu": "Риск столкновения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stacker.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stack",
+        "reclaim_assist",
+        "idle",
+        "park",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

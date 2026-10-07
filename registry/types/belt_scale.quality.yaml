@@ -1,0 +1,20 @@
+sid: 407f8acb
+path: belt_scale.quality
+aliases:
+  short: belt_scale.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество данных
+  en: Data quality
+fingerprint: sha256:407f8acb1620d92d94ed236a463f7bc2d0bc4946b8e50aa229690be8b8b3898b
+enumValues:
+  - good
+  - suspect
+  - fault
+  - offline

@@ -1,0 +1,110 @@
+{
+  "layer": "B16",
+  "name": "layer-b-can_line.json",
+  "types": [
+    {
+      "path": "can_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Can line id",
+      "titleRu": "ID линии банок",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "can_line.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Can SKU id",
+      "titleRu": "ID SKU банки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "can_line.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Cans per minute",
+      "titleRu": "Банок в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_line.seamer.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Seamer RPM",
+      "titleRu": "Обороты закатки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_line.fill.mass",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Fill mass",
+      "titleRu": "Масса наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_line.vacuum",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Can vacuum",
+      "titleRu": "Вакуум в банке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_line.seam.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seam fail",
+      "titleRu": "Брак закатки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "can_line.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Can type",
+      "titleRu": "Тип банки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "two_piece",
+        "three_piece",
+        "aerosol",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

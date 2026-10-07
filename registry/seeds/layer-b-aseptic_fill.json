@@ -1,0 +1,111 @@
+{
+  "layer": "B16",
+  "name": "layer-b-aseptic_fill.json",
+  "types": [
+    {
+      "path": "aseptic_fill.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aseptic filler id",
+      "titleRu": "ID асептического наполнителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aseptic_fill.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aseptic SKU id",
+      "titleRu": "ID асептического SKU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aseptic_fill.h2o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2O2 residual",
+      "titleRu": "Остаток H2O2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aseptic_fill.sterile.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sterilization temperature",
+      "titleRu": "Температура стерилизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aseptic_fill.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Packs per hour",
+      "titleRu": "Упаковок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aseptic_fill.particle",
+      "kind": "quantity",
+      "unit": "/L",
+      "titleEn": "Particle count",
+      "titleRu": "Счёт частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aseptic_fill.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sterility breach",
+      "titleRu": "Нарушение стерильности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aseptic_fill.package",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Package",
+      "titleRu": "Упаковка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "carton",
+        "bottle",
+        "bag",
+        "cup",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

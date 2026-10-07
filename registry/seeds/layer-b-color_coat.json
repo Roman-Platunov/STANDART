@@ -1,0 +1,111 @@
+{
+  "layer": "B16",
+  "name": "layer-b-color_coat.json",
+  "types": [
+    {
+      "path": "color_coat.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Color coating line id",
+      "titleRu": "ID линии цветного покрытия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "color_coat.coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coated coil id",
+      "titleRu": "ID окрашенного рулона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "color_coat.dft",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Dry film thickness",
+      "titleRu": "Толщина сухой плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "color_coat.oven.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Curing oven temperature",
+      "titleRu": "Температура печи сушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "color_coat.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "color_coat.gloss",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gloss units",
+      "titleRu": "Блеск",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "color_coat.defect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coating defect",
+      "titleRu": "Дефект покрытия",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "color_coat.system",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Paint system",
+      "titleRu": "Система покрытия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pe",
+        "pvdf",
+        "pu",
+        "epoxy",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-snack_extrude.json",
+  "types": [
+    {
+      "path": "snack_extrude.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Snack extruder id",
+      "titleRu": "ID экструдера снеков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snack_extrude.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Snack SKU id",
+      "titleRu": "ID SKU снеков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snack_extrude.barrel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Barrel temperature",
+      "titleRu": "Температура цилиндра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snack_extrude.screw.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Screw RPM",
+      "titleRu": "Обороты шнека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snack_extrude.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Die moisture",
+      "titleRu": "Влажность у фильеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "snack_extrude.throughput",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snack_extrude.surge",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Motor surge",
+      "titleRu": "Перегруз привода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "snack_extrude.die",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Die type",
+      "titleRu": "Тип фильеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "direct",
+        "pellet",
+        "coex",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

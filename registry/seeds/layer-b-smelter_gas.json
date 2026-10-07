@@ -1,0 +1,113 @@
+{
+  "layer": "B16",
+  "name": "layer-b-smelter_gas.json",
+  "types": [
+    {
+      "path": "smelter_gas.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gas cleaning train id",
+      "titleRu": "ID газоочистки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smelter_gas.so2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Stack SO2",
+      "titleRu": "SO2 в трубе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smelter_gas.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Stack dust",
+      "titleRu": "Пыль в трубе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smelter_gas.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smelter_gas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Gas flow",
+      "titleRu": "Расход газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smelter_gas.fan.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Fan power",
+      "titleRu": "Мощность вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smelter_gas.opacity.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Opacity high",
+      "titleRu": "Высокая дымность",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smelter_gas.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Train state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "upset",
+        "bypass",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

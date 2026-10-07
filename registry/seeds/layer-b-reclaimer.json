@@ -1,0 +1,114 @@
+{
+  "layer": "B16",
+  "name": "layer-b-reclaimer.json",
+  "types": [
+    {
+      "path": "reclaimer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reclaimer id",
+      "titleRu": "ID реклаймера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reclaimer.stockpile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reclaim stockpile id",
+      "titleRu": "ID штабеля забора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reclaimer.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Reclaim rate",
+      "titleRu": "Скорость забора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reclaimer.boom.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Boom angle",
+      "titleRu": "Угол стрелы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reclaimer.bucket.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Bucket-wheel RPM",
+      "titleRu": "Обороты ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reclaimer.blend",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Blend setpoint",
+      "titleRu": "Уставка шихтовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "reclaimer.empty",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stockpile empty",
+      "titleRu": "Штабель пуст",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "reclaimer.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bucketwheel",
+        "scraper",
+        "portal",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

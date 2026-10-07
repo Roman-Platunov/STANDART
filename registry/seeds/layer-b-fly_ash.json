@@ -1,0 +1,128 @@
+{
+  "layer": "B16",
+  "name": "layer-b-fly_ash.json",
+  "types": [
+    {
+      "path": "fly_ash.silo.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fly ash silo id",
+      "titleRu": "ID силоса золы-уноса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fly_ash.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Silo level",
+      "titleRu": "Уровень силоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fly_ash.loi",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Loss on ignition",
+      "titleRu": "Потери при прокаливании",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fly_ash.fineness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fineness retained",
+      "titleRu": "Остаток на сите",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fly_ash.dispatch",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Dispatch rate",
+      "titleRu": "Отгрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fly_ash.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Moisture",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fly_ash.bridged",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Silo bridged",
+      "titleRu": "Свод в силосе",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fly_ash.class",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ash class",
+      "titleRu": "Класс золы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "f",
+        "c",
+        "bottom",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

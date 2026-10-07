@@ -1,0 +1,111 @@
+{
+  "layer": "B16",
+  "name": "layer-b-raisebore.json",
+  "types": [
+    {
+      "path": "raisebore.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Raisebore machine id",
+      "titleRu": "ID машины восстающего бурения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "raisebore.hole.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Raise hole id",
+      "titleRu": "ID восстающей скважины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "raisebore.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Hole depth",
+      "titleRu": "Глубина скважины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raisebore.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Drill torque",
+      "titleRu": "Крутящий момент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raisebore.thrust",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Thrust",
+      "titleRu": "Осевое усилие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raisebore.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Rotation speed",
+      "titleRu": "Обороты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raisebore.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stuck pipe",
+      "titleRu": "Прихват инструмента",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "raisebore.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Phase",
+      "titleRu": "Фаза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pilot",
+        "ream",
+        "complete",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

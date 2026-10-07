@@ -1,0 +1,110 @@
+{
+  "layer": "B16",
+  "name": "layer-b-rod_mill.json",
+  "types": [
+    {
+      "path": "rod_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rod mill id",
+      "titleRu": "ID проволочного стана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rod_mill.billet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rod billet id",
+      "titleRu": "ID заготовки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rod_mill.exit.dia",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Exit diameter",
+      "titleRu": "Диаметр на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rod_mill.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Finishing speed",
+      "titleRu": "Скорость чистовой клети",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rod_mill.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Laying head temperature",
+      "titleRu": "Температура виткообразователя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rod_mill.coil.mass",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Coil mass",
+      "titleRu": "Масса бунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rod_mill.cobble",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cobble",
+      "titleRu": "Авария проката",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rod_mill.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукция",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wire_rod",
+        "rebar",
+        "bar",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
