@@ -1,0 +1,116 @@
+{
+  "layer": "B22",
+  "name": "layer-b-tamping_unit.json",
+  "types": [
+    {
+      "path": "tamping_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tamping unit id",
+      "titleRu": "ID подбивочного блока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tamping_unit.sleeper",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Sleepers per hour",
+      "titleRu": "Шпал в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tamping_unit.lift",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Lift",
+      "titleRu": "Подъём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tamping_unit.shift",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Lateral shift",
+      "titleRu": "Сдвиг",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tamping_unit.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Quality",
+      "titleRu": "Качество",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tamping_unit.speed",
+      "kind": "quantity",
+      "unit": "m/h",
+      "titleEn": "Work speed",
+      "titleRu": "Рабочая скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tamping_unit.geo.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Geometry OK",
+      "titleRu": "Геометрия OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tamping_unit.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние блока",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tamp",
+        "measure",
+        "travel",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

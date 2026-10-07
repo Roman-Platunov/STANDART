@@ -1,0 +1,20 @@
+sid: 4649e7f9
+path: digestate_dry.state
+aliases:
+  short: digestate_dry.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сушилки
+  en: Dryer state
+fingerprint: sha256:4649e7f9f211b7a2518704e21fadd0b4bac851eb8ccbdaedee80c95ab894f5bc
+enumValues:
+  - dry
+  - idle
+  - clean
+  - fault

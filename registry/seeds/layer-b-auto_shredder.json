@@ -1,0 +1,120 @@
+{
+  "layer": "B22",
+  "name": "layer-b-auto_shredder.json",
+  "types": [
+    {
+      "path": "auto_shredder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Auto shredder id",
+      "titleRu": "ID автомобильного шредера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "auto_shredder.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Shredder power",
+      "titleRu": "Мощность шредера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "auto_shredder.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "auto_shredder.fe",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ferrous yield",
+      "titleRu": "Выход чёрного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "auto_shredder.nf",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Non-ferrous yield",
+      "titleRu": "Выход цветного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "auto_shredder.vib",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "auto_shredder.explosion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Explosion risk",
+      "titleRu": "Риск взрыва",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "auto_shredder.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shredder state",
+      "titleRu": "Состояние шредера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

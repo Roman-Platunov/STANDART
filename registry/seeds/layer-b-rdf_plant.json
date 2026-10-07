@@ -1,0 +1,124 @@
+{
+  "layer": "B22",
+  "name": "layer-b-rdf_plant.json",
+  "types": [
+    {
+      "path": "rdf_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RDF plant id",
+      "titleRu": "ID завода RDF",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rdf_plant.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "RDF output",
+      "titleRu": "Выпуск RDF",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rdf_plant.cv",
+      "kind": "quantity",
+      "unit": "MJ/kg",
+      "titleEn": "Calorific value",
+      "titleRu": "Теплотворная способность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rdf_plant.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Moisture",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rdf_plant.chlorine",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chlorine content",
+      "titleRu": "Содержание хлора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rdf_plant.metal",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Metal residual",
+      "titleRu": "Остаток металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rdf_plant.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rdf_plant.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Сорт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rdf",
+        "srf",
+        "fluff",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

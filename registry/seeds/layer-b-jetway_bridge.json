@@ -1,0 +1,109 @@
+{
+  "layer": "B22",
+  "name": "layer-b-jetway_bridge.json",
+  "types": [
+    {
+      "path": "jetway_bridge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Passenger boarding bridge id",
+      "titleRu": "ID телетрапа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "jetway_bridge.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stand id",
+      "titleRu": "ID стоянки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "jetway_bridge.extension",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Extension",
+      "titleRu": "Выдвижение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jetway_bridge.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Cabin height",
+      "titleRu": "Высота кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jetway_bridge.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Rotation angle",
+      "titleRu": "Угол поворота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jetway_bridge.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dock cycles today",
+      "titleRu": "Стыковок за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "jetway_bridge.docked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Docked",
+      "titleRu": "Состыкован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "jetway_bridge.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bridge state",
+      "titleRu": "Состояние телетрапа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stowed",
+        "approach",
+        "docked",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

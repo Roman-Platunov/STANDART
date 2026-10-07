@@ -1,0 +1,116 @@
+{
+  "layer": "B22",
+  "name": "layer-b-ballast_tamp.json",
+  "types": [
+    {
+      "path": "ballast_tamp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ballast tamping machine id",
+      "titleRu": "ID выправочно-подбивочной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ballast_tamp.sleeper",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Sleepers per hour",
+      "titleRu": "Шпал в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballast_tamp.lift",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Lift",
+      "titleRu": "Подъём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballast_tamp.shift",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Lateral shift",
+      "titleRu": "Сдвиг",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballast_tamp.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Compaction quality",
+      "titleRu": "Качество уплотнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ballast_tamp.speed",
+      "kind": "quantity",
+      "unit": "m/h",
+      "titleEn": "Work speed",
+      "titleRu": "Рабочая скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballast_tamp.geo.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Geometry OK",
+      "titleRu": "Геометрия OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ballast_tamp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tamp",
+        "measure",
+        "travel",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

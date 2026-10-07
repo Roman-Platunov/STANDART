@@ -1,0 +1,21 @@
+sid: 462e5d8f
+path: elv_depollute.state
+aliases:
+  short: elv_depollute.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние поста
+  en: Bay state
+fingerprint: sha256:462e5d8f22784469806d7d0a251c6f1e3a5f301a5044eda4b1bf9df0bf67e7a2
+enumValues:
+  - intake
+  - drain
+  - strip
+  - done
+  - fault

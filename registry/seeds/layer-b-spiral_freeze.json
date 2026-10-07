@@ -1,0 +1,111 @@
+{
+  "layer": "B22",
+  "name": "layer-b-spiral_freeze.json",
+  "types": [
+    {
+      "path": "spiral_freeze.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spiral freezer id",
+      "titleRu": "ID спирального морозильника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spiral_freeze.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spiral_freeze.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spiral_freeze.core.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product core temperature",
+      "titleRu": "Температура в центре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spiral_freeze.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Residence time",
+      "titleRu": "Время пребывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spiral_freeze.air",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Air velocity",
+      "titleRu": "Скорость воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spiral_freeze.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cycle complete",
+      "titleRu": "Цикл завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spiral_freeze.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Freezer state",
+      "titleRu": "Состояние морозильника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "freeze",
+        "hold",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

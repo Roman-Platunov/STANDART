@@ -1,0 +1,115 @@
+{
+  "layer": "B22",
+  "name": "layer-b-pallet_wrap.json",
+  "types": [
+    {
+      "path": "pallet_wrap.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pallet wrapper id",
+      "titleRu": "ID обмотчика паллет",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pallet_wrap.turns",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wrap turns",
+      "titleRu": "Витков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pallet_wrap.film",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Film used",
+      "titleRu": "Израсходовано плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pallet_wrap.force",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pre-stretch",
+      "titleRu": "Предрастяжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pallet_wrap.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pallet_wrap.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Pallets per hour",
+      "titleRu": "Паллет в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pallet_wrap.film.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Film break",
+      "titleRu": "Обрыв плёнки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pallet_wrap.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wrapper state",
+      "titleRu": "Состояние обмотчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wrap",
+        "cut",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

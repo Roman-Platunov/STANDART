@@ -1,0 +1,20 @@
+sid: d8398514
+path: shrink_oven.state
+aliases:
+  short: shrink_oven.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Oven state
+fingerprint: sha256:d839851472e6aaff0cc5004f2a5b3f6b58235d89960a62d44a945f893a7e5074
+enumValues:
+  - run
+  - idle
+  - clean
+  - fault

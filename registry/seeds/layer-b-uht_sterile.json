@@ -1,0 +1,117 @@
+{
+  "layer": "B22",
+  "name": "layer-b-uht_sterile.json",
+  "types": [
+    {
+      "path": "uht_sterile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UHT sterilizer id",
+      "titleRu": "ID стерилизатора UHT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uht_sterile.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sterilization temperature",
+      "titleRu": "Температура стерилизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uht_sterile.hold.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Hold time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uht_sterile.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Product flow",
+      "titleRu": "Расход продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uht_sterile.homogen",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Homogenizer pressure",
+      "titleRu": "Давление гомогенизатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uht_sterile.aseptic",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Aseptic integrity",
+      "titleRu": "Асептическая целостность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "uht_sterile.sterile",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sterile barrier OK",
+      "titleRu": "Стерильный барьер OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "uht_sterile.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sterilizer state",
+      "titleRu": "Состояние стерилизатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sterilize",
+        "product",
+        "cip",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

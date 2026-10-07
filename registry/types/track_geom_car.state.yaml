@@ -1,0 +1,20 @@
+sid: 7941e7e2
+path: track_geom_car.state
+aliases:
+  short: track_geom_car.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние вагона
+  en: Car state
+fingerprint: sha256:7941e7e2b71fbf751f9325de6a98acf406c6fd6cf4b19e90316cf8bec0093fc2
+enumValues:
+  - measure
+  - process
+  - idle
+  - fault

@@ -1,0 +1,110 @@
+{
+  "layer": "B22",
+  "name": "layer-b-precond_air.json",
+  "types": [
+    {
+      "path": "precond_air.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PCA unit id",
+      "titleRu": "ID PCA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "precond_air.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stand id",
+      "titleRu": "ID стоянки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "precond_air.supply.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply air temperature",
+      "titleRu": "Температура притока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "precond_air.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Airflow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "precond_air.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Electrical power",
+      "titleRu": "Электрическая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "precond_air.hose.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hose temperature",
+      "titleRu": "Температура рукава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "precond_air.connected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Connected",
+      "titleRu": "Подключено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "precond_air.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PCA state",
+      "titleRu": "Состояние PCA",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "cool",
+        "heat",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

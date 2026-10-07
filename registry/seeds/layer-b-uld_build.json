@@ -1,0 +1,110 @@
+{
+  "layer": "B22",
+  "name": "layer-b-uld_build.json",
+  "types": [
+    {
+      "path": "uld_build.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ULD build station id",
+      "titleRu": "ID станции сборки ULD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uld_build.uld.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ULD id",
+      "titleRu": "ID ULD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uld_build.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "ULD weight",
+      "titleRu": "Масса ULD",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_build.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Volume used",
+      "titleRu": "Занятый объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_build.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cargo temperature",
+      "titleRu": "Температура груза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_build.build.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Build time",
+      "titleRu": "Время сборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uld_build.dg",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dangerous goods",
+      "titleRu": "Опасный груз",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "uld_build.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ULD type",
+      "titleRu": "Тип ULD",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ake",
+        "pmc",
+        "pla",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 8aac80c6
+path: people_apm.state
+aliases:
+  short: people_apm.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ТС
+  en: Vehicle state
+fingerprint: sha256:8aac80c64cf761e4f2710438c6d4eadc5386918a1af801a10df9ee958555f6a3
+enumValues:
+  - run
+  - dwell
+  - hold
+  - fault
+  - offline

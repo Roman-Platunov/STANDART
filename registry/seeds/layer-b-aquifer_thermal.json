@@ -1,0 +1,113 @@
+{
+  "layer": "B22",
+  "name": "layer-b-aquifer_thermal.json",
+  "types": [
+    {
+      "path": "aquifer_thermal.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ATES well id",
+      "titleRu": "ID скважины АТЭС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aquifer_thermal.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Aquifer temperature",
+      "titleRu": "Температура водоносного горизонта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_thermal.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Well flow",
+      "titleRu": "Расход скважины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_thermal.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Wellhead pressure",
+      "titleRu": "Давление на устье",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_thermal.delta.t",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Delta-T",
+      "titleRu": "Дельта-T",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_thermal.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Seasonal energy",
+      "titleRu": "Сезонная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_thermal.clog",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Clogging risk",
+      "titleRu": "Риск кольматации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aquifer_thermal.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "cool",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

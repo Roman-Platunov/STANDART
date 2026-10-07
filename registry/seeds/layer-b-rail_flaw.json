@@ -1,0 +1,114 @@
+{
+  "layer": "B22",
+  "name": "layer-b-rail_flaw.json",
+  "types": [
+    {
+      "path": "rail_flaw.car.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ultrasonic rail flaw car id",
+      "titleRu": "ID дефектоскопного вагона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail_flaw.defects",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Defects found",
+      "titleRu": "Дефектов найдено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_flaw.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Test speed",
+      "titleRu": "Скорость контроля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_flaw.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Coverage",
+      "titleRu": "Покрытие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rail_flaw.urgent",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Urgent defects",
+      "titleRu": "Срочных дефектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_flaw.km",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Tested km",
+      "titleRu": "Проверено км",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_flaw.stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stop order issued",
+      "titleRu": "Выдан приказ остановки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail_flaw.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Car state",
+      "titleRu": "Состояние вагона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "test",
+        "analyze",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 211200f2
+path: ship_break.state
+aliases:
+  short: ship_break.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние верфи
+  en: Yard state
+fingerprint: sha256:211200f24a9f2579760b64bda2ba72741b8fcb6bf1f6d7e3363657ec41831ece
+enumValues:
+  - beached
+  - cut
+  - clean
+  - done
+  - fault

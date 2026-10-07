@@ -1,0 +1,120 @@
+{
+  "layer": "B22",
+  "name": "layer-b-case_erect.json",
+  "types": [
+    {
+      "path": "case_erect.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Case erector id",
+      "titleRu": "ID формирователя коробов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "case_erect.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cases per hour",
+      "titleRu": "Коробов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "case_erect.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "case_erect.glue",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Glue use",
+      "titleRu": "Расход клея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "case_erect.pattern",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pack pattern id",
+      "titleRu": "ID схемы",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "case_erect.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "case_erect.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Jam",
+      "titleRu": "Затор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "case_erect.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Erector state",
+      "titleRu": "Состояние формирователя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "erect",
+        "load",
+        "seal",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

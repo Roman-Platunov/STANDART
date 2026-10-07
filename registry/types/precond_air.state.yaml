@@ -1,0 +1,20 @@
+sid: 590f720d
+path: precond_air.state
+aliases:
+  short: precond_air.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние PCA
+  en: PCA state
+fingerprint: sha256:590f720d28121e47b85ea02df38aab7fd359252b9891ec86a14d61bd86625317
+enumValues:
+  - idle
+  - cool
+  - heat
+  - fault

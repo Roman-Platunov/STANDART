@@ -1,0 +1,20 @@
+sid: 8fbc8113
+path: ocs_drone.state
+aliases:
+  short: ocs_drone.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дрона
+  en: Drone state
+fingerprint: sha256:8fbc81139b7a0274847430a302765ae2b7871ffa0ff7a1ade2a11e29988a2639
+enumValues:
+  - fly
+  - inspect
+  - land
+  - fault

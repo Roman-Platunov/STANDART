@@ -1,0 +1,112 @@
+{
+  "layer": "B22",
+  "name": "layer-b-catenary_car.json",
+  "types": [
+    {
+      "path": "catenary_car.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Catenary inspection car id",
+      "titleRu": "ID вагона диагностики КС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "catenary_car.height",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Contact height",
+      "titleRu": "Высота контакта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catenary_car.stagger",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Stagger",
+      "titleRu": "Зигзаг",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catenary_car.wear",
+      "kind": "quantity",
+      "unit": "mm2",
+      "titleEn": "Wear",
+      "titleRu": "Износ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catenary_car.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Contact force",
+      "titleRu": "Прижимное усилие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catenary_car.km",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Inspected km",
+      "titleRu": "Обследовано км",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catenary_car.defect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Defect found",
+      "titleRu": "Обнаружен дефект",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "catenary_car.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Car state",
+      "titleRu": "Состояние вагона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "analyze",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

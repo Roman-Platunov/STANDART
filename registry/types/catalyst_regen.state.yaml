@@ -1,0 +1,20 @@
+sid: f8bdbcbd
+path: catalyst_regen.state
+aliases:
+  short: catalyst_regen.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние регенерации
+  en: Regen state
+fingerprint: sha256:f8bdbcbdb27617cfb33e49df0ae84d458fccc1d1f339143a7f8c25faa1681c63
+enumValues:
+  - burn
+  - cool
+  - idle
+  - fault

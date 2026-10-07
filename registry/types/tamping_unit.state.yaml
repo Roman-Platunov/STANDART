@@ -1,0 +1,20 @@
+sid: aff4f9fa
+path: tamping_unit.state
+aliases:
+  short: tamping_unit.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние блока
+  en: Unit state
+fingerprint: sha256:aff4f9fa197611b48d7cf73ecbf23ebf33ae0dfd912d8cb4b6b840113d4c7863
+enumValues:
+  - tamp
+  - measure
+  - travel
+  - fault

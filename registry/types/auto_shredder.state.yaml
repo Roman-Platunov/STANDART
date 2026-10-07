@@ -1,0 +1,20 @@
+sid: 3c17ee5d
+path: auto_shredder.state
+aliases:
+  short: auto_shredder.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шредера
+  en: Shredder state
+fingerprint: sha256:3c17ee5d861ec8a541d28a5e7519e7c9eb7f4f4d1219fa43d21e3bf205a886a5
+enumValues:
+  - run
+  - idle
+  - maintain
+  - fault

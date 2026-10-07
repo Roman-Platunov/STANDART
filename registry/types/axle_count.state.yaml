@@ -1,0 +1,20 @@
+sid: 74ff7283
+path: axle_count.state
+aliases:
+  short: axle_count.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние участка
+  en: Section state
+fingerprint: sha256:74ff7283131a18e72f3b86cf2e017087d4c7f4434403e884374a6caf7822af2d
+enumValues:
+  - clear
+  - occupied
+  - disturbed
+  - fault

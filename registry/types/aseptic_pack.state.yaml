@@ -1,0 +1,21 @@
+sid: 65e308ae
+path: aseptic_pack.state
+aliases:
+  short: aseptic_pack.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:65e308ae268292103c4aa77d1d06737a9ed606398dd1f80866e1af8db3818943
+enumValues:
+  - sterile
+  - fill
+  - cip
+  - idle
+  - fault

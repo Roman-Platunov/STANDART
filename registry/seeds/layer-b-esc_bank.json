@@ -1,0 +1,117 @@
+{
+  "layer": "B22",
+  "name": "layer-b-esc_bank.json",
+  "types": [
+    {
+      "path": "esc_bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Escalator bank id",
+      "titleRu": "ID группы эскалаторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "esc_bank.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Belt speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esc_bank.passengers",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Passengers per hour",
+      "titleRu": "Пассажиров в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esc_bank.motor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Motor temperature",
+      "titleRu": "Температура двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esc_bank.brake.wear",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Brake wear",
+      "titleRu": "Износ тормоза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "esc_bank.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Energy today",
+      "titleRu": "Энергия за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esc_bank.emergency",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency stop",
+      "titleRu": "Аварийный стоп",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "esc_bank.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bank state",
+      "titleRu": "Состояние группы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "down",
+        "stop",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

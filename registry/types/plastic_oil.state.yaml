@@ -1,0 +1,21 @@
+sid: 7cac2af9
+path: plastic_oil.state
+aliases:
+  short: plastic_oil.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние реактора
+  en: Reactor state
+fingerprint: sha256:7cac2af94e4b909b13005b701d91688e335669d98b7d2ae63d8f8acd7d7a663f
+enumValues:
+  - heat
+  - run
+  - cool
+  - idle
+  - fault

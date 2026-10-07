@@ -1,0 +1,110 @@
+{
+  "layer": "B22",
+  "name": "layer-b-gpu_400hz.json",
+  "types": [
+    {
+      "path": "gpu_400hz.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "400 Hz GPU id",
+      "titleRu": "ID GPU 400 Гц",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gpu_400hz.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stand id",
+      "titleRu": "ID стоянки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gpu_400hz.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Output power",
+      "titleRu": "Выходная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gpu_400hz.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Output voltage",
+      "titleRu": "Выходное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gpu_400hz.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gpu_400hz.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gpu_400hz.connected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Connected",
+      "titleRu": "Подключено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gpu_400hz.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "GPU state",
+      "titleRu": "Состояние GPU",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "supply",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

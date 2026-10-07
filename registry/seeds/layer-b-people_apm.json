@@ -1,0 +1,116 @@
+{
+  "layer": "B22",
+  "name": "layer-b-people_apm.json",
+  "types": [
+    {
+      "path": "people_apm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "APM vehicle id",
+      "titleRu": "ID APM",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "people_apm.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "people_apm.headway.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Headway",
+      "titleRu": "Интервал",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "people_apm.riders",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Riders onboard",
+      "titleRu": "Пассажиров на борту",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "people_apm.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery SOC",
+      "titleRu": "SOC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "people_apm.dwell.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Dwell time",
+      "titleRu": "Стоянка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "people_apm.auto",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Automatic mode",
+      "titleRu": "Авторежим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "people_apm.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vehicle state",
+      "titleRu": "Состояние ТС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "dwell",
+        "hold",
+        "fault",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

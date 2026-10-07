@@ -1,0 +1,20 @@
+sid: 7f16f66a
+path: jetway_bridge.state
+aliases:
+  short: jetway_bridge.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние телетрапа
+  en: Bridge state
+fingerprint: sha256:7f16f66af9e2274d8b999f3040041de64826412da9e64e5e0568b4209f293220
+enumValues:
+  - stowed
+  - approach
+  - docked
+  - fault

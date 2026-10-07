@@ -1,0 +1,112 @@
+{
+  "layer": "B22",
+  "name": "layer-b-syngas_scrub.json",
+  "types": [
+    {
+      "path": "syngas_scrub.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Syngas scrubber id",
+      "titleRu": "ID скруббера синтез-газа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "syngas_scrub.in.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet temperature",
+      "titleRu": "Температура на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "syngas_scrub.out.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outlet temperature",
+      "titleRu": "Температура на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "syngas_scrub.tar",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Tar residual",
+      "titleRu": "Остаток смол",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "syngas_scrub.h2s",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2S residual",
+      "titleRu": "Остаток H2S",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "syngas_scrub.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Pressure drop",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "syngas_scrub.flood",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flooding",
+      "titleRu": "Захлёбывание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "syngas_scrub.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wet",
+        "dry",
+        "electrostatic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B22",
+  "name": "layer-b-wheel_lathe.json",
+  "types": [
+    {
+      "path": "wheel_lathe.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wheel lathe id",
+      "titleRu": "ID колёсотокарного станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wheel_lathe.axle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Axle id",
+      "titleRu": "ID оси",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wheel_lathe.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wheel diameter",
+      "titleRu": "Диаметр колеса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wheel_lathe.flange",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Flange height",
+      "titleRu": "Высота гребня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wheel_lathe.cut",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Metal removed",
+      "titleRu": "Снято металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wheel_lathe.ovality",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ovality",
+      "titleRu": "Овальность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wheel_lathe.condemn",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wheel condemned",
+      "titleRu": "Колесо забраковано",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wheel_lathe.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lathe state",
+      "titleRu": "Состояние станка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "measure",
+        "turn",
+        "inspect",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+sid: c3bc1f97
+path: ocs_drone.battery
+aliases:
+  short: ocs_drone.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея дрона
+  en: Drone battery
+fingerprint: sha256:c3bc1f9726720fac2d18b8f3c5b662e1c2aa08a74faf5cfdd54633011f87005f
+range:
+  min: 0
+  max: 100

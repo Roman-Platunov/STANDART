@@ -1,0 +1,114 @@
+{
+  "layer": "B22",
+  "name": "layer-b-ship_break.json",
+  "types": [
+    {
+      "path": "ship_break.yard.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ship breaking yard id",
+      "titleRu": "ID верфи разделки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ship_break.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vessel id",
+      "titleRu": "ID судна",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ship_break.steel",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Steel recovery",
+      "titleRu": "Извлечение стали",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ship_break.hazmat",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Hazmat remaining",
+      "titleRu": "Остаток опасных веществ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ship_break.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cutting progress",
+      "titleRu": "Прогресс резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ship_break.workers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Workers onboard",
+      "titleRu": "Работников на борту",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ship_break.asbestos",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Asbestos zone",
+      "titleRu": "Зона асбеста",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ship_break.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Yard state",
+      "titleRu": "Состояние верфи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "beached",
+        "cut",
+        "clean",
+        "done",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

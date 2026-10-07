@@ -1,0 +1,20 @@
+sid: abaf8f7a
+path: rail_grind.state
+aliases:
+  short: rail_grind.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние поезда
+  en: Train state
+fingerprint: sha256:abaf8f7ad4224caa5e6b47bc63b93ce4a7b77a6d974aaa23d2b69d2eec1a7ab2
+enumValues:
+  - grind
+  - measure
+  - travel
+  - fault

@@ -1,0 +1,20 @@
+sid: 71e52e92
+path: ice_bank.mode
+aliases:
+  short: ice_bank.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:71e52e92e600e291f4ea290793ea0bde8b7a67c11bcd78bb925e0158c0c56b46
+enumValues:
+  - charge
+  - discharge
+  - idle
+  - fault

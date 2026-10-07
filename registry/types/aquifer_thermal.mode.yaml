@@ -1,0 +1,21 @@
+sid: f548ff4c
+path: aquifer_thermal.mode
+aliases:
+  short: aquifer_thermal.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:f548ff4c536e553b3790ac2618cda583b8e7ef7ee81b880c0c36ce3db1d33653
+enumValues:
+  - heat
+  - cool
+  - idle
+  - maintain
+  - fault

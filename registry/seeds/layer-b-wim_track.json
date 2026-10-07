@@ -1,0 +1,113 @@
+{
+  "layer": "B22",
+  "name": "layer-b-wim_track.json",
+  "types": [
+    {
+      "path": "wim_track.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Track WIM id",
+      "titleRu": "ID ЖД-весов в движении",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wim_track.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Train id",
+      "titleRu": "ID поезда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wim_track.axle.load",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Axle load",
+      "titleRu": "Нагрузка на ось",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wim_track.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wim_track.imbalance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Load imbalance",
+      "titleRu": "Дисбаланс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wim_track.wagons",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wagons counted",
+      "titleRu": "Вагонов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wim_track.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overload",
+      "titleRu": "Перегруз",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wim_track.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "WIM state",
+      "titleRu": "Состояние весов",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "overload",
+        "calibrate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

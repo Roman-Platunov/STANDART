@@ -1,0 +1,114 @@
+{
+  "layer": "B22",
+  "name": "layer-b-rail_grind.json",
+  "types": [
+    {
+      "path": "rail_grind.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rail grinding train id",
+      "titleRu": "ID рельсошлифовального поезда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail_grind.pass",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passes completed",
+      "titleRu": "Проходов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_grind.metal",
+      "kind": "quantity",
+      "unit": "mm3/m",
+      "titleEn": "Metal removed",
+      "titleRu": "Снято металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_grind.profile",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Profile match",
+      "titleRu": "Соответствие профиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rail_grind.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Grind speed",
+      "titleRu": "Скорость шлифовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_grind.sparks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Spark intensity",
+      "titleRu": "Интенсивность искр",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_grind.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire watch",
+      "titleRu": "Пожарный пост",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail_grind.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Train state",
+      "titleRu": "Состояние поезда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grind",
+        "measure",
+        "travel",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

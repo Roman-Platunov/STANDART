@@ -1,0 +1,20 @@
+sid: 1f11f1b1
+path: rail_hotbox.state
+aliases:
+  short: rail_hotbox.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние детектора
+  en: Detector state
+fingerprint: sha256:1f11f1b1cd85316d0ae4380388de2398a84465bb8d8a2f198affdb3d99f9def2
+enumValues:
+  - scan
+  - alarm
+  - calibrate
+  - offline

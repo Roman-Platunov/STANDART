@@ -1,0 +1,125 @@
+{
+  "layer": "B22",
+  "name": "layer-b-mrf_optical.json",
+  "types": [
+    {
+      "path": "mrf_optical.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Optical MRF line id",
+      "titleRu": "ID оптической линии MRF",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mrf_optical.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mrf_optical.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product purity",
+      "titleRu": "Чистота продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mrf_optical.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovery",
+      "titleRu": "Извлечение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mrf_optical.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Отсев",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mrf_optical.air",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Ejector air pressure",
+      "titleRu": "Давление воздуха эжектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mrf_optical.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Line jam",
+      "titleRu": "Засор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mrf_optical.material",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Target material",
+      "titleRu": "Целевой материал",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pet",
+        "hdpe",
+        "paper",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

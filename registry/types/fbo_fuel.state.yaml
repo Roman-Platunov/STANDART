@@ -1,0 +1,20 @@
+sid: 15fbdac5
+path: fbo_fuel.state
+aliases:
+  short: fbo_fuel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стола
+  en: Desk state
+fingerprint: sha256:15fbdac5ea58e7b14f71d9b6c1cf47234278395a59077202a2692a1fae119db9
+enumValues:
+  - open
+  - busy
+  - closed
+  - weather

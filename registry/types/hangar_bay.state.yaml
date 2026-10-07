@@ -1,0 +1,21 @@
+sid: 27a9c15f
+path: hangar_bay.state
+aliases:
+  short: hangar_bay.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ворот
+  en: Door state
+fingerprint: sha256:27a9c15fb89e4ba600c4228fd5c0ab348346f4a49a7f30f61550f54ea106ce7a
+enumValues:
+  - closed
+  - opening
+  - open
+  - closing
+  - fault

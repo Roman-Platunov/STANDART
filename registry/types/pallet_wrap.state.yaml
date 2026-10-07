@@ -1,0 +1,20 @@
+sid: 93d8e853
+path: pallet_wrap.state
+aliases:
+  short: pallet_wrap.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние обмотчика
+  en: Wrapper state
+fingerprint: sha256:93d8e85341911d7339df08f5e0ef6933aa9788bf67b4d313b4ef9d972dbd4cc0
+enumValues:
+  - wrap
+  - cut
+  - idle
+  - fault

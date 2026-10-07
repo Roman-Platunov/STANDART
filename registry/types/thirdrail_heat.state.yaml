@@ -1,0 +1,20 @@
+sid: 78fc3e4e
+path: thirdrail_heat.state
+aliases:
+  short: thirdrail_heat.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние участка
+  en: Section state
+fingerprint: sha256:78fc3e4ed1fdac97c57661986fc4cc1b81bf9930aa41f287abffee1c4203aa28
+enumValues:
+  - off
+  - heat
+  - fault
+  - isolated

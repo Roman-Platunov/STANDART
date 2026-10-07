@@ -1,0 +1,117 @@
+{
+  "layer": "B22",
+  "name": "layer-b-iqf_belt.json",
+  "types": [
+    {
+      "path": "iqf_belt.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IQF belt freezer id",
+      "titleRu": "ID ленточного IQF",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "iqf_belt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tunnel temperature",
+      "titleRu": "Температура тоннеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iqf_belt.belt",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Belt speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iqf_belt.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iqf_belt.core.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Exit core temperature",
+      "titleRu": "Температура в центре на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iqf_belt.fan",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fan speed",
+      "titleRu": "Скорость вентиляторов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "iqf_belt.frost",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Belt frost",
+      "titleRu": "Иней на ленте",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "iqf_belt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Belt state",
+      "titleRu": "Состояние ленты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "defrost",
+        "clean",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "layer": "B22",
+  "name": "layer-b-pantograph_mon.json",
+  "types": [
+    {
+      "path": "pantograph_mon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pantograph monitor id",
+      "titleRu": "ID монитора пантографа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pantograph_mon.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vehicle id",
+      "titleRu": "ID ТС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pantograph_mon.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Contact force",
+      "titleRu": "Прижимное усилие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pantograph_mon.height",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Collector height",
+      "titleRu": "Высота токосъёмника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pantograph_mon.arc",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Arcing events",
+      "titleRu": "Дуговых событий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pantograph_mon.wear",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Strip wear",
+      "titleRu": "Износ накладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pantograph_mon.up",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Raised",
+      "titleRu": "Поднят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pantograph_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "State",
+      "titleRu": "Состояние",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "down",
+        "fault",
+        "inspect"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

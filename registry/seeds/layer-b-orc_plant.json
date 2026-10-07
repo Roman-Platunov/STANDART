@@ -1,0 +1,117 @@
+{
+  "layer": "B22",
+  "name": "layer-b-orc_plant.json",
+  "types": [
+    {
+      "path": "orc_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ORC plant id",
+      "titleRu": "ID ORC-установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "orc_plant.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Net power",
+      "titleRu": "Полезная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "orc_plant.evap.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Evaporator temperature",
+      "titleRu": "Температура испарителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "orc_plant.cond.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Condenser temperature",
+      "titleRu": "Температура конденсатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "orc_plant.flow",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Working fluid flow",
+      "titleRu": "Расход рабочего тела",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "orc_plant.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cycle efficiency",
+      "titleRu": "КПД цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "orc_plant.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fluid leak",
+      "titleRu": "Утечка рабочего тела",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "orc_plant.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Heat source",
+      "titleRu": "Источник тепла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "geothermal",
+        "waste_heat",
+        "biomass",
+        "solar",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

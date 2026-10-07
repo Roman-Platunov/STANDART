@@ -1,0 +1,117 @@
+{
+  "layer": "B22",
+  "name": "layer-b-cullet_sort.json",
+  "types": [
+    {
+      "path": "cullet_sort.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cullet sort plant id",
+      "titleRu": "ID сортировки боя стекла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cullet_sort.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cullet_sort.ceramic",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Ceramic contaminants",
+      "titleRu": "Керамика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cullet_sort.metal",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Metal contaminants",
+      "titleRu": "Металл",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cullet_sort.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Mean size",
+      "titleRu": "Средний размер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cullet_sort.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Color-sort yield",
+      "titleRu": "Выход цветоделения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cullet_sort.optics.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Optics OK",
+      "titleRu": "Оптика OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cullet_sort.color",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Color",
+      "titleRu": "Цвет",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flint",
+        "amber",
+        "green",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

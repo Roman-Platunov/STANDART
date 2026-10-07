@@ -1,0 +1,21 @@
+sid: "83076986"
+path: case_erect.state
+aliases:
+  short: case_erect.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние формирователя
+  en: Erector state
+fingerprint: sha256:83076986c22e3fc37ba3633138f70716eb3885f133f234d87cd9e4a5dbbf5b58
+enumValues:
+  - erect
+  - load
+  - seal
+  - idle
+  - fault

@@ -1,0 +1,121 @@
+{
+  "layer": "B22",
+  "name": "layer-b-asrs_freeze.json",
+  "types": [
+    {
+      "path": "asrs_freeze.aisle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Frozen ASRS aisle id",
+      "titleRu": "ID прохода морозильного АСК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asrs_freeze.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Aisle temperature",
+      "titleRu": "Температура прохода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asrs_freeze.moves",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Moves per hour",
+      "titleRu": "Перемещений в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asrs_freeze.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Occupancy",
+      "titleRu": "Занятость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asrs_freeze.defrost",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Defrost progress",
+      "titleRu": "Прогресс оттайки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asrs_freeze.door.open.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Door open time",
+      "titleRu": "Время открытия двери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asrs_freeze.frost",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Frost buildup",
+      "titleRu": "Накопление инея",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asrs_freeze.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Aisle state",
+      "titleRu": "Состояние прохода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "store",
+        "retrieve",
+        "defrost",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

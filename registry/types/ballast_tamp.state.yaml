@@ -1,0 +1,20 @@
+sid: ddc85eaf
+path: ballast_tamp.state
+aliases:
+  short: ballast_tamp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:ddc85eafac80b80a9b68994dbaf22bd29f7021eb3583bf4db19ecaa78981cb97
+enumValues:
+  - tamp
+  - measure
+  - travel
+  - fault

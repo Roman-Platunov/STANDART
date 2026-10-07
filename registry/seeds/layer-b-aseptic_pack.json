@@ -1,0 +1,117 @@
+{
+  "layer": "B22",
+  "name": "layer-b-aseptic_pack.json",
+  "types": [
+    {
+      "path": "aseptic_pack.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aseptic pack line id",
+      "titleRu": "ID асептической линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aseptic_pack.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Packages per hour",
+      "titleRu": "Упаковок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aseptic_pack.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aseptic_pack.h2o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2O2 residual",
+      "titleRu": "Остаток H2O2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aseptic_pack.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aseptic_pack.volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aseptic_pack.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sterility breach",
+      "titleRu": "Нарушение стерильности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aseptic_pack.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sterile",
+        "fill",
+        "cip",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

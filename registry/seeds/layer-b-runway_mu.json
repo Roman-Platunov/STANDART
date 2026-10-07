@@ -1,0 +1,112 @@
+{
+  "layer": "B22",
+  "name": "layer-b-runway_mu.json",
+  "types": [
+    {
+      "path": "runway_mu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway friction survey id",
+      "titleRu": "ID замера сцепления ВПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "runway_mu.runway.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Runway id",
+      "titleRu": "ID ВПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "runway_mu.mu",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Friction coefficient",
+      "titleRu": "Коэффициент сцепления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "runway_mu.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Contaminant depth",
+      "titleRu": "Глубина загрязнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "runway_mu.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Surface temperature",
+      "titleRu": "Температура покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "runway_mu.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Survey speed",
+      "titleRu": "Скорость замера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "runway_mu.poor",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Poor friction",
+      "titleRu": "Плохое сцепление",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "runway_mu.contaminant",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Contaminant",
+      "titleRu": "Загрязнение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "wet",
+        "snow",
+        "ice",
+        "slush",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

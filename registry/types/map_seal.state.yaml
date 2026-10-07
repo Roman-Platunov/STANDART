@@ -1,0 +1,21 @@
+sid: bd01b879
+path: map_seal.state
+aliases:
+  short: map_seal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:bd01b879750efea09b00aceb5c4579938bdebdf18cde580fed8507154b17dc02
+enumValues:
+  - form
+  - fill
+  - seal
+  - idle
+  - fault

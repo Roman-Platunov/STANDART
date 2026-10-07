@@ -1,0 +1,125 @@
+{
+  "layer": "B22",
+  "name": "layer-b-map_seal.json",
+  "types": [
+    {
+      "path": "map_seal.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MAP seal line id",
+      "titleRu": "ID линии МАП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "map_seal.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Headspace O2",
+      "titleRu": "O2 в газовой среде",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "map_seal.co2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Headspace CO2",
+      "titleRu": "CO2 в газовой среде",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "map_seal.seal",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Seal integrity",
+      "titleRu": "Целостность шва",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "map_seal.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Packs per hour",
+      "titleRu": "Упаковок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "map_seal.gas",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Gas mix use",
+      "titleRu": "Расход газовой смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "map_seal.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak detected",
+      "titleRu": "Обнаружена утечка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "map_seal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "fill",
+        "seal",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

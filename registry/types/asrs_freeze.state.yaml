@@ -1,0 +1,21 @@
+sid: c30163bd
+path: asrs_freeze.state
+aliases:
+  short: asrs_freeze.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние прохода
+  en: Aisle state
+fingerprint: sha256:c30163bd39beb6704f53966553d0fa49181fa2600cd331e66c2c557364d5b927
+enumValues:
+  - store
+  - retrieve
+  - defrost
+  - idle
+  - fault

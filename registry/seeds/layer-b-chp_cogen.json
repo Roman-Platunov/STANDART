@@ -1,0 +1,117 @@
+{
+  "layer": "B22",
+  "name": "layer-b-chp_cogen.json",
+  "types": [
+    {
+      "path": "chp_cogen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CHP plant id",
+      "titleRu": "ID ТЭЦ/когенерации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chp_cogen.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Electrical power",
+      "titleRu": "Электрическая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chp_cogen.heat",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Thermal power",
+      "titleRu": "Тепловая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chp_cogen.fuel",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chp_cogen.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Overall efficiency",
+      "titleRu": "Общий КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chp_cogen.steam.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chp_cogen.island",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Island mode",
+      "titleRu": "Островной режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chp_cogen.fuel_type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fuel type",
+      "titleRu": "Тип топлива",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gas",
+        "coal",
+        "biomass",
+        "waste",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

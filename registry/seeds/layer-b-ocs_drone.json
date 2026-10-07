@@ -1,0 +1,116 @@
+{
+  "layer": "B22",
+  "name": "layer-b-ocs_drone.json",
+  "types": [
+    {
+      "path": "ocs_drone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OCS inspection drone id",
+      "titleRu": "ID дрона инспекции КС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ocs_drone.height",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Contact wire height",
+      "titleRu": "Высота контактного провода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ocs_drone.stagger",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Stagger",
+      "titleRu": "Зигзаг",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ocs_drone.wear",
+      "kind": "quantity",
+      "unit": "mm2",
+      "titleEn": "Wear area loss",
+      "titleRu": "Износ сечения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ocs_drone.km",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Inspected distance",
+      "titleRu": "Обследовано",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ocs_drone.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Drone battery",
+      "titleRu": "Батарея дрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ocs_drone.defect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Defect found",
+      "titleRu": "Обнаружен дефект",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ocs_drone.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Drone state",
+      "titleRu": "Состояние дрона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fly",
+        "inspect",
+        "land",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

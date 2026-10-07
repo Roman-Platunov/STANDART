@@ -1,0 +1,114 @@
+{
+  "layer": "B22",
+  "name": "layer-b-fbo_fuel.json",
+  "types": [
+    {
+      "path": "fbo_fuel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FBO fuel desk id",
+      "titleRu": "ID топливного стола FBO",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fbo_fuel.dispensed",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fuel dispensed today",
+      "titleRu": "Авиатоплива за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fbo_fuel.movements",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Aircraft movements",
+      "titleRu": "Движений ВС",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fbo_fuel.hangar.occ",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hangar occupancy",
+      "titleRu": "Занятость ангара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fbo_fuel.wait.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Avg service wait",
+      "titleRu": "Среднее ожидание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fbo_fuel.trucks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fuel trucks active",
+      "titleRu": "Активных топливозаправщиков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fbo_fuel.night",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Night ops",
+      "titleRu": "Ночные операции",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fbo_fuel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Desk state",
+      "titleRu": "Состояние стола",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "busy",
+        "closed",
+        "weather"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: b57dd686
+path: orc_plant.source
+aliases:
+  short: orc_plant.source
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Источник тепла
+  en: Heat source
+fingerprint: sha256:b57dd68612a86c155d7471cdf799dd36ec23d6e02693e3c30e935d706663e5ec
+enumValues:
+  - geothermal
+  - waste_heat
+  - biomass
+  - solar
+  - other

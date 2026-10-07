@@ -1,0 +1,113 @@
+{
+  "layer": "B22",
+  "name": "layer-b-bhs_divert.json",
+  "types": [
+    {
+      "path": "bhs_divert.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BHS diverter id",
+      "titleRu": "ID стрелки BHS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bhs_divert.rate",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bags per hour",
+      "titleRu": "Мест в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bhs_divert.misread",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tag misread",
+      "titleRu": "Ошибки считывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bhs_divert.jam",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Jams today",
+      "titleRu": "Заторов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bhs_divert.early",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Early bags",
+      "titleRu": "Раннего багажа",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bhs_divert.late",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Late bags",
+      "titleRu": "Позднего багажа",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bhs_divert.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Divert alarm",
+      "titleRu": "Тревога стрелки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bhs_divert.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Diverter state",
+      "titleRu": "Состояние стрелки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "peak",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

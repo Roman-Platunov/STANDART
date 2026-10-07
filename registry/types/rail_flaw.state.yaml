@@ -1,0 +1,20 @@
+sid: "35094404"
+path: rail_flaw.state
+aliases:
+  short: rail_flaw.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние вагона
+  en: Car state
+fingerprint: sha256:35094404929a5cb4d77b1222560908fd8ab028aef562354d2b5e77afdce2bf2c
+enumValues:
+  - test
+  - analyze
+  - idle
+  - fault

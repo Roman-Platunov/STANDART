@@ -1,0 +1,114 @@
+{
+  "layer": "B22",
+  "name": "layer-b-point_heat.json",
+  "types": [
+    {
+      "path": "point_heat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Point heater id",
+      "titleRu": "ID обогрева стрелки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "point_heat.point.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Point id",
+      "titleRu": "ID стрелки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "point_heat.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Heater power",
+      "titleRu": "Мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "point_heat.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Rail temperature",
+      "titleRu": "Температура рельса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "point_heat.snow",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Snow depth",
+      "titleRu": "Глубина снега",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "point_heat.duty",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Duty cycle",
+      "titleRu": "Скважность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "point_heat.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Heater on",
+      "titleRu": "Обогрев включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "point_heat.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "electric",
+        "gas",
+        "hot_air",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

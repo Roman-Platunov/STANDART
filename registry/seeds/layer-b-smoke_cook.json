@@ -1,0 +1,119 @@
+{
+  "layer": "B22",
+  "name": "layer-b-smoke_cook.json",
+  "types": [
+    {
+      "path": "smoke_cook.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Smoke cook chamber id",
+      "titleRu": "ID коптильно-варочной камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smoke_cook.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smoke_cook.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smoke_cook.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smoke_cook.smoke",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Smoke density",
+      "titleRu": "Плотность дыма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smoke_cook.core.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product core temperature",
+      "titleRu": "Температура в центре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smoke_cook.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cook complete",
+      "titleRu": "Варка завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smoke_cook.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Phase",
+      "titleRu": "Фаза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "smoke",
+        "cook",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

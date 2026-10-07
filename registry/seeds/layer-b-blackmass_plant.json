@@ -1,0 +1,125 @@
+{
+  "layer": "B22",
+  "name": "layer-b-blackmass_plant.json",
+  "types": [
+    {
+      "path": "blackmass_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Black mass plant id",
+      "titleRu": "ID завода чёрной массы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blackmass_plant.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Battery feed",
+      "titleRu": "Подача АКБ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blackmass_plant.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Black mass output",
+      "titleRu": "Выпуск чёрной массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blackmass_plant.li",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lithium grade",
+      "titleRu": "Содержание лития",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "blackmass_plant.ni",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Nickel grade",
+      "titleRu": "Содержание никеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "blackmass_plant.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Moisture",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "blackmass_plant.thermal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Thermal event",
+      "titleRu": "Тепловое событие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "blackmass_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "shred",
+        "separate",
+        "dry",
+        "pack",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 4c602de6
+path: psd_gate.state
+aliases:
+  short: psd_gate.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дверей
+  en: Door state
+fingerprint: sha256:4c602de6e8f4d54652da2e929df9cc36d0793cd2069481c2f0d8a26717cd7044
+enumValues:
+  - closed
+  - open
+  - inhibited
+  - fault

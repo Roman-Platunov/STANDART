@@ -1,0 +1,21 @@
+sid: 240fb500
+path: retort_batch.state
+aliases:
+  short: retort_batch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние автоклава
+  en: Retort state
+fingerprint: sha256:240fb5008788eb4c4c5b9975ee5748e4117397f2f9e3fa7aac0da11dd61fc23c
+enumValues:
+  - come_up
+  - hold
+  - cool
+  - idle
+  - fault

@@ -1,0 +1,121 @@
+{
+  "layer": "B22",
+  "name": "layer-b-chem_depoly.json",
+  "types": [
+    {
+      "path": "chem_depoly.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chemical depolymerization plant id",
+      "titleRu": "ID завода деполимеризации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chem_depoly.conv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Conversion",
+      "titleRu": "Конверсия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chem_depoly.monomer",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Monomer output",
+      "titleRu": "Выпуск мономера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chem_depoly.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Purity",
+      "titleRu": "Чистота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chem_depoly.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chem_depoly.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chem_depoly.catalyst.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Catalyst OK",
+      "titleRu": "Катализатор OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chem_depoly.feedstock",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feedstock",
+      "titleRu": "Сырьё",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pet",
+        "pa",
+        "pu",
+        "mixed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

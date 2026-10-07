@@ -1,0 +1,21 @@
+sid: b336898e
+path: wheel_lathe.state
+aliases:
+  short: wheel_lathe.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станка
+  en: Lathe state
+fingerprint: sha256:b336898e089d74b07e7bf656c5a7b7bc56047c251babb4938a299a303a900488
+enumValues:
+  - measure
+  - turn
+  - inspect
+  - idle
+  - fault

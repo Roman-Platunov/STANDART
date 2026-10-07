@@ -1,0 +1,108 @@
+{
+  "layer": "B22",
+  "name": "layer-b-psd_gate.json",
+  "types": [
+    {
+      "path": "psd_gate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Platform screen door id",
+      "titleRu": "ID платформенных дверей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "psd_gate.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Station id",
+      "titleRu": "ID станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "psd_gate.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open cycles today",
+      "titleRu": "Циклов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "psd_gate.open.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Open duration",
+      "titleRu": "Длительность открытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "psd_gate.align",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Train alignment error",
+      "titleRu": "Ошибка выравнивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "psd_gate.faults",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Faults today",
+      "titleRu": "Отказов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "psd_gate.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Doors locked",
+      "titleRu": "Двери заблокированы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "psd_gate.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Door state",
+      "titleRu": "Состояние дверей",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "open",
+        "inhibited",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

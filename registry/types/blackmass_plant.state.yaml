@@ -1,0 +1,21 @@
+sid: 1d82c118
+path: blackmass_plant.state
+aliases:
+  short: blackmass_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:1d82c118f52bd34dae4c12cf835e0f564821dbed29aef276e9b4fa47c81e99b1
+enumValues:
+  - shred
+  - separate
+  - dry
+  - pack
+  - fault

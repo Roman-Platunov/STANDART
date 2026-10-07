@@ -1,0 +1,116 @@
+{
+  "layer": "B22",
+  "name": "layer-b-pcb_shred.json",
+  "types": [
+    {
+      "path": "pcb_shred.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PCB shred line id",
+      "titleRu": "ID линии измельчения плат",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pcb_shred.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb_shred.cu",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Copper recovery",
+      "titleRu": "Извлечение меди",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pcb_shred.au",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Gold grade",
+      "titleRu": "Содержание золота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb_shred.dust",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Dust level",
+      "titleRu": "Пыль",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb_shred.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Shredder power",
+      "titleRu": "Мощность шредера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb_shred.halogen",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Halogen alert",
+      "titleRu": "Тревога галогенов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pcb_shred.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "shred",
+        "sort",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

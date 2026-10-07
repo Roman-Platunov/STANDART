@@ -1,0 +1,112 @@
+{
+  "layer": "B22",
+  "name": "layer-b-track_geom_car.json",
+  "types": [
+    {
+      "path": "track_geom_car.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Track geometry car id",
+      "titleRu": "ID путеизмерительного вагона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "track_geom_car.gauge",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Track gauge",
+      "titleRu": "Ширина колеи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "track_geom_car.cant",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Cant",
+      "titleRu": "Возвышение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "track_geom_car.twist",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Twist",
+      "titleRu": "Перекос",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "track_geom_car.align",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Alignment error",
+      "titleRu": "Отклонение в плане",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "track_geom_car.level",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Longitudinal level",
+      "titleRu": "Просадка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "track_geom_car.urgent",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Urgent defect",
+      "titleRu": "Срочный дефект",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "track_geom_car.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Car state",
+      "titleRu": "Состояние вагона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "measure",
+        "process",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

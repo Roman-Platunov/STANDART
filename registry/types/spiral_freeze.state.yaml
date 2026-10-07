@@ -1,0 +1,21 @@
+sid: 30f4d8a3
+path: spiral_freeze.state
+aliases:
+  short: spiral_freeze.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние морозильника
+  en: Freezer state
+fingerprint: sha256:30f4d8a3fdaf997f3c1d2f9ff6831a8ee847a1a16afe708ec325f3eb80dd28dc
+enumValues:
+  - load
+  - freeze
+  - hold
+  - unload
+  - fault

@@ -1,0 +1,110 @@
+{
+  "layer": "B22",
+  "name": "layer-b-deice_boom.json",
+  "types": [
+    {
+      "path": "deice_boom.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "De-icing boom id",
+      "titleRu": "ID стрелы антиобледенения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deice_boom.flight.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flight id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deice_boom.fluid",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fluid used",
+      "titleRu": "Израсходовано жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deice_boom.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Duration",
+      "titleRu": "Длительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deice_boom.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "OAT",
+      "titleRu": "Температура наружного воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deice_boom.holdover.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Holdover time",
+      "titleRu": "Время удержания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deice_boom.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Treatment active",
+      "titleRu": "Обработка идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "deice_boom.fluid_type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fluid type",
+      "titleRu": "Тип жидкости",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "type_i",
+        "type_ii",
+        "type_iv",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

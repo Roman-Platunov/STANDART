@@ -1,0 +1,21 @@
+sid: "37305527"
+path: smoke_cook.phase
+aliases:
+  short: smoke_cook.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза
+  en: Phase
+fingerprint: sha256:373055279696d4313f7af8d6ee91f50d752d4eb575337b7d3050e34276a9938b
+enumValues:
+  - dry
+  - smoke
+  - cook
+  - cool
+  - fault

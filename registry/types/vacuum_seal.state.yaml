@@ -1,0 +1,21 @@
+sid: 5985e9a3
+path: vacuum_seal.state
+aliases:
+  short: vacuum_seal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:5985e9a3994ad4bc8becfe32134c8dffa78e9448956b173402bd8cd853b70dbb
+enumValues:
+  - load
+  - vacuum
+  - seal
+  - idle
+  - fault

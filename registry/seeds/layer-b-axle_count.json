@@ -1,0 +1,113 @@
+{
+  "layer": "B22",
+  "name": "layer-b-axle_count.json",
+  "types": [
+    {
+      "path": "axle_count.head.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Axle counter head id",
+      "titleRu": "ID головки счётчика осей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "axle_count.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Axle count",
+      "titleRu": "Число осей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "axle_count.occupied",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Occupied sections",
+      "titleRu": "Занятых участков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "axle_count.reset",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Resets today",
+      "titleRu": "Сбросов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "axle_count.health",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Head health",
+      "titleRu": "Здоровье головки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "axle_count.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Head temperature",
+      "titleRu": "Температура головки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "axle_count.disturb",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Disturbance",
+      "titleRu": "Помеха",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "axle_count.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Section state",
+      "titleRu": "Состояние участка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "clear",
+        "occupied",
+        "disturbed",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "layer": "B22",
+  "name": "layer-b-catalyst_regen.json",
+  "types": [
+    {
+      "path": "catalyst_regen.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Catalyst regenerator id",
+      "titleRu": "ID регенератора катализатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "catalyst_regen.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Regen temperature",
+      "titleRu": "Температура регенерации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catalyst_regen.carbon",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Carbon on catalyst",
+      "titleRu": "Углерод на катализаторе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "catalyst_regen.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Regen O2",
+      "titleRu": "O2 регенерации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "catalyst_regen.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Air flow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "catalyst_regen.activity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative activity",
+      "titleRu": "Относительная активность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "catalyst_regen.hotspot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hotspot",
+      "titleRu": "Горячая точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "catalyst_regen.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Regen state",
+      "titleRu": "Состояние регенерации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "burn",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

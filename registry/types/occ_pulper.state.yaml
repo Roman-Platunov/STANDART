@@ -1,0 +1,20 @@
+sid: 865b7719
+path: occ_pulper.state
+aliases:
+  short: occ_pulper.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние разбивателя
+  en: Pulper state
+fingerprint: sha256:865b771960e833d7193482d7f7256eb62f9cd12c8a535801980a0275057c8238
+enumValues:
+  - pulp
+  - dump
+  - idle
+  - fault

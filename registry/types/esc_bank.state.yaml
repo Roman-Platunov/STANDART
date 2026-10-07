@@ -1,0 +1,21 @@
+sid: 790b4485
+path: esc_bank.state
+aliases:
+  short: esc_bank.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние группы
+  en: Bank state
+fingerprint: sha256:790b4485a9a897af9101c735901e19169efe25157f0b15a4aae0a45e408d5454
+enumValues:
+  - up
+  - down
+  - stop
+  - maintain
+  - fault

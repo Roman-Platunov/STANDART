@@ -1,0 +1,113 @@
+{
+  "layer": "B22",
+  "name": "layer-b-signal_cabin.json",
+  "types": [
+    {
+      "path": "signal_cabin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Interlocking cabin id",
+      "titleRu": "ID поста ЭЦ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "signal_cabin.routes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Routes set",
+      "titleRu": "Установлено маршрутов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "signal_cabin.points",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Points moved today",
+      "titleRu": "Переводов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "signal_cabin.alarms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active alarms",
+      "titleRu": "Активных аварий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "signal_cabin.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Command latency",
+      "titleRu": "Задержка команды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "signal_cabin.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "signal_cabin.block",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Block occupied",
+      "titleRu": "Блок занят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "signal_cabin.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "relay",
+        "electronic",
+        "cbts",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

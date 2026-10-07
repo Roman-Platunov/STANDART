@@ -1,0 +1,120 @@
+{
+  "layer": "B22",
+  "name": "layer-b-ice_bank.json",
+  "types": [
+    {
+      "path": "ice_bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ice storage bank id",
+      "titleRu": "ID льдоаккумулятора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ice_bank.charge",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ice inventory",
+      "titleRu": "Запас льда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ice_bank.chw.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CHW supply temperature",
+      "titleRu": "Температура ХВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_bank.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Charge/discharge power",
+      "titleRu": "Мощность зарядки/разряда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_bank.glycol",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Glycol concentration",
+      "titleRu": "Концентрация гликоля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ice_bank.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Loop flow",
+      "titleRu": "Расход контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_bank.melt",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Melt mode",
+      "titleRu": "Режим таяния",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ice_bank.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "discharge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

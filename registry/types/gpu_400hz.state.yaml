@@ -1,0 +1,20 @@
+sid: dd548bea
+path: gpu_400hz.state
+aliases:
+  short: gpu_400hz.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние GPU
+  en: GPU state
+fingerprint: sha256:dd548bea98a23b6b81425c0a3f0df10e50cca2b4125951336fb5c89cbe9c9437
+enumValues:
+  - idle
+  - supply
+  - fault
+  - offline

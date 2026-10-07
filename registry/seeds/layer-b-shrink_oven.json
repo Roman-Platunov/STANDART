@@ -1,0 +1,116 @@
+{
+  "layer": "B22",
+  "name": "layer-b-shrink_oven.json",
+  "types": [
+    {
+      "path": "shrink_oven.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shrink oven id",
+      "titleRu": "ID термоусадочной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shrink_oven.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oven temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shrink_oven.belt",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Belt speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shrink_oven.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shrink_oven.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Energy per unit",
+      "titleRu": "Энергия на единицу",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shrink_oven.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shrink_oven.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Film jam",
+      "titleRu": "Замятие плёнки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shrink_oven.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Oven state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

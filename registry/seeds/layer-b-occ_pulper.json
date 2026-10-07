@@ -1,0 +1,120 @@
+{
+  "layer": "B22",
+  "name": "layer-b-occ_pulper.json",
+  "types": [
+    {
+      "path": "occ_pulper.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OCC pulper id",
+      "titleRu": "ID гидроразбивателя OCC",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "occ_pulper.consistency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pulp consistency",
+      "titleRu": "Концентрация массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "occ_pulper.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Pulper power",
+      "titleRu": "Мощность разбивателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "occ_pulper.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject",
+      "titleRu": "Отходы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "occ_pulper.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "occ_pulper.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stock temperature",
+      "titleRu": "Температура массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "occ_pulper.rope",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ragger rope pull",
+      "titleRu": "Вытягивание каната",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "occ_pulper.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pulper state",
+      "titleRu": "Состояние разбивателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pulp",
+        "dump",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

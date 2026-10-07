@@ -1,0 +1,21 @@
+sid: ab8c0ce5
+path: chp_cogen.fuel_type
+aliases:
+  short: chp_cogen.fuel_type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип топлива
+  en: Fuel type
+fingerprint: sha256:ab8c0ce574d1bf7e70378098303610ccf855dc43247a5b05d87a69236f0f833a
+enumValues:
+  - gas
+  - coal
+  - biomass
+  - waste
+  - other

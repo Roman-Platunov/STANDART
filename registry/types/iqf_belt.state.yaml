@@ -1,0 +1,21 @@
+sid: 89773fa0
+path: iqf_belt.state
+aliases:
+  short: iqf_belt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ленты
+  en: Belt state
+fingerprint: sha256:89773fa07e848feac9e5c0c4db487bf61f7049f741780e297c7af7c8d62e3556
+enumValues:
+  - run
+  - defrost
+  - clean
+  - idle
+  - fault

@@ -1,0 +1,113 @@
+{
+  "layer": "B22",
+  "name": "layer-b-plastic_oil.json",
+  "types": [
+    {
+      "path": "plastic_oil.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plastic-to-oil reactor id",
+      "titleRu": "ID реактора пластик→масло",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plastic_oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastic_oil.oil",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Oil yield",
+      "titleRu": "Выход масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastic_oil.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Plastic feed",
+      "titleRu": "Подача пластика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastic_oil.gas",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Off-gas",
+      "titleRu": "Отходящий газ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastic_oil.char",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Char output",
+      "titleRu": "Выход угля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plastic_oil.clog",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Condenser clog",
+      "titleRu": "Засор конденсатора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "plastic_oil.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reactor state",
+      "titleRu": "Состояние реактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "run",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

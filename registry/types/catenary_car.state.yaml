@@ -1,0 +1,20 @@
+sid: 148e2fc2
+path: catenary_car.state
+aliases:
+  short: catenary_car.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние вагона
+  en: Car state
+fingerprint: sha256:148e2fc26e218051685ba23ad507cc0828d16d0366d18ee89be007bb3dfae15a
+enumValues:
+  - run
+  - analyze
+  - idle
+  - fault

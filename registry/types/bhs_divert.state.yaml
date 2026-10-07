@@ -1,0 +1,20 @@
+sid: 8d3f3d02
+path: bhs_divert.state
+aliases:
+  short: bhs_divert.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стрелки
+  en: Diverter state
+fingerprint: sha256:8d3f3d02926de359b3a904df748caecaadeb743479d3d8e4fd664d48d509f9e4
+enumValues:
+  - run
+  - peak
+  - maintain
+  - fault

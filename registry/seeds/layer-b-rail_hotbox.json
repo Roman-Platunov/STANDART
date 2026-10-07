@@ -1,0 +1,108 @@
+{
+  "layer": "B22",
+  "name": "layer-b-rail_hotbox.json",
+  "types": [
+    {
+      "path": "rail_hotbox.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wayside hotbox detector id",
+      "titleRu": "ID буксового детектора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail_hotbox.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Train id",
+      "titleRu": "ID поезда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail_hotbox.bearing.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bearing temperature",
+      "titleRu": "Температура буксы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_hotbox.wheel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wheel temperature",
+      "titleRu": "Температура колеса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_hotbox.axles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Axles scanned",
+      "titleRu": "Осей просканировано",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_hotbox.alarms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Alarms",
+      "titleRu": "Тревог",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_hotbox.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hotbox alarm",
+      "titleRu": "Тревога буксы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail_hotbox.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Detector state",
+      "titleRu": "Состояние детектора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "scan",
+        "alarm",
+        "calibrate",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

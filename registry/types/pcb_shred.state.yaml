@@ -1,0 +1,20 @@
+sid: 88f727f3
+path: pcb_shred.state
+aliases:
+  short: pcb_shred.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:88f727f39030c41bb2c2e8ed8b174e7391438222eda3aa40ce6a79a8afa68215
+enumValues:
+  - shred
+  - sort
+  - idle
+  - fault

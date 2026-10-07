@@ -1,0 +1,119 @@
+{
+  "layer": "B22",
+  "name": "layer-b-robot_pallet.json",
+  "types": [
+    {
+      "path": "robot_pallet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Robotic palletizer id",
+      "titleRu": "ID роботизированного паллетайзера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "robot_pallet.layers",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Layers per hour",
+      "titleRu": "Слоёв в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robot_pallet.pallets",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Pallets per hour",
+      "titleRu": "Паллет в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robot_pallet.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "robot_pallet.pattern",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Layer pattern",
+      "titleRu": "Схема слоя",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "robot_pallet.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "robot_pallet.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pallet complete",
+      "titleRu": "Паллета готова",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "robot_pallet.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "articulated",
+        "gantry",
+        "hybrid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

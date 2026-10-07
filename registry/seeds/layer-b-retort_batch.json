@@ -1,0 +1,111 @@
+{
+  "layer": "B22",
+  "name": "layer-b-retort_batch.json",
+  "types": [
+    {
+      "path": "retort_batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch retort id",
+      "titleRu": "ID периодического автоклава",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retort_batch.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retort_batch.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Retort temperature",
+      "titleRu": "Температура автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_batch.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Retort pressure",
+      "titleRu": "Давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_batch.f0",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "F0 value",
+      "titleRu": "Значение F0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_batch.come.up.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Come-up time",
+      "titleRu": "Время выхода на режим",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_batch.lethality.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lethality met",
+      "titleRu": "Летальность достигнута",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "retort_batch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Retort state",
+      "titleRu": "Состояние автоклава",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "come_up",
+        "hold",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

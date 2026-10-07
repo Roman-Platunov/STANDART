@@ -1,0 +1,114 @@
+{
+  "layer": "B22",
+  "name": "layer-b-elv_depollute.json",
+  "types": [
+    {
+      "path": "elv_depollute.bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ELV depollution bay id",
+      "titleRu": "ID поста обезвреживания ELV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "elv_depollute.vin",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vehicle VIN",
+      "titleRu": "VIN",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "elv_depollute.fluids",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fluids drained",
+      "titleRu": "Слито жидкостей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elv_depollute.parts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Parts recovered",
+      "titleRu": "Деталей извлечено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elv_depollute.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Bay cycle",
+      "titleRu": "Цикл поста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elv_depollute.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Depollution progress",
+      "titleRu": "Прогресс обезвреживания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "elv_depollute.airbag.safe",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Airbags safe",
+      "titleRu": "Подушки безопасны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "elv_depollute.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bay state",
+      "titleRu": "Состояние поста",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "intake",
+        "drain",
+        "strip",
+        "done",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

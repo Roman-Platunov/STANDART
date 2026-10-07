@@ -1,0 +1,116 @@
+{
+  "layer": "B22",
+  "name": "layer-b-thirdrail_heat.json",
+  "types": [
+    {
+      "path": "thirdrail_heat.section.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Third-rail heater section id",
+      "titleRu": "ID обогрева контактного рельса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thirdrail_heat.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Heater power",
+      "titleRu": "Мощность обогрева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thirdrail_heat.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Rail temperature",
+      "titleRu": "Температура рельса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thirdrail_heat.ice",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ice thickness",
+      "titleRu": "Толщина льда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thirdrail_heat.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Rail voltage",
+      "titleRu": "Напряжение рельса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thirdrail_heat.duty",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Duty cycle",
+      "titleRu": "Скважность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thirdrail_heat.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Heater on",
+      "titleRu": "Обогрев включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thirdrail_heat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Section state",
+      "titleRu": "Состояние участка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "heat",
+        "fault",
+        "isolated"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

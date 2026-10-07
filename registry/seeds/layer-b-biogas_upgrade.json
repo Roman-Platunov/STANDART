@@ -1,0 +1,125 @@
+{
+  "layer": "B22",
+  "name": "layer-b-biogas_upgrade.json",
+  "types": [
+    {
+      "path": "biogas_upgrade.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Biogas upgrading unit id",
+      "titleRu": "ID установки обогащения биогаза",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "biogas_upgrade.in",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Raw biogas inlet",
+      "titleRu": "Вход сырого биогаза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biogas_upgrade.ch4",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product methane",
+      "titleRu": "Метан в продукте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biogas_upgrade.co2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product CO2",
+      "titleRu": "CO2 в продукте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biogas_upgrade.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Upgrade power",
+      "titleRu": "Мощность установки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "biogas_upgrade.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CH4 recovery",
+      "titleRu": "Извлечение CH4",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "biogas_upgrade.grid",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grid injection ready",
+      "titleRu": "Готово к подаче в сеть",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "biogas_upgrade.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "membrane",
+        "psa",
+        "amine",
+        "water_scrub",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

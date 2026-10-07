@@ -1,0 +1,114 @@
+{
+  "layer": "B22",
+  "name": "layer-b-level_xing.json",
+  "types": [
+    {
+      "path": "level_xing.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Level crossing id",
+      "titleRu": "ID переезда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "level_xing.activations",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Activations today",
+      "titleRu": "Срабатываний за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "level_xing.barrier.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Barrier close time",
+      "titleRu": "Время закрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "level_xing.obstacle",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Obstacle detections",
+      "titleRu": "Обнаружений препятствий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "level_xing.power",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Supply voltage",
+      "titleRu": "Напряжение питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "level_xing.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "level_xing.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Barriers closed",
+      "titleRu": "Шлагбаумы закрыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "level_xing.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Crossing state",
+      "titleRu": "Состояние переезда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "warning",
+        "closed",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

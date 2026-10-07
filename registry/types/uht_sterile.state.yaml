@@ -1,0 +1,21 @@
+sid: b28c6773
+path: uht_sterile.state
+aliases:
+  short: uht_sterile.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стерилизатора
+  en: Sterilizer state
+fingerprint: sha256:b28c677372c6219ceea54693e254cf462e0c0cf55d31cb73f9575ef9dd0b4180
+enumValues:
+  - sterilize
+  - product
+  - cip
+  - idle
+  - fault

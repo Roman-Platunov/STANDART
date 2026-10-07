@@ -1,0 +1,21 @@
+sid: e5a5f117
+path: biogas_upgrade.process
+aliases:
+  short: biogas_upgrade.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Процесс
+  en: Process
+fingerprint: sha256:e5a5f11712101692c622e5e455fde732e28a837f262cc5d3f81d44d052081ddf
+enumValues:
+  - membrane
+  - psa
+  - amine
+  - water_scrub
+  - other

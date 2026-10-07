@@ -1,0 +1,116 @@
+{
+  "layer": "B22",
+  "name": "layer-b-hangar_bay.json",
+  "types": [
+    {
+      "path": "hangar_bay.door.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hangar bay door id",
+      "titleRu": "ID ворот ангара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hangar_bay.open",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Open percent",
+      "titleRu": "Процент открытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hangar_bay.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind at door",
+      "titleRu": "Ветер у ворот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hangar_bay.motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hangar_bay.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cycles today",
+      "titleRu": "Циклов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hangar_bay.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hangar temperature",
+      "titleRu": "Температура ангара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hangar_bay.interlock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Interlock OK",
+      "titleRu": "Блокировка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hangar_bay.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Door state",
+      "titleRu": "Состояние ворот",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "opening",
+        "open",
+        "closing",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
