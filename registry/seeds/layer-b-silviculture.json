@@ -1,0 +1,117 @@
+{
+  "layer": "B14",
+  "name": "layer-b-silviculture.json",
+  "types": [
+    {
+      "path": "silviculture.stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Forest stand id",
+      "titleRu": "ID лесосеки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "silviculture.dbh",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Mean DBH",
+      "titleRu": "Средний ДГК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silviculture.basal",
+      "kind": "quantity",
+      "unit": "m2/ha",
+      "titleEn": "Basal area",
+      "titleRu": "Сумма площадей сечений",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silviculture.stocking",
+      "kind": "quantity",
+      "unit": "/ha",
+      "titleEn": "Stems per hectare",
+      "titleRu": "Деревьев на гектар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silviculture.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soil moisture",
+      "titleRu": "Влажность почвы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "silviculture.age.y",
+      "kind": "quantity",
+      "unit": "y",
+      "titleEn": "Stand age",
+      "titleRu": "Возраст насаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silviculture.thin.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Thinning due",
+      "titleRu": "Пора прореживать",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "silviculture.treatment",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Treatment",
+      "titleRu": "Мероприятие",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plant",
+        "release",
+        "thin",
+        "harvest",
+        "leave"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

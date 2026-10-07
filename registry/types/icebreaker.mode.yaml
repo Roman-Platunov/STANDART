@@ -1,0 +1,22 @@
+sid: a05a075f
+path: icebreaker.mode
+aliases:
+  short: icebreaker.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим работы
+  en: Ops mode
+fingerprint: sha256:a05a075f9236ba782e7d280450d7d7990e39bc7b6185b9c3586403fee0c87c94
+enumValues:
+  - open
+  - channel
+  - convoy
+  - ram
+  - port
+  - fault

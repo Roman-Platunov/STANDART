@@ -1,0 +1,21 @@
+sid: 141a62d4
+path: broadcast_truck.link
+aliases:
+  short: broadcast_truck.link
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип канала
+  en: Link type
+fingerprint: sha256:141a62d43cc950497c15cabbf8a9461c68aa9f46f3843bf337b4f540a339f167
+enumValues:
+  - sat
+  - bonded
+  - fiber
+  - microwave
+  - other

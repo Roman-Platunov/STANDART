@@ -1,0 +1,112 @@
+{
+  "layer": "B14",
+  "name": "layer-b-friction_stir.json",
+  "types": [
+    {
+      "path": "friction_stir.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FSW machine id",
+      "titleRu": "ID машины СТП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "friction_stir.weld.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FSW weld id",
+      "titleRu": "ID шва СТП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "friction_stir.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Tool RPM",
+      "titleRu": "Обороты инструмента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "friction_stir.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Axial force",
+      "titleRu": "Осевое усилие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "friction_stir.travel",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Travel speed",
+      "titleRu": "Скорость перемещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "friction_stir.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tool temperature",
+      "titleRu": "Температура инструмента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "friction_stir.void",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Void detected",
+      "titleRu": "Обнаружена полость",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "friction_stir.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "FSW state",
+      "titleRu": "Состояние СТП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plunge",
+        "dwell",
+        "weld",
+        "extract",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

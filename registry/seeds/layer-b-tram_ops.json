@@ -1,0 +1,109 @@
+{
+  "layer": "B14",
+  "name": "layer-b-tram_ops.json",
+  "types": [
+    {
+      "path": "tram_ops.vehicle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tram vehicle id",
+      "titleRu": "ID трамвая",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tram_ops.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tram line id",
+      "titleRu": "ID трамвайной линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tram_ops.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Tram speed",
+      "titleRu": "Скорость трамвая",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tram_ops.pax",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passengers onboard",
+      "titleRu": "Пассажиров в салоне",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tram_ops.pantograph.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Pantograph force",
+      "titleRu": "Нажатие токоприёмника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tram_ops.energy",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Traction energy",
+      "titleRu": "Тяговая энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tram_ops.derail.risk",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Derailment risk",
+      "titleRu": "Риск схода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tram_ops.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Service mode",
+      "titleRu": "Режим работы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "service",
+        "not_in_service",
+        "depot",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

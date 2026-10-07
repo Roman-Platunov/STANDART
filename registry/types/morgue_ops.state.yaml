@@ -1,0 +1,20 @@
+sid: 8fe52583
+path: morgue_ops.state
+aliases:
+  short: morgue_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние морга
+  en: Morgue state
+fingerprint: sha256:8fe5258302413d2c691b32f34435e860214bbb1329b9ce13f8821cdfd72fe0eb
+enumValues:
+  - ok
+  - full
+  - alarm
+  - offline

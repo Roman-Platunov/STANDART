@@ -1,0 +1,122 @@
+{
+  "layer": "B14",
+  "name": "layer-b-brick_kiln.json",
+  "types": [
+    {
+      "path": "brick_kiln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brick kiln id",
+      "titleRu": "ID кирпичной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brick_kiln.fire.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Firing temperature",
+      "titleRu": "Температура обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brick_kiln.car.speed",
+      "kind": "quantity",
+      "unit": "m/h",
+      "titleEn": "Kiln car speed",
+      "titleRu": "Скорость вагонеток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brick_kiln.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Green moisture",
+      "titleRu": "Влажность сырца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "brick_kiln.cycle.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Firing cycle",
+      "titleRu": "Цикл обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brick_kiln.rejects",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "brick_kiln.overfire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overfire",
+      "titleRu": "Пережог",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "brick_kiln.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kiln state",
+      "titleRu": "Состояние печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "preheat",
+        "fire",
+        "cool",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

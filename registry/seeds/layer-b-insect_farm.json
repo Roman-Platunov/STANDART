@@ -1,0 +1,114 @@
+{
+  "layer": "B14",
+  "name": "layer-b-insect_farm.json",
+  "types": [
+    {
+      "path": "insect_farm.crate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Insect crate id",
+      "titleRu": "ID лотка насекомых",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "insect_farm.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Insect batch id",
+      "titleRu": "ID партии насекомых",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "insect_farm.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Crate temperature",
+      "titleRu": "Температура лотка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "insect_farm.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Crate humidity",
+      "titleRu": "Влажность лотка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "insect_farm.feed.rate",
+      "kind": "quantity",
+      "unit": "kg/d",
+      "titleEn": "Feed rate",
+      "titleRu": "Норма корма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "insect_farm.biomass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Live biomass",
+      "titleRu": "Живая биомасса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "insect_farm.harvest.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Harvest ready",
+      "titleRu": "Готово к съёму",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "insect_farm.species",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Species",
+      "titleRu": "Вид",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bsf",
+        "mealworm",
+        "cricket",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

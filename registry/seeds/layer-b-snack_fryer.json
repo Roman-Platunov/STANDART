@@ -1,0 +1,120 @@
+{
+  "layer": "B14",
+  "name": "layer-b-snack_fryer.json",
+  "types": [
+    {
+      "path": "snack_fryer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Snack fryer id",
+      "titleRu": "ID фритюра снеков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snack_fryer.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Snack SKU id",
+      "titleRu": "ID SKU снеков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snack_fryer.oil.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snack_fryer.dwell.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Dwell time",
+      "titleRu": "Время обжарки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snack_fryer.ffa",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Free fatty acids",
+      "titleRu": "Свободные жирные кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "snack_fryer.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влага продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "snack_fryer.oil.change",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Oil change due",
+      "titleRu": "Пора менять масло",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "snack_fryer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fryer state",
+      "titleRu": "Состояние фритюра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "fry",
+        "idle",
+        "filter",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

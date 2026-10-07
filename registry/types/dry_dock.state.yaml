@@ -1,0 +1,22 @@
+sid: 17b25595
+path: dry_dock.state
+aliases:
+  short: dry_dock.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дока
+  en: Dock state
+fingerprint: sha256:17b255958e39d38c1cdbcc4ff5657d57c0a9ac76169c119ebc52ec6307eb6d2b
+enumValues:
+  - flood
+  - dock
+  - work
+  - undock
+  - idle
+  - fault

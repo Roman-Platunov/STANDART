@@ -1,0 +1,109 @@
+{
+  "layer": "B14",
+  "name": "layer-b-particle_therapy.json",
+  "types": [
+    {
+      "path": "particle_therapy.gantry.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Therapy gantry id",
+      "titleRu": "ID гантри терапии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "particle_therapy.plan.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Particle plan id",
+      "titleRu": "ID плана частиц",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "particle_therapy.energy",
+      "kind": "quantity",
+      "unit": "MeV",
+      "titleEn": "Beam energy",
+      "titleRu": "Энергия пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particle_therapy.dose.gy",
+      "kind": "quantity",
+      "unit": "Gy",
+      "titleEn": "Delivered dose",
+      "titleRu": "Подведённая доза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particle_therapy.range",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Beam range",
+      "titleRu": "Пробег пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particle_therapy.spots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Spots delivered",
+      "titleRu": "Доставленных спотов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particle_therapy.beam.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Beam on",
+      "titleRu": "Пучок включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "particle_therapy.particle",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Particle",
+      "titleRu": "Частица",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "proton",
+        "carbon",
+        "helium",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

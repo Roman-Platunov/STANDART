@@ -1,0 +1,113 @@
+{
+  "layer": "B14",
+  "name": "layer-b-algae_pond.json",
+  "types": [
+    {
+      "path": "algae_pond.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Algae pond id",
+      "titleRu": "ID водорослевого пруда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "algae_pond.od",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Optical density",
+      "titleRu": "Оптическая плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "algae_pond.do",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "algae_pond.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pond pH",
+      "titleRu": "pH пруда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "algae_pond.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pond temperature",
+      "titleRu": "Температура пруда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "algae_pond.harvest",
+      "kind": "quantity",
+      "unit": "kg/d",
+      "titleEn": "Harvest rate",
+      "titleRu": "Съём биомассы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "algae_pond.crash",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Culture crash",
+      "titleRu": "Крах культуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "algae_pond.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inoculate",
+        "grow",
+        "harvest",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

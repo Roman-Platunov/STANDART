@@ -1,0 +1,21 @@
+sid: d351ad55
+path: snow_pillow.state
+aliases:
+  short: snow_pillow.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние снега
+  en: Snowpack state
+fingerprint: sha256:d351ad5568fde77d7c6cff29e66d1450086a1ea9d9fcb49f54547f1fa8ceab4f
+enumValues:
+  - accumulate
+  - ripe
+  - melt
+  - bare
+  - fault

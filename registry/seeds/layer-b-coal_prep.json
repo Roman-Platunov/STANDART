@@ -1,0 +1,125 @@
+{
+  "layer": "B14",
+  "name": "layer-b-coal_prep.json",
+  "types": [
+    {
+      "path": "coal_prep.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coal prep plant id",
+      "titleRu": "ID углеобогатительной фабрики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coal_prep.ash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product ash",
+      "titleRu": "Зольность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coal_prep.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влага продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coal_prep.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mass yield",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coal_prep.media.sg",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dense-media SG",
+      "titleRu": "Плотность суспензии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coal_prep.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Raw feed",
+      "titleRu": "Сырое питание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coal_prep.media.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Media in spec",
+      "titleRu": "Суспензия в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coal_prep.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние фабрики",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "wash",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

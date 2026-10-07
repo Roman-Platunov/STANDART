@@ -1,0 +1,23 @@
+sid: 5e73ef9e
+path: spaceport.phase
+aliases:
+  short: spaceport.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза операций
+  en: Ops phase
+fingerprint: sha256:5e73ef9e499227a942b7881ba546dcf6bcbece5e3e1813d0107f81ab6373706d
+enumValues:
+  - idle
+  - stack
+  - fuel
+  - count
+  - hold
+  - launch
+  - secure

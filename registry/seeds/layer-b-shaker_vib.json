@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-shaker_vib.json",
+  "types": [
+    {
+      "path": "shaker_vib.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vibration shaker id",
+      "titleRu": "ID вибростенда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shaker_vib.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shaker run id",
+      "titleRu": "ID прогона вибростенда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shaker_vib.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Shaker force",
+      "titleRu": "Усилие вибростенда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shaker_vib.accel",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Control acceleration",
+      "titleRu": "Управляемое ускорение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shaker_vib.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Drive frequency",
+      "titleRu": "Частота возбуждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shaker_vib.stroke",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Displacement",
+      "titleRu": "Перемещение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shaker_vib.abort",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Abort",
+      "titleRu": "Аварийный останов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shaker_vib.profile",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Profile",
+      "titleRu": "Профиль",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sine",
+        "random",
+        "shock",
+        "sor",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

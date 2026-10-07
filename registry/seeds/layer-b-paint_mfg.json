@@ -1,0 +1,115 @@
+{
+  "layer": "B14",
+  "name": "layer-b-paint_mfg.json",
+  "types": [
+    {
+      "path": "paint_mfg.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paint reactor id",
+      "titleRu": "ID реактора ЛКМ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_mfg.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paint batch id",
+      "titleRu": "ID партии краски",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_mfg.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Viscosity",
+      "titleRu": "Вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_mfg.grind",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Grind fineness",
+      "titleRu": "Тонкость перетира",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_mfg.pigment",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pigment volume",
+      "titleRu": "Объём пигмента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paint_mfg.mix.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Mixer power",
+      "titleRu": "Мощность мешалки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_mfg.in_spec",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "In specification",
+      "titleRu": "В спецификации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paint_mfg.base",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Base type",
+      "titleRu": "Тип основы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "solvent",
+        "water",
+        "powder",
+        "uv",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

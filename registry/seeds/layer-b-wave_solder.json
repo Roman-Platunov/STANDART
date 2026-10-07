@@ -1,0 +1,110 @@
+{
+  "layer": "B14",
+  "name": "layer-b-wave_solder.json",
+  "types": [
+    {
+      "path": "wave_solder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wave solder id",
+      "titleRu": "ID машины волновой пайки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wave_solder.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wave solder job id",
+      "titleRu": "ID задания волновой пайки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wave_solder.pot.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Solder pot temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_solder.preheat",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Preheat temperature",
+      "titleRu": "Температура преднагрева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_solder.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Conveyor speed",
+      "titleRu": "Скорость конвейера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_solder.flux.sg",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Flux specific gravity",
+      "titleRu": "Плотность флюса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_solder.dross.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dross high",
+      "titleRu": "Много дросса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wave_solder.alloy",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Alloy",
+      "titleRu": "Сплав",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sn63",
+        "sac305",
+        "snip",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+sid: 048953ac
+path: halt_chamber.state
+aliases:
+  short: halt_chamber.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние камеры
+  en: Chamber state
+fingerprint: sha256:048953ac5187911529982bf61af13ca8091c05a055d228fac2e7a5626407f19c
+enumValues:
+  - setup
+  - cold
+  - hot
+  - vibe
+  - combo
+  - idle
+  - fault

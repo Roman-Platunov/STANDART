@@ -1,0 +1,116 @@
+{
+  "layer": "B14",
+  "name": "layer-b-adhesive_mfg.json",
+  "types": [
+    {
+      "path": "adhesive_mfg.kettle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Adhesive kettle id",
+      "titleRu": "ID котла клея",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "adhesive_mfg.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Adhesive batch id",
+      "titleRu": "ID партии клея",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "adhesive_mfg.solids",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solids content",
+      "titleRu": "Сухой остаток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "adhesive_mfg.kettle.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Kettle temperature",
+      "titleRu": "Температура котла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "adhesive_mfg.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Adhesive viscosity",
+      "titleRu": "Вязкость клея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "adhesive_mfg.pot.life",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Pot life",
+      "titleRu": "Жизнеспособность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "adhesive_mfg.gelled",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gelled",
+      "titleRu": "Зажелатинился",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "adhesive_mfg.chem",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chemistry",
+      "titleRu": "Химия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pva",
+        "pu",
+        "epoxy",
+        "hotmelt",
+        "silicone",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

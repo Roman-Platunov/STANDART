@@ -1,0 +1,120 @@
+{
+  "layer": "B14",
+  "name": "layer-b-funicular.json",
+  "types": [
+    {
+      "path": "funicular.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Funicular id",
+      "titleRu": "ID фуникулёра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "funicular.car.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Funicular car id",
+      "titleRu": "ID вагона фуникулёра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "funicular.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Car speed",
+      "titleRu": "Скорость вагона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "funicular.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Load",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "funicular.rope.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Rope tension",
+      "titleRu": "Натяжение каната",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "funicular.track.grade",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Track grade",
+      "titleRu": "Уклон пути",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "funicular.evac",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Evacuation mode",
+      "titleRu": "Режим эвакуации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "funicular.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Funicular state",
+      "titleRu": "Состояние фуникулёра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "down",
+        "hold",
+        "evac",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

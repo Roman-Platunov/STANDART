@@ -1,0 +1,115 @@
+{
+  "layer": "B14",
+  "name": "layer-b-powder_metal.json",
+  "types": [
+    {
+      "path": "powder_metal.press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PM press id",
+      "titleRu": "ID пресса порошковой металлургии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "powder_metal.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PM batch id",
+      "titleRu": "ID партии порошка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "powder_metal.compact.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Green density",
+      "titleRu": "Плотность прессовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "powder_metal.sinter.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sinter temperature",
+      "titleRu": "Температура спекания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "powder_metal.sinter.time",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Sinter hold time",
+      "titleRu": "Выдержка спекания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "powder_metal.shrink",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sinter shrink",
+      "titleRu": "Усадка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "powder_metal.crack",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Green crack",
+      "titleRu": "Трещина прессовки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "powder_metal.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PM process",
+      "titleRu": "Процесс ПМ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "press",
+        "sinter",
+        "size",
+        "impregnate",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

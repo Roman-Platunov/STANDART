@@ -1,0 +1,115 @@
+{
+  "layer": "B14",
+  "name": "layer-b-tensile_test.json",
+  "types": [
+    {
+      "path": "tensile_test.frame.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tensile frame id",
+      "titleRu": "ID разрывной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tensile_test.specimen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Specimen id",
+      "titleRu": "ID образца",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tensile_test.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Force",
+      "titleRu": "Сила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tensile_test.strain",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Strain",
+      "titleRu": "Деформация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tensile_test.uts",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "UTS",
+      "titleRu": "Предел прочности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tensile_test.elongation",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Elongation",
+      "titleRu": "Удлинение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tensile_test.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Specimen broken",
+      "titleRu": "Образец разрушен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tensile_test.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Test mode",
+      "titleRu": "Режим испытания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tensile",
+        "compress",
+        "flex",
+        "peel",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

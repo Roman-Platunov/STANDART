@@ -1,0 +1,22 @@
+sid: b20ef403
+path: aluminum_potline.state
+aliases:
+  short: aluminum_potline.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ванны
+  en: Pot state
+fingerprint: sha256:b20ef403e941401f3d61a9f09d99f91fb696709b4be64ffad847e3baa98199be
+enumValues:
+  - heat
+  - produce
+  - tap
+  - anode
+  - idle
+  - fault

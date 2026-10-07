@@ -1,0 +1,112 @@
+{
+  "layer": "B14",
+  "name": "layer-b-halt_chamber.json",
+  "types": [
+    {
+      "path": "halt_chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HALT chamber id",
+      "titleRu": "ID камеры HALT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "halt_chamber.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HALT run id",
+      "titleRu": "ID прогона HALT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "halt_chamber.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "halt_chamber.ramp",
+      "kind": "quantity",
+      "unit": "K/min",
+      "titleEn": "Temp ramp",
+      "titleRu": "Скорость изменения температуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "halt_chamber.vibe.grms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vibration Grms",
+      "titleRu": "Вибрация Grms",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "halt_chamber.step",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Profile step",
+      "titleRu": "Шаг профиля",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "halt_chamber.dut.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "DUT failed",
+      "titleRu": "Отказ испытуемого",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "halt_chamber.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chamber state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "setup",
+        "cold",
+        "hot",
+        "vibe",
+        "combo",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

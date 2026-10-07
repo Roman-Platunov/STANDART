@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-cmp_tool.json",
+  "types": [
+    {
+      "path": "cmp_tool.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CMP tool id",
+      "titleRu": "ID установки CMP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cmp_tool.wafer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wafer id",
+      "titleRu": "ID пластины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cmp_tool.downforce",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Downforce",
+      "titleRu": "Прижим",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmp_tool.platen.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Platen RPM",
+      "titleRu": "Обороты планшайбы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmp_tool.slurry.flow",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Slurry flow",
+      "titleRu": "Расход суспензии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmp_tool.rate",
+      "kind": "quantity",
+      "unit": "nm/min",
+      "titleEn": "Removal rate",
+      "titleRu": "Скорость съёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmp_tool.endpoint",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Endpoint reached",
+      "titleRu": "Достигнута конечная точка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cmp_tool.film",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Film",
+      "titleRu": "Плёнка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "oxide",
+        "cu",
+        "w",
+        "sti",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

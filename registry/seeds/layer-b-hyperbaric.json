@@ -1,0 +1,116 @@
+{
+  "layer": "B14",
+  "name": "layer-b-hyperbaric.json",
+  "types": [
+    {
+      "path": "hyperbaric.chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hyperbaric chamber id",
+      "titleRu": "ID барокамеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hyperbaric.session.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HBOT session id",
+      "titleRu": "ID сеанса ГБО",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "hyperbaric.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Chamber pressure",
+      "titleRu": "Давление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hyperbaric.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oxygen fraction",
+      "titleRu": "Доля кислорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hyperbaric.depth.msw",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Equivalent depth",
+      "titleRu": "Эквивалентная глубина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hyperbaric.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Bottom time",
+      "titleRu": "Время экспозиции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hyperbaric.fire.risk",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire watch",
+      "titleRu": "Пожарная готовность",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hyperbaric.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chamber state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lock",
+        "compress",
+        "treat",
+        "decompress",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-linac_med.json",
+  "types": [
+    {
+      "path": "linac_med.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Medical linac id",
+      "titleRu": "ID медлинейного ускорителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "linac_med.plan.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Treatment plan id",
+      "titleRu": "ID плана облучения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "linac_med.dose.gy",
+      "kind": "quantity",
+      "unit": "Gy",
+      "titleEn": "Delivered dose",
+      "titleRu": "Подведённая доза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "linac_med.mu",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Monitor units",
+      "titleRu": "Мониторные единицы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "linac_med.gantry",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Gantry angle",
+      "titleRu": "Угол гантри",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "linac_med.energy",
+      "kind": "quantity",
+      "unit": "MV",
+      "titleEn": "Beam energy",
+      "titleRu": "Энергия пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "linac_med.beam.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Beam on",
+      "titleRu": "Пучок включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "linac_med.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Linac state",
+      "titleRu": "Состояние ускорителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "setup",
+        "treat",
+        "qa",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

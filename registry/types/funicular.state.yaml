@@ -1,0 +1,22 @@
+sid: "08374922"
+path: funicular.state
+aliases:
+  short: funicular.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фуникулёра
+  en: Funicular state
+fingerprint: sha256:083749221d8bdcea76e55bfabff1dec46efc9eebf93fb4d1146e2ecc1b09bda3
+enumValues:
+  - up
+  - down
+  - hold
+  - evac
+  - offline
+  - fault

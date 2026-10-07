@@ -1,0 +1,20 @@
+sid: 9ad1ee20
+path: tram_ops.mode
+aliases:
+  short: tram_ops.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим работы
+  en: Service mode
+fingerprint: sha256:9ad1ee206164dc023c3cc34a86bd91967f5ac7ffba7a0617bab47db1a7bc4e40
+enumValues:
+  - service
+  - not_in_service
+  - depot
+  - fault

@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-die_cast.json",
+  "types": [
+    {
+      "path": "die_cast.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Die-cast machine id",
+      "titleRu": "ID машины литья под давлением",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "die_cast.die.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Die-cast die id",
+      "titleRu": "ID пресс-формы ЛПД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "die_cast.shot.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Locking force",
+      "titleRu": "Усилие запирания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast.metal.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast.shot.velocity",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Shot velocity",
+      "titleRu": "Скорость запрессовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast.flash",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flash detected",
+      "titleRu": "Облой",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "die_cast.alloy",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Alloy family",
+      "titleRu": "Семейство сплава",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "alz",
+        "mg",
+        "zn",
+        "cu",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B14",
+  "name": "layer-b-cheese_cave.json",
+  "types": [
+    {
+      "path": "cheese_cave.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cheese cave id",
+      "titleRu": "ID сырного погреба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cheese_cave.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cheese lot id",
+      "titleRu": "ID партии сыра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cheese_cave.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cave temperature",
+      "titleRu": "Температура погреба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cheese_cave.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cave humidity",
+      "titleRu": "Влажность погреба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cheese_cave.age.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Age days",
+      "titleRu": "Срок выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cheese_cave.ammonia",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Ammonia",
+      "titleRu": "Аммиак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cheese_cave.turn.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Turn due",
+      "titleRu": "Пора переворачивать",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cheese_cave.rind",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rind type",
+      "titleRu": "Тип корки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "natural",
+        "washed",
+        "bloomy",
+        "wax",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

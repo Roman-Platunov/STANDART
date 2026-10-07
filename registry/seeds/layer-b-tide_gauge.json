@@ -1,0 +1,112 @@
+{
+  "layer": "B14",
+  "name": "layer-b-tide_gauge.json",
+  "types": [
+    {
+      "path": "tide_gauge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tide gauge id",
+      "titleRu": "ID мареографа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tide_gauge.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Sea level",
+      "titleRu": "Уровень моря",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tide_gauge.predicted",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Predicted tide",
+      "titleRu": "Прогноз прилива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tide_gauge.residual",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Residual",
+      "titleRu": "Остаток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tide_gauge.atm",
+      "kind": "quantity",
+      "unit": "hPa",
+      "titleEn": "Atmospheric pressure",
+      "titleRu": "Атмосферное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tide_gauge.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tide_gauge.flood.warn",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flood warning",
+      "titleRu": "Предупреждение о нагоне",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tide_gauge.quality",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Data quality",
+      "titleRu": "Качество данных",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "suspect",
+        "gap",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

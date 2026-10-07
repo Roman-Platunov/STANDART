@@ -1,0 +1,22 @@
+sid: 5ee64af6
+path: hip_vessel.state
+aliases:
+  short: hip_vessel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ГИП
+  en: HIP state
+fingerprint: sha256:5ee64af686b57f619ae84ce661a5c960166d9390c9f05b1984bcf5b6ace77a2d
+enumValues:
+  - load
+  - press
+  - heat
+  - hold
+  - cool
+  - fault

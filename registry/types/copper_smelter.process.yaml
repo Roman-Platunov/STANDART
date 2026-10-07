@@ -1,0 +1,21 @@
+sid: aeb32856
+path: copper_smelter.process
+aliases:
+  short: copper_smelter.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Стадия процесса
+  en: Process stage
+fingerprint: sha256:aeb328563a551f076687e5bf09f9e499778a2ab457f3f94d8867c9bddfad491e
+enumValues:
+  - flash
+  - bath
+  - convert
+  - anode
+  - other

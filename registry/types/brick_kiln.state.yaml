@@ -1,0 +1,22 @@
+sid: 7c8cbee8
+path: brick_kiln.state
+aliases:
+  short: brick_kiln.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние печи
+  en: Kiln state
+fingerprint: sha256:7c8cbee84a639e0c3199cb40047483a5213b1706f9808b8a9bc29f6e7589f447
+enumValues:
+  - dry
+  - preheat
+  - fire
+  - cool
+  - idle
+  - fault

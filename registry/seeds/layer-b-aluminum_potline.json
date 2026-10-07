@@ -1,0 +1,116 @@
+{
+  "layer": "B14",
+  "name": "layer-b-aluminum_potline.json",
+  "types": [
+    {
+      "path": "aluminum_potline.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Potline id",
+      "titleRu": "ID серии электролизёров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aluminum_potline.pot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pot id",
+      "titleRu": "ID электролизёра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aluminum_potline.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Line current",
+      "titleRu": "Сила тока серии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aluminum_potline.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Pot voltage",
+      "titleRu": "Напряжение ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aluminum_potline.bath.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура электролита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aluminum_potline.ce",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Current efficiency",
+      "titleRu": "Выход по току",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aluminum_potline.anode.effect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Anode effect",
+      "titleRu": "Анодный эффект",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aluminum_potline.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pot state",
+      "titleRu": "Состояние ванны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "produce",
+        "tap",
+        "anode",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

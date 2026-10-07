@@ -1,0 +1,113 @@
+{
+  "layer": "B14",
+  "name": "layer-b-snow_pillow.json",
+  "types": [
+    {
+      "path": "snow_pillow.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Snow pillow id",
+      "titleRu": "ID снеговой подушки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snow_pillow.swe",
+      "kind": "quantity",
+      "unit": "mmwe",
+      "titleEn": "Snow water equivalent",
+      "titleRu": "Запас воды в снеге",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_pillow.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Snow depth",
+      "titleRu": "Высота снега",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_pillow.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Snow density",
+      "titleRu": "Плотность снега",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_pillow.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pillow temperature",
+      "titleRu": "Температура подушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_pillow.precip",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Incremental precip",
+      "titleRu": "Прирост осадков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snow_pillow.melt",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Melt underway",
+      "titleRu": "Таяние",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "snow_pillow.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Snowpack state",
+      "titleRu": "Состояние снега",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "accumulate",
+        "ripe",
+        "melt",
+        "bare",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

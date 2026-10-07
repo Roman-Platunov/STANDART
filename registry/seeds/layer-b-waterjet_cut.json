@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-waterjet_cut.json",
+  "types": [
+    {
+      "path": "waterjet_cut.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Waterjet id",
+      "titleRu": "ID гидроабразива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waterjet_cut.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Waterjet job id",
+      "titleRu": "ID задания гидроабразива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waterjet_cut.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Pump pressure",
+      "titleRu": "Давление насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waterjet_cut.abrasive",
+      "kind": "quantity",
+      "unit": "kg/min",
+      "titleEn": "Abrasive rate",
+      "titleRu": "Подача абразива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waterjet_cut.speed",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Cut speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waterjet_cut.stand.off",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Standoff",
+      "titleRu": "Зазор сопла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waterjet_cut.garnet.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Garnet low",
+      "titleRu": "Мало граната",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "waterjet_cut.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Jet state",
+      "titleRu": "Состояние резки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "pierce",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

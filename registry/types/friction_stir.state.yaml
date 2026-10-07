@@ -1,0 +1,22 @@
+sid: f4bfe426
+path: friction_stir.state
+aliases:
+  short: friction_stir.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние СТП
+  en: FSW state
+fingerprint: sha256:f4bfe426a7d7d97637fc0959a6d2668b48a06f3e2c9e1ab39a8fbb194fb92498
+enumValues:
+  - plunge
+  - dwell
+  - weld
+  - extract
+  - idle
+  - fault

@@ -1,0 +1,113 @@
+{
+  "layer": "B14",
+  "name": "layer-b-river_gauge.json",
+  "types": [
+    {
+      "path": "river_gauge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "River gauge id",
+      "titleRu": "ID гидропоста",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "river_gauge.stage",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "River stage",
+      "titleRu": "Уровень реки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "river_gauge.discharge",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Discharge",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "river_gauge.velocity",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Mean velocity",
+      "titleRu": "Средняя скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "river_gauge.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Turbidity",
+      "titleRu": "Мутность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "river_gauge.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "river_gauge.flood",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flood stage",
+      "titleRu": "Паводковый уровень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "river_gauge.ice",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ice condition",
+      "titleRu": "Ледовая обстановка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "frazil",
+        "cover",
+        "breakup",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

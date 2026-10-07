@@ -1,0 +1,112 @@
+{
+  "layer": "B14",
+  "name": "layer-b-spaceport.json",
+  "types": [
+    {
+      "path": "spaceport.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spaceport id",
+      "titleRu": "ID космодрома",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spaceport.pad.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Launch pad id",
+      "titleRu": "ID стартовой площадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spaceport.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Pad wind",
+      "titleRu": "Ветер на площадке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spaceport.lightning.distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Lightning distance",
+      "titleRu": "Дальность молнии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spaceport.hold.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Hold remaining",
+      "titleRu": "Остаток холда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spaceport.go",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Range go",
+      "titleRu": "Разрешение полигона",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spaceport.scram",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scrub",
+      "titleRu": "Отмена пуска",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spaceport.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ops phase",
+      "titleRu": "Фаза операций",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "stack",
+        "fuel",
+        "count",
+        "hold",
+        "launch",
+        "secure"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

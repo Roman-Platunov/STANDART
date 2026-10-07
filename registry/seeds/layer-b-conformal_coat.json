@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-conformal_coat.json",
+  "types": [
+    {
+      "path": "conformal_coat.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Conformal coat line id",
+      "titleRu": "ID линии влагозащиты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "conformal_coat.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coat job id",
+      "titleRu": "ID задания покрытия",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "conformal_coat.thickness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Coat thickness",
+      "titleRu": "Толщина покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conformal_coat.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Coat viscosity",
+      "titleRu": "Вязкость покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conformal_coat.cure.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cure temperature",
+      "titleRu": "Температура отверждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conformal_coat.uv",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "UV intensity",
+      "titleRu": "Интенсивность УФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conformal_coat.skip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Keep-out skip",
+      "titleRu": "Пропуск зон",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "conformal_coat.chem",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chemistry",
+      "titleRu": "Химия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "acrylic",
+        "urethane",
+        "silicone",
+        "parylene",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B14",
+  "name": "layer-b-research_vessel.json",
+  "types": [
+    {
+      "path": "research_vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Research vessel id",
+      "titleRu": "ID НИС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "research_vessel.cruise.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cruise id",
+      "titleRu": "ID рейса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "research_vessel.winch.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Winch tension",
+      "titleRu": "Натяжение лебёдки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "research_vessel.wire.out",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Wire out",
+      "titleRu": "Вытравлено троса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "research_vessel.lab.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Lab temperature",
+      "titleRu": "Температура лаборатории",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "research_vessel.station.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Station depth",
+      "titleRu": "Глубина станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "research_vessel.dp",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "DP engaged",
+      "titleRu": "ДП включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "research_vessel.activity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Activity",
+      "titleRu": "Деятельность",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "transit",
+        "station",
+        "tow",
+        "coring",
+        "idle",
+        "port"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "layer": "B14",
+  "name": "layer-b-morgue_ops.json",
+  "types": [
+    {
+      "path": "morgue_ops.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Morgue unit id",
+      "titleRu": "ID морга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "morgue_ops.case.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Case id",
+      "titleRu": "ID случая",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "morgue_ops.cooler.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cooler temperature",
+      "titleRu": "Температура холодильника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "morgue_ops.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Occupied trays",
+      "titleRu": "Занятых лотков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "morgue_ops.capacity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tray capacity",
+      "titleRu": "Ёмкость лотков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "morgue_ops.door.open_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Door open time",
+      "titleRu": "Время открытой двери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "morgue_ops.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature alarm",
+      "titleRu": "Авария температуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "morgue_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Morgue state",
+      "titleRu": "Состояние морга",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "full",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

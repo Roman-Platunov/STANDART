@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-gypsum_board.json",
+  "types": [
+    {
+      "path": "gypsum_board.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gypsum board line id",
+      "titleRu": "ID линии ГКЛ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gypsum_board.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Board SKU id",
+      "titleRu": "ID сортамента ГКЛ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gypsum_board.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Line speed",
+      "titleRu": "Скорость линии ГКЛ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gypsum_board.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Board thickness",
+      "titleRu": "Толщина листа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gypsum_board.stucco.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Stucco feed",
+      "titleRu": "Подача строительного гипса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gypsum_board.dryer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dryer temperature",
+      "titleRu": "Температура сушилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gypsum_board.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Board break",
+      "titleRu": "Обрыв полотна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gypsum_board.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product type",
+      "titleRu": "Тип плиты",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "regular",
+        "mr",
+        "fire",
+        "acoustic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

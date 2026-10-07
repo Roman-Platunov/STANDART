@@ -1,0 +1,115 @@
+{
+  "layer": "B14",
+  "name": "layer-b-broadcast_truck.json",
+  "types": [
+    {
+      "path": "broadcast_truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OB van id",
+      "titleRu": "ID ПТС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "broadcast_truck.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Event id",
+      "titleRu": "ID трансляции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "broadcast_truck.uplink.snr",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Uplink SNR",
+      "titleRu": "ОСШ аплинка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast_truck.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "TX power",
+      "titleRu": "Мощность передатчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast_truck.gen.fuel",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Generator fuel",
+      "titleRu": "Топливо генератора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "broadcast_truck.sat.az",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Antenna azimuth",
+      "titleRu": "Азимут антенны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "broadcast_truck.onair",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "On air",
+      "titleRu": "В эфире",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "broadcast_truck.link",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Link type",
+      "titleRu": "Тип канала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sat",
+        "bonded",
+        "fiber",
+        "microwave",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B14",
+  "name": "layer-b-lime_kiln.json",
+  "types": [
+    {
+      "path": "lime_kiln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lime kiln id",
+      "titleRu": "ID известковой печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lime_kiln.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Burning zone temperature",
+      "titleRu": "Температура зоны обжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Stone feed",
+      "titleRu": "Подача камня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln.cao",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Available CaO",
+      "titleRu": "Активный CaO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln.fuel",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fuel gas flow",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln.co2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Kiln CO2",
+      "titleRu": "CO2 печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lime_kiln.ring",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ringing",
+      "titleRu": "Кольцеобразование",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lime_kiln.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kiln type",
+      "titleRu": "Тип печи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rotary",
+        "shaft",
+        "pfr",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

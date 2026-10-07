@@ -1,0 +1,112 @@
+{
+  "layer": "B14",
+  "name": "layer-b-airport_fuel.json",
+  "types": [
+    {
+      "path": "airport_fuel.hydrant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel hydrant id",
+      "titleRu": "ID гидранта авиатоплива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airport_fuel.pit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel pit id",
+      "titleRu": "ID пит-клапана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airport_fuel.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Fuel flow",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airport_fuel.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Hydrant pressure",
+      "titleRu": "Давление гидранта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airport_fuel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fuel temperature",
+      "titleRu": "Температура топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airport_fuel.fsii",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "FSII concentration",
+      "titleRu": "Концентрация ПВКЖ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airport_fuel.water",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Free water detected",
+      "titleRu": "Обнаружена свободная вода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "airport_fuel.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fuel grade",
+      "titleRu": "Марка топлива",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "jet_a",
+        "jet_a1",
+        "ts1",
+        "avgas",
+        "saf_blend",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

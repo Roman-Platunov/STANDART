@@ -1,0 +1,121 @@
+{
+  "layer": "B14",
+  "name": "layer-b-potash_mill.json",
+  "types": [
+    {
+      "path": "potash_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Potash mill id",
+      "titleRu": "ID калийного комбината",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "potash_mill.k2o",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "K2O grade",
+      "titleRu": "Содержание K2O",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "potash_mill.flotation.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flotation recovery",
+      "titleRu": "Извлечение флотацией",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "potash_mill.dryer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product dryer temperature",
+      "titleRu": "Температура сушилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potash_mill.compaction",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Compaction rate",
+      "titleRu": "Производительность компактирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potash_mill.dust",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "Mill dust",
+      "titleRu": "Пыль комбината",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "potash_mill.cake.wet",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Filter cake wet",
+      "titleRu": "Кека влажная",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "potash_mill.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "float",
+        "crystal",
+        "compact",
+        "pack",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

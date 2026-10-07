@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-plasma_cutter.json",
+  "types": [
+    {
+      "path": "plasma_cutter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plasma cutter id",
+      "titleRu": "ID плазменной резки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plasma_cutter.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plasma job id",
+      "titleRu": "ID задания плазмы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plasma_cutter.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Cut current",
+      "titleRu": "Ток резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plasma_cutter.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Arc voltage",
+      "titleRu": "Напряжение дуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plasma_cutter.speed",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Cut speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plasma_cutter.gas.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Plasma gas flow",
+      "titleRu": "Расход плазмообразующего газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plasma_cutter.pierce.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pierce OK",
+      "titleRu": "Прожиг OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "plasma_cutter.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process gas",
+      "titleRu": "Плазмообразующий газ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "air",
+        "o2",
+        "n2",
+        "h35",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

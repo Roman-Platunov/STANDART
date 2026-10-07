@@ -1,0 +1,20 @@
+sid: ef178d86
+path: tide_gauge.quality
+aliases:
+  short: tide_gauge.quality
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Качество данных
+  en: Data quality
+fingerprint: sha256:ef178d8687b971b35e2b89c4d92fb10ee53aa68edffd216acd994c0e92186e73
+enumValues:
+  - good
+  - suspect
+  - gap
+  - offline

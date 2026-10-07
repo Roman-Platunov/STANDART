@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-dry_dock.json",
+  "types": [
+    {
+      "path": "dry_dock.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dry dock id",
+      "titleRu": "ID сухого дока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dry_dock.ship.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Docked ship id",
+      "titleRu": "ID судна в доке",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dry_dock.keel.blocks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Keel block count",
+      "titleRu": "Число кильблоков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dry_dock.flood.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Flood level",
+      "titleRu": "Уровень затопления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dry_dock.pump.rate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Dewatering rate",
+      "titleRu": "Производительность откачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dry_dock.gate.seal",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Gate seal pressure",
+      "titleRu": "Давление уплотнения ворот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dry_dock.dry",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dock dry",
+      "titleRu": "Док осушен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dry_dock.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dock state",
+      "titleRu": "Состояние дока",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flood",
+        "dock",
+        "work",
+        "undock",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

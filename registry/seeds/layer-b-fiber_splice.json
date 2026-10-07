@@ -1,0 +1,109 @@
+{
+  "layer": "B14",
+  "name": "layer-b-fiber_splice.json",
+  "types": [
+    {
+      "path": "fiber_splice.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Splice job id",
+      "titleRu": "ID работы по сварке",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fiber_splice.cable.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fiber cable id",
+      "titleRu": "ID оптического кабеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fiber_splice.loss",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Splice loss",
+      "titleRu": "Потери сварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fiber_splice.arc",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Arc time",
+      "titleRu": "Время дуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fiber_splice.cleave.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Cleave angle",
+      "titleRu": "Угол скола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fiber_splice.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Splice count",
+      "titleRu": "Число сварок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fiber_splice.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Splice pass",
+      "titleRu": "Сварка принята",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fiber_splice.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fusion",
+        "mech",
+        "connector",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

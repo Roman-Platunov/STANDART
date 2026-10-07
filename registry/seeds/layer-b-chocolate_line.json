@@ -1,0 +1,112 @@
+{
+  "layer": "B14",
+  "name": "layer-b-chocolate_line.json",
+  "types": [
+    {
+      "path": "chocolate_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chocolate line id",
+      "titleRu": "ID линии шоколада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chocolate_line.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chocolate SKU id",
+      "titleRu": "ID SKU шоколада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chocolate_line.conche.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Conche temperature",
+      "titleRu": "Температура конширования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chocolate_line.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Chocolate viscosity",
+      "titleRu": "Вязкость шоколада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chocolate_line.temper",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Temper temperature",
+      "titleRu": "Температура темперирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chocolate_line.throughput",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chocolate_line.bloom",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bloom risk",
+      "titleRu": "Риск поседения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chocolate_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "conche",
+        "temper",
+        "mold",
+        "cool",
+        "wrap",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

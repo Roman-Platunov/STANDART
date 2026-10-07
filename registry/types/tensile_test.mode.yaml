@@ -1,0 +1,21 @@
+sid: c338c45a
+path: tensile_test.mode
+aliases:
+  short: tensile_test.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим испытания
+  en: Test mode
+fingerprint: sha256:c338c45a1361b127160ddcbb2d8e18bed02738044e71d84c5d1c2924f0283b18
+enumValues:
+  - tensile
+  - compress
+  - flex
+  - peel
+  - other

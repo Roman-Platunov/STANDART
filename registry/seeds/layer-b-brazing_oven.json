@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-brazing_oven.json",
+  "types": [
+    {
+      "path": "brazing_oven.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brazing oven id",
+      "titleRu": "ID печи пайки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brazing_oven.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Braze batch id",
+      "titleRu": "ID садки пайки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brazing_oven.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zone temperature",
+      "titleRu": "Температура зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brazing_oven.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Vacuum level",
+      "titleRu": "Вакуум",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brazing_oven.hold.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Hold time",
+      "titleRu": "Выдержка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brazing_oven.dewpoint",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Atmosphere dewpoint",
+      "titleRu": "Точка росы атмосферы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brazing_oven.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vacuum leak",
+      "titleRu": "Натекание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "brazing_oven.atm",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Atmosphere",
+      "titleRu": "Атмосфера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vacuum",
+        "h2",
+        "n2",
+        "air",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B14",
+  "name": "layer-b-edm_machine.json",
+  "types": [
+    {
+      "path": "edm_machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EDM machine id",
+      "titleRu": "ID электроэрозионного станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "edm_machine.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EDM job id",
+      "titleRu": "ID задания ЭЭО",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "edm_machine.gap.v",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Gap voltage",
+      "titleRu": "Напряжение межэлектродного зазора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "edm_machine.on.time",
+      "kind": "quantity",
+      "unit": "us",
+      "titleEn": "Pulse on-time",
+      "titleRu": "Длительность импульса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "edm_machine.flush",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Dielectric flush",
+      "titleRu": "Прокачка диэлектрика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "edm_machine.wear",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Electrode wear",
+      "titleRu": "Износ электрода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "edm_machine.short",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gap short",
+      "titleRu": "Короткое замыкание зазора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "edm_machine.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "EDM type",
+      "titleRu": "Тип ЭЭО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sinker",
+        "wire",
+        "hole",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

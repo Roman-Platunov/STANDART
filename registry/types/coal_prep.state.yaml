@@ -1,0 +1,21 @@
+sid: 0352fb16
+path: coal_prep.state
+aliases:
+  short: coal_prep.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фабрики
+  en: Plant state
+fingerprint: sha256:0352fb16aa7af8175c6a9c4b038dc5ed340462101cba712e9848daa632a38426
+enumValues:
+  - run
+  - wash
+  - idle
+  - maintain
+  - fault

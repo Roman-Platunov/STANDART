@@ -1,0 +1,112 @@
+{
+  "layer": "B14",
+  "name": "layer-b-hip_vessel.json",
+  "types": [
+    {
+      "path": "hip_vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HIP vessel id",
+      "titleRu": "ID установки ГИП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hip_vessel.cycle.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HIP cycle id",
+      "titleRu": "ID цикла ГИП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hip_vessel.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "HIP pressure",
+      "titleRu": "Давление ГИП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hip_vessel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "HIP temperature",
+      "titleRu": "Температура ГИП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hip_vessel.hold.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Hold time",
+      "titleRu": "Выдержка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hip_vessel.gas.use",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Argon used",
+      "titleRu": "Расход аргона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hip_vessel.seal.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seal OK",
+      "titleRu": "Уплотнение OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hip_vessel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "HIP state",
+      "titleRu": "Состояние ГИП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "press",
+        "heat",
+        "hold",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

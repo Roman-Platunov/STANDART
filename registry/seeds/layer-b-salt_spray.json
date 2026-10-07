@@ -1,0 +1,115 @@
+{
+  "layer": "B14",
+  "name": "layer-b-salt_spray.json",
+  "types": [
+    {
+      "path": "salt_spray.chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Salt spray chamber id",
+      "titleRu": "ID камеры соляного тумана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "salt_spray.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Salt spray run id",
+      "titleRu": "ID испытания соляным туманом",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "salt_spray.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "salt_spray.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fog pH",
+      "titleRu": "pH тумана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "salt_spray.collect",
+      "kind": "quantity",
+      "unit": "mL/h",
+      "titleEn": "Collection rate",
+      "titleRu": "Сбор конденсата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "salt_spray.nacl",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "NaCl concentration",
+      "titleRu": "Концентрация NaCl",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "salt_spray.nozzle.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Nozzle OK",
+      "titleRu": "Форсунка в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "salt_spray.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "nss",
+        "ass",
+        "cass",
+        "cyclic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

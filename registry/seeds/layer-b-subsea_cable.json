@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-subsea_cable.json",
+  "types": [
+    {
+      "path": "subsea_cable.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cable system id",
+      "titleRu": "ID кабельной системы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "subsea_cable.span.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cable span id",
+      "titleRu": "ID участка кабеля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "subsea_cable.otdr.loss",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "OTDR span loss",
+      "titleRu": "Потери OTDR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "subsea_cable.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Power feed current",
+      "titleRu": "Ток питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "subsea_cable.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Lay depth",
+      "titleRu": "Глубина укладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "subsea_cable.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Lay tension",
+      "titleRu": "Натяжение при укладке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "subsea_cable.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cable fault",
+      "titleRu": "Повреждение кабеля",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "subsea_cable.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cable state",
+      "titleRu": "Состояние кабеля",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lay",
+        "in_service",
+        "repair",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

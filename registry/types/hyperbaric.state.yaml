@@ -1,0 +1,22 @@
+sid: "67254771"
+path: hyperbaric.state
+aliases:
+  short: hyperbaric.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние камеры
+  en: Chamber state
+fingerprint: sha256:672547715a2725cbab248b4911bf3b2ac7632b28d49b9ecf51495a4b4f2f9bb3
+enumValues:
+  - lock
+  - compress
+  - treat
+  - decompress
+  - idle
+  - fault

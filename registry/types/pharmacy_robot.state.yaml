@@ -1,0 +1,21 @@
+sid: b26bd63d
+path: pharmacy_robot.state
+aliases:
+  short: pharmacy_robot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние робота
+  en: Robot state
+fingerprint: sha256:b26bd63d02543ff6698d46650e8f5061616028865eeac0b338020dd13f424456
+enumValues:
+  - idle
+  - pick
+  - pack
+  - restock
+  - fault

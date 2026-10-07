@@ -1,0 +1,115 @@
+{
+  "layer": "B14",
+  "name": "layer-b-vineyard_cellar.json",
+  "types": [
+    {
+      "path": "vineyard_cellar.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cellar id",
+      "titleRu": "ID винотеки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vineyard_cellar.barrel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Barrel id",
+      "titleRu": "ID бочки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vineyard_cellar.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cellar temperature",
+      "titleRu": "Температура погреба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vineyard_cellar.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cellar humidity",
+      "titleRu": "Влажность погреба",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vineyard_cellar.ullage",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ullage",
+      "titleRu": "Усушка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vineyard_cellar.so2",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Free SO2",
+      "titleRu": "Свободный SO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vineyard_cellar.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready to bottle",
+      "titleRu": "Готово к розливу",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vineyard_cellar.vessel",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vessel",
+      "titleRu": "Ёмкость",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "barrel",
+        "tank",
+        "amphora",
+        "bottle",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

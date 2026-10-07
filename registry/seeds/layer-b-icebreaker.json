@@ -1,0 +1,114 @@
+{
+  "layer": "B14",
+  "name": "layer-b-icebreaker.json",
+  "types": [
+    {
+      "path": "icebreaker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Icebreaker id",
+      "titleRu": "ID ледокола",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "icebreaker.ice.thickness",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Ice thickness",
+      "titleRu": "Толщина льда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icebreaker.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Propulsion power",
+      "titleRu": "Мощность движения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icebreaker.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Speed through ice",
+      "titleRu": "Скорость во льду",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icebreaker.heel",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Heel",
+      "titleRu": "Крен",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icebreaker.trim",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Trim",
+      "titleRu": "Дифферент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icebreaker.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Beset in ice",
+      "titleRu": "Зажат льдами",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "icebreaker.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ops mode",
+      "titleRu": "Режим работы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "channel",
+        "convoy",
+        "ram",
+        "port",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

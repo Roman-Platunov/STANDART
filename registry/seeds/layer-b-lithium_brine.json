@@ -1,0 +1,111 @@
+{
+  "layer": "B14",
+  "name": "layer-b-lithium_brine.json",
+  "types": [
+    {
+      "path": "lithium_brine.pond.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brine pond id",
+      "titleRu": "ID пруда рассола",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lithium_brine.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brine well id",
+      "titleRu": "ID скважины рассола",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lithium_brine.li",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Lithium concentration",
+      "titleRu": "Концентрация лития",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lithium_brine.evap.rate",
+      "kind": "quantity",
+      "unit": "mm/d",
+      "titleEn": "Evaporation rate",
+      "titleRu": "Скорость испарения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lithium_brine.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Pond level",
+      "titleRu": "Уровень пруда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lithium_brine.sg",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Specific gravity",
+      "titleRu": "Удельный вес",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lithium_brine.harvest",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Harvest ready",
+      "titleRu": "Готов к съёму",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lithium_brine.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Стадия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pump",
+        "evap",
+        "harvest",
+        "plant",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

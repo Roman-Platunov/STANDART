@@ -1,0 +1,112 @@
+{
+  "layer": "B14",
+  "name": "layer-b-rocket_stand.json",
+  "types": [
+    {
+      "path": "rocket_stand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rocket test stand id",
+      "titleRu": "ID огневого стенда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rocket_stand.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hotfire run id",
+      "titleRu": "ID огневого испытания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rocket_stand.thrust",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Measured thrust",
+      "titleRu": "Измеренная тяга",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rocket_stand.chamber.p",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber pressure",
+      "titleRu": "Давление в камере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rocket_stand.mix.ratio",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Mixture ratio",
+      "titleRu": "Соотношение компонентов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rocket_stand.duration.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Burn duration",
+      "titleRu": "Длительность горения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rocket_stand.abort",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Abort",
+      "titleRu": "Аварийный останов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rocket_stand.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stand state",
+      "titleRu": "Состояние стенда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "safe",
+        "chill",
+        "ignite",
+        "steady",
+        "cutoff",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

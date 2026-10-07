@@ -1,0 +1,115 @@
+{
+  "layer": "B14",
+  "name": "layer-b-wire_draw.json",
+  "types": [
+    {
+      "path": "wire_draw.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wire drawing line id",
+      "titleRu": "ID линии волочения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wire_draw.die.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Drawing die id",
+      "titleRu": "ID фильеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wire_draw.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Drawing speed",
+      "titleRu": "Скорость волочения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_draw.reduction",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Area reduction",
+      "titleRu": "Обжатие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wire_draw.diameter",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wire diameter",
+      "titleRu": "Диаметр проволоки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_draw.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Capstan tension",
+      "titleRu": "Натяжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_draw.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wire break",
+      "titleRu": "Обрыв проволоки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wire_draw.metal",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Metal",
+      "titleRu": "Металл",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cu",
+        "al",
+        "steel",
+        "ss",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

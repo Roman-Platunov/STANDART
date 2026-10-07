@@ -1,0 +1,118 @@
+{
+  "layer": "B14",
+  "name": "layer-b-gold_mill.json",
+  "types": [
+    {
+      "path": "gold_mill.circuit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gold mill circuit id",
+      "titleRu": "ID цепи золотоизвлечения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gold_mill.feed.grade",
+      "kind": "quantity",
+      "unit": "g/t",
+      "titleEn": "Feed grade",
+      "titleRu": "Содержание в питании",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gold_mill.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovery",
+      "titleRu": "Извлечение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gold_mill.cn",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Free cyanide",
+      "titleRu": "Свободный цианид",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gold_mill.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Leach pH",
+      "titleRu": "pH выщелачивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gold_mill.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Mill throughput",
+      "titleRu": "Производительность мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gold_mill.carbon.loaded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Carbon loaded",
+      "titleRu": "Уголь загружен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gold_mill.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cil",
+        "cip",
+        "heap",
+        "flotation",
+        "gravity",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: cba71dd8
+path: linac_med.state
+aliases:
+  short: linac_med.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ускорителя
+  en: Linac state
+fingerprint: sha256:cba71dd8594076f99c52b0ca45b1278d26cbf001cde37238f9f30d6a5885eacd
+enumValues:
+  - idle
+  - setup
+  - treat
+  - qa
+  - fault

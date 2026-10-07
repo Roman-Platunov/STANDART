@@ -1,0 +1,21 @@
+sid: 43f098fd
+path: river_gauge.ice
+aliases:
+  short: river_gauge.ice
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Ледовая обстановка
+  en: Ice condition
+fingerprint: sha256:43f098fd036d225bdb7f52c64c93189add11f5fdb73c0ea1dbbcfaebcbd86fd7
+enumValues:
+  - open
+  - frazil
+  - cover
+  - breakup
+  - unknown

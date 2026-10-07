@@ -1,0 +1,21 @@
+sid: 1fa7ce85
+path: subsea_cable.state
+aliases:
+  short: subsea_cable.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кабеля
+  en: Cable state
+fingerprint: sha256:1fa7ce85d286b945296a54a6ba118ce74c8284fd6f3900b6ed41a98f3ba3bb5e
+enumValues:
+  - lay
+  - in_service
+  - repair
+  - idle
+  - fault

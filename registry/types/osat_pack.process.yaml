@@ -1,0 +1,22 @@
+sid: d8982b19
+path: osat_pack.process
+aliases:
+  short: osat_pack.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Процесс
+  en: Process
+fingerprint: sha256:d8982b19408c2b8b6fd896a8ac544beeeeb82c13e68679b151c18d745d3d83b1
+enumValues:
+  - dicing
+  - die_attach
+  - wirebond
+  - mold
+  - test
+  - other

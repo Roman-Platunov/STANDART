@@ -1,0 +1,22 @@
+sid: 369b0f3f
+path: rocket_stand.state
+aliases:
+  short: rocket_stand.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стенда
+  en: Stand state
+fingerprint: sha256:369b0f3f974c9fdaa5c0fdf48b54ee071458fe2cada818517a1f64cd5fe670cd
+enumValues:
+  - safe
+  - chill
+  - ignite
+  - steady
+  - cutoff
+  - fault

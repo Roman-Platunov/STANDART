@@ -1,0 +1,115 @@
+{
+  "layer": "B14",
+  "name": "layer-b-osat_pack.json",
+  "types": [
+    {
+      "path": "osat_pack.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OSAT line id",
+      "titleRu": "ID линии корпусирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "osat_pack.lot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Assembly lot id",
+      "titleRu": "ID партии сборки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "osat_pack.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Assembly yield",
+      "titleRu": "Выход годных",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "osat_pack.bond.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Bond force",
+      "titleRu": "Усилие разварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osat_pack.mold.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mold temperature",
+      "titleRu": "Температура пресс-формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osat_pack.units",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Units processed",
+      "titleRu": "Обработано единиц",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osat_pack.void",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mold void",
+      "titleRu": "Раковина в компаунде",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "osat_pack.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dicing",
+        "die_attach",
+        "wirebond",
+        "mold",
+        "test",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

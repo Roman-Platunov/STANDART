@@ -1,0 +1,120 @@
+{
+  "layer": "B14",
+  "name": "layer-b-ice_cream_line.json",
+  "types": [
+    {
+      "path": "ice_cream_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ice cream line id",
+      "titleRu": "ID линии мороженого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ice_cream_line.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ice cream SKU id",
+      "titleRu": "ID SKU мороженого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ice_cream_line.draw.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Draw temperature",
+      "titleRu": "Температура выгрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_cream_line.overrun",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Overrun",
+      "titleRu": "Взбитость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 200
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ice_cream_line.harden.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hardening temperature",
+      "titleRu": "Температура закаливания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_cream_line.mix.solids",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mix solids",
+      "titleRu": "Сухие вещества смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ice_cream_line.freezer.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Freezer OK",
+      "titleRu": "Фризер в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ice_cream_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "age",
+        "freeze",
+        "fill",
+        "harden",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

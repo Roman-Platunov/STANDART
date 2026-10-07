@@ -1,0 +1,113 @@
+{
+  "layer": "B14",
+  "name": "layer-b-pharmacy_robot.json",
+  "types": [
+    {
+      "path": "pharmacy_robot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pharmacy robot id",
+      "titleRu": "ID аптечного робота",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pharmacy_robot.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dispense order id",
+      "titleRu": "ID заказа на отпуск",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "restricted"
+    },
+    {
+      "path": "pharmacy_robot.picks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Picks completed",
+      "titleRu": "Выполнено отборов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy_robot.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Queue length",
+      "titleRu": "Длина очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy_robot.error.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Error rate",
+      "titleRu": "Доля ошибок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy_robot.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cabinet temperature",
+      "titleRu": "Температура шкафа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pharmacy_robot.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Jam",
+      "titleRu": "Замятие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pharmacy_robot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Robot state",
+      "titleRu": "Состояние робота",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "pick",
+        "pack",
+        "restock",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

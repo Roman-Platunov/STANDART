@@ -1,0 +1,21 @@
+sid: 5f52a0db
+path: waterjet_cut.state
+aliases:
+  short: waterjet_cut.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние резки
+  en: Jet state
+fingerprint: sha256:5f52a0db1d7c9f5e2d40ca61341be13b97b1f8fd5826f7aabbe9da92cc28fe36
+enumValues:
+  - cut
+  - pierce
+  - idle
+  - maintain
+  - fault
