@@ -1,0 +1,20 @@
+sid: 025f0239
+path: desal_msf.state
+aliases:
+  short: desal_msf.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:025f02391c2cfcede1d11c22339fd79b833584d3cdf9453c2ecf5119225392e6
+enumValues:
+  - run
+  - startup
+  - idle
+  - fault

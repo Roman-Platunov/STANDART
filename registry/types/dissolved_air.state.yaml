@@ -1,0 +1,20 @@
+sid: "552742e7"
+path: dissolved_air.state
+aliases:
+  short: dissolved_air.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние DAF
+  en: DAF state
+fingerprint: sha256:552742e73f7b1e390ebca72149e32307e31b5a8c32cdad1821e8be4ea0aba26b
+enumValues:
+  - float
+  - idle
+  - clean
+  - fault

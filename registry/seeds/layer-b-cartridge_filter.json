@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-cartridge_filter.json",
+  "types": [
+    {
+      "path": "cartridge_filter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cartridge filter id",
+      "titleRu": "ID картриджного фильтра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cartridge_filter.dp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cartridge_filter.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cartridge_filter.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Outlet turbidity",
+      "titleRu": "Мутность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cartridge_filter.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Runtime since change",
+      "titleRu": "Наработка с замены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cartridge_filter.micron",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Rating",
+      "titleRu": "Рейтинг",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cartridge_filter.change",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Change due",
+      "titleRu": "Пора менять",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cartridge_filter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Filter state",
+      "titleRu": "Состояние фильтра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "filter",
+        "change",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

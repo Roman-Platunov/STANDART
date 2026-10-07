@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-gac_filter.json",
+  "types": [
+    {
+      "path": "gac_filter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "GAC filter id",
+      "titleRu": "ID фильтра ГАУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gac_filter.ebct.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "EBCT",
+      "titleRu": "Время контакта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gac_filter.toc",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Outlet TOC",
+      "titleRu": "ТОС на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gac_filter.headloss",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Headloss",
+      "titleRu": "Потери напора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gac_filter.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gac_filter.bed.life.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Estimated bed life left",
+      "titleRu": "Остаточный ресурс слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gac_filter.replace",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Media replace due",
+      "titleRu": "Пора менять загрузку",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gac_filter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Filter state",
+      "titleRu": "Состояние фильтра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "adsorb",
+        "backwash",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

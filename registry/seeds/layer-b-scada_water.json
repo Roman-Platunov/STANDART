@@ -1,0 +1,113 @@
+{
+  "layer": "B25",
+  "name": "layer-b-scada_water.json",
+  "types": [
+    {
+      "path": "scada_water.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Water SCADA system id",
+      "titleRu": "ID SCADA водоснабжения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scada_water.rtus",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "RTUs online",
+      "titleRu": "RTU онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scada_water.alarms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active alarms",
+      "titleRu": "Активных аварий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scada_water.latency.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Poll latency",
+      "titleRu": "Задержка опроса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scada_water.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "System uptime",
+      "titleRu": "Доступность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scada_water.tags",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tags updating",
+      "titleRu": "Обновляемых тегов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scada_water.degraded",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Degraded mode",
+      "titleRu": "Деградация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scada_water.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SCADA state",
+      "titleRu": "Состояние SCADA",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "degraded",
+        "failover",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

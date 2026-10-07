@@ -1,0 +1,20 @@
+sid: ccf19251
+path: condensate_pol.state
+aliases:
+  short: condensate_pol.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние очистки
+  en: Polisher state
+fingerprint: sha256:ccf19251e1a5e206c21bc35c9fa174d2e4b31cd48ae541ecfcc77d9a66cfc4c2
+enumValues:
+  - polish
+  - regen
+  - bypass
+  - fault

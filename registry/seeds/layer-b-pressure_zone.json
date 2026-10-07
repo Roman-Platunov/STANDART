@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-pressure_zone.json",
+  "types": [
+    {
+      "path": "pressure_zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pressure zone id",
+      "titleRu": "ID зоны давления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pressure_zone.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Zone pressure",
+      "titleRu": "Давление зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pressure_zone.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Zone inflow",
+      "titleRu": "Приток в зону",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pressure_zone.min.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Minimum pressure today",
+      "titleRu": "Мин. давление за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pressure_zone.max.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Maximum pressure today",
+      "titleRu": "Макс. давление за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pressure_zone.customers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Customers served",
+      "titleRu": "Абонентов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pressure_zone.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pressure breach",
+      "titleRu": "Выход за пределы давления",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pressure_zone.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "high",
+        "low",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: a98caf34
+path: distribution_pump.state
+aliases:
+  short: distribution_pump.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:a98caf3479e458ab4f86cbbdf963a32c4ec69d09610c0dfe83a37ea040763656
+enumValues:
+  - auto
+  - manual
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: 535b57ec
+path: ozone_contactor.state
+aliases:
+  short: ozone_contactor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние контактора
+  en: Contactor state
+fingerprint: sha256:535b57ecef4daf680f7ff905b96f77968683d55d8a9170762aa2355673ee96a6
+enumValues:
+  - produce
+  - purge
+  - idle
+  - fault

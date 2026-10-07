@@ -1,0 +1,20 @@
+sid: dc32bece
+path: cartridge_filter.state
+aliases:
+  short: cartridge_filter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фильтра
+  en: Filter state
+fingerprint: sha256:dc32becead4978803f33c7df03d53fb8d760a404a222e4a6aa59255c899b4db3
+enumValues:
+  - filter
+  - change
+  - idle
+  - fault

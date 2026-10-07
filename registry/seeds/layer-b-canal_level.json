@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-canal_level.json",
+  "types": [
+    {
+      "path": "canal_level.reach.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Irrigation canal reach id",
+      "titleRu": "ID бьефа ирригационного канала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "canal_level.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Water level",
+      "titleRu": "Уровень воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "canal_level.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "canal_level.setpoint",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Level setpoint",
+      "titleRu": "Уставка уровня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "canal_level.seepage",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Estimated seepage",
+      "titleRu": "Оценка фильтрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "canal_level.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "canal_level.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High level",
+      "titleRu": "Высокий уровень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "canal_level.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reach state",
+      "titleRu": "Состояние бьефа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "high",
+        "low",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

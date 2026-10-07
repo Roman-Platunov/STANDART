@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-secondary_clarif.json",
+  "types": [
+    {
+      "path": "secondary_clarif.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Secondary clarifier id",
+      "titleRu": "ID вторичного отстойника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "secondary_clarif.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Influent flow",
+      "titleRu": "Расход на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "secondary_clarif.svi",
+      "kind": "quantity",
+      "unit": "mL/g",
+      "titleEn": "SVI",
+      "titleRu": "Иловый индекс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "secondary_clarif.ras",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "RAS flow",
+      "titleRu": "Расход возвратного ила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "secondary_clarif.was",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "WAS flow",
+      "titleRu": "Расход избыточного ила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "secondary_clarif.blanket",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Sludge blanket",
+      "titleRu": "Уровень илового слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "secondary_clarif.bulking",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bulking",
+      "titleRu": "Вспухание ила",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "secondary_clarif.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Clarifier state",
+      "titleRu": "Состояние отстойника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "settle",
+        "ras",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

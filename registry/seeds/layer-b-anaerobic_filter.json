@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-anaerobic_filter.json",
+  "types": [
+    {
+      "path": "anaerobic_filter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Anaerobic filter id",
+      "titleRu": "ID анаэробного фильтра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "anaerobic_filter.cod.in",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Influent COD",
+      "titleRu": "ХПК на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anaerobic_filter.cod.out",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Effluent COD",
+      "titleRu": "ХПК на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anaerobic_filter.biogas",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Biogas",
+      "titleRu": "Биогаз",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anaerobic_filter.hrt.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "HRT",
+      "titleRu": "Гидравлическое время",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anaerobic_filter.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Temperature",
+      "titleRu": "Температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "anaerobic_filter.clog",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Media clog",
+      "titleRu": "Засор загрузки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "anaerobic_filter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Filter state",
+      "titleRu": "Состояние фильтра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "treat",
+        "flush",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

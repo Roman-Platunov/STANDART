@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-actuated_gate.json",
+  "types": [
+    {
+      "path": "actuated_gate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Actuated canal / channel gate id",
+      "titleRu": "ID приводного затвора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "actuated_gate.position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Gate position",
+      "titleRu": "Положение затвора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "actuated_gate.level.up",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Upstream level",
+      "titleRu": "Уровень выше",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "actuated_gate.level.down",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Downstream level",
+      "titleRu": "Уровень ниже",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "actuated_gate.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Estimated flow",
+      "titleRu": "Оценка расхода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "actuated_gate.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Actuator torque",
+      "titleRu": "Момент привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "actuated_gate.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gate jam",
+      "titleRu": "Заклинивание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "actuated_gate.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gate state",
+      "titleRu": "Состояние затвора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "auto",
+        "manual",
+        "fault",
+        "locked"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

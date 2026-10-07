@@ -1,0 +1,118 @@
+{
+  "layer": "B25",
+  "name": "layer-b-amr_collector.json",
+  "types": [
+    {
+      "path": "amr_collector.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AMR / AMI collector id",
+      "titleRu": "ID коллектора AMR/AMI",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "amr_collector.meters",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Meters heard today",
+      "titleRu": "Счётчиков услышано за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amr_collector.success",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Read success",
+      "titleRu": "Успешность считывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "amr_collector.rssi",
+      "kind": "quantity",
+      "unit": "dBm",
+      "titleEn": "Average RSSI",
+      "titleRu": "Средний RSSI",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amr_collector.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Collector battery",
+      "titleRu": "Батарея коллектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "amr_collector.retries",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Retries today",
+      "titleRu": "Повторов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amr_collector.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "RF jam / noise",
+      "titleRu": "Помехи RF",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "amr_collector.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Collector state",
+      "titleRu": "Состояние коллектора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "degraded",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

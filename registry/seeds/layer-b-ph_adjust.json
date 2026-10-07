@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-ph_adjust.json",
+  "types": [
+    {
+      "path": "ph_adjust.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "pH adjustment skid id",
+      "titleRu": "ID станции корректировки pH",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ph_adjust.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Outlet pH",
+      "titleRu": "pH на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ph_adjust.acid",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Acid dose",
+      "titleRu": "Доза кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ph_adjust.base",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Base dose",
+      "titleRu": "Доза щёлочи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ph_adjust.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Water flow",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ph_adjust.setpoint",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH setpoint",
+      "titleRu": "Уставка pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ph_adjust.out.of.band",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Out of band",
+      "titleRu": "Вне диапазона",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ph_adjust.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Skid state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "control",
+        "idle",
+        "calibrate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

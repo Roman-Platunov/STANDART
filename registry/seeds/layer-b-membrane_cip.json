@@ -1,0 +1,115 @@
+{
+  "layer": "B25",
+  "name": "layer-b-membrane_cip.json",
+  "types": [
+    {
+      "path": "membrane_cip.skid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Membrane CIP skid id",
+      "titleRu": "ID станции CIP мембран",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "membrane_cip.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Membrane train id",
+      "titleRu": "ID линии мембран",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "membrane_cip.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CIP temperature",
+      "titleRu": "Температура CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "membrane_cip.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "CIP pH",
+      "titleRu": "pH CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "membrane_cip.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "CIP duration",
+      "titleRu": "Длительность CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "membrane_cip.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flux recovery",
+      "titleRu": "Восстановление потока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "membrane_cip.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CIP active",
+      "titleRu": "CIP активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "membrane_cip.chem",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chemistry",
+      "titleRu": "Химия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "acid",
+        "alkaline",
+        "oxidant",
+        "enzyme",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

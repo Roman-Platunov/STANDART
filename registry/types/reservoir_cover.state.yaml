@@ -1,0 +1,20 @@
+sid: "61290982"
+path: reservoir_cover.state
+aliases:
+  short: reservoir_cover.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние резервуара
+  en: Reservoir state
+fingerprint: sha256:612909821df0e23498ceb7fadecf22acdc460b4dacb665b6bbf7a9b433356d59
+enumValues:
+  - fill
+  - draw
+  - idle
+  - alarm

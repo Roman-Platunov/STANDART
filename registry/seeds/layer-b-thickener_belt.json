@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-thickener_belt.json",
+  "types": [
+    {
+      "path": "thickener_belt.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Belt thickener id",
+      "titleRu": "ID ленточного сгустителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thickener_belt.feed",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Feed flow",
+      "titleRu": "Расход питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thickener_belt.cake",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cake solids",
+      "titleRu": "Сухое вещество кека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thickener_belt.polymer",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Polymer dose",
+      "titleRu": "Доза полимера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thickener_belt.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Belt speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thickener_belt.filtrate",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Filtrate turbidity",
+      "titleRu": "Мутность фильтрата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thickener_belt.wash",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Belt wash on",
+      "titleRu": "Промывка ленты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thickener_belt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Thickener state",
+      "titleRu": "Состояние сгустителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "thicken",
+        "wash",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

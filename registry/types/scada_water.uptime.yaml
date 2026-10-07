@@ -1,0 +1,18 @@
+sid: 5ec55f54
+path: scada_water.uptime
+aliases:
+  short: scada_water.uptime
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Доступность
+  en: System uptime
+fingerprint: sha256:5ec55f54349037822bbede5dacedb1263b5986f70ff33c4ee43326905777defb
+range:
+  min: 0
+  max: 100

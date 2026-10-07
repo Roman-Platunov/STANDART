@@ -1,0 +1,117 @@
+{
+  "layer": "B25",
+  "name": "layer-b-desal_ro.json",
+  "types": [
+    {
+      "path": "desal_ro.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RO desalination train id",
+      "titleRu": "ID линии RO-опреснения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "desal_ro.feed",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Feed flow",
+      "titleRu": "Расход питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desal_ro.permeate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Permeate flow",
+      "titleRu": "Расход пермеата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desal_ro.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovery",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "desal_ro.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Feed pressure",
+      "titleRu": "Давление питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desal_ro.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Permeate conductivity",
+      "titleRu": "Проводимость пермеата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desal_ro.cip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CIP running",
+      "titleRu": "CIP идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "desal_ro.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Train state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "flush",
+        "cip",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

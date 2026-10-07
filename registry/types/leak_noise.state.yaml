@@ -1,0 +1,20 @@
+sid: b99ca06a
+path: leak_noise.state
+aliases:
+  short: leak_noise.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние логгера
+  en: Logger state
+fingerprint: sha256:b99ca06a35cde58fc7f950dde41f849fb6269f927e1ab510fdbd46f318ab0274
+enumValues:
+  - listen
+  - alarm
+  - offline
+  - maintain

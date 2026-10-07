@@ -1,0 +1,20 @@
+sid: 8a6fdf64
+path: cooling_water_tow.state
+aliases:
+  short: cooling_water_tow.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние градирни
+  en: Tower state
+fingerprint: sha256:8a6fdf6419c78e6df07286e42539a7d1209aab5e2e7194cfff5767fda4d0ff36
+enumValues:
+  - cool
+  - fan_off
+  - idle
+  - fault

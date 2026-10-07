@@ -1,0 +1,20 @@
+sid: 9de276fd
+path: fluoride_doser.state
+aliases:
+  short: fluoride_doser.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дозатора
+  en: Doser state
+fingerprint: sha256:9de276fd2b359379c033b2b145f091e388ceaf81b933a80a1a823d5b3d69f9de
+enumValues:
+  - dose
+  - idle
+  - calibrate
+  - fault

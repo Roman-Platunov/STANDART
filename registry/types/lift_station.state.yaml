@@ -1,0 +1,20 @@
+sid: 779d8b5f
+path: lift_station.state
+aliases:
+  short: lift_station.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:779d8b5f888c47a79c856bbce2543d5e54c9566652f855b3a49772f5fa3ebf17
+enumValues:
+  - idle
+  - lead
+  - lag
+  - fault

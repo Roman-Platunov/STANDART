@@ -1,0 +1,20 @@
+sid: 09f24fd1
+path: uv_disinfect_w.state
+aliases:
+  short: uv_disinfect_w.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние блока
+  en: Bank state
+fingerprint: sha256:09f24fd1ae9ce0f9c11f685c67e672d743fc876e03e9cd083f58b3cd7056f698
+enumValues:
+  - disinfect
+  - clean
+  - idle
+  - fault

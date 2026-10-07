@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-cooling_water_tow.json",
+  "types": [
+    {
+      "path": "cooling_water_tow.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cooling-water tower id",
+      "titleRu": "ID градирни оборотной воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cooling_water_tow.approach",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Approach",
+      "titleRu": "Приближение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_water_tow.range",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Range",
+      "titleRu": "Диапазон охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_water_tow.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Circulating flow",
+      "titleRu": "Циркуляционный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_water_tow.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cycles of concentration",
+      "titleRu": "Кратность концентрирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_water_tow.blowdown",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Blowdown",
+      "titleRu": "Продувка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cooling_water_tow.legionella",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Legionella risk high",
+      "titleRu": "Высокий риск легионеллы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cooling_water_tow.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tower state",
+      "titleRu": "Состояние градирни",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cool",
+        "fan_off",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

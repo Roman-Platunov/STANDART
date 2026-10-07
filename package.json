@@ -1,12 +1,12 @@
 {
   "name": "standart",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "STANDART — hybrid data classifier for AI ↔ device exchange",
   "private": true,
   "type": "module",
   "scripts": {
     "test:fingerprint": "node tools/lib/fingerprint.test.mjs",
-    "seeds": "node tools/build-seed-layer-a.mjs && node tools/build-seed-layer-b.mjs && node tools/build-seed-layer-b2.mjs && node tools/build-seed-layer-b3.mjs && node tools/build-seed-layer-b4.mjs && node tools/build-seed-layer-b5.mjs && node tools/build-seed-layer-b6.mjs && node tools/build-seed-layer-b7.mjs && node tools/build-seed-layer-b8.mjs && node tools/build-seed-layer-b9.mjs && node tools/build-seed-layer-b10.mjs && node tools/build-seed-layer-b11.mjs && node tools/build-seed-layer-b12.mjs && node tools/build-seed-layer-b13.mjs && node tools/build-seed-layer-b14.mjs && node tools/build-seed-layer-b15.mjs && node tools/build-seed-layer-b16.mjs && node tools/build-seed-layer-b17.mjs && node tools/build-seed-layer-b18.mjs && node tools/build-seed-layer-b19.mjs && node tools/build-seed-layer-b20.mjs && node tools/build-seed-layer-b21.mjs && node tools/build-seed-layer-b22.mjs && node tools/build-seed-layer-b23.mjs && node tools/build-seed-layer-b24.mjs",
+    "seeds": "node tools/build-seed-layer-a.mjs && node tools/build-seed-layer-b.mjs && node tools/build-seed-layer-b2.mjs && node tools/build-seed-layer-b3.mjs && node tools/build-seed-layer-b4.mjs && node tools/build-seed-layer-b5.mjs && node tools/build-seed-layer-b6.mjs && node tools/build-seed-layer-b7.mjs && node tools/build-seed-layer-b8.mjs && node tools/build-seed-layer-b9.mjs && node tools/build-seed-layer-b10.mjs && node tools/build-seed-layer-b11.mjs && node tools/build-seed-layer-b12.mjs && node tools/build-seed-layer-b13.mjs && node tools/build-seed-layer-b14.mjs && node tools/build-seed-layer-b15.mjs && node tools/build-seed-layer-b16.mjs && node tools/build-seed-layer-b17.mjs && node tools/build-seed-layer-b18.mjs && node tools/build-seed-layer-b19.mjs && node tools/build-seed-layer-b20.mjs && node tools/build-seed-layer-b21.mjs && node tools/build-seed-layer-b22.mjs && node tools/build-seed-layer-b23.mjs && node tools/build-seed-layer-b24.mjs && node tools/build-seed-layer-b25.mjs",
     "generate": "node tools/generate-from-seed.mjs",
     "expand": "npm run seeds && npm run generate && npm run build",
     "validate": "node tools/validate.mjs",

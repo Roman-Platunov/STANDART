@@ -1,0 +1,20 @@
+sid: 1a4da685
+path: softener_plant.state
+aliases:
+  short: softener_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Plant state
+fingerprint: sha256:1a4da685e06b0625d4a7febb814327ecbf05d64cf0ddf11d38c32af33af690e5
+enumValues:
+  - soften
+  - regen
+  - idle
+  - fault

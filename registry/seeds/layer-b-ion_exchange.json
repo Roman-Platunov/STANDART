@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-ion_exchange.json",
+  "types": [
+    {
+      "path": "ion_exchange.vessel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ion exchange vessel id",
+      "titleRu": "ID ионообменного аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ion_exchange.hardness",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Outlet hardness",
+      "titleRu": "Жёсткость на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ion_exchange.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Outlet conductivity",
+      "titleRu": "Проводимость на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ion_exchange.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ion_exchange.capacity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Resin capacity left",
+      "titleRu": "Остаточная ёмкость смолы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ion_exchange.regen",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Regenerations this month",
+      "titleRu": "Регенераций за месяц",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ion_exchange.exhaust",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Resin exhausted",
+      "titleRu": "Смола истощена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ion_exchange.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "service",
+        "regen",
+        "rinse",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

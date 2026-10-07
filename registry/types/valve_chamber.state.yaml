@@ -1,0 +1,20 @@
+sid: 50fad5f1
+path: valve_chamber.state
+aliases:
+  short: valve_chamber.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние задвижки
+  en: Valve state
+fingerprint: sha256:50fad5f153bd97902a483d97fbba1ab2e3171ceba58088a30d7b307914d920c3
+enumValues:
+  - open
+  - closed
+  - moving
+  - fault

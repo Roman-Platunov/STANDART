@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-coag_flash_mix.json",
+  "types": [
+    {
+      "path": "coag_flash_mix.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coagulation flash mixer id",
+      "titleRu": "ID камеры быстрого смешения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coag_flash_mix.dose",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Coagulant dose",
+      "titleRu": "Доза коагулянта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coag_flash_mix.gt",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "G × t value",
+      "titleRu": "Значение G×t",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coag_flash_mix.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coag_flash_mix.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coag_flash_mix.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Mixer speed",
+      "titleRu": "Обороты мешалки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coag_flash_mix.chemical.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chemical low",
+      "titleRu": "Мало реагента",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coag_flash_mix.chemical",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Coagulant",
+      "titleRu": "Коагулянт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "alum",
+        "ferric",
+        "pac",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

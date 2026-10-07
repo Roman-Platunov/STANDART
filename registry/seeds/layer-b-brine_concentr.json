@@ -1,0 +1,120 @@
+{
+  "layer": "B25",
+  "name": "layer-b-brine_concentr.json",
+  "types": [
+    {
+      "path": "brine_concentr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brine concentrator id",
+      "titleRu": "ID концентратора рассола",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brine_concentr.feed",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Feed flow",
+      "titleRu": "Расход питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brine_concentr.conc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Concentrate TDS proxy",
+      "titleRu": "Концентрация рассола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "brine_concentr.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steam use",
+      "titleRu": "Расход пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brine_concentr.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Water recovery",
+      "titleRu": "Выход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "brine_concentr.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Boiling temperature",
+      "titleRu": "Температура кипения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brine_concentr.scale",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scaling",
+      "titleRu": "Накипь",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "brine_concentr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "concentrate",
+        "clean",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+sid: c91fabd7
+path: amr_collector.battery
+aliases:
+  short: amr_collector.battery
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Батарея коллектора
+  en: Collector battery
+fingerprint: sha256:c91fabd727afc9c5be2e975a589a4224d4cbe1e115601dd3fe6d050027b81b76
+range:
+  min: 0
+  max: 100

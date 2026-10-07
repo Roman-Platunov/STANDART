@@ -1,0 +1,21 @@
+sid: 886a58c8
+path: brackish_ro.state
+aliases:
+  short: brackish_ro.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Train state
+fingerprint: sha256:886a58c85eff9197d88a80446e74597c3efbbeab425459dc16ef0e77b4c854ca
+enumValues:
+  - produce
+  - flush
+  - cip
+  - idle
+  - fault

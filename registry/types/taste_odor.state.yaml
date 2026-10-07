@@ -1,0 +1,20 @@
+sid: 86e77b6c
+path: taste_odor.state
+aliases:
+  short: taste_odor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние монитора
+  en: Monitor state
+fingerprint: sha256:86e77b6c111bb7c9bb57ce1b943ecb11ea6ddf4cc63b1393db05fbb1cb9ef2ab
+enumValues:
+  - ok
+  - watch
+  - event
+  - offline

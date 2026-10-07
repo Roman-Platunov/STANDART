@@ -1,0 +1,20 @@
+sid: 1f30423b
+path: zld_evap.state
+aliases:
+  short: zld_evap.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние выпарки
+  en: Evaporator state
+fingerprint: sha256:1f30423b653881e677c350b6372791108c9ad0ee033d65a9dbb1a4e275c5e180
+enumValues:
+  - evap
+  - clean
+  - idle
+  - fault

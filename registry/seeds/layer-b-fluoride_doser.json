@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-fluoride_doser.json",
+  "types": [
+    {
+      "path": "fluoride_doser.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fluoride dosing skid id",
+      "titleRu": "ID станции дозирования фтора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fluoride_doser.dose",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Fluoride residual",
+      "titleRu": "Остаточный фтор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fluoride_doser.rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Dose rate",
+      "titleRu": "Расход дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fluoride_doser.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Water flow",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fluoride_doser.tank",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chemical tank level",
+      "titleRu": "Уровень бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fluoride_doser.setpoint",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Setpoint",
+      "titleRu": "Уставка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fluoride_doser.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High fluoride",
+      "titleRu": "Высокий фтор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fluoride_doser.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Doser state",
+      "titleRu": "Состояние дозатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dose",
+        "idle",
+        "calibrate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

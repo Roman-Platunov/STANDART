@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-multimedia_filter.json",
+  "types": [
+    {
+      "path": "multimedia_filter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Multimedia filter id",
+      "titleRu": "ID мультимедийного фильтра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "multimedia_filter.headloss",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Headloss",
+      "titleRu": "Потери напора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "multimedia_filter.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "multimedia_filter.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Filtered turbidity",
+      "titleRu": "Мутность фильтрата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "multimedia_filter.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Filter run time",
+      "titleRu": "Время фильтрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "multimedia_filter.backwash",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Last backwash volume",
+      "titleRu": "Объём последней промывки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "multimedia_filter.backwash.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Backwash due",
+      "titleRu": "Пора промывать",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "multimedia_filter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Filter state",
+      "titleRu": "Состояние фильтра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "filter",
+        "backwash",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

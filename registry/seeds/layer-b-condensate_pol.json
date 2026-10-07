@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-condensate_pol.json",
+  "types": [
+    {
+      "path": "condensate_pol.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Condensate polisher id",
+      "titleRu": "ID конденсатоочистки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "condensate_pol.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Outlet conductivity",
+      "titleRu": "Проводимость на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "condensate_pol.sodium",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "Sodium",
+      "titleRu": "Натрий",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "condensate_pol.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "condensate_pol.dp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Vessel DP",
+      "titleRu": "Перепад на аппарате",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "condensate_pol.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Condensate temperature",
+      "titleRu": "Температура конденсата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "condensate_pol.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bypassed",
+      "titleRu": "В байпасе",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "condensate_pol.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Polisher state",
+      "titleRu": "Состояние очистки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "polish",
+        "regen",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-co2_stripper.json",
+  "types": [
+    {
+      "path": "co2_stripper.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CO2 stripper / degasifier id",
+      "titleRu": "ID дегазатора CO2",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "co2_stripper.in",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Inlet CO2",
+      "titleRu": "CO2 на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_stripper.out",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Outlet CO2",
+      "titleRu": "CO2 на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_stripper.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Stripping air",
+      "titleRu": "Воздух дегазации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_stripper.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Water flow",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_stripper.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Outlet pH",
+      "titleRu": "pH на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "co2_stripper.fan.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fan OK",
+      "titleRu": "Вентилятор OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "co2_stripper.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stripper state",
+      "titleRu": "Состояние дегазатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "strip",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

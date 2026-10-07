@@ -1,0 +1,20 @@
+sid: 5e334f61
+path: storm_pump.state
+aliases:
+  short: storm_pump.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:5e334f61eb0b2f80e4b103e8b3de7f2d90b5de921d26929f1ad0cccd4c422d59
+enumValues:
+  - idle
+  - pump
+  - flood
+  - fault

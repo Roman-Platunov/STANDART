@@ -1,0 +1,120 @@
+{
+  "layer": "B25",
+  "name": "layer-b-sludge_dryer.json",
+  "types": [
+    {
+      "path": "sludge_dryer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sludge dryer id",
+      "titleRu": "ID сушилки ила",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sludge_dryer.in.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inlet moisture",
+      "titleRu": "Влажность на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sludge_dryer.out.moist",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Outlet moisture",
+      "titleRu": "Влажность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sludge_dryer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dryer temperature",
+      "titleRu": "Температура сушилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sludge_dryer.throughput",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sludge_dryer.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sludge_dryer.odor",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Odor alarm",
+      "titleRu": "Тревога запаха",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sludge_dryer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dryer state",
+      "titleRu": "Состояние сушилки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

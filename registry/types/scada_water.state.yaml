@@ -1,0 +1,20 @@
+sid: 1faa3509
+path: scada_water.state
+aliases:
+  short: scada_water.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние SCADA
+  en: SCADA state
+fingerprint: sha256:1faa3509a6a86e7c69741b516fbfdc04aeb838047957667cfafff981580aaef6
+enumValues:
+  - ok
+  - degraded
+  - failover
+  - offline

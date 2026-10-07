@@ -1,0 +1,20 @@
+sid: 178e099c
+path: anaerobic_filter.state
+aliases:
+  short: anaerobic_filter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фильтра
+  en: Filter state
+fingerprint: sha256:178e099cd526d9e328deb287ef4b662a74aca13c21e198c565764cac0300edac
+enumValues:
+  - treat
+  - flush
+  - idle
+  - fault

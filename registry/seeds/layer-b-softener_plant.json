@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-softener_plant.json",
+  "types": [
+    {
+      "path": "softener_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Water softener plant id",
+      "titleRu": "ID станции умягчения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "softener_plant.hardness.in",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Inlet hardness",
+      "titleRu": "Жёсткость на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "softener_plant.hardness.out",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Outlet hardness",
+      "titleRu": "Жёсткость на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "softener_plant.salt",
+      "kind": "quantity",
+      "unit": "kg/d",
+      "titleEn": "Salt use",
+      "titleRu": "Расход соли",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "softener_plant.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "softener_plant.brine",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Brine tank level",
+      "titleRu": "Уровень бака рассола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "softener_plant.regen",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Regenerating",
+      "titleRu": "Регенерация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "softener_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "soften",
+        "regen",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

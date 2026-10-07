@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-force_main.json",
+  "types": [
+    {
+      "path": "force_main.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Force main id",
+      "titleRu": "ID напорного коллектора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "force_main.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "force_main.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "force_main.velocity",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Velocity",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "force_main.air",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Air release cycles",
+      "titleRu": "Циклов воздухоотводчиков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "force_main.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fluid temperature",
+      "titleRu": "Температура среды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "force_main.surge",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Surge event",
+      "titleRu": "Гидравлический удар",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "force_main.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Main state",
+      "titleRu": "Состояние коллектора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flow",
+        "idle",
+        "flush",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

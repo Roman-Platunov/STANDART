@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-primary_clarif.json",
+  "types": [
+    {
+      "path": "primary_clarif.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Primary clarifier id",
+      "titleRu": "ID первичного отстойника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "primary_clarif.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Influent flow",
+      "titleRu": "Расход на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "primary_clarif.tss.in",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Influent TSS",
+      "titleRu": "ВЗВ на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "primary_clarif.tss.out",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Effluent TSS",
+      "titleRu": "ВЗВ на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "primary_clarif.sludge",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Sludge withdrawal",
+      "titleRu": "Отвод ила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "primary_clarif.blanket",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Sludge blanket",
+      "titleRu": "Уровень илового слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "primary_clarif.scum",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scum high",
+      "titleRu": "Высокий уровень накипи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "primary_clarif.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Clarifier state",
+      "titleRu": "Состояние отстойника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "settle",
+        "desludge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

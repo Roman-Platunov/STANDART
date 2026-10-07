@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-boiler_feed_w.json",
+  "types": [
+    {
+      "path": "boiler_feed_w.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Boiler feedwater plant id",
+      "titleRu": "ID ХВО котловой воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "boiler_feed_w.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Feed conductivity",
+      "titleRu": "Проводимость питательной",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boiler_feed_w.silica",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "Silica",
+      "titleRu": "Кремнезём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boiler_feed_w.o2",
+      "kind": "quantity",
+      "unit": "ppb",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boiler_feed_w.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boiler_feed_w.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Feed flow",
+      "titleRu": "Расход питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boiler_feed_w.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "boiler_feed_w.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "polish",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: bf2affc2
+path: sludge_dryer.state
+aliases:
+  short: sludge_dryer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сушилки
+  en: Dryer state
+fingerprint: sha256:bf2affc2e920df9b03cac003fa27087c16ed3352bbd69535cee3a9c8bbd57cbe
+enumValues:
+  - dry
+  - idle
+  - clean
+  - fault

@@ -1,0 +1,124 @@
+{
+  "layer": "B25",
+  "name": "layer-b-wwtp_digester.json",
+  "types": [
+    {
+      "path": "wwtp_digester.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sludge digester id",
+      "titleRu": "ID метантенка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wwtp_digester.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Digester temperature",
+      "titleRu": "Температура метантенка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_digester.biogas",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Biogas production",
+      "titleRu": "Выработка биогаза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_digester.ch4",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Methane content",
+      "titleRu": "Содержание метана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_digester.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sludge level",
+      "titleRu": "Уровень ила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_digester.vs.red",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "VS reduction",
+      "titleRu": "Снижение ЛВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_digester.foam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Foaming",
+      "titleRu": "Пенообразование",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wwtp_digester.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "meso",
+        "thermo",
+        "two_stage",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

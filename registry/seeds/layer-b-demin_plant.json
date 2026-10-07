@@ -1,0 +1,115 @@
+{
+  "layer": "B25",
+  "name": "layer-b-demin_plant.json",
+  "types": [
+    {
+      "path": "demin_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Demineralization plant id",
+      "titleRu": "ID деминерализационной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "demin_plant.conductivity",
+      "kind": "quantity",
+      "unit": "uS/cm",
+      "titleEn": "Product conductivity",
+      "titleRu": "Проводимость продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "demin_plant.silica",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "Product silica",
+      "titleRu": "Кремнезём продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "demin_plant.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Product flow",
+      "titleRu": "Расход продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "demin_plant.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovery",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "demin_plant.regen",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Regens this week",
+      "titleRu": "Регенераций за неделю",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "demin_plant.offline",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Train offline",
+      "titleRu": "Линия остановлена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "demin_plant.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ix",
+        "ro_edi",
+        "mixed_bed",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

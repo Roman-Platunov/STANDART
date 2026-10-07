@@ -1,0 +1,20 @@
+sid: a737b37e
+path: pressure_zone.state
+aliases:
+  short: pressure_zone.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зоны
+  en: Zone state
+fingerprint: sha256:a737b37e06cbee7e2c97a8ce638076e2872571abfce13808088d47f77c0850bf
+enumValues:
+  - ok
+  - high
+  - low
+  - offline

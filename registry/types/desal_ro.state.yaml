@@ -1,0 +1,21 @@
+sid: 60d39b43
+path: desal_ro.state
+aliases:
+  short: desal_ro.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Train state
+fingerprint: sha256:60d39b4359cadf23b202bc2cf47e24e7604588eaf6bf0a5cb9c0bf533c87c8a8
+enumValues:
+  - produce
+  - flush
+  - cip
+  - idle
+  - fault

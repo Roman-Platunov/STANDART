@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-dissolved_air.json",
+  "types": [
+    {
+      "path": "dissolved_air.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DAF unit id",
+      "titleRu": "ID установки флотации DAF",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dissolved_air.recycle",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recycle ratio",
+      "titleRu": "Доля рецикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dissolved_air.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Saturator pressure",
+      "titleRu": "Давление сатуратора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dissolved_air.tss.out",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Effluent TSS",
+      "titleRu": "ВЗВ на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dissolved_air.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dissolved_air.scum",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Float removal",
+      "titleRu": "Отвод флота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dissolved_air.air.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Air system OK",
+      "titleRu": "Воздушная система OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dissolved_air.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "DAF state",
+      "titleRu": "Состояние DAF",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "float",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

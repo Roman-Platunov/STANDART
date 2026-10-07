@@ -1,0 +1,113 @@
+{
+  "layer": "B25",
+  "name": "layer-b-wwtp_aer.json",
+  "types": [
+    {
+      "path": "wwtp_aer.basin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aeration basin id",
+      "titleRu": "ID аэротенка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wwtp_aer.do",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_aer.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Airflow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_aer.mlss",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "MLSS",
+      "titleRu": "Иловая смесь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_aer.nh4",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Ammonia",
+      "titleRu": "Аммоний",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_aer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Basin temperature",
+      "titleRu": "Температура бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp_aer.blowers",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blowers running",
+      "titleRu": "Воздуходувки работают",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wwtp_aer.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "oxic",
+        "anoxic",
+        "swing",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

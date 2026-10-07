@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-chlorine_doser.json",
+  "types": [
+    {
+      "path": "chlorine_doser.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chlorine dosing skid id",
+      "titleRu": "ID станции дозирования хлора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chlorine_doser.rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Dose rate",
+      "titleRu": "Расход дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlorine_doser.residual",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Free chlorine residual",
+      "titleRu": "Остаточный свободный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlorine_doser.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Water flow",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlorine_doser.tank",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chemical tank level",
+      "titleRu": "Уровень бака реагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chlorine_doser.orp",
+      "kind": "quantity",
+      "unit": "mV",
+      "titleEn": "ORP",
+      "titleRu": "ОВП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlorine_doser.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low residual",
+      "titleRu": "Низкий остаток",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chlorine_doser.chemical",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chemical",
+      "titleRu": "Реагент",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gas",
+        "hypo",
+        "on_site",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 9fbd3cf2
+path: membrane_bio.state
+aliases:
+  short: membrane_bio.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Train state
+fingerprint: sha256:9fbd3cf2d9b6c6cac9716126cb1ab5ede2a441df2df20b7085e7c7d4db6ee8c2
+enumValues:
+  - filter
+  - relax
+  - backwash
+  - cip
+  - fault

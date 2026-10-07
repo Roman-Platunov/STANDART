@@ -1,0 +1,20 @@
+sid: 253187ef
+path: algae_monitor.state
+aliases:
+  short: algae_monitor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние монитора
+  en: Monitor state
+fingerprint: sha256:253187ef5852d32ff224724b48ba655a9d288db2c673aad469d5a3491677e17d
+enumValues:
+  - ok
+  - watch
+  - bloom
+  - offline

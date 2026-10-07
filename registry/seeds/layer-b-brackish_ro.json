@@ -1,0 +1,117 @@
+{
+  "layer": "B25",
+  "name": "layer-b-brackish_ro.json",
+  "types": [
+    {
+      "path": "brackish_ro.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brackish RO train id",
+      "titleRu": "ID линии солоноватого RO",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brackish_ro.feed",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Feed flow",
+      "titleRu": "Расход питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brackish_ro.permeate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Permeate flow",
+      "titleRu": "Расход пермеата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brackish_ro.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recovery",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "brackish_ro.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Feed pressure",
+      "titleRu": "Давление питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brackish_ro.tds",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Permeate TDS",
+      "titleRu": "TDS пермеата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brackish_ro.scaling",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scaling risk",
+      "titleRu": "Риск накипи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "brackish_ro.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Train state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "flush",
+        "cip",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

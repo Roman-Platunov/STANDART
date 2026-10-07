@@ -1,0 +1,20 @@
+sid: 4296f2a2
+path: irrigation_pump.state
+aliases:
+  short: irrigation_pump.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние насоса
+  en: Pump state
+fingerprint: sha256:4296f2a2ad9ed846d3d4926e579996e2d99da6d0a5e36db127aa33f31dfcda6b
+enumValues:
+  - run
+  - idle
+  - schedule
+  - fault

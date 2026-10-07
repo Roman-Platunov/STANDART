@@ -1,0 +1,120 @@
+{
+  "layer": "B25",
+  "name": "layer-b-grit_chamber.json",
+  "types": [
+    {
+      "path": "grit_chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grit chamber id",
+      "titleRu": "ID песколовки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grit_chamber.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Influent flow",
+      "titleRu": "Расход на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grit_chamber.velocity",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Channel velocity",
+      "titleRu": "Скорость в канале",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grit_chamber.removed",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Grit removed",
+      "titleRu": "Песка удалено",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grit_chamber.organics",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Organic content in grit",
+      "titleRu": "Органика в песке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "grit_chamber.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hopper level",
+      "titleRu": "Уровень бункера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "grit_chamber.air.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Air scour OK",
+      "titleRu": "Продувка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "grit_chamber.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "aerated",
+        "vortex",
+        "horizontal",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

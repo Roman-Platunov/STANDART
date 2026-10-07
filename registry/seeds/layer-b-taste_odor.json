@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-taste_odor.json",
+  "types": [
+    {
+      "path": "taste_odor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Taste and odor monitor id",
+      "titleRu": "ID монитора привкуса и запаха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "taste_odor.mib",
+      "kind": "quantity",
+      "unit": "ng/L",
+      "titleEn": "MIB",
+      "titleRu": "MIB",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "taste_odor.geosmin",
+      "kind": "quantity",
+      "unit": "ng/L",
+      "titleEn": "Geosmin",
+      "titleRu": "Геосмин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "taste_odor.toc",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "TOC",
+      "titleRu": "ТОС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "taste_odor.complaints",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Customer complaints today",
+      "titleRu": "Жалоб за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "taste_odor.pac",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "PAC dose",
+      "titleRu": "Доза ПАУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "taste_odor.event",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "T&O event",
+      "titleRu": "Событие привкуса/запаха",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "taste_odor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Monitor state",
+      "titleRu": "Состояние монитора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "event",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 5d5aabc0
+path: aquifer_recharge.state
+aliases:
+  short: aquifer_recharge.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние скважины
+  en: Well state
+fingerprint: sha256:5d5aabc0e039184e856b1517a7af0bbf122b290e6f63f4e914d2957c2fbc5c78
+enumValues:
+  - inject
+  - rest
+  - redevelop
+  - fault

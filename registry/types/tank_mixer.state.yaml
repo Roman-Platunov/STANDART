@@ -1,0 +1,19 @@
+sid: 850b7ac5
+path: tank_mixer.state
+aliases:
+  short: tank_mixer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние смесителя
+  en: Mixer state
+fingerprint: sha256:850b7ac58ab89250915cc8254159e835b251a793b2d21ea2dc61f4d1dca5ac8e
+enumValues:
+  - run
+  - idle
+  - fault

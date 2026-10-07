@@ -1,0 +1,20 @@
+sid: 44f16db5
+path: gac_filter.state
+aliases:
+  short: gac_filter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фильтра
+  en: Filter state
+fingerprint: sha256:44f16db541e9bb37fdae9033f06ef55f3cd4719026300443774c0be8df921a9f
+enumValues:
+  - adsorb
+  - backwash
+  - idle
+  - fault

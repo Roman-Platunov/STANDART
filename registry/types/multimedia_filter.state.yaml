@@ -1,0 +1,20 @@
+sid: 0bf0acd7
+path: multimedia_filter.state
+aliases:
+  short: multimedia_filter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фильтра
+  en: Filter state
+fingerprint: sha256:0bf0acd79441df4bf60935842c4a06efc2752b71bcb4179c47eec54dd966c0f1
+enumValues:
+  - filter
+  - backwash
+  - idle
+  - fault

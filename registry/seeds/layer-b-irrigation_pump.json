@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-irrigation_pump.json",
+  "types": [
+    {
+      "path": "irrigation_pump.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Irrigation pump id",
+      "titleRu": "ID ирригационного насоса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "irrigation_pump.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrigation_pump.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrigation_pump.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Pump power",
+      "titleRu": "Мощность насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrigation_pump.energy",
+      "kind": "quantity",
+      "unit": "kWh/m3",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrigation_pump.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Runtime today",
+      "titleRu": "Наработка за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrigation_pump.dry",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dry run risk",
+      "titleRu": "Риск сухого хода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "irrigation_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pump state",
+      "titleRu": "Состояние насоса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "schedule",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

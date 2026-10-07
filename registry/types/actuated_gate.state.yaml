@@ -1,0 +1,20 @@
+sid: e80629f3
+path: actuated_gate.state
+aliases:
+  short: actuated_gate.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние затвора
+  en: Gate state
+fingerprint: sha256:e80629f376497313ed219267979c0861bef5d172f605c99528e288946567cd64
+enumValues:
+  - auto
+  - manual
+  - fault
+  - locked

@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-reservoir_cover.json",
+  "types": [
+    {
+      "path": "reservoir_cover.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Covered reservoir id",
+      "titleRu": "ID закрытого резервуара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reservoir_cover.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Water level",
+      "titleRu": "Уровень воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "reservoir_cover.chlorine",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Residual chlorine",
+      "titleRu": "Остаточный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reservoir_cover.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Turbidity",
+      "titleRu": "Мутность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reservoir_cover.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reservoir_cover.inflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Inflow",
+      "titleRu": "Приток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reservoir_cover.intrusion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Intrusion alarm",
+      "titleRu": "Тревога проникновения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "reservoir_cover.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reservoir state",
+      "titleRu": "Состояние резервуара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "draw",
+        "idle",
+        "alarm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

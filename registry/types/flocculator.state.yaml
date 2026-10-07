@@ -1,0 +1,20 @@
+sid: fef1bd1c
+path: flocculator.state
+aliases:
+  short: flocculator.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние флокулятора
+  en: Flocculator state
+fingerprint: sha256:fef1bd1c754fd46fd6f9f0de0e00352b7a22226d20a20003671c771b905171d1
+enumValues:
+  - floc
+  - idle
+  - clean
+  - fault

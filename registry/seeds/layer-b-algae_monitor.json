@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-algae_monitor.json",
+  "types": [
+    {
+      "path": "algae_monitor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Algae / cyanobacteria monitor id",
+      "titleRu": "ID монитора водорослей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "algae_monitor.chla",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "Chlorophyll-a",
+      "titleRu": "Хлорофилл-а",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "algae_monitor.pc",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "Phycocyanin",
+      "titleRu": "Фикоцианин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "algae_monitor.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Turbidity",
+      "titleRu": "Мутность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "algae_monitor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "algae_monitor.bloom",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bloom risk score",
+      "titleRu": "Оценка риска цветения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "algae_monitor.alert",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bloom alert",
+      "titleRu": "Тревога цветения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "algae_monitor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Monitor state",
+      "titleRu": "Состояние монитора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "watch",
+        "bloom",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

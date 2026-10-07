@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-desal_msf.json",
+  "types": [
+    {
+      "path": "desal_msf.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MSF desalination unit id",
+      "titleRu": "ID установки MSF",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "desal_msf.distillate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Distillate production",
+      "titleRu": "Выпуск дистиллята",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desal_msf.brine.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Top brine temperature",
+      "titleRu": "Температура верхней рассольной",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desal_msf.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Heating steam",
+      "titleRu": "Греющий пар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desal_msf.stages",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stages in service",
+      "titleRu": "Ступеней в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desal_msf.gained",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Gained output ratio",
+      "titleRu": "Коэффициент выработки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "desal_msf.scale",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scaling risk",
+      "titleRu": "Риск накипи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "desal_msf.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "startup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

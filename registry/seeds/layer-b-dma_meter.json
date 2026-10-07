@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-dma_meter.json",
+  "types": [
+    {
+      "path": "dma_meter.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DMA meter id",
+      "titleRu": "ID счётчика DMA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dma_meter.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Instant flow",
+      "titleRu": "Мгновенный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dma_meter.night",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Minimum night flow",
+      "titleRu": "Минимальный ночной расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dma_meter.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Daily volume",
+      "titleRu": "Суточный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dma_meter.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "DMA pressure",
+      "titleRu": "Давление DMA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dma_meter.nrw",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "NRW estimate",
+      "titleRu": "Оценка НРВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dma_meter.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak suspected",
+      "titleRu": "Подозрение на утечку",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dma_meter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Meter state",
+      "titleRu": "Состояние счётчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "leak",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

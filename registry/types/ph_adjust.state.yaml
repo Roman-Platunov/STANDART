@@ -1,0 +1,20 @@
+sid: c72c11a7
+path: ph_adjust.state
+aliases:
+  short: ph_adjust.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Skid state
+fingerprint: sha256:c72c11a7846b2db4aa557a6afe685bff55493f0a87ac6e46fbebeba3cbd0ac61
+enumValues:
+  - control
+  - idle
+  - calibrate
+  - fault

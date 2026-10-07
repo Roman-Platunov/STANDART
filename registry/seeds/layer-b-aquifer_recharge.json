@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-aquifer_recharge.json",
+  "types": [
+    {
+      "path": "aquifer_recharge.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Managed aquifer recharge well id",
+      "titleRu": "ID скважины искусственного пополнения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aquifer_recharge.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Recharge rate",
+      "titleRu": "Скорость пополнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_recharge.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Water table / head",
+      "titleRu": "Уровень / напор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_recharge.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Injected turbidity",
+      "titleRu": "Мутность закачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_recharge.clog",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Clogging index",
+      "titleRu": "Индекс кольматации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_recharge.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Volume today",
+      "titleRu": "Объём за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aquifer_recharge.clog.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Clogging high",
+      "titleRu": "Высокая кольматация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aquifer_recharge.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Well state",
+      "titleRu": "Состояние скважины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inject",
+        "rest",
+        "redevelop",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

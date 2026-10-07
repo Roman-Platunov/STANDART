@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-clearwell.json",
+  "types": [
+    {
+      "path": "clearwell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Clearwell id",
+      "titleRu": "ID резервуара чистой воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "clearwell.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Level",
+      "titleRu": "Уровень",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "clearwell.chlorine",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Residual chlorine",
+      "titleRu": "Остаточный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clearwell.ct",
+      "kind": "quantity",
+      "unit": "mg.min/L",
+      "titleEn": "CT value",
+      "titleRu": "Значение CT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clearwell.outflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Outflow",
+      "titleRu": "Отток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clearwell.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "clearwell.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low level",
+      "titleRu": "Низкий уровень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "clearwell.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Clearwell state",
+      "titleRu": "Состояние резервуара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "draw",
+        "idle",
+        "alarm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

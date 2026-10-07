@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-distribution_pump.json",
+  "types": [
+    {
+      "path": "distribution_pump.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Distribution pump station id",
+      "titleRu": "ID повысительной насосной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "distribution_pump.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distribution_pump.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distribution_pump.pumps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pumps running",
+      "titleRu": "Насосов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distribution_pump.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Station power",
+      "titleRu": "Мощность станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distribution_pump.setpoint",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Pressure setpoint",
+      "titleRu": "Уставка давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distribution_pump.low.p",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low pressure",
+      "titleRu": "Низкое давление",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "distribution_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "auto",
+        "manual",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

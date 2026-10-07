@@ -1,0 +1,109 @@
+{
+  "layer": "B25",
+  "name": "layer-b-backflow_prevent.json",
+  "types": [
+    {
+      "path": "backflow_prevent.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Backflow preventer id",
+      "titleRu": "ID обратного клапана / превентера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "backflow_prevent.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site id",
+      "titleRu": "ID объекта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "backflow_prevent.dp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "backflow_prevent.test.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days since test",
+      "titleRu": "Дней с испытания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "backflow_prevent.relief",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Relief valve trips",
+      "titleRu": "Срабатываний сброса",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "backflow_prevent.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Forward flow",
+      "titleRu": "Прямой расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "backflow_prevent.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Test fail",
+      "titleRu": "Испытание не пройдено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "backflow_prevent.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rpz",
+        "dcva",
+        "pvb",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

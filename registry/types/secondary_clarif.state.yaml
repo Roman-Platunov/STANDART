@@ -1,0 +1,20 @@
+sid: 8c26971d
+path: secondary_clarif.state
+aliases:
+  short: secondary_clarif.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние отстойника
+  en: Clarifier state
+fingerprint: sha256:8c26971df314eb396c323baa4c4190ee9ef7225d82bb255ab10dc8ab424334f7
+enumValues:
+  - settle
+  - ras
+  - idle
+  - fault

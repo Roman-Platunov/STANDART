@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-storm_pump.json",
+  "types": [
+    {
+      "path": "storm_pump.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stormwater pump station id",
+      "titleRu": "ID ливневой насосной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "storm_pump.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Wet-well level",
+      "titleRu": "Уровень приёмника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "storm_pump.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pumped flow",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "storm_pump.pumps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pumps running",
+      "titleRu": "Насосов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "storm_pump.rainfall",
+      "kind": "quantity",
+      "unit": "mm/h",
+      "titleEn": "Rainfall rate",
+      "titleRu": "Интенсивность дождя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "storm_pump.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Station power",
+      "titleRu": "Мощность станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "storm_pump.overflow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overflow risk",
+      "titleRu": "Риск перелива",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "storm_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "pump",
+        "flood",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

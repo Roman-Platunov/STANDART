@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-lift_station.json",
+  "types": [
+    {
+      "path": "lift_station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sewage lift station id",
+      "titleRu": "ID КНС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lift_station.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Wet-well level",
+      "titleRu": "Уровень приёмника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lift_station.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Discharge flow",
+      "titleRu": "Расход нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lift_station.starts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pump starts today",
+      "titleRu": "Пусков за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lift_station.h2s",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "H2S",
+      "titleRu": "H2S",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lift_station.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Station power",
+      "titleRu": "Мощность станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lift_station.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High level alarm",
+      "titleRu": "Тревога высокого уровня",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lift_station.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "lead",
+        "lag",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-intake_screen.json",
+  "types": [
+    {
+      "path": "intake_screen.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Intake screen id",
+      "titleRu": "ID решётки водозабора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "intake_screen.dp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intake_screen.debris",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Debris removed",
+      "titleRu": "Мусора удалено",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intake_screen.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Through flow",
+      "titleRu": "Пропускной расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intake_screen.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Clean cycles today",
+      "titleRu": "Циклов очистки за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intake_screen.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Upstream level",
+      "titleRu": "Уровень выше по течению",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intake_screen.blind",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blinded",
+      "titleRu": "Забита",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "intake_screen.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bar",
+        "band",
+        "drum",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

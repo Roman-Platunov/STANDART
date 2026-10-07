@@ -1,0 +1,21 @@
+sid: c1567eb2
+path: sand_filter.state
+aliases:
+  short: sand_filter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фильтра
+  en: Filter state
+fingerprint: sha256:c1567eb23b77546cd35adabd53556a7be63512adb63b28970b35ce3b3d8fed77
+enumValues:
+  - filter
+  - backwash
+  - ripen
+  - idle
+  - fault

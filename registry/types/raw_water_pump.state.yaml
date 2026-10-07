@@ -1,0 +1,20 @@
+sid: 274168ea
+path: raw_water_pump.state
+aliases:
+  short: raw_water_pump.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:274168eaa20a6fbe76443167c0f48250507f52058ffe3ef3beeab1306218216b
+enumValues:
+  - run
+  - idle
+  - maintain
+  - fault

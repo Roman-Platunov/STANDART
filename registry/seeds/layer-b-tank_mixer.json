@@ -1,0 +1,115 @@
+{
+  "layer": "B25",
+  "name": "layer-b-tank_mixer.json",
+  "types": [
+    {
+      "path": "tank_mixer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Storage tank mixer id",
+      "titleRu": "ID смесителя резервуара",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tank_mixer.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Mixer speed",
+      "titleRu": "Обороты смесителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_mixer.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Mixer power",
+      "titleRu": "Мощность смесителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_mixer.strat",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Temperature stratification",
+      "titleRu": "Стратификация по температуре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_mixer.chlorine.var",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chlorine variance",
+      "titleRu": "Разброс хлора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tank_mixer.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Runtime today",
+      "titleRu": "Наработка за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tank_mixer.on",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mixer on",
+      "titleRu": "Смеситель включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tank_mixer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mixer state",
+      "titleRu": "Состояние смесителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

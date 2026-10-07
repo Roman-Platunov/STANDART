@@ -1,0 +1,21 @@
+sid: 059273f5
+path: ion_exchange.mode
+aliases:
+  short: ion_exchange.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:059273f521e9bcecabe3a073187746d2173b9c33fbc560603527ee299b882311
+enumValues:
+  - service
+  - regen
+  - rinse
+  - idle
+  - fault

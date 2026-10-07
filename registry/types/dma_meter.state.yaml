@@ -1,0 +1,20 @@
+sid: fb6186d6
+path: dma_meter.state
+aliases:
+  short: dma_meter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние счётчика
+  en: Meter state
+fingerprint: sha256:fb6186d68ff9ec8a0ca40d5645f8d1db27dcce8b1c649e6e3d5067f392275c08
+enumValues:
+  - ok
+  - leak
+  - offline
+  - fault

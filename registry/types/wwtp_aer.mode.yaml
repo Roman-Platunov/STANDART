@@ -1,0 +1,21 @@
+sid: f64fbda7
+path: wwtp_aer.mode
+aliases:
+  short: wwtp_aer.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:f64fbda7ed3b554dd7701453704edb962742f8a7b67b895d281c61a01186a315
+enumValues:
+  - oxic
+  - anoxic
+  - swing
+  - idle
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-ballasted_floc.json",
+  "types": [
+    {
+      "path": "ballasted_floc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ballasted flocculation id",
+      "titleRu": "ID балластной флокуляции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ballasted_floc.microsand",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Microsand dose",
+      "titleRu": "Доза микропеска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballasted_floc.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Outlet turbidity",
+      "titleRu": "Мутность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballasted_floc.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballasted_floc.polymer",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Polymer dose",
+      "titleRu": "Доза полимера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ballasted_floc.recycle",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sand recycle",
+      "titleRu": "Рецикл песка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ballasted_floc.sand.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Microsand low",
+      "titleRu": "Мало микропеска",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ballasted_floc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "treat",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 1b3959c6
+path: co2_stripper.state
+aliases:
+  short: co2_stripper.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дегазатора
+  en: Stripper state
+fingerprint: sha256:1b3959c69ca20140324924703fcf3d944408503a2ff609fa64366ac6c93a040f
+enumValues:
+  - strip
+  - idle
+  - clean
+  - fault

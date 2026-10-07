@@ -1,0 +1,20 @@
+sid: 7d587e91
+path: centrifuge_sludge.state
+aliases:
+  short: centrifuge_sludge.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние центрифуги
+  en: Centrifuge state
+fingerprint: sha256:7d587e9120be8e7186b4eafba13a1c62d7e60e0e892cee89f88e23e5e384a655
+enumValues:
+  - dewater
+  - flush
+  - idle
+  - fault

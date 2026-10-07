@@ -1,0 +1,20 @@
+sid: "31034212"
+path: canal_level.state
+aliases:
+  short: canal_level.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние бьефа
+  en: Reach state
+fingerprint: sha256:310342121c199f4e2ecde7911c9ed6b6747f7c76a91c211c5e56c6f65031a89a
+enumValues:
+  - ok
+  - high
+  - low
+  - offline

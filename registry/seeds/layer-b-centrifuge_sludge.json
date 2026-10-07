@@ -1,0 +1,116 @@
+{
+  "layer": "B25",
+  "name": "layer-b-centrifuge_sludge.json",
+  "types": [
+    {
+      "path": "centrifuge_sludge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sludge centrifuge id",
+      "titleRu": "ID центрифуги ила",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "centrifuge_sludge.feed",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Feed flow",
+      "titleRu": "Расход питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_sludge.cake",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cake solids",
+      "titleRu": "Сухое вещество кека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_sludge.rpm",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Bowl speed",
+      "titleRu": "Обороты барабана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_sludge.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Scroll torque",
+      "titleRu": "Момент шнека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_sludge.polymer",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Polymer dose",
+      "titleRu": "Доза полимера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "centrifuge_sludge.vib",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High vibration",
+      "titleRu": "Высокая вибрация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "centrifuge_sludge.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Centrifuge state",
+      "titleRu": "Состояние центрифуги",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dewater",
+        "flush",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

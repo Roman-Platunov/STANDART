@@ -1,0 +1,115 @@
+{
+  "layer": "B25",
+  "name": "layer-b-uv_disinfect_w.json",
+  "types": [
+    {
+      "path": "uv_disinfect_w.bank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UV disinfection bank id",
+      "titleRu": "ID блока УФ-обеззараживания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uv_disinfect_w.dose",
+      "kind": "quantity",
+      "unit": "mJ/cm2",
+      "titleEn": "UV dose",
+      "titleRu": "Доза УФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uv_disinfect_w.trans",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "UV transmittance",
+      "titleRu": "Пропускание УФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "uv_disinfect_w.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uv_disinfect_w.lamps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Lamps online",
+      "titleRu": "Ламп онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uv_disinfect_w.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Bank power",
+      "titleRu": "Мощность блока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uv_disinfect_w.low.dose",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low dose",
+      "titleRu": "Низкая доза",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "uv_disinfect_w.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bank state",
+      "titleRu": "Состояние блока",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "disinfect",
+        "clean",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

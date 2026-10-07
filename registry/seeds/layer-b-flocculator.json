@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-flocculator.json",
+  "types": [
+    {
+      "path": "flocculator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flocculator id",
+      "titleRu": "ID флокулятора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flocculator.g",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Velocity gradient G",
+      "titleRu": "Градиент скорости G",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flocculator.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Detention time",
+      "titleRu": "Время пребывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flocculator.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flocculator.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Outlet turbidity",
+      "titleRu": "Мутность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flocculator.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Paddle speed",
+      "titleRu": "Обороты мешалки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flocculator.polymer",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Polymer dosing",
+      "titleRu": "Дозирование полимера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flocculator.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Flocculator state",
+      "titleRu": "Состояние флокулятора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "floc",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

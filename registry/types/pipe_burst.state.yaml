@@ -1,0 +1,21 @@
+sid: 60c74941
+path: pipe_burst.state
+aliases:
+  short: pipe_burst.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние события
+  en: Event state
+fingerprint: sha256:60c74941b52ed5c2a5c14a4ede1a19fe0c4a8359011d6fd89b3fed6d190d1b96
+enumValues:
+  - detect
+  - confirm
+  - isolate
+  - repair
+  - closed

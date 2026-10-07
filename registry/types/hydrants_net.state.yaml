@@ -1,0 +1,20 @@
+sid: 15a415a6
+path: hydrants_net.state
+aliases:
+  short: hydrants_net.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние гидранта
+  en: Hydrant state
+fingerprint: sha256:15a415a6ecccab455057da411caad9402037a707586e9098244736e2a4e1de48
+enumValues:
+  - ok
+  - out_of_service
+  - low_p
+  - offline

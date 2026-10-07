@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-pipe_burst.json",
+  "types": [
+    {
+      "path": "pipe_burst.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipe burst event id",
+      "titleRu": "ID события разрыва трубы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pipe_burst.dma.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DMA id",
+      "titleRu": "ID DMA",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pipe_burst.flow.spike",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Flow spike",
+      "titleRu": "Скачок расхода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipe_burst.pressure.drop",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Pressure drop",
+      "titleRu": "Падение давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipe_burst.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Estimated loss",
+      "titleRu": "Оценка потерь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipe_burst.crew.eta.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Crew ETA",
+      "titleRu": "ETA бригады",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipe_burst.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Burst active",
+      "titleRu": "Разрыв активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pipe_burst.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Event state",
+      "titleRu": "Состояние события",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "detect",
+        "confirm",
+        "isolate",
+        "repair",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

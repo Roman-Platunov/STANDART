@@ -1,0 +1,20 @@
+sid: a9fe807f
+path: amr_collector.state
+aliases:
+  short: amr_collector.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние коллектора
+  en: Collector state
+fingerprint: sha256:a9fe807f392e2ed8f26f45340cefcdc686835fb15be6eb29540c1bd0f684b51d
+enumValues:
+  - ok
+  - degraded
+  - offline
+  - fault

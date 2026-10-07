@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-raw_water_pump.json",
+  "types": [
+    {
+      "path": "raw_water_pump.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Raw water pump station id",
+      "titleRu": "ID насосной сырой воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "raw_water_pump.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pumped flow",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raw_water_pump.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raw_water_pump.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Source level",
+      "titleRu": "Уровень источника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raw_water_pump.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Station power",
+      "titleRu": "Мощность станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raw_water_pump.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Raw turbidity",
+      "titleRu": "Мутность сырой воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "raw_water_pump.low.source",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low source level",
+      "titleRu": "Низкий уровень источника",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "raw_water_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

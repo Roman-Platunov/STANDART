@@ -1,0 +1,123 @@
+{
+  "layer": "B25",
+  "name": "layer-b-valve_chamber.json",
+  "types": [
+    {
+      "path": "valve_chamber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Valve chamber id",
+      "titleRu": "ID камеры задвижки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "valve_chamber.position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Valve position",
+      "titleRu": "Положение задвижки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "valve_chamber.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Actuator torque",
+      "titleRu": "Момент привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "valve_chamber.flood",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chamber flood level",
+      "titleRu": "Затопление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "valve_chamber.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Operations today",
+      "titleRu": "Операций за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "valve_chamber.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Actuator battery / UPS",
+      "titleRu": "Батарея/ИБП привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "valve_chamber.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fail to operate",
+      "titleRu": "Отказ срабатывания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "valve_chamber.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Valve state",
+      "titleRu": "Состояние задвижки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "moving",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

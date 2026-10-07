@@ -1,0 +1,20 @@
+sid: c91a9435
+path: force_main.state
+aliases:
+  short: force_main.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние коллектора
+  en: Main state
+fingerprint: sha256:c91a9435dcf48c1c4384ee71390a48caf71d8d4ecabfee53cfb00cc05ef0b38e
+enumValues:
+  - flow
+  - idle
+  - flush
+  - fault

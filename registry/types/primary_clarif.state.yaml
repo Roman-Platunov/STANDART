@@ -1,0 +1,20 @@
+sid: beaaf1a2
+path: primary_clarif.state
+aliases:
+  short: primary_clarif.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние отстойника
+  en: Clarifier state
+fingerprint: sha256:beaaf1a2e29b827ea19df8fa9c4f402199dc7dfac01178f6d478957aabbf33ba
+enumValues:
+  - settle
+  - desludge
+  - idle
+  - fault

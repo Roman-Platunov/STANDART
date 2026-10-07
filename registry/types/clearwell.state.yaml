@@ -1,0 +1,20 @@
+sid: 7fcaf951
+path: clearwell.state
+aliases:
+  short: clearwell.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние резервуара
+  en: Clearwell state
+fingerprint: sha256:7fcaf9513989ab3c7f86a36a41b31922e2c588e835a1ac63c26b5874bcb5f394
+enumValues:
+  - fill
+  - draw
+  - idle
+  - alarm

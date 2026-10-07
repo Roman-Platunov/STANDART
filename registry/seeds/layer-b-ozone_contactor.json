@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-ozone_contactor.json",
+  "types": [
+    {
+      "path": "ozone_contactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ozone contactor id",
+      "titleRu": "ID озонатора-контактора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ozone_contactor.dose",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Ozone dose",
+      "titleRu": "Доза озона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ozone_contactor.residual",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Ozone residual",
+      "titleRu": "Остаточный озон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ozone_contactor.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Water flow",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ozone_contactor.orifice",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Gas pressure",
+      "titleRu": "Давление газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ozone_contactor.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Generator power",
+      "titleRu": "Мощность генератора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ozone_contactor.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ozone leak",
+      "titleRu": "Утечка озона",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ozone_contactor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Contactor state",
+      "titleRu": "Состояние контактора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "purge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

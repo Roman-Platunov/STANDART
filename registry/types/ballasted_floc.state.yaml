@@ -1,0 +1,20 @@
+sid: e0670009
+path: ballasted_floc.state
+aliases:
+  short: ballasted_floc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:e0670009b978fcd5ec11a5e5ae4f02973b125fdafe259e7c7045b5b9db4d025b
+enumValues:
+  - treat
+  - idle
+  - clean
+  - fault

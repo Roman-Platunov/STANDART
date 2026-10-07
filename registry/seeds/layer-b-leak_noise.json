@@ -1,0 +1,120 @@
+{
+  "layer": "B25",
+  "name": "layer-b-leak_noise.json",
+  "types": [
+    {
+      "path": "leak_noise.logger.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Acoustic leak logger id",
+      "titleRu": "ID акустического логгера утечек",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leak_noise.level",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Noise level",
+      "titleRu": "Уровень шума",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_noise.score",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Leak score",
+      "titleRu": "Оценка утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leak_noise.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Pipe pressure",
+      "titleRu": "Давление в трубе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_noise.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Logger battery",
+      "titleRu": "Батарея логгера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leak_noise.corr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Correlation quality",
+      "titleRu": "Качество корреляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_noise.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak alarm",
+      "titleRu": "Тревога утечки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "leak_noise.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Logger state",
+      "titleRu": "Состояние логгера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "listen",
+        "alarm",
+        "offline",
+        "maintain"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

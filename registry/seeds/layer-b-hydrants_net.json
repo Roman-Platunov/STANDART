@@ -1,0 +1,111 @@
+{
+  "layer": "B25",
+  "name": "layer-b-hydrants_net.json",
+  "types": [
+    {
+      "path": "hydrants_net.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fire hydrant id",
+      "titleRu": "ID пожарного гидранта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrants_net.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Static pressure",
+      "titleRu": "Статическое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrants_net.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Available flow",
+      "titleRu": "Доступный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrants_net.last.test.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days since flow test",
+      "titleRu": "Дней с испытания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrants_net.ops",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Openings this year",
+      "titleRu": "Открытий за год",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrants_net.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Barrel temperature",
+      "titleRu": "Температура ствола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrants_net.frozen",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Freeze risk",
+      "titleRu": "Риск замерзания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hydrants_net.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hydrant state",
+      "titleRu": "Состояние гидранта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "out_of_service",
+        "low_p",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: ee5b3650
+path: thickener_belt.state
+aliases:
+  short: thickener_belt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сгустителя
+  en: Thickener state
+fingerprint: sha256:ee5b36508913c72dec64a2e6336a0da2813a2735ec2a60fd4c41cf5b10107155
+enumValues:
+  - thicken
+  - wash
+  - idle
+  - fault

@@ -1,0 +1,112 @@
+{
+  "layer": "B25",
+  "name": "layer-b-zld_evap.json",
+  "types": [
+    {
+      "path": "zld_evap.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ZLD evaporator id",
+      "titleRu": "ID выпарного аппарата ZLD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "zld_evap.feed",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Feed flow",
+      "titleRu": "Расход питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zld_evap.distillate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Distillate",
+      "titleRu": "Дистиллят",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zld_evap.solids",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Solids discharge",
+      "titleRu": "Выпуск твёрдых",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zld_evap.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zld_evap.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Evaporator temperature",
+      "titleRu": "Температура выпарки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "zld_evap.vacuum.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vacuum OK",
+      "titleRu": "Вакуум OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "zld_evap.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Evaporator state",
+      "titleRu": "Состояние выпарки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "evap",
+        "clean",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
