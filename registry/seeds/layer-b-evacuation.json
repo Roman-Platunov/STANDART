@@ -1,0 +1,108 @@
+{
+  "layer": "B10",
+  "name": "layer-b-evacuation.json",
+  "types": [
+    {
+      "path": "evacuation.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Evacuation zone id",
+      "titleRu": "ID зоны эвакуации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "evacuation.event.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Evacuation event id",
+      "titleRu": "ID события эвакуации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "evacuation.occupants.remaining",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Occupants remaining",
+      "titleRu": "Оставшихся людей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "evacuation.exits.clear",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Clear exits",
+      "titleRu": "Свободных выходов",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "evacuation.duration.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Evacuation duration",
+      "titleRu": "Длительность эвакуации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "evacuation.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Evacuation active",
+      "titleRu": "Эвакуация активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "evacuation.all_clear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "All clear",
+      "titleRu": "Отбой",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "evacuation.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Evacuation phase",
+      "titleRu": "Фаза эвакуации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "alarm",
+        "egress",
+        "assembly",
+        "accountability",
+        "reentry"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+sid: b571c23a
+path: sip.state
+aliases:
+  short: sip.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние SIP
+  en: SIP state
+fingerprint: sha256:b571c23a12256c25949922d4a5eee92b5c0979f3e5c9d152560f5f8041719cb7
+enumValues:
+  - heat
+  - hold
+  - cool
+  - complete
+  - abort
+  - fault

@@ -1,0 +1,21 @@
+sid: e70d7dca
+path: forklift.state
+aliases:
+  short: forklift.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние погрузчика
+  en: Forklift state
+fingerprint: sha256:e70d7dcae405055d8cea71af554a303b00765b4d7305f3fd8ed780e4c8e8c97f
+enumValues:
+  - idle
+  - travel
+  - lift
+  - charge
+  - maintenance

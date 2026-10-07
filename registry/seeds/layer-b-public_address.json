@@ -1,0 +1,116 @@
+{
+  "layer": "B10",
+  "name": "layer-b-public_address.json",
+  "types": [
+    {
+      "path": "public_address.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PA zone id",
+      "titleRu": "ID зоны оповещения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "public_address.amp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PA amplifier id",
+      "titleRu": "ID усилителя СОУЭ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "public_address.level",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Zone SPL",
+      "titleRu": "Уровень в зоне",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "public_address.impedance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Line impedance",
+      "titleRu": "Сопротивление линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "public_address.paging",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Paging active",
+      "titleRu": "Оповещение активно",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "public_address.evac",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Evacuation message",
+      "titleRu": "Эвакуационное сообщение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "public_address.source",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Audio source",
+      "titleRu": "Источник звука",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mic",
+        "evac",
+        "bgm",
+        "message",
+        "silent"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "public_address.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PA state",
+      "titleRu": "Состояние СОУЭ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "page",
+        "evac",
+        "fault",
+        "test"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 89cee94d
+path: parking_barrier.state
+aliases:
+  short: parking_barrier.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шлагбаума
+  en: Barrier state
+fingerprint: sha256:89cee94df4b0fca0730c51c9d10b8e8049a47676350d5d731676e83ca379dab2
+enumValues:
+  - down
+  - up
+  - moving
+  - fault

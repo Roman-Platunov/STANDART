@@ -1,0 +1,22 @@
+sid: 0a47e942
+path: oil_refinery.unit.type
+aliases:
+  short: unit.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип установки
+  en: Process unit type
+fingerprint: sha256:0a47e942ed101c8e3b7d6dcb729b369f6d37d246163ca7f3b871a2a15a6676fd
+enumValues:
+  - cdu
+  - fcc
+  - hydrocracker
+  - reformer
+  - alkylation
+  - other

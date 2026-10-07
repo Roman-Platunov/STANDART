@@ -1,0 +1,20 @@
+sid: 6ca0df82
+path: escalator.state
+aliases:
+  short: escalator.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние эскалатора
+  en: Escalator state
+fingerprint: sha256:6ca0df823c98c363c0cf0ea9afb314c5c6997dfa93586c0c11374953a90f4895
+enumValues:
+  - run
+  - stop
+  - fault
+  - maintenance

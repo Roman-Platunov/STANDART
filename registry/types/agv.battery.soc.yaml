@@ -1,0 +1,18 @@
+sid: ab4053bf
+path: agv.battery.soc
+aliases:
+  short: agv.battery.soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: SoC батареи AGV
+  en: AGV battery SoC
+fingerprint: sha256:ab4053bfc1aef771380d956c0adf178bbde1d4b2dc91831bff2a47c75a398d96
+range:
+  min: 0
+  max: 100

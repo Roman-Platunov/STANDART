@@ -1,0 +1,118 @@
+{
+  "layer": "B10",
+  "name": "layer-b-bms.json",
+  "types": [
+    {
+      "path": "bms.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BMS site id",
+      "titleRu": "ID объекта BMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bms.controller.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BMS controller id",
+      "titleRu": "ID контроллера BMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bms.points.online",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Points online",
+      "titleRu": "Точек online",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bms.alarms.active",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active alarms",
+      "titleRu": "Активных тревог",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bms.energy.today",
+      "kind": "quantity",
+      "unit": "Wh",
+      "titleEn": "Energy today",
+      "titleRu": "Энергия за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bms.schedule.override",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Schedule override",
+      "titleRu": "Переопределение расписания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bms.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "BMS mode",
+      "titleRu": "Режим BMS",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "auto",
+        "manual",
+        "emergency",
+        "commissioning"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bms.health",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "BMS health",
+      "titleRu": "Состояние BMS",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "degraded",
+        "offline",
+        "cyber_alert"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

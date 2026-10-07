@@ -1,0 +1,20 @@
+sid: a6e99737
+path: chlorination.state
+aliases:
+  short: chlorination.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние хлорирования
+  en: Chlorination state
+fingerprint: sha256:a6e997370b90c5032428766c354463e635bbabd991a645517e85a341660b60fc
+enumValues:
+  - dosing
+  - standby
+  - empty
+  - fault

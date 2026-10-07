@@ -1,0 +1,125 @@
+{
+  "layer": "B10",
+  "name": "layer-b-wwtp.json",
+  "types": [
+    {
+      "path": "wwtp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WWTP id",
+      "titleRu": "ID очистных сооружений",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wwtp.basin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aeration basin id",
+      "titleRu": "ID аэротенка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wwtp.influent.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Influent flow",
+      "titleRu": "Приток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp.bod.in",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Influent BOD",
+      "titleRu": "БПК на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp.do",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp.mlss",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "MLSS",
+      "titleRu": "Ил (MLSS)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp.effluent.nh4",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Effluent ammonium",
+      "titleRu": "Аммоний на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp.biogas.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Digester biogas flow",
+      "titleRu": "Расход биогаза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wwtp.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "WWTP process",
+      "titleRu": "Процесс ОС",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "asp",
+        "mbr",
+        "sbr",
+        "trickling",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

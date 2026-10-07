@@ -1,0 +1,116 @@
+{
+  "layer": "B10",
+  "name": "layer-b-disaster_relief.json",
+  "types": [
+    {
+      "path": "disaster_relief.incident.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Disaster incident id",
+      "titleRu": "ID ЧС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "disaster_relief.depot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Relief depot id",
+      "titleRu": "ID склада помощи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "disaster_relief.meals.day",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Meals distributed/day",
+      "titleRu": "Рационов в сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "disaster_relief.water.m3",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Water distributed",
+      "titleRu": "Раздано воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "disaster_relief.kits",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Relief kits issued",
+      "titleRu": "Выдано наборов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "disaster_relief.volunteers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active volunteers",
+      "titleRu": "Активных волонтёров",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "disaster_relief.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Relief phase",
+      "titleRu": "Фаза помощи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "alert",
+        "response",
+        "relief",
+        "recovery",
+        "demobilize"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "disaster_relief.hazard",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hazard type",
+      "titleRu": "Тип опасности",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flood",
+        "quake",
+        "storm",
+        "wildfire",
+        "conflict",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

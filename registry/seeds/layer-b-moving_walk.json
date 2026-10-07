@@ -1,0 +1,115 @@
+{
+  "layer": "B10",
+  "name": "layer-b-moving_walk.json",
+  "types": [
+    {
+      "path": "moving_walk.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Moving walkway id",
+      "titleRu": "ID траволатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "moving_walk.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Walkway speed",
+      "titleRu": "Скорость траволатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "moving_walk.motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "moving_walk.passengers.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Passengers per hour",
+      "titleRu": "Пассажиров в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "moving_walk.emergency.stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emergency stop",
+      "titleRu": "Аварийный стоп",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "moving_walk.skirt.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Skirt fault",
+      "titleRu": "Неисправность юбки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "moving_walk.direction",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Direction",
+      "titleRu": "Направление",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "forward",
+        "reverse",
+        "stopped"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "moving_walk.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Walkway state",
+      "titleRu": "Состояние траволатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "stop",
+        "fault",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

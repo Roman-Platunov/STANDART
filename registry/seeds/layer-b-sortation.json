@@ -1,0 +1,118 @@
+{
+  "layer": "B10",
+  "name": "layer-b-sortation.json",
+  "types": [
+    {
+      "path": "sortation.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sortation system id",
+      "titleRu": "ID сортировщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sortation.chute.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sort chute id",
+      "titleRu": "ID накопителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sortation.rate",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Items per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sortation.divert.accuracy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Divert accuracy",
+      "titleRu": "Точность направления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sortation.recycle.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Recirculation rate",
+      "titleRu": "Доля рециркуляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sortation.jam.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Jam count",
+      "titleRu": "Число заторов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sortation.chute.full",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chute full",
+      "titleRu": "Накопитель полон",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sortation.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sorter type",
+      "titleRu": "Тип сортировщика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "crossbelt",
+        "tilttray",
+        "shoe",
+        "bombay",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "layer": "B10",
+  "name": "layer-b-parking_barrier.json",
+  "types": [
+    {
+      "path": "parking_barrier.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Parking barrier id",
+      "titleRu": "ID шлагбаума",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "parking_barrier.lane.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Barrier lane id",
+      "titleRu": "ID полосы шлагбаума",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "parking_barrier.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Raise cycles",
+      "titleRu": "Циклы подъёма",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "parking_barrier.raised",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Barrier raised",
+      "titleRu": "Шлагбаум поднят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "parking_barrier.loop.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Loop detector active",
+      "titleRu": "Петля активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "parking_barrier.intercom",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Intercom call",
+      "titleRu": "Вызов по домофону",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "parking_barrier.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Barrier mode",
+      "titleRu": "Режим шлагбаума",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "auto",
+        "manual",
+        "open",
+        "closed",
+        "free_flow"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "parking_barrier.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Barrier state",
+      "titleRu": "Состояние шлагбаума",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "down",
+        "up",
+        "moving",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

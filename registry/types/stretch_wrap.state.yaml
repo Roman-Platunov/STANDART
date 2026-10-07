@@ -1,0 +1,20 @@
+sid: a4fa5655
+path: stretch_wrap.state
+aliases:
+  short: stretch_wrap.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние обмотчика
+  en: Wrapper state
+fingerprint: sha256:a4fa5655885f45708dd01912adbfcc8a4fd73fecb3adee59b38162f0511146ac
+enumValues:
+  - idle
+  - wrap
+  - cut
+  - fault

@@ -1,0 +1,115 @@
+{
+  "layer": "B10",
+  "name": "layer-b-checkweigher.json",
+  "types": [
+    {
+      "path": "checkweigher.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Checkweigher id",
+      "titleRu": "ID чеквейера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "checkweigher.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Weighed SKU id",
+      "titleRu": "ID взвешиваемого SKU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "checkweigher.weight",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Measured weight",
+      "titleRu": "Измеренная масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "checkweigher.target",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Target weight",
+      "titleRu": "Целевая масса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "checkweigher.stddev",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Weight stddev",
+      "titleRu": "СКО массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "checkweigher.reject.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Доля отбраковки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "checkweigher.under",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Underweight",
+      "titleRu": "Недовес",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "checkweigher.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Check result",
+      "titleRu": "Результат контроля",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "under",
+        "over",
+        "metal",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

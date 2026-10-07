@@ -1,0 +1,115 @@
+{
+  "layer": "B10",
+  "name": "layer-b-access_control.json",
+  "types": [
+    {
+      "path": "access_control.door.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Access door id",
+      "titleRu": "ID двери СКУД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "access_control.badge.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Badge id",
+      "titleRu": "ID пропуска",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "access_control.events.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Access events per hour",
+      "titleRu": "Событий доступа в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "access_control.door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door open",
+      "titleRu": "Дверь открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access_control.forced",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Forced open",
+      "titleRu": "Взлом",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access_control.held",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door held open",
+      "titleRu": "Дверь удерживается",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access_control.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Access result",
+      "titleRu": "Результат доступа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grant",
+        "deny",
+        "duress",
+        "antipassback",
+        "expired"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "access_control.door.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Door state",
+      "titleRu": "Состояние двери",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "locked",
+        "unlocked",
+        "open",
+        "forced",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

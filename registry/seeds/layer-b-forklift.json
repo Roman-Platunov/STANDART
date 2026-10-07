@@ -1,0 +1,114 @@
+{
+  "layer": "B10",
+  "name": "layer-b-forklift.json",
+  "types": [
+    {
+      "path": "forklift.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Forklift id",
+      "titleRu": "ID погрузчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "forklift.warehouse.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Warehouse id",
+      "titleRu": "ID склада погрузчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "forklift.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery / fuel level",
+      "titleRu": "Заряд / топливо",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "forklift.hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Operating hours",
+      "titleRu": "Моточасы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forklift.load",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Current load",
+      "titleRu": "Текущий груз",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forklift.impacts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Impact events",
+      "titleRu": "Удары",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forklift.seatbelt",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seatbelt fastened",
+      "titleRu": "Ремень застёгнут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "forklift.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Forklift state",
+      "titleRu": "Состояние погрузчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "travel",
+        "lift",
+        "charge",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: c231e63c
+path: steam_trap.condition
+aliases:
+  short: steam_trap.condition
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние отводчика
+  en: Trap condition
+fingerprint: sha256:c231e63c74048903587f038ed56eadfc65fbdaaad90c322a903b2ae333f51bd9
+enumValues:
+  - ok
+  - blow
+  - blocked
+  - leaking
+  - unknown

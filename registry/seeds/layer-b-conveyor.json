@@ -1,0 +1,114 @@
+{
+  "layer": "B10",
+  "name": "layer-b-conveyor.json",
+  "types": [
+    {
+      "path": "conveyor.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Conveyor line id",
+      "titleRu": "ID конвейера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "conveyor.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Conveyor zone id",
+      "titleRu": "ID зоны конвейера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "conveyor.belt.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Belt speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conveyor.motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conveyor.utilization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Utilization",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "conveyor.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Jam detected",
+      "titleRu": "Затор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "conveyor.estop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "E-stop",
+      "titleRu": "Аварийный стоп",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "conveyor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Conveyor state",
+      "titleRu": "Состояние конвейера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "run",
+        "jog",
+        "fault",
+        "bypass"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 1b0beb6a
+path: metal_detector_line.state
+aliases:
+  short: metal_detector_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние детектора
+  en: Detector state
+fingerprint: sha256:1b0beb6af7a42aecc91a0a99136a62828794c4df96e5d7317aedc27a19e32ff9
+enumValues:
+  - run
+  - test
+  - bypass
+  - fault

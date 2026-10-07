@@ -1,0 +1,118 @@
+{
+  "layer": "B10",
+  "name": "layer-b-chlorination.json",
+  "types": [
+    {
+      "path": "chlorination.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chlorination system id",
+      "titleRu": "ID системы хлорирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chlorination.dose",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Chlorine dose",
+      "titleRu": "Доза хлора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlorination.residual.free",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Free residual",
+      "titleRu": "Свободный остаточный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlorination.residual.total",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Total residual",
+      "titleRu": "Общий остаточный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlorination.cylinder.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Cylinder weight",
+      "titleRu": "Масса баллона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chlorination.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chlorine leak",
+      "titleRu": "Утечка хлора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chlorination.chemical",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Disinfectant",
+      "titleRu": "Дезинфектант",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gas_cl2",
+        "hypo",
+        "clo2",
+        "chloramine",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chlorination.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chlorination state",
+      "titleRu": "Состояние хлорирования",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dosing",
+        "standby",
+        "empty",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

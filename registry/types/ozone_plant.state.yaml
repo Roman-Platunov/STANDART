@@ -1,0 +1,21 @@
+sid: b4e395bf
+path: ozone_plant.state
+aliases:
+  short: ozone_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние озонатора
+  en: Ozone plant state
+fingerprint: sha256:b4e395bf17d0f561b2cc3c27dc00b2fd9548ffd8e45dae4e44a319fa18dca4c4
+enumValues:
+  - off
+  - ramp
+  - produce
+  - purge
+  - fault

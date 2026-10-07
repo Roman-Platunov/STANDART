@@ -1,0 +1,21 @@
+sid: a6420b25
+path: evacuation.phase
+aliases:
+  short: evacuation.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза эвакуации
+  en: Evacuation phase
+fingerprint: sha256:a6420b253ede4174717abd670017149f65ae420141d986a8c1c1827f9db2fcc6
+enumValues:
+  - alarm
+  - egress
+  - assembly
+  - accountability
+  - reentry

@@ -1,0 +1,116 @@
+{
+  "layer": "B10",
+  "name": "layer-b-perimeter.json",
+  "types": [
+    {
+      "path": "perimeter.sector.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Perimeter sector id",
+      "titleRu": "ID сектора периметра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "perimeter.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Perimeter sensor id",
+      "titleRu": "ID датчика периметра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "perimeter.fence.tension",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Fence tension",
+      "titleRu": "Натяжение ограждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "perimeter.cable.sensitivity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cable sensitivity",
+      "titleRu": "Чувствительность кабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "perimeter.breach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Perimeter breach",
+      "titleRu": "Нарушение периметра",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "perimeter.cut",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fence cut",
+      "titleRu": "Перерезание ограждения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "perimeter.tech",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Perimeter tech",
+      "titleRu": "Технология периметра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pir",
+        "microwave",
+        "fiber",
+        "electric",
+        "radar",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "perimeter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Sector state",
+      "titleRu": "Состояние сектора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "secure",
+        "alarm",
+        "mask",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

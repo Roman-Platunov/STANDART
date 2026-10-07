@@ -1,0 +1,21 @@
+sid: 9d4f6590
+path: shelter.status
+aliases:
+  short: shelter.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус убежища
+  en: Shelter status
+fingerprint: sha256:9d4f6590c0bdac3dc663eecb032f352e35b319b5fe634f37a1abbed85d6c2879
+enumValues:
+  - standby
+  - open
+  - full
+  - closing
+  - closed

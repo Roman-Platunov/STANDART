@@ -1,0 +1,21 @@
+sid: 308acac7
+path: conveyor.state
+aliases:
+  short: conveyor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние конвейера
+  en: Conveyor state
+fingerprint: sha256:308acac7592e2cde5434a33ac1fe181e147f4ea49ac3de5cd57e8e2ae6b28eee
+enumValues:
+  - off
+  - run
+  - jog
+  - fault
+  - bypass

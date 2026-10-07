@@ -1,0 +1,20 @@
+sid: 253faa5e
+path: bms.mode
+aliases:
+  short: bms.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим BMS
+  en: BMS mode
+fingerprint: sha256:253faa5e342a1c2cf6be7eb53173d3ad2ef8bd325dd25656c35e398d6aac33a9
+enumValues:
+  - auto
+  - manual
+  - emergency
+  - commissioning

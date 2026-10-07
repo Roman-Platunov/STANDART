@@ -1,0 +1,20 @@
+sid: a32defdd
+path: bms.health
+aliases:
+  short: bms.health
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние BMS
+  en: BMS health
+fingerprint: sha256:a32defdd5b42e3b1513cca7926d1fbfbc50fb566dc700bc278a2c6ead6d84d6a
+enumValues:
+  - normal
+  - degraded
+  - offline
+  - cyber_alert

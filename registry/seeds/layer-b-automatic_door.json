@@ -1,0 +1,116 @@
+{
+  "layer": "B10",
+  "name": "layer-b-automatic_door.json",
+  "types": [
+    {
+      "path": "automatic_door.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automatic door id",
+      "titleRu": "ID автоматической двери",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "automatic_door.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open/close cycles",
+      "titleRu": "Циклы открытий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "automatic_door.open.time_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Hold-open time",
+      "titleRu": "Время удержания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "automatic_door.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Door open",
+      "titleRu": "Дверь открыта",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "automatic_door.sensor.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Presence sensor active",
+      "titleRu": "Датчик присутствия",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "automatic_door.locked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Electrically locked",
+      "titleRu": "Электрозамок",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "automatic_door.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Door type",
+      "titleRu": "Тип двери",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sliding",
+        "swing",
+        "telescope",
+        "folding",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "automatic_door.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Door state",
+      "titleRu": "Состояние двери",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "opening",
+        "open",
+        "closing",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

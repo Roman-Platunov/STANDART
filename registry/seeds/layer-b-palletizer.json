@@ -1,0 +1,119 @@
+{
+  "layer": "B10",
+  "name": "layer-b-palletizer.json",
+  "types": [
+    {
+      "path": "palletizer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Palletizer id",
+      "titleRu": "ID паллетайзера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "palletizer.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Palletized SKU id",
+      "titleRu": "ID паллетируемого SKU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "palletizer.cycles.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cycles per hour",
+      "titleRu": "Циклов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "palletizer.layer.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Layers on pallet",
+      "titleRu": "Слоёв на паллете",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "palletizer.reject.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Доля брака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "palletizer.pallet.complete",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pallet complete",
+      "titleRu": "Паллета готова",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "palletizer.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Palletizer mode",
+      "titleRu": "Режим паллетайзера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "auto",
+        "semi",
+        "manual",
+        "changeover"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "palletizer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Palletizer state",
+      "titleRu": "Состояние паллетайзера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "build",
+        "wrap",
+        "discharge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

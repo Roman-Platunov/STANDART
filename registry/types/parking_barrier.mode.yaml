@@ -1,0 +1,21 @@
+sid: c42d1539
+path: parking_barrier.mode
+aliases:
+  short: parking_barrier.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим шлагбаума
+  en: Barrier mode
+fingerprint: sha256:c42d153961bab8f3cf877d3f58bc9145734ef8467a9173221f0a455f5384de25
+enumValues:
+  - auto
+  - manual
+  - open
+  - closed
+  - free_flow

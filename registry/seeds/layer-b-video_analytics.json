@@ -1,0 +1,108 @@
+{
+  "layer": "B10",
+  "name": "layer-b-video_analytics.json",
+  "types": [
+    {
+      "path": "video_analytics.camera.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Analytics camera id",
+      "titleRu": "ID камеры аналитики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "video_analytics.stream.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Analytics stream id",
+      "titleRu": "ID потока аналитики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "video_analytics.people.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "People count",
+      "titleRu": "Число людей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "video_analytics.vehicle.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicle count",
+      "titleRu": "Число ТС",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "video_analytics.fps",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Inference FPS",
+      "titleRu": "FPS инференса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "video_analytics.intrusion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Intrusion event",
+      "titleRu": "Вторжение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "video_analytics.loitering",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Loitering event",
+      "titleRu": "Околачивание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "video_analytics.model",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Model type",
+      "titleRu": "Тип модели",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "detect",
+        "track",
+        "classify",
+        "anomalydetect",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

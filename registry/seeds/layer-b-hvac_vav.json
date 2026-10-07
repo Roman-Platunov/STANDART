@@ -1,0 +1,115 @@
+{
+  "layer": "B10",
+  "name": "layer-b-hvac_vav.json",
+  "types": [
+    {
+      "path": "hvac_vav.box.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VAV box id",
+      "titleRu": "ID VAV-бокса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hvac_vav.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VAV zone id",
+      "titleRu": "ID зоны VAV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hvac_vav.damper",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Damper position",
+      "titleRu": "Положение заслонки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hvac_vav.airflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Supply airflow",
+      "titleRu": "Расход притока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_vav.temp.setpoint",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zone setpoint",
+      "titleRu": "Уставка зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_vav.temp.zone",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zone temperature",
+      "titleRu": "Температура зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_vav.reheat",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reheat active",
+      "titleRu": "Догрев активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hvac_vav.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "VAV mode",
+      "titleRu": "Режим VAV",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "cool",
+        "deadband",
+        "occupied",
+        "unoccupied"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

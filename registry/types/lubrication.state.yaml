@@ -1,0 +1,21 @@
+sid: f0a4a8fb
+path: lubrication.state
+aliases:
+  short: lubrication.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние смазки
+  en: Lube state
+fingerprint: sha256:f0a4a8fb70eddce5c2a9668dc1859b67ac222b6e9709e7657abe19b23d403a83
+enumValues:
+  - ok
+  - low
+  - contaminated
+  - overdue
+  - fault

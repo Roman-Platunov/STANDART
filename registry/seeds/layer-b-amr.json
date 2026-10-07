@@ -1,0 +1,119 @@
+{
+  "layer": "B10",
+  "name": "layer-b-amr.json",
+  "types": [
+    {
+      "path": "amr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AMR id",
+      "titleRu": "ID AMR",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "amr.fleet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AMR fleet id",
+      "titleRu": "ID флота AMR",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "amr.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "AMR battery SoC",
+      "titleRu": "SoC батареи AMR",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "amr.localization.score",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Localization confidence",
+      "titleRu": "Уверенность локализации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "amr.payload.kg",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Payload mass",
+      "titleRu": "Масса полезной нагрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amr.obstacle.distance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Nearest obstacle",
+      "titleRu": "Ближайшее препятствие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amr.manual",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Manual override",
+      "titleRu": "Ручное управление",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "amr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AMR state",
+      "titleRu": "Состояние AMR",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "navigate",
+        "wait",
+        "charge",
+        "error"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

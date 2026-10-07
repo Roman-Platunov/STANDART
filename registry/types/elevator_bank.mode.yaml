@@ -1,0 +1,21 @@
+sid: 62546ca9
+path: elevator_bank.mode
+aliases:
+  short: elevator_bank.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим группы
+  en: Group mode
+fingerprint: sha256:62546ca99b9290de604d3b960c6da40bbdaa9b5f9fedbb0fe87be183797ef7bc
+enumValues:
+  - normal
+  - up_peak
+  - down_peak
+  - fire
+  - independent

@@ -1,0 +1,112 @@
+{
+  "layer": "B10",
+  "name": "layer-b-water_treatment_plant.json",
+  "types": [
+    {
+      "path": "water_treatment_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "WTP id",
+      "titleRu": "ID водоочистной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "water_treatment_plant.train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Treatment train id",
+      "titleRu": "ID линии очистки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "water_treatment_plant.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Plant flow",
+      "titleRu": "Расход станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_treatment_plant.turbidity.out",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Outlet turbidity",
+      "titleRu": "Мутность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_treatment_plant.chlorine.residual",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Residual chlorine",
+      "titleRu": "Остаточный хлор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_treatment_plant.filter.headloss",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Filter headloss",
+      "titleRu": "Потери на фильтре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_treatment_plant.energy",
+      "kind": "quantity",
+      "unit": "kWh/m3",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельное энергопотребление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "water_treatment_plant.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process type",
+      "titleRu": "Тип процесса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "conventional",
+        "membrane",
+        "uv",
+        "ozone",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

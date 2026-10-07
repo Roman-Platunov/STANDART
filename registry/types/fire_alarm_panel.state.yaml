@@ -1,0 +1,21 @@
+sid: 4e17eb44
+path: fire_alarm_panel.state
+aliases:
+  short: fire_alarm_panel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние панели
+  en: Panel state
+fingerprint: sha256:4e17eb443131c738d90bd61aab3c75e4fdca6ea20a9683f6fa315625f3256be1
+enumValues:
+  - normal
+  - alarm
+  - supervisory
+  - trouble
+  - test

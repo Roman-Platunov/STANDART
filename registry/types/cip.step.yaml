@@ -1,0 +1,22 @@
+sid: b39fd78c
+path: cip.step
+aliases:
+  short: cip.step
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Шаг CIP
+  en: CIP step
+fingerprint: sha256:b39fd78cce1e3c8d552a7d23bfbe7ae12b9f3aadb3c7521916f96a197e4c7f59
+enumValues:
+  - pre_rinse
+  - caustic
+  - acid
+  - sanitize
+  - final_rinse
+  - idle

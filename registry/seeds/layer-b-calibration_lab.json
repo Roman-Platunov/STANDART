@@ -1,0 +1,117 @@
+{
+  "layer": "B10",
+  "name": "layer-b-calibration_lab.json",
+  "types": [
+    {
+      "path": "calibration_lab.device.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DUT device id",
+      "titleRu": "ID поверяемого СИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "calibration_lab.cert.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Calibration certificate id",
+      "titleRu": "ID свидетельства поверки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "calibration_lab.error",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Calibration error",
+      "titleRu": "Погрешность поверки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calibration_lab.uncertainty",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Expanded uncertainty",
+      "titleRu": "Расширенная неопределённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calibration_lab.due.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days until due",
+      "titleRu": "Дней до срока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calibration_lab.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Calibration pass",
+      "titleRu": "Поверка пройдена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "calibration_lab.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Calibration result",
+      "titleRu": "Результат поверки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "adjust",
+        "fail",
+        "limited"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "calibration_lab.domain",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Calibration domain",
+      "titleRu": "Область поверки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pressure",
+        "temp",
+        "flow",
+        "electrical",
+        "dimensional",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

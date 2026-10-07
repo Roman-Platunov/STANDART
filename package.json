@@ -1,12 +1,12 @@
 {
   "name": "standart",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "STANDART — hybrid data classifier for AI ↔ device exchange",
   "private": true,
   "type": "module",
   "scripts": {
     "test:fingerprint": "node tools/lib/fingerprint.test.mjs",
-    "seeds": "node tools/build-seed-layer-a.mjs && node tools/build-seed-layer-b.mjs && node tools/build-seed-layer-b2.mjs && node tools/build-seed-layer-b3.mjs && node tools/build-seed-layer-b4.mjs && node tools/build-seed-layer-b5.mjs && node tools/build-seed-layer-b6.mjs && node tools/build-seed-layer-b7.mjs && node tools/build-seed-layer-b8.mjs && node tools/build-seed-layer-b9.mjs",
+    "seeds": "node tools/build-seed-layer-a.mjs && node tools/build-seed-layer-b.mjs && node tools/build-seed-layer-b2.mjs && node tools/build-seed-layer-b3.mjs && node tools/build-seed-layer-b4.mjs && node tools/build-seed-layer-b5.mjs && node tools/build-seed-layer-b6.mjs && node tools/build-seed-layer-b7.mjs && node tools/build-seed-layer-b8.mjs && node tools/build-seed-layer-b9.mjs && node tools/build-seed-layer-b10.mjs",
     "generate": "node tools/generate-from-seed.mjs",
     "expand": "npm run seeds && npm run generate && npm run build",
     "validate": "node tools/validate.mjs",

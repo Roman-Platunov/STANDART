@@ -1,0 +1,21 @@
+sid: 5cd37950
+path: fare_collection.media.type
+aliases:
+  short: media.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип носителя
+  en: Media type
+fingerprint: sha256:5cd379503274480dc6068df7186777764512ee6d4db009099527c9bb2a630324
+enumValues:
+  - card
+  - phone
+  - paper
+  - bank
+  - other

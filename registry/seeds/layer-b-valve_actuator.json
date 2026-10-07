@@ -1,0 +1,113 @@
+{
+  "layer": "B10",
+  "name": "layer-b-valve_actuator.json",
+  "types": [
+    {
+      "path": "valve_actuator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Valve actuator id",
+      "titleRu": "ID привода арматуры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "valve_actuator.tag",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Valve tag",
+      "titleRu": "Тег арматуры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "valve_actuator.position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Valve position",
+      "titleRu": "Положение арматуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "valve_actuator.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Actuator torque",
+      "titleRu": "Момент привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "valve_actuator.travel.time_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Stroke time",
+      "titleRu": "Время хода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "valve_actuator.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fully open",
+      "titleRu": "Полностью открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "valve_actuator.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fully closed",
+      "titleRu": "Полностью закрыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "valve_actuator.fail",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fail position",
+      "titleRu": "Положение при отказе",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fail_open",
+        "fail_closed",
+        "fail_last",
+        "none"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

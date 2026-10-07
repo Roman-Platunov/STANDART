@@ -1,0 +1,115 @@
+{
+  "layer": "B10",
+  "name": "layer-b-crane_ops.json",
+  "types": [
+    {
+      "path": "crane_ops.crane.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Crane id",
+      "titleRu": "ID крана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crane_ops.lift.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lift plan id",
+      "titleRu": "ID плана подъёма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crane_ops.load",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Hook load",
+      "titleRu": "Нагрузка на крюке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_ops.radius",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Working radius",
+      "titleRu": "Вылет",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_ops.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind speed",
+      "titleRu": "Скорость ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_ops.utilization",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Capacity utilization",
+      "titleRu": "Использование грузоподъёмности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crane_ops.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overload cutout",
+      "titleRu": "Отсечка по перегрузу",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crane_ops.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Crane state",
+      "titleRu": "Состояние крана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "lift",
+        "travel",
+        "outofservice",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

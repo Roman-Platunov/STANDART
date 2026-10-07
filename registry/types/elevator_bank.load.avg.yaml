@@ -1,0 +1,18 @@
+sid: 401b39f6
+path: elevator_bank.load.avg
+aliases:
+  short: load.avg
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Средняя загрузка кабины
+  en: Average car load
+fingerprint: sha256:401b39f6a4ec09e704d1a077e0ae053a5caac5c9c70678ea44ce953eb2c38ed1
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,108 @@
+{
+  "layer": "B10",
+  "name": "layer-b-metal_detector_line.json",
+  "types": [
+    {
+      "path": "metal_detector_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "In-line metal detector id",
+      "titleRu": "ID линейного металлодетектора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metal_detector_line.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Production line id",
+      "titleRu": "ID производственной линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metal_detector_line.sensitivity",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Test piece size",
+      "titleRu": "Размер тест-образца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metal_detector_line.reject.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reject count",
+      "titleRu": "Число отбраковок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metal_detector_line.test.age_min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Minutes since test",
+      "titleRu": "Минут с теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metal_detector_line.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Metal detected",
+      "titleRu": "Металл обнаружен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "metal_detector_line.test.due",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Test due",
+      "titleRu": "Требуется тест",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "metal_detector_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Detector state",
+      "titleRu": "Состояние детектора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "test",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

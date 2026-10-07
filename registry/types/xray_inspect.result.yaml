@@ -1,0 +1,20 @@
+sid: ea3fe8e5
+path: xray_inspect.result
+aliases:
+  short: xray_inspect.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат инспекции
+  en: Inspection result
+fingerprint: sha256:ea3fe8e5a7426b1335e2a56cb2f94ce4207ac2dbc7281a263db6841a8254857d
+enumValues:
+  - pass
+  - reject
+  - suspect
+  - fault

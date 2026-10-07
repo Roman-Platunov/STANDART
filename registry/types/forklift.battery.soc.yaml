@@ -1,0 +1,18 @@
+sid: f6929104
+path: forklift.battery.soc
+aliases:
+  short: forklift.battery.soc
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Заряд / топливо
+  en: Battery / fuel level
+fingerprint: sha256:f6929104781909a5971fb0c8919a3b845f531e0d12a74e2d38309dbd5b02a1f6
+range:
+  min: 0
+  max: 100

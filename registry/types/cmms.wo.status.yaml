@@ -1,0 +1,22 @@
+sid: 628f213f
+path: cmms.wo.status
+aliases:
+  short: wo.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус наряда
+  en: WO status
+fingerprint: sha256:628f213fae67667467c31e70a65b1e37997f4abbf1491fe268fd227a8baf6c15
+enumValues:
+  - new
+  - planned
+  - in_progress
+  - held
+  - done
+  - cancelled

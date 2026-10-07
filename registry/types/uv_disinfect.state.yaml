@@ -1,0 +1,20 @@
+sid: 5eb64e98
+path: uv_disinfect.state
+aliases:
+  short: uv_disinfect.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние УФ
+  en: UV state
+fingerprint: sha256:5eb64e9809dc8837a4deaee9e7cb83c0d4f961bf42f17665b16c6cd67e0e4030
+enumValues:
+  - on
+  - standby
+  - cleaning
+  - fault

@@ -1,0 +1,110 @@
+{
+  "layer": "B10",
+  "name": "layer-b-scaffold.json",
+  "types": [
+    {
+      "path": "scaffold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Scaffold id",
+      "titleRu": "ID лесов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scaffold.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Scaffold site id",
+      "titleRu": "ID площадки лесов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scaffold.load.rating",
+      "kind": "quantity",
+      "unit": "kg/m2",
+      "titleEn": "Load rating",
+      "titleRu": "Допустимая нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scaffold.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Scaffold height",
+      "titleRu": "Высота лесов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scaffold.inspect.age_d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Days since inspection",
+      "titleRu": "Дней с осмотра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scaffold.tagged.safe",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Safe-to-use tag",
+      "titleRu": "Бирка «безопасно»",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scaffold.modified",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Unauthorized modification",
+      "titleRu": "Несанкционированное изменение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scaffold.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Scaffold status",
+      "titleRu": "Статус лесов",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "erecting",
+        "in_use",
+        "altering",
+        "dismantling",
+        "condemned"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

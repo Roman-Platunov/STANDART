@@ -1,0 +1,22 @@
+sid: 364916b0
+path: agv.state
+aliases:
+  short: agv.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние AGV
+  en: AGV state
+fingerprint: sha256:364916b04aec9bdb0264618035499c589813b0ae7d61cc847c6a50bf0d124d91
+enumValues:
+  - idle
+  - navigate
+  - load
+  - unload
+  - charge
+  - fault

@@ -1,0 +1,22 @@
+sid: 54ca3839
+path: rope_access.status
+aliases:
+  short: rope_access.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус работы
+  en: Job status
+fingerprint: sha256:54ca383930ccc32bd8e0a1f61cb243862834f8348663d7964847cd499ce416a8
+enumValues:
+  - brief
+  - ascent
+  - work
+  - descent
+  - complete
+  - abort

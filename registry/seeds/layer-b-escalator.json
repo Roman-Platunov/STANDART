@@ -1,0 +1,115 @@
+{
+  "layer": "B10",
+  "name": "layer-b-escalator.json",
+  "types": [
+    {
+      "path": "escalator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Escalator id",
+      "titleRu": "ID эскалатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "escalator.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Escalator speed",
+      "titleRu": "Скорость эскалатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "escalator.motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "escalator.passengers.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Passengers per hour",
+      "titleRu": "Пассажиров в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "escalator.handrail.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Handrail OK",
+      "titleRu": "Поручень OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "escalator.comb.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Comb plate fault",
+      "titleRu": "Неисправность гребенки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "escalator.direction",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Direction",
+      "titleRu": "Направление",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "up",
+        "down",
+        "stopped"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "escalator.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Escalator state",
+      "titleRu": "Состояние эскалатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "stop",
+        "fault",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B10",
+  "name": "layer-b-cip.json",
+  "types": [
+    {
+      "path": "cip.circuit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CIP circuit id",
+      "titleRu": "ID контура CIP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cip.recipe.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CIP recipe id",
+      "titleRu": "ID рецепта CIP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cip.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CIP temperature",
+      "titleRu": "Температура CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip.solution.conductivity",
+      "kind": "quantity",
+      "unit": "mS/cm",
+      "titleEn": "CIP conductivity",
+      "titleRu": "Электропроводность CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "CIP flow",
+      "titleRu": "Расход CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "CIP cycle time",
+      "titleRu": "Время цикла CIP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip.complete",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CIP complete",
+      "titleRu": "CIP завершён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cip.step",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CIP step",
+      "titleRu": "Шаг CIP",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pre_rinse",
+        "caustic",
+        "acid",
+        "sanitize",
+        "final_rinse",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

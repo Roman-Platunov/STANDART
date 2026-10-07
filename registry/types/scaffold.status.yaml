@@ -1,0 +1,21 @@
+sid: ad43e475
+path: scaffold.status
+aliases:
+  short: scaffold.status
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Статус лесов
+  en: Scaffold status
+fingerprint: sha256:ad43e4759df65bd6cfd584f19a89c77e3fbc2c3d5d7a1aad16f7c8e50e76590f
+enumValues:
+  - erecting
+  - in_use
+  - altering
+  - dismantling
+  - condemned

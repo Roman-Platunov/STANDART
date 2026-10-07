@@ -1,0 +1,21 @@
+sid: c6d28018
+path: intrusion.mode
+aliases:
+  short: intrusion.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим постановки
+  en: Arming mode
+fingerprint: sha256:c6d280189ed9ea0a14f270ae054903328d1c709790a3f95c56a94c76b810b955
+enumValues:
+  - disarmed
+  - away
+  - stay
+  - night
+  - test

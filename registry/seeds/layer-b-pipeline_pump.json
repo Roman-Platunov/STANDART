@@ -1,0 +1,112 @@
+{
+  "layer": "B10",
+  "name": "layer-b-pipeline_pump.json",
+  "types": [
+    {
+      "path": "pipeline_pump.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipeline pump station id",
+      "titleRu": "ID НПС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pipeline_pump.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipeline pump unit id",
+      "titleRu": "ID насосного агрегата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pipeline_pump.suction.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Suction pressure",
+      "titleRu": "Давление всасывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_pump.discharge.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_pump.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pump flow",
+      "titleRu": "Расход насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_pump.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Pump vibration",
+      "titleRu": "Вибрация насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_pump.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Pump power",
+      "titleRu": "Мощность насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pump state",
+      "titleRu": "Состояние насоса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "start",
+        "run",
+        "recycle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

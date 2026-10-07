@@ -1,0 +1,20 @@
+sid: 3b2053e0
+path: moving_walk.state
+aliases:
+  short: moving_walk.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние траволатора
+  en: Walkway state
+fingerprint: sha256:3b2053e054cb3c34b38661ed97b92cb4edb9f2089a84fad927c7b1bbd5b8d368
+enumValues:
+  - run
+  - stop
+  - fault
+  - maintenance

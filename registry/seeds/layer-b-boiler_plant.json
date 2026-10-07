@@ -1,0 +1,121 @@
+{
+  "layer": "B10",
+  "name": "layer-b-boiler_plant.json",
+  "types": [
+    {
+      "path": "boiler_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Boiler plant id",
+      "titleRu": "ID котельной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "boiler_plant.boiler.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Boiler id",
+      "titleRu": "ID котла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "boiler_plant.steam.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boiler_plant.steam.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Steam temperature",
+      "titleRu": "Температура пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boiler_plant.steam.flow",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steam flow",
+      "titleRu": "Расход пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boiler_plant.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Boiler efficiency",
+      "titleRu": "КПД котла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "boiler_plant.stack.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stack O2",
+      "titleRu": "O₂ в дымовых газах",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "boiler_plant.fuel",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Boiler fuel",
+      "titleRu": "Топливо котла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gas",
+        "oil",
+        "coal",
+        "biomass",
+        "electric",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

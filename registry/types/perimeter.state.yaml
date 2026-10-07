@@ -1,0 +1,20 @@
+sid: e39a9a1e
+path: perimeter.state
+aliases:
+  short: perimeter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сектора
+  en: Sector state
+fingerprint: sha256:e39a9a1e9ad0696e6bf36b15cee000d836d6c63cf0cfd04a1672ba70844183ee
+enumValues:
+  - secure
+  - alarm
+  - mask
+  - fault

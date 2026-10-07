@@ -1,0 +1,121 @@
+{
+  "layer": "B10",
+  "name": "layer-b-oil_refinery.json",
+  "types": [
+    {
+      "path": "oil_refinery.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Refinery process unit id",
+      "titleRu": "ID установки НПЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oil_refinery.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Refinery plant id",
+      "titleRu": "ID НПЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oil_refinery.crude.throughput",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Crude throughput",
+      "titleRu": "Переработка нефти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_refinery.fcc.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "FCC reactor temperature",
+      "titleRu": "Температура FCC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_refinery.distillate.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Distillate yield",
+      "titleRu": "Выход дистиллятов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oil_refinery.flare.flow",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Flare gas flow",
+      "titleRu": "Расход на факел",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_refinery.hydrogen.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "H2 purity",
+      "titleRu": "Чистота водорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oil_refinery.unit.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process unit type",
+      "titleRu": "Тип установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cdu",
+        "fcc",
+        "hydrocracker",
+        "reformer",
+        "alkylation",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

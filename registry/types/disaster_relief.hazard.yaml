@@ -1,0 +1,22 @@
+sid: ee052c08
+path: disaster_relief.hazard
+aliases:
+  short: disaster_relief.hazard
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип опасности
+  en: Hazard type
+fingerprint: sha256:ee052c08785bdbc8de669f928dbc79ce8cebf2a8d45ad08842175306828fe5e2
+enumValues:
+  - flood
+  - quake
+  - storm
+  - wildfire
+  - conflict
+  - other

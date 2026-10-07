@@ -1,0 +1,118 @@
+{
+  "layer": "B10",
+  "name": "layer-b-rope_access.json",
+  "types": [
+    {
+      "path": "rope_access.team.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rope access team id",
+      "titleRu": "ID бригады промышленного альпинизма",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rope_access.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rope access job id",
+      "titleRu": "ID работы на высоте",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rope_access.height.m",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Work height",
+      "titleRu": "Высота работ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rope_access.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind at height",
+      "titleRu": "Ветер на высоте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rope_access.rescue.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rescue plan ready",
+      "titleRu": "План спасения готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rope_access.weather.hold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Weather hold",
+      "titleRu": "Остановка по погоде",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rope_access.task",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Task type",
+      "titleRu": "Тип задачи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inspect",
+        "paint",
+        "clean",
+        "repair",
+        "install",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rope_access.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Job status",
+      "titleRu": "Статус работы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "brief",
+        "ascent",
+        "work",
+        "descent",
+        "complete",
+        "abort"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

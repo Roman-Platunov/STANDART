@@ -1,0 +1,21 @@
+sid: db7a6d85
+path: checkweigher.result
+aliases:
+  short: checkweigher.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат контроля
+  en: Check result
+fingerprint: sha256:db7a6d857e4f29c63b3c59b69d247d3a1c3d6294a992a367032e0dc18d8166c1
+enumValues:
+  - pass
+  - under
+  - over
+  - metal
+  - fault

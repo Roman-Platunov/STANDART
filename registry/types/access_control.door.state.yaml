@@ -1,0 +1,21 @@
+sid: 86d4adee
+path: access_control.door.state
+aliases:
+  short: door.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние двери
+  en: Door state
+fingerprint: sha256:86d4adeed3ec3ac36be97f851e81794163c9acd4e4d5b832b073b5e713bb9298
+enumValues:
+  - locked
+  - unlocked
+  - open
+  - forced
+  - fault

@@ -1,0 +1,125 @@
+{
+  "layer": "B10",
+  "name": "layer-b-labeler.json",
+  "types": [
+    {
+      "path": "labeler.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Labeler id",
+      "titleRu": "ID этикетировщика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "labeler.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Labeled SKU id",
+      "titleRu": "ID маркируемого SKU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "labeler.apply.rate",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Labels per minute",
+      "titleRu": "Этикеток в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "labeler.reject.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Label reject rate",
+      "titleRu": "Доля брака этикеток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "labeler.reel.remaining",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reel remaining",
+      "titleRu": "Остаток рулона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "labeler.vision.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vision inspection fail",
+      "titleRu": "Брак по зрению",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "labeler.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Labeler type",
+      "titleRu": "Тип этикетировщика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pressure",
+        "sleeve",
+        "print_apply",
+        "laser",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "labeler.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Labeler state",
+      "titleRu": "Состояние этикетировщика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "changeover",
+        "jam",
+        "empty",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: e10f77b4
+path: access_control.result
+aliases:
+  short: access_control.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат доступа
+  en: Access result
+fingerprint: sha256:e10f77b4bf6353f5fa9a7f52928baa1fc5c5953d17278977234beb06dd119dc0
+enumValues:
+  - grant
+  - deny
+  - duress
+  - antipassback
+  - expired

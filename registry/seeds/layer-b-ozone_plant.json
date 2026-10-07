@@ -1,0 +1,117 @@
+{
+  "layer": "B10",
+  "name": "layer-b-ozone_plant.json",
+  "types": [
+    {
+      "path": "ozone_plant.generator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ozone generator id",
+      "titleRu": "ID генератора озона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ozone_plant.concentration",
+      "kind": "quantity",
+      "unit": "g/Nm3",
+      "titleEn": "Ozone concentration",
+      "titleRu": "Концентрация озона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ozone_plant.dose",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Applied ozone dose",
+      "titleRu": "Доза озона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ozone_plant.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Generator power",
+      "titleRu": "Мощность генератора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ozone_plant.residual",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Residual ozone",
+      "titleRu": "Остаточный озон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ozone_plant.destruct.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Off-gas destruct OK",
+      "titleRu": "Деструктор OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ozone_plant.feed",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feed gas",
+      "titleRu": "Газ питания",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "air",
+        "oxygen",
+        "vpsa"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ozone_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ozone plant state",
+      "titleRu": "Состояние озонатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "off",
+        "ramp",
+        "produce",
+        "purge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

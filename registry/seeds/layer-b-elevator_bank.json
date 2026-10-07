@@ -1,0 +1,114 @@
+{
+  "layer": "B10",
+  "name": "layer-b-elevator_bank.json",
+  "types": [
+    {
+      "path": "elevator_bank.group.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Elevator group id",
+      "titleRu": "ID группы лифтов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "elevator_bank.car.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Elevator car id",
+      "titleRu": "ID кабины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "elevator_bank.cars.running",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cars running",
+      "titleRu": "Кабин в работе",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elevator_bank.wait.avg_s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Average wait",
+      "titleRu": "Среднее ожидание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elevator_bank.trips.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Trips per hour",
+      "titleRu": "Рейсов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "elevator_bank.load.avg",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Average car load",
+      "titleRu": "Средняя загрузка кабины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "elevator_bank.lobby.peak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lobby peak mode",
+      "titleRu": "Пиковый режим лобби",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "elevator_bank.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Group mode",
+      "titleRu": "Режим группы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "up_peak",
+        "down_peak",
+        "fire",
+        "independent"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

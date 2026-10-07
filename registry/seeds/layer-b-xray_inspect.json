@@ -1,0 +1,112 @@
+{
+  "layer": "B10",
+  "name": "layer-b-xray_inspect.json",
+  "types": [
+    {
+      "path": "xray_inspect.system.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "X-ray inspection system id",
+      "titleRu": "ID рентген-инспекции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "xray_inspect.sku.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inspected SKU id",
+      "titleRu": "ID проверяемого SKU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "xray_inspect.reject.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Доля отбраковки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "xray_inspect.dose",
+      "kind": "quantity",
+      "unit": "uGy",
+      "titleEn": "Product dose",
+      "titleRu": "Доза на продукт",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "xray_inspect.throughput",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Units per minute",
+      "titleRu": "Единиц в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "xray_inspect.contaminant",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Contaminant found",
+      "titleRu": "Обнаружен загрязнитель",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "xray_inspect.image.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "X-ray image ref",
+      "titleRu": "Референс рентген-снимка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "xray_inspect.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Inspection result",
+      "titleRu": "Результат инспекции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pass",
+        "reject",
+        "suspect",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "layer": "B10",
+  "name": "layer-b-uv_disinfect.json",
+  "types": [
+    {
+      "path": "uv_disinfect.reactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UV reactor id",
+      "titleRu": "ID УФ-реактора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "uv_disinfect.dose",
+      "kind": "quantity",
+      "unit": "mJ/cm2",
+      "titleEn": "UV dose",
+      "titleRu": "Доза УФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uv_disinfect.intensity",
+      "kind": "quantity",
+      "unit": "W/m2",
+      "titleEn": "UV intensity",
+      "titleRu": "Интенсивность УФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uv_disinfect.transmittance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "UV transmittance",
+      "titleRu": "Пропускание УФ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "uv_disinfect.lamp.hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Lamp hours",
+      "titleRu": "Часы ламп",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "uv_disinfect.lamp.fail",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Lamp failure",
+      "titleRu": "Отказ лампы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "uv_disinfect.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "UV lamp type",
+      "titleRu": "Тип УФ-ламп",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lp",
+        "mp",
+        "led",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "uv_disinfect.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "UV state",
+      "titleRu": "Состояние УФ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "standby",
+        "cleaning",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B10",
+  "name": "layer-b-stretch_wrap.json",
+  "types": [
+    {
+      "path": "stretch_wrap.machine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stretch wrapper id",
+      "titleRu": "ID паллетообмотчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stretch_wrap.film.usage",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Film used",
+      "titleRu": "Расход плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stretch_wrap.pre_stretch",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pre-stretch",
+      "titleRu": "Предрастяжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 400
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stretch_wrap.revolutions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Turntable revolutions",
+      "titleRu": "Обороты стола",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stretch_wrap.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Wrap cycle time",
+      "titleRu": "Время цикла обмотки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stretch_wrap.film.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Film break",
+      "titleRu": "Обрыв плёнки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stretch_wrap.pattern",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wrap pattern",
+      "titleRu": "Схема обмотки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spiral",
+        "cross",
+        "top_sheet",
+        "custom"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stretch_wrap.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Wrapper state",
+      "titleRu": "Состояние обмотчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "wrap",
+        "cut",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

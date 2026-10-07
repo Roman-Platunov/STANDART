@@ -1,0 +1,21 @@
+sid: c4739d07
+path: wwtp.process
+aliases:
+  short: wwtp.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Процесс ОС
+  en: WWTP process
+fingerprint: sha256:c4739d076586cf48632883ed4b2d9b3ea291cf5b5ac8aebe18e5ebd271d53f8c
+enumValues:
+  - asp
+  - mbr
+  - sbr
+  - trickling
+  - other

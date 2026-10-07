@@ -1,0 +1,114 @@
+{
+  "layer": "B10",
+  "name": "layer-b-fare_collection.json",
+  "types": [
+    {
+      "path": "fare_collection.validator.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fare validator id",
+      "titleRu": "ID валидатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fare_collection.media.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fare media id",
+      "titleRu": "ID проездного",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fare_collection.txn.count",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Transactions today",
+      "titleRu": "Транзакций сегодня",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fare_collection.revenue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Revenue minor units",
+      "titleRu": "Выручка",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fare_collection.offline",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Offline mode",
+      "titleRu": "Офлайн-режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fare_collection.fraud",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fraud flag",
+      "titleRu": "Признак мошенничества",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fare_collection.media.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Media type",
+      "titleRu": "Тип носителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "card",
+        "phone",
+        "paper",
+        "bank",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fare_collection.result",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Validation result",
+      "titleRu": "Результат валидации",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "declined",
+        "insufficient",
+        "expired",
+        "error"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

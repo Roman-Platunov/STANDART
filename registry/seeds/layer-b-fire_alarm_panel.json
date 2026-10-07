@@ -1,0 +1,113 @@
+{
+  "layer": "B10",
+  "name": "layer-b-fire_alarm_panel.json",
+  "types": [
+    {
+      "path": "fire_alarm_panel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FACP id",
+      "titleRu": "ID ППКП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fire_alarm_panel.loop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FACP loop id",
+      "titleRu": "ID шлейфа ППКП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fire_alarm_panel.devices",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Devices on loop",
+      "titleRu": "Устройств на шлейфе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_alarm_panel.alarms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active fire alarms",
+      "titleRu": "Активных пожарных тревог",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fire_alarm_panel.silence",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Alarms silenced",
+      "titleRu": "Тревоги отключены",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fire_alarm_panel.trouble",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "System trouble",
+      "titleRu": "Неисправность системы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fire_alarm_panel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Panel state",
+      "titleRu": "Состояние панели",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "alarm",
+        "supervisory",
+        "trouble",
+        "test"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fire_alarm_panel.protocol",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Panel protocol",
+      "titleRu": "Протокол панели",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "conventional",
+        "addressable",
+        "wireless",
+        "hybrid"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

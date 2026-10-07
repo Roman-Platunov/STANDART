@@ -1,0 +1,21 @@
+sid: e03d25e5
+path: crane_ops.state
+aliases:
+  short: crane_ops.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние крана
+  en: Crane state
+fingerprint: sha256:e03d25e58cfbc951882bfdd4a88d8b77902a349f3ca701e879a22429d397f86d
+enumValues:
+  - idle
+  - lift
+  - travel
+  - outofservice
+  - fault

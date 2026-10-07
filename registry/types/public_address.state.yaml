@@ -1,0 +1,21 @@
+sid: c4dd7711
+path: public_address.state
+aliases:
+  short: public_address.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние СОУЭ
+  en: PA state
+fingerprint: sha256:c4dd77119998f09419465ef1e0742c03eeb9a6479f5e4a974ef902659abc42ec
+enumValues:
+  - idle
+  - page
+  - evac
+  - fault
+  - test

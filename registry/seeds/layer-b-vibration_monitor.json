@@ -1,0 +1,110 @@
+{
+  "layer": "B10",
+  "name": "layer-b-vibration_monitor.json",
+  "types": [
+    {
+      "path": "vibration_monitor.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Monitored asset id",
+      "titleRu": "ID контролируемого актива",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vibration_monitor.sensor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vibration sensor id",
+      "titleRu": "ID датчика вибрации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vibration_monitor.velocity",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration velocity RMS",
+      "titleRu": "Скорость вибрации RMS",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vibration_monitor.acceleration",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Vibration acceleration",
+      "titleRu": "Ускорение вибрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vibration_monitor.envelope",
+      "kind": "quantity",
+      "unit": "m/s2",
+      "titleEn": "Envelope amplitude",
+      "titleRu": "Амплитуда огибающей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vibration_monitor.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bearing temperature",
+      "titleRu": "Температура подшипника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vibration_monitor.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vibration alarm",
+      "titleRu": "Тревога по вибрации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vibration_monitor.severity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ISO severity",
+      "titleRu": "Тяжесть по ISO",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "good",
+        "satisfactory",
+        "unsatisfactory",
+        "unacceptable"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

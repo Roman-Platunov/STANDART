@@ -1,0 +1,119 @@
+{
+  "layer": "B10",
+  "name": "layer-b-pick_to_light.json",
+  "types": [
+    {
+      "path": "pick_to_light.bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PTL bay id",
+      "titleRu": "ID зоны PTL",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pick_to_light.order.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pick order id",
+      "titleRu": "ID заказа комплектации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pick_to_light.lights.active",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active lights",
+      "titleRu": "Активных индикаторов",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pick_to_light.picks.hour",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Picks per hour",
+      "titleRu": "Отборов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pick_to_light.error.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pick error rate",
+      "titleRu": "Доля ошибок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pick_to_light.confirm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pick confirmed",
+      "titleRu": "Отбор подтверждён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pick_to_light.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PTL mode",
+      "titleRu": "Режим PTL",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pick",
+        "put",
+        "count",
+        "idle"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pick_to_light.order.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Order state",
+      "titleRu": "Состояние заказа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "queued",
+        "active",
+        "complete",
+        "short",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

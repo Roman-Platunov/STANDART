@@ -1,0 +1,116 @@
+{
+  "layer": "B10",
+  "name": "layer-b-ndt.json",
+  "types": [
+    {
+      "path": "ndt.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NDT job id",
+      "titleRu": "ID задания НК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ndt.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Inspected asset id",
+      "titleRu": "ID контролируемого объекта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ndt.defect.length",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Defect length",
+      "titleRu": "Длина дефекта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ndt.defect.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Defect depth",
+      "titleRu": "Глубина дефекта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ndt.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inspection coverage",
+      "titleRu": "Покрытие контролем",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ndt.accept",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Accepted",
+      "titleRu": "Принято",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ndt.report.ref",
+      "kind": "media",
+      "unit": "-",
+      "titleEn": "NDT report ref",
+      "titleRu": "Референс отчёта НК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ndt.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "NDT method",
+      "titleRu": "Метод НК",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ut",
+        "rt",
+        "mt",
+        "pt",
+        "et",
+        "pa",
+        "tofd",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

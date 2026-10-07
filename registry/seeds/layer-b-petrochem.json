@@ -1,0 +1,117 @@
+{
+  "layer": "B10",
+  "name": "layer-b-petrochem.json",
+  "types": [
+    {
+      "path": "petrochem.plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Petrochemical plant id",
+      "titleRu": "ID нефтехимзавода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "petrochem.cracker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steam cracker id",
+      "titleRu": "ID пиролизной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "petrochem.cracker.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cracker furnace temperature",
+      "titleRu": "Температура пиролиза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "petrochem.ethylene.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ethylene purity",
+      "titleRu": "Чистота этилена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "petrochem.propylene.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Propylene rate",
+      "titleRu": "Выработка пропилена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "petrochem.flare.hc",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Hydrocarbon flare rate",
+      "titleRu": "Сброс УВ на факел",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "petrochem.compressor.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Process compressor power",
+      "titleRu": "Мощность компрессора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "petrochem.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Petrochem product",
+      "titleRu": "Продукт нефтехимии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ethylene",
+        "propylene",
+        "benzene",
+        "pe",
+        "pp",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 9614b2c1
+path: intrusion.state
+aliases:
+  short: intrusion.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зоны
+  en: Zone state
+fingerprint: sha256:9614b2c117baf96769ac82cc579bacf0248e861c44fc33b6eb9a84f73aeb2310
+enumValues:
+  - normal
+  - alarm
+  - trouble
+  - bypass

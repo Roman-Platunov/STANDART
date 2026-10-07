@@ -1,0 +1,21 @@
+sid: 1e082d26
+path: pick_to_light.order.state
+aliases:
+  short: pick_to_light.order.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние заказа
+  en: Order state
+fingerprint: sha256:1e082d26cb8cb9ec424607c9a63c7e7efff53ec70b4a048c2b62c200e35e76db
+enumValues:
+  - queued
+  - active
+  - complete
+  - short
+  - cancelled

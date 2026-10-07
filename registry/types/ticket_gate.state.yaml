@@ -1,0 +1,21 @@
+sid: ba7fadcf
+path: ticket_gate.state
+aliases:
+  short: ticket_gate.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние турникета
+  en: Gate state
+fingerprint: sha256:ba7fadcfcf166cb47293610572c9228ca1b5e0f73e32f23e1ceb9f7f5ae22cda
+enumValues:
+  - service
+  - closed
+  - free
+  - fault
+  - emergency

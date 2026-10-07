@@ -1,0 +1,21 @@
+sid: "66798833"
+path: subsea.state
+aliases:
+  short: subsea.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние подводной системы
+  en: Subsea state
+fingerprint: sha256:66798833fb1df495941fb9a25df1c2cc67685518de198b079dd2c5d88ba187c9
+enumValues:
+  - producing
+  - shut_in
+  - injecting
+  - testing
+  - fault

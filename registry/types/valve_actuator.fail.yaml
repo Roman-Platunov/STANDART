@@ -1,0 +1,20 @@
+sid: 26b12f2b
+path: valve_actuator.fail
+aliases:
+  short: valve_actuator.fail
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Положение при отказе
+  en: Fail position
+fingerprint: sha256:26b12f2b7ef7ab90098e46f83019c62481efd33d5aa9d55573c7fae2b7275e3c
+enumValues:
+  - fail_open
+  - fail_closed
+  - fail_last
+  - none

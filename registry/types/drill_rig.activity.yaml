@@ -1,0 +1,22 @@
+sid: 2f743eed
+path: drill_rig.activity
+aliases:
+  short: drill_rig.activity
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Операция буровой
+  en: Rig activity
+fingerprint: sha256:2f743eed8b37da551440a6ec799472c546ad2a9ef58cc3bcc7e2da77bbf06be8
+enumValues:
+  - drill
+  - trip
+  - cement
+  - log
+  - idle
+  - npt

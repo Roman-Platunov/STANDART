@@ -1,0 +1,21 @@
+sid: 8c22fc82
+path: clean_in_place_tank.state
+aliases:
+  short: clean_in_place_tank.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ёмкости
+  en: Tank state
+fingerprint: sha256:8c22fc8228e8b0408cddcca5d28a333c40863ad60ac18d2ba1566614bf7014fa
+enumValues:
+  - ready
+  - in_use
+  - make_up
+  - dump
+  - fault

@@ -1,0 +1,20 @@
+sid: a09a1497
+path: revolving_door.state
+aliases:
+  short: revolving_door.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние двери
+  en: Door state
+fingerprint: sha256:a09a14977e2d04e8c2cb9e75be570f6797823857957f12a3fee233b7091e7307
+enumValues:
+  - run
+  - stop
+  - fault
+  - egress

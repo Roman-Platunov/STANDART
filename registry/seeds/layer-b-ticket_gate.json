@@ -1,0 +1,118 @@
+{
+  "layer": "B10",
+  "name": "layer-b-ticket_gate.json",
+  "types": [
+    {
+      "path": "ticket_gate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ticket gate id",
+      "titleRu": "ID турникета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ticket_gate.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Station id",
+      "titleRu": "ID станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ticket_gate.throughput",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Passengers per minute",
+      "titleRu": "Пассажиров в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ticket_gate.reject.rate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Доля отказов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ticket_gate.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aisle open",
+      "titleRu": "Проход открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ticket_gate.tailgate",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tailgating detected",
+      "titleRu": "Проход следом",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ticket_gate.direction",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gate direction",
+      "titleRu": "Направление турникета",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "entry",
+        "exit",
+        "bidirectional"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ticket_gate.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gate state",
+      "titleRu": "Состояние турникета",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "service",
+        "closed",
+        "free",
+        "fault",
+        "emergency"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

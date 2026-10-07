@@ -1,0 +1,21 @@
+sid: 46301a25
+path: cmms.wo.type
+aliases:
+  short: wo.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип наряда
+  en: WO type
+fingerprint: sha256:46301a25e470eba884256ad3fc68d74a9c04063d6be8f14b34aaee5cb0c38413
+enumValues:
+  - corrective
+  - preventive
+  - predictive
+  - project
+  - emergency

@@ -1,0 +1,113 @@
+{
+  "layer": "B10",
+  "name": "layer-b-intrusion.json",
+  "types": [
+    {
+      "path": "intrusion.zone.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Intrusion zone id",
+      "titleRu": "ID зоны охраны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "intrusion.panel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Intrusion panel id",
+      "titleRu": "ID охранной панели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "intrusion.armed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Zone armed",
+      "titleRu": "Зона на охране",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "intrusion.alarm.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Intrusion alarm",
+      "titleRu": "Охранная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "intrusion.tamper",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Device tamper",
+      "titleRu": "Вскрытие устройства",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "intrusion.sensors.fault",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Faulted sensors",
+      "titleRu": "Неисправных датчиков",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intrusion.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Arming mode",
+      "titleRu": "Режим постановки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "disarmed",
+        "away",
+        "stay",
+        "night",
+        "test"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "intrusion.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "alarm",
+        "trouble",
+        "bypass"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

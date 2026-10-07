@@ -1,0 +1,113 @@
+{
+  "layer": "B10",
+  "name": "layer-b-drill_rig.json",
+  "types": [
+    {
+      "path": "drill_rig.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Drill rig id",
+      "titleRu": "ID буровой установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drill_rig.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Well being drilled",
+      "titleRu": "ID бурящейся скважины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drill_rig.hook.load",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Hook load",
+      "titleRu": "Нагрузка на крюке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig.rop",
+      "kind": "quantity",
+      "unit": "m/h",
+      "titleEn": "Rate of penetration",
+      "titleRu": "Механическая скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig.mud.weight",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Mud density",
+      "titleRu": "Плотность раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig.mud.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Mud flow",
+      "titleRu": "Расход раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig.torque",
+      "kind": "quantity",
+      "unit": "N.m",
+      "titleEn": "Top drive torque",
+      "titleRu": "Момент верхнего привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig.activity",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rig activity",
+      "titleRu": "Операция буровой",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "drill",
+        "trip",
+        "cement",
+        "log",
+        "idle",
+        "npt"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: 7a36c12d
+path: video_analytics.model
+aliases:
+  short: video_analytics.model
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип модели
+  en: Model type
+fingerprint: sha256:7a36c12d0715d8584cb354f316e6ac79c8d3c9be9793f8a0bf64b2312aaa4939
+enumValues:
+  - detect
+  - track
+  - classify
+  - anomalydetect
+  - other

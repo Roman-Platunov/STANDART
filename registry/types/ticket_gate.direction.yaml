@@ -1,0 +1,19 @@
+sid: 524d83ba
+path: ticket_gate.direction
+aliases:
+  short: ticket_gate.direction
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Направление турникета
+  en: Gate direction
+fingerprint: sha256:524d83ba5f007846e9bfb2f651356995a558dca191afd04103f29bc6e3b43b32
+enumValues:
+  - entry
+  - exit
+  - bidirectional

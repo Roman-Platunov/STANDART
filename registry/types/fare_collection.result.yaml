@@ -1,0 +1,21 @@
+sid: b1b21107
+path: fare_collection.result
+aliases:
+  short: fare_collection.result
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Результат валидации
+  en: Validation result
+fingerprint: sha256:b1b211078703c85f18346b24b62c51f51aead47b9ceaa60dab54477602530a91
+enumValues:
+  - ok
+  - declined
+  - insufficient
+  - expired
+  - error

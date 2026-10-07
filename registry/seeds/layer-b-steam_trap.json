@@ -1,0 +1,115 @@
+{
+  "layer": "B10",
+  "name": "layer-b-steam_trap.json",
+  "types": [
+    {
+      "path": "steam_trap.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steam trap id",
+      "titleRu": "ID конденсатоотводчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steam_trap.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steam line id",
+      "titleRu": "ID паропровода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steam_trap.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Trap temperature",
+      "titleRu": "Температура отводчика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_trap.ultrasound",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ultrasound level",
+      "titleRu": "Уровень ультразвука",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_trap.blowing",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blowing through",
+      "titleRu": "Продувка паром",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "steam_trap.cold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cold / flooded",
+      "titleRu": "Холодный / затоплен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "steam_trap.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Trap type",
+      "titleRu": "Тип отводчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "thermostatic",
+        "mechanical",
+        "thermodynamic",
+        "other"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "steam_trap.condition",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Trap condition",
+      "titleRu": "Состояние отводчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ok",
+        "blow",
+        "blocked",
+        "leaking",
+        "unknown"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

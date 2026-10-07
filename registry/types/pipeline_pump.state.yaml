@@ -1,0 +1,21 @@
+sid: cc46028e
+path: pipeline_pump.state
+aliases:
+  short: pipeline_pump.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние насоса
+  en: Pump state
+fingerprint: sha256:cc46028e68f1a48b6d7590822f6788752c7a3ec293f464a09e9780903d572b67
+enumValues:
+  - off
+  - start
+  - run
+  - recycle
+  - fault

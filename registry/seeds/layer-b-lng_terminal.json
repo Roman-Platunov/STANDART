@@ -1,0 +1,115 @@
+{
+  "layer": "B10",
+  "name": "layer-b-lng_terminal.json",
+  "types": [
+    {
+      "path": "lng_terminal.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LNG terminal id",
+      "titleRu": "ID СПГ-терминала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lng_terminal.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LNG storage tank id",
+      "titleRu": "ID резервуара СПГ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lng_terminal.tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "LNG tank level",
+      "titleRu": "Уровень СПГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lng_terminal.tank.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Tank pressure",
+      "titleRu": "Давление резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_terminal.boiloff.rate",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Boil-off rate",
+      "titleRu": "Скорость испарения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_terminal.sendout.flow",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Send-out flow",
+      "titleRu": "Отпуск газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_terminal.jetty.berths",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Occupied berths",
+      "titleRu": "Занятые причалы",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_terminal.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Terminal mode",
+      "titleRu": "Режим терминала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "import",
+        "export",
+        "bunker",
+        "idle",
+        "maintenance"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

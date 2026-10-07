@@ -1,0 +1,21 @@
+sid: ae54a26a
+path: hvac_vav.mode
+aliases:
+  short: hvac_vav.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим VAV
+  en: VAV mode
+fingerprint: sha256:ae54a26a8c13e2b218fdcd95c5980e579d238452dd4ee579d819388ecce3d99d
+enumValues:
+  - heat
+  - cool
+  - deadband
+  - occupied
+  - unoccupied

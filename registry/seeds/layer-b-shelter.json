@@ -1,0 +1,117 @@
+{
+  "layer": "B10",
+  "name": "layer-b-shelter.json",
+  "types": [
+    {
+      "path": "shelter.site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shelter site id",
+      "titleRu": "ID убежища / ПВР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shelter.capacity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Shelter capacity",
+      "titleRu": "Вместимость",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shelter.occupancy",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Current occupancy",
+      "titleRu": "Текущая заполненность",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shelter.supplies.days",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Supply days remaining",
+      "titleRu": "Запасов на дней",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shelter.power.runtime_h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Backup power hours",
+      "titleRu": "Часы резервного питания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shelter.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Shelter open",
+      "titleRu": "Убежище открыто",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shelter.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shelter type",
+      "titleRu": "Тип убежища",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "storm",
+        "heat",
+        "cold",
+        "earthquake",
+        "general"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shelter.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shelter status",
+      "titleRu": "Статус убежища",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "open",
+        "full",
+        "closing",
+        "closed"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

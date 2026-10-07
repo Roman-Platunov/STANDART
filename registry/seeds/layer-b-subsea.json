@@ -1,0 +1,115 @@
+{
+  "layer": "B10",
+  "name": "layer-b-subsea.json",
+  "types": [
+    {
+      "path": "subsea.tree.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Subsea tree id",
+      "titleRu": "ID подводной фонтанной арматуры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "subsea.manifold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Subsea manifold id",
+      "titleRu": "ID подводного манифольда",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "subsea.wellhead.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Wellhead pressure",
+      "titleRu": "Давление на устье",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "subsea.wellhead.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wellhead temperature",
+      "titleRu": "Температура на устье",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "subsea.choke.opening",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Choke opening",
+      "titleRu": "Открытие штуцера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "subsea.hydrate.inhibitor",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Inhibitor rate",
+      "titleRu": "Подача ингибитора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "subsea.leak.suspect",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Subsea leak suspect",
+      "titleRu": "Подозрение на утечку",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "subsea.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Subsea state",
+      "titleRu": "Состояние подводной системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "producing",
+        "shut_in",
+        "injecting",
+        "testing",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

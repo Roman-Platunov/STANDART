@@ -1,0 +1,21 @@
+sid: fd60fe9a
+path: amr.state
+aliases:
+  short: amr.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние AMR
+  en: AMR state
+fingerprint: sha256:fd60fe9ad18b7a1bc6fc7b756b399ec9013d8c0b1ca88916b169d034d01d0447
+enumValues:
+  - idle
+  - navigate
+  - wait
+  - charge
+  - error

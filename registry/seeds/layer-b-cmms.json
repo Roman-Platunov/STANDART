@@ -1,0 +1,117 @@
+{
+  "layer": "B10",
+  "name": "layer-b-cmms.json",
+  "types": [
+    {
+      "path": "cmms.workorder.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CMMS work order id",
+      "titleRu": "ID наряда CMMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cmms.asset.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CMMS asset id",
+      "titleRu": "ID актива CMMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cmms.priority",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Work order priority",
+      "titleRu": "Приоритет наряда",
+      "encodings": [
+        "i16"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmms.mttr.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "MTTR hours",
+      "titleRu": "MTTR часы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmms.backlog.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Backlog hours",
+      "titleRu": "Бэклог часов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cmms.wo.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Work order open",
+      "titleRu": "Наряд открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cmms.wo.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "WO type",
+      "titleRu": "Тип наряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "corrective",
+        "preventive",
+        "predictive",
+        "project",
+        "emergency"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cmms.wo.status",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "WO status",
+      "titleRu": "Статус наряда",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "new",
+        "planned",
+        "in_progress",
+        "held",
+        "done",
+        "cancelled"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

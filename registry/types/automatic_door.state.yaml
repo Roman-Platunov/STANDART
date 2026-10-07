@@ -1,0 +1,21 @@
+sid: cf17b58c
+path: automatic_door.state
+aliases:
+  short: automatic_door.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние двери
+  en: Door state
+fingerprint: sha256:cf17b58cc7340e884e2a03b353cb9d20776eec2f5a0456b96561c81106e44d9f
+enumValues:
+  - closed
+  - opening
+  - open
+  - closing
+  - fault

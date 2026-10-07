@@ -1,0 +1,119 @@
+{
+  "layer": "B10",
+  "name": "layer-b-agv.json",
+  "types": [
+    {
+      "path": "agv.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AGV id",
+      "titleRu": "ID AGV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "agv.mission.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AGV mission id",
+      "titleRu": "ID миссии AGV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "agv.battery.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "AGV battery SoC",
+      "titleRu": "SoC батареи AGV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "agv.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "AGV speed",
+      "titleRu": "Скорость AGV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "agv.mission.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mission progress",
+      "titleRu": "Прогресс миссии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "agv.blocked",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Path blocked",
+      "titleRu": "Путь заблокирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "agv.estop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "E-stop active",
+      "titleRu": "Аварийный стоп",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "agv.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AGV state",
+      "titleRu": "Состояние AGV",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "idle",
+        "navigate",
+        "load",
+        "unload",
+        "charge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

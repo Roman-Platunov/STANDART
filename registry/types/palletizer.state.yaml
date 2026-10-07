@@ -1,0 +1,21 @@
+sid: 1c572350
+path: palletizer.state
+aliases:
+  short: palletizer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние паллетайзера
+  en: Palletizer state
+fingerprint: sha256:1c57235018836d9a6dadda3c23091a83d7e24e1d3f691fd65938305a9ee3142a
+enumValues:
+  - idle
+  - build
+  - wrap
+  - discharge
+  - fault

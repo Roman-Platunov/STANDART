@@ -1,0 +1,21 @@
+sid: 90be682b
+path: water_treatment_plant.process
+aliases:
+  short: water_treatment_plant.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип процесса
+  en: Process type
+fingerprint: sha256:90be682b7c0fdda5be6b0c3b12f3a36328861c38337f6eb14d74fddf788ada8a
+enumValues:
+  - conventional
+  - membrane
+  - uv
+  - ozone
+  - hybrid

@@ -1,0 +1,116 @@
+{
+  "layer": "B10",
+  "name": "layer-b-revolving_door.json",
+  "types": [
+    {
+      "path": "revolving_door.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Revolving door id",
+      "titleRu": "ID вращающейся двери",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "revolving_door.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Rotation speed",
+      "titleRu": "Скорость вращения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "revolving_door.throughput",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "People per hour",
+      "titleRu": "Человек в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "revolving_door.auto",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Automatic mode",
+      "titleRu": "Автоматический режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "revolving_door.bookfold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bookfold open",
+      "titleRu": "Распахнута книжкой",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "revolving_door.obstruction",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Obstruction detected",
+      "titleRu": "Препятствие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "revolving_door.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Door mode",
+      "titleRu": "Режим двери",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "auto",
+        "manual",
+        "locked",
+        "summer",
+        "egress"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "revolving_door.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Door state",
+      "titleRu": "Состояние двери",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "stop",
+        "fault",
+        "egress"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
