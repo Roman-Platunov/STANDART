@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-headlamp.json",
+  "types": [
+    {
+      "path": "headlamp.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Headlamp assembly line id",
+      "titleRu": "ID линии фар",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "headlamp.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Lamps per hour",
+      "titleRu": "Фар в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "headlamp.aim",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Aim angle error",
+      "titleRu": "Ошибка регулировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "headlamp.beam",
+      "kind": "quantity",
+      "unit": "cd",
+      "titleEn": "Beam intensity",
+      "titleRu": "Сила света",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "headlamp.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "headlamp.leak",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Housing leak test",
+      "titleRu": "Тест герметичности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "headlamp.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Photometry OK",
+      "titleRu": "Фотометрия OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "headlamp.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "halogen",
+        "led",
+        "matrix",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

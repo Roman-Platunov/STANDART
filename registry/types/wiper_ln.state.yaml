@@ -1,0 +1,20 @@
+sid: 230f112e
+path: wiper_ln.state
+aliases:
+  short: wiper_ln.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:230f112e0c2630b7e23fbd5eabe43e9b0b32c11c064867465761d0352474882b
+enumValues:
+  - assemble
+  - test
+  - idle
+  - fault

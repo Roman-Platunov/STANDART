@@ -1,0 +1,110 @@
+{
+  "layer": "B33",
+  "name": "layer-b-engine_test.json",
+  "types": [
+    {
+      "path": "engine_test.cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Engine test cell id",
+      "titleRu": "ID стенда испытаний ДВС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "engine_test.engine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Engine id",
+      "titleRu": "ID двигателя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "engine_test.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Measured power",
+      "titleRu": "Измеренная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_test.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Measured torque",
+      "titleRu": "Измеренный момент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_test.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Engine speed",
+      "titleRu": "Обороты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_test.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура ОЖ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "engine_test.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Test pass",
+      "titleRu": "Испытание пройдено",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "engine_test.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hot",
+        "cold",
+        "endurance",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

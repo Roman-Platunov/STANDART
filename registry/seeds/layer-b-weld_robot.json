@@ -1,0 +1,119 @@
+{
+  "layer": "B33",
+  "name": "layer-b-weld_robot.json",
+  "types": [
+    {
+      "path": "weld_robot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Body weld robot id",
+      "titleRu": "ID сварочного робота кузова",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weld_robot.spots",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Spot welds per hour",
+      "titleRu": "Точек в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weld_robot.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Weld current",
+      "titleRu": "Ток сварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weld_robot.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Robot uptime",
+      "titleRu": "Готовность робота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "weld_robot.tip",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tip dresses today",
+      "titleRu": "Зачисток электродов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weld_robot.quality",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Nugget pass rate",
+      "titleRu": "Прохождение ядра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "weld_robot.gun",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gun fault",
+      "titleRu": "Отказ клещей",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "weld_robot.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spot",
+        "mig",
+        "laser",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

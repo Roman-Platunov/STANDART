@@ -1,0 +1,20 @@
+sid: "663977e0"
+path: conn_mold.state
+aliases:
+  short: conn_mold.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:663977e0d6167741f478fe3c3f898e616909ce9b224c704558e013ddc96dc41b
+enumValues:
+  - mold
+  - insert
+  - idle
+  - fault

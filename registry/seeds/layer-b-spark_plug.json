@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-spark_plug.json",
+  "types": [
+    {
+      "path": "spark_plug.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spark plug line id",
+      "titleRu": "ID линии свечей зажигания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spark_plug.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Plugs per hour",
+      "titleRu": "Свечей в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spark_plug.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Electrode gap",
+      "titleRu": "Зазор электродов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spark_plug.resistance",
+      "kind": "quantity",
+      "unit": "kOhm",
+      "titleEn": "Resistor value",
+      "titleRu": "Сопротивление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spark_plug.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spark_plug.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Shell torque",
+      "titleRu": "Момент корпуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spark_plug.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gap OK",
+      "titleRu": "Зазор OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spark_plug.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "iridium",
+        "platinum",
+        "copper",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

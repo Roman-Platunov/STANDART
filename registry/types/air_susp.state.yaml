@@ -1,0 +1,20 @@
+sid: 1a964663
+path: air_susp.state
+aliases:
+  short: air_susp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:1a96466370e6b377137ca73fe14da21c263e5f12517d3206433d57ea144dfa5a
+enumValues:
+  - assemble
+  - charge
+  - test
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-die_cast_au.json",
+  "types": [
+    {
+      "path": "die_cast_au.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive die-cast machine id",
+      "titleRu": "ID машины литья под давлением авто",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "die_cast_au.shot",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Shots per hour",
+      "titleRu": "Впрысков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast_au.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Injection pressure",
+      "titleRu": "Давление впрыска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast_au.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Metal temperature",
+      "titleRu": "Температура металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast_au.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "die_cast_au.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_cast_au.porosity",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Porosity high",
+      "titleRu": "Высокая пористость",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "die_cast_au.alloy",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Alloy",
+      "titleRu": "Сплав",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "al",
+        "mg",
+        "zn",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

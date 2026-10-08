@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-lidar_assy.json",
+  "types": [
+    {
+      "path": "lidar_assy.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lidar assembly line id",
+      "titleRu": "ID линии сборки лидаров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lidar_assy.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lidar_assy.range",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Max range verified",
+      "titleRu": "Макс. дальность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lidar_assy.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lidar_assy.align",
+      "kind": "quantity",
+      "unit": "mrad",
+      "titleEn": "Beam alignment",
+      "titleRu": "Юстировка луча",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lidar_assy.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Laser power",
+      "titleRu": "Мощность лазера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lidar_assy.eye",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Eye-safety OK",
+      "titleRu": "Глазобезопасность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lidar_assy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "align",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

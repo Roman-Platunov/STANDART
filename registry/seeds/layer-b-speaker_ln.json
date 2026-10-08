@@ -1,0 +1,120 @@
+{
+  "layer": "B33",
+  "name": "layer-b-speaker_ln.json",
+  "types": [
+    {
+      "path": "speaker_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive speaker line id",
+      "titleRu": "ID линии автодинамиков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "speaker_ln.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Speakers per hour",
+      "titleRu": "Динамиков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "speaker_ln.spl",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "SPL at test",
+      "titleRu": "УЗД на тесте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "speaker_ln.thd",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "THD",
+      "titleRu": "КНИ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "speaker_ln.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "speaker_ln.impedance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Impedance",
+      "titleRu": "Импеданс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "speaker_ln.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Audio OK",
+      "titleRu": "Аудио OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "speaker_ln.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "test",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

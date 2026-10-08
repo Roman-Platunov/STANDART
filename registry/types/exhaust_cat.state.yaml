@@ -1,0 +1,20 @@
+sid: 5b538fd4
+path: exhaust_cat.state
+aliases:
+  short: exhaust_cat.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:5b538fd4a50c955d882db5b903f06d45512141da5598eba57c0755da378c83e2
+enumValues:
+  - coat
+  - can
+  - test
+  - fault

@@ -1,0 +1,20 @@
+sid: d070420e
+path: sensor_cal.type
+aliases:
+  short: sensor_cal.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип
+  en: Type
+fingerprint: sha256:d070420e3764dff435e173f81282f58fd98d9a017f5c7c4ed3035263ff66b337
+enumValues:
+  - pressure
+  - temp
+  - position
+  - other

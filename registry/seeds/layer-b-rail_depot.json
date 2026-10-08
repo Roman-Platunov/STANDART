@@ -1,0 +1,108 @@
+{
+  "layer": "B33",
+  "name": "layer-b-rail_depot.json",
+  "types": [
+    {
+      "path": "rail_depot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rail depot id",
+      "titleRu": "ID железнодорожного депо",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rail_depot.units",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rolling stock available",
+      "titleRu": "ПС в наличии",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_depot.maint",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Units in maintenance",
+      "titleRu": "На ТО",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_depot.roads",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Roads occupied",
+      "titleRu": "Занятых путей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_depot.energy",
+      "kind": "quantity",
+      "unit": "MWh",
+      "titleEn": "Depot energy today",
+      "titleRu": "Энергия депо за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_depot.wash",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Washes today",
+      "titleRu": "Моек за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rail_depot.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Service readiness OK",
+      "titleRu": "Готовность к рейсам OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rail_depot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Depot state",
+      "titleRu": "Состояние депо",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stabling",
+        "maintain",
+        "wash",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

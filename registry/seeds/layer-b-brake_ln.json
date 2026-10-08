@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-brake_ln.json",
+  "types": [
+    {
+      "path": "brake_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brake component line id",
+      "titleRu": "ID линии тормозных компонентов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brake_ln.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brake_ln.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Pad / disc thickness",
+      "titleRu": "Толщина колодки/диска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brake_ln.runout",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Disc runout",
+      "titleRu": "Биение диска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brake_ln.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "brake_ln.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Assembly torque",
+      "titleRu": "Момент сборки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brake_ln.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dimension OK",
+      "titleRu": "Размер OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "brake_ln.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pad",
+        "disc",
+        "caliper",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

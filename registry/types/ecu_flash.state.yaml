@@ -1,0 +1,20 @@
+sid: 7bb1875a
+path: ecu_flash.state
+aliases:
+  short: ecu_flash.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние поста
+  en: Station state
+fingerprint: sha256:7bb1875a68b2f18b52bb48ba3af883991f251971e8b23c5c69f844718987efbf
+enumValues:
+  - flash
+  - verify
+  - idle
+  - fault

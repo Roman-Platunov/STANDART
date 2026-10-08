@@ -1,0 +1,120 @@
+{
+  "layer": "B33",
+  "name": "layer-b-mirror_au.json",
+  "types": [
+    {
+      "path": "mirror_au.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive mirror line id",
+      "titleRu": "ID линии зеркал",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mirror_au.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Mirrors per hour",
+      "titleRu": "Зеркал в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mirror_au.reflect",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reflectance",
+      "titleRu": "Отражение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mirror_au.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mirror_au.fold",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Fold torque",
+      "titleRu": "Момент складывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mirror_au.heat",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Heater power",
+      "titleRu": "Мощность обогрева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mirror_au.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Optics / fold OK",
+      "titleRu": "Оптика / склад OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mirror_au.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "side",
+        "interior",
+        "camera",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

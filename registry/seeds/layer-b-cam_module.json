@@ -1,0 +1,123 @@
+{
+  "layer": "B33",
+  "name": "layer-b-cam_module.json",
+  "types": [
+    {
+      "path": "cam_module.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Camera module line id",
+      "titleRu": "ID линии камерных модулей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cam_module.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Modules per hour",
+      "titleRu": "Модулей в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cam_module.focus",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Focus pass",
+      "titleRu": "Фокус OK",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cam_module.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cam_module.dust",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dust particles found",
+      "titleRu": "Частиц пыли",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cam_module.mtf",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "MTF score",
+      "titleRu": "Оценка MTF",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cam_module.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Optical OK",
+      "titleRu": "Оптика OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cam_module.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bond",
+        "focus",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

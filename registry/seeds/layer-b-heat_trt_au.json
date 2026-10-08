@@ -1,0 +1,115 @@
+{
+  "layer": "B33",
+  "name": "layer-b-heat_trt_au.json",
+  "types": [
+    {
+      "path": "heat_trt_au.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive heat-treat furnace id",
+      "titleRu": "ID печи термообработки авто",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_trt_au.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_trt_au.time.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Soak time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_trt_au.hardness",
+      "kind": "quantity",
+      "unit": "HV",
+      "titleEn": "Hardness",
+      "titleRu": "Твёрдость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_trt_au.atmosphere",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Atmosphere carbon potential",
+      "titleRu": "Углеродный потенциал",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "heat_trt_au.batch",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Parts in load",
+      "titleRu": "Деталей в садку",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_trt_au.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hardness OK",
+      "titleRu": "Твёрдость OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heat_trt_au.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "carburize",
+        "quench",
+        "temper",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

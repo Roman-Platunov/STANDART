@@ -1,0 +1,20 @@
+sid: 54fda692
+path: oil_filter.state
+aliases:
+  short: oil_filter.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:54fda692170e0790d2013dd0f48c5f2c898599b3edad2a795fe890e0a2e3a60f
+enumValues:
+  - form
+  - assemble
+  - test
+  - fault

@@ -1,0 +1,20 @@
+sid: 75babce8
+path: eps_motor.state
+aliases:
+  short: eps_motor.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:75babce88f50ff085ed8cd0e3b988eae87d499d7666875a17a748cf515573847
+enumValues:
+  - wind
+  - assemble
+  - test
+  - fault

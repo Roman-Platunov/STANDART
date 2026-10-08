@@ -1,0 +1,120 @@
+{
+  "layer": "B33",
+  "name": "layer-b-fuel_tank.json",
+  "types": [
+    {
+      "path": "fuel_tank.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel tank line id",
+      "titleRu": "ID линии топливных баков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fuel_tank.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Tanks per hour",
+      "titleRu": "Баков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_tank.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Nominal volume",
+      "titleRu": "Номинальный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_tank.leak",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Leak test pressure",
+      "titleRu": "Давление теста утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fuel_tank.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fuel_tank.weld",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Weld / weld pass",
+      "titleRu": "Сварка OK",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fuel_tank.permeation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Permeation OK",
+      "titleRu": "Проницаемость OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fuel_tank.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plastic",
+        "steel",
+        "hybrid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

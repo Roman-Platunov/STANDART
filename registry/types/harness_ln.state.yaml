@@ -1,0 +1,20 @@
+sid: 71f2c814
+path: harness_ln.state
+aliases:
+  short: harness_ln.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:71f2c81468bb61483e721c896049098be56320ea0eefdc36cfc41518a3d762c1
+enumValues:
+  - cut
+  - crimp
+  - test
+  - fault

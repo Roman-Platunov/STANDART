@@ -1,0 +1,20 @@
+sid: 2b9f71da
+path: hvac_auto.state
+aliases:
+  short: hvac_auto.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:2b9f71da3fced707471e7559ec032b35082989b69608304dcbc48d4028232cd8
+enumValues:
+  - assemble
+  - charge
+  - test
+  - fault

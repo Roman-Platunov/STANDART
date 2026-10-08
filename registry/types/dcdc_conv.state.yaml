@@ -1,0 +1,20 @@
+sid: 1e9a717e
+path: dcdc_conv.state
+aliases:
+  short: dcdc_conv.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:1e9a717e9ff7d7efbccf01a985862d9b4927a8ab9a6518af4123ba37d22d5b69
+enumValues:
+  - assemble
+  - test
+  - idle
+  - fault

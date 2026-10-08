@@ -1,0 +1,115 @@
+{
+  "layer": "B33",
+  "name": "layer-b-airbag_tst.json",
+  "types": [
+    {
+      "path": "airbag_tst.bench.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Airbag test bench id",
+      "titleRu": "ID стенда подушек безопасности",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airbag_tst.module.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Module id",
+      "titleRu": "ID модуля",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "airbag_tst.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Squib current",
+      "titleRu": "Ток пиропатрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airbag_tst.resistance",
+      "kind": "quantity",
+      "unit": "Ohm",
+      "titleEn": "Squib resistance",
+      "titleRu": "Сопротивление пиропатрона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airbag_tst.time.ms",
+      "kind": "quantity",
+      "unit": "ms",
+      "titleEn": "Deploy time",
+      "titleRu": "Время срабатывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "airbag_tst.pass",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pass rate",
+      "titleRu": "Прохождение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "airbag_tst.pass.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Deploy test pass",
+      "titleRu": "Тест срабатывания OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "airbag_tst.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "driver",
+        "passenger",
+        "side",
+        "curtain",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "layer": "B33",
+  "name": "layer-b-bus_garage.json",
+  "types": [
+    {
+      "path": "bus_garage.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bus garage id",
+      "titleRu": "ID автобусного парка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bus_garage.fleet",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Buses available",
+      "titleRu": "Автобусов в наличии",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_garage.out",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Buses in service",
+      "titleRu": "Автобусов на линии",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_garage.maint",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "In maintenance",
+      "titleRu": "На ТО",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_garage.energy",
+      "kind": "quantity",
+      "unit": "kWh",
+      "titleEn": "Depot energy today",
+      "titleRu": "Энергия депо за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_garage.fuel",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fuel / H2 dispensed",
+      "titleRu": "Топливо / H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bus_garage.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Morning readiness OK",
+      "titleRu": "Утренняя готовность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bus_garage.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Garage state",
+      "titleRu": "Состояние парка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dispatch",
+        "maintain",
+        "charge",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

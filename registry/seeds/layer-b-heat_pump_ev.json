@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-heat_pump_ev.json",
+  "types": [
+    {
+      "path": "heat_pump_ev.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV heat-pump line id",
+      "titleRu": "ID линии тепловых насосов EV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heat_pump_ev.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_pump_ev.cop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "COP at test",
+      "titleRu": "КОП на тесте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_pump_ev.charge",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Refrigerant charge",
+      "titleRu": "Заправка хладагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_pump_ev.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "heat_pump_ev.leak",
+      "kind": "quantity",
+      "unit": "g/y",
+      "titleEn": "Leak rate",
+      "titleRu": "Утечка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heat_pump_ev.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Performance OK",
+      "titleRu": "Характеристики OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heat_pump_ev.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "charge",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

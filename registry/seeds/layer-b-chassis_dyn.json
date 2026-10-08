@@ -1,0 +1,111 @@
+{
+  "layer": "B33",
+  "name": "layer-b-chassis_dyn.json",
+  "types": [
+    {
+      "path": "chassis_dyn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chassis dynamometer id",
+      "titleRu": "ID стенда с беговыми барабанами",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chassis_dyn.vin",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VIN",
+      "titleRu": "VIN",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chassis_dyn.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Wheel power",
+      "titleRu": "Мощность на колёсах",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chassis_dyn.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Roller speed",
+      "titleRu": "Скорость барабанов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chassis_dyn.load",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Road load",
+      "titleRu": "Сопротивление дороги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chassis_dyn.emissions",
+      "kind": "quantity",
+      "unit": "g/km",
+      "titleEn": "CO2 / pollutant",
+      "titleRu": "CO2 / выбросы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chassis_dyn.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cycle pass",
+      "titleRu": "Цикл пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chassis_dyn.cycle",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cycle",
+      "titleRu": "Цикл",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wltp",
+        "nedc",
+        "ftp",
+        "custom",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B33",
+  "name": "layer-b-dcdc_conv.json",
+  "types": [
+    {
+      "path": "dcdc_conv.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV DC-DC converter line id",
+      "titleRu": "ID линии DC-DC преобразователей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dcdc_conv.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Converters per hour",
+      "titleRu": "Преобразователей в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dcdc_conv.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Rated power",
+      "titleRu": "Номинальная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dcdc_conv.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Efficiency",
+      "titleRu": "КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dcdc_conv.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dcdc_conv.ripple",
+      "kind": "quantity",
+      "unit": "mV",
+      "titleEn": "Output ripple",
+      "titleRu": "Пульсации выхода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dcdc_conv.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Electrical OK",
+      "titleRu": "Электрика OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dcdc_conv.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "test",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

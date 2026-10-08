@@ -1,0 +1,115 @@
+{
+  "layer": "B33",
+  "name": "layer-b-extrude_au.json",
+  "types": [
+    {
+      "path": "extrude_au.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive extrusion press id",
+      "titleRu": "ID экструзионного пресса авто",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extrude_au.force",
+      "kind": "quantity",
+      "unit": "MN",
+      "titleEn": "Press force",
+      "titleRu": "Усилие пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_au.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Billet temperature",
+      "titleRu": "Температура слитка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_au.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Ram / exit speed",
+      "titleRu": "Скорость прессования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_au.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Profile output",
+      "titleRu": "Выпуск профиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_au.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "extrude_au.surface",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Surface defect",
+      "titleRu": "Дефект поверхности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "extrude_au.alloy",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Alloy",
+      "titleRu": "Сплав",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "6xxx",
+        "7xxx",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

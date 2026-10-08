@@ -1,0 +1,20 @@
+sid: cb33aaba
+path: mach_cnc_au.state
+aliases:
+  short: mach_cnc_au.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ячейки
+  en: Cell state
+fingerprint: sha256:cb33aaba066f58dc111dcb1bf018b474842655eafba13108e0a779d3130a4423
+enumValues:
+  - cut
+  - setup
+  - idle
+  - fault

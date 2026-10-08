@@ -1,0 +1,20 @@
+sid: d2c521bd
+path: lidar_assy.state
+aliases:
+  short: lidar_assy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:d2c521bd1f7820e5d5d8bdbad8d9997ee9beeaca37b8fa212a7bdc3091b77647
+enumValues:
+  - assemble
+  - align
+  - test
+  - fault

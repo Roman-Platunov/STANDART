@@ -1,0 +1,115 @@
+{
+  "layer": "B33",
+  "name": "layer-b-forge_press.json",
+  "types": [
+    {
+      "path": "forge_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Forging press id",
+      "titleRu": "ID ковочного пресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "forge_press.force",
+      "kind": "quantity",
+      "unit": "MN",
+      "titleEn": "Press force",
+      "titleRu": "Усилие пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forge_press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Billet temperature",
+      "titleRu": "Температура заготовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forge_press.spm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Strokes per minute",
+      "titleRu": "Ходов в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forge_press.parts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Forgings per hour",
+      "titleRu": "Поковок в час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "forge_press.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "forge_press.die",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Die crack risk",
+      "titleRu": "Риск трещины штампа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "forge_press.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hot",
+        "warm",
+        "cold",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

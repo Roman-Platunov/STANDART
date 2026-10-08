@@ -1,0 +1,20 @@
+sid: 61a18047
+path: depot_chg.state
+aliases:
+  short: depot_chg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние депо
+  en: Depot state
+fingerprint: sha256:61a180470ab5bbf3ef4a45d18bff71443d2ca3a80c6fcfdd6995610bb42a4aff
+enumValues:
+  - charge
+  - schedule
+  - idle
+  - fault

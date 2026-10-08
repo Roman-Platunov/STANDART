@@ -1,0 +1,114 @@
+{
+  "layer": "B33",
+  "name": "layer-b-stamp_press.json",
+  "types": [
+    {
+      "path": "stamp_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stamping press id",
+      "titleRu": "ID штамповочного пресса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stamp_press.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Press force",
+      "titleRu": "Усилие пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stamp_press.spm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Strokes per minute",
+      "titleRu": "Ходов в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stamp_press.parts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Parts per hour",
+      "titleRu": "Деталей в час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stamp_press.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stamp_press.die",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Die changes today",
+      "titleRu": "Смен штампа",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stamp_press.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blank jam",
+      "titleRu": "Затор заготовки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stamp_press.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tandem",
+        "transfer",
+        "servo",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

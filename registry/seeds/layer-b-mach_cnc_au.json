@@ -1,0 +1,115 @@
+{
+  "layer": "B33",
+  "name": "layer-b-mach_cnc_au.json",
+  "types": [
+    {
+      "path": "mach_cnc_au.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive CNC cell id",
+      "titleRu": "ID ЧПУ-ячейки автокомпонентов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mach_cnc_au.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mach_cnc_au.spindle",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Spindle speed",
+      "titleRu": "Обороты шпинделя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mach_cnc_au.parts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Parts per hour",
+      "titleRu": "Деталей в час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mach_cnc_au.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mach_cnc_au.cpk",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Process Cpk",
+      "titleRu": "Cpk процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mach_cnc_au.tool",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tool break",
+      "titleRu": "Поломка инструмента",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mach_cnc_au.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cell state",
+      "titleRu": "Состояние ячейки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "setup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

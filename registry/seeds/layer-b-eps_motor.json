@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-eps_motor.json",
+  "types": [
+    {
+      "path": "eps_motor.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EPS motor line id",
+      "titleRu": "ID линии моторов ЭУР",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "eps_motor.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Motors per hour",
+      "titleRu": "Моторов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eps_motor.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Assist torque",
+      "titleRu": "Момент помощи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eps_motor.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток мотора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eps_motor.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "eps_motor.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "NVH",
+      "titleRu": "Шум",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "eps_motor.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Torque map OK",
+      "titleRu": "Карта момента OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "eps_motor.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wind",
+        "assemble",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

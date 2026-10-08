@@ -1,0 +1,20 @@
+sid: 55cca301
+path: speaker_ln.state
+aliases:
+  short: speaker_ln.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:55cca301e8ff1aaa58f635e33247d32f52bbce6a89d8941a34d660f1010a2272
+enumValues:
+  - assemble
+  - test
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: 43c8cefa
+path: v2g_unit.mode
+aliases:
+  short: v2g_unit.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:43c8cefa9a906ce216285afad92675fdb4b4286f018cd68be1b8614d29c72dcd
+enumValues:
+  - charge
+  - discharge
+  - idle
+  - fault

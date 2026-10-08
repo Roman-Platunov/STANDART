@@ -1,0 +1,120 @@
+{
+  "layer": "B33",
+  "name": "layer-b-invert_ev.json",
+  "types": [
+    {
+      "path": "invert_ev.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV traction inverter line id",
+      "titleRu": "ID линии тяговых инверторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "invert_ev.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Inverters per hour",
+      "titleRu": "Инверторов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "invert_ev.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Rated power",
+      "titleRu": "Номинальная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "invert_ev.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Efficiency at test",
+      "titleRu": "КПД на тесте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "invert_ev.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "invert_ev.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "IGBT temperature",
+      "titleRu": "Температура IGBT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "invert_ev.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Power test OK",
+      "titleRu": "Силовой тест OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "invert_ev.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "pot",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

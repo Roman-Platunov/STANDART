@@ -1,0 +1,20 @@
+sid: 5f432178
+path: loco_shop.state
+aliases:
+  short: loco_shop.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние цеха
+  en: Shop state
+fingerprint: sha256:5f432178d9e665e4b9653a6504a902189ae57ab1d4956ed95e2e8713917b5d30
+enumValues:
+  - heavy
+  - light
+  - idle
+  - fault

@@ -1,0 +1,114 @@
+{
+  "layer": "B33",
+  "name": "layer-b-final_assy.json",
+  "types": [
+    {
+      "path": "final_assy.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Final assembly line id",
+      "titleRu": "ID линии окончательной сборки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "final_assy.jph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Jobs per hour",
+      "titleRu": "Автомобилей в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "final_assy.ftt",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "First-time-through",
+      "titleRu": "С первого раза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "final_assy.andons",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Andons today",
+      "titleRu": "Андонов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "final_assy.wip",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicles on line",
+      "titleRu": "Авто на линии",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "final_assy.tact.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Takt time",
+      "titleRu": "Такт",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "final_assy.stop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Line stop",
+      "titleRu": "Останов линии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "final_assy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "changeover",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

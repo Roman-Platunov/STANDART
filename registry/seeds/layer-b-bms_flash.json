@@ -1,0 +1,113 @@
+{
+  "layer": "B33",
+  "name": "layer-b-bms_flash.json",
+  "types": [
+    {
+      "path": "bms_flash.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BMS flash / test station id",
+      "titleRu": "ID поста прошивки/теста BMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bms_flash.board.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BMS board id",
+      "titleRu": "ID платы BMS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bms_flash.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Flash + test time",
+      "titleRu": "Время прошивки+теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bms_flash.pass",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pass rate",
+      "titleRu": "Прохождение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bms_flash.cells",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cell channels checked",
+      "titleRu": "Проверенных каналов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bms_flash.balance",
+      "kind": "quantity",
+      "unit": "mV",
+      "titleEn": "Balance accuracy",
+      "titleRu": "Точность балансировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bms_flash.verify",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Firmware verify OK",
+      "titleRu": "Проверка ПО OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bms_flash.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние поста",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flash",
+        "test",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

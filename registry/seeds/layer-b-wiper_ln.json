@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-wiper_ln.json",
+  "types": [
+    {
+      "path": "wiper_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wiper system line id",
+      "titleRu": "ID линии стеклоочистителей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wiper_ln.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Systems per hour",
+      "titleRu": "Систем в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wiper_ln.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Motor torque",
+      "titleRu": "Момент мотора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wiper_ln.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Wipe cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wiper_ln.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wiper_ln.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Operating noise",
+      "titleRu": "Шум работы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wiper_ln.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Park / wipe OK",
+      "titleRu": "Парковка / очистка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wiper_ln.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "test",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

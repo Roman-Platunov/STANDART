@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-tire_mount.json",
+  "types": [
+    {
+      "path": "tire_mount.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tire mounting line id",
+      "titleRu": "ID линии монтажа шин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tire_mount.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Wheels per hour",
+      "titleRu": "Колёс в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mount.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Inflation pressure",
+      "titleRu": "Давление накачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mount.balance",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Balance correction",
+      "titleRu": "Коррекция балансировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mount.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tire_mount.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Wheel nut torque",
+      "titleRu": "Момент гаек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tire_mount.bead",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bead seat OK",
+      "titleRu": "Посадка борта OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tire_mount.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mount",
+        "inflate",
+        "balance",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-hvac_auto.json",
+  "types": [
+    {
+      "path": "hvac_auto.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive HVAC line id",
+      "titleRu": "ID линии автоклиматики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hvac_auto.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_auto.airflow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Blower airflow",
+      "titleRu": "Расход вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_auto.leak",
+      "kind": "quantity",
+      "unit": "g/y",
+      "titleEn": "Refrigerant leak rate",
+      "titleRu": "Утечка хладагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_auto.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hvac_auto.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Blower noise",
+      "titleRu": "Шум вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hvac_auto.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Performance OK",
+      "titleRu": "Характеристики OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hvac_auto.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "charge",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

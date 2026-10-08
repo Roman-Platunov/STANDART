@@ -1,0 +1,115 @@
+{
+  "layer": "B33",
+  "name": "layer-b-gear_hob.json",
+  "types": [
+    {
+      "path": "gear_hob.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gear hobbing machine id",
+      "titleRu": "ID зубофрезерного станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gear_hob.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Gears per hour",
+      "titleRu": "Шестерён в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gear_hob.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Hob speed",
+      "titleRu": "Обороты фрезы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gear_hob.error",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Profile error",
+      "titleRu": "Погрешность профиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gear_hob.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gear_hob.tool",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tool life remaining %",
+      "titleRu": "Остаток ресурса инструмента",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gear_hob.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gear quality OK",
+      "titleRu": "Качество зуба OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gear_hob.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние станка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hob",
+        "shave",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: dd255b88
+path: batt_pack_ev.state
+aliases:
+  short: batt_pack_ev.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:dd255b88c1470a8469c32f8740ea6336d8f59c4c857ca0a0757e44ebd865d089
+enumValues:
+  - stack
+  - weld
+  - test
+  - fault

@@ -1,0 +1,20 @@
+sid: 14a6f030
+path: body_assy.state
+aliases:
+  short: body_assy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:14a6f030622a1f1e9d6faf3c6a07fb9f8a1bf7581db1d5283c8abb5e2a82782c
+enumValues:
+  - weld
+  - geo
+  - idle
+  - fault

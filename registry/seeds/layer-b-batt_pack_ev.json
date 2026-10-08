@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-batt_pack_ev.json",
+  "types": [
+    {
+      "path": "batt_pack_ev.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV battery pack line id",
+      "titleRu": "ID линии тяговых батарей EV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "batt_pack_ev.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Packs per hour",
+      "titleRu": "Паков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_pack_ev.capacity",
+      "kind": "quantity",
+      "unit": "kWh",
+      "titleEn": "Pack energy",
+      "titleRu": "Энергия пака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_pack_ev.weld",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Busbar weld yield",
+      "titleRu": "Выход сварки шин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "batt_pack_ev.leak",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Cooling leak test",
+      "titleRu": "Тест утечки охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_pack_ev.ir",
+      "kind": "quantity",
+      "unit": "mOhm",
+      "titleEn": "Pack IR",
+      "titleRu": "Внутреннее сопротивление пака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_pack_ev.bms",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "BMS flash OK",
+      "titleRu": "Прошивка BMS OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "batt_pack_ev.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stack",
+        "weld",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

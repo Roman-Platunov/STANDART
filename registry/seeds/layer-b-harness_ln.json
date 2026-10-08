@@ -1,0 +1,118 @@
+{
+  "layer": "B33",
+  "name": "layer-b-harness_ln.json",
+  "types": [
+    {
+      "path": "harness_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wire harness line id",
+      "titleRu": "ID линии жгутов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "harness_ln.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Harnesses per hour",
+      "titleRu": "Жгутов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "harness_ln.crimps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Crimps per harness",
+      "titleRu": "Обжимов на жгут",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "harness_ln.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "harness_ln.test",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Electrical test pass",
+      "titleRu": "Электротест OK",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "harness_ln.circuits",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Circuits checked",
+      "titleRu": "Проверенных цепей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "harness_ln.continuity",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Continuity fail",
+      "titleRu": "Обрыв цепи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "harness_ln.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "crimp",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

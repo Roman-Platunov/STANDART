@@ -1,0 +1,117 @@
+{
+  "layer": "B33",
+  "name": "layer-b-trans_assy.json",
+  "types": [
+    {
+      "path": "trans_assy.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Transmission assembly line id",
+      "titleRu": "ID линии сборки КПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "trans_assy.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trans_assy.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Fastener torque checks",
+      "titleRu": "Контроль момента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trans_assy.nvh",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "NVH index",
+      "titleRu": "Индекс NVH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trans_assy.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "trans_assy.leak",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Leak test pressure drop",
+      "titleRu": "Падение давления утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "trans_assy.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "EOL OK",
+      "titleRu": "EOL OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "trans_assy.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "at",
+        "mt",
+        "dct",
+        "cvt",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

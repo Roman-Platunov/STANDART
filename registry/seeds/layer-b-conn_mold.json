@@ -1,0 +1,120 @@
+{
+  "layer": "B33",
+  "name": "layer-b-conn_mold.json",
+  "types": [
+    {
+      "path": "conn_mold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Connector molding machine id",
+      "titleRu": "ID машины литья разъёмов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "conn_mold.shots",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Shots per hour",
+      "titleRu": "Впрысков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conn_mold.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Melt temperature",
+      "titleRu": "Температура расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conn_mold.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conn_mold.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "conn_mold.flash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flash rate",
+      "titleRu": "Облой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "conn_mold.short",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Short shot",
+      "titleRu": "Недолив",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "conn_mold.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mold",
+        "insert",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

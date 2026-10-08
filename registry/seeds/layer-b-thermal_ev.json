@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-thermal_ev.json",
+  "types": [
+    {
+      "path": "thermal_ev.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV thermal system line id",
+      "titleRu": "ID линии термосистем EV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thermal_ev.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Systems per hour",
+      "titleRu": "Систем в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_ev.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Coolant flow",
+      "titleRu": "Расход теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_ev.leak",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Leak test",
+      "titleRu": "Тест утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_ev.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thermal_ev.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "System pressure",
+      "titleRu": "Давление системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thermal_ev.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flow / leak OK",
+      "titleRu": "Расход / утечка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thermal_ev.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "fill",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

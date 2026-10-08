@@ -1,0 +1,114 @@
+{
+  "layer": "B33",
+  "name": "layer-b-coolant_lp.json",
+  "types": [
+    {
+      "path": "coolant_lp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coolant loop fill station id",
+      "titleRu": "ID поста заправки контура ОЖ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coolant_lp.vin",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VIN",
+      "titleRu": "VIN",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coolant_lp.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём заправки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coolant_lp.vacuum",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Evacuation vacuum",
+      "titleRu": "Вакуум эвакуации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coolant_lp.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Fill time",
+      "titleRu": "Время заправки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coolant_lp.concentration",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Antifreeze concentration",
+      "titleRu": "Концентрация антифриза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coolant_lp.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fill pass",
+      "titleRu": "Заправка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coolant_lp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние поста",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "evacuate",
+        "fill",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

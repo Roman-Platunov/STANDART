@@ -1,0 +1,20 @@
+sid: 577182c6
+path: gear_hob.state
+aliases:
+  short: gear_hob.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станка
+  en: Machine state
+fingerprint: sha256:577182c638da5533e0dc840d9c9568ba808221967440bf272cf6cb4059044453
+enumValues:
+  - hob
+  - shave
+  - idle
+  - fault

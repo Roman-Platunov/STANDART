@@ -1,0 +1,118 @@
+{
+  "layer": "B33",
+  "name": "layer-b-sensor_cal.json",
+  "types": [
+    {
+      "path": "sensor_cal.bench.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive sensor cal bench id",
+      "titleRu": "ID стенда калибровки датчиков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sensor_cal.dut.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "DUT id",
+      "titleRu": "ID испытуемого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sensor_cal.error",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Calibration error",
+      "titleRu": "Погрешность калибровки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sensor_cal.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cal time",
+      "titleRu": "Время калибровки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sensor_cal.pass",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pass rate",
+      "titleRu": "Прохождение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sensor_cal.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Ambient temperature",
+      "titleRu": "Температура среды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sensor_cal.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Within tolerance",
+      "titleRu": "В допуске",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sensor_cal.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pressure",
+        "temp",
+        "position",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

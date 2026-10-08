@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-exhaust_cat.json",
+  "types": [
+    {
+      "path": "exhaust_cat.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Catalytic converter line id",
+      "titleRu": "ID линии катализаторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "exhaust_cat.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Converters per hour",
+      "titleRu": "Катализаторов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "exhaust_cat.pgms",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "PGM loading",
+      "titleRu": "Загрузка драгметаллов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "exhaust_cat.coat",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Washcoat loading",
+      "titleRu": "Нанос washcoat",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "exhaust_cat.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "exhaust_cat.leak",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Can leak test",
+      "titleRu": "Тест герметичности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "exhaust_cat.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coating OK",
+      "titleRu": "Покрытие OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "exhaust_cat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "coat",
+        "can",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

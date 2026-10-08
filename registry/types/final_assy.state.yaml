@@ -1,0 +1,20 @@
+sid: 10dd5ce3
+path: final_assy.state
+aliases:
+  short: final_assy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:10dd5ce304333abcc0c26110aba1a1679769a8b8401aa6b5d8d5529fd25e1507
+enumValues:
+  - run
+  - changeover
+  - idle
+  - fault

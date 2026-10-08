@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-bearing_ln.json",
+  "types": [
+    {
+      "path": "bearing_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bearing production line id",
+      "titleRu": "ID линии подшипников",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bearing_ln.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bearings per hour",
+      "titleRu": "Подшипников в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bearing_ln.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Noise test",
+      "titleRu": "Шумовой тест",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bearing_ln.clearance",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Radial clearance",
+      "titleRu": "Радиальный зазор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bearing_ln.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bearing_ln.hardness",
+      "kind": "quantity",
+      "unit": "HRC",
+      "titleEn": "Race hardness",
+      "titleRu": "Твёрдость дорожки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bearing_ln.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Noise / clearance OK",
+      "titleRu": "Шум / зазор OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bearing_ln.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ball",
+        "roller",
+        "taper",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 6833b061
+path: thermal_ev.state
+aliases:
+  short: thermal_ev.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:6833b06123ff34f8c5f569c4b4f245b8e5890dcde759925ab3265111ddb5d9cf
+enumValues:
+  - assemble
+  - fill
+  - test
+  - fault

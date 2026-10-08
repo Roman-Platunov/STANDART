@@ -1,0 +1,20 @@
+sid: adbae0ba
+path: obc_charge.state
+aliases:
+  short: obc_charge.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:adbae0ba2f4167caec5ef632d50f2142df6b7c99db15abbd58f47d019f9fb58e
+enumValues:
+  - assemble
+  - test
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: 66767c0c
+path: rail_depot.state
+aliases:
+  short: rail_depot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние депо
+  en: Depot state
+fingerprint: sha256:66767c0c01fa5bca3367afdb33bad0ba3f51717323a0be98dc4dd5881d8dad1a
+enumValues:
+  - stabling
+  - maintain
+  - wash
+  - fault

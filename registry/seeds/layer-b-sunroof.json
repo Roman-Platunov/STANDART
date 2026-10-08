@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-sunroof.json",
+  "types": [
+    {
+      "path": "sunroof.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sunroof assembly line id",
+      "titleRu": "ID линии люков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sunroof.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sunroof.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Open / close force",
+      "titleRu": "Усилие открытия/закрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sunroof.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sunroof.leak",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Water leak test",
+      "titleRu": "Тест на протечку",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sunroof.noise",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Operating noise",
+      "titleRu": "Шум работы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sunroof.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seal / motion OK",
+      "titleRu": "Уплотнение / ход OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sunroof.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "slide",
+        "tilt",
+        "panoramic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

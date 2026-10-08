@@ -1,0 +1,115 @@
+{
+  "layer": "B33",
+  "name": "layer-b-charge_pile.json",
+  "types": [
+    {
+      "path": "charge_pile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EV charging pile id",
+      "titleRu": "ID зарядной станции EV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "charge_pile.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Delivered power",
+      "titleRu": "Отданная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "charge_pile.sessions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Sessions today",
+      "titleRu": "Сессий за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "charge_pile.energy",
+      "kind": "quantity",
+      "unit": "kWh",
+      "titleEn": "Energy today",
+      "titleRu": "Энергия за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "charge_pile.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "charge_pile.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Connector temperature",
+      "titleRu": "Температура разъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "charge_pile.fault",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Charger fault",
+      "titleRu": "Отказ зарядки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "charge_pile.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ac",
+        "dc_fast",
+        "hpc",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

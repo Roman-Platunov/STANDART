@@ -1,0 +1,20 @@
+sid: dcf9eb6a
+path: tire_mount.state
+aliases:
+  short: tire_mount.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:dcf9eb6aae61f90a9570320f1ed46a35b2cc0efbbfd869c812be12a9c943a39a
+enumValues:
+  - mount
+  - inflate
+  - balance
+  - fault

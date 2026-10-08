@@ -1,0 +1,119 @@
+{
+  "layer": "B33",
+  "name": "layer-b-display_asy.json",
+  "types": [
+    {
+      "path": "display_asy.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive display assembly id",
+      "titleRu": "ID сборки автодисплеев",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "display_asy.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Displays per hour",
+      "titleRu": "Дисплеев в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "display_asy.brightness",
+      "kind": "quantity",
+      "unit": "cd/m2",
+      "titleEn": "Brightness",
+      "titleRu": "Яркость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "display_asy.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "display_asy.dead",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Dead pixels",
+      "titleRu": "Мёртвых пикселей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "display_asy.uniform",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uniformity",
+      "titleRu": "Равномерность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "display_asy.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Optical OK",
+      "titleRu": "Оптика OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "display_asy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "laminate",
+        "bond",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

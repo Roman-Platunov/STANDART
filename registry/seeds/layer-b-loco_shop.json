@@ -1,0 +1,109 @@
+{
+  "layer": "B33",
+  "name": "layer-b-loco_shop.json",
+  "types": [
+    {
+      "path": "loco_shop.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Locomotive workshop id",
+      "titleRu": "ID локомотивного цеха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loco_shop.jobs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open work orders",
+      "titleRu": "Открытых нарядов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loco_shop.tat.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Average TAT",
+      "titleRu": "Средний TAT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loco_shop.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Shop power",
+      "titleRu": "Мощность цеха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loco_shop.cranes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cranes in use",
+      "titleRu": "Кранов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loco_shop.parts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Parts issued today",
+      "titleRu": "Выдано деталей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loco_shop.overdue",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overdue jobs",
+      "titleRu": "Просроченные наряды",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "loco_shop.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shop state",
+      "titleRu": "Состояние цеха",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heavy",
+        "light",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

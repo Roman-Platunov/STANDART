@@ -1,0 +1,120 @@
+{
+  "layer": "B33",
+  "name": "layer-b-air_filter.json",
+  "types": [
+    {
+      "path": "air_filter.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive air filter line id",
+      "titleRu": "ID линии воздушных фильтров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "air_filter.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Filters per hour",
+      "titleRu": "Фильтров в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_filter.dp",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Pressure drop",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_filter.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Filtration efficiency",
+      "titleRu": "Эффективность фильтрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "air_filter.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "air_filter.media",
+      "kind": "quantity",
+      "unit": "m2",
+      "titleEn": "Media area",
+      "titleRu": "Площадь материала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_filter.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "air_filter.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cabin",
+        "engine",
+        "hevpa",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

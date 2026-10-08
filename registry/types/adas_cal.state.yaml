@@ -1,0 +1,20 @@
+sid: "443e0191"
+path: adas_cal.state
+aliases:
+  short: adas_cal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние поста
+  en: Bay state
+fingerprint: sha256:443e019197b7b5dc11e359fe596dfe2455a8c8b1484589c20000e5e129fd15d7
+enumValues:
+  - static
+  - dynamic
+  - idle
+  - fault

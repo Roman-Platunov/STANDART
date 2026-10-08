@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-air_susp.json",
+  "types": [
+    {
+      "path": "air_susp.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Air suspension line id",
+      "titleRu": "ID линии пневмоподвески",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "air_susp.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_susp.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "System pressure",
+      "titleRu": "Давление системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_susp.leak",
+      "kind": "quantity",
+      "unit": "Pa/min",
+      "titleEn": "Leak rate",
+      "titleRu": "Скорость утечки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_susp.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "air_susp.ride",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Ride height accuracy",
+      "titleRu": "Точность клиренса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_susp.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pressure hold OK",
+      "titleRu": "Удержание давления OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "air_susp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "charge",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

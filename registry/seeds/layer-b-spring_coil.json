@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-spring_coil.json",
+  "types": [
+    {
+      "path": "spring_coil.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coil spring machine id",
+      "titleRu": "ID станка навивки пружин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spring_coil.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Springs per hour",
+      "titleRu": "Пружин в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spring_coil.rate",
+      "kind": "quantity",
+      "unit": "N/mm",
+      "titleEn": "Spring rate",
+      "titleRu": "Жёсткость пружины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spring_coil.length",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Free length",
+      "titleRu": "Свободная длина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spring_coil.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spring_coil.wire",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Wire diameter",
+      "titleRu": "Диаметр проволоки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spring_coil.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rate OK",
+      "titleRu": "Жёсткость OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spring_coil.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "suspension",
+        "valve",
+        "seat",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

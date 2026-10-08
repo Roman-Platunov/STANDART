@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-door_mod.json",
+  "types": [
+    {
+      "path": "door_mod.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Door module line id",
+      "titleRu": "ID линии дверных модулей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "door_mod.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Modules per hour",
+      "titleRu": "Модулей в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "door_mod.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "door_mod.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "door_mod.window",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Window up/down time",
+      "titleRu": "Время стеклоподъёмника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "door_mod.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Latch torque",
+      "titleRu": "Момент замка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "door_mod.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Function OK",
+      "titleRu": "Функции OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "door_mod.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "test",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

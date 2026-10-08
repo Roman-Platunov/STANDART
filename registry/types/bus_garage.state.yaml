@@ -1,0 +1,20 @@
+sid: 3400dac5
+path: bus_garage.state
+aliases:
+  short: bus_garage.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние парка
+  en: Garage state
+fingerprint: sha256:3400dac52a589d4e4d26e37b4d4a9ffd9ef356db5dc8070a23b6d5d64b7abf49
+enumValues:
+  - dispatch
+  - maintain
+  - charge
+  - idle

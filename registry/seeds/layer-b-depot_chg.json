@@ -1,0 +1,114 @@
+{
+  "layer": "B33",
+  "name": "layer-b-depot_chg.json",
+  "types": [
+    {
+      "path": "depot_chg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fleet depot charger bank id",
+      "titleRu": "ID зарядного парка депо",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "depot_chg.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Total power",
+      "titleRu": "Суммарная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "depot_chg.ports",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Ports in use",
+      "titleRu": "Портов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "depot_chg.energy",
+      "kind": "quantity",
+      "unit": "MWh",
+      "titleEn": "Energy today",
+      "titleRu": "Энергия за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "depot_chg.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Peak demand vs capacity",
+      "titleRu": "Пик к мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "depot_chg.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicles waiting",
+      "titleRu": "Авто в ожидании",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "depot_chg.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Demand limit",
+      "titleRu": "Лимит мощности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "depot_chg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Depot state",
+      "titleRu": "Состояние депо",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "schedule",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

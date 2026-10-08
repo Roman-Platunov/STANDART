@@ -1,0 +1,114 @@
+{
+  "layer": "B33",
+  "name": "layer-b-body_assy.json",
+  "types": [
+    {
+      "path": "body_assy.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Body assembly / BIW line id",
+      "titleRu": "ID линии кузова / BIW",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "body_assy.jph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bodies per hour",
+      "titleRu": "Кузовов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "body_assy.spots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Spots per body",
+      "titleRu": "Точек на кузов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "body_assy.geo",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Geometry deviation max",
+      "titleRu": "Макс. отклонение геометрии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "body_assy.ftt",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "First-time-through",
+      "titleRu": "С первого раза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "body_assy.robots",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Robots online",
+      "titleRu": "Роботов онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "body_assy.fixture",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fixture fault",
+      "titleRu": "Отказ оснастки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "body_assy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "weld",
+        "geo",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

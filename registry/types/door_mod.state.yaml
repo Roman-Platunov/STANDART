@@ -1,0 +1,20 @@
+sid: 88b5945c
+path: door_mod.state
+aliases:
+  short: door_mod.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:88b5945c9ea9c28644bde9a96061d0771d33552c0dc972e82238b1e49b683200
+enumValues:
+  - assemble
+  - test
+  - idle
+  - fault

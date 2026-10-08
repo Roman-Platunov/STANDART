@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-fastener_ln.json",
+  "types": [
+    {
+      "path": "fastener_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fastener production line id",
+      "titleRu": "ID линии крепежа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fastener_ln.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Pieces per hour",
+      "titleRu": "Штук в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fastener_ln.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Proof torque",
+      "titleRu": "Контрольный момент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fastener_ln.hardness",
+      "kind": "quantity",
+      "unit": "HV",
+      "titleEn": "Hardness",
+      "titleRu": "Твёрдость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fastener_ln.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fastener_ln.coat",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Coat thickness",
+      "titleRu": "Толщина покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fastener_ln.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dim / hardness OK",
+      "titleRu": "Размер / твёрдость OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fastener_ln.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "bolt",
+        "nut",
+        "screw",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

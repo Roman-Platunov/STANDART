@@ -1,0 +1,20 @@
+sid: 5dd2df8d
+path: coolant_lp.state
+aliases:
+  short: coolant_lp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние поста
+  en: Station state
+fingerprint: sha256:5dd2df8dadaf4ca43ade08e453c1791bccdc09a78c86902d7eb3acebb6a1be89
+enumValues:
+  - evacuate
+  - fill
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: 2c1689ff
+path: heat_pump_ev.state
+aliases:
+  short: heat_pump_ev.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:2c1689ffead472af981365e3e6f5cc619a455476ca5d180cd8ec53fe2367db00
+enumValues:
+  - assemble
+  - charge
+  - test
+  - fault

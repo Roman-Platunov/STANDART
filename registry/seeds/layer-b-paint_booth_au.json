@@ -1,0 +1,117 @@
+{
+  "layer": "B33",
+  "name": "layer-b-paint_booth_au.json",
+  "types": [
+    {
+      "path": "paint_booth_au.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive paint booth id",
+      "titleRu": "ID окрасочной камеры авто",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_booth_au.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Booth temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth_au.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth_au.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Supply air",
+      "titleRu": "Приток воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth_au.voc",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "VOC",
+      "titleRu": "ЛОС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth_au.bodies",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bodies per hour",
+      "titleRu": "Кузовов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_booth_au.dirt",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dirt defect high",
+      "titleRu": "Много грязи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paint_booth_au.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Стадия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ecoat",
+        "primer",
+        "base",
+        "clear",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

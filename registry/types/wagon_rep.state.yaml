@@ -1,0 +1,20 @@
+sid: 5d04d836
+path: wagon_rep.state
+aliases:
+  short: wagon_rep.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние цеха
+  en: Shop state
+fingerprint: sha256:5d04d8360ab09329aa4db18b9ecc1cdafa9a163687d18d5218ba2048dbfe9f8f
+enumValues:
+  - repair
+  - inspect
+  - idle
+  - fault

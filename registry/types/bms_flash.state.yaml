@@ -1,0 +1,20 @@
+sid: 705d7a44
+path: bms_flash.state
+aliases:
+  short: bms_flash.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние поста
+  en: Station state
+fingerprint: sha256:705d7a445c2f353b46cc69f29f1bd85a548cdf2c4fa1b80963de907e6fdec739
+enumValues:
+  - flash
+  - test
+  - idle
+  - fault

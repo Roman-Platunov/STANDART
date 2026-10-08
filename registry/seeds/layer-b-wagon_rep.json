@@ -1,0 +1,108 @@
+{
+  "layer": "B33",
+  "name": "layer-b-wagon_rep.json",
+  "types": [
+    {
+      "path": "wagon_rep.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wagon repair shop id",
+      "titleRu": "ID вагоноремонтного цеха",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wagon_rep.jobs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wagons in repair",
+      "titleRu": "Вагонов в ремонте",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wagon_rep.tat.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Average TAT",
+      "titleRu": "Средний TAT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wagon_rep.wheels",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wheelsets changed",
+      "titleRu": "Сменённых колёсных пар",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wagon_rep.weld",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Weld hours today",
+      "titleRu": "Часов сварки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wagon_rep.paint",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Wagons painted",
+      "titleRu": "Окрашенных вагонов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wagon_rep.backlog",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Backlog high",
+      "titleRu": "Большой задел",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wagon_rep.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Shop state",
+      "titleRu": "Состояние цеха",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "repair",
+        "inspect",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

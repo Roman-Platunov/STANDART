@@ -1,0 +1,120 @@
+{
+  "layer": "B33",
+  "name": "layer-b-oil_filter.json",
+  "types": [
+    {
+      "path": "oil_filter.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Oil filter line id",
+      "titleRu": "ID линии масляных фильтров",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oil_filter.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Filters per hour",
+      "titleRu": "Фильтров в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_filter.burst",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Burst pressure",
+      "titleRu": "Давление разрыва",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_filter.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Particle efficiency",
+      "titleRu": "Эффективность по частицам",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oil_filter.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oil_filter.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Spin-on torque",
+      "titleRu": "Момент затяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oil_filter.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oil_filter.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "assemble",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

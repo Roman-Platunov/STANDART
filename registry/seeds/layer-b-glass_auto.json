@@ -1,0 +1,124 @@
+{
+  "layer": "B33",
+  "name": "layer-b-glass_auto.json",
+  "types": [
+    {
+      "path": "glass_auto.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Automotive glass line id",
+      "titleRu": "ID линии автостекла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "glass_auto.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Lites per hour",
+      "titleRu": "Стёкол в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_auto.bend",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bending temperature",
+      "titleRu": "Температура гибки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "glass_auto.laminate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Laminate yield",
+      "titleRu": "Выход триплекса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glass_auto.optics",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Optical pass",
+      "titleRu": "Оптика OK",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glass_auto.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "glass_auto.break",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Breakage",
+      "titleRu": "Бой",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "glass_auto.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "windshield",
+        "side",
+        "rear",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

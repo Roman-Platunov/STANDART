@@ -1,0 +1,112 @@
+{
+  "layer": "B33",
+  "name": "layer-b-ecu_flash.json",
+  "types": [
+    {
+      "path": "ecu_flash.station.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ECU flash station id",
+      "titleRu": "ID поста прошивки ЭБУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ecu_flash.ecu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ECU id",
+      "titleRu": "ID ЭБУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ecu_flash.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Flash time",
+      "titleRu": "Время прошивки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ecu_flash.pass",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pass rate",
+      "titleRu": "Прохождение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ecu_flash.queue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Units in queue",
+      "titleRu": "В очереди",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ecu_flash.version",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Software builds today",
+      "titleRu": "Сборок ПО",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ecu_flash.verify",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Verify OK",
+      "titleRu": "Проверка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ecu_flash.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние поста",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flash",
+        "verify",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

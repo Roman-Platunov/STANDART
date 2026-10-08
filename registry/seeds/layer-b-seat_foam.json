@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-seat_foam.json",
+  "types": [
+    {
+      "path": "seat_foam.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Seat foam molding line id",
+      "titleRu": "ID линии формования пены сидений",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "seat_foam.shots",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Shots per hour",
+      "titleRu": "Впрысков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seat_foam.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Foam density",
+      "titleRu": "Плотность пены",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seat_foam.hardness",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "ILD hardness",
+      "titleRu": "Жёсткость ILD",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seat_foam.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "seat_foam.cure.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cure time",
+      "titleRu": "Время отверждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "seat_foam.void",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Void / collapse",
+      "titleRu": "Пустота / схлопывание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "seat_foam.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pour",
+        "cure",
+        "trim",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

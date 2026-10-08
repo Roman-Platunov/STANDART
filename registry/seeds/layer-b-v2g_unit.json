@@ -1,0 +1,116 @@
+{
+  "layer": "B33",
+  "name": "layer-b-v2g_unit.json",
+  "types": [
+    {
+      "path": "v2g_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "V2G bidirectional charger id",
+      "titleRu": "ID двунаправленного ЗУ V2G",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "v2g_unit.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Import / export power",
+      "titleRu": "Мощность приём/отдача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "v2g_unit.energy",
+      "kind": "quantity",
+      "unit": "kWh",
+      "titleEn": "Energy exchanged today",
+      "titleRu": "Обмен энергии за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "v2g_unit.soc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vehicle SOC",
+      "titleRu": "SOC автомобиля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "v2g_unit.pf",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Power factor",
+      "titleRu": "Коэффициент мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "v2g_unit.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Unit temperature",
+      "titleRu": "Температура установки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "v2g_unit.grid",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grid support active",
+      "titleRu": "Поддержка сети активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "v2g_unit.mode",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mode",
+      "titleRu": "Режим",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "discharge",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

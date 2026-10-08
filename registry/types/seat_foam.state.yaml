@@ -1,0 +1,20 @@
+sid: e1db1e2c
+path: seat_foam.state
+aliases:
+  short: seat_foam.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:e1db1e2c45360d6d1a6c3de71888daa871e52aade781595c915d8ae73a6f8603
+enumValues:
+  - pour
+  - cure
+  - trim
+  - fault

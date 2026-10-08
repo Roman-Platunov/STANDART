@@ -1,0 +1,120 @@
+{
+  "layer": "B33",
+  "name": "layer-b-obc_charge.json",
+  "types": [
+    {
+      "path": "obc_charge.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "On-board charger line id",
+      "titleRu": "ID линии бортовых ЗУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "obc_charge.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "OBCs per hour",
+      "titleRu": "ЗУ в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "obc_charge.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Charge power",
+      "titleRu": "Мощность зарядки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "obc_charge.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Efficiency",
+      "titleRu": "КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "obc_charge.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "obc_charge.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Heatsink temperature",
+      "titleRu": "Температура радиатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "obc_charge.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Charge test OK",
+      "titleRu": "Тест зарядки OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "obc_charge.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "assemble",
+        "test",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

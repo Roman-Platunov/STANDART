@@ -1,0 +1,112 @@
+{
+  "layer": "B33",
+  "name": "layer-b-adas_cal.json",
+  "types": [
+    {
+      "path": "adas_cal.bay.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ADAS calibration bay id",
+      "titleRu": "ID поста калибровки ADAS",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "adas_cal.vin",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VIN",
+      "titleRu": "VIN",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "adas_cal.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Calibration time",
+      "titleRu": "Время калибровки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "adas_cal.pass",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pass rate",
+      "titleRu": "Прохождение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "adas_cal.cameras",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cameras calibrated",
+      "titleRu": "Калиброванных камер",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "adas_cal.radar",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Radars calibrated",
+      "titleRu": "Калиброванных радаров",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "adas_cal.align",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Target alignment OK",
+      "titleRu": "Мишени OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "adas_cal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Bay state",
+      "titleRu": "Состояние поста",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "static",
+        "dynamic",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
