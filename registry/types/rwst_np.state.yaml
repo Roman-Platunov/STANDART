@@ -1,0 +1,20 @@
+sid: 18ae2426
+path: rwst_np.state
+aliases:
+  short: rwst_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние бака
+  en: Tank state
+fingerprint: sha256:18ae24260a1ee91b2a9611bb833e214ee688e8134d00bdaa96c884b1c9242070
+enumValues:
+  - ready
+  - inject
+  - recirc
+  - fault

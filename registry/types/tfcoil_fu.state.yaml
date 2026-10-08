@@ -1,0 +1,20 @@
+sid: aa628c8d
+path: tfcoil_fu.state
+aliases:
+  short: tfcoil_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние катушки ТП
+  en: TF coil state
+fingerprint: sha256:aa628c8d01fd276e195f2a8d84c62a051cc884e816741bf006b2d443b927b62b
+enumValues:
+  - energized
+  - ramp
+  - dump
+  - fault

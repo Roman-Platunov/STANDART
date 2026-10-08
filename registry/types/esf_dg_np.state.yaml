@@ -1,0 +1,20 @@
+sid: 3fb4629b
+path: esf_dg_np.state
+aliases:
+  short: esf_dg_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ДГ
+  en: EDG state
+fingerprint: sha256:3fb4629bb328e8d6fb965216ce6dca09e3042634438f31dbc2337c42f97b14b4
+enumValues:
+  - standby
+  - run
+  - test
+  - fault

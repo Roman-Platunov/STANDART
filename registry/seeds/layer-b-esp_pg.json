@@ -1,0 +1,115 @@
+{
+  "layer": "B35",
+  "name": "layer-b-esp_pg.json",
+  "types": [
+    {
+      "path": "esp_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Electrostatic precipitator id",
+      "titleRu": "ID электрофильтра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "esp_pg.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Secondary voltage",
+      "titleRu": "Вторичное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_pg.current",
+      "kind": "quantity",
+      "unit": "mA",
+      "titleEn": "Secondary current",
+      "titleRu": "Вторичный ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_pg.opacity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Opacity / dust",
+      "titleRu": "Затемнение / пыль",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "esp_pg.rapping",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rapping cycles/h",
+      "titleRu": "Встряхиваний в час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_pg.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "T/R set power",
+      "titleRu": "Мощность Т/Р",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_pg.spark",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spark rate high",
+      "titleRu": "Высокая частота искр",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "esp_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ESP state",
+      "titleRu": "Состояние ЭФ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "collect",
+        "rap",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

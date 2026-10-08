@@ -1,0 +1,20 @@
+sid: 58a0490e
+path: pressuriz_np.state
+aliases:
+  short: pressuriz_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние КД
+  en: Pressurizer state
+fingerprint: sha256:58a0490ed0c7f89caead870575e7fe2a7736b1ccb6f181a9b08e6150d97cb7a4
+enumValues:
+  - normal
+  - heat
+  - spray
+  - fault

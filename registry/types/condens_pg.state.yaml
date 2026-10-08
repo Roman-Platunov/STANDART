@@ -1,0 +1,20 @@
+sid: 3a37106e
+path: condens_pg.state
+aliases:
+  short: condens_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние конденсатора
+  en: Condenser state
+fingerprint: sha256:3a37106e7e6ba01b6b2c4431abe8aa474ef2312d2283f170ef4275760c00155f
+enumValues:
+  - vacuum
+  - flood
+  - isolate
+  - fault

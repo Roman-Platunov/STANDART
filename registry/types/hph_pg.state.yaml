@@ -1,0 +1,20 @@
+sid: f098f0da
+path: hph_pg.state
+aliases:
+  short: hph_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ПВД
+  en: HPH state
+fingerprint: sha256:f098f0da6f3648cb7ccb18c6b45cfacac4379e29f108aeb51c744c98e86d0a70
+enumValues:
+  - heat
+  - bypass
+  - drain
+  - fault

@@ -1,0 +1,20 @@
+sid: fd6115c4
+path: hrsg_pg.state
+aliases:
+  short: hrsg_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние КУ
+  en: HRSG state
+fingerprint: sha256:fd6115c459ce3f27d71d6a118abbdd7b216d2c79a6876295ab9c39761369f5ea
+enumValues:
+  - steam
+  - bypass
+  - purge
+  - fault

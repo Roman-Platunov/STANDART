@@ -1,0 +1,20 @@
+sid: 32602d41
+path: id_fan_pg.state
+aliases:
+  short: id_fan_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дымососа
+  en: ID fan state
+fingerprint: sha256:32602d411f653a480b0111d3b258559a1740f2bd75ea7f0986efce733baaf78f
+enumValues:
+  - run
+  - standby
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: c5c6e118
+path: tritium_fu.state
+aliases:
+  short: tritium_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние тритиевого комплекса
+  en: Tritium state
+fingerprint: sha256:c5c6e118ac6d4cb05f1cbec2dd518b53c57e0a28de455f73e68d5512acc7a7a7
+enumValues:
+  - process
+  - store
+  - detritiate
+  - fault

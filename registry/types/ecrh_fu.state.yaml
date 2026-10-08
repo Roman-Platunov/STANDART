@@ -1,0 +1,20 @@
+sid: 386b926d
+path: ecrh_fu.state
+aliases:
+  short: ecrh_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ЭЦРН
+  en: ECRH state
+fingerprint: sha256:386b926d2f61c632c3b41c5809dcc85f2a97c2577f9296752087aa2fbdb7862a
+enumValues:
+  - heat
+  - standby
+  - cond
+  - fault

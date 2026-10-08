@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-bfp_pg.json",
+  "types": [
+    {
+      "path": "bfp_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Boiler feed pump id",
+      "titleRu": "ID ПЭН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bfp_pg.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Feedwater flow",
+      "titleRu": "Расход питательной воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bfp_pg.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bfp_pg.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Pump / turbine speed",
+      "titleRu": "Обороты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bfp_pg.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Drive power",
+      "titleRu": "Мощность привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bfp_pg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bearing temperature",
+      "titleRu": "Температура подшипника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bfp_pg.recirc",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Minimum flow recirculation",
+      "titleRu": "Рециркуляция мин. расхода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bfp_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "BFP state",
+      "titleRu": "Состояние ПЭН",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "standby",
+        "recirc",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

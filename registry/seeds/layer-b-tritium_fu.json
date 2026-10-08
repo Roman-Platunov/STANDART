@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-tritium_fu.json",
+  "types": [
+    {
+      "path": "tritium_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tritium plant id",
+      "titleRu": "ID тритиевого комплекса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tritium_fu.inventory",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Tritium inventory",
+      "titleRu": "Запас трития",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tritium_fu.throughput",
+      "kind": "quantity",
+      "unit": "g/d",
+      "titleEn": "Daily throughput",
+      "titleRu": "Суточный оборот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tritium_fu.permeation",
+      "kind": "quantity",
+      "unit": "Bq",
+      "titleEn": "Permeation / release monitor",
+      "titleRu": "Монитор пермеации / выброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tritium_fu.isotope",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "T isotopic purity",
+      "titleRu": "Изотопная чистота T",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tritium_fu.glove",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Glovebox atmosphere T",
+      "titleRu": "T в атмосфере перчаточного бокса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tritium_fu.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tritium alarm",
+      "titleRu": "Сигнал по тритию",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tritium_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tritium state",
+      "titleRu": "Состояние тритиевого комплекса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "process",
+        "store",
+        "detritiate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

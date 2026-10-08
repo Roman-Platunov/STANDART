@@ -1,0 +1,20 @@
+sid: f91e1ac7
+path: css_np.state
+aliases:
+  short: css_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние спринклера
+  en: CSS state
+fingerprint: sha256:f91e1ac713194854896335939835ad915b26dbf0dbee292ecfd526f9cbb72471
+enumValues:
+  - standby
+  - spray
+  - recirc
+  - fault

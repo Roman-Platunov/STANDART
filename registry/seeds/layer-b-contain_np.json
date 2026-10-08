@@ -1,0 +1,120 @@
+{
+  "layer": "B35",
+  "name": "layer-b-contain_np.json",
+  "types": [
+    {
+      "path": "contain_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Containment id",
+      "titleRu": "ID гермооболочки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "contain_np.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Containment pressure",
+      "titleRu": "Давление ГО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "contain_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Atmosphere temperature",
+      "titleRu": "Температура атмосферы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "contain_np.h2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hydrogen concentration",
+      "titleRu": "Концентрация H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "contain_np.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Humidity",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "contain_np.dose",
+      "kind": "quantity",
+      "unit": "uSv/h",
+      "titleEn": "Dose rate",
+      "titleRu": "Мощность дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "contain_np.isolate",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Isolation complete",
+      "titleRu": "Изоляция завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "contain_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Containment state",
+      "titleRu": "Состояние ГО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "isolate",
+        "vent",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

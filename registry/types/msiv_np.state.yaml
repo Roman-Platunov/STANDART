@@ -1,0 +1,20 @@
+sid: f99cb642
+path: msiv_np.state
+aliases:
+  short: msiv_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ГЗЗ
+  en: MSIV state
+fingerprint: sha256:f99cb6421f4b441b85b1e6e005f16ea65e642949c95194132c8b018f59d2aa48
+enumValues:
+  - open
+  - closed
+  - stroke
+  - fault

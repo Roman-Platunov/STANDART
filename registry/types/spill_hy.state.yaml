@@ -1,0 +1,20 @@
+sid: 4c0e29de
+path: spill_hy.state
+aliases:
+  short: spill_hy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние водосброса
+  en: Spillway state
+fingerprint: sha256:4c0e29deab019885894b7aae4b798460560ee1e68c88ff0f564d691313c097d8
+enumValues:
+  - closed
+  - modulate
+  - full
+  - fault

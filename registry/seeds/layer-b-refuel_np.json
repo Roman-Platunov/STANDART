@@ -1,0 +1,115 @@
+{
+  "layer": "B35",
+  "name": "layer-b-refuel_np.json",
+  "types": [
+    {
+      "path": "refuel_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Refueling machine id",
+      "titleRu": "ID перегрузочной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "refuel_np.mast",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Mast / gripper depth",
+      "titleRu": "Глубина мачты / захвата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "refuel_np.load",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Grapple load",
+      "titleRu": "Нагрузка на захват",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "refuel_np.moves",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Moves today",
+      "titleRu": "Перестановок за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "refuel_np.position",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Bridge / trolley position error",
+      "titleRu": "Ошибка позиции моста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "refuel_np.camera",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Camera / view quality",
+      "titleRu": "Качество обзора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "refuel_np.interlock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Interlock clear",
+      "titleRu": "Блокировки сняты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "refuel_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Refuel state",
+      "titleRu": "Состояние ПМ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "park",
+        "latch",
+        "transfer",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

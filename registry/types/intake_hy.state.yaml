@@ -1,0 +1,20 @@
+sid: 3a2596c4
+path: intake_hy.state
+aliases:
+  short: intake_hy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние водоприёмника
+  en: Intake state
+fingerprint: sha256:3a2596c49d185959842f06e424108c2677bb5aca719713f9f6c982fd135e877f
+enumValues:
+  - open
+  - rake
+  - closed
+  - fault

@@ -1,0 +1,20 @@
+sid: 541e685c
+path: penstk_hy.state
+aliases:
+  short: penstk_hy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние водовода
+  en: Penstock state
+fingerprint: sha256:541e685c40e111594b753aeed766c97b815771908150ba37ce40189f78b28554
+enumValues:
+  - flow
+  - isolate
+  - fill
+  - fault

@@ -1,0 +1,111 @@
+{
+  "layer": "B35",
+  "name": "layer-b-si_np.json",
+  "types": [
+    {
+      "path": "si_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Safety injection / ECCS id",
+      "titleRu": "ID САОЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "si_np.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Injection flow",
+      "titleRu": "Расход впрыска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "si_np.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "si_np.boron",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Injected boron",
+      "titleRu": "Бор во впрыске",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "si_np.accum",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Accumulator pressure",
+      "titleRu": "Давление гидроёмкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "si_np.trains",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trains available",
+      "titleRu": "Доступных каналов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "si_np.actuate",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SI actuated",
+      "titleRu": "САОЗ запущена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "si_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SI state",
+      "titleRu": "Состояние САОЗ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "inject",
+        "recirc",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

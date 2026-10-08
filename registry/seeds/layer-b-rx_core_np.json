@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-rx_core_np.json",
+  "types": [
+    {
+      "path": "rx_core_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reactor core id",
+      "titleRu": "ID активной зоны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rx_core_np.thermal",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Thermal power",
+      "titleRu": "Тепловая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rx_core_np.flux",
+      "kind": "quantity",
+      "unit": "n/cm2.s",
+      "titleEn": "Neutron flux",
+      "titleRu": "Поток нейтронов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rx_core_np.period",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Reactor period",
+      "titleRu": "Период реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rx_core_np.reactivity",
+      "kind": "quantity",
+      "unit": "pcm",
+      "titleEn": "Reactivity",
+      "titleRu": "Реактивность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rx_core_np.burnup",
+      "kind": "quantity",
+      "unit": "GWd/tU",
+      "titleEn": "Average burnup",
+      "titleRu": "Среднее выгорание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rx_core_np.scram",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scram / trip",
+      "titleRu": "АЗ / скрам",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rx_core_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Core state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "power",
+        "startup",
+        "shutdown",
+        "refuel"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

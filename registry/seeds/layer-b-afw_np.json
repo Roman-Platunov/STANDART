@@ -1,0 +1,115 @@
+{
+  "layer": "B35",
+  "name": "layer-b-afw_np.json",
+  "types": [
+    {
+      "path": "afw_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aux / emergency feedwater id",
+      "titleRu": "ID вспомогательной питательной воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "afw_np.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Feedwater flow",
+      "titleRu": "Расход ПВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "afw_np.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "afw_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "afw_np.tank",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "CST / tank level",
+      "titleRu": "Уровень бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "afw_np.trains",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trains available",
+      "titleRu": "Доступных каналов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "afw_np.actuate",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "System actuated",
+      "titleRu": "Система запущена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "afw_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "AFW state",
+      "titleRu": "Состояние ВПВ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "inject",
+        "recirc",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

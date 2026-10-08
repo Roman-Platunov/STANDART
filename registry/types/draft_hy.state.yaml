@@ -1,0 +1,20 @@
+sid: e419cf62
+path: draft_hy.state
+aliases:
+  short: draft_hy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние отсасывающей трубы
+  en: Draft state
+fingerprint: sha256:e419cf625f28f0148ae83869b151b2d988f1764ecf310ecf8915737c33f873df
+enumValues:
+  - discharge
+  - air
+  - idle
+  - fault

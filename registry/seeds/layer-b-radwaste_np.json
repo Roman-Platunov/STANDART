@@ -1,0 +1,115 @@
+{
+  "layer": "B35",
+  "name": "layer-b-radwaste_np.json",
+  "types": [
+    {
+      "path": "radwaste_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Radwaste system id",
+      "titleRu": "ID системы РАО",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radwaste_np.liquid",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Liquid waste inventory",
+      "titleRu": "Жидких РАО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radwaste_np.solid",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Solid waste inventory",
+      "titleRu": "Твёрдых РАО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radwaste_np.activity",
+      "kind": "quantity",
+      "unit": "Bq",
+      "titleEn": "Processed activity today",
+      "titleRu": "Активность переработки за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radwaste_np.resin",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Resin bed remaining",
+      "titleRu": "Остаток смолы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "radwaste_np.drums",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Drums packaged",
+      "titleRu": "Бочек упаковано",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radwaste_np.release",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Discharge permit OK",
+      "titleRu": "Разрешение на сброс OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "radwaste_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Radwaste state",
+      "titleRu": "Состояние РАО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "collect",
+        "treat",
+        "store",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

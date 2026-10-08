@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-lube_pg.json",
+  "types": [
+    {
+      "path": "lube_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Turbine lube-oil system id",
+      "titleRu": "ID системы смазки турбины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lube_pg.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Supply pressure",
+      "titleRu": "Давление подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lube_pg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lube_pg.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reservoir level",
+      "titleRu": "Уровень бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lube_pg.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Supply flow",
+      "titleRu": "Расход подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lube_pg.water",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Water in oil",
+      "titleRu": "Вода в масле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lube_pg.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Low oil pressure trip",
+      "titleRu": "Стоп по низкому давлению масла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lube_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lube state",
+      "titleRu": "Состояние смазки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lube",
+        "flush",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

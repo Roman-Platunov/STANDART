@@ -1,0 +1,20 @@
+sid: 160252ac
+path: hydro_tur_hy.state
+aliases:
+  short: hydro_tur_hy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние агрегата
+  en: Unit state
+fingerprint: sha256:160252ac107fcb650e2fd27e99a91049f9c416abc2cd06aeb4bb0cf77be6a207
+enumValues:
+  - generate
+  - sync
+  - spin
+  - fault

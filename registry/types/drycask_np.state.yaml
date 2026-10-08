@@ -1,0 +1,20 @@
+sid: f18b0e67
+path: drycask_np.state
+aliases:
+  short: drycask_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние контейнера
+  en: Cask state
+fingerprint: sha256:f18b0e673851e73ee74e48d7f8fca58b497e895bb4e2f2327fd6f31b15240fff
+enumValues:
+  - store
+  - transfer
+  - monitor
+  - fault

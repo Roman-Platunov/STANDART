@@ -1,0 +1,111 @@
+{
+  "layer": "B35",
+  "name": "layer-b-rhr_np.json",
+  "types": [
+    {
+      "path": "rhr_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RHR / shutdown cooling id",
+      "titleRu": "ID системы расхолаживания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rhr_np.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "RHR flow",
+      "titleRu": "Расход САОЗ/РХ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rhr_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "HX outlet temperature",
+      "titleRu": "Температура после ТО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rhr_np.heat",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Heat removal",
+      "titleRu": "Теплосъём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rhr_np.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "RCS / suction pressure",
+      "titleRu": "Давление всаса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rhr_np.trains",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trains in service",
+      "titleRu": "Каналов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rhr_np.aligned",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aligned for SDC",
+      "titleRu": "Выровнена на РХ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rhr_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "RHR state",
+      "titleRu": "Состояние РХ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "sdc",
+        "lpci",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

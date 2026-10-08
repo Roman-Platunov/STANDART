@@ -1,0 +1,20 @@
+sid: 4650817d
+path: si_np.state
+aliases:
+  short: si_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние САОЗ
+  en: SI state
+fingerprint: sha256:4650817d5496db350cc7cc0ceed2d2e7721eb276302d337d38f3cf496f7ab094
+enumValues:
+  - standby
+  - inject
+  - recirc
+  - fault

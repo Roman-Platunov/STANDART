@@ -1,0 +1,20 @@
+sid: 6c88c112
+path: bfp_pg.state
+aliases:
+  short: bfp_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ПЭН
+  en: BFP state
+fingerprint: sha256:6c88c1125782607a805abca2a4592e7b6d22286b130543c83e8e203aa927860b
+enumValues:
+  - run
+  - standby
+  - recirc
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-h2cool_pg.json",
+  "types": [
+    {
+      "path": "h2cool_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Generator H2 cooling id",
+      "titleRu": "ID водородного охлаждения генератора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "h2cool_pg.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "H2 pressure",
+      "titleRu": "Давление H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2cool_pg.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "H2 purity",
+      "titleRu": "Чистота H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "h2cool_pg.dew",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dew point",
+      "titleRu": "Точка росы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2cool_pg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cold gas temperature",
+      "titleRu": "Температура холодного газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2cool_pg.makeup",
+      "kind": "quantity",
+      "unit": "Nm3/d",
+      "titleEn": "H2 makeup",
+      "titleRu": "Подпитка H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "h2cool_pg.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "H2 leak alarm",
+      "titleRu": "Сигнал утечки H2",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "h2cool_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "H2 cool state",
+      "titleRu": "Состояние H2-охлаждения",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cool",
+        "purge",
+        "fill",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

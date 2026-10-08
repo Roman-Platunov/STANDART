@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-stack_cems.json",
+  "types": [
+    {
+      "path": "stack_cems.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stack CEMS id",
+      "titleRu": "ID системы непрерывного контроля выбросов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stack_cems.so2",
+      "kind": "quantity",
+      "unit": "mg/Nm3",
+      "titleEn": "SO2",
+      "titleRu": "SO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stack_cems.nox",
+      "kind": "quantity",
+      "unit": "mg/Nm3",
+      "titleEn": "NOx",
+      "titleRu": "NOx",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stack_cems.co",
+      "kind": "quantity",
+      "unit": "mg/Nm3",
+      "titleEn": "CO",
+      "titleRu": "CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stack_cems.dust",
+      "kind": "quantity",
+      "unit": "mg/Nm3",
+      "titleEn": "Particulate",
+      "titleRu": "Пыль",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stack_cems.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Stack flow",
+      "titleRu": "Расход в трубе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stack_cems.valid",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "QA/QC valid",
+      "titleRu": "Данные валидны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stack_cems.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CEMS state",
+      "titleRu": "Состояние CEMS",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "measure",
+        "calibrate",
+        "span",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-penstk_hy.json",
+  "types": [
+    {
+      "path": "penstk_hy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Penstock id",
+      "titleRu": "ID напорного трубопровода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "penstk_hy.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Penstock pressure",
+      "titleRu": "Давление в водоводе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "penstk_hy.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "penstk_hy.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Headpond level",
+      "titleRu": "Уровень верхнего бьефа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "penstk_hy.surge",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Surge tank level",
+      "titleRu": "Уровень уравнительного резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "penstk_hy.velocity",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Flow velocity",
+      "titleRu": "Скорость потока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "penstk_hy.transient",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Water hammer / transient",
+      "titleRu": "Гидравлический удар",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "penstk_hy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Penstock state",
+      "titleRu": "Состояние водовода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flow",
+        "isolate",
+        "fill",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

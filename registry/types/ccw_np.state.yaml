@@ -1,0 +1,20 @@
+sid: 12bad69f
+path: ccw_np.state
+aliases:
+  short: ccw_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние промконтура
+  en: CCW state
+fingerprint: sha256:12bad69fd05e18520270e04c66b2f667f386cd2c338d28d007f8f0f866653eb9
+enumValues:
+  - cool
+  - isolate
+  - idle
+  - fault

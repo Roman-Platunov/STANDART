@@ -1,0 +1,20 @@
+sid: 7875d46a
+path: gov_hy.state
+aliases:
+  short: gov_hy.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние регулятора
+  en: Governor state
+fingerprint: sha256:7875d46a4d634782ef2d666869482238d7f4eeb27d429b36aabdb0450298d6da
+enumValues:
+  - auto
+  - manual
+  - lock
+  - fault

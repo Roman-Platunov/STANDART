@@ -1,0 +1,111 @@
+{
+  "layer": "B35",
+  "name": "layer-b-vacvv_fu.json",
+  "types": [
+    {
+      "path": "vacvv_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vacuum vessel id",
+      "titleRu": "ID вакуумной камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vacvv_fu.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Vessel pressure",
+      "titleRu": "Давление в камере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacvv_fu.base",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Base pressure",
+      "titleRu": "Базовое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacvv_fu.leak",
+      "kind": "quantity",
+      "unit": "Pa.m3/s",
+      "titleEn": "Helium leak rate",
+      "titleRu": "Течь по гелию",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacvv_fu.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Wall temperature",
+      "titleRu": "Температура стенки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacvv_fu.pumps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pumps running",
+      "titleRu": "Насосов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vacvv_fu.vent",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vessel vented",
+      "titleRu": "Камера завоздушена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vacvv_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vessel state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pump",
+        "bake",
+        "pulse",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

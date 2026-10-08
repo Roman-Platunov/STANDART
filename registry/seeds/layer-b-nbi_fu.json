@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-nbi_fu.json",
+  "types": [
+    {
+      "path": "nbi_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Neutral beam injector id",
+      "titleRu": "ID инжектора нейтралей",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nbi_fu.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Injected power",
+      "titleRu": "Введённая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nbi_fu.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Beam voltage",
+      "titleRu": "Напряжение пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nbi_fu.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Beam current",
+      "titleRu": "Ток пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nbi_fu.species",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Species mix H/D/T index",
+      "titleRu": "Индекс смеси H/D/T",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nbi_fu.pulse.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Pulse length",
+      "titleRu": "Длительность импульса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nbi_fu.interlock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Interlock trip",
+      "titleRu": "Срабатывание блокировки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nbi_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "NBI state",
+      "titleRu": "Состояние ИНБ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inject",
+        "cond",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

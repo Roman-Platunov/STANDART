@@ -1,0 +1,20 @@
+sid: 41d6daee
+path: refuel_np.state
+aliases:
+  short: refuel_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ПМ
+  en: Refuel state
+fingerprint: sha256:41d6daee23d230778e2e25023b3c99532019f876c6b4a1def2748428c1da6bdc
+enumValues:
+  - park
+  - latch
+  - transfer
+  - fault

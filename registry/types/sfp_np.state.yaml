@@ -1,0 +1,20 @@
+sid: 0e4c15d2
+path: sfp_np.state
+aliases:
+  short: sfp_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние БВ
+  en: SFP state
+fingerprint: sha256:0e4c15d239e7b423d37df04edf5b418e8fbfa77c12b253f1763a66d277c29b82
+enumValues:
+  - normal
+  - heatup
+  - refuel
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-boric_np.json",
+  "types": [
+    {
+      "path": "boric_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Boric acid makeup id",
+      "titleRu": "ID борного узла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "boric_np.conc",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Boric acid concentration",
+      "titleRu": "Концентрация борной кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boric_np.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Makeup flow",
+      "titleRu": "Расход подпитки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boric_np.tank",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "BAT level",
+      "titleRu": "Уровень бака БК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "boric_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Solution temperature",
+      "titleRu": "Температура раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boric_np.batch",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Batch added today",
+      "titleRu": "Добавлено за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "boric_np.crystall",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crystallization risk",
+      "titleRu": "Риск кристаллизации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "boric_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Boric state",
+      "titleRu": "Состояние борного узла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "batch",
+        "recirc",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

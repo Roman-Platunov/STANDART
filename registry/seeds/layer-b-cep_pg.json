@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-cep_pg.json",
+  "types": [
+    {
+      "path": "cep_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Condensate extraction pump id",
+      "titleRu": "ID КЭН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cep_pg.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Condensate flow",
+      "titleRu": "Расход конденсата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cep_pg.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cep_pg.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Motor power",
+      "titleRu": "Мощность двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cep_pg.npsh",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "NPSH margin",
+      "titleRu": "Запас NPSH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cep_pg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Condensate temperature",
+      "titleRu": "Температура конденсата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cep_pg.cavitation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cavitation alarm",
+      "titleRu": "Кавитация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cep_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CEP state",
+      "titleRu": "Состояние КЭН",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "standby",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

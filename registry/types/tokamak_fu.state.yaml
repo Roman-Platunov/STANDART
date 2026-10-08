@@ -1,0 +1,20 @@
+sid: 374d7d3c
+path: tokamak_fu.state
+aliases:
+  short: tokamak_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние токамака
+  en: Tokamak state
+fingerprint: sha256:374d7d3c651e8d94ccffcf30a1a5cb8a0929fb334a8044e7d60c8816317e5a5d
+enumValues:
+  - pulse
+  - dwell
+  - bake
+  - fault

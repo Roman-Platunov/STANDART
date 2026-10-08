@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-lph_pg.json",
+  "types": [
+    {
+      "path": "lph_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LP feedwater heater id",
+      "titleRu": "ID ПНД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lph_pg.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Heater level",
+      "titleRu": "Уровень подогревателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lph_pg.tt.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "FW inlet temperature",
+      "titleRu": "Температура ПВ на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lph_pg.tt.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "FW outlet temperature",
+      "titleRu": "Температура ПВ на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lph_pg.extract",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Extraction pressure",
+      "titleRu": "Давление отбора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lph_pg.tdc",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Terminal temperature difference",
+      "titleRu": "Концевой перепад",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lph_pg.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Heater bypassed",
+      "titleRu": "Подогреватель в обводе",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lph_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "LPH state",
+      "titleRu": "Состояние ПНД",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "bypass",
+        "drain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

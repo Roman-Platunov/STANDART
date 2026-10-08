@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-hrsg_pg.json",
+  "types": [
+    {
+      "path": "hrsg_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HRSG id",
+      "titleRu": "ID котла-утилизатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hrsg_pg.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "HP steam flow",
+      "titleRu": "Расход пара ВД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hrsg_pg.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "HP steam pressure",
+      "titleRu": "Давление пара ВД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hrsg_pg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "HP steam temperature",
+      "titleRu": "Температура пара ВД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hrsg_pg.gas.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet gas temperature",
+      "titleRu": "Температура газов на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hrsg_pg.gas.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stack gas temperature",
+      "titleRu": "Температура газов в трубе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hrsg_pg.dry",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dry-run / no steam",
+      "titleRu": "Сухой ход / нет пара",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hrsg_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "HRSG state",
+      "titleRu": "Состояние КУ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "steam",
+        "bypass",
+        "purge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

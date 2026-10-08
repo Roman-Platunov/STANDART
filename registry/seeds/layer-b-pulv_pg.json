@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-pulv_pg.json",
+  "types": [
+    {
+      "path": "pulv_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coal pulverizer id",
+      "titleRu": "ID углеразмольной мельницы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pulv_pg.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Coal feed",
+      "titleRu": "Подача угля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulv_pg.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Mill power",
+      "titleRu": "Мощность мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulv_pg.air",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Primary air",
+      "titleRu": "Первичный воздух",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulv_pg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Classifier / outlet temp",
+      "titleRu": "Температура классификатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pulv_pg.fineness",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fineness on sieve",
+      "titleRu": "Тонкость помола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pulv_pg.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mill fire / CO high",
+      "titleRu": "Пожар / высокий CO",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pulv_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pulverizer state",
+      "titleRu": "Состояние мельницы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grind",
+        "inert",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

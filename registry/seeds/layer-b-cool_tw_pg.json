@@ -1,0 +1,120 @@
+{
+  "layer": "B35",
+  "name": "layer-b-cool_tw_pg.json",
+  "types": [
+    {
+      "path": "cool_tw_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cooling tower cell id",
+      "titleRu": "ID секции градирни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cool_tw_pg.fan",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fan speed",
+      "titleRu": "Скорость вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cool_tw_pg.temp.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hot water temperature",
+      "titleRu": "Температура горячей воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cool_tw_pg.temp.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cold water temperature",
+      "titleRu": "Температура холодной воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cool_tw_pg.approach",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Approach to wet bulb",
+      "titleRu": "Приближение к температуре смоченного термометра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cool_tw_pg.drift",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Drift / blowdown",
+      "titleRu": "Унос / продувка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cool_tw_pg.ice",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Icing risk",
+      "titleRu": "Риск обледенения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cool_tw_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tower state",
+      "titleRu": "Состояние градирни",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cool",
+        "bypass",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

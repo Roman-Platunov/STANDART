@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-fgd_pg.json",
+  "types": [
+    {
+      "path": "fgd_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FGD absorber id",
+      "titleRu": "ID абсорбера ФГД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fgd_pg.so2",
+      "kind": "quantity",
+      "unit": "mg/Nm3",
+      "titleEn": "Outlet SO2",
+      "titleRu": "SO2 на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fgd_pg.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Slurry pH",
+      "titleRu": "pH суспензии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fgd_pg.limestone",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Limestone feed",
+      "titleRu": "Подача известняка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fgd_pg.gypsum",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Gypsum production",
+      "titleRu": "Выход гипса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fgd_pg.removal",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "SO2 removal",
+      "titleRu": "Степень очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fgd_pg.foam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Foaming / carryover",
+      "titleRu": "Пенообразование",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fgd_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "FGD state",
+      "titleRu": "Состояние ФГД",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "absorb",
+        "bypass",
+        "wash",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: a67ac807
+path: divert_fu.state
+aliases:
+  short: divert_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние дивертора
+  en: Divertor state
+fingerprint: sha256:a67ac8074bbb8754b6bb0f9f3d2ec5bed99f237c9ca19e769b4c7e017791b28a
+enumValues:
+  - exhaust
+  - attach
+  - protect
+  - fault

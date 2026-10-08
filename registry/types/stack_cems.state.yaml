@@ -1,0 +1,20 @@
+sid: ebdc4675
+path: stack_cems.state
+aliases:
+  short: stack_cems.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние CEMS
+  en: CEMS state
+fingerprint: sha256:ebdc4675f87b3cf5c1eeef13a3d23e4323b8f4b710c3756d49e6cbc98a96bb24
+enumValues:
+  - measure
+  - calibrate
+  - span
+  - fault

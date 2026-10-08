@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-tokamak_fu.json",
+  "types": [
+    {
+      "path": "tokamak_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tokamak device id",
+      "titleRu": "ID токамака",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tokamak_fu.ip",
+      "kind": "quantity",
+      "unit": "MA",
+      "titleEn": "Plasma current",
+      "titleRu": "Ток плазмы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tokamak_fu.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Fusion / heating power",
+      "titleRu": "Мощность синтеза / нагрева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tokamak_fu.temp",
+      "kind": "quantity",
+      "unit": "keV",
+      "titleEn": "Ion temperature",
+      "titleRu": "Ионная температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tokamak_fu.density",
+      "kind": "quantity",
+      "unit": "1/m3",
+      "titleEn": "Electron density",
+      "titleRu": "Электронная плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tokamak_fu.pulse.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Pulse length",
+      "titleRu": "Длительность импульса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tokamak_fu.disrupt",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Disruption",
+      "titleRu": "Срыв",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tokamak_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tokamak state",
+      "titleRu": "Состояние токамака",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pulse",
+        "dwell",
+        "bake",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

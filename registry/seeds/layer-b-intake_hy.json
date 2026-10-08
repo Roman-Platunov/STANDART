@@ -1,0 +1,119 @@
+{
+  "layer": "B35",
+  "name": "layer-b-intake_hy.json",
+  "types": [
+    {
+      "path": "intake_hy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Intake gate / trash rack id",
+      "titleRu": "ID водоприёмника / сороудерживающей решётки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "intake_hy.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Forebay level",
+      "titleRu": "Уровень аванкамеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intake_hy.dp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Trash rack dP",
+      "titleRu": "Перепад на решётке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intake_hy.gate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Intake gate opening",
+      "titleRu": "Открытие затвора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "intake_hy.debris",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Debris load estimate",
+      "titleRu": "Оценка засорения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "intake_hy.rake",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rake cycles today",
+      "titleRu": "Циклов очистки за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "intake_hy.block",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Intake blocked",
+      "titleRu": "Водоприёмник забит",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "intake_hy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Intake state",
+      "titleRu": "Состояние водоприёмника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "rake",
+        "closed",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

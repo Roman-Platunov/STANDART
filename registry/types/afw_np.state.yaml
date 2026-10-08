@@ -1,0 +1,20 @@
+sid: 71afe26d
+path: afw_np.state
+aliases:
+  short: afw_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ВПВ
+  en: AFW state
+fingerprint: sha256:71afe26d3b29aaeca8323020e84f1309e601808418b583a046d5122c0cd431ef
+enumValues:
+  - standby
+  - inject
+  - recirc
+  - fault

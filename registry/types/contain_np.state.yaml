@@ -1,0 +1,20 @@
+sid: 4da7f200
+path: contain_np.state
+aliases:
+  short: contain_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ГО
+  en: Containment state
+fingerprint: sha256:4da7f200f745089b1ddee98fcc8884e6574c5f4e9712cc82d956edaaeafe4913
+enumValues:
+  - normal
+  - isolate
+  - vent
+  - fault

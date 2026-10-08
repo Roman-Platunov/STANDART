@@ -1,0 +1,20 @@
+sid: d659c873
+path: h2cool_pg.state
+aliases:
+  short: h2cool_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние H2-охлаждения
+  en: H2 cool state
+fingerprint: sha256:d659c873ae9efe1baf5404c2c681c18ac1c6db649abe9c966eda95b574943d21
+enumValues:
+  - cool
+  - purge
+  - fill
+  - fault

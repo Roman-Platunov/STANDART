@@ -1,0 +1,20 @@
+sid: ae3720d8
+path: vacvv_fu.state
+aliases:
+  short: vacvv_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние камеры
+  en: Vessel state
+fingerprint: sha256:ae3720d88c3b775f79a6224e7394379a351f1f339b8845d4b4b82cf32086ff58
+enumValues:
+  - pump
+  - bake
+  - pulse
+  - fault

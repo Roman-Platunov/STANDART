@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-id_fan_pg.json",
+  "types": [
+    {
+      "path": "id_fan_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Induced-draft fan id",
+      "titleRu": "ID дымососа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "id_fan_pg.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Flue gas flow",
+      "titleRu": "Расход дымовых газов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "id_fan_pg.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Fan power",
+      "titleRu": "Мощность дымососа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "id_fan_pg.speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Speed / damper",
+      "titleRu": "Скорость / направляющий аппарат",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "id_fan_pg.draft",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Furnace draft",
+      "titleRu": "Разрежение в топке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "id_fan_pg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Gas temperature",
+      "titleRu": "Температура газов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "id_fan_pg.stall",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stall / surge",
+      "titleRu": "Срыв потока",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "id_fan_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ID fan state",
+      "titleRu": "Состояние дымососа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "standby",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

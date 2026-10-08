@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-cryo_fu.json",
+  "types": [
+    {
+      "path": "cryo_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cryostat / cryoplant id",
+      "titleRu": "ID криостата / криогенной установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cryo_fu.temp",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Coldest temperature",
+      "titleRu": "Минимальная температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryo_fu.he",
+      "kind": "quantity",
+      "unit": "g/s",
+      "titleEn": "Helium mass flow",
+      "titleRu": "Расход гелия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryo_fu.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Cryoplant power",
+      "titleRu": "Мощность криоустановки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryo_fu.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cryostat pressure",
+      "titleRu": "Давление криостата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryo_fu.inventory",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "LHe inventory",
+      "titleRu": "Запас ЖГе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cryo_fu.warm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Warm-up / quench risk",
+      "titleRu": "Разогрев / риск квенча",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cryo_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cryo state",
+      "titleRu": "Состояние криогенки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cold",
+        "cooldown",
+        "warmup",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

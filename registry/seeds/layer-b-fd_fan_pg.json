@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-fd_fan_pg.json",
+  "types": [
+    {
+      "path": "fd_fan_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Forced-draft fan id",
+      "titleRu": "ID дутьевого вентилятора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fd_fan_pg.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Air flow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fd_fan_pg.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Fan power",
+      "titleRu": "Мощность вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fd_fan_pg.speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Speed / damper",
+      "titleRu": "Скорость / направляющий аппарат",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fd_fan_pg.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fd_fan_pg.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fd_fan_pg.stall",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Stall / surge",
+      "titleRu": "Срыв потока",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fd_fan_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "FD fan state",
+      "titleRu": "Состояние ДВ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "standby",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

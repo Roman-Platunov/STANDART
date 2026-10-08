@@ -1,0 +1,20 @@
+sid: 99bdff04
+path: esp_pg.state
+aliases:
+  short: esp_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ЭФ
+  en: ESP state
+fingerprint: sha256:99bdff0483430b18f819907ebfa06e53b0489a3806bc3d262405c8bb8aab034e
+enumValues:
+  - collect
+  - rap
+  - bypass
+  - fault

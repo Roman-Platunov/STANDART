@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-steam_tur_pg.json",
+  "types": [
+    {
+      "path": "steam_tur_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steam turbine id",
+      "titleRu": "ID паровой турбины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steam_tur_pg.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Gross power",
+      "titleRu": "Мощность брутто",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_tur_pg.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Rotor speed",
+      "titleRu": "Обороты ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_tur_pg.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Shaft vibration",
+      "titleRu": "Вибрация вала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_tur_pg.metal",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Metal temperature",
+      "titleRu": "Температура металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_tur_pg.throttle",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Throttle / CV position",
+      "titleRu": "Положение клапанов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "steam_tur_pg.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Turbine trip",
+      "titleRu": "Стоп турбины",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "steam_tur_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Turbine state",
+      "titleRu": "Состояние турбины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "sync",
+        "coast",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

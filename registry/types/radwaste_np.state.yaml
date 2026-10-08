@@ -1,0 +1,20 @@
+sid: ab074d66
+path: radwaste_np.state
+aliases:
+  short: radwaste_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние РАО
+  en: Radwaste state
+fingerprint: sha256:ab074d66243655679fe2b6470014a652a417dc77c0cfd04a4d8a78be67aafcc8
+enumValues:
+  - collect
+  - treat
+  - store
+  - fault

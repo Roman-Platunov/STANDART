@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-tfcoil_fu.json",
+  "types": [
+    {
+      "path": "tfcoil_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Toroidal-field coil id",
+      "titleRu": "ID катушки ТП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tfcoil_fu.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Coil current",
+      "titleRu": "Ток катушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tfcoil_fu.field",
+      "kind": "quantity",
+      "unit": "T",
+      "titleEn": "Magnetic field",
+      "titleRu": "Магнитное поле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tfcoil_fu.temp",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Conductor temperature",
+      "titleRu": "Температура проводника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tfcoil_fu.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Terminal voltage",
+      "titleRu": "Напряжение на выводах",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tfcoil_fu.energy",
+      "kind": "quantity",
+      "unit": "GJ",
+      "titleEn": "Stored energy",
+      "titleRu": "Запасённая энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tfcoil_fu.quench",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quench detected",
+      "titleRu": "Квенч",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tfcoil_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "TF coil state",
+      "titleRu": "Состояние катушки ТП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "energized",
+        "ramp",
+        "dump",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

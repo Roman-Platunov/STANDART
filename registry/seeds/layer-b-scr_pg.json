@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-scr_pg.json",
+  "types": [
+    {
+      "path": "scr_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SCR NOx system id",
+      "titleRu": "ID системы СКВ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scr_pg.nox",
+      "kind": "quantity",
+      "unit": "mg/Nm3",
+      "titleEn": "Outlet NOx",
+      "titleRu": "NOx на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scr_pg.nh3",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Ammonia slip",
+      "titleRu": "Проскок аммиака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scr_pg.reagent",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Reagent injection",
+      "titleRu": "Подача реагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scr_pg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Catalyst temperature",
+      "titleRu": "Температура катализатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scr_pg.dp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Catalyst dP",
+      "titleRu": "Перепад на катализаторе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scr_pg.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SCR bypassed",
+      "titleRu": "СКВ в обводе",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scr_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SCR state",
+      "titleRu": "Состояние СКВ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "reduce",
+        "bypass",
+        "regenerate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

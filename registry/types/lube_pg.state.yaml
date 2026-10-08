@@ -1,0 +1,20 @@
+sid: 19d1641b
+path: lube_pg.state
+aliases:
+  short: lube_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние смазки
+  en: Lube state
+fingerprint: sha256:19d1641bfb2783763280830559dc822f83d96353e320b8961d18d78001a4ab25
+enumValues:
+  - lube
+  - flush
+  - standby
+  - fault

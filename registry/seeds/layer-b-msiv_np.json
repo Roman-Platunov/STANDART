@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-msiv_np.json",
+  "types": [
+    {
+      "path": "msiv_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Main steam isolation valve id",
+      "titleRu": "ID ГЗЗ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "msiv_np.position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Valve position",
+      "titleRu": "Положение арматуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "msiv_np.steam",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Steam flow",
+      "titleRu": "Расход пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "msiv_np.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Upstream pressure",
+      "titleRu": "Давление до клапана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "msiv_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Steam temperature",
+      "titleRu": "Температура пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "msiv_np.stroke.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Last stroke time",
+      "titleRu": "Время последнего хода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "msiv_np.closed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fully closed",
+      "titleRu": "Полностью закрыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "msiv_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "MSIV state",
+      "titleRu": "Состояние ГЗЗ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "stroke",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

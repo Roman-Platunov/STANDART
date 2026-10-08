@@ -1,0 +1,115 @@
+{
+  "layer": "B35",
+  "name": "layer-b-pellet_fu.json",
+  "types": [
+    {
+      "path": "pellet_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pellet fueling injector id",
+      "titleRu": "ID пеллет-инжектора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pellet_fu.rate",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Injection rate",
+      "titleRu": "Частота ввода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_fu.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Pellet size",
+      "titleRu": "Размер пеллеты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_fu.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Injection speed",
+      "titleRu": "Скорость ввода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_fu.inventory",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pellets remaining",
+      "titleRu": "Пеллет в запасе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pellet_fu.success",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Injection success rate",
+      "titleRu": "Успешность ввода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pellet_fu.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Injector jam",
+      "titleRu": "Заклинивание инжектора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pellet_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pellet injector state",
+      "titleRu": "Состояние пеллет-инжектора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inject",
+        "load",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-blanket_fu.json",
+  "types": [
+    {
+      "path": "blanket_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Breeding blanket id",
+      "titleRu": "ID бланкета",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blanket_fu.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Blanket temperature",
+      "titleRu": "Температура бланкета",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blanket_fu.tbr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tritium breeding ratio",
+      "titleRu": "Коэффициент воспроизводства трития",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blanket_fu.coolant",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Coolant flow",
+      "titleRu": "Расход теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blanket_fu.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Nuclear heating",
+      "titleRu": "Ядерный нагрев",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blanket_fu.li",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Li-6 enrichment / inventory",
+      "titleRu": "Обогащение / запас Li-6",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "blanket_fu.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coolant leak",
+      "titleRu": "Течь теплоносителя",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "blanket_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Blanket state",
+      "titleRu": "Состояние бланкета",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "breed",
+        "bake",
+        "drain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 712d705f
+path: boric_np.state
+aliases:
+  short: boric_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние борного узла
+  en: Boric state
+fingerprint: sha256:712d705f5e16160bae16f2e2d6f278ad09d440b588955080d5a82be1eebadd3b
+enumValues:
+  - ready
+  - batch
+  - recirc
+  - fault

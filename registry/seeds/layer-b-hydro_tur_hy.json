@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-hydro_tur_hy.json",
+  "types": [
+    {
+      "path": "hydro_tur_hy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hydro turbine-generator id",
+      "titleRu": "ID гидроагрегата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydro_tur_hy.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Electrical power",
+      "titleRu": "Электрическая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_tur_hy.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Turbine discharge",
+      "titleRu": "Расход через турбину",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_tur_hy.head",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Net head",
+      "titleRu": "Напор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_tur_hy.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Runner speed",
+      "titleRu": "Обороты рабочего колеса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydro_tur_hy.guide",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Guide vane opening",
+      "titleRu": "Открытие направляющего аппарата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hydro_tur_hy.cavitation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cavitation alarm",
+      "titleRu": "Кавитация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hydro_tur_hy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние агрегата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "generate",
+        "sync",
+        "spin",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

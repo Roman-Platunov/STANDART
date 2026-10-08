@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-deaer_pg.json",
+  "types": [
+    {
+      "path": "deaer_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Power-island deaerator id",
+      "titleRu": "ID деаэратора энергоострова",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deaer_pg.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Storage level",
+      "titleRu": "Уровень бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "deaer_pg.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Deaerator pressure",
+      "titleRu": "Давление деаэратора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deaer_pg.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deaer_pg.o2",
+      "kind": "quantity",
+      "unit": "ppb",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deaer_pg.pegging",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Pegging steam",
+      "titleRu": "Греющий пар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deaer_pg.vent",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vent abnormal",
+      "titleRu": "Аномальный вент",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "deaer_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Deaerator state",
+      "titleRu": "Состояние деаэратора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "deaerate",
+        "fill",
+        "isolate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

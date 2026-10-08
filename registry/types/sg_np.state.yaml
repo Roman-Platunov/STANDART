@@ -1,0 +1,20 @@
+sid: fed84fe5
+path: sg_np.state
+aliases:
+  short: sg_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ПГ
+  en: SG state
+fingerprint: sha256:fed84fe5c1175165c5b0d6fe58420675468e8bb9870aa768e36330a4892f94fe
+enumValues:
+  - steam
+  - isolate
+  - drain
+  - fault

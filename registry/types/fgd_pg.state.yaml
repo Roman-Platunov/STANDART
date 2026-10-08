@@ -1,0 +1,20 @@
+sid: 246f6792
+path: fgd_pg.state
+aliases:
+  short: fgd_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ФГД
+  en: FGD state
+fingerprint: sha256:246f67925ac3e49e503f0fdcb7a3528edf628f7cd0f8d4b20e6df54fd94ee890
+enumValues:
+  - absorb
+  - bypass
+  - wash
+  - fault

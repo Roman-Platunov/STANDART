@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-icrh_fu.json",
+  "types": [
+    {
+      "path": "icrh_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ICRH antenna id",
+      "titleRu": "ID ИЦРН-антенны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "icrh_fu.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Coupled power",
+      "titleRu": "Введённая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icrh_fu.freq",
+      "kind": "quantity",
+      "unit": "MHz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icrh_fu.vswr",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "VSWR",
+      "titleRu": "КСВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icrh_fu.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Antenna voltage",
+      "titleRu": "Напряжение антенны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icrh_fu.phase",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Strap phase",
+      "titleRu": "Фаза полос",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "icrh_fu.arc",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Arc / breakdown",
+      "titleRu": "Дуга / пробой",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "icrh_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ICRH state",
+      "titleRu": "Состояние ИЦРН",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "match",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

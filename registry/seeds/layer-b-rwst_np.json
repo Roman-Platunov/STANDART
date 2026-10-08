@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-rwst_np.json",
+  "types": [
+    {
+      "path": "rwst_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "RWST / IRWST id",
+      "titleRu": "ID бака аварийного запаса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rwst_np.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level",
+      "titleRu": "Уровень бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rwst_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rwst_np.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Usable volume",
+      "titleRu": "Полезный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rwst_np.boron",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Boron concentration",
+      "titleRu": "Концентрация бора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rwst_np.out",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Outlet flow",
+      "titleRu": "Расход на выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rwst_np.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Level low",
+      "titleRu": "Низкий уровень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rwst_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tank state",
+      "titleRu": "Состояние бака",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ready",
+        "inject",
+        "recirc",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 573e72d3
+path: pellet_fu.state
+aliases:
+  short: pellet_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пеллет-инжектора
+  en: Pellet injector state
+fingerprint: sha256:573e72d3cfe2c527d580ef32cab76d41f1cace0f4fd863f47d83d4986f393a2d
+enumValues:
+  - inject
+  - load
+  - idle
+  - fault

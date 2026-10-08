@@ -1,0 +1,20 @@
+sid: aa0c60f5
+path: fd_fan_pg.state
+aliases:
+  short: fd_fan_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ДВ
+  en: FD fan state
+fingerprint: sha256:aa0c60f5185dda8c4c527baea3e5aa0a6b4aaa77fc08ffb74996b370807ece6e
+enumValues:
+  - run
+  - standby
+  - idle
+  - fault

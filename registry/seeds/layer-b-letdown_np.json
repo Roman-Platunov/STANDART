@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-letdown_np.json",
+  "types": [
+    {
+      "path": "letdown_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CVCS letdown id",
+      "titleRu": "ID продувки / очистки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "letdown_np.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Letdown flow",
+      "titleRu": "Расход продувки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "letdown_np.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Letdown pressure",
+      "titleRu": "Давление продувки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "letdown_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "After HX temperature",
+      "titleRu": "Температура после ТО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "letdown_np.activity",
+      "kind": "quantity",
+      "unit": "Bq",
+      "titleEn": "Activity",
+      "titleRu": "Активность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "letdown_np.filter",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Filter dP",
+      "titleRu": "Перепад на фильтре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "letdown_np.isolate",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Letdown isolated",
+      "titleRu": "Продувка изолирована",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "letdown_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Letdown state",
+      "titleRu": "Состояние продувки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "purify",
+        "divert",
+        "isolate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

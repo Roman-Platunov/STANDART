@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-pressuriz_np.json",
+  "types": [
+    {
+      "path": "pressuriz_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pressurizer id",
+      "titleRu": "ID компенсатора давления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pressuriz_np.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Pressure",
+      "titleRu": "Давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pressuriz_np.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Level",
+      "titleRu": "Уровень",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pressuriz_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pressuriz_np.heaters",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Heater power",
+      "titleRu": "Мощность нагревателей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pressuriz_np.spray",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Spray flow",
+      "titleRu": "Расход спрея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pressuriz_np.relief",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Relief / PORV open",
+      "titleRu": "Сброс / КСД открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pressuriz_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pressurizer state",
+      "titleRu": "Состояние КД",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "heat",
+        "spray",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

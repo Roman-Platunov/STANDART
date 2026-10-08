@@ -1,0 +1,20 @@
+sid: 44a4710c
+path: scr_pg.state
+aliases:
+  short: scr_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние СКВ
+  en: SCR state
+fingerprint: sha256:44a4710c5122c6d3a32a6224a26ae4e7c4d18b320fe6a183d3ead0d2ad52b390
+enumValues:
+  - reduce
+  - bypass
+  - regenerate
+  - fault

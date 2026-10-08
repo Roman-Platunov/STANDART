@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-radmon_np.json",
+  "types": [
+    {
+      "path": "radmon_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Radiation monitor id",
+      "titleRu": "ID радиационного монитора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "radmon_np.dose",
+      "kind": "quantity",
+      "unit": "uSv/h",
+      "titleEn": "Dose rate",
+      "titleRu": "Мощность дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radmon_np.count",
+      "kind": "quantity",
+      "unit": "cps",
+      "titleEn": "Count rate",
+      "titleRu": "Скорость счёта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radmon_np.activity",
+      "kind": "quantity",
+      "unit": "Bq",
+      "titleEn": "Activity / concentration",
+      "titleRu": "Активность / концентрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radmon_np.alarm",
+      "kind": "quantity",
+      "unit": "uSv/h",
+      "titleEn": "Alarm setpoint",
+      "titleRu": "Уставка тревоги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radmon_np.accum",
+      "kind": "quantity",
+      "unit": "mSv",
+      "titleEn": "Accumulated dose",
+      "titleRu": "Накопленная доза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "radmon_np.high",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "High radiation alarm",
+      "titleRu": "Сигнал высокой радиации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "radmon_np.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Monitor type",
+      "titleRu": "Тип монитора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "area",
+        "process",
+        "effluent",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

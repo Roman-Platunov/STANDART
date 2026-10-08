@@ -1,0 +1,20 @@
+sid: f437f9b0
+path: circw_pg.state
+aliases:
+  short: circw_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ЦВ
+  en: CW state
+fingerprint: sha256:f437f9b03bfe1f9fd304e7f7eeae9b0681ee5406b86fc5748a1968e49a6e71f6
+enumValues:
+  - circulate
+  - reduce
+  - idle
+  - fault

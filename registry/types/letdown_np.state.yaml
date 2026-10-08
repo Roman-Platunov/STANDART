@@ -1,0 +1,20 @@
+sid: 48122f22
+path: letdown_np.state
+aliases:
+  short: letdown_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние продувки
+  en: Letdown state
+fingerprint: sha256:48122f226064f2e1ef9dbff983de427d7cdd68aa95b518a81dc79909a3333ba2
+enumValues:
+  - purify
+  - divert
+  - isolate
+  - fault

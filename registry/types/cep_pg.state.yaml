@@ -1,0 +1,20 @@
+sid: 51003ea5
+path: cep_pg.state
+aliases:
+  short: cep_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние КЭН
+  en: CEP state
+fingerprint: sha256:51003ea5a8ba721e4317a6d627c1a8a382fcd49525b3e103bc078192a689221e
+enumValues:
+  - run
+  - standby
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: 464d32fe
+path: pfcoil_fu.state
+aliases:
+  short: pfcoil_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние катушки ПП
+  en: PF coil state
+fingerprint: sha256:464d32fe01d5cbf0cf132d8db44433563e242dd4255593d2a3375ccf18d37ccb
+enumValues:
+  - control
+  - ramp
+  - dump
+  - fault

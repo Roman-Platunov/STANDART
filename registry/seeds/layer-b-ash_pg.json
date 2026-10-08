@@ -1,0 +1,115 @@
+{
+  "layer": "B35",
+  "name": "layer-b-ash_pg.json",
+  "types": [
+    {
+      "path": "ash_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ash handling system id",
+      "titleRu": "ID системы золоудаления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ash_pg.bottom",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Bottom ash rate",
+      "titleRu": "Шлак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ash_pg.fly",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fly ash rate",
+      "titleRu": "Унос",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ash_pg.silo",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Silo level",
+      "titleRu": "Уровень силоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ash_pg.haul",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hauls today",
+      "titleRu": "Вывозов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ash_pg.water",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Ash water flow",
+      "titleRu": "Расход золошлаковой воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ash_pg.plugged",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Line plugged",
+      "titleRu": "Засор линии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ash_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Ash state",
+      "titleRu": "Состояние золоудаления",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "convey",
+        "store",
+        "haul",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B35",
+  "name": "layer-b-css_np.json",
+  "types": [
+    {
+      "path": "css_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Containment spray id",
+      "titleRu": "ID спринклерной системы ГО",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "css_np.flow",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Spray flow",
+      "titleRu": "Расход спринклера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "css_np.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Header pressure",
+      "titleRu": "Давление коллектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "css_np.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Spray pH",
+      "titleRu": "pH раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "css_np.chem",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Chemical additive tank",
+      "titleRu": "Уровень химреагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "css_np.trains",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trains available",
+      "titleRu": "Доступных каналов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "css_np.actuate",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spray actuated",
+      "titleRu": "Спринклер запущен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "css_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CSS state",
+      "titleRu": "Состояние спринклера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "spray",
+        "recirc",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

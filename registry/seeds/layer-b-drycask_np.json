@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-drycask_np.json",
+  "types": [
+    {
+      "path": "drycask_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dry cask / canister id",
+      "titleRu": "ID сухого контейнера ОЯТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drycask_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Peak cladding / surface temp",
+      "titleRu": "Макс. температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drycask_np.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Cavity pressure",
+      "titleRu": "Давление полости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drycask_np.dose",
+      "kind": "quantity",
+      "unit": "uSv/h",
+      "titleEn": "Surface dose rate",
+      "titleRu": "Мощность дозы на поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drycask_np.helium",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Helium fill pressure",
+      "titleRu": "Давление гелия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drycask_np.age.y",
+      "kind": "quantity",
+      "unit": "y",
+      "titleEn": "Years since load",
+      "titleRu": "Лет с загрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drycask_np.seal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seal integrity OK",
+      "titleRu": "Герметичность OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "drycask_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cask state",
+      "titleRu": "Состояние контейнера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "store",
+        "transfer",
+        "monitor",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

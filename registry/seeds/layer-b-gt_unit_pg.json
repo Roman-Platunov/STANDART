@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-gt_unit_pg.json",
+  "types": [
+    {
+      "path": "gt_unit_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gas turbine unit id",
+      "titleRu": "ID газотурбинной установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gt_unit_pg.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Electrical power",
+      "titleRu": "Электрическая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gt_unit_pg.exhaust",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Exhaust temperature",
+      "titleRu": "Температура выхлопа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gt_unit_pg.fuel",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Fuel flow",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gt_unit_pg.igv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "IGV position",
+      "titleRu": "Положение ВНА",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gt_unit_pg.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Rotor vibration",
+      "titleRu": "Вибрация ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gt_unit_pg.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "GT trip",
+      "titleRu": "Стоп ГТУ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gt_unit_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "GT state",
+      "titleRu": "Состояние ГТУ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "start",
+        "cooldown",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

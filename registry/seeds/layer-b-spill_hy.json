@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-spill_hy.json",
+  "types": [
+    {
+      "path": "spill_hy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spillway gate id",
+      "titleRu": "ID водосбросного затвора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spill_hy.opening",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Gate opening",
+      "titleRu": "Открытие затвора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spill_hy.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Spill discharge",
+      "titleRu": "Расход сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spill_hy.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Reservoir level",
+      "titleRu": "Уровень водохранилища",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spill_hy.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Gate vibration",
+      "titleRu": "Вибрация затвора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spill_hy.limit",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Flood limit level",
+      "titleRu": "Предельный уровень паводка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spill_hy.auto",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Auto flood control active",
+      "titleRu": "Автопаводковый режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spill_hy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Spillway state",
+      "titleRu": "Состояние водосброса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "closed",
+        "modulate",
+        "full",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

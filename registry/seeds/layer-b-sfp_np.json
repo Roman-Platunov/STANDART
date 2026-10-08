@@ -1,0 +1,111 @@
+{
+  "layer": "B35",
+  "name": "layer-b-sfp_np.json",
+  "types": [
+    {
+      "path": "sfp_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spent fuel pool id",
+      "titleRu": "ID бассейна выдержки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sfp_np.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Pool level",
+      "titleRu": "Уровень бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sfp_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pool temperature",
+      "titleRu": "Температура бассейна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sfp_np.cooling",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Cooling power",
+      "titleRu": "Мощность охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sfp_np.activity",
+      "kind": "quantity",
+      "unit": "Bq",
+      "titleEn": "Water activity",
+      "titleRu": "Активность воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sfp_np.assemblies",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Assemblies stored",
+      "titleRu": "ТВС на хранении",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sfp_np.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pool leak alarm",
+      "titleRu": "Сигнал течи",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sfp_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SFP state",
+      "titleRu": "Состояние БВ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "heatup",
+        "refuel",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

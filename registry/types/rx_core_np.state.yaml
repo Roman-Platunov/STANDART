@@ -1,0 +1,20 @@
+sid: 1f00c9a9
+path: rx_core_np.state
+aliases:
+  short: rx_core_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зоны
+  en: Core state
+fingerprint: sha256:1f00c9a983465dc0c9d910295f55572e98f293aa2816e698aaf0c274d3828ede
+enumValues:
+  - power
+  - startup
+  - shutdown
+  - refuel

@@ -1,0 +1,20 @@
+sid: 982dde15
+path: steam_tur_pg.state
+aliases:
+  short: steam_tur_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние турбины
+  en: Turbine state
+fingerprint: sha256:982dde152dc7d844dbf5d716346d1ddaf3e061c53816b6e084cafd49175d4cd4
+enumValues:
+  - load
+  - sync
+  - coast
+  - fault

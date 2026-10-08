@@ -1,0 +1,20 @@
+sid: f8255199
+path: gen_pg.state
+aliases:
+  short: gen_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние генератора
+  en: Generator state
+fingerprint: sha256:f82551992624427dee0bfa08b8038de447d8e126087e1b787432ef45e11c9a84
+enumValues:
+  - generate
+  - excitate
+  - offline
+  - fault

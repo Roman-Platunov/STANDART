@@ -1,0 +1,120 @@
+{
+  "layer": "B35",
+  "name": "layer-b-gov_hy.json",
+  "types": [
+    {
+      "path": "gov_hy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hydro speed governor id",
+      "titleRu": "ID регулятора скорости ГА",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gov_hy.setpoint",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Power setpoint",
+      "titleRu": "Уставка мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gov_hy.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Measured speed",
+      "titleRu": "Измеренные обороты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gov_hy.gate",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wicket gate command",
+      "titleRu": "Команда на НА",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gov_hy.droop",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Droop setting",
+      "titleRu": "Статизм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gov_hy.oil",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Governor oil pressure",
+      "titleRu": "Давление масла регулятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gov_hy.isl",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Island / isolated mode",
+      "titleRu": "Островной режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gov_hy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Governor state",
+      "titleRu": "Состояние регулятора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "auto",
+        "manual",
+        "lock",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

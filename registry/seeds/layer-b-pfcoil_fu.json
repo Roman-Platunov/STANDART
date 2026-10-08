@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-pfcoil_fu.json",
+  "types": [
+    {
+      "path": "pfcoil_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Poloidal-field coil id",
+      "titleRu": "ID катушки ПП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pfcoil_fu.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Coil current",
+      "titleRu": "Ток катушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pfcoil_fu.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Supply voltage",
+      "titleRu": "Напряжение источника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pfcoil_fu.temp",
+      "kind": "quantity",
+      "unit": "K",
+      "titleEn": "Conductor temperature",
+      "titleRu": "Температура проводника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pfcoil_fu.force",
+      "kind": "quantity",
+      "unit": "MN",
+      "titleEn": "Electromagnetic force",
+      "titleRu": "Электромагнитная сила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pfcoil_fu.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Supply power",
+      "titleRu": "Мощность источника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pfcoil_fu.quench",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Quench detected",
+      "titleRu": "Квенч",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pfcoil_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PF coil state",
+      "titleRu": "Состояние катушки ПП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "control",
+        "ramp",
+        "dump",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

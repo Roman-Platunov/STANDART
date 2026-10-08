@@ -1,0 +1,20 @@
+sid: 66969ba6
+path: cryo_fu.state
+aliases:
+  short: cryo_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние криогенки
+  en: Cryo state
+fingerprint: sha256:66969ba630475421271e6eea58a69d9fb91f5bad2c8a8160bc9817e88e0a16a1
+enumValues:
+  - cold
+  - cooldown
+  - warmup
+  - fault

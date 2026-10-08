@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-circw_pg.json",
+  "types": [
+    {
+      "path": "circw_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Circulating water system id",
+      "titleRu": "ID системы циркуляционной воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "circw_pg.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "CW flow",
+      "titleRu": "Расход ЦВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "circw_pg.temp.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Intake temperature",
+      "titleRu": "Температура водозабора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "circw_pg.temp.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Discharge temperature",
+      "titleRu": "Температура сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "circw_pg.pump",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Pump power",
+      "titleRu": "Мощность насосов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "circw_pg.delta",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Condenser ΔT",
+      "titleRu": "Перепад на конденсаторе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "circw_pg.screen",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Screen / trash high",
+      "titleRu": "Высокий уровень на решётках",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "circw_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CW state",
+      "titleRu": "Состояние ЦВ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "circulate",
+        "reduce",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

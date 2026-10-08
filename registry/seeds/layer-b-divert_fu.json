@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-divert_fu.json",
+  "types": [
+    {
+      "path": "divert_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Divertor system id",
+      "titleRu": "ID дивертора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "divert_fu.heat",
+      "kind": "quantity",
+      "unit": "MW/m2",
+      "titleEn": "Peak heat flux",
+      "titleRu": "Пиковый тепловой поток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "divert_fu.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Target temperature",
+      "titleRu": "Температура мишени",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "divert_fu.particle",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Particle exhaust rate",
+      "titleRu": "Скорость откачки частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "divert_fu.coolant",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Coolant flow",
+      "titleRu": "Расход теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "divert_fu.erosion",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Erosion estimate",
+      "titleRu": "Оценка эрозии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "divert_fu.detach",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Detached plasma",
+      "titleRu": "Отрыв плазмы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "divert_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Divertor state",
+      "titleRu": "Состояние дивертора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "exhaust",
+        "attach",
+        "protect",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

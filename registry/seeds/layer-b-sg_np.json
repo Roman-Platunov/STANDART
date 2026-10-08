@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-sg_np.json",
+  "types": [
+    {
+      "path": "sg_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Nuclear steam generator id",
+      "titleRu": "ID парогенератора АЭС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sg_np.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Narrow-range level",
+      "titleRu": "Уровень (узкий)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sg_np.steam",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Steam flow",
+      "titleRu": "Расход пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sg_np.feed",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Feedwater flow",
+      "titleRu": "Расход питательной воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sg_np.pressure",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "Steam pressure",
+      "titleRu": "Давление пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sg_np.blowdown",
+      "kind": "quantity",
+      "unit": "kg/s",
+      "titleEn": "Blowdown flow",
+      "titleRu": "Продувка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sg_np.tube",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tube leak suspected",
+      "titleRu": "Подозрение на течь трубки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sg_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SG state",
+      "titleRu": "Состояние ПГ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "steam",
+        "isolate",
+        "drain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

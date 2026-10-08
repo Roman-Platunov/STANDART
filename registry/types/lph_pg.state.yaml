@@ -1,0 +1,20 @@
+sid: 69825b50
+path: lph_pg.state
+aliases:
+  short: lph_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ПНД
+  en: LPH state
+fingerprint: sha256:69825b50acc034cb6bc30d1b29b818b1591bb650f4a866e13840b2f911b50919
+enumValues:
+  - heat
+  - bypass
+  - drain
+  - fault

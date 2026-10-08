@@ -1,0 +1,20 @@
+sid: 0d880f83
+path: rhr_np.state
+aliases:
+  short: rhr_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние РХ
+  en: RHR state
+fingerprint: sha256:0d880f8314309c6017f00f99c6cc4dd29998773788f170d1f95df4dbf3c40d6e
+enumValues:
+  - standby
+  - sdc
+  - lpci
+  - fault

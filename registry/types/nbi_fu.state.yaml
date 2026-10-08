@@ -1,0 +1,20 @@
+sid: 386fedc8
+path: nbi_fu.state
+aliases:
+  short: nbi_fu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ИНБ
+  en: NBI state
+fingerprint: sha256:386fedc8ea40899358128f36a4de17956d5847153a6fd7e72a661fbff89cb466
+enumValues:
+  - inject
+  - cond
+  - standby
+  - fault

@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-rcp_np.json",
+  "types": [
+    {
+      "path": "rcp_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reactor coolant pump id",
+      "titleRu": "ID ГЦН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rcp_np.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Pump speed",
+      "titleRu": "Обороты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rcp_np.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Motor power",
+      "titleRu": "Мощность двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rcp_np.seal",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Seal leak-off",
+      "titleRu": "Утечка уплотнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rcp_np.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Vibration",
+      "titleRu": "Вибрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rcp_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bearing temperature",
+      "titleRu": "Температура подшипника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rcp_np.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pump trip",
+      "titleRu": "Отключение насоса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rcp_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "RCP state",
+      "titleRu": "Состояние ГЦН",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "coast",
+        "standby",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

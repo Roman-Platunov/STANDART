@@ -1,0 +1,120 @@
+{
+  "layer": "B35",
+  "name": "layer-b-ecrh_fu.json",
+  "types": [
+    {
+      "path": "ecrh_fu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ECRH / gyrotron id",
+      "titleRu": "ID ЭЦРН / гиротрона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ecrh_fu.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "RF power",
+      "titleRu": "СВЧ-мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ecrh_fu.freq",
+      "kind": "quantity",
+      "unit": "GHz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ecrh_fu.duty",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Duty cycle",
+      "titleRu": "Скважность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ecrh_fu.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Window / load temperature",
+      "titleRu": "Температура окна / нагрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ecrh_fu.reflection",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reflected power",
+      "titleRu": "Отражённая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ecrh_fu.arc",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Arc detected",
+      "titleRu": "Дуга",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ecrh_fu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ECRH state",
+      "titleRu": "Состояние ЭЦРН",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "standby",
+        "cond",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

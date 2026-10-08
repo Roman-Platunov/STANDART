@@ -1,0 +1,20 @@
+sid: db7e2283
+path: pulv_pg.state
+aliases:
+  short: pulv_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние мельницы
+  en: Pulverizer state
+fingerprint: sha256:db7e2283d620a13b552fd8ec380c097c221039b1165886f064bb4252698ab898
+enumValues:
+  - grind
+  - inert
+  - idle
+  - fault

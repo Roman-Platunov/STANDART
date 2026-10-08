@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-condens_pg.json",
+  "types": [
+    {
+      "path": "condens_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Main condenser id",
+      "titleRu": "ID конденсатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "condens_pg.vacuum",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Backpressure / vacuum",
+      "titleRu": "Противодавление / вакуум",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "condens_pg.cw.in",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CW inlet temperature",
+      "titleRu": "Температура ЦВ на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "condens_pg.cw.out",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "CW outlet temperature",
+      "titleRu": "Температура ЦВ на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "condens_pg.hotwell",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hotwell level",
+      "titleRu": "Уровень горячего колодца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "condens_pg.air",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Air in-leakage",
+      "titleRu": "Подсос воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "condens_pg.fouling",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tube fouling high",
+      "titleRu": "Высокое обрастание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "condens_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Condenser state",
+      "titleRu": "Состояние конденсатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "vacuum",
+        "flood",
+        "isolate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

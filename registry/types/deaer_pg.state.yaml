@@ -1,0 +1,20 @@
+sid: 5edf107c
+path: deaer_pg.state
+aliases:
+  short: deaer_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние деаэратора
+  en: Deaerator state
+fingerprint: sha256:5edf107c7daf38c9df29f5a56b7611ba42640be6c55979bce4fe39d52e79caf6
+enumValues:
+  - deaerate
+  - fill
+  - isolate
+  - fault

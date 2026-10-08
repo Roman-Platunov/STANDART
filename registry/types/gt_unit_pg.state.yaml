@@ -1,0 +1,20 @@
+sid: 85935a39
+path: gt_unit_pg.state
+aliases:
+  short: gt_unit_pg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ГТУ
+  en: GT state
+fingerprint: sha256:85935a39fab29c70499fa8749d75efd9d328c7010db7f81b8a0769242567b4ee
+enumValues:
+  - load
+  - start
+  - cooldown
+  - fault

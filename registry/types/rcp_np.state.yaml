@@ -1,0 +1,20 @@
+sid: 353c1c8b
+path: rcp_np.state
+aliases:
+  short: rcp_np.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ГЦН
+  en: RCP state
+fingerprint: sha256:353c1c8b51557d7753ef5ee8aad18304165526a14705109cbfbcfedef118a1e4
+enumValues:
+  - run
+  - coast
+  - standby
+  - fault

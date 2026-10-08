@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-ccw_np.json",
+  "types": [
+    {
+      "path": "ccw_np.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Component cooling water id",
+      "titleRu": "ID промконтура",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ccw_np.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Loop flow",
+      "titleRu": "Расход контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ccw_np.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ccw_np.return",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return temperature",
+      "titleRu": "Температура возврата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ccw_np.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Header pressure",
+      "titleRu": "Давление коллектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ccw_np.surge",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Surge tank level",
+      "titleRu": "Уровень расширителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ccw_np.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Loop leak",
+      "titleRu": "Течь контура",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ccw_np.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CCW state",
+      "titleRu": "Состояние промконтура",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cool",
+        "isolate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

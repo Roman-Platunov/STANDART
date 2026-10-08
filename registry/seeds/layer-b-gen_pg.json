@@ -1,0 +1,112 @@
+{
+  "layer": "B35",
+  "name": "layer-b-gen_pg.json",
+  "types": [
+    {
+      "path": "gen_pg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Main generator id",
+      "titleRu": "ID турбогенератора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gen_pg.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Active power",
+      "titleRu": "Активная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gen_pg.reactive",
+      "kind": "quantity",
+      "unit": "Mvar",
+      "titleEn": "Reactive power",
+      "titleRu": "Реактивная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gen_pg.voltage",
+      "kind": "quantity",
+      "unit": "kV",
+      "titleEn": "Terminal voltage",
+      "titleRu": "Напряжение статора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gen_pg.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Stator current",
+      "titleRu": "Ток статора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gen_pg.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gen_pg.sync",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Synchronized",
+      "titleRu": "Синхронизирован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gen_pg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Generator state",
+      "titleRu": "Состояние генератора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "generate",
+        "excitate",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

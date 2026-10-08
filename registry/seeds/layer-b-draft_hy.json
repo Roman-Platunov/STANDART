@@ -1,0 +1,116 @@
+{
+  "layer": "B35",
+  "name": "layer-b-draft_hy.json",
+  "types": [
+    {
+      "path": "draft_hy.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Draft tube / tailrace id",
+      "titleRu": "ID отсасывающей трубы / НБ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "draft_hy.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Tailrace level",
+      "titleRu": "Уровень нижнего бьефа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "draft_hy.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Draft tube pressure",
+      "titleRu": "Давление в отсасывающей трубе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "draft_hy.air",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Air admission",
+      "titleRu": "Подвод воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "draft_hy.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "draft_hy.dissolved",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "draft_hy.vortex",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vortex / swirl alarm",
+      "titleRu": "Вихрь / закрутка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "draft_hy.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Draft state",
+      "titleRu": "Состояние отсасывающей трубы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "discharge",
+        "air",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
