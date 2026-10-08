@@ -1,0 +1,111 @@
+{
+  "layer": "B32",
+  "name": "layer-b-homogenizer.json",
+  "types": [
+    {
+      "path": "homogenizer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Dairy homogenizer id",
+      "titleRu": "ID гомогенизатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "homogenizer.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Homogenizing pressure",
+      "titleRu": "Давление гомогенизации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "homogenizer.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Product flow",
+      "titleRu": "Расход продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "homogenizer.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "homogenizer.stages",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stages active",
+      "titleRu": "Активных ступеней",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "homogenizer.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Drive power",
+      "titleRu": "Мощность привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "homogenizer.valve",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Valve wear high",
+      "titleRu": "Износ клапана",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "homogenizer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Homogenizer state",
+      "titleRu": "Состояние гомогенизатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

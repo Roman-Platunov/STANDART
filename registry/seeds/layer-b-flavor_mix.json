@@ -1,0 +1,110 @@
+{
+  "layer": "B32",
+  "name": "layer-b-flavor_mix.json",
+  "types": [
+    {
+      "path": "flavor_mix.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flavor compounding mixer id",
+      "titleRu": "ID смесителя ароматизаторов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flavor_mix.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flavor_mix.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mix temperature",
+      "titleRu": "Температура смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flavor_mix.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Mix time",
+      "titleRu": "Время смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flavor_mix.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Product viscosity",
+      "titleRu": "Вязкость продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flavor_mix.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Batch weight",
+      "titleRu": "Масса партии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flavor_mix.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sensory / GC OK",
+      "titleRu": "Сенсорика / ГХ OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flavor_mix.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "liquid",
+        "powder",
+        "emulsion",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 6e1d7f6f
+path: brew_ferment.state
+aliases:
+  short: brew_ferment.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние танка
+  en: Tank state
+fingerprint: sha256:6e1d7f6f29ee2730775f1b5f9c854e1895af61ef1fa6feb25484709725e63449
+enumValues:
+  - fill
+  - ferment
+  - condition
+  - fault

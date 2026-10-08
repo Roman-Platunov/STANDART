@@ -1,0 +1,124 @@
+{
+  "layer": "B32",
+  "name": "layer-b-juice_ext.json",
+  "types": [
+    {
+      "path": "juice_ext.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Juice extractor id",
+      "titleRu": "ID соковыжималки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "juice_ext.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fruit feed",
+      "titleRu": "Подача фруктов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "juice_ext.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Juice yield",
+      "titleRu": "Выход сока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "juice_ext.brix",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Brix",
+      "titleRu": "Брикс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "juice_ext.pulp",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pulp content",
+      "titleRu": "Содержание мякоти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "juice_ext.output",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Juice output",
+      "titleRu": "Выпуск сока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "juice_ext.seed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seed carryover",
+      "titleRu": "Унос семян",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "juice_ext.fruit",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fruit",
+      "titleRu": "Фрукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "orange",
+        "apple",
+        "berry",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

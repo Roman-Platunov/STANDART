@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-cane_mill.json",
+  "types": [
+    {
+      "path": "cane_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sugarcane mill id",
+      "titleRu": "ID сахарного завода (тростник)",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cane_mill.crush",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Cane crush rate",
+      "titleRu": "Размол тростника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cane_mill.brix",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Juice Brix",
+      "titleRu": "Брикс сока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cane_mill.pol",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Polarization",
+      "titleRu": "Поляризация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cane_mill.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Process steam",
+      "titleRu": "Технологический пар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cane_mill.bagasse",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Bagasse output",
+      "titleRu": "Выход жома",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cane_mill.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mill jam",
+      "titleRu": "Затор мельницы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cane_mill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "crush",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

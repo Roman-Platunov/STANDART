@@ -1,0 +1,114 @@
+{
+  "layer": "B32",
+  "name": "layer-b-enzyme_pl.json",
+  "types": [
+    {
+      "path": "enzyme_pl.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Enzyme fermentation plant id",
+      "titleRu": "ID завода ферментов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "enzyme_pl.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "enzyme_pl.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fermenter temperature",
+      "titleRu": "Температура ферментёра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "enzyme_pl.do",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "enzyme_pl.activity",
+      "kind": "quantity",
+      "unit": "U/mL",
+      "titleEn": "Enzyme activity",
+      "titleRu": "Активность фермента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "enzyme_pl.titer",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Product titer",
+      "titleRu": "Титр продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "enzyme_pl.contamination",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Contamination",
+      "titleRu": "Контаминация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "enzyme_pl.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ferment",
+        "harvest",
+        "purify",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

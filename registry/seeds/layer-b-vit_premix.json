@@ -1,0 +1,118 @@
+{
+  "layer": "B32",
+  "name": "layer-b-vit_premix.json",
+  "types": [
+    {
+      "path": "vit_premix.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vitamin premix blender id",
+      "titleRu": "ID смесителя витаминных премиксов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vit_premix.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vit_premix.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Batch weight",
+      "titleRu": "Масса партии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vit_premix.cv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mix uniformity CV",
+      "titleRu": "CV однородности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vit_premix.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Blend time",
+      "titleRu": "Время смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vit_premix.assay",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Marker assay",
+      "titleRu": "Анализ маркера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vit_premix.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Assay OK",
+      "titleRu": "Анализ OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vit_premix.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Blender state",
+      "titleRu": "Состояние смесителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "weigh",
+        "blend",
+        "pack",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

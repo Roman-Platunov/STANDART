@@ -1,0 +1,20 @@
+sid: 39902d38
+path: fish_proc.state
+aliases:
+  short: fish_proc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:39902d38d43e01a82b28718898a0e853e3a4aa039e599c759846196c6c8a1009
+enumValues:
+  - gut
+  - fillet
+  - freeze
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-evapor_fd.json",
+  "types": [
+    {
+      "path": "evapor_fd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food evaporator id",
+      "titleRu": "ID пищевого выпарного аппарата",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "evapor_fd.feed",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "evapor_fd.brix",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Concentrate Brix",
+      "titleRu": "Брикс концентрата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "evapor_fd.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Steam consumption",
+      "titleRu": "Расход пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "evapor_fd.vacuum",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Vacuum",
+      "titleRu": "Вакуум",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "evapor_fd.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "evapor_fd.fouling",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fouling high",
+      "titleRu": "Высокое загрязнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "evapor_fd.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "falling_film",
+        "forced",
+        "mvr",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

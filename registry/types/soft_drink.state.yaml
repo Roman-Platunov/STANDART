@@ -1,0 +1,20 @@
+sid: 686281d5
+path: soft_drink.state
+aliases:
+  short: soft_drink.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние купажёра
+  en: Blender state
+fingerprint: sha256:686281d5c811c63945178c055eb2d1fa35d7aa994bca51481ff4d71e62b64f3d
+enumValues:
+  - blend
+  - carbonate
+  - idle
+  - fault

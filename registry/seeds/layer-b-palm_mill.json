@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-palm_mill.json",
+  "types": [
+    {
+      "path": "palm_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Palm oil mill id",
+      "titleRu": "ID пальмового завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "palm_mill.ffb",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "FFB feed",
+      "titleRu": "Подача СПП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "palm_mill.cpo",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "CPO output",
+      "titleRu": "Выпуск СПО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "palm_mill.oer",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oil extraction rate",
+      "titleRu": "Коэффициент извлечения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "palm_mill.ffa",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "FFA in CPO",
+      "titleRu": "СЖК в СПО",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "palm_mill.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Process steam",
+      "titleRu": "Технологический пар",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "palm_mill.sterilizer",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sterilizer OK",
+      "titleRu": "Стерилизатор OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "palm_mill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sterilize",
+        "press",
+        "clarify",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

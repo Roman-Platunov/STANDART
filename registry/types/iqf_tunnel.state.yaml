@@ -1,0 +1,20 @@
+sid: "45633964"
+path: iqf_tunnel.state
+aliases:
+  short: iqf_tunnel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние туннеля
+  en: Tunnel state
+fingerprint: sha256:456339649e467adaa902255f3e954238e4db6f92fb894665d8ea2b5025692f79
+enumValues:
+  - freeze
+  - defrost
+  - idle
+  - fault

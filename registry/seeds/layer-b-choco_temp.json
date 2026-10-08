@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-choco_temp.json",
+  "types": [
+    {
+      "path": "choco_temp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chocolate tempering unit id",
+      "titleRu": "ID темперирования шоколада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "choco_temp.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chocolate temperature",
+      "titleRu": "Температура шоколада",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "choco_temp.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Viscosity",
+      "titleRu": "Вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "choco_temp.crystal",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stable crystal fraction",
+      "titleRu": "Доля стабильных кристаллов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "choco_temp.flow",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "choco_temp.cool",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Cooling stage temperature",
+      "titleRu": "Температура охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "choco_temp.bloom",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bloom risk",
+      "titleRu": "Риск поседения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "choco_temp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "melt",
+        "temper",
+        "hold",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

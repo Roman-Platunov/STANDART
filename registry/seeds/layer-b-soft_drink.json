@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-soft_drink.json",
+  "types": [
+    {
+      "path": "soft_drink.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Soft drink blender id",
+      "titleRu": "ID купажёра безалкогольных напитков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "soft_drink.brix",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Brix",
+      "titleRu": "Брикс",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "soft_drink.co2",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "CO2 content",
+      "titleRu": "Содержание CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soft_drink.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Product flow",
+      "titleRu": "Расход продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soft_drink.ratio",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Syrup / water ratio",
+      "titleRu": "Соотношение сироп/вода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soft_drink.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Blend temperature",
+      "titleRu": "Температура купажа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "soft_drink.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Brix / CO2 OK",
+      "titleRu": "Брикс / CO2 OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "soft_drink.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Blender state",
+      "titleRu": "Состояние купажёра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blend",
+        "carbonate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

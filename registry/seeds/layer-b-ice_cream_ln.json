@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-ice_cream_ln.json",
+  "types": [
+    {
+      "path": "ice_cream_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ice cream freezer line id",
+      "titleRu": "ID линии мороженого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ice_cream_ln.draw",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Draw temperature",
+      "titleRu": "Температура выгрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_cream_ln.overrun",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Overrun",
+      "titleRu": "Взбитость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 200
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ice_cream_ln.output",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Mix throughput",
+      "titleRu": "Пропуск смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_cream_ln.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Mix viscosity",
+      "titleRu": "Вязкость смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_cream_ln.pack",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units packed per hour",
+      "titleRu": "Упаковок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ice_cream_ln.dasher",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dasher OK",
+      "titleRu": "Мешалка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ice_cream_ln.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "freeze",
+        "fill",
+        "harden",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

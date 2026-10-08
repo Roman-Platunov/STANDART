@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-keg_line.json",
+  "types": [
+    {
+      "path": "keg_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Keg filling line id",
+      "titleRu": "ID линии розлива в кеги",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "keg_line.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Kegs per hour",
+      "titleRu": "Кег в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "keg_line.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "keg_line.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "keg_line.co2",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "CO2 content",
+      "titleRu": "Содержание CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "keg_line.wash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wash / sanitize OK",
+      "titleRu": "Мойка/санитизация OK",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "keg_line.spear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spear seal OK",
+      "titleRu": "Фитинг OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "keg_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wash",
+        "fill",
+        "cap",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

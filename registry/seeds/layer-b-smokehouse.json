@@ -1,0 +1,115 @@
+{
+  "layer": "B32",
+  "name": "layer-b-smokehouse.json",
+  "types": [
+    {
+      "path": "smokehouse.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Smokehouse id",
+      "titleRu": "ID коптильной камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smokehouse.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smokehouse.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smokehouse.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smokehouse.core",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product core temperature",
+      "titleRu": "Температура в сердцевине",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smokehouse.time.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Process time",
+      "titleRu": "Время процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smokehouse.smoke",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Smoke generator on",
+      "titleRu": "Генератор дыма включён",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smokehouse.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cook",
+        "smoke",
+        "dry",
+        "cool",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-mineral_wat.json",
+  "types": [
+    {
+      "path": "mineral_wat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mineral water bottling line id",
+      "titleRu": "ID линии минеральной воды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mineral_wat.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bottles per hour",
+      "titleRu": "Бутылок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mineral_wat.tds",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "TDS",
+      "titleRu": "Общая минерализация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mineral_wat.ozone",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Ozone residual",
+      "titleRu": "Остаточный озон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mineral_wat.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mineral_wat.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Water flow",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mineral_wat.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Micro / chem OK",
+      "titleRu": "Микро / химия OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mineral_wat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "filter",
+        "fill",
+        "label",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

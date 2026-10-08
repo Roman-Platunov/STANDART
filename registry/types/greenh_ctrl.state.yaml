@@ -1,0 +1,20 @@
+sid: 833ca735
+path: greenh_ctrl.state
+aliases:
+  short: greenh_ctrl.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние зоны
+  en: Zone state
+fingerprint: sha256:833ca73580b7fb2d8e7473214939c4331ee1e51dbb7be3573c4b5b247647749e
+enumValues:
+  - day
+  - night
+  - flush
+  - fault

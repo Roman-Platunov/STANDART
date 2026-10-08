@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-dairy_uht.json",
+  "types": [
+    {
+      "path": "dairy_uht.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "UHT dairy line id",
+      "titleRu": "ID линии УВТ молока",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dairy_uht.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "UHT temperature",
+      "titleRu": "Температура УВТ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy_uht.hold.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Hold time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy_uht.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Product flow",
+      "titleRu": "Расход продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy_uht.homogen",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Homogenizer pressure",
+      "titleRu": "Давление гомогенизатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dairy_uht.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dairy_uht.sterile",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Aseptic OK",
+      "titleRu": "Асептика OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dairy_uht.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sterilize",
+        "fill",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

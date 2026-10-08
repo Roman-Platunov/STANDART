@@ -1,0 +1,20 @@
+sid: 0a309d9f
+path: blast_freez.state
+aliases:
+  short: blast_freez.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние камеры
+  en: Freezer state
+fingerprint: sha256:0a309d9f6d0871ba62a333d40137f2e97ed89d23a3792249d8877145a5875258
+enumValues:
+  - freeze
+  - defrost
+  - idle
+  - fault

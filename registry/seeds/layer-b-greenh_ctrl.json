@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-greenh_ctrl.json",
+  "types": [
+    {
+      "path": "greenh_ctrl.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Greenhouse climate zone id",
+      "titleRu": "ID климатической зоны теплицы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "greenh_ctrl.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air temperature",
+      "titleRu": "Температура воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "greenh_ctrl.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "greenh_ctrl.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO2 concentration",
+      "titleRu": "Концентрация CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "greenh_ctrl.par",
+      "kind": "quantity",
+      "unit": "umol/m2/s",
+      "titleEn": "PAR light",
+      "titleRu": "ФАР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "greenh_ctrl.vent",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Vent opening",
+      "titleRu": "Открытие форточек",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "greenh_ctrl.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Climate alarm",
+      "titleRu": "Тревога климата",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "greenh_ctrl.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone state",
+      "titleRu": "Состояние зоны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "day",
+        "night",
+        "flush",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

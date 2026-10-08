@@ -1,0 +1,20 @@
+sid: 7b697887
+path: deboning_ln.state
+aliases:
+  short: deboning_ln.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:7b697887e2bc570cb340ef5af32cf91e5561b4702a74fabdc3ed48611d58e103
+enumValues:
+  - cut
+  - trim
+  - pack
+  - fault

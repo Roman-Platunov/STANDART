@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-bottle_fill_fd.json",
+  "types": [
+    {
+      "path": "bottle_fill_fd.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Beverage bottle filler id",
+      "titleRu": "ID линии розлива напитков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bottle_fill_fd.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Bottles per hour",
+      "titleRu": "Бутылок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_fill_fd.volume",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Fill volume",
+      "titleRu": "Объём наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_fill_fd.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bottle_fill_fd.co2",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "CO2 in bottle",
+      "titleRu": "CO2 в бутылке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bottle_fill_fd.foam",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Foam rejects",
+      "titleRu": "Брак по пене",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bottle_fill_fd.cap",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Capper OK",
+      "titleRu": "Укупорка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bottle_fill_fd.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rinse",
+        "fill",
+        "cap",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

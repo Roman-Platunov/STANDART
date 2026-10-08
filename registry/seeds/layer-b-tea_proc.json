@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-tea_proc.json",
+  "types": [
+    {
+      "path": "tea_proc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tea processing line id",
+      "titleRu": "ID линии переработки чая",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tea_proc.wither",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wither moisture loss",
+      "titleRu": "Потеря влаги при завяливании",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tea_proc.ferment",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oxidation temperature",
+      "titleRu": "Температура окисления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tea_proc.dry",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dryer temperature",
+      "titleRu": "Температура сушки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tea_proc.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Made tea moisture",
+      "titleRu": "Влажность готового чая",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tea_proc.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Made tea output",
+      "titleRu": "Выпуск готового чая",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tea_proc.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Grade OK",
+      "titleRu": "Сорт OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tea_proc.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "black",
+        "green",
+        "oolong",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

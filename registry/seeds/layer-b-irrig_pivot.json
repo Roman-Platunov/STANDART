@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-irrig_pivot.json",
+  "types": [
+    {
+      "path": "irrig_pivot.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Center pivot irrigation id",
+      "titleRu": "ID круговой дождевальной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "irrig_pivot.flow",
+      "kind": "quantity",
+      "unit": "L/s",
+      "titleEn": "Water flow",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrig_pivot.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "System pressure",
+      "titleRu": "Давление системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrig_pivot.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Application depth",
+      "titleRu": "Норма полива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrig_pivot.speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Percent timer",
+      "titleRu": "Процент таймера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "irrig_pivot.area",
+      "kind": "quantity",
+      "unit": "ha",
+      "titleEn": "Area covered today",
+      "titleRu": "Площадь за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "irrig_pivot.align",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Alignment fault",
+      "titleRu": "Нарушение выравнивания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "irrig_pivot.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pivot state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "irrigate",
+        "idle",
+        "chems",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

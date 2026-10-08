@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-ready_meal.json",
+  "types": [
+    {
+      "path": "ready_meal.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ready-meal line id",
+      "titleRu": "ID линии готовых блюд",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ready_meal.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Meals per hour",
+      "titleRu": "Блюд в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ready_meal.fill",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Fill weight",
+      "titleRu": "Масса наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ready_meal.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ready_meal.seal",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Seal pass rate",
+      "titleRu": "Прохождение запайки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ready_meal.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Hot-fill / chill temperature",
+      "titleRu": "Температура горячего наполнения/охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ready_meal.metal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Metal detector trip",
+      "titleRu": "Срабатывание металлодетектора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ready_meal.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cook",
+        "fill",
+        "seal",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-spray_dry_fd.json",
+  "types": [
+    {
+      "path": "spray_dry_fd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food spray dryer id",
+      "titleRu": "ID пищевой распылительной сушилки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spray_dry_fd.inlet",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet air temperature",
+      "titleRu": "Температура воздуха на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spray_dry_fd.outlet",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outlet air temperature",
+      "titleRu": "Температура воздуха на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spray_dry_fd.feed",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spray_dry_fd.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Powder moisture",
+      "titleRu": "Влажность порошка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spray_dry_fd.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Powder output",
+      "titleRu": "Выпуск порошка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spray_dry_fd.stick",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chamber sticking",
+      "titleRu": "Налипание в камере",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spray_dry_fd.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dryer state",
+      "titleRu": "Состояние сушилки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "cip",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

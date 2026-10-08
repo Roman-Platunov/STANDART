@@ -1,0 +1,20 @@
+sid: 706c5169
+path: olive_press.state
+aliases:
+  short: olive_press.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Mill state
+fingerprint: sha256:706c5169209af6a72b224e6a0cd5e78a0e7dc590c482a72b62070be3b0165695
+enumValues:
+  - wash
+  - crush
+  - malax
+  - fault

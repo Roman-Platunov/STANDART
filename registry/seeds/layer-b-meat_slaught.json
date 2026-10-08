@@ -1,0 +1,124 @@
+{
+  "layer": "B32",
+  "name": "layer-b-meat_slaught.json",
+  "types": [
+    {
+      "path": "meat_slaught.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slaughter line id",
+      "titleRu": "ID линии убоя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meat_slaught.rate",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Animals per hour",
+      "titleRu": "Голов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meat_slaught.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chill temperature",
+      "titleRu": "Температура охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meat_slaught.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Carcass yield",
+      "titleRu": "Выход туши",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meat_slaught.condemn",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Condemn rate",
+      "titleRu": "Брак ветнадзора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meat_slaught.stun",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stun efficacy",
+      "titleRu": "Эффективность оглушения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meat_slaught.welfare",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Welfare OK",
+      "titleRu": "Благополучие OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meat_slaught.species",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Species",
+      "titleRu": "Вид",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "beef",
+        "pork",
+        "poultry",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

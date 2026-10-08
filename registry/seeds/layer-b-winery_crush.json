@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-winery_crush.json",
+  "types": [
+    {
+      "path": "winery_crush.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Winery crush line id",
+      "titleRu": "ID линии дробления винодельни",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "winery_crush.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Grape feed",
+      "titleRu": "Подача винограда",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winery_crush.brix",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Must Brix",
+      "titleRu": "Брикс сусла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "winery_crush.yield",
+      "kind": "quantity",
+      "unit": "L/t",
+      "titleEn": "Juice yield",
+      "titleRu": "Выход сока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winery_crush.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Must temperature",
+      "titleRu": "Температура сусла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winery_crush.so2",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "SO2 addition",
+      "titleRu": "Добавка SO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "winery_crush.rot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rot / MOG high",
+      "titleRu": "Гниль / сор высокий",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "winery_crush.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "crush",
+        "press",
+        "settle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

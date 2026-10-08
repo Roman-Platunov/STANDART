@@ -1,0 +1,20 @@
+sid: a31cb144
+path: cane_mill.state
+aliases:
+  short: cane_mill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Mill state
+fingerprint: sha256:a31cb1445bf9f377d405bddcb5a13262635463ca02f31a94a370f1cad22e95ce
+enumValues:
+  - crush
+  - idle
+  - maintain
+  - fault

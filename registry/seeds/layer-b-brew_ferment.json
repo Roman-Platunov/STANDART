@@ -1,0 +1,114 @@
+{
+  "layer": "B32",
+  "name": "layer-b-brew_ferment.json",
+  "types": [
+    {
+      "path": "brew_ferment.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Brewery fermenter id",
+      "titleRu": "ID пивного ферментёра",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brew_ferment.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "brew_ferment.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fermentation temperature",
+      "titleRu": "Температура брожения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brew_ferment.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tank pressure",
+      "titleRu": "Давление танка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brew_ferment.plato",
+      "kind": "quantity",
+      "unit": "P",
+      "titleEn": "Original / present gravity",
+      "titleRu": "Плотность Плато",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "brew_ferment.abv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "ABV",
+      "titleRu": "Объёмная доля спирта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "brew_ferment.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready to transfer",
+      "titleRu": "Готово к перекачке",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "brew_ferment.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tank state",
+      "titleRu": "Состояние танка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "ferment",
+        "condition",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

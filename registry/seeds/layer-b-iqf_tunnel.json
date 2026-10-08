@@ -1,0 +1,112 @@
+{
+  "layer": "B32",
+  "name": "layer-b-iqf_tunnel.json",
+  "types": [
+    {
+      "path": "iqf_tunnel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IQF freezer tunnel id",
+      "titleRu": "ID туннеля шоковой заморозки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "iqf_tunnel.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air temperature",
+      "titleRu": "Температура воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iqf_tunnel.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Belt speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iqf_tunnel.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Frozen output",
+      "titleRu": "Выпуск замороженного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iqf_tunnel.core",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product core temperature",
+      "titleRu": "Температура в сердцевине",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iqf_tunnel.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "iqf_tunnel.frost",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Frost buildup",
+      "titleRu": "Намерзание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "iqf_tunnel.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tunnel state",
+      "titleRu": "Состояние туннеля",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "freeze",
+        "defrost",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

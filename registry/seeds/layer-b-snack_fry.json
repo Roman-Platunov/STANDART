@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-snack_fry.json",
+  "types": [
+    {
+      "path": "snack_fry.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Snack fryer id",
+      "titleRu": "ID фритюрницы снэков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "snack_fry.oil.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snack_fry.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "snack_fry.oil.use",
+      "kind": "quantity",
+      "unit": "kg/t",
+      "titleEn": "Oil uptake",
+      "titleRu": "Поглощение масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snack_fry.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Product output",
+      "titleRu": "Выпуск продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "snack_fry.ffa",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Free fatty acids",
+      "titleRu": "Свободные жирные кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "snack_fry.filter",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Oil filter due",
+      "titleRu": "Фильтрация масла",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "snack_fry.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fryer state",
+      "titleRu": "Состояние фритюрницы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fry",
+        "idle",
+        "clean",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

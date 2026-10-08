@@ -1,0 +1,112 @@
+{
+  "layer": "B32",
+  "name": "layer-b-aqua_farm.json",
+  "types": [
+    {
+      "path": "aqua_farm.tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aquaculture tank id",
+      "titleRu": "ID бассейна аквакультуры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aqua_farm.do",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aqua_farm.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Water temperature",
+      "titleRu": "Температура воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aqua_farm.nh3",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Ammonia",
+      "titleRu": "Аммиак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aqua_farm.biomass",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Estimated biomass",
+      "titleRu": "Оценка биомассы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aqua_farm.feed",
+      "kind": "quantity",
+      "unit": "kg/d",
+      "titleEn": "Daily feed",
+      "titleRu": "Суточный корм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aqua_farm.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Water quality alarm",
+      "titleRu": "Тревога качества воды",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aqua_farm.species",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Species",
+      "titleRu": "Вид",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "salmon",
+        "shrimp",
+        "tilapia",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "layer": "B32",
+  "name": "layer-b-feed_pellet.json",
+  "types": [
+    {
+      "path": "feed_pellet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Animal feed pellet mill id",
+      "titleRu": "ID комбикормового гранулятора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "feed_pellet.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Meal feed",
+      "titleRu": "Подача муки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feed_pellet.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Pellet output",
+      "titleRu": "Выпуск гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feed_pellet.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pellet moisture",
+      "titleRu": "Влажность гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "feed_pellet.durability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "PDI durability",
+      "titleRu": "Прочность PDI",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "feed_pellet.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Die temperature",
+      "titleRu": "Температура матрицы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "feed_pellet.die",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Die change due",
+      "titleRu": "Замена матрицы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "feed_pellet.species",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Species",
+      "titleRu": "Вид",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "poultry",
+        "swine",
+        "ruminant",
+        "aqua",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

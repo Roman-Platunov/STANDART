@@ -1,0 +1,20 @@
+sid: 65ad0781
+path: enzyme_pl.state
+aliases:
+  short: enzyme_pl.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:65ad07815275e7e3531ae567a0d9c05f53102c8394b18c3d97718641972ad264
+enumValues:
+  - ferment
+  - harvest
+  - purify
+  - fault

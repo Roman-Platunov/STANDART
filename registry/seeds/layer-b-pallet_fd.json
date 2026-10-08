@@ -1,0 +1,119 @@
+{
+  "layer": "B32",
+  "name": "layer-b-pallet_fd.json",
+  "types": [
+    {
+      "path": "pallet_fd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food palletizer id",
+      "titleRu": "ID паллетайзера пищевого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pallet_fd.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Pallets per hour",
+      "titleRu": "Паллет в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pallet_fd.layers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Layers per pallet",
+      "titleRu": "Слоёв на паллете",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pallet_fd.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pallet_fd.wrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Stretch wrap tension OK",
+      "titleRu": "Обмотка OK",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pallet_fd.weight",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Pallet weight",
+      "titleRu": "Масса паллеты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pallet_fd.pattern",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pattern OK",
+      "titleRu": "Схема укладки OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pallet_fd.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Palletizer state",
+      "titleRu": "Состояние паллетайзера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stack",
+        "wrap",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "layer": "B32",
+  "name": "layer-b-case_pack.json",
+  "types": [
+    {
+      "path": "case_pack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Case packer id",
+      "titleRu": "ID упаковщика в короба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "case_pack.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Cases per minute",
+      "titleRu": "Коробов в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "case_pack.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "case_pack.glue",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Glue / tape OK rate",
+      "titleRu": "Клей/скотч OK",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "case_pack.change.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Changeover time",
+      "titleRu": "Время переналадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "case_pack.uptime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uptime",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "case_pack.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Jam",
+      "titleRu": "Затор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "case_pack.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Packer state",
+      "titleRu": "Состояние упаковщика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pack",
+        "changeover",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

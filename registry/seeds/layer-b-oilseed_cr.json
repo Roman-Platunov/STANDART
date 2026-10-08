@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-oilseed_cr.json",
+  "types": [
+    {
+      "path": "oilseed_cr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Oilseed crush plant id",
+      "titleRu": "ID маслоэкстракционного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "oilseed_cr.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Seed feed",
+      "titleRu": "Подача семян",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_cr.oil",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Crude oil output",
+      "titleRu": "Выпуск сырого масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_cr.meal",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Meal output",
+      "titleRu": "Выпуск шрота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_cr.residual",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Residual oil in meal",
+      "titleRu": "Остаток масла в шроте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_cr.solvent",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Solvent residual",
+      "titleRu": "Остаток растворителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "oilseed_cr.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "oilseed_cr.seed",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Seed",
+      "titleRu": "Семена",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "soy",
+        "rapeseed",
+        "sunflower",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

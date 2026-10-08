@@ -1,0 +1,115 @@
+{
+  "layer": "B32",
+  "name": "layer-b-cheese_vat.json",
+  "types": [
+    {
+      "path": "cheese_vat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cheese vat id",
+      "titleRu": "ID сырной ванны",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cheese_vat.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cheese_vat.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Vat temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cheese_vat.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Curd pH",
+      "titleRu": "pH сгустка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cheese_vat.milk",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Milk volume",
+      "titleRu": "Объём молока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cheese_vat.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cheese yield",
+      "titleRu": "Выход сыра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cheese_vat.cut",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Curd cut done",
+      "titleRu": "Резка сгустка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cheese_vat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Vat state",
+      "titleRu": "Состояние ванны",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "set",
+        "cut",
+        "cook",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

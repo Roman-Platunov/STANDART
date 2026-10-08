@@ -1,0 +1,117 @@
+{
+  "layer": "B32",
+  "name": "layer-b-mushroom_fr.json",
+  "types": [
+    {
+      "path": "mushroom_fr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mushroom growing room id",
+      "titleRu": "ID грибной камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mushroom_fr.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Room temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mushroom_fr.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mushroom_fr.co2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CO2",
+      "titleRu": "CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mushroom_fr.yield",
+      "kind": "quantity",
+      "unit": "kg/m2",
+      "titleEn": "Yield per flush",
+      "titleRu": "Урожай за волну",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mushroom_fr.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Fresh air",
+      "titleRu": "Свежий воздух",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mushroom_fr.contam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Contamination",
+      "titleRu": "Контаминация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mushroom_fr.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Стадия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "spawn",
+        "case",
+        "pin",
+        "harvest",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

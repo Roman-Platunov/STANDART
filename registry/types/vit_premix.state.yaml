@@ -1,0 +1,20 @@
+sid: 0a5ed285
+path: vit_premix.state
+aliases:
+  short: vit_premix.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние смесителя
+  en: Blender state
+fingerprint: sha256:0a5ed2853f7e5ff38aea062b8d2935d2a27fe5416cb05372d5ede00305103a75
+enumValues:
+  - weigh
+  - blend
+  - pack
+  - fault

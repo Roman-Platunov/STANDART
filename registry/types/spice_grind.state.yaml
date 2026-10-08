@@ -1,0 +1,20 @@
+sid: 3df1b039
+path: spice_grind.state
+aliases:
+  short: spice_grind.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние мельницы
+  en: Mill state
+fingerprint: sha256:3df1b0395ccad98bd5c6fdd63e2871c767eab45a3951abfca72501a9718fa10f
+enumValues:
+  - grind
+  - blend
+  - pack
+  - fault

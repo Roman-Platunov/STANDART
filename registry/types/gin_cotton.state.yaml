@@ -1,0 +1,20 @@
+sid: f9166b93
+path: gin_cotton.state
+aliases:
+  short: gin_cotton.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Gin state
+fingerprint: sha256:f9166b938323080ad9989b36b5bc8f825df843ce10c3539f5dc4918e5cd4bb73
+enumValues:
+  - gin
+  - bale
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: 843950bb
+path: homogenizer.state
+aliases:
+  short: homogenizer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние гомогенизатора
+  en: Homogenizer state
+fingerprint: sha256:843950bb1a0bf39c05e54270384669f511be766a7c9c0342c1b38aadb2103aad
+enumValues:
+  - run
+  - idle
+  - maintain
+  - fault

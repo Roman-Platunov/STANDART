@@ -1,0 +1,20 @@
+sid: 22da197d
+path: metal_det.state
+aliases:
+  short: metal_det.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние детектора
+  en: Detector state
+fingerprint: sha256:22da197de0cb9deac32df9e6e0c3abd4cde5a021e305896b08c6744a3e9849c2
+enumValues:
+  - monitor
+  - reject
+  - test
+  - fault

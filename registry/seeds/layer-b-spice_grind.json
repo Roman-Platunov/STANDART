@@ -1,0 +1,114 @@
+{
+  "layer": "B32",
+  "name": "layer-b-spice_grind.json",
+  "types": [
+    {
+      "path": "spice_grind.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spice grinder id",
+      "titleRu": "ID мельницы специй",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spice_grind.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "spice_grind.size",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Particle size D90",
+      "titleRu": "Размер частиц D90",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spice_grind.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spice_grind.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "spice_grind.volatile",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Volatile oil retained",
+      "titleRu": "Сохранённые эфирные масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "spice_grind.metal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Metal detector trip",
+      "titleRu": "Срабатывание металлодетектора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "spice_grind.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние мельницы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grind",
+        "blend",
+        "pack",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

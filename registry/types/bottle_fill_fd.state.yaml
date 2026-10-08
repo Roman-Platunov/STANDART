@@ -1,0 +1,20 @@
+sid: 115388f1
+path: bottle_fill_fd.state
+aliases:
+  short: bottle_fill_fd.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:115388f1e28255a1f3f40fa4b9489724c5cc057e2dfd65e7d99fc69cb227abbc
+enumValues:
+  - rinse
+  - fill
+  - cap
+  - fault

@@ -1,0 +1,112 @@
+{
+  "layer": "B32",
+  "name": "layer-b-blast_freez.json",
+  "types": [
+    {
+      "path": "blast_freez.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blast freezer id",
+      "titleRu": "ID камеры шоковой заморозки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blast_freez.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air temperature",
+      "titleRu": "Температура воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_freez.core",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product core temperature",
+      "titleRu": "Температура в сердцевине",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_freez.time.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Freeze time",
+      "titleRu": "Время заморозки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_freez.load",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Product load",
+      "titleRu": "Загрузка продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_freez.energy",
+      "kind": "quantity",
+      "unit": "kWh",
+      "titleEn": "Energy this cycle",
+      "titleRu": "Энергия цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_freez.done",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Freeze complete",
+      "titleRu": "Заморозка завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "blast_freez.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Freezer state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "freeze",
+        "defrost",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

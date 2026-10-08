@@ -1,0 +1,124 @@
+{
+  "layer": "B32",
+  "name": "layer-b-gin_cotton.json",
+  "types": [
+    {
+      "path": "gin_cotton.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cotton gin id",
+      "titleRu": "ID хлопкоочистительного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gin_cotton.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Seed cotton feed",
+      "titleRu": "Подача хлопка-сырца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gin_cotton.lint",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Lint output",
+      "titleRu": "Выход волокна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gin_cotton.turnout",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lint turnout",
+      "titleRu": "Выход волокна %",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gin_cotton.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lint moisture",
+      "titleRu": "Влажность волокна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gin_cotton.trash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Trash content",
+      "titleRu": "Сорность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gin_cotton.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire risk",
+      "titleRu": "Риск возгорания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gin_cotton.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gin state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gin",
+        "bale",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B32",
+  "name": "layer-b-yogurt_ln.json",
+  "types": [
+    {
+      "path": "yogurt_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Yogurt line id",
+      "titleRu": "ID линии йогурта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "yogurt_ln.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Incubation temperature",
+      "titleRu": "Температура сквашивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "yogurt_ln.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Culture pH",
+      "titleRu": "pH культуры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "yogurt_ln.output",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Yogurt output",
+      "titleRu": "Выпуск йогурта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "yogurt_ln.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Product viscosity",
+      "titleRu": "Вязкость продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "yogurt_ln.fill",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cups filled per hour",
+      "titleRu": "Стаканчиков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "yogurt_ln.culture",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Culture active",
+      "titleRu": "Культура активна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "yogurt_ln.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "set",
+        "stirred",
+        "drink",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

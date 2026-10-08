@@ -1,0 +1,110 @@
+{
+  "layer": "B32",
+  "name": "layer-b-retort_fd.json",
+  "types": [
+    {
+      "path": "retort_fd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food retort id",
+      "titleRu": "ID автоклава пищевого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retort_fd.load.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Load id",
+      "titleRu": "ID загрузки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "retort_fd.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Retort temperature",
+      "titleRu": "Температура автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_fd.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Retort pressure",
+      "titleRu": "Давление автоклава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_fd.f0",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "F0 value",
+      "titleRu": "Значение F0",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_fd.hold.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Hold time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "retort_fd.pass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Process pass",
+      "titleRu": "Процесс пройден",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "retort_fd.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "steam",
+        "water",
+        "spray",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-cocoa_proc.json",
+  "types": [
+    {
+      "path": "cocoa_proc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cocoa processing line id",
+      "titleRu": "ID линии переработки какао",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cocoa_proc.roast",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Roast temperature",
+      "titleRu": "Температура обжарки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cocoa_proc.nib",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Nib throughput",
+      "titleRu": "Пропуск крупки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cocoa_proc.butter",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Butter yield",
+      "titleRu": "Выход масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cocoa_proc.fineness",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Liquor fineness",
+      "titleRu": "Тонкость тёртого",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cocoa_proc.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Liquor / powder output",
+      "titleRu": "Выпуск тёртого/порошка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cocoa_proc.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cocoa_proc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "roast",
+        "winnow",
+        "grind",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

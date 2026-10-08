@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-fish_proc.json",
+  "types": [
+    {
+      "path": "fish_proc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fish processing line id",
+      "titleRu": "ID линии переработки рыбы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fish_proc.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fish feed rate",
+      "titleRu": "Подача рыбы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fish_proc.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fillet yield",
+      "titleRu": "Выход филе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fish_proc.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Process temperature",
+      "titleRu": "Температура процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fish_proc.glaze",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Glaze uptake",
+      "titleRu": "Нанос глазури",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fish_proc.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Product output",
+      "titleRu": "Выпуск продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fish_proc.histamine",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Histamine risk",
+      "titleRu": "Риск гистамина",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fish_proc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gut",
+        "fillet",
+        "freeze",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

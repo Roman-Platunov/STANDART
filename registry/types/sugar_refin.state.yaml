@@ -1,0 +1,20 @@
+sid: 308259d0
+path: sugar_refin.state
+aliases:
+  short: sugar_refin.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние рафинада
+  en: Refinery state
+fingerprint: sha256:308259d087bd828d3dc9ad8badd4cfc3d16547ee1941c8b11c6f708b3df6a345
+enumValues:
+  - refine
+  - dry
+  - pack
+  - fault

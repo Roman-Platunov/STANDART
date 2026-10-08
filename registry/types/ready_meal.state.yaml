@@ -1,0 +1,20 @@
+sid: b7acae72
+path: ready_meal.state
+aliases:
+  short: ready_meal.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:b7acae72ce0a0816a2545881bd69a649d0b77b02d0a7e33f696302790ed2de6e
+enumValues:
+  - cook
+  - fill
+  - seal
+  - fault

@@ -1,0 +1,123 @@
+{
+  "layer": "B32",
+  "name": "layer-b-chick_hatch.json",
+  "types": [
+    {
+      "path": "chick_hatch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hatchery incubator id",
+      "titleRu": "ID инкубатора птицефабрики",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chick_hatch.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Incubator temperature",
+      "titleRu": "Температура инкубатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chick_hatch.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chick_hatch.fertility",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fertility",
+      "titleRu": "Оплодотворённость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chick_hatch.hatch",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hatchability",
+      "titleRu": "Выводимость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "chick_hatch.eggs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Eggs set",
+      "titleRu": "Яиц заложено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chick_hatch.turn",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Turning active",
+      "titleRu": "Поворот активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chick_hatch.stage",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stage",
+      "titleRu": "Стадия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "set",
+        "transfer",
+        "hatch",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

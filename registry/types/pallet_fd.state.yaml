@@ -1,0 +1,20 @@
+sid: 49aaa66e
+path: pallet_fd.state
+aliases:
+  short: pallet_fd.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние паллетайзера
+  en: Palletizer state
+fingerprint: sha256:49aaa66ee9d7940330817b4e210ca956f361d8d9cf73be2a7838da4614929586
+enumValues:
+  - stack
+  - wrap
+  - idle
+  - fault

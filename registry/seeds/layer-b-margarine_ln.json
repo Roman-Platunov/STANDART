@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-margarine_ln.json",
+  "types": [
+    {
+      "path": "margarine_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Margarine / spreads line id",
+      "titleRu": "ID линии маргарина/спредов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "margarine_ln.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Scraped-surface temperature",
+      "titleRu": "Температура вытеснительного охладителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "margarine_ln.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Product output",
+      "titleRu": "Выпуск продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "margarine_ln.solid",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solid fat content",
+      "titleRu": "Содержание твёрдого жира",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "margarine_ln.water",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Moisture",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "margarine_ln.pack",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Packs per hour",
+      "titleRu": "Упаковок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "margarine_ln.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Texture OK",
+      "titleRu": "Текстура OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "margarine_ln.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "emulsify",
+        "cool",
+        "pack",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

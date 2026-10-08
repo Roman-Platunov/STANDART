@@ -1,0 +1,20 @@
+sid: aec753fc
+path: case_pack.state
+aliases:
+  short: case_pack.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние упаковщика
+  en: Packer state
+fingerprint: sha256:aec753fc382c64bfb57278c1245b98a203280c67f49c9376c87145f6d29d023d
+enumValues:
+  - pack
+  - changeover
+  - idle
+  - fault

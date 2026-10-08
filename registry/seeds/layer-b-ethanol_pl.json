@@ -1,0 +1,117 @@
+{
+  "layer": "B32",
+  "name": "layer-b-ethanol_pl.json",
+  "types": [
+    {
+      "path": "ethanol_pl.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fuel ethanol plant id",
+      "titleRu": "ID завода топливного этанола",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ethanol_pl.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Grain / molasses feed",
+      "titleRu": "Подача зерна/мелассы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_pl.output",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Ethanol production",
+      "titleRu": "Выработка этанола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_pl.yield",
+      "kind": "quantity",
+      "unit": "L/t",
+      "titleEn": "Yield",
+      "titleRu": "Выход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_pl.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Anhydrous purity",
+      "titleRu": "Чистота безводного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_pl.ferment",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Fermenter temperature",
+      "titleRu": "Температура ферментёра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ethanol_pl.contamination",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Contamination",
+      "titleRu": "Контаминация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ethanol_pl.feed.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feedstock",
+      "titleRu": "Сырьё",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "corn",
+        "wheat",
+        "cane",
+        "cellulosic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 5b15977f
+path: irrig_pivot.state
+aliases:
+  short: irrig_pivot.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Pivot state
+fingerprint: sha256:5b15977f49e29a6351cd4d7be83dbb0218ef19e0da8fe35c0a26dd0cfacf9cfd
+enumValues:
+  - irrigate
+  - idle
+  - chems
+  - fault

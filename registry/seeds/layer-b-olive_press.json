@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-olive_press.json",
+  "types": [
+    {
+      "path": "olive_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Olive oil mill id",
+      "titleRu": "ID оливкового завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "olive_press.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Olive feed",
+      "titleRu": "Подача оливок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "olive_press.oil",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Oil output",
+      "titleRu": "Выпуск масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "olive_press.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Oil yield",
+      "titleRu": "Выход масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "olive_press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Malaxer temperature",
+      "titleRu": "Температура малаксера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "olive_press.acidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Free acidity",
+      "titleRu": "Свободная кислотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "olive_press.evoo",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "EVOO grade OK",
+      "titleRu": "Класс EVOO OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "olive_press.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wash",
+        "crush",
+        "malax",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

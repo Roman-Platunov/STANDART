@@ -1,0 +1,114 @@
+{
+  "layer": "B32",
+  "name": "layer-b-sauce_cook.json",
+  "types": [
+    {
+      "path": "sauce_cook.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sauce cooker id",
+      "titleRu": "ID варочного котла соусов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sauce_cook.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sauce_cook.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Batch temperature",
+      "titleRu": "Температура партии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sauce_cook.brix",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Brix / solids",
+      "titleRu": "Брикс / сухие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sauce_cook.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Viscosity",
+      "titleRu": "Вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sauce_cook.agitation",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Agitation",
+      "titleRu": "Перемешивание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sauce_cook.burn",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Burn-on risk",
+      "titleRu": "Риск пригара",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sauce_cook.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cooker state",
+      "titleRu": "Состояние котла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "cook",
+        "cool",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

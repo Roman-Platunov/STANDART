@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-vert_farm.json",
+  "types": [
+    {
+      "path": "vert_farm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Vertical farm rack id",
+      "titleRu": "ID стеллажа вертикальной фермы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vert_farm.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Grow temperature",
+      "titleRu": "Температура выращивания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vert_farm.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vert_farm.ppfd",
+      "kind": "quantity",
+      "unit": "umol/m2/s",
+      "titleEn": "PPFD",
+      "titleRu": "ППФП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vert_farm.ec",
+      "kind": "quantity",
+      "unit": "mS/cm",
+      "titleEn": "Nutrient EC",
+      "titleRu": "Электропроводность раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vert_farm.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Nutrient pH",
+      "titleRu": "pH раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vert_farm.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Irrigation leak",
+      "titleRu": "Утечка полива",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vert_farm.crop",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Crop",
+      "titleRu": "Культура",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "leafy",
+        "herb",
+        "berry",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

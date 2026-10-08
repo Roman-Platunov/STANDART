@@ -1,0 +1,120 @@
+{
+  "layer": "B32",
+  "name": "layer-b-can_line_fd.json",
+  "types": [
+    {
+      "path": "can_line_fd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food canning line id",
+      "titleRu": "ID линии консервирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "can_line_fd.speed",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Cans per minute",
+      "titleRu": "Банок в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_line_fd.fill",
+      "kind": "quantity",
+      "unit": "g",
+      "titleEn": "Fill weight",
+      "titleRu": "Масса наполнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_line_fd.vacuum",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Can vacuum",
+      "titleRu": "Вакуум банки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "can_line_fd.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "can_line_fd.seam",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Seam check pass",
+      "titleRu": "Шов OK",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "can_line_fd.metal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Metal detector trip",
+      "titleRu": "Срабатывание металлодетектора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "can_line_fd.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "seam",
+        "retort",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

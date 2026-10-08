@@ -1,0 +1,119 @@
+{
+  "layer": "B32",
+  "name": "layer-b-cold_store_fd.json",
+  "types": [
+    {
+      "path": "cold_store_fd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food cold store id",
+      "titleRu": "ID холодильного склада пищевого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cold_store_fd.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Room temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_store_fd.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cold_store_fd.occupancy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Space occupancy",
+      "titleRu": "Заполненность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cold_store_fd.door",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Door openings today",
+      "titleRu": "Открытий дверей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_store_fd.energy",
+      "kind": "quantity",
+      "unit": "kWh/d",
+      "titleEn": "Daily energy",
+      "titleRu": "Суточная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cold_store_fd.excursion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature excursion",
+      "titleRu": "Отклонение температуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cold_store_fd.zone",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Zone",
+      "titleRu": "Зона",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "chill",
+        "frozen",
+        "deep",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

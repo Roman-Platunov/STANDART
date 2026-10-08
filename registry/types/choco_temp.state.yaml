@@ -1,0 +1,20 @@
+sid: 695048fc
+path: choco_temp.state
+aliases:
+  short: choco_temp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:695048fc06e6254363d1460aebd9a224e3c1f03e9d0c0e75e9e319cbb0832867
+enumValues:
+  - melt
+  - temper
+  - hold
+  - fault

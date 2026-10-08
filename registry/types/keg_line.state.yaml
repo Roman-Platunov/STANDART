@@ -1,0 +1,20 @@
+sid: 2b02cbd4
+path: keg_line.state
+aliases:
+  short: keg_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:2b02cbd46582e2856cc37e2f0b12f0ecc6651ea4d37b9517047bc3e7ca1bace8
+enumValues:
+  - wash
+  - fill
+  - cap
+  - fault

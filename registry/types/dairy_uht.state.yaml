@@ -1,0 +1,20 @@
+sid: 09a8fe9c
+path: dairy_uht.state
+aliases:
+  short: dairy_uht.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:09a8fe9c3a25e15e7e5304bfef98ada3f45c2abc9bc8933ba727f155a61e615b
+enumValues:
+  - sterilize
+  - fill
+  - cip
+  - fault

@@ -1,0 +1,118 @@
+{
+  "layer": "B32",
+  "name": "layer-b-distill_sp.json",
+  "types": [
+    {
+      "path": "distill_sp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spirits still id",
+      "titleRu": "ID перегонного куба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "distill_sp.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "distill_sp.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Vapor temperature",
+      "titleRu": "Температура пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distill_sp.abv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Spirit ABV",
+      "titleRu": "Крепость спирта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "distill_sp.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Spirit take-off",
+      "titleRu": "Отбор спирта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "distill_sp.cut",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hearts cut progress",
+      "titleRu": "Прогресс отбора сердца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "distill_sp.fores",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Foreshots running",
+      "titleRu": "Головы идут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "distill_sp.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pot",
+        "column",
+        "hybrid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

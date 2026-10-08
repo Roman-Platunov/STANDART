@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-pasteur_ht.json",
+  "types": [
+    {
+      "path": "pasteur_ht.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HTST pasteurizer id",
+      "titleRu": "ID пастеризатора HTST",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pasteur_ht.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Pasteurization temperature",
+      "titleRu": "Температура пастеризации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pasteur_ht.hold.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Hold time",
+      "titleRu": "Время выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pasteur_ht.flow",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Product flow",
+      "titleRu": "Расход продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pasteur_ht.regen",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Regeneration efficiency",
+      "titleRu": "КПД регенерации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pasteur_ht.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pasteur_ht.fdv",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flow diversion valve trip",
+      "titleRu": "Срабатывание клапана отвода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pasteur_ht.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pasteurize",
+        "divert",
+        "cip",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

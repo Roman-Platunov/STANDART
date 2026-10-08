@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-bakery_ov.json",
+  "types": [
+    {
+      "path": "bakery_ov.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bakery oven id",
+      "titleRu": "ID пекарной печи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bakery_ov.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zone temperature",
+      "titleRu": "Температура зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bakery_ov.steam",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Steam injection",
+      "titleRu": "Подача пара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bakery_ov.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Band speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bakery_ov.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Loaves per hour",
+      "titleRu": "Буханок в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bakery_ov.color",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Crust color index",
+      "titleRu": "Индекс цвета корки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bakery_ov.bake.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bake profile OK",
+      "titleRu": "Профиль выпечки OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bakery_ov.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "tunnel",
+        "rack",
+        "deck",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

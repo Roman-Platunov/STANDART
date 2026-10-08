@@ -1,0 +1,20 @@
+sid: 4bff88bd
+path: winery_crush.state
+aliases:
+  short: winery_crush.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:4bff88bdd110b054c8dc9cdfffb908934fd583934d588b276adb9745c6e96c80
+enumValues:
+  - crush
+  - press
+  - settle
+  - fault

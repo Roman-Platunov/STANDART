@@ -1,0 +1,114 @@
+{
+  "layer": "B32",
+  "name": "layer-b-freeze_dry.json",
+  "types": [
+    {
+      "path": "freeze_dry.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food freeze dryer id",
+      "titleRu": "ID пищевой сублимационной сушилки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "freeze_dry.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "freeze_dry.shelf",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Shelf temperature",
+      "titleRu": "Температура полок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freeze_dry.product",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Product temperature",
+      "titleRu": "Температура продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freeze_dry.vacuum",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber vacuum",
+      "titleRu": "Вакуум камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "freeze_dry.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Residual moisture",
+      "titleRu": "Остаточная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "freeze_dry.primary",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Primary drying done",
+      "titleRu": "Первичная сушка завершена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "freeze_dry.phase",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Phase",
+      "titleRu": "Фаза",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "freeze",
+        "primary",
+        "secondary",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

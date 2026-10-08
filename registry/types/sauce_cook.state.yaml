@@ -1,0 +1,20 @@
+sid: ad261d72
+path: sauce_cook.state
+aliases:
+  short: sauce_cook.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние котла
+  en: Cooker state
+fingerprint: sha256:ad261d72b124a5ebb21a9b5cbb09ef3afb85fca3f2d287a87e918066e4dab162
+enumValues:
+  - heat
+  - cook
+  - cool
+  - fault

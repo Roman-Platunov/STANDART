@@ -1,0 +1,20 @@
+sid: 50ea187b
+path: ice_cream_ln.state
+aliases:
+  short: ice_cream_ln.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:50ea187b2f98a24ccbbaebf387c671e1810a231f303e641ffef54037f5172deb
+enumValues:
+  - freeze
+  - fill
+  - harden
+  - fault

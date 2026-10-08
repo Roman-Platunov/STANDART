@@ -1,0 +1,20 @@
+sid: ec9720f6
+path: margarine_ln.state
+aliases:
+  short: margarine_ln.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:ec9720f6a40d84a1ce6b95da1f73813b08c2c5e7d720160da876d32ebbf498d7
+enumValues:
+  - emulsify
+  - cool
+  - pack
+  - fault

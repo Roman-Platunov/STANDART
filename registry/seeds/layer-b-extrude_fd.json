@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-extrude_fd.json",
+  "types": [
+    {
+      "path": "extrude_fd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food extruder id",
+      "titleRu": "ID пищевого экструдера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "extrude_fd.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Die temperature",
+      "titleRu": "Температура матрицы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_fd.screw",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Screw speed",
+      "titleRu": "Обороты шнека",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_fd.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "In-barrel moisture",
+      "titleRu": "Влажность в цилиндре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "extrude_fd.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Product output",
+      "titleRu": "Выпуск продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_fd.sme",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific mechanical energy",
+      "titleRu": "Удельная мех. энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "extrude_fd.die",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Die pressure high",
+      "titleRu": "Высокое давление матрицы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "extrude_fd.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cereal",
+        "snack",
+        "protein",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

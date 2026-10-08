@@ -1,0 +1,20 @@
+sid: fc31badd
+path: freeze_dry.phase
+aliases:
+  short: freeze_dry.phase
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Фаза
+  en: Phase
+fingerprint: sha256:fc31baddfc1ba26c03fe27e99140723168807cf21a5efee46c397270865b4a8d
+enumValues:
+  - freeze
+  - primary
+  - secondary
+  - fault

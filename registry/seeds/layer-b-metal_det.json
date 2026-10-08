@@ -1,0 +1,111 @@
+{
+  "layer": "B32",
+  "name": "layer-b-metal_det.json",
+  "types": [
+    {
+      "path": "metal_det.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Food metal detector id",
+      "titleRu": "ID металлодетектора пищевого",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "metal_det.rejects",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rejects today",
+      "titleRu": "Отводов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metal_det.fe",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Fe sensitivity",
+      "titleRu": "Чувствительность Fe",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metal_det.nonfe",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Non-Fe sensitivity",
+      "titleRu": "Чувствительность цветных",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metal_det.ss",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Stainless sensitivity",
+      "titleRu": "Чувствительность нержавейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metal_det.test.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Hours since test piece",
+      "titleRu": "Часов с тест-образца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "metal_det.cal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Calibration OK",
+      "titleRu": "Калибровка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "metal_det.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Detector state",
+      "titleRu": "Состояние детектора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "reject",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

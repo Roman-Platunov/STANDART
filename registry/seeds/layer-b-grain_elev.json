@@ -1,0 +1,117 @@
+{
+  "layer": "B32",
+  "name": "layer-b-grain_elev.json",
+  "types": [
+    {
+      "path": "grain_elev.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grain elevator id",
+      "titleRu": "ID зернового элеватора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grain_elev.inventory",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Grain inventory",
+      "titleRu": "Запас зерна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grain_elev.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Average moisture",
+      "titleRu": "Средняя влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "grain_elev.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bin temperature max",
+      "titleRu": "Макс. температура силоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grain_elev.receive",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Receiving rate",
+      "titleRu": "Скорость приёмки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grain_elev.ship",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Shipping rate",
+      "titleRu": "Скорость отгрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grain_elev.hotspot",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Hotspot detected",
+      "titleRu": "Обнаружен очаг нагрева",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "grain_elev.grain",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grain",
+      "titleRu": "Культура",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wheat",
+        "corn",
+        "barley",
+        "soy",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

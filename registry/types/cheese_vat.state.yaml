@@ -1,0 +1,21 @@
+sid: 110ed156
+path: cheese_vat.state
+aliases:
+  short: cheese_vat.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ванны
+  en: Vat state
+fingerprint: sha256:110ed1563a85f0b3d8ac3ada836b3e1b9b4f524f367e234130e5a121d93224b4
+enumValues:
+  - fill
+  - set
+  - cut
+  - cook
+  - fault

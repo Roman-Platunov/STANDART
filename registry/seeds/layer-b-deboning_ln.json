@@ -1,0 +1,119 @@
+{
+  "layer": "B32",
+  "name": "layer-b-deboning_ln.json",
+  "types": [
+    {
+      "path": "deboning_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Deboning line id",
+      "titleRu": "ID линии обвалки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "deboning_ln.output",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Meat output",
+      "titleRu": "Выпуск мяса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deboning_ln.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Debone yield",
+      "titleRu": "Выход обвалки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "deboning_ln.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Room temperature",
+      "titleRu": "Температура цеха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deboning_ln.bone",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bone residual",
+      "titleRu": "Остаток кости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "deboning_ln.operators",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Operators present",
+      "titleRu": "Операторов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "deboning_ln.metal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Metal detector trip",
+      "titleRu": "Срабатывание металлодетектора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "deboning_ln.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "trim",
+        "pack",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

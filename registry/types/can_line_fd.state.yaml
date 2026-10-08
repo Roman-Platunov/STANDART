@@ -1,0 +1,20 @@
+sid: 68c26c44
+path: can_line_fd.state
+aliases:
+  short: can_line_fd.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:68c26c4425f283f7fb53cdae504d6f63eae07e13c05703c9494bc4e6fd687bca
+enumValues:
+  - fill
+  - seam
+  - retort
+  - fault

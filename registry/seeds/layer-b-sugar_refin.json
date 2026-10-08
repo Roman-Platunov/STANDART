@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-sugar_refin.json",
+  "types": [
+    {
+      "path": "sugar_refin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sugar refinery id",
+      "titleRu": "ID сахарного рафинада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sugar_refin.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Raw sugar feed",
+      "titleRu": "Подача сырца",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sugar_refin.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "White sugar output",
+      "titleRu": "Выпуск белого сахара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sugar_refin.color",
+      "kind": "quantity",
+      "unit": "IU",
+      "titleEn": "ICUMSA color",
+      "titleRu": "Цвет ICUMSA",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sugar_refin.ash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ash content",
+      "titleRu": "Зольность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sugar_refin.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sugar_refin.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sugar_refin.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Refinery state",
+      "titleRu": "Состояние рафинада",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "refine",
+        "dry",
+        "pack",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

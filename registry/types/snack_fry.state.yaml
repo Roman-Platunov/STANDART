@@ -1,0 +1,20 @@
+sid: 0360158a
+path: snack_fry.state
+aliases:
+  short: snack_fry.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние фритюрницы
+  en: Fryer state
+fingerprint: sha256:0360158aa1c01e64ebc0253fa5548e64cf55772253a8de268135e87cc4aa24db
+enumValues:
+  - fry
+  - idle
+  - clean
+  - fault

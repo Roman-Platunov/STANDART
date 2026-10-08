@@ -1,0 +1,116 @@
+{
+  "layer": "B32",
+  "name": "layer-b-pet_food_ln.json",
+  "types": [
+    {
+      "path": "pet_food_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pet food extrusion line id",
+      "titleRu": "ID линии экструзии кормов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pet_food_ln.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Meal feed",
+      "titleRu": "Подача муки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_food_ln.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Kibble output",
+      "titleRu": "Выпуск гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_food_ln.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pet_food_ln.bulk",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Bulk density",
+      "titleRu": "Насыпная плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_food_ln.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Extruder die temperature",
+      "titleRu": "Температура матрицы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_food_ln.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Kibble spec OK",
+      "titleRu": "Спецификация гранул OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pet_food_ln.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "wet",
+        "treat",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

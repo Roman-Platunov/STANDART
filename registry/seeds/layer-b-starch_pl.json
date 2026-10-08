@@ -1,0 +1,121 @@
+{
+  "layer": "B32",
+  "name": "layer-b-starch_pl.json",
+  "types": [
+    {
+      "path": "starch_pl.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Starch plant id",
+      "titleRu": "ID крахмального завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "starch_pl.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Corn / tuber feed",
+      "titleRu": "Подача кукурузы/клубней",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "starch_pl.starch",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Starch output",
+      "titleRu": "Выпуск крахмала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "starch_pl.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "starch_pl.protein",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Residual protein",
+      "titleRu": "Остаточный белок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "starch_pl.water",
+      "kind": "quantity",
+      "unit": "m3/t",
+      "titleEn": "Process water",
+      "titleRu": "Технологическая вода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "starch_pl.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "starch_pl.feed.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feedstock",
+      "titleRu": "Сырьё",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "corn",
+        "wheat",
+        "potato",
+        "tapioca",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
