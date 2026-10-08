@@ -1,0 +1,20 @@
+sid: b4d5108e
+path: block_valve.state
+aliases:
+  short: block_valve.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние крана
+  en: Valve state
+fingerprint: sha256:b4d5108e7d6a2e8ee1453b6ce4306d918d0f47e9a5219e8e3cc88afe20c740c8
+enumValues:
+  - open
+  - closed
+  - moving
+  - fault

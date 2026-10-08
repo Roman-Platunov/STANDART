@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-ammonia_syn.json",
+  "types": [
+    {
+      "path": "ammonia_syn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ammonia synthesis loop id",
+      "titleRu": "ID синтеза аммиака",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ammonia_syn.feed",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Syngas feed",
+      "titleRu": "Подача синтез-газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_syn.output",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Ammonia production",
+      "titleRu": "Выработка аммиака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_syn.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Converter temperature",
+      "titleRu": "Температура конвертера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_syn.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Loop pressure",
+      "titleRu": "Давление контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_syn.conv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Conversion per pass",
+      "titleRu": "Конверсия за проход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ammonia_syn.purge",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Purge high",
+      "titleRu": "Высокий продув",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ammonia_syn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Loop state",
+      "titleRu": "Состояние контура",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "synthesize",
+        "startup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 54ef4f64
+path: lube_plant.state
+aliases:
+  short: lube_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:54ef4f64c81355ed394a5a442cd47f8b2db30165a2470aac7f49b8fd8c44e19a
+enumValues:
+  - blend
+  - fill
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: e23aa426
+path: cathodic_pp.state
+aliases:
+  short: cathodic_pp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние выпрямителя
+  en: Rectifier state
+fingerprint: sha256:e23aa42610dc24ac429f0f08ac70b96fbd99978ceca537729aea7bec64528ad0
+enumValues:
+  - protect
+  - interrupt
+  - offline
+  - fault

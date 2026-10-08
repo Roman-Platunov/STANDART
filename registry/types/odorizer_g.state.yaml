@@ -1,0 +1,20 @@
+sid: e7497db5
+path: odorizer_g.state
+aliases:
+  short: odorizer_g.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние одоризатора
+  en: Odorizer state
+fingerprint: sha256:e7497db52a96dbd06e0e87013dd7ba48c045c11dcaa4bfc40b7aed525b73dab1
+enumValues:
+  - dose
+  - idle
+  - refill
+  - fault

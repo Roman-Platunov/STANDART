@@ -1,0 +1,20 @@
+sid: 5a9d2a8c
+path: heater_trt.state
+aliases:
+  short: heater_trt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние аппарата
+  en: Unit state
+fingerprint: sha256:5a9d2a8c95204aa04506c1ef6c314b001e163c7dac0430e87aeae5202c01c1b8
+enumValues:
+  - treat
+  - idle
+  - maintain
+  - fault

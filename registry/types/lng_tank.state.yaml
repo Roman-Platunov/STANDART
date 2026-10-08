@@ -1,0 +1,20 @@
+sid: adf7bb26
+path: lng_tank.state
+aliases:
+  short: lng_tank.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние резервуара
+  en: Tank state
+fingerprint: sha256:adf7bb268bc2b3cbd202561d6c1436a62d357897c37f39c2b3942faadbc81cde
+enumValues:
+  - store
+  - fill
+  - sendout
+  - fault

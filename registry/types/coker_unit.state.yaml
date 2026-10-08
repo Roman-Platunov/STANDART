@@ -1,0 +1,21 @@
+sid: 067d05b9
+path: coker_unit.state
+aliases:
+  short: coker_unit.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние камеры
+  en: Drum state
+fingerprint: sha256:067d05b92066da555e8943c693d24c267fb624df4c4b235a764c0d5575e76031
+enumValues:
+  - fill
+  - steam
+  - cool
+  - drill
+  - fault

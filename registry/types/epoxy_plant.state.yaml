@@ -1,0 +1,20 @@
+sid: 07b41fe6
+path: epoxy_plant.state
+aliases:
+  short: epoxy_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:07b41fe689505207568c9155b84b7efd9741eb6556d944f3bff75563a5d06fc7
+enumValues:
+  - react
+  - strip
+  - blend
+  - fault

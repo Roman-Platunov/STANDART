@@ -1,0 +1,20 @@
+sid: "64099086"
+path: wireline.state
+aliases:
+  short: wireline.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Unit state
+fingerprint: sha256:640990868cb31f90ede0fea90d544983c45c3953224839061cf6d685ac81e4fa
+enumValues:
+  - log
+  - perforate
+  - idle
+  - fault

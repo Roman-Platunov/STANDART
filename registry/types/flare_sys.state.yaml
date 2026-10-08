@@ -1,0 +1,20 @@
+sid: 4a331b77
+path: flare_sys.state
+aliases:
+  short: flare_sys.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние факела
+  en: Flare state
+fingerprint: sha256:4a331b778733a9b4d4ecd0f86418b9fed8dfcee44bc65ae8483f5a08856dc1e3
+enumValues:
+  - standby
+  - flaring
+  - purge
+  - fault

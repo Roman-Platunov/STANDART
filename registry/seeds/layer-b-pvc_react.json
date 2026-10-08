@@ -1,0 +1,114 @@
+{
+  "layer": "B30",
+  "name": "layer-b-pvc_react.json",
+  "types": [
+    {
+      "path": "pvc_react.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PVC reactor id",
+      "titleRu": "ID реактора ПВХ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pvc_react.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pvc_react.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pvc_react.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Reactor pressure",
+      "titleRu": "Давление реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pvc_react.conv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Conversion",
+      "titleRu": "Конверсия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pvc_react.kvalue",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "K-value",
+      "titleRu": "Значение K",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pvc_react.vcm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "VCM residual high",
+      "titleRu": "Высокий остаток ВХМ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pvc_react.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "suspension",
+        "emulsion",
+        "bulk",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

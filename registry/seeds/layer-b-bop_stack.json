@@ -1,0 +1,110 @@
+{
+  "layer": "B30",
+  "name": "layer-b-bop_stack.json",
+  "types": [
+    {
+      "path": "bop_stack.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "BOP stack id",
+      "titleRu": "ID противовыбросового оборудования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bop_stack.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Accumulator pressure",
+      "titleRu": "Давление аккумулятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bop_stack.rams",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rams closed count",
+      "titleRu": "Закрытых плашек",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bop_stack.test.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Last test pressure",
+      "titleRu": "Давление последнего теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bop_stack.functions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Function tests OK",
+      "titleRu": "Функциональных тестов OK",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bop_stack.shear",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Shear capability",
+      "titleRu": "Способность перерезать",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bop_stack.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "BOP ready",
+      "titleRu": "ПВО готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bop_stack.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "BOP state",
+      "titleRu": "Состояние ПВО",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "tested",
+        "closed",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

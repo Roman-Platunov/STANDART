@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-nitric_acid.json",
+  "types": [
+    {
+      "path": "nitric_acid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Nitric acid plant id",
+      "titleRu": "ID завода азотной кислоты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "nitric_acid.nh3",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Ammonia feed",
+      "titleRu": "Подача аммиака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nitric_acid.output",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "HNO3 production",
+      "titleRu": "Выработка HNO3",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nitric_acid.strength",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Acid strength",
+      "titleRu": "Концентрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "nitric_acid.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Burner temperature",
+      "titleRu": "Температура горелки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nitric_acid.nox",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Stack NOx",
+      "titleRu": "NOx в дыме",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "nitric_acid.pt",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pt gauze change due",
+      "titleRu": "Замена Pt-сетки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "nitric_acid.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

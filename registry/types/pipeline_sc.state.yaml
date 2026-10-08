@@ -1,0 +1,20 @@
+sid: a6331b03
+path: pipeline_sc.state
+aliases:
+  short: pipeline_sc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сегмента
+  en: Segment state
+fingerprint: sha256:a6331b03fd942e45ddf17179338855e00c6b4ac75dfb8ce027fddac6a89f5b30
+enumValues:
+  - flowing
+  - packed
+  - isolated
+  - fault

@@ -1,0 +1,20 @@
+sid: b68ce3c4
+path: aromatics.state
+aliases:
+  short: aromatics.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние комплекса
+  en: Complex state
+fingerprint: sha256:b68ce3c40cc1a443c2d06b8e12edaa4b28ceb8b8624132cbd70c30effc97f32b
+enumValues:
+  - extract
+  - separate
+  - idle
+  - fault

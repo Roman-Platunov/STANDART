@@ -1,0 +1,114 @@
+{
+  "layer": "B30",
+  "name": "layer-b-pig_launch.json",
+  "types": [
+    {
+      "path": "pig_launch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pig launcher / receiver id",
+      "titleRu": "ID камеры пуска/приёма СОД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pig_launch.run.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pig run id",
+      "titleRu": "ID прогона СОД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pig_launch.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Trap pressure",
+      "titleRu": "Давление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pig_launch.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Estimated pig speed",
+      "titleRu": "Оценка скорости СОД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pig_launch.progress",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Run progress",
+      "titleRu": "Прогресс прогона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pig_launch.delta.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Differential pressure",
+      "titleRu": "Перепад давления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pig_launch.received",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pig received",
+      "titleRu": "СОД принят",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pig_launch.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pig type",
+      "titleRu": "Тип СОД",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cleaning",
+        "smart",
+        "batching",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

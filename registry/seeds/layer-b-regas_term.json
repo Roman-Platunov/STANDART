@@ -1,0 +1,111 @@
+{
+  "layer": "B30",
+  "name": "layer-b-regas_term.json",
+  "types": [
+    {
+      "path": "regas_term.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LNG regas terminal id",
+      "titleRu": "ID терминала регазификации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "regas_term.sendout",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Sendout rate",
+      "titleRu": "Выдача газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "regas_term.vaporizers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vaporizers online",
+      "titleRu": "Испарителей онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "regas_term.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Sendout temperature",
+      "titleRu": "Температура выдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "regas_term.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Sendout pressure",
+      "titleRu": "Давление выдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "regas_term.seawater",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Seawater / heat medium",
+      "titleRu": "Морская вода / теплоноситель",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "regas_term.odor",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Odorization OK",
+      "titleRu": "Одоризация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "regas_term.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Terminal state",
+      "titleRu": "Состояние терминала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "regas",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

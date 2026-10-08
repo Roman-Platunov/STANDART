@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-reformer_cat.json",
+  "types": [
+    {
+      "path": "reformer_cat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Catalytic reformer id",
+      "titleRu": "ID каталитического риформинга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reformer_cat.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Naphtha feed",
+      "titleRu": "Подача нафты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reformer_cat.octane",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "RON",
+      "titleRu": "ОЧ по исследовательскому методу",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reformer_cat.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reformer_cat.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Reactor pressure",
+      "titleRu": "Давление реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reformer_cat.h2",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "H2 production",
+      "titleRu": "Выработка H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reformer_cat.coke",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Coke high",
+      "titleRu": "Высокий кокс",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "reformer_cat.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ccr",
+        "semi_regen",
+        "cyclic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

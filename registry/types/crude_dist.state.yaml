@@ -1,0 +1,20 @@
+sid: 6c469558
+path: crude_dist.state
+aliases:
+  short: crude_dist.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:6c469558df8e483d238aa48cec6cfd45257b1842ae8a03ca22992ae547e31923
+enumValues:
+  - run
+  - startup
+  - shutdown
+  - fault

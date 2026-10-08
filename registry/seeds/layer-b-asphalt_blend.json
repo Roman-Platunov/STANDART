@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-asphalt_blend.json",
+  "types": [
+    {
+      "path": "asphalt_blend.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Asphalt blending unit id",
+      "titleRu": "ID установки компаундирования битума",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asphalt_blend.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Blend output",
+      "titleRu": "Выработка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_blend.pen",
+      "kind": "quantity",
+      "unit": "dmm",
+      "titleEn": "Penetration",
+      "titleRu": "Пенетрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_blend.soft",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Softening point",
+      "titleRu": "Температура размягчения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_blend.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Blend temperature",
+      "titleRu": "Температура смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_blend.viscosity",
+      "kind": "quantity",
+      "unit": "Pa.s",
+      "titleEn": "Viscosity",
+      "titleRu": "Вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_blend.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asphalt_blend.grade",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grade",
+      "titleRu": "Марка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "paving",
+        "roofing",
+        "emulsion",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B30",
+  "name": "layer-b-ngl_plant.json",
+  "types": [
+    {
+      "path": "ngl_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "NGL recovery plant id",
+      "titleRu": "ID завода ШФЛУ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ngl_plant.gas",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Inlet gas",
+      "titleRu": "Входной газ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ngl_plant.ngl",
+      "kind": "quantity",
+      "unit": "m3/d",
+      "titleEn": "NGL production",
+      "titleRu": "Выработка ШФЛУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ngl_plant.c2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ethane recovery",
+      "titleRu": "Извлечение этана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ngl_plant.c3",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Propane recovery",
+      "titleRu": "Извлечение пропана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ngl_plant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Demethanizer temperature",
+      "titleRu": "Температура деметанизатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ngl_plant.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Product spec OK",
+      "titleRu": "Спецификация продукта OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ngl_plant.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cryo",
+        "absorption",
+        "jt",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

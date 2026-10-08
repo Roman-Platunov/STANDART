@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-aromatics.json",
+  "types": [
+    {
+      "path": "aromatics.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aromatics complex id",
+      "titleRu": "ID ароматического комплекса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aromatics.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Reformate / pygas feed",
+      "titleRu": "Подача риформата/пирогаза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aromatics.benzene",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Benzene production",
+      "titleRu": "Выработка бензола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aromatics.px",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Paraxylene production",
+      "titleRu": "Выработка параксилола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aromatics.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product purity",
+      "titleRu": "Чистота продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aromatics.energy",
+      "kind": "quantity",
+      "unit": "MJ/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aromatics.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aromatics.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Complex state",
+      "titleRu": "Состояние комплекса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "extract",
+        "separate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

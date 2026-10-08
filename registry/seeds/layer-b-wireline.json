@@ -1,0 +1,110 @@
+{
+  "layer": "B30",
+  "name": "layer-b-wireline.json",
+  "types": [
+    {
+      "path": "wireline.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wireline unit id",
+      "titleRu": "ID геофизической станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wireline.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Job id",
+      "titleRu": "ID работы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wireline.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Measured depth",
+      "titleRu": "Глубина по стволу",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wireline.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Cable tension",
+      "titleRu": "Натяжение кабеля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wireline.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Logging speed",
+      "titleRu": "Скорость каротажа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wireline.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Tool voltage",
+      "titleRu": "Напряжение прибора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wireline.stuck",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tool stuck risk",
+      "titleRu": "Риск прихвата",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wireline.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "log",
+        "perforate",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "layer": "B30",
+  "name": "layer-b-odorizer_g.json",
+  "types": [
+    {
+      "path": "odorizer_g.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gas odorizer id",
+      "titleRu": "ID одоризатора газа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "odorizer_g.dose",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Odorant concentration",
+      "titleRu": "Концентрация одоранта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "odorizer_g.inject",
+      "kind": "quantity",
+      "unit": "mL/h",
+      "titleEn": "Injection rate",
+      "titleRu": "Расход впрыска",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "odorizer_g.tank",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Odorant tank level",
+      "titleRu": "Уровень бака одоранта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "odorizer_g.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Gas flow",
+      "titleRu": "Расход газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "odorizer_g.pump",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pump strokes today",
+      "titleRu": "Ходов насоса за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "odorizer_g.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dose in spec",
+      "titleRu": "Доза в норме",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "odorizer_g.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Odorizer state",
+      "titleRu": "Состояние одоризатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dose",
+        "idle",
+        "refill",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

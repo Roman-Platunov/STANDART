@@ -1,0 +1,20 @@
+sid: 6cc6e42b
+path: ccs_amine.state
+aliases:
+  short: ccs_amine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:6cc6e42bd36bba82b0452e06985fbcedc4e08eb524be30f98bedbaf667bdbb60
+enumValues:
+  - capture
+  - regen
+  - idle
+  - fault

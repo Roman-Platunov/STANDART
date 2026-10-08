@@ -1,0 +1,20 @@
+sid: 897a5b27
+path: district_rg.state
+aliases:
+  short: district_rg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пункта
+  en: Station state
+fingerprint: sha256:897a5b279cfdc332d2964703a1564747e903ef35031d2e5b22bb3e6b06ad023d
+enumValues:
+  - regulate
+  - monitor
+  - maintain
+  - fault

@@ -1,0 +1,115 @@
+{
+  "layer": "B30",
+  "name": "layer-b-visbreaker.json",
+  "types": [
+    {
+      "path": "visbreaker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Visbreaker id",
+      "titleRu": "ID висбрекинга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "visbreaker.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Расход сырья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "visbreaker.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Soaker / coil temperature",
+      "titleRu": "Температура сокера/змеевика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "visbreaker.conv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Conversion",
+      "titleRu": "Конверсия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "visbreaker.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Product viscosity",
+      "titleRu": "Вязкость продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "visbreaker.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Coil pressure",
+      "titleRu": "Давление змеевика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "visbreaker.fouling",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fouling high",
+      "titleRu": "Высокое загрязнение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "visbreaker.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "soaker",
+        "coil",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B30",
+  "name": "layer-b-urea_gran.json",
+  "types": [
+    {
+      "path": "urea_gran.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Urea granulation plant id",
+      "titleRu": "ID грануляции карбамида",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "urea_gran.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Urea melt feed",
+      "titleRu": "Подача плава карбамида",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "urea_gran.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Granule output",
+      "titleRu": "Выпуск гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "urea_gran.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Product moisture",
+      "titleRu": "Влажность продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "urea_gran.size",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Mean granule size",
+      "titleRu": "Средний размер гранул",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "urea_gran.biuret",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Biuret",
+      "titleRu": "Биурет",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "urea_gran.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "urea_gran.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "granulate",
+        "screen",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

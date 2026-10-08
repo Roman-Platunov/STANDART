@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-lact_unit.json",
+  "types": [
+    {
+      "path": "lact_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LACT unit id",
+      "titleRu": "ID УУН / LACT",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lact_unit.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Oil flow",
+      "titleRu": "Расход нефти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lact_unit.bsaw",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "BS&W",
+      "titleRu": "Вода и механические",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lact_unit.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oil temperature",
+      "titleRu": "Температура нефти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lact_unit.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Line pressure",
+      "titleRu": "Давление линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lact_unit.ticket",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Ticket volume today",
+      "titleRu": "Объём по актам за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lact_unit.prove",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Meter prove due",
+      "titleRu": "Поверка счётчика",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lact_unit.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "LACT state",
+      "titleRu": "Состояние УУН",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "prove",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-cathodic_pp.json",
+  "types": [
+    {
+      "path": "cathodic_pp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipeline CP rectifier id",
+      "titleRu": "ID станции катодной защиты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cathodic_pp.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Output current",
+      "titleRu": "Выходной ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathodic_pp.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Output voltage",
+      "titleRu": "Выходное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathodic_pp.potential",
+      "kind": "quantity",
+      "unit": "mV",
+      "titleEn": "Pipe-to-soil potential",
+      "titleRu": "Потенциал труба-земля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathodic_pp.on",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "On potential compliance",
+      "titleRu": "Соответствие потенциала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cathodic_pp.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Rectifier power",
+      "titleRu": "Мощность выпрямителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cathodic_pp.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CP alarm",
+      "titleRu": "Тревога КЗ",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cathodic_pp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rectifier state",
+      "titleRu": "Состояние выпрямителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "protect",
+        "interrupt",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B30",
+  "name": "layer-b-tankfarm_og.json",
+  "types": [
+    {
+      "path": "tankfarm_og.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Oil & gas tank farm id",
+      "titleRu": "ID резервуарного парка НПЗ/НХК",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tankfarm_og.inventory",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Total inventory",
+      "titleRu": "Общий запас",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tankfarm_og.tanks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tanks in service",
+      "titleRu": "Резервуаров в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tankfarm_og.transfers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Transfers today",
+      "titleRu": "Перекачек за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tankfarm_og.vapor",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "VOC / vapor alarm max",
+      "titleRu": "Макс. пары/ЛОС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tankfarm_og.water",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "BS&W average",
+      "titleRu": "Средняя вода/механические",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "tankfarm_og.overfill",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overfill protection trip",
+      "titleRu": "Срабатывание защиты от переполнения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tankfarm_og.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Farm state",
+      "titleRu": "Состояние парка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "normal",
+        "transfer",
+        "maintain",
+        "alarm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

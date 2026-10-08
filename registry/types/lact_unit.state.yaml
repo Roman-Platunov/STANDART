@@ -1,0 +1,20 @@
+sid: 79d08e87
+path: lact_unit.state
+aliases:
+  short: lact_unit.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние УУН
+  en: LACT state
+fingerprint: sha256:79d08e879fed7d7df933d2afcd3c8d44f7ac8f52e9b38599035ecb8b182c5153
+enumValues:
+  - run
+  - prove
+  - idle
+  - fault

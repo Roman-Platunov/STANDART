@@ -1,0 +1,114 @@
+{
+  "layer": "B30",
+  "name": "layer-b-flare_sys.json",
+  "types": [
+    {
+      "path": "flare_sys.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flare system id",
+      "titleRu": "ID факельной системы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flare_sys.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Flare gas flow",
+      "titleRu": "Расход факельного газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flare_sys.pilot",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pilots lit",
+      "titleRu": "Горящих запальников",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flare_sys.tip.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Tip temperature",
+      "titleRu": "Температура оголовка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flare_sys.smokeless",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Smokeless steam / assist",
+      "titleRu": "Бесдымный пар/воздух",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flare_sys.events",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Relief events today",
+      "titleRu": "Сбросов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flare_sys.flame",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flame present",
+      "titleRu": "Пламя есть",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flare_sys.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Flare state",
+      "titleRu": "Состояние факела",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "flaring",
+        "purge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

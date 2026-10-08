@@ -1,0 +1,20 @@
+sid: 6b10cda1
+path: gas_lift.state
+aliases:
+  short: gas_lift.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние газлифта
+  en: Gas-lift state
+fingerprint: sha256:6b10cda141ed7cf1a2ace1f76ef4cc5521bcc15bc01ffe5a13446d5ef867999c
+enumValues:
+  - lift
+  - idle
+  - optimize
+  - fault

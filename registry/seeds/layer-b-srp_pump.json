@@ -1,0 +1,120 @@
+{
+  "layer": "B30",
+  "name": "layer-b-srp_pump.json",
+  "types": [
+    {
+      "path": "srp_pump.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sucker-rod pump well id",
+      "titleRu": "ID скважины ШГН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "srp_pump.spm",
+      "kind": "quantity",
+      "unit": "/min",
+      "titleEn": "Strokes per minute",
+      "titleRu": "Качаний в минуту",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "srp_pump.load",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Peak polished rod load",
+      "titleRu": "Макс. нагрузка на шток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "srp_pump.rate",
+      "kind": "quantity",
+      "unit": "m3/d",
+      "titleEn": "Liquid rate",
+      "titleRu": "Дебит жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "srp_pump.fill",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pump fillage",
+      "titleRu": "Наполнение насоса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "srp_pump.runtime",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Runtime today",
+      "titleRu": "Время работы за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "srp_pump.pounding",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fluid pound",
+      "titleRu": "Удары жидкости",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "srp_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "SRP state",
+      "titleRu": "Состояние ШГН",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pump",
+        "idle",
+        "poc",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

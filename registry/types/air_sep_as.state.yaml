@@ -1,0 +1,20 @@
+sid: 83fb2edb
+path: air_sep_as.state
+aliases:
+  short: air_sep_as.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ВРУ
+  en: ASU state
+fingerprint: sha256:83fb2edb86fd49ab5c743e15173cf942d602508afc24beb9af7782cab581a9c9
+enumValues:
+  - produce
+  - idle
+  - maintain
+  - fault

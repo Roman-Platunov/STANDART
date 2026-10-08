@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-city_gate.json",
+  "types": [
+    {
+      "path": "city_gate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "City gate station id",
+      "titleRu": "ID ГРС / city gate",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "city_gate.inlet",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Inlet pressure",
+      "titleRu": "Давление на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "city_gate.outlet",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Outlet pressure",
+      "titleRu": "Давление на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "city_gate.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Sendout flow",
+      "titleRu": "Расход выдачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "city_gate.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outlet temperature",
+      "titleRu": "Температура на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "city_gate.heat",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Preheater duty",
+      "titleRu": "Мощность подогрева",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "city_gate.slam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Slam-shut tripped",
+      "titleRu": "Сработал отсекатель",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "city_gate.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "regulate",
+        "bypass",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

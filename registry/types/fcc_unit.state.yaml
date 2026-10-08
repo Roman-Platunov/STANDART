@@ -1,0 +1,20 @@
+sid: 68338d88
+path: fcc_unit.state
+aliases:
+  short: fcc_unit.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:68338d880394d5b2489485550c79c3bbcbbbc89265b0e2bebd9d133be6a61834
+enumValues:
+  - run
+  - regen
+  - idle
+  - fault

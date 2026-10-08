@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-lng_train.json",
+  "types": [
+    {
+      "path": "lng_train.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LNG liquefaction train id",
+      "titleRu": "ID линии сжижения СПГ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lng_train.feed",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Feed gas",
+      "titleRu": "Подача газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_train.lng",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "LNG production",
+      "titleRu": "Выработка СПГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_train.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "LNG temperature",
+      "titleRu": "Температура СПГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_train.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Train power",
+      "titleRu": "Мощность линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_train.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Availability",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lng_train.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Train trip",
+      "titleRu": "Останов линии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lng_train.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Train state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "liquefy",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "layer": "B30",
+  "name": "layer-b-hydrotreater.json",
+  "types": [
+    {
+      "path": "hydrotreater.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hydrotreater id",
+      "titleRu": "ID гидроочистки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hydrotreater.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Расход сырья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrotreater.sulfur.in",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Feed sulfur",
+      "titleRu": "Сера в сырье",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrotreater.sulfur.out",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Product sulfur",
+      "titleRu": "Сера в продукте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrotreater.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "WABT",
+      "titleRu": "Средневзвешенная температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrotreater.h2",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "H2 consumption",
+      "titleRu": "Расход H2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hydrotreater.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Sulfur spec OK",
+      "titleRu": "Норма по сере OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hydrotreater.service",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Service",
+      "titleRu": "Служба",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "naphtha",
+        "diesel",
+        "kero",
+        "gasoil",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

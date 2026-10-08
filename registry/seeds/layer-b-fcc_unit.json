@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-fcc_unit.json",
+  "types": [
+    {
+      "path": "fcc_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "FCC unit id",
+      "titleRu": "ID установки ККФ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fcc_unit.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fresh feed",
+      "titleRu": "Свежее сырьё",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fcc_unit.regen.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Regenerator temperature",
+      "titleRu": "Температура регенератора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fcc_unit.riser.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Riser outlet temperature",
+      "titleRu": "Температура райзера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fcc_unit.conv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Conversion",
+      "titleRu": "Конверсия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "fcc_unit.catalyst",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Catalyst inventory",
+      "titleRu": "Запас катализатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fcc_unit.slide",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Slide valve limit",
+      "titleRu": "Ограничение шибера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fcc_unit.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "regen",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

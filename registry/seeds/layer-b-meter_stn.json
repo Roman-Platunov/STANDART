@@ -1,0 +1,117 @@
+{
+  "layer": "B30",
+  "name": "layer-b-meter_stn.json",
+  "types": [
+    {
+      "path": "meter_stn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Custody meter station id",
+      "titleRu": "ID узла учёта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "meter_stn.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Measured flow",
+      "titleRu": "Измеренный расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_stn.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Line pressure",
+      "titleRu": "Давление линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_stn.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Line temperature",
+      "titleRu": "Температура линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_stn.energy",
+      "kind": "quantity",
+      "unit": "MJ/h",
+      "titleEn": "Energy flow",
+      "titleRu": "Энергетический расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "meter_stn.uncertainty",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Measurement uncertainty",
+      "titleRu": "Погрешность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "meter_stn.prove",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Prover in progress",
+      "titleRu": "Поверка идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "meter_stn.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "orifice",
+        "ultrasonic",
+        "turbine",
+        "coriolis",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

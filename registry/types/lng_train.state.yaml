@@ -1,0 +1,20 @@
+sid: 42a464e3
+path: lng_train.state
+aliases:
+  short: lng_train.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Train state
+fingerprint: sha256:42a464e3cd5641db45892446080f63a1ba83c200f9f04d6e5b3c3917f049e7d9
+enumValues:
+  - liquefy
+  - idle
+  - maintain
+  - fault

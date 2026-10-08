@@ -1,0 +1,20 @@
+sid: 8e5d7174
+path: butadiene.state
+aliases:
+  short: butadiene.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:8e5d71747cd5479cd8224c03270709a3876fa3b31527d0c8175b37586b327a77
+enumValues:
+  - extract
+  - strip
+  - idle
+  - fault

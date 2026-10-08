@@ -1,0 +1,111 @@
+{
+  "layer": "B30",
+  "name": "layer-b-district_rg.json",
+  "types": [
+    {
+      "path": "district_rg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "District regulator station id",
+      "titleRu": "ID районного регуляторного пункта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "district_rg.inlet",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Inlet pressure",
+      "titleRu": "Давление на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_rg.outlet",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Outlet pressure",
+      "titleRu": "Давление на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_rg.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_rg.customers",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Customers served",
+      "titleRu": "Потребителей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_rg.filter.dp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Filter DP",
+      "titleRu": "Перепад на фильтре",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "district_rg.monitor",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Monitor run active",
+      "titleRu": "Рабочий монитор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "district_rg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние пункта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "regulate",
+        "monitor",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

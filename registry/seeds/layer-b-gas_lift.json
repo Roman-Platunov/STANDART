@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-gas_lift.json",
+  "types": [
+    {
+      "path": "gas_lift.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gas-lift well id",
+      "titleRu": "ID скважины газлифта",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gas_lift.inject",
+      "kind": "quantity",
+      "unit": "Nm3/d",
+      "titleEn": "Injection gas rate",
+      "titleRu": "Расход газлифтного газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_lift.rate",
+      "kind": "quantity",
+      "unit": "m3/d",
+      "titleEn": "Liquid production",
+      "titleRu": "Дебит жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_lift.whp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Wellhead pressure",
+      "titleRu": "Давление на устье",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_lift.casing",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Casing pressure",
+      "titleRu": "Затрубное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_lift.glr",
+      "kind": "quantity",
+      "unit": "Nm3/m3",
+      "titleEn": "Produced GLR",
+      "titleRu": "Газовый фактор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_lift.valve",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Operating valve OK",
+      "titleRu": "Рабочий клапан OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gas_lift.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gas-lift state",
+      "titleRu": "Состояние газлифта",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lift",
+        "idle",
+        "optimize",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

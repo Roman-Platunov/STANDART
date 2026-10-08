@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-alkylation.json",
+  "types": [
+    {
+      "path": "alkylation.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Alkylation unit id",
+      "titleRu": "ID установки алкилирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "alkylation.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Olefin feed",
+      "titleRu": "Подача олефинов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alkylation.acid",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Acid strength",
+      "titleRu": "Концентрация кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "alkylation.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alkylation.ron",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Alkylate RON",
+      "titleRu": "ОЧ алкилата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alkylation.ratio",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Isobutane / olefin ratio",
+      "titleRu": "Соотношение изобутан/олефин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "alkylation.acid.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Acid strength alarm",
+      "titleRu": "Тревога по кислоте",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "alkylation.catalyst",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Catalyst",
+      "titleRu": "Катализатор",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hf",
+        "h2so4",
+        "solid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B30",
+  "name": "layer-b-sulfuric_ac.json",
+  "types": [
+    {
+      "path": "sulfuric_ac.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sulfuric acid plant id",
+      "titleRu": "ID завода серной кислоты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sulfuric_ac.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "S / SO2 feed",
+      "titleRu": "Подача S/SO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_ac.output",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "H2SO4 production",
+      "titleRu": "Выработка H2SO4",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_ac.conv",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "SO2 conversion",
+      "titleRu": "Конверсия SO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_ac.strength",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Acid strength",
+      "titleRu": "Концентрация кислоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_ac.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Converter temperature",
+      "titleRu": "Температура конвертера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sulfuric_ac.mist",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mist eliminator OK",
+      "titleRu": "Туманный фильтр OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sulfuric_ac.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

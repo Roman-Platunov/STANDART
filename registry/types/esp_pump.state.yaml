@@ -1,0 +1,20 @@
+sid: 26bcc3be
+path: esp_pump.state
+aliases:
+  short: esp_pump.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние УЭЦН
+  en: ESP state
+fingerprint: sha256:26bcc3beeecfc610387cd30979d02ddd2cba7e7451e3be03022bb84a5e949895
+enumValues:
+  - run
+  - idle
+  - optimize
+  - fault

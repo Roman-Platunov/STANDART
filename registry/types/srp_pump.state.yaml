@@ -1,0 +1,20 @@
+sid: 13b24adc
+path: srp_pump.state
+aliases:
+  short: srp_pump.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ШГН
+  en: SRP state
+fingerprint: sha256:13b24adcc878917f3fa3f94f778f912acba2ad7dcbc8238b8e85ebccdf8f0967
+enumValues:
+  - pump
+  - idle
+  - poc
+  - fault

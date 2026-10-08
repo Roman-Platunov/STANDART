@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-dehy_unit.json",
+  "types": [
+    {
+      "path": "dehy_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Gas dehydration unit id",
+      "titleRu": "ID установки осушки газа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dehy_unit.gas",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Gas flow",
+      "titleRu": "Расход газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dehy_unit.dew",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Outlet water dew point",
+      "titleRu": "Точка росы по воде",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dehy_unit.glycol",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Glycol circulation",
+      "titleRu": "Циркуляция гликоля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dehy_unit.reb.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reboiler temperature",
+      "titleRu": "Температура рибойлера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dehy_unit.water",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Water removed",
+      "titleRu": "Удалено воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dehy_unit.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dew point OK",
+      "titleRu": "Точка росы OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dehy_unit.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "teg",
+        "mol_sieve",
+        "silica",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

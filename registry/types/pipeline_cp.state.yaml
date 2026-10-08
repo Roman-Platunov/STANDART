@@ -1,0 +1,20 @@
+sid: ad6bb2c5
+path: pipeline_cp.state
+aliases:
+  short: pipeline_cp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:ad6bb2c5b97116d8e92f5180afab72d8fb13cff19be0f20de27cf48809169a6f
+enumValues:
+  - run
+  - standby
+  - maintain
+  - fault

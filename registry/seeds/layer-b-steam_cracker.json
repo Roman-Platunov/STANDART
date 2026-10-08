@@ -1,0 +1,113 @@
+{
+  "layer": "B30",
+  "name": "layer-b-steam_cracker.json",
+  "types": [
+    {
+      "path": "steam_cracker.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Steam cracker id",
+      "titleRu": "ID парового крекинга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "steam_cracker.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Hydrocarbon feed",
+      "titleRu": "Подача углеводородов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_cracker.cot",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coil outlet temperature",
+      "titleRu": "Температура на выходе змеевика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_cracker.ethylene",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Ethylene production",
+      "titleRu": "Выработка этилена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_cracker.propylene",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Propylene production",
+      "titleRu": "Выработка пропилена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_cracker.severity",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Steam / HC ratio",
+      "titleRu": "Соотношение пар/УВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "steam_cracker.decoke",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Decoke in progress",
+      "titleRu": "Выжиг кокса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "steam_cracker.feed.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Feed type",
+      "titleRu": "Тип сырья",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ethane",
+        "naphtha",
+        "lpg",
+        "gasoil",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

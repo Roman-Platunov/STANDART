@@ -1,0 +1,113 @@
+{
+  "layer": "B30",
+  "name": "layer-b-polyolefin.json",
+  "types": [
+    {
+      "path": "polyolefin.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Polyolefin plant id",
+      "titleRu": "ID завода полиолефинов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "polyolefin.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Monomer feed",
+      "titleRu": "Подача мономера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "polyolefin.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Polymer output",
+      "titleRu": "Выпуск полимера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "polyolefin.mi",
+      "kind": "quantity",
+      "unit": "g/10min",
+      "titleEn": "Melt index",
+      "titleRu": "Показатель текучести расплава",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "polyolefin.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Density",
+      "titleRu": "Плотность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "polyolefin.catalyst",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Catalyst residual",
+      "titleRu": "Остаток катализатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "polyolefin.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Resin spec OK",
+      "titleRu": "Спецификация смолы OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "polyolefin.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hdpe",
+        "ldpe",
+        "lldpe",
+        "pp",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

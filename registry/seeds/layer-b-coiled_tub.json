@@ -1,0 +1,114 @@
+{
+  "layer": "B30",
+  "name": "layer-b-coiled_tub.json",
+  "types": [
+    {
+      "path": "coiled_tub.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Coiled tubing unit id",
+      "titleRu": "ID установки ГНКТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coiled_tub.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Job id",
+      "titleRu": "ID работы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coiled_tub.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Measured depth",
+      "titleRu": "Глубина по стволу",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coiled_tub.weight",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Weight on bit / string",
+      "titleRu": "Нагрузка на колонну",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coiled_tub.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Circulating pressure",
+      "titleRu": "Давление циркуляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coiled_tub.fatigue",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pipe fatigue life used",
+      "titleRu": "Израсходованный ресурс трубы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "coiled_tub.pooh",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "POOH in progress",
+      "titleRu": "Подъём идёт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coiled_tub.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rih",
+        "circulate",
+        "pooh",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

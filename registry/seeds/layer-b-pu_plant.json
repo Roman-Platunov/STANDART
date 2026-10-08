@@ -1,0 +1,117 @@
+{
+  "layer": "B30",
+  "name": "layer-b-pu_plant.json",
+  "types": [
+    {
+      "path": "pu_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Polyurethane plant id",
+      "titleRu": "ID завода полиуретанов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pu_plant.iso",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Isocyanate feed",
+      "titleRu": "Подача изоцианата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pu_plant.polyol",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Polyol feed",
+      "titleRu": "Подача полиола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pu_plant.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "PU output",
+      "titleRu": "Выпуск ПУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pu_plant.nco",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "NCO content",
+      "titleRu": "Содержание NCO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pu_plant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pu_plant.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pu_plant.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mdi",
+        "tdi",
+        "polyol",
+        "system",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

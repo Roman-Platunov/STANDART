@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-lube_plant.json",
+  "types": [
+    {
+      "path": "lube_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lube oil plant id",
+      "titleRu": "ID завода масел",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lube_plant.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Base stock feed",
+      "titleRu": "Подача базового масла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lube_plant.viscosity",
+      "kind": "quantity",
+      "unit": "mm2/s",
+      "titleEn": "Kinematic viscosity",
+      "titleRu": "Кинематическая вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lube_plant.vi",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Viscosity index",
+      "titleRu": "Индекс вязкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lube_plant.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Finished lube output",
+      "titleRu": "Выпуск готовых масел",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lube_plant.additive",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Additive treat",
+      "titleRu": "Доля присадок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lube_plant.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lube_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "blend",
+        "fill",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

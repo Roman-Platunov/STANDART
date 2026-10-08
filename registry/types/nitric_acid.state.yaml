@@ -1,0 +1,20 @@
+sid: bac2a83d
+path: nitric_acid.state
+aliases:
+  short: nitric_acid.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:bac2a83d0015a5a671c0396131c5583ede5f07fe7eeae21d3a1ff8edcebbf04e
+enumValues:
+  - produce
+  - idle
+  - maintain
+  - fault

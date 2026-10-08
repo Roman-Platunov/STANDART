@@ -1,0 +1,120 @@
+{
+  "layer": "B30",
+  "name": "layer-b-block_valve.json",
+  "types": [
+    {
+      "path": "block_valve.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipeline block valve id",
+      "titleRu": "ID линейного крана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "block_valve.position",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Valve position",
+      "titleRu": "Положение крана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "block_valve.upstream",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Upstream pressure",
+      "titleRu": "Давление до крана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "block_valve.downstream",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Downstream pressure",
+      "titleRu": "Давление после крана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "block_valve.travel.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Stroke time",
+      "titleRu": "Время хода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "block_valve.torque",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Actuator torque",
+      "titleRu": "Момент привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "block_valve.esd",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "ESD closed",
+      "titleRu": "Аварийно закрыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "block_valve.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Valve state",
+      "titleRu": "Состояние крана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "closed",
+        "moving",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

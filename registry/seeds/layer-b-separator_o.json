@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-separator_o.json",
+  "types": [
+    {
+      "path": "separator_o.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Production separator id",
+      "titleRu": "ID сепаратора добычи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "separator_o.oil",
+      "kind": "quantity",
+      "unit": "m3/d",
+      "titleEn": "Oil rate",
+      "titleRu": "Дебит нефти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "separator_o.gas",
+      "kind": "quantity",
+      "unit": "Nm3/d",
+      "titleEn": "Gas rate",
+      "titleRu": "Дебит газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "separator_o.water",
+      "kind": "quantity",
+      "unit": "m3/d",
+      "titleEn": "Water rate",
+      "titleRu": "Дебит воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "separator_o.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Vessel pressure",
+      "titleRu": "Давление аппарата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "separator_o.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Interface level",
+      "titleRu": "Уровень раздела",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "separator_o.carry",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Liquid carryover",
+      "titleRu": "Унос жидкости",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "separator_o.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "2phase",
+        "3phase",
+        "test",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

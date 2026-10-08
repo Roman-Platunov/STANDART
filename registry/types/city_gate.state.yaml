@@ -1,0 +1,20 @@
+sid: 72a699ca
+path: city_gate.state
+aliases:
+  short: city_gate.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:72a699ca9ea5add7ea6de84fc89c18a54f60e7798e6c699c0476fc8b65975a17
+enumValues:
+  - regulate
+  - bypass
+  - maintain
+  - fault

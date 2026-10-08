@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-mud_system.json",
+  "types": [
+    {
+      "path": "mud_system.rig.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Drilling mud system id",
+      "titleRu": "ID системы бурового раствора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mud_system.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Mud weight",
+      "titleRu": "Плотность раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mud_system.viscosity",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Funnel viscosity",
+      "titleRu": "Условная вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mud_system.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Circulation rate",
+      "titleRu": "Расход циркуляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mud_system.pit",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Active pit volume",
+      "titleRu": "Объём активной ёмкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mud_system.solids",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solids content",
+      "titleRu": "Содержание твёрдой фазы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mud_system.kick",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Kick / gain detected",
+      "titleRu": "Обнаружен приток",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mud_system.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mud type",
+      "titleRu": "Тип раствора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wbm",
+        "obm",
+        "sbm",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

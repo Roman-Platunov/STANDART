@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-crude_dist.json",
+  "types": [
+    {
+      "path": "crude_dist.unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Crude distillation unit id",
+      "titleRu": "ID установки первичной перегонки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crude_dist.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Crude feed rate",
+      "titleRu": "Расход нефти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crude_dist.furnace",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Furnace outlet temperature",
+      "titleRu": "Температура на выходе печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crude_dist.overhead",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Overhead temperature",
+      "titleRu": "Температура верха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crude_dist.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tower pressure",
+      "titleRu": "Давление колонны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crude_dist.energy",
+      "kind": "quantity",
+      "unit": "MJ/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crude_dist.flood",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flooding risk",
+      "titleRu": "Риск захлёбывания",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crude_dist.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "startup",
+        "shutdown",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

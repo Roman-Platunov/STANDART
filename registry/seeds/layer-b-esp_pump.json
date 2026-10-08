@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-esp_pump.json",
+  "types": [
+    {
+      "path": "esp_pump.well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ESP well id",
+      "titleRu": "ID скважины с УЭЦН",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "esp_pump.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "VSD frequency",
+      "titleRu": "Частота ЧРП",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_pump.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Motor current",
+      "titleRu": "Ток двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_pump.intake.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Intake pressure",
+      "titleRu": "Давление на приёме",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_pump.rate",
+      "kind": "quantity",
+      "unit": "m3/d",
+      "titleEn": "Liquid rate",
+      "titleRu": "Дебит жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_pump.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Motor temperature",
+      "titleRu": "Температура двигателя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "esp_pump.gas.lock",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas lock risk",
+      "titleRu": "Риск газовой пробки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "esp_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ESP state",
+      "titleRu": "Состояние УЭЦН",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "optimize",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

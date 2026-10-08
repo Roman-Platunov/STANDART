@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-swd_well.json",
+  "types": [
+    {
+      "path": "swd_well.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Saltwater disposal well id",
+      "titleRu": "ID нагнетательной скважины ППД/утилизации",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "swd_well.rate",
+      "kind": "quantity",
+      "unit": "m3/d",
+      "titleEn": "Injection rate",
+      "titleRu": "Расход закачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "swd_well.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Wellhead injection pressure",
+      "titleRu": "Устьевое давление закачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "swd_well.tubing",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tubing pressure",
+      "titleRu": "Давление НКТ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "swd_well.annulus",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Annulus pressure",
+      "titleRu": "Затрубное давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "swd_well.cum",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Cumulative injected",
+      "titleRu": "Накоплено закачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "swd_well.mia",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "MIA / integrity alarm",
+      "titleRu": "Тревога целостности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "swd_well.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Well state",
+      "titleRu": "Состояние скважины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inject",
+        "idle",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B30",
+  "name": "layer-b-pipeline_sc.json",
+  "types": [
+    {
+      "path": "pipeline_sc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipeline SCADA segment id",
+      "titleRu": "ID сегмента SCADA трубопровода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pipeline_sc.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Segment flow",
+      "titleRu": "Расход сегмента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_sc.inlet.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Inlet pressure",
+      "titleRu": "Давление на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_sc.outlet.p",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Outlet pressure",
+      "titleRu": "Давление на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_sc.pack",
+      "kind": "quantity",
+      "unit": "Nm3",
+      "titleEn": "Line pack",
+      "titleRu": "Запас в трубе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_sc.alarms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Active alarms",
+      "titleRu": "Активных тревог",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_sc.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak detection alarm",
+      "titleRu": "Тревога утечки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pipeline_sc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Segment state",
+      "titleRu": "Состояние сегмента",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "flowing",
+        "packed",
+        "isolated",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

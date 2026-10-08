@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-pet_plant.json",
+  "types": [
+    {
+      "path": "pet_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "PET plant id",
+      "titleRu": "ID завода ПЭТ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pet_plant.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "PTA / MEG feed",
+      "titleRu": "Подача ТФК/МЭГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_plant.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "PET chip output",
+      "titleRu": "Выпуск чипсов ПЭТ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_plant.iv",
+      "kind": "quantity",
+      "unit": "dL/g",
+      "titleEn": "Intrinsic viscosity",
+      "titleRu": "Характеристическая вязкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_plant.aa",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Acetaldehyde",
+      "titleRu": "Ацетальдегид",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_plant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "SSP / polycond temperature",
+      "titleRu": "Температура поликонденсации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pet_plant.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Chip spec OK",
+      "titleRu": "Спецификация чипсов OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pet_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "esterify",
+        "polycond",
+        "ssp",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

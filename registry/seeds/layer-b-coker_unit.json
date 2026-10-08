@@ -1,0 +1,113 @@
+{
+  "layer": "B30",
+  "name": "layer-b-coker_unit.json",
+  "types": [
+    {
+      "path": "coker_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Delayed coker id",
+      "titleRu": "ID установки замедленного коксования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "coker_unit.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Residue feed",
+      "titleRu": "Подача остатка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coker_unit.drum.t",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Drum temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coker_unit.cycle.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Drum cycle time",
+      "titleRu": "Цикл камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coker_unit.coke",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Coke produced",
+      "titleRu": "Выработано кокса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coker_unit.gasoil",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Coker gasoil",
+      "titleRu": "Газойль коксования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "coker_unit.switch",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Drum switch in progress",
+      "titleRu": "Переключение камер",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "coker_unit.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Drum state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fill",
+        "steam",
+        "cool",
+        "drill",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

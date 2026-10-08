@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-pipeline_cp.json",
+  "types": [
+    {
+      "path": "pipeline_cp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipeline compressor station id",
+      "titleRu": "ID компрессорной станции",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pipeline_cp.flow",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_cp.suction",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Suction pressure",
+      "titleRu": "Давление всасывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_cp.discharge",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Discharge pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_cp.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Station power",
+      "titleRu": "Мощность станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_cp.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Discharge temperature",
+      "titleRu": "Температура нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pipeline_cp.surge",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Surge control active",
+      "titleRu": "Антипомпаж активен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pipeline_cp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "standby",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

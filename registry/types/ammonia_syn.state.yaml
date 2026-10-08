@@ -1,0 +1,20 @@
+sid: c78ad3dd
+path: ammonia_syn.state
+aliases:
+  short: ammonia_syn.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние контура
+  en: Loop state
+fingerprint: sha256:c78ad3dd5e368fa5d6bd9b62fd9a22d3e340f34a0d635b665b2fdf01c76793d5
+enumValues:
+  - synthesize
+  - startup
+  - idle
+  - fault

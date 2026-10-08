@@ -1,0 +1,20 @@
+sid: 6f4be710
+path: swd_well.state
+aliases:
+  short: swd_well.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние скважины
+  en: Well state
+fingerprint: sha256:6f4be71069f4a9d6fa6856fb359d4d9b603b4ecf1d71cdb4de331588ee986d49
+enumValues:
+  - inject
+  - idle
+  - test
+  - fault

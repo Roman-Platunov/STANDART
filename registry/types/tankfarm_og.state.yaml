@@ -1,0 +1,20 @@
+sid: 2b783098
+path: tankfarm_og.state
+aliases:
+  short: tankfarm_og.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние парка
+  en: Farm state
+fingerprint: sha256:2b783098c017d6c122938791edbd950deb1d3828d7e189fad16308ab2cdf268d
+enumValues:
+  - normal
+  - transfer
+  - maintain
+  - alarm

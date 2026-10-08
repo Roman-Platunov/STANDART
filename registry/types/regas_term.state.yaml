@@ -1,0 +1,20 @@
+sid: 9e0444bb
+path: regas_term.state
+aliases:
+  short: regas_term.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние терминала
+  en: Terminal state
+fingerprint: sha256:9e0444bbba43506655eaba789588c026e93be43507a02ec1cc3cc89ae6c2f209
+enumValues:
+  - regas
+  - idle
+  - maintain
+  - fault

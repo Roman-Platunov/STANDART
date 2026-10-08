@@ -1,0 +1,20 @@
+sid: 5786ef4c
+path: sulfur_rec.state
+aliases:
+  short: sulfur_rec.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Unit state
+fingerprint: sha256:5786ef4c29a1af22ca34d79b74e545f99999c6c502e3bc20ce654f645f4e8ceb
+enumValues:
+  - recover
+  - hot_standby
+  - idle
+  - fault

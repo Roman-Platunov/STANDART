@@ -1,0 +1,20 @@
+sid: 2dfad503
+path: urea_gran.state
+aliases:
+  short: urea_gran.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:2dfad503805a1a68ad2b77ca4b36180f5691842d54912378ddf4e73d272aef1d
+enumValues:
+  - granulate
+  - screen
+  - idle
+  - fault

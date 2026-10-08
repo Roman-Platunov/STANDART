@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-air_sep_as.json",
+  "types": [
+    {
+      "path": "air_sep_as.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Air separation unit id",
+      "titleRu": "ID воздухоразделительной установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "air_sep_as.o2",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Oxygen production",
+      "titleRu": "Выработка кислорода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_sep_as.n2",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Nitrogen production",
+      "titleRu": "Выработка азота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_sep_as.ar",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Argon production",
+      "titleRu": "Выработка аргона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_sep_as.purity.o2",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "O2 purity",
+      "titleRu": "Чистота O2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "air_sep_as.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "ASU power",
+      "titleRu": "Мощность ВРУ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "air_sep_as.trip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Plant trip",
+      "titleRu": "Останов установки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "air_sep_as.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "ASU state",
+      "titleRu": "Состояние ВРУ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "produce",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

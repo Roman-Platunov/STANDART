@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-epoxy_plant.json",
+  "types": [
+    {
+      "path": "epoxy_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Epoxy resin plant id",
+      "titleRu": "ID завода эпоксидных смол",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "epoxy_plant.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Расход сырья",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "epoxy_plant.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Resin output",
+      "titleRu": "Выпуск смолы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "epoxy_plant.eeew",
+      "kind": "quantity",
+      "unit": "g/eq",
+      "titleEn": "Epoxy equivalent weight",
+      "titleRu": "Эпоксидный эквивалент",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "epoxy_plant.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Resin viscosity",
+      "titleRu": "Вязкость смолы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "epoxy_plant.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "epoxy_plant.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "epoxy_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "react",
+        "strip",
+        "blend",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

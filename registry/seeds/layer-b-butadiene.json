@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-butadiene.json",
+  "types": [
+    {
+      "path": "butadiene.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Butadiene extraction id",
+      "titleRu": "ID экстракции бутадиена",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "butadiene.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "C4 feed",
+      "titleRu": "Подача C4",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "butadiene.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "BD production",
+      "titleRu": "Выработка БД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "butadiene.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "BD purity",
+      "titleRu": "Чистота БД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "butadiene.solvent",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Solvent circulation",
+      "titleRu": "Циркуляция растворителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "butadiene.energy",
+      "kind": "quantity",
+      "unit": "MJ/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "butadiene.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "butadiene.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "extract",
+        "strip",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

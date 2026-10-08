@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-silicone_pl.json",
+  "types": [
+    {
+      "path": "silicone_pl.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Silicone plant id",
+      "titleRu": "ID завода силиконов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "silicone_pl.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Monomer feed",
+      "titleRu": "Подача мономера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silicone_pl.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Silicone output",
+      "titleRu": "Выпуск силикона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silicone_pl.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Product viscosity",
+      "titleRu": "Вязкость продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silicone_pl.volatiles",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Volatiles",
+      "titleRu": "Летучие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "silicone_pl.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reactor temperature",
+      "titleRu": "Температура реактора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "silicone_pl.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Spec OK",
+      "titleRu": "Спецификация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "silicone_pl.product",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Product",
+      "titleRu": "Продукт",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "fluid",
+        "elastomer",
+        "resin",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

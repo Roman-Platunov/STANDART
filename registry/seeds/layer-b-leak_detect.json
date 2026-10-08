@@ -1,0 +1,120 @@
+{
+  "layer": "B30",
+  "name": "layer-b-leak_detect.json",
+  "types": [
+    {
+      "path": "leak_detect.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pipeline leak detection system id",
+      "titleRu": "ID системы обнаружения утечек",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leak_detect.sensitivity",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Minimum detectable leak",
+      "titleRu": "Мин. обнаруживаемая утечка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_detect.alarms",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Leak alarms today",
+      "titleRu": "Тревог утечки за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_detect.balance",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mass balance residual",
+      "titleRu": "Невязка баланса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leak_detect.rtt.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Detection latency",
+      "titleRu": "Задержка обнаружения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leak_detect.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Segment coverage",
+      "titleRu": "Покрытие сегментов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leak_detect.active",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Leak confirmed",
+      "titleRu": "Утечка подтверждена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "leak_detect.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rpm",
+        "mass_balance",
+        "acoustic",
+        "fiber",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

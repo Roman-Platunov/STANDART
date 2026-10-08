@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-chloralkali.json",
+  "types": [
+    {
+      "path": "chloralkali.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Chlor-alkali plant id",
+      "titleRu": "ID завода хлора и щёлочи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chloralkali.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Cell current",
+      "titleRu": "Ток электролизёра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chloralkali.cl2",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Chlorine production",
+      "titleRu": "Выработка хлора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chloralkali.naoh",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Caustic production",
+      "titleRu": "Выработка щёлочи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chloralkali.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Cell voltage",
+      "titleRu": "Напряжение ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chloralkali.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chloralkali.membrane",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Membrane health OK",
+      "titleRu": "Мембрана OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chloralkali.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "membrane",
+        "diaphragm",
+        "mercury",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-heater_trt.json",
+  "types": [
+    {
+      "path": "heater_trt.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heater-treater id",
+      "titleRu": "ID нагревателя-деэмульсатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "heater_trt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Treating temperature",
+      "titleRu": "Температура обработки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heater_trt.oil",
+      "kind": "quantity",
+      "unit": "m3/d",
+      "titleEn": "Oil throughput",
+      "titleRu": "Пропуск нефти",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heater_trt.bsaw",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Outlet BS&W",
+      "titleRu": "Вода/механические на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "heater_trt.fuel",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Fuel gas",
+      "titleRu": "Топливный газ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heater_trt.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Vessel pressure",
+      "titleRu": "Давление аппарата",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "heater_trt.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Firetube OK",
+      "titleRu": "Жаровая труба OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "heater_trt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние аппарата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "treat",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B30",
+  "name": "layer-b-ccs_amine.json",
+  "types": [
+    {
+      "path": "ccs_amine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Amine CCS unit id",
+      "titleRu": "ID аминовой CCS-установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ccs_amine.flue",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Flue gas flow",
+      "titleRu": "Расход дымовых газов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ccs_amine.co2",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "CO2 captured",
+      "titleRu": "Уловлено CO2",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ccs_amine.capture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Capture rate",
+      "titleRu": "Степень улавливания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ccs_amine.lean",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lean amine loading",
+      "titleRu": "Нагрузка бедного амина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ccs_amine.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Reboiler steam",
+      "titleRu": "Пар рибойлера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ccs_amine.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "CO2 purity OK",
+      "titleRu": "Чистота CO2 OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ccs_amine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "capture",
+        "regen",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

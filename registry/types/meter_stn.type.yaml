@@ -1,0 +1,21 @@
+sid: 299a2a90
+path: meter_stn.type
+aliases:
+  short: meter_stn.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип
+  en: Type
+fingerprint: sha256:299a2a90e3348a5145c7c99c7d9e95e2727994cd4045fc29ff3c373b9df4c056
+enumValues:
+  - orifice
+  - ultrasonic
+  - turbine
+  - coriolis
+  - other

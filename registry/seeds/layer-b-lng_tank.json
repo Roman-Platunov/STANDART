@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-lng_tank.json",
+  "types": [
+    {
+      "path": "lng_tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LNG storage tank id",
+      "titleRu": "ID резервуара СПГ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lng_tank.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Liquid level",
+      "titleRu": "Уровень жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lng_tank.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Liquid temperature",
+      "titleRu": "Температура жидкости",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_tank.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tank pressure",
+      "titleRu": "Давление резервуара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_tank.boiloff",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Boil-off gas",
+      "titleRu": "Испарённый газ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_tank.inventory",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "LNG inventory",
+      "titleRu": "Запас СПГ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lng_tank.rollover",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Rollover risk",
+      "titleRu": "Риск расслоения",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lng_tank.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tank state",
+      "titleRu": "Состояние резервуара",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "store",
+        "fill",
+        "sendout",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

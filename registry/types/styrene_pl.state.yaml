@@ -1,0 +1,20 @@
+sid: 0166a791
+path: styrene_pl.state
+aliases:
+  short: styrene_pl.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:0166a7918ea4ea57a746a960b4590fca80fd5317beaa1e4d4f37f64b37d1616a
+enumValues:
+  - dehy
+  - distill
+  - idle
+  - fault

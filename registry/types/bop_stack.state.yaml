@@ -1,0 +1,20 @@
+sid: e431e4fe
+path: bop_stack.state
+aliases:
+  short: bop_stack.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ПВО
+  en: BOP state
+fingerprint: sha256:e431e4feb7465ac6dbe7770c31b62affca4d36f8f195d6444f1ec5e0f37c83a7
+enumValues:
+  - open
+  - tested
+  - closed
+  - fault

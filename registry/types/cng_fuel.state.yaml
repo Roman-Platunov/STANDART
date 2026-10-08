@@ -1,0 +1,20 @@
+sid: 0902b239
+path: cng_fuel.state
+aliases:
+  short: cng_fuel.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:0902b239033f85527c626949823c50272255a492254337a1c111dd9c0d02556f
+enumValues:
+  - fuel
+  - idle
+  - maintain
+  - fault

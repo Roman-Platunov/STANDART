@@ -1,0 +1,121 @@
+{
+  "layer": "B30",
+  "name": "layer-b-amine_unit.json",
+  "types": [
+    {
+      "path": "amine_unit.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Amine gas treating unit id",
+      "titleRu": "ID аминовой очистки газа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "amine_unit.gas",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Acid gas inlet",
+      "titleRu": "Вход кислого газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amine_unit.h2s.out",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Treated H2S",
+      "titleRu": "H2S после очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amine_unit.co2.out",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Treated CO2",
+      "titleRu": "CO2 после очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "amine_unit.rich",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rich loading",
+      "titleRu": "Нагрузка богатого амина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "amine_unit.steam",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Reboiler steam",
+      "titleRu": "Пар рибойлера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "amine_unit.foaming",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Foaming",
+      "titleRu": "Вспенивание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "amine_unit.amine",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Amine",
+      "titleRu": "Амин",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mea",
+        "dea",
+        "mdea",
+        "dga",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

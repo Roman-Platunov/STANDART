@@ -1,0 +1,112 @@
+{
+  "layer": "B30",
+  "name": "layer-b-cement_oil.json",
+  "types": [
+    {
+      "path": "cement_oil.job.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Well cementing job id",
+      "titleRu": "ID цементирования скважины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cement_oil.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Slurry volume",
+      "titleRu": "Объём тампонажного раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_oil.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Slurry density",
+      "titleRu": "Плотность раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_oil.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Pump pressure",
+      "titleRu": "Давление закачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_oil.rate",
+      "kind": "quantity",
+      "unit": "m3/min",
+      "titleEn": "Pump rate",
+      "titleRu": "Расход закачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_oil.returns",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Returns volume",
+      "titleRu": "Объём выхода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cement_oil.bump",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Plug bumped",
+      "titleRu": "Пробка села",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cement_oil.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Job type",
+      "titleRu": "Тип работы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "primary",
+        "remedial",
+        "plug",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

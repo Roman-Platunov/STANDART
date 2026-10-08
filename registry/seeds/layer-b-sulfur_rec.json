@@ -1,0 +1,116 @@
+{
+  "layer": "B30",
+  "name": "layer-b-sulfur_rec.json",
+  "types": [
+    {
+      "path": "sulfur_rec.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Claus sulfur recovery id",
+      "titleRu": "ID установки Клауса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sulfur_rec.feed",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Acid gas feed",
+      "titleRu": "Подача кислого газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sulfur_rec.sulfur",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Sulfur production",
+      "titleRu": "Выработка серы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sulfur_rec.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sulfur recovery",
+      "titleRu": "Извлечение серы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sulfur_rec.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Reaction furnace temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sulfur_rec.h2s.tail",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Tail gas H2S",
+      "titleRu": "H2S в хвостовом газе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sulfur_rec.ratio",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Air / gas ratio OK",
+      "titleRu": "Соотношение воздух/газ OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sulfur_rec.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "recover",
+        "hot_standby",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

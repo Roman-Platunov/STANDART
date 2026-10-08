@@ -1,0 +1,111 @@
+{
+  "layer": "B30",
+  "name": "layer-b-frack_pump.json",
+  "types": [
+    {
+      "path": "frack_pump.fleet.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Frac fleet id",
+      "titleRu": "ID флота ГРП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "frack_pump.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Treating pressure",
+      "titleRu": "Давление закачки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "frack_pump.rate",
+      "kind": "quantity",
+      "unit": "m3/min",
+      "titleEn": "Slurry rate",
+      "titleRu": "Расход смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "frack_pump.proppant",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Proppant pumped",
+      "titleRu": "Закачано пропанта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "frack_pump.stages",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Stages completed",
+      "titleRu": "Завершено стадий",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "frack_pump.hp",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Hydraulic power",
+      "titleRu": "Гидравлическая мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "frack_pump.screenout",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Screen-out risk",
+      "titleRu": "Риск стоп-песка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "frack_pump.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Fleet state",
+      "titleRu": "Состояние флота",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pump",
+        "wireline",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
