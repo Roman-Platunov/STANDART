@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-slurry_coat.json",
+  "types": [
+    {
+      "path": "slurry_coat.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Slurry slot-die coater id",
+      "titleRu": "ID щелевого покрытия суспензии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "slurry_coat.gap",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Die gap",
+      "titleRu": "Зазор головки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slurry_coat.flow",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Slurry flow",
+      "titleRu": "Расход суспензии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slurry_coat.wet",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Wet thickness",
+      "titleRu": "Мокрая толщина",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slurry_coat.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Web speed",
+      "titleRu": "Скорость полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slurry_coat.edge",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Uncoated edge",
+      "titleRu": "Непокрытый край",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "slurry_coat.streak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Streak detected",
+      "titleRu": "Полоса",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "slurry_coat.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Coater state",
+      "titleRu": "Состояние покрытия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "coat",
+        "clean",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

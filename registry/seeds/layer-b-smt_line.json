@@ -1,0 +1,113 @@
+{
+  "layer": "B31",
+  "name": "layer-b-smt_line.json",
+  "types": [
+    {
+      "path": "smt_line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SMT line id",
+      "titleRu": "ID линии поверхностного монтажа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "smt_line.cph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Components per hour",
+      "titleRu": "Компонентов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smt_line.ppm",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Defects per million",
+      "titleRu": "Дефектов на миллион",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smt_line.paste",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solder paste coverage",
+      "titleRu": "Покрытие пастой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "smt_line.nozzle",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Nozzle changes",
+      "titleRu": "Смен насадок",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smt_line.feeder",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Feeders online",
+      "titleRu": "Питателей онлайн",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "smt_line.fiducial",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fiducial miss",
+      "titleRu": "Промах реперных",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "smt_line.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "place",
+        "changeover",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

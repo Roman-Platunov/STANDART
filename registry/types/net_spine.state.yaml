@@ -1,0 +1,19 @@
+sid: 977fd58d
+path: net_spine.state
+aliases:
+  short: net_spine.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние коммутатора
+  en: Switch state
+fingerprint: sha256:977fd58d3ff5feae138f53130a29f70669914e2178b6cd0aa698abbdc9cfc22f
+enumValues:
+  - forward
+  - maintain
+  - fault

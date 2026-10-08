@@ -1,0 +1,20 @@
+sid: 7727bd7c
+path: batt_recycle.process
+aliases:
+  short: batt_recycle.process
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Процесс
+  en: Process
+fingerprint: sha256:7727bd7cde91a29ba02f951d3e73c11c3086b4b7fd7fde0b821f359647a34db7
+enumValues:
+  - pyro
+  - hydro
+  - direct
+  - other

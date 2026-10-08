@@ -1,0 +1,20 @@
+sid: b6baeeda
+path: pvd_tool.state
+aliases:
+  short: pvd_tool.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Tool state
+fingerprint: sha256:b6baeeda52d0cc548c9805373ad8d89b1cc754eaaad8c68399c35b7bb95310b9
+enumValues:
+  - sputter
+  - idle
+  - maintain
+  - fault

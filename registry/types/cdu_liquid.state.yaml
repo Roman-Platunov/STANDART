@@ -1,0 +1,20 @@
+sid: 6632351e
+path: cdu_liquid.state
+aliases:
+  short: cdu_liquid.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние CDU
+  en: CDU state
+fingerprint: sha256:6632351e22f1c274c31fe881fd8ad6f48354d2145ede5b8cbfbb6198010ef640
+enumValues:
+  - cool
+  - standby
+  - maintain
+  - fault

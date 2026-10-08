@@ -1,0 +1,120 @@
+{
+  "layer": "B31",
+  "name": "layer-b-ups_dc.json",
+  "types": [
+    {
+      "path": "ups_dc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Data-center UPS id",
+      "titleRu": "ID ИБП ЦОД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ups_dc.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Load",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ups_dc.runtime.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Battery runtime",
+      "titleRu": "Время автономии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ups_dc.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Efficiency",
+      "titleRu": "КПД",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ups_dc.input",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Input voltage",
+      "titleRu": "Входное напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ups_dc.output",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Output power",
+      "titleRu": "Выходная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ups_dc.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "On bypass",
+      "titleRu": "На байпасе",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ups_dc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "UPS state",
+      "titleRu": "Состояние ИБП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "online",
+        "battery",
+        "bypass",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

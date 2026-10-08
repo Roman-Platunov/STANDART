@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-gen_dc.json",
+  "types": [
+    {
+      "path": "gen_dc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Data-center generator id",
+      "titleRu": "ID генератора ЦОД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gen_dc.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Output power",
+      "titleRu": "Выходная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gen_dc.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Frequency",
+      "titleRu": "Частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gen_dc.fuel",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fuel level",
+      "titleRu": "Уровень топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gen_dc.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Runtime today",
+      "titleRu": "Наработка за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gen_dc.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gen_dc.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Auto-start ready",
+      "titleRu": "Автозапуск готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gen_dc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Generator state",
+      "titleRu": "Состояние генератора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "standby",
+        "run",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

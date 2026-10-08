@@ -1,0 +1,20 @@
+sid: fa0a20c1
+path: fab_upw.state
+aliases:
+  short: fab_upw.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:fa0a20c145f3907e1ae63b0ebb4503acba22fe1aed700b9c1dc0f0d27ad0deb4
+enumValues:
+  - supply
+  - polish
+  - idle
+  - fault

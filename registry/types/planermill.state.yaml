@@ -1,0 +1,20 @@
+sid: cedbf546
+path: planermill.state
+aliases:
+  short: planermill.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:cedbf54691780a8deadc49278f864c8802668d791fb8e8d49c07acdbe7235a56
+enumValues:
+  - plane
+  - idle
+  - maintain
+  - fault

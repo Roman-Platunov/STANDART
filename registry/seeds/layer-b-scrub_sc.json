@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-scrub_sc.json",
+  "types": [
+    {
+      "path": "scrub_sc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fab exhaust scrubber id",
+      "titleRu": "ID скруббера вытяжки фаба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "scrub_sc.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Exhaust flow",
+      "titleRu": "Расход вытяжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrub_sc.efficiency",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Abatement efficiency",
+      "titleRu": "Эффективность очистки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "scrub_sc.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chamber temperature",
+      "titleRu": "Температура камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrub_sc.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Scrubber liquor pH",
+      "titleRu": "pH раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrub_sc.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Scrubber power",
+      "titleRu": "Мощность скруббера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "scrub_sc.bypass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bypass open",
+      "titleRu": "Байпас открыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "scrub_sc.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "burn",
+        "wet",
+        "plasma",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

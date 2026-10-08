@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-die_attach.json",
+  "types": [
+    {
+      "path": "die_attach.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Die attach machine id",
+      "titleRu": "ID машины посадки кристалла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "die_attach.uph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_attach.force",
+      "kind": "quantity",
+      "unit": "N",
+      "titleEn": "Bond force",
+      "titleRu": "Усилие посадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_attach.void",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Void area",
+      "titleRu": "Площадь пустот",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "die_attach.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Epoxy / sinter temperature",
+      "titleRu": "Температура эпоксида/спекания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_attach.offset",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Placement offset",
+      "titleRu": "Смещение посадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "die_attach.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Placement OK",
+      "titleRu": "Посадка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "die_attach.method",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Method",
+      "titleRu": "Метод",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "epoxy",
+        "solder",
+        "sinter",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

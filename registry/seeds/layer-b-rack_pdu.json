@@ -1,0 +1,114 @@
+{
+  "layer": "B31",
+  "name": "layer-b-rack_pdu.json",
+  "types": [
+    {
+      "path": "rack_pdu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rack PDU id",
+      "titleRu": "ID стоечного PDU",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rack_pdu.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Rack power",
+      "titleRu": "Мощность стойки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rack_pdu.outlets",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Outlets on",
+      "titleRu": "Включённых розеток",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rack_pdu.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Phase current max",
+      "titleRu": "Макс. ток фазы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rack_pdu.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Inlet temperature",
+      "titleRu": "Температура на входе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rack_pdu.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rated load",
+      "titleRu": "Загрузка номинала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rack_pdu.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "PDU alarm",
+      "titleRu": "Тревога PDU",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rack_pdu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PDU state",
+      "titleRu": "Состояние PDU",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

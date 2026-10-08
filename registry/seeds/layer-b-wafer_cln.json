@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-wafer_cln.json",
+  "types": [
+    {
+      "path": "wafer_cln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wafer clean tool id",
+      "titleRu": "ID установки очистки пластин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wafer_cln.particles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Adders ≥0.1 µm",
+      "titleRu": "Добавленных ≥0.1 мкм",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cln.chem",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Chemistry flow",
+      "titleRu": "Расход химии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cln.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Bath temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cln.megasonic",
+      "kind": "quantity",
+      "unit": "kHz",
+      "titleEn": "Megasonic frequency",
+      "titleRu": "Частота мегазвука",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cln.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Recipe time",
+      "titleRu": "Время рецепта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cln.watermark",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Watermark risk",
+      "titleRu": "Риск разводов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wafer_cln.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sc1",
+        "sc2",
+        "hf",
+        "dry",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

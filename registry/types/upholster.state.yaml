@@ -1,0 +1,20 @@
+sid: 672f4924
+path: upholster.state
+aliases:
+  short: upholster.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:672f49241d582c14af43693c0197d8f21a9cb50d04705fbb3725c498d9350edb
+enumValues:
+  - cut
+  - sew
+  - assemble
+  - fault

@@ -1,0 +1,20 @@
+sid: 778258bf
+path: probe_tst.state
+aliases:
+  short: probe_tst.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние тестера
+  en: Tester state
+fingerprint: sha256:778258bf03faca329cbabf9d1eac9cde779853d6b09dea07b1c59410e2b5ee8e
+enumValues:
+  - probe
+  - setup
+  - idle
+  - fault

@@ -1,0 +1,114 @@
+{
+  "layer": "B31",
+  "name": "layer-b-pcb_ict.json",
+  "types": [
+    {
+      "path": "pcb_ict.fixture.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "ICT fixture id",
+      "titleRu": "ID оснастки внутрисхемного теста",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pcb_ict.boards",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Boards tested per hour",
+      "titleRu": "Плат в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb_ict.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "First-pass yield",
+      "titleRu": "Выход с первого прохода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pcb_ict.probes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Probes contacting",
+      "titleRu": "Контактирующих зондов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb_ict.time.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Test time",
+      "titleRu": "Время теста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb_ict.fails",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fails today",
+      "titleRu": "Провалов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pcb_ict.contact",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Contact OK",
+      "titleRu": "Контакт OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pcb_ict.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tester state",
+      "titleRu": "Состояние тестера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "test",
+        "debug",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

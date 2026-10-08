@@ -1,0 +1,111 @@
+{
+  "layer": "B31",
+  "name": "layer-b-wave_sold.json",
+  "types": [
+    {
+      "path": "wave_sold.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wave solder machine id",
+      "titleRu": "ID машины пайки волной",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wave_sold.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Solder pot temperature",
+      "titleRu": "Температура ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_sold.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Conveyor speed",
+      "titleRu": "Скорость конвейера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_sold.flux",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Flux rate",
+      "titleRu": "Расход флюса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_sold.dross",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Dross today",
+      "titleRu": "Дросса за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_sold.bridges",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bridges per hour",
+      "titleRu": "Перемычек в час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wave_sold.level",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pot level OK",
+      "titleRu": "Уровень ванны OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wave_sold.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Machine state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "solder",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

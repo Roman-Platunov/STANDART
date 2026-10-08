@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-semicon_et.json",
+  "types": [
+    {
+      "path": "semicon_et.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Semiconductor etch tool id",
+      "titleRu": "ID установки травления полупроводников",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "semicon_et.rf",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "RF power",
+      "titleRu": "Мощность ВЧ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "semicon_et.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber pressure",
+      "titleRu": "Давление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "semicon_et.rate",
+      "kind": "quantity",
+      "unit": "nm/min",
+      "titleEn": "Etch rate",
+      "titleRu": "Скорость травления",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "semicon_et.uniform",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uniformity",
+      "titleRu": "Равномерность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "semicon_et.select",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Selectivity",
+      "titleRu": "Селективность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "semicon_et.endpoint",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Endpoint detected",
+      "titleRu": "Конец травления",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "semicon_et.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rie",
+        "wet",
+        "ash",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

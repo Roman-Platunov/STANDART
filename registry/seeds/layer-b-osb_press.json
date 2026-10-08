@@ -1,0 +1,120 @@
+{
+  "layer": "B31",
+  "name": "layer-b-osb_press.json",
+  "types": [
+    {
+      "path": "osb_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "OSB press id",
+      "titleRu": "ID пресса OSB",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "osb_press.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Press speed",
+      "titleRu": "Скорость пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osb_press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Press temperature",
+      "titleRu": "Температура пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osb_press.resin",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Resin content",
+      "titleRu": "Доля смолы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "osb_press.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mat moisture",
+      "titleRu": "Влажность ковра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "osb_press.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Board output",
+      "titleRu": "Выпуск плит",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "osb_press.orient",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Orientation OK",
+      "titleRu": "Ориентация OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "osb_press.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "press",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

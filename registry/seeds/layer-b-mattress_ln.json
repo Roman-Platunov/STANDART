@@ -1,0 +1,115 @@
+{
+  "layer": "B31",
+  "name": "layer-b-mattress_ln.json",
+  "types": [
+    {
+      "path": "mattress_ln.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mattress production line id",
+      "titleRu": "ID линии матрасов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mattress_ln.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Mattresses per hour",
+      "titleRu": "Матрасов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mattress_ln.coil",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Coil units assembled",
+      "titleRu": "Пружинных блоков",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mattress_ln.quilt",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Quilter speed",
+      "titleRu": "Скорость стёжки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mattress_ln.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mattress_ln.tape",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Tape-edge speed",
+      "titleRu": "Скорость окантовки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mattress_ln.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Firmness spec OK",
+      "titleRu": "Жёсткость OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mattress_ln.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "innerspring",
+        "foam",
+        "hybrid",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

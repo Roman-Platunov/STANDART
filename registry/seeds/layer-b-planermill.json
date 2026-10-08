@@ -1,0 +1,115 @@
+{
+  "layer": "B31",
+  "name": "layer-b-planermill.json",
+  "types": [
+    {
+      "path": "planermill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Planermill line id",
+      "titleRu": "ID строгальной линии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "planermill.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Feed speed",
+      "titleRu": "Скорость подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "planermill.depth",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Cut depth",
+      "titleRu": "Глубина строгания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "planermill.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Dressed output",
+      "titleRu": "Выпуск строганого",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "planermill.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Grade reject",
+      "titleRu": "Брак сортировки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "planermill.knives",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Knife hours",
+      "titleRu": "Часов ножей",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "planermill.snipe",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Snipe alarm",
+      "titleRu": "Задир",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "planermill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "plane",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-wafer_cmp.json",
+  "types": [
+    {
+      "path": "wafer_cmp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CMP polisher id",
+      "titleRu": "ID полировщика CMP",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wafer_cmp.downforce",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Downforce",
+      "titleRu": "Прижим",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cmp.speed",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Platen speed",
+      "titleRu": "Обороты планшайбы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cmp.rate",
+      "kind": "quantity",
+      "unit": "nm/min",
+      "titleEn": "Removal rate",
+      "titleRu": "Скорость съёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cmp.rr",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Within-wafer range",
+      "titleRu": "Разброс по пластине",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cmp.slurry",
+      "kind": "quantity",
+      "unit": "mL/min",
+      "titleEn": "Slurry flow",
+      "titleRu": "Расход суспензии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wafer_cmp.scratch",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Scratch high",
+      "titleRu": "Царапины",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wafer_cmp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tool state",
+      "titleRu": "Состояние установки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "polish",
+        "clean",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

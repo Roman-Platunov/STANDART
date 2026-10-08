@@ -1,0 +1,119 @@
+{
+  "layer": "B31",
+  "name": "layer-b-cell_assy.json",
+  "types": [
+    {
+      "path": "cell_assy.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Cell assembly line id",
+      "titleRu": "ID линии сборки ячеек",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cell_assy.speed",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cells assembled per hour",
+      "titleRu": "Ячеек в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_assy.stack",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Electrode stack count",
+      "titleRu": "Слоёв пакета",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_assy.weld",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Weld pass rate",
+      "titleRu": "Прохождение сварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cell_assy.electrolyte",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Electrolyte fill",
+      "titleRu": "Заливка электролита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cell_assy.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cell_assy.leak",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Seal leak",
+      "titleRu": "Утечка герметизации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cell_assy.format",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Format",
+      "titleRu": "Формат",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pouch",
+        "prismatic",
+        "cyl",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

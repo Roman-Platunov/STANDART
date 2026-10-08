@@ -1,0 +1,18 @@
+sid: 1ce75b28
+path: bmc_srv.fans
+aliases:
+  short: bmc_srv.fans
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Скорость вентиляторов
+  en: Fan duty
+fingerprint: sha256:1ce75b28e8a96f639ed7141e0f8e3f25dd7c1e4be6f05724f2f8b2da7fe734d1
+range:
+  min: 0
+  max: 100

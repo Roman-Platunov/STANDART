@@ -1,0 +1,115 @@
+{
+  "layer": "B31",
+  "name": "layer-b-upholster.json",
+  "types": [
+    {
+      "path": "upholster.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Upholstery line id",
+      "titleRu": "ID линии обивки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "upholster.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Изделий в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upholster.foam",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Foam used today",
+      "titleRu": "Поролона за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upholster.fabric",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Fabric used today",
+      "titleRu": "Ткани за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upholster.rework",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rework rate",
+      "titleRu": "Переделка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "upholster.wip",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "WIP units",
+      "titleRu": "НЗП",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "upholster.staple",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Staple gun fault",
+      "titleRu": "Отказ степлера",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "upholster.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "sew",
+        "assemble",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

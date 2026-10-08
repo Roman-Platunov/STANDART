@@ -1,0 +1,20 @@
+sid: 014d8248
+path: wafer_cmp.state
+aliases:
+  short: wafer_cmp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние установки
+  en: Tool state
+fingerprint: sha256:014d8248bda70c0ac376a8190fcc6ca3537427ca8ad5d979f8c7653c603226f4
+enumValues:
+  - polish
+  - clean
+  - idle
+  - fault

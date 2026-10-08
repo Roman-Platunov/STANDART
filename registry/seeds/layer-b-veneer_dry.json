@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-veneer_dry.json",
+  "types": [
+    {
+      "path": "veneer_dry.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Veneer dryer id",
+      "titleRu": "ID сушилки шпона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "veneer_dry.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Zone temperature",
+      "titleRu": "Температура зоны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "veneer_dry.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Deck speed",
+      "titleRu": "Скорость этажерки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "veneer_dry.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Exit moisture",
+      "titleRu": "Влажность на выходе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "veneer_dry.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Veneer output",
+      "titleRu": "Выпуск шпона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "veneer_dry.energy",
+      "kind": "quantity",
+      "unit": "MJ/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "veneer_dry.overdry",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overdry alarm",
+      "titleRu": "Пересушка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "veneer_dry.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dryer state",
+      "titleRu": "Состояние сушилки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dry",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "layer": "B31",
+  "name": "layer-b-test_hand.json",
+  "types": [
+    {
+      "path": "test_hand.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IC test handler id",
+      "titleRu": "ID хендлера тестов ИС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "test_hand.uph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "test_hand.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bin 1 yield",
+      "titleRu": "Выход bin 1",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "test_hand.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Soak temperature",
+      "titleRu": "Температура выдержки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "test_hand.jam",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Jams today",
+      "titleRu": "Заторов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "test_hand.sites",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Parallel sites",
+      "titleRu": "Параллельных мест",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "test_hand.contactor",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Contactor wear high",
+      "titleRu": "Износ контактора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "test_hand.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Handler state",
+      "titleRu": "Состояние хендлера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "test",
+        "index",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

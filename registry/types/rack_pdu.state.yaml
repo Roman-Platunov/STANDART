@@ -1,0 +1,19 @@
+sid: 6eddb466
+path: rack_pdu.state
+aliases:
+  short: rack_pdu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние PDU
+  en: PDU state
+fingerprint: sha256:6eddb4663ea134a519ee95f6fa70d20c00b174beec3525937378afcd84ae4360
+enumValues:
+  - on
+  - alarm
+  - offline

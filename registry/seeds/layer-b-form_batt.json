@@ -1,0 +1,111 @@
+{
+  "layer": "B31",
+  "name": "layer-b-form_batt.json",
+  "types": [
+    {
+      "path": "form_batt.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Formation line id",
+      "titleRu": "ID линии формирования",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "form_batt.channels",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Channels in use",
+      "titleRu": "Каналов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_batt.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Formation current",
+      "titleRu": "Ток формирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_batt.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Cell voltage",
+      "titleRu": "Напряжение ячейки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_batt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Formation temperature",
+      "titleRu": "Температура формирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_batt.time.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_batt.sei",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "SEI formation OK",
+      "titleRu": "SEI OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "form_batt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "charge",
+        "rest",
+        "discharge",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

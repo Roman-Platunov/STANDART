@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-plywood_pr.json",
+  "types": [
+    {
+      "path": "plywood_pr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Plywood press id",
+      "titleRu": "ID пресса фанеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "plywood_pr.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Press pressure",
+      "titleRu": "Давление пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plywood_pr.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Platen temperature",
+      "titleRu": "Температура плит",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plywood_pr.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Press cycle",
+      "titleRu": "Цикл пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plywood_pr.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Panel thickness",
+      "titleRu": "Толщина плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plywood_pr.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Panels per hour",
+      "titleRu": "Плит в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "plywood_pr.blow",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blow / delam",
+      "titleRu": "Расслоение",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "plywood_pr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "press",
+        "unload",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: b5cb7bcc
+path: chiller_fb.state
+aliases:
+  short: chiller_fb.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние чиллера
+  en: Chiller state
+fingerprint: sha256:b5cb7bcc0daaaae355de95fd762b622072306b5e173c331100e5f3ca2280265b
+enumValues:
+  - cool
+  - standby
+  - maintain
+  - fault

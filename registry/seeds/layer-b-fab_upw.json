@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-fab_upw.json",
+  "types": [
+    {
+      "path": "fab_upw.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fab UPW system id",
+      "titleRu": "ID системы ультрачистой воды фаба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "fab_upw.resistivity",
+      "kind": "quantity",
+      "unit": "MOhm.cm",
+      "titleEn": "Resistivity",
+      "titleRu": "Удельное сопротивление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_upw.toc",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "TOC",
+      "titleRu": "ТОС",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_upw.silica",
+      "kind": "quantity",
+      "unit": "ug/L",
+      "titleEn": "Silica",
+      "titleRu": "Кремнезём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_upw.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Loop flow",
+      "titleRu": "Расход контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_upw.particles",
+      "kind": "quantity",
+      "unit": "/L",
+      "titleEn": "Particles ≥0.05 µm",
+      "titleRu": "Частиц ≥0.05 мкм",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "fab_upw.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "UPW spec OK",
+      "titleRu": "Спецификация УЧВ OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "fab_upw.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "supply",
+        "polish",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

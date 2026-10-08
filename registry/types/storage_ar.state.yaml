@@ -1,0 +1,20 @@
+sid: c14ec344
+path: storage_ar.state
+aliases:
+  short: storage_ar.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние массива
+  en: Array state
+fingerprint: sha256:c14ec344a1696a41b4cfbe361b9da5f0f1e9ac56edda93c7a237f01505e97cd3
+enumValues:
+  - ok
+  - degraded
+  - rebuild
+  - fault

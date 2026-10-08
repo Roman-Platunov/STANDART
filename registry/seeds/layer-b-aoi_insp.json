@@ -1,0 +1,119 @@
+{
+  "layer": "B31",
+  "name": "layer-b-aoi_insp.json",
+  "types": [
+    {
+      "path": "aoi_insp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "AOI inspector id",
+      "titleRu": "ID АОИ-инспектора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "aoi_insp.boards",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Boards per hour",
+      "titleRu": "Платы в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aoi_insp.false",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "False call rate",
+      "titleRu": "Ложные срабатывания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aoi_insp.escape",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Escape rate",
+      "titleRu": "Пропуски",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aoi_insp.defects",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "True defects today",
+      "titleRu": "Истинных дефектов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "aoi_insp.coverage",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Inspection coverage",
+      "titleRu": "Покрытие инспекции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "aoi_insp.cal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Calibration OK",
+      "titleRu": "Калибровка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "aoi_insp.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Inspector state",
+      "titleRu": "Состояние инспектора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "inspect",
+        "teach",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

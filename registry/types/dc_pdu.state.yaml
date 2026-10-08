@@ -1,0 +1,20 @@
+sid: 45dfe1a1
+path: dc_pdu.state
+aliases:
+  short: dc_pdu.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние PDU
+  en: PDU state
+fingerprint: sha256:45dfe1a1c6521466c0f094017a5c57eace10100f9f0c03cdd763d58b3063247c
+enumValues:
+  - on
+  - alarm
+  - offline
+  - fault

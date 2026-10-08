@@ -1,0 +1,115 @@
+{
+  "layer": "B31",
+  "name": "layer-b-wood_saw.json",
+  "types": [
+    {
+      "path": "wood_saw.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Sawmill primary saw id",
+      "titleRu": "ID головной пилы лесопилки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wood_saw.feed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Log feed speed",
+      "titleRu": "Подача бревна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_saw.kerf",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Kerf width",
+      "titleRu": "Ширина пропила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_saw.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Lumber recovery",
+      "titleRu": "Выход пиломатериала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wood_saw.logs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Logs per hour",
+      "titleRu": "Брёвен в час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_saw.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Saw power",
+      "titleRu": "Мощность пилы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wood_saw.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Log jam",
+      "titleRu": "Затор бревна",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wood_saw.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "band",
+        "circular",
+        "chipper",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

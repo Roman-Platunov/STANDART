@@ -1,0 +1,20 @@
+sid: 001ee8e3
+path: plywood_pr.state
+aliases:
+  short: plywood_pr.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:001ee8e3967c15c41afabaf43113a8988c526650b60bf55b20ffa1a4b2774c7b
+enumValues:
+  - load
+  - press
+  - unload
+  - fault

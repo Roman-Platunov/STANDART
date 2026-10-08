@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-cvd_tool.json",
+  "types": [
+    {
+      "path": "cvd_tool.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CVD tool id",
+      "titleRu": "ID установки CVD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cvd_tool.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Process temperature",
+      "titleRu": "Температура процесса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cvd_tool.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Chamber pressure",
+      "titleRu": "Давление камеры",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cvd_tool.thick",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Film thickness",
+      "titleRu": "Толщина плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cvd_tool.uniform",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Thickness uniformity",
+      "titleRu": "Равномерность толщины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "cvd_tool.rate",
+      "kind": "quantity",
+      "unit": "nm/min",
+      "titleEn": "Deposition rate",
+      "titleRu": "Скорость осаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cvd_tool.particle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Particle adders high",
+      "titleRu": "Много частиц",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cvd_tool.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pecvd",
+        "lpcvd",
+        "ald",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

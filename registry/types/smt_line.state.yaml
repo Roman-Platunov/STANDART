@@ -1,0 +1,20 @@
+sid: 8a76a32a
+path: smt_line.state
+aliases:
+  short: smt_line.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:8a76a32a7a31e65a6bca86816b1d1f3cf85e5fb64e6612ecc31ce065a53d9874
+enumValues:
+  - place
+  - changeover
+  - idle
+  - fault

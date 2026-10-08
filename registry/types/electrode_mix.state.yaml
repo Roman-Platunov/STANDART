@@ -1,0 +1,20 @@
+sid: 1ee74bca
+path: electrode_mix.state
+aliases:
+  short: electrode_mix.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние смесителя
+  en: Mixer state
+fingerprint: sha256:1ee74bca7b680e5381bea3a487403f5da216632e595dabaf628ae0555c88d775
+enumValues:
+  - mix
+  - degas
+  - transfer
+  - fault

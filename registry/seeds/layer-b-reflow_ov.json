@@ -1,0 +1,110 @@
+{
+  "layer": "B31",
+  "name": "layer-b-reflow_ov.json",
+  "types": [
+    {
+      "path": "reflow_ov.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Reflow oven id",
+      "titleRu": "ID печи оплавления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reflow_ov.peak",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Peak temperature",
+      "titleRu": "Пиковая температура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reflow_ov.tal",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Time above liquidus",
+      "titleRu": "Время выше ликвидуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reflow_ov.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Conveyor speed",
+      "titleRu": "Скорость конвейера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reflow_ov.o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Nitrogen O2 residual",
+      "titleRu": "Остаток O2 в азоте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reflow_ov.zones",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Zones in spec",
+      "titleRu": "Зон в норме",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reflow_ov.profile",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Profile OK",
+      "titleRu": "Профиль OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "reflow_ov.atm",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Atmosphere",
+      "titleRu": "Атмосфера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "air",
+        "n2",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: d4349c31
+path: ups_dc.state
+aliases:
+  short: ups_dc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ИБП
+  en: UPS state
+fingerprint: sha256:d4349c31352d8bd13c9eeed872d046b67e11e78ec12b655a31ea6f464698ece1
+enumValues:
+  - online
+  - battery
+  - bypass
+  - fault

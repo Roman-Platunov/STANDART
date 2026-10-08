@@ -1,0 +1,20 @@
+sid: 5307d675
+path: edge_bander.state
+aliases:
+  short: edge_bander.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станка
+  en: Machine state
+fingerprint: sha256:5307d6756169cd5d1a0d45cdfecfe5037fcac3e0ec7d08ddd758453622561fd2
+enumValues:
+  - band
+  - setup
+  - idle
+  - fault

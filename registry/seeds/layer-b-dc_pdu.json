@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-dc_pdu.json",
+  "types": [
+    {
+      "path": "dc_pdu.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Data-center PDU id",
+      "titleRu": "ID PDU ЦОД",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dc_pdu.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Active power",
+      "titleRu": "Активная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dc_pdu.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Load",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "dc_pdu.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Voltage",
+      "titleRu": "Напряжение",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dc_pdu.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Current",
+      "titleRu": "Ток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dc_pdu.pf",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Power factor",
+      "titleRu": "Коэффициент мощности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dc_pdu.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overload",
+      "titleRu": "Перегрузка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dc_pdu.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "PDU state",
+      "titleRu": "Состояние PDU",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "on",
+        "alarm",
+        "offline",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

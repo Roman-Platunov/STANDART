@@ -1,0 +1,20 @@
+sid: eeefbf0c
+path: pcb_etch.state
+aliases:
+  short: pcb_etch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:eeefbf0c4e6f41eaec243481ac96370866a9a568e6ff0fce8f800b2c1c2fba06
+enumValues:
+  - etch
+  - strip
+  - idle
+  - fault

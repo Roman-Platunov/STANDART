@@ -1,0 +1,111 @@
+{
+  "layer": "B31",
+  "name": "layer-b-cdu_liquid.json",
+  "types": [
+    {
+      "path": "cdu_liquid.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Liquid cooling CDU id",
+      "titleRu": "ID CDU жидкостного охлаждения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cdu_liquid.supply",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Facility water supply",
+      "titleRu": "Подача техводы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cdu_liquid.return",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Facility water return",
+      "titleRu": "Обратка техводы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cdu_liquid.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Secondary flow",
+      "titleRu": "Расход вторичного контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cdu_liquid.capacity",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Cooling capacity",
+      "titleRu": "Холодопроизводительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cdu_liquid.leak",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Leak sensors tripped",
+      "titleRu": "Сработавших датчиков утечки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cdu_liquid.iso",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Isolation valve closed",
+      "titleRu": "Отсечной закрыт",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cdu_liquid.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "CDU state",
+      "titleRu": "Состояние CDU",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cool",
+        "standby",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

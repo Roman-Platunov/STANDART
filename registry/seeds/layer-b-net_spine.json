@@ -1,0 +1,114 @@
+{
+  "layer": "B31",
+  "name": "layer-b-net_spine.json",
+  "types": [
+    {
+      "path": "net_spine.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Spine switch id",
+      "titleRu": "ID spine-коммутатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "net_spine.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Uplink utilization",
+      "titleRu": "Загрузка аплинков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "net_spine.drops",
+      "kind": "quantity",
+      "unit": "/s",
+      "titleEn": "Drop rate",
+      "titleRu": "Потери",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "net_spine.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "ASIC temperature",
+      "titleRu": "Температура ASIC",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "net_spine.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "Switch power",
+      "titleRu": "Мощность коммутатора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "net_spine.errors",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Interface errors",
+      "titleRu": "Ошибок интерфейсов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "net_spine.congestion",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Congestion",
+      "titleRu": "Затор",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "net_spine.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Switch state",
+      "titleRu": "Состояние коммутатора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "forward",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

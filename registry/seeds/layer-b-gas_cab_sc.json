@@ -1,0 +1,120 @@
+{
+  "layer": "B31",
+  "name": "layer-b-gas_cab_sc.json",
+  "types": [
+    {
+      "path": "gas_cab_sc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Specialty gas cabinet id",
+      "titleRu": "ID газового шкафа",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "gas_cab_sc.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Delivery pressure",
+      "titleRu": "Давление подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_cab_sc.flow",
+      "kind": "quantity",
+      "unit": "sccm",
+      "titleEn": "Flow",
+      "titleRu": "Расход",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_cab_sc.purity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Purity",
+      "titleRu": "Чистота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gas_cab_sc.cylinder",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cylinder remaining",
+      "titleRu": "Остаток баллона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "gas_cab_sc.leak",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Cabinet leak",
+      "titleRu": "Утечка в шкафу",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "gas_cab_sc.toxic",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Toxic alarm",
+      "titleRu": "Тревога токсичности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "gas_cab_sc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cabinet state",
+      "titleRu": "Состояние шкафа",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "supply",
+        "purge",
+        "change",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

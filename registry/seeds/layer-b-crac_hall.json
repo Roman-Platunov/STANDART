@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-crac_hall.json",
+  "types": [
+    {
+      "path": "crac_hall.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CRAC / CRAH unit id",
+      "titleRu": "ID кондиционера машинного зала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crac_hall.supply",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply air temperature",
+      "titleRu": "Температура притока",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crac_hall.return",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Return air temperature",
+      "titleRu": "Температура рециркуляции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crac_hall.air",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Airflow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crac_hall.cooling",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Cooling duty",
+      "titleRu": "Холодопроизводительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crac_hall.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Hall humidity",
+      "titleRu": "Влажность зала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crac_hall.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Environmental alarm",
+      "titleRu": "Тревога среды",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crac_hall.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Unit state",
+      "titleRu": "Состояние агрегата",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cool",
+        "standby",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

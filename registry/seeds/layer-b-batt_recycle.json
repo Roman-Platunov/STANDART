@@ -1,0 +1,120 @@
+{
+  "layer": "B31",
+  "name": "layer-b-batt_recycle.json",
+  "types": [
+    {
+      "path": "batt_recycle.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Battery recycling line id",
+      "titleRu": "ID линии рециклинга АКБ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "batt_recycle.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_recycle.black",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Black mass output",
+      "titleRu": "Выход чёрной массы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_recycle.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Metal recovery",
+      "titleRu": "Извлечение металлов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "batt_recycle.energy",
+      "kind": "quantity",
+      "unit": "kWh/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_recycle.discharge",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Discharge complete",
+      "titleRu": "Разряд завершён",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "batt_recycle.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Thermal event",
+      "titleRu": "Термическое событие",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "batt_recycle.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pyro",
+        "hydro",
+        "direct",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

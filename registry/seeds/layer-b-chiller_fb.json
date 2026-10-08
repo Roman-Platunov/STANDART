@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-chiller_fb.json",
+  "types": [
+    {
+      "path": "chiller_fb.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Fab process chiller id",
+      "titleRu": "ID технологического чиллера фаба",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "chiller_fb.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Supply temperature",
+      "titleRu": "Температура подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chiller_fb.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Coolant flow",
+      "titleRu": "Расход теплоносителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chiller_fb.capacity",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Cooling capacity",
+      "titleRu": "Холодопроизводительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chiller_fb.dp",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Circuit DP",
+      "titleRu": "Перепад контура",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chiller_fb.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Chiller power",
+      "titleRu": "Мощность чиллера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "chiller_fb.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature alarm",
+      "titleRu": "Тревога температуры",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "chiller_fb.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chiller state",
+      "titleRu": "Состояние чиллера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cool",
+        "standby",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "layer": "B31",
+  "name": "layer-b-batt_cell.json",
+  "types": [
+    {
+      "path": "batt_cell.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Battery cell line id",
+      "titleRu": "ID линии ячеек АКБ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "batt_cell.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cells per hour",
+      "titleRu": "Ячеек в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_cell.capacity",
+      "kind": "quantity",
+      "unit": "Ah",
+      "titleEn": "Nominal capacity",
+      "titleRu": "Номинальная ёмкость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_cell.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "First-pass yield",
+      "titleRu": "Выход с первого прохода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "batt_cell.dew",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dry-room dew point",
+      "titleRu": "Точка росы сухого помещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_cell.o2",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Dry-room O2",
+      "titleRu": "O2 сухого помещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batt_cell.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Cell spec OK",
+      "titleRu": "Спецификация ячейки OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "batt_cell.chem",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Chemistry",
+      "titleRu": "Химия",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "nmc",
+        "lfp",
+        "nca",
+        "lto",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

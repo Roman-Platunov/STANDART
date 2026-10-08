@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-particlebd.json",
+  "types": [
+    {
+      "path": "particlebd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Particleboard line id",
+      "titleRu": "ID линии ДСП",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "particlebd.mat",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Mat forming rate",
+      "titleRu": "Формирование ковра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particlebd.resin",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Resin content",
+      "titleRu": "Доля смолы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "particlebd.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Board density",
+      "titleRu": "Плотность плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particlebd.formaldehyde",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "Formaldehyde emission",
+      "titleRu": "Эмиссия формальдегида",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particlebd.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Board output",
+      "titleRu": "Выпуск плит",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "particlebd.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Emission class OK",
+      "titleRu": "Класс эмиссии OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "particlebd.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "press",
+        "sand",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

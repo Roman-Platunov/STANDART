@@ -1,0 +1,20 @@
+sid: "11432423"
+path: slurry_coat.state
+aliases:
+  short: slurry_coat.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние покрытия
+  en: Coater state
+fingerprint: sha256:1143242315adbeff4f5b0504b75d6d7101e1b428869836400628604a21e18a8e
+enumValues:
+  - coat
+  - clean
+  - idle
+  - fault

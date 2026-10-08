@@ -1,0 +1,120 @@
+{
+  "layer": "B31",
+  "name": "layer-b-kiln_lumber.json",
+  "types": [
+    {
+      "path": "kiln_lumber.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lumber dry kiln id",
+      "titleRu": "ID сушильной камеры пиломатериала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "kiln_lumber.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Dry-bulb temperature",
+      "titleRu": "Температура сухого термометра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kiln_lumber.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "kiln_lumber.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Wood moisture",
+      "titleRu": "Влажность древесины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "kiln_lumber.charge",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Charge volume",
+      "titleRu": "Объём загрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kiln_lumber.time.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Schedule time",
+      "titleRu": "Время режима",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "kiln_lumber.check",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Check / honeycomb",
+      "titleRu": "Трещины / сотовость",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "kiln_lumber.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Kiln state",
+      "titleRu": "Состояние камеры",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "heat",
+        "dry",
+        "equalize",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-litho_scan.json",
+  "types": [
+    {
+      "path": "litho_scan.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Lithography scanner id",
+      "titleRu": "ID сканера литографии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "litho_scan.dose",
+      "kind": "quantity",
+      "unit": "mJ/cm2",
+      "titleEn": "Exposure dose",
+      "titleRu": "Доза экспозиции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "litho_scan.overlay",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Overlay error",
+      "titleRu": "Ошибка совмещения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "litho_scan.cd",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Critical dimension",
+      "titleRu": "Критический размер",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "litho_scan.wph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Wafers per hour",
+      "titleRu": "Пластины в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "litho_scan.focus",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Focus offset",
+      "titleRu": "Смещение фокуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "litho_scan.reticle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Reticle OK",
+      "titleRu": "Ретикл OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "litho_scan.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "duv",
+        "euv",
+        "immersion",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-paint_wood.json",
+  "types": [
+    {
+      "path": "paint_wood.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wood finishing line id",
+      "titleRu": "ID линии отделки древесины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_wood.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Conveyor speed",
+      "titleRu": "Скорость конвейера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_wood.coat",
+      "kind": "quantity",
+      "unit": "g/m2",
+      "titleEn": "Coat weight",
+      "titleRu": "Масса покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_wood.oven",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Oven temperature",
+      "titleRu": "Температура печи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_wood.voc",
+      "kind": "quantity",
+      "unit": "mg/m3",
+      "titleEn": "VOC in booth",
+      "titleRu": "ЛОС в камере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_wood.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paint_wood.dust",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dust-free OK",
+      "titleRu": "Пыль OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paint_wood.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "sand",
+        "spray",
+        "cure",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

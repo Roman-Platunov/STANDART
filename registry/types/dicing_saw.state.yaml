@@ -1,0 +1,20 @@
+sid: c266d6c9
+path: dicing_saw.state
+aliases:
+  short: dicing_saw.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пилы
+  en: Saw state
+fingerprint: sha256:c266d6c9c849aad3149b5f05bd9e46eeb2aa095c2eda512b3e504e6a0ddc3520
+enumValues:
+  - dice
+  - clean
+  - idle
+  - fault

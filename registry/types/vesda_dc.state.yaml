@@ -1,0 +1,20 @@
+sid: 041d7382
+path: vesda_dc.state
+aliases:
+  short: vesda_dc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние извещателя
+  en: Detector state
+fingerprint: sha256:041d738222bc8089959cb665aca80b8b68e1858d8823c6c5f914d34598844227
+enumValues:
+  - monitor
+  - alert
+  - alarm
+  - fault

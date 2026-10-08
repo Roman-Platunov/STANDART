@@ -1,0 +1,20 @@
+sid: d32de8ef
+path: crac_hall.state
+aliases:
+  short: crac_hall.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние агрегата
+  en: Unit state
+fingerprint: sha256:d32de8ef08f78ec153eac49fcd2efcf0f27e06ecc9a7b3c3fcb4a968b4716379
+enumValues:
+  - cool
+  - standby
+  - maintain
+  - fault

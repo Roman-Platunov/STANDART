@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-photoresist.json",
+  "types": [
+    {
+      "path": "photoresist.track.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Resist track id",
+      "titleRu": "ID трека фоторезиста",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "photoresist.thick",
+      "kind": "quantity",
+      "unit": "nm",
+      "titleEn": "Resist thickness",
+      "titleRu": "Толщина резиста",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "photoresist.spin",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Spin speed",
+      "titleRu": "Обороты центрифуги",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "photoresist.bake",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Softbake temperature",
+      "titleRu": "Температура мягкого отжига",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "photoresist.uniform",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Thickness uniformity",
+      "titleRu": "Равномерность толщины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "photoresist.dispense",
+      "kind": "quantity",
+      "unit": "mL",
+      "titleEn": "Dispense volume",
+      "titleRu": "Объём нанесения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "photoresist.edge",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Edge bead OK",
+      "titleRu": "Кромка OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "photoresist.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Track state",
+      "titleRu": "Состояние трека",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "coat",
+        "bake",
+        "develop",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

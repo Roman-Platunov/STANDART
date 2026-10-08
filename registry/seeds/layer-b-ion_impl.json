@@ -1,0 +1,117 @@
+{
+  "layer": "B31",
+  "name": "layer-b-ion_impl.json",
+  "types": [
+    {
+      "path": "ion_impl.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ion implanter id",
+      "titleRu": "ID ионного имплантатора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ion_impl.dose",
+      "kind": "quantity",
+      "unit": "/cm2",
+      "titleEn": "Implant dose",
+      "titleRu": "Доза имплантации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ion_impl.energy",
+      "kind": "quantity",
+      "unit": "keV",
+      "titleEn": "Beam energy",
+      "titleRu": "Энергия пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ion_impl.current",
+      "kind": "quantity",
+      "unit": "mA",
+      "titleEn": "Beam current",
+      "titleRu": "Ток пучка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ion_impl.uniform",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dose uniformity",
+      "titleRu": "Равномерность дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ion_impl.wph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Wafers per hour",
+      "titleRu": "Пластины в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ion_impl.glitch",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Beam glitch",
+      "titleRu": "Сбой пучка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ion_impl.species",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Species",
+      "titleRu": "Ион",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "b",
+        "p",
+        "as",
+        "bf2",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

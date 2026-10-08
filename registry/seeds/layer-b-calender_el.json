@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-calender_el.json",
+  "types": [
+    {
+      "path": "calender_el.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Electrode calender id",
+      "titleRu": "ID каландра электродов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "calender_el.gap",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Roll gap",
+      "titleRu": "Зазор валков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_el.force",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Line force",
+      "titleRu": "Линейное усилие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_el.density",
+      "kind": "quantity",
+      "unit": "g/cm3",
+      "titleEn": "Electrode density",
+      "titleRu": "Плотность электрода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_el.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Roll temperature",
+      "titleRu": "Температура вала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_el.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Web speed",
+      "titleRu": "Скорость полотна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "calender_el.wrinkle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wrinkle",
+      "titleRu": "Складка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "calender_el.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Calender state",
+      "titleRu": "Состояние каландра",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "calender",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: 7e78b436
+path: wave_sold.state
+aliases:
+  short: wave_sold.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Machine state
+fingerprint: sha256:7e78b43670c94def231dea4fb5b522d47b584161bb84c4be1b348cb759a449dd
+enumValues:
+  - solder
+  - idle
+  - maintain
+  - fault

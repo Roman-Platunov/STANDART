@@ -1,0 +1,122 @@
+{
+  "layer": "B31",
+  "name": "layer-b-vesda_dc.json",
+  "types": [
+    {
+      "path": "vesda_dc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "VESDA / aspirating smoke id",
+      "titleRu": "ID аспирационного дымового",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vesda_dc.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Smoke obscuration",
+      "titleRu": "Затемнение дымом",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vesda_dc.flow",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Sample flow",
+      "titleRu": "Расход пробы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vesda_dc.alert",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Alerts today",
+      "titleRu": "Предупреждений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vesda_dc.filter",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Filter remaining",
+      "titleRu": "Остаток фильтра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "vesda_dc.zones",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Zones in alarm",
+      "titleRu": "Зон в тревоге",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vesda_dc.fire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fire alarm",
+      "titleRu": "Пожарная тревога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vesda_dc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Detector state",
+      "titleRu": "Состояние извещателя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "alert",
+        "alarm",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

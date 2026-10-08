@@ -1,0 +1,20 @@
+sid: 271d51c7
+path: laminate_fl.state
+aliases:
+  short: laminate_fl.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:271d51c761ffc6edb33123e5b705da484e7eccffaeb72ef40804d37739bf1b9c
+enumValues:
+  - press
+  - mill
+  - pack
+  - fault

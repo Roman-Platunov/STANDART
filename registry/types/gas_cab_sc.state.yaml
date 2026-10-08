@@ -1,0 +1,20 @@
+sid: bd970791
+path: gas_cab_sc.state
+aliases:
+  short: gas_cab_sc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние шкафа
+  en: Cabinet state
+fingerprint: sha256:bd9707913d8adb768bef4f616bc33eae8456761b6de3a86de68e339cdca9608b
+enumValues:
+  - supply
+  - purge
+  - change
+  - fault

@@ -1,0 +1,20 @@
+sid: 25efac4b
+path: mold_ic.state
+aliases:
+  short: mold_ic.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:25efac4bf93c22c2da53b6c9ddf8b01008e8346e58cc3c74a9b3b0cccc4abafc
+enumValues:
+  - mold
+  - cure
+  - idle
+  - fault

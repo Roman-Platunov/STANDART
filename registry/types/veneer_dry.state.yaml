@@ -1,0 +1,20 @@
+sid: b20242f4
+path: veneer_dry.state
+aliases:
+  short: veneer_dry.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сушилки
+  en: Dryer state
+fingerprint: sha256:b20242f4fd47e134e2f294c50bcbca660f5488c1e185c922be7d4f7cbd3e0f16
+enumValues:
+  - dry
+  - idle
+  - maintain
+  - fault

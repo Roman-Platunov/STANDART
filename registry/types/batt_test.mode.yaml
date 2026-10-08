@@ -1,0 +1,20 @@
+sid: be58a740
+path: batt_test.mode
+aliases:
+  short: batt_test.mode
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Режим
+  en: Mode
+fingerprint: sha256:be58a740cc012012f9b6d46ef064690e01acc15ce764d2b9a434d60be52c222b
+enumValues:
+  - capacity
+  - cycle
+  - abuse
+  - other

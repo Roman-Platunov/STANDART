@@ -1,0 +1,20 @@
+sid: ed51cf10
+path: pellet_wd.state
+aliases:
+  short: pellet_wd.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Mill state
+fingerprint: sha256:ed51cf10290f0274546c16cff7547e7cbc67ae7d889e510e090dcf93bfa86d1b
+enumValues:
+  - pellet
+  - idle
+  - maintain
+  - fault

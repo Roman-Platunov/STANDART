@@ -1,0 +1,114 @@
+{
+  "layer": "B31",
+  "name": "layer-b-electrode_mix.json",
+  "types": [
+    {
+      "path": "electrode_mix.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Electrode slurry mixer id",
+      "titleRu": "ID смесителя электродной суспензии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrode_mix.batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Batch id",
+      "titleRu": "ID партии",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrode_mix.solids",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Solids content",
+      "titleRu": "Сухой остаток",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "electrode_mix.viscosity",
+      "kind": "quantity",
+      "unit": "mPa.s",
+      "titleEn": "Slurry viscosity",
+      "titleRu": "Вязкость суспензии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_mix.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mix temperature",
+      "titleRu": "Температура смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_mix.time.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Mix time",
+      "titleRu": "Время смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrode_mix.gel",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gelling",
+      "titleRu": "Гелирование",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "electrode_mix.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mixer state",
+      "titleRu": "Состояние смесителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "degas",
+        "transfer",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

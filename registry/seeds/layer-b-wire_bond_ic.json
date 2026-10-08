@@ -1,0 +1,116 @@
+{
+  "layer": "B31",
+  "name": "layer-b-wire_bond_ic.json",
+  "types": [
+    {
+      "path": "wire_bond_ic.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IC wire bonder id",
+      "titleRu": "ID разварки ИС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "wire_bond_ic.uph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Units per hour",
+      "titleRu": "Единиц в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_bond_ic.force",
+      "kind": "quantity",
+      "unit": "cN",
+      "titleEn": "Bond force",
+      "titleRu": "Усилие сварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_bond_ic.pull",
+      "kind": "quantity",
+      "unit": "cN",
+      "titleEn": "Pull strength",
+      "titleRu": "Прочность на отрыв",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_bond_ic.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bond yield",
+      "titleRu": "Выход разварки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "wire_bond_ic.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Stage temperature",
+      "titleRu": "Температура столика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "wire_bond_ic.nsop",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "NSOP / NSOL",
+      "titleRu": "Несварка",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "wire_bond_ic.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "ball",
+        "wedge",
+        "ribbon",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

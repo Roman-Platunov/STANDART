@@ -1,0 +1,20 @@
+sid: dc6756f4
+path: gen_dc.state
+aliases:
+  short: gen_dc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние генератора
+  en: Generator state
+fingerprint: sha256:dc6756f40923ccc3e7e67808702e98db8423fecb717b8a99d452b4a45c24833d
+enumValues:
+  - standby
+  - run
+  - test
+  - fault

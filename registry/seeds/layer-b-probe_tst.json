@@ -1,0 +1,115 @@
+{
+  "layer": "B31",
+  "name": "layer-b-probe_tst.json",
+  "types": [
+    {
+      "path": "probe_tst.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wafer probe tester id",
+      "titleRu": "ID тестера зондажа пластин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "probe_tst.wph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Wafers per hour",
+      "titleRu": "Пластины в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "probe_tst.yield",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Die yield",
+      "titleRu": "Выход кристаллов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "probe_tst.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Chuck temperature",
+      "titleRu": "Температура столика",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "probe_tst.touchdowns",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Touchdowns today",
+      "titleRu": "Касаний за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "probe_tst.current",
+      "kind": "quantity",
+      "unit": "A",
+      "titleEn": "Force current",
+      "titleRu": "Ток форсирования",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "probe_tst.card",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Probe card OK",
+      "titleRu": "Зондовая карта OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "probe_tst.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Tester state",
+      "titleRu": "Состояние тестера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "probe",
+        "setup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-mdf_press.json",
+  "types": [
+    {
+      "path": "mdf_press.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "MDF continuous press id",
+      "titleRu": "ID непрерывного пресса МДФ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mdf_press.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Press speed",
+      "titleRu": "Скорость пресса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mdf_press.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Press pressure",
+      "titleRu": "Давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mdf_press.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Platen temperature",
+      "titleRu": "Температура плит",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mdf_press.density",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Board density",
+      "titleRu": "Плотность плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mdf_press.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Board thickness",
+      "titleRu": "Толщина плиты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mdf_press.blister",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blister risk",
+      "titleRu": "Риск вздутия",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mdf_press.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "press",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: ad4746ab
+path: form_batt.state
+aliases:
+  short: form_batt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:ad4746ab42612327206f56beea2cb74df73fa7048215da6af745e08b47c1361f
+enumValues:
+  - charge
+  - rest
+  - discharge
+  - fault

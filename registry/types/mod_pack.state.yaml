@@ -1,0 +1,20 @@
+sid: 9ca0fbbf
+path: mod_pack.state
+aliases:
+  short: mod_pack.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние линии
+  en: Line state
+fingerprint: sha256:9ca0fbbf6de6f1396e2d0f5c521663f5fe72ee4f8e7968236712c716c67e0088
+enumValues:
+  - stack
+  - weld
+  - test
+  - fault

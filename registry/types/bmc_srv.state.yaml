@@ -1,0 +1,20 @@
+sid: b5f12dbd
+path: bmc_srv.state
+aliases:
+  short: bmc_srv.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние хоста
+  en: Host state
+fingerprint: sha256:b5f12dbd43f15aec0cf700cf51a4f107df9c092eeec9a3c4985c80e1169f7c80
+enumValues:
+  - on
+  - standby
+  - off
+  - fault

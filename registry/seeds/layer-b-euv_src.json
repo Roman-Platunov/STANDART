@@ -1,0 +1,124 @@
+{
+  "layer": "B31",
+  "name": "layer-b-euv_src.json",
+  "types": [
+    {
+      "path": "euv_src.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "EUV source id",
+      "titleRu": "ID источника EUV",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "euv_src.power",
+      "kind": "quantity",
+      "unit": "W",
+      "titleEn": "In-band power",
+      "titleRu": "Мощность в полосе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "euv_src.dose",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Dose stability",
+      "titleRu": "Стабильность дозы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "euv_src.tin",
+      "kind": "quantity",
+      "unit": "kg/h",
+      "titleEn": "Tin consumption",
+      "titleRu": "Расход олова",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "euv_src.collector",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Collector reflectivity",
+      "titleRu": "Отражение коллектора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "euv_src.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Source availability",
+      "titleRu": "Готовность источника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "euv_src.droplet",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Droplet stable",
+      "titleRu": "Капли стабильны",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "euv_src.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Source state",
+      "titleRu": "Состояние источника",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "expose",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

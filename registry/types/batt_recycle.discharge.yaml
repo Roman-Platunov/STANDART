@@ -1,0 +1,18 @@
+sid: f3d5face
+path: batt_recycle.discharge
+aliases:
+  short: batt_recycle.discharge
+kind: quantity
+unit: "%"
+encodings:
+  - f32
+  - f64
+sensitivity: public
+status: stable
+title:
+  ru: Разряд завершён
+  en: Discharge complete
+fingerprint: sha256:f3d5face7645907b60219bee3684a014d25f2ffb8921af15441c3eb5dd1ed48f
+range:
+  min: 0
+  max: 100

@@ -1,0 +1,20 @@
+sid: b7fb903a
+path: photoresist.state
+aliases:
+  short: photoresist.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние трека
+  en: Track state
+fingerprint: sha256:b7fb903a5303fcaccad8a7a92ad9f571f41eb7b82e62e4c936c7b2e0e2ade796
+enumValues:
+  - coat
+  - bake
+  - develop
+  - fault

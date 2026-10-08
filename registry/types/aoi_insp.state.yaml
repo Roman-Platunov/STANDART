@@ -1,0 +1,20 @@
+sid: 7e81d330
+path: aoi_insp.state
+aliases:
+  short: aoi_insp.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние инспектора
+  en: Inspector state
+fingerprint: sha256:7e81d33098876c2627141ab158456217e596ea97d625027354f09b306ea23036
+enumValues:
+  - inspect
+  - teach
+  - idle
+  - fault

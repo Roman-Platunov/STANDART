@@ -1,0 +1,20 @@
+sid: "4694e846"
+path: osb_press.state
+aliases:
+  short: osb_press.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:4694e8466864debf1032a5efc7f8bec9d989b965c0d55699a9274dd2654912b7
+enumValues:
+  - form
+  - press
+  - idle
+  - fault

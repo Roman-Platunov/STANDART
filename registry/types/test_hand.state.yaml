@@ -1,0 +1,20 @@
+sid: f7bf2802
+path: test_hand.state
+aliases:
+  short: test_hand.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние хендлера
+  en: Handler state
+fingerprint: sha256:f7bf2802488619d6161c25477ef375766662126902f5ce4774909afe929272c6
+enumValues:
+  - test
+  - index
+  - idle
+  - fault

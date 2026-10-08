@@ -1,0 +1,120 @@
+{
+  "layer": "B31",
+  "name": "layer-b-mold_ic.json",
+  "types": [
+    {
+      "path": "mold_ic.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "IC mold press id",
+      "titleRu": "ID пресса корпусирования ИС",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mold_ic.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mold temperature",
+      "titleRu": "Температура пресс-формы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mold_ic.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Transfer pressure",
+      "titleRu": "Давление передачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mold_ic.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mold_ic.void",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Mold void",
+      "titleRu": "Пустоты заливки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mold_ic.flash",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Flash rate",
+      "titleRu": "Облой",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mold_ic.wire",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wire sweep",
+      "titleRu": "Снос проволок",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mold_ic.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Press state",
+      "titleRu": "Состояние пресса",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mold",
+        "cure",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

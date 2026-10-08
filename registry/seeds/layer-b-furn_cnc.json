@@ -1,0 +1,114 @@
+{
+  "layer": "B31",
+  "name": "layer-b-furn_cnc.json",
+  "types": [
+    {
+      "path": "furn_cnc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Furniture CNC cell id",
+      "titleRu": "ID ЧПУ-ячейки мебели",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "furn_cnc.cycle.s",
+      "kind": "quantity",
+      "unit": "s",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "furn_cnc.spindle",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Spindle speed",
+      "titleRu": "Обороты шпинделя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "furn_cnc.parts",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Parts per hour",
+      "titleRu": "Деталей в час",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "furn_cnc.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "furn_cnc.tool",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Tool changes today",
+      "titleRu": "Смен инструмента",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "furn_cnc.vacuum",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Vacuum hold OK",
+      "titleRu": "Вакуумный прижим OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "furn_cnc.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Cell state",
+      "titleRu": "Состояние ячейки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "setup",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

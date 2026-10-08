@@ -1,0 +1,20 @@
+sid: 60db844a
+path: mdf_press.state
+aliases:
+  short: mdf_press.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние пресса
+  en: Press state
+fingerprint: sha256:60db844abe0947cca1c4ea307d80b3ea05a0aedd0dd3bad3e53fd6962621ba26
+enumValues:
+  - press
+  - idle
+  - maintain
+  - fault

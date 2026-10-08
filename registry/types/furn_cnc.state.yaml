@@ -1,0 +1,20 @@
+sid: 9aa9d912
+path: furn_cnc.state
+aliases:
+  short: furn_cnc.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ячейки
+  en: Cell state
+fingerprint: sha256:9aa9d912111787e05908b3bd901f2f0fc4fe67fdf4d581b6e638000f885e0a24
+enumValues:
+  - cut
+  - setup
+  - idle
+  - fault

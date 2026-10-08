@@ -1,0 +1,115 @@
+{
+  "layer": "B31",
+  "name": "layer-b-mod_pack.json",
+  "types": [
+    {
+      "path": "mod_pack.line.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Module / pack line id",
+      "titleRu": "ID линии модулей/паков",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mod_pack.output",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Packs per hour",
+      "titleRu": "Паков в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mod_pack.cells",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Cells per pack",
+      "titleRu": "Ячеек в паке",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mod_pack.weld",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Busbar weld yield",
+      "titleRu": "Выход сварки шин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mod_pack.torque",
+      "kind": "quantity",
+      "unit": "Nm",
+      "titleEn": "Fastener torque",
+      "titleRu": "Момент крепежа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mod_pack.leak",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Cooling circuit leak test",
+      "titleRu": "Тест контура охлаждения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mod_pack.bms",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "BMS flash OK",
+      "titleRu": "Прошивка BMS OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mod_pack.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Line state",
+      "titleRu": "Состояние линии",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stack",
+        "weld",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

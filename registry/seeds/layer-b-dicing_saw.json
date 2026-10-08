@@ -1,0 +1,112 @@
+{
+  "layer": "B31",
+  "name": "layer-b-dicing_saw.json",
+  "types": [
+    {
+      "path": "dicing_saw.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wafer dicing saw id",
+      "titleRu": "ID дисковой резки пластин",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dicing_saw.speed",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Cut speed",
+      "titleRu": "Скорость резки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dicing_saw.spindle",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Spindle speed",
+      "titleRu": "Обороты шпинделя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dicing_saw.kerf",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Kerf width",
+      "titleRu": "Ширина пропила",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dicing_saw.chipping",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Chipping",
+      "titleRu": "Выкрашивание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dicing_saw.wph",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Wafers per hour",
+      "titleRu": "Пластины в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dicing_saw.blade",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blade wear high",
+      "titleRu": "Износ диска",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dicing_saw.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Saw state",
+      "titleRu": "Состояние пилы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dice",
+        "clean",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
