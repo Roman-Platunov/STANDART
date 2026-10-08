@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-convey_long.json",
+  "types": [
+    {
+      "path": "convey_long.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Overland conveyor id",
+      "titleRu": "ID магистрального конвейера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "convey_long.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Throughput",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "convey_long.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Belt speed",
+      "titleRu": "Скорость ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "convey_long.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Drive power",
+      "titleRu": "Мощность привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "convey_long.tension",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Belt tension",
+      "titleRu": "Натяжение ленты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "convey_long.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Drive temperature",
+      "titleRu": "Температура привода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "convey_long.rip",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Belt rip",
+      "titleRu": "Порыв ленты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "convey_long.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Conveyor state",
+      "titleRu": "Состояние конвейера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

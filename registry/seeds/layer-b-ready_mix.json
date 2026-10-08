@@ -1,0 +1,111 @@
+{
+  "layer": "B34",
+  "name": "layer-b-ready_mix.json",
+  "types": [
+    {
+      "path": "ready_mix.truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ready-mix truck id",
+      "titleRu": "ID автобетоносмесителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ready_mix.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Drum load",
+      "titleRu": "Загрузка барабана",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ready_mix.slump",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Slump at site",
+      "titleRu": "Осадка на объекте",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ready_mix.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Concrete temperature",
+      "titleRu": "Температура бетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ready_mix.revs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Drum revolutions",
+      "titleRu": "Оборотов барабана",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ready_mix.eta.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "ETA to site",
+      "titleRu": "ETA на объект",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ready_mix.rejected",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Load rejected",
+      "titleRu": "Загрузка отклонена",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ready_mix.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Truck state",
+      "titleRu": "Состояние машины",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "transit",
+        "pour",
+        "wash"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

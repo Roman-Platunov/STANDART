@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-pasteback.json",
+  "types": [
+    {
+      "path": "pasteback.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Paste backfill plant id",
+      "titleRu": "ID завода закладочной пасты",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pasteback.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Paste output",
+      "titleRu": "Выпуск пасты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pasteback.slump",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Slump",
+      "titleRu": "Осадка конуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pasteback.binder",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Binder content",
+      "titleRu": "Доля вяжущего",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "pasteback.density",
+      "kind": "quantity",
+      "unit": "t/m3",
+      "titleEn": "Paste density",
+      "titleRu": "Плотность пасты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pasteback.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Pipeline pressure",
+      "titleRu": "Давление трубопровода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pasteback.plug",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Line plug risk",
+      "titleRu": "Риск пробки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pasteback.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "pump",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

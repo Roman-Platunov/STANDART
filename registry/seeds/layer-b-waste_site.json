@@ -1,0 +1,115 @@
+{
+  "layer": "B34",
+  "name": "layer-b-waste_site.json",
+  "types": [
+    {
+      "path": "waste_site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Construction waste yard id",
+      "titleRu": "ID площадки строительных отходов",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "waste_site.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Waste staged",
+      "titleRu": "Отходов на площадке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_site.divert",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Diversion rate",
+      "titleRu": "Доля переработки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "waste_site.hauls",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Hauls today",
+      "titleRu": "Вывозов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_site.hazard",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Hazardous staged",
+      "titleRu": "Опасных отходов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_site.recycle",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Recycled today",
+      "titleRu": "Переработано за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "waste_site.permit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Storage within permit",
+      "titleRu": "Хранение в лимите",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "waste_site.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Yard state",
+      "titleRu": "Состояние площадки",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "receive",
+        "sort",
+        "haul",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

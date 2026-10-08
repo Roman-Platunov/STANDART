@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-paver_road.json",
+  "types": [
+    {
+      "path": "paver_road.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Asphalt paver id",
+      "titleRu": "ID асфальтоукладчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paver_road.speed",
+      "kind": "quantity",
+      "unit": "m/min",
+      "titleEn": "Paving speed",
+      "titleRu": "Скорость укладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paver_road.width",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Paving width",
+      "titleRu": "Ширина укладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paver_road.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mat temperature",
+      "titleRu": "Температура слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paver_road.tonnage",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Mix laid today",
+      "titleRu": "Смеси за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paver_road.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Mat thickness",
+      "titleRu": "Толщина слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paver_road.segregation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Segregation",
+      "titleRu": "Сегрегация",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paver_road.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Paver state",
+      "titleRu": "Состояние укладчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pave",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

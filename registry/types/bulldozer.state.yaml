@@ -1,0 +1,20 @@
+sid: 7f15ff14
+path: bulldozer.state
+aliases:
+  short: bulldozer.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние бульдозера
+  en: Dozer state
+fingerprint: sha256:7f15ff1489747093348bce82a9fd4668a6407ebd83c64460e25209f136f07161
+enumValues:
+  - push
+  - rip
+  - idle
+  - fault

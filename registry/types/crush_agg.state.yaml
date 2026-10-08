@@ -1,0 +1,20 @@
+sid: "06176694"
+path: crush_agg.state
+aliases:
+  short: crush_agg.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:06176694df91fe4b425a88e42326c8f1155fe122062d64b6909224afd77346e1
+enumValues:
+  - crush
+  - screen
+  - idle
+  - fault

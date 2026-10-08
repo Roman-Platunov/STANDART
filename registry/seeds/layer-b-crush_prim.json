@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-crush_prim.json",
+  "types": [
+    {
+      "path": "crush_prim.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Primary crusher id",
+      "titleRu": "ID первичной дробилки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crush_prim.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crush_prim.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Crusher power",
+      "titleRu": "Мощность дробилки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crush_prim.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "CSS / OSS",
+      "titleRu": "Щель",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crush_prim.p80",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Product P80",
+      "titleRu": "P80 продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crush_prim.util",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Utilization",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crush_prim.tramp",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Tramp metal",
+      "titleRu": "Металл в руде",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crush_prim.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "gyratory",
+        "jaw",
+        "impact",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

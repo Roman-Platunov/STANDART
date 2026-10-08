@@ -1,0 +1,20 @@
+sid: 986a0211
+path: grader_rd.state
+aliases:
+  short: grader_rd.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние грейдера
+  en: Grader state
+fingerprint: sha256:986a02112fd9f23f87e23842ea45b55ea32827c05661ca67c38ef1c2ff0d8327
+enumValues:
+  - grade
+  - idle
+  - maintain
+  - fault

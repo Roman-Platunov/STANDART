@@ -1,0 +1,111 @@
+{
+  "layer": "B34",
+  "name": "layer-b-grout_plnt.json",
+  "types": [
+    {
+      "path": "grout_plnt.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grout plant id",
+      "titleRu": "ID инъекционного узла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grout_plnt.flow",
+      "kind": "quantity",
+      "unit": "L/min",
+      "titleEn": "Grout flow",
+      "titleRu": "Расход раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grout_plnt.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Injection pressure",
+      "titleRu": "Давление нагнетания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grout_plnt.volume",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Volume injected today",
+      "titleRu": "Объём за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grout_plnt.density",
+      "kind": "quantity",
+      "unit": "kg/L",
+      "titleEn": "Grout density",
+      "titleRu": "Плотность раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grout_plnt.holes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Holes treated",
+      "titleRu": "Обработанных скважин",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grout_plnt.refuse",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Refusal pressure",
+      "titleRu": "Давление отказа",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "grout_plnt.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние узла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "mix",
+        "inject",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

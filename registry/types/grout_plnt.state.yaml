@@ -1,0 +1,20 @@
+sid: a47c5ee3
+path: grout_plnt.state
+aliases:
+  short: grout_plnt.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние узла
+  en: Plant state
+fingerprint: sha256:a47c5ee3b1dc8628de78c4609e5bbac196cd104d9ab322d3b3832904e246b52a
+enumValues:
+  - mix
+  - inject
+  - idle
+  - fault

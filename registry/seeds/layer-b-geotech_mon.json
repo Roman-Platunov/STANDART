@@ -1,0 +1,113 @@
+{
+  "layer": "B34",
+  "name": "layer-b-geotech_mon.json",
+  "types": [
+    {
+      "path": "geotech_mon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Geotechnical monitoring point id",
+      "titleRu": "ID точки геотехнического мониторинга",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "geotech_mon.settle",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Settlement",
+      "titleRu": "Осадка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geotech_mon.incline",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Inclinometer deflection",
+      "titleRu": "Отклонение инклинометра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geotech_mon.pore",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Pore pressure",
+      "titleRu": "Поровое давление",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geotech_mon.crack",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Crack width",
+      "titleRu": "Ширина трещины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geotech_mon.rate",
+      "kind": "quantity",
+      "unit": "mm/d",
+      "titleEn": "Settlement rate",
+      "titleRu": "Скорость осадки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "geotech_mon.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Threshold exceed",
+      "titleRu": "Превышение порога",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "geotech_mon.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "settle",
+        "inclino",
+        "piezo",
+        "crack",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

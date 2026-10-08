@@ -1,0 +1,119 @@
+{
+  "layer": "B34",
+  "name": "layer-b-grade_ctrl.json",
+  "types": [
+    {
+      "path": "grade_ctrl.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Grade control system id",
+      "titleRu": "ID системы управления качеством руды",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grade_ctrl.blocks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Blocks modeled today",
+      "titleRu": "Блоков за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grade_ctrl.grade",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Predicted head grade",
+      "titleRu": "Прогноз содержания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "grade_ctrl.ore",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Ore flagged",
+      "titleRu": "Руда отмечена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grade_ctrl.waste",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Waste flagged",
+      "titleRu": "Вскрыша отмечена",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grade_ctrl.accuracy",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Prediction accuracy",
+      "titleRu": "Точность прогноза",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "grade_ctrl.misclass",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Misclassification high",
+      "titleRu": "Высокая ошибка классификации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "grade_ctrl.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "model",
+        "flag",
+        "reconcile",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

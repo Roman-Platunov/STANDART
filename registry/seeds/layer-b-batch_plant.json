@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-batch_plant.json",
+  "types": [
+    {
+      "path": "batch_plant.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mobile batch plant id",
+      "titleRu": "ID мобильного бетонного узла",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "batch_plant.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Output",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batch_plant.cement",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Cement inventory",
+      "titleRu": "Запас цемента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batch_plant.agg",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Aggregate inventory",
+      "titleRu": "Запас заполнителей",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batch_plant.water",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Water inventory",
+      "titleRu": "Запас воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batch_plant.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Plant power",
+      "titleRu": "Мощность узла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "batch_plant.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Material low",
+      "titleRu": "Мало материала",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "batch_plant.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние узла",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "batch",
+        "idle",
+        "move",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

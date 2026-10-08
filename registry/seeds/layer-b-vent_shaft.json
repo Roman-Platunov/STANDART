@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-vent_shaft.json",
+  "types": [
+    {
+      "path": "vent_shaft.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mine ventilation shaft / fan id",
+      "titleRu": "ID вентиляционного ствола/вентилятора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vent_shaft.flow",
+      "kind": "quantity",
+      "unit": "m3/s",
+      "titleEn": "Airflow",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vent_shaft.pressure",
+      "kind": "quantity",
+      "unit": "Pa",
+      "titleEn": "Fan pressure",
+      "titleRu": "Напор вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vent_shaft.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Fan power",
+      "titleRu": "Мощность вентилятора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vent_shaft.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Air temperature",
+      "titleRu": "Температура воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vent_shaft.gas",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "CH4 / CO max",
+      "titleRu": "Макс. CH4 / CO",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vent_shaft.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gas / airflow alarm",
+      "titleRu": "Тревога газа/расхода",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vent_shaft.duty",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Duty",
+      "titleRu": "Назначение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "intake",
+        "exhaust",
+        "booster",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

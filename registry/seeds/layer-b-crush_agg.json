@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-crush_agg.json",
+  "types": [
+    {
+      "path": "crush_agg.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Aggregate crushing plant id",
+      "titleRu": "ID дробильно-сортировочного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crush_agg.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crush_agg.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Product output",
+      "titleRu": "Выпуск продукции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crush_agg.fines",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fines fraction",
+      "titleRu": "Доля мелочи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "crush_agg.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Plant power",
+      "titleRu": "Мощность завода",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crush_agg.stock",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Product stockpile",
+      "titleRu": "Склад продукции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crush_agg.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Crusher jam",
+      "titleRu": "Затор дробилки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crush_agg.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "crush",
+        "screen",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

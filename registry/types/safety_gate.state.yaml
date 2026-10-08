@@ -1,0 +1,20 @@
+sid: c1dfda63
+path: safety_gate.state
+aliases:
+  short: safety_gate.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние КПП
+  en: Gate state
+fingerprint: sha256:c1dfda63d271ce5369fb16cd89e1c94554347bb1f89fd3915535d656fa8d6e23
+enumValues:
+  - open
+  - secure
+  - evacuate
+  - fault

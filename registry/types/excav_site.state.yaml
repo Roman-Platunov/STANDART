@@ -1,0 +1,20 @@
+sid: 745f064b
+path: excav_site.state
+aliases:
+  short: excav_site.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние экскаватора
+  en: Excavator state
+fingerprint: sha256:745f064beb2368b2df36949090a123569decf9b44bc9371e88a874f1614c56bd
+enumValues:
+  - dig
+  - load
+  - idle
+  - fault

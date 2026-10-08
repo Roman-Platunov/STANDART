@@ -1,0 +1,20 @@
+sid: 4d24067f
+path: vent_shaft.duty
+aliases:
+  short: vent_shaft.duty
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Назначение
+  en: Duty
+fingerprint: sha256:4d24067f9a155d53fc1420387b86605e90c3faa1fadbaeeb740de9f6b8b5b150
+enumValues:
+  - intake
+  - exhaust
+  - booster
+  - other

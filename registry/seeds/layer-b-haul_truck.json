@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-haul_truck.json",
+  "types": [
+    {
+      "path": "haul_truck.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Haul truck id",
+      "titleRu": "ID карьерного самосвала",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "haul_truck.payload",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Payload",
+      "titleRu": "Полезная нагрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "haul_truck.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Travel speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "haul_truck.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "haul_truck.cycle.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Cycle time",
+      "titleRu": "Время цикла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "haul_truck.tire",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tire pressure min",
+      "titleRu": "Мин. давление шин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "haul_truck.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overload",
+      "titleRu": "Перегруз",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "haul_truck.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Truck state",
+      "titleRu": "Состояние самосвала",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "haul",
+        "dump",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

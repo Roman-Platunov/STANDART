@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-cip_tank.json",
+  "types": [
+    {
+      "path": "cip_tank.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "CIP / CIL tank id",
+      "titleRu": "ID чана CIP/CIL",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "cip_tank.cyanide",
+      "kind": "quantity",
+      "unit": "ppm",
+      "titleEn": "Free cyanide",
+      "titleRu": "Свободный цианид",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip_tank.do",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Dissolved oxygen",
+      "titleRu": "Растворённый кислород",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip_tank.carbon",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "Carbon concentration",
+      "titleRu": "Концентрация угля",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip_tank.gold",
+      "kind": "quantity",
+      "unit": "g/t",
+      "titleEn": "Gold on carbon",
+      "titleRu": "Золото на угле",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip_tank.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "pH",
+      "titleRu": "pH",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "cip_tank.screen",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Screen OK",
+      "titleRu": "Сито OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "cip_tank.duty",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Duty",
+      "titleRu": "Назначение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "leach",
+        "adsorb",
+        "elute",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+sid: d356a9f2
+path: geotech_mon.type
+aliases:
+  short: geotech_mon.type
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Тип
+  en: Type
+fingerprint: sha256:d356a9f26893454ebc05640a9d8427d9e23b5d29526f50556faa12e589721cee
+enumValues:
+  - settle
+  - inclino
+  - piezo
+  - crack
+  - other

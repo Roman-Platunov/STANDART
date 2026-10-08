@@ -1,0 +1,20 @@
+sid: 9ca0ff95
+path: assay_lab_mn.state
+aliases:
+  short: assay_lab_mn.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние лаборатории
+  en: Lab state
+fingerprint: sha256:9ca0ff95b42a9eeba3a01e430912aea9df13b1fd95eb96b74a28268f5cff6028
+enumValues:
+  - prep
+  - assay
+  - report
+  - idle

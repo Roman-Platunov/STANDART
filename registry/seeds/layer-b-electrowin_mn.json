@@ -1,0 +1,117 @@
+{
+  "layer": "B34",
+  "name": "layer-b-electrowin_mn.json",
+  "types": [
+    {
+      "path": "electrowin_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Electrowinning cell id",
+      "titleRu": "ID электролизной ванны добычи",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "electrowin_mn.current",
+      "kind": "quantity",
+      "unit": "kA",
+      "titleEn": "Cell current",
+      "titleRu": "Ток ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrowin_mn.voltage",
+      "kind": "quantity",
+      "unit": "V",
+      "titleEn": "Cell voltage",
+      "titleRu": "Напряжение ванны",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrowin_mn.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Electrolyte temperature",
+      "titleRu": "Температура электролита",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrowin_mn.cathode",
+      "kind": "quantity",
+      "unit": "t/d",
+      "titleEn": "Cathode production",
+      "titleRu": "Выпуск катодов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "electrowin_mn.ce",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Current efficiency",
+      "titleRu": "Выход по току",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "electrowin_mn.short",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Short circuit",
+      "titleRu": "Короткое замыкание",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "electrowin_mn.metal",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Metal",
+      "titleRu": "Металл",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cu",
+        "zn",
+        "ni",
+        "au",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

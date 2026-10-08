@@ -1,0 +1,110 @@
+{
+  "layer": "B34",
+  "name": "layer-b-noise_mon.json",
+  "types": [
+    {
+      "path": "noise_mon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site noise monitor id",
+      "titleRu": "ID монитора шума на объекте",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "noise_mon.leq",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Leq",
+      "titleRu": "Leq",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noise_mon.lmax",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Lmax",
+      "titleRu": "Lmax",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noise_mon.events",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exceedances today",
+      "titleRu": "Превышений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noise_mon.limit",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Permit limit",
+      "titleRu": "Лимит разрешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noise_mon.period.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Monitoring period",
+      "titleRu": "Период мониторинга",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "noise_mon.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Noise alarm",
+      "titleRu": "Тревога шума",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "noise_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Monitor state",
+      "titleRu": "Состояние монитора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

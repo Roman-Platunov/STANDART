@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-reclaim_mn.json",
+  "types": [
+    {
+      "path": "reclaim_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stockyard reclaimer id",
+      "titleRu": "ID реклаймера склада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "reclaim_mn.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Reclaim rate",
+      "titleRu": "Скорость забора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reclaim_mn.wheel",
+      "kind": "quantity",
+      "unit": "rpm",
+      "titleEn": "Bucket-wheel speed",
+      "titleRu": "Обороты ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reclaim_mn.slew",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Slew angle",
+      "titleRu": "Угол поворота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reclaim_mn.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Machine power",
+      "titleRu": "Мощность машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "reclaim_mn.blend",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Blend accuracy",
+      "titleRu": "Точность смешения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "reclaim_mn.jam",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wheel jam",
+      "titleRu": "Затор ротора",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "reclaim_mn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Reclaimer state",
+      "titleRu": "Состояние реклаймера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "reclaim",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

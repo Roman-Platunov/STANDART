@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-sag_mill_mn.json",
+  "types": [
+    {
+      "path": "sag_mill_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "SAG mill id",
+      "titleRu": "ID SAG-мельницы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "sag_mill_mn.power",
+      "kind": "quantity",
+      "unit": "MW",
+      "titleEn": "Mill power",
+      "titleRu": "Мощность мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sag_mill_mn.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Fresh feed",
+      "titleRu": "Свежая подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sag_mill_mn.speed",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Critical speed",
+      "titleRu": "Критическая скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "sag_mill_mn.bearing",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Bearing pressure",
+      "titleRu": "Давление подшипника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sag_mill_mn.sound",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Mill sound",
+      "titleRu": "Звук мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "sag_mill_mn.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mill overload",
+      "titleRu": "Перегруз мельницы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "sag_mill_mn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние мельницы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grind",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B34",
+  "name": "layer-b-dewater_site.json",
+  "types": [
+    {
+      "path": "dewater_site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Construction dewatering system id",
+      "titleRu": "ID системы водопонижения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dewater_site.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Discharge flow",
+      "titleRu": "Расход сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_site.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Groundwater level",
+      "titleRu": "Уровень грунтовых вод",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_site.pumps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pumps running",
+      "titleRu": "Насосов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_site.turbidity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Discharge turbidity",
+      "titleRu": "Мутность сброса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_site.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "System power",
+      "titleRu": "Мощность системы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_site.permit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Discharge permit OK",
+      "titleRu": "Разрешение на сброс OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dewater_site.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pump",
+        "treat",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

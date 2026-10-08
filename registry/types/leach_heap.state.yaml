@@ -1,0 +1,20 @@
+sid: e3158a27
+path: leach_heap.state
+aliases:
+  short: leach_heap.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние кучи
+  en: Pad state
+fingerprint: sha256:e3158a27b46370e7a71978b966aa4ea9efa9896760d9681ecd90871eba606090
+enumValues:
+  - irrigate
+  - rest
+  - rinse
+  - fault

@@ -1,0 +1,20 @@
+sid: bbe4dbf5
+path: skip_hoist.state
+aliases:
+  short: skip_hoist.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние подъёма
+  en: Hoist state
+fingerprint: sha256:bbe4dbf564d5051c762fd98b8b563dd15edbfd72a46eae803e61559a01efa6ed
+enumValues:
+  - hoist
+  - idle
+  - maintain
+  - fault

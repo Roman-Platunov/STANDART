@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-mine_shovel.json",
+  "types": [
+    {
+      "path": "mine_shovel.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mining shovel / excavator id",
+      "titleRu": "ID карьерного экскаватора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "mine_shovel.payload",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Bucket payload",
+      "titleRu": "Масса в ковше",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mine_shovel.cycles",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cycles per hour",
+      "titleRu": "Циклов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mine_shovel.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mine_shovel.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Availability",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "mine_shovel.dig",
+      "kind": "quantity",
+      "unit": "kN",
+      "titleEn": "Crowd / breakout force",
+      "titleRu": "Усилие копания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "mine_shovel.delay",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Loading delay",
+      "titleRu": "Задержка погрузки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "mine_shovel.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rope",
+        "hydraulic",
+        "electric",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-leach_heap.json",
+  "types": [
+    {
+      "path": "leach_heap.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Heap leach pad id",
+      "titleRu": "ID кучного выщелачивания",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "leach_heap.irrigation",
+      "kind": "quantity",
+      "unit": "L/m2/h",
+      "titleEn": "Irrigation rate",
+      "titleRu": "Норма орошения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leach_heap.ph",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pregnant solution pH",
+      "titleRu": "pH продуктивного раствора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leach_heap.grade",
+      "kind": "quantity",
+      "unit": "mg/L",
+      "titleEn": "Pregnant solution grade",
+      "titleRu": "Содержание в растворе",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leach_heap.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "PLS flow",
+      "titleRu": "Расход ПР",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "leach_heap.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pad recovery",
+      "titleRu": "Извлечение с кучи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "leach_heap.pond",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pond overflow risk",
+      "titleRu": "Риск переполнения пруда",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "leach_heap.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Pad state",
+      "titleRu": "Состояние кучи",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "irrigate",
+        "rest",
+        "rinse",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

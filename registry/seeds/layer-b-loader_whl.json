@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-loader_whl.json",
+  "types": [
+    {
+      "path": "loader_whl.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Wheel loader id",
+      "titleRu": "ID фронтального погрузчика",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "loader_whl.payload",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Bucket payload",
+      "titleRu": "Масса в ковше",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loader_whl.cycles",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cycles per hour",
+      "titleRu": "Циклов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loader_whl.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loader_whl.tire",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Tire pressure min",
+      "titleRu": "Мин. давление шин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loader_whl.hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Engine hours today",
+      "titleRu": "Моточасов за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "loader_whl.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overload",
+      "titleRu": "Перегруз",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "loader_whl.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Loader state",
+      "titleRu": "Состояние погрузчика",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "load",
+        "carry",
+        "dump",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

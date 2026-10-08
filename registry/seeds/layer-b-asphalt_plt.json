@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-asphalt_plt.json",
+  "types": [
+    {
+      "path": "asphalt_plt.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Asphalt plant id",
+      "titleRu": "ID асфальтобетонного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "asphalt_plt.output",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Mix output",
+      "titleRu": "Выпуск смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_plt.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mix temperature",
+      "titleRu": "Температура смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_plt.bitumen",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Bitumen content",
+      "titleRu": "Доля битума",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_plt.agg",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Aggregate feed",
+      "titleRu": "Подача щебня",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_plt.energy",
+      "kind": "quantity",
+      "unit": "MJ/t",
+      "titleEn": "Specific energy",
+      "titleRu": "Удельная энергия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "asphalt_plt.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mix spec OK",
+      "titleRu": "Спецификация смеси OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "asphalt_plt.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "batch",
+        "drum",
+        "warm",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

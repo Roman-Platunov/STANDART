@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-tailings_dm.json",
+  "types": [
+    {
+      "path": "tailings_dm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tailings dam / TSF id",
+      "titleRu": "ID хвостохранилища",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tailings_dm.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Pond water level",
+      "titleRu": "Уровень прудка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings_dm.freeboard",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Freeboard",
+      "titleRu": "Запас высоты",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings_dm.seepage",
+      "kind": "quantity",
+      "unit": "L/s",
+      "titleEn": "Seepage rate",
+      "titleRu": "Фильтрация",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings_dm.piezo",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Piezometer max",
+      "titleRu": "Макс. пьезометр",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings_dm.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Tailings deposition",
+      "titleRu": "Укладка хвостов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tailings_dm.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dam integrity alarm",
+      "titleRu": "Тревога целостности",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tailings_dm.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "TSF state",
+      "titleRu": "Состояние ХВХ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "deposit",
+        "decant",
+        "maintain",
+        "alarm"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: be6cee1d
+path: haul_truck.state
+aliases:
+  short: haul_truck.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние самосвала
+  en: Truck state
+fingerprint: sha256:be6cee1d076bb62f6fe04791c4e29173d17b23cf1623b36421e940d689fd69ef
+enumValues:
+  - load
+  - haul
+  - dump
+  - fault

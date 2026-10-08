@@ -1,0 +1,111 @@
+{
+  "layer": "B34",
+  "name": "layer-b-blast_mn.json",
+  "types": [
+    {
+      "path": "blast_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blast pattern id",
+      "titleRu": "ID блока взрывных работ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "blast_mn.holes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Holes charged",
+      "titleRu": "Заряженных скважин",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_mn.explosive",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Explosive mass",
+      "titleRu": "Масса ВВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_mn.powder",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Powder factor",
+      "titleRu": "Удельный расход ВВ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_mn.vibration",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "PPV max",
+      "titleRu": "Макс. скорость колебаний",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_mn.airblast",
+      "kind": "quantity",
+      "unit": "dB",
+      "titleEn": "Airblast",
+      "titleRu": "Воздушная волна",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "blast_mn.clear",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Blast clearance OK",
+      "titleRu": "Оцепление OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "blast_mn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Blast state",
+      "titleRu": "Состояние блока",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "drill",
+        "charge",
+        "fire",
+        "muck"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

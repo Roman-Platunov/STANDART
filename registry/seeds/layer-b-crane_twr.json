@@ -1,0 +1,111 @@
+{
+  "layer": "B34",
+  "name": "layer-b-crane_twr.json",
+  "types": [
+    {
+      "path": "crane_twr.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tower crane id",
+      "titleRu": "ID башенного крана",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "crane_twr.load",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Hook load",
+      "titleRu": "Масса на крюке",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_twr.radius",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Working radius",
+      "titleRu": "Вылет",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_twr.height",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Hook height",
+      "titleRu": "Высота крюка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_twr.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind speed",
+      "titleRu": "Скорость ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_twr.cycles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Lifts today",
+      "titleRu": "Подъёмов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "crane_twr.overload",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Load moment trip",
+      "titleRu": "Срабатывание по моменту",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "crane_twr.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Crane state",
+      "titleRu": "Состояние крана",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "lift",
+        "idle",
+        "climb",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

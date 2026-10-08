@@ -1,0 +1,20 @@
+sid: d22738fd
+path: site_water.state
+aliases:
+  short: site_water.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:d22738fd0bf88d3c35eaef2edfd0009c526626a72c784b499922087c6eaab871
+enumValues:
+  - supply
+  - store
+  - idle
+  - fault

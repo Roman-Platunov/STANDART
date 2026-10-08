@@ -1,0 +1,115 @@
+{
+  "layer": "B34",
+  "name": "layer-b-precast_pl.json",
+  "types": [
+    {
+      "path": "precast_pl.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Precast concrete plant id",
+      "titleRu": "ID завода ЖБИ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "precast_pl.pours",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pours today",
+      "titleRu": "Заливок за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "precast_pl.strength",
+      "kind": "quantity",
+      "unit": "MPa",
+      "titleEn": "28-day strength proxy",
+      "titleRu": "Прочность (прокси)",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "precast_pl.cure",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Curing temperature",
+      "titleRu": "Температура твердения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "precast_pl.reject",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Reject rate",
+      "titleRu": "Брак",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "precast_pl.output",
+      "kind": "quantity",
+      "unit": "m3/d",
+      "titleEn": "Daily volume",
+      "titleRu": "Суточный объём",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "precast_pl.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dimension OK",
+      "titleRu": "Размер OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "precast_pl.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "form",
+        "pour",
+        "cure",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

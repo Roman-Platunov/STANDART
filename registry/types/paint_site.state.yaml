@@ -1,0 +1,20 @@
+sid: 51b3db87
+path: paint_site.state
+aliases:
+  short: paint_site.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние бригады
+  en: Crew state
+fingerprint: sha256:51b3db8740ef07ad3f818b1a9f00f3873175c62f59837173750dff6d5a55fc33
+enumValues:
+  - prep
+  - coat
+  - cure
+  - inspect

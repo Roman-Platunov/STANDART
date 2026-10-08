@@ -1,0 +1,120 @@
+{
+  "layer": "B34",
+  "name": "layer-b-genset_site.json",
+  "types": [
+    {
+      "path": "genset_site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site generator set id",
+      "titleRu": "ID дизель-генератора на объекте",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "genset_site.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Output power",
+      "titleRu": "Выходная мощность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genset_site.load",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Load",
+      "titleRu": "Загрузка",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "genset_site.fuel",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Fuel level",
+      "titleRu": "Уровень топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "genset_site.runtime.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Runtime today",
+      "titleRu": "Наработка за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genset_site.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Coolant temperature",
+      "titleRu": "Температура ОЖ",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "genset_site.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Auto-start ready",
+      "titleRu": "Автозапуск готов",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "genset_site.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Genset state",
+      "titleRu": "Состояние ДГУ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "run",
+        "standby",
+        "test",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

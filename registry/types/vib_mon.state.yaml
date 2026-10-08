@@ -1,0 +1,19 @@
+sid: "08471201"
+path: vib_mon.state
+aliases:
+  short: vib_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние монитора
+  en: Monitor state
+fingerprint: sha256:084712018e1801ca615c7de9c7483640c6a906c98006df737a5533991273346c
+enumValues:
+  - monitor
+  - alarm
+  - offline

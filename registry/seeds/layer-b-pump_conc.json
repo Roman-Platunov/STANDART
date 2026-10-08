@@ -1,0 +1,111 @@
+{
+  "layer": "B34",
+  "name": "layer-b-pump_conc.json",
+  "types": [
+    {
+      "path": "pump_conc.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Concrete pump id",
+      "titleRu": "ID бетононасоса",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pump_conc.rate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pump rate",
+      "titleRu": "Производительность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pump_conc.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Line pressure",
+      "titleRu": "Давление в линии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pump_conc.boom",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Boom reach",
+      "titleRu": "Вылет стрелы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pump_conc.volume",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Pumped today",
+      "titleRu": "Прокачано за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pump_conc.strokes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Strokes today",
+      "titleRu": "Ходов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pump_conc.block",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Line blockage",
+      "titleRu": "Засор линии",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pump_conc.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "boom",
+        "line",
+        "trailer",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

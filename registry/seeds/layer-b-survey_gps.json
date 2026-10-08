@@ -1,0 +1,115 @@
+{
+  "layer": "B34",
+  "name": "layer-b-survey_gps.json",
+  "types": [
+    {
+      "path": "survey_gps.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site survey / GNSS rover id",
+      "titleRu": "ID геодезического GNSS-ровера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "survey_gps.points",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Points collected today",
+      "titleRu": "Точек за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey_gps.hdop",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "HDOP",
+      "titleRu": "HDOP",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey_gps.accuracy",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Horizontal accuracy",
+      "titleRu": "Горизонтальная точность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey_gps.base",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Distance to base",
+      "titleRu": "Расстояние до базы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "survey_gps.battery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Battery",
+      "titleRu": "Батарея",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "survey_gps.fix",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Fixed RTK solution",
+      "titleRu": "Фиксированное RTK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "survey_gps.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rover state",
+      "titleRu": "Состояние ровера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "survey",
+        "stakeout",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+sid: d4eddd35
+path: conc_batch.state
+aliases:
+  short: conc_batch.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:d4eddd350079ac373cb3b75da885e04ce5ac21e98156bddd0e30a09fad101d5c
+enumValues:
+  - batch
+  - wash
+  - idle
+  - fault

@@ -1,0 +1,111 @@
+{
+  "layer": "B34",
+  "name": "layer-b-drill_rig_mn.json",
+  "types": [
+    {
+      "path": "drill_rig_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Blast-hole drill id",
+      "titleRu": "ID бурового станка",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "drill_rig_mn.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Hole depth",
+      "titleRu": "Глубина скважины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig_mn.rate",
+      "kind": "quantity",
+      "unit": "m/h",
+      "titleEn": "Penetration rate",
+      "titleRu": "Скорость бурения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig_mn.holes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Holes today",
+      "titleRu": "Скважин за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig_mn.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig_mn.angle",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Hole angle",
+      "titleRu": "Угол скважины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "drill_rig_mn.bit",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bit change due",
+      "titleRu": "Замена долота",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "drill_rig_mn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Rig state",
+      "titleRu": "Состояние станка",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "drill",
+        "move",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

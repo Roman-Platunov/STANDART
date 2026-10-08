@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-form_work.json",
+  "types": [
+    {
+      "path": "form_work.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Formwork system id",
+      "titleRu": "ID опалубочной системы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "form_work.area",
+      "kind": "quantity",
+      "unit": "m2",
+      "titleEn": "Formed area today",
+      "titleRu": "Площадь опалубки за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_work.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Fresh concrete pressure",
+      "titleRu": "Давление свежего бетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_work.cycle.d",
+      "kind": "quantity",
+      "unit": "d",
+      "titleEn": "Form cycle days",
+      "titleRu": "Цикл опалубки в днях",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_work.reuse",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Reuse count",
+      "titleRu": "Число оборачиваний",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_work.deflection",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Max deflection",
+      "titleRu": "Макс. прогиб",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "form_work.ready",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ready for pour",
+      "titleRu": "Готово к бетонированию",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "form_work.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wall",
+        "slab",
+        "column",
+        "climb",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

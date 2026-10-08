@@ -1,0 +1,119 @@
+{
+  "layer": "B34",
+  "name": "layer-b-compactor.json",
+  "types": [
+    {
+      "path": "compactor.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Soil / landfill compactor id",
+      "titleRu": "ID грунтового / полигонного уплотнения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "compactor.n.passes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passes",
+      "titleRu": "Проходов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compactor.density",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Compaction %",
+      "titleRu": "Степень уплотнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "compactor.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Soil moisture",
+      "titleRu": "Влажность грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "compactor.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Travel speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compactor.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "compactor.target",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Target density",
+      "titleRu": "Целевая плотность",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "compactor.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "soil",
+        "landfill",
+        "vibratory",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

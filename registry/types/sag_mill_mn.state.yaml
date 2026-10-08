@@ -1,0 +1,20 @@
+sid: 342c1080
+path: sag_mill_mn.state
+aliases:
+  short: sag_mill_mn.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние мельницы
+  en: Mill state
+fingerprint: sha256:342c1080b81b05ec34287086d6df5de8728d31faad1f8e560284d37994844c6d
+enumValues:
+  - grind
+  - idle
+  - maintain
+  - fault

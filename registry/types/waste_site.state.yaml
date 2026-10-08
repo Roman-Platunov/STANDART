@@ -1,0 +1,20 @@
+sid: 5cfa3259
+path: waste_site.state
+aliases:
+  short: waste_site.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние площадки
+  en: Yard state
+fingerprint: sha256:5cfa325950089fd1f53c71bddb79e1c0a727ef4e8a9457bc7378b3b18cf46248
+enumValues:
+  - receive
+  - sort
+  - haul
+  - idle

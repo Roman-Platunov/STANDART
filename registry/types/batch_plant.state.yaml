@@ -1,0 +1,20 @@
+sid: 71e9c82f
+path: batch_plant.state
+aliases:
+  short: batch_plant.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние узла
+  en: Plant state
+fingerprint: sha256:71e9c82f0a0e28c72314e50e4de2d8900542e4611e15b4a5ff37315134b4244c
+enumValues:
+  - batch
+  - idle
+  - move
+  - fault

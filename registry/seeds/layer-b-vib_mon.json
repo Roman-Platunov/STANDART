@@ -1,0 +1,110 @@
+{
+  "layer": "B34",
+  "name": "layer-b-vib_mon.json",
+  "types": [
+    {
+      "path": "vib_mon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Construction vibration monitor id",
+      "titleRu": "ID монитора вибрации на стройке",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "vib_mon.ppv",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Peak particle velocity",
+      "titleRu": "Пиковая скорость частиц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vib_mon.freq",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Dominant frequency",
+      "titleRu": "Доминирующая частота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vib_mon.events",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Events today",
+      "titleRu": "Событий за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vib_mon.limit",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "PPV limit",
+      "titleRu": "Лимит PPV",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vib_mon.distance",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Distance to source",
+      "titleRu": "Расстояние до источника",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "vib_mon.exceed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Limit exceeded",
+      "titleRu": "Лимит превышен",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "vib_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Monitor state",
+      "titleRu": "Состояние монитора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

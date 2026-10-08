@@ -1,0 +1,107 @@
+{
+  "layer": "B34",
+  "name": "layer-b-safety_gate.json",
+  "types": [
+    {
+      "path": "safety_gate.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site access / safety gate id",
+      "titleRu": "ID КПП / ворот стройплощадки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "safety_gate.entries",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Entries today",
+      "titleRu": "Входов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "safety_gate.exits",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Exits today",
+      "titleRu": "Выходов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "safety_gate.inductions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Inductions today",
+      "titleRu": "Инструктажей за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "safety_gate.vehicles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Vehicles on site",
+      "titleRu": "Техники на площадке",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "safety_gate.denied",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Access denied",
+      "titleRu": "Отказов в доступе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "safety_gate.open",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Gate open for traffic",
+      "titleRu": "Ворота открыты",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "safety_gate.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Gate state",
+      "titleRu": "Состояние КПП",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "open",
+        "secure",
+        "evacuate",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

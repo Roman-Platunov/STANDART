@@ -1,0 +1,120 @@
+{
+  "layer": "B34",
+  "name": "layer-b-ball_mill_mn.json",
+  "types": [
+    {
+      "path": "ball_mill_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ball mill id",
+      "titleRu": "ID шаровой мельницы",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "ball_mill_mn.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Mill power",
+      "titleRu": "Мощность мельницы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill_mn.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill_mn.density",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Pulp density",
+      "titleRu": "Плотность пульпы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill_mn.p80",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Product P80",
+      "titleRu": "P80 продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill_mn.charge",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Ball charge",
+      "titleRu": "Загрузка шаров",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "ball_mill_mn.liner",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Liner change due",
+      "titleRu": "Замена футеровки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "ball_mill_mn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Mill state",
+      "titleRu": "Состояние мельницы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grind",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

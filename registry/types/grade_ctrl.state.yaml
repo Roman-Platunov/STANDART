@@ -1,0 +1,20 @@
+sid: 040a0904
+path: grade_ctrl.state
+aliases:
+  short: grade_ctrl.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:040a09045fb519d7406f9e674712b99f9016a6ad490e1ce2fb418b5ac8e80a46
+enumValues:
+  - model
+  - flag
+  - reconcile
+  - idle

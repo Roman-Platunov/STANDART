@@ -1,0 +1,20 @@
+sid: 5b043516
+path: precast_pl.state
+aliases:
+  short: precast_pl.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:5b0435166b6de539bde7ec6bc230f619e653868577176c4c7f30feece98bb09e
+enumValues:
+  - form
+  - pour
+  - cure
+  - fault

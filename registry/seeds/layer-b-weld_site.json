@@ -1,0 +1,115 @@
+{
+  "layer": "B34",
+  "name": "layer-b-weld_site.json",
+  "types": [
+    {
+      "path": "weld_site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Construction welding station id",
+      "titleRu": "ID сварочного поста на стройке",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "weld_site.meters",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Weld length today",
+      "titleRu": "Метров шва за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weld_site.ndt",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "NDT pass rate",
+      "titleRu": "Прохождение НК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "weld_site.gas",
+      "kind": "quantity",
+      "unit": "L",
+      "titleEn": "Shielding gas used",
+      "titleRu": "Расход защитного газа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weld_site.wire",
+      "kind": "quantity",
+      "unit": "kg",
+      "titleEn": "Wire / electrode used",
+      "titleRu": "Расход проволоки/электродов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weld_site.repairs",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Repairs today",
+      "titleRu": "Ремонтов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "weld_site.qualify",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Welder qualified",
+      "titleRu": "Сварщик аттестован",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "weld_site.process",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Process",
+      "titleRu": "Процесс",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "smaw",
+        "gmaw",
+        "gtaw",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

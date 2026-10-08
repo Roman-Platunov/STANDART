@@ -1,0 +1,20 @@
+sid: e9661d15
+path: drill_rig_mn.state
+aliases:
+  short: drill_rig_mn.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станка
+  en: Rig state
+fingerprint: sha256:e9661d1540f5facfc412c6f1c2aa82bb0fea7e0a6adcb1d62ea2a094713125c8
+enumValues:
+  - drill
+  - move
+  - idle
+  - fault

@@ -1,0 +1,20 @@
+sid: e3fd9915
+path: ball_mill_mn.state
+aliases:
+  short: ball_mill_mn.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние мельницы
+  en: Mill state
+fingerprint: sha256:e3fd991563ca259ffce9fc0d71b57e0b48e9d1b208e497ac1ed9fa43c06dfdfc
+enumValues:
+  - grind
+  - idle
+  - maintain
+  - fault

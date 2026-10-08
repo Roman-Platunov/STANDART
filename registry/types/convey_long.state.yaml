@@ -1,0 +1,20 @@
+sid: ff06c97b
+path: convey_long.state
+aliases:
+  short: convey_long.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние конвейера
+  en: Conveyor state
+fingerprint: sha256:ff06c97b5a738dc9958456c0c5b88a1990b9e13302f6d5a8a04bfc798a6b9d85
+enumValues:
+  - run
+  - idle
+  - maintain
+  - fault

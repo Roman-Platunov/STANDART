@@ -1,0 +1,19 @@
+sid: 3eb3414e
+path: noise_mon.state
+aliases:
+  short: noise_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние монитора
+  en: Monitor state
+fingerprint: sha256:3eb3414e0ce0261268a5631d0ed9f12ad56fab2c623689e9b4c4208cefc9532e
+enumValues:
+  - monitor
+  - alarm
+  - offline

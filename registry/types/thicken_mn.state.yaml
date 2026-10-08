@@ -1,0 +1,20 @@
+sid: 252543ff
+path: thicken_mn.state
+aliases:
+  short: thicken_mn.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние сгустителя
+  en: Thickener state
+fingerprint: sha256:252543ff90e0d779cf07358de1a43d6a7097194fb6128f5a7b3f022f20db4ea7
+enumValues:
+  - thicken
+  - idle
+  - maintain
+  - fault

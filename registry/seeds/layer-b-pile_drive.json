@@ -1,0 +1,110 @@
+{
+  "layer": "B34",
+  "name": "layer-b-pile_drive.json",
+  "types": [
+    {
+      "path": "pile_drive.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Pile driver id",
+      "titleRu": "ID сваебойной установки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "pile_drive.energy",
+      "kind": "quantity",
+      "unit": "kJ",
+      "titleEn": "Blow energy",
+      "titleRu": "Энергия удара",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pile_drive.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Embedment depth",
+      "titleRu": "Глубина погружения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pile_drive.blows",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Blows per pile",
+      "titleRu": "Ударов на сваю",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pile_drive.piles",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Piles today",
+      "titleRu": "Свай за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pile_drive.vib",
+      "kind": "quantity",
+      "unit": "mm/s",
+      "titleEn": "Ground vibration",
+      "titleRu": "Вибрация грунта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "pile_drive.refusal",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Refusal reached",
+      "titleRu": "Отказ достигнут",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "pile_drive.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "diesel",
+        "hydraulic",
+        "vibro",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

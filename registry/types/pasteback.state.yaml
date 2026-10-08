@@ -1,0 +1,20 @@
+sid: 14f25da8
+path: pasteback.state
+aliases:
+  short: pasteback.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние завода
+  en: Plant state
+fingerprint: sha256:14f25da81db65191de65470a30b6a7662a6363b9dda972530c0916239bf8e267
+enumValues:
+  - mix
+  - pump
+  - idle
+  - fault

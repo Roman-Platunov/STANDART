@@ -1,0 +1,20 @@
+sid: 8183e5db
+path: hot_mix.state
+aliases:
+  short: hot_mix.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние бункера
+  en: Silo state
+fingerprint: sha256:8183e5db0b14636168935af6c807f4cc5d425d98beb6000dc4f8adbec9b9d594
+enumValues:
+  - store
+  - loadout
+  - empty
+  - fault

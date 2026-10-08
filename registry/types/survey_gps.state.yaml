@@ -1,0 +1,20 @@
+sid: 45a5c887
+path: survey_gps.state
+aliases:
+  short: survey_gps.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ровера
+  en: Rover state
+fingerprint: sha256:45a5c8871a0ec0906ed3bba0dc270050155f5444d9d536b47590fd28f39e3f38
+enumValues:
+  - survey
+  - stakeout
+  - idle
+  - fault

@@ -1,0 +1,124 @@
+{
+  "layer": "B34",
+  "name": "layer-b-flot_cell.json",
+  "types": [
+    {
+      "path": "flot_cell.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Flotation cell id",
+      "titleRu": "ID флотационной камеры",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "flot_cell.air",
+      "kind": "quantity",
+      "unit": "Nm3/h",
+      "titleEn": "Air rate",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flot_cell.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Froth / pulp level",
+      "titleRu": "Уровень пены/пульпы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flot_cell.recovery",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Metal recovery",
+      "titleRu": "Извлечение металла",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flot_cell.grade",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Concentrate grade",
+      "titleRu": "Содержание в концентрате",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "flot_cell.reagent",
+      "kind": "quantity",
+      "unit": "g/t",
+      "titleEn": "Reagent dose",
+      "titleRu": "Доза реагента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "flot_cell.froth",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Froth collapse",
+      "titleRu": "Схлопывание пены",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "flot_cell.duty",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Duty",
+      "titleRu": "Назначение",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rougher",
+        "cleaner",
+        "scavenger",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

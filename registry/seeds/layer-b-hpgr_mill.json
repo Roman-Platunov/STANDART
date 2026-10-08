@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-hpgr_mill.json",
+  "types": [
+    {
+      "path": "hpgr_mill.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "HPGR mill id",
+      "titleRu": "ID валковой дробилки высокого давления",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hpgr_mill.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Feed rate",
+      "titleRu": "Подача",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr_mill.force",
+      "kind": "quantity",
+      "unit": "N/mm",
+      "titleEn": "Specific grinding force",
+      "titleRu": "Удельное усилие",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr_mill.gap",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Working gap",
+      "titleRu": "Рабочий зазор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr_mill.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Roll power",
+      "titleRu": "Мощность валков",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr_mill.p80",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Product P80",
+      "titleRu": "P80 продукта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hpgr_mill.skew",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Roll skew",
+      "titleRu": "Перекос валков",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hpgr_mill.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "HPGR state",
+      "titleRu": "Состояние HPGR",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "crush",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

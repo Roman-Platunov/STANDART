@@ -1,0 +1,120 @@
+{
+  "layer": "B34",
+  "name": "layer-b-stockpile.json",
+  "types": [
+    {
+      "path": "stockpile.pile.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Ore stockpile id",
+      "titleRu": "ID рудного склада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stockpile.inventory",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Inventory",
+      "titleRu": "Запас",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stockpile.grade",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Average grade",
+      "titleRu": "Среднее содержание",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stockpile.in",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Stacking rate",
+      "titleRu": "Скорость укладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stockpile.out",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Reclaim rate",
+      "titleRu": "Скорость забора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stockpile.moisture",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Moisture",
+      "titleRu": "Влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "stockpile.segregation",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Segregation risk",
+      "titleRu": "Риск сегрегации",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stockpile.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "rom",
+        "crushed",
+        "concentrate",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-grader_rd.json",
+  "types": [
+    {
+      "path": "grader_rd.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Motor grader id",
+      "titleRu": "ID автогрейдера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "grader_rd.blade",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Blade angle",
+      "titleRu": "Угол отвала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grader_rd.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Travel speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grader_rd.grade",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Cross-slope",
+      "titleRu": "Поперечный уклон",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": -20,
+        "max": 20
+      },
+      "status": "stable"
+    },
+    {
+      "path": "grader_rd.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grader_rd.distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Distance today",
+      "titleRu": "Пробег за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "grader_rd.gps",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "GPS grade control",
+      "titleRu": "GPS-нивелирование",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "grader_rd.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Grader state",
+      "titleRu": "Состояние грейдера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "grade",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

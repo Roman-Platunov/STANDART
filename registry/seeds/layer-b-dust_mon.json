@@ -1,0 +1,110 @@
+{
+  "layer": "B34",
+  "name": "layer-b-dust_mon.json",
+  "types": [
+    {
+      "path": "dust_mon.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site dust monitor id",
+      "titleRu": "ID монитора пыли на объекте",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dust_mon.pm10",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "PM10",
+      "titleRu": "PM10",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dust_mon.pm25",
+      "kind": "quantity",
+      "unit": "ug/m3",
+      "titleEn": "PM2.5",
+      "titleRu": "PM2.5",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dust_mon.wind",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Wind speed",
+      "titleRu": "Скорость ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dust_mon.dir",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Wind direction",
+      "titleRu": "Направление ветра",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dust_mon.excursions",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Excursions today",
+      "titleRu": "Превышений за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dust_mon.alarm",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dust alarm",
+      "titleRu": "Тревога пыли",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dust_mon.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Monitor state",
+      "titleRu": "Состояние монитора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "monitor",
+        "alarm",
+        "offline"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

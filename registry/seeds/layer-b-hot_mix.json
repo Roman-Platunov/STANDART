@@ -1,0 +1,115 @@
+{
+  "layer": "B34",
+  "name": "layer-b-hot_mix.json",
+  "types": [
+    {
+      "path": "hot_mix.silo.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Hot-mix silo id",
+      "titleRu": "ID бункера горячей смеси",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "hot_mix.level",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Silo level",
+      "titleRu": "Уровень бункера",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "hot_mix.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mix temperature",
+      "titleRu": "Температура смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_mix.loadout",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Loadout rate",
+      "titleRu": "Скорость отгрузки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_mix.trucks",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Trucks loaded today",
+      "titleRu": "Машин загружено",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_mix.age.min",
+      "kind": "quantity",
+      "unit": "min",
+      "titleEn": "Mix age in silo",
+      "titleRu": "Возраст смеси в бункере",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "hot_mix.cold",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Temperature low",
+      "titleRu": "Низкая температура",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "hot_mix.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Silo state",
+      "titleRu": "Состояние бункера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "store",
+        "loadout",
+        "empty",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

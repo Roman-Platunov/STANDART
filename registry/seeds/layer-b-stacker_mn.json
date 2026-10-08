@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-stacker_mn.json",
+  "types": [
+    {
+      "path": "stacker_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Stockyard stacker id",
+      "titleRu": "ID стакера склада",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "stacker_mn.rate",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Stacking rate",
+      "titleRu": "Скорость укладки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_mn.boom",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Boom length / reach",
+      "titleRu": "Вылет стрелы",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_mn.luff",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Luff angle",
+      "titleRu": "Угол подъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_mn.slew",
+      "kind": "quantity",
+      "unit": "deg",
+      "titleEn": "Slew angle",
+      "titleRu": "Угол поворота",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_mn.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Machine power",
+      "titleRu": "Мощность машины",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "stacker_mn.wind",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Wind trip",
+      "titleRu": "Останов по ветру",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "stacker_mn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Stacker state",
+      "titleRu": "Состояние стакера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "stack",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

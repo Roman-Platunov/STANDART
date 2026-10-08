@@ -1,0 +1,20 @@
+sid: 37096b47
+path: ready_mix.state
+aliases:
+  short: ready_mix.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние машины
+  en: Truck state
+fingerprint: sha256:37096b4748f06f12a9e7d79b856892dd79ebcc2aa9fb7c864a57cc19bf158da4
+enumValues:
+  - load
+  - transit
+  - pour
+  - wash

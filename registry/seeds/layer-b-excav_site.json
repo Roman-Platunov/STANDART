@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-excav_site.json",
+  "types": [
+    {
+      "path": "excav_site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site excavator id",
+      "titleRu": "ID экскаватора на объекте",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "excav_site.cycles",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cycles per hour",
+      "titleRu": "Циклов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "excav_site.payload",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Bucket payload",
+      "titleRu": "Масса в ковше",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "excav_site.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "excav_site.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Dig depth",
+      "titleRu": "Глубина копания",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "excav_site.hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Engine hours today",
+      "titleRu": "Моточасов за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "excav_site.utility",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Utility strike risk",
+      "titleRu": "Риск повреждения коммуникаций",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "excav_site.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Excavator state",
+      "titleRu": "Состояние экскаватора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "dig",
+        "load",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

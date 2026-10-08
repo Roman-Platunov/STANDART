@@ -1,0 +1,111 @@
+{
+  "layer": "B34",
+  "name": "layer-b-tunnel_tbm.json",
+  "types": [
+    {
+      "path": "tunnel_tbm.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Tunnel boring machine id",
+      "titleRu": "ID ТПМК / ТБМ",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "tunnel_tbm.advance",
+      "kind": "quantity",
+      "unit": "mm/min",
+      "titleEn": "Advance rate",
+      "titleRu": "Скорость проходки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_tbm.thrust",
+      "kind": "quantity",
+      "unit": "MN",
+      "titleEn": "Total thrust",
+      "titleRu": "Суммарный распор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_tbm.torque",
+      "kind": "quantity",
+      "unit": "MNm",
+      "titleEn": "Cutterhead torque",
+      "titleRu": "Момент ротора",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_tbm.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Face pressure",
+      "titleRu": "Давление забоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_tbm.rings",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Rings erected today",
+      "titleRu": "Колец за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "tunnel_tbm.settle",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Settlement alarm",
+      "titleRu": "Тревога осадки",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "tunnel_tbm.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "epb",
+        "slurry",
+        "hard_rock",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

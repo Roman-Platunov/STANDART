@@ -1,0 +1,20 @@
+sid: 2a84153f
+path: dewater_site.state
+aliases:
+  short: dewater_site.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние системы
+  en: System state
+fingerprint: sha256:2a84153f2cb3aa70d4640513d70bf7dcda7b1e0621fa72326c69c90f694bc059
+enumValues:
+  - pump
+  - treat
+  - idle
+  - fault

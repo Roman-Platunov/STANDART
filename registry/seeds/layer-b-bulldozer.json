@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-bulldozer.json",
+  "types": [
+    {
+      "path": "bulldozer.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Bulldozer id",
+      "titleRu": "ID бульдозера",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "bulldozer.blade",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Blade load proxy",
+      "titleRu": "Нагрузка отвала",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bulldozer.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Travel speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bulldozer.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel rate",
+      "titleRu": "Расход топлива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bulldozer.track",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Track slip",
+      "titleRu": "Пробуксовка гусениц",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "bulldozer.hours",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Engine hours today",
+      "titleRu": "Моточасов за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "bulldozer.ripper",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Ripper engaged",
+      "titleRu": "Рыхлитель в работе",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "bulldozer.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Dozer state",
+      "titleRu": "Состояние бульдозера",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "push",
+        "rip",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

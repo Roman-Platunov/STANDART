@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-shot_crete.json",
+  "types": [
+    {
+      "path": "shot_crete.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Shotcrete / sprayed concrete unit id",
+      "titleRu": "ID установки торкретбетона",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "shot_crete.rate",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Spray rate",
+      "titleRu": "Скорость набрызга",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shot_crete.rebound",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rebound",
+      "titleRu": "Отскок",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "shot_crete.thickness",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Layer thickness",
+      "titleRu": "Толщина слоя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shot_crete.accel",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Accelerator dose",
+      "titleRu": "Доза ускорителя",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shot_crete.air",
+      "kind": "quantity",
+      "unit": "m3/min",
+      "titleEn": "Air consumption",
+      "titleRu": "Расход воздуха",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "shot_crete.dust",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Dust high",
+      "titleRu": "Много пыли",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "shot_crete.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "wet",
+        "dry",
+        "robot",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

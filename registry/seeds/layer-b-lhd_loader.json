@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-lhd_loader.json",
+  "types": [
+    {
+      "path": "lhd_loader.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "LHD / scooptram id",
+      "titleRu": "ID ПДМ / LHD",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "lhd_loader.payload",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Bucket payload",
+      "titleRu": "Масса в ковше",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lhd_loader.cycles",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Cycles per hour",
+      "titleRu": "Циклов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lhd_loader.fuel",
+      "kind": "quantity",
+      "unit": "L/h",
+      "titleEn": "Fuel / energy rate",
+      "titleRu": "Расход топлива/энергии",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lhd_loader.distance",
+      "kind": "quantity",
+      "unit": "km",
+      "titleEn": "Tramming distance today",
+      "titleRu": "Пробег за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "lhd_loader.availability",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Availability",
+      "titleRu": "Готовность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "lhd_loader.autonomous",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Autonomous mode",
+      "titleRu": "Автономный режим",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "lhd_loader.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "LHD state",
+      "titleRu": "Состояние ПДМ",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "muck",
+        "tram",
+        "dump",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

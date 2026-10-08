@@ -1,0 +1,19 @@
+sid: 2cb71cc2
+path: dust_mon.state
+aliases:
+  short: dust_mon.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние монитора
+  en: Monitor state
+fingerprint: sha256:2cb71cc28c6359099efa1723e57b49c42c4a94149a95999a81843849851a207e
+enumValues:
+  - monitor
+  - alarm
+  - offline

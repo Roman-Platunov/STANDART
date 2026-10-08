@@ -1,0 +1,113 @@
+{
+  "layer": "B34",
+  "name": "layer-b-rebar_cut.json",
+  "types": [
+    {
+      "path": "rebar_cut.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Rebar cutting / bending yard id",
+      "titleRu": "ID арматурного двора",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "rebar_cut.tonnage",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Steel processed today",
+      "titleRu": "Металла за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rebar_cut.bars",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bars cut",
+      "titleRu": "Прутьев нарезано",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rebar_cut.scrap",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Scrap rate",
+      "titleRu": "Брак / обрезь",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "rebar_cut.bends",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Bends today",
+      "titleRu": "Гибов за сутки",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rebar_cut.orders",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Open orders",
+      "titleRu": "Открытых заказов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "rebar_cut.tag",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bundle tagged",
+      "titleRu": "Пачка промаркирована",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "rebar_cut.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Yard state",
+      "titleRu": "Состояние двора",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "cut",
+        "bend",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

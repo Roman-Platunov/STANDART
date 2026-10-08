@@ -1,0 +1,20 @@
+sid: 656a0d3e
+path: dewater_mn.state
+aliases:
+  short: dewater_mn.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние станции
+  en: Station state
+fingerprint: sha256:656a0d3ebecd2bb08548a4adf0caf5cb129f00b22555bafd1d85e94fa2c9ad24
+enumValues:
+  - pump
+  - standby
+  - maintain
+  - fault

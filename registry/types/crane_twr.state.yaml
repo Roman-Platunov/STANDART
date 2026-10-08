@@ -1,0 +1,20 @@
+sid: 2f19e827
+path: crane_twr.state
+aliases:
+  short: crane_twr.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние крана
+  en: Crane state
+fingerprint: sha256:2f19e827ed9315f1f766059369989709ee47827770b68022d5b5733166dfca73
+enumValues:
+  - lift
+  - idle
+  - climb
+  - fault

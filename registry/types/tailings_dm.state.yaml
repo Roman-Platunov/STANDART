@@ -1,0 +1,20 @@
+sid: c628f60a
+path: tailings_dm.state
+aliases:
+  short: tailings_dm.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ХВХ
+  en: TSF state
+fingerprint: sha256:c628f60a61e094d0299a6fb6a6088bf4e6a80f1c09ac1a5ed164da04ee754f32
+enumValues:
+  - deposit
+  - decant
+  - maintain
+  - alarm

@@ -1,0 +1,20 @@
+sid: f8b75c0e
+path: stacker_mn.state
+aliases:
+  short: stacker_mn.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние стакера
+  en: Stacker state
+fingerprint: sha256:f8b75c0e76a699a5cfea99d1df9604121d10aa5325c6e6948e71fb6cb66d85f6
+enumValues:
+  - stack
+  - idle
+  - maintain
+  - fault

@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-site_water.json",
+  "types": [
+    {
+      "path": "site_water.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Construction site water system id",
+      "titleRu": "ID системы водоснабжения стройки",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "site_water.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Supply flow",
+      "titleRu": "Расход подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "site_water.pressure",
+      "kind": "quantity",
+      "unit": "kPa",
+      "titleEn": "Supply pressure",
+      "titleRu": "Давление подачи",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "site_water.tank",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Tank level",
+      "titleRu": "Уровень бака",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "site_water.quality",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Turbidity / quality",
+      "titleRu": "Мутность / качество",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "site_water.use",
+      "kind": "quantity",
+      "unit": "m3",
+      "titleEn": "Use today",
+      "titleRu": "Расход за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "site_water.low",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Pressure / level low",
+      "titleRu": "Низкое давление/уровень",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "site_water.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "System state",
+      "titleRu": "Состояние системы",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "supply",
+        "store",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

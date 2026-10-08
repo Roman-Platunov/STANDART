@@ -1,0 +1,20 @@
+sid: 3fc8679f
+path: loader_whl.state
+aliases:
+  short: loader_whl.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние погрузчика
+  en: Loader state
+fingerprint: sha256:3fc8679f32e8bca0614c340417a8fa6c771f6c399ce106f9535e3e8355ba6270
+enumValues:
+  - load
+  - carry
+  - dump
+  - fault

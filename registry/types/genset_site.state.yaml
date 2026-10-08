@@ -1,0 +1,20 @@
+sid: 727b2173
+path: genset_site.state
+aliases:
+  short: genset_site.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние ДГУ
+  en: Genset state
+fingerprint: sha256:727b2173fccad015b9b76fb120ca80df4617933bb92e465e1721c76c3597be3d
+enumValues:
+  - run
+  - standby
+  - test
+  - fault

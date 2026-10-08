@@ -1,0 +1,113 @@
+{
+  "layer": "B34",
+  "name": "layer-b-assay_lab_mn.json",
+  "types": [
+    {
+      "path": "assay_lab_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mine assay lab id",
+      "titleRu": "ID аналитической лаборатории рудника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "assay_lab_mn.samples",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Samples in process",
+      "titleRu": "Проб в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "assay_lab_mn.tat.h",
+      "kind": "quantity",
+      "unit": "h",
+      "titleEn": "Average TAT",
+      "titleRu": "Средний TAT",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "assay_lab_mn.backlog",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Backlog samples",
+      "titleRu": "Задел проб",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "assay_lab_mn.qc",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "QC pass rate",
+      "titleRu": "Прохождение ОК",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "assay_lab_mn.fire",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Fire assays today",
+      "titleRu": "Пробирных анализов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "assay_lab_mn.oos",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "OOS result",
+      "titleRu": "Результат вне нормы",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "assay_lab_mn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Lab state",
+      "titleRu": "Состояние лаборатории",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "assay",
+        "report",
+        "idle"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

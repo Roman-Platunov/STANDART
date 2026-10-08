@@ -1,0 +1,20 @@
+sid: 6c862205
+path: flot_cell.duty
+aliases:
+  short: flot_cell.duty
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Назначение
+  en: Duty
+fingerprint: sha256:6c8622051644e638e391bc17e0cc7641cc614c5d4281eebc6c16dc05d1b4c985
+enumValues:
+  - rougher
+  - cleaner
+  - scavenger
+  - other

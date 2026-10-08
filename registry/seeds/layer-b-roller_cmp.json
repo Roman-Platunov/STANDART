@@ -1,0 +1,115 @@
+{
+  "layer": "B34",
+  "name": "layer-b-roller_cmp.json",
+  "types": [
+    {
+      "path": "roller_cmp.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Compaction roller id",
+      "titleRu": "ID катка уплотнения",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "roller_cmp.passes",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Passes",
+      "titleRu": "Проходов",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roller_cmp.amplitude",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Vibration amplitude",
+      "titleRu": "Амплитуда вибрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roller_cmp.frequency",
+      "kind": "quantity",
+      "unit": "Hz",
+      "titleEn": "Vibration frequency",
+      "titleRu": "Частота вибрации",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roller_cmp.density",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Compaction %",
+      "titleRu": "Степень уплотнения",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "roller_cmp.speed",
+      "kind": "quantity",
+      "unit": "km/h",
+      "titleEn": "Travel speed",
+      "titleRu": "Скорость",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "roller_cmp.target",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Target density reached",
+      "titleRu": "Целевая плотность",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "roller_cmp.type",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Type",
+      "titleRu": "Тип",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "smooth",
+        "padfoot",
+        "pneumatic",
+        "other"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

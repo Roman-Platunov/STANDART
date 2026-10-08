@@ -1,0 +1,20 @@
+sid: 34d66d27
+path: paver_road.state
+aliases:
+  short: paver_road.state
+kind: enum
+unit: "-"
+encodings:
+  - enum
+  - utf8
+sensitivity: public
+status: stable
+title:
+  ru: Состояние укладчика
+  en: Paver state
+fingerprint: sha256:34d66d27fbf280756d248eb567a604ce68ade1ef245e8549ea64346c489370ee
+enumValues:
+  - pave
+  - idle
+  - maintain
+  - fault

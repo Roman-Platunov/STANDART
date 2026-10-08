@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-skip_hoist.json",
+  "types": [
+    {
+      "path": "skip_hoist.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mine skip hoist id",
+      "titleRu": "ID скиповой подъёмной машины",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "skip_hoist.payload",
+      "kind": "quantity",
+      "unit": "t",
+      "titleEn": "Skip payload",
+      "titleRu": "Полезная нагрузка скипа",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "skip_hoist.trips",
+      "kind": "quantity",
+      "unit": "/h",
+      "titleEn": "Trips per hour",
+      "titleRu": "Рейсов в час",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "skip_hoist.speed",
+      "kind": "quantity",
+      "unit": "m/s",
+      "titleEn": "Rope speed",
+      "titleRu": "Скорость каната",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "skip_hoist.depth",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Shaft depth",
+      "titleRu": "Глубина ствола",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "skip_hoist.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Hoist power",
+      "titleRu": "Мощность подъёма",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "skip_hoist.overwind",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Overwind protection",
+      "titleRu": "Защита от переподъёма",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "skip_hoist.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Hoist state",
+      "titleRu": "Состояние подъёма",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "hoist",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "B34",
+  "name": "layer-b-dewater_mn.json",
+  "types": [
+    {
+      "path": "dewater_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Mine dewatering pump station id",
+      "titleRu": "ID станции водоотлива рудника",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "dewater_mn.flow",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Pump flow",
+      "titleRu": "Расход насосов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_mn.head",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Total head",
+      "titleRu": "Напор",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_mn.level",
+      "kind": "quantity",
+      "unit": "m",
+      "titleEn": "Sumps level",
+      "titleRu": "Уровень зумпфов",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_mn.power",
+      "kind": "quantity",
+      "unit": "kW",
+      "titleEn": "Station power",
+      "titleRu": "Мощность станции",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_mn.pumps",
+      "kind": "quantity",
+      "unit": "-",
+      "titleEn": "Pumps running",
+      "titleRu": "Насосов в работе",
+      "encodings": [
+        "i32"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "dewater_mn.flood",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Flood risk",
+      "titleRu": "Риск затопления",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "dewater_mn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Station state",
+      "titleRu": "Состояние станции",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "pump",
+        "standby",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

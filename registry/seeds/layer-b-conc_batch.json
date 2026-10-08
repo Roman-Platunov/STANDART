@@ -1,0 +1,112 @@
+{
+  "layer": "B34",
+  "name": "layer-b-conc_batch.json",
+  "types": [
+    {
+      "path": "conc_batch.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Concrete batch plant id",
+      "titleRu": "ID бетонного завода",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "conc_batch.output",
+      "kind": "quantity",
+      "unit": "m3/h",
+      "titleEn": "Concrete output",
+      "titleRu": "Выпуск бетона",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conc_batch.slump",
+      "kind": "quantity",
+      "unit": "mm",
+      "titleEn": "Slump",
+      "titleRu": "Осадка конуса",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conc_batch.cement",
+      "kind": "quantity",
+      "unit": "kg/m3",
+      "titleEn": "Cement content",
+      "titleRu": "Расход цемента",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conc_batch.water",
+      "kind": "quantity",
+      "unit": "L/m3",
+      "titleEn": "Water content",
+      "titleRu": "Расход воды",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conc_batch.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Mix temperature",
+      "titleRu": "Температура смеси",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "conc_batch.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Mix design OK",
+      "titleRu": "Состав OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "conc_batch.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Plant state",
+      "titleRu": "Состояние завода",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "batch",
+        "wash",
+        "idle",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

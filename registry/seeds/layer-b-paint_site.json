@@ -1,0 +1,116 @@
+{
+  "layer": "B34",
+  "name": "layer-b-paint_site.json",
+  "types": [
+    {
+      "path": "paint_site.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Site coating / paint crew id",
+      "titleRu": "ID бригады окраски на объекте",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "paint_site.area",
+      "kind": "quantity",
+      "unit": "m2",
+      "titleEn": "Area coated today",
+      "titleRu": "Площадь за сутки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_site.dft",
+      "kind": "quantity",
+      "unit": "um",
+      "titleEn": "Dry film thickness",
+      "titleRu": "Толщина сухой плёнки",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_site.temp",
+      "kind": "quantity",
+      "unit": "Cel",
+      "titleEn": "Surface temperature",
+      "titleRu": "Температура поверхности",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_site.humidity",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Relative humidity",
+      "titleRu": "Относительная влажность",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "paint_site.voc",
+      "kind": "quantity",
+      "unit": "g/L",
+      "titleEn": "VOC of coating",
+      "titleRu": "ЛОС покрытия",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "paint_site.spec.ok",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "DFT / adhesion OK",
+      "titleRu": "ТСП / адгезия OK",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "paint_site.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Crew state",
+      "titleRu": "Состояние бригады",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "prep",
+        "coat",
+        "cure",
+        "inspect"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "layer": "B34",
+  "name": "layer-b-thicken_mn.json",
+  "types": [
+    {
+      "path": "thicken_mn.id",
+      "kind": "identity",
+      "unit": "-",
+      "titleEn": "Thickener id",
+      "titleRu": "ID сгустителя",
+      "encodings": [
+        "utf8"
+      ],
+      "sensitivity": "internal"
+    },
+    {
+      "path": "thicken_mn.feed",
+      "kind": "quantity",
+      "unit": "t/h",
+      "titleEn": "Solids feed",
+      "titleRu": "Подача твёрдого",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thicken_mn.uflow",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Underflow density",
+      "titleRu": "Плотность сгущенного",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thicken_mn.clarity",
+      "kind": "quantity",
+      "unit": "NTU",
+      "titleEn": "Overflow clarity",
+      "titleRu": "Прозрачность слива",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thicken_mn.torque",
+      "kind": "quantity",
+      "unit": "%",
+      "titleEn": "Rake torque",
+      "titleRu": "Момент граблин",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "range": {
+        "min": 0,
+        "max": 100
+      },
+      "status": "stable"
+    },
+    {
+      "path": "thicken_mn.floc",
+      "kind": "quantity",
+      "unit": "g/t",
+      "titleEn": "Flocculant dose",
+      "titleRu": "Доза флокулянта",
+      "encodings": [
+        "f32",
+        "f64"
+      ],
+      "sensitivity": "public",
+      "status": "stable"
+    },
+    {
+      "path": "thicken_mn.bed",
+      "kind": "logical",
+      "unit": "-",
+      "titleEn": "Bed level high",
+      "titleRu": "Высокий слой",
+      "encodings": [
+        "bool",
+        "u8"
+      ],
+      "sensitivity": "public"
+    },
+    {
+      "path": "thicken_mn.state",
+      "kind": "enum",
+      "unit": "-",
+      "titleEn": "Thickener state",
+      "titleRu": "Состояние сгустителя",
+      "encodings": [
+        "enum",
+        "utf8"
+      ],
+      "enumValues": [
+        "thicken",
+        "idle",
+        "maintain",
+        "fault"
+      ],
+      "sensitivity": "public"
+    }
+  ]
+}
